@@ -144,6 +144,12 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
         Some(t) => format!("theme = \"{}\"\n", toml_escape(t)),
         None => String::new(),
     };
+    // Zola's built-in RSS 2.0 feed; cap it so a huge archive stays a sane size.
+    let feeds = if s.rss {
+        "generate_feeds = true\nfeed_filenames = [\"rss.xml\"]\nfeed_limit = 50"
+    } else {
+        "generate_feeds = false"
+    };
     let tags_toml = if tags.is_empty() {
         String::new()
     } else {
@@ -178,6 +184,8 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
         .replace("__TITLE__", &toml_escape(&s.title))
         .replace("__DESC__", &toml_escape(&s.description))
         .replace("__THEME__", &theme_line)
+        .replace("__FEEDS__", feeds)
+        .replace("__RSS__", if s.rss { "true" } else { "false" })
         .replace("__CHANNEL__", &toml_escape(&s.channel))
         .replace("__TAGS_FOOTER__", if s.tags_footer { "true" } else { "false" })
         .replace("__NEXT_PREV__", if s.next_prev { "true" } else { "false" })
@@ -358,7 +366,7 @@ base_url = "__BASE_URL__"
 title = "__TITLE__"
 description = "__DESC__"
 default_language = "en"
-__THEME__generate_feeds = false
+__THEME____FEEDS__
 compile_sass = false
 build_search_index = false
 
@@ -375,6 +383,7 @@ channel = "__CHANNEL__"
 tags_footer = __TAGS_FOOTER__
 next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
+rss = __RSS__
 __AVATAR__
 __NAV__
 __TAGS__
@@ -387,6 +396,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   {% if config.extra.avatar %}<link rel="icon" type="image/jpeg" href="{{ get_url(path=config.extra.avatar) }}">{% endif %}
+  {% if config.extra.rss %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path='rss.xml', trailing_slash=false) | safe }}">{% endif %}
   <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
 </head>
 <body>

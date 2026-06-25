@@ -27,6 +27,8 @@ pub struct FileConfig {
     pub next_prev: Option<bool>,
     /// "View on Telegram" link on posts (default on).
     pub telegram_link: Option<bool>,
+    /// Generate an RSS feed at /rss.xml (default on).
+    pub rss: Option<bool>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
     pub pages: Option<String>,
     /// Number of full posts per page on the home feed (default 20).
@@ -67,6 +69,7 @@ pub struct Settings {
     pub tags_footer: bool,
     pub next_prev: bool,
     pub telegram_link: bool,
+    pub rss: bool,
     pub pages: Option<String>,
     pub posts_per_page: usize,
     pub background_dark: String,

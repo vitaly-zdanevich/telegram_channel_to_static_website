@@ -45,9 +45,11 @@ env:
   BACKGROUND_LIGHT_COLOR: ${{ vars.BACKGROUND_LIGHT_COLOR }}
   # Extra CSS appended to the built-in stylesheet.
   CSS: ${{ vars.CSS }}
-  # Set to "false" to disable post Next/Prev nav or the "View on Telegram" link.
+  # Set to "false" to disable post Next/Prev nav, the "View on Telegram" link,
+  # or the RSS feed (all on by default).
   NEXT_PREV: ${{ vars.NEXT_PREV }}
   TELEGRAM_LINK: ${{ vars.TELEGRAM_LINK }}
+  RSS: ${{ vars.RSS }}
 
 jobs:
   build-deploy:
@@ -118,6 +120,7 @@ jobs:
             [ -n "${CSS:-}" ] && args+=(--css "$CSS")
             [ "${NEXT_PREV:-}" = "false" ] && args+=(--no-next-prev)
             [ "${TELEGRAM_LINK:-}" = "false" ] && args+=(--no-telegram-link)
+            [ "${RSS:-}" = "false" ] && args+=(--no-rss)
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
           }

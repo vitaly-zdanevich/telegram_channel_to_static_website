@@ -1,6 +1,12 @@
 # tg2zola
 
+[![daily build](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/workflows/daily.yml/badge.svg)](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/workflows/daily.yml)
+
 Back up a **public Telegram channel** into a **self-contained [Zola](https://www.getzola.org/) static website**.
+
+> **Regenerate on demand:** click the **daily build** badge above → **Run
+> workflow** to scrape + rebuild + redeploy without waiting for the schedule
+> (details in [Automation](#automation-github-actions)).
 
 It scrapes the public web preview (`https://t.me/s/<channel>`), downloads all
 media locally, and regenerates a complete Zola blog on every run. **No Telegram
@@ -40,6 +46,9 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   relative link to that post in the blog; links to other channels stay external.
 - **Engagement** — exports per-post **view counts**. (Reactions/likes aren't
   available from the public page — see [Limitations](#limitations).)
+- **RSS feed** — a standard `/rss.xml` of the latest posts (with full content),
+  advertised via a `<link rel="alternate">` so feed readers auto-discover it
+  from the site URL. On by default; disable with `RSS=false` / `--no-rss`.
 - **No JavaScript, offline-ready** — the output is pure HTML/CSS (dark mode and
   spoilers are CSS-only; pagination is removed so there are no redirect scripts).
   `tg2zola offline <public-dir>` rewrites the built site to relative links so it
@@ -127,6 +136,18 @@ Source: GitHub Actions**. No secrets are required — everything is public-scrap
 The published site is always **GitHub Pages**; the `blog` branch is a durable
 copy and never affects what visitors see.
 
+### Regenerate now (don't wait for the daily run)
+
+`daily.yml` has `workflow_dispatch` enabled, so you can trigger a fresh scrape +
+rebuild + redeploy on demand — it runs exactly the same steps as the scheduled
+run:
+
+- **In the browser:** open **[Actions → "daily" → Run workflow](../../actions/workflows/daily.yml)**
+  and click the green **Run workflow** button. (Add the status badge above to
+  your README for one-click access.)
+- **From the terminal:** `gh workflow run daily.yml` (GitHub CLI), then
+  `gh run watch` to follow it.
+
 **Which channel?** By default the channel comes from [`tg2zola.toml`](tg2zola.toml)
 (`channel = "…"`, committed to the repo). To change it without editing files, set
 a repository **variable** `CHANNEL` (Settings → Secrets and variables → Actions →
@@ -188,6 +209,7 @@ These are *variables*, not secrets — all of it is public.
 | `TAGS_FOOTER` | `--tags-footer` | off | `true` to show the per-post tag footer (tags are clickable in the body regardless) |
 | `NEXT_PREV` | `--no-next-prev` | on | `false` hides the Next/Prev post navigation |
 | `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post "View on Telegram" link |
+| `RSS` | `--no-rss` | on | `false` disables the RSS feed at `/rss.xml` (with reader autodiscovery) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |

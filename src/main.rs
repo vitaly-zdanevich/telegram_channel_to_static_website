@@ -101,6 +101,10 @@ struct GenerateArgs {
     #[arg(long)]
     no_telegram_link: bool,
 
+    /// Disable RSS feed generation (on by default).
+    #[arg(long)]
+    no_rss: bool,
+
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
     #[arg(long)]
@@ -208,6 +212,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             false
         } else {
             fc.telegram_link.unwrap_or(true)
+        },
+        rss: if g.no_rss {
+            false
+        } else {
+            fc.rss.unwrap_or(true)
         },
         pages: g.pages.clone().or(fc.pages).filter(|s| !s.trim().is_empty()),
         posts_per_page: g

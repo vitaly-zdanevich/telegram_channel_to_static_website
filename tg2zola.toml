@@ -37,6 +37,9 @@ description = "A self-contained static backup of a public Telegram channel."
 # Full posts per page on the home feed.
 # posts_per_page = 20
 
+# Generate an RSS feed at /rss.xml (with reader autodiscovery). On by default.
+# rss = true
+
 # Background colors (any CSS color). Defaults: dark #000000, light #ffffff.
 # background_dark = "#000000"
 # background_light = "#ffffff"
