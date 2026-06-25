@@ -1,0 +1,9 @@
+# Rust build output
+/target
+
+# The generated site (content, media, build output) lives on the `blog`
+# branch, never on `main`.
+/site
+
+# Partial downloads
+*.part

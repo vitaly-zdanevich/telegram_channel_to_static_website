@@ -1,0 +1,239 @@
+# tg2zola
+
+Back up a **public Telegram channel** into a **self-contained [Zola](https://www.getzola.org/) static website**.
+
+It scrapes the public web preview (`https://t.me/s/<channel>`), downloads all
+media locally, and regenerates a complete Zola blog on every run. **No Telegram
+bot, token, or API is needed** — it reads only the public web page. The output has
+**no Telegram dependency**: media is local, there are no embeds, and links to the
+channel's *own* posts are rewritten to internal relative links — so the site
+keeps working even if the channel is later removed. Links you wrote to other
+sites (including other Telegram channels) are preserved as normal links. It's a
+backup, not a mirror.
+
+Written in Rust: a single static binary, easy to run locally or in CI.
+
+## What it does
+
+- **Full history** — walks the channel backwards via the preview's `?before=`
+  cursor until the first message, and **regenerates every page** each run.
+- **Self-contained media** — downloads photos, videos, audio (`.ogg/.oga/.mp3`),
+  documents and stickers into each post's bundle (which doubles as the cache).
+  Photos are content-addressed by their stable Telegram file id, so editing a
+  post's text never re-downloads its media, while **replacing** an image (the
+  post then shows as *edited*) fetches the new file and prunes the old one.
+- **True-black default theme** — built-in templates styled `#000` in dark mode
+  via `prefers-color-scheme` (OLED-friendly), with no external theme dependency.
+  An external theme can be layered on with a guaranteed fallback (see [Theming](#theming)).
+- **Smart video handling** (in priority order):
+  1. attached video **+ a YouTube link** → embed YouTube, drop the video;
+  2. directly downloadable video → local `<video>`;
+  3. otherwise → save the **poster frame** + duration (the public page doesn't
+     expose the file; see [Limitations](#limitations)).
+- **Formatting** — bold, italic, strikethrough, code/pre, links and spoilers are
+  converted to Markdown (Telegram's UTF-16 entity offsets handled correctly).
+- **Hashtags → tags** — `#hashtags` become Zola `tags` taxonomy terms, so you get
+  tag pages for free, while still showing as text in the post.
+- **Grouped posts** — albums are one post automatically; bursts of messages
+  posted at the same instant (e.g. forwarding several at once) are merged.
+- **Self-navigating** — a link to another message in the *same* channel becomes a
+  relative link to that post in the blog; links to other channels stay external.
+- **Engagement** — exports per-post **view counts**. (Reactions/likes aren't
+  available from the public page — see [Limitations](#limitations).)
+- **No JavaScript, offline-ready** — the output is pure HTML/CSS (dark mode and
+  spoilers are CSS-only; pagination is removed so there are no redirect scripts).
+  `tg2zola offline <public-dir>` rewrites the built site to relative links so it
+  opens straight from disk via `file://`, no web server needed.
+
+## Install
+
+Grab a static binary for your architecture from the
+[Releases](../../releases) page (Linux `amd64` / `arm64`, musl), or build from
+source:
+
+```sh
+cargo build --release
+# binary at target/release/tg2zola
+```
+
+You also need the [`zola`](https://www.getzola.org/documentation/getting-started/installation/)
+binary to turn the generated content into HTML.
+
+## Usage
+
+```sh
+# Generate the Zola site (scaffolds config + templates on first run):
+tg2zola --channel vitaly_zdanevich_chan --site site --init-site
+
+# Build the static HTML:
+zola --root site build       # output in site/public/
+
+# (optional) Make it viewable with NO web server, straight from disk:
+tg2zola offline site/public  # then open site/public/index.html via file://
+```
+
+Quick local test (one page, ~20 messages):
+
+```sh
+tg2zola --channel <name> --site /tmp/site --init-site --max-pages 1
+```
+
+All options live in [`tg2zola.toml`](tg2zola.toml) (CLI flags override it):
+
+```sh
+tg2zola --config tg2zola.toml
+```
+
+Run `tg2zola --help` for the full flag list.
+
+## How it's wired
+
+```
+t.me/s/<channel>          scrape + paginate        (scrape.rs / parse.rs)
+        │  HTML
+        ▼
+   RawMessage[]           HTML → Markdown           (html2md.rs)
+        │
+        ▼
+     Post[]               group albums + bursts     (group.rs)
+        │
+        ▼
+ site/content/posts/…     reconcile bundles +        (render.rs / site.rs
+        │                 cache-aware media download   + media.rs)
+        ▼  zola build      (the bundle is the cache)
+ site/public/             self-contained static site
+```
+
+Each post becomes a Zola page bundle — `content/posts/<date>-<id>/index.md` with
+TOML front matter and its media files alongside it. `config.toml` and the
+built-in templates are regenerated deterministically every run, and `write_site`
+reconciles the tree: rewrite all Markdown, keep already-cached media, and prune
+deleted posts and stale files.
+
+## Automation (GitHub Actions)
+
+Two workflows are included:
+
+- **[`daily.yml`](.github/workflows/daily.yml)** — runs once a day (and on
+  demand): restore the previous site from the `blog` branch (the media cache) →
+  scrape + regenerate → `zola build` → **deploy to GitHub Pages** (the published
+  result) → commit the refreshed site back to the **`blog` branch**.
+- **[`release.yml`](.github/workflows/release.yml)** — on every pushed `v*` tag,
+  cross-compiles static `amd64` + `arm64` (musl) binaries and uploads them to the
+  GitHub Release.
+
+To enable publishing: in the repo, **Settings → Pages → Build and deployment →
+Source: GitHub Actions**. No secrets are required — everything is public-scrape.
+The published site is always **GitHub Pages**; the `blog` branch is a durable
+copy and never affects what visitors see.
+
+**Which channel?** By default the channel comes from [`tg2zola.toml`](tg2zola.toml)
+(`channel = "…"`, committed to the repo). To change it without editing files, set
+a repository **variable** `CHANNEL` (Settings → Secrets and variables → Actions →
+Variables) — it overrides the config. It's a *variable*, not a secret, since the
+channel is public anyway. (`THEME_REPO` works the same way.)
+
+### The `blog` branch (archive + cache)
+
+Each run commits the generated site (Markdown + media + built-in templates —
+everything except the built `public/` and any external theme) to a `blog`
+branch, leaving `main` code-only. It does double duty:
+
+- **Cache** — the next run restores media from it instead of re-downloading.
+- **Durable archive** — a complete, buildable Zola site you can clone and mirror
+  anywhere, so the backup isn't locked to one platform:
+
+```sh
+git clone -b blog https://github.com/<you>/<repo> my-archive
+zola --root my-archive/site serve          # browse it offline
+
+git -C my-archive remote add gitlab git@gitlab.com:<you>/<repo>.git
+git -C my-archive push gitlab blog          # mirror it elsewhere
+```
+
+Media is committed as plain git blobs; for very large channels consider Git LFS
+or occasional history squashing.
+
+### Theming
+
+The default is the built-in **true-black** theme — zero external dependencies, so
+the site always builds. To use an external [Zola theme](https://www.getzola.org/themes/),
+set a repository **variable** `THEME_REPO` (Settings → Secrets and variables →
+Actions → Variables) to its git URL (https, or ssh with a deploy key). The
+workflow clones it and builds with it — and **if the theme is missing or its
+build fails, it automatically falls back to the built-in templates**, so a theme
+problem can never take the blog offline. Note that external themes expect a
+particular content layout, so not every theme is drop-in compatible.
+
+Cut a release:
+
+```sh
+git tag v0.1.0 && git push origin v0.1.0
+```
+
+## Configuration
+
+Everything is configurable via a repository **variable** (Settings → Secrets and
+variables → Actions → **Variables**) for the GitHub Actions flow, or the
+equivalent CLI flag / [`tg2zola.toml`](tg2zola.toml) key when running locally.
+These are *variables*, not secrets — all of it is public.
+
+| Repo variable | CLI flag | Default | What it does |
+|---|---|---|---|
+| `CHANNEL` | `--channel` | (`tg2zola.toml`) | Public channel to sync |
+| `TITLE` | `--title` | channel username | Blog title (header + `<title>`) |
+| `ABOUT` | `--about` | description + stats + repo link | Custom HTML for the About page body |
+| `PAGES` | `--pages` | — | Extra pages: Markdown, each `# Title` heading starts a new page + nav entry |
+| `POSTS_PER_PAGE` | `--posts-per-page` | `20` | Full posts per page on the home feed |
+| `TAGS_FOOTER` | `--tags-footer` | off | `true` to show the per-post tag footer (tags are clickable in the body regardless) |
+| `NEXT_PREV` | `--no-next-prev` | on | `false` hides the Next/Prev post navigation |
+| `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post "View on Telegram" link |
+| `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
+| `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
+| `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |
+| `THEME_REPO` | `--theme` (name) | built-in black theme | External Zola theme git URL (https/ssh); auto-falls-back if it fails |
+| `REPO_URL` | `--repo-url` | tg2zola repo | "Source repository" link on About (CI auto-sets it to your repo) |
+
+The **About** page is generated with the channel's description and stats
+(subscribers / photos / videos / files / links) plus the repo link; the header
+shows the channel **avatar**; hashtags are clickable in post bodies and produce
+`/tags/<tag>/` pages.
+
+A single `PAGES` variable can define several pages — each `# Title` heading
+starts a new one:
+
+```
+# Page title
+Page content in Markdown (which may contain raw HTML).
+
+# Another page
+More content.
+```
+
+→ `/page-title/` and `/another-page/`, each linked in the nav. No extra
+dependency — Zola already renders Markdown.
+
+## Limitations
+
+The public web preview is the trade-off for needing **zero authentication**:
+
+- **Reactions/likes are not exposed** by `t.me/s/`. We export **view counts**
+  instead. The data model leaves room to add real reactions later via the
+  authenticated MTProto API (the [`grammers`](https://codeberg.org/Lonami/grammers)
+  crate) if you ever want them.
+- **Large videos aren't downloadable** — the preview only serves a poster image
+  and duration for them (short/auto-play videos *are* downloadable). Archiving
+  the actual file would also require the MTProto API.
+- **Sticker packs aren't linkable** — the pack name is loaded by Telegram's
+  JavaScript and isn't in the scraped HTML; stickers are saved as plain images.
+- **Music files (audio documents) aren't downloadable** — their URL isn't in the
+  scraped HTML (only voice notes, with direct `.oga` URLs, are). Like large
+  videos and stickers, they'd need the MTProto API.
+- **YouTube** plays via an iframe on the published HTTPS site; over `file://` the
+  iframe can't load (YouTube needs an origin), so a "Watch on YouTube" link is
+  always shown alongside it.
+- **Public channels only**, with the web preview enabled.
+
+## License
+
+[MIT](LICENSE) © Vitaly Zdanevich

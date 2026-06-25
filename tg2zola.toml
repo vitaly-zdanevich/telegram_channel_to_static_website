@@ -1,0 +1,66 @@
+# tg2zola configuration. CLI flags override anything set here.
+
+# Public channel username (without @). Its web preview must be enabled
+# (open https://t.me/s/<channel> in a browser to check).
+channel = "vitaly_zdanevich_chan"
+
+# Site identity.
+title = "Vitaly Zdanevich — channel backup"
+description = "A self-contained static backup of a public Telegram channel."
+
+# Where the generated site goes (CI overrides on the command line).
+# site = "site"
+
+# Optional external theme (a directory name under site/themes/). CI sets this
+# from the THEME_REPO repository variable; leave unset for the built-in
+# true-black theme.
+# theme = "after-dark"
+
+# base_url is normally provided at build time (GitHub Pages injects it).
+# base_url = "https://example.com"
+
+# Repository link shown on the About page. CI sets this to your deployment repo;
+# defaults to the tg2zola project repo.
+# repo_url = "https://github.com/you/your-repo"
+
+# Custom HTML for the About page body (overrides the default channel/repo text).
+# In CI, set a repository variable named ABOUT instead.
+# about = "<h2>About this archive</h2><p>…</p>"
+
+# Show the per-post tag footer (tags are clickable in the post body regardless).
+# tags_footer = false
+
+# Extra pages — Markdown, each `# Title` heading starts a new page + nav entry.
+# In CI, set the PAGES repository variable instead.
+# pages = "# Page title\nContent in Markdown.\n\n# Another page\nMore content."
+
+# Full posts per page on the home feed.
+# posts_per_page = 20
+
+# Background colors (any CSS color). Defaults: dark #000000, light #ffffff.
+# background_dark = "#000000"
+# background_light = "#ffffff"
+
+# Extra CSS appended to the built-in stylesheet.
+# css = "body { font-family: ui-monospace, monospace; }"
+
+# --- Tuning -----------------------------------------------------------------
+
+# Politeness delay between page fetches, milliseconds.
+page_delay_ms = 600
+
+# Concurrent media downloads.
+concurrency = 4
+
+# Merge consecutive same-author messages posted within this many seconds into a
+# single post (handles bursts of forwarded messages). 1 = essentially "same
+# instant". Increase to group looser bursts; set 0 to disable.
+group_window_secs = 1
+
+# Download media (photos, videos, audio, documents, stickers). Set false for a
+# fast text-only run.
+download_media = true
+
+# Limit how many pages (~20 messages each) to fetch. Leave unset for the full
+# history; set e.g. 3 for quick local tests.
+# max_pages = 3

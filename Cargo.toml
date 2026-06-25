@@ -1,0 +1,35 @@
+[package]
+name = "tg2zola"
+version = "0.1.0"
+edition = "2021"
+description = "Back up a public Telegram channel into a self-contained Zola static website (no Telegram dependency at runtime)"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website"
+keywords = ["telegram", "zola", "static-site", "backup", "archive"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "tg2zola"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "fs", "time"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "gzip"] }
+scraper = "0.21"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+chrono = "0.4"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+futures = "0.3"
+regex = "1"
+once_cell = "1"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"

@@ -1,0 +1,170 @@
+name: daily
+
+# Once a day: restore the previous site from the `blog` branch (which doubles as
+# the media cache), scrape + regenerate, build with Zola, publish to GitHub Pages,
+# then commit the refreshed site back to the `blog` branch.
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # 04:17 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write # push the archive to the `blog` branch
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  ZOLA_VERSION: v0.22.1
+  # Which channel to sync. Set a repository *variable* named CHANNEL to override
+  # the `channel` in tg2zola.toml without editing the file.
+  CHANNEL: ${{ vars.CHANNEL }}
+  # Optional external theme (https or ssh git URL). Set a repository *variable*
+  # named THEME_REPO to override the built-in black theme. Empty = built-in.
+  THEME_REPO: ${{ vars.THEME_REPO }}
+  # Repository link shown on the About page → this deployment repo.
+  REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+  # Optional custom HTML for the About page. Set a repository *variable* named
+  # ABOUT to replace the default channel/repo text.
+  ABOUT: ${{ vars.ABOUT }}
+  # Optional blog title (defaults to the channel name).
+  TITLE: ${{ vars.TITLE }}
+  # Set the repository variable TAGS_FOOTER to "true" to show the per-post tag
+  # footer (tags are clickable in the body regardless).
+  TAGS_FOOTER: ${{ vars.TAGS_FOOTER }}
+  # Extra pages (Markdown, each starting with a `# Title` heading).
+  PAGES: ${{ vars.PAGES }}
+  # Full posts per page on the home feed (default 20).
+  POSTS_PER_PAGE: ${{ vars.POSTS_PER_PAGE }}
+  # Background colors (any CSS color). Defaults: dark #000000, light #ffffff.
+  BACKGROUND_DARK_COLOR: ${{ vars.BACKGROUND_DARK_COLOR }}
+  BACKGROUND_LIGHT_COLOR: ${{ vars.BACKGROUND_LIGHT_COLOR }}
+  # Extra CSS appended to the built-in stylesheet.
+  CSS: ${{ vars.CSS }}
+  # Set to "false" to disable post Next/Prev nav or the "View on Telegram" link.
+  NEXT_PREV: ${{ vars.NEXT_PREV }}
+  TELEGRAM_LINK: ${{ vars.TELEGRAM_LINK }}
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # The `blog` branch is the cache: it holds the prior content + downloaded
+      # media, so we don't re-download everything each run.
+      - name: Restore site from blog branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          remote="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads "$remote" blog >/dev/null 2>&1; then
+            tmp="$RUNNER_TEMP/blog-in"
+            git clone --depth 1 --branch blog "$remote" "$tmp"
+            rm -rf site && mkdir -p site
+            # Theme is re-cloned below; public/ is rebuilt.
+            rsync -a --exclude '/themes' --exclude '/public' "$tmp/site/" site/
+          fi
+
+      - name: Install theme
+        if: env.THEME_REPO != ''
+        run: |
+          set -euo pipefail
+          name=$(basename "${THEME_REPO%.git}")
+          rm -rf site/themes && mkdir -p site/themes
+          git clone --depth 1 "$THEME_REPO" "site/themes/$name"
+          echo "THEME_NAME=$name" >> "$GITHUB_ENV"
+
+      - name: Install Zola
+        run: |
+          curl -fsSL "https://github.com/getzola/zola/releases/download/${ZOLA_VERSION}/zola-${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
+            | sudo tar -xz -C /usr/local/bin zola
+          zola --version
+
+      - name: Build tg2zola
+        run: cargo build --release --locked
+
+      # Generate with the theme if set; if it (or its build) fails, fall back to
+      # the built-in templates so the blog ALWAYS publishes.
+      - name: Generate + build site
+        run: |
+          set -euo pipefail
+          BASE="${{ steps.pages.outputs.base_url }}"
+          gen() {
+            local args=(--config tg2zola.toml --site site --init-site --base-url "$BASE")
+            [ -n "${CHANNEL:-}" ] && args+=(--channel "$CHANNEL")
+            [ -n "${REPO_URL:-}" ] && args+=(--repo-url "$REPO_URL")
+            [ -n "${ABOUT:-}" ] && args+=(--about "$ABOUT")
+            [ -n "${TITLE:-}" ] && args+=(--title "$TITLE")
+            [ "${TAGS_FOOTER:-}" = "true" ] && args+=(--tags-footer)
+            [ -n "${PAGES:-}" ] && args+=(--pages "$PAGES")
+            [ -n "${POSTS_PER_PAGE:-}" ] && args+=(--posts-per-page "$POSTS_PER_PAGE")
+            [ -n "${BACKGROUND_DARK_COLOR:-}" ] && args+=(--background-dark-color "$BACKGROUND_DARK_COLOR")
+            [ -n "${BACKGROUND_LIGHT_COLOR:-}" ] && args+=(--background-light-color "$BACKGROUND_LIGHT_COLOR")
+            [ -n "${CSS:-}" ] && args+=(--css "$CSS")
+            [ "${NEXT_PREV:-}" = "false" ] && args+=(--no-next-prev)
+            [ "${TELEGRAM_LINK:-}" = "false" ] && args+=(--no-telegram-link)
+            [ -n "${1:-}" ] && args+=(--theme "$1")
+            ./target/release/tg2zola "${args[@]}"
+          }
+          if [ -n "${THEME_NAME:-}" ]; then
+            gen "$THEME_NAME"
+            if zola --root site build --base-url "$BASE"; then
+              exit 0
+            fi
+            echo "::warning::Theme '$THEME_NAME' failed to build — falling back to the built-in templates."
+            rm -rf site/config.toml site/templates
+          fi
+          gen ""
+          zola --root site build --base-url "$BASE"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Commit site to blog branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          remote="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          work="$RUNNER_TEMP/blog-out"; rm -rf "$work"
+          if git ls-remote --exit-code --heads "$remote" blog >/dev/null 2>&1; then
+            git clone --depth 1 --branch blog "$remote" "$work"
+          else
+            git clone --depth 1 "$remote" "$work"
+            git -C "$work" checkout --orphan blog
+            git -C "$work" rm -rf . >/dev/null 2>&1 || true
+          fi
+          # Mirror content + media + templates; the external theme is re-cloned
+          # each run and the built output is regenerated, so both are excluded.
+          rsync -a --delete --exclude '/public' --exclude '/themes' site/ "$work/site/"
+          cd "$work"
+          git add -A -f site
+          if git diff --cached --quiet; then
+            echo "No changes to back up."
+          else
+            git commit -m "blog #${GITHUB_RUN_NUMBER}: $(date -u +%FT%TZ)"
+            git push origin HEAD:blog
+          fi
