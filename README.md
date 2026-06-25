@@ -46,9 +46,10 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   relative link to that post in the blog; links to other channels stay external.
 - **Engagement** — exports per-post **view counts**. (Reactions/likes aren't
   available from the public page — see [Limitations](#limitations).)
-- **RSS feed** — a standard `/rss.xml` of the latest posts (with full content),
-  advertised via a `<link rel="alternate">` so feed readers auto-discover it
-  from the site URL. On by default; disable with `RSS=false` / `--no-rss`.
+- **RSS feed** — a standard `/rss.xml` of **every post** with full content (a
+  complete feed, not just recent items), advertised via a `<link rel="alternate">`
+  so feed readers auto-discover it from the site URL. On by default; disable
+  with `RSS=false` / `--no-rss`.
 - **Rich link previews + Mastodon** — every page emits Open Graph and Twitter
   Card tags (title, description, the post's first image), so shared links render
   as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews

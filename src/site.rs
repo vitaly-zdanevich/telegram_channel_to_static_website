@@ -144,9 +144,10 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
         Some(t) => format!("theme = \"{}\"\n", toml_escape(t)),
         None => String::new(),
     };
-    // Zola's built-in RSS 2.0 feed; cap it so a huge archive stays a sane size.
+    // Zola's built-in RSS 2.0 feed. No feed_limit: include every post, full
+    // text — the feed is a complete archive, not just a recent-items teaser.
     let feeds = if s.rss {
-        "generate_feeds = true\nfeed_filenames = [\"rss.xml\"]\nfeed_limit = 50"
+        "generate_feeds = true\nfeed_filenames = [\"rss.xml\"]"
     } else {
         "generate_feeds = false"
     };
