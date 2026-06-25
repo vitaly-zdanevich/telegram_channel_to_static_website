@@ -221,6 +221,7 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
         .replace("__FEEDS__", feeds)
         .replace("__RSS__", if s.rss { "true" } else { "false" })
         .replace("__CHANNEL__", &toml_escape(&s.channel))
+        .replace("__DATE_FORMAT__", &toml_escape(&s.date_format))
         .replace("__TAGS_FOOTER__", if s.tags_footer { "true" } else { "false" })
         .replace("__NEXT_PREV__", if s.next_prev { "true" } else { "false" })
         .replace(
@@ -584,6 +585,7 @@ render_emoji = false
 [extra]
 generator = "tg2zola"
 channel = "__CHANNEL__"
+date_format = "__DATE_FORMAT__"
 tags_footer = __TAGS_FOOTER__
 next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
@@ -651,7 +653,7 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
     <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
       <h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
       <p class="meta">
-        <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+        <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format=config.extra.date_format) }}</time>
         {% if page.extra.views %}· 👁 {{ page.extra.views }}{% endif %}
         {% if page.extra.forwarded_from %}· forwarded from {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
       </p>
@@ -677,7 +679,7 @@ const SECTION_HTML: &str = r#"{% extends "base.html" %}
   {% for page in paginator.pages %}
     <li>
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+      <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format=config.extra.date_format) }}</time>
       {% if page.extra.views %}<span class="views">👁 {{ page.extra.views }}</span>{% endif %}
     </li>
   {% endfor %}
@@ -696,7 +698,7 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
   <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
     <h1>{{ page.title }}</h1>
     <p class="meta">
-      {% if page.date %}<time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d %H:%M") }}</time>{% endif %}
+      {% if page.date %}<time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format=config.extra.date_format) }}</time>{% endif %}
       {% if page.extra.views %}· 👁 {{ page.extra.views }} views{% endif %}
       {% if page.extra.forwarded_from %}· forwarded from {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
     </p>
@@ -727,7 +729,7 @@ const TAGS_SINGLE: &str = r#"{% extends "base.html" %}
   {% for page in term.pages %}
     <li>
       <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
-      <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+      <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format=config.extra.date_format) }}</time>
     </li>
   {% endfor %}
   </ul>

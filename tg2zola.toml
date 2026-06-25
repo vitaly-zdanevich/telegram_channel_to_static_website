@@ -53,6 +53,10 @@ description = "A self-contained static backup of a public Telegram channel."
 # Footer content — plain text, Markdown or HTML. Empty = no footer.
 # footer = "© 2026 · [source](https://github.com/you/repo)"
 
+# strftime format for displayed dates. Default "%Y %B %d" → 2025 October 28.
+# Use "%Y" for year only (hides month/day/time).
+# date_format = "%Y %B %d"
+
 # Mastodon handle (@user@instance) for the fediverse:creator byline on shared
 # links and a rel="me" profile-verification link. In CI, set FEDIVERSE_CREATOR.
 # fediverse_creator = "@you@fosstodon.org"

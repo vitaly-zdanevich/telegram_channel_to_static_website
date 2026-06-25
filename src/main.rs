@@ -130,6 +130,11 @@ struct GenerateArgs {
     #[arg(long)]
     pages_host: Option<String>,
 
+    /// strftime format for displayed dates (default `%Y %B %d`, e.g.
+    /// "2025 October 28"; use `%Y` for year only).
+    #[arg(long)]
+    date_format: Option<String>,
+
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
     #[arg(long)]
@@ -277,6 +282,12 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .clone()
             .or(fc.pages_host)
             .filter(|s| !s.trim().is_empty()),
+        date_format: g
+            .date_format
+            .clone()
+            .or(fc.date_format)
+            .filter(|s| !s.trim().is_empty())
+            .unwrap_or_else(|| "%Y %B %d".to_string()),
         background_dark: g
             .background_dark_color
             .clone()

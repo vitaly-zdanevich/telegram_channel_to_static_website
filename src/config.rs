@@ -40,6 +40,9 @@ pub struct FileConfig {
     /// Static host for the About-page size limit (`github`/`gitlab`/`none`).
     /// Auto-detected from base_url when unset.
     pub pages_host: Option<String>,
+    /// strftime format for displayed dates (default `%Y %B %d` → "2025 October 28";
+    /// use `%Y` for year only).
+    pub date_format: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
     pub pages: Option<String>,
     /// Number of full posts per page on the home feed (default 20).
@@ -106,6 +109,8 @@ pub struct Settings {
     /// Static host for the About-page size limit (github/gitlab); auto-detected
     /// from base_url when None.
     pub pages_host: Option<String>,
+    /// strftime format for displayed dates.
+    pub date_format: String,
     pub pages: Option<String>,
     pub posts_per_page: usize,
     pub title_max_len: usize,

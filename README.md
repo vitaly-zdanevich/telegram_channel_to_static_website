@@ -223,6 +223,7 @@ These are *variables*, not secrets — all of it is public.
 | `TITLE_MAX_LEN` | `--title-max-len` | `200` | Max post-title length (chars); a truncated title keeps its full first sentence in the body |
 | `FOOTER` | `--footer` | — | Footer content — plain text, Markdown or HTML |
 | `PAGES_HOST` | `--pages-host` | auto | Host for the About-page size limit: `github` / `gitlab` / `none` (auto-detected from the URL) |
+| `DATE_FORMAT` | `--date-format` | `%Y %B %d` | strftime format for displayed dates (e.g. `2025 October 28`; `%Y` for year only) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |

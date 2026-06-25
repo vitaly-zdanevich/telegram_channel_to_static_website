@@ -66,6 +66,9 @@ env:
   # Static host for the About-page size limit: github / gitlab / none. Empty =
   # auto-detect from the Pages URL (github.io / gitlab.io).
   PAGES_HOST: ${{ vars.PAGES_HOST }}
+  # strftime format for displayed dates (default "%Y %B %d" → 2025 October 28;
+  # use "%Y" for year only).
+  DATE_FORMAT: ${{ vars.DATE_FORMAT }}
 
 jobs:
   build-deploy:
@@ -143,6 +146,7 @@ jobs:
             [ -n "${SEARCH_URL:-}" ] && args+=(--search-url "$SEARCH_URL")
             [ -n "${FOOTER:-}" ] && args+=(--footer "$FOOTER")
             [ -n "${PAGES_HOST:-}" ] && args+=(--pages-host "$PAGES_HOST")
+            [ -n "${DATE_FORMAT:-}" ] && args+=(--date-format "$DATE_FORMAT")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
           }
