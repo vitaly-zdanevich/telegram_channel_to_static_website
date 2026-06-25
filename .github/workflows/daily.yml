@@ -50,6 +50,9 @@ env:
   NEXT_PREV: ${{ vars.NEXT_PREV }}
   TELEGRAM_LINK: ${{ vars.TELEGRAM_LINK }}
   RSS: ${{ vars.RSS }}
+  # Mastodon handle (@user@instance) → fediverse:creator byline on shared-link
+  # previews + a rel="me" profile-verification link. Leave empty to omit.
+  FEDIVERSE_CREATOR: ${{ vars.FEDIVERSE_CREATOR }}
 
 jobs:
   build-deploy:
@@ -121,6 +124,7 @@ jobs:
             [ "${NEXT_PREV:-}" = "false" ] && args+=(--no-next-prev)
             [ "${TELEGRAM_LINK:-}" = "false" ] && args+=(--no-telegram-link)
             [ "${RSS:-}" = "false" ] && args+=(--no-rss)
+            [ -n "${FEDIVERSE_CREATOR:-}" ] && args+=(--fediverse-creator "$FEDIVERSE_CREATOR")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
           }

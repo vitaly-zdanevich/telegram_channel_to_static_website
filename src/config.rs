@@ -29,6 +29,8 @@ pub struct FileConfig {
     pub telegram_link: Option<bool>,
     /// Generate an RSS feed at /rss.xml (default on).
     pub rss: Option<bool>,
+    /// Mastodon `@user@instance` handle for `fediverse:creator` + `rel="me"`.
+    pub fediverse_creator: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
     pub pages: Option<String>,
     /// Number of full posts per page on the home feed (default 20).
@@ -70,6 +72,7 @@ pub struct Settings {
     pub next_prev: bool,
     pub telegram_link: bool,
     pub rss: bool,
+    pub fediverse_creator: Option<String>,
     pub pages: Option<String>,
     pub posts_per_page: usize,
     pub background_dark: String,

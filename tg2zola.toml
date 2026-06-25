@@ -40,6 +40,10 @@ description = "A self-contained static backup of a public Telegram channel."
 # Generate an RSS feed at /rss.xml (with reader autodiscovery). On by default.
 # rss = true
 
+# Mastodon handle (@user@instance) for the fediverse:creator byline on shared
+# links and a rel="me" profile-verification link. In CI, set FEDIVERSE_CREATOR.
+# fediverse_creator = "@you@fosstodon.org"
+
 # Background colors (any CSS color). Defaults: dark #000000, light #ffffff.
 # background_dark = "#000000"
 # background_light = "#ffffff"

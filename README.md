@@ -49,6 +49,10 @@ Written in Rust: a single static binary, easy to run locally or in CI.
 - **RSS feed** — a standard `/rss.xml` of the latest posts (with full content),
   advertised via a `<link rel="alternate">` so feed readers auto-discover it
   from the site URL. On by default; disable with `RSS=false` / `--no-rss`.
+- **Rich link previews + Mastodon** — every page emits Open Graph and Twitter
+  Card tags (title, description, the post's first image), so shared links render
+  as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews
+  and verify the site on your profile (see [Fediverse](#fediverse--mastodon)).
 - **No JavaScript, offline-ready** — the output is pure HTML/CSS (dark mode and
   spoilers are CSS-only; pagination is removed so there are no redirect scripts).
   `tg2zola offline <public-dir>` rewrites the built site to relative links so it
@@ -210,6 +214,7 @@ These are *variables*, not secrets — all of it is public.
 | `NEXT_PREV` | `--no-next-prev` | on | `false` hides the Next/Prev post navigation |
 | `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post "View on Telegram" link |
 | `RSS` | `--no-rss` | on | `false` disables the RSS feed at `/rss.xml` (with reader autodiscovery) |
+| `FEDIVERSE_CREATOR` | `--fediverse-creator` | — | Mastodon `@user@instance` → `fediverse:creator` byline + `rel="me"` profile link |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |
@@ -234,6 +239,31 @@ More content.
 
 → `/page-title/` and `/another-page/`, each linked in the nav. No extra
 dependency — Zola already renders Markdown.
+
+## Fediverse / Mastodon
+
+Every page carries Open Graph + Twitter Card tags, so a shared post link renders
+as a card (title, description, the post's first image) in Mastodon, Slack,
+Discord, X, etc. Set `FEDIVERSE_CREATOR` to your `@user@instance` handle to also:
+
+- add a **`fediverse:creator`** byline, so Mastodon shows "*by @you@instance*" on
+  the link preview and links to your profile;
+- emit a **`rel="me"`** link to your profile, so you can add this site to your
+  Mastodon profile's metadata and get the **verified** (green) checkmark.
+
+**Can people follow the blog *from* Mastodon?** Not directly — a static site
+can't be an ActivityPub actor (that needs a live server speaking WebFinger +
+ActivityPub). Two ways to let people subscribe anyway:
+
+- **RSS** — anyone can follow `/rss.xml` in a feed reader today (many Mastodon
+  users keep one). This is built in and on by default.
+- **A bridge** — point the RSS feed at an RSS→ActivityPub bridge such as
+  [rss-parrot](https://rss-parrot.net/) or [Bridgy Fed](https://fed.brid.gy/),
+  which expose a real `@handle` that Mastodon users can **follow**, relaying new
+  posts into their timeline. No server of your own required.
+
+So: rich previews + author attribution + profile verification work out of the
+box; true "follow from Mastodon" is one bridge away, using the RSS feed as input.
 
 ## Limitations
 

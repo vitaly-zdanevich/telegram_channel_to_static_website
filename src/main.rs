@@ -105,6 +105,11 @@ struct GenerateArgs {
     #[arg(long)]
     no_rss: bool,
 
+    /// Mastodon handle (`@user@instance`) for the `fediverse:creator` byline on
+    /// link previews and a `rel="me"` profile-verification link.
+    #[arg(long)]
+    fediverse_creator: Option<String>,
+
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
     #[arg(long)]
@@ -218,6 +223,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.rss.unwrap_or(true)
         },
+        fediverse_creator: g
+            .fediverse_creator
+            .clone()
+            .or(fc.fediverse_creator)
+            .filter(|s| !s.trim().is_empty()),
         pages: g.pages.clone().or(fc.pages).filter(|s| !s.trim().is_empty()),
         posts_per_page: g
             .posts_per_page

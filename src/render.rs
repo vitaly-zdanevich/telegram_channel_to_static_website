@@ -112,6 +112,8 @@ pub fn render_post(
     let mut downloads = Vec::new();
     let mut body = String::new();
     let mut idx = 0usize;
+    // First image in the post → og:image for social/Mastodon link previews.
+    let mut og_image: Option<String> = None;
 
     if !body_src.trim().is_empty() {
         let text = links.rewrite(&body_src);
@@ -139,6 +141,9 @@ pub fn render_post(
             Media::Photo { url, key } | Media::Sticker { url, key } => {
                 let (fname, force) = media_name(key, url, "jpg", idx, post.edited);
                 push_dl(&mut downloads, url, &fname, force);
+                if og_image.is_none() {
+                    og_image = Some(fname.clone());
+                }
                 body.push_str(&format!("![]({fname})\n\n"));
             }
             Media::Video { url } => {
@@ -157,6 +162,9 @@ pub fn render_post(
                 if let Some(p) = poster {
                     let fname = format!("{idx:02}.{}", ext_from_url(p, "jpg"));
                     push_dl(&mut downloads, p, &fname, post.edited);
+                    if og_image.is_none() {
+                        og_image = Some(fname.clone());
+                    }
                     body.push_str(&format!("![video]({fname})\n\n"));
                 }
                 let label = if dur.is_empty() {
@@ -185,9 +193,10 @@ pub fn render_post(
         }
     }
 
+    let description = excerpt(&body_src, 200);
     let index_md = format!(
         "{}{}\n",
-        front_matter(post, &title, newer, older),
+        front_matter(post, &title, &description, og_image.as_deref(), newer, older),
         body.trim_end()
     );
     RenderedPost {
@@ -231,6 +240,8 @@ fn push_dl(downloads: &mut Vec<Download>, url: &str, fname: &str, force: bool) {
 fn front_matter(
     post: &Post,
     title: &str,
+    description: &str,
+    og_image: Option<&str>,
     newer: Option<(u64, &str)>,
     older: Option<(u64, &str)>,
 ) -> String {
@@ -238,6 +249,10 @@ fn front_matter(
     fm.push_str(&format!("title = {}\n", toml_str(title)));
     // RFC3339 is a valid TOML offset date-time literal (unquoted).
     fm.push_str(&format!("date = {}\n", post.date.to_rfc3339()));
+    // Plain-text excerpt → <meta description> + og:/twitter: descriptions.
+    if !description.is_empty() {
+        fm.push_str(&format!("description = {}\n", toml_str(description)));
+    }
 
     if !post.tags.is_empty() {
         fm.push_str("\n[taxonomies]\n");
@@ -250,6 +265,9 @@ fn front_matter(
         "tg_url = \"https://t.me/{}/{}\"\n",
         post.channel, post.primary_id
     ));
+    if let Some(img) = og_image {
+        fm.push_str(&format!("og_image = {}\n", toml_str(img)));
+    }
     if let Some((id, t)) = newer {
         fm.push_str(&format!("next_id = {id}\n"));
         fm.push_str(&format!("next_title = {}\n", toml_str(t)));
@@ -283,6 +301,25 @@ static BARE_URL: Lazy<Regex> = Lazy::new(|| Regex::new(r"https?://\S+").unwrap()
 static TAG_SC: Lazy<Regex> =
     Lazy::new(|| Regex::new(r#"\{\{\s*tag\(t="([^"]*)"\)\s*\}\}"#).unwrap());
 static HTML_TAG: Lazy<Regex> = Lazy::new(|| Regex::new(r"<[^>]+>").unwrap());
+static SHORTCODE: Lazy<Regex> = Lazy::new(|| Regex::new(r"\{\{[^}]*\}\}").unwrap());
+static IMG_MD: Lazy<Regex> = Lazy::new(|| Regex::new(r"!\[[^\]]*\]\([^)]*\)").unwrap());
+static MD_LINK_LABEL: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"\[([^\]]*)\]\([^)]*\)").unwrap());
+
+/// A plain-text excerpt for the meta/OG/Twitter description: keep hashtag words,
+/// drop shortcodes, images, links and Markdown markup, collapse whitespace.
+fn excerpt(md: &str, max: usize) -> String {
+    let mut s = TAG_SC.replace_all(md, "$1").to_string();
+    s = SHORTCODE.replace_all(&s, " ").to_string();
+    s = IMG_MD.replace_all(&s, " ").to_string();
+    s = MD_LINK_LABEL.replace_all(&s, "$1").to_string();
+    s = AUTOLINK.replace_all(&s, " ").to_string();
+    s = BARE_URL.replace_all(&s, " ").to_string();
+    s = HTML_TAG.replace_all(&s, " ").to_string();
+    s = s.replace(['*', '_', '`', '~', '#', '>', '\\'], "");
+    let joined = s.split_whitespace().collect::<Vec<_>>().join(" ");
+    truncate_chars(joined.trim(), max)
+}
 
 /// The post title plus the body to render. The title is the first body line
 /// carrying real prose (keeping hashtag words, dropping `#`); falls back to the

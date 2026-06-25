@@ -164,6 +164,18 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
     } else {
         ""
     };
+    // Mastodon: the creator handle drives `fediverse:creator` (author byline on
+    // link previews) and a derived `rel="me"` profile link (profile verification).
+    let fedi = match &s.fediverse_creator {
+        Some(h) => {
+            let mut out = format!("fediverse_creator = \"{}\"", toml_escape(h));
+            if let Some(url) = fediverse_profile_url(h) {
+                out.push_str(&format!("\nfediverse_profile = \"{}\"", toml_escape(&url)));
+            }
+            out
+        }
+        None => String::new(),
+    };
     let nav = if pages.is_empty() {
         String::new()
     } else {
@@ -193,9 +205,21 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
             "__TELEGRAM_LINK__",
             if s.telegram_link { "true" } else { "false" },
         )
+        .replace("__FEDI__", &fedi)
         .replace("__AVATAR__", avatar)
         .replace("__NAV__", &nav)
         .replace("__TAGS__", &tags_toml)
+}
+
+/// Derive a Mastodon profile URL from an `@user@instance.tld` handle, for the
+/// `rel="me"` verification link. Returns `None` for a malformed handle.
+fn fediverse_profile_url(handle: &str) -> Option<String> {
+    let h = handle.trim().trim_start_matches('@');
+    let (user, instance) = h.split_once('@')?;
+    if user.is_empty() || !instance.contains('.') || instance.contains('/') {
+        return None;
+    }
+    Some(format!("https://{instance}/@{user}"))
 }
 
 /// Homepage = the paginated full-posts feed (posts bubble up from the
@@ -384,6 +408,7 @@ tags_footer = __TAGS_FOOTER__
 next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
+__FEDI__
 __AVATAR__
 __NAV__
 __TAGS__
@@ -397,6 +422,26 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   {% if config.extra.avatar %}<link rel="icon" type="image/jpeg" href="{{ get_url(path=config.extra.avatar) }}">{% endif %}
   {% if config.extra.rss %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path='rss.xml', trailing_slash=false) | safe }}">{% endif %}
+  {# Social cards (Open Graph + Twitter) and Mastodon attribution. `page` is
+     only defined on post/page templates; sections fall back to site defaults. #}
+  {% set og_title = page.title | default(value=config.title) %}
+  {% set og_desc = page.description | default(value=config.description) %}
+  {% set og_url = page.permalink | default(value=config.base_url) %}
+  {% set_global og_image = "" %}
+  {% if page.extra.og_image %}{% set_global og_image = page.permalink ~ page.extra.og_image %}
+  {% elif config.extra.avatar %}{% set_global og_image = get_url(path=config.extra.avatar) %}{% endif %}
+  {% if og_desc %}<meta name="description" content="{{ og_desc }}">{% endif %}
+  <meta property="og:site_name" content="{{ config.title }}">
+  <meta property="og:title" content="{{ og_title }}">
+  {% if og_desc %}<meta property="og:description" content="{{ og_desc }}">{% endif %}
+  <meta property="og:url" content="{{ og_url | safe }}">
+  {% if page.date %}<meta property="og:type" content="article"><meta property="article:published_time" content="{{ page.date }}">{% else %}<meta property="og:type" content="website">{% endif %}
+  {% if og_image %}<meta property="og:image" content="{{ og_image | safe }}"><meta name="twitter:card" content="summary_large_image">{% else %}<meta name="twitter:card" content="summary">{% endif %}
+  <meta name="twitter:title" content="{{ og_title }}">
+  {% if og_desc %}<meta name="twitter:description" content="{{ og_desc }}">{% endif %}
+  {% if og_image %}<meta name="twitter:image" content="{{ og_image | safe }}">{% endif %}
+  {% if config.extra.fediverse_creator %}<meta name="fediverse:creator" content="{{ config.extra.fediverse_creator }}">{% endif %}
+  {% if config.extra.fediverse_profile %}<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">{% endif %}
   <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
 </head>
 <body>
