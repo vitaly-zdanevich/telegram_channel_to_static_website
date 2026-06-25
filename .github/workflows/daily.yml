@@ -53,6 +53,19 @@ env:
   # Mastodon handle (@user@instance) → fediverse:creator byline on shared-link
   # previews + a rel="me" profile-verification link. Leave empty to omit.
   FEDIVERSE_CREATOR: ${{ vars.FEDIVERSE_CREATOR }}
+  # Max post-title length (chars) before truncation (default 200); a truncated
+  # title keeps its full first sentence in the body.
+  TITLE_MAX_LEN: ${{ vars.TITLE_MAX_LEN }}
+  # Header search box. SEARCH_ENGINE: google (default, JS-free form) / duckduckgo
+  # / yandex / bing / none. SEARCH_URL: a custom prefix the query is appended to
+  # (overrides the engine; uses a tiny inline Enter handler).
+  SEARCH_ENGINE: ${{ vars.SEARCH_ENGINE }}
+  SEARCH_URL: ${{ vars.SEARCH_URL }}
+  # Footer content (plain text, Markdown or HTML). Empty = no footer.
+  FOOTER: ${{ vars.FOOTER }}
+  # Static host for the About-page size limit: github / gitlab / none. Empty =
+  # auto-detect from the Pages URL (github.io / gitlab.io).
+  PAGES_HOST: ${{ vars.PAGES_HOST }}
 
 jobs:
   build-deploy:
@@ -125,6 +138,11 @@ jobs:
             [ "${TELEGRAM_LINK:-}" = "false" ] && args+=(--no-telegram-link)
             [ "${RSS:-}" = "false" ] && args+=(--no-rss)
             [ -n "${FEDIVERSE_CREATOR:-}" ] && args+=(--fediverse-creator "$FEDIVERSE_CREATOR")
+            [ -n "${TITLE_MAX_LEN:-}" ] && args+=(--title-max-len "$TITLE_MAX_LEN")
+            [ -n "${SEARCH_ENGINE:-}" ] && args+=(--search-engine "$SEARCH_ENGINE")
+            [ -n "${SEARCH_URL:-}" ] && args+=(--search-url "$SEARCH_URL")
+            [ -n "${FOOTER:-}" ] && args+=(--footer "$FOOTER")
+            [ -n "${PAGES_HOST:-}" ] && args+=(--pages-host "$PAGES_HOST")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
           }

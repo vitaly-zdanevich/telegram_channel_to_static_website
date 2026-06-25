@@ -9,7 +9,7 @@ use std::collections::HashSet;
 use std::fs;
 use std::path::Path;
 
-use crate::config::Settings;
+use crate::config::{Search, Settings};
 use crate::model::ChannelInfo;
 use crate::render::RenderedPost;
 
@@ -55,6 +55,7 @@ pub fn scaffold(s: &Settings, info: Option<&ChannelInfo>, tags: &[(String, usize
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
+    write_file(&site.join("templates/shortcodes/avatar.html"), AVATAR_SHORTCODE)?;
 
     let builtins = [
         ("templates/base.html", BASE_HTML),
@@ -177,6 +178,26 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
         }
         None => String::new(),
     };
+    let search = match &s.search {
+        Search::None => String::new(),
+        Search::Google { site } => {
+            let mut o = String::from("search_google = true");
+            if let Some(h) = site {
+                o.push_str(&format!("\nsearch_site = \"{}\"", toml_escape(h)));
+            }
+            o
+        }
+        Search::Custom { url } => format!("search_url = \"{}\"", toml_escape(url)),
+    };
+    // Footer may be multi-line Markdown/HTML, so escape newlines for the TOML
+    // basic string; the template renders it via the `markdown` filter.
+    let footer = match &s.footer {
+        Some(f) => format!(
+            "footer = \"{}\"",
+            toml_escape(f).replace('\n', "\\n").replace('\r', "")
+        ),
+        None => String::new(),
+    };
     let nav = if pages.is_empty() {
         String::new()
     } else {
@@ -207,6 +228,8 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
             if s.telegram_link { "true" } else { "false" },
         )
         .replace("__FEDI__", &fedi)
+        .replace("__SEARCH__", &search)
+        .replace("__FOOTER__", &footer)
         .replace("__AVATAR__", avatar)
         .replace("__NAV__", &nav)
         .replace("__TAGS__", &tags_toml)
@@ -221,6 +244,146 @@ fn fediverse_profile_url(handle: &str) -> Option<String> {
         return None;
     }
     Some(format!("https://{instance}/@{user}"))
+}
+
+/// On-disk size split by file kind, for the About page.
+#[derive(Default)]
+pub struct SizeBreakdown {
+    pub text: u64,
+    pub images: u64,
+    pub videos: u64,
+    pub audio: u64,
+    pub other: u64,
+}
+
+impl SizeBreakdown {
+    pub fn total(&self) -> u64 {
+        self.text + self.images + self.videos + self.audio + self.other
+    }
+}
+
+/// Walk directory trees and total file sizes per kind (by extension).
+pub fn size_breakdown(roots: &[&Path]) -> SizeBreakdown {
+    let mut b = SizeBreakdown::default();
+    for root in roots {
+        accumulate(root, &mut b);
+    }
+    b
+}
+
+fn accumulate(path: &Path, b: &mut SizeBreakdown) {
+    let Ok(entries) = fs::read_dir(path) else {
+        return;
+    };
+    for e in entries.flatten() {
+        let p = e.path();
+        if p.is_dir() {
+            accumulate(&p, b);
+        } else if let Ok(m) = e.metadata() {
+            let ext = p
+                .extension()
+                .and_then(|x| x.to_str())
+                .unwrap_or("")
+                .to_lowercase();
+            let bucket = match ext.as_str() {
+                "md" | "txt" => &mut b.text,
+                "jpg" | "jpeg" | "png" | "webp" | "gif" | "svg" | "bmp" => &mut b.images,
+                "mp4" | "webm" | "mov" | "mkv" | "avi" | "m4v" => &mut b.videos,
+                "mp3" | "ogg" | "oga" | "opus" | "m4a" | "wav" | "flac" => &mut b.audio,
+                _ => &mut b.other,
+            };
+            *bucket += m.len();
+        }
+    }
+}
+
+/// Human-readable byte size, e.g. `928 MB` / `1.4 GB`.
+pub fn human_size(bytes: u64) -> String {
+    const UNITS: [&str; 5] = ["B", "KB", "MB", "GB", "TB"];
+    let mut v = bytes as f64;
+    let mut i = 0;
+    while v >= 1024.0 && i < UNITS.len() - 1 {
+        v /= 1024.0;
+        i += 1;
+    }
+    if i == 0 {
+        format!("{bytes} B")
+    } else if v >= 100.0 {
+        format!("{v:.0} {}", UNITS[i])
+    } else {
+        format!("{v:.1} {}", UNITS[i])
+    }
+}
+
+/// A static host's published-site size limit, for the About page.
+pub struct PagesLimit {
+    pub name: &'static str,
+    pub display: &'static str,
+    pub bytes: u64,
+    pub doc: &'static str,
+}
+
+/// Detect the static host (for the About-page size limit) from an explicit
+/// override or the base URL (github.io / gitlab.io). Both GitHub and GitLab
+/// Pages cap a published site at ~1 GB. None = unknown host (no limit shown).
+pub fn pages_limit(base_url: &str, explicit: Option<&str>) -> Option<PagesLimit> {
+    const GIB: u64 = 1024 * 1024 * 1024;
+    let key = match explicit.map(|s| s.trim().to_lowercase()).filter(|s| !s.is_empty()) {
+        Some(e) if matches!(e.as_str(), "none" | "off" | "no") => return None,
+        Some(e) => e,
+        None => base_url.to_lowercase(),
+    };
+    if key.contains("github") {
+        Some(PagesLimit {
+            name: "GitHub Pages",
+            display: "1 GB",
+            bytes: GIB,
+            doc: "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits",
+        })
+    } else if key.contains("gitlab") {
+        Some(PagesLimit {
+            name: "GitLab Pages",
+            display: "1 GB",
+            bytes: GIB,
+            doc: "https://docs.gitlab.com/ee/user/project/pages/",
+        })
+    } else {
+        None
+    }
+}
+
+/// Fill the About page's size placeholders: `__TOTAL_SIZE__` (total),
+/// `__PERCENT__` (share of the host limit, if known) and `__SIZE_BREAKDOWN__`
+/// (per-kind sizes). Computed after media download, so it's the real footprint.
+pub fn set_about_size(site: &Path, b: &SizeBreakdown, limit: Option<u64>) {
+    let about = site.join("content/pages/about.md");
+    let Ok(s) = fs::read_to_string(&about) else {
+        return;
+    };
+    if !s.contains("__TOTAL_SIZE__") {
+        return;
+    }
+    let total = b.total();
+    let percent = limit
+        .filter(|&m| m > 0)
+        .map(|m| format!("{:.0}%", total as f64 / m as f64 * 100.0))
+        .unwrap_or_default();
+    let parts: Vec<String> = [
+        ("Text", b.text),
+        ("Images", b.images),
+        ("Videos", b.videos),
+        ("Audio", b.audio),
+        ("Other", b.other),
+    ]
+    .iter()
+    .filter(|(_, v)| *v > 0)
+    .map(|(n, v)| format!("**{n}** {}", human_size(*v)))
+    .collect();
+    let out = s
+        .replace("__TOTAL_SIZE__", &human_size(total))
+        .replace("__PERCENT__", &percent)
+        .replace("__SIZE_BREAKDOWN__", &parts.join(" · "));
+    let _ = fs::write(&about, out);
 }
 
 /// Homepage = the paginated full-posts feed (posts bubble up from the
@@ -248,11 +411,16 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
         // Custom HTML (from --about / ABOUT) becomes the page body verbatim.
         Some(html) => html.trim().to_string(),
         None => {
-            let mut b = format!(
-                "A self-contained static backup of the public Telegram channel \
+            let mut b = String::new();
+            // Channel avatar at its original size (base_url-aware via shortcode).
+            if s.site.join("static/channel-avatar.jpg").exists() {
+                b.push_str("{{ avatar() }}\n\n");
+            }
+            b.push_str(&format!(
+                "A static mirror of the public Telegram channel \
 **[@{ch}](https://t.me/{ch})**.\n\n",
                 ch = s.channel,
-            );
+            ));
             if let Some(info) = info {
                 if let Some(desc) = &info.description_md {
                     b.push_str(desc.trim());
@@ -268,6 +436,16 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                     b.push_str("\n\n");
                 }
             }
+            let size_line = match pages_limit(&s.base_url, s.pages_host.as_deref()) {
+                Some(l) => format!(
+                    "The site occupies **__TOTAL_SIZE__** — **__PERCENT__** of the \
+[{} {} limit]({}).\n\n",
+                    l.display, l.name, l.doc
+                ),
+                None => "The site occupies **__TOTAL_SIZE__** on disk.\n\n".to_string(),
+            };
+            b.push_str(&size_line);
+            b.push_str("By kind: __SIZE_BREAKDOWN__.\n\n");
             b.push_str(&format!(
                 "Source repository: [{repo}]({repo})\n\n\
 Generated by [tg2zola](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website), \
@@ -394,6 +572,7 @@ default_language = "en"
 __THEME____FEEDS__
 compile_sass = false
 build_search_index = false
+minify_html = true
 
 taxonomies = [
   { name = "tags" },
@@ -410,6 +589,8 @@ next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
 __FEDI__
+__SEARCH__
+__FOOTER__
 __AVATAR__
 __NAV__
 __TAGS__
@@ -454,12 +635,11 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
       <a href="{{ get_url(path='/about/') }}">About</a>
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
     </nav>
+    {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="Search" aria-label="Search this site" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="Search" aria-label="Search this site" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% endif %}
   </header>
   <main>{% block content %}{% endblock content %}</main>
-  <footer class="site-footer">
-    Telegram sync by
-    <a href="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website">tg2zola</a>.
-  </footer>
+  {% if config.extra.footer %}<footer class="site-footer">{{ config.extra.footer | markdown(inline=true) | safe }}</footer>{% endif %}
+  {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
 </body>
 </html>
 "#;
@@ -468,7 +648,7 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
 {% block content %}
   {% if config.description and paginator.current_index == 1 %}<p class="lead">{{ config.description }}</p>{% endif %}
   {% for page in paginator.pages %}
-    <article class="post">
+    <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
       <h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
       <p class="meta">
         <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
@@ -513,7 +693,7 @@ const SECTION_HTML: &str = r#"{% extends "base.html" %}
 const PAGE_HTML: &str = r#"{% extends "base.html" %}
 {% block title %}{{ page.title }} · {{ config.title }}{% endblock title %}
 {% block content %}
-  <article class="post">
+  <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
     <h1>{{ page.title }}</h1>
     <p class="meta">
       {% if page.date %}<time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d %H:%M") }}</time>{% endif %}
@@ -546,7 +726,7 @@ const TAGS_SINGLE: &str = r#"{% extends "base.html" %}
   <ul class="post-list">
   {% for page in term.pages %}
     <li>
-      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
       <time datetime="{{ page.date }}" title="{{ page.date | date(format='%Y-%m-%d %H:%M') }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
     </li>
   {% endfor %}
@@ -560,7 +740,7 @@ const TAGS_LIST: &str = r#"{% extends "base.html" %}
   <h1>Tags</h1>
   <ul class="tag-cloud">
   {% for t in config.extra.tags | default(value=[]) %}
-    <li><a href="{{ get_taxonomy_url(kind='tags', name=t.name) | safe }}">#{{ t.name }}</a> <span>({{ t.count }})</span></li>
+    <li><a href="{{ get_taxonomy_url(kind='tags', name=t.name) | safe }}">#{{ t.name }}</a> <span class="count">{{ t.count }}</span></li>
   {% endfor %}
   </ul>
 {% endblock content %}
@@ -588,17 +768,23 @@ const AUDIO_SHORTCODE: &str =
 const TAG_SHORTCODE: &str =
     "<a class=\"tag\" href=\"{{ get_taxonomy_url(kind='tags', name=t) | safe }}\">#{{ t }}</a>";
 
+// Channel avatar at its original size on the About page (base_url-aware).
+const AVATAR_SHORTCODE: &str =
+    "<img class=\"about-avatar\" src=\"{{ get_url(path='channel-avatar.jpg') | safe }}\" alt=\"channel avatar\">";
+
 // Built-in look: light by default, true-black #000 in dark mode (OLED-friendly),
 // following the OS via prefers-color-scheme.
 const STYLE_CSS: &str = r#":root {
   color-scheme: light dark;
   --bg: __BG_LIGHT__; --fg: #1a1a1a; --muted: #6b6b6b;
   --link: #0a58ca; --border: #e6e6e6; --code-bg: #f4f4f4;
+  --input-bg: #ffffff; --fwd-bg: #eef2fb;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: __BG_DARK__; --fg: #e6e6e6; --muted: #8a8a8a;
     --link: #6cb6ff; --border: #1c1c1c; --code-bg: #0d0d0d;
+    --input-bg: #2a2a2a; --fwd-bg: #0a1024;
   }
 }
 * { box-sizing: border-box; }
@@ -612,10 +798,10 @@ a, a:visited { color: var(--link); }
     background-color: #292;
     color: #000;
 }
-img, video { max-width: 100%; height: auto; border-radius: 6px; }
+img, video { max-width: 100%; height: auto; }
 audio { width: 100%; }
 .yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
-.yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 6px; }
+.yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .yt-link { font-size: .9em; margin-top: .25rem; }
 .tag { white-space: nowrap; }
 pre { background: var(--code-bg); padding: .75rem; border-radius: 4px; overflow-x: auto; }
@@ -625,10 +811,22 @@ pre code { padding: 0; background: none; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
 .site-header nav a { margin-left: .75rem; }
+.site-search { margin-left: auto; }
+.site-search input, input.site-search {
+  background: var(--input-bg); color: var(--fg);
+  border: 1px solid var(--border); border-radius: 6px;
+  padding: .3rem .55rem; font: inherit; width: 9rem;
+  transition: width .2s ease;
+}
+/* Expand on click/focus — CSS only, no JS. */
+.site-search input:focus, input.site-search:focus { width: min(22rem, 60vw); }
+input.site-search { margin-left: auto; }
 .post-list { list-style: none; padding: 0; }
 .post-list li { padding: .2rem 0; }
 .post-list time { color: var(--muted); font-size: .85em; margin-left: .5rem; }
 .post { margin: 0 0 2.5rem; }
+.post.forwarded { background: var(--fwd-bg); border-radius: 8px; padding: .75rem 1rem; }
+.about-avatar { float: left; margin: 0 1rem .5rem 0; }
 .post-title { margin: 0 0 .25rem; font-size: 1.25rem; }
 .more { margin: 2rem 0; }
 .views, .meta { color: var(--muted); font-size: .85em; }

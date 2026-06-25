@@ -54,10 +54,12 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   Card tags (title, description, the post's first image), so shared links render
   as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews
   and verify the site on your profile (see [Fediverse](#fediverse--mastodon)).
-- **No JavaScript, offline-ready** — the output is pure HTML/CSS (dark mode and
-  spoilers are CSS-only; pagination is removed so there are no redirect scripts).
-  `tg2zola offline <public-dir>` rewrites the built site to relative links so it
-  opens straight from disk via `file://`, no web server needed.
+- **No JavaScript by default, offline-ready** — dark mode and spoilers are
+  CSS-only, and the default Google search box is a plain `<form>` (no JS). Only a
+  non-Google search engine adds one tiny inline Enter handler. `tg2zola offline
+  <public-dir>` rewrites the built site to relative links **and** strips Zola's
+  pagination redirect script, so the offline copy opens straight from `file://`
+  with zero JavaScript and no web server.
 
 ## Install
 
@@ -216,16 +218,22 @@ These are *variables*, not secrets — all of it is public.
 | `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post "View on Telegram" link |
 | `RSS` | `--no-rss` | on | `false` disables the RSS feed at `/rss.xml` (with reader autodiscovery) |
 | `FEDIVERSE_CREATOR` | `--fediverse-creator` | — | Mastodon `@user@instance` → `fediverse:creator` byline + `rel="me"` profile link |
+| `SEARCH_ENGINE` | `--search-engine` | `google` | Header search box: `google` (JS-free form) / `duckduckgo` / `yandex` / `bing` / `none` |
+| `SEARCH_URL` | `--search-url` | — | Custom search URL prefix; the query is appended on Enter (overrides the engine) |
+| `TITLE_MAX_LEN` | `--title-max-len` | `200` | Max post-title length (chars); a truncated title keeps its full first sentence in the body |
+| `FOOTER` | `--footer` | — | Footer content — plain text, Markdown or HTML |
+| `PAGES_HOST` | `--pages-host` | auto | Host for the About-page size limit: `github` / `gitlab` / `none` (auto-detected from the URL) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |
 | `THEME_REPO` | `--theme` (name) | built-in black theme | External Zola theme git URL (https/ssh); auto-falls-back if it fails |
 | `REPO_URL` | `--repo-url` | tg2zola repo | "Source repository" link on About (CI auto-sets it to your repo) |
 
-The **About** page is generated with the channel's description and stats
-(subscribers / photos / videos / files / links) plus the repo link; the header
-shows the channel **avatar**; hashtags are clickable in post bodies and produce
-`/tags/<tag>/` pages.
+The **About** page shows the channel **avatar** (full size), its description and
+stats, the **on-disk size** — with the per-kind breakdown and, on GitHub/GitLab
+Pages, the share of the host's ~1 GB published-site limit (linked to the host
+docs) — plus the repo link. The header shows the avatar as a thumbnail and a
+favicon; hashtags are clickable in post bodies and produce `/tags/<tag>/` pages.
 
 A single `PAGES` variable can define several pages — each `# Title` heading
 starts a new one:

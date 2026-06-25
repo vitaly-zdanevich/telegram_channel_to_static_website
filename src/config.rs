@@ -31,10 +31,21 @@ pub struct FileConfig {
     pub rss: Option<bool>,
     /// Mastodon `@user@instance` handle for `fediverse:creator` + `rel="me"`.
     pub fediverse_creator: Option<String>,
+    /// Search-engine name for the header search box (google/duckduckgo/yandex/bing).
+    pub search_engine: Option<String>,
+    /// Custom search URL prefix; the query is appended on Enter (overrides engine).
+    pub search_url: Option<String>,
+    /// Footer content (plain text, Markdown or HTML). Empty = no footer.
+    pub footer: Option<String>,
+    /// Static host for the About-page size limit (`github`/`gitlab`/`none`).
+    /// Auto-detected from base_url when unset.
+    pub pages_host: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
     pub pages: Option<String>,
     /// Number of full posts per page on the home feed (default 20).
     pub posts_per_page: Option<usize>,
+    /// Max post-title length in characters before it's truncated (default 200).
+    pub title_max_len: Option<usize>,
     /// Background colors (any CSS color). Defaults: dark `#000000`, light `#ffffff`.
     pub background_dark: Option<String>,
     pub background_light: Option<String>,
@@ -58,6 +69,21 @@ impl FileConfig {
     }
 }
 
+/// Header search box behaviour. Google uses a plain (JS-free) form scoped with
+/// the `sitesearch` param; the others need a tiny Enter handler to fold
+/// `site:<host>` into the query, so they add one small inline script.
+#[derive(Debug, Clone)]
+pub enum Search {
+    /// No search box (and no script).
+    None,
+    /// Google, JS-free `<form>`. `site` is the host for `sitesearch=` (None
+    /// under base_url "/", e.g. offline builds).
+    Google { site: Option<String> },
+    /// Any other engine / custom prefix: the typed query is appended to `url`
+    /// on Enter via a small inline handler.
+    Custom { url: String },
+}
+
 /// Fully resolved settings used to run a generation.
 #[derive(Debug, Clone)]
 pub struct Settings {
@@ -73,8 +99,16 @@ pub struct Settings {
     pub telegram_link: bool,
     pub rss: bool,
     pub fediverse_creator: Option<String>,
+    /// Resolved header search box behaviour.
+    pub search: Search,
+    /// Footer content (text/Markdown/HTML); None = no footer.
+    pub footer: Option<String>,
+    /// Static host for the About-page size limit (github/gitlab); auto-detected
+    /// from base_url when None.
+    pub pages_host: Option<String>,
     pub pages: Option<String>,
     pub posts_per_page: usize,
+    pub title_max_len: usize,
     pub background_dark: String,
     pub background_light: String,
     pub css: Option<String>,

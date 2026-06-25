@@ -8,7 +8,7 @@ use regex::Regex;
 use std::collections::HashMap;
 
 use crate::media::ext_from_url;
-use crate::model::{Media, Post};
+use crate::model::{Forward, Media, Post};
 
 /// One media file to fetch directly into the page bundle. The bundle (committed
 /// to the `blog` branch) is itself the cache: if the file is already there, the
@@ -96,18 +96,24 @@ impl LinkRewriter {
 }
 
 /// The post's display title (used by callers to label neighbour links).
-pub fn post_title(post: &Post) -> String {
-    title_and_body(post).0
+pub fn post_title(post: &Post, title_max: usize) -> String {
+    title_and_body(post, title_max).0
 }
 
 pub fn render_post(
     post: &Post,
     links: &LinkRewriter,
+    title_max: usize,
     newer: Option<(u64, &str)>,
     older: Option<(u64, &str)>,
 ) -> RenderedPost {
     let slug = slug_for(post);
-    let (title, body_src) = title_and_body(post);
+    let (title, mut body_src) = title_and_body(post, title_max);
+    // A forwarded post often ends with a link back to the source channel; we
+    // already show that as the "forwarded from" attribution, so drop the dupe.
+    if let Some(fwd) = &post.forwarded_from {
+        body_src = strip_forward_backlink(&body_src, fwd);
+    }
 
     let mut downloads = Vec::new();
     let mut body = String::new();
@@ -326,9 +332,13 @@ fn excerpt(md: &str, max: usize) -> String {
 /// tags, then the date. When that line is *pure prose* (no hashtags) it is cut
 /// from the body so the headline isn't shown twice — but a line that also
 /// carries hashtags is kept, so its clickable tags survive.
-fn title_and_body(post: &Post) -> (String, String) {
-    if let Some((title, idx, had_tags)) = title_from_body(&post.body_md) {
-        let body = if had_tags {
+fn title_and_body(post: &Post, max: usize) -> (String, String) {
+    if let Some((title, idx, had_tags, partial)) = title_from_body(&post.body_md, max) {
+        // Keep the line in the body when it carries hashtags (their clickable
+        // tags must survive) or when the title is only part of the line (a
+        // first-sentence/truncated title), so no text is lost; otherwise cut it
+        // to avoid showing the same line twice.
+        let body = if had_tags || partial {
             post.body_md.clone()
         } else {
             remove_line(&post.body_md, idx)
@@ -353,8 +363,8 @@ fn remove_line(body: &str, idx: usize) -> String {
         .join("\n")
 }
 
-/// Returns `(title, line_index, line_has_hashtags)`.
-fn title_from_body(body: &str) -> Option<(String, usize, bool)> {
+/// Returns `(title, line_index, line_has_hashtags, was_truncated)`.
+fn title_from_body(body: &str, max: usize) -> Option<(String, usize, bool, bool)> {
     for (idx, raw) in body.lines().enumerate() {
         let lt = raw.trim_start();
         // Skip code fences and blockquotes (lyrics etc. shouldn't be the title).
@@ -386,9 +396,77 @@ fn title_from_body(body: &str) -> Option<(String, usize, bool)> {
         {
             continue;
         }
-        return Some((truncate_chars(t, 80), idx, TAG_SC.is_match(raw)));
+        let (title, partial) = first_sentence_capped(t, max);
+        return Some((title, idx, TAG_SC.is_match(raw), partial));
     }
     None
+}
+
+/// The first sentence of `line`, capped at `max` chars. Returns the title and
+/// whether it is *partial* — a subset of the line, because the line continues
+/// with more sentences or the first sentence had to be truncated. A partial
+/// title means the line must stay in the body so its full text isn't lost.
+fn first_sentence_capped(line: &str, max: usize) -> (String, bool) {
+    let chars: Vec<char> = line.chars().collect();
+    // End of the first sentence: . ! ? followed by whitespace (or end of line).
+    // Requiring whitespace avoids splitting "three.js" or "Opus 4.5".
+    let mut end = None;
+    for i in 0..chars.len() {
+        if matches!(chars[i], '.' | '!' | '?')
+            && chars.get(i + 1).map_or(true, |c| c.is_whitespace())
+        {
+            end = Some(i);
+            break;
+        }
+    }
+    let (sentence, partial) = match end {
+        // A sentence break with more text after it → keep just the sentence.
+        Some(i) if i + 1 < chars.len() => (chars[..=i].iter().collect::<String>(), true),
+        // A single sentence (terminator at line end, or none at all).
+        _ => (line.to_string(), false),
+    };
+    if sentence.chars().count() > max {
+        (truncate_chars(&sentence, max), true)
+    } else {
+        (sentence.trim().to_string(), partial)
+    }
+}
+
+static STANDALONE_LINK: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"^\[([^\]]*)\]\(([^)]+)\)$").unwrap());
+static TME_CHANNEL: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"(?:t\.me|telegram\.me|telegram\.dog)/(?:s/)?([A-Za-z0-9_]+)").unwrap());
+
+/// The Telegram channel username referenced by a URL, lowercased.
+fn tme_channel(url: &str) -> Option<String> {
+    TME_CHANNEL.captures(url).map(|c| c[1].to_lowercase())
+}
+
+/// Drop a trailing standalone link line that just points back to the forwarded
+/// source (same channel, or the source's display name) — the "forwarded from"
+/// header already links it, so the line is redundant.
+fn strip_forward_backlink(body: &str, fwd: &Forward) -> String {
+    let lines: Vec<&str> = body.lines().collect();
+    let mut last = lines.len();
+    while last > 0 && lines[last - 1].trim().is_empty() {
+        last -= 1;
+    }
+    if last == 0 {
+        return body.to_string();
+    }
+    if let Some(caps) = STANDALONE_LINK.captures(lines[last - 1].trim()) {
+        let text = caps.get(1).map_or("", |m| m.as_str()).trim();
+        let url = caps.get(2).map_or("", |m| m.as_str());
+        let by_name = !fwd.name.trim().is_empty() && text == fwd.name.trim();
+        let by_channel = match (tme_channel(url), fwd.url.as_deref().and_then(tme_channel)) {
+            (Some(a), Some(b)) => a == b,
+            _ => false,
+        };
+        if by_name || by_channel {
+            return lines[..last - 1].join("\n").trim_end().to_string();
+        }
+    }
+    body.to_string()
 }
 
 fn truncate_chars(s: &str, max: usize) -> String {

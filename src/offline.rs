@@ -20,6 +20,11 @@ use std::path::Path;
 // without Tera's `| safe` filter; match those too so such links relativize.
 static LOCAL_LINK: Lazy<Regex> =
     Lazy::new(|| Regex::new(r#"((?:href|src)=")((?:/|&#x2[fF];|&#47;)[^"]*)""#).unwrap());
+// HTML minification (`minify_html`) drops quotes around simple attribute values,
+// so root-absolute links can appear unquoted (`href=/tags`). Match those too;
+// the value runs until whitespace or `>`.
+static LOCAL_LINK_UNQUOTED: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r#"((?:href|src)=)(/[^\s">]*)"#).unwrap());
 // Zola's pagination `page/1/` redirect stubs carry a <script>; strip it so the
 // output is JavaScript-free (the <noscript> meta-refresh + link still work).
 static SCRIPT: Lazy<Regex> = Lazy::new(|| Regex::new(r"(?s)<script\b[^>]*>.*?</script>").unwrap());
@@ -64,9 +69,15 @@ fn depth_of(root: &Path, file: &Path) -> usize {
 fn rewrite(html: &str, depth: usize) -> String {
     let prefix = "../".repeat(depth);
     let html = SCRIPT.replace_all(html, "");
-    LOCAL_LINK
+    // Quoted links first (re-adds the closing quote), then unquoted (minified).
+    let html = LOCAL_LINK
         .replace_all(&html, |c: &regex::Captures| {
             format!("{}{}\"", &c[1], fix_local(&c[2], &prefix))
+        })
+        .into_owned();
+    LOCAL_LINK_UNQUOTED
+        .replace_all(&html, |c: &regex::Captures| {
+            format!("{}{}", &c[1], fix_local(&c[2], &prefix))
         })
         .into_owned()
 }

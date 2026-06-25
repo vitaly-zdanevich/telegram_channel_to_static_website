@@ -21,7 +21,7 @@ use clap::{Args, Parser, Subcommand};
 use std::path::PathBuf;
 use tracing::info;
 
-use config::{FileConfig, Settings};
+use config::{FileConfig, Search, Settings};
 
 #[derive(Parser, Debug)]
 #[command(
@@ -110,6 +110,26 @@ struct GenerateArgs {
     #[arg(long)]
     fediverse_creator: Option<String>,
 
+    /// Header search box engine: google | duckduckgo | yandex | bing (scoped to
+    /// this site). Adds a tiny inline Enter handler; omit for no search box.
+    #[arg(long)]
+    search_engine: Option<String>,
+
+    /// Custom search URL prefix; the typed query is appended on Enter. Overrides
+    /// --search-engine (e.g. for a self-hosted or unlisted engine).
+    #[arg(long)]
+    search_url: Option<String>,
+
+    /// Footer content (plain text, Markdown or HTML). In CI set the FOOTER
+    /// variable. Empty = no footer.
+    #[arg(long)]
+    footer: Option<String>,
+
+    /// Static host for the About-page size limit: `github` | `gitlab` | `none`.
+    /// Auto-detected from the base URL (github.io / gitlab.io) when unset.
+    #[arg(long)]
+    pages_host: Option<String>,
+
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
     #[arg(long)]
@@ -118,6 +138,11 @@ struct GenerateArgs {
     /// Full posts per page on the home feed (default 20).
     #[arg(long)]
     posts_per_page: Option<usize>,
+
+    /// Max post-title length in characters before truncation (default 200).
+    /// When a title is truncated its full first sentence is kept in the body.
+    #[arg(long)]
+    title_max_len: Option<usize>,
 
     /// Dark-mode background color (any CSS color). Default #000000.
     #[arg(long)]
@@ -191,14 +216,16 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
     let channel = channel.trim().trim_start_matches('@').to_string();
     anyhow::ensure!(!channel.is_empty(), "channel must not be empty");
 
+    let base_url = g
+        .base_url
+        .clone()
+        .or(fc.base_url)
+        .unwrap_or_else(|| "/".to_string());
+
     Ok(Settings {
         title: g.title.clone().or(fc.title).unwrap_or_else(|| channel.clone()),
         description: g.description.clone().or(fc.description).unwrap_or_default(),
-        base_url: g
-            .base_url
-            .clone()
-            .or(fc.base_url)
-            .unwrap_or_else(|| "/".to_string()),
+        base_url: base_url.clone(),
         repo_url: g.repo_url.clone().or(fc.repo_url).unwrap_or_else(|| {
             "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website".to_string()
         }),
@@ -234,6 +261,22 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .or(fc.posts_per_page)
             .filter(|&n| n > 0)
             .unwrap_or(20),
+        title_max_len: g
+            .title_max_len
+            .or(fc.title_max_len)
+            .filter(|&n| n > 0)
+            .unwrap_or(200),
+        search: resolve_search(
+            g.search_engine.clone().or(fc.search_engine),
+            g.search_url.clone().or(fc.search_url),
+            &base_url,
+        ),
+        footer: g.footer.clone().or(fc.footer).filter(|s| !s.trim().is_empty()),
+        pages_host: g
+            .pages_host
+            .clone()
+            .or(fc.pages_host)
+            .filter(|s| !s.trim().is_empty()),
         background_dark: g
             .background_dark_color
             .clone()
@@ -268,6 +311,55 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         },
         channel,
     })
+}
+
+/// Resolve the header search box. A custom URL wins (Enter handler appends the
+/// query). Otherwise the engine name (default `google`) selects a built-in:
+/// Google is a JS-free form; the rest get an Enter handler with `site:<host>`
+/// folded into the query. `none`/`off` disables it.
+fn resolve_search(engine: Option<String>, custom: Option<String>, base_url: &str) -> Search {
+    if let Some(u) = custom.map(|s| s.trim().to_string()).filter(|s| !s.is_empty()) {
+        return Search::Custom { url: u };
+    }
+    let host = host_of(base_url);
+    // `site:<host>` filter, URL-encoded, so non-Google results stay on this site.
+    let scope = host
+        .as_ref()
+        .map(|h| format!("site%3A{h}%20"))
+        .unwrap_or_default();
+    let engine = engine
+        .map(|s| s.trim().to_lowercase())
+        .filter(|s| !s.is_empty())
+        .unwrap_or_else(|| "google".to_string());
+    match engine.as_str() {
+        "none" | "off" | "no" | "false" => Search::None,
+        "google" | "g" => Search::Google { site: host },
+        "duckduckgo" | "duckduck" | "duck" | "ddg" => Search::Custom {
+            url: format!("https://duckduckgo.com/?q={scope}"),
+        },
+        "yandex" | "ya" => Search::Custom {
+            url: format!("https://yandex.com/search/?text={scope}"),
+        },
+        "bing" | "bind" => Search::Custom {
+            url: format!("https://www.bing.com/search?q={scope}"),
+        },
+        other => {
+            tracing::warn!("unknown search engine '{other}' — disabling the search box");
+            Search::None
+        }
+    }
+}
+
+/// Host of a base URL (`https://host/path` → `host`); None for "/" (offline
+/// builds), where domain-scoped search doesn't apply.
+fn host_of(base_url: &str) -> Option<String> {
+    let s = base_url.trim();
+    let s = s
+        .strip_prefix("https://")
+        .or_else(|| s.strip_prefix("http://"))
+        .unwrap_or(s);
+    let host = s.split('/').next().unwrap_or("").trim();
+    (!host.is_empty() && host.contains('.')).then(|| host.to_string())
 }
 
 async fn run(mut s: Settings, init_site: bool) -> Result<()> {
@@ -313,7 +405,10 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
 
     let rewriter = render::LinkRewriter::new(&s.channel, &posts);
     // Posts are id-ascending; neighbour id+title drive the Next/Prev nav.
-    let titles: Vec<String> = posts.iter().map(render::post_title).collect();
+    let titles: Vec<String> = posts
+        .iter()
+        .map(|p| render::post_title(p, s.title_max_len))
+        .collect();
     let rendered: Vec<render::RenderedPost> = posts
         .iter()
         .enumerate()
@@ -324,7 +419,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             let older = i
                 .checked_sub(1)
                 .map(|j| (posts[j].primary_id, titles[j].as_str()));
-            render::render_post(p, &rewriter, newer, older)
+            render::render_post(p, &rewriter, s.title_max_len, newer, older)
         })
         .collect();
 
@@ -350,6 +445,13 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     } else {
         info!("--no-media: skipping downloads");
     }
+
+    // Record the on-disk footprint (total + per-kind + share of the host limit)
+    // on the About page, after downloads so it's the real size.
+    let breakdown = site::size_breakdown(&[&s.site.join("content"), &s.site.join("static")]);
+    let limit = site::pages_limit(&s.base_url, s.pages_host.as_deref()).map(|l| l.bytes);
+    site::set_about_size(&s.site, &breakdown, limit);
+
     info!("done — Zola site at {}", s.site.display());
     info!("build it with:  zola --root {} build", s.site.display());
     Ok(())

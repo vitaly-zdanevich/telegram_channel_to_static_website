@@ -40,6 +40,19 @@ description = "A self-contained static backup of a public Telegram channel."
 # Generate an RSS feed at /rss.xml (with reader autodiscovery). On by default.
 # rss = true
 
+# Max post-title length in characters before truncation (default 200). When a
+# title is truncated, its full first sentence is kept at the top of the body.
+# title_max_len = 200
+
+# Header search box. search_engine: google (default, JS-free form), duckduckgo,
+# yandex, bing, or none. search_url overrides it with a custom prefix the typed
+# query is appended to on Enter (adds a tiny inline handler).
+# search_engine = "google"
+# search_url = "https://duckduckgo.com/?q=site%3Aexample.com%20"
+
+# Footer content — plain text, Markdown or HTML. Empty = no footer.
+# footer = "© 2026 · [source](https://github.com/you/repo)"
+
 # Mastodon handle (@user@instance) for the fediverse:creator byline on shared
 # links and a rel="me" profile-verification link. In CI, set FEDIVERSE_CREATOR.
 # fediverse_creator = "@you@fosstodon.org"
