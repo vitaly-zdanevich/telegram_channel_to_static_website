@@ -138,7 +138,7 @@ struct GenerateArgs {
     date_format: Option<String>,
 
     /// UI language for the site chrome (Newer/Older/Tags/About/…): one of
-    /// en/be/uk/ru/de/fr/zh/ja/pl/es/ko (default `en`). In CI set LANGUAGE.
+    /// en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka (default `en`). In CI set LANGUAGE.
     #[arg(long)]
     language: Option<String>,
 

@@ -70,7 +70,7 @@ env:
   # use "%Y" for year only).
   DATE_FORMAT: ${{ vars.DATE_FORMAT }}
   # UI language for the site chrome (Newer/Older/Tags/About/…): one of
-  # en/be/uk/ru/de/fr/zh/ja/pl/es/ko (default en). Post content is unchanged.
+  # en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka (default en). Post content is unchanged.
   LANGUAGE: ${{ vars.LANGUAGE }}
   # Set to "true" to underline links (default: no underline).
   LINK_UNDERLINE: ${{ vars.LINK_UNDERLINE }}

@@ -6,7 +6,7 @@
 
 /// Languages we ship UI translations for.
 pub const SUPPORTED: &[&str] = &[
-    "en", "be", "uk", "ru", "de", "fr", "zh", "ja", "pl", "es", "ko",
+    "en", "be", "uk", "ru", "de", "fr", "zh", "ja", "pl", "es", "ko", "ka",
 ];
 
 /// Translatable UI strings shown in the site chrome (templates + rendered post
@@ -55,6 +55,7 @@ pub fn date_locale(lang: &str) -> &'static str {
         "pl" => "pl_PL",
         "es" => "es_ES",
         "ko" => "ko_KR",
+        "ka" => "ka_GE",
         _ => "en_US",
     }
 }
@@ -72,6 +73,7 @@ pub fn ui(lang: &str) -> Ui {
         "pl" => PL,
         "es" => ES,
         "ko" => KO,
+        "ka" => KA,
         _ => EN,
     }
 }
@@ -263,6 +265,23 @@ const KO: Ui = Ui {
     video: "동영상",
 };
 
+const KA: Ui = Ui {
+    newer: "უფრო ახალი",
+    older: "უფრო ძველი",
+    tags: "ტეგები",
+    about: "შესახებ",
+    archive: "არქივი",
+    search: "ძებნა",
+    search_aria: "ამ საიტზე ძებნა",
+    views: "ნახვა",
+    view_on_telegram: "Telegram-ში ნახვა",
+    forwarded_from: "გადმოგზავნილია",
+    full_posts: "სრული პოსტები",
+    titles: "სათაურები",
+    not_archived: "არ არის დაარქივებული",
+    video: "ვიდეო",
+};
+
 /// Translatable prose for the About page. Sentence templates use `{placeholder}`
 /// tokens (filled in `site::about_md`) plus the `__TOKEN__` size/time markers
 /// (filled later in `site::set_about_size`).
@@ -302,6 +321,7 @@ pub fn about(lang: &str) -> About {
         "pl" => PL_ABOUT,
         "es" => ES_ABOUT,
         "ko" => KO_ABOUT,
+        "ka" => KA_ABOUT,
         _ => EN_ABOUT,
     }
 }
@@ -480,6 +500,22 @@ const KO_ABOUT: About = About {
     kind_videos: "동영상",
     kind_audio: "오디오",
     kind_other: "기타",
+};
+
+const KA_ABOUT: About = About {
+    intro: "საჯარო Telegram-არხის {channel} სტატიკური ასლი, შექმნილია {tool}-ით.",
+    size_limit: "საიტი იკავებს **__TOTAL_SIZE__**-ს ({limit_link}: **__PERCENT__**).",
+    size_plain: "საიტი დისკზე იკავებს **__TOTAL_SIZE__**-ს.",
+    limit_phrase: "{name}-ის {display} ლიმიტი",
+    by_kind: "ტიპის მიხედვით:",
+    generated_in: "შექმნის დრო: **__BUILD_TIME__**.",
+    source_repo: "წყაროს კოდის რეპოზიტორი:",
+    no_api: "**Telegram-ის ბოტი, ტოკენი ან API საჭირო არ არის** — საიტი იქმნება საჯარო ვებ-გადახედვიდან, ყველა მედია ჩამოტვირთულია ლოკალურად, ამიტომ ის იმუშავებს მაშინაც კი, თუ არხი წაიშლება.",
+    kind_text: "ტექსტი",
+    kind_images: "სურათები",
+    kind_videos: "ვიდეო",
+    kind_audio: "აუდიო",
+    kind_other: "სხვა",
 };
 
 #[cfg(test)]

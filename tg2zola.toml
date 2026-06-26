@@ -60,7 +60,7 @@ description = "A self-contained static backup of a public Telegram channel."
 # date_format = "%Y %B %d"
 
 # UI language for the site chrome (Newer/Older/Tags/About/…): one of
-# en/be/uk/ru/de/fr/zh/ja/pl/es/ko. Default en. Post content keeps the
+# en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka. Default en. Post content keeps the
 # channel's own language; displayed dates are localized to match.
 # language = "en"
 

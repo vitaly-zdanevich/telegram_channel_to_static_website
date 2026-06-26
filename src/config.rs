@@ -44,7 +44,7 @@ pub struct FileConfig {
     /// use `%Y` for year only).
     pub date_format: Option<String>,
     /// UI language for the generated site chrome (Newer/Older/Tags/About/…):
-    /// one of en/be/uk/ru/de/fr/zh/ja/pl/es/ko (default `en`). Post content
+    /// one of en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka (default `en`). Post content
     /// keeps the channel's own language.
     pub language: Option<String>,
     /// Underline links (default false → `text-decoration: none`).
