@@ -2,11 +2,12 @@
 //!
 //! Telegram albums already arrive as a single message bubble (one `data-post`
 //! with several media), so those are handled for free by the parser. The
-//! remaining case is a *burst*: several separate messages posted at the same
-//! instant (typically forwarding many messages at once). We merge consecutive
-//! messages from the same author whose timestamps fall within `window_secs` of
-//! each other — but only continuations (no hashtags of their own); a message
-//! that carries its own tags is kept as a separate post.
+//! remaining case is a *burst*: messages posted together (forwarding several at
+//! once, or an album plus a same-instant caption). We fold a message into the
+//! previous post when it's a continuation — consecutive within `window_secs`, or
+//! posted at the very same instant (albums share a timestamp but not adjacent
+//! IDs) — unless both carry their own hashtags, since distinct tag sets mean
+//! distinct posts.
 
 use crate::media;
 use crate::model::{Media, Post, RawMessage};
@@ -20,16 +21,18 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
         let sticker_only = m.body_md.trim().is_empty()
             && !m.media.is_empty()
             && m.media.iter().all(|x| matches!(x, Media::Sticker { .. }));
-        // A message carrying its own hashtags is a post in its own right, so it
-        // is never folded into the previous one even within the burst window —
-        // distinct tags mean distinct posts. Loose continuations (extra album
-        // photos, captionless media) have no tags of their own and still merge.
-        let continuation = m.tags.is_empty();
+        // Distinct tag sets mean distinct posts, so two messages that each carry
+        // their own hashtags are never merged. Otherwise a continuation — a
+        // consecutive message within the burst window, or one posted at the very
+        // same instant (an album and its caption share a timestamp but not
+        // adjacent IDs) — is folded into the previous post.
         let merge = posts.last().is_some_and(|last| {
             let last_id = *last.ids.last().unwrap();
+            let secs = (m.date - last.date).num_seconds();
             let consecutive = m.id == last_id + 1;
-            let close = (m.date - last.date).num_seconds().abs() <= window_secs;
-            (consecutive && close && last.author == m.author && continuation) || sticker_only
+            let together = (consecutive && secs.abs() <= window_secs) || secs == 0;
+            let both_tagged = !last.tags.is_empty() && !m.tags.is_empty();
+            (together && last.author == m.author && !both_tagged) || sticker_only
         });
 
         if merge {
@@ -125,5 +128,18 @@ mod tests {
         let posts = group(vec![msg(10, &["trip"], "caption"), msg(11, &[], "")], 1);
         assert_eq!(posts.len(), 1, "tagless continuation should merge");
         assert_eq!(posts[0].ids, vec![10, 11]);
+    }
+
+    #[test]
+    fn same_instant_album_and_caption_merge() {
+        // An album (no tags) and a same-instant post with a non-adjacent ID (the
+        // album consumed the IDs between) still unite; the tags carry over.
+        let posts = group(
+            vec![msg(1787, &[], "album"), msg(1797, &["crypto", "wallet"], "caption")],
+            1,
+        );
+        assert_eq!(posts.len(), 1, "same-instant posts should unite");
+        assert_eq!(posts[0].ids, vec![1787, 1797]);
+        assert_eq!(posts[0].tags, vec!["crypto", "wallet"]);
     }
 }

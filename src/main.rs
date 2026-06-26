@@ -135,6 +135,10 @@ struct GenerateArgs {
     #[arg(long)]
     date_format: Option<String>,
 
+    /// Underline links (default: no underline).
+    #[arg(long)]
+    link_underline: bool,
+
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
     #[arg(long)]
@@ -288,6 +292,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .or(fc.date_format)
             .filter(|s| !s.trim().is_empty())
             .unwrap_or_else(|| "%Y %B %d".to_string()),
+        link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         background_dark: g
             .background_dark_color
             .clone()
@@ -374,6 +379,7 @@ fn host_of(base_url: &str) -> Option<String> {
 }
 
 async fn run(mut s: Settings, init_site: bool) -> Result<()> {
+    let started = std::time::Instant::now();
     let client = http_client()?;
 
     info!("scraping https://t.me/s/{}", s.channel);
@@ -393,8 +399,21 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         }
     }
 
-    let posts = group::group(messages, s.group_window_secs);
+    let mut posts = group::group(messages, s.group_window_secs);
     info!("grouped into {} posts", posts.len());
+
+    // Auto-tag posts that have a playable (downloadable) video with #video,
+    // unless the author already tagged it.
+    for p in &mut posts {
+        let has_video = p
+            .media
+            .iter()
+            .any(|m| matches!(m, model::Media::Video { .. }));
+        if has_video && !p.tags.iter().any(|t| t == "video") {
+            p.tags.push("video".to_string());
+        }
+    }
+
     let tag_counts = count_tags(&posts);
 
     // Download the channel avatar (for the header) before scaffolding so the
@@ -461,7 +480,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // on the About page, after downloads so it's the real size.
     let breakdown = site::size_breakdown(&[&s.site.join("content"), &s.site.join("static")]);
     let limit = site::pages_limit(&s.base_url, s.pages_host.as_deref()).map(|l| l.bytes);
-    site::set_about_size(&s.site, &breakdown, limit);
+    site::set_about_size(&s.site, &breakdown, limit, started.elapsed());
 
     info!("done — Zola site at {}", s.site.display());
     info!("build it with:  zola --root {} build", s.site.display());

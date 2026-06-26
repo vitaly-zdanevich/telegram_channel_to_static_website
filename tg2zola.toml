@@ -57,6 +57,9 @@ description = "A self-contained static backup of a public Telegram channel."
 # Use "%Y" for year only (hides month/day/time).
 # date_format = "%Y %B %d"
 
+# Underline links. Default false (text-decoration: none).
+# link_underline = true
+
 # Mastodon handle (@user@instance) for the fediverse:creator byline on shared
 # links and a rel="me" profile-verification link. In CI, set FEDIVERSE_CREATOR.
 # fediverse_creator = "@you@fosstodon.org"

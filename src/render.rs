@@ -97,7 +97,68 @@ impl LinkRewriter {
 
 /// The post's display title (used by callers to label neighbour links).
 pub fn post_title(post: &Post, title_max: usize) -> String {
+    if let Some((name, _)) = wikimedia_commons_title(&post.links) {
+        return name;
+    }
     title_and_body(post, title_max).0
+}
+
+/// If the post links to a Wikimedia Commons page (`?…title=…`), derive a
+/// readable title from that page name. Returns `(name, url)`.
+fn wikimedia_commons_title(links: &[String]) -> Option<(String, String)> {
+    links.iter().find_map(|u| {
+        if !u.contains("commons.wikimedia.org") {
+            return None;
+        }
+        commons_page_name(u).map(|name| (name, u.clone()))
+    })
+}
+
+/// Decode a MediaWiki page name from either URL form — `?title=Name` or the
+/// pretty `/wiki/Name` path — into a readable title: percent-decoded, namespace
+/// prefix (`Category:`/`File:` …) dropped, `_` → space.
+fn commons_page_name(url: &str) -> Option<String> {
+    let parsed = url::Url::parse(url).ok()?;
+    let raw = parsed
+        .query_pairs()
+        .find(|(k, _)| k == "title")
+        .map(|(_, v)| v.into_owned())
+        .or_else(|| {
+            let seg = parsed.path().strip_prefix("/wiki/").filter(|s| !s.is_empty())?;
+            Some(
+                percent_encoding::percent_decode_str(seg)
+                    .decode_utf8_lossy()
+                    .into_owned(),
+            )
+        })?;
+    let name = strip_wiki_namespace(&raw.replace('_', " ")).trim().to_string();
+    (!name.is_empty()).then_some(name)
+}
+
+fn strip_wiki_namespace(s: &str) -> &str {
+    if let Some((ns, rest)) = s.split_once(':') {
+        if matches!(
+            ns.to_lowercase().as_str(),
+            "category" | "file" | "template" | "creator" | "institution" | "gallery"
+        ) {
+            return rest;
+        }
+    }
+    s
+}
+
+/// Body for a Wikimedia Commons post: the page link (readable name), then the
+/// rest of the message with its original (URL-mangled) line dropped. Parens in
+/// the URL are encoded so the Markdown link isn't cut short.
+fn wiki_body(body: &str, text: &str, url: &str) -> String {
+    let href = url.replace('(', "%28").replace(')', "%29");
+    let rest: Vec<&str> = body
+        .lines()
+        .filter(|l| !l.to_lowercase().contains("wikimedia.org"))
+        .collect();
+    format!("[{text}]({href})\n\n{}", rest.join("\n").trim())
+        .trim_end()
+        .to_string()
 }
 
 pub fn render_post(
@@ -108,12 +169,20 @@ pub fn render_post(
     older: Option<(u64, &str)>,
 ) -> RenderedPost {
     let slug = slug_for(post);
-    let (title, mut body_src) = title_and_body(post, title_max);
-    // A forwarded post often ends with a link back to the source channel; we
-    // already show that as the "forwarded from" attribution, so drop the dupe.
-    if let Some(fwd) = &post.forwarded_from {
-        body_src = strip_forward_backlink(&body_src, fwd);
-    }
+    // A Wikimedia Commons page link gives a readable title (the decoded category
+    // name) and a clean body link; otherwise derive the title from the body.
+    let (title, body_src) = match wikimedia_commons_title(&post.links) {
+        Some((name, url)) => (name.clone(), wiki_body(&post.body_md, &name, &url)),
+        None => {
+            let (t, mut b) = title_and_body(post, title_max);
+            // A forwarded post often ends with a link back to the source
+            // channel; the "forwarded from" header already shows it, so drop it.
+            if let Some(fwd) = &post.forwarded_from {
+                b = strip_forward_backlink(&b, fwd);
+            }
+            (t, b)
+        }
+    };
 
     let mut downloads = Vec::new();
     let mut body = String::new();
@@ -197,6 +266,13 @@ pub fn render_post(
                 body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(filename)));
             }
         }
+    }
+
+    // Auto #video tag in the body for posts with a playable video, unless the
+    // author already wrote it (matches the taxonomy tag added in main).
+    let has_video = post.media.iter().any(|m| matches!(m, Media::Video { .. }));
+    if has_video && !body.contains("tag(t=\"video\")") {
+        body.push_str("{{ tag(t=\"video\") }}\n\n");
     }
 
     let description = excerpt(&body_src, 200);
@@ -564,5 +640,18 @@ mod tests {
         let rw = LinkRewriter::with_index("mychan", HashMap::new());
         let out = rw.rewrite("[a](https://t.me/mychan/999)");
         assert_eq!(out, "[a](https://t.me/mychan/999)");
+    }
+
+    #[test]
+    fn commons_title_decoded() {
+        let url = "https://commons.wikimedia.org/w/index.php?title=Category:Test_Page_%28x%29--01&action=edit&redlink=1";
+        assert_eq!(commons_page_name(url).as_deref(), Some("Test Page (x)--01"));
+    }
+
+    #[test]
+    fn commons_file_path_decoded() {
+        // Pretty `/wiki/File:` URL form (percent-encoded, namespace dropped).
+        let url = "https://commons.wikimedia.org/wiki/File:Slonim_%D1%81%D0%BD%D1%8F%D1%82%D0%BE.jpg";
+        assert_eq!(commons_page_name(url).as_deref(), Some("Slonim снято.jpg"));
     }
 }

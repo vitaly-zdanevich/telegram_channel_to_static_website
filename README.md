@@ -224,6 +224,7 @@ These are *variables*, not secrets — all of it is public.
 | `FOOTER` | `--footer` | — | Footer content — plain text, Markdown or HTML |
 | `PAGES_HOST` | `--pages-host` | auto | Host for the About-page size limit: `github` / `gitlab` / `none` (auto-detected from the URL) |
 | `DATE_FORMAT` | `--date-format` | `%Y %B %d` | strftime format for displayed dates (e.g. `2025 October 28`; `%Y` for year only) |
+| `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |

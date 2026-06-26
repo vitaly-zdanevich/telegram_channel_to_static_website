@@ -1559,13 +1559,14 @@ dependencies = [
 
 [[package]]
 name = "tg2zola"
-version = "0.4.0"
+version = "0.5.0"
 dependencies = [
  "anyhow",
  "chrono",
  "clap",
  "futures",
  "once_cell",
+ "percent-encoding",
  "regex",
  "reqwest",
  "scraper",
@@ -1574,6 +1575,7 @@ dependencies = [
  "toml",
  "tracing",
  "tracing-subscriber",
+ "url",
 ]
 
 [[package]]
