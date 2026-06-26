@@ -834,6 +834,7 @@ a, a:visited { color: var(--link); text-decoration: __LINK_DECO__; }
     color: #000;
 }
 img, video { max-width: 100%; height: auto; }
+video { display: block; }
 audio { width: 100%; }
 .yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
 .yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }

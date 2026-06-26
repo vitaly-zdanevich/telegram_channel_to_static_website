@@ -97,17 +97,50 @@ impl LinkRewriter {
 
 /// The post's display title (used by callers to label neighbour links).
 pub fn post_title(post: &Post, title_max: usize) -> String {
-    if let Some((name, _)) = wikimedia_commons_title(&post.links) {
+    if let Some((name, _)) = wiki_title_for(post, title_max) {
         return name;
     }
     title_and_body(post, title_max).0
 }
 
-/// If the post links to a Wikimedia Commons page (`?…title=…`), derive a
-/// readable title from that page name. Returns `(name, url)`.
+/// The wiki page title to use for this post, but only when it has no prose
+/// title of its own — i.e. the title would otherwise come from the wiki link
+/// line, or there's no prose line at all. A post that merely *links* to a wiki
+/// page (while having its own text) keeps its own title.
+fn wiki_title_for(post: &Post, max: usize) -> Option<(String, String)> {
+    let wiki = wikimedia_commons_title(&post.links)?;
+    let from_wiki_line = match title_from_body(&post.body_md, max) {
+        None => true,
+        Some((_, idx, _, _)) => post
+            .body_md
+            .lines()
+            .nth(idx)
+            .is_some_and(contains_wiki_domain),
+    };
+    from_wiki_line.then_some(wiki)
+}
+
+/// Wikimedia-family domains whose `/wiki/Name` or `?title=Name` pages we turn
+/// into a readable title (Wikipedia, Commons, Wiktionary, Wikidata, …).
+const WIKI_DOMAINS: [&str; 6] = [
+    "wikipedia.org",
+    "wikimedia.org",
+    "wiktionary.org",
+    "wikidata.org",
+    "wikisource.org",
+    "mediawiki.org",
+];
+
+fn contains_wiki_domain(s: &str) -> bool {
+    let s = s.to_lowercase();
+    WIKI_DOMAINS.iter().any(|d| s.contains(d))
+}
+
+/// If the post links to a Wikimedia/Wikipedia page, derive a readable title from
+/// that page name. Returns `(name, url)`.
 fn wikimedia_commons_title(links: &[String]) -> Option<(String, String)> {
     links.iter().find_map(|u| {
-        if !u.contains("commons.wikimedia.org") {
+        if !contains_wiki_domain(u) {
             return None;
         }
         commons_page_name(u).map(|name| (name, u.clone()))
@@ -154,7 +187,7 @@ fn wiki_body(body: &str, text: &str, url: &str) -> String {
     let href = url.replace('(', "%28").replace(')', "%29");
     let rest: Vec<&str> = body
         .lines()
-        .filter(|l| !l.to_lowercase().contains("wikimedia.org"))
+        .filter(|l| !contains_wiki_domain(l))
         .collect();
     format!("[{text}]({href})\n\n{}", rest.join("\n").trim())
         .trim_end()
@@ -171,7 +204,7 @@ pub fn render_post(
     let slug = slug_for(post);
     // A Wikimedia Commons page link gives a readable title (the decoded category
     // name) and a clean body link; otherwise derive the title from the body.
-    let (title, body_src) = match wikimedia_commons_title(&post.links) {
+    let (title, body_src) = match wiki_title_for(post, title_max) {
         Some((name, url)) => (name.clone(), wiki_body(&post.body_md, &name, &url)),
         None => {
             let (t, mut b) = title_and_body(post, title_max);
@@ -480,7 +513,9 @@ fn title_from_body(body: &str, max: usize) -> Option<(String, usize, bool, bool)
         // Build the title: keep the hashtag words, drop links, drop the `#`.
         let mut t = TAG_SC.replace_all(raw, "$1").to_string();
         t = HTML_TAG.replace_all(&t, "").to_string();
-        t = MD_LINK.replace_all(&t, "").to_string();
+        t = IMG_MD.replace_all(&t, "").to_string();
+        // Keep a link's text in the title; drop only its URL.
+        t = MD_LINK_LABEL.replace_all(&t, "$1").to_string();
         t = AUTOLINK.replace_all(&t, "").to_string();
         t = BARE_URL.replace_all(&t, "").to_string();
         t = t.replace(['*', '`', '~', '\\', '#'], "");
@@ -493,7 +528,11 @@ fn title_from_body(body: &str, max: usize) -> Option<(String, usize, bool, bool)
             continue;
         }
         let (title, partial) = first_sentence_capped(t, max);
-        return Some((title, idx, TAG_SC.is_match(raw), partial));
+        // Keep the line in the body when it carries a link: the title drops
+        // links, so removing the line would lose it.
+        let has_link =
+            MD_LINK.is_match(raw) || AUTOLINK.is_match(raw) || BARE_URL.is_match(raw);
+        return Some((title, idx, TAG_SC.is_match(raw), partial || has_link));
     }
     None
 }

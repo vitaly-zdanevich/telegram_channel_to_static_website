@@ -179,11 +179,24 @@ fn spoiler(out: &mut String, inner: &str) {
 fn wrap(out: &mut String, open: &str, inner: &str, close: &str) {
     let t = inner.trim();
     if t.is_empty() {
+        // Whitespace-only span: keep a single space so words don't fuse.
+        if !inner.is_empty() && !out.ends_with(char::is_whitespace) {
+            out.push(' ');
+        }
         return;
+    }
+    // Markdown forbids whitespace just inside the markers (`** text **`), so move
+    // any leading/trailing whitespace to outside them — preserving the word
+    // boundaries with adjacent text (e.g. `<b>make </b>#tag<b> folder</b>`).
+    if inner.starts_with(char::is_whitespace) && !out.ends_with(char::is_whitespace) {
+        out.push(' ');
     }
     out.push_str(open);
     out.push_str(t);
     out.push_str(close);
+    if inner.ends_with(char::is_whitespace) {
+        out.push(' ');
+    }
 }
 
 /// Escape characters that have inline-Markdown meaning. Newlines and `#`/`>`
@@ -271,5 +284,18 @@ mod tests {
     fn hashtag_becomes_tag_shortcode() {
         let md = conv(r#"<div><a href="?q=%23ad">#ad</a></div>"#);
         assert!(md.contains(r#"{{ tag(t="ad") }}"#), "{md:?}");
+    }
+
+    #[test]
+    fn bold_keeps_spaces_around_hashtags() {
+        // Spaces at the edges of bold spans must survive as word boundaries
+        // (Markdown can't keep them inside the ** markers).
+        let md = conv(
+            r#"<div><b>How to make </b><a href="?q=%23ubuntu">#ubuntu</a><b> folder</b></div>"#,
+        );
+        assert!(
+            md.contains(r#"**How to make** {{ tag(t="ubuntu") }} **folder**"#),
+            "{md:?}"
+        );
     }
 }
