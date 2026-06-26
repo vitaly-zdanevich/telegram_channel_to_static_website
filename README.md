@@ -72,6 +72,10 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   <public-dir>` rewrites the built site to relative links **and** strips Zola's
   pagination redirect script, so the offline copy opens straight from `file://`
   with zero JavaScript and no web server.
+- **Localized UI** — the site chrome (Newer/Older/Tags/About, the search box,
+  dates) renders in any of 11 languages via `LANGUAGE` / `--language`
+  (en/be/uk/ru/de/fr/zh/ja/pl/es/ko), with month and weekday names localized
+  too. Post content keeps the channel's own language.
 
 ## Install
 
@@ -236,6 +240,7 @@ These are *variables*, not secrets — all of it is public.
 | `FOOTER` | `--footer` | — | Footer content — plain text, Markdown or HTML |
 | `PAGES_HOST` | `--pages-host` | auto | Host for the About-page size limit: `github` / `gitlab` / `none` (auto-detected from the URL) |
 | `DATE_FORMAT` | `--date-format` | `%Y %B %d` | strftime format for displayed dates (e.g. `2025 October 28`; `%Y` for year only) |
+| `LANGUAGE` | `--language` | `en` | UI language for the site chrome (Newer/Older/Tags/About/…): `en`/`be`/`uk`/`ru`/`de`/`fr`/`zh`/`ja`/`pl`/`es`/`ko`. Post content keeps the channel's own language; dates are localized to match |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
 | `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (fetches the page for its YouTube video + lyrics widget) |

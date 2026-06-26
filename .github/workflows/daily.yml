@@ -69,6 +69,9 @@ env:
   # strftime format for displayed dates (default "%Y %B %d" → 2025 October 28;
   # use "%Y" for year only).
   DATE_FORMAT: ${{ vars.DATE_FORMAT }}
+  # UI language for the site chrome (Newer/Older/Tags/About/…): one of
+  # en/be/uk/ru/de/fr/zh/ja/pl/es/ko (default en). Post content is unchanged.
+  LANGUAGE: ${{ vars.LANGUAGE }}
   # Set to "true" to underline links (default: no underline).
   LINK_UNDERLINE: ${{ vars.LINK_UNDERLINE }}
   # Set to "true" for a CSS-only click-to-load YouTube facade (default: direct
@@ -158,6 +161,7 @@ jobs:
             [ -n "${FOOTER:-}" ] && args+=(--footer "$FOOTER")
             [ -n "${PAGES_HOST:-}" ] && args+=(--pages-host "$PAGES_HOST")
             [ -n "${DATE_FORMAT:-}" ] && args+=(--date-format "$DATE_FORMAT")
+            [ -n "${LANGUAGE:-}" ] && args+=(--language "$LANGUAGE")
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)

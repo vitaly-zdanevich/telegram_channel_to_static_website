@@ -238,6 +238,7 @@ pub fn render_post(
     page: bool,
     newer: Option<(u64, &str)>,
     older: Option<(u64, &str)>,
+    ui: &crate::i18n::Ui,
 ) -> RenderedPost {
     // A PAGE-marked post becomes a standalone page; work on a copy with the
     // marker line removed and use a plain first-sentence title.
@@ -326,9 +327,9 @@ pub fn render_post(
                     body.push_str(&format!("![video]({fname})\n\n"));
                 }
                 let label = if dur.is_empty() {
-                    "▶ video".to_string()
+                    format!("▶ {}", ui.video)
                 } else {
-                    format!("▶ video — {dur}")
+                    format!("▶ {} — {dur}", ui.video)
                 };
                 body.push_str(&format!("*{label}*\n\n"));
             }
@@ -350,7 +351,11 @@ pub fn render_post(
             }
             Media::DocumentRef { filename } => {
                 // The file isn't on the public page; note the attachment + name.
-                body.push_str(&format!("📎 {} *(not archived)*\n\n", label_escape(filename)));
+                body.push_str(&format!(
+                    "📎 {} *({})*\n\n",
+                    label_escape(filename),
+                    ui.not_archived
+                ));
             }
         }
     }
@@ -804,6 +809,7 @@ mod tests {
             true,
             None,
             None,
+            &crate::i18n::ui("en"),
         );
         assert_eq!(r.title, "My Cool Page");
         assert!(r.index_md.contains("path = \"/my-cool-page/\""), "{}", r.index_md);

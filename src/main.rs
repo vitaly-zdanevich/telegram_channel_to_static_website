@@ -9,6 +9,7 @@ mod config;
 mod genius;
 mod group;
 mod html2md;
+mod i18n;
 mod media;
 mod model;
 mod offline;
@@ -136,6 +137,11 @@ struct GenerateArgs {
     #[arg(long)]
     date_format: Option<String>,
 
+    /// UI language for the site chrome (Newer/Older/Tags/About/…): one of
+    /// en/be/uk/ru/de/fr/zh/ja/pl/es/ko (default `en`). In CI set LANGUAGE.
+    #[arg(long)]
+    language: Option<String>,
+
     /// Underline links (default: no underline).
     #[arg(long)]
     link_underline: bool,
@@ -245,6 +251,22 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         .or(fc.base_url)
         .unwrap_or_else(|| "/".to_string());
 
+    let raw_language = g.language.clone().or(fc.language).unwrap_or_default();
+    let language_base = raw_language
+        .trim()
+        .split(['-', '_'])
+        .next()
+        .unwrap_or("")
+        .to_ascii_lowercase();
+    if !language_base.is_empty() && !i18n::SUPPORTED.contains(&language_base.as_str()) {
+        tracing::warn!(
+            "unsupported language {:?}; using English (supported: {})",
+            raw_language,
+            i18n::SUPPORTED.join(", ")
+        );
+    }
+    let language = i18n::normalize(&raw_language).to_string();
+
     Ok(Settings {
         title: g.title.clone().or(fc.title).unwrap_or_else(|| channel.clone()),
         description: g.description.clone().or(fc.description).unwrap_or_default(),
@@ -306,6 +328,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .or(fc.date_format)
             .filter(|s| !s.trim().is_empty())
             .unwrap_or_else(|| "%Y %B %d".to_string()),
+        language,
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
         genius: if g.no_genius {
@@ -475,10 +498,14 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
 
     let rewriter = render::LinkRewriter::new(&s.channel, &posts);
 
+    // Localized UI strings for rendered post bodies (e.g. the "not archived"
+    // attachment note). Template chrome is localized via config.extra.i18n.
+    let ui = i18n::ui(&s.language);
+
     // Render PAGE posts first so their nav entries are ready for scaffolding.
     let rendered_pages: Vec<render::RenderedPost> = page_posts
         .iter()
-        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None))
+        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None, &ui))
         .collect();
     let page_nav: Vec<(String, String)> = rendered_pages
         .iter()
@@ -504,7 +531,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             let older = i
                 .checked_sub(1)
                 .map(|j| (posts[j].primary_id, titles[j].as_str()));
-            render::render_post(p, &rewriter, s.title_max_len, false, newer, older)
+            render::render_post(p, &rewriter, s.title_max_len, false, newer, older, &ui)
         })
         .collect();
 

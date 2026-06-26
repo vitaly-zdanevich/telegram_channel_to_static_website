@@ -43,6 +43,10 @@ pub struct FileConfig {
     /// strftime format for displayed dates (default `%Y %B %d` → "2025 October 28";
     /// use `%Y` for year only).
     pub date_format: Option<String>,
+    /// UI language for the generated site chrome (Newer/Older/Tags/About/…):
+    /// one of en/be/uk/ru/de/fr/zh/ja/pl/es/ko (default `en`). Post content
+    /// keeps the channel's own language.
+    pub language: Option<String>,
     /// Underline links (default false → `text-decoration: none`).
     pub link_underline: Option<bool>,
     /// CSS-only click-to-load YouTube facade (default true); false = direct iframe.
@@ -119,6 +123,8 @@ pub struct Settings {
     pub pages_host: Option<String>,
     /// strftime format for displayed dates.
     pub date_format: String,
+    /// UI language for the site chrome (one of the supported codes; `en` default).
+    pub language: String,
     /// Underline links (default false).
     pub link_underline: bool,
     /// CSS-only click-to-load YouTube facade (default true).
