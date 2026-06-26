@@ -424,8 +424,15 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         }
     }
 
-    let mut posts = group::group(messages, s.group_window_secs);
+    let posts = group::group(messages, s.group_window_secs);
     info!("grouped into {} posts", posts.len());
+
+    // PAGE-marked posts become standalone pages (in the nav), not feed posts.
+    let (page_posts, mut posts): (Vec<_>, Vec<_>) =
+        posts.into_iter().partition(render::is_page);
+    if !page_posts.is_empty() {
+        info!("{} PAGE post(s) → pages", page_posts.len());
+    }
 
     // Resolve genius.com links into the YouTube video they reference (+ song id).
     if s.genius {
@@ -459,11 +466,22 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         }
     }
 
+    let rewriter = render::LinkRewriter::new(&s.channel, &posts);
+
+    // Render PAGE posts first so their nav entries are ready for scaffolding.
+    let rendered_pages: Vec<render::RenderedPost> = page_posts
+        .iter()
+        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None))
+        .collect();
+    let page_nav: Vec<(String, String)> = rendered_pages
+        .iter()
+        .map(|r| (r.title.clone(), r.slug.clone()))
+        .collect();
+
     if init_site {
-        site::scaffold(&s, channel_info.as_ref(), &tag_counts)?;
+        site::scaffold(&s, channel_info.as_ref(), &tag_counts, &page_nav)?;
     }
 
-    let rewriter = render::LinkRewriter::new(&s.channel, &posts);
     // Posts are id-ascending; neighbour id+title drive the Next/Prev nav.
     let titles: Vec<String> = posts
         .iter()
@@ -479,28 +497,35 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             let older = i
                 .checked_sub(1)
                 .map(|j| (posts[j].primary_id, titles[j].as_str()));
-            render::render_post(p, &rewriter, s.title_max_len, newer, older)
+            render::render_post(p, &rewriter, s.title_max_len, false, newer, older)
         })
         .collect();
 
     // Write bundles (dirs + index.md) and prune removed posts / stale files
     // first, so downloads land in existing dirs and reuse already-cached files.
     site::write_site(&s, &rendered)?;
+    site::write_pages(&s, &rendered_pages)?;
 
     if s.download_media {
+        let job_for = |dir: std::path::PathBuf| {
+            move |d: &render::Download| media::Job {
+                url: d.url.clone(),
+                dest: dir.join(&d.filename),
+                force: d.force,
+            }
+        };
         let posts_dir = s.site.join("content/posts");
-        let jobs: Vec<media::Job> = rendered
+        let pages_dir = s.site.join("content/pages");
+        let mut jobs: Vec<media::Job> = rendered
             .iter()
-            .flat_map(|r| {
-                let dir = posts_dir.join(&r.slug);
-                r.downloads.iter().map(move |d| media::Job {
-                    url: d.url.clone(),
-                    dest: dir.join(&d.filename),
-                    force: d.force,
-                })
-            })
+            .flat_map(|r| r.downloads.iter().map(job_for(posts_dir.join(&r.slug))))
             .collect();
-        info!("{} media references across posts", jobs.len());
+        jobs.extend(
+            rendered_pages
+                .iter()
+                .flat_map(|r| r.downloads.iter().map(job_for(pages_dir.join(&r.slug)))),
+        );
+        info!("{} media references across posts/pages", jobs.len());
         media::download_all(&client, &jobs, s.concurrency).await?;
     } else {
         info!("--no-media: skipping downloads");

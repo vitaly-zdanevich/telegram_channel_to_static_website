@@ -24,8 +24,33 @@ pub struct Download {
 
 pub struct RenderedPost {
     pub slug: String,
+    pub title: String,
     pub index_md: String,
     pub downloads: Vec<Download>,
+}
+
+/// True if the post's first non-empty line is the lone marker `PAGE` (so it
+/// should become a standalone page rather than a feed post).
+pub fn is_page(post: &Post) -> bool {
+    post.body_md.lines().map(str::trim).find(|l| !l.is_empty()) == Some("PAGE")
+}
+
+/// Drop the first non-empty line (the `PAGE` marker) from a body.
+fn strip_page_marker(body: &str) -> String {
+    let mut removed = false;
+    body.lines()
+        .filter(|l| {
+            if !removed && !l.trim().is_empty() {
+                removed = true;
+                false
+            } else {
+                true
+            }
+        })
+        .collect::<Vec<_>>()
+        .join("\n")
+        .trim_start()
+        .to_string()
 }
 
 /// Slug (and content-dir name) for a post: `YYYY-MM-DD-<id>`. Zola strips the
@@ -198,22 +223,35 @@ pub fn render_post(
     post: &Post,
     links: &LinkRewriter,
     title_max: usize,
+    page: bool,
     newer: Option<(u64, &str)>,
     older: Option<(u64, &str)>,
 ) -> RenderedPost {
-    let slug = slug_for(post);
-    // A Wikimedia Commons page link gives a readable title (the decoded category
-    // name) and a clean body link; otherwise derive the title from the body.
-    let (title, body_src) = match wiki_title_for(post, title_max) {
-        Some((name, url)) => (name.clone(), wiki_body(&post.body_md, &name, &url)),
-        None => {
-            let (t, mut b) = title_and_body(post, title_max);
-            // A forwarded post often ends with a link back to the source
-            // channel; the "forwarded from" header already shows it, so drop it.
-            if let Some(fwd) = &post.forwarded_from {
-                b = strip_forward_backlink(&b, fwd);
+    // A PAGE-marked post becomes a standalone page; work on a copy with the
+    // marker line removed and use a plain first-sentence title.
+    let page_post = page.then(|| {
+        let mut p = post.clone();
+        p.body_md = strip_page_marker(&post.body_md);
+        p
+    });
+    let post = page_post.as_ref().unwrap_or(post);
+
+    // A Wikimedia/Wikipedia page link gives a readable title + clean body link;
+    // otherwise derive the title from the body.
+    let (title, body_src) = if page {
+        title_and_body(post, title_max)
+    } else {
+        match wiki_title_for(post, title_max) {
+            Some((name, url)) => (name.clone(), wiki_body(&post.body_md, &name, &url)),
+            None => {
+                let (t, mut b) = title_and_body(post, title_max);
+                // A forwarded post often ends with a link back to the source
+                // channel; the "forwarded from" header already shows it, drop it.
+                if let Some(fwd) = &post.forwarded_from {
+                    b = strip_forward_backlink(&b, fwd);
+                }
+                (t, b)
             }
-            (t, b)
         }
     };
 
@@ -328,14 +366,22 @@ pub fn render_post(
         }
     }
 
-    let description = excerpt(&body_src, 200);
-    let index_md = format!(
-        "{}{}\n",
-        front_matter(post, &title, &description, og_image.as_deref(), newer, older),
-        body.trim_end()
-    );
+    let (slug, front) = if page {
+        let slug = crate::site::slugify(&title);
+        let front = format!(
+            "+++\ntitle = {}\npath = \"/{slug}/\"\ntemplate = \"page.html\"\n+++\n\n",
+            toml_str(&title)
+        );
+        (slug, front)
+    } else {
+        let description = excerpt(&body_src, 200);
+        let front = front_matter(post, &title, &description, og_image.as_deref(), newer, older);
+        (slug_for(post), front)
+    };
+    let index_md = format!("{}{}\n", front, body.trim_end());
     RenderedPost {
         slug,
+        title,
         index_md,
         downloads,
     }
@@ -705,6 +751,49 @@ mod tests {
     fn commons_title_decoded() {
         let url = "https://commons.wikimedia.org/w/index.php?title=Category:Test_Page_%28x%29--01&action=edit&redlink=1";
         assert_eq!(commons_page_name(url).as_deref(), Some("Test Page (x)--01"));
+    }
+
+    fn post_with_body(body: &str) -> Post {
+        use chrono::TimeZone;
+        Post {
+            primary_id: 1,
+            ids: vec![1],
+            channel: "c".into(),
+            date: chrono::FixedOffset::east_opt(0)
+                .unwrap()
+                .timestamp_opt(1_700_000_000, 0)
+                .unwrap(),
+            author: None,
+            forwarded_from: None,
+            body_md: body.into(),
+            tags: vec![],
+            media: vec![],
+            views: None,
+            edited: false,
+            links: vec![],
+            youtube: None,
+            genius_song_id: None,
+        }
+    }
+
+    #[test]
+    fn page_marker_makes_a_page() {
+        assert!(is_page(&post_with_body("PAGE\nMy Cool Page\nMore text.")));
+        assert!(!is_page(&post_with_body("Not a page")));
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let r = render_post(
+            &post_with_body("PAGE\nMy Cool Page\nMore text."),
+            &rw,
+            200,
+            true,
+            None,
+            None,
+        );
+        assert_eq!(r.title, "My Cool Page");
+        assert!(r.index_md.contains("path = \"/my-cool-page/\""), "{}", r.index_md);
+        assert!(r.index_md.contains("template = \"page.html\""), "{}", r.index_md);
+        assert!(r.index_md.contains("More text."), "{}", r.index_md);
+        assert!(!r.index_md.contains("PAGE"), "marker dropped: {}", r.index_md);
     }
 
     #[test]

@@ -15,7 +15,12 @@ use crate::render::RenderedPost;
 
 /// (Re)write config + content indexes, and either install our built-in
 /// templates (default) or clear them so an external theme takes over.
-pub fn scaffold(s: &Settings, info: Option<&ChannelInfo>, tags: &[(String, usize)]) -> Result<()> {
+pub fn scaffold(
+    s: &Settings,
+    info: Option<&ChannelInfo>,
+    tags: &[(String, usize)],
+    page_nav: &[(String, String)],
+) -> Result<()> {
     let site = &s.site;
     fs::create_dir_all(site.join("templates/shortcodes"))?;
     fs::create_dir_all(site.join("content/posts"))?;
@@ -38,7 +43,7 @@ pub fn scaffold(s: &Settings, info: Option<&ChannelInfo>, tags: &[(String, usize
     }
 
     // Regenerated every run (deterministic) so theme switches take effect.
-    write_file(&site.join("config.toml"), &config_toml(s, &pages, tags))?;
+    write_file(&site.join("config.toml"), &config_toml(s, &pages, tags, page_nav))?;
     write_file(&site.join("content/_index.md"), &root_index_md(s))?;
     write_file(&site.join("content/posts/_index.md"), &posts_index_md(s))?;
     // Static pages live in a non-rendered subsection so they don't appear in the
@@ -126,6 +131,32 @@ pub fn write_site(s: &Settings, rendered: &[RenderedPost]) -> Result<()> {
     Ok(())
 }
 
+/// Write PAGE-marked posts as page bundles under content/pages/<slug>/ (media
+/// alongside). Other content/pages entries (About, custom pages) are untouched.
+pub fn write_pages(s: &Settings, pages: &[RenderedPost]) -> Result<()> {
+    let dir = s.site.join("content/pages");
+    for p in pages {
+        let bundle = dir.join(&p.slug);
+        fs::create_dir_all(&bundle)?;
+        fs::write(bundle.join("index.md"), &p.index_md)
+            .with_context(|| format!("writing {}", bundle.join("index.md").display()))?;
+        let mut keep: HashSet<String> = p.downloads.iter().map(|d| d.filename.clone()).collect();
+        keep.insert("index.md".to_string());
+        if let Ok(rd) = fs::read_dir(&bundle) {
+            for e in rd.flatten() {
+                let n = e.file_name().to_string_lossy().into_owned();
+                if !keep.contains(&n) {
+                    let _ = fs::remove_file(e.path());
+                }
+            }
+        }
+    }
+    if !pages.is_empty() {
+        tracing::info!("wrote {} PAGE bundle(s)", pages.len());
+    }
+    Ok(())
+}
+
 fn write_file(path: &Path, contents: &str) -> Result<()> {
     if let Some(p) = path.parent() {
         fs::create_dir_all(p)?;
@@ -140,7 +171,12 @@ fn write_if_absent(path: &Path, contents: &str) -> Result<()> {
     write_file(path, contents)
 }
 
-fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String {
+fn config_toml(
+    s: &Settings,
+    pages: &[Page],
+    tags: &[(String, usize)],
+    page_nav: &[(String, String)],
+) -> String {
     let theme_line = match &s.theme {
         Some(t) => format!("theme = \"{}\"\n", toml_escape(t)),
         None => String::new(),
@@ -198,20 +234,17 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
         ),
         None => String::new(),
     };
-    let nav = if pages.is_empty() {
+    let mut nav_items: Vec<String> = pages
+        .iter()
+        .map(|p| (p.title.as_str(), p.slug.as_str()))
+        .chain(page_nav.iter().map(|(t, s)| (t.as_str(), s.as_str())))
+        .map(|(title, slug)| format!("{{ title = \"{}\", path = \"/{}/\" }}", toml_escape(title), slug))
+        .collect();
+    let nav = if nav_items.is_empty() {
         String::new()
     } else {
-        let items: Vec<String> = pages
-            .iter()
-            .map(|p| {
-                format!(
-                    "{{ title = \"{}\", path = \"/{}/\" }}",
-                    toml_escape(&p.title),
-                    p.slug
-                )
-            })
-            .collect();
-        format!("nav = [{}]", items.join(", "))
+        nav_items.dedup();
+        format!("nav = [{}]", nav_items.join(", "))
     };
     // Tags surfaced in the top nav (TAGS_TO_PAGES), restricted to tags that
     // actually exist (case-insensitively) so get_taxonomy_url can't fail.
@@ -546,7 +579,7 @@ fn parse_pages(src: Option<&str>) -> Vec<Page> {
     pages
 }
 
-fn slugify(s: &str) -> String {
+pub fn slugify(s: &str) -> String {
     let mut out = String::new();
     let mut dash = false;
     for c in s.chars() {
