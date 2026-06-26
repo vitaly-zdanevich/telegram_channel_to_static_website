@@ -569,7 +569,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // on the About page, after downloads so it's the real size.
     let breakdown = site::size_breakdown(&[&s.site.join("content"), &s.site.join("static")]);
     let limit = site::pages_limit(&s.base_url, s.pages_host.as_deref()).map(|l| l.bytes);
-    site::set_about_size(&s.site, &breakdown, limit, started.elapsed());
+    site::set_about_size(&s.site, &breakdown, limit, started.elapsed(), &i18n::about(&s.language));
 
     info!("done — Zola site at {}", s.site.display());
     info!("build it with:  zola --root {} build", s.site.display());
