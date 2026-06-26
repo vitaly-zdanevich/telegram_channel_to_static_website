@@ -434,6 +434,13 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         info!("{} PAGE post(s) → pages", page_posts.len());
     }
 
+    // Drop posts with nothing worth showing (e.g. a lone non-downloadable file).
+    let before = posts.len();
+    posts.retain(|p| !render::is_empty_post(p));
+    if before != posts.len() {
+        info!("skipped {} empty post(s)", before - posts.len());
+    }
+
     // Resolve genius.com links into the YouTube video they reference (+ song id).
     if s.genius {
         genius::enrich(&client, &mut posts, s.concurrency).await;

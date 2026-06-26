@@ -227,19 +227,20 @@ fn parse_media(wrap: ElementRef) -> Vec<Media> {
     }
 
     for d in wrap.select(&S_DOC) {
-        if let Some(href) = d.value().attr("href") {
-            if is_downloadable(href) {
-                let filename = d
-                    .select(&S_DOC_TITLE)
-                    .next()
-                    .map(|t| collapse_ws(&t.text().collect::<String>()))
-                    .filter(|s| !s.is_empty())
-                    .unwrap_or_else(|| "file".to_string());
-                media.push(Media::Document {
-                    url: href.to_string(),
-                    filename,
-                });
-            }
+        let filename = d
+            .select(&S_DOC_TITLE)
+            .next()
+            .map(|t| collapse_ws(&t.text().collect::<String>()))
+            .filter(|s| !s.is_empty())
+            .unwrap_or_else(|| "file".to_string());
+        match d.value().attr("href").filter(|h| is_downloadable(h)) {
+            // Downloadable file.
+            Some(href) => media.push(Media::Document {
+                url: href.to_string(),
+                filename,
+            }),
+            // No direct URL in the public page — keep the name only.
+            None => media.push(Media::DocumentRef { filename }),
         }
     }
 

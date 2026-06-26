@@ -306,7 +306,10 @@ The public web preview is the trade-off for needing **zero authentication**:
   JavaScript and isn't in the scraped HTML; stickers are saved as plain images.
 - **Music files (audio documents) aren't downloadable** — their URL isn't in the
   scraped HTML (only voice notes, with direct `.oga` URLs, are). Like large
-  videos and stickers, they'd need the MTProto API.
+  videos and stickers, they'd need the MTProto API. For an attachment we can't
+  fetch we keep its **filename** (marked *not archived*) so you know it existed;
+  a post that is *only* such a reference (or a lone undownloadable file) is
+  skipped rather than published empty.
 - **YouTube** plays via a `youtube.com` iframe (so plays count toward the
   viewer's history) on the published HTTPS site; over `file://` the iframe can't
   load (YouTube needs an origin). `YOUTUBE_FACADE=true` swaps the iframe for a

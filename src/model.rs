@@ -42,6 +42,9 @@ pub enum Media {
     Audio { url: String, title: Option<String> },
     /// Arbitrary document/attachment with a downloadable URL.
     Document { url: String, filename: String },
+    /// A document/attachment whose file the public page doesn't expose; we keep
+    /// only its name so the reader knows it existed.
+    DocumentRef { filename: String },
     /// Sticker rendered as an image (webp).
     Sticker { url: String, key: Option<String> },
 }

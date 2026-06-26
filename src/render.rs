@@ -35,6 +35,18 @@ pub fn is_page(post: &Post) -> bool {
     post.body_md.lines().map(str::trim).find(|l| !l.is_empty()) == Some("PAGE")
 }
 
+/// True if the post would render to nothing worth keeping: no text/tags, no
+/// YouTube, and no real media — only a non-archived attachment reference, or
+/// media the public page dropped (e.g. a lone non-downloadable music file).
+pub fn is_empty_post(post: &Post) -> bool {
+    post.body_md.trim().is_empty()
+        && post.youtube.is_none()
+        && !post
+            .media
+            .iter()
+            .any(|m| !matches!(m, Media::DocumentRef { .. }))
+}
+
 /// Drop the first non-empty line (the `PAGE` marker) from a body.
 fn strip_page_marker(body: &str) -> String {
     let mut removed = false;
@@ -335,6 +347,10 @@ pub fn render_post(
                 let fname = sanitize_filename(filename, &ext, idx);
                 push_dl(&mut downloads, url, &fname, post.edited);
                 body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(filename)));
+            }
+            Media::DocumentRef { filename } => {
+                // The file isn't on the public page; note the attachment + name.
+                body.push_str(&format!("📎 {} *(not archived)*\n\n", label_escape(filename)));
             }
         }
     }
