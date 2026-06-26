@@ -139,6 +139,10 @@ struct GenerateArgs {
     #[arg(long)]
     link_underline: bool,
 
+    /// Enable the CSS click-to-load YouTube facade (default: direct iframe).
+    #[arg(long)]
+    youtube_facade: bool,
+
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
     #[arg(long)]
@@ -293,6 +297,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .filter(|s| !s.trim().is_empty())
             .unwrap_or_else(|| "%Y %B %d".to_string()),
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
+        youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
         background_dark: g
             .background_dark_color
             .clone()

@@ -60,6 +60,10 @@ description = "A self-contained static backup of a public Telegram channel."
 # Underline links. Default false (text-decoration: none).
 # link_underline = true
 
+# CSS-only click-to-load YouTube facade (no JS). Default false (direct iframe).
+# Both use youtube.com so plays count toward the viewer's history.
+# youtube_facade = true
+
 # Mastodon handle (@user@instance) for the fediverse:creator byline on shared
 # links and a rel="me" profile-verification link. In CI, set FEDIVERSE_CREATOR.
 # fediverse_creator = "@you@fosstodon.org"

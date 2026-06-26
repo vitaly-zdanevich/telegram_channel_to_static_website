@@ -45,6 +45,8 @@ pub struct FileConfig {
     pub date_format: Option<String>,
     /// Underline links (default false → `text-decoration: none`).
     pub link_underline: Option<bool>,
+    /// CSS-only click-to-load YouTube facade (default true); false = direct iframe.
+    pub youtube_facade: Option<bool>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
     pub pages: Option<String>,
     /// Number of full posts per page on the home feed (default 20).
@@ -115,6 +117,8 @@ pub struct Settings {
     pub date_format: String,
     /// Underline links (default false).
     pub link_underline: bool,
+    /// CSS-only click-to-load YouTube facade (default true).
+    pub youtube_facade: bool,
     pub pages: Option<String>,
     pub posts_per_page: usize,
     pub title_max_len: usize,

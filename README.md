@@ -225,6 +225,7 @@ These are *variables*, not secrets — all of it is public.
 | `PAGES_HOST` | `--pages-host` | auto | Host for the About-page size limit: `github` / `gitlab` / `none` (auto-detected from the URL) |
 | `DATE_FORMAT` | `--date-format` | `%Y %B %d` | strftime format for displayed dates (e.g. `2025 October 28`; `%Y` for year only) |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
+| `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |
@@ -292,9 +293,10 @@ The public web preview is the trade-off for needing **zero authentication**:
 - **Music files (audio documents) aren't downloadable** — their URL isn't in the
   scraped HTML (only voice notes, with direct `.oga` URLs, are). Like large
   videos and stickers, they'd need the MTProto API.
-- **YouTube** plays via an iframe on the published HTTPS site; over `file://` the
-  iframe can't load (YouTube needs an origin), so a "Watch on YouTube" link is
-  always shown alongside it.
+- **YouTube** plays via a `youtube.com` iframe (so plays count toward the
+  viewer's history) on the published HTTPS site; over `file://` the iframe can't
+  load (YouTube needs an origin). `YOUTUBE_FACADE=true` swaps the iframe for a
+  no-JS click-to-load thumbnail, which at least shows the poster over `file://`.
 - **Public channels only**, with the web preview enabled.
 
 ## License

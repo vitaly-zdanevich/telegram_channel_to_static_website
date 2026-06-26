@@ -71,6 +71,9 @@ env:
   DATE_FORMAT: ${{ vars.DATE_FORMAT }}
   # Set to "true" to underline links (default: no underline).
   LINK_UNDERLINE: ${{ vars.LINK_UNDERLINE }}
+  # Set to "true" for a CSS-only click-to-load YouTube facade (default: direct
+  # iframe). Both use youtube.com so plays count toward the viewer's history.
+  YOUTUBE_FACADE: ${{ vars.YOUTUBE_FACADE }}
 
 jobs:
   build-deploy:
@@ -150,6 +153,7 @@ jobs:
             [ -n "${PAGES_HOST:-}" ] && args+=(--pages-host "$PAGES_HOST")
             [ -n "${DATE_FORMAT:-}" ] && args+=(--date-format "$DATE_FORMAT")
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
+            [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
           }

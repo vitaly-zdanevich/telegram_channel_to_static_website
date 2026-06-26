@@ -228,6 +228,7 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
             "__TELEGRAM_LINK__",
             if s.telegram_link { "true" } else { "false" },
         )
+        .replace("__YT_FACADE__", if s.youtube_facade { "true" } else { "false" })
         .replace("__FEDI__", &fedi)
         .replace("__SEARCH__", &search)
         .replace("__FOOTER__", &footer)
@@ -615,6 +616,7 @@ tags_footer = __TAGS_FOOTER__
 next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
+youtube_facade = __YT_FACADE__
 __FEDI__
 __SEARCH__
 __FOOTER__
@@ -773,13 +775,17 @@ const TAGS_LIST: &str = r#"{% extends "base.html" %}
 {% endblock content %}
 "#;
 
-// Self-hosted YouTube shortcode (Zola no longer ships one). Uses the
-// privacy-friendly nocookie host. Invoked from Markdown as {{ youtube(id="...") }}.
+// YouTube shortcode (Zola no longer ships one). Uses the regular youtube.com
+// host so a played video counts toward the viewer's history. Default is a
+// direct iframe; with config.extra.youtube_facade it's a CSS-only click-to-load
+// facade — a display:none + loading=lazy iframe doesn't fetch until the
+// checkbox reveals it, so no JavaScript is involved.
 const YOUTUBE_SHORTCODE: &str = r#"<div class="yt-embed">
-  <iframe src="https://www.youtube-nocookie.com/embed/{{ id }}"
-    title="YouTube video" loading="lazy"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{%- if config.extra.youtube_facade -%}
+<input type="checkbox" id="yt-{{ id }}" class="yt-toggle"><label for="yt-{{ id }}" class="yt-facade"><img src="https://i.ytimg.com/vi/{{ id }}/hqdefault.jpg" alt="" loading="lazy"><span class="yt-btn" aria-hidden="true">▶</span></label><iframe class="yt-frame" src="https://www.youtube.com/embed/{{ id }}?autoplay=1" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{%- else -%}
+<iframe src="https://www.youtube.com/embed/{{ id }}" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{%- endif -%}
 </div>
 "#;
 
@@ -832,6 +838,15 @@ audio { width: 100%; }
 .yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
 .yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .yt-link { font-size: .9em; margin-top: .25rem; }
+/* CSS-only click-to-load facade (no JS): the iframe is display:none until the
+   hidden checkbox is checked, so loading=lazy defers its fetch until click. */
+.yt-embed .yt-toggle { position: absolute; width: 0; height: 0; opacity: 0; }
+.yt-embed .yt-facade { position: absolute; inset: 0; cursor: pointer; display: block; }
+.yt-embed .yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yt-embed .yt-btn { position: absolute; inset: 0; margin: auto; width: 4.2rem; height: 3rem; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,.65); border-radius: 12px; }
+.yt-embed .yt-frame { display: none; }
+.yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
+.yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }
 pre { background: var(--code-bg); padding: .75rem; border-radius: 4px; overflow-x: auto; }
 code { background: var(--code-bg); padding: .1rem .3rem; border-radius: 4px; }
