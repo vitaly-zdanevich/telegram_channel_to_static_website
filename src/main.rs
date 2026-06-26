@@ -6,6 +6,7 @@
 //! channel being removed.
 
 mod config;
+mod genius;
 mod group;
 mod html2md;
 mod media;
@@ -142,6 +143,11 @@ struct GenerateArgs {
     /// Enable the CSS click-to-load YouTube facade (default: direct iframe).
     #[arg(long)]
     youtube_facade: bool,
+
+    /// Don't resolve genius.com links (skip fetching their pages for a YouTube
+    /// video / lyrics widget).
+    #[arg(long)]
+    no_genius: bool,
 
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
@@ -298,6 +304,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .unwrap_or_else(|| "%Y %B %d".to_string()),
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
+        genius: if g.no_genius {
+            false
+        } else {
+            fc.genius.unwrap_or(true)
+        },
         background_dark: g
             .background_dark_color
             .clone()
@@ -406,6 +417,11 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
 
     let mut posts = group::group(messages, s.group_window_secs);
     info!("grouped into {} posts", posts.len());
+
+    // Resolve genius.com links into the YouTube video they reference (+ song id).
+    if s.genius {
+        genius::enrich(&client, &mut posts, s.concurrency).await;
+    }
 
     // Auto-tag posts that have a playable (downloadable) video with #video,
     // unless the author already tagged it.

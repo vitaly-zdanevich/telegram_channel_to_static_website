@@ -47,6 +47,8 @@ pub struct FileConfig {
     pub link_underline: Option<bool>,
     /// CSS-only click-to-load YouTube facade (default true); false = direct iframe.
     pub youtube_facade: Option<bool>,
+    /// Resolve genius.com links (fetch the page for its YouTube + lyrics widget).
+    pub genius: Option<bool>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
     pub pages: Option<String>,
     /// Number of full posts per page on the home feed (default 20).
@@ -119,6 +121,8 @@ pub struct Settings {
     pub link_underline: bool,
     /// CSS-only click-to-load YouTube facade (default true).
     pub youtube_facade: bool,
+    /// Resolve genius.com links (default true).
+    pub genius: bool,
     pub pages: Option<String>,
     pub posts_per_page: usize,
     pub title_max_len: usize,

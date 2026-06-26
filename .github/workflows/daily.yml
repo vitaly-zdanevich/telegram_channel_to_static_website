@@ -74,6 +74,9 @@ env:
   # Set to "true" for a CSS-only click-to-load YouTube facade (default: direct
   # iframe). Both use youtube.com so plays count toward the viewer's history.
   YOUTUBE_FACADE: ${{ vars.YOUTUBE_FACADE }}
+  # Set to "false" to skip resolving genius.com links (which otherwise fetch the
+  # page for its YouTube video + lyrics widget). On by default.
+  GENIUS: ${{ vars.GENIUS }}
 
 jobs:
   build-deploy:
@@ -154,6 +157,7 @@ jobs:
             [ -n "${DATE_FORMAT:-}" ] && args+=(--date-format "$DATE_FORMAT")
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
+            [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
           }

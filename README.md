@@ -226,6 +226,7 @@ These are *variables*, not secrets — all of it is public.
 | `DATE_FORMAT` | `--date-format` | `%Y %B %d` | strftime format for displayed dates (e.g. `2025 October 28`; `%Y` for year only) |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
+| `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (fetches the page for its YouTube video + lyrics widget) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |

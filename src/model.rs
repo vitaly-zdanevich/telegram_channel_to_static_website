@@ -88,4 +88,7 @@ pub struct Post {
     pub links: Vec<String>,
     /// YouTube video id, if any link in the post points at YouTube.
     pub youtube: Option<String>,
+    /// Genius song id (resolved by fetching a linked genius.com page), for the
+    /// lyrics widget when the post carries no lyrics of its own.
+    pub genius_song_id: Option<String>,
 }

@@ -64,6 +64,10 @@ description = "A self-contained static backup of a public Telegram channel."
 # Both use youtube.com so plays count toward the viewer's history.
 # youtube_facade = true
 
+# Resolve genius.com links by fetching the page for its YouTube video and (when
+# the post has no lyrics of its own) a lyrics widget. On by default.
+# genius = true
+
 # Mastodon handle (@user@instance) for the fediverse:creator byline on shared
 # links and a rel="me" profile-verification link. In CI, set FEDIVERSE_CREATOR.
 # fediverse_creator = "@you@fosstodon.org"

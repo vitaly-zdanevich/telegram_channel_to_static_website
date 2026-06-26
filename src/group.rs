@@ -80,6 +80,7 @@ fn to_post(m: RawMessage) -> Post {
         edited: m.edited,
         links: m.links,
         youtube,
+        genius_song_id: None,
     }
 }
 

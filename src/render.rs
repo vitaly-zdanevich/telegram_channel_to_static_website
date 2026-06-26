@@ -275,6 +275,26 @@ pub fn render_post(
         body.push_str("{{ tag(t=\"video\") }}\n\n");
     }
 
+    // Genius lyrics widget — only when the post carries no lyrics of its own (no
+    // blockquote). It's JavaScript (Genius has no static embed), so the offline
+    // pass strips it, leaving just the fallback link.
+    if let Some(song) = &post.genius_song_id {
+        let has_quote = post.body_md.lines().any(|l| l.trim_start().starts_with('>'));
+        if !has_quote {
+            let url = post
+                .links
+                .iter()
+                .find(|l| l.contains("genius.com"))
+                .map(String::as_str)
+                .unwrap_or("https://genius.com");
+            body.push_str(&format!(
+                "<div class=\"rg_embed_link\" data-song-id=\"{song}\">\
+<a href=\"{url}\">Lyrics on Genius</a></div>\
+<script crossorigin src=\"//genius.com/songs/{song}/embed.js\"></script>\n\n"
+            ));
+        }
+    }
+
     let description = excerpt(&body_src, 200);
     let index_md = format!(
         "{}{}\n",
