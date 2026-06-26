@@ -1,6 +1,6 @@
 [package]
 name = "tg2zola"
-version = "0.9.1"
+version = "0.10.0"
 edition = "2021"
 description = "Back up a public Telegram channel into a self-contained Zola static website (no Telegram dependency at runtime)"
 license = "MIT"

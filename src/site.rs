@@ -54,6 +54,24 @@ pub fn scaffold(
     for p in &pages {
         write_file(&site.join(format!("content/pages/{}.md", p.slug)), &page_md(s, p))?;
     }
+    // Per-tag "full posts" pages at /tags/<slug>/full/ (the number on the Tags
+    // page links here; the tag name links to the titles-only term page). Only
+    // with the built-in templates (a theme has no tag_full.html).
+    let tags_full = site.join("content/tags-full");
+    let _ = fs::remove_dir_all(&tags_full);
+    if s.theme.is_none() && !tags.is_empty() {
+        write_file(&tags_full.join("_index.md"), "+++\nrender = false\n+++\n")?;
+        for (name, _) in tags {
+            let slug = slugify(name);
+            let md = format!(
+                "+++\ntitle = \"#{}\"\npath = \"/tags/{}/full/\"\ntemplate = \"tag_full.html\"\n\n[extra]\ntag = \"{}\"\n+++\n",
+                toml_escape(name),
+                slug,
+                toml_escape(name)
+            );
+            write_file(&tags_full.join(&slug).join("index.md"), &md)?;
+        }
+    }
     // Always provide our YouTube shortcode (project shortcodes override the
     // theme's), so generated `{{ youtube(...) }}` always resolves.
     write_file(&site.join("templates/shortcodes/youtube.html"), YOUTUBE_SHORTCODE)?;
@@ -69,6 +87,7 @@ pub fn scaffold(
         ("templates/page.html", PAGE_HTML),
         ("templates/tags/single.html", TAGS_SINGLE),
         ("templates/tags/list.html", TAGS_LIST),
+        ("templates/tag_full.html", TAG_FULL_HTML),
     ];
     if s.theme.is_none() {
         fs::create_dir_all(site.join("templates/tags"))?;
@@ -193,7 +212,14 @@ fn config_toml(
     } else {
         let items: Vec<String> = tags
             .iter()
-            .map(|(n, c)| format!("{{ name = \"{}\", count = {} }}", toml_escape(n), c))
+            .map(|(n, c)| {
+                format!(
+                    "{{ name = \"{}\", count = {}, slug = \"{}\" }}",
+                    toml_escape(n),
+                    c,
+                    toml_escape(&slugify(n))
+                )
+            })
             .collect();
         format!("tags = [{}]", items.join(", "))
     };
@@ -826,9 +852,28 @@ const TAGS_LIST: &str = r#"{% extends "base.html" %}
   <h1>Tags</h1>
   <ul class="tag-cloud">
   {% for t in config.extra.tags | default(value=[]) %}
-    <li><a href="{{ get_taxonomy_url(kind='tags', name=t.name) | safe }}">#{{ t.name }}</a> <span class="count">{{ t.count }}</span></li>
+    <li><a href="{{ get_taxonomy_url(kind='tags', name=t.name) | safe }}">#{{ t.name }}</a> <a class="count" href="{{ get_url(path='/tags/' ~ t.slug ~ '/full/') | safe }}" title="full posts">{{ t.count }}</a></li>
   {% endfor %}
   </ul>
+{% endblock content %}
+"#;
+
+// Full-posts view for one tag (the clickable count on the Tags page links here),
+// rendering every tagged post in full — the term name links to the titles list.
+const TAG_FULL_HTML: &str = r#"{% extends "base.html" %}
+{% block title %}#{{ page.extra.tag }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>#{{ page.extra.tag }} <a class="count" href="{{ get_taxonomy_url(kind='tags', name=page.extra.tag) | safe }}">titles ↗</a></h1>
+  {% set tax = get_taxonomy(kind="tags") %}
+  {% for term in tax.items %}{% if term.name == page.extra.tag %}
+  {% for p in term.pages %}
+    <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
+      <h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>
+      <p class="meta"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M') }}">{{ p.date | date(format=config.extra.date_format) }}</time>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}</p>
+      <div class="content">{{ p.content | safe }}</div>
+    </article>
+  {% endfor %}
+  {% endif %}{% endfor %}
 {% endblock content %}
 "#;
 
