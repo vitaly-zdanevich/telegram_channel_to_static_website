@@ -68,6 +68,10 @@ description = "A self-contained static backup of a public Telegram channel."
 # the post has no lyrics of its own) a lyrics widget. On by default.
 # genius = true
 
+# Comma-separated tags to surface as #tag links in the top nav (only tags that
+# actually exist are shown).
+# tags_to_pages = "music, batumi, cooking"
+
 # Mastodon handle (@user@instance) for the fediverse:creator byline on shared
 # links and a rel="me" profile-verification link. In CI, set FEDIVERSE_CREATOR.
 # fediverse_creator = "@you@fosstodon.org"

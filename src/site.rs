@@ -213,6 +213,27 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
             .collect();
         format!("nav = [{}]", items.join(", "))
     };
+    // Tags surfaced in the top nav (TAGS_TO_PAGES), restricted to tags that
+    // actually exist (case-insensitively) so get_taxonomy_url can't fail.
+    let nav_tags = match &s.tags_to_pages {
+        Some(input) => {
+            let canon: std::collections::HashMap<String, &str> =
+                tags.iter().map(|(n, _)| (n.to_lowercase(), n.as_str())).collect();
+            let items: Vec<String> = input
+                .split(',')
+                .map(|t| t.trim().trim_start_matches('#').trim().to_lowercase())
+                .filter(|t| !t.is_empty())
+                .filter_map(|t| canon.get(&t).copied())
+                .map(|t| format!("\"{}\"", toml_escape(t)))
+                .collect();
+            if items.is_empty() {
+                String::new()
+            } else {
+                format!("nav_tags = [{}]", items.join(", "))
+            }
+        }
+        None => String::new(),
+    };
     CONFIG_TOML
         .replace("__BASE_URL__", &toml_escape(&s.base_url))
         .replace("__TITLE__", &toml_escape(&s.title))
@@ -234,6 +255,7 @@ fn config_toml(s: &Settings, pages: &[Page], tags: &[(String, usize)]) -> String
         .replace("__FOOTER__", &footer)
         .replace("__AVATAR__", avatar)
         .replace("__NAV__", &nav)
+        .replace("__NAV_TAGS__", &nav_tags)
         .replace("__TAGS__", &tags_toml)
 }
 
@@ -622,6 +644,7 @@ __SEARCH__
 __FOOTER__
 __AVATAR__
 __NAV__
+__NAV_TAGS__
 __TAGS__
 "#;
 
@@ -660,6 +683,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
     {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}" alt=""></a>{% endif %}
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
     <nav>
+      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
       <a href="{{ get_url(path='/tags/') }}">Tags</a>
       <a href="{{ get_url(path='/about/') }}">About</a>
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}

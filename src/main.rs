@@ -149,6 +149,10 @@ struct GenerateArgs {
     #[arg(long)]
     no_genius: bool,
 
+    /// Comma-separated tags to surface as `#tag` links in the top nav.
+    #[arg(long)]
+    tags_to_pages: Option<String>,
+
     /// Extra pages as Markdown, each section starting with a `# Title` heading
     /// (becomes a page + nav entry). In CI this comes from the PAGES variable.
     #[arg(long)]
@@ -309,6 +313,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.genius.unwrap_or(true)
         },
+        tags_to_pages: g
+            .tags_to_pages
+            .clone()
+            .or(fc.tags_to_pages)
+            .filter(|s| !s.trim().is_empty()),
         background_dark: g
             .background_dark_color
             .clone()

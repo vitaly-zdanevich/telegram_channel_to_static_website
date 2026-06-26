@@ -49,6 +49,8 @@ pub struct FileConfig {
     pub youtube_facade: Option<bool>,
     /// Resolve genius.com links (fetch the page for its YouTube + lyrics widget).
     pub genius: Option<bool>,
+    /// Comma-separated tags to surface as links in the top nav.
+    pub tags_to_pages: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
     pub pages: Option<String>,
     /// Number of full posts per page on the home feed (default 20).
@@ -123,6 +125,8 @@ pub struct Settings {
     pub youtube_facade: bool,
     /// Resolve genius.com links (default true).
     pub genius: bool,
+    /// Comma-separated tags to surface as links in the top nav.
+    pub tags_to_pages: Option<String>,
     pub pages: Option<String>,
     pub posts_per_page: usize,
     pub title_max_len: usize,

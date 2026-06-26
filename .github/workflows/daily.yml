@@ -77,6 +77,9 @@ env:
   # Set to "false" to skip resolving genius.com links (which otherwise fetch the
   # page for its YouTube video + lyrics widget). On by default.
   GENIUS: ${{ vars.GENIUS }}
+  # Comma-separated tags to surface as #tag links in the top nav, e.g.
+  # "music, batumi, cooking".
+  TAGS_TO_PAGES: ${{ vars.TAGS_TO_PAGES }}
 
 jobs:
   build-deploy:
@@ -158,6 +161,7 @@ jobs:
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)
+            [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
           }
