@@ -1,8 +1,10 @@
 # tg2zola configuration. CLI flags override anything set here.
 
-# Public channel username (without @). Its web preview must be enabled
-# (open https://t.me/s/<channel> in a browser to check).
-channel = "vitaly_zdanevich_chan"
+# Public channel username (without @). Its web preview must be enabled (open
+# https://t.me/s/<channel> in a browser to check). REQUIRED — set it via the
+# CHANNEL repository variable (Settings → Secrets and variables → Actions →
+# Variables) or `--channel`, or uncomment and set it here in your own fork.
+# channel = "durov"
 
 # Site identity.
 title = "Vitaly Zdanevich — channel backup"

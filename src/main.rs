@@ -55,7 +55,7 @@ struct GenerateArgs {
     #[arg(long)]
     config: Option<PathBuf>,
 
-    /// Public channel username, e.g. `vitaly_zdanevich_chan` (without @).
+    /// Public channel username, e.g. `durov` (without @).
     #[arg(long)]
     channel: Option<String>,
 

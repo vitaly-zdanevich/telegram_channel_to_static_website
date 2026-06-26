@@ -91,7 +91,7 @@ binary to turn the generated content into HTML.
 
 ```sh
 # Generate the Zola site (scaffolds config + templates on first run):
-tg2zola --channel vitaly_zdanevich_chan --site site --init-site
+tg2zola --channel durov --site site --init-site
 
 # Build the static HTML:
 zola --root site build       # output in site/public/
@@ -167,11 +167,11 @@ run:
 - **From the terminal:** `gh workflow run daily.yml` (GitHub CLI), then
   `gh run watch` to follow it.
 
-**Which channel?** By default the channel comes from [`tg2zola.toml`](tg2zola.toml)
-(`channel = "…"`, committed to the repo). To change it without editing files, set
-a repository **variable** `CHANNEL` (Settings → Secrets and variables → Actions →
-Variables) — it overrides the config. It's a *variable*, not a secret, since the
-channel is public anyway. (`THEME_REPO` works the same way.)
+**Which channel?** The channel isn't committed, so each deployment sets its own.
+Set a repository **variable** `CHANNEL` (Settings → Secrets and variables → Actions
+→ Variables) to the public channel username — it's a *variable*, not a secret,
+since the channel is public. (Or uncomment `channel = "…"` in
+[`tg2zola.toml`](tg2zola.toml) in your fork.) `THEME_REPO` works as a variable too.
 
 ### The `blog` branch (archive + cache)
 
@@ -220,7 +220,7 @@ These are *variables*, not secrets — all of it is public.
 
 | Repo variable | CLI flag | Default | What it does |
 |---|---|---|---|
-| `CHANNEL` | `--channel` | (`tg2zola.toml`) | Public channel to sync |
+| `CHANNEL` | `--channel` | **required** | Public channel to sync |
 | `TITLE` | `--title` | channel username | Blog title (header + `<title>`) |
 | `ABOUT` | `--about` | description + stats + repo link | Custom HTML for the About page body |
 | `PAGES` | `--pages` | — | Extra pages: Markdown, each `# Title` heading starts a new page + nav entry |
