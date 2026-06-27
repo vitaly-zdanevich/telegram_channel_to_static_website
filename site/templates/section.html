@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ config.extra.i18n.archive }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>{{ config.extra.i18n.archive }}</h1>
+  <ul class="post-list">
+  {% for page in paginator.pages %}
+    <li>
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
+      {% if page.extra.views %}<span class="views">👁 {{ page.extra.views }}</span>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  <nav class="pager">
+    {% if paginator.previous %}<a href="{{ paginator.previous | safe }}">← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
+    <span>{{ paginator.current_index }} / {{ paginator.number_pagers }}</span>
+    {% if paginator.next %}<a href="{{ paginator.next | safe }}">{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+{% endblock content %}

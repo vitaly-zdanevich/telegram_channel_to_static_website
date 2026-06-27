@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}#{{ page.extra.tag }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>#{{ page.extra.tag }} <a class="count" href="{{ get_taxonomy_url(kind='tags', name=page.extra.tag) | safe }}">{{ config.extra.i18n.titles }} ↗</a></h1>
+  {% set tax = get_taxonomy(kind="tags") %}
+  {% for term in tax.items %}{% if term.name == page.extra.tag %}
+  {% for p in term.pages %}
+    <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
+      <h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>
+      <p class="meta"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}</p>
+      <div class="content">{{ p.content | safe }}</div>
+    </article>
+  {% endfor %}
+  {% endif %}{% endfor %}
+{% endblock content %}

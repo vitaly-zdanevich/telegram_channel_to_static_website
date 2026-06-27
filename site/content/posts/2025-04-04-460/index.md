@@ -1,0 +1,26 @@
++++
+title = "18 years ago."
+date = 2025-04-04T10:56:29+00:00
+description = "games igromania 18 years ago. Golden age? Source"
+
+[taxonomies]
+tags = ["games", "igromania"]
+
+[extra]
+tg_url = "https://t.me/vitaly_zdanevich_chan/460"
+og_image = "5440653838458679407_1266750935_456257647.jpg"
+next_id = 461
+next_title = "belarus belarussian culture"
+prev_id = 458
+prev_title = "ussr"
+views = 44
+ids = [460]
++++
+
+{{ tag(t="games") }}
+{{ tag(t="igromania") }}
+
+18 years ago. Golden age?
+[Source](https://vk.com/feed?z=photo-160168013_457515889%2F7054f886579f71b39a)
+
+![](5440653838458679407_1266750935_456257647.jpg)

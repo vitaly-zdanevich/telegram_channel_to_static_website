@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">
+      {% if page.date %}<time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>{% endif %}
+      {% if page.extra.views %}· 👁 {{ page.extra.views }} {{ config.extra.i18n.views }}{% endif %}
+      {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
+    </p>
+    <div class="content">{{ page.content | safe }}</div>
+    {% if config.extra.tags_footer and page.taxonomies.tags %}
+      <p class="tags">
+      {% for t in page.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind='tags', name=t) }}">#{{ t }}</a>
+      {% endfor %}
+      </p>
+    {% endif %}
+    {% if config.extra.telegram_link and page.extra.tg_url %}<p class="tg-link"><a href="{{ page.extra.tg_url }}">{{ config.extra.i18n.view_on_telegram }} ↗</a></p>{% endif %}
+  </article>
+  {% if config.extra.next_prev %}
+  <nav class="post-nav">
+    <span>{% if page.extra.next_id %}<a href="{{ get_url(path='/posts/' ~ page.extra.next_id ~ '/') | safe }}" title="{{ page.extra.next_title }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer }}</a>{% endif %}</span>
+    <span>{% if page.extra.prev_id %}<a href="{{ get_url(path='/posts/' ~ page.extra.prev_id ~ '/') | safe }}" title="{{ page.extra.prev_title }}" accesskey="o" rel="next">{{ config.extra.i18n.older }} →</a>{% endif %}</span>
+  </nav>
+  {% endif %}
+{% endblock content %}

@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff; --fg: #1a1a1a; --muted: #6b6b6b;
+  --link: #0a58ca; --border: #e6e6e6; --code-bg: #f4f4f4;
+  --input-bg: #ffffff; --fwd-bg: #eef2fb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000; --fg: #e6e6e6; --muted: #8a8a8a;
+    --link: #6cb6ff; --border: #1c1c1c; --code-bg: #0d0d0d;
+    --input-bg: #2a2a2a; --fwd-bg: #0a1024;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  width: 95vw; margin: 0 auto; padding: 1rem;
+  font-family: system-ui, -apple-system, sans-serif; line-height: 1.6;
+  background: var(--bg); color: var(--fg);
+  min-height: 100vh; display: flex; flex-direction: column;
+}
+main { flex: 1 0 auto; display: flex; flex-direction: column; }
+a, a:visited { color: var(--link); text-decoration: none; }
+::selection {
+    background-color: #292;
+    color: #000;
+}
+img, video { max-width: 100%; height: auto; }
+video { display: block; }
+audio { width: 100%; }
+.yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
+.yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt-link { font-size: .9em; margin-top: .25rem; }
+/* CSS-only click-to-load facade (no JS): the iframe is display:none until the
+   hidden checkbox is checked, so loading=lazy defers its fetch until click. */
+.yt-embed .yt-toggle { position: absolute; width: 0; height: 0; opacity: 0; }
+.yt-embed .yt-facade { position: absolute; inset: 0; cursor: pointer; display: block; }
+.yt-embed .yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yt-embed .yt-btn { position: absolute; inset: 0; margin: auto; width: 4.2rem; height: 3rem; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,.65); border-radius: 12px; }
+.yt-embed .yt-frame { display: none; }
+.yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
+.yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
+.tag { white-space: nowrap; }
+pre { background: var(--code-bg); padding: .75rem; border-radius: 4px; overflow-x: auto; }
+code { background: var(--code-bg); padding: .1rem .3rem; border-radius: 4px; }
+pre code { padding: 0; background: none; }
+.site-header { display: flex; gap: .6rem; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
+.site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
+.site-header nav a { margin-left: .75rem; }
+.site-search { margin-left: auto; }
+.site-search input, input.site-search {
+  background: var(--input-bg); color: var(--fg);
+  border: 1px solid var(--border); border-radius: 6px;
+  padding: .3rem .55rem; font: inherit; width: 9rem;
+  transition: width .2s ease;
+}
+/* Expand on click/focus — CSS only, no JS. */
+.site-search input:focus, input.site-search:focus { width: min(22rem, 60vw); }
+input.site-search { margin-left: auto; }
+.post-list { list-style: none; padding: 0; }
+.post-list li { padding: .2rem 0; }
+.post-list time { color: var(--muted); font-size: .85em; margin-left: .5rem; }
+.post { margin: 0 0 2.5rem; }
+.post.forwarded { background: var(--fwd-bg); border-radius: 8px; padding: .75rem 1rem; }
+.about-avatar { float: left; margin: 0 1rem .5rem 0; }
+.post-title { margin: 0 0 .25rem; font-size: 1.25rem; }
+.more { margin: 2rem 0; }
+.views, .meta { color: var(--muted); font-size: .85em; }
+.meta { font-size: .9em; }
+.tags a { margin-right: .5rem; white-space: nowrap; }
+.pager { display: flex; justify-content: space-between; margin: 2rem 0; }
+.post-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; margin-top: auto; }
+.tg-link { margin-top: 1rem; font-size: .9em; }
+.spoiler { background: var(--fg); border-radius: 3px; transition: background .1s; }
+.spoiler:hover { background: transparent; }
+.site-footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); padding-top: .5rem; }
+blockquote { border-left: 3px solid var(--border); margin: .5rem 0; padding-left: .75rem; color: var(--muted); }

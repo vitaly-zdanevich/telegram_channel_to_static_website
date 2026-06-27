@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ config.default_language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  {% if config.extra.avatar %}<link rel="icon" type="image/jpeg" href="{{ get_url(path=config.extra.avatar) }}">{% endif %}
+  {% if config.extra.rss %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path='rss.xml', trailing_slash=false) | safe }}">{% endif %}
+  {# Social cards (Open Graph + Twitter) and Mastodon attribution. `page` is
+     only defined on post/page templates; sections fall back to site defaults. #}
+  {% set og_title = page.title | default(value=config.title) %}
+  {% set og_desc = page.description | default(value=config.description) %}
+  {% set og_url = page.permalink | default(value=config.base_url) %}
+  {% set_global og_image = "" %}
+  {% if page.extra.og_image %}{% set_global og_image = page.permalink ~ page.extra.og_image %}
+  {% elif config.extra.avatar %}{% set_global og_image = get_url(path=config.extra.avatar) %}{% endif %}
+  {% if og_desc %}<meta name="description" content="{{ og_desc }}">{% endif %}
+  <meta property="og:site_name" content="{{ config.title }}">
+  <meta property="og:title" content="{{ og_title }}">
+  {% if og_desc %}<meta property="og:description" content="{{ og_desc }}">{% endif %}
+  <meta property="og:url" content="{{ og_url | safe }}">
+  {% if page.date %}<meta property="og:type" content="article"><meta property="article:published_time" content="{{ page.date }}">{% else %}<meta property="og:type" content="website">{% endif %}
+  {% if og_image %}<meta property="og:image" content="{{ og_image | safe }}"><meta name="twitter:card" content="summary_large_image">{% else %}<meta name="twitter:card" content="summary">{% endif %}
+  <meta name="twitter:title" content="{{ og_title }}">
+  {% if og_desc %}<meta name="twitter:description" content="{{ og_desc }}">{% endif %}
+  {% if og_image %}<meta name="twitter:image" content="{{ og_image | safe }}">{% endif %}
+  {% if config.extra.fediverse_creator %}<meta name="fediverse:creator" content="{{ config.extra.fediverse_creator }}">{% endif %}
+  {% if config.extra.fediverse_profile %}<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">{% endif %}
+  <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+</head>
+<body>
+  <header class="site-header">
+    {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}" alt=""></a>{% endif %}
+    <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
+    <nav>
+      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
+      <a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>
+      <a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>
+      {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
+    </nav>
+    {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% endif %}
+  </header>
+  <main>{% block content %}{% endblock content %}</main>
+  {% if config.extra.footer %}<footer class="site-footer">{{ config.extra.footer | markdown(inline=true) | safe }}</footer>{% endif %}
+  {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
+</body>
+</html>

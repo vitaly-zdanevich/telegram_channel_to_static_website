@@ -1,0 +1,7 @@
+<div class="yt-embed">
+{%- if config.extra.youtube_facade -%}
+<input type="checkbox" id="yt-{{ id }}" class="yt-toggle"><label for="yt-{{ id }}" class="yt-facade"><img src="https://i.ytimg.com/vi/{{ id }}/hqdefault.jpg" alt="" loading="lazy"><span class="yt-btn" aria-hidden="true">▶</span></label><iframe class="yt-frame" src="https://www.youtube.com/embed/{{ id }}?autoplay=1" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{%- else -%}
+<iframe src="https://www.youtube.com/embed/{{ id }}" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{%- endif -%}
+</div>

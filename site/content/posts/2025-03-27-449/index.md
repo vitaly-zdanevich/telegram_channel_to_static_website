@@ -1,0 +1,24 @@
++++
+title = "entrance"
+date = 2025-03-27T03:43:29+00:00
+description = "entrance From"
+
+[taxonomies]
+tags = ["entrance"]
+
+[extra]
+tg_url = "https://t.me/vitaly_zdanevich_chan/449"
+og_image = "5415638411328479713_1260926577_456253921.jpg"
+next_id = 450
+next_title = "phone psy"
+prev_id = 448
+prev_title = "Раньше было лучше"
+views = 29
+ids = [449]
++++
+
+{{ tag(t="entrance") }}
+
+From <https://vk.com/ae__ye>
+
+![](5415638411328479713_1260926577_456253921.jpg)

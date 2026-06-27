@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ config.extra.i18n.tags }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>{{ config.extra.i18n.tags }}</h1>
+  <ul class="tag-cloud">
+  {% for t in config.extra.tags | default(value=[]) %}
+    <li><a href="{{ get_taxonomy_url(kind='tags', name=t.name) | safe }}">#{{ t.name }}</a> <a class="count" href="{{ get_url(path='/tags/' ~ t.slug ~ '/full/') | safe }}" title="{{ config.extra.i18n.full_posts }}">{{ t.count }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock content %}

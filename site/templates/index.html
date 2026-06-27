@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  {% if config.description and paginator.current_index == 1 %}<p class="lead">{{ config.description }}</p>{% endif %}
+  {% for page in paginator.pages %}
+    <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
+      <h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+      <p class="meta">
+        <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
+        {% if page.extra.views %}· 👁 {{ page.extra.views }}{% endif %}
+        {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
+      </p>
+      <div class="content">{{ page.content | safe }}</div>
+      {% if config.extra.tags_footer and page.taxonomies.tags %}
+        <p class="tags">{% for t in page.taxonomies.tags %}<a href="{{ get_taxonomy_url(kind='tags', name=t) }}">#{{ t }}</a> {% endfor %}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+  <nav class="pager">
+    {% if paginator.previous %}<a href="{{ paginator.previous | safe }}">← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
+    <span>{{ paginator.current_index }} / {{ paginator.number_pagers }}</span>
+    {% if paginator.next %}<a href="{{ paginator.next | safe }}">{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+{% endblock content %}

@@ -1,0 +1,22 @@
++++
+title = "video"
+date = 2025-06-09T18:14:53+00:00
+
+[taxonomies]
+tags = ["video"]
+
+[extra]
+tg_url = "https://t.me/vitaly_zdanevich_chan/556"
+next_id = 557
+next_title = "Рисунки скриншотов из игр!"
+prev_id = 555
+prev_title = "Time of Troubles"
+views = 31
+forwarded_from = "Незабытые игры"
+forwarded_from_url = "https://t.me/unforget_games/11511"
+ids = [556]
++++
+
+{{ video(src="01.mp4") }}
+
+{{ tag(t="video") }}
