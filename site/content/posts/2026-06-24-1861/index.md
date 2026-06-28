@@ -13,7 +13,7 @@ next_id = 1863
 next_title = "My new bash alias"
 prev_id = 1860
 prev_title = "💗 Любимый Кобулети — это место встреч, моря и тёплых воспоминаний."
-views = 8
+views = 10
 forwarded_from = "Кирилл Марс"
 ids = [1861]
 +++

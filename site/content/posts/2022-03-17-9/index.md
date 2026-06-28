@@ -9,7 +9,7 @@ next_id = 16
 next_title = "Homepage - Cypherpunk Zero"
 prev_id = 8
 prev_title = "Третий подкаст с Анатолием Бабеней."
-views = 48
+views = 49
 ids = [9]
 +++
 

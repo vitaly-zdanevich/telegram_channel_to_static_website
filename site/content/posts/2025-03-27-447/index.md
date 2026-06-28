@@ -13,7 +13,7 @@ next_id = 448
 next_title = "Раньше было лучше"
 prev_id = 446
 prev_title = "teapot update"
-views = 27
+views = 28
 ids = [447]
 +++
 

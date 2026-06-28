@@ -13,7 +13,7 @@ next_id = 1852
 next_title = "what a stickerpack"
 prev_id = 1849
 prev_title = "llm codex regex"
-views = 57
+views = 62
 ids = [1850, 1851]
 +++
 

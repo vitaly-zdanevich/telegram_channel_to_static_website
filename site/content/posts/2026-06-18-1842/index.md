@@ -13,7 +13,7 @@ next_id = 1843
 next_title = "home diy belarus onliner"
 prev_id = 1841
 prev_title = "ad newspaper design toxic"
-views = 7
+views = 8
 ids = [1842]
 +++
 

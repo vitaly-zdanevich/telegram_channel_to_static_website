@@ -12,7 +12,7 @@ next_id = 1864
 next_title = "And another bash alias"
 prev_id = 1861
 prev_title = "26июня2026 (пт) 21.30-23:00 айтишная посиделка в Friends club"
-views = 8
+views = 11
 ids = [1863]
 +++
 

@@ -1,0 +1,30 @@
++++
+title = "movie black_and_white faust year_1926 video"
+date = 2026-06-27T19:59:50+00:00
+description = "movie blackandwhite faust year1926 В этом году фильм «Фауст», знаменитый шедевр немецкого экспрессионизма, отмечает свое 100-летие. Основанный на легенде о Фаусте и драме Иоганна Вольфганга фон Гёте,…"
+
+[taxonomies]
+tags = ["movie", "black_and_white", "faust", "year_1926", "video"]
+
+[extra]
+tg_url = "https://t.me/vitaly_zdanevich_chan/1867"
+next_id = 1868
+next_title = "love toy breakup video"
+prev_id = 1865
+prev_title = "Wow, Gemini generates good logos, tried it for the first time"
+views = 3
+ids = [1867]
++++
+
+{{ tag(t="movie") }}
+{{ tag(t="black_and_white") }}
+{{ tag(t="faust") }}
+{{ tag(t="year_1926") }}
+
+> В этом году фильм «Фауст», знаменитый шедевр немецкого экспрессионизма, отмечает свое 100-летие. Основанный на легенде о Фаусте и драме Иоганна Вольфганга фон Гёте, это был один из самых амбициозных фильмов эпохи Веймарской республики. Созданный компанией UFA (режиссер Ф. В. Мурнау) за примерно 2 миллиона марок и снятый в течение шести месяцев, это был один из самых дорогих и технически сложных немецких фильмов своего времени, новаторский в плане визуальных эффектов, которые остаются впечатляющими и спустя столетие.
+
+[Source](https://www.instagram.com/p/DZLS78ZxsEX/)
+
+{{ video(src="01.mp4") }}
+
+{{ tag(t="video") }}

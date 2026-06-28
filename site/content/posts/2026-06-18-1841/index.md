@@ -13,7 +13,7 @@ next_id = 1842
 next_title = "interior cozy bathroom"
 prev_id = 1840
 prev_title = "lamp"
-views = 6
+views = 7
 ids = [1841]
 +++
 

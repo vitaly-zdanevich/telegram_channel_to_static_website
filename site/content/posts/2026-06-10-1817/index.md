@@ -13,7 +13,7 @@ next_id = 1818
 next_title = "aws billing cost graph"
 prev_id = 1807
 prev_title = "love this extension - highlight predefined list of words, on predefined URLs."
-views = 12
+views = 13
 ids = [1817]
 +++
 

@@ -12,7 +12,7 @@ next_id = 1804
 next_title = "In batumi, to buy a coffee, sometimes we talk in three languages"
 prev_id = 1800
 prev_title = "remapped unused button on my laptop to git push, i3 command"
-views = 44
+views = 45
 ids = [1802]
 +++
 

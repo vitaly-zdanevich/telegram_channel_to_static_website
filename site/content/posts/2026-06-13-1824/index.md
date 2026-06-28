@@ -13,7 +13,7 @@ next_id = 1825
 next_title = "hover balloon with type definition ftplugin/java.vim, with coc"
 prev_id = 1823
 prev_title = "love my mg alias - clickable grep in kitty - opens file and line in Vim"
-views = 14
+views = 15
 ids = [1824]
 +++
 

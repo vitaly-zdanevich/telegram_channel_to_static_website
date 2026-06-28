@@ -12,7 +12,7 @@ next_id = 1806
 next_title = "Wow, about telegram bots: you can bypass 50 MB response limit - by hosting their bot software."
 prev_id = 1804
 prev_title = "In batumi, to buy a coffee, sometimes we talk in three languages"
-views = 26
+views = 27
 ids = [1805]
 +++
 

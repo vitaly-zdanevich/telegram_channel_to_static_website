@@ -13,7 +13,7 @@ next_id = 1821
 next_title = "Make tree clickable, tested in kitty"
 prev_id = 1818
 prev_title = "aws billing cost graph"
-views = 11
+views = 13
 ids = [1819]
 +++
 

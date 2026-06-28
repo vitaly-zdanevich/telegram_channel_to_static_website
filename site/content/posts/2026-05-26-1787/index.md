@@ -13,7 +13,7 @@ next_id = 1799
 next_title = "28мая2026 (чт) 21:00–01:00 — айтишная посиделка в Still Young Bar 🍻"
 prev_id = 1786
 prev_title = "Finally I forked nixnote, and migrated from qt5 to qt6, by llm gpt 5.5 xhigh"
-views = 35
+views = 36
 ids = [1787, 1797]
 +++
 

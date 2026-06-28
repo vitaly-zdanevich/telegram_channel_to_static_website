@@ -13,7 +13,7 @@ next_id = 1822
 next_title = "This is why we have crypto?"
 prev_id = 1819
 prev_title = "My another userstyle: for gemini, before and after"
-views = 12
+views = 13
 ids = [1821]
 +++
 

@@ -13,7 +13,7 @@ next_id = 1827
 next_title = "From official"
 prev_id = 1825
 prev_title = "hover balloon with type definition ftplugin/java.vim, with coc"
-views = 16
+views = 19
 ids = [1826]
 +++
 

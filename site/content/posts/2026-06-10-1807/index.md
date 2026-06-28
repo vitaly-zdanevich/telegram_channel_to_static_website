@@ -13,7 +13,7 @@ next_id = 1817
 next_title = "logo progy github"
 prev_id = 1806
 prev_title = "Wow, about telegram bots: you can bypass 50 MB response limit - by hosting their bot software."
-views = 12
+views = 14
 ids = [1807]
 +++
 

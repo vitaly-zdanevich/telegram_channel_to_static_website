@@ -13,7 +13,7 @@ next_id = 1829
 next_title = "tech psp final_fantasy"
 prev_id = 1826
 prev_title = "bus architecture"
-views = 87
+views = 89
 ids = [1827]
 +++
 

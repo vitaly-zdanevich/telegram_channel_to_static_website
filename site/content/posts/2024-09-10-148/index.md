@@ -8,7 +8,7 @@ next_id = 149
 next_title = "video"
 prev_id = 147
 prev_title = "Projekt kolejna faza 10 złotych 1919 awers.jpg"
-views = 64
+views = 65
 ids = [148]
 +++
 

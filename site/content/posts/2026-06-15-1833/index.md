@@ -13,7 +13,7 @@ next_id = 1834
 next_title = "playstation playstation2 game_console street"
 prev_id = 1832
 prev_title = "When css is minified - so what can I do with that :("
-views = 12
+views = 13
 ids = [1833]
 +++
 

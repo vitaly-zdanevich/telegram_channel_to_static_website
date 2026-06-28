@@ -12,7 +12,7 @@ next_id = 1848
 next_title = "Oh my, I live here"
 prev_id = 1846
 prev_title = "webdesign animation video_editor cinelerra video"
-views = 9
+views = 10
 ids = [1847]
 +++
 

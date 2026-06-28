@@ -12,7 +12,7 @@ next_id = 1780
 next_title = "What a time - multiple llm doing multiple projects, in parallel..."
 prev_id = 1777
 prev_title = "failed"
-views = 36
+views = 37
 ids = [1779]
 +++
 

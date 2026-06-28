@@ -13,7 +13,7 @@ next_id = 1831
 next_title = "anime phones evangelion"
 prev_id = 1829
 prev_title = "tech psp final_fantasy"
-views = 15
+views = 16
 ids = [1830]
 +++
 

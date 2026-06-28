@@ -12,7 +12,7 @@ next_id = 1826
 next_title = "bus architecture"
 prev_id = 1824
 prev_title = "Армянский язык"
-views = 15
+views = 18
 ids = [1825]
 +++
 

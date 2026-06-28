@@ -13,7 +13,7 @@ next_id = 1835
 next_title = "xbox game_console tech retro green"
 prev_id = 1833
 prev_title = "Degrees of Eastern Orthodox monasticism"
-views = 12
+views = 14
 ids = [1834]
 +++
 

@@ -13,7 +13,7 @@ next_id = 457
 next_title = "ussr"
 prev_id = 455
 prev_title = "ussr"
-views = 41
+views = 42
 ids = [456]
 +++
 

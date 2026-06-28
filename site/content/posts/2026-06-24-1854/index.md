@@ -13,7 +13,7 @@ next_id = 1855
 next_title = "armies_of_exigo it own by electronic_arts"
 prev_id = 1853
 prev_title = "llm wow of today"
-views = 6
+views = 8
 ids = [1854]
 +++
 

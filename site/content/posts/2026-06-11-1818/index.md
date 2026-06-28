@@ -13,7 +13,7 @@ next_id = 1819
 next_title = "My another userstyle: for gemini, before and after"
 prev_id = 1817
 prev_title = "logo progy github"
-views = 10
+views = 11
 ids = [1818]
 +++
 

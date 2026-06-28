@@ -12,7 +12,7 @@ next_id = 1853
 next_title = "llm wow of today"
 prev_id = 1850
 prev_title = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио"
-views = 6
+views = 8
 ids = [1852]
 +++
 

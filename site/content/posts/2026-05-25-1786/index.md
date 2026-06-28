@@ -12,7 +12,7 @@ next_id = 1787
 next_title = "crypto wallet"
 prev_id = 1785
 prev_title = "Another llm victory: repack of the official evernote client"
-views = 32
+views = 33
 ids = [1786]
 +++
 

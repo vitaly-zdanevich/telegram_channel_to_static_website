@@ -12,7 +12,7 @@ next_id = 1847
 next_title = "One of the best game trailerSource"
 prev_id = 1845
 prev_title = "I did kvantum/qt6 theme, with llm gpt 5.5 xhigh, love it, black"
-views = 9
+views = 11
 ids = [1846]
 +++
 

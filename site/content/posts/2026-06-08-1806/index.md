@@ -12,7 +12,7 @@ next_id = 1807
 next_title = "love this extension - highlight predefined list of words, on predefined URLs."
 prev_id = 1805
 prev_title = "My yet another project: @wikipedia_unofficial_bot"
-views = 19
+views = 20
 ids = [1806]
 +++
 

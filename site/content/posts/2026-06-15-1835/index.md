@@ -13,7 +13,7 @@ next_id = 1836
 next_title = "girl paper sky evangelion"
 prev_id = 1834
 prev_title = "playstation playstation2 game_console street"
-views = 11
+views = 13
 ids = [1835]
 +++
 

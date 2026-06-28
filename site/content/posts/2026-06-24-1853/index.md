@@ -13,7 +13,7 @@ next_id = 1854
 next_title = "llm did big telegram stickers, even the pull_request"
 prev_id = 1852
 prev_title = "what a stickerpack"
-views = 6
+views = 8
 ids = [1853]
 +++
 

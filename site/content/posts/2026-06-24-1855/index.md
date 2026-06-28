@@ -13,7 +13,7 @@ next_id = 1856
 next_title = "Софт"
 prev_id = 1854
 prev_title = "llm did big telegram stickers, even the pull_request"
-views = 8
+views = 10
 ids = [1855]
 +++
 

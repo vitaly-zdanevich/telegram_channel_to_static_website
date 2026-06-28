@@ -13,7 +13,7 @@ next_id = 1785
 next_title = "Another llm victory: repack of the official evernote client"
 prev_id = 1781
 prev_title = "mem limited by the technology of my time"
-views = 36
+views = 37
 ids = [1784]
 +++
 

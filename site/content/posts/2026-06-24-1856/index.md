@@ -12,7 +12,7 @@ next_id = 1860
 next_title = "💗 Любимый Кобулети — это место встреч, моря и тёплых воспоминаний."
 prev_id = 1855
 prev_title = "armies_of_exigo it own by electronic_arts"
-views = 4
+views = 6
 ids = [1856, 1857, 1858, 1859]
 +++
 

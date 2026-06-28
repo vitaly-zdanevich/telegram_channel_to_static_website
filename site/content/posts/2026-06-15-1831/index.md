@@ -13,7 +13,7 @@ next_id = 1832
 next_title = "When css is minified - so what can I do with that :("
 prev_id = 1830
 prev_title = "religion jesus"
-views = 13
+views = 14
 ids = [1831]
 +++
 

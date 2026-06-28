@@ -12,7 +12,7 @@ next_id = 1865
 next_title = "Wow, Gemini generates good logos, tried it for the first time"
 prev_id = 1863
 prev_title = "My new bash alias"
-views = 8
+views = 11
 ids = [1864]
 +++
 

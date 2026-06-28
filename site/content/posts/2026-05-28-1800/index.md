@@ -12,7 +12,7 @@ next_id = 1802
 next_title = "With llm I added 1920x1200 to armies_of_exigo game"
 prev_id = 1799
 prev_title = "28мая2026 (чт) 21:00–01:00 — айтишная посиделка в Still Young Bar 🍻"
-views = 46
+views = 47
 ids = [1800]
 +++
 

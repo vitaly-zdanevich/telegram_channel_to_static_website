@@ -13,7 +13,7 @@ next_id = 1833
 next_title = "Degrees of Eastern Orthodox monasticism"
 prev_id = 1831
 prev_title = "anime phones evangelion"
-views = 12
+views = 13
 ids = [1832]
 +++
 
