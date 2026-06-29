@@ -761,7 +761,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {# Social cards (Open Graph + Twitter) and Mastodon attribution. `page` is
      only defined on post/page templates; sections fall back to site defaults. #}
   {% set_global og_title = config.title %}
-  {% if page.title %}{% set_global og_title = page.title %}{% elif page.extra.id %}{% set_global og_title = '#' ~ page.extra.id %}{% endif %}
+  {% if page.title %}{% set_global og_title = page.title %}{% elif page.extra.id %}{% set_global og_title = page.extra.id %}{% endif %}
   {% set og_desc = page.description | default(value=config.description) %}
   {% set og_url = page.permalink | default(value=config.base_url) %}
   {% set_global og_image = "" %}
@@ -788,7 +788,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
     <nav>
       {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
       <a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>
-      <a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>
+      {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
     </nav>
     {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% endif %}
@@ -808,9 +808,9 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
       {% if page.title %}<h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>{% endif %}
       <p class="meta">
         <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
-        {% if not page.title %}· <a class="pid" href="{{ page.permalink | safe }}">#{{ page.extra.id }}</a>{% endif %}
         {% if page.extra.views %}· 👁 {{ page.extra.views }}{% endif %}
         {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
+        {% if not page.title %}· <a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
       </p>
       <div class="content">{{ page.content | safe }}</div>
       {% if config.extra.tags_footer and page.taxonomies.tags %}
@@ -835,8 +835,8 @@ const SECTION_HTML: &str = r#"{% extends "base.html" %}
     <li>
       {% if page.title %}<a href="{{ page.permalink | safe }}">{{ page.title }}</a>{% endif %}
       <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
-      {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">#{{ page.extra.id }}</a>{% endif %}
       {% if page.extra.views %}<span class="views">👁 {{ page.extra.views }}</span>{% endif %}
+      {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
     </li>
   {% endfor %}
   </ul>
@@ -849,10 +849,10 @@ const SECTION_HTML: &str = r#"{% extends "base.html" %}
 "#;
 
 const PAGE_HTML: &str = r#"{% extends "base.html" %}
-{% block title %}{% if page.title %}{{ page.title }}{% else %}#{{ page.extra.id }}{% endif %} · {{ config.title }}{% endblock title %}
+{% block title %}{% if page.title %}{{ page.title }}{% else %}{{ page.extra.id }}{% endif %} · {{ config.title }}{% endblock title %}
 {% block content %}
   <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
-    <h1>{% if page.title %}{{ page.title }}{% else %}#{{ page.extra.id }}{% endif %}</h1>
+    {% if not (current_path is containing("/about/")) %}<h1>{% if page.title %}{{ page.title }}{% else %}{{ page.extra.id }}{% endif %}</h1>{% endif %}
     <p class="meta">
       {% if page.date %}<time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>{% endif %}
       {% if page.extra.views %}· 👁 {{ page.extra.views }} {{ config.extra.i18n.views }}{% endif %}
@@ -886,7 +886,7 @@ const TAGS_SINGLE: &str = r#"{% extends "base.html" %}
     <li>
       {% if page.title %}<a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>{% endif %}
       <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
-      {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">#{{ page.extra.id }}</a>{% endif %}
+      {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
     </li>
   {% endfor %}
   </ul>
@@ -916,7 +916,7 @@ const TAG_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% for p in term.pages %}
     <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
       {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
-      <p class="meta"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">#{{ p.extra.id }}</a>{% endif %}{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}</p>
+      <p class="meta"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
       <div class="content">{{ p.content | safe }}</div>
     </article>
   {% endfor %}

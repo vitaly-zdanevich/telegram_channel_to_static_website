@@ -7,8 +7,9 @@
 # channel = "durov"
 
 # Site identity.
-title = "Vitaly Zdanevich — channel backup"
-description = "A self-contained static backup of a public Telegram channel."
+title = "Vitaly Zdanevich — Telegram channel mirror"
+# Optional tagline shown on the home page and in link previews. Unset = none.
+# description = "A mirror of a public Telegram channel."
 
 # Where the generated site goes (CI overrides on the command line).
 # site = "site"
