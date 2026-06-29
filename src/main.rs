@@ -142,6 +142,16 @@ struct GenerateArgs {
     #[arg(long)]
     language: Option<String>,
 
+    /// Derive a post title from its first sentence. Default off: each post is
+    /// shown by a clickable #id on its date/views line instead of a title.
+    #[arg(long)]
+    derive_titles: bool,
+
+    /// With --derive-titles, also remove that first sentence from the body so it
+    /// isn't shown twice.
+    #[arg(long)]
+    strip_title: bool,
+
     /// Underline links (default: no underline).
     #[arg(long)]
     link_underline: bool,
@@ -329,6 +339,8 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .filter(|s| !s.trim().is_empty())
             .unwrap_or_else(|| "%Y %B %d".to_string()),
         language,
+        derive_titles: g.derive_titles || fc.derive_titles.unwrap_or(false),
+        strip_title: g.strip_title || fc.strip_title.unwrap_or(false),
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
         genius: if g.no_genius {
@@ -505,7 +517,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Render PAGE posts first so their nav entries are ready for scaffolding.
     let rendered_pages: Vec<render::RenderedPost> = page_posts
         .iter()
-        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None, &ui))
+        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None, &ui, s.derive_titles, s.strip_title))
         .collect();
     let page_nav: Vec<(String, String)> = rendered_pages
         .iter()
@@ -519,7 +531,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Posts are id-ascending; neighbour id+title drive the Next/Prev nav.
     let titles: Vec<String> = posts
         .iter()
-        .map(|p| render::post_title(p, s.title_max_len))
+        .map(|p| render::post_title(p, s.title_max_len, s.derive_titles))
         .collect();
     let rendered: Vec<render::RenderedPost> = posts
         .iter()
@@ -531,7 +543,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             let older = i
                 .checked_sub(1)
                 .map(|j| (posts[j].primary_id, titles[j].as_str()));
-            render::render_post(p, &rewriter, s.title_max_len, false, newer, older, &ui)
+            render::render_post(p, &rewriter, s.title_max_len, false, newer, older, &ui, s.derive_titles, s.strip_title)
         })
         .collect();
 

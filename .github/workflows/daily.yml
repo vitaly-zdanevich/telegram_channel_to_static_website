@@ -72,6 +72,11 @@ env:
   # UI language for the site chrome (Newer/Older/Tags/About/…): one of
   # en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka (default en). Post content is unchanged.
   LANGUAGE: ${{ vars.LANGUAGE }}
+  # By default each post is shown by a clickable #id on its date/views line. Set
+  # DERIVE_TITLES=true to derive a title from the first sentence instead; with
+  # STRIP_TITLE=true that sentence is also dropped from the body.
+  DERIVE_TITLES: ${{ vars.DERIVE_TITLES }}
+  STRIP_TITLE: ${{ vars.STRIP_TITLE }}
   # Set to "true" to underline links (default: no underline).
   LINK_UNDERLINE: ${{ vars.LINK_UNDERLINE }}
   # Set to "true" for a CSS-only click-to-load YouTube facade (default: direct
@@ -162,6 +167,8 @@ jobs:
             [ -n "${PAGES_HOST:-}" ] && args+=(--pages-host "$PAGES_HOST")
             [ -n "${DATE_FORMAT:-}" ] && args+=(--date-format "$DATE_FORMAT")
             [ -n "${LANGUAGE:-}" ] && args+=(--language "$LANGUAGE")
+            [ "${DERIVE_TITLES:-}" = "true" ] && args+=(--derive-titles)
+            [ "${STRIP_TITLE:-}" = "true" ] && args+=(--strip-title)
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)

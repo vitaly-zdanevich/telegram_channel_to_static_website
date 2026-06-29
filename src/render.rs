@@ -133,11 +133,14 @@ impl LinkRewriter {
 }
 
 /// The post's display title (used by callers to label neighbour links).
-pub fn post_title(post: &Post, title_max: usize) -> String {
+pub fn post_title(post: &Post, title_max: usize, derive: bool) -> String {
+    if !derive {
+        return String::new();
+    }
     if let Some((name, _)) = wiki_title_for(post, title_max) {
         return name;
     }
-    title_and_body(post, title_max).0
+    title_and_body(post, title_max, true, false).0
 }
 
 /// The wiki page title to use for this post, but only when it has no prose
@@ -239,6 +242,8 @@ pub fn render_post(
     newer: Option<(u64, &str)>,
     older: Option<(u64, &str)>,
     ui: &crate::i18n::Ui,
+    derive_titles: bool,
+    strip_title: bool,
 ) -> RenderedPost {
     // A PAGE-marked post becomes a standalone page; work on a copy with the
     // marker line removed and use a plain first-sentence title.
@@ -252,12 +257,21 @@ pub fn render_post(
     // A Wikimedia/Wikipedia page link gives a readable title + clean body link;
     // otherwise derive the title from the body.
     let (title, body_src) = if page {
-        title_and_body(post, title_max)
+        title_and_body(post, title_max, true, true)
+    } else if !derive_titles {
+        // Default: no derived title — the post is identified by its #id. Keep the
+        // body intact, only dropping a forwarded post's trailing source backlink
+        // (already shown by the "forwarded from" header).
+        let mut b = post.body_md.clone();
+        if let Some(fwd) = &post.forwarded_from {
+            b = strip_forward_backlink(&b, fwd);
+        }
+        (String::new(), b)
     } else {
         match wiki_title_for(post, title_max) {
             Some((name, url)) => (name.clone(), wiki_body(&post.body_md, &name, &url)),
             None => {
-                let (t, mut b) = title_and_body(post, title_max);
+                let (t, mut b) = title_and_body(post, title_max, true, strip_title);
                 // A forwarded post often ends with a link back to the source
                 // channel; the "forwarded from" header already shows it, drop it.
                 if let Some(fwd) = &post.forwarded_from {
@@ -463,6 +477,7 @@ fn front_matter(
     }
 
     fm.push_str("\n[extra]\n");
+    fm.push_str(&format!("id = {}\n", post.primary_id));
     fm.push_str(&format!(
         "tg_url = \"https://t.me/{}/{}\"\n",
         post.channel, post.primary_id
@@ -528,16 +543,19 @@ fn excerpt(md: &str, max: usize) -> String {
 /// tags, then the date. When that line is *pure prose* (no hashtags) it is cut
 /// from the body so the headline isn't shown twice — but a line that also
 /// carries hashtags is kept, so its clickable tags survive.
-fn title_and_body(post: &Post, max: usize) -> (String, String) {
+fn title_and_body(post: &Post, max: usize, derive: bool, strip: bool) -> (String, String) {
+    if !derive {
+        return (String::new(), post.body_md.clone());
+    }
     if let Some((title, idx, had_tags, partial)) = title_from_body(&post.body_md, max) {
-        // Keep the line in the body when it carries hashtags (their clickable
-        // tags must survive) or when the title is only part of the line (a
-        // first-sentence/truncated title), so no text is lost; otherwise cut it
-        // to avoid showing the same line twice.
-        let body = if had_tags || partial {
-            post.body_md.clone()
-        } else {
+        // With --strip-title, cut the headline line from the body so it isn't
+        // shown twice — but only when it's pure prose (a line that also carries
+        // hashtags, or only part of which became the title, is kept so no text or
+        // clickable tag is lost).
+        let body = if strip && !had_tags && !partial {
             remove_line(&post.body_md, idx)
+        } else {
+            post.body_md.clone()
         };
         (title, body)
     } else if !post.tags.is_empty() {
@@ -810,6 +828,8 @@ mod tests {
             None,
             None,
             &crate::i18n::ui("en"),
+            false,
+            false,
         );
         assert_eq!(r.title, "My Cool Page");
         assert!(r.index_md.contains("path = \"/my-cool-page/\""), "{}", r.index_md);

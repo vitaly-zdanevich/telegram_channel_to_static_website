@@ -47,6 +47,12 @@ pub struct FileConfig {
     /// one of en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka (default `en`). Post content
     /// keeps the channel's own language.
     pub language: Option<String>,
+    /// Derive a post title from its first sentence (default off → each post is
+    /// identified by a clickable `#id` on its date/views line instead).
+    pub derive_titles: Option<bool>,
+    /// When deriving titles, also remove that first sentence from the body so it
+    /// isn't shown twice (only applies with `derive_titles`).
+    pub strip_title: Option<bool>,
     /// Underline links (default false → `text-decoration: none`).
     pub link_underline: Option<bool>,
     /// CSS-only click-to-load YouTube facade (default true); false = direct iframe.
@@ -125,6 +131,10 @@ pub struct Settings {
     pub date_format: String,
     /// UI language for the site chrome (one of the supported codes; `en` default).
     pub language: String,
+    /// Derive post titles from the first sentence (default false → `#id`).
+    pub derive_titles: bool,
+    /// When deriving titles, strip that sentence from the body.
+    pub strip_title: bool,
     /// Underline links (default false).
     pub link_underline: bool,
     /// CSS-only click-to-load YouTube facade (default true).

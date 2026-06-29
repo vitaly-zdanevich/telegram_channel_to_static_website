@@ -243,6 +243,8 @@ These are *variables*, not secrets — all of it is public.
 | `PAGES_HOST` | `--pages-host` | auto | Host for the About-page size limit: `github` / `gitlab` / `none` (auto-detected from the URL) |
 | `DATE_FORMAT` | `--date-format` | `%Y %B %d` | strftime format for displayed dates (e.g. `2025 October 28`; `%Y` for year only) |
 | `LANGUAGE` | `--language` | `en` | UI language for the site chrome (Newer/Older/Tags/About/…): `en`/`be`/`uk`/`ru`/`de`/`fr`/`zh`/`ja`/`pl`/`es`/`ko`/`ka` (Georgian). Post content keeps the channel's own language; dates are localized to match |
+| `DERIVE_TITLES` | `--derive-titles` | off | `true` derives a post title from its first sentence; default shows a clickable `#id` on the post's date/views line instead |
+| `STRIP_TITLE` | `--strip-title` | off | With `DERIVE_TITLES`, also remove that first sentence from the body so it isn't shown twice |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
 | `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (fetches the page for its YouTube video + lyrics widget) |

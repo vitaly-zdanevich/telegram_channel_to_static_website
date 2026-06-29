@@ -64,6 +64,12 @@ description = "A self-contained static backup of a public Telegram channel."
 # channel's own language; displayed dates are localized to match.
 # language = "en"
 
+# By default each post is shown by a clickable #id on its date/views line. Set
+# derive_titles = true to derive a title from the first sentence instead; with
+# strip_title = true that sentence is also dropped from the body.
+# derive_titles = true
+# strip_title = true
+
 # Underline links. Default false (text-decoration: none).
 # link_underline = true
 
