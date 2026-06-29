@@ -13,7 +13,7 @@ next_id = 1841
 next_title = "ad newspaper design toxic"
 prev_id = 1839
 prev_title = "interior refrigerator green"
-views = 13
+views = 14
 ids = [1840]
 +++
 

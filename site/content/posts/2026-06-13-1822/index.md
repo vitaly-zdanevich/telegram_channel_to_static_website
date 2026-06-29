@@ -13,7 +13,7 @@ next_id = 1823
 next_title = "love my mg alias - clickable grep in kitty - opens file and line in Vim"
 prev_id = 1821
 prev_title = "Make tree clickable, tested in kitty"
-views = 12
+views = 13
 ids = [1822]
 +++
 

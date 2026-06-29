@@ -13,7 +13,7 @@ next_id = 1840
 next_title = "lamp"
 prev_id = 1838
 prev_title = "xbox xbox360 game_console custom glass"
-views = 11
+views = 12
 ids = [1839]
 +++
 

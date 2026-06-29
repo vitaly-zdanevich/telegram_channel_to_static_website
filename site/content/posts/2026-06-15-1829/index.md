@@ -13,7 +13,7 @@ next_id = 1830
 next_title = "religion jesus"
 prev_id = 1827
 prev_title = "From official"
-views = 18
+views = 19
 ids = [1829]
 +++
 

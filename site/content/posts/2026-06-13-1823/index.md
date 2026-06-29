@@ -12,7 +12,7 @@ next_id = 1824
 next_title = "Армянский язык"
 prev_id = 1822
 prev_title = "This is why we have crypto?"
-views = 14
+views = 15
 ids = [1823]
 +++
 

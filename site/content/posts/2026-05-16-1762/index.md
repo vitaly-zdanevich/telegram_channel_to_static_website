@@ -12,7 +12,7 @@ next_id = 1763
 next_title = "error gitlab contradiction"
 prev_id = 1761
 prev_title = "I love ci so much that for the first time I depleted free 400 minutes per month, on gitlab, on my FOSS non-commercial projects."
-views = 316
+views = 318
 ids = [1762]
 +++
 
