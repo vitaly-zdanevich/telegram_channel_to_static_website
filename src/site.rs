@@ -20,7 +20,7 @@ pub fn scaffold(
     info: Option<&ChannelInfo>,
     tags: &[(String, usize)],
     page_nav: &[(String, String)],
-    days: &[String],
+    days: &[DayMeta],
 ) -> Result<()> {
     let site = &s.site;
     fs::create_dir_all(site.join("templates/shortcodes"))?;
@@ -84,13 +84,14 @@ pub fn scaffold(
     let _ = fs::remove_dir_all(&days_full);
     if s.theme.is_none() && !days.is_empty() {
         write_file(&days_full.join("_index.md"), "+++\nrender = false\n+++\n")?;
-        for (i, day) in days.iter().enumerate() {
+        for (i, d) in days.iter().enumerate() {
+            let day = &d.day;
             let mut extra = format!("day = \"{day}\"\n");
             if let Some(n) = days.get(i + 1) {
-                extra.push_str(&format!("newer_day = \"{n}\"\n"));
+                extra.push_str(&format!("newer_day = \"{}\"\n", n.day));
             }
             if let Some(o) = i.checked_sub(1).and_then(|j| days.get(j)) {
-                extra.push_str(&format!("older_day = \"{o}\"\n"));
+                extra.push_str(&format!("older_day = \"{}\"\n", o.day));
             }
             let md = format!(
                 "+++\ntitle = \"{day}\"\npath = \"/day/{day}/\"\ntemplate = \"day_full.html\"\n\n[extra]\n{extra}+++\n"
@@ -223,7 +224,7 @@ fn config_toml(
     pages: &[Page],
     tags: &[(String, usize)],
     page_nav: &[(String, String)],
-    days: &[String],
+    days: &[DayMeta],
 ) -> String {
     let theme_line = match &s.theme {
         Some(t) => format!("theme = \"{}\"\n", toml_escape(t)),
@@ -340,6 +341,8 @@ fn config_toml(
         ("not_archived", u.not_archived),
         ("video", u.video),
         ("calendar", u.calendar),
+        ("newer_day", u.newer_day),
+        ("older_day", u.older_day),
     ]
     .iter()
     .map(|&(k, v)| format!("{k} = \"{}\"", toml_escape(v)))
@@ -561,17 +564,26 @@ fn root_index_md(s: &Settings) -> String {
     o
 }
 
+/// Per-day data for the day pages + calendar: the date, how many posts, and the
+/// union of those posts' tags (unique, sorted).
+pub struct DayMeta {
+    pub day: String,
+    pub count: usize,
+    pub tags: Vec<String>,
+}
+
 /// The `/calendar/` page: one month grid per month that has posts, grouped by
 /// year (newest first). Days with posts link to their `/day/<date>/` page; month
 /// and weekday names follow LANGUAGE. `days` is "YYYY-MM-DD" sorted ascending.
-fn calendar_md(s: &Settings, days: &[String]) -> String {
+fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
     use chrono::{Datelike, NaiveDate};
     let locale =
         chrono::Locale::try_from(crate::i18n::date_locale(&s.language)).unwrap_or(chrono::Locale::en_US);
-    let present: std::collections::HashSet<&str> = days.iter().map(|d| d.as_str()).collect();
+    let present: std::collections::HashMap<&str, &DayMeta> =
+        days.iter().map(|d| (d.day.as_str(), d)).collect();
     let dates: Vec<NaiveDate> = days
         .iter()
-        .filter_map(|d| NaiveDate::parse_from_str(d, "%Y-%m-%d").ok())
+        .filter_map(|d| NaiveDate::parse_from_str(&d.day, "%Y-%m-%d").ok())
         .collect();
     let mut years: Vec<i32> = dates.iter().map(|d| d.year()).collect();
     years.sort();
@@ -619,9 +631,31 @@ fn calendar_md(s: &Settings, days: &[String]) -> String {
             while day.month() == m {
                 let key = day.format("%Y-%m-%d").to_string();
                 let dd = day.day();
-                if present.contains(key.as_str()) {
+                if let Some(meta) = present.get(key.as_str()) {
+                    // Busier days get a larger number; the day's tags go in the
+                    // hover title.
+                    let cls = if meta.count >= 3 {
+                        "on c3"
+                    } else if meta.count == 2 {
+                        "on c2"
+                    } else {
+                        "on"
+                    };
+                    let title = if meta.tags.is_empty() {
+                        String::new()
+                    } else {
+                        // One tag per line in the tooltip (&#10; = newline; a real
+                        // newline would break the raw-HTML block inside Markdown).
+                        let tags = meta
+                            .tags
+                            .iter()
+                            .map(|t| html_escape(&format!("#{t}")))
+                            .collect::<Vec<_>>()
+                            .join("&#10;");
+                        format!(" title=\"{tags}\"")
+                    };
                     b.push_str(&format!(
-                        "<td class=\"on\"><a href=\"{}day/{key}/\">{dd}</a></td>",
+                        "<td class=\"{cls}\"{title}><a href=\"{}day/{key}/\">{dd}</a></td>",
                         s.base_url
                     ));
                 } else {
@@ -974,7 +1008,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
     <nav>
       {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
-      <a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>
+      {% if current_path is matching("/tags/$") %}<span class="here">{{ config.extra.i18n.tags }}</span>{% else %}<a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>{% endif %}
       {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
@@ -1129,8 +1163,8 @@ const DAY_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% endfor %}
   {% endif %}{% endfor %}
   <nav class="post-nav">
-    <span>{% if page.extra.newer_day %}<a href="{{ get_url(path='/day/' ~ page.extra.newer_day ~ '/') | safe }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer }}</a>{% endif %}</span>
-    <span>{% if page.extra.older_day %}<a href="{{ get_url(path='/day/' ~ page.extra.older_day ~ '/') | safe }}" accesskey="o" rel="next">{{ config.extra.i18n.older }} →</a>{% endif %}</span>
+    <span>{% if page.extra.newer_day %}<a href="{{ get_url(path='/day/' ~ page.extra.newer_day ~ '/') | safe }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer_day }}</a>{% endif %}</span>
+    <span>{% if page.extra.older_day %}<a href="{{ get_url(path='/day/' ~ page.extra.older_day ~ '/') | safe }}" accesskey="o" rel="next">{{ config.extra.i18n.older_day }} →</a>{% endif %}</span>
   </nav>
 {% endblock content %}
 "#;
@@ -1225,7 +1259,7 @@ pre code { padding: 0; background: none; }
 .site-header { display: flex; gap: .6rem; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
-.site-header nav a { margin-left: .75rem; }
+.site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
 .site-search { margin-left: auto; }
 .site-search input, input.site-search {
   background: var(--input-bg); color: var(--fg);
@@ -1267,6 +1301,8 @@ table.cal th { font-weight: 400; color: var(--muted); padding: .1rem; text-align
 table.cal td { width: 1.95rem; height: 1.7rem; text-align: center; padding: 0; }
 table.cal td.on a { display: block; line-height: 1.7rem; border-radius: 4px; text-decoration: none; background: var(--code-bg); font-weight: 700; }
 table.cal td.off { color: var(--muted); opacity: .45; }
+table.cal td.c2 a { font-size: 1.05rem; }
+table.cal td.c3 a { font-size: 1.35rem; font-weight: 800; }
 
 /* Recent commits (About page) */
 .commits { list-style: none; padding: 0; font-size: .9em; }

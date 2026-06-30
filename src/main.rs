@@ -524,13 +524,27 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         .map(|r| (r.title.clone(), r.slug.clone()))
         .collect();
 
-    // Distinct post days (ascending) drive the /day/<date>/ archive pages.
-    let mut days: Vec<String> = posts
-        .iter()
-        .map(|p| p.date.format("%Y-%m-%d").to_string())
+    // Per-day post count + tags (ascending by day) drive the /day/<date>/ pages
+    // and the calendar (cell size by count, the day's tags in the hover title).
+    let mut by_day: std::collections::BTreeMap<String, (usize, std::collections::BTreeSet<String>)> =
+        std::collections::BTreeMap::new();
+    for p in &posts {
+        let e = by_day
+            .entry(p.date.format("%Y-%m-%d").to_string())
+            .or_default();
+        e.0 += 1;
+        for t in &p.tags {
+            e.1.insert(t.clone());
+        }
+    }
+    let days: Vec<site::DayMeta> = by_day
+        .into_iter()
+        .map(|(day, (count, tags))| site::DayMeta {
+            day,
+            count,
+            tags: tags.into_iter().collect(),
+        })
         .collect();
-    days.sort();
-    days.dedup();
 
     if init_site {
         site::scaffold(&s, channel_info.as_ref(), &tag_counts, &page_nav, &days)?;

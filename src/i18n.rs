@@ -28,6 +28,8 @@ pub struct Ui {
     pub not_archived: &'static str,
     pub video: &'static str,
     pub calendar: &'static str,
+    pub newer_day: &'static str,
+    pub older_day: &'static str,
 }
 
 /// Normalize a user-supplied language tag to one of [`SUPPORTED`], falling back
@@ -95,6 +97,8 @@ const EN: Ui = Ui {
     not_archived: "not archived",
     video: "video",
     calendar: "Calendar",
+    newer_day: "Newer day",
+    older_day: "Older day",
 };
 
 const RU: Ui = Ui {
@@ -113,6 +117,8 @@ const RU: Ui = Ui {
     not_archived: "не сохранено",
     video: "видео",
     calendar: "Календарь",
+    newer_day: "Новее день",
+    older_day: "Старее день",
 };
 
 const UK: Ui = Ui {
@@ -131,6 +137,8 @@ const UK: Ui = Ui {
     not_archived: "не збережено",
     video: "відео",
     calendar: "Календар",
+    newer_day: "Новіший день",
+    older_day: "Старіший день",
 };
 
 const BE: Ui = Ui {
@@ -149,6 +157,8 @@ const BE: Ui = Ui {
     not_archived: "не захавана",
     video: "відэа",
     calendar: "Каляндар",
+    newer_day: "Навейшы дзень",
+    older_day: "Старэйшы дзень",
 };
 
 const DE: Ui = Ui {
@@ -167,6 +177,8 @@ const DE: Ui = Ui {
     not_archived: "nicht archiviert",
     video: "Video",
     calendar: "Kalender",
+    newer_day: "Neuerer Tag",
+    older_day: "Älterer Tag",
 };
 
 const FR: Ui = Ui {
@@ -185,6 +197,8 @@ const FR: Ui = Ui {
     not_archived: "non archivé",
     video: "vidéo",
     calendar: "Calendrier",
+    newer_day: "Jour plus récent",
+    older_day: "Jour plus ancien",
 };
 
 const ZH: Ui = Ui {
@@ -203,6 +217,8 @@ const ZH: Ui = Ui {
     not_archived: "未存档",
     video: "视频",
     calendar: "日历",
+    newer_day: "较新一天",
+    older_day: "较旧一天",
 };
 
 const JA: Ui = Ui {
@@ -221,6 +237,8 @@ const JA: Ui = Ui {
     not_archived: "未アーカイブ",
     video: "動画",
     calendar: "カレンダー",
+    newer_day: "新しい日",
+    older_day: "古い日",
 };
 
 const PL: Ui = Ui {
@@ -239,6 +257,8 @@ const PL: Ui = Ui {
     not_archived: "niezarchiwizowane",
     video: "wideo",
     calendar: "Kalendarz",
+    newer_day: "Nowszy dzień",
+    older_day: "Starszy dzień",
 };
 
 const ES: Ui = Ui {
@@ -257,6 +277,8 @@ const ES: Ui = Ui {
     not_archived: "no archivado",
     video: "vídeo",
     calendar: "Calendario",
+    newer_day: "Día más reciente",
+    older_day: "Día más antiguo",
 };
 
 const KO: Ui = Ui {
@@ -275,6 +297,8 @@ const KO: Ui = Ui {
     not_archived: "보관되지 않음",
     video: "동영상",
     calendar: "달력",
+    newer_day: "다음 날",
+    older_day: "이전 날",
 };
 
 const KA: Ui = Ui {
@@ -293,6 +317,8 @@ const KA: Ui = Ui {
     not_archived: "არ არის დაარქივებული",
     video: "ვიდეო",
     calendar: "კალენდარი",
+    newer_day: "უფრო ახალი დღე",
+    older_day: "უფრო ძველი დღე",
 };
 
 /// Translatable prose for the About page. Sentence templates use `{placeholder}`
