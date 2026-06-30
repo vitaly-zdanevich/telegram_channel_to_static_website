@@ -44,7 +44,7 @@ pub fn scaffold(
     }
 
     // Regenerated every run (deterministic) so theme switches take effect.
-    write_file(&site.join("config.toml"), &config_toml(s, &pages, tags, page_nav))?;
+    write_file(&site.join("config.toml"), &config_toml(s, &pages, tags, page_nav, days))?;
     write_file(&site.join("content/_index.md"), &root_index_md(s))?;
     write_file(&site.join("content/posts/_index.md"), &posts_index_md(s))?;
     // Static pages live in a non-rendered subsection so they don't appear in the
@@ -52,6 +52,10 @@ pub fn scaffold(
     fs::create_dir_all(site.join("content/pages"))?;
     write_file(&site.join("content/pages/_index.md"), "+++\nrender = false\n+++\n")?;
     write_file(&site.join("content/pages/about.md"), &about_md(s, info))?;
+    // The calendar page (a year/month grid linking to the /day/<date>/ pages).
+    if s.theme.is_none() && !days.is_empty() {
+        write_file(&site.join("content/pages/calendar.md"), &calendar_md(s, days))?;
+    }
     for p in &pages {
         write_file(&site.join(format!("content/pages/{}.md", p.slug)), &page_md(s, p))?;
     }
@@ -111,6 +115,7 @@ pub fn scaffold(
         ("templates/tags/list.html", TAGS_LIST),
         ("templates/tag_full.html", TAG_FULL_HTML),
         ("templates/day_full.html", DAY_FULL_HTML),
+        ("templates/calendar.html", CALENDAR_HTML),
     ];
     if s.theme.is_none() {
         fs::create_dir_all(site.join("templates/tags"))?;
@@ -218,6 +223,7 @@ fn config_toml(
     pages: &[Page],
     tags: &[(String, usize)],
     page_nav: &[(String, String)],
+    days: &[String],
 ) -> String {
     let theme_line = match &s.theme {
         Some(t) => format!("theme = \"{}\"\n", toml_escape(t)),
@@ -333,6 +339,7 @@ fn config_toml(
         ("titles", u.titles),
         ("not_archived", u.not_archived),
         ("video", u.video),
+        ("calendar", u.calendar),
     ]
     .iter()
     .map(|&(k, v)| format!("{k} = \"{}\"", toml_escape(v)))
@@ -358,6 +365,7 @@ fn config_toml(
             if s.telegram_link { "true" } else { "false" },
         )
         .replace("__YT_FACADE__", if s.youtube_facade { "true" } else { "false" })
+        .replace("__CALENDAR__", if days.is_empty() { "false" } else { "true" })
         .replace("__FEDI__", &fedi)
         .replace("__SEARCH__", &search)
         .replace("__FOOTER__", &footer)
@@ -551,6 +559,100 @@ fn root_index_md(s: &Settings) -> String {
     }
     o.push_str("+++\n");
     o
+}
+
+/// The `/calendar/` page: one month grid per month that has posts, grouped by
+/// year (newest first). Days with posts link to their `/day/<date>/` page; month
+/// and weekday names follow LANGUAGE. `days` is "YYYY-MM-DD" sorted ascending.
+fn calendar_md(s: &Settings, days: &[String]) -> String {
+    use chrono::{Datelike, NaiveDate};
+    let locale =
+        chrono::Locale::try_from(crate::i18n::date_locale(&s.language)).unwrap_or(chrono::Locale::en_US);
+    let present: std::collections::HashSet<&str> = days.iter().map(|d| d.as_str()).collect();
+    let dates: Vec<NaiveDate> = days
+        .iter()
+        .filter_map(|d| NaiveDate::parse_from_str(d, "%Y-%m-%d").ok())
+        .collect();
+    let mut years: Vec<i32> = dates.iter().map(|d| d.year()).collect();
+    years.sort();
+    years.dedup();
+    years.reverse();
+
+    // Localized Mon..Sun headers (2024-01-06 is a Monday).
+    let monday = NaiveDate::from_ymd_opt(2024, 1, 1).unwrap();
+    let weekdays: Vec<String> = (0..7)
+        .map(|i| {
+            (monday + chrono::Duration::days(i))
+                .format_localized("%a", locale)
+                .to_string()
+        })
+        .collect();
+
+    let mut b = String::new();
+    b.push_str("<nav class=\"cal-years\">");
+    for y in &years {
+        b.push_str(&format!("<a href=\"#y{y}\">{y}</a>"));
+    }
+    b.push_str("</nav>\n\n");
+
+    for y in &years {
+        b.push_str(&format!(
+            "<h2 id=\"y{y}\" class=\"cal-year\">{y}</h2>\n<div class=\"cal-months\">\n"
+        ));
+        for m in 1..=12u32 {
+            if !dates.iter().any(|d| d.year() == *y && d.month() == m) {
+                continue;
+            }
+            let first = NaiveDate::from_ymd_opt(*y, m, 1).unwrap();
+            let name = first.format_localized("%B", locale).to_string();
+            b.push_str(&format!("<table class=\"cal\"><caption>{name}</caption><thead><tr>"));
+            for wd in &weekdays {
+                b.push_str(&format!("<th>{wd}</th>"));
+            }
+            b.push_str("</tr></thead><tbody><tr>");
+            let lead = first.weekday().num_days_from_monday();
+            for _ in 0..lead {
+                b.push_str("<td class=\"pad\"></td>");
+            }
+            let mut col = lead;
+            let mut day = first;
+            while day.month() == m {
+                let key = day.format("%Y-%m-%d").to_string();
+                let dd = day.day();
+                if present.contains(key.as_str()) {
+                    b.push_str(&format!(
+                        "<td class=\"on\"><a href=\"{}day/{key}/\">{dd}</a></td>",
+                        s.base_url
+                    ));
+                } else {
+                    b.push_str(&format!("<td class=\"off\">{dd}</td>"));
+                }
+                col += 1;
+                day = day.succ_opt().unwrap();
+                if col == 7 && day.month() == m {
+                    b.push_str("</tr><tr>");
+                    col = 0;
+                }
+            }
+            while col % 7 != 0 {
+                b.push_str("<td class=\"pad\"></td>");
+                col += 1;
+            }
+            b.push_str("</tr></tbody></table>\n");
+        }
+        b.push_str("</div>\n");
+    }
+
+    let template = if s.theme.is_none() {
+        "template = \"calendar.html\"\n"
+    } else {
+        ""
+    };
+    let label = crate::i18n::ui(&s.language).calendar;
+    format!(
+        "+++\ntitle = \"{}\"\npath = \"calendar\"\n{template}+++\n\n{b}\n",
+        toml_escape(label)
+    )
 }
 
 /// About page. The channel link is built from the configured channel (never
@@ -762,6 +864,7 @@ next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
 youtube_facade = __YT_FACADE__
+calendar = __CALENDAR__
 __FEDI__
 __SEARCH__
 __FOOTER__
@@ -812,6 +915,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
     <nav>
       {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
       <a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>
+      {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
     </nav>
@@ -971,6 +1075,16 @@ const DAY_FULL_HTML: &str = r#"{% extends "base.html" %}
 {% endblock content %}
 "#;
 
+// The /calendar/ page — the grid HTML is generated (calendar_md), this just
+// wraps it. The year/month grid links into the /day/<date>/ pages.
+const CALENDAR_HTML: &str = r#"{% extends "base.html" %}
+{% block title %}{{ config.extra.i18n.calendar }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>{{ config.extra.i18n.calendar }}</h1>
+  {{ page.content | safe }}
+{% endblock content %}
+"#;
+
 // YouTube shortcode (Zola no longer ships one). Uses the regular youtube.com
 // host so a played video counts toward the viewer's history. Default is a
 // direct iframe; with config.extra.youtube_facade it's a CSS-only click-to-load
@@ -1080,4 +1194,23 @@ input.site-search { margin-left: auto; }
 .spoiler:hover { background: transparent; }
 .site-footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); padding-top: .5rem; }
 blockquote { border-left: 3px solid var(--border); margin: .5rem 0; padding-left: .75rem; color: var(--muted); }
+.here { font-weight: 700; }
+
+/* Calendar */
+.cal-years { margin: .5rem 0 1.5rem; line-height: 1.9; }
+.cal-years a { margin-right: .7rem; }
+.cal-year { margin: 1.5rem 0 .5rem; }
+.cal-months { display: flex; flex-wrap: wrap; gap: 1.4rem; }
+table.cal { border-collapse: collapse; font-size: .8rem; }
+table.cal caption { text-align: left; font-weight: 700; padding-bottom: .3rem; }
+table.cal th { font-weight: 400; color: var(--muted); padding: .1rem; text-align: center; }
+table.cal td { width: 1.95rem; height: 1.7rem; text-align: center; padding: 0; }
+table.cal td.on a { display: block; line-height: 1.7rem; border-radius: 4px; text-decoration: none; background: var(--code-bg); font-weight: 700; }
+table.cal td.off { color: var(--muted); opacity: .45; }
+
+/* Mobile: use more of a narrow screen — less left/right inset. */
+@media (max-width: 640px) {
+  body { width: auto; padding: 1rem .5rem; }
+  .cal-months { gap: .9rem; }
+}
 "#;

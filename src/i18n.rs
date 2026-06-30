@@ -27,6 +27,7 @@ pub struct Ui {
     pub titles: &'static str,
     pub not_archived: &'static str,
     pub video: &'static str,
+    pub calendar: &'static str,
 }
 
 /// Normalize a user-supplied language tag to one of [`SUPPORTED`], falling back
@@ -93,6 +94,7 @@ const EN: Ui = Ui {
     titles: "titles",
     not_archived: "not archived",
     video: "video",
+    calendar: "Calendar",
 };
 
 const RU: Ui = Ui {
@@ -110,6 +112,7 @@ const RU: Ui = Ui {
     titles: "заголовки",
     not_archived: "не сохранено",
     video: "видео",
+    calendar: "Календарь",
 };
 
 const UK: Ui = Ui {
@@ -127,6 +130,7 @@ const UK: Ui = Ui {
     titles: "заголовки",
     not_archived: "не збережено",
     video: "відео",
+    calendar: "Календар",
 };
 
 const BE: Ui = Ui {
@@ -144,6 +148,7 @@ const BE: Ui = Ui {
     titles: "загалоўкі",
     not_archived: "не захавана",
     video: "відэа",
+    calendar: "Каляндар",
 };
 
 const DE: Ui = Ui {
@@ -161,6 +166,7 @@ const DE: Ui = Ui {
     titles: "Titel",
     not_archived: "nicht archiviert",
     video: "Video",
+    calendar: "Kalender",
 };
 
 const FR: Ui = Ui {
@@ -178,6 +184,7 @@ const FR: Ui = Ui {
     titles: "titres",
     not_archived: "non archivé",
     video: "vidéo",
+    calendar: "Calendrier",
 };
 
 const ZH: Ui = Ui {
@@ -195,6 +202,7 @@ const ZH: Ui = Ui {
     titles: "标题",
     not_archived: "未存档",
     video: "视频",
+    calendar: "日历",
 };
 
 const JA: Ui = Ui {
@@ -212,6 +220,7 @@ const JA: Ui = Ui {
     titles: "タイトル",
     not_archived: "未アーカイブ",
     video: "動画",
+    calendar: "カレンダー",
 };
 
 const PL: Ui = Ui {
@@ -229,6 +238,7 @@ const PL: Ui = Ui {
     titles: "tytuły",
     not_archived: "niezarchiwizowane",
     video: "wideo",
+    calendar: "Kalendarz",
 };
 
 const ES: Ui = Ui {
@@ -246,6 +256,7 @@ const ES: Ui = Ui {
     titles: "títulos",
     not_archived: "no archivado",
     video: "vídeo",
+    calendar: "Calendario",
 };
 
 const KO: Ui = Ui {
@@ -263,6 +274,7 @@ const KO: Ui = Ui {
     titles: "제목",
     not_archived: "보관되지 않음",
     video: "동영상",
+    calendar: "달력",
 };
 
 const KA: Ui = Ui {
@@ -280,6 +292,7 @@ const KA: Ui = Ui {
     titles: "სათაურები",
     not_archived: "არ არის დაარქივებული",
     video: "ვიდეო",
+    calendar: "კალენდარი",
 };
 
 /// Translatable prose for the About page. Sentence templates use `{placeholder}`

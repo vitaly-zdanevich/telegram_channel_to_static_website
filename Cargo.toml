@@ -1,6 +1,6 @@
 [package]
 name = "tg2zola"
-version = "0.16.0"
+version = "0.17.0"
 edition = "2021"
 description = "Sync a public Telegram channel into a Zola static website - no Telegram dependency at runtime - we parse t.me"
 license = "MIT"
@@ -20,7 +20,7 @@ scraper = "0.21"
 clap = { version = "4", features = ["derive"] }
 serde = { version = "1", features = ["derive"] }
 toml = "0.8"
-chrono = "0.4"
+chrono = { version = "0.4", features = ["unstable-locales"] }
 anyhow = "1"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
