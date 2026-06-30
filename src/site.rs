@@ -20,6 +20,7 @@ pub fn scaffold(
     info: Option<&ChannelInfo>,
     tags: &[(String, usize)],
     page_nav: &[(String, String)],
+    days: &[String],
 ) -> Result<()> {
     let site = &s.site;
     fs::create_dir_all(site.join("templates/shortcodes"))?;
@@ -72,6 +73,27 @@ pub fn scaffold(
             write_file(&tags_full.join(&slug).join("index.md"), &md)?;
         }
     }
+    // Per-day "full posts" pages at /day/<date>/ — every post's date links here.
+    // They render that day's posts in full, with prev/next-day navigation. `days`
+    // is sorted ascending, so the next entry is the newer day. Built-in only.
+    let days_full = site.join("content/days-full");
+    let _ = fs::remove_dir_all(&days_full);
+    if s.theme.is_none() && !days.is_empty() {
+        write_file(&days_full.join("_index.md"), "+++\nrender = false\n+++\n")?;
+        for (i, day) in days.iter().enumerate() {
+            let mut extra = format!("day = \"{day}\"\n");
+            if let Some(n) = days.get(i + 1) {
+                extra.push_str(&format!("newer_day = \"{n}\"\n"));
+            }
+            if let Some(o) = i.checked_sub(1).and_then(|j| days.get(j)) {
+                extra.push_str(&format!("older_day = \"{o}\"\n"));
+            }
+            let md = format!(
+                "+++\ntitle = \"{day}\"\npath = \"/day/{day}/\"\ntemplate = \"day_full.html\"\n\n[extra]\n{extra}+++\n"
+            );
+            write_file(&days_full.join(day).join("index.md"), &md)?;
+        }
+    }
     // Always provide our YouTube shortcode (project shortcodes override the
     // theme's), so generated `{{ youtube(...) }}` always resolves.
     write_file(&site.join("templates/shortcodes/youtube.html"), YOUTUBE_SHORTCODE)?;
@@ -88,6 +110,7 @@ pub fn scaffold(
         ("templates/tags/single.html", TAGS_SINGLE),
         ("templates/tags/list.html", TAGS_LIST),
         ("templates/tag_full.html", TAG_FULL_HTML),
+        ("templates/day_full.html", DAY_FULL_HTML),
     ];
     if s.theme.is_none() {
         fs::create_dir_all(site.join("templates/tags"))?;
@@ -723,6 +746,7 @@ minify_html = true
 
 taxonomies = [
   { name = "tags" },
+  { name = "days", render = false },
 ]
 
 [markdown]
@@ -807,7 +831,7 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
     <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
       {% if page.title %}<h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>{% endif %}
       <p class="meta">
-        <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
+        <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
         {% if page.extra.views %}· 👁 {{ page.extra.views }}{% endif %}
         {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
         {% if not page.title %}· <a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
@@ -834,7 +858,7 @@ const SECTION_HTML: &str = r#"{% extends "base.html" %}
   {% for page in paginator.pages %}
     <li>
       {% if page.title %}<a href="{{ page.permalink | safe }}">{{ page.title }}</a>{% endif %}
-      <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
+      <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
       {% if page.extra.views %}<span class="views">👁 {{ page.extra.views }}</span>{% endif %}
       {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
     </li>
@@ -854,7 +878,7 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
   <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
     {% if not (current_path is containing("/about/")) %}<h1>{% if page.title %}{{ page.title }}{% else %}{{ page.extra.id }}{% endif %}</h1>{% endif %}
     <p class="meta">
-      {% if page.date %}<time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>{% endif %}
+      {% if page.date %}<a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% endif %}
       {% if page.extra.views %}· 👁 {{ page.extra.views }} {{ config.extra.i18n.views }}{% endif %}
       {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
     </p>
@@ -885,7 +909,7 @@ const TAGS_SINGLE: &str = r#"{% extends "base.html" %}
   {% for page in term.pages %}
     <li>
       {% if page.title %}<a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>{% endif %}
-      <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
+      <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
       {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
     </li>
   {% endfor %}
@@ -916,11 +940,34 @@ const TAG_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% for p in term.pages %}
     <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
       {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
-      <p class="meta"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
+      <p class="meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
       <div class="content">{{ p.content | safe }}</div>
     </article>
   {% endfor %}
   {% endif %}{% endfor %}
+{% endblock content %}
+"#;
+
+// All posts of one day, rendered in full (the date everywhere links here), with
+// prev/next-day navigation. Posts come via the render=false `days` taxonomy.
+const DAY_FULL_HTML: &str = r#"{% extends "base.html" %}
+{% block title %}{{ page.extra.day }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>{{ page.extra.day }}</h1>
+  {% set tax = get_taxonomy(kind="days") %}
+  {% for term in tax.items %}{% if term.name == page.extra.day %}
+  {% for p in term.pages %}
+    <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
+      {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
+      <p class="meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
+      <div class="content">{{ p.content | safe }}</div>
+    </article>
+  {% endfor %}
+  {% endif %}{% endfor %}
+  <nav class="post-nav">
+    <span>{% if page.extra.newer_day %}<a href="{{ get_url(path='/day/' ~ page.extra.newer_day ~ '/') | safe }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer }}</a>{% endif %}</span>
+    <span>{% if page.extra.older_day %}<a href="{{ get_url(path='/day/' ~ page.extra.older_day ~ '/') | safe }}" accesskey="o" rel="next">{{ config.extra.i18n.older }} →</a>{% endif %}</span>
+  </nav>
 {% endblock content %}
 "#;
 

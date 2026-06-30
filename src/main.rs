@@ -524,8 +524,16 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         .map(|r| (r.title.clone(), r.slug.clone()))
         .collect();
 
+    // Distinct post days (ascending) drive the /day/<date>/ archive pages.
+    let mut days: Vec<String> = posts
+        .iter()
+        .map(|p| p.date.format("%Y-%m-%d").to_string())
+        .collect();
+    days.sort();
+    days.dedup();
+
     if init_site {
-        site::scaffold(&s, channel_info.as_ref(), &tag_counts, &page_nav)?;
+        site::scaffold(&s, channel_info.as_ref(), &tag_counts, &page_nav, &days)?;
     }
 
     // Posts are id-ascending; neighbour id+title drive the Next/Prev nav.

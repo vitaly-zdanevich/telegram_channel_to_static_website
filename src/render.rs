@@ -470,14 +470,24 @@ fn front_matter(
         fm.push_str(&format!("description = {}\n", toml_str(description)));
     }
 
+    // Every post joins a `days` taxonomy term (its date) so the /day/<date>/
+    // pages can render that day in full; tags are an additional taxonomy.
+    fm.push_str("\n[taxonomies]\n");
+    fm.push_str(&format!(
+        "days = [{}]\n",
+        toml_str(&post.date.format("%Y-%m-%d").to_string())
+    ));
     if !post.tags.is_empty() {
-        fm.push_str("\n[taxonomies]\n");
         let tags: Vec<String> = post.tags.iter().map(|t| toml_str(t)).collect();
         fm.push_str(&format!("tags = [{}]\n", tags.join(", ")));
     }
 
     fm.push_str("\n[extra]\n");
     fm.push_str(&format!("id = {}\n", post.primary_id));
+    fm.push_str(&format!(
+        "day = {}\n",
+        toml_str(&post.date.format("%Y-%m-%d").to_string())
+    ));
     fm.push_str(&format!(
         "tg_url = \"https://t.me/{}/{}\"\n",
         post.channel, post.primary_id
