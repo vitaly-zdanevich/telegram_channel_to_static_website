@@ -655,6 +655,62 @@ fn calendar_md(s: &Settings, days: &[String]) -> String {
     )
 }
 
+/// The last 10 commits of the repo tg2zola runs in, for the About page: a
+/// clickable short hash (→ the repo's commit page), the subject and date, with
+/// the full commit body as a hover tooltip. `None` if git isn't available.
+fn recent_commits(repo_url: &str) -> Option<String> {
+    // %x1f = field separator within a commit, %x1e = record separator between
+    // commits (so multi-line bodies don't break parsing).
+    let out = std::process::Command::new("git")
+        .args(["log", "-10", "--format=%H%x1f%h%x1f%s%x1f%cs%x1f%b%x1e"])
+        .output()
+        .ok()?;
+    if !out.status.success() {
+        return None;
+    }
+    let text = String::from_utf8_lossy(&out.stdout);
+    let repo = repo_url.trim_end_matches('/');
+    let mut items = String::new();
+    for record in text.split('\u{1e}') {
+        let record = record.trim_start_matches(['\n', '\r']);
+        if record.trim().is_empty() {
+            continue;
+        }
+        let fields: Vec<&str> = record.splitn(5, '\u{1f}').collect();
+        if fields.len() < 4 {
+            continue;
+        }
+        let (full, short, subject, date) = (fields[0], fields[1], fields[2], fields[3]);
+        let body = fields.get(4).copied().unwrap_or("").trim();
+        // Encode newlines as &#10; so the (multi-paragraph) body keeps the whole
+        // <ul> on one line — a blank line would otherwise end the raw-HTML block
+        // inside Markdown. The tooltip still shows the line breaks.
+        let title = if body.is_empty() {
+            String::new()
+        } else {
+            let b = html_escape(body).replace('\r', "").replace('\n', "&#10;");
+            format!(" title=\"{b}\"")
+        };
+        items.push_str(&format!(
+            "<li{title}><a href=\"{repo}/commit/{full}\"><code>{short}</code></a> {} <span class=\"cdate\">{date}</span></li>",
+            html_escape(subject)
+        ));
+    }
+    if items.is_empty() {
+        None
+    } else {
+        Some(format!("<ul class=\"commits\">{items}</ul>"))
+    }
+}
+
+/// Minimal HTML escaping for text and attribute values.
+fn html_escape(s: &str) -> String {
+    s.replace('&', "&amp;")
+        .replace('<', "&lt;")
+        .replace('>', "&gt;")
+        .replace('"', "&quot;")
+}
+
 /// About page. The channel link is built from the configured channel (never
 /// hardcoded), so the project works for any channel; the repo link is
 /// configurable. In theme mode the template line is omitted.
@@ -719,6 +775,10 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                 repo = s.repo_url,
                 no_api = about.no_api,
             ));
+            if let Some(commits) = recent_commits(&s.repo_url) {
+                b.push_str("\n\n");
+                b.push_str(&commits);
+            }
             b
         }
     };
@@ -1207,6 +1267,12 @@ table.cal th { font-weight: 400; color: var(--muted); padding: .1rem; text-align
 table.cal td { width: 1.95rem; height: 1.7rem; text-align: center; padding: 0; }
 table.cal td.on a { display: block; line-height: 1.7rem; border-radius: 4px; text-decoration: none; background: var(--code-bg); font-weight: 700; }
 table.cal td.off { color: var(--muted); opacity: .45; }
+
+/* Recent commits (About page) */
+.commits { list-style: none; padding: 0; font-size: .9em; }
+.commits li { padding: .15rem 0; }
+.commits code { background: var(--code-bg); padding: .05rem .3rem; border-radius: 3px; }
+.commits .cdate { color: var(--muted); font-size: .85em; margin-left: .4rem; }
 
 /* Mobile: use more of a narrow screen — less left/right inset. */
 @media (max-width: 640px) {
