@@ -85,7 +85,10 @@ fn handle_element(el: ElementRef, out: &mut String, ctx: &mut Ctx) {
     let name = el.value().name();
     let class = el.value().attr("class").unwrap_or("");
     match name {
-        "br" => out.push('\n'),
+        // Two trailing spaces → a Markdown hard break, so a Telegram line break
+        // survives (a bare "\n" is a soft break that renders as a space, which
+        // collapses e.g. a stack of #hashtags onto one line).
+        "br" => out.push_str("  \n"),
         "b" | "strong" => wrap(out, "**", &inner(el, ctx), "**"),
         "i" | "em" => {
             // Telegram custom emoji are `<i class="emoji">...</i>` — emit the
@@ -219,8 +222,21 @@ fn escape_inline(s: &str) -> String {
 
 static MANY_NL: Lazy<Regex> = Lazy::new(|| Regex::new(r"\n{3,}").unwrap());
 
+/// Trim trailing whitespace, but keep a Markdown hard break (2 trailing spaces)
+/// so a Telegram line break (`<br>` → "  \n") survives onto its own line instead
+/// of collapsing into the next. A blank line still separates paragraphs, so
+/// `<br><br>` stays a paragraph break.
+fn trim_keep_break(l: &str) -> String {
+    let t = l.trim_end();
+    if !t.is_empty() && l.len() >= t.len() + 2 {
+        format!("{t}  ")
+    } else {
+        t.to_string()
+    }
+}
+
 fn postprocess(s: &str) -> String {
-    let mut lines: Vec<String> = s.split('\n').map(|l| l.trim_end().to_string()).collect();
+    let mut lines: Vec<String> = s.split('\n').map(trim_keep_break).collect();
     let mut in_code = false;
     for l in &mut lines {
         // Never escape inside fenced code blocks.
