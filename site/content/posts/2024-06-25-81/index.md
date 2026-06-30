@@ -1,14 +1,19 @@
 +++
-title = "Wow, DIY laptop with easy interchangeable parts"
+title = ""
 date = 2024-06-25T05:08:38+00:00
 description = "Wow, DIY laptop with easy interchangeable parts Sad that fanless laptops looks like unpopular, the best of such - MacBook Air, but I love Linux."
 
+[taxonomies]
+days = ["2024-06-25"]
+
 [extra]
+id = 81
+day = "2024-06-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/81"
 next_id = 82
-next_title = "I contribute to wikipedia and other projects on mediawiki engine and other wikis like mdn."
+next_title = ""
 prev_id = 80
-prev_title = "Tried thunderbird again, after many years - and its good."
+prev_title = ""
 views = 54
 ids = [81]
 +++

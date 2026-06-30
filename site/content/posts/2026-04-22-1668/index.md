@@ -1,18 +1,21 @@
 +++
-title = "Atelier Shallie Alchemists of the Dusk Sea"
+title = ""
 date = 2026-04-22T13:14:59+00:00
-description = "anime cover game ps3 year2014"
+description = "anime cover game ps3 year2014 Atelier Shallie Alchemists of the Dusk Sea"
 
 [taxonomies]
+days = ["2026-04-22"]
 tags = ["anime", "cover", "game", "ps3", "year_2014"]
 
 [extra]
+id = 1668
+day = "2026-04-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1668"
 og_image = "01.jpg"
 next_id = 1672
-next_title = "Before"
+next_title = ""
 prev_id = 1667
-prev_title = "fashion street london"
+prev_title = ""
 views = 13
 ids = [1668]
 +++
@@ -23,6 +26,7 @@ ids = [1668]
 {{ tag(t="ps3") }}
 {{ tag(t="year_2014") }}
 
+**Atelier Shallie Alchemists of the Dusk Sea**
 
 <https://www.youtube.com/channel/UCFW9XIHHlkWjZpv0hVDlsSg>
 

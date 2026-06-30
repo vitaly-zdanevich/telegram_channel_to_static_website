@@ -1,17 +1,20 @@
 +++
-title = "Full legal"
+title = ""
 date = 2025-12-15T00:58:49+00:00
 description = "kindzadza suicide oxygen Планета Хануд. Здесь теперь всегда ночь. Тут воздуха нет нифига. Здесь давно никто не живёт. Нас плюкане транклюкировали пока мы на гастролях были. И все погибли. Вовка,…"
 
 [taxonomies]
+days = ["2025-12-15"]
 tags = ["kin_dza_dza", "suicide", "oxygen"]
 
 [extra]
+id = 801
+day = "2025-12-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/801"
 next_id = 802
-next_title = "Love this logo"
+next_title = ""
 prev_id = 799
-prev_title = "preservation games beard"
+prev_title = ""
 views = 45
 ids = [801]
 +++

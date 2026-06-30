@@ -1,16 +1,21 @@
 +++
-title = "Wikidata:Entity Explosion"
+title = ""
 date = 2024-05-06T16:21:40+00:00
-description = "Wikidata:Entity Explosion"
+description = "I love this browser extension - shows Wikidata information about the current page"
+
+[taxonomies]
+days = ["2024-05-06"]
 
 [extra]
+id = 41
+day = "2024-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/41"
 next_id = 42
-next_title = "Монета 5 лет Независимости 50 литов back.jpg"
+next_title = ""
 prev_id = 40
-prev_title = "2024-05-05 20:35"
+prev_title = ""
 views = 49
 ids = [41]
 +++
 
-[Wikidata:Entity Explosion](https://www.wikidata.org/wiki/Wikidata:Entity_Explosion)
+I love this browser extension - shows Wikidata information about the current page <https://www.wikidata.org/wiki/Wikidata:Entity_Explosion>

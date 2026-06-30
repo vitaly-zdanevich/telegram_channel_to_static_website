@@ -1,14 +1,19 @@
 +++
-title = "2024-12-21 11:48"
+title = ""
 date = 2024-12-21T11:48:37+00:00
 
+[taxonomies]
+days = ["2024-12-21"]
+
 [extra]
+id = 221
+day = "2024-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/221"
 og_image = "5420318654370800931_1262016281_456254755.jpg"
 next_id = 222
-next_title = "youtube"
+next_title = ""
 prev_id = 220
-prev_title = "psy"
+prev_title = ""
 views = 40
 ids = [221]
 +++

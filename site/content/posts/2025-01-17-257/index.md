@@ -1,16 +1,19 @@
 +++
-title = "video"
+title = ""
 date = 2025-01-17T00:58:06+00:00
 
 [taxonomies]
+days = ["2025-01-17"]
 tags = ["video"]
 
 [extra]
+id = 257
+day = "2025-01-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/257"
 next_id = 258
-next_title = "2025-01-17 01:03"
+next_title = ""
 prev_id = 256
-prev_title = "video"
+prev_title = ""
 views = 25
 ids = [257]
 +++

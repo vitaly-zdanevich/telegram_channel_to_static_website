@@ -1,17 +1,20 @@
 +++
-title = "Night Watch: Special Edition game"
+title = ""
 date = 2024-10-06T03:55:37+00:00
 description = "Night Watch: Special Edition game"
 
 [taxonomies]
+days = ["2024-10-06"]
 tags = ["game"]
 
 [extra]
+id = 158
+day = "2024-10-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/158"
 next_id = 159
-next_title = "Wow design"
+next_title = ""
 prev_id = 157
-prev_title = "2024-10-04 23:28"
+prev_title = ""
 views = 51
 ids = [158]
 +++

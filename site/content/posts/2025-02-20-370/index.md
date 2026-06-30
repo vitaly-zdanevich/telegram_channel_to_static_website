@@ -1,17 +1,20 @@
 +++
-title = "ai aicalls"
+title = ""
 date = 2025-02-20T21:30:24+00:00
 description = "ai aicalls Ты упомянул свой стартап по поиску жилья pro.placy.ai — …да, ИИ-ассистент, которму сейчас не подвластно только одно — открыть ключом дверь в квартиру, которую ты хочешь арендовать или…"
 
 [taxonomies]
+days = ["2025-02-20"]
 tags = ["ai", "aicalls"]
 
 [extra]
+id = 370
+day = "2025-02-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/370"
 next_id = 371
-next_title = "ad from 2012"
+next_title = ""
 prev_id = 369
-prev_title = "Not my experience, this is just funny."
+prev_title = ""
 views = 45
 ids = [370]
 +++

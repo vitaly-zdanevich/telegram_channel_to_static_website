@@ -1,17 +1,20 @@
 +++
-title = "Софт"
+title = ""
 date = 2026-06-24T15:14:35+00:00
-description = "armiesofexigo tool Там к софту есть инструкции но вот еще своими словами написал в файле list.LST все пути к игровым файлам === чтобы извлечь все файлы в консоли: \"tools/ork/orkdumper/orkdec\"…"
+description = "armiesofexigo tool Софт Там к софту есть инструкции но вот еще своими словами написал в файле list.LST все пути к игровым файлам === чтобы извлечь все файлы в консоли: \"tools/ork/orkdumper/orkdec\"…"
 
 [taxonomies]
+days = ["2026-06-24"]
 tags = ["armies_of_exigo", "tool"]
 
 [extra]
+id = 1856
+day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1856"
 next_id = 1860
-next_title = "💗 Любимый Кобулети — это место встреч, моря и тёплых воспоминаний."
+next_title = ""
 prev_id = 1855
-prev_title = "armies_of_exigo it own by electronic_arts"
+prev_title = ""
 views = 6
 ids = [1856, 1857, 1858, 1859]
 +++
@@ -19,6 +22,7 @@ ids = [1856, 1857, 1858, 1859]
 {{ tag(t="armies_of_exigo") }}
 {{ tag(t="tool") }}
 
+Софт
 
 Там к софту есть инструкции но вот еще своими словами написал
 

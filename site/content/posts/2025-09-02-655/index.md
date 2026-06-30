@@ -1,17 +1,20 @@
 +++
-title = "chatgpt 5"
+title = ""
 date = 2025-09-02T10:36:14+00:00
 description = "chatgpt 5: Escape shell $ as $$ inside Makefile recipes gemini: No, you should not use RESP=$$() for command substitution. Your original syntax was correct."
 
 [taxonomies]
+days = ["2025-09-02"]
 tags = ["chatgpt", "gemini"]
 
 [extra]
+id = 655
+day = "2025-09-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/655"
 next_id = 656
-next_title = "iran tehran photo"
+next_title = ""
 prev_id = 654
-prev_title = "Jewish Autonomous Oblast"
+prev_title = ""
 views = 40
 ids = [655]
 +++

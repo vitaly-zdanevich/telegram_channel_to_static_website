@@ -1,18 +1,21 @@
 +++
-title = "iran tehran photo"
+title = ""
 date = 2025-09-08T09:44:13+00:00
 description = "iran tehran photo Source"
 
 [taxonomies]
+days = ["2025-09-08"]
 tags = ["iran", "tehran", "photo"]
 
 [extra]
+id = 656
+day = "2025-09-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/656"
 og_image = "5330235726836661092_1241042215_456260452.jpg"
 next_id = 657
-next_title = "const s = \"สวัสดี\""
+next_title = ""
 prev_id = 655
-prev_title = "chatgpt 5"
+prev_title = ""
 views = 27
 ids = [656]
 +++

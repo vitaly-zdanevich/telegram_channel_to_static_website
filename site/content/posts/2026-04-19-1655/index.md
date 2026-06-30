@@ -1,18 +1,21 @@
 +++
-title = "preservation logo symbol damage"
+title = ""
 date = 2026-04-19T23:28:42+00:00
 description = "preservation logo symbol damage"
 
 [taxonomies]
+days = ["2026-04-19"]
 tags = ["preservation", "logo", "symbol", "damage"]
 
 [extra]
+id = 1655
+day = "2026-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1655"
 og_image = "5417832637109310022_1261437460_460001862.jpg"
 next_id = 1656
-next_title = "ДА Житомирської області--01 Ф - фонди дорадянського періоду--0001--0075--010001-75-00185--F 1-75-0185.PDF page500 1.jpeg"
+next_title = ""
 prev_id = 1654
-prev_title = "ai hi qwen terminal"
+prev_title = ""
 views = 21
 ids = [1655]
 +++

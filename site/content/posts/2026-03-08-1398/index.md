@@ -1,17 +1,20 @@
 +++
-title = "Заметил интересный тренд: после выхода Opus 4.5 лента буквально заполонила проекты под копирку — «интерактивная площадка с частицами на three.js, управляемая жестами через mediapipe»."
+title = ""
 date = 2026-03-08T15:52:40+00:00
 description = "Заметил интересный тренд: после выхода Opus 4.5 лента буквально заполонила проекты под копирку — «интерактивная площадка с частицами на three.js, управляемая жестами через mediapipe». Складывается…"
 
 [taxonomies]
+days = ["2026-03-08"]
 tags = ["video"]
 
 [extra]
+id = 1398
+day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1398"
 next_id = 1399
-next_title = "Отличная 3D карта общественного транспорта Токио в реальном времени"
+next_title = ""
 prev_id = 1397
-prev_title = "Не могу не опубликовать здесь!"
+prev_title = ""
 views = 13
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1762"

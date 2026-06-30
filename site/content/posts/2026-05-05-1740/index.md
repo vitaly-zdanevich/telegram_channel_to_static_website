@@ -1,18 +1,21 @@
 +++
-title = "armies_of_exigo: моя лекция об игре, в Батуми"
+title = ""
 date = 2026-05-05T15:41:55+00:00
 description = "armiesofexigo: моя лекция об игре, в Батуми stillyoungbar Также скачать эту заброшенную игру можно тут Все ссылки на это видео"
 
 [taxonomies]
+days = ["2026-05-05"]
 tags = ["armies_of_exigo", "лекция", "still_young_bar", "видео"]
 
 [extra]
+id = 1740
+day = "2026-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1740"
 next_id = 1741
-next_title = "odysee looks like convert video right in a browser - without uploading to the backend."
+next_title = ""
 prev_id = 1739
-prev_title = "shotcut is pretty good foss video_editor, love it"
-views = 299
+prev_title = ""
+views = 300
 ids = [1740]
 +++
 

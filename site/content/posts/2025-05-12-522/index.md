@@ -1,21 +1,26 @@
 +++
-title = "Wikipedia templates"
+title = ""
 date = 2025-05-12T17:50:15+00:00
-description = "code wikipedia"
+description = "Wikipedia templates code wikipedia"
 
 [taxonomies]
+days = ["2025-05-12"]
 tags = ["code", "wikipedia"]
 
 [extra]
+id = 522
+day = "2025-05-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/522"
 og_image = "5264726708089648938_1225789708_456259370.jpg"
 next_id = 523
-next_title = "belarus history lost offline"
+next_title = ""
 prev_id = 521
-prev_title = "Dream setup."
+prev_title = ""
 views = 28
 ids = [522]
 +++
+
+Wikipedia templates
 
 {{ tag(t="code") }}
 {{ tag(t="wikipedia") }}

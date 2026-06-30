@@ -1,27 +1,30 @@
 +++
-title = "Sakartvelo 1915 N05.pdf"
+title = ""
 date = 2026-03-12T17:14:40+00:00
-description = "Sakartvelo 1915 N05.pdf design typography newspaper sakartvelo"
+description = "design typography newspaper sakartvelo Source"
 
 [taxonomies]
+days = ["2026-03-12"]
 tags = ["design", "typography", "newspaper", "sakartvelo"]
 
 [extra]
+id = 1438
+day = "2026-03-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1438"
 og_image = "5301280942821414751_1234300654_460003167.jpg"
 next_id = 1439
-next_title = "webdesign animal cat"
+next_title = ""
 prev_id = 1437
-prev_title = "056-231 Слоним, снято 5 июня 2005.jpg"
+prev_title = ""
 views = 21
 ids = [1438]
 +++
-
-[Sakartvelo 1915 N05.pdf](https://commons.wikimedia.org/wiki/File:Sakartvelo_1915_N05.pdf)
 
 {{ tag(t="design") }}
 {{ tag(t="typography") }}
 {{ tag(t="newspaper") }}
 {{ tag(t="sakartvelo") }}
+
+[Source](https://commons.wikimedia.org/wiki/File:Sakartvelo_1915_N05.pdf)
 
 ![](5301280942821414751_1234300654_460003167.jpg)

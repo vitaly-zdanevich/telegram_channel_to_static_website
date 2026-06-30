@@ -1,18 +1,21 @@
 +++
-title = "love this extension - highlight predefined list of words, on predefined URLs."
+title = ""
 date = 2026-06-10T17:44:03+00:00
 description = "love this extension - highlight predefined list of words, on predefined URLs."
 
 [taxonomies]
+days = ["2026-06-10"]
 tags = ["love", "extension", "highlight"]
 
 [extra]
+id = 1807
+day = "2026-06-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1807"
 og_image = "01.jpg"
 next_id = 1817
-next_title = "logo progy github"
+next_title = ""
 prev_id = 1806
-prev_title = "Wow, about telegram bots: you can bypass 50 MB response limit - by hosting their bot software."
+prev_title = ""
 views = 14
 ids = [1807]
 +++

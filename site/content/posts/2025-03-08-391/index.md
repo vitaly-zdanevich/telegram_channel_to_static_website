@@ -1,17 +1,20 @@
 +++
-title = "Some people think that his speeches correlates with Warhammer."
+title = ""
 date = 2025-03-08T00:21:42+00:00
-description = "alexjones warhammer Source"
+description = "alexjones warhammer Some people think that his speeches correlates with Warhammer. Source"
 
 [taxonomies]
+days = ["2025-03-08"]
 tags = ["alex_jones", "warhammer"]
 
 [extra]
+id = 391
+day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/391"
 next_id = 392
-next_title = "alex_jones warhammer"
+next_title = ""
 prev_id = 390
-prev_title = "webdesign"
+prev_title = ""
 views = 63
 ids = [391]
 +++
@@ -19,6 +22,7 @@ ids = [391]
 {{ tag(t="alex_jones") }}
 {{ tag(t="warhammer") }}
 
+Some people think that his speeches correlates with Warhammer.
 [Source](https://youtu.be/NPrvkff5NIw)
 
 {{ youtube(id="NPrvkff5NIw") }}

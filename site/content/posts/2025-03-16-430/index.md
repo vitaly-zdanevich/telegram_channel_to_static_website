@@ -1,17 +1,20 @@
 +++
-title = "scrum story_points work video"
+title = ""
 date = 2025-03-16T20:17:52+00:00
 description = "scrum storypoints work Source"
 
 [taxonomies]
+days = ["2025-03-16"]
 tags = ["scrum", "story_points", "work", "video"]
 
 [extra]
+id = 430
+day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/430"
 next_id = 431
-next_title = "australia jug video"
+next_title = ""
 prev_id = 429
-prev_title = "alarm music dreams video"
+prev_title = ""
 views = 70
 ids = [430]
 +++

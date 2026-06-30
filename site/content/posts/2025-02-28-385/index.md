@@ -1,18 +1,21 @@
 +++
-title = "pelevin apple buddhism"
+title = ""
 date = 2025-02-28T03:22:34+00:00
 description = "pelevin apple buddhism"
 
 [taxonomies]
+days = ["2025-02-28"]
 tags = ["pelevin", "apple", "buddhism"]
 
 [extra]
+id = 385
+day = "2025-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/385"
 og_image = "5336993870761815093_1242615718_456256565.jpg"
 next_id = 386
-next_title = "Released opera 2084"
+next_title = ""
 prev_id = 384
-prev_title = "Мушекви, Няша Либерти"
+prev_title = ""
 views = 48
 ids = [385]
 +++

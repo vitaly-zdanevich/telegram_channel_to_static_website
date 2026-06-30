@@ -1,17 +1,20 @@
 +++
-title = "plastic letov"
+title = ""
 date = 2025-01-17T01:16:45+00:00
 description = "plastic letov"
 
 [taxonomies]
+days = ["2025-01-17"]
 tags = ["plastic", "letov"]
 
 [extra]
+id = 270
+day = "2025-01-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/270"
 next_id = 271
-next_title = "video"
+next_title = ""
 prev_id = 269
-prev_title = "video"
+prev_title = ""
 views = 24
 ids = [270]
 +++

@@ -1,21 +1,26 @@
 +++
-title = "wow"
+title = ""
 date = 2025-04-29T19:20:42+00:00
-description = "foss"
+description = "wow foss"
 
 [taxonomies]
+days = ["2025-04-29"]
 tags = ["foss"]
 
 [extra]
+id = 488
+day = "2025-04-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/488"
 og_image = "5226929535595967434_1216989368_456258506.jpg"
 next_id = 490
-next_title = "2025-04-29 21:59"
+next_title = ""
 prev_id = 487
-prev_title = "trump batumi"
+prev_title = ""
 views = 31
 ids = [488]
 +++
+
+wow
 
 {{ tag(t="foss") }}
 

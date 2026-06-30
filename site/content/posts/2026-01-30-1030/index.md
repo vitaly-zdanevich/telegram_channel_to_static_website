@@ -1,23 +1,24 @@
 +++
-title = "045-259 Мартиново, снято 12 февраля 2005.jpg"
+title = ""
 date = 2026-01-30T10:33:24+00:00
-description = "045-259 Мартиново, снято 12 февраля 2005.jpg belarus abandone church мартиново year2005 globustut"
+description = "belarus abandone church мартиново year2005 globustut From"
 
 [taxonomies]
+days = ["2026-01-30"]
 tags = ["belarus", "abandone", "church", "мартиново", "year_2005", "globustut"]
 
 [extra]
+id = 1030
+day = "2026-01-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1030"
 og_image = "01.jpg"
 next_id = 1037
-next_title = "045-286 Бочейково, снято 12 февраля 2005.jpg"
+next_title = ""
 prev_id = 1028
-prev_title = "045-215 Иванск, снято 12 февраля 2005.jpg"
+prev_title = ""
 views = 4
 ids = [1030]
 +++
-
-[045-259 Мартиново, снято 12 февраля 2005.jpg](https://commons.wikimedia.org/wiki/File:045-259_%D0%9C%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
 {{ tag(t="belarus") }}
 {{ tag(t="abandone") }}
@@ -25,6 +26,8 @@ ids = [1030]
 {{ tag(t="мартиново") }}
 {{ tag(t="year_2005") }}
 {{ tag(t="globustut") }}
+
+From [https://commons.wikimedia.org/wiki/File:045-259\_Мартиново,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-259_%D0%9C%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
 ![](01.jpg)
 

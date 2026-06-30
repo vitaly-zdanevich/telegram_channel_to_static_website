@@ -1,18 +1,21 @@
 +++
-title = "webdesign oldweb anime"
+title = ""
 date = 2026-03-07T18:14:47+00:00
 description = "webdesign oldweb anime"
 
 [taxonomies]
+days = ["2026-03-07"]
 tags = ["webdesign", "oldweb", "anime"]
 
 [extra]
+id = 1360
+day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1360"
 og_image = "5289657696166548220_1231594406_460002044.jpg"
 next_id = 1361
-next_title = "webdesign oldweb anime"
+next_title = ""
 prev_id = 1359
-prev_title = "webdesign oldweb anime"
+prev_title = ""
 views = 5
 ids = [1360]
 +++

@@ -1,13 +1,18 @@
 +++
-title = "2024-10-31 19:24"
+title = ""
 date = 2024-10-31T19:24:40+00:00
 
+[taxonomies]
+days = ["2024-10-31"]
+
 [extra]
+id = 173
+day = "2024-10-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/173"
 next_id = 174
-next_title = "Wow border-radius generator, so many values"
+next_title = ""
 prev_id = 172
-prev_title = "Когда поиграл со шрифтами и проиграл -"
+prev_title = ""
 views = 36
 ids = [173]
 +++

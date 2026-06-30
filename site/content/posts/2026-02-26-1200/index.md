@@ -1,18 +1,21 @@
 +++
-title = "27февраля2026 (пт) 21.30-01:00 Hard IT в Laboratory Bar"
+title = ""
 date = 2026-02-26T06:45:41+00:00
 description = "27февраля2026 (пт) 21.30-01:00 Hard IT в Laboratory Bar безоплаты Доклады: 1. [Hard] MCP Servers Security (🧑‍💻@alexkutsan) 2. [Hard] Что такое chroot(🧑‍💻@vitalyzdanevich) 🤔 Ты тоже можешь выступить с…"
 
 [taxonomies]
+days = ["2026-02-26"]
 tags = ["27февраля2026", "без_оплаты"]
 
 [extra]
+id = 1200
+day = "2026-02-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1200"
 og_image = "5260248766600647346_1224747106_460001970.jpg"
 next_id = 1201
-next_title = "google_docs: ai is integrated, but not the dark_mode"
+next_title = ""
 prev_id = 1198
-prev_title = "048-474 Верейки, костел (темно), снято 23 апреля 2005.jpg"
+prev_title = ""
 views = 4
 forwarded_from = "Анонсы Laboratory Bar & Hookah (Batumi)"
 forwarded_from_url = "https://t.me/it_laboratory_batumi/777"

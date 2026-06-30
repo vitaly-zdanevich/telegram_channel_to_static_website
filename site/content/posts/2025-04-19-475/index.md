@@ -1,17 +1,20 @@
 +++
-title = "podcast 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у Вiкiпэдыi"
+title = ""
 date = 2025-04-19T15:29:42+00:00
 description = "podcast 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у Вiкiпэдыi Што такое левыя і правае? Wikidata запыт - беларускія пісьменнікі памерлыя 50 гадоў таму Мая чорная тэма Userscripts Павінна…"
 
 [taxonomies]
+days = ["2025-04-19"]
 tags = ["podcast"]
 
 [extra]
+id = 475
+day = "2025-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/475"
 next_id = 478
-next_title = "Artwork for the podcast"
+next_title = ""
 prev_id = 474
-prev_title = "Jason Scott, Internet Archive employee, photo in color"
+prev_title = ""
 views = 60
 ids = [475]
 +++

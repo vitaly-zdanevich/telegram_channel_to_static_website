@@ -1,20 +1,25 @@
 +++
-title = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа"
+title = ""
 date = 2025-08-29T01:53:47+00:00
-description = "No comments. Horn of the Abyss 1.7.3 Playing through Conty on Gentoo Linux no-multilib profile Part from my year1999 video game strategy tbs homm3 hota emeraldisles"
+description = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа No comments. Horn of the Abyss 1.7.3 Playing through Conty on Gentoo Linux no-multilib profile…"
 
 [taxonomies]
+days = ["2025-08-29"]
 tags = ["my", "year_1999", "video", "game", "strategy", "tbs", "homm3", "hota", "emerald_isles"]
 
 [extra]
+id = 642
+day = "2025-08-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/642"
 next_id = 643
-next_title = "How heroes_of_might_and_magic3 developed - from diaries of Gregory Fulton"
+next_title = ""
 prev_id = 640
-prev_title = "2025-08-29 01:03"
+prev_title = ""
 views = 34
 ids = [642]
 +++
+
+**Heroes of Might and Magic 3: карта "Изумрудные острова": средняя сложность, 2 человека VS AI: победа**
 
 No comments.
 

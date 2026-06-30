@@ -1,20 +1,25 @@
 +++
-title = "...addition to the previous post: that photo reminds me of this video ARK, from 2007"
+title = ""
 date = 2025-07-18T15:05:00+00:00
-description = "cgi virus ship Source"
+description = "...addition to the previous post: that photo reminds me of this video ARK, from 2007 cgi virus ship Source"
 
 [taxonomies]
+days = ["2025-07-18"]
 tags = ["cgi", "virus", "ship"]
 
 [extra]
+id = 601
+day = "2025-07-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/601"
 next_id = 602
-next_title = "webdesign"
+next_title = ""
 prev_id = 600
-prev_title = "Wiesbaden - Mariae Heimsuchung.jpg"
+prev_title = ""
 views = 46
 ids = [601]
 +++
+
+...addition to the previous post: that photo reminds me of this video ARK, from 2007
 
 {{ tag(t="cgi") }}
 {{ tag(t="virus") }}

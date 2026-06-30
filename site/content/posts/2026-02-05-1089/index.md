@@ -1,18 +1,21 @@
 +++
-title = "matrix"
+title = ""
 date = 2026-02-05T09:41:06+00:00
 description = "matrix Прошло 20 лет, а вы и не заметили, мистер Андерсон Source"
 
 [taxonomies]
+days = ["2026-02-05"]
 tags = ["matrix"]
 
 [extra]
+id = 1089
+day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1089"
 og_image = "5199841215518542601_1210682377_460000009.jpg"
 next_id = 1090
-next_title = "linux gamex"
+next_title = ""
 prev_id = 1088
-prev_title = "6февраля2026 (пт) 21.30-01:00 Айтишные посиделки в Laboratory Bar"
+prev_title = ""
 views = 9
 ids = [1089]
 +++

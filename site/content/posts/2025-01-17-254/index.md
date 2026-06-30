@@ -1,17 +1,20 @@
 +++
-title = "my movie korol_i_shut video"
+title = ""
 date = 2025-01-17T00:57:13+00:00
 description = "my movie korolishut"
 
 [taxonomies]
+days = ["2025-01-17"]
 tags = ["my", "movie", "korol_i_shut", "video"]
 
 [extra]
+id = 254
+day = "2025-01-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/254"
 next_id = 255
-next_title = "my movie korol_i_shut video"
+next_title = ""
 prev_id = 253
-prev_title = "film scifi space video"
+prev_title = ""
 views = 32
 ids = [254]
 +++

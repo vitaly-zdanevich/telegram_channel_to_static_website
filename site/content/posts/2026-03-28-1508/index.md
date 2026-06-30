@@ -1,17 +1,20 @@
 +++
-title = "nvidia laser agro video"
+title = ""
 date = 2026-03-28T06:26:43+00:00
 description = "nvidia laser agro"
 
 [taxonomies]
+days = ["2026-03-28"]
 tags = ["nvidia", "laser", "agro", "video"]
 
 [extra]
+id = 1508
+day = "2026-03-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1508"
 next_id = 1509
-next_title = "057-097 Комотово, снято 12 июня 2005.jpg"
+next_title = ""
 prev_id = 1507
-prev_title = "tinder factory video"
+prev_title = ""
 views = 18
 ids = [1508]
 +++

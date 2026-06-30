@@ -1,17 +1,20 @@
 +++
-title = "psy"
+title = ""
 date = 2024-12-21T00:28:51+00:00
 description = "psy"
 
 [taxonomies]
+days = ["2024-12-21"]
 tags = ["psy"]
 
 [extra]
+id = 220
+day = "2024-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/220"
 next_id = 221
-next_title = "2024-12-21 11:48"
+next_title = ""
 prev_id = 219
-prev_title = "My second lutris yaml for man2"
+prev_title = ""
 views = 35
 ids = [220]
 +++

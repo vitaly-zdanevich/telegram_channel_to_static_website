@@ -1,18 +1,21 @@
 +++
-title = "about game_journalism webdesign webdesign_old"
+title = ""
 date = 2025-11-10T23:23:50+00:00
 description = "about gamejournalism webdesign webdesignold Video Game Talk was started in 1853 by four Irish coal mining brothers who immigrated to Pennsylvania to escape Ireland's Potato Famine of 1845-1849.…"
 
 [taxonomies]
+days = ["2025-11-10"]
 tags = ["about", "game_journalism", "webdesign", "webdesign_old"]
 
 [extra]
+id = 766
+day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/766"
 og_image = "5228869099880911230_1217440958_460001662.jpg"
 next_id = 767
-next_title = "webdesign webdesign_old"
+next_title = ""
 prev_id = 765
-prev_title = "Г. Доре Жена, обчаченная в солнце.jpg"
+prev_title = ""
 views = 36
 ids = [766]
 +++

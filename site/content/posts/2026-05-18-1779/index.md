@@ -1,17 +1,20 @@
 +++
-title = "--- /home/vitaly/.gemini/tmp/prime-world/chats ---------------------------------------------------------------------------------------------------------------------------------------------------------…"
+title = ""
 date = 2026-05-18T19:09:48+00:00
 description = "--- /home/vitaly/.gemini/tmp/prime-world/chats ---------------------------------------------------------------------------------------------------------------------------------------------------------…"
 
 [taxonomies]
+days = ["2026-05-18"]
 tags = ["gemini", "llm"]
 
 [extra]
+id = 1779
+day = "2026-05-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1779"
 next_id = 1780
-next_title = "What a time - multiple llm doing multiple projects, in parallel..."
+next_title = ""
 prev_id = 1777
-prev_title = "failed"
+prev_title = ""
 views = 37
 ids = [1779]
 +++

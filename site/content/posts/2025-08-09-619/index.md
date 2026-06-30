@@ -1,18 +1,21 @@
 +++
-title = "Returned to uploading of artifacts from moneymuseum.by, through my new web extension, and again - sometime I see the beauty"
+title = ""
 date = 2025-08-09T04:34:07+00:00
 description = "Returned to uploading of artifacts from moneymuseum.by, through my new web extension, and again - sometime I see the beauty money moneymuseum Source"
 
 [taxonomies]
+days = ["2025-08-09"]
 tags = ["money", "moneymuseum"]
 
 [extra]
+id = 619
+day = "2025-08-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/619"
 og_image = "5240341610359812839_1220112110_456258279.jpg"
 next_id = 620
-next_title = "250 rubles banknotes"
+next_title = ""
 prev_id = 618
-prev_title = "Georgian (604).jpg"
+prev_title = ""
 views = 34
 ids = [619]
 +++

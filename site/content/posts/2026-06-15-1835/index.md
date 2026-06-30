@@ -1,18 +1,21 @@
 +++
-title = "xbox game_console tech retro green"
+title = ""
 date = 2026-06-15T22:08:08+00:00
 description = "xbox gameconsole tech retro green From"
 
 [taxonomies]
+days = ["2026-06-15"]
 tags = ["xbox", "game_console", "tech", "retro", "green"]
 
 [extra]
+id = 1835
+day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1835"
 og_image = "5296434402940363407_1233172231_460006031.jpg"
 next_id = 1836
-next_title = "girl paper sky evangelion"
+next_title = ""
 prev_id = 1834
-prev_title = "playstation playstation2 game_console street"
+prev_title = ""
 views = 13
 ids = [1835]
 +++

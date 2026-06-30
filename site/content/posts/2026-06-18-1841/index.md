@@ -1,18 +1,21 @@
 +++
-title = "ad newspaper design toxic"
+title = ""
 date = 2026-06-18T20:37:10+00:00
 description = "ad newspaper design toxic From"
 
 [taxonomies]
+days = ["2026-06-18"]
 tags = ["ad", "newspaper", "design", "toxic"]
 
 [extra]
+id = 1841
+day = "2026-06-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1841"
 og_image = "5305803182606851540_1235353570_460004820.jpg"
 next_id = 1842
-next_title = "interior cozy bathroom"
+next_title = ""
 prev_id = 1840
-prev_title = "lamp"
+prev_title = ""
 views = 8
 ids = [1841]
 +++

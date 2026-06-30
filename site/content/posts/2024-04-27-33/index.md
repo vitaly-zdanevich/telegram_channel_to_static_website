@@ -1,14 +1,19 @@
 +++
-title = "&gt; For example, anhedonia, which is often associated with depression, decreases an individual's desire to participate in activities that provide short-term rewards, and instead, allows the…"
+title = ""
 date = 2024-04-27T07:18:08+00:00
 description = "&gt; For example, anhedonia, which is often associated with depression, decreases an individual's desire to participate in activities that provide short-term rewards, and instead, allows the…"
 
+[taxonomies]
+days = ["2024-04-27"]
+
 [extra]
+id = 33
+day = "2024-04-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/33"
 next_id = 34
-next_title = "This website looks soooo special design"
+next_title = ""
 prev_id = 32
-prev_title = "Love, Sex & Robots S1.E3: The Witness"
+prev_title = ""
 views = 43
 ids = [33]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "gentoo patches"
+title = ""
 date = 2025-05-14T02:18:11+00:00
 description = "I avoid mentioning that I run gentoo But when I have to, I try to explain that customizing things down to the source code couldn't be any closer to the true™ spirit of linux if you tried, and it's a…"
 
 [taxonomies]
+days = ["2025-05-14"]
 tags = ["gentoo", "patches"]
 
 [extra]
+id = 529
+day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/529"
 next_id = 530
-next_title = "You can upload to commons through darktable with this free plugin"
+next_title = ""
 prev_id = 528
-prev_title = "mount archive (zip, rar and others) as read-only fuse, love it"
+prev_title = ""
 views = 40
 ids = [529]
 +++

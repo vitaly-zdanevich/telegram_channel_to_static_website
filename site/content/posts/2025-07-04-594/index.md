@@ -1,18 +1,21 @@
 +++
-title = "webdesign plan9"
+title = ""
 date = 2025-07-04T02:36:47+00:00
 description = "webdesign plan9"
 
 [taxonomies]
+days = ["2025-07-04"]
 tags = ["webdesign", "plan9"]
 
 [extra]
+id = 594
+day = "2025-07-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/594"
 og_image = "5422520353390980121_1262528904_456256537.jpg"
 next_id = 595
-next_title = "preservation belarus library science"
+next_title = ""
 prev_id = 593
-prev_title = "dog love mmorpg"
+prev_title = ""
 views = 53
 ids = [594]
 +++

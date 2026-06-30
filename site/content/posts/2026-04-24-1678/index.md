@@ -1,17 +1,20 @@
 +++
-title = "armies_of_exigo: fallen 7: The First Seal: hard: victory"
+title = ""
 date = 2026-04-24T04:55:11+00:00
 description = "armiesofexigo: fallen 7: The First Seal: hard: victory rts - like warcraft3. Game version 1.4 Playing on Gentoo Linux through lutris, conty, free download of this abandoned game at Full: All links at"
 
 [taxonomies]
+days = ["2026-04-24"]
 tags = ["armies_of_exigo", "fallen", "rts", "warcraft3", "lutris", "conty"]
 
 [extra]
+id = 1678
+day = "2026-04-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1678"
 next_id = 1679
-next_title = "Still running my experiment about porting prime_world from Windows/DirectX to Linux/OpenGL, 100% on autopilot..."
+next_title = ""
 prev_id = 1674
-prev_title = "ДА Житомирської області--01 Ф - фонди дорадянського періоду--0001--0075--010001-75-00033 F 1-75-0033 0390.jpg"
+prev_title = ""
 views = 13
 ids = [1678]
 +++

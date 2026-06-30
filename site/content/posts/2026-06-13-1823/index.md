@@ -1,17 +1,20 @@
 +++
-title = "love my mg alias - clickable grep in kitty - opens file and line in Vim"
+title = ""
 date = 2026-06-13T14:59:53+00:00
 description = "shell productivity love my mg alias - clickable grep in kitty - opens file and line in Vim: Grep, click to link - open in Vim, exact line mg() { kitty +kitten hyperlinkedgrep --smart-case -C 9 \"$@\" }…"
 
 [taxonomies]
+days = ["2026-06-13"]
 tags = ["shell", "productivity", "love", "grep", "kitty"]
 
 [extra]
+id = 1823
+day = "2026-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1823"
 next_id = 1824
-next_title = "Армянский язык"
+next_title = ""
 prev_id = 1822
-prev_title = "This is why we have crypto?"
+prev_title = ""
 views = 15
 ids = [1823]
 +++

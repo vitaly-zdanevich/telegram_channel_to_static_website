@@ -1,14 +1,19 @@
 +++
-title = "2024-08-22 15:56"
+title = ""
 date = 2024-08-22T15:56:40+00:00
 
+[taxonomies]
+days = ["2024-08-22"]
+
 [extra]
+id = 108
+day = "2024-08-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/108"
 og_image = "01.jpg"
 next_id = 110
-next_title = "2024-08-22 16:12"
+next_title = ""
 prev_id = 106
-prev_title = "2024-08-22 15:51"
+prev_title = ""
 views = 32
 ids = [108]
 +++

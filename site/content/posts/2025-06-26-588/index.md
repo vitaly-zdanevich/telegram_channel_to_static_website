@@ -1,17 +1,20 @@
 +++
-title = "2004"
+title = ""
 date = 2025-06-26T20:52:27+00:00
-description = "game demo warhammer dawnofwar If you see \"Failed to initialize video card\" - try to enable Gamescope. Works with Wine 8 for me."
+description = "game demo warhammer dawnofwar 2004 If you see \"Failed to initialize video card\" - try to enable Gamescope. Works with Wine 8 for me."
 
 [taxonomies]
+days = ["2025-06-26"]
 tags = ["game", "demo", "warhammer", "dawn_of_war"]
 
 [extra]
+id = 588
+day = "2025-06-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/588"
 next_id = 589
-next_title = "...for the previous postSource"
+next_title = ""
 prev_id = 587
-prev_title = "In 2024 to steam were published 19000 games, its 52 games per day."
+prev_title = ""
 views = 43
 ids = [588]
 +++
@@ -20,6 +23,7 @@ ids = [588]
 {{ tag(t="demo") }}
 {{ tag(t="warhammer") }}
 {{ tag(t="dawn_of_war") }}
+\#2004
 
 If you see "Failed to initialize video card" - try to enable Gamescope. Works with Wine 8 for me.
 

@@ -1,18 +1,21 @@
 +++
-title = "26июня2026 (пт) 21.30-23:00 айтишная посиделка в Friends club"
+title = ""
 date = 2026-06-24T19:30:37+00:00
 description = "26июня2026 (пт) 21.30-23:00 айтишная посиделка в Friends club безоплаты Доклады: 1. [Soft] «Telegram bot для RuTracker - который не только ищет, как прочие, но и скачивает» (💻 @vitalyzdanevich) 2.…"
 
 [taxonomies]
+days = ["2026-06-24"]
 tags = ["26июня2026", "без_оплаты"]
 
 [extra]
+id = 1861
+day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1861"
 og_image = "5316786788372257655_1237910890_460004215.jpg"
 next_id = 1863
-next_title = "My new bash alias"
+next_title = ""
 prev_id = 1860
-prev_title = "💗 Любимый Кобулети — это место встреч, моря и тёплых воспоминаний."
+prev_title = ""
 views = 10
 forwarded_from = "Кирилл Марс"
 ids = [1861]

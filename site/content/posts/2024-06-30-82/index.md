@@ -1,18 +1,21 @@
 +++
-title = "I contribute to wikipedia and other projects on mediawiki engine and other wikis like mdn."
+title = ""
 date = 2024-06-30T16:30:08+00:00
 description = "I contribute to wikipedia and other projects on mediawiki engine and other wikis like mdn. When I talk with somebody about his technical problem - sometimes I say something like \"...and when you…"
 
 [taxonomies]
+days = ["2024-06-30"]
 tags = ["wikipedia", "mediawiki", "mdn", "reddit"]
 
 [extra]
+id = 82
+day = "2024-06-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/82"
 og_image = "5190535735076315675_1208515776_456253979.jpg"
 next_id = 83
-next_title = "Local (off-the-grid) social network with chat, on blockchain (so you cannot edit your messages), looks like abandoned"
+next_title = ""
 prev_id = 81
-prev_title = "Wow, DIY laptop with easy interchangeable parts"
+prev_title = ""
 views = 61
 ids = [82]
 +++

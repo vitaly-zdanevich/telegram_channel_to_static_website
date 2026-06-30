@@ -1,18 +1,21 @@
 +++
-title = "mem limited by the technology of my time"
+title = ""
 date = 2026-05-19T16:30:15+00:00
 description = "mem limited by the technology of my time llm depleated"
 
 [taxonomies]
+days = ["2026-05-19"]
 tags = ["mem", "llm", "depleated"]
 
 [extra]
+id = 1781
+day = "2026-05-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1781"
 og_image = "01.jpg"
 next_id = 1784
-next_title = "My new project built with llm codex gpt-5.5 xhigh: bot for telegram - to search and listen to youtube"
+next_title = ""
 prev_id = 1780
-prev_title = "What a time - multiple llm doing multiple projects, in parallel..."
+prev_title = ""
 views = 36
 ids = [1781]
 +++

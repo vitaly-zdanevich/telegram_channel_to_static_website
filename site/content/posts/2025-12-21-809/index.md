@@ -1,18 +1,21 @@
 +++
-title = "cli tui design"
+title = ""
 date = 2025-12-21T22:49:01+00:00
 description = "cli tui design"
 
 [taxonomies]
+days = ["2025-12-21"]
 tags = ["cli", "tui", "design"]
 
 [extra]
+id = 809
+day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/809"
 og_image = "5350620010994405337_1245788301_460001241.jpg"
 next_id = 810
-next_title = "software tui git video"
+next_title = ""
 prev_id = 808
-prev_title = "software tui torrent"
+prev_title = ""
 views = 41
 ids = [809]
 +++

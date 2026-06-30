@@ -1,18 +1,21 @@
 +++
-title = "wifi child autism sick health"
+title = ""
 date = 2025-05-08T07:29:51+00:00
 description = "wifi child autism sick health"
 
 [taxonomies]
+days = ["2025-05-08"]
 tags = ["wifi", "child", "autism", "sick", "health"]
 
 [extra]
+id = 508
+day = "2025-05-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/508"
 og_image = "5251537555013365162_1222718869_456256938.jpg"
 next_id = 509
-next_title = "health science"
+next_title = ""
 prev_id = 507
-prev_title = "design apple ipod"
+prev_title = ""
 views = 25
 ids = [508]
 +++

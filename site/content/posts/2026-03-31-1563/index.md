@@ -1,17 +1,20 @@
 +++
-title = "Rice and peace."
+title = ""
 date = 2026-03-31T14:05:04+00:00
-description = "music multitrack parody voice unknownsource"
+description = "music multitrack parody voice unknownsource Rice and peace."
 
 [taxonomies]
+days = ["2026-03-31"]
 tags = ["music", "multitrack", "parody", "voice", "unknown_source", "video"]
 
 [extra]
+id = 1563
+day = "2026-03-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1563"
 next_id = 1564
-next_title = "god smartphone game"
+next_title = ""
 prev_id = 1562
-prev_title = "webdesign photo people gamedev ice_pick_lodge"
+prev_title = ""
 views = 22
 ids = [1563]
 +++
@@ -21,6 +24,8 @@ ids = [1563]
 {{ tag(t="parody") }}
 {{ tag(t="voice") }}
 {{ tag(t="unknown_source") }}
+
+Rice and peace.
 
 {{ video(src="01.mp4") }}
 

@@ -1,17 +1,20 @@
 +++
-title = "My new userscript for evernote adds a few hotkey"
+title = ""
 date = 2026-02-27T08:59:35+00:00
 description = "My new userscript for evernote adds a few hotkey"
 
 [taxonomies]
+days = ["2026-02-27"]
 tags = ["userscript", "evernote", "hotkey"]
 
 [extra]
+id = 1202
+day = "2026-02-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1202"
 next_id = 1203
-next_title = "design software gthumb scan preservation"
+next_title = ""
 prev_id = 1201
-prev_title = "google_docs: ai is integrated, but not the dark_mode"
+prev_title = ""
 views = 8
 ids = [1202]
 +++

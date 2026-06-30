@@ -1,21 +1,26 @@
 +++
-title = "Wow, Gemini generates good logos, tried it for the first time"
+title = ""
 date = 2026-06-25T16:33:38+00:00
-description = "gemini logo telegrambot wikimediacommons"
+description = "Wow, Gemini generates good logos, tried it for the first time gemini logo telegrambot wikimediacommons"
 
 [taxonomies]
+days = ["2026-06-25"]
 tags = ["gemini", "logo", "telegram_bot", "wikimedia_commons"]
 
 [extra]
+id = 1865
+day = "2026-06-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1865"
 og_image = "01.jpg"
 next_id = 1867
-next_title = "movie black_and_white faust year_1926 video"
+next_title = ""
 prev_id = 1864
-prev_title = "And another bash alias"
-views = 11
+prev_title = ""
+views = 12
 ids = [1865]
 +++
+
+**Wow, Gemini generates good logos, tried it for the first time**
 
 {{ tag(t="gemini") }}
 {{ tag(t="logo") }}

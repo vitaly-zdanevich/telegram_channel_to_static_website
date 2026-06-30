@@ -1,18 +1,21 @@
 +++
-title = "Wow on wikimedia_commons we can write sql, for example to get red categories with files, for a specific user"
+title = ""
 date = 2026-01-11T11:34:33+00:00
 description = "Wow on wikimediacommons we can write sql, for example to get red categories with files, for a specific user"
 
 [taxonomies]
+days = ["2026-01-11"]
 tags = ["wikimedia_commons", "sql"]
 
 [extra]
+id = 871
+day = "2026-01-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/871"
 og_image = "5413490665691221626_1260426516_460000890.jpg"
 next_id = 872
-next_title = "Wow wikipedia semi-automatic editing by a python script"
+next_title = ""
 prev_id = 870
-prev_title = "games gamazine igromania"
+prev_title = ""
 views = 20
 ids = [871]
 +++

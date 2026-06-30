@@ -1,18 +1,21 @@
 +++
-title = "gitlab: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it."
+title = ""
 date = 2024-06-03T10:46:31+00:00
 description = "gitlab: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it. Its a dream to work for some…"
 
 [taxonomies]
+days = ["2024-06-03"]
 tags = ["gitlab", "wikimedia"]
 
 [extra]
+id = 50
+day = "2024-06-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/50"
 og_image = "5400135666744023014_1257317063_456251366.jpg"
 next_id = 51
-next_title = "My another ebuild: the game Gigalomania - libre clone of Mega-Lo-Mania."
+next_title = ""
 prev_id = 49
-prev_title = "Wooow, look at this beautiful Linux"
+prev_title = ""
 views = 54
 ids = [50]
 +++

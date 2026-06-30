@@ -1,18 +1,21 @@
 +++
-title = "aws custom cpu: dropped the lid (scalping) for the better cooling"
+title = ""
 date = 2026-01-25T06:05:44+00:00
 description = "aws custom cpu: dropped the lid (scalping) for the better cooling"
 
 [taxonomies]
+days = ["2026-01-25"]
 tags = ["aws", "cpu", "scalping", "cooling"]
 
 [extra]
+id = 941
+day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/941"
 og_image = "01.jpg"
 next_id = 943
-next_title = "aws cpu memory ram"
+next_title = ""
 prev_id = 939
-prev_title = "aws CTO Werner Vogels"
+prev_title = ""
 views = 8
 ids = [941]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "autism wikipedia"
+title = ""
 date = 2025-09-30T21:48:16+00:00
 description = "The proportion of people on the autism spectrum among wikipedia editors is higher than in the general population Source"
 
 [taxonomies]
+days = ["2025-09-30"]
 tags = ["autism", "wikipedia"]
 
 [extra]
+id = 689
+day = "2025-09-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/689"
 next_id = 690
-next_title = "archivation video"
+next_title = ""
 prev_id = 688
-prev_title = "china beauty plastic video"
+prev_title = ""
 views = 34
 ids = [689]
 +++

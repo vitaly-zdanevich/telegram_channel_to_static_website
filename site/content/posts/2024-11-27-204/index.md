@@ -1,17 +1,20 @@
 +++
-title = "meanna sergey_kurginyan"
+title = ""
 date = 2024-11-27T06:52:04+00:00
 description = "meanna sergeykurginyan К моим мыслям о человеческом счастье всегда почему-то примешивалось что-то грустное, теперь же, при виде счастливого человека, мною овладело тяжелое чувство, близкое к…"
 
 [taxonomies]
+days = ["2024-11-27"]
 tags = ["meanna", "sergey_kurginyan"]
 
 [extra]
+id = 204
+day = "2024-11-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/204"
 next_id = 205
-next_title = "webdesign"
+next_title = ""
 prev_id = 202
-prev_title = "My photo from 2012, for the defunct website of naked cats"
+prev_title = ""
 views = 44
 ids = [204]
 +++

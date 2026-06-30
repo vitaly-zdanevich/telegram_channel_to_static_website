@@ -1,17 +1,20 @@
 +++
-title = "quote book ночь_в_лиссабоне ремарк"
+title = ""
 date = 2026-04-25T06:44:38+00:00
 description = "quote book ночьвлиссабоне ремарк – Я тоже. В ту пору я вконец пал духом. Накануне Мюнхенского соглашения. Агония страха. Я еще автоматически прятался и защищался, но уже поставил точку. Будет война,…"
 
 [taxonomies]
+days = ["2026-04-25"]
 tags = ["quote", "book", "ночь_в_лиссабоне", "ремарк"]
 
 [extra]
+id = 1684
+day = "2026-04-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1684"
 next_id = 1685
-next_title = "quote book ночь_в_лиссабоне ремарк"
+next_title = ""
 prev_id = 1683
-prev_title = "...and another useful bash alias to remove the text inside single quotes by esc-k"
+prev_title = ""
 views = 18
 ids = [1684]
 +++

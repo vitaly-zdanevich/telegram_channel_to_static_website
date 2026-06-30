@@ -1,18 +1,21 @@
 +++
-title = "My ram price is going up"
+title = ""
 date = 2025-12-29T07:37:17+00:00
 description = "My ram price is going up"
 
 [taxonomies]
+days = ["2025-12-29"]
 tags = ["ram"]
 
 [extra]
+id = 827
+day = "2025-12-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/827"
 og_image = "5373307329626967331_1251070604_460000547.jpg"
 next_id = 828
-next_title = "Живописне обозрение 1872 - 1873.pdf"
+next_title = ""
 prev_id = 826
-prev_title = "Igry i zabavy"
+prev_title = ""
 views = 33
 ids = [827]
 +++

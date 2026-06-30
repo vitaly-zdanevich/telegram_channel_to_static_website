@@ -1,17 +1,24 @@
 +++
-title = "Третий подкаст с Анатолием Бабеней."
+title = ""
 date = 2022-03-10T10:29:39+00:00
-description = "Упоминалось: Doom DNA test Музыка Модель для Сборки Safecast maintains the largest open dataset of background radiation measurements ever collected Государственное учреждение «Республиканский центр…"
+description = "Третий подкаст с Анатолием Бабеней. Упоминалось: Doom DNA test Музыка Модель для Сборки Safecast maintains the largest open dataset of background radiation measurements ever collected Государственное…"
+
+[taxonomies]
+days = ["2022-03-10"]
 
 [extra]
+id = 8
+day = "2022-03-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/8"
 next_id = 9
-next_title = "С"
+next_title = ""
 prev_id = 6
-prev_title = "Второй подкаст с Анатолием Бабеней, про блокчейн, крипту, ИТ в Беларуси и мире, самоорганизацию, психологию, общественные проекты, работа, деньги, выгорание"
+prev_title = ""
 views = 56
 ids = [8]
 +++
+
+Третий подкаст с Анатолием Бабеней.
 
 Упоминалось:
 

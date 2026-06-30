@@ -1,18 +1,21 @@
 +++
-title = "Storing my configs in git (gitlab, because its open - github is not)."
+title = ""
 date = 2026-01-18T20:56:46+00:00
 description = "Storing my configs in git (gitlab, because its open - github is not). Dozens of repos. I recommend you. And I love that Gitlab creates a repo if it does not exist, private by default - so I can…"
 
 [taxonomies]
+days = ["2026-01-18"]
 tags = ["git", "gitlab", "github", "backup"]
 
 [extra]
+id = 892
+day = "2026-01-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/892"
 og_image = "5434005031519719175_1265202889_460001031.jpg"
 next_id = 893
-next_title = "webdesign arctic year_2004"
+next_title = ""
 prev_id = 891
-prev_title = "Ясенец (Барановичский район)"
+prev_title = ""
 views = 15
 ids = [892]
 +++

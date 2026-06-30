@@ -1,17 +1,20 @@
 +++
-title = "berlin germany harry_potter ai demonflyingfox video"
+title = ""
 date = 2025-07-22T23:15:50+00:00
 description = "berlin germany harrypotter ai demonflyingfoxSource"
 
 [taxonomies]
+days = ["2025-07-22"]
 tags = ["berlin", "germany", "harry_potter", "ai", "demonflyingfox", "video"]
 
 [extra]
+id = 605
+day = "2025-07-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/605"
 next_id = 606
-next_title = "harry_potter north_korea ai demonflyingfox"
+next_title = ""
 prev_id = 604
-prev_title = "berlin germany ai the_lord_of_the_rings demonflyingfox video"
+prev_title = ""
 views = 51
 ids = [605]
 +++

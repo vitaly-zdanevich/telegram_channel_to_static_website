@@ -1,18 +1,21 @@
 +++
-title = "llm did big telegram stickers, even the pull_request"
+title = ""
 date = 2026-06-24T06:15:16+00:00
 description = "llm did big telegram stickers, even the pullrequest The patch."
 
 [taxonomies]
+days = ["2026-06-24"]
 tags = ["llm", "telegram", "stickers", "pull_request"]
 
 [extra]
+id = 1854
+day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1854"
 og_image = "5323590441770885237_1239494989_460005493.jpg"
 next_id = 1855
-next_title = "armies_of_exigo it own by electronic_arts"
+next_title = ""
 prev_id = 1853
-prev_title = "llm wow of today"
+prev_title = ""
 views = 8
 ids = [1854]
 +++

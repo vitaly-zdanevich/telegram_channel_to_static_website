@@ -1,21 +1,27 @@
 +++
-title = "Визуализация того, что находится внутри моделей нейросетей, а именно их слои"
+title = ""
 date = 2026-03-08T17:13:50+00:00
+description = "Визуализация того, что находится внутри моделей нейросетей, а именно их слои"
 
 [taxonomies]
+days = ["2026-03-08"]
 tags = ["video"]
 
 [extra]
+id = 1403
+day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1403"
 next_id = 1404
-next_title = "Микросервисы повышают устойчивость системы."
+next_title = ""
 prev_id = 1402
-prev_title = "Интересная пометка в Paint"
+prev_title = ""
 views = 13
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1680"
 ids = [1403]
 +++
+
+Визуализация того, что находится внутри моделей нейросетей, а именно их слои
 
 {{ video(src="01.mp4") }}
 

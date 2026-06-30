@@ -1,18 +1,21 @@
 +++
-title = "How to make ubuntu folder for chroot"
+title = ""
 date = 2026-02-09T09:29:30+00:00
 description = "How to make ubuntu folder for chroot wget Only 34 MB wget sha256sum -c SHA256SUMS 2/dev/null mkdir ubuntu-base tar -xzf ubuntu-base-25.10-base-amd64.tar.gz -C ubuntu-base cd ubuntu-base/ cp…"
 
 [taxonomies]
+days = ["2026-02-09"]
 tags = ["ubuntu", "chroot"]
 
 [extra]
+id = 1102
+day = "2026-02-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1102"
 og_image = "5208565307709003033_1212713613_460002585.jpg"
 next_id = 1103
-next_title = "My new bash alias: one function to go to the next folder (like from 2025 to 2026, from aaa to bbb) and the second one to cd to prev"
+next_title = ""
 prev_id = 1100
-prev_title = "Trying codex to organize scans - to create a folder for every newspaper issue, result is not very good - mistakes and slow"
+prev_title = ""
 views = 18
 ids = [1102]
 +++

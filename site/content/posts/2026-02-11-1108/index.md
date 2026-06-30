@@ -1,14 +1,19 @@
 +++
-title = "2026-02-11 16:39"
+title = ""
 date = 2026-02-11T16:39:30+00:00
 
+[taxonomies]
+days = ["2026-02-11"]
+
 [extra]
+id = 1108
+day = "2026-02-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1108"
 og_image = "5217765157721805579_1214855620_460002059.jpg"
 next_id = 1109
-next_title = "2026-02-11 16:48"
+next_title = ""
 prev_id = 1107
-prev_title = "Author: Елена Запрудская"
+prev_title = ""
 views = 21
 ids = [1108]
 +++

@@ -1,20 +1,27 @@
 +++
-title = "Рисунки скриншотов из игр!"
+title = ""
 date = 2025-06-09T18:15:54+00:00
-description = "Кто узнал ВСЁ?"
+description = "Рисунки скриншотов из игр! Кто узнал ВСЁ?"
+
+[taxonomies]
+days = ["2025-06-09"]
 
 [extra]
+id = 557
+day = "2025-06-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/557"
 og_image = "01.jpg"
 next_id = 565
-next_title = "webdesign"
+next_title = ""
 prev_id = 556
-prev_title = "video"
+prev_title = ""
 views = 38
 forwarded_from = "Незабытые игры"
 forwarded_from_url = "https://t.me/unforget_games/11459"
 ids = [557]
 +++
+
+Рисунки скриншотов из игр!
 
 Кто узнал ВСЁ?
 

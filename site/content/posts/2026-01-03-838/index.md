@@ -1,18 +1,21 @@
 +++
-title = "bending_spoons aol"
+title = ""
 date = 2026-01-03T08:31:35+00:00
 description = "bendingspoons aol Source"
 
 [taxonomies]
+days = ["2026-01-03"]
 tags = ["bending_spoons", "aol"]
 
 [extra]
+id = 838
+day = "2026-01-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/838"
 og_image = "5388832167523192169_1254685262_460000617.jpg"
 next_id = 840
-next_title = "Grand Theft Auto: The Trilogy – The Definitive Edition"
+next_title = ""
 prev_id = 837
-prev_title = "vr"
+prev_title = ""
 views = 22
 ids = [838]
 +++

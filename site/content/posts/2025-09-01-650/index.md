@@ -1,17 +1,20 @@
 +++
-title = "Wow in svg we can have css, like"
+title = ""
 date = 2025-09-01T04:23:08+00:00
 description = "Wow in svg we can have css, like .spinnera { animation: spinnerMGfb .8s linear infinite; animation-delay: -.8s; } .spinnerb { animation-delay: -.65s; } .spinnerc { animation-delay: -.5s; } @keyframes…"
 
 [taxonomies]
+days = ["2025-09-01"]
 tags = ["svg", "css"]
 
 [extra]
+id = 650
+day = "2025-09-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/650"
 next_id = 651
-next_title = "wikimedia_foundation office from 2024"
+next_title = ""
 prev_id = 649
-prev_title = "Do you remember such webdesign?"
+prev_title = ""
 views = 39
 ids = [650]
 +++

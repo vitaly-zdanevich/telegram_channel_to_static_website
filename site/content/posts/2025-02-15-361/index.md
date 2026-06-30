@@ -1,18 +1,21 @@
 +++
-title = "coin"
+title = ""
 date = 2025-02-15T01:31:57+00:00
 description = "coin Source"
 
 [taxonomies]
+days = ["2025-02-15"]
 tags = ["coin"]
 
 [extra]
+id = 361
+day = "2025-02-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/361"
 og_image = "5296425538124113913_1233170167_456255481.jpg"
 next_id = 362
-next_title = "Its real coins, from Cook Islands"
+next_title = ""
 prev_id = 360
-prev_title = "religion"
+prev_title = ""
 views = 39
 ids = [361]
 +++

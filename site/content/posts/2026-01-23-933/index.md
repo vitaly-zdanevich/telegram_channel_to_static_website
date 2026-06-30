@@ -1,18 +1,21 @@
 +++
-title = "23января2026 (пт) 21.30-01:00 Айтишные посиделки в Laboratory Bar"
+title = ""
 date = 2026-01-23T15:14:17+00:00
 description = "23января2026 (пт) 21.30-01:00 Айтишные посиделки в Laboratory Bar безоплаты Доклады: [Soft] \"Про Codex от OpenAI: кейс использования: я пишу тесты - он сложные regular expressions, для…"
 
 [taxonomies]
+days = ["2026-01-23"]
 tags = ["23января2026", "без_оплаты"]
 
 [extra]
+id = 933
+day = "2026-01-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/933"
 og_image = "5443033220279636241_1267304928_460001553.jpg"
 next_id = 934
-next_title = "ai"
+next_title = ""
 prev_id = 931
-prev_title = "I am on gentoo because it compiles for my CPU (-march=native and other flags - not generic x64, but I did not measure the performance numbers), and another point - USE flags and the ability to apply…"
+prev_title = ""
 views = 14
 forwarded_from = "Анонсы Laboratory Bar & Hookah (Batumi)"
 forwarded_from_url = "https://t.me/it_laboratory_batumi/771"

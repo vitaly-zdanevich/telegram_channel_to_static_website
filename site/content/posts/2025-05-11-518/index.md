@@ -1,17 +1,20 @@
 +++
-title = "music"
+title = ""
 date = 2025-05-11T22:20:43+00:00
 description = "The life was quiet all around A cute little island Nice and non-violent But everything turned upside down When a new guy came to town We got along, he showed me ways To craft and test things That cut…"
 
 [taxonomies]
+days = ["2025-05-11"]
 tags = ["music"]
 
 [extra]
+id = 518
+day = "2025-05-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/518"
 next_id = 521
-next_title = "Dream setup."
+next_title = ""
 prev_id = 517
-prev_title = "2025-05-11 21:19"
+prev_title = ""
 views = 29
 ids = [518]
 +++

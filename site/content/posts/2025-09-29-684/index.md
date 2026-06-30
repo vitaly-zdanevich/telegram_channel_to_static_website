@@ -1,18 +1,21 @@
 +++
-title = "patch for telegram for wide messages"
+title = ""
 date = 2025-09-29T05:52:05+00:00
 description = "patch for telegram for wide messages --- a/Telegram/SourceFiles/ui/chat/chat.style 2024-08-02 09:26:52.899323105 +0700 +++ b/Telegram/SourceFiles/ui/chat/chat.style 2024-08-02 09:27:23.226355858…"
 
 [taxonomies]
+days = ["2025-09-29"]
 tags = ["patch", "telegram"]
 
 [extra]
+id = 684
+day = "2025-09-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/684"
 og_image = "5391335068301129921_1255268014_456259777.jpg"
 next_id = 685
-next_title = "fear airplane video"
+next_title = ""
 prev_id = 683
-prev_title = "Love this logo"
+prev_title = ""
 views = 22
 ids = [684]
 +++

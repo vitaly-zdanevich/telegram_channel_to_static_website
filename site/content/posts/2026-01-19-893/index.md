@@ -1,18 +1,21 @@
 +++
-title = "webdesign arctic year_2004"
+title = ""
 date = 2026-01-19T17:18:50+00:00
 description = "webdesign arctic year2004 arcticdigitalnomads.com"
 
 [taxonomies]
+days = ["2026-01-19"]
 tags = ["webdesign", "arctic", "year_2004"]
 
 [extra]
+id = 893
+day = "2026-01-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/893"
 og_image = "01.jpg"
 next_id = 894
-next_title = "032-145 Лоск, костел, снято 4 декабря 2004.jpg"
+next_title = ""
 prev_id = 892
-prev_title = "Storing my configs in git (gitlab, because its open - github is not)."
+prev_title = ""
 views = 9
 ids = [893]
 +++

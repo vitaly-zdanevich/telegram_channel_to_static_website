@@ -1,17 +1,20 @@
 +++
-title = "Wow, about telegram bots: you can bypass 50 MB response limit - by hosting their bot software."
+title = ""
 date = 2026-06-08T21:56:16+00:00
 description = "Wow, about telegram bots: you can bypass 50 MB response limit - by hosting their bot software. AWS Lambda is not possible here - it wants persistent polling. And it simplify the architecture - less…"
 
 [taxonomies]
+days = ["2026-06-08"]
 tags = ["telegram", "gemini", "lambda"]
 
 [extra]
+id = 1806
+day = "2026-06-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1806"
 next_id = 1807
-next_title = "love this extension - highlight predefined list of words, on predefined URLs."
+next_title = ""
 prev_id = 1805
-prev_title = "My yet another project: @wikipedia_unofficial_bot"
+prev_title = ""
 views = 20
 ids = [1806]
 +++

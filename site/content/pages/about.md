@@ -12,18 +12,18 @@ template = "page.html"
 
 Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia country UTC+4). Working with Golang, AWS. Program in Vim. Love Gentoo Linux. Respect free and open software. Contributor to Wikipedia and other projects.
 
-**20** subscribers · **1.34K** photos · **181** videos · **30** files · **960** links
+**20** subscribers · **1.34K** photos · **183** videos · **30** files · **962** links
 
-The site occupies **626 MB** — **61%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
+The site occupies **630 MB** — **62%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
 
 By kind:
 
-- **Videos** 482 MB
+- **Videos** 486 MB
 - **Images** 143 MB
-- **Text** 1.0 MB
-- **Other** 4.1 KB
+- **Text** 1.1 MB
+- **Other** 5.0 KB
 
-Generated in **1m 36s**.
+Generated in **1m 25s**.
 
 Source repository: [https://github.com/vitaly-zdanevich/telegram_channel_to_static_website](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website)
 

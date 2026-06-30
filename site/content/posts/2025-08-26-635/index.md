@@ -1,17 +1,20 @@
 +++
-title = "gamedev homm3"
+title = ""
 date = 2025-08-26T22:17:08+00:00
 description = "gamedev homm3 I’ve told this tale numerous times as an industry ‘war story’. I don’t know if I would consider it ‘funny’. At the very least, most might consider it ‘amusing’. We were crunching on…"
 
 [taxonomies]
+days = ["2025-08-26"]
 tags = ["gamedev", "homm3"]
 
 [extra]
+id = 635
+day = "2025-08-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/635"
 next_id = 638
-next_title = "2025-08-27 01:20"
+next_title = ""
 prev_id = 634
-prev_title = "dress tshirt git github porn"
+prev_title = ""
 views = 30
 ids = [635]
 +++

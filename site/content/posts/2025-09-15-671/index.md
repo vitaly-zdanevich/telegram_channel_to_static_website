@@ -1,17 +1,20 @@
 +++
-title = "video film night_watch zavulon"
+title = ""
 date = 2025-09-15T18:58:51+00:00
 description = "video film nightwatch zavulonSource"
 
 [taxonomies]
+days = ["2025-09-15"]
 tags = ["video", "film", "night_watch", "zavulon"]
 
 [extra]
+id = 671
+day = "2025-09-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/671"
 next_id = 672
-next_title = "russia yeltsin ketchup tea sugar year_1991 video"
+next_title = ""
 prev_id = 670
-prev_title = "map greenland africa mercator"
+prev_title = ""
 views = 35
 ids = [671]
 +++

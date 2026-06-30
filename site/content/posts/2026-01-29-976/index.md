@@ -1,29 +1,32 @@
 +++
-title = "043-222 близ Няньково, мемор валун, снято 5 февраля 2005.jpg"
+title = ""
 date = 2026-01-29T06:07:34+00:00
-description = "043-222 близ Няньково, мемор валун, снято 5 февраля 2005.jpg belarus winter няньково year2005 globustut"
+description = "belarus winter няньково year2005 globustut From"
 
 [taxonomies]
+days = ["2026-01-29"]
 tags = ["belarus", "winter", "няньково", "year_2005", "globustut"]
 
 [extra]
+id = 976
+day = "2026-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/976"
 og_image = "01.jpg"
 next_id = 983
-next_title = "043-239 Полберег, хозп-ка, снято 5 февраля 2005.jpg"
+next_title = ""
 prev_id = 969
-prev_title = "043-196 Любча, флигель, снято 5 февраля 2005.jpg"
+prev_title = ""
 views = 6
 ids = [976]
 +++
-
-[043-222 близ Няньково, мемор валун, снято 5 февраля 2005.jpg](https://commons.wikimedia.org/wiki/File:043-222_%D0%B1%D0%BB%D0%B8%D0%B7_%D0%9D%D1%8F%D0%BD%D1%8C%D0%BA%D0%BE%D0%B2%D0%BE,_%D0%BC%D0%B5%D0%BC%D0%BE%D1%80_%D0%B2%D0%B0%D0%BB%D1%83%D0%BD,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
 {{ tag(t="belarus") }}
 {{ tag(t="winter") }}
 {{ tag(t="няньково") }}
 {{ tag(t="year_2005") }}
 {{ tag(t="globustut") }}
+
+From [https://commons.wikimedia.org/wiki/File:043-222\_близ\_Няньково,\_мемор\_валун,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-222_%D0%B1%D0%BB%D0%B8%D0%B7_%D0%9D%D1%8F%D0%BD%D1%8C%D0%BA%D0%BE%D0%B2%D0%BE,_%D0%BC%D0%B5%D0%BC%D0%BE%D1%80_%D0%B2%D0%B0%D0%BB%D1%83%D0%BD,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
 ![](01.jpg)
 

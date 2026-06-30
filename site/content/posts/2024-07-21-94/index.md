@@ -1,17 +1,20 @@
 +++
-title = "firefox vertical tabs with plus custom CSS from"
+title = ""
 date = 2024-07-21T22:45:32+00:00
 description = "firefox vertical tabs with plus custom CSS from"
 
 [taxonomies]
+days = ["2024-07-21"]
 tags = ["firefox", "video"]
 
 [extra]
+id = 94
+day = "2024-07-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/94"
 next_id = 95
-next_title = "13 Reasons Why"
+next_title = ""
 prev_id = 93
-prev_title = "ipv6"
+prev_title = ""
 views = 53
 ids = [94]
 +++

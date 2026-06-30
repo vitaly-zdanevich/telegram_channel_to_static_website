@@ -1,18 +1,21 @@
 +++
-title = "Gold games - because lovers recreate engines for the best one."
+title = ""
 date = 2025-05-13T07:52:05+00:00
 description = "Gold games - because lovers recreate engines for the best one."
 
 [taxonomies]
+days = ["2025-05-13"]
 tags = ["games"]
 
 [extra]
+id = 527
+day = "2025-05-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/527"
 og_image = "5266978507903333095_1226313996_456258279.jpg"
 next_id = 528
-next_title = "mount archive (zip, rar and others) as read-only fuse, love it"
+next_title = ""
 prev_id = 526
-prev_title = "homm3 foss vcmi"
+prev_title = ""
 views = 35
 ids = [527]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "movie anime video"
+title = ""
 date = 2025-01-17T00:56:25+00:00
 description = "movie anime"
 
 [taxonomies]
+days = ["2025-01-17"]
 tags = ["movie", "anime", "video"]
 
 [extra]
+id = 252
+day = "2025-01-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/252"
 next_id = 253
-next_title = "film scifi space video"
+next_title = ""
 prev_id = 251
-prev_title = "video"
+prev_title = ""
 views = 30
 ids = [252]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "webdesign buttons animation game mmo myst video"
+title = ""
 date = 2026-02-21T03:49:45+00:00
 description = "webdesign buttons animation game mmo myst"
 
 [taxonomies]
+days = ["2026-02-21"]
 tags = ["webdesign", "buttons", "animation", "game", "mmo", "myst", "video"]
 
 [extra]
+id = 1121
+day = "2026-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1121"
 next_id = 1122
-next_title = "mmo myst stat"
+next_title = ""
 prev_id = 1120
-prev_title = "love Codex, using it almost every day, recently solved a few long lasting technical problems thanks to him."
+prev_title = ""
 views = 14
 ids = [1121]
 +++

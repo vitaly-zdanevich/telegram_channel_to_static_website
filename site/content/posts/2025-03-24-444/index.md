@@ -1,18 +1,21 @@
 +++
-title = "monetization spyware security webextension"
+title = ""
 date = 2025-03-24T03:11:11+00:00
 description = "monetization spyware security webextension"
 
 [taxonomies]
+days = ["2025-03-24"]
 tags = ["monetization", "spyware", "security", "webextension"]
 
 [extra]
+id = 444
+day = "2025-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/444"
 og_image = "5406954455607405651_1258904686_456256595.jpg"
 next_id = 445
-next_title = "elon_musk star_wars elections roman_salute video"
+next_title = ""
 prev_id = 442
-prev_title = "wow in telegram we have a crypto wallet, and users can send money to their contacts, wow"
+prev_title = ""
 views = 33
 ids = [444]
 +++

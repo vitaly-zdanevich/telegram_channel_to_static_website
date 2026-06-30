@@ -1,17 +1,20 @@
 +++
-title = "7мая2026 (чт) 21.30-01:00 айтишная посиделка в Still Young Bar"
+title = ""
 date = 2026-05-07T14:33:12+00:00
 description = "7мая2026 (чт) 21.30-01:00 айтишная посиделка в Still Young Bar безоплаты Доклады: 1. [Soft] «Создание телеграмм-бота для управления заметками в программе Evernote!. Вайб кодинг.» (💻@vitalyzdanevich)…"
 
 [taxonomies]
+days = ["2026-05-07"]
 tags = ["7мая2026", "без_оплаты"]
 
 [extra]
+id = 1751
+day = "2026-05-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1751"
 next_id = 1752
-next_title = "scream metal video"
+next_title = ""
 prev_id = 1750
-prev_title = "This is how in go we remove an element from a collection"
+prev_title = ""
 views = 27
 forwarded_from = "Andrei Vavilov"
 forwarded_from_url = "https://t.me/AMVavilov"

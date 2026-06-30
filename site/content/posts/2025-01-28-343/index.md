@@ -1,18 +1,21 @@
 +++
-title = "ai"
+title = ""
 date = 2025-01-28T08:22:37+00:00
 description = "ai Source"
 
 [taxonomies]
+days = ["2025-01-28"]
 tags = ["ai"]
 
 [extra]
+id = 343
+day = "2025-01-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/343"
 og_image = "01.jpg"
 next_id = 344
-next_title = "One of my hobbies - creating so called userstyles - custom CSS for me."
+next_title = ""
 prev_id = 342
-prev_title = "fear video"
+prev_title = ""
 views = 82
 ids = [343]
 +++

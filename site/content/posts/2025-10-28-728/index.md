@@ -1,27 +1,30 @@
 +++
-title = "Gamecube-controller-breakdown.jpg"
+title = ""
 date = 2025-10-28T22:42:16+00:00
-description = "Gamecube-controller-breakdown.jpg design purple gamepad gamecube"
+description = "design purple gamepad gamecube Source"
 
 [taxonomies]
+days = ["2025-10-28"]
 tags = ["design", "purple", "gamepad", "gamecube"]
 
 [extra]
+id = 728
+day = "2025-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/728"
 og_image = "5190435396050354424_1208492414_456261880.jpg"
 next_id = 729
-next_title = "I continue to write my script for importing ratings from metacritic reviewers, creating wikidata items for sites that no longer exists, and trying to download these dead sites from web.archive.org so…"
+next_title = ""
 prev_id = 727
-prev_title = "os design windows windows_xp"
+prev_title = ""
 views = 26
 ids = [728]
 +++
-
-[Gamecube-controller-breakdown.jpg](https://commons.wikimedia.org/wiki/File:Gamecube-controller-breakdown.jpg)
 
 {{ tag(t="design") }}
 {{ tag(t="purple") }}
 {{ tag(t="gamepad") }}
 {{ tag(t="gamecube") }}
+
+[Source](https://commons.wikimedia.org/wiki/File:Gamecube-controller-breakdown.jpg)
 
 ![](5190435396050354424_1208492414_456261880.jpg)

@@ -1,17 +1,20 @@
 +++
-title = "music poppy 8bit_like"
+title = ""
 date = 2026-03-22T04:05:17+00:00
 description = "music poppy 8bitlike [Chorus] P-O-P-P-Y, I'm Poppy P-O-P-P-Y, I'm Poppy P-O-P-P-Y, I'm Poppy P-O-P-P-Y, that's me [Verse 1] Welcome to the new world, I'm your internet girl Open up and you'll see,…"
 
 [taxonomies]
+days = ["2026-03-22"]
 tags = ["music", "poppy", "8bit_like"]
 
 [extra]
+id = 1499
+day = "2026-03-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1499"
 next_id = 1500
-next_title = "Группы и теория гомотопий (трэш трейлер)"
+next_title = ""
 prev_id = 1497
-prev_title = "webdesign bag girl pain thorns poppy disagree"
+prev_title = ""
 views = 20
 ids = [1499]
 +++

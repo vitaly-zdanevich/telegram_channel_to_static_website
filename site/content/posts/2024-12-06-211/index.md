@@ -1,14 +1,19 @@
 +++
-title = "2024-12-06 00:53"
+title = ""
 date = 2024-12-06T00:53:26+00:00
 description = "Only 13 percent of all classic games released between 1960 and 2009 are currently commercially available, according to the \"Survey of the Video Game Reissue Market in the United States,\" published…"
 
+[taxonomies]
+days = ["2024-12-06"]
+
 [extra]
+id = 211
+day = "2024-12-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/211"
 next_id = 212
-next_title = "2024-12-08 02:13"
+next_title = ""
 prev_id = 210
-prev_title = "Reminder about data preservation"
+prev_title = ""
 views = 50
 ids = [211]
 +++

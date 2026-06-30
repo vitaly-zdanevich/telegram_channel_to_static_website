@@ -1,18 +1,21 @@
 +++
-title = "webdesign belarus belarussian"
+title = ""
 date = 2026-03-22T02:46:05+00:00
 description = "webdesign belarus belarussian"
 
 [taxonomies]
+days = ["2026-03-22"]
 tags = ["webdesign", "belarus", "belarussian"]
 
 [extra]
+id = 1496
+day = "2026-03-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1496"
 og_image = "5332599354717573599_1241592540_460001759.jpg"
 next_id = 1497
-next_title = "webdesign bag girl pain thorns poppy disagree"
+next_title = ""
 prev_id = 1494
-prev_title = "steam: almost 25% is on linux?"
+prev_title = ""
 views = 20
 ids = [1496]
 +++

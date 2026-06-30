@@ -1,18 +1,21 @@
 +++
-title = "wikipedia ui navigation"
+title = ""
 date = 2025-05-04T01:29:49+00:00
 description = "wikipedia ui navigation"
 
 [taxonomies]
+days = ["2025-05-04"]
 tags = ["wikipedia", "ui", "navigation"]
 
 [extra]
+id = 496
+day = "2025-05-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/496"
 og_image = "5240482558301564465_1220144927_456257073.jpg"
 next_id = 497
-next_title = "compression xz zstd lz4 zlib meta"
+next_title = ""
 prev_id = 495
-prev_title = "2025-05-03 21:36"
+prev_title = ""
 views = 26
 ids = [496]
 +++

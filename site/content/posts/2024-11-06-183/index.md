@@ -1,13 +1,18 @@
 +++
-title = "2024-11-06 05:30"
+title = ""
 date = 2024-11-06T05:30:51+00:00
 
+[taxonomies]
+days = ["2024-11-06"]
+
 [extra]
+id = 183
+day = "2024-11-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/183"
 next_id = 184
-next_title = "2024-11-06 10:36"
+next_title = ""
 prev_id = 182
-prev_title = "&gt; Telegram is not a commercial organization"
+prev_title = ""
 views = 43
 ids = [183]
 +++

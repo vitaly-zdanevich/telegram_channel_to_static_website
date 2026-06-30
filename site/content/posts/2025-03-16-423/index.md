@@ -1,17 +1,20 @@
 +++
-title = "psy depression video"
+title = ""
 date = 2025-03-16T19:54:20+00:00
 description = "psy depression Source"
 
 [taxonomies]
+days = ["2025-03-16"]
 tags = ["psy", "depression", "video"]
 
 [extra]
+id = 423
+day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/423"
 next_id = 424
-next_title = "business_idea china rave health fitness music video"
+next_title = ""
 prev_id = 422
-prev_title = "music techno religion mulsim video"
+prev_title = ""
 views = 81
 ids = [423]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "game strategy rtt ground_control"
+title = ""
 date = 2025-11-24T13:45:36+00:00
 description = "game strategy rtt groundcontrol Source"
 
 [taxonomies]
+days = ["2025-11-24"]
 tags = ["game", "strategy", "rtt", "ground_control"]
 
 [extra]
+id = 791
+day = "2025-11-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/791"
 next_id = 792
-next_title = "The bishop defector death - dramatic moment, from minute 9"
+next_title = ""
 prev_id = 790
-prev_title = "game strategy video review ground_control year_2000"
+prev_title = ""
 views = 41
 ids = [791]
 +++

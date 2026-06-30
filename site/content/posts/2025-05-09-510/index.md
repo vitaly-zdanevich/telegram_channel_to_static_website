@@ -1,18 +1,21 @@
 +++
-title = "For example portable git in a single file"
+title = ""
 date = 2025-05-09T00:35:27+00:00
 description = "packagemanager appimage For example portable git in a single file"
 
 [taxonomies]
+days = ["2025-05-09"]
 tags = ["package_manager", "appimage", "git"]
 
 [extra]
+id = 510
+day = "2025-05-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/510"
 og_image = "01.jpg"
 next_id = 512
-next_title = "mpv anime readme"
+next_title = ""
 prev_id = 509
-prev_title = "health science"
+prev_title = ""
 views = 23
 ids = [510]
 +++

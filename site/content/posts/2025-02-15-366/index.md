@@ -1,26 +1,28 @@
 +++
-title = "Massive Assault Network 2"
+title = ""
 date = 2025-02-15T20:00:34+00:00
-description = "Massive Assault Network 2 game man2"
+description = "game man2"
 
 [taxonomies]
+days = ["2025-02-15"]
 tags = ["game", "man2"]
 
 [extra]
+id = 366
+day = "2025-02-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/366"
 next_id = 367
-next_title = "Animation on building by projectors, love it."
+next_title = ""
 prev_id = 362
-prev_title = "Its real coins, from Cook Islands"
+prev_title = ""
 views = 40
 ids = [366]
 +++
 
-[Massive Assault Network 2](https://en.wikipedia.org/wiki/Massive_Assault_Network_2)
-
 {{ tag(t="game") }}
 {{ tag(t="man2") }}
 
+<https://en.wikipedia.org/wiki/Massive_Assault_Network_2>
 
 <https://lutris.net/games/massive-assault-network-2>
 

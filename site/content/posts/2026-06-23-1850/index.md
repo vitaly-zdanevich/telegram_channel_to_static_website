@@ -1,21 +1,26 @@
 +++
-title = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио"
+title = ""
 date = 2026-06-23T19:16:32+00:00
-description = "Репозиторий проекта my stillyoungbar lecture telegrambot youtube Source Evernote"
+description = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио Репозиторий проекта my stillyoungbar lecture telegrambot youtube Source Evernote"
 
 [taxonomies]
+days = ["2026-06-23"]
 tags = ["my", "still_young_bar", "lecture", "telegram_bot", "youtube"]
 
 [extra]
+id = 1850
+day = "2026-06-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1850"
 og_image = "02.webp"
 next_id = 1852
-next_title = "what a stickerpack"
+next_title = ""
 prev_id = 1849
-prev_title = "llm codex regex"
-views = 62
+prev_title = ""
+views = 64
 ids = [1850, 1851]
 +++
+
+**Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио**
 
 Репозиторий проекта
 <https://gitlab.com/vitaly-zdanevich/bot_telegram_youtube>

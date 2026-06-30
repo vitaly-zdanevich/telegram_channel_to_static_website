@@ -1,17 +1,20 @@
 +++
-title = "linux france news"
+title = ""
 date = 2026-04-12T12:12:20+00:00
 description = "linux france news France to ditch Windows for Linux to reduce reliance on US tech France is trying to move on from Microsoft Windows. The country said it plans to move some of its government…"
 
 [taxonomies]
+days = ["2026-04-12"]
 tags = ["linux", "france", "news"]
 
 [extra]
+id = 1636
+day = "2026-04-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1636"
 next_id = 1637
-next_title = "ДА Вінницької області--01 Фонди до 1917 року--0230--010230-01-01583 image01086.jpg"
+next_title = ""
 prev_id = 1629
-prev_title = "ДА Харківської області--01--0040--0105--010040-105-00969 804-03494422-l-m-a-40-105-969-0670.jpg"
+prev_title = ""
 views = 21
 ids = [1636]
 +++

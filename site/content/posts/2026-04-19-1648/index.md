@@ -1,22 +1,23 @@
 +++
-title = "Q110906634"
+title = ""
 date = 2026-04-19T19:18:06+00:00
-description = "Q110906634 music calm [Verse] So familiar and overwhelmingly warm This one, this form I hold now Embracing you, this reality here This one, this form I hold now, so Wide eyed and hopeful Wide eyed…"
+description = "music calm [Verse] So familiar and overwhelmingly warm This one, this form I hold now Embracing you, this reality here This one, this form I hold now, so Wide eyed and hopeful Wide eyed and hopefully…"
 
 [taxonomies]
+days = ["2026-04-19"]
 tags = ["music", "calm"]
 
 [extra]
+id = 1648
+day = "2026-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1648"
 next_id = 1649
-next_title = "ДА Житомирської області--01 Ф - фонди дорадянського періоду--0001--0076--010001-76-00035--010001-76-00035.PDF page158 1.jpeg"
+next_title = ""
 prev_id = 1647
-prev_title = "captcha"
+prev_title = ""
 views = 17
 ids = [1648]
 +++
-
-[Q110906634](https://www.wikidata.org/wiki/Q110906634)
 
 {{ tag(t="music") }}
 {{ tag(t="calm") }}
@@ -26,5 +27,7 @@ ids = [1648]
 <https://genius.com/Tool-parabol-lyrics>
 
 <https://music.yandex.ru/album/38048345/track/142481672>
+
+<https://www.wikidata.org/wiki/Q110906634>
 
 📎 Parabol *(not archived)*

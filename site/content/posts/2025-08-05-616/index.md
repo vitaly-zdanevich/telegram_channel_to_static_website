@@ -1,17 +1,20 @@
 +++
-title = "dark_mode gif video"
+title = ""
 date = 2025-08-05T16:21:13+00:00
 description = "darkmode gif"
 
 [taxonomies]
+days = ["2025-08-05"]
 tags = ["dark_mode", "gif", "video"]
 
 [extra]
+id = 616
+day = "2025-08-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/616"
 next_id = 617
-next_title = "Imagine a 2d side-scroll quest-action game with such visual style"
+next_title = ""
 prev_id = 615
-prev_title = "How to ask for a dark_mode"
+prev_title = ""
 views = 33
 ids = [616]
 +++

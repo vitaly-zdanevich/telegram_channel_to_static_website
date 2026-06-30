@@ -1,18 +1,21 @@
 +++
-title = "design software gthumb scan preservation"
+title = ""
 date = 2026-02-27T22:22:22+00:00
 description = "design software gthumb scan preservation"
 
 [taxonomies]
+days = ["2026-02-27"]
 tags = ["design", "software", "gthumb", "scan", "preservation"]
 
 [extra]
+id = 1203
+day = "2026-02-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1203"
 og_image = "5264957012829737976_1225843330_460002296.jpg"
 next_id = 1204
-next_title = "calligraphy microfilm preservation"
+next_title = ""
 prev_id = 1202
-prev_title = "My new userscript for evernote adds a few hotkey"
+prev_title = ""
 views = 6
 ids = [1203]
 +++

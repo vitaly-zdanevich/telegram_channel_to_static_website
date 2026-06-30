@@ -1,17 +1,20 @@
 +++
-title = "korol_i_shut"
+title = ""
 date = 2025-06-16T16:16:39+00:00
 description = "korolishut Source"
 
 [taxonomies]
+days = ["2025-06-16"]
 tags = ["korol_i_shut"]
 
 [extra]
+id = 574
+day = "2025-06-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/574"
 next_id = 575
-next_title = "s1e6"
+next_title = ""
 prev_id = 573
-prev_title = "Lost."
+prev_title = ""
 views = 38
 ids = [574]
 +++

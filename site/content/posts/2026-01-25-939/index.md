@@ -1,17 +1,20 @@
 +++
-title = "aws CTO Werner Vogels"
+title = ""
 date = 2026-01-25T04:59:12+00:00
 description = "aws CTO Werner Vogels Mentioned: From"
 
 [taxonomies]
+days = ["2026-01-25"]
 tags = ["aws"]
 
 [extra]
+id = 939
+day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/939"
 next_id = 941
-next_title = "aws custom cpu: dropped the lid (scalping) for the better cooling"
+next_title = ""
 prev_id = 938
-prev_title = "Top 1% by python, hm, not sure why"
+prev_title = ""
 views = 8
 ids = [939]
 +++

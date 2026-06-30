@@ -1,18 +1,21 @@
 +++
-title = "New small project: python script for gthumb (or other software, even standalone CLI) that read EXIF GPS and open openstreetmap"
+title = ""
 date = 2025-06-04T00:23:52+00:00
 description = "New small project: python script for gthumb (or other software, even standalone CLI) that read EXIF GPS and open openstreetmap"
 
 [taxonomies]
+days = ["2025-06-04"]
 tags = ["python", "gthumb", "openstreetmap"]
 
 [extra]
+id = 548
+day = "2025-06-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/548"
 og_image = "5330353748242985817_1241069694_456258393.jpg"
 next_id = 549
-next_title = "Another userstyle: for openstreetmap, only a few CSS lines"
+next_title = ""
 prev_id = 546
-prev_title = "PromoDJ music genres"
+prev_title = ""
 views = 52
 ids = [548]
 +++

@@ -1,18 +1,21 @@
 +++
-title = "6февраля2026 (пт) 21.30-01:00 Айтишные посиделки в Laboratory Bar"
+title = ""
 date = 2026-02-05T09:29:50+00:00
 description = "6февраля2026 (пт) 21.30-01:00 Айтишные посиделки в Laboratory Bar безоплаты Доклады: 1. [short-Hard] \"Короткий доклад про softlink vs hardlink (это про файловую систему), полезно в работе и…"
 
 [taxonomies]
+days = ["2026-02-05"]
 tags = ["6февраля2026", "без_оплаты"]
 
 [extra]
+id = 1088
+day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1088"
 og_image = "5192855408261927781_1209055867_460002149.jpg"
 next_id = 1089
-next_title = "matrix"
+next_title = ""
 prev_id = 1087
-prev_title = "fashion boy"
+prev_title = ""
 views = 11
 forwarded_from = "Анонсы Laboratory Bar & Hookah (Batumi)"
 forwarded_from_url = "https://t.me/it_laboratory_batumi/774"

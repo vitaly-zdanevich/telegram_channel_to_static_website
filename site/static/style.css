@@ -75,3 +75,22 @@ input.site-search { margin-left: auto; }
 .spoiler:hover { background: transparent; }
 .site-footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); padding-top: .5rem; }
 blockquote { border-left: 3px solid var(--border); margin: .5rem 0; padding-left: .75rem; color: var(--muted); }
+.here { font-weight: 700; }
+
+/* Calendar */
+.cal-years { margin: .5rem 0 1.5rem; line-height: 1.9; }
+.cal-years a { margin-right: .7rem; }
+.cal-year { margin: 1.5rem 0 .5rem; }
+.cal-months { display: flex; flex-wrap: wrap; gap: 1.4rem; }
+table.cal { border-collapse: collapse; font-size: .8rem; }
+table.cal caption { text-align: left; font-weight: 700; padding-bottom: .3rem; }
+table.cal th { font-weight: 400; color: var(--muted); padding: .1rem; text-align: center; }
+table.cal td { width: 1.95rem; height: 1.7rem; text-align: center; padding: 0; }
+table.cal td.on a { display: block; line-height: 1.7rem; border-radius: 4px; text-decoration: none; background: var(--code-bg); font-weight: 700; }
+table.cal td.off { color: var(--muted); opacity: .45; }
+
+/* Mobile: use more of a narrow screen — less left/right inset. */
+@media (max-width: 640px) {
+  body { width: auto; padding: 1rem .5rem; }
+  .cal-months { gap: .9rem; }
+}

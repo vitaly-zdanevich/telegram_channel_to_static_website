@@ -1,17 +1,20 @@
 +++
-title = "game armies_of_exigo"
+title = ""
 date = 2025-02-21T06:46:29+00:00
 description = "game armiesofexigo Source"
 
 [taxonomies]
+days = ["2025-02-21"]
 tags = ["game", "armies_of_exigo"]
 
 [extra]
+id = 375
+day = "2025-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/375"
 next_id = 376
-next_title = "Are you winning son?"
+next_title = ""
 prev_id = 374
-prev_title = "Банк Империал - Конрад III"
+prev_title = ""
 views = 55
 ids = [375]
 +++

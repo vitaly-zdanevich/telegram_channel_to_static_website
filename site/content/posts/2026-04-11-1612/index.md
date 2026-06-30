@@ -1,17 +1,20 @@
 +++
-title = "I wrote, with ai, a nice script to find top biggest folders - that has no other subfolders (leaf folders)"
+title = ""
 date = 2026-04-11T10:18:23+00:00
 description = "I wrote, with ai, a nice script to find top biggest folders - that has no other subfolders (leaf folders): find . -type d -links 2 -exec du -sh {} + | sort -hr | head Output example: 6.3G ./ДА…"
 
 [taxonomies]
+days = ["2026-04-11"]
 tags = ["ai", "script", "find", "biggest", "folders", "leaf", "hardlink"]
 
 [extra]
+id = 1612
+day = "2026-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1612"
 next_id = 1613
-next_title = "ЦДІАЛ--0080--010020-10-00088 DSC 0911.JPG"
+next_title = ""
 prev_id = 1602
-prev_title = "ДА Житомирської області--01 Ф - фонди дорадянського періоду--0118--010118-14--010118-14-00018 IMG 20200124 152116.jpg"
+prev_title = ""
 views = 18
 ids = [1612]
 +++

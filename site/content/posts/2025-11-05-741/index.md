@@ -1,22 +1,23 @@
 +++
-title = "Формула конечных приращений"
+title = ""
 date = 2025-11-05T12:04:26+00:00
-description = "Формула конечных приращений music musicrussian нтр [Куплет 1] У меня одна только радость на лице Ведь всегда найдётся такая точка c Что f(b) - f(a) / b - a Равно f'(c). Оу, вот это да! Что-то я…"
+description = "music musicrussian нтр [Куплет 1] У меня одна только радость на лице Ведь всегда найдётся такая точка c Что f(b) - f(a) / b - a Равно f'(c). Оу, вот это да! Что-то я забылся, пора знать честь F на…"
 
 [taxonomies]
+days = ["2025-11-05"]
 tags = ["music", "music_russian", "нтр", "video"]
 
 [extra]
+id = 741
+day = "2025-11-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/741"
 next_id = 742
-next_title = "Like horizontal scrolling."
+next_title = ""
 prev_id = 739
-prev_title = "2025-11-05 11:43"
+prev_title = ""
 views = 27
 ids = [741]
 +++
-
-[Формула конечных приращений](https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D0%BF%D1%80%D0%B8%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B9)
 
 {{ tag(t="music") }}
 {{ tag(t="music_russian") }}
@@ -28,6 +29,7 @@ ids = [741]
 
 <https://vk.com/nii_rap>
 
+[https://ru.wikipedia.org/wiki/Формула\_конечных\_приращений](https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D0%BF%D1%80%D0%B8%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B9)
 
 <https://genius.com/Nauchnotechnicheskirap-lagrange-theorem-lyrics>
 

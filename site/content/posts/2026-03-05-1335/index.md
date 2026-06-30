@@ -1,17 +1,20 @@
 +++
-title = "I use bash history Ctrl-R a lot, also with fzf and other helpers, and have bash aliases, that are just one letter, and I do not want to pollute my bash history with it, so I found the solution - the…"
+title = ""
 date = 2026-03-05T07:13:57+00:00
 description = "I use bash history Ctrl-R a lot, also with fzf and other helpers, and have bash aliases, that are just one letter, and I do not want to pollute my bash history with it, so I found the solution - the…"
 
 [taxonomies]
+days = ["2026-03-05"]
 tags = ["bash", "fzf", "history"]
 
 [extra]
+id = 1335
+day = "2026-03-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1335"
 next_id = 1336
-next_title = "...one of my bash aliases: to count files here"
+next_title = ""
 prev_id = 1334
-prev_title = "I love cli, scripts, and sometimes I want my script to accept an argument that is the same as the folder name."
+prev_title = ""
 views = 9
 ids = [1335]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "music rammstein cult drum video"
+title = ""
 date = 2025-02-22T23:37:31+00:00
 description = "music rammstein cult drum Source"
 
 [taxonomies]
+days = ["2025-02-22"]
 tags = ["music", "rammstein", "cult", "drum", "video"]
 
 [extra]
+id = 377
+day = "2025-02-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/377"
 next_id = 378
-next_title = "ai vacuum_cleaner video"
+next_title = ""
 prev_id = 376
-prev_title = "Are you winning son?"
+prev_title = ""
 views = 58
 ids = [377]
 +++

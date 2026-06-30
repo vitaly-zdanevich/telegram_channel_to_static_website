@@ -1,18 +1,21 @@
 +++
-title = "japan"
+title = ""
 date = 2026-02-02T14:27:03+00:00
 description = "japan From"
 
 [taxonomies]
+days = ["2026-02-02"]
 tags = ["japan"]
 
 [extra]
+id = 1077
+day = "2026-02-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1077"
 og_image = "5188455076828221944_1208031335_460001784.jpg"
 next_id = 1078
-next_title = "ui yandex samara"
+next_title = ""
 prev_id = 1075
-prev_title = "webdesign windows95"
+prev_title = ""
 views = 13
 ids = [1077]
 +++

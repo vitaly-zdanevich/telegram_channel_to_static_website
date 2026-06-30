@@ -1,17 +1,20 @@
 +++
-title = "alex_jones warhammer"
+title = ""
 date = 2025-03-08T00:36:50+00:00
 description = "alexjones warhammer Source"
 
 [taxonomies]
+days = ["2025-03-08"]
 tags = ["alex_jones", "warhammer"]
 
 [extra]
+id = 394
+day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/394"
 next_id = 395
-next_title = "arsen_markaryan alex_jones warhammer"
+next_title = ""
 prev_id = 393
-prev_title = "Channel photo updated"
+prev_title = ""
 views = 64
 ids = [394]
 +++

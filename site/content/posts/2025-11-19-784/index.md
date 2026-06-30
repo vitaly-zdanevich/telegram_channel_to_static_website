@@ -1,18 +1,21 @@
 +++
-title = "punk logo music korol_i_shut"
+title = ""
 date = 2025-11-19T08:01:37+00:00
 description = "punk logo music korolishut Source"
 
 [taxonomies]
+days = ["2025-11-19"]
 tags = ["punk", "logo", "music", "korol_i_shut"]
 
 [extra]
+id = 784
+day = "2025-11-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/784"
 og_image = "5253740353548913982_1223231748_460000574.jpg"
 next_id = 785
-next_title = "webdesign webdesign_game"
+next_title = ""
 prev_id = 783
-prev_title = "ad playstation playstation2"
+prev_title = ""
 views = 38
 ids = [784]
 +++

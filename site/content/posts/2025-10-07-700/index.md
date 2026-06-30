@@ -1,17 +1,20 @@
 +++
-title = "chess video"
+title = ""
 date = 2025-10-07T17:38:10+00:00
 description = "chess Source"
 
 [taxonomies]
+days = ["2025-10-07"]
 tags = ["chess", "video"]
 
 [extra]
+id = 700
+day = "2025-10-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/700"
 next_id = 701
-next_title = "chess video"
+next_title = ""
 prev_id = 699
-prev_title = "userscript for youtube: audio only."
+prev_title = ""
 views = 28
 ids = [700]
 +++

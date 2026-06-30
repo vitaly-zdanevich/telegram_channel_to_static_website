@@ -1,13 +1,18 @@
 +++
-title = "2024-09-10 23:09"
+title = ""
 date = 2024-09-10T23:09:16+00:00
 
+[taxonomies]
+days = ["2024-09-10"]
+
 [extra]
+id = 148
+day = "2024-09-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/148"
 next_id = 149
-next_title = "video"
+next_title = ""
 prev_id = 147
-prev_title = "Projekt kolejna faza 10 złotych 1919 awers.jpg"
+prev_title = ""
 views = 65
 ids = [148]
 +++

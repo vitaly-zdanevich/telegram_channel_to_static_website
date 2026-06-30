@@ -1,17 +1,20 @@
 +++
-title = "лекция про мой telegram бот для evernote"
+title = ""
 date = 2026-05-16T02:48:55+00:00
 description = "лекция про мой telegram бот для evernote Репозиторий проекта: Создано через llm Codex gpt-5.5 xhigh, часов за 10. Сначала на Питоне - а потом попросил переписать на Расте - для скорости. Упоминались:…"
 
 [taxonomies]
+days = ["2026-05-16"]
 tags = ["лекция", "telegram", "бот", "evernote", "llm"]
 
 [extra]
+id = 1762
+day = "2026-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1762"
 next_id = 1763
-next_title = "error gitlab contradiction"
+next_title = ""
 prev_id = 1761
-prev_title = "I love ci so much that for the first time I depleted free 400 minutes per month, on gitlab, on my FOSS non-commercial projects."
+prev_title = ""
 views = 318
 ids = [1762]
 +++

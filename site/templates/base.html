@@ -8,7 +8,8 @@
   {% if config.extra.rss %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path='rss.xml', trailing_slash=false) | safe }}">{% endif %}
   {# Social cards (Open Graph + Twitter) and Mastodon attribution. `page` is
      only defined on post/page templates; sections fall back to site defaults. #}
-  {% set og_title = page.title | default(value=config.title) %}
+  {% set_global og_title = config.title %}
+  {% if page.title %}{% set_global og_title = page.title %}{% elif page.extra.id %}{% set_global og_title = page.extra.id %}{% endif %}
   {% set og_desc = page.description | default(value=config.description) %}
   {% set og_url = page.permalink | default(value=config.base_url) %}
   {% set_global og_image = "" %}
@@ -35,7 +36,8 @@
     <nav>
       {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
       <a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>
-      <a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>
+      {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
+      {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
     </nav>
     {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% endif %}

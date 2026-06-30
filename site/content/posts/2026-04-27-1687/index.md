@@ -1,17 +1,20 @@
 +++
-title = "Article about it"
+title = ""
 date = 2026-04-27T05:48:46+00:00
 description = "my evernote telegrambot awslambda ai codex gpt5 Article about it"
 
 [taxonomies]
+days = ["2026-04-27"]
 tags = ["my", "evernote", "telegram_bot", "aws_lambda", "ai", "codex", "gpt5"]
 
 [extra]
+id = 1687
+day = "2026-04-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1687"
 next_id = 1688
-next_title = "ДА Житомирської області--01 Ф - фонди дорадянського періоду--0001--0076--010001-76-00063 F 1-76-0063 0117.jpg"
+next_title = ""
 prev_id = 1686
-prev_title = "photo batumi dog"
+prev_title = ""
 views = 16
 ids = [1687]
 +++

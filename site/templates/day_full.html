@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ page.extra.day }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>{{ page.extra.day }}</h1>
+  {% set tax = get_taxonomy(kind="days") %}
+  {% for term in tax.items %}{% if term.name == page.extra.day %}
+  {% for p in term.pages %}
+    <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
+      {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
+      <p class="meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
+      <div class="content">{{ p.content | safe }}</div>
+    </article>
+  {% endfor %}
+  {% endif %}{% endfor %}
+  <nav class="post-nav">
+    <span>{% if page.extra.newer_day %}<a href="{{ get_url(path='/day/' ~ page.extra.newer_day ~ '/') | safe }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer }}</a>{% endif %}</span>
+    <span>{% if page.extra.older_day %}<a href="{{ get_url(path='/day/' ~ page.extra.older_day ~ '/') | safe }}" accesskey="o" rel="next">{{ config.extra.i18n.older }} →</a>{% endif %}</span>
+  </nav>
+{% endblock content %}

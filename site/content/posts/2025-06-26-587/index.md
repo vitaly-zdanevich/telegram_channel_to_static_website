@@ -1,17 +1,20 @@
 +++
-title = "In 2024 to steam were published 19000 games, its 52 games per day."
+title = ""
 date = 2025-06-26T15:46:42+00:00
 description = "In 2024 to steam were published 19000 games, its 52 games per day. Source"
 
 [taxonomies]
+days = ["2025-06-26"]
 tags = ["steam", "games"]
 
 [extra]
+id = 587
+day = "2025-06-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/587"
 next_id = 588
-next_title = "2004"
+next_title = ""
 prev_id = 586
-prev_title = "map of articles and photos"
+prev_title = ""
 views = 42
 ids = [587]
 +++

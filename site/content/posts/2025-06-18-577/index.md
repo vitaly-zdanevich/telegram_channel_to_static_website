@@ -1,18 +1,21 @@
 +++
-title = "sakartvelo"
+title = ""
 date = 2025-06-18T17:00:44+00:00
 description = "sakartvelo Source"
 
 [taxonomies]
+days = ["2025-06-18"]
 tags = ["sakartvelo"]
 
 [extra]
+id = 577
+day = "2025-06-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/577"
 og_image = "01.jpg"
 next_id = 582
-next_title = "2025-06-18 17:01"
+next_title = ""
 prev_id = 576
-prev_title = "photo batumi chandelier"
+prev_title = ""
 views = 34
 ids = [577]
 +++

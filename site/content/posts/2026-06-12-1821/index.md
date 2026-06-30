@@ -1,18 +1,21 @@
 +++
-title = "Make tree clickable, tested in kitty"
+title = ""
 date = 2026-06-12T17:21:22+00:00
 description = "Make tree clickable, tested in kitty Replace to eza eza --tree --hyperlink With this .config/kitty/open-actions.conf protocol file ext cpp,cc,cxx,c++,hpp,hh,hxx,h++,c,h,java fragmentmatches [0-9]+…"
 
 [taxonomies]
+days = ["2026-06-12"]
 tags = ["tree", "kitty", "eza"]
 
 [extra]
+id = 1821
+day = "2026-06-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1821"
 og_image = "5287622628992557020_1231120580_460005340.jpg"
 next_id = 1822
-next_title = "This is why we have crypto?"
+next_title = ""
 prev_id = 1819
-prev_title = "My another userstyle: for gemini, before and after"
+prev_title = ""
 views = 14
 ids = [1821]
 +++

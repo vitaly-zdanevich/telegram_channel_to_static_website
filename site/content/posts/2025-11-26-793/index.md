@@ -1,17 +1,20 @@
 +++
-title = "ad game tank wwii music warpath"
+title = ""
 date = 2025-11-26T18:15:24+00:00
 description = "ad game tank wwii music warpath Source"
 
 [taxonomies]
+days = ["2025-11-26"]
 tags = ["ad", "game", "tank", "wwii", "music", "warpath"]
 
 [extra]
+id = 793
+day = "2025-11-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/793"
 next_id = 794
-next_title = "wikipedia delitionism"
+next_title = ""
 prev_id = 792
-prev_title = "The bishop defector death - dramatic moment, from minute 9"
+prev_title = ""
 views = 53
 ids = [793]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "lapenko art dog painting religion video"
+title = ""
 date = 2025-01-29T09:31:02+00:00
 description = "lapenko art dog painting religion Source"
 
 [taxonomies]
+days = ["2025-01-29"]
 tags = ["lapenko", "art", "dog", "painting", "religion", "video"]
 
 [extra]
+id = 345
+day = "2025-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/345"
 next_id = 346
-next_title = "fashion video"
+next_title = ""
 prev_id = 344
-prev_title = "One of my hobbies - creating so called userstyles - custom CSS for me."
+prev_title = ""
 views = 130
 ids = [345]
 +++

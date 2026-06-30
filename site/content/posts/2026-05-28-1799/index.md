@@ -1,17 +1,20 @@
 +++
-title = "28мая2026 (чт) 21:00–01:00 — айтишная посиделка в Still Young Bar 🍻"
+title = ""
 date = 2026-05-28T07:47:36+00:00
 description = "28мая2026 (чт) 21:00–01:00 — айтишная посиделка в Still Young Bar 🍻 безоплаты 🎤 Доклад: «Мой второй Telegram bot: возвращает аудио с поиска по YouTube, с комментариями» Разберём, как устроен…"
 
 [taxonomies]
+days = ["2026-05-28"]
 tags = ["28мая2026", "без_оплаты"]
 
 [extra]
+id = 1799
+day = "2026-05-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1799"
 next_id = 1800
-next_title = "remapped unused button on my laptop to git push, i3 command"
+next_title = ""
 prev_id = 1787
-prev_title = "crypto wallet"
+prev_title = ""
 views = 43
 forwarded_from = "IT Happens Batumi"
 forwarded_from_url = "https://t.me/it_happens_batumi/5"

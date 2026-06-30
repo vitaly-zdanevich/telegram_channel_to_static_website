@@ -1,16 +1,19 @@
 +++
-title = "video"
+title = ""
 date = 2023-07-16T18:21:56+00:00
 
 [taxonomies]
+days = ["2023-07-16"]
 tags = ["video"]
 
 [extra]
+id = 23
+day = "2023-07-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/23"
 next_id = 25
-next_title = "video"
+next_title = ""
 prev_id = 21
-prev_title = "Love these episodes from Night Watch (Ночной Дозор)"
+prev_title = ""
 views = 63
 forwarded_from = "Vitaly Zdanevich"
 forwarded_from_url = "https://t.me/vitaly_zdanevich"

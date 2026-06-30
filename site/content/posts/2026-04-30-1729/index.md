@@ -1,17 +1,20 @@
 +++
-title = "Asked codex gpt-5.5 xhigh to rewrite geeknote (cli of evernote) to rust, a few iterations - and I got reeknote - faster geeknote."
+title = ""
 date = 2026-04-30T04:55:54+00:00
 description = "Asked codex gpt-5.5 xhigh to rewrite geeknote (cli of evernote) to rust, a few iterations - and I got reeknote - faster geeknote."
 
 [taxonomies]
+days = ["2026-04-30"]
 tags = ["codex", "geeknote", "cli", "evernote", "rust", "reeknote"]
 
 [extra]
+id = 1729
+day = "2026-04-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1729"
 next_id = 1730
-next_title = "cats religion orthodox black_and_white"
+next_title = ""
 prev_id = 1721
-prev_title = "ДА Чернігівської області--01--0679--0679-01--010679-01-01521 1742 рік 20200312 085419.jpg"
+prev_title = ""
 views = 21
 ids = [1729]
 +++

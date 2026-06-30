@@ -1,14 +1,19 @@
 +++
-title = "Did you know about git notes?"
+title = ""
 date = 2026-01-21T23:09:03+00:00
 description = "Did you know about git notes? Adds, removes, or reads notes attached to objects, without touching the objects themselves. By default, notes are saved to and read from refs/notes/commits, but this…"
 
+[taxonomies]
+days = ["2026-01-21"]
+
 [extra]
+id = 930
+day = "2026-01-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/930"
 next_id = 931
-next_title = "I am on gentoo because it compiles for my CPU (-march=native and other flags - not generic x64, but I did not measure the performance numbers), and another point - USE flags and the ability to apply…"
+next_title = ""
 prev_id = 929
-prev_title = "040-575 Могилев, костел Станислава (внутри), снято 18 января 2005.jpg"
+prev_title = ""
 views = 13
 ids = [930]
 +++

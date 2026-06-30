@@ -1,17 +1,20 @@
 +++
-title = "elon_musk star_wars elections roman_salute video"
+title = ""
 date = 2025-03-24T03:36:59+00:00
 description = "elonmusk starwars elections romansalute Source"
 
 [taxonomies]
+days = ["2025-03-24"]
 tags = ["elon_musk", "star_wars", "elections", "roman_salute", "video"]
 
 [extra]
+id = 445
+day = "2025-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/445"
 next_id = 446
-next_title = "teapot update"
+next_title = ""
 prev_id = 444
-prev_title = "monetization spyware security webextension"
+prev_title = ""
 views = 171
 ids = [445]
 +++

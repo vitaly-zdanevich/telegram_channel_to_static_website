@@ -1,14 +1,19 @@
 +++
-title = "2024-05-16 15:08"
+title = ""
 date = 2024-05-16T15:08:18+00:00
 
+[taxonomies]
+days = ["2024-05-16"]
+
 [extra]
+id = 46
+day = "2024-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/46"
 next_id = 47
-next_title = "2024-05-16 15:52"
+next_title = ""
 prev_id = 45
-prev_title = "2024-05-16 15:07"
-views = 49
+prev_title = ""
+views = 50
 ids = [46]
 +++
 

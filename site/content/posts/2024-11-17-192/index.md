@@ -1,17 +1,20 @@
 +++
-title = "warcraft"
+title = ""
 date = 2024-11-17T13:10:31+00:00
 description = "warcraft"
 
 [taxonomies]
+days = ["2024-11-17"]
 tags = ["warcraft"]
 
 [extra]
+id = 192
+day = "2024-11-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/192"
 next_id = 193
-next_title = "webdesign"
+next_title = ""
 prev_id = 191
-prev_title = "2024-11-17 11:21"
+prev_title = ""
 views = 46
 ids = [192]
 +++

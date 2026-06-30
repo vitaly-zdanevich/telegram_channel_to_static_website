@@ -1,17 +1,20 @@
 +++
-title = "hover balloon with type definition ftplugin/java.vim, with coc"
+title = ""
 date = 2026-06-14T16:41:55+00:00
 description = "vim java hover balloon with type definition ftplugin/java.vim, with coc highlight CocTypePopup ctermfg=White ctermbg=22 guifg=ffffff guibg=005f00 function! CocTypeBalloonExpr() abort try let l:docs =…"
 
 [taxonomies]
+days = ["2026-06-14"]
 tags = ["vim", "java", "hover", "balloon", "coc"]
 
 [extra]
+id = 1825
+day = "2026-06-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1825"
 next_id = 1826
-next_title = "bus architecture"
+next_title = ""
 prev_id = 1824
-prev_title = "Армянский язык"
+prev_title = ""
 views = 18
 ids = [1825]
 +++

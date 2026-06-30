@@ -1,23 +1,24 @@
 +++
-title = "The Fountain"
+title = ""
 date = 2025-09-21T17:38:08+00:00
-description = "The Fountain film thefountain darrenaronofsky inquisitor pain torture christianity"
+description = "film thefountain darrenaronofsky inquisitor pain torture christianity"
 
 [taxonomies]
+days = ["2025-09-21"]
 tags = ["film", "the_fountain", "darren_aronofsky", "inquisitor", "pain", "torture", "christianity"]
 
 [extra]
+id = 680
+day = "2025-09-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/680"
 og_image = "01.jpg"
 next_id = 681
-next_title = "Coins of Algirdas"
+next_title = ""
 prev_id = 679
-prev_title = "The Fountain"
+prev_title = ""
 views = 37
 ids = [680]
 +++
-
-[The Fountain](https://en.wikipedia.org/wiki/The_Fountain)
 
 {{ tag(t="film") }}
 {{ tag(t="the_fountain") }}
@@ -26,6 +27,8 @@ ids = [680]
 {{ tag(t="pain") }}
 {{ tag(t="torture") }}
 {{ tag(t="christianity") }}
+
+<https://en.wikipedia.org/wiki/The_Fountain>
 
 ![video](01.jpg)
 

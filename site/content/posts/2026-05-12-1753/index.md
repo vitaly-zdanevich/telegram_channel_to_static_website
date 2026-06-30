@@ -1,18 +1,21 @@
 +++
-title = "Wow in leetcode we can patch classes"
+title = ""
 date = 2026-05-12T12:45:18+00:00
 description = "heap lt Wow in leetcode we can patch classes: ListNode.lt = lambda self, other: self.val Optional[ListNode]: heap = [] for node in lists: if node: heapq.heappush(heap, node) head: List[ListNode] =…"
 
 [taxonomies]
+days = ["2026-05-12"]
 tags = ["heap", "lt", "leetcode", "patch"]
 
 [extra]
+id = 1753
+day = "2026-05-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1753"
 og_image = "01.jpg"
 next_id = 1755
-next_title = "screenshot from"
+next_title = ""
 prev_id = 1752
-prev_title = "scream metal video"
+prev_title = ""
 views = 21
 ids = [1753]
 +++

@@ -1,18 +1,21 @@
 +++
-title = "preservation games beard"
+title = ""
 date = 2025-12-14T23:46:32+00:00
 description = "preservation games beard From"
 
 [taxonomies]
+days = ["2025-12-14"]
 tags = ["preservation", "games", "beard"]
 
 [extra]
+id = 799
+day = "2025-12-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/799"
 og_image = "01.jpg"
 next_id = 801
-next_title = "Full legal"
+next_title = ""
 prev_id = 797
-prev_title = "ai nano_banana"
+prev_title = ""
 views = 36
 ids = [799]
 +++

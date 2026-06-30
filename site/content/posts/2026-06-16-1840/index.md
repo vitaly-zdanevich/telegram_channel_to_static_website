@@ -1,18 +1,21 @@
 +++
-title = "lamp"
+title = ""
 date = 2026-06-16T13:12:08+00:00
 description = "lamp From"
 
 [taxonomies]
+days = ["2026-06-16"]
 tags = ["lamp"]
 
 [extra]
+id = 1840
+day = "2026-06-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1840"
 og_image = "5298686202754047490_1233696519_460004866.jpg"
 next_id = 1841
-next_title = "ad newspaper design toxic"
+next_title = ""
 prev_id = 1839
-prev_title = "interior refrigerator green"
+prev_title = ""
 views = 14
 ids = [1840]
 +++

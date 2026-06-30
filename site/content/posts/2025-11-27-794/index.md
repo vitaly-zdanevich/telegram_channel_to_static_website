@@ -1,17 +1,20 @@
 +++
-title = "wikipedia delitionism"
+title = ""
 date = 2025-11-27T20:37:18+00:00
 description = "wikipedia delitionism You can see this stark difference between old Wikipedia and modern Wikipedia: in the early days you could have things like articles on each chapter of Atlas Shrugged or each…"
 
 [taxonomies]
+days = ["2025-11-27"]
 tags = ["wikipedia", "delitionism"]
 
 [extra]
+id = 794
+day = "2025-11-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/794"
 next_id = 795
-next_title = "Фильм \"Лучше не бывает\": несколько минут в разных русских озвучках"
+next_title = ""
 prev_id = 793
-prev_title = "ad game tank wwii music warpath"
+prev_title = ""
 views = 56
 ids = [794]
 +++

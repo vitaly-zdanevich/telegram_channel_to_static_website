@@ -1,17 +1,20 @@
 +++
-title = "russia yeltsin ketchup tea sugar year_1991 video"
+title = ""
 date = 2025-09-16T08:49:43+00:00
 description = "russia yeltsin ketchup tea sugar year1991 Source"
 
 [taxonomies]
+days = ["2025-09-16"]
 tags = ["russia", "yeltsin", "ketchup", "tea", "sugar", "year_1991", "video"]
 
 [extra]
+id = 672
+day = "2025-09-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/672"
 next_id = 673
-next_title = "Kubernetes in my day-to-day life VS how it was sold to me"
+next_title = ""
 prev_id = 671
-prev_title = "video film night_watch zavulon"
+prev_title = ""
 views = 34
 ids = [672]
 +++

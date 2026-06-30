@@ -1,14 +1,19 @@
 +++
-title = "One of my hobbies - creating so called userstyles - custom CSS for me."
+title = ""
 date = 2025-01-29T05:53:49+00:00
 description = "One of my hobbies - creating so called userstyles - custom CSS for me. I remember beautiful words about personalized medicine, movies and everything, but common web design is... many websites still…"
 
+[taxonomies]
+days = ["2025-01-29"]
+
 [extra]
+id = 344
+day = "2025-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/344"
 next_id = 345
-next_title = "lapenko art dog painting religion video"
+next_title = ""
 prev_id = 343
-prev_title = "ai"
+prev_title = ""
 views = 46
 ids = [344]
 +++

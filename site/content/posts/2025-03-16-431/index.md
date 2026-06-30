@@ -1,17 +1,20 @@
 +++
-title = "australia jug video"
+title = ""
 date = 2025-03-16T20:19:10+00:00
 description = "australia jugSource"
 
 [taxonomies]
+days = ["2025-03-16"]
 tags = ["australia", "jug", "video"]
 
 [extra]
+id = 431
+day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/431"
 next_id = 432
-next_title = "animal flying_squirrel love video"
+next_title = ""
 prev_id = 430
-prev_title = "scrum story_points work video"
+prev_title = ""
 views = 39
 ids = [431]
 +++

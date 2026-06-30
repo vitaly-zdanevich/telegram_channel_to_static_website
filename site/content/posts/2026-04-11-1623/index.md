@@ -1,18 +1,21 @@
 +++
-title = "Usual school in china?"
+title = ""
 date = 2026-04-11T23:26:15+00:00
 description = "Usual school in china? lenin 【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】"
 
 [taxonomies]
+days = ["2026-04-11"]
 tags = ["school", "china", "lenin"]
 
 [extra]
+id = 1623
+day = "2026-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1623"
 og_image = "5391330184927058070_1255266877_460003478.jpg"
 next_id = 1624
-next_title = "preview on bilibili"
+next_title = ""
 prev_id = 1622
-prev_title = "Про викиданные/wikidata (открытая база данных на SPARQL), wikimedia, wikipedia"
+prev_title = ""
 views = 22
 ids = [1623]
 +++

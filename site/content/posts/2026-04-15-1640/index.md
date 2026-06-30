@@ -1,18 +1,21 @@
 +++
-title = "webextension: after tab close - switch to the previously active tab"
+title = ""
 date = 2026-04-15T13:04:57+00:00
 description = "firefox webextension: after tab close - switch to the previously active tab"
 
 [taxonomies]
+days = ["2026-04-15"]
 tags = ["firefox", "webextension", "tab"]
 
 [extra]
+id = 1640
+day = "2026-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1640"
 og_image = "5404543896626336747_1258343434_460002283.jpg"
 next_id = 1641
-next_title = "Георгий Горгиладзе: от тяжелых болезней к выздоровлению, рекорду Гиннесса и стартапу в области HealthTech"
+next_title = ""
 prev_id = 1637
-prev_title = "ДА Вінницької області--01 Фонди до 1917 року--0230--010230-01-01583 image01086.jpg"
+prev_title = ""
 views = 23
 ids = [1640]
 +++

@@ -1,18 +1,21 @@
 +++
-title = "My new project built with llm codex gpt-5.5 xhigh: bot for telegram - to search and listen to youtube"
+title = ""
 date = 2026-05-21T06:52:35+00:00
 description = "My new project built with llm codex gpt-5.5 xhigh: bot for telegram - to search and listen to youtube"
 
 [taxonomies]
+days = ["2026-05-21"]
 tags = ["llm", "codex", "gpt", "bot", "telegram", "youtube"]
 
 [extra]
+id = 1784
+day = "2026-05-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1784"
 og_image = "5222276797527956531_1215906068_460004403.jpg"
 next_id = 1785
-next_title = "Another llm victory: repack of the official evernote client"
+next_title = ""
 prev_id = 1781
-prev_title = "mem limited by the technology of my time"
+prev_title = ""
 views = 37
 ids = [1784]
 +++

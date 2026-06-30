@@ -1,17 +1,20 @@
 +++
-title = "Unreleased game Империя from elemental_games, like space_rangers"
+title = ""
 date = 2026-03-24T00:25:13+00:00
 description = "Unreleased game Империя from elementalgames, like spacerangers year2012"
 
 [taxonomies]
+days = ["2026-03-24"]
 tags = ["elemental_games", "space_rangers", "year_2012", "video"]
 
 [extra]
+id = 1501
+day = "2026-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1501"
 next_id = 1502
-next_title = "Evropayskye gubernii Rossii 1910.png"
+next_title = ""
 prev_id = 1500
-prev_title = "Группы и теория гомотопий (трэш трейлер)"
+prev_title = ""
 views = 18
 ids = [1501]
 +++

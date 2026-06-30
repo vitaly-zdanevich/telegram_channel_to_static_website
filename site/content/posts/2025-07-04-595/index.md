@@ -1,18 +1,21 @@
 +++
-title = "preservation belarus library science"
+title = ""
 date = 2025-07-04T15:26:27+00:00
 description = "preservation belarus library science Для меня было открытием, что абсолютное большинство научных материалов до сих пор не в сети. Я работал в Центральной научной библиотеке Академии наук и понял, что…"
 
 [taxonomies]
+days = ["2025-07-04"]
 tags = ["preservation", "belarus", "library", "science"]
 
 [extra]
+id = 595
+day = "2025-07-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/595"
 og_image = "5422520353390981486_1262528904_456257902.jpg"
 next_id = 596
-next_title = "My another userscript: small toggle for dark_mode on stackexchange"
+next_title = ""
 prev_id = 594
-prev_title = "webdesign plan9"
+prev_title = ""
 views = 50
 ids = [595]
 +++

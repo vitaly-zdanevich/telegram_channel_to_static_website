@@ -1,16 +1,19 @@
 +++
-title = "video"
+title = ""
 date = 2025-01-25T22:17:43+00:00
 
 [taxonomies]
+days = ["2025-01-25"]
 tags = ["video"]
 
 [extra]
+id = 334
+day = "2025-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/334"
 next_id = 335
-next_title = "2025-01-26 06:40"
+next_title = ""
 prev_id = 333
-prev_title = "I built a very powerful PC, liquid cooling, 64 GB of DDR5, but Facebook still SLOW"
+prev_title = ""
 views = 53
 ids = [334]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "preservation internet_archive short music tape audio"
+title = ""
 date = 2026-04-24T21:56:38+00:00
 description = "preservation internetarchive short music tape audio Source"
 
 [taxonomies]
+days = ["2026-04-24"]
 tags = ["preservation", "internet_archive", "short", "music", "tape", "audio"]
 
 [extra]
+id = 1680
+day = "2026-04-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1680"
 next_id = 1681
-next_title = "google found a quote that exists on youtube only"
+next_title = ""
 prev_id = 1679
-prev_title = "Still running my experiment about porting prime_world from Windows/DirectX to Linux/OpenGL, 100% on autopilot..."
+prev_title = ""
 views = 16
 ids = [1680]
 +++

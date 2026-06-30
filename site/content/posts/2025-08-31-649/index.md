@@ -1,18 +1,21 @@
 +++
-title = "Do you remember such webdesign?"
+title = ""
 date = 2025-08-31T04:25:59+00:00
 description = "Do you remember such webdesign? login gamespot Source"
 
 [taxonomies]
+days = ["2025-08-31"]
 tags = ["webdesign", "login", "gamespot"]
 
 [extra]
+id = 649
+day = "2025-08-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/649"
 og_image = "5305527003321070773_1235289267_456258741.jpg"
 next_id = 650
-next_title = "Wow in svg we can have css, like"
+next_title = ""
 prev_id = 648
-prev_title = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы"
+prev_title = ""
 views = 43
 ids = [649]
 +++

@@ -1,17 +1,20 @@
 +++
-title = "web3 audio platform, opensource, on ipfs, I uploaded complexnumbers to it"
+title = ""
 date = 2024-11-02T00:38:07+00:00
 description = "web3 audio platform, opensource, on ipfs, I uploaded complexnumbers to it"
 
 [taxonomies]
+days = ["2024-11-02"]
 tags = ["web3", "opensource", "ipfs", "complexnumbers"]
 
 [extra]
+id = 175
+day = "2024-11-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/175"
 next_id = 176
-next_title = "vr"
+next_title = ""
 prev_id = 174
-prev_title = "Wow border-radius generator, so many values"
+prev_title = ""
 views = 39
 ids = [175]
 +++

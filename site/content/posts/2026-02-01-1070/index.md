@@ -1,18 +1,21 @@
 +++
-title = "logo wikimedia wikidata data"
+title = ""
 date = 2026-02-01T14:07:09+00:00
 description = "logo wikimedia wikidata data From"
 
 [taxonomies]
+days = ["2026-02-01"]
 tags = ["logo", "wikimedia", "wikidata", "data"]
 
 [extra]
+id = 1070
+day = "2026-02-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1070"
 og_image = "5188422654120103187_1208023786_460000531.jpg"
 next_id = 1071
-next_title = "journal game_exe legs year_2005"
+next_title = ""
 prev_id = 1069
-prev_title = "webdesign map openstreetmap wolt delivery"
+prev_title = ""
 views = 12
 ids = [1070]
 +++

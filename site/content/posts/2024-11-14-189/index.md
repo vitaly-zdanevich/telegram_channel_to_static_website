@@ -1,15 +1,20 @@
 +++
-title = "2024-11-14 08:25"
+title = ""
 date = 2024-11-14T08:25:49+00:00
 description = "Source"
 
+[taxonomies]
+days = ["2024-11-14"]
+
 [extra]
+id = 189
+day = "2024-11-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/189"
 og_image = "5308050846363281449_1235876895_456255529.jpg"
 next_id = 190
-next_title = "game stalker2"
+next_title = ""
 prev_id = 188
-prev_title = "Love such comments code"
+prev_title = ""
 views = 40
 ids = [189]
 +++

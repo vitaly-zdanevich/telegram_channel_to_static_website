@@ -1,17 +1,20 @@
 +++
-title = "Остров в океане"
+title = ""
 date = 2026-05-16T16:26:15+00:00
-description = "music sunboy From Про исполнителя"
+description = "music sunboy Остров в океане From Про исполнителя"
 
 [taxonomies]
+days = ["2026-05-16"]
 tags = ["music", "sunboy"]
 
 [extra]
+id = 1764
+day = "2026-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1764"
 next_id = 1765
-next_title = "bilibili verification with 100 questions - to be able to leave comments"
+next_title = ""
 prev_id = 1763
-prev_title = "error gitlab contradiction"
+prev_title = ""
 views = 24
 ids = [1764]
 +++
@@ -19,6 +22,7 @@ ids = [1764]
 {{ tag(t="music") }}
 {{ tag(t="sunboy") }}
 
+**Остров в океане**
 
 From <https://www.youtube.com/watch?v=rjvImL06_1k>
 

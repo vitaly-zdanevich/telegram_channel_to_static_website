@@ -1,21 +1,26 @@
 +++
-title = "Imagine a 2d side-scroll quest-action game with such visual style"
+title = ""
 date = 2025-08-06T18:48:06+00:00
-description = "Decoration sketch for the play 'King Lear' (1948) by Sergo Kobuladze Georgian State Museum of Theatre, Music, Film and Choreography - Art Palace games art sergokobuladze 1909 - 1978 sakartvelo…"
+description = "Imagine a 2d side-scroll quest-action game with such visual style Decoration sketch for the play 'King Lear' (1948) by Sergo Kobuladze Georgian State Museum of Theatre, Music, Film and Choreography -…"
 
 [taxonomies]
+days = ["2025-08-06"]
 tags = ["games", "art", "sergo_kobuladze", "sakartvelo"]
 
 [extra]
+id = 617
+day = "2025-08-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/617"
 og_image = "5233728241192268441_1218572315_456258201.jpg"
 next_id = 618
-next_title = "Georgian (604).jpg"
+next_title = ""
 prev_id = 616
-prev_title = "dark_mode gif video"
+prev_title = ""
 views = 38
 ids = [617]
 +++
+
+Imagine a 2d side-scroll quest-action game with such visual style
 
 > Decoration sketch for the play 'King Lear' (1948) by Sergo Kobuladze Georgian State Museum of Theatre, Music, Film and Choreography - Art Palace
 

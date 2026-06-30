@@ -1,15 +1,20 @@
 +++
-title = "Wow border-radius generator, so many values"
+title = ""
 date = 2024-11-01T22:30:53+00:00
 description = "Wow border-radius generator, so many values"
 
+[taxonomies]
+days = ["2024-11-01"]
+
 [extra]
+id = 174
+day = "2024-11-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/174"
 og_image = "5271829222492594981_1227443391_456254245.jpg"
 next_id = 175
-next_title = "web3 audio platform, opensource, on ipfs, I uploaded complexnumbers to it"
+next_title = ""
 prev_id = 173
-prev_title = "2024-10-31 19:24"
+prev_title = ""
 views = 35
 ids = [174]
 +++

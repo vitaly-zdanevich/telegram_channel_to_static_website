@@ -1,18 +1,21 @@
 +++
-title = "LOVE this vr game, oculus_quest3 asgards_wrath2"
+title = ""
 date = 2024-10-13T04:13:49+00:00
 description = "LOVE this vr game, oculusquest3 asgardswrath2"
 
 [taxonomies]
+days = ["2024-10-13"]
 tags = ["vr", "game", "oculus_quest3", "asgards_wrath2"]
 
 [extra]
+id = 160
+day = "2024-10-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/160"
 og_image = "01.jpg"
 next_id = 161
-next_title = "My talk in WMCEE 2024"
+next_title = ""
 prev_id = 159
-prev_title = "Wow design"
+prev_title = ""
 views = 65
 ids = [160]
 +++

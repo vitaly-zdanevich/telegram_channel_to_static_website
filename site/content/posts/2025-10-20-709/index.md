@@ -1,18 +1,21 @@
 +++
-title = "wikidata script to show youtube embeds, spotify, facebook and others"
+title = ""
 date = 2025-10-20T13:44:34+00:00
 description = "wikidata script to show youtube embeds, spotify, facebook and others Example item from the screenshot"
 
 [taxonomies]
+days = ["2025-10-20"]
 tags = ["wikidata", "youtube", "spotify", "facebook"]
 
 [extra]
+id = 709
+day = "2025-10-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/709"
 og_image = "5454198108020933187_1269904456_456262211.jpg"
 next_id = 710
-next_title = "Король и Шут (сериал)"
+next_title = ""
 prev_id = 708
-prev_title = "Not my photo."
+prev_title = ""
 views = 31
 ids = [709]
 +++

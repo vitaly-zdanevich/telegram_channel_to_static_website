@@ -1,21 +1,26 @@
 +++
-title = "Фильм \"Лучше не бывает\": несколько минут в разных русских озвучках"
+title = ""
 date = 2025-12-02T22:06:52+00:00
-description = "Обратил внимание как отличается перевод/озвучка. film asgoodasitgets translation russian"
+description = "Фильм \"Лучше не бывает\": несколько минут в разных русских озвучках Обратил внимание как отличается перевод/озвучка. film asgoodasitgets translation russian"
 
 [taxonomies]
+days = ["2025-12-02"]
 tags = ["film", "as_good_as_it_gets", "translation", "russian"]
 
 [extra]
+id = 795
+day = "2025-12-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/795"
 og_image = "01.jpg"
 next_id = 796
-next_title = "Дом со щуками"
+next_title = ""
 prev_id = 794
-prev_title = "wikipedia delitionism"
+prev_title = ""
 views = 60
 ids = [795]
 +++
+
+Фильм "Лучше не бывает": несколько минут в разных русских озвучках
 
 Обратил внимание как отличается перевод/озвучка.
 

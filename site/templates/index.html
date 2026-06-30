@@ -3,11 +3,12 @@
   {% if config.description and paginator.current_index == 1 %}<p class="lead">{{ config.description }}</p>{% endif %}
   {% for page in paginator.pages %}
     <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
-      <h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+      {% if page.title %}<h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>{% endif %}
       <p class="meta">
-        <time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time>
+        <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
         {% if page.extra.views %}· 👁 {{ page.extra.views }}{% endif %}
         {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
+        {% if not page.title %}· <a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
       </p>
       <div class="content">{{ page.content | safe }}</div>
       {% if config.extra.tags_footer and page.taxonomies.tags %}

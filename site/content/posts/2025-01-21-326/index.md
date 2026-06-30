@@ -1,19 +1,25 @@
 +++
-title = "full metal alchemist"
+title = ""
 date = 2025-01-21T00:53:03+00:00
+description = "full metal alchemist"
 
 [taxonomies]
+days = ["2025-01-21"]
 tags = ["video"]
 
 [extra]
+id = 326
+day = "2025-01-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/326"
 next_id = 328
-next_title = "video"
+next_title = ""
 prev_id = 324
-prev_title = "embeded разработчики и 100 байт"
+prev_title = ""
 views = 43
 ids = [326, 327]
 +++
+
+full metal alchemist
 
 {{ video(src="01.mp4") }}
 

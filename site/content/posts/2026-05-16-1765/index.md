@@ -1,18 +1,21 @@
 +++
-title = "bilibili verification with 100 questions - to be able to leave comments"
+title = ""
 date = 2026-05-16T23:09:55+00:00
 description = "bilibili verification with 100 questions - to be able to leave comments"
 
 [taxonomies]
+days = ["2026-05-16"]
 tags = ["bilibili"]
 
 [extra]
+id = 1765
+day = "2026-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1765"
 og_image = "01.jpg"
 next_id = 1775
-next_title = "travel philippines trash asia video"
+next_title = ""
 prev_id = 1764
-prev_title = "Остров в океане"
+prev_title = ""
 views = 31
 ids = [1765]
 +++

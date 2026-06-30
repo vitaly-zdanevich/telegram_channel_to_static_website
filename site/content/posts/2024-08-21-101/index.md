@@ -1,14 +1,19 @@
 +++
-title = "2024-08-21 19:43"
+title = ""
 date = 2024-08-21T19:43:24+00:00
 description = "This initiative calls to require publishers that sell or license videogames to consumers in the European Union (or related features and assets sold for videogames they operate) to leave said…"
 
+[taxonomies]
+days = ["2024-08-21"]
+
 [extra]
+id = 101
+day = "2024-08-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/101"
 next_id = 102
-next_title = "2024-08-22 03:02"
+next_title = ""
 prev_id = 99
-prev_title = "2024-08-21 16:42"
+prev_title = ""
 views = 27
 ids = [101]
 +++

@@ -1,22 +1,27 @@
 +++
-title = "Lost."
+title = ""
 date = 2025-06-13T20:34:42+00:00
-description = "archiving"
+description = "archiving Lost."
 
 [taxonomies]
+days = ["2025-06-13"]
 tags = ["archiving"]
 
 [extra]
+id = 573
+day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/573"
 og_image = "5359475683799200970_1247850173_456258762.jpg"
 next_id = 574
-next_title = "korol_i_shut"
+next_title = ""
 prev_id = 571
-prev_title = "leetcode with games :("
+prev_title = ""
 views = 39
 ids = [573]
 +++
 
 {{ tag(t="archiving") }}
+
+Lost.
 
 ![](5359475683799200970_1247850173_456258762.jpg)

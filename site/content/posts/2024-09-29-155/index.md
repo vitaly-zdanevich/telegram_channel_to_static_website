@@ -1,14 +1,19 @@
 +++
-title = "Python in a browser"
+title = ""
 date = 2024-09-29T18:59:13+00:00
 description = "Python in a browser"
 
+[taxonomies]
+days = ["2024-09-29"]
+
 [extra]
+id = 155
+day = "2024-09-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/155"
 next_id = 156
-next_title = "2024-10-01 14:31"
+next_title = ""
 prev_id = 154
-prev_title = "Every day we are further away from God."
+prev_title = ""
 views = 56
 ids = [155]
 +++

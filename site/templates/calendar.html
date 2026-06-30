@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}{{ config.extra.i18n.calendar }} · {{ config.title }}{% endblock title %}
+{% block content %}
+  <h1>{{ config.extra.i18n.calendar }}</h1>
+  {{ page.content | safe }}
+{% endblock content %}

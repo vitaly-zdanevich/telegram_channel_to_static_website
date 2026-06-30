@@ -1,15 +1,20 @@
 +++
-title = "Прывiтаначкi, я пачаў афiцыйны пераклад знакамiтай кампутарнай гульнi Space Rangers (з расейскай) - мова будзе адразу iнтэгравана ў Steam."
+title = ""
 date = 2025-02-26T02:58:30+00:00
 description = "Прывiтаначкi, я пачаў афiцыйны пераклад знакамiтай кампутарнай гульнi Space Rangers (з расейскай) - мова будзе адразу iнтэгравана ў Steam. Калi ласка дапамажыце, ня думаю што мая мова добрая.…"
 
+[taxonomies]
+days = ["2025-02-26"]
+
 [extra]
+id = 380
+day = "2025-02-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/380"
 og_image = "5325658489994995451_1239976494_456255227.jpg"
 next_id = 381
-next_title = "няшка"
+next_title = ""
 prev_id = 379
-prev_title = "anime music choir"
+prev_title = ""
 views = 90
 forwarded_from = "Vitaly Zdanevich"
 forwarded_from_url = "https://t.me/vitaly_zdanevich"

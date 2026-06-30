@@ -1,17 +1,20 @@
 +++
-title = "ironman arsen_markaryan meaning comparison motivation"
+title = ""
 date = 2025-03-08T23:16:25+00:00
 description = "ironman arsenmarkaryan meaning comparison motivation Source"
 
 [taxonomies]
+days = ["2025-03-08"]
 tags = ["ironman", "arsen_markaryan", "meaning", "comparison", "motivation"]
 
 [extra]
+id = 399
+day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/399"
 next_id = 400
-next_title = "2025-03-10 16:28"
+next_title = ""
 prev_id = 398
-prev_title = "anime voice"
+prev_title = ""
 views = 53
 ids = [399]
 +++

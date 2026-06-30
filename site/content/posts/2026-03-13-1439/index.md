@@ -1,18 +1,21 @@
 +++
-title = "webdesign animal cat"
+title = ""
 date = 2026-03-13T23:58:31+00:00
 description = "webdesign animal cat"
 
 [taxonomies]
+days = ["2026-03-13"]
 tags = ["webdesign", "animal", "cat"]
 
 [extra]
+id = 1439
+day = "2026-03-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1439"
 og_image = "01.jpg"
 next_id = 1443
-next_title = "056-248 Слоним, снято 5 июня 2005.jpg"
+next_title = ""
 prev_id = 1438
-prev_title = "Sakartvelo 1915 N05.pdf"
+prev_title = ""
 views = 14
 ids = [1439]
 +++

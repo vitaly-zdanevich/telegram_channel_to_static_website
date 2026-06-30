@@ -1,18 +1,21 @@
 +++
-title = "leetcode with games :("
+title = ""
 date = 2025-06-13T20:14:03+00:00
 description = "livecoding batman binarysearch leetcode with games :("
 
 [taxonomies]
+days = ["2025-06-13"]
 tags = ["livecoding", "batman", "binary_search", "leetcode"]
 
 [extra]
+id = 571
+day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/571"
 og_image = "01.jpg"
 next_id = 573
-next_title = "Lost."
+next_title = ""
 prev_id = 570
-prev_title = "meditation dantealigieri video"
+prev_title = ""
 views = 31
 ids = [571]
 +++

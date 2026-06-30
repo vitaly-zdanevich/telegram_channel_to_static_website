@@ -1,17 +1,20 @@
 +++
-title = "warcraft video"
+title = ""
 date = 2025-01-28T06:39:54+00:00
 description = "warcraft Source"
 
 [taxonomies]
+days = ["2025-01-28"]
 tags = ["warcraft", "video"]
 
 [extra]
+id = 338
+day = "2025-01-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/338"
 next_id = 339
-next_title = "kazakhstan video"
+next_title = ""
 prev_id = 337
-prev_title = "2025-01-26 22:56"
+prev_title = ""
 views = 84
 ids = [338]
 +++

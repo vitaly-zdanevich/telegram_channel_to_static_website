@@ -1,13 +1,18 @@
 +++
-title = "2024-11-06 10:36"
+title = ""
 date = 2024-11-06T10:36:50+00:00
 
+[taxonomies]
+days = ["2024-11-06"]
+
 [extra]
+id = 184
+day = "2024-11-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/184"
 next_id = 185
-next_title = "neovim animation video"
+next_title = ""
 prev_id = 183
-prev_title = "2024-11-06 05:30"
+prev_title = ""
 views = 47
 ids = [184]
 +++

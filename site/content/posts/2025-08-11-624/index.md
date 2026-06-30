@@ -1,18 +1,21 @@
 +++
-title = "ai llm ddos"
+title = ""
 date = 2025-08-11T10:00:06+00:00
 description = "ai llm ddos"
 
 [taxonomies]
+days = ["2025-08-11"]
 tags = ["ai", "llm", "ddos"]
 
 [extra]
+id = 624
+day = "2025-08-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/624"
 og_image = "5246841888743486844_1221625574_456258940.jpg"
 next_id = 625
-next_title = "50 рублей РСФСР 1923 года. Реверс.jpg"
+next_title = ""
 prev_id = 623
-prev_title = "Can you imagine that, I know this guy"
+prev_title = ""
 views = 29
 ids = [624]
 +++

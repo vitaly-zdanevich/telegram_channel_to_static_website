@@ -1,22 +1,23 @@
 +++
-title = "Корпускулярно-волновой дуализм"
+title = ""
 date = 2025-11-05T11:43:09+00:00
-description = "Корпускулярно-волновой дуализм music musicrussian нтр [Куплет 1] Сначала свет нам всем представлялся ясным Не открыт интернет, мы ходим к Ньютону в ясли Проста прекрасная природа, словно пение птиц…"
+description = "music musicrussian нтр [Куплет 1] Сначала свет нам всем представлялся ясным Не открыт интернет, мы ходим к Ньютону в ясли Проста прекрасная природа, словно пение птиц Свет видится нам как поток…"
 
 [taxonomies]
+days = ["2025-11-05"]
 tags = ["music", "music_russian", "нтр"]
 
 [extra]
+id = 738
+day = "2025-11-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/738"
 next_id = 739
-next_title = "2025-11-05 11:43"
+next_title = ""
 prev_id = 737
-prev_title = "webdesign webdesign_black video"
+prev_title = ""
 views = 26
 ids = [738]
 +++
-
-[Корпускулярно-волновой дуализм](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE-%D0%B2%D0%BE%D0%BB%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B4%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC)
 
 {{ tag(t="music") }}
 {{ tag(t="music_russian") }}
@@ -26,5 +27,6 @@ ids = [738]
 
 <https://vk.com/nii_rap>
 
+[https://ru.wikipedia.org/wiki/Корпускулярно-волновой\_дуализм](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE-%D0%B2%D0%BE%D0%BB%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B4%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC)
 
 <https://genius.com/Nauchnotechnicheskirap-wave-particle-duality-lyrics>

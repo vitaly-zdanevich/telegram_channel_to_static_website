@@ -1,19 +1,24 @@
 +++
-title = "1942 (video game)"
+title = ""
 date = 2024-08-27T07:53:54+00:00
-description = "1942 (video game)"
+description = "So many platforms for a game)"
+
+[taxonomies]
+days = ["2024-08-27"]
 
 [extra]
+id = 137
+day = "2024-08-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/137"
 og_image = "5362002881210867572_1248438582_456253300.jpg"
 next_id = 138
-next_title = "Played yesterday of Moss: Book 2 in Quest 2 - great VR, great game."
+next_title = ""
 prev_id = 128
-prev_title = "suno.com is great - the best service for songs generation."
+prev_title = ""
 views = 47
 ids = [137]
 +++
 
-[1942 (video game)](https://en.wikipedia.org/wiki/1942_%28video_game%29)
+So many platforms for a [game](https://en.wikipedia.org/wiki/1942_(video_game))
 
 ![](5362002881210867572_1248438582_456253300.jpg)

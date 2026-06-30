@@ -1,17 +1,20 @@
 +++
-title = "And another bash alias"
+title = ""
 date = 2026-06-24T20:23:58+00:00
 description = "And another bash alias: Better word movement: treat aaabbbccc as ONE word Ctrl + Left → move left by \"word\" (including underscores) Ctrl + Right → move right by \"word\" (including underscores) if [[…"
 
 [taxonomies]
+days = ["2026-06-24"]
 tags = ["bash", "alias"]
 
 [extra]
+id = 1864
+day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1864"
 next_id = 1865
-next_title = "Wow, Gemini generates good logos, tried it for the first time"
+next_title = ""
 prev_id = 1863
-prev_title = "My new bash alias"
+prev_title = ""
 views = 11
 ids = [1864]
 +++

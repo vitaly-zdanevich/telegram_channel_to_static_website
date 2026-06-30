@@ -1,20 +1,25 @@
 +++
-title = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch"
+title = ""
 date = 2025-08-20T22:20:06+00:00
-description = "music anime russian sugar Source"
+description = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch music anime russian sugar Source"
 
 [taxonomies]
+days = ["2025-08-20"]
 tags = ["music", "anime", "russian", "sugar"]
 
 [extra]
+id = 633
+day = "2025-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/633"
 next_id = 634
-next_title = "dress tshirt git github porn"
+next_title = ""
 prev_id = 632
-prev_title = "Как работает дата-центр Яндекса в Финляндии"
+prev_title = ""
 views = 39
 ids = [633]
 +++
+
+`【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch`
 
 {{ tag(t="music") }}
 {{ tag(t="anime") }}

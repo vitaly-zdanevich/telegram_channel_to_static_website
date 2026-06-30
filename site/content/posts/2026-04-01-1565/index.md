@@ -1,18 +1,21 @@
 +++
-title = "alien screenshot horror giger gimp green rice"
+title = ""
 date = 2026-04-01T18:18:34+00:00
 description = "alien screenshot horror giger gimp green rice Source"
 
 [taxonomies]
+days = ["2026-04-01"]
 tags = ["alien", "screenshot", "horror", "giger", "gimp", "green", "rice"]
 
 [extra]
+id = 1565
+day = "2026-04-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1565"
 og_image = "5363921743753450846_1248885352_460002654.jpg"
 next_id = 1566
-next_title = "That movie is important to me, but surprise - 33/100 on metacritic"
+next_title = ""
 prev_id = 1564
-prev_title = "god smartphone game"
+prev_title = ""
 views = 20
 ids = [1565]
 +++

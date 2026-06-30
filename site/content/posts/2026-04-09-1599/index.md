@@ -1,18 +1,21 @@
 +++
-title = "My first blog post to wikimedia_diff, about wikimedia_commons, preservation"
+title = ""
 date = 2026-04-09T11:01:17+00:00
 description = "My first blog post to wikimediadiff, about wikimediacommons, preservation Also at"
 
 [taxonomies]
+days = ["2026-04-09"]
 tags = ["post", "wikimedia_diff", "wikimedia_commons", "preservation"]
 
 [extra]
+id = 1599
+day = "2026-04-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1599"
 og_image = "5384230363468600311_1253613821_460002295.jpg"
 next_id = 1600
-next_title = "icq offline abandone sony_ericsson"
+next_title = ""
 prev_id = 1595
-prev_title = "indika game religion christianity webdesign"
+prev_title = ""
 views = 19
 ids = [1599]
 +++

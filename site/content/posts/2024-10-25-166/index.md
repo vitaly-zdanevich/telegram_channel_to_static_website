@@ -1,17 +1,24 @@
 +++
-title = "List mp3 with bitrate and sorting"
+title = ""
 date = 2024-10-25T22:43:46+00:00
-description = "while read i; do echo \"$(ffprobe -i \"$i\" 2&1 | egrep -o 'bitrate: [0-9]{1,3} .{4}' | cut -d' ' -f2-3)\" \"$i\"; done < <(find . -type f -printf '%Pn' ( -iname .ogg -o -iname .mp3 )) | sort -n -k1,1 128…"
+description = "List mp3 with bitrate and sorting while read i; do echo \"$(ffprobe -i \"$i\" 2&1 | egrep -o 'bitrate: [0-9]{1,3} .{4}' | cut -d' ' -f2-3)\" \"$i\"; done < <(find . -type f -printf '%Pn' ( -iname .ogg -o…"
+
+[taxonomies]
+days = ["2024-10-25"]
 
 [extra]
+id = 166
+day = "2024-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/166"
 next_id = 167
-next_title = "Author: Oleg Paschenko"
+next_title = ""
 prev_id = 165
-prev_title = "rice video"
+prev_title = ""
 views = 31
 ids = [166]
 +++
+
+List mp3 with bitrate and sorting
 
 ```
 while read i; do echo "$(ffprobe -i "$i" 2>&1 | egrep -o 'bitrate: [0-9]{1,3} .{4}' | cut -d' ' -f2-3)" "$i"; done < <(find . -type f -printf '%P\n' \( -iname \*.ogg -o -iname \*.mp3 \)) | sort -n -k1,1

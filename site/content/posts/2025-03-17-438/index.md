@@ -1,17 +1,20 @@
 +++
-title = "die_antwoord"
+title = ""
 date = 2025-03-17T01:15:13+00:00
 description = "dieantwoord Source"
 
 [taxonomies]
+days = ["2025-03-17"]
 tags = ["die_antwoord"]
 
 [extra]
+id = 438
+day = "2025-03-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/438"
 next_id = 439
-next_title = "korea ai ai_video star_wars demonflyingfox"
+next_title = ""
 prev_id = 436
-prev_title = "Die Antwoord Ninja and Yolandi on the street.jpg"
+prev_title = ""
 views = 45
 ids = [438]
 +++

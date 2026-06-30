@@ -1,17 +1,20 @@
 +++
-title = "How heroes_of_might_and_magic3 developed - from diaries of Gregory Fulton"
+title = ""
 date = 2025-08-29T07:21:00+00:00
 description = "How heroesofmightandmagic3 developed - from diaries of Gregory Fulton: Everyone in the game industry knows the term \"crunch time.\" Those not in the industry may ask, \"What is crunch time?\" Long…"
 
 [taxonomies]
+days = ["2025-08-29"]
 tags = ["heroes_of_might_and_magic3"]
 
 [extra]
+id = 643
+day = "2025-08-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/643"
 next_id = 644
-next_title = "stat wikipedia ai"
+next_title = ""
 prev_id = 642
-prev_title = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа"
+prev_title = ""
 views = 32
 ids = [643]
 +++

@@ -1,18 +1,21 @@
 +++
-title = "software tui torrent"
+title = ""
 date = 2025-12-21T12:58:47+00:00
 description = "software tui torrentSource"
 
 [taxonomies]
+days = ["2025-12-21"]
 tags = ["software", "tui", "torrent"]
 
 [extra]
+id = 808
+day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/808"
 og_image = "5350620010994404158_1245788301_460000062.jpg"
 next_id = 809
-next_title = "cli tui design"
+next_title = ""
 prev_id = 806
-prev_title = "Alien: Covenant"
+prev_title = ""
 views = 40
 ids = [808]
 +++

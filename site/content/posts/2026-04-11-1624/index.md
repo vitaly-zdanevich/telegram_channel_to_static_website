@@ -1,18 +1,21 @@
 +++
-title = "preview on bilibili"
+title = ""
 date = 2026-04-11T23:33:44+00:00
 description = "preview on bilibili anime"
 
 [taxonomies]
+days = ["2026-04-11"]
 tags = ["preview", "bilibili", "anime"]
 
 [extra]
+id = 1624
+day = "2026-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1624"
 og_image = "01.jpg"
 next_id = 1629
-next_title = "ДА Харківської області--01--0040--0105--010040-105-00969 804-03494422-l-m-a-40-105-969-0670.jpg"
+next_title = ""
 prev_id = 1623
-prev_title = "Usual school in china?"
+prev_title = ""
 views = 20
 ids = [1624]
 +++

@@ -1,24 +1,29 @@
 +++
-title = "Night Watch: episode with witch, in the beginning"
+title = ""
 date = 2023-08-12T18:44:07+00:00
-description = "film nightwatch"
+description = "film nightwatch Night Watch: episode with witch, in the beginning"
 
 [taxonomies]
+days = ["2023-08-12"]
 tags = ["film", "night_watch"]
 
 [extra]
+id = 29
+day = "2023-08-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/29"
 og_image = "01.jpg"
 next_id = 30
-next_title = "Дневной Дозор: конец, эпизод с исправлением судьбы"
+next_title = ""
 prev_id = 27
-prev_title = "my film korol_i_shut video"
+prev_title = ""
 views = 72
 ids = [29]
 +++
 
 {{ tag(t="film") }}
 {{ tag(t="night_watch") }}
+
+Night Watch: episode with witch, in the beginning
 
 ![video](01.jpg)
 

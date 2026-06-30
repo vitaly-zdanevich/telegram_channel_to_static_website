@@ -1,18 +1,21 @@
 +++
-title = "logo gitlab git"
+title = ""
 date = 2026-02-05T04:41:28+00:00
 description = "logo gitlab git"
 
 [taxonomies]
+days = ["2026-02-05"]
 tags = ["logo", "gitlab", "git"]
 
 [extra]
+id = 1085
+day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1085"
 og_image = "01.jpg"
 next_id = 1087
-next_title = "fashion boy"
+next_title = ""
 prev_id = 1084
-prev_title = "logo foobar audio_player"
+prev_title = ""
 views = 8
 ids = [1085]
 +++

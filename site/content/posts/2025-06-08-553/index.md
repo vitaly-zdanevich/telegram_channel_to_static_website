@@ -1,18 +1,21 @@
 +++
-title = "format"
+title = ""
 date = 2025-06-08T04:04:20+00:00
 description = "format Source"
 
 [taxonomies]
+days = ["2025-06-08"]
 tags = ["format"]
 
 [extra]
+id = 553
+day = "2025-06-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/553"
 og_image = "5344065311076383027_1244262166_456259891.jpg"
 next_id = 554
-next_title = "security wish"
+next_title = ""
 prev_id = 552
-prev_title = "arsen_markaryan health medicine psy mantoux mercury"
+prev_title = ""
 views = 38
 ids = [553]
 +++

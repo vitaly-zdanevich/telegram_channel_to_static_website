@@ -1,18 +1,21 @@
 +++
-title = "indika game religion christianity webdesign"
+title = ""
 date = 2026-04-09T09:41:00+00:00
 description = "indika game religion christianity webdesign"
 
 [taxonomies]
+days = ["2026-04-09"]
 tags = ["indika", "game", "religion", "christianity", "webdesign"]
 
 [extra]
+id = 1595
+day = "2026-04-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1595"
 og_image = "01.jpg"
 next_id = 1599
-next_title = "My first blog post to wikimedia_diff, about wikimedia_commons, preservation"
+next_title = ""
 prev_id = 1590
-prev_title = "ІР НБУВ - Київська духовна академія 1742 IMG 5180 1742.JPG"
+prev_title = ""
 views = 18
 ids = [1595]
 +++

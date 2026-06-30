@@ -1,27 +1,30 @@
 +++
-title = "Coins of Algirdas"
+title = ""
 date = 2025-09-22T10:32:11+00:00
-description = "Coins of Algirdas coin belarus history"
+description = "coin belarus history Uploaded to"
 
 [taxonomies]
+days = ["2025-09-22"]
 tags = ["coin", "belarus", "history"]
 
 [extra]
+id = 681
+day = "2025-09-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/681"
 og_image = "01.jpg"
 next_id = 683
-next_title = "Love this logo"
+next_title = ""
 prev_id = 680
-prev_title = "The Fountain"
+prev_title = ""
 views = 35
 ids = [681]
 +++
 
-[Coins of Algirdas](https://commons.wikimedia.org/wiki/Category:Coins_of_Algirdas)
-
 {{ tag(t="coin") }}
 {{ tag(t="belarus") }}
 {{ tag(t="history") }}
+
+Uploaded to <https://commons.wikimedia.org/wiki/Category:Coins_of_Algirdas>
 
 ![](01.jpg)
 

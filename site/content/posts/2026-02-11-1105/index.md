@@ -1,18 +1,21 @@
 +++
-title = "If you cannot upload your big pdf - you can extract all images from it, with original quality"
+title = ""
 date = 2026-02-11T09:32:02+00:00
 description = "commons The server did not respond within the expected time If you cannot upload your big pdf - you can extract all images from it, with original quality: import fitz PyMuPDF doc =…"
 
 [taxonomies]
+days = ["2026-02-11"]
 tags = ["commons", "pdf", "pywikibot"]
 
 [extra]
+id = 1105
+day = "2026-02-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1105"
 og_image = "5215513357908120858_1214331332_460002586.jpg"
 next_id = 1106
-next_title = "wikipedia job"
+next_title = ""
 prev_id = 1104
-prev_title = "cd to a first sorted folder, exclude hidden"
+prev_title = ""
 views = 19
 ids = [1105]
 +++

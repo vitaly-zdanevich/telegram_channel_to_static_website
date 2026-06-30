@@ -1,18 +1,21 @@
 +++
-title = "Love, Death & Robots: ending from s1ep7 Beyond the Aquila Rift"
+title = ""
 date = 2024-02-24T02:58:33+00:00
 description = "film scifi Love, Death & Robots: ending from s1ep7 Beyond the Aquila Rift"
 
 [taxonomies]
+days = ["2024-02-24"]
 tags = ["film", "scifi"]
 
 [extra]
+id = 31
+day = "2024-02-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/31"
 og_image = "01.jpg"
 next_id = 32
-next_title = "Love, Sex & Robots S1.E3: The Witness"
+next_title = ""
 prev_id = 30
-prev_title = "Дневной Дозор: конец, эпизод с исправлением судьбы"
+prev_title = ""
 views = 76
 ids = [31]
 +++

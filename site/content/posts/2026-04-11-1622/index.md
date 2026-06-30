@@ -1,18 +1,21 @@
 +++
-title = "Про викиданные/wikidata (открытая база данных на SPARQL), wikimedia, wikipedia"
+title = ""
 date = 2026-04-11T12:14:28+00:00
 description = "Про викиданные/wikidata (открытая база данных на SPARQL), wikimedia, wikipedia Моя лекция/митап в Лаборатории (это бар в Батуми). Все линки на видео"
 
 [taxonomies]
+days = ["2026-04-11"]
 tags = ["викиданные", "wikidata", "SPARQL", "wikimedia", "wikipedia", "лекция"]
 
 [extra]
+id = 1622
+day = "2026-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1622"
 og_image = "01.jpg"
 next_id = 1623
-next_title = "Usual school in china?"
+next_title = ""
 prev_id = 1613
-prev_title = "ЦДІАЛ--0080--010020-10-00088 DSC 0911.JPG"
+prev_title = ""
 views = 22
 ids = [1622]
 +++

@@ -1,18 +1,21 @@
 +++
-title = "wow in telegram we have a crypto wallet, and users can send money to their contacts, wow"
+title = ""
 date = 2025-03-24T00:23:35+00:00
 description = "wow in telegram we have a crypto wallet, and users can send money to their contacts, wow"
 
 [taxonomies]
+days = ["2025-03-24"]
 tags = ["telegram", "crypto", "wallet"]
 
 [extra]
+id = 442
+day = "2025-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/442"
 og_image = "01.jpg"
 next_id = 444
-next_title = "monetization spyware security webextension"
+next_title = ""
 prev_id = 441
-prev_title = "On Wikipedia, not all websites can be used as sources."
+prev_title = ""
 views = 30
 ids = [442]
 +++

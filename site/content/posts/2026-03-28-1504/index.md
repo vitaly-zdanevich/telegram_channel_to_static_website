@@ -1,18 +1,21 @@
 +++
-title = "dark_mode"
+title = ""
 date = 2026-03-28T02:41:03+00:00
 description = "darkmode"
 
 [taxonomies]
+days = ["2026-03-28"]
 tags = ["dark_mode"]
 
 [extra]
+id = 1504
+day = "2026-03-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1504"
 og_image = "01.jpg"
 next_id = 1506
-next_title = "shutdown cloudflare preservation school error video"
+next_title = ""
 prev_id = 1503
-prev_title = "Пишите авторам контентов - иногда они соглашаются сделать его Creative Commons"
+prev_title = ""
 views = 14
 ids = [1504]
 +++

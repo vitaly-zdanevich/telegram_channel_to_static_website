@@ -1,18 +1,21 @@
 +++
-title = "const s = \"สวัสดี\""
+title = ""
 date = 2025-09-08T10:25:01+00:00
-description = "golang utf8 fmt.Println(\"Len:\", len(s)) // Len: 18"
+description = "golang utf8 const s = \"สวัสดี\" fmt.Println(\"Len:\", len(s)) // Len: 18"
 
 [taxonomies]
+days = ["2025-09-08"]
 tags = ["golang", "utf8"]
 
 [extra]
+id = 657
+day = "2025-09-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/657"
 og_image = "5330235726836661165_1241042215_456260525.jpg"
 next_id = 658
-next_title = "В Кутаиси продолжается проект «Mural Fest» 🎨"
+next_title = ""
 prev_id = 656
-prev_title = "iran tehran photo"
+prev_title = ""
 views = 29
 ids = [657]
 +++
@@ -21,6 +24,7 @@ ids = [657]
 {{ tag(t="utf8") }}
 
 ```
+const s = "สวัสดี"
 fmt.Println("Len:", len(s)) // Len: 18
 ```
 

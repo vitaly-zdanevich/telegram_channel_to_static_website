@@ -1,15 +1,20 @@
 +++
-title = "2025-01-26 22:56"
+title = ""
 date = 2025-01-26T22:56:35+00:00
 description = "Source"
 
+[taxonomies]
+days = ["2025-01-26"]
+
 [extra]
+id = 337
+day = "2025-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/337"
 og_image = "5240297161743265404_1220101761_456257148.jpg"
 next_id = 338
-next_title = "warcraft video"
+next_title = ""
 prev_id = 336
-prev_title = "2025-01-26 20:07"
+prev_title = ""
 views = 48
 ids = [337]
 +++
