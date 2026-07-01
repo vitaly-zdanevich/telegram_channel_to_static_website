@@ -51,12 +51,43 @@ fn apple_podcast_embed(url: &str) -> Option<String> {
         .then(|| url.replacen("//podcasts.apple.com/", "//embed.podcasts.apple.com/", 1))
 }
 
+static YANDEX_TRACK: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"music\.yandex\.[a-z]+/album/(\d+)/track/(\d+)").unwrap());
+
+/// The Yandex Music iframe embed URL for the last track link in a post, if any:
+/// `music.yandex.*/album/<a>/track/<t>` → `music.yandex.ru/iframe/#track/<t>/<a>`.
+pub fn yandex_music_from(links: &[String]) -> Option<String> {
+    links.iter().rev().find_map(|l| {
+        YANDEX_TRACK
+            .captures(l)
+            .map(|c| format!("https://music.yandex.ru/iframe/#track/{}/{}", &c[2], &c[1]))
+    })
+}
+
 /// True if a filename looks like audio (by extension).
 pub fn is_audio_name(name: &str) -> bool {
     let n = name.to_ascii_lowercase();
     [".mp3", ".ogg", ".oga", ".opus", ".m4a", ".wav", ".flac", ".aac"]
         .iter()
         .any(|e| n.ends_with(e))
+}
+
+/// A "(not archived)" document to treat as the audio track (and drop once MTProto
+/// has fetched it): an audio extension, **or** a title with no real file
+/// extension — Telegram shows a podcast document's episode *title*, not a
+/// filename (e.g. "Георгий … здоровьем"). A name ending in a real extension like
+/// `.pdf` is a distinct file and is kept.
+pub fn is_probably_audio_doc(name: &str) -> bool {
+    is_audio_name(name) || !has_file_extension(name)
+}
+
+fn has_file_extension(name: &str) -> bool {
+    match name.rsplit_once('.') {
+        Some((_, ext)) => {
+            (1..=4).contains(&ext.chars().count()) && ext.chars().all(|c| c.is_ascii_alphanumeric())
+        }
+        None => false,
+    }
 }
 
 /// Best-effort file extension from a URL (query string stripped).
@@ -174,6 +205,28 @@ mod tests {
             Some("abc123XYZ".to_string())
         );
         assert_eq!(youtube_id("https://example.com/watch?v=nope"), None);
+    }
+
+    #[test]
+    fn probably_audio_doc_covers_titles() {
+        // A podcast document shows a title, not a filename → treated as audio.
+        assert!(is_probably_audio_doc("Георгий Мевлудович Горгиладзе: занялся здоровьем"));
+        assert!(is_probably_audio_doc("Episode 5 — the best one"));
+        assert!(is_probably_audio_doc("track.mp3"));
+        // A distinct real file (non-audio extension) is kept.
+        assert!(!is_probably_audio_doc("report.pdf"));
+        assert!(!is_probably_audio_doc("archive.zip"));
+    }
+
+    #[test]
+    fn yandex_music_embed_url() {
+        assert_eq!(
+            yandex_music_from(&["https://music.yandex.ru/album/22206733/track/103670414".into()])
+                .as_deref(),
+            Some("https://music.yandex.ru/iframe/#track/103670414/22206733")
+        );
+        assert_eq!(yandex_music_from(&["https://music.yandex.ru/album/1".into()]), None);
+        assert_eq!(yandex_music_from(&["https://example.com/x".into()]), None);
     }
 
     #[test]

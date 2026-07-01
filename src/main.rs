@@ -10,6 +10,7 @@ mod genius;
 mod group;
 mod html2md;
 mod i18n;
+mod liveness;
 mod media;
 mod model;
 #[cfg(feature = "mtproto")]
@@ -176,6 +177,11 @@ struct GenerateArgs {
     /// video / lyrics widget).
     #[arg(long)]
     no_genius: bool,
+
+    /// Skip the YouTube liveness check (a removed video otherwise keeps its local
+    /// media instead of being replaced by a dead embed).
+    #[arg(long)]
+    no_liveness: bool,
 
     /// Comma-separated tags to surface as `#tag` links in the top nav.
     #[arg(long)]
@@ -366,6 +372,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.genius.unwrap_or(true)
         },
+        liveness: if g.no_liveness {
+            false
+        } else {
+            fc.liveness.unwrap_or(true)
+        },
         tags_to_pages: g
             .tags_to_pages
             .clone()
@@ -485,6 +496,15 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         posts.into_iter().partition(render::is_page);
     if !page_posts.is_empty() {
         info!("{} PAGE post(s) → pages", page_posts.len());
+    }
+
+    // Check YouTube links for liveness so a *removed* video keeps its local
+    // media instead of being replaced by a dead embed (before the MTProto
+    // audio-skip + render, which both consult it).
+    if s.liveness {
+        liveness::check_youtube(&client, &mut posts, s.concurrency).await;
+        liveness::check_apple(&client, &mut posts, s.concurrency).await;
+        liveness::check_yandex(&client, &mut posts, s.concurrency).await;
     }
 
     // Optional MTProto backend: pull audio/voice (and, with MTPROTO_IMAGES=1,
@@ -629,7 +649,15 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // on the About page, after downloads so it's the real size.
     let breakdown = site::size_breakdown(&[&s.site.join("content"), &s.site.join("static")]);
     let limit = site::pages_limit(&s.base_url, s.pages_host.as_deref()).map(|l| l.bytes);
-    site::set_about_size(&s.site, &breakdown, limit, started.elapsed(), &i18n::about(&s.language));
+    let biggest = site::largest_files(&[&s.site.join("content"), &s.site.join("static")], 10);
+    site::set_about_size(
+        &s.site,
+        &breakdown,
+        limit,
+        started.elapsed(),
+        &i18n::about(&s.language),
+        &biggest,
+    );
 
     // Total on-disk footprint + per-kind breakdown (also shown on the About page).
     info!(
@@ -645,7 +673,6 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Show the 10 biggest files (descending) — what's eating the hosting budget.
     // Each is a file:// link to the post's built page so it opens in a browser
     // (the HTML exists after `zola build`).
-    let biggest = site::largest_files(&[&s.site.join("content"), &s.site.join("static")], 10);
     if !biggest.is_empty() {
         let site_abs = std::fs::canonicalize(&s.site).unwrap_or_else(|_| s.site.clone());
         info!("10 largest files:");

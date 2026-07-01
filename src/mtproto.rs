@@ -184,7 +184,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     tokio::fs::create_dir_all(&cache).await.ok();
     let photos = want_photos();
 
-    let mut audio_for: HashMap<usize, Vec<(PathBuf, Option<String>)>> = HashMap::new();
+    // (cache path, original filename, label) per post.
+    let mut audio_for: HashMap<usize, Vec<(PathBuf, Option<String>, Option<String>)>> =
+        HashMap::new();
     let mut photo_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
     let (mut n_audio, mut n_photo) = (0usize, 0usize);
 
@@ -203,7 +205,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     // skip the (often large) download to save space, unless
                     // keep_media is set.
                     if !s.keep_media
-                        && (posts[pi].youtube.is_some() || posts[pi].apple_podcast.is_some())
+                        && ((posts[pi].youtube.is_some() && !posts[pi].youtube_dead)
+                            || (posts[pi].apple_podcast.is_some() && !posts[pi].apple_dead)
+                            || (posts[pi].yandex_music.is_some() && !posts[pi].yandex_dead))
                     {
                         continue;
                     }
@@ -214,7 +218,13 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                             .await
                             .with_context(|| format!("downloading audio from message {id}"))?;
                     }
-                    audio_for.entry(pi).or_default().push((dest, None));
+                    // Original filename + full (untruncated) title/performer.
+                    let orig_name = {
+                        let n = doc.name().trim();
+                        (!n.is_empty()).then(|| n.to_string())
+                    };
+                    let label = audio_label(doc.audio_title(), doc.performer());
+                    audio_for.entry(pi).or_default().push((dest, orig_name, label));
                     n_audio += 1;
                 }
             }
@@ -237,10 +247,10 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     // drop the web's redundant "(not archived)" placeholder for the same track.
     for (pi, items) in audio_for {
         posts[pi].media.retain(|m| {
-            !matches!(m, Media::DocumentRef { filename } if crate::media::is_audio_name(filename))
+            !matches!(m, Media::DocumentRef { filename } if crate::media::is_probably_audio_doc(filename))
         });
-        for (path, title) in items {
-            posts[pi].media.push(Media::LocalAudio { path, title });
+        for (path, name, title) in items {
+            posts[pi].media.push(Media::LocalAudio { path, name, title });
         }
     }
     // Replace each web Photo with the original, matched in message-id order.
@@ -261,6 +271,21 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
 
     tracing::info!("MTProto: {n_audio} audio file(s), {n_photo} original photo(s)");
     Ok(())
+}
+
+/// A label above the player from the audio track's title (+ performer). Used
+/// only when the title looks *complete*: many podcast files carry a title tag
+/// Telegram/the encoder already truncated with `…`, and the post caption
+/// normally has the full title anyway — so a truncated tag is worse than none.
+fn audio_label(title: Option<String>, performer: Option<String>) -> Option<String> {
+    let t = title
+        .map(|s| s.trim().to_string())
+        .filter(|s| !s.is_empty())
+        .filter(|s| !s.ends_with('…') && !s.ends_with("..."))?;
+    match performer.map(|s| s.trim().to_string()).filter(|s| !s.is_empty()) {
+        Some(p) => Some(format!("{p} — {t}")),
+        None => Some(t),
+    }
 }
 
 /// File extension for an audio MIME type (voice notes are `audio/ogg`).

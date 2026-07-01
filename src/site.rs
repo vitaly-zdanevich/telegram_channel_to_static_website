@@ -106,6 +106,10 @@ pub fn scaffold(
         &site.join("templates/shortcodes/apple_podcast.html"),
         APPLE_PODCAST_SHORTCODE,
     )?;
+    write_file(
+        &site.join("templates/shortcodes/yandex_music.html"),
+        YANDEX_MUSIC_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
@@ -534,6 +538,7 @@ pub fn set_about_size(
     limit: Option<u64>,
     elapsed: std::time::Duration,
     about: &crate::i18n::About,
+    largest: &[(std::path::PathBuf, u64)],
 ) {
     let about_path = site.join("content/pages/about.md");
     let Ok(s) = fs::read_to_string(&about_path) else {
@@ -542,6 +547,17 @@ pub fn set_about_size(
     if !s.contains("__TOTAL_SIZE__") {
         return;
     }
+    // The 10 biggest files as a list linking to each owning post.
+    let largest_block = if largest.is_empty() {
+        String::new()
+    } else {
+        let items = largest
+            .iter()
+            .map(|(p, sz)| about_largest_link(p.strip_prefix(site).unwrap_or(p), *sz))
+            .collect::<Vec<_>>()
+            .join("\n");
+        format!("{}\n\n{items}", about.largest_files)
+    };
     let total = b.total();
     let percent = limit
         .filter(|&m| m > 0)
@@ -568,8 +584,29 @@ pub fn set_about_size(
         .replace("__TOTAL_SIZE__", &human_size(total))
         .replace("__PERCENT__", &percent)
         .replace("__SIZE_BREAKDOWN__", &breakdown)
+        .replace("__LARGEST_FILES__", &largest_block)
         .replace("__BUILD_TIME__", &human_duration(elapsed));
     let _ = fs::write(&about_path, out);
+}
+
+/// A markdown list item for a largest-file entry, linking to the owning post
+/// (`content/posts/<slug>/…` → `@/posts/<slug>/index.md`, base_url-aware). Files
+/// outside a post bundle are shown without a link.
+fn about_largest_link(rel: &Path, size: u64) -> String {
+    let comps: Vec<&str> = rel
+        .components()
+        .filter_map(|c| c.as_os_str().to_str())
+        .collect();
+    let fname = comps.last().copied().unwrap_or("file");
+    if comps.len() >= 3 && comps[0] == "content" && comps[1] == "posts" {
+        format!(
+            "- [{} — {fname}](@/posts/{}/index.md)",
+            human_size(size),
+            comps[2]
+        )
+    } else {
+        format!("- {} — {fname}", human_size(size))
+    }
 }
 
 /// Human-readable duration, e.g. `2m 30s` / `45s`.
@@ -832,6 +869,7 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
             };
             b.push_str(&size_line);
             b.push_str(&format!("{}\n\n__SIZE_BREAKDOWN__\n\n", about.by_kind));
+            b.push_str("__LARGEST_FILES__\n\n");
             b.push_str(&format!("{}\n\n", about.generated_in));
             b.push_str(&format!(
                 "{} [{repo}]({repo})\n\n{no_api}",
@@ -1228,6 +1266,11 @@ const YOUTUBE_SHORTCODE: &str = r#"<div class="yt-embed">
 const APPLE_PODCAST_SHORTCODE: &str = r#"<div class="ap-embed"><iframe src="{{ url }}" height="175" loading="lazy" frameborder="0" allow="autoplay *; encrypted-media *;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe><a class="ap-link" href="{{ url }}">Listen on Apple Podcasts</a></div>
 "#;
 
+// Yandex Music track player (iframe uses a #hash route, so it won't load over
+// file:// — the "Yandex Music" link below it is the fallback).
+const YANDEX_MUSIC_SHORTCODE: &str = r#"<div class="ym-embed"><iframe frameborder="0" width="100%" height="180" loading="lazy" src="{{ url }}"></iframe><a class="ym-link" href="{{ url }}">Yandex Music</a></div>
+"#;
+
 // Resolve colocated media against the post's permalink so it works both on the
 // post page and when the post is shown in full on the homepage feed (a relative
 // src would otherwise break off the post's own page).
@@ -1288,6 +1331,9 @@ audio { width: 100%; }
 .ap-embed { margin: 1rem 0; }
 .ap-embed iframe { width: 100%; max-width: 660px; height: 175px; border: 0; border-radius: 10px; }
 .ap-embed .ap-link { display: block; font-size: .85rem; margin-top: .3rem; }
+.ym-embed { margin: 1rem 0; }
+.ym-embed iframe { width: 100%; max-width: 900px; height: 180px; border: 0; }
+.ym-embed .ym-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }

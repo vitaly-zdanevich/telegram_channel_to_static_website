@@ -54,6 +54,11 @@ pub enum Media {
     #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
     LocalAudio {
         path: std::path::PathBuf,
+        /// Original filename (`Document::name()`) for the saved file; `None`
+        /// (tagged music with no filename) → positional name.
+        name: Option<String>,
+        /// Label shown above the player — full (untruncated) audio title, with
+        /// performer if present.
         title: Option<String>,
     },
     /// An original-quality photo fetched via MTProto, replacing a web [`Media::Photo`].
@@ -109,6 +114,17 @@ pub struct Post {
     pub youtube: Option<String>,
     /// Apple Podcasts embed URL, if any link points at podcasts.apple.com.
     pub apple_podcast: Option<String>,
+    /// Yandex Music iframe embed URL, if any link points at a music.yandex track.
+    pub yandex_music: Option<String>,
+    /// YouTube link confirmed removed (oEmbed 404) — keep the local media instead
+    /// of replacing it with a dead embed. Default false (assume alive).
+    pub youtube_dead: bool,
+    /// Apple Podcasts podcast confirmed removed (iTunes lookup `resultCount` 0) —
+    /// keep the local audio instead of a dead embed. Default false.
+    pub apple_dead: bool,
+    /// Yandex Music track removed/unavailable (API `available` not true) — keep
+    /// the local audio instead of a dead embed. Default false.
+    pub yandex_dead: bool,
     /// Genius song id (resolved by fetching a linked genius.com page), for the
     /// lyrics widget when the post carries no lyrics of its own.
     pub genius_song_id: Option<String>,

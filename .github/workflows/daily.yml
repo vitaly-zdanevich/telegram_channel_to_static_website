@@ -89,6 +89,9 @@ env:
   # Set to "false" to skip resolving genius.com links (which otherwise fetch the
   # page for its YouTube video + lyrics widget). On by default.
   GENIUS: ${{ vars.GENIUS }}
+  # Set to "false" to skip the YouTube liveness check (a removed video otherwise
+  # keeps its local media instead of being replaced by a dead embed).
+  LIVENESS: ${{ vars.LIVENESS }}
   # Comma-separated tags to surface as #tag links in the top nav, e.g.
   # "music, batumi, cooking".
   TAGS_TO_PAGES: ${{ vars.TAGS_TO_PAGES }}
@@ -180,6 +183,7 @@ jobs:
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ "${KEEP_MEDIA:-}" = "true" ] && args+=(--keep-media)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)
+            [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"

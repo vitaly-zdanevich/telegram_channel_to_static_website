@@ -5,7 +5,7 @@
 
 use once_cell::sync::Lazy;
 use regex::Regex;
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 
 use crate::media::ext_from_url;
 use crate::model::{Forward, Media, Post};
@@ -297,6 +297,8 @@ pub fn render_post(
     let mut downloads = Vec::new();
     let mut body = String::new();
     let mut idx = 0usize;
+    // Bundle filenames already taken (so original audio names stay unique).
+    let mut used_names: HashSet<String> = HashSet::new();
     // First image in the post → og:image for social/Mastodon link previews.
     let mut og_image: Option<String> = None;
 
@@ -314,20 +316,43 @@ pub fn render_post(
         .any(|m| matches!(m, Media::Video { .. } | Media::VideoPoster { .. }));
     // A YouTube link normally *replaces* the attached video. With `keep_media`
     // we download and show the video anyway (the YouTube embed stays too).
-    let drop_videos = has_video && post.youtube.is_some() && !keep_media;
-    // A YouTube / Apple Podcasts link likewise replaces attached *audio* (podcast
-    // episodes) unless keep_media is set.
-    let drop_audio = (post.youtube.is_some() || post.apple_podcast.is_some()) && !keep_media;
-    // Embed YouTube for ANY post that links to YouTube (not only video posts).
-    // The shortcode renders the iframe plus a plain "Watch on YouTube" link, so
-    // it still works where the iframe can't load (e.g. over file://).
+    // A *live* YouTube link replaces the attached video; a removed one (liveness
+    // check) keeps the local video instead. keep_media keeps it regardless.
+    let youtube_live = post.youtube.is_some() && !post.youtube_dead;
+    let apple_live = post.apple_podcast.is_some() && !post.apple_dead;
+    // Yandex Music replaces an *attached audio* file only (per the rule), and
+    // only when the track is still live.
+    let has_attached_audio = post.media.iter().any(|m| match m {
+        Media::Audio { .. } | Media::LocalAudio { .. } => true,
+        Media::Document { filename, .. } | Media::DocumentRef { filename } => {
+            crate::media::is_probably_audio_doc(filename)
+        }
+        _ => false,
+    });
+    let yandex_replace = post.yandex_music.is_some() && !post.yandex_dead && has_attached_audio;
+    let drop_videos = has_video && youtube_live && !keep_media;
+    // A live YouTube / Apple Podcasts / Yandex Music link replaces attached
+    // *audio* unless keep_media is set; a removed one keeps the local audio.
+    let drop_audio = (youtube_live || apple_live || yandex_replace) && !keep_media;
+    // Embed a live YouTube link for ANY post (not only video posts); a removed
+    // video shows no (broken) embed, and its local media is kept above.
     if let Some(yt) = &post.youtube {
-        body.push_str(&format!("{{{{ youtube(id=\"{yt}\") }}}}\n\n"));
+        if !post.youtube_dead {
+            body.push_str(&format!("{{{{ youtube(id=\"{yt}\") }}}}\n\n"));
+        }
     }
     // Apple Podcasts episode embed (an <iframe>; over file:// it degrades to the
     // "Listen on Apple Podcasts" link the shortcode also renders).
     if let Some(url) = &post.apple_podcast {
-        body.push_str(&format!("{{{{ apple_podcast(url=\"{url}\") }}}}\n\n"));
+        if !post.apple_dead {
+            body.push_str(&format!("{{{{ apple_podcast(url=\"{url}\") }}}}\n\n"));
+        }
+    }
+    // Yandex Music track embed replacing an attached audio file (a live track).
+    if yandex_replace {
+        if let Some(url) = &post.yandex_music {
+            body.push_str(&format!("{{{{ yandex_music(url=\"{url}\") }}}}\n\n"));
+        }
     }
 
     for m in &post.media {
@@ -391,7 +416,7 @@ pub fn render_post(
             Media::DocumentRef { filename } => {
                 // A YouTube/Apple Podcasts embed stands in for a podcast track —
                 // drop the redundant "(not archived)" note for that audio.
-                if drop_audio && crate::media::is_audio_name(filename) {
+                if drop_audio && crate::media::is_probably_audio_doc(filename) {
                     continue;
                 }
                 // The file isn't on the public page; note the attachment + name.
@@ -401,18 +426,18 @@ pub fn render_post(
                     ui.not_archived
                 ));
             }
-            Media::LocalAudio { path, title } => {
+            Media::LocalAudio { path, name, title } => {
                 if drop_audio {
                     continue;
                 }
-                // Voice note / audio from MTProto: copy the cached file in, then
-                // render the same audio player the web path uses.
+                // Audio from MTProto: copy the cached file in under its original
+                // filename (or positional), then render the player with a label.
                 let ext = path
                     .extension()
                     .and_then(|e| e.to_str())
                     .filter(|e| !e.is_empty())
                     .unwrap_or("ogg");
-                let fname = format!("{idx:02}.{ext}");
+                let fname = local_audio_name(name.as_deref(), ext, idx, &mut used_names);
                 downloads.push(Download {
                     url: String::new(),
                     filename: fname.clone(),
@@ -847,25 +872,53 @@ fn label_escape(s: &str) -> String {
         .replace('*', "\\*")
 }
 
-fn sanitize_filename(name: &str, ext: &str, idx: usize) -> String {
-    let base: String = name
-        .chars()
-        .map(|c| {
-            if c.is_ascii_alphanumeric() || c == '-' || c == '_' || c == '.' {
-                c
-            } else {
-                '_'
-            }
-        })
-        .collect();
-    let base = base.trim_matches('_');
-    if base.is_empty() {
-        return format!("doc-{idx:02}.{ext}");
+/// Bundle filename for an MTProto audio track: the sanitized original filename
+/// when present (kept unique within the bundle), else a positional name.
+fn local_audio_name(orig: Option<&str>, ext: &str, idx: usize, used: &mut HashSet<String>) -> String {
+    let base = match orig {
+        Some(n) if !n.trim().is_empty() => sanitize_filename(n, ext, idx),
+        _ => format!("{idx:02}.{ext}"),
+    };
+    if used.insert(base.clone()) {
+        return base;
     }
-    if base.contains('.') {
-        base.to_string()
-    } else {
-        format!("{base}.{ext}")
+    // Collision within the bundle → disambiguate with the positional index.
+    let (stem, e) = base.rsplit_once('.').unwrap_or((base.as_str(), ext));
+    let uniq = format!("{stem}-{idx:02}.{e}");
+    used.insert(uniq.clone());
+    uniq
+}
+
+fn sanitize_filename(name: &str, ext: &str, idx: usize) -> String {
+    // Keep Unicode letters/digits and a little safe punctuation; collapse any run
+    // of other characters (spaces, path separators, punctuation) into a single
+    // '_' — so a non-ASCII name stays readable instead of a row of underscores.
+    let mut base = String::with_capacity(name.len());
+    let mut prev_sep = false;
+    for c in name.chars() {
+        if c.is_alphanumeric() || matches!(c, '-' | '_' | '.') {
+            base.push(c);
+            prev_sep = false;
+        } else if !prev_sep {
+            base.push('_');
+            prev_sep = true;
+        }
+    }
+    let base = base
+        .trim_matches(|c: char| c == '_' || c == '.')
+        .to_string();
+    // Nothing usable left → positional name.
+    if !base.chars().any(char::is_alphanumeric) {
+        return format!("{idx:02}.{ext}");
+    }
+    // Keep an existing real extension, otherwise append the detected one.
+    match base.rsplit_once('.') {
+        Some((_, e))
+            if (1..=5).contains(&e.chars().count()) && e.chars().all(|c| c.is_ascii_alphanumeric()) =>
+        {
+            base
+        }
+        _ => format!("{base}.{ext}"),
     }
 }
 
@@ -929,6 +982,10 @@ mod tests {
             links: vec![],
             youtube: None,
             apple_podcast: None,
+            yandex_music: None,
+            youtube_dead: false,
+            apple_dead: false,
+            yandex_dead: false,
             genius_song_id: None,
         }
     }
@@ -955,6 +1012,18 @@ mod tests {
         assert!(r.index_md.contains("template = \"page.html\""), "{}", r.index_md);
         assert!(r.index_md.contains("More text."), "{}", r.index_md);
         assert!(!r.index_md.contains("PAGE"), "marker dropped: {}", r.index_md);
+    }
+
+    #[test]
+    fn sanitize_keeps_unicode_names() {
+        assert_eq!(
+            sanitize_filename("1. Название эпизода.flac", "flac", 3),
+            "1._Название_эпизода.flac"
+        );
+        assert_eq!(sanitize_filename("005-vitaly-geo.m4a", "m4a", 3), "005-vitaly-geo.m4a");
+        assert_eq!(sanitize_filename("Эпизод", "ogg", 1), "Эпизод.ogg");
+        // All-punctuation → positional, never a row of underscores.
+        assert_eq!(sanitize_filename("!!! ??? …", "mp3", 7), "07.mp3");
     }
 
     #[test]

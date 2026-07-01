@@ -37,9 +37,13 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
             let consecutive = m.id == last_id + 1;
             let together = (consecutive && secs.abs() <= window_secs) || secs == 0;
             let both_tagged = !last.tags.is_empty() && !m.tags.is_empty();
+            // A "#podcast" announcement immediately followed by the episode's
+            // attached audio folds into one post.
+            let podcast_audio = last.tags.iter().any(|t| t == "podcast") && has_audio(&m.media);
             (together && last.author == m.author && !both_tagged)
                 || sticker_only
                 || (marker_followup && has_audio(&last.media))
+                || podcast_audio
         });
 
         if merge {
@@ -66,6 +70,9 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
             if last.apple_podcast.is_none() {
                 last.apple_podcast = media::apple_podcast_from(&last.links);
             }
+            if last.yandex_music.is_none() {
+                last.yandex_music = media::yandex_music_from(&last.links);
+            }
         } else {
             posts.push(to_post(m));
         }
@@ -77,6 +84,7 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
 fn to_post(m: RawMessage) -> Post {
     let youtube = media::youtube_from(&m.links);
     let apple_podcast = media::apple_podcast_from(&m.links);
+    let yandex_music = media::yandex_music_from(&m.links);
     Post {
         primary_id: m.id,
         ids: vec![m.id],
@@ -92,6 +100,10 @@ fn to_post(m: RawMessage) -> Post {
         links: m.links,
         youtube,
         apple_podcast,
+        yandex_music,
+        youtube_dead: false,
+        apple_dead: false,
+        yandex_dead: false,
         genius_song_id: None,
     }
 }
@@ -105,7 +117,7 @@ fn has_audio(items: &[Media]) -> bool {
     items.iter().any(|m| match m {
         Media::Audio { .. } => true,
         Media::Document { filename, .. } | Media::DocumentRef { filename } => {
-            media::is_audio_name(filename)
+            media::is_probably_audio_doc(filename)
         }
         _ => false,
     })
@@ -176,6 +188,21 @@ mod tests {
         assert_eq!(posts.len(), 1, "marker follow-up should merge");
         assert_eq!(posts[0].ids, vec![500, 501]);
         assert_eq!(posts[0].youtube.as_deref(), Some("abc123"));
+    }
+
+    #[test]
+    fn podcast_tag_then_audio_merges_despite_tags() {
+        // A #podcast announcement folds together with the next post's audio,
+        // even when that audio post carries its own tags.
+        let ann = msg(300, &["podcast"], "New episode announcement");
+        let mut audio = msg(301, &["health"], "Episode");
+        audio.media = vec![Media::DocumentRef {
+            filename: "Georgy Gorgiladze: from illness to a Guinness record".into(),
+        }];
+        let posts = group(vec![ann, audio], 1);
+        assert_eq!(posts.len(), 1, "#podcast then audio should merge");
+        assert_eq!(posts[0].ids, vec![300, 301]);
+        assert!(posts[0].tags.contains(&"podcast".to_string()));
     }
 
     #[test]
