@@ -20,10 +20,10 @@ views = 14
 ids = [1445]
 +++
 
-{{ tag(t="architecture") }}
-{{ tag(t="orange") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="architecture") }}  
+{{ tag(t="orange") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:056-313_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
 ![](01.jpg)

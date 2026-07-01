@@ -20,15 +20,15 @@ views = 21
 ids = [952]
 +++
 
-{{ tag(t="time_travel") }}
-{{ tag(t="mail") }}
-{{ tag(t="марьино") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="year_2026") }}
-{{ tag(t="year_1976") }}
-{{ tag(t="globustut") }}
+{{ tag(t="time_travel") }}  
+{{ tag(t="mail") }}  
+{{ tag(t="марьино") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="year_2026") }}  
+{{ tag(t="year_1976") }}  
+{{ tag(t="globustut") }}  
 
-Марьино, капсула в будущее
+Марьино, капсула в будущее  
 
 From [https://commons.wikimedia.org/wiki/File:041-170\_Марьино,\_снято\_23\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:041-170_%D0%9C%D0%B0%D1%80%D1%8C%D0%B8%D0%BD%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 

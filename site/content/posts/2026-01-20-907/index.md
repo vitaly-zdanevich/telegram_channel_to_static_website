@@ -20,13 +20,13 @@ views = 17
 ids = [907]
 +++
 
-wow I can edit {{ tag(t="wikipedia") }} in {{ tag(t="vim") }}, thanks to
+wow I can edit {{ tag(t="wikipedia") }} in {{ tag(t="vim") }}, thanks to  
 
-<https://github.com/Git-Mediawiki/Git-Mediawiki> to {{ tag(t="git") }} pull/push
+<https://github.com/Git-Mediawiki/Git-Mediawiki> to {{ tag(t="git") }} pull/push  
 
-and
+and  
 
-<https://github.com/m-pilia/vim-mediawiki>
+<https://github.com/m-pilia/vim-mediawiki>  
 
 for autocompletion
 

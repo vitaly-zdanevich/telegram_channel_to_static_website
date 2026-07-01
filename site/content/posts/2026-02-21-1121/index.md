@@ -19,12 +19,12 @@ views = 14
 ids = [1121]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="buttons") }}
-{{ tag(t="animation") }}
-{{ tag(t="game") }}
-{{ tag(t="mmo") }}
-{{ tag(t="myst") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="buttons") }}  
+{{ tag(t="animation") }}  
+{{ tag(t="game") }}  
+{{ tag(t="mmo") }}  
+{{ tag(t="myst") }}  
 
 <https://mystonline.com/en/play/>
 

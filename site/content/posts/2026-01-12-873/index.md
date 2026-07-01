@@ -20,9 +20,9 @@ views = 25
 ids = [873]
 +++
 
-{{ tag(t="map") }}
+{{ tag(t="map") }}  
 
-The Earth, centred around {{ tag(t="new_zealand") }}
+The Earth, centred around {{ tag(t="new_zealand") }}  
 
 [Source](https://www.facebook.com/share/p/1CEN8od24T/)
 

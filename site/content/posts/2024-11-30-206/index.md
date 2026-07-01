@@ -20,8 +20,8 @@ views = 46
 ids = [206]
 +++
 
-{{ tag(t="mem") }}
-{{ tag(t="games") }}
+{{ tag(t="mem") }}  
+{{ tag(t="games") }}  
 
 <https://www.facebook.com/photo/?fbid=884170197219922>
 

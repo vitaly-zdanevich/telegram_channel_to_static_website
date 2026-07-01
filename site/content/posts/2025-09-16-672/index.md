@@ -19,12 +19,12 @@ views = 34
 ids = [672]
 +++
 
-{{ tag(t="russia") }}
-{{ tag(t="yeltsin") }}
-{{ tag(t="ketchup") }}
-{{ tag(t="tea") }}
-{{ tag(t="sugar") }}
-{{ tag(t="year_1991") }}
+{{ tag(t="russia") }}  
+{{ tag(t="yeltsin") }}  
+{{ tag(t="ketchup") }}  
+{{ tag(t="tea") }}  
+{{ tag(t="sugar") }}  
+{{ tag(t="year_1991") }}  
 
 [Source](https://www.instagram.com/p/DOomGBKDGCU)
 

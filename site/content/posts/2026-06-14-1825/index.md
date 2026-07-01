@@ -15,13 +15,13 @@ next_id = 1826
 next_title = ""
 prev_id = 1824
 prev_title = ""
-views = 18
+views = 19
 ids = [1825]
 +++
 
-{{ tag(t="vim") }}
-{{ tag(t="java") }}
-{{ tag(t="hover") }} {{ tag(t="balloon") }} with type definition `ftplugin/java.vim`, with {{ tag(t="coc") }}
+{{ tag(t="vim") }}  
+{{ tag(t="java") }}  
+{{ tag(t="hover") }} {{ tag(t="balloon") }} with type definition `ftplugin/java.vim`, with {{ tag(t="coc") }}  
 
 ```
 highlight CocTypePopup ctermfg=White ctermbg=22 guifg=#ffffff guibg=#005f00

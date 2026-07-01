@@ -19,11 +19,11 @@ views = 46
 ids = [604]
 +++
 
-{{ tag(t="berlin") }}
-{{ tag(t="germany") }}
-{{ tag(t="ai") }}
-{{ tag(t="the_lord_of_the_rings") }}
-{{ tag(t="demonflyingfox") }}
+{{ tag(t="berlin") }}  
+{{ tag(t="germany") }}  
+{{ tag(t="ai") }}  
+{{ tag(t="the_lord_of_the_rings") }}  
+{{ tag(t="demonflyingfox") }}  
 
 [Source](https://youtu.be/qXsnx1DS608)
 

@@ -16,15 +16,15 @@ next_id = 1836
 next_title = ""
 prev_id = 1834
 prev_title = ""
-views = 13
+views = 14
 ids = [1835]
 +++
 
-{{ tag(t="xbox") }}
-{{ tag(t="game_console") }}
-{{ tag(t="tech") }}
-{{ tag(t="retro") }}
-{{ tag(t="green") }}
+{{ tag(t="xbox") }}  
+{{ tag(t="game_console") }}  
+{{ tag(t="tech") }}  
+{{ tag(t="retro") }}  
+{{ tag(t="green") }}  
 
 From <https://www.pinterest.com/pin/96475617015148870/>
 

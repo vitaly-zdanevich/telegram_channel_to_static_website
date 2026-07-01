@@ -20,9 +20,9 @@ views = 70
 ids = [612]
 +++
 
-{{ tag(t="retro") }}
-{{ tag(t="cd") }}
-{{ tag(t="vhs") }}
+{{ tag(t="retro") }}  
+{{ tag(t="cd") }}  
+{{ tag(t="vhs") }}  
 
 [Source](https://www.instagram.com/p/DMgUXa1vUVS)
 

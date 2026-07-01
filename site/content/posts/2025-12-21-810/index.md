@@ -19,9 +19,9 @@ views = 46
 ids = [810]
 +++
 
-{{ tag(t="software") }}
-{{ tag(t="tui") }}
-{{ tag(t="git") }}
+{{ tag(t="software") }}  
+{{ tag(t="tui") }}  
+{{ tag(t="git") }}  
 
 <https://terminaltrove.com/gitlogue>
 

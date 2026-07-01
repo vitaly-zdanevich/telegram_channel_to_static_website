@@ -20,7 +20,7 @@ views = 24
 ids = [567]
 +++
 
-{{ tag(t="dark_pattern") }}
+{{ tag(t="dark_pattern") }}  
 
 <https://en.wikipedia.org/wiki/Dark_pattern>
 

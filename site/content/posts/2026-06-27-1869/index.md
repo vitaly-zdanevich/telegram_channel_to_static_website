@@ -15,12 +15,12 @@ next_id = 1870
 next_title = ""
 prev_id = 1868
 prev_title = ""
-views = 4
+views = 9
 ids = [1869]
 +++
 
-{{ tag(t="clown") }}
-{{ tag(t="mime") }}
+{{ tag(t="clown") }}  
+{{ tag(t="mime") }}  
 [Source](https://www.instagram.com/p/DaAN-xxuckx)
 
 {{ video(src="01.mp4") }}

@@ -20,7 +20,7 @@ views = 33
 ids = [827]
 +++
 
-My {{ tag(t="ram") }} price is going up
+My {{ tag(t="ram") }} price is going up  
 
 <https://pcpartpicker.com/product/Xg2WGX/gskill-trident-z5-neo-64-gb-2-x-32-gb-ddr5-6000-cl30-memory-f5-6000j3040g32gx2-tz5n>
 

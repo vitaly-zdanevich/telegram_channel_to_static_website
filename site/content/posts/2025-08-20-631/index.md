@@ -20,11 +20,11 @@ views = 66
 ids = [631]
 +++
 
-Percent of people who think their culture is superior to others
+Percent of people who think their culture is superior to others  
 
-{{ tag(t="map") }}
-{{ tag(t="culture") }}
-{{ tag(t="sakartvelo") }}
+{{ tag(t="map") }}  
+{{ tag(t="culture") }}  
+{{ tag(t="sakartvelo") }}  
 
 [Source](https://www.facebook.com/photo/?fbid=1109268631315746&amp;set=a.416664743909475)
 

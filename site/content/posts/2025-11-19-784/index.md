@@ -20,10 +20,10 @@ views = 38
 ids = [784]
 +++
 
-{{ tag(t="punk") }}
-{{ tag(t="logo") }}
-{{ tag(t="music") }}
-{{ tag(t="korol_i_shut") }}
+{{ tag(t="punk") }}  
+{{ tag(t="logo") }}  
+{{ tag(t="music") }}  
+{{ tag(t="korol_i_shut") }}  
 [Source](https://www.pinterest.com/pin/606437906115011230)
 
 ![](5253740353548913982_1223231748_460000574.jpg)

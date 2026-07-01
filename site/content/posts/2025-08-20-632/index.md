@@ -19,13 +19,13 @@ views = 40
 ids = [632]
 +++
 
-**Как работает дата-центр Яндекса в Финляндии**
+**Как работает дата-центр Яндекса в Финляндии**  
 
-Heating of a city by {{ tag(t="datacenter") }}
+Heating of a city by {{ tag(t="datacenter") }}  
 
-{{ tag(t="yandex") }}
-{{ tag(t="video") }}
-{{ tag(t="heat") }}
+{{ tag(t="yandex") }}  
+{{ tag(t="video") }}  
+{{ tag(t="heat") }}  
 [Source](https://www.youtube.com/watch?v=-hE8jkyfqMw)
 
 {{ youtube(id="-hE8jkyfqMw") }}

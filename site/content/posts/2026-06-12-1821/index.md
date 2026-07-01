@@ -16,19 +16,19 @@ next_id = 1822
 next_title = ""
 prev_id = 1819
 prev_title = ""
-views = 14
+views = 16
 ids = [1821]
 +++
 
-Make {{ tag(t="tree") }} clickable, tested in {{ tag(t="kitty") }}
+Make {{ tag(t="tree") }} clickable, tested in {{ tag(t="kitty") }}  
 
-Replace to {{ tag(t="eza") }}
+Replace to {{ tag(t="eza") }}  
 
 ```
 eza --tree --hyperlink
 ```
 
-With this `.config/kitty/open-actions.conf`
+With this `.config/kitty/open-actions.conf`  
 
 ```
 protocol file

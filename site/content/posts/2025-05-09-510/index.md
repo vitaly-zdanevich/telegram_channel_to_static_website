@@ -20,10 +20,10 @@ views = 23
 ids = [510]
 +++
 
-{{ tag(t="package_manager") }}
-{{ tag(t="appimage") }}
+{{ tag(t="package_manager") }}  
+{{ tag(t="appimage") }}  
 
-[https://soar.qaidvoid.dev](https://soar.qaidvoid.dev/)
+[https://soar.qaidvoid.dev](https://soar.qaidvoid.dev/)  
 
 For example portable {{ tag(t="git") }} in a single file <https://pkgs.pkgforge.dev/repo/pkgcache/x86_64-linux/git/appimage/ppkg/stable/git>
 

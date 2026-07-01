@@ -16,15 +16,15 @@ next_id = 879
 next_title = ""
 prev_id = 877
 prev_title = ""
-views = 12
+views = 13
 ids = [878]
 +++
 
-{{ tag(t="saint") }}
-{{ tag(t="scull") }}
-{{ tag(t="fashion") }}
+{{ tag(t="saint") }}  
+{{ tag(t="scull") }}  
+{{ tag(t="fashion") }}  
 
-Saint Francis of Assisi, by José de Ribera, 1643
+Saint Francis of Assisi, by José de Ribera, 1643  
 [Source](https://commons.wikimedia.org/wiki/File:San_Francisco_de_As%C3%ADs,_por_Jos%C3%A9_de_Ribera.jpg)
 
 ![](5422584726364556635_1262543892_460000603.jpg)

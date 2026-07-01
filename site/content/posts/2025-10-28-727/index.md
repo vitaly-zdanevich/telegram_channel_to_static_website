@@ -20,9 +20,9 @@ views = 25
 ids = [727]
 +++
 
-{{ tag(t="os") }}
-{{ tag(t="design") }}
-{{ tag(t="windows") }}
+{{ tag(t="os") }}  
+{{ tag(t="design") }}  
+{{ tag(t="windows") }}  
 {{ tag(t="windows_xp") }}
 
 ![](5190435396050353820_1208492414_456261276.jpg)

@@ -20,7 +20,7 @@ views = 55
 ids = [549]
 +++
 
-Another {{ tag(t="userstyle") }}: for {{ tag(t="openstreetmap") }}, only a few CSS lines
+Another {{ tag(t="userstyle") }}: for {{ tag(t="openstreetmap") }}, only a few CSS lines  
 
 <https://gitlab.com/vitaly-zdanevich-styles/openstreetmap>
 

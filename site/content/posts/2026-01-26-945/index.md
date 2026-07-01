@@ -20,11 +20,11 @@ views = 13
 ids = [945]
 +++
 
-{{ tag(t="aws") }}
-{{ tag(t="silicon") }}
-{{ tag(t="graviton") }}
+{{ tag(t="aws") }}  
+{{ tag(t="silicon") }}  
+{{ tag(t="graviton") }}  
 
-TRN3 compute sled
+TRN3 compute sled  
 
 From <https://youtu.be/JeUpUK0nhC0?t=4042>
 

@@ -20,10 +20,10 @@ views = 9
 ids = [1319]
 +++
 
-{{ tag(t="arch") }}
-{{ tag(t="abandone") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="arch") }}  
+{{ tag(t="abandone") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:052-333_%D0%9E%D0%BB%D0%B5%D1%88%D0%B8%D1%88%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](01.jpg)

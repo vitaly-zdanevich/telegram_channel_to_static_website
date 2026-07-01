@@ -20,7 +20,7 @@ views = 54
 ids = [93]
 +++
 
-<https://www.google.com/intl/en/ipv6/statistics.html#tab=ipv6-adoption>
+<https://www.google.com/intl/en/ipv6/statistics.html#tab=ipv6-adoption>  
 
 {{ tag(t="ipv6") }}
 

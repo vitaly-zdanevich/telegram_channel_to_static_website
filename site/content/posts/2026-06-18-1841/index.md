@@ -16,14 +16,14 @@ next_id = 1842
 next_title = ""
 prev_id = 1840
 prev_title = ""
-views = 8
+views = 11
 ids = [1841]
 +++
 
-{{ tag(t="ad") }}
-{{ tag(t="newspaper") }}
-{{ tag(t="design") }}
-{{ tag(t="toxic") }}
+{{ tag(t="ad") }}  
+{{ tag(t="newspaper") }}  
+{{ tag(t="design") }}  
+{{ tag(t="toxic") }}  
 
 From <https://www.pinterest.com/pin/96475617015161790/>
 

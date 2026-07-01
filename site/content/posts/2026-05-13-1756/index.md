@@ -20,10 +20,10 @@ views = 24
 ids = [1756]
 +++
 
-{{ tag(t="code") }}
-{{ tag(t="russian") }}
-{{ tag(t="yandex") }}
-{{ tag(t="language") }}
+{{ tag(t="code") }}  
+{{ tag(t="russian") }}  
+{{ tag(t="yandex") }}  
+{{ tag(t="language") }}  
 
 From <https://t.me/Yandex4Developers/1513>
 

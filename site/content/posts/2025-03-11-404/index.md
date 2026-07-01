@@ -19,12 +19,12 @@ views = 49
 ids = [404]
 +++
 
-{{ tag(t="video") }}
-{{ tag(t="ad") }}
-{{ tag(t="japan") }}
-{{ tag(t="ai") }}
-{{ tag(t="girl") }}
-{{ tag(t="virtual") }}
+{{ tag(t="video") }}  
+{{ tag(t="ad") }}  
+{{ tag(t="japan") }}  
+{{ tag(t="ai") }}  
+{{ tag(t="girl") }}  
+{{ tag(t="virtual") }}  
 [Source](https://www.youtube.com/watch?v=nkcKaNqfykg)
 
 {{ youtube(id="nkcKaNqfykg") }}

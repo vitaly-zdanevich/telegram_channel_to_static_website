@@ -19,10 +19,10 @@ views = 41
 ids = [791]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="strategy") }}
-{{ tag(t="rtt") }}
-{{ tag(t="ground_control") }}
+{{ tag(t="game") }}  
+{{ tag(t="strategy") }}  
+{{ tag(t="rtt") }}  
+{{ tag(t="ground_control") }}  
 
 [Source](https://youtu.be/cS7PxDUxzVs)
 

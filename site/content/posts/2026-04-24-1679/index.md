@@ -20,7 +20,7 @@ views = 13
 ids = [1679]
 +++
 
-{{ tag(t="log") }}
+{{ tag(t="log") }}  
 
 Still running my experiment about {{ tag(t="porting") }} {{ tag(t="prime_world") }} from Windows/DirectX to Linux/OpenGL, 100% on autopilot...
 

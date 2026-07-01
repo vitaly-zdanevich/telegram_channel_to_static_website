@@ -20,9 +20,9 @@ views = 5
 ids = [1338]
 +++
 
-{{ tag(t="house") }}
-{{ tag(t="river") }}
-{{ tag(t="belarus") }}
+{{ tag(t="house") }}  
+{{ tag(t="river") }}  
+{{ tag(t="belarus") }}  
 {{ tag(t="globustut") }}[Source](https://commons.wikimedia.org/wiki/File:053-129_%D0%92%D1%8B%D0%B3%D0%BE%D0%BD%D0%BE%D1%89%D0%B8,_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB_%D0%9E%D0%B3%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_9_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](01.jpg)

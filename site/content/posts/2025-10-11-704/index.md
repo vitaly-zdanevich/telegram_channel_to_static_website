@@ -19,11 +19,11 @@ views = 29
 ids = [704]
 +++
 
-{{ tag(t="culture") }}
-{{ tag(t="archivation") }}
-{{ tag(t="future") }}
-{{ tag(t="green") }}
-{{ tag(t="research") }}
+{{ tag(t="culture") }}  
+{{ tag(t="archivation") }}  
+{{ tag(t="future") }}  
+{{ tag(t="green") }}  
+{{ tag(t="research") }}  
 
 [Source](https://www.instagram.com/reel/DOQhSZUjWQz)
 

@@ -19,14 +19,14 @@ views = 17
 ids = [1648]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="calm") }}
+{{ tag(t="music") }}  
+{{ tag(t="calm") }}  
 
-> \[Verse\]<br>So familiar and overwhelmingly warm<br>This one, this form I hold now<br>Embracing you, this reality here<br>This one, this form I hold now, so<br>Wide eyed and hopeful<br>Wide eyed and hopefully wild<br>We barely remember what came before this precious moment<br>Choosing to be here right now<br>Hold on, stay inside<br>This body holding me<br>Reminding me that I am not alone in<br>This body makes me feel eternal<br>All this pain is an illusion
+> \[Verse\]  <br>So familiar and overwhelmingly warm  <br>This one, this form I hold now  <br>Embracing you, this reality here  <br>This one, this form I hold now, so  <br>Wide eyed and hopeful  <br>Wide eyed and hopefully wild  <br>We barely remember what came before this precious moment  <br>Choosing to be here right now  <br>Hold on, stay inside  <br>This body holding me  <br>Reminding me that I am not alone in  <br>This body makes me feel eternal  <br>All this pain is an illusion
 
-<https://genius.com/Tool-parabol-lyrics>
+<https://genius.com/Tool-parabol-lyrics>  
 
-<https://music.yandex.ru/album/38048345/track/142481672>
+<https://music.yandex.ru/album/38048345/track/142481672>  
 
 <https://www.wikidata.org/wiki/Q110906634>
 

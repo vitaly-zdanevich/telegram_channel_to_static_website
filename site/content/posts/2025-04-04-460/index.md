@@ -20,10 +20,10 @@ views = 44
 ids = [460]
 +++
 
-{{ tag(t="games") }}
-{{ tag(t="igromania") }}
+{{ tag(t="games") }}  
+{{ tag(t="igromania") }}  
 
-18 years ago. Golden age?
+18 years ago. Golden age?  
 [Source](https://vk.com/feed?z=photo-160168013_457515889%2F7054f886579f71b39a)
 
 ![](5440653838458679407_1266750935_456257647.jpg)

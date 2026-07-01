@@ -20,9 +20,9 @@ views = 8
 ids = [1084]
 +++
 
-{{ tag(t="logo") }}
-{{ tag(t="foobar") }}
-{{ tag(t="audio_player") }}
+{{ tag(t="logo") }}  
+{{ tag(t="foobar") }}  
+{{ tag(t="audio_player") }}  
 
 <https://www.foobar2000.org/>
 

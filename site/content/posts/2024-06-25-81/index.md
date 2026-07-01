@@ -18,6 +18,6 @@ views = 54
 ids = [81]
 +++
 
-Wow, DIY laptop with easy interchangeable parts <https://frame.work/products/laptop16-diy-amd-7040>
+Wow, DIY laptop with easy interchangeable parts <https://frame.work/products/laptop16-diy-amd-7040>  
 
 Sad that fanless laptops looks like unpopular, the best of such - MacBook Air, but I love Linux.

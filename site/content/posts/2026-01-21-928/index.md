@@ -20,11 +20,11 @@ views = 11
 ids = [928]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="church") }}
-{{ tag(t="abandone") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="church") }}  
+{{ tag(t="abandone") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="globustut") }}  
 
 [https://commons.wikimedia.org/wiki/File:040-038\_Княжицы,\_костел,\_снято\_18\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:040-038_%D0%9A%D0%BD%D1%8F%D0%B6%D0%B8%D1%86%D1%8B,_%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_18_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 

@@ -20,8 +20,8 @@ views = 31
 ids = [626]
 +++
 
-{{ tag(t="moneymuseum") }}
-{{ tag(t="money") }}
+{{ tag(t="moneymuseum") }}  
+{{ tag(t="money") }}  
 {{ tag(t="rubles") }}[Source](https://commons.wikimedia.org/wiki/File:100_Rubles_-_Bukharan_People&#39;s_Soviet_Republic_(1922)_02.jpg)
 
 ![](5246998070934240901_1221661938_456261253.jpg)

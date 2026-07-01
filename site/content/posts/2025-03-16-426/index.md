@@ -19,9 +19,9 @@ views = 91
 ids = [426]
 +++
 
-{{ tag(t="life") }}
-{{ tag(t="esoteric") }}
-{{ tag(t="brodsky") }}
+{{ tag(t="life") }}  
+{{ tag(t="esoteric") }}  
+{{ tag(t="brodsky") }}  
 [Source](https://www.instagram.com/p/DFYWbwQAMnd)
 
 {{ video(src="01.mp4") }}

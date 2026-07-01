@@ -20,9 +20,9 @@ views = 37
 ids = [528]
 +++
 
-{{ tag(t="mount") }} {{ tag(t="archive") }} ({{ tag(t="zip") }}, {{ tag(t="rar") }} and others) as read-only {{ tag(t="fuse") }}, love it
+{{ tag(t="mount") }} {{ tag(t="archive") }} ({{ tag(t="zip") }}, {{ tag(t="rar") }} and others) as read-only {{ tag(t="fuse") }}, love it  
 
-`fuse-archive f.rar ~/mnt/`
+`fuse-archive f.rar ~/mnt/`  
 
 <https://github.com/google/fuse-archive>
 

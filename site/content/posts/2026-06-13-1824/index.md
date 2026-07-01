@@ -16,15 +16,15 @@ next_id = 1825
 next_title = ""
 prev_id = 1823
 prev_title = ""
-views = 16
+views = 18
 ids = [1824]
 +++
 
-{{ tag(t="wikipedia") }}
-{{ tag(t="armenian") }}
-{{ tag(t="ruwiki") }}
-{{ tag(t="language") }}
-{{ tag(t="table") }}
+{{ tag(t="wikipedia") }}  
+{{ tag(t="armenian") }}  
+{{ tag(t="ruwiki") }}  
+{{ tag(t="language") }}  
+{{ tag(t="table") }}  
 
 [https://ru.wikipedia.org/wiki/Армянский\_язык](https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA)
 

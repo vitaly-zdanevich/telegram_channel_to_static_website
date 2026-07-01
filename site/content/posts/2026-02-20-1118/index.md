@@ -19,6 +19,6 @@ views = 13
 ids = [1118]
 +++
 
-{{ tag(t="python") }}
+{{ tag(t="python") }}  
 
 My {{ tag(t="geeknote") }} ({{ tag(t="evernote") }} {{ tag(t="cli") }}) now available on [PyPI](https://pypi.org/project/geeknote/)

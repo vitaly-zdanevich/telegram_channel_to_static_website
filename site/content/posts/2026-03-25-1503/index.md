@@ -20,10 +20,10 @@ views = 18
 ids = [1503]
 +++
 
-{{ tag(t="wikipedia") }}
-{{ tag(t="wikimedia_commons") }}
+{{ tag(t="wikipedia") }}  
+{{ tag(t="wikimedia_commons") }}  
 
-Пишите авторам контентов - иногда они соглашаются сделать его Creative Commons
+Пишите авторам контентов - иногда они соглашаются сделать его Creative Commons  
 
 <https://www.youtube.com/watch?v=SzvkVpPDYtU>
 

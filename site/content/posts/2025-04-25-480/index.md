@@ -20,8 +20,8 @@ views = 32
 ids = [480]
 +++
 
-{{ tag(t="prime_world") }}
-{{ tag(t="belarussian") }}
+{{ tag(t="prime_world") }}  
+{{ tag(t="belarussian") }}  
 
 Adding Belarusian language to the game
 

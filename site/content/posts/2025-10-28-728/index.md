@@ -20,10 +20,10 @@ views = 26
 ids = [728]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="purple") }}
-{{ tag(t="gamepad") }}
-{{ tag(t="gamecube") }}
+{{ tag(t="design") }}  
+{{ tag(t="purple") }}  
+{{ tag(t="gamepad") }}  
+{{ tag(t="gamecube") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:Gamecube-controller-breakdown.jpg)
 

@@ -19,7 +19,7 @@ views = 20
 ids = [1103]
 +++
 
-My new {{ tag(t="bash") }} alias: one function to go to the next folder (like from 2025 to 2026, from aaa to bbb) and the second one to {{ tag(t="cd") }} to prev:
+My new {{ tag(t="bash") }} alias: one function to go to the next folder (like from 2025 to 2026, from aaa to bbb) and the second one to {{ tag(t="cd") }} to prev:  
 
 ```
 cdn() {

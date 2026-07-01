@@ -19,13 +19,13 @@ views = 8
 ids = [939]
 +++
 
-{{ tag(t="aws") }} CTO Werner Vogels
+{{ tag(t="aws") }} CTO Werner Vogels  
 
-Mentioned:
+Mentioned:  
 
-<https://en.wikipedia.org/wiki/Trophic_cascade>
+<https://en.wikipedia.org/wiki/Trophic_cascade>  
 
-<https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/>
+<https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/>  
 
 From <https://youtu.be/3Y1G9najGiI?t=2020>
 

@@ -19,9 +19,9 @@ views = 32
 ids = [420]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="cats") }}
-{{ tag(t="meme") }}
+{{ tag(t="music") }}  
+{{ tag(t="cats") }}  
+{{ tag(t="meme") }}  
 [Source](https://www.instagram.com/p/DGHcjNII9IY)
 
 {{ video(src="01.mp4") }}

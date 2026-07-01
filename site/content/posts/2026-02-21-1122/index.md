@@ -20,7 +20,7 @@ views = 17
 ids = [1122]
 +++
 
-{{ tag(t="mmo") }} {{ tag(t="myst") }} {{ tag(t="stat") }}
+{{ tag(t="mmo") }} {{ tag(t="myst") }} {{ tag(t="stat") }}  
 
 <https://account.mystonline.com/stats/index.php?action=active&day=260219>
 

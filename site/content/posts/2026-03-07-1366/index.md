@@ -16,13 +16,13 @@ next_id = 1367
 next_title = ""
 prev_id = 1365
 prev_title = ""
-views = 8
+views = 9
 ids = [1366]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
-{{ tag(t="anime") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
+{{ tag(t="anime") }}  
 
 <https://inoue.cafe/>
 

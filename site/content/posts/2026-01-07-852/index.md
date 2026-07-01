@@ -20,10 +20,10 @@ views = 13
 ids = [852]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="building") }}
-{{ tag(t="abandoned") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="building") }}  
+{{ tag(t="abandoned") }}  
+{{ tag(t="globustut") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:025-425_%D0%9D%D0%B0%D0%B4%D0%BD%D0%B5%D0%BC%D0%B0%D0%BD,_30-10-2004.jpg)
 

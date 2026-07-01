@@ -20,7 +20,7 @@ views = 34
 ids = [577]
 +++
 
-{{ tag(t="sakartvelo") }}
+{{ tag(t="sakartvelo") }}  
 
 [Source](https://georgiaabout.com/gold-lion-figurine-second-half-of-the-3rd-millennium-b-c-kakheti-tsnori)
 

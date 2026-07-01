@@ -20,9 +20,9 @@ views = 28
 ids = [447]
 +++
 
-{{ tag(t="dune") }}
-{{ tag(t="ussr") }}
-{{ tag(t="mashup") }}
+{{ tag(t="dune") }}  
+{{ tag(t="ussr") }}  
+{{ tag(t="mashup") }}  
 
 I do not know who is the author
 

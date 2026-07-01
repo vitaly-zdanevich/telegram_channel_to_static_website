@@ -16,16 +16,16 @@ next_id = 1829
 next_title = ""
 prev_id = 1826
 prev_title = ""
-views = 95
+views = 96
 ids = [1827]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="beyound_good_and_evil") }}
-{{ tag(t="pig") }}
-{{ tag(t="evolution") }}
-{{ tag(t="sequel") }}
-{{ tag(t="pain") }}
+{{ tag(t="game") }}  
+{{ tag(t="beyound_good_and_evil") }}  
+{{ tag(t="pig") }}  
+{{ tag(t="evolution") }}  
+{{ tag(t="sequel") }}  
+{{ tag(t="pain") }}  
 
 From official <https://www.ubisoft.com/en-us/game/beyond-good-and-evil-2>
 

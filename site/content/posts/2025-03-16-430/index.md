@@ -19,9 +19,9 @@ views = 70
 ids = [430]
 +++
 
-{{ tag(t="scrum") }}
-{{ tag(t="story_points") }}
-{{ tag(t="work") }}
+{{ tag(t="scrum") }}  
+{{ tag(t="story_points") }}  
+{{ tag(t="work") }}  
 
 [Source](https://www.instagram.com/p/DFQTr-SNUmr)
 

@@ -20,11 +20,11 @@ views = 7
 ids = [901]
 +++
 
-{{ tag(t="balarus") }}
-{{ tag(t="religion") }}
-{{ tag(t="sign") }}
-{{ tag(t="globustut") }}
-{{ tag(t="year_2004") }}
+{{ tag(t="balarus") }}  
+{{ tag(t="religion") }}  
+{{ tag(t="sign") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="year_2004") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:035-063_%D0%A7%D0%B5%D1%80%D0%B5%D1%8F,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_25_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 

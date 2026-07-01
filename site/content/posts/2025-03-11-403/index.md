@@ -19,10 +19,10 @@ views = 41
 ids = [403]
 +++
 
-I have custom CSS for a dozen of web services.
+I have custom CSS for a dozen of web services.  
 
-Custom CSS for {{ tag(t="firefox") }} UI.
+Custom CSS for {{ tag(t="firefox") }} UI.  
 
-Custom system UI ({{ tag(t="i3") }}).
+Custom system UI ({{ tag(t="i3") }}).  
 
 Love it. Black, minimal.

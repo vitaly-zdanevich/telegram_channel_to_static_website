@@ -16,11 +16,11 @@ next_id = 1845
 next_title = ""
 prev_id = 1843
 prev_title = ""
-views = 11
+views = 13
 ids = [1844]
 +++
 
-{{ tag(t="armies_of_exigo") }}
+{{ tag(t="armies_of_exigo") }}  
 {{ tag(t="abandone") }}
 
 ![](5308054982420535730_1235877858_460003762.jpg)

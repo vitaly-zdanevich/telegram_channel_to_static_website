@@ -16,13 +16,13 @@ next_id = 1830
 next_title = ""
 prev_id = 1827
 prev_title = ""
-views = 19
+views = 20
 ids = [1829]
 +++
 
-{{ tag(t="tech") }}
-{{ tag(t="psp") }}
-{{ tag(t="final_fantasy") }}
+{{ tag(t="tech") }}  
+{{ tag(t="psp") }}  
+{{ tag(t="final_fantasy") }}  
 
 <https://www.pinterest.com/pin/626844841927915392/>
 

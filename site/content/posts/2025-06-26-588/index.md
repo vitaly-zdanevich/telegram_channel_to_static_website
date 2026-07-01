@@ -19,17 +19,17 @@ views = 43
 ids = [588]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="demo") }}
-{{ tag(t="warhammer") }}
-{{ tag(t="dawn_of_war") }}
-\#2004
+{{ tag(t="game") }}  
+{{ tag(t="demo") }}  
+{{ tag(t="warhammer") }}  
+{{ tag(t="dawn_of_war") }}  
+\#2004  
 
-If you see "Failed to initialize video card" - try to enable Gamescope. Works with Wine 8 for me.
+If you see "Failed to initialize video card" - try to enable Gamescope. Works with Wine 8 for me.  
 
-<https://lutris.net/games/warhammer-40000-dawn-of-war>
+<https://lutris.net/games/warhammer-40000-dawn-of-war>  
 
-<https://store.steampowered.com/app/4570>
+<https://store.steampowered.com/app/4570>  
 
 <https://en.wikipedia.org/wiki/Warhammer_40,000:_Dawn_of_War>
 

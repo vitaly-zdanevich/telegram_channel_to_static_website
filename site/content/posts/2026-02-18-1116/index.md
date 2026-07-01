@@ -20,16 +20,16 @@ views = 13
 ids = [1116]
 +++
 
-{{ tag(t="pain") }}
-{{ tag(t="ad") }}
-{{ tag(t="event") }}
-{{ tag(t="sergey_kulinkovich") }}
+{{ tag(t="pain") }}  
+{{ tag(t="ad") }}  
+{{ tag(t="event") }}  
+{{ tag(t="sergey_kulinkovich") }}  
 
-The old one
+The old one  
 
-> Унижение и боль<br><br>Семинар-исповедь Сергея Кулинковича о том, как светлые на первый взгляд идеи с треском проваливались и тянули на дно проект за проектом.
+> Унижение и боль  <br>  <br>Семинар-исповедь Сергея Кулинковича о том, как светлые на первый взгляд идеи с треском проваливались и тянули на дно проект за проектом.
 
-<https://kulinkovich.com/>
+<https://kulinkovich.com/>  
 
 <https://t.me/kulinkovich_live>
 

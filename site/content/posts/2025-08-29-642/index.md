@@ -19,28 +19,28 @@ views = 34
 ids = [642]
 +++
 
-**Heroes of Might and Magic 3: карта "Изумрудные острова": средняя сложность, 2 человека VS AI: победа**
+**Heroes of Might and Magic 3: карта "Изумрудные острова": средняя сложность, 2 человека VS AI: победа**  
 
-No comments.
+No comments.  
 
-Horn of the Abyss 1.7.3 <https://h3hota.com/ru/documentation>
+Horn of the Abyss 1.7.3 <https://h3hota.com/ru/documentation>  
 
-[https://mightandmagic.fandom.com/ru/wiki/Изумрудные\_острова](https://mightandmagic.fandom.com/ru/wiki/%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5_%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B0)
+[https://mightandmagic.fandom.com/ru/wiki/Изумрудные\_острова](https://mightandmagic.fandom.com/ru/wiki/%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5_%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B0)  
 
-<https://ru.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III>
+<https://ru.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III>  
 
-Playing through Conty on Gentoo Linux no-multilib profile <https://github.com/Kron4ek/Conty>
+Playing through Conty on Gentoo Linux no-multilib profile <https://github.com/Kron4ek/Conty>  
 
-Part from <https://youtu.be/r2ENwW565x0>
+Part from <https://youtu.be/r2ENwW565x0>  
 
-{{ tag(t="my") }}
-{{ tag(t="year_1999") }}
-{{ tag(t="video") }}
-{{ tag(t="game") }}
-{{ tag(t="strategy") }}
-{{ tag(t="tbs") }}
-{{ tag(t="homm3") }}
-{{ tag(t="hota") }}
+{{ tag(t="my") }}  
+{{ tag(t="year_1999") }}  
+{{ tag(t="video") }}  
+{{ tag(t="game") }}  
+{{ tag(t="strategy") }}  
+{{ tag(t="tbs") }}  
+{{ tag(t="homm3") }}  
+{{ tag(t="hota") }}  
 {{ tag(t="emerald_isles") }}
 
 {{ youtube(id="r2ENwW565x0") }}

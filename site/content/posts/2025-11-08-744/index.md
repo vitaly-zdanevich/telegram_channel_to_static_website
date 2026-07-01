@@ -20,10 +20,10 @@ views = 25
 ids = [744]
 +++
 
-{{ tag(t="school") }} in {{ tag(t="sakartvelo") }}
+{{ tag(t="school") }} in {{ tag(t="sakartvelo") }}  
 
-{{ tag(t="architecture") }}
-{{ tag(t="books") }}
+{{ tag(t="architecture") }}  
+{{ tag(t="books") }}  
 
 <https://commons.wikimedia.org/wiki/File:Gurtskaya_Gymnasium_-_GG,_Zugdidi,_Georgia.jpg>
 

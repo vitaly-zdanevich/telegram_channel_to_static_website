@@ -16,15 +16,15 @@ next_id = 1517
 next_title = ""
 prev_id = 1509
 prev_title = ""
-views = 14
+views = 15
 ids = [1511]
 +++
 
-{{ tag(t="abandone") }}
-{{ tag(t="columns") }}
-{{ tag(t="святск") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="abandone") }}  
+{{ tag(t="columns") }}  
+{{ tag(t="святск") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:057-258_%D0%A1%D0%B2%D1%8F%D1%82%D1%81%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
 ![](01.jpg)

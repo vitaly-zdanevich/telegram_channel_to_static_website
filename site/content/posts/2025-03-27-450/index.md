@@ -20,7 +20,7 @@ views = 32
 ids = [450]
 +++
 
-{{ tag(t="phone") }}
+{{ tag(t="phone") }}  
 {{ tag(t="psy") }}
 
 ![](01.jpg)

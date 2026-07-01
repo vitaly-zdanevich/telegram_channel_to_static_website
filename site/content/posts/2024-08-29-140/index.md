@@ -18,9 +18,9 @@ views = 59
 ids = [140]
 +++
 
-**Moss: Book 2**: one of the best VR game. I played on **Meta Quest 2**. And here - one of the most dramatic episode of the game industry. Usual gameplay is interrupted by painful death of the main character. So lovely animation. So much of love and pain. She is asking the player to help - but we cannot help, she is crying. Another book. Another hero - who does not like you.
+**Moss: Book 2**: one of the best VR game. I played on **Meta Quest 2**. And here - one of the most dramatic episode of the game industry. Usual gameplay is interrupted by painful death of the main character. So lovely animation. So much of love and pain. She is asking the player to help - but we cannot help, she is crying. Another book. Another hero - who does not like you.  
 
-In VR it more dramatic, real. I love VR games.
+In VR it more dramatic, real. I love VR games.  
 
 I cut the video fragment from <https://youtu.be/LDkWkYs8YHI>
 

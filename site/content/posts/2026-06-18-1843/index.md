@@ -16,16 +16,16 @@ next_id = 1844
 next_title = ""
 prev_id = 1842
 prev_title = ""
-views = 11
+views = 13
 ids = [1843]
 +++
 
-{{ tag(t="home") }}
-{{ tag(t="diy") }}
-{{ tag(t="belarus") }}
-{{ tag(t="onliner") }}
+{{ tag(t="home") }}  
+{{ tag(t="diy") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="onliner") }}  
 
-From <https://youtu.be/WsW_9nZUGnE>
+From <https://youtu.be/WsW_9nZUGnE>  
 
 <https://realt.onliner.by/2020/06/04/belorus-stroit-doma-iz-gryazi>
 

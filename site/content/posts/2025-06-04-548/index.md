@@ -20,7 +20,7 @@ views = 52
 ids = [548]
 +++
 
-New small project: {{ tag(t="python") }} script for {{ tag(t="gthumb") }} (or other software, even standalone CLI) that read EXIF GPS and open {{ tag(t="openstreetmap") }}
+New small project: {{ tag(t="python") }} script for {{ tag(t="gthumb") }} (or other software, even standalone CLI) that read EXIF GPS and open {{ tag(t="openstreetmap") }}  
 
 <https://gitlab.com/vitaly-zdanevich/image-path-to-openstreetmap>
 

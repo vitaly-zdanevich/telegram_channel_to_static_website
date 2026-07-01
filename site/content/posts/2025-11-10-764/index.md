@@ -20,8 +20,8 @@ views = 30
 ids = [764]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="gustave_dore") }}
+{{ tag(t="painting") }}  
+{{ tag(t="gustave_dore") }}  
 [Source](https://commons.wikimedia.org/wiki/File:Paul_Gustave_Louis_Christophe_Dor%C3%A9_V.jpg)
 
 ![](5229215222705359874_1217521546_460000258.jpg)

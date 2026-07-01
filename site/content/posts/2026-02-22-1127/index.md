@@ -19,7 +19,7 @@ views = 17
 ids = [1127]
 +++
 
-> Internet Archive ceramic archivists<br><br>“Brewster Kahle, founder of the Internet Archive, went to China and was impressed with the Xian warriors. After he got back, he decided to hire Nuala Creed to start making sculptures representing individuals who had dedicated at least three years of service to the \[Internet\] Archive. Nuala has made 100 to date \[2014\]. They are on display in the Great Room of the Internet Archive
+> Internet Archive ceramic archivists  <br>  <br>“Brewster Kahle, founder of the Internet Archive, went to China and was impressed with the Xian warriors. After he got back, he decided to hire Nuala Creed to start making sculptures representing individuals who had dedicated at least three years of service to the \[Internet\] Archive. Nuala has made 100 to date \[2014\]. They are on display in the Great Room of the Internet Archive
 
 <https://commons.wikimedia.org/wiki/Category:Internet_Archive_ceramic_archivists>
 

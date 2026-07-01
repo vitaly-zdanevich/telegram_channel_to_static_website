@@ -19,9 +19,9 @@ views = 74
 ids = [27]
 +++
 
-{{ tag(t="my") }}
-{{ tag(t="film") }}
-{{ tag(t="korol_i_shut") }}
+{{ tag(t="my") }}  
+{{ tag(t="film") }}  
+{{ tag(t="korol_i_shut") }}  
 
 <https://coub.com/view/3c3p94>
 

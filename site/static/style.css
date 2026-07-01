@@ -46,7 +46,7 @@ pre code { padding: 0; background: none; }
 .site-header { display: flex; gap: .6rem; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
-.site-header nav a { margin-left: .75rem; }
+.site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
 .site-search { margin-left: auto; }
 .site-search input, input.site-search {
   background: var(--input-bg); color: var(--fg);
@@ -88,6 +88,14 @@ table.cal th { font-weight: 400; color: var(--muted); padding: .1rem; text-align
 table.cal td { width: 1.95rem; height: 1.7rem; text-align: center; padding: 0; }
 table.cal td.on a { display: block; line-height: 1.7rem; border-radius: 4px; text-decoration: none; background: var(--code-bg); font-weight: 700; }
 table.cal td.off { color: var(--muted); opacity: .45; }
+table.cal td.c2 a { font-size: 1.05rem; }
+table.cal td.c3 a { font-size: 1.35rem; font-weight: 800; }
+
+/* Recent commits (About page) */
+.commits { list-style: none; padding: 0; font-size: .9em; }
+.commits li { padding: .15rem 0; }
+.commits code { background: var(--code-bg); padding: .05rem .3rem; border-radius: 3px; }
+.commits .cdate { color: var(--muted); font-size: .85em; margin-left: .4rem; }
 
 /* Mobile: use more of a narrow screen — less left/right inset. */
 @media (max-width: 640px) {

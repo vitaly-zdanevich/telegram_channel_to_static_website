@@ -20,7 +20,7 @@ views = 24
 ids = [1494]
 +++
 
-{{ tag(t="steam") }}: almost 25% is on {{ tag(t="linux") }}?
+{{ tag(t="steam") }}: almost 25% is on {{ tag(t="linux") }}?  
 
 <https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=linux>
 

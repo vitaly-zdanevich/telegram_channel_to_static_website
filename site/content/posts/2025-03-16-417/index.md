@@ -19,10 +19,10 @@ views = 31
 ids = [417]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="cartoon") }}
+{{ tag(t="music") }}  
+{{ tag(t="cartoon") }}  
 
-> The animated film Ships of Years Past turns 10 years old **🏴‍☠️**<br><br>Ships of Years Past is award-winning puppet animation by Yura Boguslavsksky, co-founder of Invisible friends, with original soundtrack by Jason Webley.
+> The animated film Ships of Years Past turns 10 years old **🏴‍☠️**  <br>  <br>Ships of Years Past is award-winning puppet animation by Yura Boguslavsksky, co-founder of Invisible friends, with original soundtrack by Jason Webley.
 
 [Source](https://www.instagram.com/p/DGxcEVpCMtU)
 

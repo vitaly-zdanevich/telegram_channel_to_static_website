@@ -20,7 +20,7 @@ views = 21
 ids = [1758]
 +++
 
-Wow my {{ tag(t="reeknote") }} ({{ tag(t="evernote") }} {{ tag(t="cli") }}) can now play audio and show images, in a terminal
+Wow my {{ tag(t="reeknote") }} ({{ tag(t="evernote") }} {{ tag(t="cli") }}) can now play audio and show images, in a terminal  
 
 <https://github.com/vitaly-zdanevich/reeknote>
 

@@ -19,9 +19,9 @@ views = 41
 ids = [352]
 +++
 
-{{ tag(t="sakartvelo") }}
-{{ tag(t="ny") }}
-{{ tag(t="subway") }}
+{{ tag(t="sakartvelo") }}  
+{{ tag(t="ny") }}  
+{{ tag(t="subway") }}  
 
 [Source](https://www.instagram.com/p/DBdaWh-Mry3)
 

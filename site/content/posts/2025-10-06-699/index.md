@@ -19,6 +19,6 @@ views = 24
 ids = [699]
 +++
 
-{{ tag(t="userscript") }} for {{ tag(t="youtube") }}: audio only. Better for {{ tag(t="cpu") }}, {{ tag(t="battery") }}, {{ tag(t="traffic") }}
+{{ tag(t="userscript") }} for {{ tag(t="youtube") }}: audio only. Better for {{ tag(t="cpu") }}, {{ tag(t="battery") }}, {{ tag(t="traffic") }}  
 
 <https://greasyfork.org/en/scripts/484611-youtube-audio-only>

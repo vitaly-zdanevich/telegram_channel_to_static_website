@@ -20,9 +20,9 @@ views = 29
 ids = [826]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="preservation") }}
-{{ tag(t="year_1885") }}
+{{ tag(t="design") }}  
+{{ tag(t="preservation") }}  
+{{ tag(t="year_1885") }}  
 
 <https://commons.wikimedia.org/wiki/Category:Igry_i_zabavy>
 

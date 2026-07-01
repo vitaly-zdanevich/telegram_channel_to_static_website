@@ -19,12 +19,12 @@ views = 45
 ids = [552]
 +++
 
-{{ tag(t="arsen_markaryan") }}
-{{ tag(t="health") }}
-{{ tag(t="medicine") }}
-{{ tag(t="psy") }}
-{{ tag(t="mantoux") }}
-{{ tag(t="mercury") }}
+{{ tag(t="arsen_markaryan") }}  
+{{ tag(t="health") }}  
+{{ tag(t="medicine") }}  
+{{ tag(t="psy") }}  
+{{ tag(t="mantoux") }}  
+{{ tag(t="mercury") }}  
 
 [Source](https://www.youtube.com/watch?v=9OorBJMEJK8)
 

@@ -20,9 +20,9 @@ views = 17
 ids = [854]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="nature") }}
-{{ tag(t="village") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="nature") }}  
+{{ tag(t="village") }}  
 {{ tag(t="globustut") }}[Source](https://commons.wikimedia.org/wiki/File:026-022_%D0%B1%D0%BB%D0%B8%D0%B7_%D0%91%D0%B5%D0%B3%D0%BE%D0%BC%D0%BB%D1%8C,_02-11-2004.jpg)
 
 ![](5402068444980646165_1257767073_460001557.jpg)

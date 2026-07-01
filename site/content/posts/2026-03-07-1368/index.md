@@ -20,8 +20,8 @@ views = 7
 ids = [1368]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
 
 <https://dollarchive.neocities.org/>
 

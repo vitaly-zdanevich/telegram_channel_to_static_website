@@ -19,12 +19,12 @@ views = 16
 ids = [1680]
 +++
 
-{{ tag(t="preservation") }}
-{{ tag(t="internet_archive") }}
-{{ tag(t="short") }}
-{{ tag(t="music") }}
-{{ tag(t="tape") }}
-{{ tag(t="audio") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="internet_archive") }}  
+{{ tag(t="short") }}  
+{{ tag(t="music") }}  
+{{ tag(t="tape") }}  
+{{ tag(t="audio") }}  
 [Source](https://www.youtube.com/shorts/0YcZWvC3hI8)
 
 {{ youtube(id="0YcZWvC3hI8") }}

@@ -20,8 +20,8 @@ views = 17
 ids = [1686]
 +++
 
-{{ tag(t="photo") }}
-{{ tag(t="batumi") }}
+{{ tag(t="photo") }}  
+{{ tag(t="batumi") }}  
 {{ tag(t="dog") }}
 
 ![](5431547614441706367_1264630727_460002175.jpg)

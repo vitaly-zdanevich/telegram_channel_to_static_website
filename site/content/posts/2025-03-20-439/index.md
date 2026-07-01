@@ -19,11 +19,11 @@ views = 73
 ids = [439]
 +++
 
-{{ tag(t="korea") }}
-{{ tag(t="ai") }}
-{{ tag(t="ai_video") }}
-{{ tag(t="star_wars") }}
-{{ tag(t="demonflyingfox") }}
+{{ tag(t="korea") }}  
+{{ tag(t="ai") }}  
+{{ tag(t="ai_video") }}  
+{{ tag(t="star_wars") }}  
+{{ tag(t="demonflyingfox") }}  
 [Source](https://youtu.be/EICWYazyqu4)
 
 {{ youtube(id="EICWYazyqu4") }}

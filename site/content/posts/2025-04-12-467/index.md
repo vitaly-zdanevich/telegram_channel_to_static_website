@@ -20,11 +20,11 @@ views = 44
 ids = [467]
 +++
 
-*Пройти тест, узнай кто ты*
+*Пройти тест, узнай кто ты*  
 
-{{ tag(t="psy") }}
-{{ tag(t="old") }}
-{{ tag(t="test") }}
+{{ tag(t="psy") }}  
+{{ tag(t="old") }}  
+{{ tag(t="test") }}  
 
 [Source](https://www.threads.net/@_vitla_/post/DIS1LDItE15/media)
 

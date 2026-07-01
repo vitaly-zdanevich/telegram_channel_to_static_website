@@ -20,9 +20,9 @@ views = 56
 ids = [777]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="kin_dza_dza") }}
-{{ tag(t="batumi") }}
+{{ tag(t="film") }}  
+{{ tag(t="kin_dza_dza") }}  
+{{ tag(t="batumi") }}  
 
 > Соедините меня с Батуми
 

@@ -20,9 +20,9 @@ views = 25
 ids = [835]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="petersburg") }}
-{{ tag(t="theater") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="petersburg") }}  
+{{ tag(t="theater") }}  
 
 <https://ptj.spb.ru/archive/101/independence-is-freedom/sobiraetsya-ryad-subektivnostej/>
 

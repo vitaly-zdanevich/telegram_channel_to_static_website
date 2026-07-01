@@ -20,9 +20,9 @@ views = 14
 ids = [1126]
 +++
 
-{{ tag(t="internet_archive") }}
-{{ tag(t="flag") }}
-{{ tag(t="earth") }}
+{{ tag(t="internet_archive") }}  
+{{ tag(t="flag") }}  
+{{ tag(t="earth") }}  
 
 <https://commons.wikimedia.org/wiki/File:Internet_Archive_Headquarters_-_51434767124.jpg>
 

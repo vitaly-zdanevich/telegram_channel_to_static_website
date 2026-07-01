@@ -21,8 +21,8 @@ ids = [797]
 +++
 
 > С помощью нехитрых приспособлений буханку хлеба можно превратить в троллейбус, но зачем
-<https://t.me/it_laboratory_bar/1/11399>{{ tag(t="ai") }}
-{{ tag(t="nano_banana") }}
+<https://t.me/it_laboratory_bar/1/11399>{{ tag(t="ai") }}  
+{{ tag(t="nano_banana") }}  
 
 [Source](https://t.me/it_laboratory_bar/1/11399)
 

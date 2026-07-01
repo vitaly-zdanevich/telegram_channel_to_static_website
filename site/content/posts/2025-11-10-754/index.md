@@ -20,12 +20,12 @@ views = 20
 ids = [754]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="bible") }}
-{{ tag(t="angel") }}
-{{ tag(t="gustave_dore") }}
+{{ tag(t="painting") }}  
+{{ tag(t="bible") }}  
+{{ tag(t="angel") }}  
+{{ tag(t="gustave_dore") }}  
 
-Study for "Jacob's Dream"
+Study for "Jacob's Dream"  
 [Source](https://commons.wikimedia.org/wiki/Category:Art_depicting_the_Old_Testament_by_Gustave_Dor%C3%A9#/media/File:Gustave_Dor%C3%A9_-_Study_for_%22Jacob&#39;s_Dream%22_-_Walters_371319.jpg)
 
 ![](5229215222705359737_1217521546_460000121.jpg)

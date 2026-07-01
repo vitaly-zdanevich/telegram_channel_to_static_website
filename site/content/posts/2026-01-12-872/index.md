@@ -20,7 +20,7 @@ views = 17
 ids = [872]
 +++
 
-Wow {{ tag(t="wikipedia") }} semi-automatic editing by a {{ tag(t="python") }} script
+Wow {{ tag(t="wikipedia") }} semi-automatic editing by a {{ tag(t="python") }} script  
 
 <https://gitlab.com/vitaly-zdanevich/globustut-domain-move-on-wikipedia>
 

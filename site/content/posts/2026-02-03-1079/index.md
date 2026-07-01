@@ -20,8 +20,8 @@ views = 13
 ids = [1079]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="game") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="game") }}  
 
 <https://planet.kknd2.com/>
 

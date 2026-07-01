@@ -20,9 +20,9 @@ views = 26
 ids = [521]
 +++
 
-{{ tag(t="displays") }}
+{{ tag(t="displays") }}  
 
-Dream setup. Now I have 4.
+Dream setup. Now I have 4.  
 
 [Source](https://www.pcspecialist.co.uk/forums/threads/no-such-thing-as-too-many-screens.95848)
 

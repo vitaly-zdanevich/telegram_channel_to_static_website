@@ -16,13 +16,13 @@ next_id = 1818
 next_title = ""
 prev_id = 1807
 prev_title = ""
-views = 13
+views = 14
 ids = [1817]
 +++
 
-{{ tag(t="logo") }}
-{{ tag(t="progy") }}
-{{ tag(t="github") }}
+{{ tag(t="logo") }}  
+{{ tag(t="progy") }}  
+{{ tag(t="github") }}  
 
 [Source](https://www.linkedin.com/posts/alxsuv_claudecode-aiforengineers-softwareengineering-share-7470087035169714176-72AF/)
 

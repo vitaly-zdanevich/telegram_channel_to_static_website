@@ -19,11 +19,11 @@ views = 43
 ids = [597]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="anime") }}
-{{ tag(t="susumu_hirasawa") }}
+{{ tag(t="music") }}  
+{{ tag(t="anime") }}  
+{{ tag(t="susumu_hirasawa") }}  
 
-<https://youtu.be/1X4YQEgWJsw>
+<https://youtu.be/1X4YQEgWJsw>  
 
 <https://en.wikipedia.org/wiki/Susumu_Hirasawa>
 

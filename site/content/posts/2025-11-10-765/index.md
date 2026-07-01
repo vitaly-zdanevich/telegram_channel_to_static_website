@@ -20,8 +20,8 @@ views = 40
 ids = [765]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="gustave_dore") }}
+{{ tag(t="painting") }}  
+{{ tag(t="gustave_dore") }}  
 
 Woman of the Apocalypse[Source](https://commons.wikimedia.org/wiki/File:%D0%93._%D0%94%D0%BE%D1%80%D0%B5_%D0%96%D0%B5%D0%BD%D0%B0,_%D0%BE%D0%B1%D1%87%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B2_%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B5.jpg)
 

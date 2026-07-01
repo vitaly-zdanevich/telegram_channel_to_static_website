@@ -20,19 +20,19 @@ views = 13
 ids = [1668]
 +++
 
-{{ tag(t="anime") }}
-{{ tag(t="cover") }}
-{{ tag(t="game") }}
-{{ tag(t="ps3") }}
-{{ tag(t="year_2014") }}
+{{ tag(t="anime") }}  
+{{ tag(t="cover") }}  
+{{ tag(t="game") }}  
+{{ tag(t="ps3") }}  
+{{ tag(t="year_2014") }}  
 
-**Atelier Shallie Alchemists of the Dusk Sea**
+**Atelier Shallie Alchemists of the Dusk Sea**  
 
-<https://www.youtube.com/channel/UCFW9XIHHlkWjZpv0hVDlsSg>
+<https://www.youtube.com/channel/UCFW9XIHHlkWjZpv0hVDlsSg>  
 
-<https://en.wikipedia.org/wiki/Atelier_Shallie%3A_Alchemists_of_the_Dusk_Sea>
+<https://en.wikipedia.org/wiki/Atelier_Shallie%3A_Alchemists_of_the_Dusk_Sea>  
 
-<https://www.mobygames.com/game/84566/atelier-shallie-plus-alchemists-of-the-dusk-sea/>
+<https://www.mobygames.com/game/84566/atelier-shallie-plus-alchemists-of-the-dusk-sea/>  
 
 <https://www.cubed3.com/games/reviews/playstation-3/atelier-shallie-alchemists-of-the-dusk-sea>
 

@@ -20,9 +20,9 @@ views = 19
 ids = [735]
 +++
 
-If WebArchive have it - it still not in Google - you cannot search the website. But you can try to download the website and host it for free on Gitlab/Github.
+If WebArchive have it - it still not in Google - you cannot search the website. But you can try to download the website and host it for free on Gitlab/Github.  
 
-{{ tag(t="archivation") }}
+{{ tag(t="archivation") }}  
 {{ tag(t="website") }}
 
 ![](5211094055603867254_1213302383_460000886.jpg)

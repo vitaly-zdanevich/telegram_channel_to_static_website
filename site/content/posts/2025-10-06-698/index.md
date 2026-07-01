@@ -22,7 +22,7 @@ ids = [698]
 
 > {{ tag(t="hitler") }}, {{ tag(t="stalin") }}, {{ tag(t="trotsky") }}, {{ tag(t="freud") }} & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1
 
-[Source](https://www.instagram.com/p/DPeNiP2DDW5)
+[Source](https://www.instagram.com/p/DPeNiP2DDW5)  
 [Source B](https://brilliantmaps.com/vienna-1913-1914/)
 
 ![](5413585189327731507_1260448524_456260403.jpg)

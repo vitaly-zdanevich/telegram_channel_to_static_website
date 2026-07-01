@@ -20,9 +20,9 @@ views = 24
 ids = [697]
 +++
 
-{{ tag(t="turkey") }}
-{{ tag(t="map") }}
-{{ tag(t="population") }}
+{{ tag(t="turkey") }}  
+{{ tag(t="map") }}  
+{{ tag(t="population") }}  
 
 [Source](https://www.visualcapitalist.com/wp-content/uploads/2023/02/Visualizing-Population-Density-in-Turkey-Full-Size.html)
 

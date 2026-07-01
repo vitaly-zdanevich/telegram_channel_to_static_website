@@ -20,10 +20,10 @@ views = 16
 ids = [1307]
 +++
 
-{{ tag(t="couchsurfing") }}
-{{ tag(t="money") }}
+{{ tag(t="couchsurfing") }}  
+{{ tag(t="money") }}  
 
-2000$ per year to {{ tag(t="AWS") }}
+2000$ per year to {{ tag(t="AWS") }}  
 
 <https://couchers.org/blog/2026/02/16/couchers-inc-financials-2025>
 

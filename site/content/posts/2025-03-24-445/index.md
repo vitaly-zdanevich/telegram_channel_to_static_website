@@ -19,10 +19,10 @@ views = 171
 ids = [445]
 +++
 
-{{ tag(t="elon_musk") }}
-{{ tag(t="star_wars") }}
-{{ tag(t="elections") }}
-{{ tag(t="roman_salute") }}
+{{ tag(t="elon_musk") }}  
+{{ tag(t="star_wars") }}  
+{{ tag(t="elections") }}  
+{{ tag(t="roman_salute") }}  
 
 [Source](https://www.instagram.com/p/DGwoexUtWij)
 

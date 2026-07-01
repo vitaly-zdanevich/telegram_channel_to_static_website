@@ -20,7 +20,7 @@ views = 47
 ids = [811]
 +++
 
-{{ tag(t="minsk") }} inside what country
+{{ tag(t="minsk") }} inside what country  
 
 <https://www.wikidata.org/wiki/Q2280>
 

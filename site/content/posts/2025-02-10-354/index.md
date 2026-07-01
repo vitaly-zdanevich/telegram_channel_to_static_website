@@ -19,11 +19,11 @@ views = 40
 ids = [354]
 +++
 
-<https://youtu.be/TUAaUfb6dXA?list=RDfmMFOQBthz0>
+<https://youtu.be/TUAaUfb6dXA?list=RDfmMFOQBthz0>  
 
-{{ tag(t="music") }}
-{{ tag(t="anime") }}
-{{ tag(t="tatu") }}
+{{ tag(t="music") }}  
+{{ tag(t="anime") }}  
+{{ tag(t="tatu") }}  
 {{ tag(t="rammstein") }}
 
 {{ youtube(id="TUAaUfb6dXA") }}

@@ -20,7 +20,7 @@ views = 23
 ids = [1745]
 +++
 
-My another hobby project, made with {{ tag(t="llm") }} / {{ tag(t="codex") }}: converter of {{ tag(t="wikipedia") }} dumps into {{ tag(t="man") }} / {{ tag(t="roff") }} format, on {{ tag(t="rust") }} (because I love performance): for a {{ tag(t="terminal") }}, {{ tag(t="offline") }} reading. {{ tag(t="love") }} it, still fixing many markup cases, but mostly its readable already <https://gitlab.com/vitaly-zdanevich/wiki2man_on_rust>
+My another hobby project, made with {{ tag(t="llm") }} / {{ tag(t="codex") }}: converter of {{ tag(t="wikipedia") }} dumps into {{ tag(t="man") }} / {{ tag(t="roff") }} format, on {{ tag(t="rust") }} (because I love performance): for a {{ tag(t="terminal") }}, {{ tag(t="offline") }} reading. {{ tag(t="love") }} it, still fixing many markup cases, but mostly its readable already <https://gitlab.com/vitaly-zdanevich/wiki2man_on_rust>  
 
 Wrote about it at <https://diff.wikimedia.org/2026/06/25/i-built-the-convertor-from-wikipedia-dumps-to-man-roff-format-for-offline-reading-in-a-terminal/>
 

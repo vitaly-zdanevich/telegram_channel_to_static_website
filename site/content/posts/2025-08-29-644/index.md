@@ -19,9 +19,9 @@ views = 33
 ids = [644]
 +++
 
-{{ tag(t="stat") }}
-{{ tag(t="wikipedia") }}
-{{ tag(t="ai") }}
+{{ tag(t="stat") }}  
+{{ tag(t="wikipedia") }}  
+{{ tag(t="ai") }}  
 
 > Wikipedia's traffic has fallen by 23% in three years
 

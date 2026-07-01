@@ -20,8 +20,8 @@ views = 17
 ids = [1681]
 +++
 
-{{ tag(t="serp") }}
-{{ tag(t="armies_of_exigo") }}
+{{ tag(t="serp") }}  
+{{ tag(t="armies_of_exigo") }}  
 
 {{ tag(t="google") }} found a quote that exists on {{ tag(t="youtube") }} only
 

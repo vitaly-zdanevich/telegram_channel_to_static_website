@@ -20,10 +20,10 @@ views = 15
 ids = [1509]
 +++
 
-{{ tag(t="monument") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
-{{ tag(t="year_2005") }}
+{{ tag(t="monument") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="year_2005") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:057-097_%D0%9A%D0%BE%D0%BC%D0%BE%D1%82%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 

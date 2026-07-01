@@ -20,9 +20,9 @@ views = 16
 ids = [1570]
 +++
 
-{{ tag(t="ai") }}
-{{ tag(t="gpu") }}
-{{ tag(t="nvidia") }}
+{{ tag(t="ai") }}  
+{{ tag(t="gpu") }}  
+{{ tag(t="nvidia") }}  
 
 <https://www.newegg.com/p/N82E16888892002>
 

@@ -20,7 +20,7 @@ views = 35
 ids = [202]
 +++
 
-My {{ tag(t="photo") }} from 2012, for the defunct website of naked {{ tag(t="cats") }}
+My {{ tag(t="photo") }} from 2012, for the defunct website of naked {{ tag(t="cats") }}  
 {{ tag(t="eyes") }}
 
 ![](01.jpg)

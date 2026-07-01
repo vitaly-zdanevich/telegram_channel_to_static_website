@@ -16,17 +16,17 @@ next_id = 1834
 next_title = ""
 prev_id = 1832
 prev_title = ""
-views = 14
+views = 15
 ids = [1833]
 +++
 
-{{ tag(t="old") }}
-{{ tag(t="grandmother") }}
-{{ tag(t="religion") }}
-{{ tag(t="great_schema") }}
-{{ tag(t="candle") }}
+{{ tag(t="old") }}  
+{{ tag(t="grandmother") }}  
+{{ tag(t="religion") }}  
+{{ tag(t="great_schema") }}  
+{{ tag(t="candle") }}  
 
-See also <https://en.wikipedia.org/wiki/Degrees_of_Eastern_Orthodox_monasticism#Great_Schema>
+See also <https://en.wikipedia.org/wiki/Degrees_of_Eastern_Orthodox_monasticism#Great_Schema>  
 
 From <https://www.pinterest.com/pin/96475617015147143/>
 

@@ -16,13 +16,13 @@ next_id = 1840
 next_title = ""
 prev_id = 1838
 prev_title = ""
-views = 12
+views = 14
 ids = [1839]
 +++
 
-{{ tag(t="interior") }}
-{{ tag(t="refrigerator") }}
-{{ tag(t="green") }}
+{{ tag(t="interior") }}  
+{{ tag(t="refrigerator") }}  
+{{ tag(t="green") }}  
 
 From <https://www.pinterest.com/pin/96475617015149872/>
 

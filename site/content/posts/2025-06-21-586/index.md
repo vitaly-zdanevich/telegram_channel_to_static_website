@@ -20,7 +20,7 @@ views = 44
 ids = [586]
 +++
 
-{{ tag(t="map") }} of articles and photos
+{{ tag(t="map") }} of articles and photos  
 
 [https://wikimap.toolforge.org](https://wikimap.toolforge.org/)
 

@@ -19,10 +19,10 @@ views = 186
 ids = [422]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="techno") }}
-{{ tag(t="religion") }}
-{{ tag(t="mulsim") }}
+{{ tag(t="music") }}  
+{{ tag(t="techno") }}  
+{{ tag(t="religion") }}  
+{{ tag(t="mulsim") }}  
 [Source](https://www.instagram.com/p/DFdiJVDIhv5)
 
 {{ video(src="01.mp4") }}

@@ -19,10 +19,10 @@ views = 34
 ids = [614]
 +++
 
-{{ tag(t="telegram") }} bot that sends to email, its mean to {{ tag(t="evernote") }} too!
+{{ tag(t="telegram") }} bot that sends to email, its mean to {{ tag(t="evernote") }} too!  
 
-[@selfmailbot](https://t.me/selfmailbot)
+[@selfmailbot](https://t.me/selfmailbot)  
 
-Article from author <https://borshev.com/selfmailbot>
+Article from author <https://borshev.com/selfmailbot>  
 
 <https://github.com/f213/selfmailbot>

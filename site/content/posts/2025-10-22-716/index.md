@@ -19,7 +19,7 @@ views = 25
 ids = [716]
 +++
 
-{{ tag(t="medicine") }}
+{{ tag(t="medicine") }}  
 {{ tag(t="death") }}[Source](https://www.instagram.com/p/DNbKiMksEZA)
 
 {{ video(src="01.mp4") }}

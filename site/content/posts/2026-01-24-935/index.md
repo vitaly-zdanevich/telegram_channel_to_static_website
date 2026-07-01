@@ -20,7 +20,7 @@ views = 12
 ids = [935]
 +++
 
-{{ tag(t="vibe_coding") }} without human review is {{ tag(t="gambling") }}
+{{ tag(t="vibe_coding") }} without human review is {{ tag(t="gambling") }}  
 
 From <https://youtu.be/3Y1G9najGiI?t=3390>
 

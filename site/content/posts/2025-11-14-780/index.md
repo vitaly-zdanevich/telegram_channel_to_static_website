@@ -20,9 +20,9 @@ views = 61
 ids = [780]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_games") }}
-{{ tag(t="pink") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_games") }}  
+{{ tag(t="pink") }}  
 
 <https://www.thejimquisition.com/about>
 

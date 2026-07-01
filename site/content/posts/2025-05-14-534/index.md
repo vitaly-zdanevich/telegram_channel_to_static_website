@@ -20,9 +20,9 @@ views = 55
 ids = [534]
 +++
 
-From [globustut.by](http://globustut.by/)
+From [globustut.by](http://globustut.by/)  
 
-{{ tag(t="photo") }}
+{{ tag(t="photo") }}  
 {{ tag(t="babruysk") }}
 
 ![](5271908782466788852_1227461915_456257012.jpg)

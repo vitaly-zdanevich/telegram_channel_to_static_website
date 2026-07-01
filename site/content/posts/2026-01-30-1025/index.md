@@ -20,11 +20,11 @@ views = 5
 ids = [1025]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="church") }}
-{{ tag(t="чашники") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="church") }}  
+{{ tag(t="чашники") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="globustut") }}  
 
 From [https://commons.wikimedia.org/wiki/File:045-183\_Чашники,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-183_%D0%A7%D0%B0%D1%88%D0%BD%D0%B8%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 

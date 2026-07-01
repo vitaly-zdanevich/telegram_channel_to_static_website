@@ -20,8 +20,8 @@ views = 25
 ids = [759]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="artlebedev") }}
+{{ tag(t="design") }}  
+{{ tag(t="artlebedev") }}  
 
 [Source](https://www.artlebedev.ru/vkontakte/backgrounds/)
 

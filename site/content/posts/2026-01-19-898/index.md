@@ -20,11 +20,11 @@ views = 7
 ids = [898]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="architecture") }}
-{{ tag(t="cross") }}
-{{ tag(t="globustut") }}
-{{ tag(t="year_2004") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="architecture") }}  
+{{ tag(t="cross") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="year_2004") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:034-077_%D0%92%D0%BE%D0%B9%D1%81%D1%82%D0%BE%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_18_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 

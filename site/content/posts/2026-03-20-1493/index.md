@@ -20,7 +20,7 @@ views = 21
 ids = [1493]
 +++
 
-wow {{ tag(t="wikibase") }}/{{ tag(t="wikidata") }} in {{ tag(t="cli") }}
+wow {{ tag(t="wikibase") }}/{{ tag(t="wikidata") }} in {{ tag(t="cli") }}  
 
 <https://github.com/maxlath/wikibase-cli/>
 

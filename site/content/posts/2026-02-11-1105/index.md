@@ -20,11 +20,11 @@ views = 19
 ids = [1105]
 +++
 
-{{ tag(t="commons") }}
+{{ tag(t="commons") }}  
 
 > The server did not respond within the expected time
 
-If you cannot upload your big {{ tag(t="pdf") }} - you can extract all images from it, with original quality:
+If you cannot upload your big {{ tag(t="pdf") }} - you can extract all images from it, with original quality:  
 
 ```
 import fitz  # PyMuPDF

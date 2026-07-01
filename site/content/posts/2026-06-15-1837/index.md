@@ -16,13 +16,13 @@ next_id = 1838
 next_title = ""
 prev_id = 1836
 prev_title = ""
-views = 15
+views = 17
 ids = [1837]
 +++
 
-{{ tag(t="dolphin") }}
-{{ tag(t="bomb") }}
-{{ tag(t="bible") }}
+{{ tag(t="dolphin") }}  
+{{ tag(t="bomb") }}  
+{{ tag(t="bible") }}  
 
 From <https://www.pinterest.com/pin/96475617015149146/>
 

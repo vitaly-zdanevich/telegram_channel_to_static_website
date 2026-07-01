@@ -19,7 +19,7 @@ views = 29
 ids = [167]
 +++
 
-Source: <https://artz.work/project/ba7a9084b86045dda2fa6e07e989a7e8>
+Source: <https://artz.work/project/ba7a9084b86045dda2fa6e07e989a7e8>  
 
 Author: Oleg Paschenko
 

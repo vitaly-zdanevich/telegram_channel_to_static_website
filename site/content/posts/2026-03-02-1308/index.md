@@ -19,7 +19,7 @@ views = 10
 ids = [1308]
 +++
 
-Wow in {{ tag(t="kitty") }} we can switch to a prev active tab:
+Wow in {{ tag(t="kitty") }} we can switch to a prev active tab:  
 
 ```
 map ctrl+alt+p goto_tab -1

@@ -20,8 +20,8 @@ views = 37
 ids = [653]
 +++
 
-{{ tag(t="wikimedia_foundation") }}
-{{ tag(t="money") }}
+{{ tag(t="wikimedia_foundation") }}  
+{{ tag(t="money") }}  
 
 [Source](https://en.wikipedia.org/wiki/Wikimedia_Foundation)
 

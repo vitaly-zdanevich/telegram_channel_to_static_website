@@ -16,16 +16,16 @@ next_id = 1871
 next_title = ""
 prev_id = 1869
 prev_title = ""
-views = 2
+views = 9
 ids = [1870]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="колодищи") }}
-{{ tag(t="architecture") }}
-{{ tag(t="church") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="колодищи") }}  
+{{ tag(t="architecture") }}  
+{{ tag(t="church") }}  
 
-Author: [Димитров Денис](https://commons.wikimedia.org/w/index.php?title=User:%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2_%D0%94%D0%B5%D0%BD%D0%B8%D1%81&amp;action=edit&amp;redlink=1)
+Author: [Димитров Денис](https://commons.wikimedia.org/w/index.php?title=User:%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2_%D0%94%D0%B5%D0%BD%D0%B8%D1%81&amp;action=edit&amp;redlink=1)  
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D0%BF%D1%82%D0%B8%D1%81%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D1%80%D0%B0%D0%BC_%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D1%89%D0%B8_IMG_4666.jpg)
 

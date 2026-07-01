@@ -20,15 +20,15 @@ views = 15
 ids = [1672]
 +++
 
-{{ tag(t="mediawiki") }}
-{{ tag(t="fandom") }}
-{{ tag(t="infobox") }}
-{{ tag(t="template") }}
-{{ tag(t="concatenation") }}
-{{ tag(t="wikidata") }}
-{{ tag(t="armies_of_exigo") }}
+{{ tag(t="mediawiki") }}  
+{{ tag(t="fandom") }}  
+{{ tag(t="infobox") }}  
+{{ tag(t="template") }}  
+{{ tag(t="concatenation") }}  
+{{ tag(t="wikidata") }}  
+{{ tag(t="armies_of_exigo") }}  
 
-Before:
+Before:  
 
 ```
 <data source="wikidata">
@@ -36,7 +36,7 @@ Before:
 </data>
 ```
 
-After:
+After:  
 
 ```
 <data source="wikidata">

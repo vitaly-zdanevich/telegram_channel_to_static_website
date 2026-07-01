@@ -19,7 +19,7 @@ views = 20
 ids = [752]
 +++
 
-Another one is dead - the blue circles ended last month.
+Another one is dead - the blue circles ended last month.  
 
 [https://ugo.com](https://ugo.com/)
 

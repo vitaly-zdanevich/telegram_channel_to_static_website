@@ -20,10 +20,10 @@ views = 34
 ids = [665]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="russia") }}
-{{ tag(t="night_watch") }}
-{{ tag(t="zavulon") }}
+{{ tag(t="film") }}  
+{{ tag(t="russia") }}  
+{{ tag(t="night_watch") }}  
+{{ tag(t="zavulon") }}  
 
 <https://en.wikipedia.org/wiki/Night_Watch>
 

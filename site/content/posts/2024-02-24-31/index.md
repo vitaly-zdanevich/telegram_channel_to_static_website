@@ -20,8 +20,8 @@ views = 76
 ids = [31]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="scifi") }}
+{{ tag(t="film") }}  
+{{ tag(t="scifi") }}  
 
 Love, Death & Robots: ending from [s1ep7 Beyond the Aquila Rift](https://vk.com/away.php?utf=1&amp;to=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt9788496%2F%3Fref_%3Dttep_ep7)
 

@@ -20,9 +20,9 @@ views = 43
 ids = [649]
 +++
 
-Do you remember such {{ tag(t="webdesign") }}?
-{{ tag(t="login") }}
-{{ tag(t="gamespot") }}
+Do you remember such {{ tag(t="webdesign") }}?  
+{{ tag(t="login") }}  
+{{ tag(t="gamespot") }}  
 
 [Source](https://web.archive.org/web/20030404151423/http://www.gamespot.com/features/heroesiii_dd/121798/page2.html)
 

@@ -19,7 +19,7 @@ views = 132
 ids = [339]
 +++
 
-{{ tag(t="kazakhstan") }}
+{{ tag(t="kazakhstan") }}  
 [Source](https://www.instagram.com/reel/DE2OJCiNp2W)
 
 {{ video(src="01.mp4") }}

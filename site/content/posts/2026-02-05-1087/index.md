@@ -20,8 +20,8 @@ views = 10
 ids = [1087]
 +++
 
-{{ tag(t="fashion") }}
-{{ tag(t="boy") }}
+{{ tag(t="fashion") }}  
+{{ tag(t="boy") }}  
 
 <https://harajukustreetwear.com/>
 

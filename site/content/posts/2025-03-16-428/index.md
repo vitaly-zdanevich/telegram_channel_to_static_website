@@ -19,8 +19,8 @@ views = 72
 ids = [428]
 +++
 
-{{ tag(t="robot") }}
-{{ tag(t="ai") }}
+{{ tag(t="robot") }}  
+{{ tag(t="ai") }}  
 
 [Source](https://www.instagram.com/p/DFiSVhipb9U)
 

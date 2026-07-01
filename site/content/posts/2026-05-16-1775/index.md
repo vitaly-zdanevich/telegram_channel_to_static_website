@@ -16,15 +16,15 @@ next_id = 1776
 next_title = ""
 prev_id = 1765
 prev_title = ""
-views = 32
+views = 33
 ids = [1775]
 +++
 
-{{ tag(t="travel") }}
-{{ tag(t="philippines") }}
-{{ tag(t="trash") }}
-{{ tag(t="asia") }}
-{{ tag(t="video") }}
+{{ tag(t="travel") }}  
+{{ tag(t="philippines") }}  
+{{ tag(t="trash") }}  
+{{ tag(t="asia") }}  
+{{ tag(t="video") }}  
 
 From <https://www.bilibili.com/video/BV1YH6aYJEwj>
 

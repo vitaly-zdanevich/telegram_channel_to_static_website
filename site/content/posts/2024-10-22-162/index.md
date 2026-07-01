@@ -18,11 +18,11 @@ views = 39
 ids = [162]
 +++
 
-Как я загружаю в Wikimedia Commons, день из жизни
+Как я загружаю в Wikimedia Commons, день из жизни  
 
-Упоминаемые мои скрипты: <https://gitlab.com/users/vitaly-zdanevich/groups>
+Упоминаемые мои скрипты: <https://gitlab.com/users/vitaly-zdanevich/groups>  
 
-<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum>
+<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum>  
 
 <https://www.youtube.com/watch?v=SIyT3pPrpbk>
 

@@ -20,8 +20,8 @@ views = 19
 ids = [1110]
 +++
 
-{{ tag(t="ai") }}
-{{ tag(t="ruwiki") }}
+{{ tag(t="ai") }}  
+{{ tag(t="ruwiki") }}  
 
 No trust in robots.
 

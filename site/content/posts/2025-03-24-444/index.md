@@ -20,10 +20,10 @@ views = 33
 ids = [444]
 +++
 
-{{ tag(t="monetization") }}
-{{ tag(t="spyware") }}
-{{ tag(t="security") }}
-{{ tag(t="webextension") }}
+{{ tag(t="monetization") }}  
+{{ tag(t="spyware") }}  
+{{ tag(t="security") }}  
+{{ tag(t="webextension") }}  
 
 <https://github.com/extesy/hoverzoom/discussions/670>
 

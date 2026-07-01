@@ -20,11 +20,11 @@ views = 6
 ids = [976]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="winter") }}
-{{ tag(t="няньково") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="winter") }}  
+{{ tag(t="няньково") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="globustut") }}  
 
 From [https://commons.wikimedia.org/wiki/File:043-222\_близ\_Няньково,\_мемор\_валун,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-222_%D0%B1%D0%BB%D0%B8%D0%B7_%D0%9D%D1%8F%D0%BD%D1%8C%D0%BA%D0%BE%D0%B2%D0%BE,_%D0%BC%D0%B5%D0%BC%D0%BE%D1%80_%D0%B2%D0%B0%D0%BB%D1%83%D0%BD,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 

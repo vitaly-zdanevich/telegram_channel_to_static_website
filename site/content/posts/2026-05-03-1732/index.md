@@ -20,8 +20,8 @@ views = 18
 ids = [1732]
 +++
 
-{{ tag(t="gentoo") }}
-{{ tag(t="golang") }}
+{{ tag(t="gentoo") }}  
+{{ tag(t="golang") }}  
 {{ tag(t="bootstrap") }}
 
 ![](5456435665726806035_1270425428_460003347.jpg)

@@ -19,6 +19,6 @@ views = 70
 ids = [83]
 +++
 
-Local (off-the-grid) social network with chat, on {{ tag(t="blockchain") }} (so you cannot edit your messages), looks like abandoned [https://www.manyver.se](https://www.manyver.se/)
+Local (off-the-grid) social network with chat, on {{ tag(t="blockchain") }} (so you cannot edit your messages), looks like abandoned [https://www.manyver.se](https://www.manyver.se/)  
 
 You can use this without internet.

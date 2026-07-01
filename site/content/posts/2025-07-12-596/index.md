@@ -19,9 +19,9 @@ views = 45
 ids = [596]
 +++
 
-My another {{ tag(t="userscript") }}: small toggle for {{ tag(t="dark_mode") }} on {{ tag(t="stackexchange") }}
+My another {{ tag(t="userscript") }}: small toggle for {{ tag(t="dark_mode") }} on {{ tag(t="stackexchange") }}  
 
-<https://gitlab.com/vitaly-zdanevich-userscripts/stackexchange>
+<https://gitlab.com/vitaly-zdanevich-userscripts/stackexchange>  
 
 ```
 // ==UserScript==

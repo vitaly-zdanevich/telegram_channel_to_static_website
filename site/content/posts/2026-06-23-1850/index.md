@@ -16,22 +16,22 @@ next_id = 1852
 next_title = ""
 prev_id = 1849
 prev_title = ""
-views = 64
+views = 85
 ids = [1850, 1851]
 +++
 
-**Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио**
+**Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио**  
 
-Репозиторий проекта
-<https://gitlab.com/vitaly-zdanevich/bot_telegram_youtube>
+Репозиторий проекта  
+<https://gitlab.com/vitaly-zdanevich/bot_telegram_youtube>  
 
-{{ tag(t="my") }}
-{{ tag(t="still_young_bar") }}
-{{ tag(t="lecture") }}
-{{ tag(t="telegram_bot") }}
-{{ tag(t="youtube") }}
+{{ tag(t="my") }}  
+{{ tag(t="still_young_bar") }}  
+{{ tag(t="lecture") }}  
+{{ tag(t="telegram_bot") }}  
+{{ tag(t="youtube") }}  
 
-[Source](https://youtu.be/6lPaEat4GgQ)
+[Source](https://youtu.be/6lPaEat4GgQ)  
 [Evernote](https://share.evernote.com/note/5fa25558-3ad1-aade-0dc6-f98d0fd47af9)
 
 {{ youtube(id="6lPaEat4GgQ") }}

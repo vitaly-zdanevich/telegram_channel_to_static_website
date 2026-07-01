@@ -20,9 +20,9 @@ views = 21
 ids = [1654]
 +++
 
-{{ tag(t="ai") }}
-{{ tag(t="hi") }}
-{{ tag(t="qwen") }}
+{{ tag(t="ai") }}  
+{{ tag(t="hi") }}  
+{{ tag(t="qwen") }}  
 {{ tag(t="terminal") }}
 
 ![](5417910358837498735_1261455556_460002159.jpg)

@@ -20,9 +20,9 @@ views = 31
 ids = [709]
 +++
 
-{{ tag(t="wikidata") }} script to show {{ tag(t="youtube") }} embeds, {{ tag(t="spotify") }}, {{ tag(t="facebook") }} and others
+{{ tag(t="wikidata") }} script to show {{ tag(t="youtube") }} embeds, {{ tag(t="spotify") }}, {{ tag(t="facebook") }} and others  
 
-<https://www.wikidata.org/wiki/User:Lectrician1/embeds.js>
+<https://www.wikidata.org/wiki/User:Lectrician1/embeds.js>  
 
 Example item from the screenshot <https://www.wikidata.org/wiki/Q136539967>
 

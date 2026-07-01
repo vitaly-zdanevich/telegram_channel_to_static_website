@@ -19,9 +19,9 @@ views = 17
 ids = [1114]
 +++
 
-{{ tag(t="python") }}
+{{ tag(t="python") }}  
 
-Same {{ tag(t="dot") }} - different meaning
+Same {{ tag(t="dot") }} - different meaning  
 
 ```
 for f in os.listdir('.')

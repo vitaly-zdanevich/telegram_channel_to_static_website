@@ -20,11 +20,11 @@ views = 23
 ids = [1562]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="photo") }}
-{{ tag(t="people") }}
-{{ tag(t="gamedev") }}
-{{ tag(t="ice_pick_lodge") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="photo") }}  
+{{ tag(t="people") }}  
+{{ tag(t="gamedev") }}  
+{{ tag(t="ice_pick_lodge") }}  
 
 <https://ice-pick.com/ru/about-us-ru/>
 

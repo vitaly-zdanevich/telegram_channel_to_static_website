@@ -20,10 +20,10 @@ views = 32
 ids = [523]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="history") }}
-{{ tag(t="lost") }}
-{{ tag(t="offline") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="history") }}  
+{{ tag(t="lost") }}  
+{{ tag(t="offline") }}  
 
 <https://globustut.by/type_tn_lost.htm?s=-fullobject>
 

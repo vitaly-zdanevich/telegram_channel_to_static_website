@@ -19,10 +19,10 @@ views = 86
 ids = [464]
 +++
 
-Бежевый
+Бежевый  
 
-{{ tag(t="psy") }}
-{{ tag(t="childhood") }}
+{{ tag(t="psy") }}  
+{{ tag(t="childhood") }}  
 [Source](https://www.instagram.com/p/DH3AUB5iHEy)
 
 {{ video(src="01.mp4") }}

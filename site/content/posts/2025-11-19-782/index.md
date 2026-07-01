@@ -20,8 +20,8 @@ views = 33
 ids = [782]
 +++
 
-{{ tag(t="ad") }}
-{{ tag(t="retro") }}
+{{ tag(t="ad") }}  
+{{ tag(t="retro") }}  
 {{ tag(t="nokia") }}[Source](https://www.pinterest.com/pin/17170042325378816/)
 
 ![](5253740353548913967_1223231748_460000559.jpg)

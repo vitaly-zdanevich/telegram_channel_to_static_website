@@ -20,8 +20,8 @@ views = 53
 ids = [594]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="plan9") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="plan9") }}  
 
 [https://plan9.rocks](https://plan9.rocks/)
 

@@ -20,26 +20,26 @@ views = 29
 ids = [734]
 +++
 
-**Heroes of Might and Magic 3: map "One Bad Day": hard, 2 people VS AI, defeat**
+**Heroes of Might and Magic 3: map "One Bad Day": hard, 2 people VS AI, defeat**  
 
-No comments.
+No comments.  
 
-Horn of the Abyss 1.7.1 <https://h3hota.com/en/documentation>
+Horn of the Abyss 1.7.1 <https://h3hota.com/en/documentation>  
 
-<https://homm.miraheze.org/wiki/One_Bad_Day_(Allies)>
+<https://homm.miraheze.org/wiki/One_Bad_Day_(Allies)>  
 
-<https://ru.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III>
+<https://ru.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III>  
 
-<https://www.wikidata.org/wiki/Q136699766>
+<https://www.wikidata.org/wiki/Q136699766>  
 
-Playing through Conty on Gentoo Linux no-multilib profile <https://github.com/Kron4ek/Conty>
+Playing through Conty on Gentoo Linux no-multilib profile <https://github.com/Kron4ek/Conty>  
 
-{{ tag(t="my") }}
-{{ tag(t="video") }}
-{{ tag(t="game") }}
-{{ tag(t="strategy") }}
-{{ tag(t="homm3") }}
-{{ tag(t="hota") }}
+{{ tag(t="my") }}  
+{{ tag(t="video") }}  
+{{ tag(t="game") }}  
+{{ tag(t="strategy") }}  
+{{ tag(t="homm3") }}  
+{{ tag(t="hota") }}  
 {{ tag(t="one_bad_day") }}
 
 ![video](01.jpg)

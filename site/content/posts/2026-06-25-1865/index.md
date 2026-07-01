@@ -16,15 +16,15 @@ next_id = 1867
 next_title = ""
 prev_id = 1864
 prev_title = ""
-views = 12
+views = 18
 ids = [1865]
 +++
 
-**Wow, Gemini generates good logos, tried it for the first time**
+**Wow, Gemini generates good logos, tried it for the first time**  
 
-{{ tag(t="gemini") }}
-{{ tag(t="logo") }}
-{{ tag(t="telegram_bot") }}
+{{ tag(t="gemini") }}  
+{{ tag(t="logo") }}  
+{{ tag(t="telegram_bot") }}  
 {{ tag(t="wikimedia_commons") }}
 
 ![](01.jpg)

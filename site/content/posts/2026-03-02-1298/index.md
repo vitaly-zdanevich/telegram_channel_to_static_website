@@ -20,10 +20,10 @@ views = 15
 ids = [1298]
 +++
 
-{{ tag(t="stone") }}
-{{ tag(t="grave") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="stone") }}  
+{{ tag(t="grave") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:052-255_%D0%9A%D1%80%D0%B5%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](5271994226549920851_1227481809_460002387.jpg)

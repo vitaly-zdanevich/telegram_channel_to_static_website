@@ -20,13 +20,13 @@ views = 31
 ids = [571]
 +++
 
-{{ tag(t="livecoding") }}
-{{ tag(t="batman") }}
-{{ tag(t="binary_search") }}
+{{ tag(t="livecoding") }}  
+{{ tag(t="batman") }}  
+{{ tag(t="binary_search") }}  
 
-{{ tag(t="leetcode") }} with games :(
+{{ tag(t="leetcode") }} with games :(  
 
-<https://www.codingame.com/ide/puzzle/shadows-of-the-knight-episode-1>
+<https://www.codingame.com/ide/puzzle/shadows-of-the-knight-episode-1>  
 
 <https://en.wikipedia.org/wiki/Binary_search>
 

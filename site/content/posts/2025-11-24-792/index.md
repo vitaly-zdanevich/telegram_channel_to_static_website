@@ -20,12 +20,12 @@ views = 51
 ids = [792]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="strategy") }}
-{{ tag(t="rtt") }}
-{{ tag(t="ground_control") }}
+{{ tag(t="game") }}  
+{{ tag(t="strategy") }}  
+{{ tag(t="rtt") }}  
+{{ tag(t="ground_control") }}  
 
-The {{ tag(t="bishop") }} defector death - dramatic moment, from minute 9
+The {{ tag(t="bishop") }} defector death - dramatic moment, from minute 9  
 
 <https://www.wikidata.org/wiki/Q136912648>
 

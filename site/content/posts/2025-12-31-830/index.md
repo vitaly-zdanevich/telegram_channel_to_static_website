@@ -20,9 +20,9 @@ views = 21
 ids = [830]
 +++
 
-{{ tag(t="solar_system") }}
-{{ tag(t="planets") }}
-{{ tag(t="year_1872") }}
+{{ tag(t="solar_system") }}  
+{{ tag(t="planets") }}  
+{{ tag(t="year_1872") }}  
 
 [Page 18](https://commons.wikimedia.org/wiki/File:%D0%96%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B5_%D0%BE%D0%B1%D0%BE%D0%B7%D1%80%D0%B5%D0%BD%D0%B8%D0%B5_1872_-_1873.pdf)
 

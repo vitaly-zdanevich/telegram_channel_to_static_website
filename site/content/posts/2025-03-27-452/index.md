@@ -20,10 +20,10 @@ views = 33
 ids = [452]
 +++
 
-{{ tag(t="games") }}
-{{ tag(t="history") }}
-{{ tag(t="cds") }}
-{{ tag(t="shop") }}
+{{ tag(t="games") }}  
+{{ tag(t="history") }}  
+{{ tag(t="cds") }}  
+{{ tag(t="shop") }}  
 
 From <https://vk.com/randompicc>
 

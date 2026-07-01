@@ -20,11 +20,11 @@ views = 62
 ids = [779]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_old") }}
-{{ tag(t="webdesign_games") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_old") }}  
+{{ tag(t="webdesign_games") }}  
 
-Year: 2000
+Year: 2000  
 
 <https://web.archive.org/web/20000816084621/http://www.gameplay.com/spank/news_ps/>
 

@@ -19,7 +19,7 @@ views = 28
 ids = [700]
 +++
 
-{{ tag(t="chess") }}
+{{ tag(t="chess") }}  
 [Source](https://www.instagram.com/p/DMxv95FNqk9)
 
 {{ video(src="01.mp4") }}

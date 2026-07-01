@@ -16,11 +16,11 @@ next_id = 1855
 next_title = ""
 prev_id = 1853
 prev_title = ""
-views = 8
+views = 9
 ids = [1854]
 +++
 
-{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} <https://github.com/telegramdesktop/tdesktop/issues/4117>
+{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} <https://github.com/telegramdesktop/tdesktop/issues/4117>  
 
 [The patch](https://gitlab.com/vitaly-zdanevich-configs/gentoo--etc-portage--thinkpad-t430/-/blob/amd/patches/net-im/telegram-desktop/large-adaptive-sticker-preview.patch).
 

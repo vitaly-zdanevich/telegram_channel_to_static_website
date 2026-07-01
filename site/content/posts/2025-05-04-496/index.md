@@ -20,8 +20,8 @@ views = 26
 ids = [496]
 +++
 
-{{ tag(t="wikipedia") }}
-{{ tag(t="ui") }}
+{{ tag(t="wikipedia") }}  
+{{ tag(t="ui") }}  
 {{ tag(t="navigation") }}
 
 ![](5240482558301564465_1220144927_456257073.jpg)

@@ -20,8 +20,8 @@ views = 15
 ids = [1124]
 +++
 
-{{ tag(t="steam") }}
-{{ tag(t="myst") }}
+{{ tag(t="steam") }}  
+{{ tag(t="myst") }}  
 
 forever {{ tag(t="games") }}
 

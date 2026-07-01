@@ -20,10 +20,10 @@ views = 11
 ids = [1069]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="map") }}
-{{ tag(t="openstreetmap") }}
-{{ tag(t="wolt") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="map") }}  
+{{ tag(t="openstreetmap") }}  
+{{ tag(t="wolt") }}  
 {{ tag(t="delivery") }}
 
 ![](5471949199269104497_1274037454_460000113.jpg)

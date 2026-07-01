@@ -20,8 +20,8 @@ views = 25
 ids = [693]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="wikimedia") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="wikimedia") }}  
 
 [https://2025strategicreport.wikimedia.org.uk](https://2025strategicreport.wikimedia.org.uk/)
 

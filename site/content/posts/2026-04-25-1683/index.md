@@ -19,7 +19,7 @@ views = 19
 ids = [1683]
 +++
 
-...and another useful {{ tag(t="bash") }} {{ tag(t="alias") }} to {{ tag(t="remove") }} the text inside single {{ tag(t="quotes") }} by `esc-k`:
+...and another useful {{ tag(t="bash") }} {{ tag(t="alias") }} to {{ tag(t="remove") }} the text inside single {{ tag(t="quotes") }} by `esc-k`:  
 
 ```
 # Clear the content between single quotes while preserving the quotes

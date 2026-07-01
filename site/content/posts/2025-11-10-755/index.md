@@ -20,12 +20,12 @@ views = 21
 ids = [755]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="bible") }}
-{{ tag(t="gustave_dore") }}
-{{ tag(t="year_1891") }}
+{{ tag(t="painting") }}  
+{{ tag(t="bible") }}  
+{{ tag(t="gustave_dore") }}  
+{{ tag(t="year_1891") }}  
 
-The Bible panorama, or The Holy Scriptures in picture and story (1891)
+The Bible panorama, or The Holy Scriptures in picture and story (1891)  
 
 [Source](https://commons.wikimedia.org/wiki/File:The_Bible_panorama,_or_The_Holy_Scriptures_in_picture_and_story_(1891)_(14598295740).jpg)
 

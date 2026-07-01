@@ -20,11 +20,11 @@ views = 60
 ids = [630]
 +++
 
-[Кин-дза-дза](https://en.wikipedia.org/wiki/Kin-dza-dza&#33;) Japanese disc
+[Кин-дза-дза](https://en.wikipedia.org/wiki/Kin-dza-dza&#33;) Japanese disc  
 
-{{ tag(t="cover") }}
-{{ tag(t="design") }}
-{{ tag(t="sci_fi") }}
+{{ tag(t="cover") }}  
+{{ tag(t="design") }}  
+{{ tag(t="sci_fi") }}  
 {{ tag(t="bluray") }}
 
 ![](5271934505025926821_1227467904_456259237.jpg)

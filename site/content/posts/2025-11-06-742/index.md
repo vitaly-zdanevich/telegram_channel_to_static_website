@@ -19,10 +19,10 @@ views = 24
 ids = [742]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_games") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_games") }}  
 
-Like horizontal scrolling.
+Like horizontal scrolling.  
 
 [https://www.gamecrate.com](https://www.gamecrate.com/)
 

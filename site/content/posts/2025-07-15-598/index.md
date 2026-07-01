@@ -23,13 +23,13 @@ mkdir aaa/bbb/ccc
 cp f aaa/bbb/ccc
 ```
 
-Can be simpler with the `install` command:
-`install -D f aaa/bbb/ccc`
+Can be simpler with the `install` command:  
+`install -D f aaa/bbb/ccc`  
 
-And even with integrated `chmod`:
-`chmod 644 f`
+And even with integrated `chmod`:  
+`chmod 644 f`  
 
-With a single command:
-`install -Dm644 f aaa/bbb/ccc`
+With a single command:  
+`install -Dm644 f aaa/bbb/ccc`  
 
 <https://linux.die.net/man/1/install>

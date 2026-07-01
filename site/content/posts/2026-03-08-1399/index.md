@@ -21,9 +21,9 @@ forwarded_from_url = "https://t.me/daniilak/1724"
 ids = [1399]
 +++
 
-Отличная 3D карта общественного транспорта Токио в реальном времени
+Отличная 3D карта общественного транспорта Токио в реальном времени  
 
- [https://minitokyo3d.com](https://minitokyo3d.com/)
+ [https://minitokyo3d.com](https://minitokyo3d.com/)  
 
 {{ tag(t="сервисы@daniilak") }}
 

@@ -19,13 +19,13 @@ views = 28
 ids = [705]
 +++
 
-{{ tag(t="coffee") }}
-{{ tag(t="americano") }}
-{{ tag(t="latte") }}
-{{ tag(t="raspberry") }}
-{{ tag(t="orange") }}
-{{ tag(t="brutality") }}
-{{ tag(t="psy") }}
+{{ tag(t="coffee") }}  
+{{ tag(t="americano") }}  
+{{ tag(t="latte") }}  
+{{ tag(t="raspberry") }}  
+{{ tag(t="orange") }}  
+{{ tag(t="brutality") }}  
+{{ tag(t="psy") }}  
 [Source](https://www.instagram.com/p/DPlr-YQjLPJ)
 
 {{ video(src="01.mp4") }}

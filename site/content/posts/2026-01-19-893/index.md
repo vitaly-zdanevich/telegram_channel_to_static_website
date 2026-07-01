@@ -20,9 +20,9 @@ views = 9
 ids = [893]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="arctic") }}
-{{ tag(t="year_2004") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="arctic") }}  
+{{ tag(t="year_2004") }}  
 
 [arcticdigitalnomads.com](http://arcticdigitalnomads.com/)
 

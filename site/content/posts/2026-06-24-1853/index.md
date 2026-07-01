@@ -16,12 +16,12 @@ next_id = 1854
 next_title = ""
 prev_id = 1852
 prev_title = ""
-views = 8
+views = 9
 ids = [1853]
 +++
 
-{{ tag(t="llm") }} wow of today
-1) Fixed broken audio recording - when the iPhone turned off
+{{ tag(t="llm") }} wow of today  
+1) Fixed broken audio recording - when the iPhone turned off  
 2) I put this audio to the {{ tag(t="shotcut") }} video editor - and said - sync cuts and keyframe dots
 
 ![](5321338641957199181_1238970701_460004685.jpg)

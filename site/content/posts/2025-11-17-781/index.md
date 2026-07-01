@@ -20,9 +20,9 @@ views = 35
 ids = [781]
 +++
 
-{{ tag(t="js") }}
+{{ tag(t="js") }}  
 
-Out of memory, but RAM is used to 64%
+Out of memory, but RAM is used to 64%  
 
 {{ tag(t="firefox") }}
 

@@ -19,13 +19,13 @@ views = 115
 ids = [611]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="music_video") }}
-{{ tag(t="tema_kresta") }}
-{{ tag(t="travel") }}
-{{ tag(t="elephants") }}
-{{ tag(t="tinder") }}
-\#2023
+{{ tag(t="music") }}  
+{{ tag(t="music_video") }}  
+{{ tag(t="tema_kresta") }}  
+{{ tag(t="travel") }}  
+{{ tag(t="elephants") }}  
+{{ tag(t="tinder") }}  
+\#2023  
 
 Золото рейна[Source](https://www.youtube.com/watch?v=dMtin1wMJBo)
 

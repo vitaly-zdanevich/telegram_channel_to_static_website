@@ -16,13 +16,13 @@ next_id = 1668
 next_title = ""
 prev_id = 1662
 prev_title = ""
-views = 21
+views = 22
 ids = [1667]
 +++
 
-{{ tag(t="fashion") }}
-{{ tag(t="street") }}
-{{ tag(t="london") }}
+{{ tag(t="fashion") }}  
+{{ tag(t="street") }}  
+{{ tag(t="london") }}  
 
 [Source](https://www.instagram.com/p/DWW5BiZCBpa/)
 

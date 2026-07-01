@@ -20,9 +20,9 @@ views = 34
 ids = [481]
 +++
 
-{{ tag(t="sex") }}
-{{ tag(t="mouse") }}
-{{ tag(t="horoscope") }}
+{{ tag(t="sex") }}  
+{{ tag(t="mouse") }}  
+{{ tag(t="horoscope") }}  
 
 From <https://www.pinterest.com/pin/7036943162752920>
 

@@ -20,7 +20,7 @@ views = 20
 ids = [1624]
 +++
 
-{{ tag(t="preview") }} on {{ tag(t="bilibili") }}
+{{ tag(t="preview") }} on {{ tag(t="bilibili") }}  
 {{ tag(t="anime") }}
 
 ![](01.jpg)

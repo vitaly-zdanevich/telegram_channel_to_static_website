@@ -20,10 +20,10 @@ views = 16
 ids = [1730]
 +++
 
-{{ tag(t="cats") }}
-{{ tag(t="religion") }}
-{{ tag(t="orthodox") }}
-{{ tag(t="black_and_white") }}
+{{ tag(t="cats") }}  
+{{ tag(t="religion") }}  
+{{ tag(t="orthodox") }}  
+{{ tag(t="black_and_white") }}  
 
 [Source](https://www.instagram.com/p/DID3oPGsGLA/)
 

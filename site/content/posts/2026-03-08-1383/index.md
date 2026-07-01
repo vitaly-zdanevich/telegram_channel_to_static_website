@@ -19,12 +19,12 @@ views = 11
 ids = [1383]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="black_dresses") }}
+{{ tag(t="music") }}  
+{{ tag(t="black_dresses") }}  
 
-**GAY UGLY AND HARD TO UNDERSTAND**
+**GAY UGLY AND HARD TO UNDERSTAND**  
 
-> \[Intro: Devi McCallion\]<br>Um, shoutout to Big Freedia<br>New Orleans Bounce music<br>Uhh, every Bitch Track ever made for<br>NYC drag balls in the 90's before RuPaul made being gay uncool<br><br>\[Verse 1: Devi McCallion, Ada Rook\]<br>Gay, ugly, and hard to understand<br>I thought that people could handle it but they- but they can't<br>But they can't! Haha!<br>I don't want to let you have it (have it)<br>I don't want to let you have it (have it)<br>I don't want to let you have it (have it)<br>You can't earn it<br>This shit is not on trend (On trend)<br>This shit is not on trend (On trend)<br>This shit is not pretend (Pretend)<br>It's a- (Ahh, ahh!)<br>Yeah, I'm just doing my shit (My shit)<br>I'm just doing my shit (My shit)<br>You could never do it like this (Like this)
+> \[Intro: Devi McCallion\]  <br>Um, shoutout to Big Freedia  <br>New Orleans Bounce music  <br>Uhh, every Bitch Track ever made for  <br>NYC drag balls in the 90's before RuPaul made being gay uncool  <br>  <br>\[Verse 1: Devi McCallion, Ada Rook\]  <br>Gay, ugly, and hard to understand  <br>I thought that people could handle it but they- but they can't  <br>But they can't! Haha!  <br>I don't want to let you have it (have it)  <br>I don't want to let you have it (have it)  <br>I don't want to let you have it (have it)  <br>You can't earn it  <br>This shit is not on trend (On trend)  <br>This shit is not on trend (On trend)  <br>This shit is not pretend (Pretend)  <br>It's a- (Ahh, ahh!)  <br>Yeah, I'm just doing my shit (My shit)  <br>I'm just doing my shit (My shit)  <br>You could never do it like this (Like this)
 
 <https://genius.com/Black-dresses-gay-ugly-and-hard-to-understand-lyrics>
 

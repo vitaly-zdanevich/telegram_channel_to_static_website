@@ -20,10 +20,10 @@ views = 28
 ids = [820]
 +++
 
-{{ tag(t="hardware") }}
-{{ tag(t="laptop") }}
+{{ tag(t="hardware") }}  
+{{ tag(t="laptop") }}  
 
-Toshiba Libretto
+Toshiba Libretto  
 
 <https://commons.wikimedia.org/wiki/Category:Toshiba_Libretto>
 

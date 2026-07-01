@@ -19,19 +19,19 @@ views = 13
 ids = [1678]
 +++
 
-{{ tag(t="armies_of_exigo") }}**:** {{ tag(t="fallen") }} **7: The First Seal: hard: victory**
+{{ tag(t="armies_of_exigo") }}**:** {{ tag(t="fallen") }} **7: The First Seal: hard: victory**  
 
-{{ tag(t="rts") }} - like {{ tag(t="warcraft3") }}.
+{{ tag(t="rts") }} - like {{ tag(t="warcraft3") }}.  
 
-Game version 1.4
+Game version 1.4  
 
-<https://en.wikipedia.org/wiki/Armies_of_Exigo>
+<https://en.wikipedia.org/wiki/Armies_of_Exigo>  
 
-<https://www.wikidata.org/wiki/Q139504868>
+<https://www.wikidata.org/wiki/Q139504868>  
 
-Playing on Gentoo Linux through {{ tag(t="lutris") }}, {{ tag(t="conty") }}, free download of this abandoned game at <https://lutris.net/games/armies-of-exigo/>
+Playing on Gentoo Linux through {{ tag(t="lutris") }}, {{ tag(t="conty") }}, free download of this abandoned game at <https://lutris.net/games/armies-of-exigo/>  
 
-Full: <https://youtu.be/yWdtlV74lhY>
+Full: <https://youtu.be/yWdtlV74lhY>  
 
 All links at <https://share.evernote.com/note/3493dc72-9910-1c46-3475-5159b37126f5>
 

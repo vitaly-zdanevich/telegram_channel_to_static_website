@@ -20,8 +20,8 @@ views = 21
 ids = [870]
 +++
 
-{{ tag(t="games") }}
-{{ tag(t="gamazine") }}
+{{ tag(t="games") }}  
+{{ tag(t="gamazine") }}  
 {{ tag(t="igromania") }}[Source](https://store.igromania.ru/shop/magazine-25-12)
 
 ![](5407034092894751563_1258923228_460000075.jpg)

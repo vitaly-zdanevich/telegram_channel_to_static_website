@@ -19,10 +19,10 @@ views = 63
 ids = [391]
 +++
 
-{{ tag(t="alex_jones") }}
-{{ tag(t="warhammer") }}
+{{ tag(t="alex_jones") }}  
+{{ tag(t="warhammer") }}  
 
-Some people think that his speeches correlates with Warhammer.
+Some people think that his speeches correlates with Warhammer.  
 [Source](https://youtu.be/NPrvkff5NIw)
 
 {{ youtube(id="NPrvkff5NIw") }}

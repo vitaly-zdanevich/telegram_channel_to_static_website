@@ -19,7 +19,7 @@ views = 13
 ids = [1092]
 +++
 
-{{ tag(t="recording") }} my screen (like previous message) with {{ tag(t="ffmpeg") }}:
+{{ tag(t="recording") }} my screen (like previous message) with {{ tag(t="ffmpeg") }}:  
 
 ```
 ffmpeg -vaapi_device /dev/dri/renderD128 \

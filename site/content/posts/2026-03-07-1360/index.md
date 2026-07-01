@@ -20,9 +20,9 @@ views = 5
 ids = [1360]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
-{{ tag(t="anime") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
+{{ tag(t="anime") }}  
 
 <https://pc98.club/meow>
 

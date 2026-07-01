@@ -20,10 +20,10 @@ views = 47
 ids = [670]
 +++
 
-{{ tag(t="map") }}
-{{ tag(t="greenland") }}
-{{ tag(t="africa") }}
-{{ tag(t="mercator") }}
+{{ tag(t="map") }}  
+{{ tag(t="greenland") }}  
+{{ tag(t="africa") }}  
+{{ tag(t="mercator") }}  
 
 [Source](https://www.instagram.com/p/DOVrzrrkUf4)
 

@@ -20,8 +20,8 @@ views = 20
 ids = [686]
 +++
 
-{{ tag(t="fashion") }}
-{{ tag(t="istanbul") }}
+{{ tag(t="fashion") }}  
+{{ tag(t="istanbul") }}  
 
 [Source](https://www.kozmosize.com/product-page/magician-panco-black)
 

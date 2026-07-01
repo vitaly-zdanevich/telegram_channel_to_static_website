@@ -20,9 +20,9 @@ views = 36
 ids = [799]
 +++
 
-{{ tag(t="preservation") }}
-{{ tag(t="games") }}
-{{ tag(t="beard") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="games") }}  
+{{ tag(t="beard") }}  
 
 From <https://gamehistory.org/our-impact-in-2025>
 

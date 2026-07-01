@@ -20,9 +20,9 @@ views = 40
 ids = [789]
 +++
 
-{{ tag(t="wikipedia") }}
-{{ tag(t="ui") }}
-{{ tag(t="navigation") }}
+{{ tag(t="wikipedia") }}  
+{{ tag(t="ui") }}  
+{{ tag(t="navigation") }}  
 
 <https://en.wikipedia.org/wiki/As_Good_as_It_Gets>
 

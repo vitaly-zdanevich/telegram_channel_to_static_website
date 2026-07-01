@@ -20,7 +20,7 @@ views = 5
 ids = [1137]
 +++
 
-{{ tag(t="ai") }}
+{{ tag(t="ai") }}  
 
 <https://rentahuman.ai/>
 

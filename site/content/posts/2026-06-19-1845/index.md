@@ -16,15 +16,15 @@ next_id = 1846
 next_title = ""
 prev_id = 1844
 prev_title = ""
-views = 8
+views = 10
 ids = [1845]
 +++
 
-I did {{ tag(t="kvantum") }}/{{ tag(t="qt6") }} theme, with {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh, {{ tag(t="love") }} it, {{ tag(t="black") }}
+I did {{ tag(t="kvantum") }}/{{ tag(t="qt6") }} theme, with {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh, {{ tag(t="love") }} it, {{ tag(t="black") }}  
 
-On the screenshot - {{ tag(t="qbittorrent") }}.
+On the screenshot - {{ tag(t="qbittorrent") }}.  
 
-<https://github.com/vitaly-zdanevich/kvantum>
+<https://github.com/vitaly-zdanevich/kvantum>  
 
 <https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black>
 

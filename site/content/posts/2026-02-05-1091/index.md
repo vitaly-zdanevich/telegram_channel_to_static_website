@@ -20,12 +20,12 @@ views = 12
 ids = [1091]
 +++
 
-{{ tag(t="linux") }}
-{{ tag(t="game") }}
-{{ tag(t="wwii") }}
-{{ tag(t="landing") }}
-{{ tag(t="ad") }}
-{{ tag(t="warthunder") }}
+{{ tag(t="linux") }}  
+{{ tag(t="game") }}  
+{{ tag(t="wwii") }}  
+{{ tag(t="landing") }}  
+{{ tag(t="ad") }}  
+{{ tag(t="warthunder") }}  
 
 [warthunder.com](http://warthunder.com/)
 

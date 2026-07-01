@@ -20,17 +20,17 @@ views = 29
 ids = [657]
 +++
 
-{{ tag(t="golang") }}
-{{ tag(t="utf8") }}
+{{ tag(t="golang") }}  
+{{ tag(t="utf8") }}  
 
 ```
 const s = "สวัสดี"
 fmt.Println("Len:", len(s)) // Len: 18
 ```
 
-<https://gobyexample.com/strings-and-runes>
+<https://gobyexample.com/strings-and-runes>  
 
-<https://go.dev/blog/strings>
+<https://go.dev/blog/strings>  
 
 <https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses1>
 

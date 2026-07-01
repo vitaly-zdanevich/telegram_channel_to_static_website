@@ -19,12 +19,12 @@ views = 24
 ids = [1764]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="sunboy") }}
+{{ tag(t="music") }}  
+{{ tag(t="sunboy") }}  
 
-**Остров в океане**
+**Остров в океане**  
 
-From <https://www.youtube.com/watch?v=rjvImL06_1k>
+From <https://www.youtube.com/watch?v=rjvImL06_1k>  
 
 Про исполнителя [https://ru.wikipedia.org/wiki/Пророк\_Санбой](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%80%D0%BE%D0%BA_%D0%A1%D0%B0%D0%BD%D0%B1%D0%BE%D0%B9)
 

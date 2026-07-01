@@ -20,8 +20,8 @@ views = 26
 ids = [412]
 +++
 
-{{ tag(t="gentoo") }}
-{{ tag(t="logo") }}
+{{ tag(t="gentoo") }}  
+{{ tag(t="logo") }}  
 
 [Source](https://www.reddit.com/r/linuxmasterrace/comments/lyeija/gentowo)
 

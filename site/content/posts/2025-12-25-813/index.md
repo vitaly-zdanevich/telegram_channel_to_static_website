@@ -20,8 +20,8 @@ views = 44
 ids = [813]
 +++
 
-{{ tag(t="ui") }}
-{{ tag(t="windows") }}
+{{ tag(t="ui") }}  
+{{ tag(t="windows") }}  
 {{ tag(t="windows_xp") }}
 
 ![](5361787402705374639_1248388412_460000687.jpg)

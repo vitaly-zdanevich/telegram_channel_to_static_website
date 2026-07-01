@@ -19,9 +19,9 @@ views = 45
 ids = [815]
 +++
 
-{{ tag(t="star_wars") }}
-{{ tag(t="village") }}
-{{ tag(t="татуиново") }}
+{{ tag(t="star_wars") }}  
+{{ tag(t="village") }}  
+{{ tag(t="татуиново") }}  
 
 [Source](https://www.youtube.com/shorts/kWijGll8luM)
 

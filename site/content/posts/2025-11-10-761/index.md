@@ -20,9 +20,9 @@ views = 25
 ids = [761]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="bible") }}
-{{ tag(t="gustave_dore") }}
+{{ tag(t="painting") }}  
+{{ tag(t="bible") }}  
+{{ tag(t="gustave_dore") }}  
 
 The Battle of Nicaea[Source](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_The_Battle_of_Nicaea.jpg)
 

@@ -20,12 +20,12 @@ views = 9
 ids = [956]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="architecture") }}
-{{ tag(t="church") }}
-{{ tag(t="раубичи") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="architecture") }}  
+{{ tag(t="church") }}  
+{{ tag(t="раубичи") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="globustut") }}  
 
 From [https://commons.wikimedia.org/wiki/File:044-040\_Раубичи,\_снято\_7\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:044-040_%D0%A0%D0%B0%D1%83%D0%B1%D0%B8%D1%87%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 

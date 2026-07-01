@@ -19,9 +19,9 @@ views = 26
 ids = [503]
 +++
 
-{{ tag(t="ai") }}
-{{ tag(t="girl") }}
-{{ tag(t="relationships") }}
+{{ tag(t="ai") }}  
+{{ tag(t="girl") }}  
+{{ tag(t="relationships") }}  
 {{ tag(t="psy") }}
 
 {{ video(src="01.mp4") }}

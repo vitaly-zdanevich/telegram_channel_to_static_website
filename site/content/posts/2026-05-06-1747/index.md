@@ -20,7 +20,7 @@ views = 28
 ids = [1747]
 +++
 
-Oh my...
+Oh my...  
 
 {{ tag(t="leetcode") }}
 

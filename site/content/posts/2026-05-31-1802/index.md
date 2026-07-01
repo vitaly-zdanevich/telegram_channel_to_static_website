@@ -19,7 +19,7 @@ views = 45
 ids = [1802]
 +++
 
-With {{ tag(t="llm") }} I added 1920x1200 to {{ tag(t="armies_of_exigo") }} {{ tag(t="game") }}
+With {{ tag(t="llm") }} I added 1920x1200 to {{ tag(t="armies_of_exigo") }} {{ tag(t="game") }}  
 
 And increased the {{ tag(t="camera") }} range.
 

@@ -20,10 +20,10 @@ views = 10
 ids = [943]
 +++
 
-{{ tag(t="aws") }}
-{{ tag(t="cpu") }}
-{{ tag(t="memory") }}
-{{ tag(t="ram") }}
+{{ tag(t="aws") }}  
+{{ tag(t="cpu") }}  
+{{ tag(t="memory") }}  
+{{ tag(t="ram") }}  
 
 From <https://youtu.be/JeUpUK0nhC0?t=1096>
 

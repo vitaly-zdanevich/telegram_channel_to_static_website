@@ -20,10 +20,10 @@ views = 14
 ids = [1081]
 +++
 
-{{ tag(t="preservation") }}
-{{ tag(t="belarus") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="belarus") }}  
 
-geo block
+geo block  
 
 I uploaded a lot from [https://moneymuseum.by](https://moneymuseum.by/) to Commons, and will continue.
 

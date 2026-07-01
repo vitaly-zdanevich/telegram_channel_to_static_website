@@ -35,7 +35,7 @@
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
     <nav>
       {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
-      <a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>
+      {% if current_path is matching("/tags/$") %}<span class="here">{{ config.extra.i18n.tags }}</span>{% else %}<a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>{% endif %}
       {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}

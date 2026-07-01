@@ -19,8 +19,8 @@ views = 26
 ids = [715]
 +++
 
-{{ tag(t="car") }}
-{{ tag(t="russia") }}
+{{ tag(t="car") }}  
+{{ tag(t="russia") }}  
 {{ tag(t="tax") }}[Source](https://www.instagram.com/p/DP1neI_CDuA)
 
 {{ video(src="01.mp4") }}

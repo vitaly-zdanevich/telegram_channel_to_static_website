@@ -19,9 +19,9 @@ views = 9
 ids = [1334]
 +++
 
-{{ tag(t="bash") }}
+{{ tag(t="bash") }}  
 
-I love {{ tag(t="cli") }}, scripts, and sometimes I want my script to accept an argument that is the same as the folder name. How to pass that current folder name to the script?
+I love {{ tag(t="cli") }}, scripts, and sometimes I want my script to accept an argument that is the same as the folder name. How to pass that current folder name to the script?  
 
 ```
 upload.py file.pdf --category "${PWD##*/}"

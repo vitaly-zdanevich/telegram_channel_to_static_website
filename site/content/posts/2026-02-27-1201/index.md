@@ -20,9 +20,9 @@ views = 9
 ids = [1201]
 +++
 
-{{ tag(t="google_docs") }}: {{ tag(t="ai") }} is integrated, but not the {{ tag(t="dark_mode") }}
+{{ tag(t="google_docs") }}: {{ tag(t="ai") }} is integrated, but not the {{ tag(t="dark_mode") }}  
 
-If you do not know about this {{ tag(t="css") }} property
+If you do not know about this {{ tag(t="css") }} property  
 <https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme>
 
 ![](5262671347198925503_1225311157_460004031.jpg)

@@ -19,8 +19,8 @@ views = 38
 ids = [465]
 +++
 
-{{ tag(t="windows") }}
-{{ tag(t="linux") }}
+{{ tag(t="windows") }}  
+{{ tag(t="linux") }}  
 
 [Source](https://mastodon.social/@federicogazaba/112587687798347271)
 

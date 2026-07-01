@@ -20,7 +20,7 @@ views = 53
 ids = [542]
 +++
 
-{{ tag(t="git") }}
+{{ tag(t="git") }}  
 [Source](https://www.facebook.com/photo/?fbid=1114418330706511&amp;set=a.447803574034660)
 
 ![](5310099855001120614_1236353967_456257382.jpg)

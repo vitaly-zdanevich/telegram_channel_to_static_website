@@ -16,12 +16,12 @@ next_id = 1417
 next_title = ""
 prev_id = 1415
 prev_title = ""
-views = 16
+views = 17
 ids = [1416]
 +++
 
-{{ tag(t="resume") }}
-{{ tag(t="pony") }}
+{{ tag(t="resume") }}  
+{{ tag(t="pony") }}  
 
 <https://www.pjreddie.com/static/resume.pdf>
 

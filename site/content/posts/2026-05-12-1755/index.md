@@ -20,7 +20,7 @@ views = 22
 ids = [1755]
 +++
 
-{{ tag(t="ai") }}
+{{ tag(t="ai") }}  
 
 {{ tag(t="screenshot") }} from <https://alice.yandex.ru/>
 

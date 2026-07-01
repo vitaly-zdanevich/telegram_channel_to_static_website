@@ -20,9 +20,9 @@ views = 6
 ids = [1362]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
-{{ tag(t="anime") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
+{{ tag(t="anime") }}  
 
 <https://pc98.club/entries/332025>
 

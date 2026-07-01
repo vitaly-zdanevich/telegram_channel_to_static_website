@@ -20,9 +20,9 @@ views = 20
 ids = [833]
 +++
 
-{{ tag(t="solar_system") }}
-{{ tag(t="planets") }}
-{{ tag(t="year_1872") }}
+{{ tag(t="solar_system") }}  
+{{ tag(t="planets") }}  
+{{ tag(t="year_1872") }}  
 
 [Page 30](https://commons.wikimedia.org/wiki/Category:Zhivopisnoye_obozreniye,_1872)
 

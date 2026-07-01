@@ -20,10 +20,10 @@ views = 12
 ids = [849]
 +++
 
-{{ tag(t="photo") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
-{{ tag(t="village") }}
+{{ tag(t="photo") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="village") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:025-066_%D0%93%D0%B0%D0%B1%D1%80%D0%B8%D0%B5%D0%BB%D0%B5%D0%B2%D0%BA%D0%B0,_30-10-2004.jpg)
 

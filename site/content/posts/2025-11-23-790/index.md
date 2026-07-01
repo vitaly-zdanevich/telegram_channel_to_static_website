@@ -19,12 +19,12 @@ views = 43
 ids = [790]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="strategy") }}
-{{ tag(t="video") }}
-{{ tag(t="review") }}
-{{ tag(t="ground_control") }}
-{{ tag(t="year_2000") }}
+{{ tag(t="game") }}  
+{{ tag(t="strategy") }}  
+{{ tag(t="video") }}  
+{{ tag(t="review") }}  
+{{ tag(t="ground_control") }}  
+{{ tag(t="year_2000") }}  
 [Source](https://youtu.be/cuHmPEhpJFo)
 
 {{ youtube(id="cuHmPEhpJFo") }}

@@ -22,7 +22,7 @@ ids = [141]
 
 > 1910 Russian Empire 100 rubles bill with Tzar Catherina portrait
 
-<https://commons.wikimedia.org/wiki/File:RU-Katarzyna-100rubli-1910.jpg>
+<https://commons.wikimedia.org/wiki/File:RU-Katarzyna-100rubli-1910.jpg>  
 
 {{ tag(t="money") }}
 

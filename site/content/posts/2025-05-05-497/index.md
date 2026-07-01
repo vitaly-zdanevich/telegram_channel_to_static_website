@@ -20,12 +20,12 @@ views = 23
 ids = [497]
 +++
 
-{{ tag(t="compression") }}
-{{ tag(t="xz") }}
-{{ tag(t="zstd") }}
-{{ tag(t="lz4") }}
-{{ tag(t="zlib") }}
-{{ tag(t="meta") }}
+{{ tag(t="compression") }}  
+{{ tag(t="xz") }}  
+{{ tag(t="zstd") }}  
+{{ tag(t="lz4") }}  
+{{ tag(t="zlib") }}  
+{{ tag(t="meta") }}  
 
 [Source](https://engineering.fb.com/2016/08/31/core-infra/smaller-and-faster-data-compression-with-zstandard)
 

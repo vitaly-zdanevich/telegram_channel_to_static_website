@@ -20,9 +20,9 @@ views = 24
 ids = [695]
 +++
 
-{{ tag(t="journal") }}
+{{ tag(t="journal") }}  
 
-After traveling through multiple countries, I feel that I prefer video games, books, YouTube.
+After traveling through multiple countries, I feel that I prefer video games, books, YouTube.  
 
 Some people love to travel so much...
 

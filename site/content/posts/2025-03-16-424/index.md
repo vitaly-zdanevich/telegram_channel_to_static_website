@@ -19,12 +19,12 @@ views = 127
 ids = [424]
 +++
 
-{{ tag(t="business_idea") }}
-{{ tag(t="china") }}
-{{ tag(t="rave") }}
-{{ tag(t="health") }}
-{{ tag(t="fitness") }}
-{{ tag(t="music") }}
+{{ tag(t="business_idea") }}  
+{{ tag(t="china") }}  
+{{ tag(t="rave") }}  
+{{ tag(t="health") }}  
+{{ tag(t="fitness") }}  
+{{ tag(t="music") }}  
 
 [Source](https://www.instagram.com/p/DCeXWaDSAMP)
 

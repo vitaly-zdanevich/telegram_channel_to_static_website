@@ -20,9 +20,9 @@ views = 46
 ids = [473]
 +++
 
-{{ tag(t="valve") }}
-{{ tag(t="hl2") }}
-{{ tag(t="rip") }}
+{{ tag(t="valve") }}  
+{{ tag(t="hl2") }}  
+{{ tag(t="rip") }}  
 
 <https://multiplayer.it/notizie/e-morto-il-grande-viktor-antonov-lart-director-di-half-life-2-e-dishonored.html>
 

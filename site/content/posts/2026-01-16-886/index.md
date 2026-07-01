@@ -20,10 +20,10 @@ views = 11
 ids = [886]
 +++
 
-{{ tag(t="sql") }}
-{{ tag(t="quarry") }}
-{{ tag(t="globustut") }}
-{{ tag(t="commons") }}: files from a specific user in a non-existing categories, {{ tag(t="sql") }}:
+{{ tag(t="sql") }}  
+{{ tag(t="quarry") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="commons") }}: files from a specific user in a non-existing categories, {{ tag(t="sql") }}:  
 
 ```
 sql

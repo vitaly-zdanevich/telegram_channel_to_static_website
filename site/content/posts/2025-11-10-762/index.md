@@ -20,12 +20,12 @@ views = 24
 ids = [762]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="angel") }}
-{{ tag(t="ship") }}
-{{ tag(t="gustave_dore") }}
+{{ tag(t="painting") }}  
+{{ tag(t="angel") }}  
+{{ tag(t="ship") }}  
+{{ tag(t="gustave_dore") }}  
 
-Engraving by Gustave Doré, representing the departure of Aigues-Mortes of Louis IX for the crusade
+Engraving by Gustave Doré, representing the departure of Aigues-Mortes of Louis IX for the crusade  
 
 [Source](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9,_le_d%C3%A9part_de_Louis_IX_pour_la_croisade.jpg)
 

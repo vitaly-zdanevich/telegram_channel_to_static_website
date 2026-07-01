@@ -19,8 +19,8 @@ views = 56
 ids = [378]
 +++
 
-{{ tag(t="ai") }}
-{{ tag(t="vacuum_cleaner") }}
+{{ tag(t="ai") }}  
+{{ tag(t="vacuum_cleaner") }}  
 
 [Source](https://www.instagram.com/p/DGK0dcxM4IJ)
 

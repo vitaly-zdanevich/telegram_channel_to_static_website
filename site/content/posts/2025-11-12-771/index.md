@@ -20,11 +20,11 @@ views = 39
 ids = [771]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_old") }}
-{{ tag(t="xbox") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_old") }}  
+{{ tag(t="xbox") }}  
 
-[Wikidata](https://www.wikidata.org/wiki/Q136766009)
+[Wikidata](https://www.wikidata.org/wiki/Q136766009)  
 [Source](https://web.archive.org/web/20050901004235/http://www.xboxsolution.com/)
 
 ![](5233194153422819308_1218447963_460001260.jpg)

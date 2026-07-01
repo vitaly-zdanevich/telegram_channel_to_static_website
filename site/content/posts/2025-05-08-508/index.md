@@ -20,10 +20,10 @@ views = 25
 ids = [508]
 +++
 
-{{ tag(t="wifi") }}
-{{ tag(t="child") }}
-{{ tag(t="autism") }}
-{{ tag(t="sick") }}
+{{ tag(t="wifi") }}  
+{{ tag(t="child") }}  
+{{ tag(t="autism") }}  
+{{ tag(t="sick") }}  
 {{ tag(t="health") }}
 
 ![](5251537555013365162_1222718869_456256938.jpg)

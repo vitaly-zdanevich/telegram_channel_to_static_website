@@ -20,7 +20,7 @@ views = 13
 ids = [1115]
 +++
 
-{{ tag(t="zst") }} is so much smaller {{ tag(t="archive") }}
+{{ tag(t="zst") }} is so much smaller {{ tag(t="archive") }}  
 
 <https://en.wikipedia.org/wiki/Zstd>
 

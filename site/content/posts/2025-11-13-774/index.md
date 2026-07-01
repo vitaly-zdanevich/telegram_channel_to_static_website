@@ -20,11 +20,11 @@ views = 41
 ids = [774]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="kin_dza_dza") }}
-{{ tag(t="batumi") }}
+{{ tag(t="film") }}  
+{{ tag(t="kin_dza_dza") }}  
+{{ tag(t="batumi") }}  
 
-Кин-дза-дза, на девятой минуте Скрипач говорит что из Батуми
+Кин-дза-дза, на девятой минуте Скрипач говорит что из Батуми  
 
 [https://ru.wikipedia.org/wiki/Кин-дза-дза](https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD-%D0%B4%D0%B7%D0%B0-%D0%B4%D0%B7%D0%B0)!
 

@@ -20,9 +20,9 @@ views = 15
 ids = [874]
 +++
 
-{{ tag(t="wikipedia") }}
-{{ tag(t="bewiki") }}
-{{ tag(t="betarask") }}
+{{ tag(t="wikipedia") }}  
+{{ tag(t="bewiki") }}  
+{{ tag(t="betarask") }}  
 
 I was not active here.
 

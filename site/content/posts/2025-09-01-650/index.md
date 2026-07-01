@@ -19,7 +19,7 @@ views = 39
 ids = [650]
 +++
 
-Wow in {{ tag(t="svg") }} we can have {{ tag(t="css") }}, like
+Wow in {{ tag(t="svg") }} we can have {{ tag(t="css") }}, like  
 
 ```
 <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>

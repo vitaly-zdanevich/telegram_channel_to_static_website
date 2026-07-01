@@ -20,12 +20,12 @@ views = 31
 ids = [677]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="the_fountain") }}
-{{ tag(t="darren_aronofsky") }}
-{{ tag(t="death") }}
-{{ tag(t="hospital") }}
-{{ tag(t="tree") }}
+{{ tag(t="film") }}  
+{{ tag(t="the_fountain") }}  
+{{ tag(t="darren_aronofsky") }}  
+{{ tag(t="death") }}  
+{{ tag(t="hospital") }}  
+{{ tag(t="tree") }}  
 
 <https://en.wikipedia.org/wiki/The_Fountain>
 

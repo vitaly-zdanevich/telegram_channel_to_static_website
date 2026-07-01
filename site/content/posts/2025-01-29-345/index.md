@@ -19,11 +19,11 @@ views = 130
 ids = [345]
 +++
 
-{{ tag(t="lapenko") }}
-{{ tag(t="art") }}
-{{ tag(t="dog") }}
-{{ tag(t="painting") }}
-{{ tag(t="religion") }}
+{{ tag(t="lapenko") }}  
+{{ tag(t="art") }}  
+{{ tag(t="dog") }}  
+{{ tag(t="painting") }}  
+{{ tag(t="religion") }}  
 [Source](https://www.instagram.com/maybe_rus/reel/DE0eYVXtfYL/)
 
 {{ video(src="01.mp4") }}

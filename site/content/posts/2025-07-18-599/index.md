@@ -20,9 +20,9 @@ views = 40
 ids = [599]
 +++
 
-{{ tag(t="ventoy") }} is a dream - `cp` ISOs to USB and choose any to boot.
+{{ tag(t="ventoy") }} is a dream - `cp` ISOs to USB and choose any to boot.  
 
-And it faster to boot than `dd` because ISOs are compressed.
+And it faster to boot than `dd` because ISOs are compressed.  
 
 <https://www.ventoy.net/en/index.html>
 

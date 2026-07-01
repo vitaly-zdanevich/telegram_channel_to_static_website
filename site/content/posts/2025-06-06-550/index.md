@@ -19,10 +19,10 @@ views = 45
 ids = [550]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="languages") }} mix
+{{ tag(t="music") }}  
+{{ tag(t="languages") }} mix  
 
-{{ tag(t="kraenkova") }}: Slavic Blood
+{{ tag(t="kraenkova") }}: Slavic Blood  
 [Source](https://youtu.be/XDt8RT0aXUk)
 
 {{ youtube(id="XDt8RT0aXUk") }}

@@ -16,14 +16,14 @@ next_id = 1415
 next_title = ""
 prev_id = 1413
 prev_title = ""
-views = 15
+views = 16
 ids = [1414]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="ping") }}
-{{ tag(t="anime") }}
-{{ tag(t="japan") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="ping") }}  
+{{ tag(t="anime") }}  
+{{ tag(t="japan") }}  
 
 <https://pc98.club/piracy>
 

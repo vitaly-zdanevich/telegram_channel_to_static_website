@@ -19,9 +19,9 @@ views = 34
 ids = [479]
 +++
 
-{{ tag(t="article") }}
-{{ tag(t="prime_world") }}
+{{ tag(t="article") }}  
+{{ tag(t="prime_world") }}  
 
-I wrote.
+I wrote.  
 
 <https://habr.com/en/articles/902838/>

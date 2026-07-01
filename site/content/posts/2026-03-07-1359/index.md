@@ -20,9 +20,9 @@ views = 7
 ids = [1359]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
-{{ tag(t="anime") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
+{{ tag(t="anime") }}  
 
 <https://yumeoi.skin/>
 

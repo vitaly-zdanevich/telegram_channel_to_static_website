@@ -20,12 +20,12 @@ views = 26
 ids = [819]
 +++
 
-{{ tag(t="preservation") }}
-{{ tag(t="wikimedia_commons") }}
-{{ tag(t="pywikibot") }}
-{{ tag(t="my") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="wikimedia_commons") }}  
+{{ tag(t="pywikibot") }}  
+{{ tag(t="my") }}  
 
-Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](https://github.com/wikimedia/pywikibot) to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler
+Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](https://github.com/wikimedia/pywikibot) to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
 
 <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 

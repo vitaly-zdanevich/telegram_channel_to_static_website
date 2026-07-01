@@ -18,7 +18,7 @@ views = 68
 ids = [16, 17]
 +++
 
-Homepage - Cypherpunk Zero
+Homepage - Cypherpunk Zero  
 <https://halo.electriccoin.co/#close>
 
 Beautiful, but I do not understand

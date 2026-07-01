@@ -19,7 +19,7 @@ views = 28
 ids = [713]
 +++
 
-In {{ tag(t="kitty") }} [terminal](https://en.wikipedia.org/wiki/Kitty_(terminal_emulator)) you can always highlight something, for example "error" in any case:
+In {{ tag(t="kitty") }} [terminal](https://en.wikipedia.org/wiki/Kitty_(terminal_emulator)) you can always highlight something, for example "error" in any case:  
 
 ```
 map f2 toggle_marker itext 1 error
@@ -29,6 +29,6 @@ mark1_foreground black
 mark1_background red
 ```
 
-Reload the config with `Ctrl-Shift-F5`
+Reload the config with `Ctrl-Shift-F5`  
 
 Press F2 to toggle the highlight.

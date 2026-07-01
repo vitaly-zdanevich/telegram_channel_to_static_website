@@ -20,10 +20,10 @@ views = 6
 ids = [1203]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="software") }}
-{{ tag(t="gthumb") }}
-{{ tag(t="scan") }}
+{{ tag(t="design") }}  
+{{ tag(t="software") }}  
+{{ tag(t="gthumb") }}  
+{{ tag(t="scan") }}  
 {{ tag(t="preservation") }}
 
 ![](5264957012829737976_1225843330_460002296.jpg)

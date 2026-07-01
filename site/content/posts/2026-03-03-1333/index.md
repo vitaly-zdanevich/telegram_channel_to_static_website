@@ -20,9 +20,9 @@ views = 11
 ids = [1333]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="graph") }}
-{{ tag(t="wikimedia") }}
+{{ tag(t="design") }}  
+{{ tag(t="graph") }}  
+{{ tag(t="wikimedia") }}  
 
 <https://phabricator.wikimedia.org/T414121>
 

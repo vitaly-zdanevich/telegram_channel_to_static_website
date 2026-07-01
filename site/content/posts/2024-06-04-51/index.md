@@ -19,7 +19,7 @@ views = 53
 ids = [51]
 +++
 
-My another ebuild: the game [Gigalomania](https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania) - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.
+My another ebuild: the game [Gigalomania](https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania) - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
 
 <https://gigalomania.sourceforge.net/>
 

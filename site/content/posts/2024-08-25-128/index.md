@@ -19,9 +19,9 @@ views = 42
 ids = [128]
 +++
 
-[suno.com](http://suno.com/) is great - the best service for songs generation. Supports russian too.
+[suno.com](http://suno.com/) is great - the best service for songs generation. Supports russian too.  
 
-Original song and {{ tag(t="ai") }} generated
+Original song and {{ tag(t="ai") }} generated  
 
 <https://www.youtube.com/watch?v=lsWAYHOwk9E>
 

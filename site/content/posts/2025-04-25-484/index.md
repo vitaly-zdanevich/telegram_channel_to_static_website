@@ -19,7 +19,7 @@ views = 38
 ids = [484]
 +++
 
-{{ tag(t="complex_numbers") }}
-\#2084
+{{ tag(t="complex_numbers") }}  
+\#2084  
 
 Published to <https://odysee.com/@complex-numbers:b/01-act-1-faster-than-the-pace-of-time:4?lid=2f02eab9edcb648e9a1832bb5c4603f5309100fb>

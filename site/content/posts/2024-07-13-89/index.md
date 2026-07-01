@@ -20,7 +20,7 @@ views = 49
 ids = [89]
 +++
 
-Another good {{ tag(t="design") }}
+Another good {{ tag(t="design") }}  
 
 <https://emersion.fr/blog/2024/status-update-64/>
 

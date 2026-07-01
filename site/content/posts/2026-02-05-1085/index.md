@@ -20,9 +20,9 @@ views = 8
 ids = [1085]
 +++
 
-{{ tag(t="logo") }}
-{{ tag(t="gitlab") }}
-{{ tag(t="git") }}
+{{ tag(t="logo") }}  
+{{ tag(t="gitlab") }}  
+{{ tag(t="git") }}  
 
 [https://gitlab.com](https://gitlab.com/)
 

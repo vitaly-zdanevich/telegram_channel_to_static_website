@@ -15,11 +15,11 @@ next_id = 1865
 next_title = ""
 prev_id = 1863
 prev_title = ""
-views = 11
+views = 16
 ids = [1864]
 +++
 
-And another {{ tag(t="bash") }} {{ tag(t="alias") }}:
+And another {{ tag(t="bash") }} {{ tag(t="alias") }}:  
 
 ```
 # Better word movement: treat aaa_bbb_ccc as ONE word

@@ -20,11 +20,11 @@ views = 55
 ids = [539]
 +++
 
-<https://www.amazon.com/Am-Better-Christian-Zoloft-Questions/dp/0800746287>
+<https://www.amazon.com/Am-Better-Christian-Zoloft-Questions/dp/0800746287>  
 
-{{ tag(t="book") }}
-{{ tag(t="health") }}
-{{ tag(t="zoloft") }}
+{{ tag(t="book") }}  
+{{ tag(t="health") }}  
+{{ tag(t="zoloft") }}  
 {{ tag(t="christian") }}
 
 ![](5296715169243722942_1233237602_456258750.jpg)

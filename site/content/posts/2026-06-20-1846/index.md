@@ -15,14 +15,14 @@ next_id = 1847
 next_title = ""
 prev_id = 1845
 prev_title = ""
-views = 11
+views = 13
 ids = [1846]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="animation") }}
-{{ tag(t="video_editor") }}
-{{ tag(t="cinelerra") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="animation") }}  
+{{ tag(t="video_editor") }}  
+{{ tag(t="cinelerra") }}  
 
 <https://www.cinelerra-gg.org/en>
 

@@ -20,7 +20,7 @@ views = 19
 ids = [837]
 +++
 
-{{ tag(t="vr") }}
+{{ tag(t="vr") }}  
 
 [Source](https://www.linkedin.com/posts/gregoryvkornev_the-meta-horizon-start-developer-competition-activity-7412496691653771264-DgK3)
 

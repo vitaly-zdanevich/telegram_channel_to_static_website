@@ -16,14 +16,14 @@ next_id = 1835
 next_title = ""
 prev_id = 1833
 prev_title = ""
-views = 14
+views = 15
 ids = [1834]
 +++
 
-{{ tag(t="playstation") }}
-{{ tag(t="playstation2") }}
-{{ tag(t="game_console") }}
-{{ tag(t="street") }}
+{{ tag(t="playstation") }}  
+{{ tag(t="playstation2") }}  
+{{ tag(t="game_console") }}  
+{{ tag(t="street") }}  
 
 From <https://www.pinterest.com/pin/96475617015148876/>
 

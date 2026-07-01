@@ -20,13 +20,13 @@ views = 8
 ids = [1052]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="бешенковичи") }}
-{{ tag(t="font") }}
-{{ tag(t="church") }}
-{{ tag(t="winter") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="бешенковичи") }}  
+{{ tag(t="font") }}  
+{{ tag(t="church") }}  
+{{ tag(t="winter") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="globustut") }}  
 
 From [https://commons.wikimedia.org/wiki/File:045-319\_Бешенковичи,\_костел\_(в\_доме),\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-319_%D0%91%D0%B5%D1%88%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B8%D1%87%D0%B8,_%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB_(%D0%B2_%D0%B4%D0%BE%D0%BC%D0%B5),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 

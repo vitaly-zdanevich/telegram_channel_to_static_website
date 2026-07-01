@@ -19,9 +19,9 @@ views = 18
 ids = [1501]
 +++
 
-Unreleased game Империя from {{ tag(t="elemental_games") }}, like {{ tag(t="space_rangers") }}
+Unreleased game Империя from {{ tag(t="elemental_games") }}, like {{ tag(t="space_rangers") }}  
 
-{{ tag(t="year_2012") }}
+{{ tag(t="year_2012") }}  
 
 <https://www.youtube.com/watch?v=aa6a2I5hoMU>
 

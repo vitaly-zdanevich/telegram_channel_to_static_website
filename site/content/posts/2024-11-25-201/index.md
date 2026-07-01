@@ -20,7 +20,7 @@ views = 38
 ids = [201]
 +++
 
-{{ tag(t="wikipedia") }}
+{{ tag(t="wikipedia") }}  
 
 <https://commons.wikimedia.org/wiki/Category:Magna_Carta_(An_Embroidery)>
 

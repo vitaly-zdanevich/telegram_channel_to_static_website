@@ -19,10 +19,10 @@ views = 48
 ids = [355]
 +++
 
-<https://youtu.be/P-nJcLvQI9Q?list=RDfmMFOQBthz0>
+<https://youtu.be/P-nJcLvQI9Q?list=RDfmMFOQBthz0>  
 
-{{ tag(t="music") }}
-{{ tag(t="anime") }}
+{{ tag(t="music") }}  
+{{ tag(t="anime") }}  
 {{ tag(t="rammstein") }}
 
 {{ youtube(id="P-nJcLvQI9Q") }}

@@ -16,14 +16,14 @@ next_id = 1365
 next_title = ""
 prev_id = 1363
 prev_title = ""
-views = 6
+views = 7
 ids = [1364]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
-{{ tag(t="pikachu") }}
-{{ tag(t="anime") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
+{{ tag(t="pikachu") }}  
+{{ tag(t="anime") }}  
 
 <https://halcybutton.nekoweb.org/>
 

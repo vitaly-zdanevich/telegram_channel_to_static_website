@@ -19,7 +19,7 @@ views = 27
 ids = [1750]
 +++
 
-This is how in {{ tag(t="go") }} we remove an element from a collection
+This is how in {{ tag(t="go") }} we remove an element from a collection  
 
 ```
 func rm(i int, lists[]*ListNode) []*ListNode {

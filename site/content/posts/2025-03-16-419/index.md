@@ -19,9 +19,9 @@ views = 29
 ids = [419]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="cats") }}
-{{ tag(t="ai") }}
+{{ tag(t="music") }}  
+{{ tag(t="cats") }}  
+{{ tag(t="ai") }}  
 
 [Source](https://www.instagram.com/p/DGEC0lMyIhO)
 

@@ -20,15 +20,15 @@ views = 55
 ids = [474]
 +++
 
-{{ tag(t="archiving") }}
-{{ tag(t="preservation") }}
-{{ tag(t="internet_archive") }}
-{{ tag(t="jason_scott") }}
-{{ tag(t="man") }}
-{{ tag(t="hat") }}
-{{ tag(t="hard_drives") }}
+{{ tag(t="archiving") }}  
+{{ tag(t="preservation") }}  
+{{ tag(t="internet_archive") }}  
+{{ tag(t="jason_scott") }}  
+{{ tag(t="man") }}  
+{{ tag(t="hat") }}  
+{{ tag(t="hard_drives") }}  
 
-Jason Scott, Internet Archive employee, photo in color
+Jason Scott, Internet Archive employee, photo in color  
 
 From <https://x.com/textfiles/status/1850987321052578168/photo/1>
 

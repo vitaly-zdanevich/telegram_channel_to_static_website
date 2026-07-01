@@ -20,8 +20,8 @@ views = 8
 ids = [1082]
 +++
 
-{{ tag(t="people") }}
-{{ tag(t="fashion") }}
+{{ tag(t="people") }}  
+{{ tag(t="fashion") }}  
 {{ tag(t="zara") }}
 
 ![](5195454305857638992_1209660970_460001872.jpg)

@@ -19,10 +19,10 @@ views = 26
 ids = [696]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="scifi") }}
+{{ tag(t="film") }}  
+{{ tag(t="scifi") }}  
 
-Love, Death & Robots: fan mashup of s1ep7 [Beyond the Aquila Rift](https://www.imdb.com/title/tt9788496)
+Love, Death & Robots: fan mashup of s1ep7 [Beyond the Aquila Rift](https://www.imdb.com/title/tt9788496)  
 
 [Source](https://www.youtube.com/watch?v=MH2u3eVxxuI)
 

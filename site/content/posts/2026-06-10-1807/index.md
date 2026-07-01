@@ -16,11 +16,11 @@ next_id = 1817
 next_title = ""
 prev_id = 1806
 prev_title = ""
-views = 14
+views = 15
 ids = [1807]
 +++
 
-<https://addons.mozilla.org/en-US/firefox/addon/highlightthis/>
+<https://addons.mozilla.org/en-US/firefox/addon/highlightthis/>  
 
 {{ tag(t="love") }} this {{ tag(t="extension") }} - {{ tag(t="highlight") }} predefined list of words, on predefined URLs.
 

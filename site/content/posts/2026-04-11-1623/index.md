@@ -16,11 +16,11 @@ next_id = 1624
 next_title = ""
 prev_id = 1622
 prev_title = ""
-views = 22
+views = 23
 ids = [1623]
 +++
 
-Usual {{ tag(t="school") }} in {{ tag(t="china") }}? {{ tag(t="lenin") }}
+Usual {{ tag(t="school") }} in {{ tag(t="china") }}? {{ tag(t="lenin") }}  
 
 【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】<https://www.bilibili.com/video/BV1ZXE4ziEgf?vd_source=bb5efb0fc5b9ab1f523b5e6d0a9f0a2f>
 

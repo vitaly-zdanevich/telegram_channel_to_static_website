@@ -20,7 +20,7 @@ views = 34
 ids = [651]
 +++
 
-{{ tag(t="wikimedia_foundation") }} {{ tag(t="office") }} from 2024
+{{ tag(t="wikimedia_foundation") }} {{ tag(t="office") }} from 2024  
 
 [Source](https://en.wikipedia.org/wiki/Wikimedia_Foundation)
 

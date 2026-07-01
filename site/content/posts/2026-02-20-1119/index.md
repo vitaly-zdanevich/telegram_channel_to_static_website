@@ -20,12 +20,12 @@ views = 14
 ids = [1119]
 +++
 
-{{ tag(t="bash") }}
-{{ tag(t="history") }}
+{{ tag(t="bash") }}  
+{{ tag(t="history") }}  
 
-{{ tag(t="mcfly") }}: ctrl-r replacement with "suggestions are prioritized in real time with a small neural network."
+{{ tag(t="mcfly") }}: ctrl-r replacement with "suggestions are prioritized in real time with a small neural network."  
 
-Did a [color scheme](https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224) for it.
+Did a [color scheme](https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224) for it.  
 
 <https://github.com/cantino/mcfly>
 

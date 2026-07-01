@@ -19,7 +19,7 @@ views = 31
 ids = [164]
 +++
 
-{{ tag(t="javascript") }}: guess the output
+{{ tag(t="javascript") }}: guess the output  
 
 ```
 [1,2,3]+[4,5,6]

@@ -20,7 +20,7 @@ views = 37
 ids = [409]
 +++
 
-{{ tag(t="universe") }}
+{{ tag(t="universe") }}  
 {{ tag(t="consciousness") }}[Source](https://x.com/ArseniosMarkos/status/1831799696731599018)
 
 ![](5375405086139870811_1251559026_456257115.jpg)

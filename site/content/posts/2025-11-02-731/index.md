@@ -20,12 +20,12 @@ views = 23
 ids = [731]
 +++
 
-good
+good  
 
-[https://ifttt.com](https://ifttt.com/)
+[https://ifttt.com](https://ifttt.com/)  
 
-{{ tag(t="evernote") }}
-{{ tag(t="youtube") }}
+{{ tag(t="evernote") }}  
+{{ tag(t="youtube") }}  
 {{ tag(t="ifttt") }}
 
 ![](5206578739305712414_1212251079_460000030.jpg)

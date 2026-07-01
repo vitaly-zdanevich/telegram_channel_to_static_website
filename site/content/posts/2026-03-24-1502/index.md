@@ -20,12 +20,12 @@ views = 19
 ids = [1502]
 +++
 
-{{ tag(t="map") }}
-{{ tag(t="russia") }}
-{{ tag(t="russian_empire") }}
-{{ tag(t="black_sea") }}
-{{ tag(t="sakartvelo") }}
-{{ tag(t="year_1910") }}
+{{ tag(t="map") }}  
+{{ tag(t="russia") }}  
+{{ tag(t="russian_empire") }}  
+{{ tag(t="black_sea") }}  
+{{ tag(t="sakartvelo") }}  
+{{ tag(t="year_1910") }}  
 
 <https://commons.wikimedia.org/wiki/File:Evropayskye_gubernii_Rossii_1910.png>
 

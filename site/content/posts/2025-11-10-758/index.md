@@ -20,8 +20,8 @@ views = 28
 ids = [758]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="artlebedev") }}
+{{ tag(t="design") }}  
+{{ tag(t="artlebedev") }}  
 
 [Source](https://www.artlebedev.ru/dominanta/svet-objects/)
 

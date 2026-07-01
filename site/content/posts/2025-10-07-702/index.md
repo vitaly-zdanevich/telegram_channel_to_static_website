@@ -19,9 +19,9 @@ views = 31
 ids = [702]
 +++
 
-{{ tag(t="reaction") }}
-{{ tag(t="classic") }}
-{{ tag(t="music") }}
+{{ tag(t="reaction") }}  
+{{ tag(t="classic") }}  
+{{ tag(t="music") }}  
 [Source](https://www.instagram.com/p/DN4ZMJVje8B)
 
 {{ video(src="01.mp4") }}

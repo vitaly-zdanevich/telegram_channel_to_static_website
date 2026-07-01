@@ -20,10 +20,10 @@ views = 14
 ids = [1600]
 +++
 
-{{ tag(t="icq") }}
-{{ tag(t="offline") }}
-{{ tag(t="abandone") }}
-{{ tag(t="sony_ericsson") }}
+{{ tag(t="icq") }}  
+{{ tag(t="offline") }}  
+{{ tag(t="abandone") }}  
+{{ tag(t="sony_ericsson") }}  
 
 [Source](https://www.threads.com/@icsarus_ads/post/DW9J4DxDdla?xmt=AQF064j_UZL_Ksxn4mDm5YNIc_R--YS95mC9huyt7BqmDg)
 

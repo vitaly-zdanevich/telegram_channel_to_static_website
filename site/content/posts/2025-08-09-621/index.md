@@ -20,7 +20,7 @@ views = 36
 ids = [621]
 +++
 
-{{ tag(t="anime") }}
+{{ tag(t="anime") }}  
 {{ tag(t="gpu") }}[Source](https://9gag.com/gag/aYQq83O)
 
 ![](5240341610359813629_1220112110_456259069.jpg)

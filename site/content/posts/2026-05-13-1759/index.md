@@ -20,9 +20,9 @@ views = 23
 ids = [1759]
 +++
 
-Fix my {{ tag(t="style") }} for {{ tag(t="mdn") }}, {{ tag(t="screenshot") }} before and after
+Fix my {{ tag(t="style") }} for {{ tag(t="mdn") }}, {{ tag(t="screenshot") }} before and after  
 
-Sad that UI customization is rare.
+Sad that UI customization is rare.  
 
 <https://gitlab.com/vitaly-zdanevich-styles/mdn>
 

@@ -20,8 +20,8 @@ views = 10
 ids = [1269]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="blue") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="blue") }}  
 
 <https://www.osinit.com/#contacts>
 

@@ -19,7 +19,7 @@ views = 10
 ids = [1136]
 +++
 
-In {{ tag(t="kitty") }} terminal you can use independent clipboard:
+In {{ tag(t="kitty") }} terminal you can use independent clipboard:  
 
 ```
 map ctrl+space copy_to_buffer a1

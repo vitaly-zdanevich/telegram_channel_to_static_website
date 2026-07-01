@@ -20,10 +20,10 @@ views = 15
 ids = [888]
 +++
 
-{{ tag(t="sql") }}
-{{ tag(t="quarry") }}
-{{ tag(t="globustut") }}
-{{ tag(t="commons") }}: red category links with one or more files from a specific user
+{{ tag(t="sql") }}  
+{{ tag(t="quarry") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="commons") }}: red category links with one or more files from a specific user  
 
 ```
 SELECT

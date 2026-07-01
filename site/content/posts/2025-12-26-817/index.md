@@ -20,11 +20,11 @@ views = 32
 ids = [817]
 +++
 
-{{ tag(t="ukraine") }}
-{{ tag(t="mariupol") }}
-{{ tag(t="architecture") }}
-{{ tag(t="building") }}
-{{ tag(t="war") }}
+{{ tag(t="ukraine") }}  
+{{ tag(t="mariupol") }}  
+{{ tag(t="architecture") }}  
+{{ tag(t="building") }}  
+{{ tag(t="war") }}  
 [Source](https://www.pinterest.com/pin/109001253476493132)
 
 ![](5366212030769073340_1249418601_460000444.jpg)

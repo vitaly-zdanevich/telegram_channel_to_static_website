@@ -20,8 +20,8 @@ views = 16
 ids = [855]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="church") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="church") }}  
 {{ tag(t="globustut") }}[Source](https://commons.wikimedia.org/wiki/File:026-056_%D0%91%D0%B5%D0%B3%D0%BE%D0%BC%D0%BB%D1%8C,_02-11-2004.jpg)
 
 ![](5402068444980646167_1257767073_460001559.jpg)

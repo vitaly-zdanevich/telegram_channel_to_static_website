@@ -15,17 +15,17 @@ next_id = 1848
 next_title = ""
 prev_id = 1846
 prev_title = ""
-views = 11
+views = 14
 ids = [1847]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="trailer") }}
-{{ tag(t="music") }}
-{{ tag(t="year_2009") }}
-{{ tag(t="halo") }}
-{{ tag(t="xbox") }}
-{{ tag(t="xbox_360") }}
+{{ tag(t="game") }}  
+{{ tag(t="trailer") }}  
+{{ tag(t="music") }}  
+{{ tag(t="year_2009") }}  
+{{ tag(t="halo") }}  
+{{ tag(t="xbox") }}  
+{{ tag(t="xbox_360") }}  
 
 One of the best game trailer[Source](https://www.youtube.com/watch?v=uWSLHcAyy90)
 

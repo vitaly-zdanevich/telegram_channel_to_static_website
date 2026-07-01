@@ -20,11 +20,11 @@ views = 7
 ids = [1059]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="architecture") }}
-{{ tag(t="museum") }}
-{{ tag(t="red") }}
-{{ tag(t="сенно") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="architecture") }}  
+{{ tag(t="museum") }}  
+{{ tag(t="red") }}  
+{{ tag(t="сенно") }}  
 
 From [https://commons.wikimedia.org/wiki/File:045-425\_Сенно,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-425_%D0%A1%D0%B5%D0%BD%D0%BD%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 

@@ -20,10 +20,10 @@ views = 21
 ids = [1438]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="typography") }}
-{{ tag(t="newspaper") }}
-{{ tag(t="sakartvelo") }}
+{{ tag(t="design") }}  
+{{ tag(t="typography") }}  
+{{ tag(t="newspaper") }}  
+{{ tag(t="sakartvelo") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:Sakartvelo_1915_N05.pdf)
 

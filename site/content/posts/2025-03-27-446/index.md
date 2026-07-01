@@ -20,8 +20,8 @@ views = 29
 ids = [446]
 +++
 
-{{ tag(t="teapot") }}
-{{ tag(t="update") }}
+{{ tag(t="teapot") }}  
+{{ tag(t="update") }}  
 
 From <https://vk.com/futureisnow>
 

@@ -15,15 +15,15 @@ next_id = 1872
 next_title = ""
 prev_id = 1870
 prev_title = ""
-views = 2
+views = 62
 ids = [1871]
 +++
 
-{{ tag(t="death") }}
-{{ tag(t="grandmother") }}
-{{ tag(t="drink") }}
-{{ tag(t="kitchen") }}
-{{ tag(t="spirit") }}
+{{ tag(t="death") }}  
+{{ tag(t="grandmother") }}  
+{{ tag(t="drink") }}  
+{{ tag(t="kitchen") }}  
+{{ tag(t="spirit") }}  
 
 [Source](https://www.instagram.com/p/DZxxHvZIRyr)
 

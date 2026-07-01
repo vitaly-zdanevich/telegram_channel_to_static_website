@@ -16,15 +16,15 @@ next_id = 1623
 next_title = ""
 prev_id = 1613
 prev_title = ""
-views = 22
+views = 23
 ids = [1622]
 +++
 
-Про {{ tag(t="викиданные") }}/{{ tag(t="wikidata") }} (открытая база данных на {{ tag(t="SPARQL") }}), {{ tag(t="wikimedia") }}, {{ tag(t="wikipedia") }}
+Про {{ tag(t="викиданные") }}/{{ tag(t="wikidata") }} (открытая база данных на {{ tag(t="SPARQL") }}), {{ tag(t="wikimedia") }}, {{ tag(t="wikipedia") }}  
 
-Моя {{ tag(t="лекция") }}/митап в Лаборатории (это бар в Батуми).
+Моя {{ tag(t="лекция") }}/митап в Лаборатории (это бар в Батуми).  
 
-<https://www.wikidata.org/wiki/User:Vitaly_Zdanevich>
+<https://www.wikidata.org/wiki/User:Vitaly_Zdanevich>  
 
 Все линки на видео <https://share.evernote.com/note/73621155-4b57-e6c1-1c69-8ee7b423b252>
 

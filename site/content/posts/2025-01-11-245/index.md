@@ -19,9 +19,9 @@ views = 38
 ids = [245]
 +++
 
-{{ tag(t="war") }}
-{{ tag(t="video") }}
-{{ tag(t="warpath") }}
+{{ tag(t="war") }}  
+{{ tag(t="video") }}  
+{{ tag(t="warpath") }}  
 
 <https://youtu.be/eqeSGjCKV68>
 

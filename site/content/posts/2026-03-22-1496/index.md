@@ -20,9 +20,9 @@ views = 20
 ids = [1496]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="belarus") }}
-{{ tag(t="belarussian") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="belarussian") }}  
 
 <https://bnkorpus.info/kazki/classification/%D0%9A%D0%B0%D0%B7%D0%BA%D1%96%20%D0%BF%D1%80%D0%B0%20%D0%B6%D1%8B%D0%B2%D1%91%D0%BB>
 

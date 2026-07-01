@@ -20,9 +20,9 @@ views = 36
 ids = [783]
 +++
 
-{{ tag(t="ad") }}
-{{ tag(t="playstation") }}
-{{ tag(t="playstation2") }}
+{{ tag(t="ad") }}  
+{{ tag(t="playstation") }}  
+{{ tag(t="playstation2") }}  
 [Source](https://www.pinterest.com/pin/251357222948286255)
 
 ![](5256097805263113139_1223780635_460000179.jpg)

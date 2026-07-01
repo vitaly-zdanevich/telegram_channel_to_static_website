@@ -20,8 +20,8 @@ views = 7
 ids = [1370]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="armenia") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="armenia") }}  
 
 <https://khanofmir.neocities.org/ABOUT%20ME/About%20me>
 

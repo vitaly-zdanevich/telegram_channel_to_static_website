@@ -20,18 +20,18 @@ views = 21
 ids = [1753]
 +++
 
-{{ tag(t="heap") }}
-{{ tag(t="lt") }}
+{{ tag(t="heap") }}  
+{{ tag(t="lt") }}  
 
-Wow in {{ tag(t="leetcode") }} we can {{ tag(t="patch") }} classes:
+Wow in {{ tag(t="leetcode") }} we can {{ tag(t="patch") }} classes:  
 
 ```
 ListNode.__lt__ = lambda self, other: self.val < other.val
 ```
 
-This is good for simpler support of [heap](https://docs.python.org/3/library/heapq.html) - by providing the object only - without the index and value.
+This is good for simpler support of [heap](https://docs.python.org/3/library/heapq.html) - by providing the object only - without the index and value.  
 
-Full:
+Full:  
 
 ```
 import heapq

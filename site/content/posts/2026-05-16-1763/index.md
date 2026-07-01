@@ -20,8 +20,8 @@ views = 23
 ids = [1763]
 +++
 
-{{ tag(t="error") }}
-{{ tag(t="gitlab") }}
+{{ tag(t="error") }}  
+{{ tag(t="gitlab") }}  
 {{ tag(t="contradiction") }}
 
 ![](5206531314276832954_1212240037_460003002.jpg)

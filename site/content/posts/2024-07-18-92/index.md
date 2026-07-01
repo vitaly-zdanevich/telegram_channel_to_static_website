@@ -19,7 +19,7 @@ views = 53
 ids = [92]
 +++
 
-Guess the output {{ tag(t="javascript") }}
+Guess the output {{ tag(t="javascript") }}  
 
 ```
 const obj4 = {

@@ -20,8 +20,8 @@ views = 41
 ids = [785]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_game") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_game") }}  
 
 <https://www.allods.gipat.ru/index.php?p=news&id=476>
 

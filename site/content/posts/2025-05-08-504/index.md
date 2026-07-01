@@ -20,10 +20,10 @@ views = 28
 ids = [504]
 +++
 
-{{ tag(t="biology") }}
-{{ tag(t="symbiosis") }}
-{{ tag(t="leopold_the_cat") }}
-{{ tag(t="cat") }}
+{{ tag(t="biology") }}  
+{{ tag(t="symbiosis") }}  
+{{ tag(t="leopold_the_cat") }}  
+{{ tag(t="cat") }}  
 
 > Ребята, давайте сосуществовать симбиотически
 

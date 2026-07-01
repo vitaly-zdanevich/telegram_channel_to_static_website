@@ -16,15 +16,15 @@ next_id = 1729
 next_title = ""
 prev_id = 1719
 prev_title = ""
-views = 21
+views = 22
 ids = [1721]
 +++
 
-{{ tag(t="typography") }}
-{{ tag(t="scan") }}
-{{ tag(t="preservation") }}
-{{ tag(t="russian_empire") }}
-{{ tag(t="century19") }}
+{{ tag(t="typography") }}  
+{{ tag(t="scan") }}  
+{{ tag(t="preservation") }}  
+{{ tag(t="russian_empire") }}  
+{{ tag(t="century19") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%94%D0%90_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96--01--0679--0679-01--010679-01-01521_1742_%D1%80%D1%96%D0%BA_20200312_085419.jpg)
 

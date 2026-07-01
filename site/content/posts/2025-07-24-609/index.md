@@ -20,10 +20,10 @@ views = 51
 ids = [609]
 +++
 
-{{ tag(t="girl") }}
-{{ tag(t="relationship") }}
-{{ tag(t="ai") }}[Source](https://x.com/_Martisa_/status/1826928488596615504)
+{{ tag(t="girl") }}  
+{{ tag(t="relationship") }}  
+{{ tag(t="ai") }}[Source](https://x.com/_Martisa_/status/1826928488596615504)  
 
-> You generated<br>pictures and videos for him,<br>wrote texts for<br>demos,<br>helped him endlessly with reports<br>and a diploma, but in the end<br>he chose a woman<br>who knows how to find<br>hydrants<br>in photographs
+> You generated  <br>pictures and videos for him,  <br>wrote texts for  <br>demos,  <br>helped him endlessly with reports  <br>and a diploma, but in the end  <br>he chose a woman  <br>who knows how to find  <br>hydrants  <br>in photographs
 
 ![](5192779133933974763_1209038108_456258795.jpg)

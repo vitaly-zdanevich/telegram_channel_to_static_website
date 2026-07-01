@@ -19,7 +19,7 @@ views = 41
 ids = [182]
 +++
 
-&gt; Telegram is not a commercial organization
+&gt; Telegram is not a commercial organization  
 
 <https://telegram.org/faq#q-how-do-i-delete-my-account>
 

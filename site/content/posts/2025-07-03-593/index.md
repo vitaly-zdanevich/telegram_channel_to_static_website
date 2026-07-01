@@ -20,9 +20,9 @@ views = 43
 ids = [593]
 +++
 
-{{ tag(t="dog") }}
-{{ tag(t="love") }}
-{{ tag(t="mmorpg") }}
+{{ tag(t="dog") }}  
+{{ tag(t="love") }}  
+{{ tag(t="mmorpg") }}  
 
 [Source](https://ifunny.co/picture/the-romantic-tension-between-a-tank-and-healer-meanwhile-the-qbEdcn0VC)
 

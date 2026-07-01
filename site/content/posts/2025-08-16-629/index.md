@@ -21,9 +21,9 @@ ids = [629]
 
 > On January 29, 2015, about 15 years after the original release of Heroes of Might & Magic III, Ubisoft released a new high-definition version of the game compatible with PCs as well as Android and iOS tablets. The expansion packs were not included because the source code for those releases was lost
 
-<https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III#HD_Edition_2>
+<https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III#HD_Edition_2>  
 
-{{ tag(t="game") }}
-{{ tag(t="heroes") }}
-{{ tag(t="archiving") }}
+{{ tag(t="game") }}  
+{{ tag(t="heroes") }}  
+{{ tag(t="archiving") }}  
 {{ tag(t="lost") }}

@@ -19,9 +19,9 @@ views = 25
 ids = [688]
 +++
 
-{{ tag(t="china") }}
-{{ tag(t="beauty") }}
-{{ tag(t="plastic") }}
+{{ tag(t="china") }}  
+{{ tag(t="beauty") }}  
+{{ tag(t="plastic") }}  
 [Source](https://www.instagram.com/p/DHa4m9TIhVC)
 
 {{ video(src="01.mp4") }}

@@ -20,9 +20,9 @@ views = 7
 ids = [1013]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="blue") }}
-{{ tag(t="batumi") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="blue") }}  
+{{ tag(t="batumi") }}  
 
 [http://print-office.ge](http://print-office.ge/)
 

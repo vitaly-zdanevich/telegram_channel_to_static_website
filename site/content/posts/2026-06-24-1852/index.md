@@ -15,7 +15,7 @@ next_id = 1853
 next_title = ""
 prev_id = 1850
 prev_title = ""
-views = 8
+views = 10
 ids = [1852]
 +++
 

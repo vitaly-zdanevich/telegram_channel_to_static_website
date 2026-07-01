@@ -16,12 +16,12 @@ next_id = 1721
 next_title = ""
 prev_id = 1709
 prev_title = ""
-views = 19
+views = 20
 ids = [1719]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="dark") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="dark") }}  
 
 <https://linear.app/>
 

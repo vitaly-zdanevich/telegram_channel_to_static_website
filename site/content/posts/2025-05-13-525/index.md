@@ -20,10 +20,10 @@ views = 29
 ids = [525]
 +++
 
-{{ tag(t="photo") }}
-{{ tag(t="history") }}
-{{ tag(t="face") }}
-{{ tag(t="medals") }}
+{{ tag(t="photo") }}  
+{{ tag(t="history") }}  
+{{ tag(t="face") }}  
+{{ tag(t="medals") }}  
 
 <https://commons.wikimedia.org/wiki/File:Alfred_duke_of_Edinburgh.jpg>
 

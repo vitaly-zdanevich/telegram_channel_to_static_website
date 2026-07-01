@@ -20,12 +20,12 @@ views = 25
 ids = [1554]
 +++
 
-{{ tag(t="abandone") }}
-{{ tag(t="church") }}
-{{ tag(t="Островно") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
-{{ tag(t="year_2005") }}
+{{ tag(t="abandone") }}  
+{{ tag(t="church") }}  
+{{ tag(t="Островно") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="year_2005") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:060-0259_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%BD%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_24_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 

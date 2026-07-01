@@ -19,8 +19,8 @@ views = 24
 ids = [687]
 +++
 
-{{ tag(t="cinema") }}
-{{ tag(t="spunch_bob") }}
+{{ tag(t="cinema") }}  
+{{ tag(t="spunch_bob") }}  
 {{ tag(t="gruz_200") }}[Source](https://www.instagram.com/p/DMa26OBoozf)
 
 {{ video(src="01.mp4") }}

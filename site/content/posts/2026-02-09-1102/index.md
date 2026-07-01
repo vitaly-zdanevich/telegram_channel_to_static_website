@@ -20,9 +20,9 @@ views = 18
 ids = [1102]
 +++
 
-**How to make** {{ tag(t="ubuntu") }} **folder for** {{ tag(t="chroot") }}
+**How to make** {{ tag(t="ubuntu") }} **folder for** {{ tag(t="chroot") }}  
 
-<https://en.wikipedia.org/wiki/Chroot>
+<https://en.wikipedia.org/wiki/Chroot>  
 
 ```
 wget https://cdimage.ubuntu.com/ubuntu-base/releases/25.10/release/ubuntu-base-25.10-base-amd64.tar.gz
@@ -41,7 +41,7 @@ cd ubuntu-base/
 cp /etc/resolv.conf etc/resolv.conf
 ```
 
-Create file inside:
+Create file inside:  
 
 ```
 mount --bind /dev  dev

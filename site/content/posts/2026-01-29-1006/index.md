@@ -20,12 +20,12 @@ views = 7
 ids = [1006]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="nature") }}
-{{ tag(t="winter") }}
-{{ tag(t="monument") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="novogrudok") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="nature") }}  
+{{ tag(t="winter") }}  
+{{ tag(t="monument") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="novogrudok") }}  
 
 From [https://commons.wikimedia.org/wiki/File:043-433\_Новогрудок,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-433_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 

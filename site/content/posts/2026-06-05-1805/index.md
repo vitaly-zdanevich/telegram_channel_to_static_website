@@ -19,8 +19,8 @@ views = 27
 ids = [1805]
 +++
 
-My yet another project: [@wikipedia\_unofficial\_bot](https://t.me/wikipedia_unofficial_bot)
+My yet another project: [@wikipedia\_unofficial\_bot](https://t.me/wikipedia_unofficial_bot)  
 
-Built with {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh
+Built with {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh  
 
 <https://github.com/vitaly-zdanevich/bot_telegram_wikipedia>

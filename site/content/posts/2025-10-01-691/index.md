@@ -20,9 +20,9 @@ views = 27
 ids = [691]
 +++
 
-{{ tag(t="jpg") }}
-{{ tag(t="webp") }}
-{{ tag(t="avif") }}
+{{ tag(t="jpg") }}  
+{{ tag(t="webp") }}  
+{{ tag(t="avif") }}  
 
 [Source](https://slides.com/lecturergdm/advanced-images/fullscreen#/2/5)
 

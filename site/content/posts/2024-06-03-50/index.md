@@ -20,7 +20,7 @@ views = 54
 ids = [50]
 +++
 
-{{ tag(t="gitlab") }}: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it.
+{{ tag(t="gitlab") }}: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it.  
 
 Its a dream to work for some open source company like {{ tag(t="gitlab") }} or {{ tag(t="wikimedia") }}, maybe in one day...
 

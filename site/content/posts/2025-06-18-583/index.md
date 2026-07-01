@@ -20,9 +20,9 @@ views = 37
 ids = [583]
 +++
 
-{{ tag(t="photo") }}
-{{ tag(t="sakartvelo") }}
-{{ tag(t="botanic_garden") }}
+{{ tag(t="photo") }}  
+{{ tag(t="sakartvelo") }}  
+{{ tag(t="botanic_garden") }}  
 {{ tag(t="ladder") }}
 
 ![](5375476537215808962_1251575662_456259010.jpg)

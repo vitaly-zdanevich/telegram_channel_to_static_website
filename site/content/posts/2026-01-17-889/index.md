@@ -20,8 +20,8 @@ views = 14
 ids = [889]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="globustut") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="globustut") }}  
 
 [Source](https://globustut.by/area_pl_brest.htm)
 

@@ -19,18 +19,18 @@ views = 32
 ids = [816]
 +++
 
-{{ tag(t="it") }}
-{{ tag(t="relocation") }}
-{{ tag(t="uzbekistan") }}
-{{ tag(t="tajikistan") }}
-{{ tag(t="afghanistan") }}
-{{ tag(t="iran") }}
-{{ tag(t="turkey") }}
-{{ tag(t="azerbaijan") }}
-{{ tag(t="armenia") }}
-{{ tag(t="syria") }}
-{{ tag(t="sakartvelo") }}
-{{ tag(t="iraq") }}
+{{ tag(t="it") }}  
+{{ tag(t="relocation") }}  
+{{ tag(t="uzbekistan") }}  
+{{ tag(t="tajikistan") }}  
+{{ tag(t="afghanistan") }}  
+{{ tag(t="iran") }}  
+{{ tag(t="turkey") }}  
+{{ tag(t="azerbaijan") }}  
+{{ tag(t="armenia") }}  
+{{ tag(t="syria") }}  
+{{ tag(t="sakartvelo") }}  
+{{ tag(t="iraq") }}  
 
 [Source](https://www.tiktok.com/@juniornaveka/video/7485035604887997718)
 

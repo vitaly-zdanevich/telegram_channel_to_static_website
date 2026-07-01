@@ -19,13 +19,13 @@ views = 46
 ids = [601]
 +++
 
-...addition to the previous post: that photo reminds me of this video ARK, from 2007
+...addition to the previous post: that photo reminds me of this video ARK, from 2007  
 
-{{ tag(t="cgi") }}
-{{ tag(t="virus") }}
-{{ tag(t="ship") }}
+{{ tag(t="cgi") }}  
+{{ tag(t="virus") }}  
+{{ tag(t="ship") }}  
 
-<https://www.imdb.com/title/tt1029261>
+<https://www.imdb.com/title/tt1029261>  
 
 [Source](https://youtu.be/WQneX-qK7MM)
 

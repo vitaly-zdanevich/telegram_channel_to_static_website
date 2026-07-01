@@ -19,8 +19,8 @@ views = 12
 ids = [948]
 +++
 
-{{ tag(t="css") }}
-Wow I did a good **::selection** for my {{ tag(t="evernote") }} [style](https://gitlab.com/vitaly-zdanevich-styles/evernote/-/commit/cad501d71d43499aa1d8b9f06d3fbc4cb856b9a3)
+{{ tag(t="css") }}  
+Wow I did a good **::selection** for my {{ tag(t="evernote") }} [style](https://gitlab.com/vitaly-zdanevich-styles/evernote/-/commit/cad501d71d43499aa1d8b9f06d3fbc4cb856b9a3)  
 
 ```
 a::selection

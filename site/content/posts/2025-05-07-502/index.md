@@ -20,9 +20,9 @@ views = 28
 ids = [502]
 +++
 
-{{ tag(t="psy") }}
-{{ tag(t="lasers") }}
-{{ tag(t="girl") }}
+{{ tag(t="psy") }}  
+{{ tag(t="lasers") }}  
+{{ tag(t="girl") }}  
 [Source](https://ru.pinterest.com/pin/578220039676225104)
 
 ![](5246870441686070041_1221632222_456258329.jpg)

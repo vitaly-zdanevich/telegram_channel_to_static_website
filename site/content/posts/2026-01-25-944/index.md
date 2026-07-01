@@ -20,8 +20,8 @@ views = 11
 ids = [944]
 +++
 
-{{ tag(t="aws") }}
-{{ tag(t="aws_lambda") }}
+{{ tag(t="aws") }}  
+{{ tag(t="aws_lambda") }}  
 
 From <https://youtu.be/JeUpUK0nhC0?t=1938>
 

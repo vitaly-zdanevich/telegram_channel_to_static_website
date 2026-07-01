@@ -20,9 +20,9 @@ views = 19
 ids = [1599]
 +++
 
-My first blog {{ tag(t="post") }} to {{ tag(t="wikimedia_diff") }}, about {{ tag(t="wikimedia_commons") }}, {{ tag(t="preservation") }}
+My first blog {{ tag(t="post") }} to {{ tag(t="wikimedia_diff") }}, about {{ tag(t="wikimedia_commons") }}, {{ tag(t="preservation") }}  
 
-<https://diff.wikimedia.org/2026/04/09/preserve-old-public-domain-newspapers-and-books-from-archive-websites/>
+<https://diff.wikimedia.org/2026/04/09/preserve-old-public-domain-newspapers-and-books-from-archive-websites/>  
 
 Also at <https://habr.com/en/articles/1025750/>
 

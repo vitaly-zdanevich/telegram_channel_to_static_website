@@ -15,17 +15,17 @@ next_id = 1645
 next_title = ""
 prev_id = 1641
 prev_title = ""
-views = 21
+views = 22
 ids = [1643]
 +++
 
-{{ tag(t="podcast") }}
-{{ tag(t="north_korea") }}
-{{ tag(t="голос_кореи") }}
+{{ tag(t="podcast") }}  
+{{ tag(t="north_korea") }}  
+{{ tag(t="голос_кореи") }}  
 
-<http://www.vok.rep.kp/index.php/home/main/ru>
+<http://www.vok.rep.kp/index.php/home/main/ru>  
 
-[https://ru.wikipedia.org/wiki/Голос\_Кореи](https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D1%81_%D0%9A%D0%BE%D1%80%D0%B5%D0%B8)
+[https://ru.wikipedia.org/wiki/Голос\_Кореи](https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D1%81_%D0%9A%D0%BE%D1%80%D0%B5%D0%B8)  
 
 From <http://golos-korei.podfm.ru/northk/277/>
 

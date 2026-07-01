@@ -20,11 +20,11 @@ views = 14
 ids = [844]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="building") }}
-{{ tag(t="castle") }}
-{{ tag(t="abandoned") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="building") }}  
+{{ tag(t="castle") }}  
+{{ tag(t="abandoned") }}  
+{{ tag(t="globustut") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:022-466_%D0%94%D0%B8%D0%BA%D1%83%D1%88%D0%BA%D0%B8,_09-10-2004.jpg)
 

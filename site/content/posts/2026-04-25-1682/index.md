@@ -19,7 +19,7 @@ views = 17
 ids = [1682]
 +++
 
-My new great {{ tag(t="bash") }} {{ tag(t="alias") }} (actually a {{ tag(t="hotkey") }}) for faster {{ tag(t="cd") }}
+My new great {{ tag(t="bash") }} {{ tag(t="alias") }} (actually a {{ tag(t="hotkey") }}) for faster {{ tag(t="cd") }}  
 
 ```
 # Like cd, but accept a path with spaces - so no quotation is needed

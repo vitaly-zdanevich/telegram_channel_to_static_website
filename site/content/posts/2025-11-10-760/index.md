@@ -20,14 +20,14 @@ views = 28
 ids = [760]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="bible") }}
-{{ tag(t="gustave_dore") }}
-{{ tag(t="death") }}
-{{ tag(t="horse") }}
-{{ tag(t="year_1865") }}
+{{ tag(t="painting") }}  
+{{ tag(t="bible") }}  
+{{ tag(t="gustave_dore") }}  
+{{ tag(t="death") }}  
+{{ tag(t="horse") }}  
+{{ tag(t="year_1865") }}  
 
-Gustave Dore - Death on the Pale Horse
+Gustave Dore - Death on the Pale Horse  
 
 [Source](https://commons.wikimedia.org/wiki/File:Gustave_Dore_-_Death_on_the_Pale_Horse.png)
 

@@ -20,11 +20,11 @@ views = 12
 ids = [1444]
 +++
 
-{{ tag(t="church") }}
-{{ tag(t="jesus") }}
-{{ tag(t="inside") }}
-{{ tag(t="globustut") }}
-{{ tag(t="year_2005") }}
+{{ tag(t="church") }}  
+{{ tag(t="jesus") }}  
+{{ tag(t="inside") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="year_2005") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:056-283_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 

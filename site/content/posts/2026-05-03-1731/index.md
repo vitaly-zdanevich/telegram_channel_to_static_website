@@ -20,9 +20,9 @@ views = 17
 ids = [1731]
 +++
 
-{{ tag(t="colors") }}
-{{ tag(t="cables") }}
-{{ tag(t="pole") }}
+{{ tag(t="colors") }}  
+{{ tag(t="cables") }}  
+{{ tag(t="pole") }}  
 
 [Source](https://x.com/repponen/status/1909584704694817206)
 

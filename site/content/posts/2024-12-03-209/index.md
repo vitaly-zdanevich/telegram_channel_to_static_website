@@ -20,7 +20,7 @@ views = 41
 ids = [209]
 +++
 
-{{ tag(t="license") }}
+{{ tag(t="license") }}  
 <https://pkg.go.dev/sync?tab=licenses>
 
 ![](5366158232004978363_1249406075_456255163.jpg)

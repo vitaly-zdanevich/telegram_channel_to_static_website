@@ -20,7 +20,7 @@ views = 82
 ids = [343]
 +++
 
-{{ tag(t="ai") }}
+{{ tag(t="ai") }}  
 [Source](https://www.instagram.com/reel/DEiczd7gt6q)
 
 ![video](01.jpg)

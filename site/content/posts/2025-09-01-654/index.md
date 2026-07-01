@@ -20,10 +20,10 @@ views = 37
 ids = [654]
 +++
 
-{{ tag(t="russia") }}
-{{ tag(t="israel") }}
-{{ tag(t="map") }}
-[Source](https://brilliantmaps.com/israel-vs-jewish-autonomous-oblast/#more-21064)
+{{ tag(t="russia") }}  
+{{ tag(t="israel") }}  
+{{ tag(t="map") }}  
+[Source](https://brilliantmaps.com/israel-vs-jewish-autonomous-oblast/#more-21064)  
 
 <https://en.wikipedia.org/wiki/Jewish_Autonomous_Oblast>
 

@@ -20,12 +20,12 @@ views = 36
 ids = [770]
 +++
 
-{{ tag(t="games") }}
-{{ tag(t="sega_genesis") }}
-{{ tag(t="neo_geo") }}
-{{ tag(t="year_1991") }}
+{{ tag(t="games") }}  
+{{ tag(t="sega_genesis") }}  
+{{ tag(t="neo_geo") }}  
+{{ tag(t="year_1991") }}  
 
-<https://en.wikipedia.org/wiki/Neo_Geo>
+<https://en.wikipedia.org/wiki/Neo_Geo>  
 
 [Source](https://web.archive.org/web/20090213071630/http://www.gamebrink.com/wp-content/uploads/2008/05/snkletter.jpg)
 

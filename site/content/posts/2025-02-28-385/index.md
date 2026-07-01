@@ -20,8 +20,8 @@ views = 48
 ids = [385]
 +++
 
-{{ tag(t="pelevin") }}
-{{ tag(t="apple") }}
+{{ tag(t="pelevin") }}  
+{{ tag(t="apple") }}  
 {{ tag(t="buddhism") }}
 
 ![](5336993870761815093_1242615718_456256565.jpg)

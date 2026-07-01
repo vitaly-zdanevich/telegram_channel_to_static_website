@@ -20,7 +20,7 @@ views = 8
 ids = [1371]
 +++
 
-{{ tag(t="button") }}
+{{ tag(t="button") }}  
 
 <https://lattice9.net/buttons>
 

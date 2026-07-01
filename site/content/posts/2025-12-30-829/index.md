@@ -20,8 +20,8 @@ views = 27
 ids = [829]
 +++
 
-{{ tag(t="microsoft") }}
-{{ tag(t="microsoft_word") }}
+{{ tag(t="microsoft") }}  
+{{ tag(t="microsoft_word") }}  
 {{ tag(t="session") }}
 
 ![](5377540423624102473_1252056198_460001865.jpg)

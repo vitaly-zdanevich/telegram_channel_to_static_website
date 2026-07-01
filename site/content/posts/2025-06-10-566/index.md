@@ -20,7 +20,7 @@ views = 33
 ids = [566]
 +++
 
-My new {{ tag(t="dark_mode") }}: [numbeo.com](http://numbeo.com/)
+My new {{ tag(t="dark_mode") }}: [numbeo.com](http://numbeo.com/)  
 
 <https://gitlab.com/vitaly-zdanevich/numbeo-com>
 

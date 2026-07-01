@@ -20,14 +20,14 @@ views = 29
 ids = [718]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="game") }}
-{{ tag(t="mmorpg") }}
-{{ tag(t="ragnarok") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="game") }}  
+{{ tag(t="mmorpg") }}  
+{{ tag(t="ragnarok") }}  
 
-It still alive
+It still alive  
 
-[https://renewal.playragnarok.com](https://renewal.playragnarok.com/)
+[https://renewal.playragnarok.com](https://renewal.playragnarok.com/)  
 
 <https://en.wikipedia.org/wiki/Ragnarok_Online>
 

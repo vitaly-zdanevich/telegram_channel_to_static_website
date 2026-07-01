@@ -20,10 +20,10 @@ views = 7
 ids = [923]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="village") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="abandone") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="village") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="abandone") }}  
 
 [https://commons.wikimedia.org/wiki/File:038-534\_Трабы,\_хозпостройки\_из\_бута,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-534_%D0%A2%D1%80%D0%B0%D0%B1%D1%8B,_%D1%85%D0%BE%D0%B7%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8_%D0%B8%D0%B7_%D0%B1%D1%83%D1%82%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 

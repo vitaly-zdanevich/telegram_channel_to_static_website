@@ -19,7 +19,7 @@ views = 9
 ids = [1336]
 +++
 
-...one of my {{ tag(t="bash") }} aliases: to count files here:
+...one of my {{ tag(t="bash") }} aliases: to count files here:  
 
 ```
 c() {

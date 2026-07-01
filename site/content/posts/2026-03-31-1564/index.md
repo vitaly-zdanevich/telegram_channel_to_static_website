@@ -16,12 +16,12 @@ next_id = 1565
 next_title = ""
 prev_id = 1563
 prev_title = ""
-views = 22
+views = 23
 ids = [1564]
 +++
 
-{{ tag(t="god") }}
-{{ tag(t="smartphone") }}
+{{ tag(t="god") }}  
+{{ tag(t="smartphone") }}  
 {{ tag(t="game") }}
 
 ![](5359418144126080783_1247836776_460003087.jpg)

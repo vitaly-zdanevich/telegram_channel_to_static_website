@@ -16,12 +16,12 @@ next_id = 1823
 next_title = ""
 prev_id = 1821
 prev_title = ""
-views = 13
+views = 15
 ids = [1822]
 +++
 
-{{ tag(t="tbc") }}
-{{ tag(t="money") }}
+{{ tag(t="tbc") }}  
+{{ tag(t="money") }}  
 
 This is why we have {{ tag(t="crypto") }}?
 

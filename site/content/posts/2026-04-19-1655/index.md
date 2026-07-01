@@ -20,9 +20,9 @@ views = 21
 ids = [1655]
 +++
 
-{{ tag(t="preservation") }}
-{{ tag(t="logo") }}
-{{ tag(t="symbol") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="logo") }}  
+{{ tag(t="symbol") }}  
 {{ tag(t="damage") }}
 
 ![](5417832637109310022_1261437460_460001862.jpg)

@@ -20,10 +20,10 @@ views = 16
 ids = [859]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="iŭje") }}
-{{ tag(t="building") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="iŭje") }}  
+{{ tag(t="building") }}  
+{{ tag(t="globustut") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:Globustut_187_%D0%98%D0%B2%D1%8C%D0%B5.jpg)
 

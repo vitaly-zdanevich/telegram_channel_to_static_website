@@ -20,9 +20,9 @@ views = 41
 ids = [809]
 +++
 
-{{ tag(t="cli") }}
-{{ tag(t="tui") }}
-{{ tag(t="design") }}
+{{ tag(t="cli") }}  
+{{ tag(t="tui") }}  
+{{ tag(t="design") }}  
 
 <https://www.instagram.com/terminaltrove>
 

@@ -19,7 +19,7 @@ views = 42
 ids = [587]
 +++
 
-In 2024 to {{ tag(t="steam") }} were published 19000 {{ tag(t="games") }}, its 52 games per day.
+In 2024 to {{ tag(t="steam") }} were published 19000 {{ tag(t="games") }}, its 52 games per day.  
 
 [Source](https://youtu.be/MXJQdlfui7I)
 

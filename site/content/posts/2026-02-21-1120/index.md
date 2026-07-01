@@ -20,8 +20,8 @@ views = 14
 ids = [1120]
 +++
 
-{{ tag(t="ai") }}
-{{ tag(t="codex") }}
+{{ tag(t="ai") }}  
+{{ tag(t="codex") }}  
 
 {{ tag(t="love") }} [Codex](https://github.com/openai/codex), using it almost every day, recently solved a few long lasting technical problems thanks to him.
 

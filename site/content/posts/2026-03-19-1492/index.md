@@ -20,10 +20,10 @@ views = 19
 ids = [1492]
 +++
 
-{{ tag(t="typography") }}
-{{ tag(t="year_1907") }}
-{{ tag(t="sakartvelo") }}
-{{ tag(t="newspaper") }}
+{{ tag(t="typography") }}  
+{{ tag(t="year_1907") }}  
+{{ tag(t="sakartvelo") }}  
+{{ tag(t="newspaper") }}  
 {{ tag(t="isari") }}[Source](https://commons.wikimedia.org/wiki/File:Isari_1907_N213-.pdf)
 
 ![](5321398183088820949_1238984564_460002005.jpg)

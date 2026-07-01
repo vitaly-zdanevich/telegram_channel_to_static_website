@@ -19,7 +19,7 @@ views = 30
 ids = [1804]
 +++
 
-In {{ tag(t="batumi") }}, to buy a coffee, sometimes we talk in three {{ tag(t="languages") }}:
-{{ tag(t="kartuli") }}
-{{ tag(t="english") }}
+In {{ tag(t="batumi") }}, to buy a coffee, sometimes we talk in three {{ tag(t="languages") }}:  
+{{ tag(t="kartuli") }}  
+{{ tag(t="english") }}  
 {{ tag(t="russian") }}

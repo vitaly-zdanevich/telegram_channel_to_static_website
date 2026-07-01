@@ -19,16 +19,16 @@ views = 22
 ids = [1744]
 +++
 
-{{ tag(t="python") }}
-{{ tag(t="mojo") }}
+{{ tag(t="python") }}  
+{{ tag(t="mojo") }}  
 
-{{ tag(t="llm") }}
-{{ tag(t="gemini") }}
+{{ tag(t="llm") }}  
+{{ tag(t="gemini") }}  
 
-> 2. Mojo (The New Challenger)<br>  Mojo is a new programming language designed by Chris Lattner (creator of LLVM and Swift).<br>   \* It is a superset of Python that looks and feels like Python but includes optional strong, static typing.<br>   \* It claims to be up to 35,000x faster than Python because it compiles to machine code and utilizes hardware features like SIMD.
+> 2. Mojo (The New Challenger)  <br>  Mojo is a new programming language designed by Chris Lattner (creator of LLVM and Swift).  <br>   \* It is a superset of Python that looks and feels like Python but includes optional strong, static typing.  <br>   \* It claims to be up to 35,000x faster than Python because it compiles to machine code and utilizes hardware features like SIMD.
 
 > Key Innovations: Introduces features like let for immutable variables
 
-Why not {{ tag(t="const") }}?
+Why not {{ tag(t="const") }}?  
 
 <https://www.modular.com/open-source/mojo>

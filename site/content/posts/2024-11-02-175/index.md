@@ -19,9 +19,9 @@ views = 39
 ids = [175]
 +++
 
-{{ tag(t="web3") }} audio platform, {{ tag(t="opensource") }}, on {{ tag(t="ipfs") }}, I uploaded {{ tag(t="complexnumbers") }} to it <https://audius.co/complex_numbers>
+{{ tag(t="web3") }} audio platform, {{ tag(t="opensource") }}, on {{ tag(t="ipfs") }}, I uploaded {{ tag(t="complexnumbers") }} to it <https://audius.co/complex_numbers>  
 
-<https://youtu.be/c50licHTOik>
+<https://youtu.be/c50licHTOik>  
 
 <https://ecosystem.ipfs.tech/project/audius/>
 

@@ -20,9 +20,9 @@ views = 15
 ids = [1125]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="gentoo") }}
-{{ tag(t="china") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="gentoo") }}  
+{{ tag(t="china") }}  
 
 <https://www.gentoo.org.cn/>
 

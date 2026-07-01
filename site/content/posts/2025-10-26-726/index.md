@@ -19,14 +19,14 @@ views = 34
 ids = [726]
 +++
 
-{{ tag(t="logo") }}
-{{ tag(t="homm3") }}
-{{ tag(t="new_world_computing") }}
+{{ tag(t="logo") }}  
+{{ tag(t="homm3") }}  
+{{ tag(t="new_world_computing") }}  
 
-From the YouTube commend:
+From the YouTube commend:  
 
 > Quite possibly the most stylish and badass game company intros
-[https://en.wikipedia.org/wiki/New\_World\_Computing](https://www.youtube.com/watch?v=qmt5HZGT_y0)
+[https://en.wikipedia.org/wiki/New\_World\_Computing](https://www.youtube.com/watch?v=qmt5HZGT_y0)  
 [Source](https://www.youtube.com/watch?v=qmt5HZGT_y0)
 
 {{ youtube(id="qmt5HZGT_y0") }}

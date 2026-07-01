@@ -20,7 +20,7 @@ views = 55
 ids = [610]
 +++
 
-Can you imagine {{ tag(t="userstyle") }} with so much [configs](https://github.com/924e50c0/Last.fmSimpleTweaks)
+Can you imagine {{ tag(t="userstyle") }} with so much [configs](https://github.com/924e50c0/Last.fmSimpleTweaks)  
 
 {{ tag(t="lastfm") }}
 

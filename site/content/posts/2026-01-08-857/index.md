@@ -20,10 +20,10 @@ views = 17
 ids = [857]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="minsk") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="minsk") }}  
 
-1941-1944
+1941-1944  
 
 [Source](https://www.facebook.com/share/p/1ZzTCvYgwi/)
 

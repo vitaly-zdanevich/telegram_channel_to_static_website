@@ -16,13 +16,13 @@ next_id = 1368
 next_title = ""
 prev_id = 1366
 prev_title = ""
-views = 8
+views = 9
 ids = [1367]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="anime") }}
-{{ tag(t="oldweb") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="anime") }}  
+{{ tag(t="oldweb") }}  
 
 <https://rice.place/>
 

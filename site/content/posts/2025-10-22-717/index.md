@@ -19,11 +19,11 @@ views = 28
 ids = [717]
 +++
 
-{{ tag(t="life") }}
-{{ tag(t="deep") }}
-{{ tag(t="silence") }}
+{{ tag(t="life") }}  
+{{ tag(t="deep") }}  
+{{ tag(t="silence") }}  
 
-Почему ты всё время молчишь, у тебя нет тем для разговора
+Почему ты всё время молчишь, у тебя нет тем для разговора  
 [Source](https://www.instagram.com/p/DMdf1hwMGFr)
 
 {{ video(src="01.mp4") }}

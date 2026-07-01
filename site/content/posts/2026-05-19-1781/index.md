@@ -20,8 +20,8 @@ views = 36
 ids = [1781]
 +++
 
-{{ tag(t="mem") }} limited by the technology of my time
-{{ tag(t="llm") }}
+{{ tag(t="mem") }} limited by the technology of my time  
+{{ tag(t="llm") }}  
 {{ tag(t="depleated") }}
 
 ![](01.jpg)

@@ -20,8 +20,8 @@ views = 23
 ids = [1640]
 +++
 
-{{ tag(t="firefox") }}
-{{ tag(t="webextension") }}: after {{ tag(t="tab") }} close - switch to the previously active tab
+{{ tag(t="firefox") }}  
+{{ tag(t="webextension") }}: after {{ tag(t="tab") }} close - switch to the previously active tab  
 
 <https://addons.mozilla.org/en-US/firefox/addon/select-after-closing-current/>
 

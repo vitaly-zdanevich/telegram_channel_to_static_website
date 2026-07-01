@@ -20,7 +20,7 @@ views = 39
 ids = [361]
 +++
 
-{{ tag(t="coin") }}
+{{ tag(t="coin") }}  
 
 [Source](https://www.monetnik.ru/monety/mira/avstraliya-i-okeaniya/ostrova-kuka/ostrova-kuka-5-dollarov-583633/#group=nogroup&amp;photo=0)
 

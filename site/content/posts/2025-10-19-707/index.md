@@ -20,10 +20,10 @@ views = 28
 ids = [707]
 +++
 
-{{ tag(t="archivation") }}
-{{ tag(t="games") }}
+{{ tag(t="archivation") }}  
+{{ tag(t="games") }}  
 
-Trying to {{ tag(t="zim") }} it <https://github.com/openzim/zimit>
+Trying to {{ tag(t="zim") }} it <https://github.com/openzim/zimit>  
 
 [https://gamechronicles.com](https://gamechronicles.com/)
 

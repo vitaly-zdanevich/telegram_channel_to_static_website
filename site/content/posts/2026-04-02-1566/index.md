@@ -16,13 +16,13 @@ next_id = 1567
 next_title = ""
 prev_id = 1565
 prev_title = ""
-views = 21
+views = 22
 ids = [1566]
 +++
 
-{{ tag(t="equilibrium") }}
+{{ tag(t="equilibrium") }}  
 
-That {{ tag(t="movie") }} is important to me, but surprise - 33/100 on {{ tag(t="metacritic") }}
+That {{ tag(t="movie") }} is important to me, but surprise - 33/100 on {{ tag(t="metacritic") }}  
 
 <https://www.metacritic.com/movie/equilibrium/>
 

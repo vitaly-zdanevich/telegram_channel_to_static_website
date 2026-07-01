@@ -20,8 +20,8 @@ views = 32
 ids = [711]
 +++
 
-{{ tag(t="games") }}
-{{ tag(t="steam") }}
+{{ tag(t="games") }}  
+{{ tag(t="steam") }}  
 
 <https://www.gamesradar.com/games/over-5-000-games-released-on-steam-this-year-didnt-make-enough-money-to-recover-the-usd100-fee-to-put-a-game-on-valves-store-research-estimates>
 

@@ -20,9 +20,9 @@ views = 14
 ids = [1071]
 +++
 
-{{ tag(t="journal") }}
-{{ tag(t="game_exe") }}
-{{ tag(t="legs") }}
+{{ tag(t="journal") }}  
+{{ tag(t="game_exe") }}  
+{{ tag(t="legs") }}  
 {{ tag(t="year_2005") }}
 
 ![](5188525531471744627_1208047739_460000883.jpg)

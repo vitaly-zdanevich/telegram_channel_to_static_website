@@ -18,6 +18,6 @@ views = 61
 ids = [48]
 +++
 
-Overlay toolbars in Firefox, like in Safari!
+Overlay toolbars in Firefox, like in Safari!  
 
 <https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css>

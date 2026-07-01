@@ -20,9 +20,9 @@ views = 50
 ids = [471]
 +++
 
-<https://habr.com/en/articles/775726>
+<https://habr.com/en/articles/775726>  
 
-{{ tag(t="archiving") }}
+{{ tag(t="archiving") }}  
 {{ tag(t="photos") }}
 
 ![](5474606413927015267_1274656135_456254307.jpg)

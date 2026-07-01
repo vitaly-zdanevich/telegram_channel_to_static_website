@@ -16,13 +16,13 @@ next_id = 1622
 next_title = ""
 prev_id = 1612
 prev_title = ""
-views = 19
+views = 20
 ids = [1613]
 +++
 
-{{ tag(t="typography") }}
-{{ tag(t="russian_empire") }}
-{{ tag(t="ukraine") }}
+{{ tag(t="typography") }}  
+{{ tag(t="russian_empire") }}  
+{{ tag(t="ukraine") }}  
 {{ tag(t="century18") }}[Source](https://commons.wikimedia.org/wiki/File:%D0%A6%D0%94%D0%86%D0%90%D0%9B--0080--010020-10-00088_DSC_0911.JPG)
 
 ![](01.jpg)

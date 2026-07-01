@@ -19,11 +19,11 @@ views = 155
 ids = [433]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="techno") }}
-{{ tag(t="ritual") }}
-{{ tag(t="religion") }}
-{{ tag(t="islam") }}
+{{ tag(t="music") }}  
+{{ tag(t="techno") }}  
+{{ tag(t="ritual") }}  
+{{ tag(t="religion") }}  
+{{ tag(t="islam") }}  
 {{ tag(t="rave") }}[Source](https://www.instagram.com/p/DAkt_DGgLE9)
 
 {{ video(src="01.mp4") }}

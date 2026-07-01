@@ -19,9 +19,9 @@ views = 32
 ids = [724, 725]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="god_of_war") }}
-{{ tag(t="playstation") }}
+{{ tag(t="game") }}  
+{{ tag(t="god_of_war") }}  
+{{ tag(t="playstation") }}  
 {{ tag(t="compare") }}
 
 ****🪓**** **Наглядное сравнение боя Кратоса и Тора из God of War Ragnarök на PS1 и PS5**

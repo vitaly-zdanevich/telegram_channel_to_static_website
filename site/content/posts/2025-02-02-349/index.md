@@ -20,7 +20,7 @@ views = 52
 ids = [349]
 +++
 
-{{ tag(t="translate") }}
+{{ tag(t="translate") }}  
 {{ tag(t="pain") }}
 
 ![](5258347380279995651_1224304405_456256771.jpg)

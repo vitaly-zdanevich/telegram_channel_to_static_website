@@ -19,7 +19,7 @@ views = 73
 ids = [154]
 +++
 
-<https://www.producthunt.com/posts/socialai>
+<https://www.producthunt.com/posts/socialai>  
 
 Every day we are further away from God.
 

@@ -20,9 +20,9 @@ views = 48
 ids = [462]
 +++
 
-{{ tag(t="pooh") }}
-{{ tag(t="bible") }}
-{{ tag(t="gun") }}
+{{ tag(t="pooh") }}  
+{{ tag(t="bible") }}  
+{{ tag(t="gun") }}  
 
 <https://bible.by/verse/40/26/21>
 

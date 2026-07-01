@@ -16,14 +16,14 @@ next_id = 1647
 next_title = ""
 prev_id = 1643
 prev_title = ""
-views = 24
+views = 25
 ids = [1645]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="north_korea") }}
-{{ tag(t="radio") }}
-{{ tag(t="podcast") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="north_korea") }}  
+{{ tag(t="radio") }}  
+{{ tag(t="podcast") }}  
 
 <http://www.vok.rep.kp/index.php/home/main/ru>
 

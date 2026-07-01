@@ -19,11 +19,11 @@ views = 22
 ids = [1563]
 +++
 
-{{ tag(t="music") }}
-{{ tag(t="multitrack") }}
-{{ tag(t="parody") }}
-{{ tag(t="voice") }}
-{{ tag(t="unknown_source") }}
+{{ tag(t="music") }}  
+{{ tag(t="multitrack") }}  
+{{ tag(t="parody") }}  
+{{ tag(t="voice") }}  
+{{ tag(t="unknown_source") }}  
 
 Rice and peace.
 

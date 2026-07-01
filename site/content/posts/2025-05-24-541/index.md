@@ -20,11 +20,11 @@ views = 59
 ids = [541]
 +++
 
-{{ tag(t="iphone") }}
-{{ tag(t="apple") }}
-{{ tag(t="newton") }}
+{{ tag(t="iphone") }}  
+{{ tag(t="apple") }}  
+{{ tag(t="newton") }}  
 
-10 years gap.
+10 years gap.  
 
 [Source](https://commons.wikimedia.org/wiki/File:Apple_Newton_and_iPhone.jpg)
 

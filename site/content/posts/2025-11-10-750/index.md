@@ -20,11 +20,11 @@ views = 20
 ids = [750]
 +++
 
-Don Quixote by {{ tag(t="gustave_dore") }}, 1863 year
+Don Quixote by {{ tag(t="gustave_dore") }}, 1863 year  
 
-{{ tag(t="painting") }}
-{{ tag(t="horse") }}
-{{ tag(t="sky") }}
+{{ tag(t="painting") }}  
+{{ tag(t="horse") }}  
+{{ tag(t="sky") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:Don_Quixote_2.jpg)
 

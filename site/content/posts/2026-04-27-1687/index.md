@@ -19,14 +19,14 @@ views = 16
 ids = [1687]
 +++
 
-{{ tag(t="my") }}
-{{ tag(t="evernote") }}
-{{ tag(t="telegram_bot") }}
-{{ tag(t="aws_lambda") }}
-{{ tag(t="ai") }}
-{{ tag(t="codex") }}
-{{ tag(t="gpt5") }}
+{{ tag(t="my") }}  
+{{ tag(t="evernote") }}  
+{{ tag(t="telegram_bot") }}  
+{{ tag(t="aws_lambda") }}  
+{{ tag(t="ai") }}  
+{{ tag(t="codex") }}  
+{{ tag(t="gpt5") }}  
 
-<https://gitlab.com/vitaly-zdanevich/bot_telegram_evernote>
+<https://gitlab.com/vitaly-zdanevich/bot_telegram_evernote>  
 
 Article about it <https://habr.com/en/articles/1028850/>

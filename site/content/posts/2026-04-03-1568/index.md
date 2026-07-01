@@ -20,11 +20,11 @@ views = 19
 ids = [1568]
 +++
 
-{{ tag(t="ai") }}
+{{ tag(t="ai") }}  
 
-I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} from Windows to Linux, interesting if that possible...
+I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} from Windows to Linux, interesting if that possible...  
 
-<https://github.com/Prime-World-Classic/Prime-World>
+<https://github.com/Prime-World-Classic/Prime-World>  
 
 We tried {{ tag(t="wine") }} of course - but some problems with {{ tag(t="lutris") }} - because native launcher need to run Wine...
 

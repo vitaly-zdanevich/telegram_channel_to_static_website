@@ -20,22 +20,22 @@ views = 55
 ids = [545]
 +++
 
-**Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP on Linux, through Lutris - PPSSPP**
+**Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP on Linux, through Lutris - PPSSPP**  
 
-Defeat on level 44
+Defeat on level 44  
 
-Conty 1.28
-Lutris 0.5.19
-PPSSPP 1.14.4
+Conty 1.28  
+Lutris 0.5.19  
+PPSSPP 1.14.4  
 
-<https://lutris.net/games/vector-td>
+<https://lutris.net/games/vector-td>  
 
-<https://www.wikidata.org/wiki/Q134601025>
+<https://www.wikidata.org/wiki/Q134601025>  
 
-{{ tag(t="game") }}
-{{ tag(t="strategy") }}
-{{ tag(t="psp") }}
-{{ tag(t="tower_defense") }}
+{{ tag(t="game") }}  
+{{ tag(t="strategy") }}  
+{{ tag(t="psp") }}  
+{{ tag(t="tower_defense") }}  
 {{ tag(t="music") }}
 
 ![video](01.jpg)

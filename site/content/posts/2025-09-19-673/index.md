@@ -20,12 +20,12 @@ views = 28
 ids = [673]
 +++
 
-{{ tag(t="mem") }}
-{{ tag(t="mem_it") }}
-{{ tag(t="kubernetes") }}
-{{ tag(t="art") }}
-{{ tag(t="mona_lisa") }}
-{{ tag(t="sexy") }}
+{{ tag(t="mem") }}  
+{{ tag(t="mem_it") }}  
+{{ tag(t="kubernetes") }}  
+{{ tag(t="art") }}  
+{{ tag(t="mona_lisa") }}  
+{{ tag(t="sexy") }}  
 
 *Kubernetes in my day-to-day life VS how it was sold to me*
 

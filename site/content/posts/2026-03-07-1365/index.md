@@ -16,13 +16,13 @@ next_id = 1366
 next_title = ""
 prev_id = 1364
 prev_title = ""
-views = 6
+views = 7
 ids = [1365]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="anime") }}
-{{ tag(t="oldweb") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="anime") }}  
+{{ tag(t="oldweb") }}  
 
 <https://nekoweb.org/>
 

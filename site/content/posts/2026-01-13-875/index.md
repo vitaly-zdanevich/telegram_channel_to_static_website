@@ -20,9 +20,9 @@ views = 15
 ids = [875]
 +++
 
-{{ tag(t="monument") }}<https://orda.of.by/.add/gallery.php?arabovschi/tail>{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
-{{ tag(t="airplane") }}
+{{ tag(t="monument") }}<https://orda.of.by/.add/gallery.php?arabovschi/tail>{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="airplane") }}  
 
 [Source](https://orda.of.by/.add/gallery.php?arabovschi/tail)
 

@@ -20,9 +20,9 @@ views = 44
 ids = [470]
 +++
 
-[Source](https://habr.com/en/articles/848902)
+[Source](https://habr.com/en/articles/848902)  
 
-{{ tag(t="sakartvelo") }}
+{{ tag(t="sakartvelo") }}  
 {{ tag(t="taxes") }}
 
 ![](5472381565033115407_1274138122_456257295.jpg)

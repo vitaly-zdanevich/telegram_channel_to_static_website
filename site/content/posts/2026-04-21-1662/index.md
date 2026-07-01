@@ -15,15 +15,15 @@ next_id = 1667
 next_title = ""
 prev_id = 1656
 prev_title = ""
-views = 20
+views = 21
 ids = [1662]
 +++
 
-{{ tag(t="fashion") }}
-{{ tag(t="trash") }}
-{{ tag(t="black") }}
+{{ tag(t="fashion") }}  
+{{ tag(t="trash") }}  
+{{ tag(t="black") }}  
 
-Author: <https://www.instagram.com/kaluputics/>
+Author: <https://www.instagram.com/kaluputics/>  
 
 Found at <https://www.instagram.com/p/DXIbrRNiK6r/>
 

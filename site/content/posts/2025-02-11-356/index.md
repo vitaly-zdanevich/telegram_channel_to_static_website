@@ -20,8 +20,8 @@ views = 46
 ids = [356]
 +++
 
-{{ tag(t="ai") }}
-{{ tag(t="chatgpt") }}
+{{ tag(t="ai") }}  
+{{ tag(t="chatgpt") }}  
 
 [Source](https://www.linkedin.com/posts/vladtukhtarov_did-you-know-that-prompt-engineering-isnt-activity-7293653993044529152-V7hd)
 

@@ -20,7 +20,7 @@ views = 53
 ids = [329]
 +++
 
-{{ tag(t="homm3") }}
+{{ tag(t="homm3") }}  
 [Source](https://www.facebook.com/hydratgc/photos/mashup-homm-slav-edition-homm3-herojitrojka-slav-mashupbestselectionbyhydrasgran/393479077859381/)
 
 ![](5233675498993872612_1218560035_456257252.jpg)

@@ -20,7 +20,7 @@ views = 22
 ids = [684]
 +++
 
-{{ tag(t="patch") }} for {{ tag(t="telegram") }} for wide messages
+{{ tag(t="patch") }} for {{ tag(t="telegram") }} for wide messages  
 
 ```
 --- a/Telegram/SourceFiles/ui/chat/chat.style  2024-08-02 09:26:52.899323105 +0700

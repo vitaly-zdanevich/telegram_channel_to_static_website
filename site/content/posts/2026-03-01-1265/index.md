@@ -20,10 +20,10 @@ views = 10
 ids = [1265]
 +++
 
-{{ tag(t="grave") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
-{{ tag(t="year_2005") }}
+{{ tag(t="grave") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="year_2005") }}  
 
 Source
 

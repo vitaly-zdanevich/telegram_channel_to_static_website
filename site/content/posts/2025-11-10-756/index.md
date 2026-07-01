@@ -20,11 +20,11 @@ views = 26
 ids = [756]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="bible") }}
-{{ tag(t="gustave_dore") }}
+{{ tag(t="painting") }}  
+{{ tag(t="bible") }}  
+{{ tag(t="gustave_dore") }}  
 
-The Bible panorama, or The Holy Scriptures in picture and story
+The Bible panorama, or The Holy Scriptures in picture and story  
 
 [Source](https://commons.wikimedia.org/wiki/File:The_Bible_panorama,_or_The_Holy_Scriptures_in_picture_and_story_(1891)_(14598336348).jpg)
 

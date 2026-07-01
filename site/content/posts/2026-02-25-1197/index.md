@@ -20,8 +20,8 @@ views = 2
 ids = [1197]
 +++
 
-{{ tag(t="firefox") }}
-{{ tag(t="extension") }}
+{{ tag(t="firefox") }}  
+{{ tag(t="extension") }}  
 
 Copy non-latin links without {{ tag(t="percent") }} <https://addons.mozilla.org/en-US/firefox/addon/copy-decoded-link/>
 

@@ -20,12 +20,12 @@ views = 17
 ids = [1113]
 +++
 
-{{ tag(t="preservation") }}
-{{ tag(t="nival") }}
-{{ tag(t="game") }}
-{{ tag(t="silent_storm") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="nival") }}  
+{{ tag(t="game") }}  
+{{ tag(t="silent_storm") }}  
 
-<https://www.facebook.com/share/p/18FTo6y8vD/>
+<https://www.facebook.com/share/p/18FTo6y8vD/>  
 
 Thanks Sergey.
 

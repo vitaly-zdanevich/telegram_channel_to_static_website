@@ -19,8 +19,8 @@ views = 42
 ids = [358, 359]
 +++
 
-{{ tag(t="ui") }}
-{{ tag(t="button") }}
+{{ tag(t="ui") }}  
+{{ tag(t="button") }}  
 {{ tag(t="css") }}
 
 Fuck minimalism

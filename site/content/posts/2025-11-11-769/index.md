@@ -20,11 +20,11 @@ views = 41
 ids = [769]
 +++
 
-{{ tag(t="mp3") }}
-{{ tag(t="hardware") }}
-{{ tag(t="sandisc") }}
+{{ tag(t="mp3") }}  
+{{ tag(t="hardware") }}  
+{{ tag(t="sandisc") }}  
 
-Sexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008.
+Sexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008.  
 
 <https://web.archive.org/web/20080726103726/http://www.stuffmagazine.com/index.aspx>
 

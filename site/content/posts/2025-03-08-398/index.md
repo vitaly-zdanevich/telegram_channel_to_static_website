@@ -19,8 +19,8 @@ views = 45
 ids = [398]
 +++
 
-{{ tag(t="anime") }}
-{{ tag(t="voice") }}
+{{ tag(t="anime") }}  
+{{ tag(t="voice") }}  
 
 [Source](https://www.youtube.com/shorts/UEVojAI1dwo)
 

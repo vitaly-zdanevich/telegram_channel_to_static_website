@@ -19,11 +19,11 @@ views = 27
 ids = [694]
 +++
 
-{{ tag(t="psy") }}
-{{ tag(t="success") }}
-{{ tag(t="pain") }}
-{{ tag(t="cry") }}
-{{ tag(t="secret") }}
+{{ tag(t="psy") }}  
+{{ tag(t="success") }}  
+{{ tag(t="pain") }}  
+{{ tag(t="cry") }}  
+{{ tag(t="secret") }}  
 [Source](https://www.instagram.com/p/DMcEFKFslug)
 
 {{ video(src="01.mp4") }}

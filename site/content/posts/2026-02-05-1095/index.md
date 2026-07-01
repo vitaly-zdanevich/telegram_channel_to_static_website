@@ -20,9 +20,9 @@ views = 17
 ids = [1095]
 +++
 
-{{ tag(t="ai") }} ai ai ai ai but looks like even text translation with not very big languages is so bad :(
+{{ tag(t="ai") }} ai ai ai ai but looks like even text translation with not very big languages is so bad :(  
 
-Checked in {{ tag(t="firefox") }} and {{ tag(t="google_translate") }}
+Checked in {{ tag(t="firefox") }} and {{ tag(t="google_translate") }}  
 
 <https://hrej.cz/article/zakon-pouste>
 

@@ -20,9 +20,9 @@ views = 14
 ids = [1439]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="animal") }}
-{{ tag(t="cat") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="animal") }}  
+{{ tag(t="cat") }}  
 
 <https://framasoft.org/en/>
 

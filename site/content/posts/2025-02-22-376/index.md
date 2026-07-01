@@ -19,11 +19,11 @@ views = 53
 ids = [376]
 +++
 
-**Are you winning son? Happy Birthday**<https://www.youtube.com/shorts/e6ouD8G8Iqc>
-{{ tag(t="pain") }}
-{{ tag(t="death") }}
-{{ tag(t="loss") }}
-{{ tag(t="miss") }}
+**Are you winning son? Happy Birthday**<https://www.youtube.com/shorts/e6ouD8G8Iqc>  
+{{ tag(t="pain") }}  
+{{ tag(t="death") }}  
+{{ tag(t="loss") }}  
+{{ tag(t="miss") }}  
 
 [Source](https://www.youtube.com/shorts/e6ouD8G8Iqc)
 

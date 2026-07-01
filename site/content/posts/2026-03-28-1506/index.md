@@ -19,13 +19,13 @@ views = 43
 ids = [1506]
 +++
 
-{{ tag(t="shutdown") }}
-{{ tag(t="cloudflare") }}
-{{ tag(t="preservation") }}
-{{ tag(t="school") }}
-{{ tag(t="error") }}
+{{ tag(t="shutdown") }}  
+{{ tag(t="cloudflare") }}  
+{{ tag(t="preservation") }}  
+{{ tag(t="school") }}  
+{{ tag(t="error") }}  
 
-> Что вы будете делать когда вот это всё отключат по всему миру?<br>Что ты будешь делать без этой подсказки?
+> Что вы будете делать когда вот это всё отключат по всему миру?  <br>Что ты будешь делать без этой подсказки?
 
 {{ video(src="01.mp4") }}
 

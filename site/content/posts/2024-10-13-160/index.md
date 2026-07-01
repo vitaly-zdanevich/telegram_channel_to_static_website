@@ -20,7 +20,7 @@ views = 65
 ids = [160]
 +++
 
-LOVE this {{ tag(t="vr") }} {{ tag(t="game") }}, {{ tag(t="oculus_quest3") }} {{ tag(t="asgards_wrath2") }}
+LOVE this {{ tag(t="vr") }} {{ tag(t="game") }}, {{ tag(t="oculus_quest3") }} {{ tag(t="asgards_wrath2") }}  
 
 <https://en.wikipedia.org/wiki/Asgard%27s_Wrath_2>
 

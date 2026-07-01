@@ -20,11 +20,11 @@ views = 12
 ids = [1292]
 +++
 
-{{ tag(t="church") }}
-{{ tag(t="horse") }}
-{{ tag(t="wooden_cart") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="church") }}  
+{{ tag(t="horse") }}  
+{{ tag(t="wooden_cart") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:052-209_%D0%91%D0%BE%D1%80%D1%83%D0%BD%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](01.jpg)

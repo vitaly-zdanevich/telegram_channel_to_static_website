@@ -16,17 +16,17 @@ next_id = 1566
 next_title = ""
 prev_id = 1564
 prev_title = ""
-views = 20
+views = 21
 ids = [1565]
 +++
 
-{{ tag(t="alien") }}
-{{ tag(t="screenshot") }}
-{{ tag(t="horror") }}
-{{ tag(t="giger") }}
-{{ tag(t="gimp") }}
-{{ tag(t="green") }}
-{{ tag(t="rice") }}
+{{ tag(t="alien") }}  
+{{ tag(t="screenshot") }}  
+{{ tag(t="horror") }}  
+{{ tag(t="giger") }}  
+{{ tag(t="gimp") }}  
+{{ tag(t="green") }}  
+{{ tag(t="rice") }}  
 
 [Source](https://udeproject.sourceforge.net/screenshots.html)
 

@@ -19,12 +19,12 @@ views = 39
 ids = [633]
 +++
 
-`【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch`
+`【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch`  
 
-{{ tag(t="music") }}
-{{ tag(t="anime") }}
-{{ tag(t="russian") }}
-{{ tag(t="sugar") }}
+{{ tag(t="music") }}  
+{{ tag(t="anime") }}  
+{{ tag(t="russian") }}  
+{{ tag(t="sugar") }}  
 
 [Source](https://youtu.be/WLJeJar3Cgg)
 

@@ -20,10 +20,10 @@ views = 17
 ids = [1649]
 +++
 
-{{ tag(t="typography") }}
-{{ tag(t="russian") }}
-{{ tag(t="preservation") }}
-{{ tag(t="century19") }}
+{{ tag(t="typography") }}  
+{{ tag(t="russian") }}  
+{{ tag(t="preservation") }}  
+{{ tag(t="century19") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%94%D0%90_%D0%96%D0%B8%D1%82%D0%BE%D0%BC%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96--01_%D0%A4_-_%D1%84%D0%BE%D0%BD%D0%B4%D0%B8_%D0%B4%D0%BE%D1%80%D0%B0%D0%B4%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B5%D1%80%D1%96%D0%BE%D0%B4%D1%83--0001--0076--010001-76-00035--010001-76-00035.PDF_page158_1.jpeg)
 

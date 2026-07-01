@@ -20,8 +20,8 @@ views = 10
 ids = [1332]
 +++
 
-{{ tag(t="logo") }}
-{{ tag(t="horse") }}
+{{ tag(t="logo") }}  
+{{ tag(t="horse") }}  
 
 <https://criu.org/P.Haul>
 

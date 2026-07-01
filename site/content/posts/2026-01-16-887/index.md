@@ -19,7 +19,7 @@ views = 11
 ids = [887]
 +++
 
-{{ tag(t="commons") }}: {{ tag(t="count") }} uploads from a specific user for a period of time, {{ tag(t="python") }}:
+{{ tag(t="commons") }}: {{ tag(t="count") }} uploads from a specific user for a period of time, {{ tag(t="python") }}:  
 
 ```
 import requests

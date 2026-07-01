@@ -20,9 +20,9 @@ views = 48
 ids = [796]
 +++
 
-{{ tag(t="architecture") }}
+{{ tag(t="architecture") }}  
 
-**Дом со щуками**
+**Дом со щуками**  
 
 From <https://t-j.ru/zaozerie>
 

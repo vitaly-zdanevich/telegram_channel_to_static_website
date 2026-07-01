@@ -19,10 +19,10 @@ views = 34
 ids = [526]
 +++
 
-<https://www.youtube.com/watch?v=nGTEv5jqnec>
+<https://www.youtube.com/watch?v=nGTEv5jqnec>  
 
-{{ tag(t="homm3") }}
-{{ tag(t="foss") }}
+{{ tag(t="homm3") }}  
+{{ tag(t="foss") }}  
 {{ tag(t="vcmi") }}
 
 {{ youtube(id="nGTEv5jqnec") }}

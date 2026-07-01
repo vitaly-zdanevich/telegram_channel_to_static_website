@@ -20,9 +20,9 @@ views = 34
 ids = [620]
 +++
 
-{{ tag(t="money") }}
-{{ tag(t="ussr") }}
-{{ tag(t="design") }}
+{{ tag(t="money") }}  
+{{ tag(t="ussr") }}  
+{{ tag(t="design") }}  
 
 [Source](https://commons.wikimedia.org/wiki/Category:250_rubles_banknotes#/media/File:25_%D1%82%D1%83%D0%BC%D0%B0%D0%BD_(%D0%B0%D0%B2%D0%B5%D1%80%D1%81).png)
 

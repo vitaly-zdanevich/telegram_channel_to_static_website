@@ -20,16 +20,16 @@ views = 38
 ids = [617]
 +++
 
-Imagine a 2d side-scroll quest-action game with such visual style
+Imagine a 2d side-scroll quest-action game with such visual style  
 
 > Decoration sketch for the play 'King Lear' (1948) by Sergo Kobuladze Georgian State Museum of Theatre, Music, Film and Choreography - Art Palace
 
-{{ tag(t="games") }}
-{{ tag(t="art") }}
-{{ tag(t="sergo_kobuladze") }} 1909 - 1978
-{{ tag(t="sakartvelo") }}
+{{ tag(t="games") }}  
+{{ tag(t="art") }}  
+{{ tag(t="sergo_kobuladze") }} 1909 - 1978  
+{{ tag(t="sakartvelo") }}  
 
-[Source](https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Decoration_sketch_for_the_play_%27King_Lear%27_(1948)_by_Sergo_Kobuladze_Georgian_State_Museum_of_Theatre,_Music,_Film_and_Choreography_-_Art_Palace.jpg)
+[Source](https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Decoration_sketch_for_the_play_%27King_Lear%27_(1948)_by_Sergo_Kobuladze_Georgian_State_Museum_of_Theatre,_Music,_Film_and_Choreography_-_Art_Palace.jpg)  
 
 <https://artsandculture.google.com/search/asset?q=Sergo%20Kobuladze>
 

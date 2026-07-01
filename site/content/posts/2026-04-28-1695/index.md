@@ -20,12 +20,12 @@ views = 18
 ids = [1695]
 +++
 
-{{ tag(t="my") }}
-{{ tag(t="batumi") }}
-{{ tag(t="restaurant") }}
-{{ tag(t="art") }}
-{{ tag(t="food") }}
-{{ tag(t="sazandari") }}
+{{ tag(t="my") }}  
+{{ tag(t="batumi") }}  
+{{ tag(t="restaurant") }}  
+{{ tag(t="art") }}  
+{{ tag(t="food") }}  
+{{ tag(t="sazandari") }}  
 
 <https://maps.app.goo.gl/jTFnPV9eYUb8s9MWA>
 

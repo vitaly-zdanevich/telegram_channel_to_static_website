@@ -19,10 +19,10 @@ views = 87
 ids = [425]
 +++
 
-{{ tag(t="pain") }}
-{{ tag(t="millenials") }}
-{{ tag(t="depression") }}
-{{ tag(t="dophin") }}
+{{ tag(t="pain") }}  
+{{ tag(t="millenials") }}  
+{{ tag(t="depression") }}  
+{{ tag(t="dophin") }}  
 [Source](https://www.instagram.com/p/DFP43LxpnEv)
 
 {{ video(src="01.mp4") }}

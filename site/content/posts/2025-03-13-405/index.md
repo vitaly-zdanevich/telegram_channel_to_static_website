@@ -20,9 +20,9 @@ views = 35
 ids = [405]
 +++
 
-{{ tag(t="health") }}
-{{ tag(t="pubmed") }}
-{{ tag(t="aura") }}
+{{ tag(t="health") }}  
+{{ tag(t="pubmed") }}  
+{{ tag(t="aura") }}  
 [Source](https://x.com/ArseniosMarkos/status/1837373989724856393)
 
 ![](5375405086139870428_1251559026_456256732.jpg)

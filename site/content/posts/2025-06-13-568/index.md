@@ -19,10 +19,10 @@ views = 23
 ids = [568]
 +++
 
-{{ tag(t="miracle") }}
-{{ tag(t="dantealigieri") }}
+{{ tag(t="miracle") }}  
+{{ tag(t="dantealigieri") }}  
 
-Чудо
+Чудо  
 
 [Source](https://www.instagram.com/p/DKOrF01i-_4)
 

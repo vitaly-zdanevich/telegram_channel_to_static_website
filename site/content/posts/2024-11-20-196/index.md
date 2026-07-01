@@ -20,8 +20,8 @@ views = 53
 ids = [196]
 +++
 
-{{ tag(t="space") }}
-{{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_(film)) from 1998, movie ending, love it
+{{ tag(t="space") }}  
+{{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_(film)) from 1998, movie ending, love it  
 {{ tag(t="lost_in_space") }}
 
 ![video](01.jpg)

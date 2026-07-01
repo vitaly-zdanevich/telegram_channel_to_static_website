@@ -22,9 +22,9 @@ ids = [618]
 
 > Georgian man (Zaal Sikharulidze) with falcon wearing Chokha on Tbilisoba festival
 
-{{ tag(t="sakartvelo") }}
-{{ tag(t="fashion") }}
-{{ tag(t="chokha") }}
+{{ tag(t="sakartvelo") }}  
+{{ tag(t="fashion") }}  
+{{ tag(t="chokha") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:Georgian_(604).jpg)
 

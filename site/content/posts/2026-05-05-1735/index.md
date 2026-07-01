@@ -19,7 +19,7 @@ views = 15
 ids = [1735]
 +++
 
-{{ tag(t="architecture") }} of {{ tag(t="village") }} houses in {{ tag(t="sakartvelo") }}
+{{ tag(t="architecture") }} of {{ tag(t="village") }} houses in {{ tag(t="sakartvelo") }}  
 
 [Source](https://t.me/batumchik/72665)
 

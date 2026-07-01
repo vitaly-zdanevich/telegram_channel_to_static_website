@@ -20,9 +20,9 @@ views = 17
 ids = [1413]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="webgl") }}
-{{ tag(t="shopify") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="webgl") }}  
+{{ tag(t="shopify") }}  
 
 <https://www.shopify.com/editions/winter2026>
 

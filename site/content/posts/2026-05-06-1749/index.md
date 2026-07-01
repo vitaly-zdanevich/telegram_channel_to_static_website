@@ -20,7 +20,7 @@ views = 28
 ids = [1749]
 +++
 
-{{ tag(t="leetcode") }}
+{{ tag(t="leetcode") }}  
 {{ tag(t="validation") }}
 
 ![](5465571945928661644_1272552634_460003980.jpg)

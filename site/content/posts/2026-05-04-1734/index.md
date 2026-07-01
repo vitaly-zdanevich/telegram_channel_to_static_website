@@ -20,8 +20,8 @@ views = 19
 ids = [1734]
 +++
 
-{{ tag(t="map") }}
-{{ tag(t="batumi") }}
+{{ tag(t="map") }}  
+{{ tag(t="batumi") }}  
 
 Between the Black Sea and the mountains.
 

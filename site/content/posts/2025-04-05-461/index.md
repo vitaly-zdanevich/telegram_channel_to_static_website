@@ -20,9 +20,9 @@ views = 46
 ids = [461]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="belarussian") }}
-{{ tag(t="culture") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="belarussian") }}  
+{{ tag(t="culture") }}  
 
 [Source](https://rutube.ru/video/88effd9c79ed10485c5877db2ceaa120)
 

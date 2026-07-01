@@ -16,12 +16,12 @@ next_id = 1827
 next_title = ""
 prev_id = 1825
 prev_title = ""
-views = 19
+views = 20
 ids = [1826]
 +++
 
-{{ tag(t="bus") }}
-{{ tag(t="architecture") }}
+{{ tag(t="bus") }}  
+{{ tag(t="architecture") }}  
 
 [Source](https://www.pinterest.com/pin/904731012662040112/)
 

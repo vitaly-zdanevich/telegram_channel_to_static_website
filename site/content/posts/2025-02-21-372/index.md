@@ -19,15 +19,15 @@ views = 55
 ids = [372]
 +++
 
-**Most Shocking Second a Day Video
-Still The Most Shocking Second A Day**
+**Most Shocking Second a Day Video  
+Still The Most Shocking Second A Day**  
 
-{{ tag(t="ad") }}
-{{ tag(t="uk") }}
-{{ tag(t="war") }}
-{{ tag(t="girl") }}
+{{ tag(t="ad") }}  
+{{ tag(t="uk") }}  
+{{ tag(t="war") }}  
+{{ tag(t="girl") }}  
 
-[Source](https://youtu.be/RBQ-IoHfimQ)
+[Source](https://youtu.be/RBQ-IoHfimQ)  
 [Source](https://youtu.be/nKDgFCojiT8)
 
 {{ youtube(id="RBQ-IoHfimQ") }}

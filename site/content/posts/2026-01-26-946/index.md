@@ -20,7 +20,7 @@ views = 12
 ids = [946]
 +++
 
-{{ tag(t="wikipedia") }}
+{{ tag(t="wikipedia") }}  
 {{ tag(t="notability") }}
 
 ![](01.jpg)

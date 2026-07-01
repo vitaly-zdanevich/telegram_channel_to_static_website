@@ -16,13 +16,13 @@ next_id = 1832
 next_title = ""
 prev_id = 1830
 prev_title = ""
-views = 15
+views = 16
 ids = [1831]
 +++
 
-{{ tag(t="anime") }}
-{{ tag(t="phones") }}
-{{ tag(t="evangelion") }}
+{{ tag(t="anime") }}  
+{{ tag(t="phones") }}  
+{{ tag(t="evangelion") }}  
 
 From <https://www.pinterest.com/pin/71494712830288342/>
 

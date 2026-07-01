@@ -20,7 +20,7 @@ views = 37
 ids = [190]
 +++
 
-<https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_ultimate_edition>
+<https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_ultimate_edition>  
 
 {{ tag(t="game") }} {{ tag(t="stalker2") }}
 

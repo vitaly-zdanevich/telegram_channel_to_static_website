@@ -20,10 +20,10 @@ views = 12
 ids = [1070]
 +++
 
-{{ tag(t="logo") }}
-{{ tag(t="wikimedia") }}
-{{ tag(t="wikidata") }}
-{{ tag(t="data") }}
+{{ tag(t="logo") }}  
+{{ tag(t="wikimedia") }}  
+{{ tag(t="wikidata") }}  
+{{ tag(t="data") }}  
 
 From <https://www.facebook.com/photo/?fbid=10164764933016042&set=a.10150419617396042>
 

@@ -20,8 +20,8 @@ views = 10
 ids = [1392]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
 
 <https://netsqhere.neocities.org/>
 

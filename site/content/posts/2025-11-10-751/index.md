@@ -20,9 +20,9 @@ views = 19
 ids = [751]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_old") }}
+{{ tag(t="design") }}  
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_old") }}  
 
 <https://web.archive.org/web/20020330010106/http://gamepen.ugo.com/>
 

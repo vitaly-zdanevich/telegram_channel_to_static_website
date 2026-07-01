@@ -20,10 +20,10 @@ views = 21
 ids = [753]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_old") }}
-{{ tag(t="xbox") }}
+{{ tag(t="design") }}  
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_old") }}  
+{{ tag(t="xbox") }}  
 
 <https://www.xboxexclusive.com/reviews/Blood_Wake>
 

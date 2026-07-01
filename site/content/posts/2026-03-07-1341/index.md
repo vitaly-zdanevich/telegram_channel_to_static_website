@@ -20,11 +20,11 @@ views = 5
 ids = [1341]
 +++
 
-{{ tag(t="clouds") }}
-{{ tag(t="sun") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
-{{ tag(t="year_2005") }}
+{{ tag(t="clouds") }}  
+{{ tag(t="sun") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
+{{ tag(t="year_2005") }}  
 [Source](https://commons.wikimedia.org/wiki/File:053-320,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_9_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](5287405896352863453_1231070118_460002525.jpg)

@@ -19,6 +19,6 @@ views = 33
 ids = [1786]
 +++
 
-Finally I forked {{ tag(t="nixnote") }}, and migrated from {{ tag(t="qt5") }} to {{ tag(t="qt6") }}, by {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh
+Finally I forked {{ tag(t="nixnote") }}, and migrated from {{ tag(t="qt5") }} to {{ tag(t="qt6") }}, by {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh  
 
 <https://github.com/vitaly-zdanevich/nixnote2>

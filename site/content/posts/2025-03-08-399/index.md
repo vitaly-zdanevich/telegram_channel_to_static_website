@@ -19,11 +19,11 @@ views = 53
 ids = [399]
 +++
 
-{{ tag(t="ironman") }}
-{{ tag(t="arsen_markaryan") }}
-{{ tag(t="meaning") }}
-{{ tag(t="comparison") }}
-{{ tag(t="motivation") }}
+{{ tag(t="ironman") }}  
+{{ tag(t="arsen_markaryan") }}  
+{{ tag(t="meaning") }}  
+{{ tag(t="comparison") }}  
+{{ tag(t="motivation") }}  
 
 [Source](https://www.youtube.com/shorts/L6HRvBpeoVo)
 

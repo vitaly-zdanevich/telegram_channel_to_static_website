@@ -20,9 +20,9 @@ views = 9
 ids = [1331]
 +++
 
-{{ tag(t="logo") }}
-{{ tag(t="bird") }}
-{{ tag(t="red") }}
+{{ tag(t="logo") }}  
+{{ tag(t="bird") }}  
+{{ tag(t="red") }}  
 
 <https://criu.org/Main_Page>
 

@@ -19,7 +19,7 @@ views = 37
 ids = [115]
 +++
 
-Flashbacks
+Flashbacks  
 
 <https://moneymuseum.by/ru/collections/bonistika/?display=tile&PAGEN_1=18>
 

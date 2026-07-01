@@ -20,11 +20,11 @@ views = 7
 ids = [1260]
 +++
 
-{{ tag(t="monument") }}
-{{ tag(t="bird") }}
-{{ tag(t="eagle") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="monument") }}  
+{{ tag(t="bird") }}  
+{{ tag(t="eagle") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:052-093_%D0%94%D0%B5%D1%81%D1%8F%D1%82%D0%BD%D0%B8%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](01.jpg)

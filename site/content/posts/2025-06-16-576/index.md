@@ -20,8 +20,8 @@ views = 38
 ids = [576]
 +++
 
-{{ tag(t="photo") }}
-{{ tag(t="batumi") }}
+{{ tag(t="photo") }}  
+{{ tag(t="batumi") }}  
 {{ tag(t="chandelier") }}
 
 ![](5370830868660219290_1250494008_456256922.jpg)

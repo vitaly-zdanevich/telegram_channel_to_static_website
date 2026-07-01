@@ -20,11 +20,11 @@ views = 18
 ids = [1595]
 +++
 
-{{ tag(t="indika") }}
-{{ tag(t="game") }}
-{{ tag(t="religion") }}
-{{ tag(t="christianity") }}
-{{ tag(t="webdesign") }}
+{{ tag(t="indika") }}  
+{{ tag(t="game") }}  
+{{ tag(t="religion") }}  
+{{ tag(t="christianity") }}  
+{{ tag(t="webdesign") }}  
 
 <https://indikathegame.com/>
 

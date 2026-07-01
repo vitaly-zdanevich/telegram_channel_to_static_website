@@ -19,8 +19,8 @@ views = 61
 ids = [340]
 +++
 
-{{ tag(t="girl") }}
-{{ tag(t="nails") }}
+{{ tag(t="girl") }}  
+{{ tag(t="nails") }}  
 [Source](https://www.instagram.com/reel/DFDPBevMVD_)
 
 {{ video(src="01.mp4") }}

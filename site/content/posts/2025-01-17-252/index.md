@@ -19,8 +19,8 @@ views = 30
 ids = [252]
 +++
 
-{{ tag(t="movie") }}
-{{ tag(t="anime") }}
+{{ tag(t="movie") }}  
+{{ tag(t="anime") }}  
 
 <https://coub.com/view/3e8rbc>
 

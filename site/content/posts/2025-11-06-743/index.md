@@ -23,6 +23,6 @@ ids = [743]
 
 > The combination of an increase in emotional arousal and the inhibition of parts of the brain leads to emotional reasoning
 
-<https://en.wikipedia.org/w/index.php?title=Emotional_reasoning>
+<https://en.wikipedia.org/w/index.php?title=Emotional_reasoning>  
 
 {{ tag(t="psy") }}

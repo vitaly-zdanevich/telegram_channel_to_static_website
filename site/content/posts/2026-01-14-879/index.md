@@ -20,10 +20,10 @@ views = 15
 ids = [879]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="architecture") }}
-{{ tag(t="castle") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="architecture") }}  
+{{ tag(t="castle") }}  
+{{ tag(t="globustut") }}  
 
 Kosava Castle[Source](https://commons.wikimedia.org/wiki/Category:Kosava_Castle)
 

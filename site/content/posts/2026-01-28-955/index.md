@@ -20,13 +20,13 @@ views = 10
 ids = [955]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="architecture") }}
-{{ tag(t="castle") }}
-{{ tag(t="winter") }}
-{{ tag(t="марьина_горка") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="architecture") }}  
+{{ tag(t="castle") }}  
+{{ tag(t="winter") }}  
+{{ tag(t="марьина_горка") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="globustut") }}  
 
 From [https://commons.wikimedia.org/wiki/File:041-089\_Марьина\_Горка,\_снято\_23\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:041-089_%D0%9C%D0%B0%D1%80%D1%8C%D0%B8%D0%BD%D0%B0_%D0%93%D0%BE%D1%80%D0%BA%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 

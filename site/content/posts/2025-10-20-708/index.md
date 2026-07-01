@@ -20,10 +20,10 @@ views = 25
 ids = [708]
 +++
 
-{{ tag(t="concert") }}
-{{ tag(t="rammstein") }}
-{{ tag(t="year2019") }}
-{{ tag(t="russia") }}
+{{ tag(t="concert") }}  
+{{ tag(t="rammstein") }}  
+{{ tag(t="year2019") }}  
+{{ tag(t="russia") }}  
 
 Not my photo.
 

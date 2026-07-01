@@ -20,8 +20,8 @@ views = 6
 ids = [1204]
 +++
 
-{{ tag(t="calligraphy") }}
-{{ tag(t="microfilm") }}
+{{ tag(t="calligraphy") }}  
+{{ tag(t="microfilm") }}  
 {{ tag(t="preservation") }}
 
 ![](5264957012829737994_1225843330_460002314.jpg)

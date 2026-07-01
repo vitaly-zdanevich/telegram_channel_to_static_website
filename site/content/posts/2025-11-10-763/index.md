@@ -20,8 +20,8 @@ views = 23
 ids = [763]
 +++
 
-{{ tag(t="painting") }}
-{{ tag(t="gustave_dore") }}
+{{ tag(t="painting") }}  
+{{ tag(t="gustave_dore") }}  
 
 Géraint et Enide sortant de la forêt Pierre noire, lavis brun, rehauts de blanc - 42,2 x 32,2 cm
 

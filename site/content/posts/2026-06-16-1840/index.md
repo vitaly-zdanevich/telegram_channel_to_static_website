@@ -16,11 +16,11 @@ next_id = 1841
 next_title = ""
 prev_id = 1839
 prev_title = ""
-views = 14
+views = 16
 ids = [1840]
 +++
 
-{{ tag(t="lamp") }}
+{{ tag(t="lamp") }}  
 
 From <https://www.pinterest.com/pin/96475617015149878/>
 

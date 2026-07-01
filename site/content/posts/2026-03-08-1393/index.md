@@ -20,10 +20,10 @@ views = 10
 ids = [1393]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="pink") }}
-{{ tag(t="hello_kitty") }}
-{{ tag(t="oldweb") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="pink") }}  
+{{ tag(t="hello_kitty") }}  
+{{ tag(t="oldweb") }}  
 
 <https://pizzacatdelights.neocities.org/Blog4>
 

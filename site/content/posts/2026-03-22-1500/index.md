@@ -19,14 +19,14 @@ views = 22
 ids = [1500]
 +++
 
-{{ tag(t="math") }}
-{{ tag(t="university") }}
-{{ tag(t="russian") }}
-{{ tag(t="video") }}
-{{ tag(t="animals") }}
-{{ tag(t="романа_михайлов") }}
+{{ tag(t="math") }}  
+{{ tag(t="university") }}  
+{{ tag(t="russian") }}  
+{{ tag(t="video") }}  
+{{ tag(t="animals") }}  
+{{ tag(t="романа_михайлов") }}  
 
-**Группы и теория гомотопий (трэш трейлер)**
+**Группы и теория гомотопий (трэш трейлер)**  
 
 <https://youtu.be/mqAf5lOJZew>
 

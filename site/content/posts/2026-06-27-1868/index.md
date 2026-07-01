@@ -15,13 +15,13 @@ next_id = 1869
 next_title = ""
 prev_id = 1867
 prev_title = ""
-views = 3
+views = 8
 ids = [1868]
 +++
 
-{{ tag(t="love") }}
-{{ tag(t="toy") }}
-{{ tag(t="breakup") }}
+{{ tag(t="love") }}  
+{{ tag(t="toy") }}  
+{{ tag(t="breakup") }}  
 
 > Eсли тяжело засыпать одному - можно обнимать кота-батота, представляя что это близкий человек - так засыпать спокойнее.
 

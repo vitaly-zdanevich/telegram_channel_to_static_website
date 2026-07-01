@@ -20,24 +20,24 @@ views = 35
 ids = [786]
 +++
 
-Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory
+Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory  
 
-Playing on Linux through Lutris, Conty.
+Playing on Linux through Lutris, Conty.  
 
-Game version 1.4
+Game version 1.4  
 
-<https://en.wikipedia.org/wiki/Armies_of_Exigo>
+<https://en.wikipedia.org/wiki/Armies_of_Exigo>  
 
-<https://www.wikidata.org/wiki/Q136881294>
+<https://www.wikidata.org/wiki/Q136881294>  
 
-<https://lutris.net/games/armies-of-exigo>
+<https://lutris.net/games/armies-of-exigo>  
 
-{{ tag(t="game") }}
-{{ tag(t="strategy") }}
-{{ tag(t="rts") }}
-{{ tag(t="year_2004") }}
-{{ tag(t="armies_of_exigo") }}
-{{ tag(t="fallen") }}
+{{ tag(t="game") }}  
+{{ tag(t="strategy") }}  
+{{ tag(t="rts") }}  
+{{ tag(t="year_2004") }}  
+{{ tag(t="armies_of_exigo") }}  
+{{ tag(t="fallen") }}  
 {{ tag(t="teonia") }}
 
 ![video](01.jpg)

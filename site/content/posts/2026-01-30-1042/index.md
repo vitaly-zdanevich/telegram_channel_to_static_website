@@ -20,13 +20,13 @@ views = 5
 ids = [1042]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="свеча") }}
-{{ tag(t="abandone") }}
-{{ tag(t="church") }}
-{{ tag(t="winter") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="abandone") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="свеча") }}  
+{{ tag(t="abandone") }}  
+{{ tag(t="church") }}  
+{{ tag(t="winter") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="abandone") }}  
 
 From [https://commons.wikimedia.org/wiki/File:045-309\_Свеча,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-309_%D0%A1%D0%B2%D0%B5%D1%87%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 

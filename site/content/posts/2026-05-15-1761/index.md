@@ -20,7 +20,7 @@ views = 22
 ids = [1761]
 +++
 
-I love {{ tag(t="ci") }} so much that for the first time I depleted free 400 minutes per month, on {{ tag(t="gitlab") }}, on my FOSS non-commercial projects.
+I love {{ tag(t="ci") }} so much that for the first time I depleted free 400 minutes per month, on {{ tag(t="gitlab") }}, on my FOSS non-commercial projects.  
 
 <https://gitlab.com/-/profile/usage_quotas#pipelines-quota-tab>
 

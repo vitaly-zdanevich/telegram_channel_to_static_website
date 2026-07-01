@@ -20,9 +20,9 @@ views = 15
 ids = [892]
 +++
 
-Storing my configs in {{ tag(t="git") }} ({{ tag(t="gitlab") }}, because its open - {{ tag(t="github") }} is not). Dozens of repos. I recommend you. And I love that Gitlab creates a repo if it does not exist, private by default - so I can {{ tag(t="backup") }} my another preferences folder without touching a web browser.
+Storing my configs in {{ tag(t="git") }} ({{ tag(t="gitlab") }}, because its open - {{ tag(t="github") }} is not). Dozens of repos. I recommend you. And I love that Gitlab creates a repo if it does not exist, private by default - so I can {{ tag(t="backup") }} my another preferences folder without touching a web browser.  
 
-As you see - I have git aliases, link to my Bash config file with them <https://gitlab.com/vitaly-zdanevich-configs/bash/-/blob/master/90-aliases.bash>
+As you see - I have git aliases, link to my Bash config file with them <https://gitlab.com/vitaly-zdanevich-configs/bash/-/blob/master/90-aliases.bash>  
 
 ```
 alias g=git

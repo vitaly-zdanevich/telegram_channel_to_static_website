@@ -19,9 +19,9 @@ views = 18
 ids = [1508]
 +++
 
-{{ tag(t="nvidia") }}
-{{ tag(t="laser") }}
-{{ tag(t="agro") }}
+{{ tag(t="nvidia") }}  
+{{ tag(t="laser") }}  
+{{ tag(t="agro") }}  
 
 <https://www.youtube.com/shorts/6N3QQHCBwVY>
 

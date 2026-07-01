@@ -20,8 +20,8 @@ views = 12
 ids = [1078]
 +++
 
-{{ tag(t="ui") }}
-{{ tag(t="yandex") }}
+{{ tag(t="ui") }}  
+{{ tag(t="yandex") }}  
 {{ tag(t="samara") }}
 
 ![](5190505051833700620_1208508632_460001548.jpg)

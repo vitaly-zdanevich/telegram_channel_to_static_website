@@ -20,8 +20,8 @@ views = 40
 ids = [808]
 +++
 
-{{ tag(t="software") }}
-{{ tag(t="tui") }}
+{{ tag(t="software") }}  
+{{ tag(t="tui") }}  
 {{ tag(t="torrent") }}[Source](https://terminaltrove.com/superseedr)
 
 ![](5350620010994404158_1245788301_460000062.jpg)

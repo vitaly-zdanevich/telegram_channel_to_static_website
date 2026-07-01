@@ -20,10 +20,10 @@ views = 16
 ids = [1294]
 +++
 
-{{ tag(t="abandone") }}
-{{ tag(t="castle") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="abandone") }}  
+{{ tag(t="castle") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:052-236_%D0%9A%D1%80%D0%B5%D0%B2%D0%BE,_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](01.jpg)

@@ -20,8 +20,8 @@ views = 20
 ids = [512]
 +++
 
-{{ tag(t="mpv") }}
-{{ tag(t="anime") }}
+{{ tag(t="mpv") }}  
+{{ tag(t="anime") }}  
 {{ tag(t="readme") }}
 
 ![](5258181706211520084_1224265831_456257108.jpg)

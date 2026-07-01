@@ -16,11 +16,11 @@ next_id = 1821
 next_title = ""
 prev_id = 1818
 prev_title = ""
-views = 13
+views = 15
 ids = [1819]
 +++
 
-My another {{ tag(t="userstyle") }}: for {{ tag(t="gemini") }}, before and after
+My another {{ tag(t="userstyle") }}: for {{ tag(t="gemini") }}, before and after  
 
 <https://gitlab.com/vitaly-zdanevich-styles/gemini>
 

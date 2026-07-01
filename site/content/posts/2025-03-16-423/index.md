@@ -19,8 +19,8 @@ views = 81
 ids = [423]
 +++
 
-{{ tag(t="psy") }}
-{{ tag(t="depression") }}
+{{ tag(t="psy") }}  
+{{ tag(t="depression") }}  
 [Source](https://www.instagram.com/p/DDpBzbIIFGU)
 
 {{ video(src="01.mp4") }}

@@ -19,14 +19,14 @@ views = 43
 ids = [648]
 +++
 
-**Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы**
+**Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы**  
 
-[https://mightandmagic.fandom.com/ru/wiki/Под\_Весёлым\_Роджером](https://mightandmagic.fandom.com/ru/wiki/%D0%9F%D0%BE%D0%B4_%D0%92%D0%B5%D1%81%D1%91%D0%BB%D1%8B%D0%BC_%D0%A0%D0%BE%D0%B4%D0%B6%D0%B5%D1%80%D0%BE%D0%BC)
+[https://mightandmagic.fandom.com/ru/wiki/Под\_Весёлым\_Роджером](https://mightandmagic.fandom.com/ru/wiki/%D0%9F%D0%BE%D0%B4_%D0%92%D0%B5%D1%81%D1%91%D0%BB%D1%8B%D0%BC_%D0%A0%D0%BE%D0%B4%D0%B6%D0%B5%D1%80%D0%BE%D0%BC)  
 
-<https://youtu.be/EurNU2Ropog>
+<https://youtu.be/EurNU2Ropog>  
 
-{{ tag(t="game") }}
-{{ tag(t="homm3") }}
+{{ tag(t="game") }}  
+{{ tag(t="homm3") }}  
 {{ tag(t="horn_of_the_abyss") }}
 
 {{ youtube(id="EurNU2Ropog") }}

@@ -19,11 +19,11 @@ views = 29
 ids = [676]
 +++
 
-{{ tag(t="drug") }}
-{{ tag(t="peterburg") }}
-{{ tag(t="air_defense") }}
+{{ tag(t="drug") }}  
+{{ tag(t="peterburg") }}  
+{{ tag(t="air_defense") }}  
 
-Игорян? Олег? Обознался
+Игорян? Олег? Обознался  
 
 [Source](https://www.youtube.com/shorts/lvwugg2K4Is)
 

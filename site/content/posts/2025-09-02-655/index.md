@@ -19,10 +19,10 @@ views = 40
 ids = [655]
 +++
 
-{{ tag(t="chatgpt") }} 5:
+{{ tag(t="chatgpt") }} 5:  
 
 > Escape shell $ as $$ inside Makefile recipes
 
-{{ tag(t="gemini") }}:
+{{ tag(t="gemini") }}:  
 
 > No, you should not use RESP=$$() for command substitution. Your original syntax was correct.

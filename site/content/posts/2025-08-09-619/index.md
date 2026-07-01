@@ -20,10 +20,10 @@ views = 34
 ids = [619]
 +++
 
-Returned to uploading of artifacts from [moneymuseum.by](http://moneymuseum.by/), through my [new web extension](https://gitlab.com/vitaly-zdanevich-extensions/web-extension-uploading-to-wikimedia-commons), and again - sometime I see the beauty
+Returned to uploading of artifacts from [moneymuseum.by](http://moneymuseum.by/), through my [new web extension](https://gitlab.com/vitaly-zdanevich-extensions/web-extension-uploading-to-wikimedia-commons), and again - sometime I see the beauty  
 
-{{ tag(t="money") }}
-{{ tag(t="moneymuseum") }}
+{{ tag(t="money") }}  
+{{ tag(t="moneymuseum") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:250-rouble_note_of_Russia,_Azerbaijan_1919_-_back.jpg)
 

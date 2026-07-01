@@ -20,8 +20,8 @@ views = 23
 ids = [514]
 +++
 
-{{ tag(t="image") }}
-{{ tag(t="archiving") }}
+{{ tag(t="image") }}  
+{{ tag(t="archiving") }}  
 
 [Source](https://blog.archive.org/2025/05/07/vanishing-culture-recovering-lost-software)
 

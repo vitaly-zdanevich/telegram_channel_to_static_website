@@ -20,9 +20,9 @@ views = 150
 ids = [730]
 +++
 
-{{ tag(t="sakartvelo") }}
-{{ tag(t="batumi") }}
-{{ tag(t="misha") }}
+{{ tag(t="sakartvelo") }}  
+{{ tag(t="batumi") }}  
+{{ tag(t="misha") }}  
 {{ tag(t="trump") }}
 
 ![video](01.jpg)

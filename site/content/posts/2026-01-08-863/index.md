@@ -20,9 +20,9 @@ views = 15
 ids = [863]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="building") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="building") }}  
+{{ tag(t="globustut") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:Globustut_295_%D0%96%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C.jpg)
 

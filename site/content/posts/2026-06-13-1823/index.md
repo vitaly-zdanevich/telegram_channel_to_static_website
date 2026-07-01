@@ -15,13 +15,13 @@ next_id = 1824
 next_title = ""
 prev_id = 1822
 prev_title = ""
-views = 15
+views = 17
 ids = [1823]
 +++
 
-{{ tag(t="shell") }}
-{{ tag(t="productivity") }}
-{{ tag(t="love") }} my `mg` alias - clickable {{ tag(t="grep") }} in {{ tag(t="kitty") }} - opens file and line in Vim:
+{{ tag(t="shell") }}  
+{{ tag(t="productivity") }}  
+{{ tag(t="love") }} my `mg` alias - clickable {{ tag(t="grep") }} in {{ tag(t="kitty") }} - opens file and line in Vim:  
 
 ```
 # Grep, click to link - open in Vim, exact line
@@ -30,9 +30,9 @@ mg() {
 }
 ```
 
-`-C 9` is the context - to have a few lines before and after.
+`-C 9` is the context - to have a few lines before and after.  
 
-For this, also you need to have in `~/.config/kitty/open-actions.conf`:
+For this, also you need to have in `~/.config/kitty/open-actions.conf`:  
 
 ```
 protocol file

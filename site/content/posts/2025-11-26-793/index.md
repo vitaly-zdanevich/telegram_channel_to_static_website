@@ -19,12 +19,12 @@ views = 53
 ids = [793]
 +++
 
-{{ tag(t="ad") }}
-{{ tag(t="game") }}
-{{ tag(t="tank") }}
-{{ tag(t="wwii") }}
-{{ tag(t="music") }}
-{{ tag(t="warpath") }}
+{{ tag(t="ad") }}  
+{{ tag(t="game") }}  
+{{ tag(t="tank") }}  
+{{ tag(t="wwii") }}  
+{{ tag(t="music") }}  
+{{ tag(t="warpath") }}  
 
 [Source](https://www.youtube.com/watch?v=eqeSGjCKV68)
 

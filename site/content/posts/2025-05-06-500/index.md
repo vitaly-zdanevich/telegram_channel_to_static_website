@@ -19,9 +19,9 @@ views = 29
 ids = [500]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="jupiter") }}
-{{ tag(t="space") }}
+{{ tag(t="film") }}  
+{{ tag(t="jupiter") }}  
+{{ tag(t="space") }}  
 
 <https://en.wikipedia.org/wiki/Another_Earth>
 

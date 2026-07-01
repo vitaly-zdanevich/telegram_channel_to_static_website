@@ -19,10 +19,10 @@ views = 24
 ids = [569]
 +++
 
-{{ tag(t="stat") }}
-{{ tag(t="oscar") }}
-{{ tag(t="books") }}
-{{ tag(t="dantealigieri") }}
+{{ tag(t="stat") }}  
+{{ tag(t="oscar") }}  
+{{ tag(t="books") }}  
+{{ tag(t="dantealigieri") }}  
 
 [Source](https://www.instagram.com/p/DIvRM77C5yd)
 

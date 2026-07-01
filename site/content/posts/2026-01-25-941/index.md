@@ -20,7 +20,7 @@ views = 8
 ids = [941]
 +++
 
-{{ tag(t="aws") }} custom {{ tag(t="cpu") }}: dropped the lid ({{ tag(t="scalping") }}) for the better {{ tag(t="cooling") }}
+{{ tag(t="aws") }} custom {{ tag(t="cpu") }}: dropped the lid ({{ tag(t="scalping") }}) for the better {{ tag(t="cooling") }}  
 
 <https://youtu.be/JeUpUK0nhC0?t=955>
 

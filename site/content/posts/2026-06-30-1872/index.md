@@ -11,17 +11,19 @@ tags = ["death", "jump", "spirit", "video"]
 id = 1872
 day = "2026-06-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1872"
+next_id = 1873
+next_title = ""
 prev_id = 1871
 prev_title = ""
-views = 2
+views = 10
 ids = [1872]
 +++
 
-{{ tag(t="death") }}
-{{ tag(t="jump") }}
-{{ tag(t="spirit") }}
+{{ tag(t="death") }}  
+{{ tag(t="jump") }}  
+{{ tag(t="spirit") }}  
 
-Source
+[Source](https://www.instagram.com/p/DaGOrhcAeU2/)
 
 {{ video(src="01.mp4") }}
 

@@ -19,8 +19,8 @@ views = 55
 ids = [375]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="armies_of_exigo") }}
+{{ tag(t="game") }}  
+{{ tag(t="armies_of_exigo") }}  
 [Source](https://youtu.be/VVbQ1MDToLs)
 
 {{ youtube(id="VVbQ1MDToLs") }}

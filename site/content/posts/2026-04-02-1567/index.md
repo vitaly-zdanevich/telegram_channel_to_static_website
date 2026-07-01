@@ -20,9 +20,9 @@ views = 21
 ids = [1567]
 +++
 
-{{ tag(t="preservation") }}
-{{ tag(t="wikimedia_commons") }}
-{{ tag(t="unavailable") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="wikimedia_commons") }}  
+{{ tag(t="unavailable") }}  
 
 [#1506](@/posts/2026-03-28-1506/index.md)
 

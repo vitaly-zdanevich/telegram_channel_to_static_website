@@ -19,12 +19,12 @@ views = 40
 ids = [366]
 +++
 
-{{ tag(t="game") }}
-{{ tag(t="man2") }}
+{{ tag(t="game") }}  
+{{ tag(t="man2") }}  
 
-<https://en.wikipedia.org/wiki/Massive_Assault_Network_2>
+<https://en.wikipedia.org/wiki/Massive_Assault_Network_2>  
 
-<https://lutris.net/games/massive-assault-network-2>
+<https://lutris.net/games/massive-assault-network-2>  
 
 <https://massive-assault-network-2.fandom.com/wiki/Map_Brimstone>
 

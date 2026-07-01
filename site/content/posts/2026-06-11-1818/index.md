@@ -16,13 +16,13 @@ next_id = 1819
 next_title = ""
 prev_id = 1817
 prev_title = ""
-views = 11
+views = 13
 ids = [1818]
 +++
 
-{{ tag(t="aws") }}
-{{ tag(t="billing") }}
-{{ tag(t="cost") }}
+{{ tag(t="aws") }}  
+{{ tag(t="billing") }}  
+{{ tag(t="cost") }}  
 {{ tag(t="graph") }}
 
 ![](5285355242742555081_1230592663_460005833.jpg)

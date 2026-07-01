@@ -20,10 +20,10 @@ views = 49
 ids = [367]
 +++
 
-{{ tag(t="turkey") }}
-{{ tag(t="istanbul") }}
-{{ tag(t="video") }}
-{{ tag(t="my") }}
+{{ tag(t="turkey") }}  
+{{ tag(t="istanbul") }}  
+{{ tag(t="video") }}  
+{{ tag(t="my") }}  
 
 Animation on building by projectors, love it.
 

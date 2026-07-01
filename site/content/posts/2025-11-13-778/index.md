@@ -20,10 +20,10 @@ views = 61
 ids = [778]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="kin_dza_dza") }}
+{{ tag(t="film") }}  
+{{ tag(t="kin_dza_dza") }}  
 
-Гамарджоба
+Гамарджоба  
 
 At 1:50:00
 

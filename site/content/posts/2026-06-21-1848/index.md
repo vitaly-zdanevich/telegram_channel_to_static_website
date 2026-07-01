@@ -16,13 +16,13 @@ next_id = 1849
 next_title = ""
 prev_id = 1847
 prev_title = ""
-views = 10
+views = 12
 ids = [1848]
 +++
 
-{{ tag(t="batumi") }}
+{{ tag(t="batumi") }}  
 
-Oh my, I live here
+Oh my, I live here  
 
 From <https://www.threads.com/@suhanovisual/post/DZ0JpJyjWBX>
 

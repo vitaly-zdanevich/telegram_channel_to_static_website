@@ -20,13 +20,13 @@ views = 37
 ids = [680]
 +++
 
-{{ tag(t="film") }}
-{{ tag(t="the_fountain") }}
-{{ tag(t="darren_aronofsky") }}
-{{ tag(t="inquisitor") }}
-{{ tag(t="pain") }}
-{{ tag(t="torture") }}
-{{ tag(t="christianity") }}
+{{ tag(t="film") }}  
+{{ tag(t="the_fountain") }}  
+{{ tag(t="darren_aronofsky") }}  
+{{ tag(t="inquisitor") }}  
+{{ tag(t="pain") }}  
+{{ tag(t="torture") }}  
+{{ tag(t="christianity") }}  
 
 <https://en.wikipedia.org/wiki/The_Fountain>
 

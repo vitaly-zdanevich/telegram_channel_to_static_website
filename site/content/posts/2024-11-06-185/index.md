@@ -19,9 +19,9 @@ views = 48
 ids = [185]
 +++
 
-<https://neovide.dev/features.html>
+<https://neovide.dev/features.html>  
 
-{{ tag(t="neovim") }}
+{{ tag(t="neovim") }}  
 {{ tag(t="animation") }}
 
 {{ video(src="01.mp4") }}

@@ -20,10 +20,10 @@ views = 32
 ids = [805]
 +++
 
-{{ tag(t="anime") }}
-{{ tag(t="logo") }}
-{{ tag(t="mascon") }}
-{{ tag(t="design") }}
+{{ tag(t="anime") }}  
+{{ tag(t="logo") }}  
+{{ tag(t="mascon") }}  
+{{ tag(t="design") }}  
 
 <https://github.com/TecharoHQ/anubis>
 

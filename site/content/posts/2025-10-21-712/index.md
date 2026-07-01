@@ -20,11 +20,11 @@ views = 27
 ids = [712]
 +++
 
-{{ tag(t="webdesign") }}, 2696 game reviews on <https://www.metacritic.com/publication/gamers-temple>
+{{ tag(t="webdesign") }}, 2696 game reviews on <https://www.metacritic.com/publication/gamers-temple>  
 
-Working from 2001
+Working from 2001  
 
-4.26k subscribers on [YouTube](https://www.youtube.com/c/Gamerstemple1337)
+4.26k subscribers on [YouTube](https://www.youtube.com/c/Gamerstemple1337)  
 
 {{ tag(t="games") }}
 

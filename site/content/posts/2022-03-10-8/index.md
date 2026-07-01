@@ -18,32 +18,34 @@ views = 56
 ids = [8]
 +++
 
-Третий подкаст с Анатолием Бабеней.
+Третий подкаст с Анатолием Бабеней.  
 
-Упоминалось:
+Упоминалось:  
 
-Doom <https://youtu.be/hSoCmAoIMOU>
+Doom <https://youtu.be/hSoCmAoIMOU>  
 
-<https://yandex.ru/q/question/kak_ponimat_tsitatu_esli_dolgo_smotrish_v_ce9e2e8b/>
+<https://yandex.ru/q/question/kak_ponimat_tsitatu_esli_dolgo_smotrish_v_ce9e2e8b/>  
 
-<https://www.merriam-webster.com/dictionary/imprint>
+<https://www.merriam-webster.com/dictionary/imprint>  
 
-[https://www.thesocialdilemma.com](https://www.thesocialdilemma.com/)
+[https://www.thesocialdilemma.com](https://www.thesocialdilemma.com/)  
 
-DNA test [https://www.23andme.com](https://www.23andme.com/)
+DNA test [https://www.23andme.com](https://www.23andme.com/)  
 
-<https://newgrodno.by/society/advokaty-biuro-likvidacia/>
+<https://newgrodno.by/society/advokaty-biuro-likvidacia/>  
 
-Музыка [https://complexnumbers.ru](https://complexnumbers.ru/)
+Музыка [https://complexnumbers.ru](https://complexnumbers.ru/)  
 
-Модель для Сборки <https://vk.com/ru_mds>
+Модель для Сборки <https://vk.com/ru_mds>  
 
-Safecast maintains the largest open dataset of background radiation measurements ever collected [https://safecast.org](https://safecast.org/)
+Safecast maintains the largest open dataset of background radiation measurements ever collected [https://safecast.org](https://safecast.org/)  
 
-Государственное учреждение «Республиканский центр по гидрометеорологии, контролю радиоактивного загрязнения и мониторингу окружающей среды» Минприроды Республики Беларусь [https://rad.org.by](https://rad.org.by/)
+Государственное учреждение «Республиканский центр по гидрометеорологии, контролю радиоактивного загрязнения и мониторингу окружающей среды» Минприроды Республики Беларусь [https://rad.org.by](https://rad.org.by/)  
 
-<https://bike.org.by/dostizheniya>
-[https://ru.wikipedia.org/wiki/Велодвижение\_в\_Беларуси](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%B8)
+<https://bike.org.by/dostizheniya>  
+[https://ru.wikipedia.org/wiki/Велодвижение\_в\_Беларуси](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%B8)  
+
+<https://www.youtube.com/watch?v=3n36kUs8QSk&list=PL7MgT49tMAJ4NMsqvBgfqEvLaP1-Rtipz&index=3>
 
 {{ youtube(id="hSoCmAoIMOU") }}
 

@@ -19,7 +19,7 @@ views = 9
 ids = [1335]
 +++
 
-I use {{ tag(t="bash") }} history Ctrl-R a lot, also with {{ tag(t="fzf") }} and other helpers, and have bash aliases, that are just one letter, and I do not want to pollute my bash {{ tag(t="history") }} with it, so I found the solution - the bash function/alias that delete itself from the history, for example:
+I use {{ tag(t="bash") }} history Ctrl-R a lot, also with {{ tag(t="fzf") }} and other helpers, and have bash aliases, that are just one letter, and I do not want to pollute my bash {{ tag(t="history") }} with it, so I found the solution - the bash function/alias that delete itself from the history, for example:  
 
 ```
 s() {

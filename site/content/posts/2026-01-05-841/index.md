@@ -20,9 +20,9 @@ views = 18
 ids = [841]
 +++
 
-{{ tag(t="photo") }}
-{{ tag(t="not_my") }}
-{{ tag(t="belarus") }}
+{{ tag(t="photo") }}  
+{{ tag(t="not_my") }}  
+{{ tag(t="belarus") }}  
 {{ tag(t="monument") }}
 
 ![](5393122509139414568_1255684185_460000808.jpg)

@@ -20,7 +20,7 @@ views = 37
 ids = [1784]
 +++
 
-My new project built with {{ tag(t="llm") }} {{ tag(t="codex") }} {{ tag(t="gpt") }}-5.5 xhigh: {{ tag(t="bot") }} for {{ tag(t="telegram") }} - to search and listen to {{ tag(t="youtube") }}
+My new project built with {{ tag(t="llm") }} {{ tag(t="codex") }} {{ tag(t="gpt") }}-5.5 xhigh: {{ tag(t="bot") }} for {{ tag(t="telegram") }} - to search and listen to {{ tag(t="youtube") }}  
 
 <https://gitlab.com/vitaly-zdanevich/bot_telegram_youtube>
 

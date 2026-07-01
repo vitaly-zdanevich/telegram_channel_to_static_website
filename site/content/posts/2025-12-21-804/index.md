@@ -20,10 +20,10 @@ views = 33
 ids = [804]
 +++
 
-<https://en.wikipedia.org/wiki/Batumi>
+<https://en.wikipedia.org/wiki/Batumi>  
 
-{{ tag(t="history") }}
-{{ tag(t="batumi") }}
+{{ tag(t="history") }}  
+{{ tag(t="batumi") }}  
 {{ tag(t="countries") }}
 
 ![](5350606245624220539_1245785096_460000123.jpg)

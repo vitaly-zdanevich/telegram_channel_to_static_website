@@ -19,8 +19,8 @@ views = 47
 ids = [1800]
 +++
 
-{{ tag(t="remapped") }} unused button on my laptop to {{ tag(t="git") }} {{ tag(t="push") }}, {{ tag(t="i3") }} command:
+{{ tag(t="remapped") }} unused button on my laptop to {{ tag(t="git") }} {{ tag(t="push") }}, {{ tag(t="i3") }} command:  
 
-`bindsym XF86Launch1 exec --no-startup-id xdotool type "git push" && xdotool key Return`
+`bindsym XF86Launch1 exec --no-startup-id xdotool type "git push" && xdotool key Return`  
 
 How get to know the button code: on {{ tag(t="gentoo") }} you need **x11-misc/xdotool**, run from root and press your any button. Here `XF86Launch1` is the button name.

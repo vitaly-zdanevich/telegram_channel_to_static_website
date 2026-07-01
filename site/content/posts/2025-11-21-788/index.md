@@ -20,11 +20,11 @@ views = 41
 ids = [788]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="webdesign_dark") }}
-{{ tag(t="webdesign_dark_blue") }}
-{{ tag(t="webdesign_game") }}
-{{ tag(t="visual_novel") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="webdesign_dark") }}  
+{{ tag(t="webdesign_dark_blue") }}  
+{{ tag(t="webdesign_game") }}  
+{{ tag(t="visual_novel") }}  
 
 <https://vndb.org/v952>
 

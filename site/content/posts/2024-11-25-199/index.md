@@ -21,8 +21,8 @@ ids = [199]
 
 > The stand-alone expansion Homeworld: Cataclysm was not announced for a remake, despite the outspoken interest of Gearbox, as they were unable to find the original source code
 
-<https://en.wikipedia.org/wiki/Homeworld#Remaster>
+<https://en.wikipedia.org/wiki/Homeworld#Remaster>  
 
-{{ tag(t="preservation") }}
-{{ tag(t="game") }}
+{{ tag(t="preservation") }}  
+{{ tag(t="game") }}  
 {{ tag(t="lost") }}

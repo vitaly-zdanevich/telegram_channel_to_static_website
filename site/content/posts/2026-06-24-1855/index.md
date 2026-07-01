@@ -16,13 +16,13 @@ next_id = 1856
 next_title = ""
 prev_id = 1854
 prev_title = ""
-views = 10
+views = 12
 ids = [1855]
 +++
 
-{{ tag(t="armies_of_exigo") }} it own by {{ tag(t="electronic_arts") }}
+{{ tag(t="armies_of_exigo") }} it own by {{ tag(t="electronic_arts") }}  
 
-Твёрдо и чётко.
+Твёрдо и чётко.  
 
 <https://tmsearch.uspto.gov/search/search-results/78382355>
 

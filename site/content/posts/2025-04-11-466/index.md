@@ -20,7 +20,7 @@ views = 40
 ids = [466]
 +++
 
-{{ tag(t="fine") }}
+{{ tag(t="fine") }}  
 {{ tag(t="responsibility") }}[Source](https://mastodon.social/@Green_Footballs/112283841234171790)
 
 ![](5463124415861617678_1271982774_456258574.jpg)

@@ -20,10 +20,10 @@ views = 3
 ids = [1196]
 +++
 
-{{ tag(t="abandone") }}
-{{ tag(t="dark") }}
-{{ tag(t="belarus") }}
-{{ tag(t="globustut") }}
+{{ tag(t="abandone") }}  
+{{ tag(t="dark") }}  
+{{ tag(t="belarus") }}  
+{{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:048-454_%D0%97%D0%BB%D0%BE%D0%B1%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D0%BC%D0%B5%D0%BD%D1%8C%D1%88%D0%B8%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
 ![](5260412709797302306_1224785277_460001314.jpg)

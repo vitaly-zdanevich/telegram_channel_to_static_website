@@ -20,9 +20,9 @@ views = 42
 ids = [362]
 +++
 
-{{ tag(t="coin") }}
+{{ tag(t="coin") }}  
 
-Its real coins, from Cook Islands
+Its real coins, from Cook Islands  
 
 [Source](https://www.monetnik.ru/monety/mira/avstraliya-i-okeaniya/ostrova-kuka/t/5-dollarov/)
 

@@ -20,8 +20,8 @@ views = 27
 ids = [757]
 +++
 
-{{ tag(t="design") }}
-{{ tag(t="logo") }}
+{{ tag(t="design") }}  
+{{ tag(t="logo") }}  
 [#artlebedevSource](https://www.artlebedev.ru/uteplist/logo2/)
 
 ![](5229215222705359741_1217521546_460000125.jpg)

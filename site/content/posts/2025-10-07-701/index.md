@@ -19,7 +19,7 @@ views = 32
 ids = [701]
 +++
 
-{{ tag(t="chess") }}
+{{ tag(t="chess") }}  
 [Source](https://www.youtube.com/shorts/-nzC5WCbXdk)
 
 {{ youtube(id="-nzC5WCbXdk") }}

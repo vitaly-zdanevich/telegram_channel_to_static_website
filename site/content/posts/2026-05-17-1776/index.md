@@ -16,11 +16,11 @@ next_id = 1777
 next_title = ""
 prev_id = 1775
 prev_title = ""
-views = 35
+views = 36
 ids = [1776]
 +++
 
-{{ tag(t="llm") }}
+{{ tag(t="llm") }}  
 {{ tag(t="quote") }}
 
 ![](5208783114090519616_1212764325_460004416.jpg)

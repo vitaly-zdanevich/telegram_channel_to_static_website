@@ -16,13 +16,13 @@ next_id = 1416
 next_title = ""
 prev_id = 1414
 prev_title = ""
-views = 15
+views = 16
 ids = [1415]
 +++
 
-{{ tag(t="webdesign") }}
-{{ tag(t="oldweb") }}
-{{ tag(t="animation") }}
+{{ tag(t="webdesign") }}  
+{{ tag(t="oldweb") }}  
+{{ tag(t="animation") }}  
 
 <https://reigen.moe/>
 

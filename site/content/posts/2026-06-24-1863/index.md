@@ -15,11 +15,11 @@ next_id = 1864
 next_title = ""
 prev_id = 1861
 prev_title = ""
-views = 11
+views = 14
 ids = [1863]
 +++
 
-My new {{ tag(t="bash") }} {{ tag(t="alias") }}
+My new {{ tag(t="bash") }} {{ tag(t="alias") }}  
 
 ```
 bind '"\ej": "!#:$ \e^"'
@@ -28,7 +28,7 @@ bind '"\ej": "!#:$ \e^"'
 # for example - to adjust it file extension.
 ```
 
-`~/.inputrc` syntax is simpler:
+`~/.inputrc` syntax is simpler:  
 
 ```
 "\ej": "!#:$ \e^"

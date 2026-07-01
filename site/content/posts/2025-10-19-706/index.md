@@ -20,10 +20,10 @@ views = 27
 ids = [706]
 +++
 
-<https://www.wikidata.org/wiki/Q207948#P8956>
+<https://www.wikidata.org/wiki/Q207948#P8956>  
 
-{{ tag(t="wikidata") }}
-{{ tag(t="linux") }}
+{{ tag(t="wikidata") }}  
+{{ tag(t="linux") }}  
 {{ tag(t="warcraft3") }}
 
 ![](5452023402870209880_1269398118_456260952.jpg)

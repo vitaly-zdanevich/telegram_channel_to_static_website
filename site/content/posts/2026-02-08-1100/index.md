@@ -20,7 +20,7 @@ views = 18
 ids = [1100]
 +++
 
-{{ tag(t="ai") }}
+{{ tag(t="ai") }}  
 
 Trying {{ tag(t="codex") }} to organize scans - to create a folder for every newspaper issue, result is not very good - mistakes and slow
 

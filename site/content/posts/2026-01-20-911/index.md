@@ -20,11 +20,11 @@ views = 8
 ids = [911]
 +++
 
-{{ tag(t="belarus") }}
-{{ tag(t="winter") }}
-{{ tag(t="tractor") }}
-{{ tag(t="year_2005") }}
-{{ tag(t="globustut") }}
+{{ tag(t="belarus") }}  
+{{ tag(t="winter") }}  
+{{ tag(t="tractor") }}  
+{{ tag(t="year_2005") }}  
+{{ tag(t="globustut") }}  
 
 [https://commons.wikimedia.org/wiki/File:037-301\_Кухчицы,\_снято\_2\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:037-301_%D0%9A%D1%83%D1%85%D1%87%D0%B8%D1%86%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_2_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
