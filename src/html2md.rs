@@ -134,6 +134,21 @@ fn handle_element(el: ElementRef, out: &mut String, ctx: &mut Ctx) {
     }
 }
 
+/// Count `<br>` elements at the very start of an element's content (skipping
+/// whitespace-only text). Telegram sometimes writes a link as
+/// `<a><br><br>text</a>`, putting the line break *inside* the link.
+fn leading_brs(el: ElementRef) -> usize {
+    let mut n = 0;
+    for child in el.children() {
+        match child.value() {
+            Node::Element(e) if e.name() == "br" => n += 1,
+            Node::Text(t) if t.trim().is_empty() => {}
+            _ => break,
+        }
+    }
+    n
+}
+
 fn handle_anchor(el: ElementRef, out: &mut String, ctx: &mut Ctx) {
     let href = el.value().attr("href").unwrap_or("");
     let raw_text = el.text().collect::<String>();
@@ -156,6 +171,15 @@ fn handle_anchor(el: ElementRef, out: &mut String, ctx: &mut Ctx) {
     if href.is_empty() {
         out.push_str(&escape_inline(rt));
         return;
+    }
+
+    // Line breaks Telegram tucked *inside* the link, before its text, would be
+    // lost by `el.text()`; lift them out so the link starts on its own line
+    // instead of fusing onto the previous text (two `<br>` = a paragraph break).
+    match leading_brs(el) {
+        0 => {}
+        1 => out.push_str("  \n"),
+        _ => out.push_str("\n\n"),
     }
 
     ctx.links.push(href.to_string());
@@ -300,6 +324,18 @@ mod tests {
     fn hashtag_becomes_tag_shortcode() {
         let md = conv(r#"<div><a href="?q=%23ad">#ad</a></div>"#);
         assert!(md.contains(r#"{{ tag(t="ad") }}"#), "{md:?}");
+    }
+
+    #[test]
+    fn link_with_leading_breaks_starts_new_line() {
+        // Telegram tucks the line break inside the link (`<a><br><br>Source</a>`);
+        // the label must not fuse onto the preceding text.
+        let md = conv(
+            r#"<div>One of the best game trailer<a href="https://youtu.be/x"><br/><br/>Source</a></div>"#,
+        );
+        assert!(!md.contains("trailerSource"), "{md:?}");
+        assert!(!md.contains("trailer[Source]"), "{md:?}");
+        assert!(md.contains("[Source](https://youtu.be/x)"), "{md:?}");
     }
 
     #[test]

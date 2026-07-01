@@ -47,6 +47,22 @@ pub enum Media {
     DocumentRef { filename: String },
     /// Sticker rendered as an image (webp).
     Sticker { url: String, key: Option<String> },
+    /// A voice note / audio file fetched via the optional MTProto backend and
+    /// already on local disk at `path` (the web preview never exposes these).
+    /// Copied into the bundle by the normal media step. Only constructed with
+    /// the `mtproto` feature.
+    #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
+    LocalAudio {
+        path: std::path::PathBuf,
+        title: Option<String>,
+    },
+    /// An original-quality photo fetched via MTProto, replacing a web [`Media::Photo`].
+    /// `key` keeps the web photo's content-addressed bundle filename.
+    #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
+    LocalPhoto {
+        path: std::path::PathBuf,
+        key: Option<String>,
+    },
 }
 
 /// One raw Telegram message as scraped from `t.me/s/<channel>`.
@@ -91,6 +107,8 @@ pub struct Post {
     pub links: Vec<String>,
     /// YouTube video id, if any link in the post points at YouTube.
     pub youtube: Option<String>,
+    /// Apple Podcasts embed URL, if any link points at podcasts.apple.com.
+    pub apple_podcast: Option<String>,
     /// Genius song id (resolved by fetching a linked genius.com page), for the
     /// lyrics widget when the post carries no lyrics of its own.
     pub genius_song_id: Option<String>,

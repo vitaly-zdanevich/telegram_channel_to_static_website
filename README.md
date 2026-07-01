@@ -46,7 +46,8 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   via `prefers-color-scheme` (OLED-friendly), with no external theme dependency.
   An external theme can be layered on with a guaranteed fallback (see [Theming](#theming)).
 - **Smart video handling** (in priority order):
-  1. attached video **+ a YouTube link** → embed YouTube, drop the video;
+  1. attached video **+ a YouTube link** → embed YouTube, drop the video
+     (set `KEEP_MEDIA`/`--keep-media` to keep + show the attached video too);
   2. directly downloadable video → local `<video>`;
   3. otherwise → save the **poster frame** + duration (the public page doesn't
      expose the file; see [Limitations](#limitations)).
@@ -247,6 +248,7 @@ These are *variables*, not secrets — all of it is public.
 | `STRIP_TITLE` | `--strip-title` | off | With `DERIVE_TITLES`, also remove that first sentence from the body so it isn't shown twice |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
+| `KEEP_MEDIA` | `--keep-media` | off | `true` to keep (download + show) attached **video/audio** even when the post links YouTube / Apple Podcasts (default: the embed replaces the attached media, to save hosting space) |
 | `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (fetches the page for its YouTube video + lyrics widget) |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
@@ -300,9 +302,66 @@ ActivityPub). Two ways to let people subscribe anyway:
 So: rich previews + author attribution + profile verification work out of the
 box; true "follow from Mastodon" is one bridge away, using the RSS feed as input.
 
+## Optional MTProto backend
+
+The public web preview can't hand out **voice/audio notes** or **full-resolution
+photos** (see [Limitations](#limitations)). An **opt-in** backend logs in as
+*your user account* over MTProto (via [`grammers`](https://codeberg.org/Lonami/grammers))
+to fetch them. It's **off by default** — the normal build and CI stay the
+zero-credential web scraper — and is compiled in only with a Cargo feature:
+
+```sh
+cargo build --release --features mtproto
+```
+
+**1. Get API credentials.** Create an app at
+[my.telegram.org](https://my.telegram.org) → *API development tools*, and note the
+**`api_id`** (a number) and **`api_hash`** (a string).
+
+**2. Log in once** to mint a reusable session — `api_id`/`api_hash` alone can't
+authenticate, Telegram requires a real user login:
+
+```sh
+export TG_API_ID=1234567
+export TG_API_HASH=0123456789abcdef0123456789abcdef
+tg2zola login        # prompts: phone → code (sent in Telegram) → 2FA password
+```
+
+This writes **`tg2zola.session`** and prints a base64 **`TG_SESSION`** string.
+From then on, runs are non-interactive.
+
+**3. Generate** with the credentials in the environment — a normal run then also
+pulls audio into each post's bundle (and replaces web photos with originals when
+`MTPROTO_IMAGES=1`):
+
+```sh
+TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
+  tg2zola --channel <name> --site site --init-site
+```
+
+| Env var | Purpose |
+|---|---|
+| `TG_API_ID` / `TG_API_HASH` | App credentials from my.telegram.org (required) |
+| `TG_SESSION` | base64 session from `tg2zola login`; alternatively a `tg2zola.session` file in the working dir is used |
+| `MTPROTO_IMAGES` | `1`/`true` to also fetch original-quality photos (audio is always fetched) |
+| `TG_SESSION_FILE` | override the session-file path (default `tg2zola.session`) |
+
+**For CI:** run `tg2zola login` **locally** (the interactive step can't run in
+Actions), then store `TG_API_ID`, `TG_API_HASH` and the printed `TG_SESSION` as
+**Actions secrets**. The session has no fixed expiry — it lasts until you log it
+out, Telegram revokes it, or it goes unused for ~6 months — so a daily run keeps
+it alive indefinitely.
+
+> ⚠️ **`TG_SESSION` is full access to your account** — treat it like a password
+> (a *secret*, unlike the public `CHANNEL` variable). Consider a secondary
+> account that's just a member of the channel. User-account automation is a
+> Telegram grey area; use it on your own channel at gentle rates. Each run walks
+> the full message history.
+
 ## Limitations
 
-The public web preview is the trade-off for needing **zero authentication**:
+The public web preview is the trade-off for needing **zero authentication**
+(several of these are lifted by the optional [MTProto backend](#optional-mtproto-backend)):
 
 - **Reactions/likes are not exposed** by `t.me/s/`. We export **view counts**
   instead. The data model leaves room to add real reactions later via the
@@ -313,12 +372,13 @@ The public web preview is the trade-off for needing **zero authentication**:
   the actual file would also require the MTProto API.
 - **Sticker packs aren't linkable** — the pack name is loaded by Telegram's
   JavaScript and isn't in the scraped HTML; stickers are saved as plain images.
-- **Music files (audio documents) aren't downloadable** — their URL isn't in the
-  scraped HTML (only voice notes, with direct `.oga` URLs, are). Like large
-  videos and stickers, they'd need the MTProto API. For an attachment we can't
-  fetch we keep its **filename** (marked *not archived*) so you know it existed;
-  a post that is *only* such a reference (or a lone undownloadable file) is
-  skipped rather than published empty.
+- **Music files (audio documents) aren't downloadable** from `t.me/s/` — their
+  URL isn't in the scraped HTML (only voice notes, with direct `.oga` URLs, are).
+  The optional [MTProto backend](#optional-mtproto-backend) fetches audio
+  (voice + music); without it, for an attachment we can't fetch we keep its
+  **filename** (marked *not archived*) so you know it existed; a post that is
+  *only* such a reference (or a lone undownloadable file) is skipped rather than
+  published empty.
 - **YouTube** plays via a `youtube.com` iframe (so plays count toward the
   viewer's history) on the published HTTPS site; over `file://` the iframe can't
   load (YouTube needs an origin). `YOUTUBE_FACADE=true` swaps the iframe for a

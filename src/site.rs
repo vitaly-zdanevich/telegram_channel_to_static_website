@@ -102,6 +102,10 @@ pub fn scaffold(
     // Always provide our YouTube shortcode (project shortcodes override the
     // theme's), so generated `{{ youtube(...) }}` always resolves.
     write_file(&site.join("templates/shortcodes/youtube.html"), YOUTUBE_SHORTCODE)?;
+    write_file(
+        &site.join("templates/shortcodes/apple_podcast.html"),
+        APPLE_PODCAST_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
@@ -441,6 +445,32 @@ fn accumulate(path: &Path, b: &mut SizeBreakdown) {
 }
 
 /// Human-readable byte size, e.g. `928 MB` / `1.4 GB`.
+/// The `n` largest files under `roots`, descending by size — printed at the end
+/// of a run so you can see what dominates the (size-limited) hosting budget.
+pub fn largest_files(roots: &[&Path], n: usize) -> Vec<(std::path::PathBuf, u64)> {
+    let mut files: Vec<(std::path::PathBuf, u64)> = Vec::new();
+    for root in roots {
+        collect_files(root, &mut files);
+    }
+    files.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
+    files.truncate(n);
+    files
+}
+
+fn collect_files(path: &Path, out: &mut Vec<(std::path::PathBuf, u64)>) {
+    let Ok(entries) = fs::read_dir(path) else {
+        return;
+    };
+    for e in entries.flatten() {
+        let p = e.path();
+        if p.is_dir() {
+            collect_files(&p, out);
+        } else if let Ok(m) = e.metadata() {
+            out.push((p, m.len()));
+        }
+    }
+}
+
 pub fn human_size(bytes: u64) -> String {
     const UNITS: [&str; 5] = ["B", "KB", "MB", "GB", "TB"];
     let mut v = bytes as f64;
@@ -1193,6 +1223,11 @@ const YOUTUBE_SHORTCODE: &str = r#"<div class="yt-embed">
 </div>
 "#;
 
+// Apple Podcasts episode embed. The iframe needs an origin, so over file:// it
+// won't load — the "Listen on Apple Podcasts" link below it is the fallback.
+const APPLE_PODCAST_SHORTCODE: &str = r#"<div class="ap-embed"><iframe src="{{ url }}" height="175" loading="lazy" frameborder="0" allow="autoplay *; encrypted-media *;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe><a class="ap-link" href="{{ url }}">Listen on Apple Podcasts</a></div>
+"#;
+
 // Resolve colocated media against the post's permalink so it works both on the
 // post page and when the post is shown in full on the homepage feed (a relative
 // src would otherwise break off the post's own page).
@@ -1250,6 +1285,9 @@ audio { width: 100%; }
 .yt-embed .yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .yt-embed .yt-btn { position: absolute; inset: 0; margin: auto; width: 4.2rem; height: 3rem; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,.65); border-radius: 12px; }
 .yt-embed .yt-frame { display: none; }
+.ap-embed { margin: 1rem 0; }
+.ap-embed iframe { width: 100%; max-width: 660px; height: 175px; border: 0; border-radius: 10px; }
+.ap-embed .ap-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }

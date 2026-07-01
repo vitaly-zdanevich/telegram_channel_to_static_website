@@ -1,6 +1,6 @@
 [package]
 name = "tg2zola"
-version = "0.19.0"
+version = "0.20.0"
 edition = "2021"
 description = "Sync a public Telegram channel into a Zola static website - no Telegram dependency at runtime - we parse t.me"
 license = "MIT"
@@ -29,6 +29,24 @@ regex = "1"
 once_cell = "1"
 url = "2"
 percent-encoding = "2"
+
+# Optional MTProto backend (feature `mtproto`): log in as a user to fetch media
+# the public web preview omits (voice/audio notes, original-quality photos).
+grammers-client = { version = "0.8.1", optional = true }
+grammers-session = { version = "0.8", optional = true }
+grammers-mtsender = { version = "0.8", optional = true }
+base64 = { version = "0.22", optional = true }
+rpassword = { version = "7", optional = true }
+
+[features]
+default = []
+mtproto = ["dep:grammers-client", "dep:grammers-session", "dep:grammers-mtsender", "dep:base64", "dep:rpassword"]
+
+# grammers-crypto -> glass_pumpkin -> core2, and every published core2 is yanked
+# (selection-blocked). We vendor the real core2 0.4.0 source and patch to it so
+# the dependency graph resolves. Only pulled in when the `mtproto` feature builds.
+[patch.crates-io]
+core2 = { path = "third_party/core2" }
 
 [profile.release]
 strip = true

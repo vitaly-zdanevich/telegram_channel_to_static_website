@@ -20,6 +20,9 @@ pub struct Download {
     pub filename: String,
     /// Re-download even if already present (no stable key, and post was edited).
     pub force: bool,
+    /// When set, the file already exists locally (fetched via MTProto) and is
+    /// copied from here instead of fetched over HTTP (`url` is then empty).
+    pub local: Option<std::path::PathBuf>,
 }
 
 pub struct RenderedPost {
@@ -244,6 +247,7 @@ pub fn render_post(
     ui: &crate::i18n::Ui,
     derive_titles: bool,
     strip_title: bool,
+    keep_media: bool,
 ) -> RenderedPost {
     // A PAGE-marked post becomes a standalone page; work on a copy with the
     // marker line removed and use a plain first-sentence title.
@@ -282,6 +286,14 @@ pub fn render_post(
         }
     };
 
+    // If an Apple Podcasts embed will stand in, drop the now-redundant standalone
+    // link line(s) from the body so the link isn't shown twice.
+    let body_src = if post.apple_podcast.is_some() {
+        strip_apple_links(&body_src)
+    } else {
+        body_src
+    };
+
     let mut downloads = Vec::new();
     let mut body = String::new();
     let mut idx = 0usize;
@@ -300,12 +312,22 @@ pub fn render_post(
         .media
         .iter()
         .any(|m| matches!(m, Media::Video { .. } | Media::VideoPoster { .. }));
-    let drop_videos = has_video && post.youtube.is_some();
+    // A YouTube link normally *replaces* the attached video. With `keep_media`
+    // we download and show the video anyway (the YouTube embed stays too).
+    let drop_videos = has_video && post.youtube.is_some() && !keep_media;
+    // A YouTube / Apple Podcasts link likewise replaces attached *audio* (podcast
+    // episodes) unless keep_media is set.
+    let drop_audio = (post.youtube.is_some() || post.apple_podcast.is_some()) && !keep_media;
     // Embed YouTube for ANY post that links to YouTube (not only video posts).
     // The shortcode renders the iframe plus a plain "Watch on YouTube" link, so
     // it still works where the iframe can't load (e.g. over file://).
     if let Some(yt) = &post.youtube {
         body.push_str(&format!("{{{{ youtube(id=\"{yt}\") }}}}\n\n"));
+    }
+    // Apple Podcasts episode embed (an <iframe>; over file:// it degrades to the
+    // "Listen on Apple Podcasts" link the shortcode also renders).
+    if let Some(url) = &post.apple_podcast {
+        body.push_str(&format!("{{{{ apple_podcast(url=\"{url}\") }}}}\n\n"));
     }
 
     for m in &post.media {
@@ -348,6 +370,9 @@ pub fn render_post(
                 body.push_str(&format!("*{label}*\n\n"));
             }
             Media::Audio { url, title } => {
+                if drop_audio {
+                    continue;
+                }
                 let fname = format!("{idx:02}.{}", ext_from_url(url, "mp3"));
                 push_dl(&mut downloads, url, &fname, post.edited);
                 if let Some(t) = title {
@@ -364,12 +389,67 @@ pub fn render_post(
                 body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(filename)));
             }
             Media::DocumentRef { filename } => {
+                // A YouTube/Apple Podcasts embed stands in for a podcast track —
+                // drop the redundant "(not archived)" note for that audio.
+                if drop_audio && crate::media::is_audio_name(filename) {
+                    continue;
+                }
                 // The file isn't on the public page; note the attachment + name.
                 body.push_str(&format!(
                     "📎 {} *({})*\n\n",
                     label_escape(filename),
                     ui.not_archived
                 ));
+            }
+            Media::LocalAudio { path, title } => {
+                if drop_audio {
+                    continue;
+                }
+                // Voice note / audio from MTProto: copy the cached file in, then
+                // render the same audio player the web path uses.
+                let ext = path
+                    .extension()
+                    .and_then(|e| e.to_str())
+                    .filter(|e| !e.is_empty())
+                    .unwrap_or("ogg");
+                let fname = format!("{idx:02}.{ext}");
+                downloads.push(Download {
+                    url: String::new(),
+                    filename: fname.clone(),
+                    force: false,
+                    local: Some(path.clone()),
+                });
+                if let Some(t) = title {
+                    if !t.is_empty() {
+                        body.push_str(&format!("*{}*\n\n", label_escape(t)));
+                    }
+                }
+                body.push_str(&format!("{{{{ audio(src=\"{fname}\") }}}}\n\n"));
+            }
+            Media::LocalPhoto { path, key } => {
+                // Original-quality photo from MTProto, replacing the web Photo.
+                // Keep the content-addressed name (`key`) so the bundle file the
+                // web body referenced is overwritten in place.
+                let ext = path
+                    .extension()
+                    .and_then(|e| e.to_str())
+                    .filter(|e| !e.is_empty())
+                    .unwrap_or("jpg");
+                let fname = match key {
+                    Some(k) => format!("{}.{ext}", sanitize_key(k)),
+                    None => format!("{idx:02}.{ext}"),
+                };
+                downloads.push(Download {
+                    url: String::new(),
+                    filename: fname.clone(),
+                    // Overwrite the smaller web photo cached from an earlier run.
+                    force: true,
+                    local: Some(path.clone()),
+                });
+                if og_image.is_none() {
+                    og_image = Some(fname.clone());
+                }
+                body.push_str(&format!("![]({fname})\n\n"));
             }
         }
     }
@@ -450,6 +530,7 @@ fn push_dl(downloads: &mut Vec<Download>, url: &str, fname: &str, force: bool) {
         url: url.to_string(),
         filename: fname.to_string(),
         force,
+        local: None,
     });
 }
 
@@ -699,6 +780,32 @@ fn strip_forward_backlink(body: &str, fwd: &Forward) -> String {
     body.to_string()
 }
 
+static APPLE_LINK: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(
+        r"\[[^\]]*\]\(\s*<?https?://(?:embed\.)?podcasts\.apple\.com/[^)\s]*>?\s*\)|<?https?://(?:embed\.)?podcasts\.apple\.com/[^\s>)\]]*>?",
+    )
+    .unwrap()
+});
+
+/// Remove Apple Podcasts links from the body (the embed replaces them): a line
+/// that is *only* such a link is dropped; a line with other prose keeps the prose
+/// with the link removed. Non-apple lines (incl. blank paragraph breaks) are left
+/// untouched.
+fn strip_apple_links(body: &str) -> String {
+    let mut out: Vec<String> = Vec::new();
+    for l in body.lines() {
+        if l.contains("podcasts.apple.com") {
+            let stripped = APPLE_LINK.replace_all(l, "").trim().to_string();
+            if !stripped.is_empty() {
+                out.push(stripped);
+            }
+        } else {
+            out.push(l.to_string());
+        }
+    }
+    out.join("\n")
+}
+
 fn truncate_chars(s: &str, max: usize) -> String {
     if s.chars().count() <= max {
         return s.to_string();
@@ -821,6 +928,7 @@ mod tests {
             edited: false,
             links: vec![],
             youtube: None,
+            apple_podcast: None,
             genius_song_id: None,
         }
     }
@@ -838,6 +946,7 @@ mod tests {
             None,
             None,
             &crate::i18n::ui("en"),
+            false,
             false,
             false,
         );

@@ -13,6 +13,9 @@ pub struct Job {
     pub url: String,
     pub dest: PathBuf,
     pub force: bool,
+    /// When set, copy this already-downloaded local file (MTProto) into `dest`
+    /// instead of fetching `url` over HTTP.
+    pub local: Option<PathBuf>,
 }
 
 static YT: Lazy<Regex> = Lazy::new(|| {
@@ -27,9 +30,33 @@ pub fn youtube_id(url: &str) -> Option<String> {
     YT.captures(url).map(|c| c[1].to_string())
 }
 
-/// Return the first YouTube id found across a set of links.
+/// Return the **last** YouTube id across a set of links (links are in post
+/// order, so the latest one wins when a post carries several).
 pub fn youtube_from(links: &[String]) -> Option<String> {
-    links.iter().find_map(|l| youtube_id(l))
+    links.iter().rev().find_map(|l| youtube_id(l))
+}
+
+/// The Apple Podcasts **embed** URL for the last `podcasts.apple.com` link in a
+/// post, if any: `…//podcasts.apple.com/…` → `…//embed.podcasts.apple.com/…`
+/// (the path and `?i=<episode>` are kept). Links are in post order, latest wins.
+pub fn apple_podcast_from(links: &[String]) -> Option<String> {
+    links.iter().rev().find_map(|l| apple_podcast_embed(l))
+}
+
+fn apple_podcast_embed(url: &str) -> Option<String> {
+    if url.contains("//embed.podcasts.apple.com/") {
+        return Some(url.to_string());
+    }
+    url.contains("//podcasts.apple.com/")
+        .then(|| url.replacen("//podcasts.apple.com/", "//embed.podcasts.apple.com/", 1))
+}
+
+/// True if a filename looks like audio (by extension).
+pub fn is_audio_name(name: &str) -> bool {
+    let n = name.to_ascii_lowercase();
+    [".mp3", ".ogg", ".oga", ".opus", ".m4a", ".wav", ".flac", ".aac"]
+        .iter()
+        .any(|e| n.ends_with(e))
 }
 
 /// Best-effort file extension from a URL (query string stripped).
@@ -77,9 +104,14 @@ pub async fn download_all(client: &reqwest::Client, jobs: &[Job], concurrency: u
     let results = stream::iter(todo.into_iter().map(|j| {
         let client = client.clone();
         async move {
-            download_one(&client, &j.url, &j.dest)
-                .await
-                .with_context(|| format!("downloading {}", j.url))
+            match &j.local {
+                Some(src) => copy_one(src, &j.dest)
+                    .await
+                    .with_context(|| format!("copying {}", src.display())),
+                None => download_one(&client, &j.url, &j.dest)
+                    .await
+                    .with_context(|| format!("downloading {}", j.url)),
+            }
         }
     }))
     .buffer_unordered(concurrency.max(1))
@@ -95,6 +127,17 @@ pub async fn download_all(client: &reqwest::Client, jobs: &[Job], concurrency: u
     if errs > 0 {
         tracing::warn!("{}/{} media downloads failed (continuing)", errs, total);
     }
+    Ok(())
+}
+
+/// Copy a local file (an MTProto-fetched original) into a bundle, atomically.
+async fn copy_one(src: &Path, dest: &Path) -> Result<()> {
+    if let Some(parent) = dest.parent() {
+        tokio::fs::create_dir_all(parent).await?;
+    }
+    let tmp = dest.with_extension("part");
+    tokio::fs::copy(src, &tmp).await?;
+    tokio::fs::rename(&tmp, dest).await?;
     Ok(())
 }
 
@@ -131,6 +174,25 @@ mod tests {
             Some("abc123XYZ".to_string())
         );
         assert_eq!(youtube_id("https://example.com/watch?v=nope"), None);
+    }
+
+    #[test]
+    fn apple_podcast_embed_url() {
+        assert_eq!(
+            apple_podcast_from(&["https://podcasts.apple.com/us/podcast/x/id123?i=456".into()]),
+            Some("https://embed.podcasts.apple.com/us/podcast/x/id123?i=456".into())
+        );
+        // Latest link wins; non-apple links ignored.
+        assert_eq!(
+            apple_podcast_from(&[
+                "https://podcasts.apple.com/a/id1".into(),
+                "https://example.com/x".into(),
+                "https://podcasts.apple.com/b/id2".into(),
+            ])
+            .as_deref(),
+            Some("https://embed.podcasts.apple.com/b/id2")
+        );
+        assert_eq!(apple_podcast_from(&["https://example.com/x".into()]), None);
     }
 
     #[test]

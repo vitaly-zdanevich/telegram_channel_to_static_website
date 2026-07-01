@@ -26,13 +26,20 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
         // consecutive message within the burst window, or one posted at the very
         // same instant (an album and its caption share a timestamp but not
         // adjacent IDs) — is folded into the previous post.
+        // A "the rest didn't fit in the podcast above" follow-up carrying a
+        // YouTube link folds into the previous post when that post has attached
+        // audio, so the video embed replaces the (skipped) audio there.
+        let marker_followup = CONTINUATION_MARKERS.iter().any(|mk| m.body_md.contains(mk))
+            && m.links.iter().any(|l| media::youtube_id(l).is_some());
         let merge = posts.last().is_some_and(|last| {
             let last_id = *last.ids.last().unwrap();
             let secs = (m.date - last.date).num_seconds();
             let consecutive = m.id == last_id + 1;
             let together = (consecutive && secs.abs() <= window_secs) || secs == 0;
             let both_tagged = !last.tags.is_empty() && !m.tags.is_empty();
-            (together && last.author == m.author && !both_tagged) || sticker_only
+            (together && last.author == m.author && !both_tagged)
+                || sticker_only
+                || (marker_followup && has_audio(&last.media))
         });
 
         if merge {
@@ -56,6 +63,9 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
             if last.youtube.is_none() {
                 last.youtube = media::youtube_from(&last.links);
             }
+            if last.apple_podcast.is_none() {
+                last.apple_podcast = media::apple_podcast_from(&last.links);
+            }
         } else {
             posts.push(to_post(m));
         }
@@ -66,6 +76,7 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
 
 fn to_post(m: RawMessage) -> Post {
     let youtube = media::youtube_from(&m.links);
+    let apple_podcast = media::apple_podcast_from(&m.links);
     Post {
         primary_id: m.id,
         ids: vec![m.id],
@@ -80,8 +91,24 @@ fn to_post(m: RawMessage) -> Post {
         edited: m.edited,
         links: m.links,
         youtube,
+        apple_podcast,
         genius_song_id: None,
     }
+}
+
+/// Follow-up messages whose text folds into the previous (audio/podcast) post.
+/// Hardcoded on purpose — this "the rest didn't fit above" + link pattern recurs
+/// across podcast channels, so the link's embed can replace the audio there.
+const CONTINUATION_MARKERS: &[&str] = &["Не влазит в сообщение с подкастом выше."];
+
+fn has_audio(items: &[Media]) -> bool {
+    items.iter().any(|m| match m {
+        Media::Audio { .. } => true,
+        Media::Document { filename, .. } | Media::DocumentRef { filename } => {
+            media::is_audio_name(filename)
+        }
+        _ => false,
+    })
 }
 
 #[cfg(test)]
@@ -129,6 +156,26 @@ mod tests {
         let posts = group(vec![msg(10, &["trip"], "caption"), msg(11, &[], "")], 1);
         assert_eq!(posts.len(), 1, "tagless continuation should merge");
         assert_eq!(posts[0].ids, vec![10, 11]);
+    }
+
+    #[test]
+    fn podcast_marker_followup_merges_despite_tags() {
+        // The hardcoded "didn't fit above" + YouTube follow-up folds into the
+        // previous audio post even though both carry their own tags.
+        let mut audio = msg(500, &["podcast"], "Episode 5");
+        audio.media = vec![Media::DocumentRef {
+            filename: "ep5.mp3".into(),
+        }];
+        let mut follow = msg(
+            501,
+            &["video"],
+            "Не влазит в сообщение с подкастом выше. https://youtu.be/abc123",
+        );
+        follow.links = vec!["https://youtu.be/abc123".into()];
+        let posts = group(vec![audio, follow], 1);
+        assert_eq!(posts.len(), 1, "marker follow-up should merge");
+        assert_eq!(posts[0].ids, vec![500, 501]);
+        assert_eq!(posts[0].youtube.as_deref(), Some("abc123"));
     }
 
     #[test]

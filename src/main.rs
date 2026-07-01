@@ -12,6 +12,8 @@ mod html2md;
 mod i18n;
 mod media;
 mod model;
+#[cfg(feature = "mtproto")]
+mod mtproto;
 mod offline;
 mod parse;
 mod render;
@@ -47,6 +49,11 @@ enum Commands {
         /// The built site directory, e.g. site/public
         dir: PathBuf,
     },
+    /// One-time MTProto login: create a reusable user session. Writes
+    /// `tg2zola.session` and prints a base64 `TG_SESSION` for a CI secret.
+    /// Needs `TG_API_ID` / `TG_API_HASH` in the environment.
+    #[cfg(feature = "mtproto")]
+    Login,
 }
 
 /// Scrape + regenerate the Zola site (the default action when no subcommand).
@@ -160,6 +167,11 @@ struct GenerateArgs {
     #[arg(long)]
     youtube_facade: bool,
 
+    /// Keep (download + show) attached media — video and audio — even when the
+    /// post also links YouTube / Apple Podcasts (default: the embed replaces it).
+    #[arg(long)]
+    keep_media: bool,
+
     /// Don't resolve genius.com links (skip fetching their pages for a YouTube
     /// video / lyrics widget).
     #[arg(long)]
@@ -232,6 +244,11 @@ async fn main() -> Result<()> {
         Some(Commands::Offline { dir }) => {
             init_tracing("info");
             offline::relativize(&dir)
+        }
+        #[cfg(feature = "mtproto")]
+        Some(Commands::Login) => {
+            init_tracing("info");
+            mtproto::login().await
         }
         None => {
             let g = cli.generate;
@@ -343,6 +360,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         strip_title: g.strip_title || fc.strip_title.unwrap_or(false),
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
+        keep_media: g.keep_media || fc.keep_media.unwrap_or(false),
         genius: if g.no_genius {
             false
         } else {
@@ -469,6 +487,12 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         info!("{} PAGE post(s) → pages", page_posts.len());
     }
 
+    // Optional MTProto backend: pull audio/voice (and, with MTPROTO_IMAGES=1,
+    // original-quality photos) the web preview omits. Runs before the empty-post
+    // filter so an audio-only post survives. No-op without the feature or creds.
+    #[cfg(feature = "mtproto")]
+    mtproto::maybe_enrich(&mut posts, &s).await;
+
     // Drop posts with nothing worth showing (e.g. a lone non-downloadable file).
     let before = posts.len();
     posts.retain(|p| !render::is_empty_post(p));
@@ -503,6 +527,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
                 url: url.to_string(),
                 dest: s.site.join("static/channel-avatar.jpg"),
                 force: false,
+                local: None,
             };
             media::download_all(&client, &[job], 1).await?;
         }
@@ -517,7 +542,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Render PAGE posts first so their nav entries are ready for scaffolding.
     let rendered_pages: Vec<render::RenderedPost> = page_posts
         .iter()
-        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None, &ui, s.derive_titles, s.strip_title))
+        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None, &ui, s.derive_titles, s.strip_title, s.keep_media))
         .collect();
     let page_nav: Vec<(String, String)> = rendered_pages
         .iter()
@@ -565,7 +590,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             let older = i
                 .checked_sub(1)
                 .map(|j| (posts[j].primary_id, titles[j].as_str()));
-            render::render_post(p, &rewriter, s.title_max_len, false, newer, older, &ui, s.derive_titles, s.strip_title)
+            render::render_post(p, &rewriter, s.title_max_len, false, newer, older, &ui, s.derive_titles, s.strip_title, s.keep_media)
         })
         .collect();
 
@@ -580,6 +605,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
                 url: d.url.clone(),
                 dest: dir.join(&d.filename),
                 force: d.force,
+                local: d.local.clone(),
             }
         };
         let posts_dir = s.site.join("content/posts");
@@ -605,6 +631,30 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     let limit = site::pages_limit(&s.base_url, s.pages_host.as_deref()).map(|l| l.bytes);
     site::set_about_size(&s.site, &breakdown, limit, started.elapsed(), &i18n::about(&s.language));
 
+    // Total on-disk footprint + per-kind breakdown (also shown on the About page).
+    info!(
+        "total size: {} — images {}, videos {}, audio {}, text {}, other {}",
+        site::human_size(breakdown.total()),
+        site::human_size(breakdown.images),
+        site::human_size(breakdown.videos),
+        site::human_size(breakdown.audio),
+        site::human_size(breakdown.text),
+        site::human_size(breakdown.other),
+    );
+
+    // Show the 10 biggest files (descending) — what's eating the hosting budget.
+    // Each is a file:// link to the post's built page so it opens in a browser
+    // (the HTML exists after `zola build`).
+    let biggest = site::largest_files(&[&s.site.join("content"), &s.site.join("static")], 10);
+    if !biggest.is_empty() {
+        let site_abs = std::fs::canonicalize(&s.site).unwrap_or_else(|_| s.site.clone());
+        info!("10 largest files:");
+        for (p, sz) in &biggest {
+            let rel = p.strip_prefix(&s.site).unwrap_or(p);
+            info!("  {:>9}  {}", site::human_size(*sz), largest_link(&site_abs, rel));
+        }
+    }
+
     info!("done — Zola site at {}", s.site.display());
     info!("build it with:  zola --root {} build", s.site.display());
     Ok(())
@@ -621,6 +671,23 @@ fn count_tags(posts: &[model::Post]) -> Vec<(String, usize)> {
     let mut v: Vec<(String, usize)> = counts.into_iter().map(|(k, n)| (k.to_string(), n)).collect();
     v.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
     v
+}
+
+/// A `file://` link to the built page that owns a bundle file, so the
+/// largest-files log is clickable. A post bundle `content/posts/<date>-<id>/…`
+/// maps to `public/posts/<id>/index.html`; anything else links to the file.
+fn largest_link(site_abs: &std::path::Path, rel: &std::path::Path) -> String {
+    let comps: Vec<&str> = rel
+        .components()
+        .filter_map(|c| c.as_os_str().to_str())
+        .collect();
+    if comps.len() >= 3 && comps[0] == "content" && comps[1] == "posts" {
+        if let Some(id) = comps[2].rsplit('-').next() {
+            let html = site_abs.join("public/posts").join(id).join("index.html");
+            return format!("file://{}", html.display());
+        }
+    }
+    format!("file://{}", site_abs.join(rel).display())
 }
 
 fn http_client() -> Result<reqwest::Client> {

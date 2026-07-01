@@ -57,6 +57,9 @@ pub struct FileConfig {
     pub link_underline: Option<bool>,
     /// CSS-only click-to-load YouTube facade (default true); false = direct iframe.
     pub youtube_facade: Option<bool>,
+    /// Download + show an attached video even when the post also links YouTube
+    /// (default off → the YouTube embed replaces the attached video).
+    pub keep_media: Option<bool>,
     /// Resolve genius.com links (fetch the page for its YouTube + lyrics widget).
     pub genius: Option<bool>,
     /// Comma-separated tags to surface as links in the top nav.
@@ -139,6 +142,8 @@ pub struct Settings {
     pub link_underline: bool,
     /// CSS-only click-to-load YouTube facade (default true).
     pub youtube_facade: bool,
+    /// Keep an attached video even alongside a YouTube link (default false).
+    pub keep_media: bool,
     /// Resolve genius.com links (default true).
     pub genius: bool,
     /// Comma-separated tags to surface as links in the top nav.

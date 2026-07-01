@@ -7,3 +7,9 @@
 
 # Partial downloads
 *.part
+
+# MTProto (feature `mtproto`) user session — full account access, NEVER commit
+*.session
+
+# MTProto media download cache
+.mtproto-cache
