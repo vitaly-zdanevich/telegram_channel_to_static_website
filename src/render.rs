@@ -242,8 +242,8 @@ pub fn render_post(
     links: &LinkRewriter,
     title_max: usize,
     page: bool,
-    newer: Option<(u64, &str)>,
-    older: Option<(u64, &str)>,
+    newer: Option<(u64, &str, &str)>,
+    older: Option<(u64, &str, &str)>,
     ui: &crate::i18n::Ui,
     derive_titles: bool,
     strip_title: bool,
@@ -564,8 +564,8 @@ fn front_matter(
     title: &str,
     description: &str,
     og_image: Option<&str>,
-    newer: Option<(u64, &str)>,
-    older: Option<(u64, &str)>,
+    newer: Option<(u64, &str, &str)>,
+    older: Option<(u64, &str, &str)>,
 ) -> String {
     let mut fm = String::from("+++\n");
     fm.push_str(&format!("title = {}\n", toml_str(title)));
@@ -601,13 +601,15 @@ fn front_matter(
     if let Some(img) = og_image {
         fm.push_str(&format!("og_image = {}\n", toml_str(img)));
     }
-    if let Some((id, t)) = newer {
+    if let Some((id, t, body)) = newer {
         fm.push_str(&format!("next_id = {id}\n"));
         fm.push_str(&format!("next_title = {}\n", toml_str(t)));
+        fm.push_str(&format!("next_body = {}\n", toml_str(body)));
     }
-    if let Some((id, t)) = older {
+    if let Some((id, t, body)) = older {
         fm.push_str(&format!("prev_id = {id}\n"));
         fm.push_str(&format!("prev_title = {}\n", toml_str(t)));
+        fm.push_str(&format!("prev_body = {}\n", toml_str(body)));
     }
     if let Some(v) = post.views {
         fm.push_str(&format!("views = {v}\n"));
@@ -639,9 +641,9 @@ static IMG_MD: Lazy<Regex> = Lazy::new(|| Regex::new(r"!\[[^\]]*\]\([^)]*\)").un
 static MD_LINK_LABEL: Lazy<Regex> =
     Lazy::new(|| Regex::new(r"\[([^\]]*)\]\([^)]*\)").unwrap());
 
-/// A plain-text excerpt for the meta/OG/Twitter description: keep hashtag words,
-/// drop shortcodes, images, links and Markdown markup, collapse whitespace.
-fn excerpt(md: &str, max: usize) -> String {
+/// Strip a Markdown body to plain text: keep hashtag words + link text, drop
+/// shortcodes, images, URLs and markup, collapse whitespace.
+fn strip_md(md: &str) -> String {
     let mut s = TAG_SC.replace_all(md, "$1").to_string();
     s = SHORTCODE.replace_all(&s, " ").to_string();
     s = IMG_MD.replace_all(&s, " ").to_string();
@@ -650,8 +652,17 @@ fn excerpt(md: &str, max: usize) -> String {
     s = BARE_URL.replace_all(&s, " ").to_string();
     s = HTML_TAG.replace_all(&s, " ").to_string();
     s = s.replace(['*', '_', '`', '~', '#', '>', '\\'], "");
-    let joined = s.split_whitespace().collect::<Vec<_>>().join(" ");
-    truncate_chars(joined.trim(), max)
+    s.split_whitespace().collect::<Vec<_>>().join(" ").trim().to_string()
+}
+
+/// A plain-text excerpt for the meta/OG/Twitter description.
+fn excerpt(md: &str, max: usize) -> String {
+    truncate_chars(&strip_md(md), max)
+}
+
+/// Full plain-text of a post's body — for the Newer/Older hover `title`.
+pub fn post_preview(post: &Post) -> String {
+    strip_md(&post.body_md)
 }
 
 /// The post title plus the body to render. The title is the first body line

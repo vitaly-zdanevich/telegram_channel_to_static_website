@@ -600,16 +600,18 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         .iter()
         .map(|p| render::post_title(p, s.title_max_len, s.derive_titles))
         .collect();
+    // Full plain-text of each post, for the Newer/Older hover tooltip.
+    let previews: Vec<String> = posts.iter().map(render::post_preview).collect();
     let rendered: Vec<render::RenderedPost> = posts
         .iter()
         .enumerate()
         .map(|(i, p)| {
             let newer = posts
                 .get(i + 1)
-                .map(|q| (q.primary_id, titles[i + 1].as_str()));
+                .map(|q| (q.primary_id, titles[i + 1].as_str(), previews[i + 1].as_str()));
             let older = i
                 .checked_sub(1)
-                .map(|j| (posts[j].primary_id, titles[j].as_str()));
+                .map(|j| (posts[j].primary_id, titles[j].as_str(), previews[j].as_str()));
             render::render_post(p, &rewriter, s.title_max_len, false, newer, older, &ui, s.derive_titles, s.strip_title, s.keep_media)
         })
         .collect();
