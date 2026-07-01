@@ -642,7 +642,8 @@ static MD_LINK_LABEL: Lazy<Regex> =
     Lazy::new(|| Regex::new(r"\[([^\]]*)\]\([^)]*\)").unwrap());
 
 /// Strip a Markdown body to plain text: keep hashtag words + link text, drop
-/// shortcodes, images, URLs and markup, collapse whitespace.
+/// shortcodes, images, URLs and markup. Line breaks are left intact; the caller
+/// normalizes whitespace.
 fn strip_md(md: &str) -> String {
     let mut s = TAG_SC.replace_all(md, "$1").to_string();
     s = SHORTCODE.replace_all(&s, " ").to_string();
@@ -651,18 +652,27 @@ fn strip_md(md: &str) -> String {
     s = AUTOLINK.replace_all(&s, " ").to_string();
     s = BARE_URL.replace_all(&s, " ").to_string();
     s = HTML_TAG.replace_all(&s, " ").to_string();
-    s = s.replace(['*', '_', '`', '~', '#', '>', '\\'], "");
-    s.split_whitespace().collect::<Vec<_>>().join(" ").trim().to_string()
+    s.replace(['*', '_', '`', '~', '#', '>', '\\'], "")
 }
 
-/// A plain-text excerpt for the meta/OG/Twitter description.
+/// A plain-text excerpt (single line) for the meta/OG/Twitter description.
 fn excerpt(md: &str, max: usize) -> String {
-    truncate_chars(&strip_md(md), max)
+    let joined = strip_md(md).split_whitespace().collect::<Vec<_>>().join(" ");
+    truncate_chars(joined.trim(), max)
 }
 
-/// Full plain-text of a post's body — for the Newer/Older hover `title`.
+/// Full plain-text of a post's body with line breaks kept, for the Newer/Older
+/// hover `title` (a multi-line tooltip). Intra-line whitespace is collapsed and
+/// blank lines dropped.
 pub fn post_preview(post: &Post) -> String {
     strip_md(&post.body_md)
+        .lines()
+        .map(|l| l.split_whitespace().collect::<Vec<_>>().join(" "))
+        .filter(|l| !l.is_empty())
+        .collect::<Vec<_>>()
+        .join("\n")
+        .trim()
+        .to_string()
 }
 
 /// The post title plus the body to render. The title is the first body line
