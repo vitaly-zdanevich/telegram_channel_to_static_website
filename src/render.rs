@@ -636,6 +636,7 @@ static BARE_URL: Lazy<Regex> = Lazy::new(|| Regex::new(r"https?://\S+").unwrap()
 static TAG_SC: Lazy<Regex> =
     Lazy::new(|| Regex::new(r#"\{\{\s*tag\(t="([^"]*)"\)\s*\}\}"#).unwrap());
 static HTML_TAG: Lazy<Regex> = Lazy::new(|| Regex::new(r"<[^>]+>").unwrap());
+static BR_TAG: Lazy<Regex> = Lazy::new(|| Regex::new(r"(?i)<br\s*/?>").unwrap());
 static SHORTCODE: Lazy<Regex> = Lazy::new(|| Regex::new(r"\{\{[^}]*\}\}").unwrap());
 static IMG_MD: Lazy<Regex> = Lazy::new(|| Regex::new(r"!\[[^\]]*\]\([^)]*\)").unwrap());
 static MD_LINK_LABEL: Lazy<Regex> =
@@ -644,35 +645,48 @@ static MD_LINK_LABEL: Lazy<Regex> =
 /// Strip a Markdown body to plain text: keep hashtag words + link text, drop
 /// shortcodes, images, URLs and markup. Line breaks are left intact; the caller
 /// normalizes whitespace.
-fn strip_md(md: &str) -> String {
-    let mut s = TAG_SC.replace_all(md, "$1").to_string();
+fn strip_md(md: &str, hashtags: bool) -> String {
+    // `#music` keeps hashtags recognizable (tooltip); the meta description drops
+    // the `#` for cleaner prose.
+    let mut s = TAG_SC
+        .replace_all(md, if hashtags { "#$1" } else { "$1" })
+        .to_string();
     s = SHORTCODE.replace_all(&s, " ").to_string();
     s = IMG_MD.replace_all(&s, " ").to_string();
     s = MD_LINK_LABEL.replace_all(&s, "$1").to_string();
     s = AUTOLINK.replace_all(&s, " ").to_string();
     s = BARE_URL.replace_all(&s, " ").to_string();
+    // `<br>` (blockquote internal breaks) → newline, before other tags are dropped.
+    s = BR_TAG.replace_all(&s, "\n").to_string();
     s = HTML_TAG.replace_all(&s, " ").to_string();
-    s.replace(['*', '_', '`', '~', '#', '>', '\\'], "")
+    if hashtags {
+        s.replace(['*', '_', '`', '~', '>', '\\'], "")
+    } else {
+        s.replace(['*', '_', '`', '~', '#', '>', '\\'], "")
+    }
 }
 
 /// A plain-text excerpt (single line) for the meta/OG/Twitter description.
 fn excerpt(md: &str, max: usize) -> String {
-    let joined = strip_md(md).split_whitespace().collect::<Vec<_>>().join(" ");
+    let joined = strip_md(md, false)
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ");
     truncate_chars(joined.trim(), max)
 }
 
-/// Full plain-text of a post's body with line breaks kept, for the Newer/Older
-/// hover `title` (a multi-line tooltip). Intra-line whitespace is collapsed and
-/// blank lines dropped.
+/// Plain-text preview of a post's body for the Newer/Older hover `title`: line
+/// breaks kept (intra-line whitespace collapsed, blank lines dropped), capped so
+/// a long post doesn't produce a giant tooltip.
 pub fn post_preview(post: &Post) -> String {
-    strip_md(&post.body_md)
+    let text = strip_md(&post.body_md, true)
         .lines()
         .map(|l| l.split_whitespace().collect::<Vec<_>>().join(" "))
         .filter(|l| !l.is_empty())
         .collect::<Vec<_>>()
-        .join("\n")
-        .trim()
-        .to_string()
+        .join("\n");
+    // Most posts are short (shown in full); only a very long one is trimmed.
+    truncate_chars(text.trim(), 1000)
 }
 
 /// The post title plus the body to render. The title is the first body line
@@ -1033,6 +1047,14 @@ mod tests {
         assert!(r.index_md.contains("template = \"page.html\""), "{}", r.index_md);
         assert!(r.index_md.contains("More text."), "{}", r.index_md);
         assert!(!r.index_md.contains("PAGE"), "marker dropped: {}", r.index_md);
+    }
+
+    #[test]
+    fn preview_blockquote_keeps_line_breaks() {
+        // Blockquote internal breaks are <br>; the tooltip must keep them.
+        let p = post_with_body("Intro\n\n> line one<br>line two<br>line three");
+        let prev = post_preview(&p);
+        assert!(prev.contains("line one\nline two\nline three"), "{prev:?}");
     }
 
     #[test]
