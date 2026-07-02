@@ -426,9 +426,10 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
 }
 
 /// Resolve the header search box. A custom URL wins (Enter handler appends the
-/// query). Otherwise the engine name (default `google`) selects a built-in:
-/// Google is a JS-free form; the rest get an Enter handler with `site:<host>`
-/// folded into the query. `none`/`off` disables it.
+/// query). Otherwise the engine name (default `elasticlunr` — Zola's built-in
+/// client-side full-text index, self-contained but JS) selects a built-in:
+/// `google` is a JS-free form, the other web engines get an Enter handler with
+/// `site:<host>` folded into the query, `none`/`off` disables it.
 fn resolve_search(engine: Option<String>, custom: Option<String>, base_url: &str) -> Search {
     if let Some(u) = custom.map(|s| s.trim().to_string()).filter(|s| !s.is_empty()) {
         return Search::Custom { url: u };
@@ -442,7 +443,7 @@ fn resolve_search(engine: Option<String>, custom: Option<String>, base_url: &str
     let engine = engine
         .map(|s| s.trim().to_lowercase())
         .filter(|s| !s.is_empty())
-        .unwrap_or_else(|| "google".to_string());
+        .unwrap_or_else(|| "elasticlunr".to_string());
     match engine.as_str() {
         "none" | "off" | "no" | "false" => Search::None,
         "google" | "g" => Search::Google { site: host },

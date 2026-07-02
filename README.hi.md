@@ -71,12 +71,12 @@ Rust में लिखा गया: एक single static binary, जिसे
   विवरण, पोस्ट की पहली छवि) उत्सर्जित करता है, इसलिए साझा किए गए लिंक कार्ड के रूप में
   दिखते हैं। Mastodon प्रीव्यू पर लेखक की byline जोड़ने और अपनी प्रोफ़ाइल पर साइट
   सत्यापित करने के लिए `FEDIVERSE_CREATOR` सेट करें (नीचे Fediverse / Mastodon अनुभाग देखें)।
-- **डिफ़ॉल्ट रूप से कोई JavaScript नहीं, ऑफ़लाइन-तैयार** — डार्क मोड और spoiler केवल
-  CSS हैं, और डिफ़ॉल्ट Google सर्च बॉक्स एक सादा `<form>` है (कोई JS नहीं)। केवल
-  गैर-Google सर्च इंजन एक छोटा inline Enter handler जोड़ता है। `tg2zola offline
-  <public-dir>` बनी हुई साइट को सापेक्ष लिंक में बदल देता है **और** Zola की pagination
-  redirect script हटा देता है, इसलिए ऑफ़लाइन कॉपी बिना किसी JavaScript और वेब सर्वर के
-  सीधे `file://` से खुलती है।
+- **न्यूनतम JavaScript, ऑफ़लाइन-तैयार** — डार्क मोड और spoiler केवल CSS हैं। एकमात्र
+  JS सर्च है: डिफ़ॉल्ट Elasticlunr client-side है (स्वयं-निहित, कोई बाहरी इंजन नहीं);
+  पूरी तरह JavaScript-मुक्त साइट के लिए `SEARCH_ENGINE=google` (JS-मुक्त `<form>`) या
+  `none` सेट करें। `tg2zola offline <public-dir>` बनी हुई साइट को सापेक्ष लिंक में बदल
+  देता है **और** हर `<script>` हटा देता है (Zola की pagination redirect + सर्च),
+  इसलिए ऑफ़लाइन कॉपी बिना किसी JavaScript और वेब सर्वर के सीधे `file://` से खुलती है।
 - **स्थानीयकृत UI** — साइट chrome (Newer/Older/Tags/About, सर्च बॉक्स, तिथियाँ)
   `LANGUAGE` / `--language` के ज़रिए 13 भाषाओं में से किसी में भी प्रस्तुत होता है
   (en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka/hi), महीने और सप्ताह के दिनों के नाम भी
@@ -239,7 +239,7 @@ and variables → Actions → **Variables**) के ज़रिए कॉन्
 | `TELEGRAM_LINK` | `--no-telegram-link` | चालू | `false` प्रति-पोस्ट "View on Telegram" लिंक छिपाता है |
 | `RSS` | `--no-rss` | चालू | `false` `/rss.xml` पर RSS फ़ीड बंद करता है (reader autodiscovery सहित) |
 | `FEDIVERSE_CREATOR` | `--fediverse-creator` | — | Mastodon `@user@instance` → `fediverse:creator` byline + `rel="me"` प्रोफ़ाइल लिंक |
-| `SEARCH_ENGINE` | `--search-engine` | `google` | Header सर्च बॉक्स: `google` (JS-मुक्त form) / `duckduckgo` / `yandex` / `bing` / `elasticlunr` ([Elasticlunr](http://elasticlunr.com/) — Zola का बिल्ट-इन client-side पूर्ण-पाठ सर्च, पोस्ट कंटेंट पर — JS चाहिए, बिना CDN के bundled; ऑफ़लाइन कॉपी इसे हटा देती है, इसलिए यह केवल deployed साइट पर काम करता है) / `none` |
+| `SEARCH_ENGINE` | `--search-engine` | `elasticlunr` | Header सर्च बॉक्स: `google` (JS-मुक्त form) / `duckduckgo` / `yandex` / `bing` / `elasticlunr` ([Elasticlunr](http://elasticlunr.com/) — Zola का बिल्ट-इन client-side पूर्ण-पाठ सर्च, पोस्ट कंटेंट पर — JS चाहिए, बिना CDN के bundled; ऑफ़लाइन कॉपी इसे हटा देती है, इसलिए यह केवल deployed साइट पर काम करता है) / `none` |
 | `SEARCH_URL` | `--search-url` | — | कस्टम सर्च URL prefix; Enter पर query जोड़ा जाता है (engine को ओवरराइड करता है) |
 | `TITLE_MAX_LEN` | `--title-max-len` | `200` | अधिकतम पोस्ट-शीर्षक लंबाई (अक्षर); छोटा किया गया शीर्षक अपना पूरा पहला वाक्य body में रखता है |
 | `FOOTER` | `--footer` | — | Footer कंटेंट — सादा टेक्स्ट, Markdown या HTML |

@@ -70,12 +70,13 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   Card tags (title, description, the post's first image), so shared links render
   as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews
   and verify the site on your profile (see [Fediverse](#fediverse--mastodon)).
-- **No JavaScript by default, offline-ready** — dark mode and spoilers are
-  CSS-only, and the default Google search box is a plain `<form>` (no JS). Only a
-  non-Google search engine adds one tiny inline Enter handler. `tg2zola offline
-  <public-dir>` rewrites the built site to relative links **and** strips Zola's
-  pagination redirect script, so the offline copy opens straight from `file://`
-  with zero JavaScript and no web server.
+- **Minimal JavaScript, offline-ready** — dark mode and spoilers are CSS-only.
+  The only JS is search: the default, Elasticlunr, is client-side (self-contained,
+  no external engine); set `SEARCH_ENGINE=google` for a JS-free `<form>`, or
+  `none`, for a fully JavaScript-free site. `tg2zola offline <public-dir>` rewrites
+  the built site to relative links **and** strips every `<script>` (Zola's
+  pagination redirect + the search), so the offline copy opens straight from
+  `file://` with zero JavaScript and no web server.
 - **Localized UI** — the site chrome (Newer/Older/Tags/About, the search box,
   dates) renders in any of 13 languages via `LANGUAGE` / `--language`
   (en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka/hi), with month and weekday names localized
@@ -238,7 +239,7 @@ These are *variables*, not secrets — all of it is public.
 | `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post "View on Telegram" link |
 | `RSS` | `--no-rss` | on | `false` disables the RSS feed at `/rss.xml` (with reader autodiscovery) |
 | `FEDIVERSE_CREATOR` | `--fediverse-creator` | — | Mastodon `@user@instance` → `fediverse:creator` byline + `rel="me"` profile link |
-| `SEARCH_ENGINE` | `--search-engine` | `google` | Header search box: `google` (JS-free form) / `duckduckgo` / `yandex` / `bing` / `elasticlunr` ([Elasticlunr](http://elasticlunr.com/) — Zola's built-in client-side full-text search over the post content — needs JS, bundled with no CDN; the offline copy strips it, so it works on the deployed site only) / `none` |
+| `SEARCH_ENGINE` | `--search-engine` | `elasticlunr` | Header search box: `google` (JS-free form) / `duckduckgo` / `yandex` / `bing` / `elasticlunr` ([Elasticlunr](http://elasticlunr.com/) — Zola's built-in client-side full-text search over the post content — needs JS, bundled with no CDN; the offline copy strips it, so it works on the deployed site only) / `none` |
 | `SEARCH_URL` | `--search-url` | — | Custom search URL prefix; the query is appended on Enter (overrides the engine) |
 | `TITLE_MAX_LEN` | `--title-max-len` | `200` | Max post-title length (chars); a truncated title keeps its full first sentence in the body |
 | `FOOTER` | `--footer` | — | Footer content — plain text, Markdown or HTML |
