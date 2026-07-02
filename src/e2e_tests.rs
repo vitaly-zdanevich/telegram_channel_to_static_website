@@ -314,5 +314,12 @@ fn elasticlunr_search_builds() {
     let home = fs::read_to_string(public.join("index.html")).expect("home html");
     assert!(home.contains("search-results"), "search UI missing:\n{home}");
 
+    // The offline pass keeps the local search scripts (they run from local files),
+    // so client-side search works over file:// too.
+    crate::offline::relativize(&public).expect("offline relativize");
+    let home_off = fs::read_to_string(public.join("index.html")).expect("home html");
+    assert!(home_off.contains("elasticlunr.min.js"), "search library dropped offline:\n{home_off}");
+    assert!(home_off.contains("search.js"), "search wiring dropped offline");
+
     let _ = fs::remove_dir_all(&dir);
 }

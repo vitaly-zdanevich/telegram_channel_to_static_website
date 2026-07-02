@@ -25,8 +25,11 @@ static LOCAL_LINK: Lazy<Regex> =
 // the value runs until whitespace or `>`.
 static LOCAL_LINK_UNQUOTED: Lazy<Regex> =
     Lazy::new(|| Regex::new(r#"((?:href|src)=)(/[^\s">]*)"#).unwrap());
-// Zola's pagination `page/1/` redirect stubs carry a <script>; strip it so the
-// output is JavaScript-free (the <noscript> meta-refresh + link still work).
+// <script> tags to drop so the offline copy needs no network: Zola's pagination
+// `page/1/` redirect stub, the Instagram embed loader, etc. The Elasticlunr
+// search scripts are the exception — they're kept (and relativized) so
+// client-side search keeps working over `file://`, since it runs entirely from
+// local files.
 static SCRIPT: Lazy<Regex> = Lazy::new(|| Regex::new(r"(?s)<script\b[^>]*>.*?</script>").unwrap());
 
 pub fn relativize(dir: &Path) -> Result<()> {
@@ -59,6 +62,14 @@ fn visit(root: &Path, cur: &Path, count: &mut usize) -> Result<()> {
     Ok(())
 }
 
+/// A `<script>` loading the bundled, self-contained Elasticlunr search (the
+/// library, Zola's generated index, or our wiring). Kept in the offline copy
+/// because it runs entirely from local files — unlike a pagination redirect or a
+/// remote embed loader, which need a server / the network.
+fn is_search_script(tag: &str) -> bool {
+    tag.contains("elasticlunr.min.js") || tag.contains("search_index.") || tag.contains("search.js")
+}
+
 /// Directory levels between `file` and `root` (root/index.html → 0).
 fn depth_of(root: &Path, file: &Path) -> usize {
     file.strip_prefix(root)
@@ -68,7 +79,15 @@ fn depth_of(root: &Path, file: &Path) -> usize {
 
 fn rewrite(html: &str, depth: usize) -> String {
     let prefix = "../".repeat(depth);
-    let html = SCRIPT.replace_all(html, "");
+    // Strip scripts, but keep the self-contained local search ones (their `/…`
+    // src is relativized just below, like any other local link).
+    let html = SCRIPT.replace_all(html, |c: &regex::Captures| {
+        if is_search_script(&c[0]) {
+            c[0].to_string()
+        } else {
+            String::new()
+        }
+    });
     // Quoted links first (re-adds the closing quote), then unquoted (minified).
     let html = LOCAL_LINK
         .replace_all(&html, |c: &regex::Captures| {
@@ -140,5 +159,24 @@ mod tests {
         assert!(out.contains(r#"href="style.css""#), "{out}");
         assert!(out.contains(r#"href="tags/index.html""#), "{out}");
         assert!(out.contains(r#"href="posts/1/index.html#sec""#), "{out}");
+    }
+
+    #[test]
+    fn keeps_local_search_scripts_strips_the_rest() {
+        let html = concat!(
+            r#"<script src="/elasticlunr.min.js"></script>"#,
+            r#"<script src="/search_index.en.js"></script>"#,
+            r#"<script src="/search.js"></script>"#,
+            r#"<script>window.location.replace('/page/2/')</script>"#,
+            r#"<script async src="//www.instagram.com/embed.js"></script>"#,
+        );
+        let out = rewrite(html, 1);
+        // Local search scripts kept AND relativized, so search runs over file://.
+        assert!(out.contains(r#"src="../elasticlunr.min.js""#), "{out}");
+        assert!(out.contains(r#"src="../search_index.en.js""#), "{out}");
+        assert!(out.contains(r#"src="../search.js""#), "{out}");
+        // Network-dependent scripts are stripped.
+        assert!(!out.contains("window.location"), "pagination redirect kept: {out}");
+        assert!(!out.contains("instagram.com/embed.js"), "IG embed kept: {out}");
     }
 }

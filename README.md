@@ -71,12 +71,13 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews
   and verify the site on your profile (see [Fediverse](#fediverse--mastodon)).
 - **Minimal JavaScript, offline-ready** — dark mode and spoilers are CSS-only.
-  The only JS is search: the default, Elasticlunr, is client-side (self-contained,
-  no external engine); set `SEARCH_ENGINE=google` for a JS-free `<form>`, or
-  `none`, for a fully JavaScript-free site. `tg2zola offline <public-dir>` rewrites
-  the built site to relative links **and** strips every `<script>` (Zola's
-  pagination redirect + the search), so the offline copy opens straight from
-  `file://` with zero JavaScript and no web server.
+  Search is the only JS: the default Elasticlunr is client-side and self-contained,
+  so it **works in the offline `file://` copy too** — `tg2zola offline <public-dir>`
+  rewrites the built site to relative links and keeps the local search scripts
+  (relativized) while stripping the network-dependent ones (Zola's pagination
+  redirect, embed loaders), so it opens straight from `file://` with no web
+  server. For a fully JavaScript-free site, set `SEARCH_ENGINE=google` (a plain
+  `<form>`) or `none`.
 - **Localized UI** — the site chrome (Newer/Older/Tags/About, the search box,
   dates) renders in any of 13 languages via `LANGUAGE` / `--language`
   (en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka/hi), with month and weekday names localized

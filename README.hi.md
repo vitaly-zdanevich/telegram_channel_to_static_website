@@ -72,11 +72,12 @@ Rust में लिखा गया: एक single static binary, जिसे
   दिखते हैं। Mastodon प्रीव्यू पर लेखक की byline जोड़ने और अपनी प्रोफ़ाइल पर साइट
   सत्यापित करने के लिए `FEDIVERSE_CREATOR` सेट करें (नीचे Fediverse / Mastodon अनुभाग देखें)।
 - **न्यूनतम JavaScript, ऑफ़लाइन-तैयार** — डार्क मोड और spoiler केवल CSS हैं। एकमात्र
-  JS सर्च है: डिफ़ॉल्ट Elasticlunr client-side है (स्वयं-निहित, कोई बाहरी इंजन नहीं);
-  पूरी तरह JavaScript-मुक्त साइट के लिए `SEARCH_ENGINE=google` (JS-मुक्त `<form>`) या
-  `none` सेट करें। `tg2zola offline <public-dir>` बनी हुई साइट को सापेक्ष लिंक में बदल
-  देता है **और** हर `<script>` हटा देता है (Zola की pagination redirect + सर्च),
-  इसलिए ऑफ़लाइन कॉपी बिना किसी JavaScript और वेब सर्वर के सीधे `file://` से खुलती है।
+  JS सर्च है: डिफ़ॉल्ट Elasticlunr client-side और स्वयं-निहित है, इसलिए यह **ऑफ़लाइन
+  `file://` कॉपी में भी काम करता है** — `tg2zola offline <public-dir>` बनी हुई साइट
+  को सापेक्ष लिंक में बदलता है और स्थानीय सर्च स्क्रिप्ट (सापेक्ष किए हुए) रखता है,
+  जबकि नेटवर्क-निर्भर स्क्रिप्ट (Zola की pagination redirect, embed loaders) हटा देता
+  है, ताकि यह बिना वेब सर्वर के सीधे `file://` से खुले। पूरी तरह JavaScript-मुक्त साइट
+  के लिए `SEARCH_ENGINE=google` (सादा `<form>`) या `none` सेट करें।
 - **स्थानीयकृत UI** — साइट chrome (Newer/Older/Tags/About, सर्च बॉक्स, तिथियाँ)
   `LANGUAGE` / `--language` के ज़रिए 13 भाषाओं में से किसी में भी प्रस्तुत होता है
   (en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka/hi), महीने और सप्ताह के दिनों के नाम भी
