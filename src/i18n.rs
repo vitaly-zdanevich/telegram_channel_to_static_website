@@ -6,7 +6,7 @@
 
 /// Languages we ship UI translations for.
 pub const SUPPORTED: &[&str] = &[
-    "en", "be", "uk", "ru", "de", "fr", "zh", "ja", "pl", "es", "ko", "ka",
+    "en", "be", "uk", "ru", "de", "fr", "zh", "ja", "pl", "es", "ko", "ka", "hi",
 ];
 
 /// Translatable UI strings shown in the site chrome (templates + rendered post
@@ -59,6 +59,7 @@ pub fn date_locale(lang: &str) -> &'static str {
         "es" => "es_ES",
         "ko" => "ko_KR",
         "ka" => "ka_GE",
+        "hi" => "hi_IN",
         _ => "en_US",
     }
 }
@@ -77,6 +78,7 @@ pub fn ui(lang: &str) -> Ui {
         "es" => ES,
         "ko" => KO,
         "ka" => KA,
+        "hi" => HI,
         _ => EN,
     }
 }
@@ -321,6 +323,26 @@ const KA: Ui = Ui {
     older_day: "უფრო ძველი დღე",
 };
 
+const HI: Ui = Ui {
+    newer: "नए",
+    older: "पुराने",
+    tags: "टैग",
+    about: "परिचय",
+    archive: "संग्रह",
+    search: "खोज",
+    search_aria: "इस साइट में खोजें",
+    views: "बार देखा गया",
+    view_on_telegram: "टेलीग्राम पर देखें",
+    forwarded_from: "आगे भेजा गया",
+    full_posts: "पूरी पोस्ट",
+    titles: "शीर्षक",
+    not_archived: "संग्रहीत नहीं",
+    video: "वीडियो",
+    calendar: "कैलेंडर",
+    newer_day: "नया दिन",
+    older_day: "पुराना दिन",
+};
+
 /// Translatable prose for the About page. Sentence templates use `{placeholder}`
 /// tokens (filled in `site::about_md`) plus the `__TOKEN__` size/time markers
 /// (filled later in `site::set_about_size`).
@@ -367,6 +389,7 @@ pub fn about(lang: &str) -> About {
         "es" => ES_ABOUT,
         "ko" => KO_ABOUT,
         "ka" => KA_ABOUT,
+        "hi" => HI_ABOUT,
         _ => EN_ABOUT,
     }
 }
@@ -597,6 +620,25 @@ const KA_ABOUT: About = About {
     kind_videos: "ვიდეო",
     kind_audio: "აუდიო",
     kind_other: "სხვა",
+};
+
+const HI_ABOUT: About = About {
+    intro: "सार्वजनिक Telegram चैनल {channel} की एक स्थिर प्रति।",
+    size_limit: "साइट **__TOTAL_SIZE__** लेती है — {limit_link} का **__PERCENT__**।",
+    size_plain: "साइट डिस्क पर **__TOTAL_SIZE__** लेती है।",
+    limit_phrase: "{name} की {display} सीमा",
+    by_kind: "प्रकार के अनुसार:",
+    largest_files: "सबसे बड़ी फ़ाइलें:",
+    generated_in: "**__BUILD_TIME__** में तैयार किया गया।",
+    mtproto_on: "ऑडियो और मूल-गुणवत्ता की तस्वीरें लाने के लिए वैकल्पिक MTProto बैकएंड का उपयोग किया गया।",
+    mtproto_off: "वैकल्पिक MTProto बैकएंड का उपयोग नहीं किया गया — केवल सार्वजनिक वेब पूर्वावलोकन।",
+    source_repo: "स्रोत कोड रिपॉज़िटरी:",
+    no_api: "**किसी Telegram बॉट, टोकन या API की आवश्यकता नहीं** — साइट सार्वजनिक वेब पूर्वावलोकन से बनाई जाती है और सभी मीडिया स्थानीय रूप से डाउनलोड किए जाते हैं, इसलिए चैनल हटाए जाने पर भी यह काम करती रहती है।",
+    kind_text: "टेक्स्ट",
+    kind_images: "छवियाँ",
+    kind_videos: "वीडियो",
+    kind_audio: "ऑडियो",
+    kind_other: "अन्य",
 };
 
 #[cfg(test)]
