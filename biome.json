@@ -1,0 +1,30 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"files": {
+		"ignore": ["src/elasticlunr.min.js"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"useArrowFunction": "off",
+				"useOptionalChain": "off"
+			},
+			"style": {
+				"noVar": "error",
+				"useConst": "error",
+				"useTemplate": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	}
+}
