@@ -51,9 +51,15 @@ pub async fn check_youtube(client: &reqwest::Client, posts: &mut [Post], concurr
 async fn is_youtube_removed(client: &reqwest::Client, id: &str) -> bool {
     let url = format!("https://www.youtube.com/oembed?url=https://youtu.be/{id}&format=json");
     match client.get(&url).send().await {
-        Ok(resp) => matches!(resp.status().as_u16(), 400 | 401 | 403 | 404),
+        Ok(resp) => youtube_status_removed(resp.status().as_u16()),
         Err(_) => false,
     }
+}
+
+/// oEmbed status → removed? A definitive 4xx (gone / private / embedding-off; a
+/// nonexistent id is 400, not 404) counts; 200 / 429 / 5xx / network do not.
+fn youtube_status_removed(status: u16) -> bool {
+    matches!(status, 400 | 401 | 403 | 404)
 }
 
 /// Mark posts whose Apple Podcasts *podcast* is confirmed removed (iTunes Lookup
@@ -105,7 +111,10 @@ fn apple_podcast_id(url: &str) -> Option<String> {
 
 #[cfg(test)]
 mod tests {
-    use super::{apple_podcast_id, has_nonempty_og, yandex_track_id};
+    use super::{
+        apple_body_removed, apple_podcast_id, has_nonempty_og, yandex_body_removed,
+        yandex_track_id, youtube_status_removed,
+    };
 
     #[test]
     fn extract_yandex_track_id() {
@@ -146,6 +155,32 @@ mod tests {
             "og:title"
         ));
     }
+
+    #[test]
+    fn youtube_status_classification() {
+        for s in [400, 401, 403, 404] {
+            assert!(youtube_status_removed(s), "{s} should be removed");
+        }
+        for s in [200, 429, 500, 301] {
+            assert!(!youtube_status_removed(s), "{s} should not be removed");
+        }
+    }
+
+    #[test]
+    fn apple_lookup_body() {
+        assert!(apple_body_removed(r#"{"resultCount":0, "results":[]}"#));
+        assert!(apple_body_removed(r#"{"results":[],"resultCount":0}"#));
+        assert!(!apple_body_removed(r#"{"resultCount":1,"results":[{"x":1}]}"#));
+        assert!(!apple_body_removed("garbage"));
+    }
+
+    #[test]
+    fn yandex_track_body() {
+        assert!(yandex_body_removed(r#"{"result":{"available":false}}"#));
+        assert!(yandex_body_removed(r#"{"result":{}}"#)); // present but not available
+        assert!(!yandex_body_removed(r#"{"result":{"available":true,"id":"1"}}"#));
+        assert!(!yandex_body_removed(r#"{"error":"not-found"}"#)); // no result → alive
+    }
 }
 
 /// True only when iTunes Lookup reports the podcast id no longer exists
@@ -158,13 +193,13 @@ async fn is_apple_removed(client: &reqwest::Client, id: &str) -> bool {
     if resp.status() != reqwest::StatusCode::OK {
         return false;
     }
-    match resp.text().await {
-        Ok(body) => {
-            let compact: String = body.chars().filter(|c| !c.is_whitespace()).collect();
-            compact.contains("\"resultCount\":0,") || compact.contains("\"resultCount\":0}")
-        }
-        Err(_) => false,
-    }
+    resp.text().await.map(|b| apple_body_removed(&b)).unwrap_or(false)
+}
+
+/// iTunes Lookup body → removed? `resultCount` 0 means the podcast id is gone.
+fn apple_body_removed(body: &str) -> bool {
+    let compact: String = body.chars().filter(|c| !c.is_whitespace()).collect();
+    compact.contains("\"resultCount\":0,") || compact.contains("\"resultCount\":0}")
 }
 
 /// Mark posts whose Yandex Music track is removed/unavailable, so the audio is
@@ -225,6 +260,12 @@ async fn is_yandex_removed(client: &reqwest::Client, id: &str) -> bool {
     let Ok(body) = resp.text().await else {
         return false;
     };
+    yandex_body_removed(&body)
+}
+
+/// Yandex tracks-API body → removed/unavailable? A present `result` without
+/// `"available":true` is a removed or region-locked track.
+fn yandex_body_removed(body: &str) -> bool {
     let compact: String = body.chars().filter(|c| !c.is_whitespace()).collect();
     compact.contains("\"result\":") && !compact.contains("\"available\":true")
 }

@@ -23,6 +23,17 @@ fn genius_link(p: &Post) -> Option<String> {
         .cloned()
 }
 
+/// Parse a fetched genius.com song page: the YouTube video id it embeds
+/// (watch / embed / youtu.be forms) and the genius song id (for the lyrics widget).
+fn parse_genius(html: &str) -> (Option<String>, Option<String>) {
+    let yt = YT_ID
+        .captures(html)
+        .and_then(|c| c.get(1).or_else(|| c.get(2)))
+        .map(|m| m.as_str().to_string());
+    let song = SONG_ID.captures(html).map(|c| c[1].to_string());
+    (yt, song)
+}
+
 /// For each post that links to genius.com and has no YouTube video yet, fetch
 /// the genius page and fill in `youtube` (its video) and `genius_song_id`.
 pub async fn enrich(client: &reqwest::Client, posts: &mut [Post], concurrency: usize) {
@@ -51,11 +62,7 @@ pub async fn enrich(client: &reqwest::Client, posts: &mut [Post], concurrency: u
                         return (i, None, None);
                     }
                 };
-                let yt = YT_ID
-                    .captures(&html)
-                    .and_then(|c| c.get(1).or_else(|| c.get(2)))
-                    .map(|m| m.as_str().to_string());
-                let song = SONG_ID.captures(&html).map(|c| c[1].to_string());
+                let (yt, song) = parse_genius(&html);
                 (i, yt, song)
             }
         })
@@ -68,5 +75,28 @@ pub async fn enrich(client: &reqwest::Client, posts: &mut [Post], concurrency: u
             posts[i].youtube = yt;
         }
         posts[i].genius_song_id = song;
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::parse_genius;
+
+    #[test]
+    fn extracts_youtube_and_song_id() {
+        let html = r#"<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+            <div data-src="/songs/12345/embed"></div>"#;
+        assert_eq!(
+            parse_genius(html),
+            (Some("dQw4w9WgXcQ".into()), Some("12345".into()))
+        );
+    }
+
+    #[test]
+    fn youtu_be_form_and_missing() {
+        let (yt, song) = parse_genius("watch https://youtu.be/uWSLHcAyy90 — no song embed");
+        assert_eq!(yt.as_deref(), Some("uWSLHcAyy90"));
+        assert_eq!(song, None);
+        assert_eq!(parse_genius("no links here"), (None, None));
     }
 }
