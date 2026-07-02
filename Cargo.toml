@@ -2,7 +2,7 @@
 name = "tg2zola"
 version = "0.23.0"
 edition = "2021"
-description = "Sync a public Telegram channel into a Zola static website - no Telegram dependency at runtime - we parse t.me"
+description = "Sync a public Telegram channel into a Zola static website - no Telegram dependency at runtime - we parse t.me - optional MTProto backend to extract audio and original-quality photos"
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website"
