@@ -186,7 +186,22 @@ fn zola_build_produces_expected_html() {
     site::scaffold(&s, None, &tag_counts, &[], &days).expect("scaffold");
     let rendered: Vec<RenderedPost> = posts
         .iter()
-        .map(|p| render::render_post(p, &rewriter, s.title_max_len, false, None, None, &ui, false, false, s.keep_media))
+        .map(|p| {
+            render::render_post(
+                p,
+                &rewriter,
+                false,
+                None,
+                None,
+                &render::RenderOpts {
+                    ui: &ui,
+                    title_max: s.title_max_len,
+                    derive_titles: false,
+                    strip_title: false,
+                    keep_media: s.keep_media,
+                },
+            )
+        })
         .collect();
     site::write_site(&s, &rendered).expect("write_site");
 
@@ -263,7 +278,22 @@ fn elasticlunr_search_builds() {
     site::scaffold(&s, None, &[], &[], &[]).expect("scaffold");
     let rendered: Vec<RenderedPost> = posts
         .iter()
-        .map(|p| render::render_post(p, &rewriter, s.title_max_len, false, None, None, &ui, false, false, s.keep_media))
+        .map(|p| {
+            render::render_post(
+                p,
+                &rewriter,
+                false,
+                None,
+                None,
+                &render::RenderOpts {
+                    ui: &ui,
+                    title_max: s.title_max_len,
+                    derive_titles: false,
+                    strip_title: false,
+                    keep_media: s.keep_media,
+                },
+            )
+        })
         .collect();
     site::write_site(&s, &rendered).expect("write_site");
 

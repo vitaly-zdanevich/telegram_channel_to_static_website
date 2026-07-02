@@ -595,7 +595,7 @@ pub fn set_about_size(
     .into_iter()
     .filter(|(_, v)| *v > 0)
     .collect();
-    kinds.sort_by(|a, b| b.1.cmp(&a.1));
+    kinds.sort_by_key(|k| std::cmp::Reverse(k.1));
     let breakdown = kinds
         .iter()
         .map(|(n, v)| format!("- **{n}** {}", human_size(*v)))
@@ -760,7 +760,7 @@ fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
                     col = 0;
                 }
             }
-            while col % 7 != 0 {
+            while !col.is_multiple_of(7) {
                 b.push_str("<td class=\"pad\"></td>");
                 col += 1;
             }

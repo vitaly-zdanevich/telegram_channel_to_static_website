@@ -237,18 +237,32 @@ fn wiki_body(body: &str, text: &str, url: &str) -> String {
         .to_string()
 }
 
+/// Per-run rendering options shared by every post — grouped so `render_post`'s
+/// signature stays small.
+#[derive(Clone, Copy)]
+pub struct RenderOpts<'a> {
+    pub ui: &'a crate::i18n::Ui,
+    pub title_max: usize,
+    pub derive_titles: bool,
+    pub strip_title: bool,
+    pub keep_media: bool,
+}
+
 pub fn render_post(
     post: &Post,
     links: &LinkRewriter,
-    title_max: usize,
     page: bool,
     newer: Option<(u64, &str, &str)>,
     older: Option<(u64, &str, &str)>,
-    ui: &crate::i18n::Ui,
-    derive_titles: bool,
-    strip_title: bool,
-    keep_media: bool,
+    opts: &RenderOpts,
 ) -> RenderedPost {
+    let RenderOpts {
+        ui,
+        title_max,
+        derive_titles,
+        strip_title,
+        keep_media,
+    } = *opts;
     // A PAGE-marked post becomes a standalone page; work on a copy with the
     // marker line removed and use a plain first-sentence title.
     let page_post = page.then(|| {
@@ -820,7 +834,7 @@ fn first_sentence_capped(line: &str, max: usize) -> (String, bool) {
     let mut end = None;
     for i in 0..chars.len() {
         if matches!(chars[i], '.' | '!' | '?')
-            && chars.get(i + 1).map_or(true, |c| c.is_whitespace())
+            && chars.get(i + 1).is_none_or(|c| c.is_whitespace())
         {
             end = Some(i);
             break;
@@ -1071,14 +1085,16 @@ mod tests {
         let r = render_post(
             &post_with_body("PAGE\nMy Cool Page\nMore text."),
             &rw,
-            200,
             true,
             None,
             None,
-            &crate::i18n::ui("en"),
-            false,
-            false,
-            false,
+            &RenderOpts {
+                ui: &crate::i18n::ui("en"),
+                title_max: 200,
+                derive_titles: false,
+                strip_title: false,
+                keep_media: false,
+            },
         );
         assert_eq!(r.title, "My Cool Page");
         assert!(r.index_md.contains("path = \"/my-cool-page/\""), "{}", r.index_md);
@@ -1122,8 +1138,21 @@ mod tests {
             p.media = vec![Media::Video { url: "https://cdn/x.mp4".into() }];
             p.instagram = Some("https://www.instagram.com/reel/ABC/".into());
             p.instagram_dead = dead;
-            render_post(&p, &rw, 200, false, None, None, &crate::i18n::ui("en"), false, false, false)
-                .index_md
+            render_post(
+                &p,
+                &rw,
+                false,
+                None,
+                None,
+                &RenderOpts {
+                    ui: &crate::i18n::ui("en"),
+                    title_max: 200,
+                    derive_titles: false,
+                    strip_title: false,
+                    keep_media: false,
+                },
+            )
+            .index_md
         };
         // Confirmed live → the Instagram embed replaces the attached video.
         let live = render(false);
@@ -1148,8 +1177,21 @@ mod tests {
                 path: PathBuf::from("/cache/1.mp4"),
             }];
             p.youtube = youtube.map(|s| s.to_string());
-            render_post(&p, &rw, 200, false, None, None, &crate::i18n::ui("en"), false, false, keep)
-                .index_md
+            render_post(
+                &p,
+                &rw,
+                false,
+                None,
+                None,
+                &RenderOpts {
+                    ui: &crate::i18n::ui("en"),
+                    title_max: 200,
+                    derive_titles: false,
+                    strip_title: false,
+                    keep_media: keep,
+                },
+            )
+            .index_md
         };
         // No link → the fetched video is shown.
         assert!(render(None, false).contains("{{ video("), "video missing");

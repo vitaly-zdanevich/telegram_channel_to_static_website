@@ -172,6 +172,9 @@ fn want_videos() -> bool {
     )
 }
 
+/// Per-post-index MTProto audio: (cache path, original filename, label).
+type AudioFor = HashMap<usize, Vec<(PathBuf, Option<String>, Option<String>)>>;
+
 async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let (client, _session) = build_client()?;
     if !client.is_authorized().await? {
@@ -201,8 +204,7 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let videos = want_videos();
 
     // (cache path, original filename, label) per post.
-    let mut audio_for: HashMap<usize, Vec<(PathBuf, Option<String>, Option<String>)>> =
-        HashMap::new();
+    let mut audio_for: AudioFor = HashMap::new();
     let mut photo_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
     let mut video_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
     let (mut n_audio, mut n_photo, mut n_video) = (0usize, 0usize, 0usize);

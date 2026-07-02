@@ -590,11 +590,18 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Localized UI strings for rendered post bodies (e.g. the "not archived"
     // attachment note). Template chrome is localized via config.extra.i18n.
     let ui = i18n::ui(&s.language);
+    let render_opts = render::RenderOpts {
+        ui: &ui,
+        title_max: s.title_max_len,
+        derive_titles: s.derive_titles,
+        strip_title: s.strip_title,
+        keep_media: s.keep_media,
+    };
 
     // Render PAGE posts first so their nav entries are ready for scaffolding.
     let rendered_pages: Vec<render::RenderedPost> = page_posts
         .iter()
-        .map(|p| render::render_post(p, &rewriter, s.title_max_len, true, None, None, &ui, s.derive_titles, s.strip_title, s.keep_media))
+        .map(|p| render::render_post(p, &rewriter, true, None, None, &render_opts))
         .collect();
     let page_nav: Vec<(String, String)> = rendered_pages
         .iter()
@@ -644,7 +651,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             let older = i
                 .checked_sub(1)
                 .map(|j| (posts[j].primary_id, titles[j].as_str(), previews[j].as_str()));
-            render::render_post(p, &rewriter, s.title_max_len, false, newer, older, &ui, s.derive_titles, s.strip_title, s.keep_media)
+            render::render_post(p, &rewriter, false, newer, older, &render_opts)
         })
         .collect();
 
