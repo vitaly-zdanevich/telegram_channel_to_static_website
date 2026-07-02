@@ -455,6 +455,7 @@ fn resolve_search(engine: Option<String>, custom: Option<String>, base_url: &str
         "bing" | "bind" => Search::Custom {
             url: format!("https://www.bing.com/search?q={scope}"),
         },
+        "elasticlunr" | "lunr" | "local" => Search::Elasticlunr,
         other => {
             tracing::warn!("unknown search engine '{other}' — disabling the search box");
             Search::None

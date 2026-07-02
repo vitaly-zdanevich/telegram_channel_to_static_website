@@ -239,7 +239,7 @@ and variables → Actions → **Variables**) के ज़रिए कॉन्
 | `TELEGRAM_LINK` | `--no-telegram-link` | चालू | `false` प्रति-पोस्ट "View on Telegram" लिंक छिपाता है |
 | `RSS` | `--no-rss` | चालू | `false` `/rss.xml` पर RSS फ़ीड बंद करता है (reader autodiscovery सहित) |
 | `FEDIVERSE_CREATOR` | `--fediverse-creator` | — | Mastodon `@user@instance` → `fediverse:creator` byline + `rel="me"` प्रोफ़ाइल लिंक |
-| `SEARCH_ENGINE` | `--search-engine` | `google` | Header सर्च बॉक्स: `google` (JS-मुक्त form) / `duckduckgo` / `yandex` / `bing` / `none` |
+| `SEARCH_ENGINE` | `--search-engine` | `google` | Header सर्च बॉक्स: `google` (JS-मुक्त form) / `duckduckgo` / `yandex` / `bing` / `elasticlunr` ([Elasticlunr](http://elasticlunr.com/) — Zola का बिल्ट-इन client-side पूर्ण-पाठ सर्च, पोस्ट कंटेंट पर — JS चाहिए, बिना CDN के bundled; ऑफ़लाइन कॉपी इसे हटा देती है, इसलिए यह केवल deployed साइट पर काम करता है) / `none` |
 | `SEARCH_URL` | `--search-url` | — | कस्टम सर्च URL prefix; Enter पर query जोड़ा जाता है (engine को ओवरराइड करता है) |
 | `TITLE_MAX_LEN` | `--title-max-len` | `200` | अधिकतम पोस्ट-शीर्षक लंबाई (अक्षर); छोटा किया गया शीर्षक अपना पूरा पहला वाक्य body में रखता है |
 | `FOOTER` | `--footer` | — | Footer कंटेंट — सादा टेक्स्ट, Markdown या HTML |

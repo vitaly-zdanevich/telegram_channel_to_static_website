@@ -109,6 +109,10 @@ pub enum Search {
     /// Any other engine / custom prefix: the typed query is appended to `url`
     /// on Enter via a small inline handler.
     Custom { url: String },
+    /// Zola's built-in Elasticlunr client-side full-text search over the post
+    /// content. Needs JavaScript (bundled, no CDN), so it's opt-in and the
+    /// offline pass strips it — it works on the deployed site, not file://.
+    Elasticlunr,
 }
 
 /// Fully resolved settings used to run a generation.

@@ -238,7 +238,7 @@ These are *variables*, not secrets — all of it is public.
 | `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post "View on Telegram" link |
 | `RSS` | `--no-rss` | on | `false` disables the RSS feed at `/rss.xml` (with reader autodiscovery) |
 | `FEDIVERSE_CREATOR` | `--fediverse-creator` | — | Mastodon `@user@instance` → `fediverse:creator` byline + `rel="me"` profile link |
-| `SEARCH_ENGINE` | `--search-engine` | `google` | Header search box: `google` (JS-free form) / `duckduckgo` / `yandex` / `bing` / `none` |
+| `SEARCH_ENGINE` | `--search-engine` | `google` | Header search box: `google` (JS-free form) / `duckduckgo` / `yandex` / `bing` / `elasticlunr` ([Elasticlunr](http://elasticlunr.com/) — Zola's built-in client-side full-text search over the post content — needs JS, bundled with no CDN; the offline copy strips it, so it works on the deployed site only) / `none` |
 | `SEARCH_URL` | `--search-url` | — | Custom search URL prefix; the query is appended on Enter (overrides the engine) |
 | `TITLE_MAX_LEN` | `--title-max-len` | `200` | Max post-title length (chars); a truncated title keeps its full first sentence in the body |
 | `FOOTER` | `--footer` | — | Footer content — plain text, Markdown or HTML |

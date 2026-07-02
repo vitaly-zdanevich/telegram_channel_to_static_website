@@ -21,6 +21,21 @@ fn zola_available() -> bool {
         .unwrap_or(false)
 }
 
+/// Whether the e2e test may proceed. In CI (where the workflow installs zola) a
+/// missing binary is a hard failure — the HTML checks must not be silently
+/// skipped; on a local machine without zola it just skips.
+fn zola_ready() -> bool {
+    if zola_available() {
+        return true;
+    }
+    assert!(
+        std::env::var("CI").is_err(),
+        "zola is not on PATH in CI — the end-to-end HTML test must run (the workflow installs it)"
+    );
+    eprintln!("skipping e2e: `zola` not on PATH");
+    false
+}
+
 fn settings(site: PathBuf) -> Settings {
     Settings {
         channel: "testchan".into(),
@@ -95,8 +110,7 @@ fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&
 
 #[test]
 fn zola_build_produces_expected_html() {
-    if !zola_available() {
-        eprintln!("skipping e2e: `zola` not on PATH");
+    if !zola_ready() {
         return;
     }
 
@@ -229,6 +243,46 @@ fn zola_build_produces_expected_html() {
     assert!(p3o.contains("instagram-media"), "IG blockquote should remain after offline");
     assert!(!p3o.contains("embed.js"), "offline pass should strip embed.js:\n{p3o}");
     assert!(!p3o.contains("<script"), "offline pass should strip all <script>:\n{p3o}");
+
+    let _ = fs::remove_dir_all(&dir);
+}
+
+#[test]
+fn elasticlunr_search_builds() {
+    if !zola_ready() {
+        return;
+    }
+    let dir = std::env::temp_dir().join(format!("tg2zola-els-{}", std::process::id()));
+    let _ = fs::remove_dir_all(&dir);
+    let mut s = settings(dir.join("site"));
+    s.search = Search::Elasticlunr;
+
+    let posts = vec![post(1, "a searchable body of text", &[], vec![], None, None)];
+    let rewriter = render::LinkRewriter::new(&s.channel, &posts);
+    let ui = crate::i18n::ui(&s.language);
+    site::scaffold(&s, None, &[], &[], &[]).expect("scaffold");
+    let rendered: Vec<RenderedPost> = posts
+        .iter()
+        .map(|p| render::render_post(p, &rewriter, s.title_max_len, false, None, None, &ui, false, false, s.keep_media))
+        .collect();
+    site::write_site(&s, &rendered).expect("write_site");
+
+    let out = Command::new("zola")
+        .arg("--root")
+        .arg(&s.site)
+        .arg("build")
+        .output()
+        .expect("run zola");
+    assert!(out.status.success(), "zola build failed:\n{}", String::from_utf8_lossy(&out.stderr));
+
+    let public = s.site.join("public");
+    // Zola built the Elasticlunr index (http://elasticlunr.com/), and we bundled
+    // the library + wiring.
+    assert!(public.join("search_index.en.js").exists(), "search index not generated");
+    assert!(public.join("elasticlunr.min.js").exists(), "elasticlunr library not bundled");
+    assert!(public.join("search.js").exists(), "search wiring not bundled");
+    let home = fs::read_to_string(public.join("index.html")).expect("home html");
+    assert!(home.contains("search-results"), "search UI missing:\n{home}");
 
     let _ = fs::remove_dir_all(&dir);
 }

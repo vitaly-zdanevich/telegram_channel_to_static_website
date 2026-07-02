@@ -136,6 +136,15 @@ pub fn scaffold(
             write_file(&site.join(path), content)?;
         }
         write_file(&site.join("static/style.css"), &style_css(s))?;
+        // Bundle the Elasticlunr library + wiring only when that search is on;
+        // otherwise clean up any copy left by a previous run.
+        if matches!(s.search, Search::Elasticlunr) {
+            write_file(&site.join("static/elasticlunr.min.js"), ELASTICLUNR_JS)?;
+            write_file(&site.join("static/search.js"), SEARCH_JS)?;
+        } else {
+            let _ = fs::remove_file(site.join("static/elasticlunr.min.js"));
+            let _ = fs::remove_file(site.join("static/search.js"));
+        }
     } else {
         // Theme mode: remove our built-ins so they don't shadow the theme.
         for (path, _) in builtins {
@@ -143,6 +152,8 @@ pub fn scaffold(
         }
         let _ = fs::remove_dir_all(site.join("templates/tags"));
         let _ = fs::remove_file(site.join("static/style.css"));
+        let _ = fs::remove_file(site.join("static/elasticlunr.min.js"));
+        let _ = fs::remove_file(site.join("static/search.js"));
     }
     Ok(())
 }
@@ -292,6 +303,7 @@ fn config_toml(
             o
         }
         Search::Custom { url } => format!("search_url = \"{}\"", toml_escape(url)),
+        Search::Elasticlunr => String::from("search_elasticlunr = true"),
     };
     // Footer may be multi-line Markdown/HTML, so escape newlines for the TOML
     // basic string; the template renders it via the `markdown` filter.
@@ -383,6 +395,10 @@ fn config_toml(
         .replace("__CALENDAR__", if days.is_empty() { "false" } else { "true" })
         .replace("__FEDI__", &fedi)
         .replace("__SEARCH__", &search)
+        .replace(
+            "__BUILD_SEARCH__",
+            if matches!(s.search, Search::Elasticlunr) { "true" } else { "false" },
+        )
         .replace("__FOOTER__", &footer)
         .replace("__AVATAR__", avatar)
         .replace("__NAV__", &nav)
@@ -1010,7 +1026,7 @@ description = "__DESC__"
 default_language = "__LANGUAGE__"
 __THEME____FEEDS__
 compile_sass = false
-build_search_index = false
+build_search_index = __BUILD_SEARCH__
 minify_html = true
 
 taxonomies = [
@@ -1086,11 +1102,12 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
     </nav>
-    {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% endif %}
+    {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% elif config.extra.search_elasticlunr %}<span class="site-search els"><input type="search" id="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off"><ul id="search-results" class="search-results" hidden></ul></span>{% endif %}
   </header>
   <main>{% block content %}{% endblock content %}</main>
   {% if config.extra.footer %}<footer class="site-footer">{{ config.extra.footer | markdown(inline=true) | safe }}</footer>{% endif %}
   {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
+  {% if config.extra.search_elasticlunr %}<script src="{{ get_url(path='elasticlunr.min.js') | safe }}"></script><script src="{{ get_url(path='search_index.' ~ config.default_language ~ '.js') | safe }}"></script><script src="{{ get_url(path='search.js') | safe }}"></script>{% endif %}
 </body>
 </html>
 "#;
@@ -1293,6 +1310,15 @@ const AUDIO_SHORTCODE: &str =
 const TAG_SHORTCODE: &str =
     "<a class=\"tag\" href=\"{{ get_taxonomy_url(kind='tags', name=t) | safe }}\">#{{ t }}</a>";
 
+/// The bundled Elasticlunr library (0.9.5, http://elasticlunr.com/), written to
+/// static/ only when Elasticlunr search is enabled (SEARCH_ENGINE=elasticlunr).
+const ELASTICLUNR_JS: &str = include_str!("elasticlunr.min.js");
+
+/// Client-side search wiring: load the Zola-generated index, query on input, and
+/// show up to 10 result links. Runs after elasticlunr.min.js + search_index.<lang>.js
+/// (the header emits the three scripts in that order).
+const SEARCH_JS: &str = include_str!("search.js");
+
 // Channel avatar at its original size on the About page (base_url-aware).
 const AVATAR_SHORTCODE: &str =
     "<img class=\"about-avatar\" src=\"{{ get_url(path='channel-avatar.jpg') | safe }}\" alt=\"channel avatar\">";
@@ -1365,6 +1391,17 @@ pre code { padding: 0; background: none; }
 /* Expand on click/focus — CSS only, no JS. */
 .site-search input:focus, input.site-search:focus { width: min(22rem, 60vw); }
 input.site-search { margin-left: auto; }
+.site-search.els { position: relative; margin-left: auto; }
+.search-results {
+  position: absolute; right: 0; top: 100%; z-index: 30;
+  margin: .25rem 0 0; padding: 0; list-style: none;
+  min-width: 14rem; max-width: min(28rem, 80vw); max-height: 60vh; overflow: auto;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+}
+.search-results[hidden] { display: none; }
+.search-results li { margin: 0; padding: 0; }
+.search-results a { display: block; padding: .4rem .6rem; text-decoration: none; color: var(--fg); }
+.search-results a:hover, .search-results a:focus { background: var(--input-bg); }
 .post-list { list-style: none; padding: 0; }
 .post-list li { padding: .2rem 0; }
 .post-list time { color: var(--muted); font-size: .85em; margin-left: .5rem; }
