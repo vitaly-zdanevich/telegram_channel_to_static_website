@@ -320,6 +320,8 @@ pub fn render_post(
     // check) keeps the local video instead. keep_media keeps it regardless.
     let youtube_live = post.youtube.is_some() && !post.youtube_dead;
     let apple_live = post.apple_podcast.is_some() && !post.apple_dead;
+    // A live Instagram post replaces an attached *video*.
+    let instagram_live = post.instagram.is_some() && !post.instagram_dead;
     // Yandex Music replaces an *attached audio* file only (per the rule), and
     // only when the track is still live.
     let has_attached_audio = post.media.iter().any(|m| match m {
@@ -330,7 +332,7 @@ pub fn render_post(
         _ => false,
     });
     let yandex_replace = post.yandex_music.is_some() && !post.yandex_dead && has_attached_audio;
-    let drop_videos = has_video && youtube_live && !keep_media;
+    let drop_videos = has_video && (youtube_live || instagram_live) && !keep_media;
     // A live YouTube / Apple Podcasts / Yandex Music link replaces attached
     // *audio* unless keep_media is set; a removed one keeps the local audio.
     let drop_audio = (youtube_live || apple_live || yandex_replace) && !keep_media;
@@ -352,6 +354,12 @@ pub fn render_post(
     if yandex_replace {
         if let Some(url) = &post.yandex_music {
             body.push_str(&format!("{{{{ yandex_music(url=\"{url}\") }}}}\n\n"));
+        }
+    }
+    // Instagram post embed replacing an attached video (a live post).
+    if has_video && instagram_live {
+        if let Some(url) = &post.instagram {
+            body.push_str(&format!("{{{{ instagram(url=\"{url}\") }}}}\n\n"));
         }
     }
 
@@ -1018,9 +1026,11 @@ mod tests {
             youtube: None,
             apple_podcast: None,
             yandex_music: None,
+            instagram: None,
             youtube_dead: false,
             apple_dead: false,
             yandex_dead: false,
+            instagram_dead: false,
             genius_song_id: None,
         }
     }
@@ -1074,5 +1084,29 @@ mod tests {
         // Pretty `/wiki/File:` URL form (percent-encoded, namespace dropped).
         let url = "https://commons.wikimedia.org/wiki/File:Slonim_%D1%81%D0%BD%D1%8F%D1%82%D0%BE.jpg";
         assert_eq!(commons_page_name(url).as_deref(), Some("Slonim снято.jpg"));
+    }
+
+    #[test]
+    fn instagram_embed_replaces_live_video_only() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let render = |dead: bool| {
+            let mut p = post_with_body("watch this");
+            p.media = vec![Media::Video { url: "https://cdn/x.mp4".into() }];
+            p.instagram = Some("https://www.instagram.com/reel/ABC/".into());
+            p.instagram_dead = dead;
+            render_post(&p, &rw, 200, false, None, None, &crate::i18n::ui("en"), false, false, false)
+                .index_md
+        };
+        // Confirmed live → the Instagram embed replaces the attached video.
+        let live = render(false);
+        assert!(
+            live.contains("{{ instagram(url=\"https://www.instagram.com/reel/ABC/\") }}"),
+            "no embed: {live}"
+        );
+        assert!(!live.contains("{{ video("), "video not dropped: {live}");
+        // Removed / unverified → keep the video, show no dead embed.
+        let dead = render(true);
+        assert!(dead.contains("{{ video("), "video dropped on dead IG: {dead}");
+        assert!(!dead.contains("{{ instagram("), "embed on dead IG: {dead}");
     }
 }

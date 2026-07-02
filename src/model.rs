@@ -116,6 +116,8 @@ pub struct Post {
     pub apple_podcast: Option<String>,
     /// Yandex Music iframe embed URL, if any link points at a music.yandex track.
     pub yandex_music: Option<String>,
+    /// Canonical Instagram post URL, if any link points at an instagram post/reel.
+    pub instagram: Option<String>,
     /// YouTube link confirmed removed (oEmbed 404) — keep the local media instead
     /// of replacing it with a dead embed. Default false (assume alive).
     pub youtube_dead: bool,
@@ -125,6 +127,9 @@ pub struct Post {
     /// Yandex Music track removed/unavailable (API `available` not true) — keep
     /// the local audio instead of a dead embed. Default false.
     pub yandex_dead: bool,
+    /// Instagram post not confirmed live (no og:title via the crawler UA) — keep
+    /// the local video instead of a dead embed. Default false.
+    pub instagram_dead: bool,
     /// Genius song id (resolved by fetching a linked genius.com page), for the
     /// lyrics widget when the post carries no lyrics of its own.
     pub genius_song_id: Option<String>,

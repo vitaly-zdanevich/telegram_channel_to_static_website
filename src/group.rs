@@ -73,6 +73,9 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
             if last.yandex_music.is_none() {
                 last.yandex_music = media::yandex_music_from(&last.links);
             }
+            if last.instagram.is_none() {
+                last.instagram = media::instagram_from(&last.links);
+            }
         } else {
             posts.push(to_post(m));
         }
@@ -85,6 +88,7 @@ fn to_post(m: RawMessage) -> Post {
     let youtube = media::youtube_from(&m.links);
     let apple_podcast = media::apple_podcast_from(&m.links);
     let yandex_music = media::yandex_music_from(&m.links);
+    let instagram = media::instagram_from(&m.links);
     Post {
         primary_id: m.id,
         ids: vec![m.id],
@@ -101,9 +105,11 @@ fn to_post(m: RawMessage) -> Post {
         youtube,
         apple_podcast,
         yandex_music,
+        instagram,
         youtube_dead: false,
         apple_dead: false,
         yandex_dead: false,
+        instagram_dead: false,
         genius_song_id: None,
     }
 }

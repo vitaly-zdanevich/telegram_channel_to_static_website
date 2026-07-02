@@ -51,6 +51,19 @@ fn apple_podcast_embed(url: &str) -> Option<String> {
         .then(|| url.replacen("//podcasts.apple.com/", "//embed.podcasts.apple.com/", 1))
 }
 
+static INSTAGRAM_POST: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"instagram\.com/(p|reel|tv)/([A-Za-z0-9_-]+)").unwrap());
+
+/// The canonical Instagram post URL for the last instagram post/reel link in a
+/// post, if any (used for the embed + liveness). Links are in post order.
+pub fn instagram_from(links: &[String]) -> Option<String> {
+    links.iter().rev().find_map(|l| {
+        INSTAGRAM_POST
+            .captures(l)
+            .map(|c| format!("https://www.instagram.com/{}/{}/", &c[1], &c[2]))
+    })
+}
+
 static YANDEX_TRACK: Lazy<Regex> =
     Lazy::new(|| Regex::new(r"music\.yandex\.[a-z]+/album/(\d+)/track/(\d+)").unwrap());
 
@@ -216,6 +229,19 @@ mod tests {
         // A distinct real file (non-audio extension) is kept.
         assert!(!is_probably_audio_doc("report.pdf"));
         assert!(!is_probably_audio_doc("archive.zip"));
+    }
+
+    #[test]
+    fn instagram_post_url() {
+        assert_eq!(
+            instagram_from(&["x https://www.instagram.com/p/DKOrF01i-_4/?utm=1".into()]).as_deref(),
+            Some("https://www.instagram.com/p/DKOrF01i-_4/")
+        );
+        assert_eq!(
+            instagram_from(&["https://instagram.com/reel/ABC123/".into()]).as_deref(),
+            Some("https://www.instagram.com/reel/ABC123/")
+        );
+        assert_eq!(instagram_from(&["https://example.com/x".into()]), None);
     }
 
     #[test]

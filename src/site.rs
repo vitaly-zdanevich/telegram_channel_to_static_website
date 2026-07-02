@@ -110,6 +110,10 @@ pub fn scaffold(
         &site.join("templates/shortcodes/yandex_music.html"),
         YANDEX_MUSIC_SHORTCODE,
     )?;
+    write_file(
+        &site.join("templates/shortcodes/instagram.html"),
+        INSTAGRAM_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
@@ -1271,6 +1275,11 @@ const APPLE_PODCAST_SHORTCODE: &str = r#"<div class="ap-embed"><iframe src="{{ u
 const YANDEX_MUSIC_SHORTCODE: &str = r#"<div class="ym-embed"><iframe frameborder="0" width="100%" height="180" loading="lazy" src="{{ url }}"></iframe><a class="ym-link" href="{{ url }}">Yandex Music</a></div>
 "#;
 
+// Instagram post embed (official blockquote + embed.js). The offline pass strips
+// the <script>, leaving the "View on Instagram" link fallback.
+const INSTAGRAM_SHORTCODE: &str = r#"<blockquote class="instagram-media" data-instgrm-permalink="{{ url }}" data-instgrm-version="14" style="max-width:540px;margin:1rem auto"><a href="{{ url }}">View on Instagram</a></blockquote><script async src="//www.instagram.com/embed.js"></script>
+"#;
+
 // Resolve colocated media against the post's permalink so it works both on the
 // post page and when the post is shown in full on the homepage feed (a relative
 // src would otherwise break off the post's own page).
@@ -1334,6 +1343,7 @@ audio { width: 100%; }
 .ym-embed { margin: 1rem 0; }
 .ym-embed iframe { width: 100%; max-width: 900px; height: 180px; border: 0; }
 .ym-embed .ym-link { display: block; font-size: .85rem; margin-top: .3rem; }
+blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1rem; }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }

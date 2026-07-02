@@ -25,7 +25,7 @@ pub async fn check_youtube(client: &reqwest::Client, posts: &mut [Post], concurr
 
     let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, id)| {
         let client = client.clone();
-        async move { (i, is_removed(&client, &id).await) }
+        async move { (i, is_youtube_removed(&client, &id).await) }
     }))
     .buffer_unordered(concurrency.max(1))
     .collect()
@@ -48,7 +48,7 @@ pub async fn check_youtube(client: &reqwest::Client, posts: &mut [Post], concurr
 /// and a client error otherwise (a *nonexistent* id is `400`, not `404`). Only a
 /// definitive 4xx counts; `429`/`5xx`/network errors are transient → treated as
 /// alive, so rate-limiting never makes us keep media for live videos.
-async fn is_removed(client: &reqwest::Client, id: &str) -> bool {
+async fn is_youtube_removed(client: &reqwest::Client, id: &str) -> bool {
     let url = format!("https://www.youtube.com/oembed?url=https://youtu.be/{id}&format=json");
     match client.get(&url).send().await {
         Ok(resp) => matches!(resp.status().as_u16(), 400 | 401 | 403 | 404),
@@ -78,7 +78,7 @@ pub async fn check_apple(client: &reqwest::Client, posts: &mut [Post], concurren
 
     let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, id)| {
         let client = client.clone();
-        async move { (i, apple_removed(&client, &id).await) }
+        async move { (i, is_apple_removed(&client, &id).await) }
     }))
     .buffer_unordered(concurrency.max(1))
     .collect()
@@ -133,7 +133,7 @@ mod tests {
 
 /// True only when iTunes Lookup reports the podcast id no longer exists
 /// (`resultCount` 0). Non-200 responses and errors are treated as alive.
-async fn apple_removed(client: &reqwest::Client, id: &str) -> bool {
+async fn is_apple_removed(client: &reqwest::Client, id: &str) -> bool {
     let url = format!("https://itunes.apple.com/lookup?id={id}");
     let Ok(resp) = client.get(&url).send().await else {
         return false;
@@ -172,7 +172,7 @@ pub async fn check_yandex(client: &reqwest::Client, posts: &mut [Post], concurre
 
     let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, id)| {
         let client = client.clone();
-        async move { (i, yandex_removed(&client, &id).await) }
+        async move { (i, is_yandex_removed(&client, &id).await) }
     }))
     .buffer_unordered(concurrency.max(1))
     .collect()
@@ -200,7 +200,7 @@ fn yandex_track_id(embed_url: &str) -> Option<String> {
 /// True only when the API responded but the track isn't available (`"available":
 /// true` absent while a `"result"` is present) — a removed or region-locked
 /// track. Network errors / unparseable responses are treated as alive.
-async fn yandex_removed(client: &reqwest::Client, id: &str) -> bool {
+async fn is_yandex_removed(client: &reqwest::Client, id: &str) -> bool {
     let url = format!("https://api.music.yandex.net/tracks/{id}");
     let Ok(resp) = client.get(&url).send().await else {
         return false;
@@ -210,4 +210,96 @@ async fn yandex_removed(client: &reqwest::Client, id: &str) -> bool {
     };
     let compact: String = body.chars().filter(|c| !c.is_whitespace()).collect();
     compact.contains("\"result\":") && !compact.contains("\"available\":true")
+}
+
+/// Instagram serves og meta only to a link-preview crawler UA; a live post has a
+/// non-empty `og:title`, a removed one doesn't.
+const INSTAGRAM_UA: &str =
+    "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)";
+/// Instagram aggressively rate-limits datacenter IPs, so checks run one at a time
+/// with this gap between them (not concurrent).
+const INSTAGRAM_DELAY_SECS: u64 = 30;
+
+/// Mark posts whose Instagram post isn't confirmed live, so an attached video is
+/// kept instead of a dead embed. Only posts that actually have a video are
+/// checked (that's the only case the embed replaces). Sequential with a delay,
+/// and every failure is logged so throttling is visible later.
+pub async fn check_instagram(client: &reqwest::Client, posts: &mut [Post]) {
+    let targets: Vec<(usize, String)> = posts
+        .iter()
+        .enumerate()
+        .filter(|(_, p)| has_video(&p.media))
+        .filter_map(|(i, p)| p.instagram.clone().map(|u| (i, u)))
+        .collect();
+    if targets.is_empty() {
+        return;
+    }
+    tracing::info!(
+        "checking {} Instagram link(s) for liveness ({}s apart)",
+        targets.len(),
+        INSTAGRAM_DELAY_SECS
+    );
+    let (mut live, mut kept) = (0usize, 0usize);
+    for (n, (i, url)) in targets.iter().enumerate() {
+        if n > 0 {
+            tokio::time::sleep(std::time::Duration::from_secs(INSTAGRAM_DELAY_SECS)).await;
+        }
+        if is_instagram_removed(client, url).await {
+            posts[*i].instagram_dead = true;
+            kept += 1;
+        } else {
+            live += 1;
+        }
+    }
+    tracing::info!("Instagram liveness: {live} live (embedded), {kept} kept (gone/unverifiable)");
+}
+
+/// True unless the post is confirmed live (HTTP 200 with a non-empty `og:title`,
+/// which Instagram serves to this crawler UA even from datacenter IPs). A removed
+/// post, a throttle/login redirect and a network error all fail that test and
+/// keep the video — we never drop a video on an unverified post. Every
+/// non-confirmed case is logged with status and body size: a login/challenge
+/// redirect is a small body, a real "post unavailable" page is the full ~600 KB
+/// shell, so throttling stays distinguishable in the logs if it shows up.
+async fn is_instagram_removed(client: &reqwest::Client, url: &str) -> bool {
+    let resp = match client
+        .get(url)
+        .header(reqwest::header::USER_AGENT, INSTAGRAM_UA)
+        .send()
+        .await
+    {
+        Ok(r) => r,
+        Err(e) => {
+            tracing::warn!("Instagram liveness request failed ({url}): {e:#}");
+            return true;
+        }
+    };
+    let status = resp.status();
+    let body = resp.text().await.unwrap_or_default();
+    if status.is_success() && has_nonempty_og(&body, "og:title") {
+        return false; // confirmed live → replace the video with the embed
+    }
+    if status.is_success() {
+        tracing::warn!(
+            "Instagram liveness: 200 without og:title for {url} ({} bytes) — keeping the video",
+            body.len()
+        );
+    } else {
+        tracing::warn!("Instagram liveness: HTTP {status} for {url} — keeping the video");
+    }
+    true
+}
+
+/// True if `property="<prop>" content="` is present with a non-empty value.
+fn has_nonempty_og(body: &str, prop: &str) -> bool {
+    let needle = format!("property=\"{prop}\" content=\"");
+    body.find(&needle)
+        .is_some_and(|i| !body[i + needle.len()..].starts_with('"'))
+}
+
+fn has_video(media: &[crate::model::Media]) -> bool {
+    use crate::model::Media;
+    media
+        .iter()
+        .any(|m| matches!(m, Media::Video { .. } | Media::VideoPoster { .. }))
 }
