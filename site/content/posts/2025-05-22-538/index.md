@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/538"
 og_image = "01.jpg"
 next_id = 539
 next_title = ""
+next_body = "#book\n#health\n#zoloft\n#christian"
 prev_id = 537
 prev_title = ""
+prev_body = "#webdesign\n#yandex"
 views = 46
 ids = [538]
 +++

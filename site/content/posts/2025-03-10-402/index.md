@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/402"
 og_image = "5366044660184771940_1249379632_456256868.jpg"
 next_id = 403
 next_title = ""
+next_body = "I have custom CSS for a dozen of web services.\nCustom CSS for #firefox UI.\nCustom system UI (#i3).\nLove it. Black, minimal."
 prev_id = 400
 prev_title = ""
+prev_body = ""
 views = 43
 ids = [402]
 +++

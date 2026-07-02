@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/718"
 og_image = "5460802865779047402_1271442246_456260586.jpg"
 next_id = 719
 next_title = ""
+next_body = "#webdesign\n#games\n#rpg"
 prev_id = 717
 prev_title = ""
+prev_body = "#life\n#deep\n#silence\nПочему ты всё время молчишь, у тебя нет тем для разговора\nSource"
 views = 29
 ids = [718]
 +++

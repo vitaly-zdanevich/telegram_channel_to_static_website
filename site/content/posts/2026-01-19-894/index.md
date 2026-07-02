@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/894"
 og_image = "5438156503958359169_1266169479_460000385.jpg"
 next_id = 895
 next_title = ""
+next_body = "#belarus\n#blogustut\n#building\n#year2004\nSource"
 prev_id = 893
 prev_title = ""
+prev_body = "#webdesign\n#arctic\n#year2004\narcticdigitalnomads.com"
 views = 9
 ids = [894]
 +++

@@ -13,8 +13,10 @@ day = "2025-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/445"
 next_id = 446
 next_title = ""
+next_body = "#teapot\n#update\nFrom"
 prev_id = 444
 prev_title = ""
+prev_body = "#monetization\n#spyware\n#security\n#webextension"
 views = 171
 ids = [445]
 +++
@@ -26,6 +28,6 @@ ids = [445]
 
 [Source](https://www.instagram.com/p/DGwoexUtWij)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DGwoexUtWij/") }}
 
 {{ tag(t="video") }}

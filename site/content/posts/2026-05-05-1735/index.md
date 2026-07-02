@@ -13,8 +13,10 @@ day = "2026-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1735"
 next_id = 1736
 next_title = ""
+next_body = "#bilibili #convertion #progress - nice #ux"
 prev_id = 1734
 prev_title = ""
+prev_body = "#map\n#batumi\nBetween the Black Sea and the mountains."
 views = 15
 ids = [1735]
 +++

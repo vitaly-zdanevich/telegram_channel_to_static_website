@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1111"
 og_image = "5224374876167148716_1216394565_460002476.jpg"
 next_id = 1112
 next_title = ""
+next_body = "Editing #wikipedia, in #vim"
 prev_id = 1110
 prev_title = ""
+prev_body = "#ai\n#ruwiki\nNo trust in robots."
 views = 17
 ids = [1111]
 +++

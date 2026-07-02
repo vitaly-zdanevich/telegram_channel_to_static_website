@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1115"
 og_image = "5237858470726408289_1219533959_460003425.jpg"
 next_id = 1116
 next_title = ""
+next_body = "#pain\n#ad\n#event\n#sergeykulinkovich\nThe old one\nУнижение и боль\nСеминар-исповедь Сергея Кулинковича о том, как светлые на первый взгляд идеи с треском проваливались и тянули на дно проект за проектом."
 prev_id = 1114
 prev_title = ""
+prev_body = "#python\nSame #dot - different meaning\nfor f in os.listdir('.')\nif not f.startswith('.')"
 views = 13
 ids = [1115]
 +++

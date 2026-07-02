@@ -13,9 +13,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/384"
 og_image = "5330160680873094490_1241024742_456256858.jpg"
 next_id = 385
 next_title = ""
+next_body = "#pelevin\n#apple\n#buddhism"
 prev_id = 383
 prev_title = ""
-views = 56
+prev_body = "Source"
+views = 57
 ids = [384]
 +++
 

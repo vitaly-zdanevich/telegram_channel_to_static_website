@@ -13,8 +13,10 @@ day = "2025-10-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/696"
 next_id = 697
 next_title = ""
+next_body = "#turkey\n#map\n#population\nSource"
 prev_id = 695
 prev_title = ""
+prev_body = "#journal\nAfter traveling through multiple countries, I feel that I prefer video games, books, YouTube.\nSome people love to travel so much..."
 views = 26
 ids = [696]
 +++

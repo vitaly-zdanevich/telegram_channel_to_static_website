@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/730"
 og_image = "01.jpg"
 next_id = 731
 next_title = ""
+next_body = "good\n#evernote\n#youtube\n#ifttt"
 prev_id = 729
 prev_title = ""
+prev_body = "I continue to write my script for importing ratings from #metacritic reviewers, creating #wikidata items for sites that no longer exists, and trying to download these dead sites from web.archive.org so that I can later put them on Gitlab’s free static hosting, because there is no content search on web.archive.org"
 views = 150
 ids = [730]
 +++

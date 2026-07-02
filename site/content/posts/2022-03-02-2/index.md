@@ -12,12 +12,16 @@ day = "2022-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2"
 next_id = 3
 next_title = ""
+next_body = "Channel photo updated"
 prev_id = 1
 prev_title = ""
+prev_body = "Channel created"
 views = 49
 ids = [2]
 +++
 
-Записал подкаст с <https://www.linkedin.com/in/anatolibabenia>
+Записал подкаст с <https://www.linkedin.com/in/anatolibabenia>  
 
-📎 001-vitaly-zdanevich-and-anatoly-babenia.mp3 *(not archived)*
+<https://www.youtube.com/watch?v=FvoWznjetFc&list=PL7MgT49tMAJ4NMsqvBgfqEvLaP1-Rtipz&index=2>
+
+{{ youtube(id="FvoWznjetFc") }}

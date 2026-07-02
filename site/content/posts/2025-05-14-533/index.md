@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/533"
 og_image = "5271908782466788849_1227461915_456257009.jpg"
 next_id = 534
 next_title = ""
+next_body = "From globustut.by\n#photo\n#babruysk"
 prev_id = 532
 prev_title = ""
+prev_body = "From globustut.by\n#photo\n#building\n#ad\n#history\n#babruysk"
 views = 52
 ids = [533]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/819"
 og_image = "5368708261466541835_1249999800_460001035.jpg"
 next_id = 820
 next_title = ""
+next_body = "#hardware\n#laptop\nToshiba Libretto"
 prev_id = 818
 prev_title = ""
+prev_body = "#pypi\n#donation"
 views = 26
 ids = [819]
 +++

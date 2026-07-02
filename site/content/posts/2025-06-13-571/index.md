@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/571"
 og_image = "01.jpg"
 next_id = 573
 next_title = ""
+next_body = "#archiving\nLost."
 prev_id = 570
 prev_title = ""
+prev_body = "#meditation\n#dantealigieri\nSource"
 views = 31
 ids = [571]
 +++

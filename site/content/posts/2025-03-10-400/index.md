@@ -12,8 +12,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/400"
 og_image = "01.jpg"
 next_id = 402
 next_title = ""
+next_body = "Guess the country\nSource"
 prev_id = 399
 prev_title = ""
+prev_body = "#ironman\n#arsenmarkaryan\n#meaning\n#comparison\n#motivation\nSource"
 views = 48
 ids = [400]
 +++

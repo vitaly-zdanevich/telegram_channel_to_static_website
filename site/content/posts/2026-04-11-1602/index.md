@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1602"
 og_image = "01.jpg"
 next_id = 1612
 next_title = ""
+next_body = "I wrote, with #ai, a nice #script to #find top #biggest #folders - that has no other subfolders (#leaf folders):\nfind . -type d -links 2 -exec du -sh {} + | sort -hr | head\nOutput example:\n6.3G ./ДА Житомирської області/01 Ф - фонди дорадянського періоду/0118/010118-14/010118-14-00018\n5.3G ./ЦДІАЛ/0080/010020-10-00088\n4.8G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/024/Beregszasz\n4.3G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/054\n4.3G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/045\n4.1G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/026/Beregszasz\n3.8G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/044\n3.5G ./ДА Харківської області/01/0031/010031-141-00523\n3.4G ./ДА Донецької області/01/0020/010020-01-00007\n3.3G ./ДА Харківської області/01/0040/0105/010040-105-00969\nExplanation:\nOn most Linux filesystems (like ext4), a directory with no subdirectories has exactly 2 #hardlink (. and its entry in the parent). This is much faster…"
 prev_id = 1600
 prev_title = ""
+prev_body = "#icq\n#offline\n#abandone\n#sonyericsson\nSource"
 views = 16
 ids = [1602]
 +++

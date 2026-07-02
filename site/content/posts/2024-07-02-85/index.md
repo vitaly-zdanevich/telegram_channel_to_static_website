@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/85"
 og_image = "5197437665916609520_1210122757_456254448.jpg"
 next_id = 86
 next_title = ""
+next_body = "I moved /.vim to /.config/vim, you also can"
 prev_id = 84
 prev_title = ""
+prev_body = ""
 views = 59
 ids = [85]
 +++

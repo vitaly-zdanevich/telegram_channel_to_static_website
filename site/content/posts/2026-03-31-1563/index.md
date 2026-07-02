@@ -13,8 +13,10 @@ day = "2026-03-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1563"
 next_id = 1564
 next_title = ""
+next_body = "#god\n#smartphone\n#game"
 prev_id = 1562
 prev_title = ""
+prev_body = "#webdesign\n#photo\n#people\n#gamedev\n#icepicklodge"
 views = 22
 ids = [1563]
 +++

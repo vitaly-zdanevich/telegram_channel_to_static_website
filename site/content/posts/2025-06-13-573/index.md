@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/573"
 og_image = "5359475683799200970_1247850173_456258762.jpg"
 next_id = 574
 next_title = ""
+next_body = "#korolishut\nSource"
 prev_id = 571
 prev_title = ""
+prev_body = "#livecoding\n#batman\n#binarysearch\n#leetcode with games :("
 views = 39
 ids = [573]
 +++

@@ -13,9 +13,11 @@ day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1864"
 next_id = 1865
 next_title = ""
+next_body = "Wow, Gemini generates good logos, tried it for the first time\n#gemini\n#logo\n#telegrambot\n#wikimediacommons"
 prev_id = 1863
 prev_title = ""
-views = 16
+prev_body = "My new #bash #alias\nbind '\"ej\": \"!#:$ e^\"'\n# Alt J repeats prev word\n# This is useful when, for example, you want to rename a file,\n# for example - to adjust it file extension.\n/.inputrc syntax is simpler:\n\"ej\": \"!#:$ e^\""
+views = 18
 ids = [1864]
 +++
 

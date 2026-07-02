@@ -13,9 +13,11 @@ day = "2026-04-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1678"
 next_id = 1679
 next_title = ""
+next_body = "#log\nStill running my experiment about #porting #primeworld from Windows/DirectX to Linux/OpenGL, 100% on autopilot..."
 prev_id = 1674
 prev_title = ""
-views = 13
+prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
+views = 14
 ids = [1678]
 +++
 

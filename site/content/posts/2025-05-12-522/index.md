@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/522"
 og_image = "5264726708089648938_1225789708_456259370.jpg"
 next_id = 523
 next_title = ""
+next_body = "#belarus\n#history\n#lost\n#offline"
 prev_id = 521
 prev_title = ""
+prev_body = "#displays\nDream setup. Now I have 4.\nSource"
 views = 28
 ids = [522]
 +++

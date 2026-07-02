@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1730"
 og_image = "5454183865913119800_1269901140_460002360.jpg"
 next_id = 1731
 next_title = ""
+next_body = "#colors\n#cables\n#pole\nSource"
 prev_id = 1729
 prev_title = ""
-views = 16
+prev_body = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote (#cli of #evernote) to #rust, a few iterations - and I got #reeknote - faster geeknote."
+views = 17
 ids = [1730]
 +++
 

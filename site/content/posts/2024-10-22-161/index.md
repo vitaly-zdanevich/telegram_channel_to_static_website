@@ -12,8 +12,10 @@ day = "2024-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/161"
 next_id = 162
 next_title = ""
+next_body = "Как я загружаю в Wikimedia Commons, день из жизни\nУпоминаемые мои скрипты:"
 prev_id = 160
 prev_title = ""
+prev_body = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
 views = 35
 ids = [161]
 +++

@@ -13,8 +13,10 @@ day = "2024-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/170"
 next_id = 171
 next_title = ""
+next_body = "The same story"
 prev_id = 169
 prev_title = ""
+prev_body = "bilibili.com capcha"
 views = 44
 ids = [170]
 +++

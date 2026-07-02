@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/441"
 og_image = "5406954455607405557_1258904686_456256501.jpg"
 next_id = 442
 next_title = ""
+next_body = "wow in #telegram we have a #crypto #wallet, and users can send money to their contacts, wow"
 prev_id = 440
 prev_title = ""
+prev_body = "#music\n#car\nMick Gordon - BFG division from #doom3\nSource"
 views = 34
 ids = [441]
 +++

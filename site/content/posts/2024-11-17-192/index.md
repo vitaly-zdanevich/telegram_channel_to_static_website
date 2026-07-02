@@ -13,8 +13,10 @@ day = "2024-11-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/192"
 next_id = 193
 next_title = ""
+next_body = "#webdesign"
 prev_id = 191
 prev_title = ""
+prev_body = ""
 views = 46
 ids = [192]
 +++

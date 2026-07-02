@@ -12,9 +12,11 @@ day = "2025-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/333"
 next_id = 334
 next_title = ""
+next_body = ""
 prev_id = 331
 prev_title = ""
-views = 42
+prev_body = "Batumi real estate market"
+views = 43
 ids = [333]
 +++
 

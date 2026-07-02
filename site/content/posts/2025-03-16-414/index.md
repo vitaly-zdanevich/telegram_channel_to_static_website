@@ -13,8 +13,10 @@ day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/414"
 next_id = 415
 next_title = ""
+next_body = "#cat\n#robot\n#lasers\nSource"
 prev_id = 413
 prev_title = ""
+prev_body = "#caffee\n#nightclub\nSource"
 views = 35
 ids = [414]
 +++
@@ -25,6 +27,6 @@ ids = [414]
 
 [Source](https://www.instagram.com/p/DG0It_-K_Ko)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DG0It_-K_Ko/") }}
 
 {{ tag(t="video") }}

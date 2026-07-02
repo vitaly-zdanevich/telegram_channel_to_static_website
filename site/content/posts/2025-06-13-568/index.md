@@ -13,8 +13,10 @@ day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/568"
 next_id = 569
 next_title = ""
+next_body = "#stat\n#oscar\n#books\n#dantealigieri\nSource"
 prev_id = 567
 prev_title = ""
+prev_body = "#darkpattern"
 views = 23
 ids = [568]
 +++
@@ -26,6 +28,6 @@ ids = [568]
 
 [Source](https://www.instagram.com/p/DKOrF01i-_4)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DKOrF01i-_4/") }}
 
 {{ tag(t="video") }}

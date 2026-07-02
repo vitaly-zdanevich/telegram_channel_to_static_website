@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/575"
 og_image = "01.jpg"
 next_id = 576
 next_title = ""
+next_body = "#photo\n#batumi\n#chandelier"
 prev_id = 574
 prev_title = ""
+prev_body = "#korolishut\nSource"
 views = 37
 ids = [575]
 +++

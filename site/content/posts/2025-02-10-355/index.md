@@ -13,8 +13,10 @@ day = "2025-02-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/355"
 next_id = 356
 next_title = ""
+next_body = "#ai\n#chatgpt\nSource"
 prev_id = 354
 prev_title = ""
+prev_body = "#music\n#anime\n#tatu\n#rammstein"
 views = 48
 ids = [355]
 +++

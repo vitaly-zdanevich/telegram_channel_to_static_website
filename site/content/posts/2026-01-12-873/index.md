@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/873"
 og_image = "5413674120924303858_1260469230_460001778.jpg"
 next_id = 874
 next_title = ""
+next_body = "#wikipedia\n#bewiki\n#betarask\nI was not active here."
 prev_id = 872
 prev_title = ""
+prev_body = "Wow #wikipedia semi-automatic editing by a #python script"
 views = 25
 ids = [873]
 +++

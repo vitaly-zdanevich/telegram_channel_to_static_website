@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/527"
 og_image = "5266978507903333095_1226313996_456258279.jpg"
 next_id = 528
 next_title = ""
+next_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/"
 prev_id = 526
 prev_title = ""
+prev_body = "#homm3\n#foss\n#vcmi"
 views = 35
 ids = [527]
 +++

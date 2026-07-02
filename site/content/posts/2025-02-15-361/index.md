@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/361"
 og_image = "5296425538124113913_1233170167_456255481.jpg"
 next_id = 362
 next_title = ""
+next_body = "#coin\nIts real coins, from Cook Islands\nSource"
 prev_id = 360
 prev_title = ""
+prev_body = "#religion\nSource"
 views = 39
 ids = [361]
 +++

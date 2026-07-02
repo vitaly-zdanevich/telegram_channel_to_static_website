@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2026-03-01T14:14:21+00:00
-description = "village belarus globustut year2005Source"
+description = "village belarus globustut year2005 Source"
 
 [taxonomies]
 days = ["2026-03-01"]
@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1280"
 og_image = "01.jpg"
 next_id = 1284
 next_title = ""
+next_body = "#grave\n#stone\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1271
 prev_title = ""
+prev_body = "#stones\n#monument\n#belarus\n#globustut\n#year2005\nSource"
 views = 13
 ids = [1280]
 +++
@@ -23,7 +25,9 @@ ids = [1280]
 {{ tag(t="village") }}  
 {{ tag(t="belarus") }}  
 {{ tag(t="globustut") }}  
-{{ tag(t="year_2005") }}[Source](https://commons.wikimedia.org/wiki/File:052-168_%D0%9A%D1%83%D1%82%D1%8B,_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B_%D0%BE%D1%82_%D0%B4%D0%BE%D1%82%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
+{{ tag(t="year_2005") }}
+
+[Source](https://commons.wikimedia.org/wiki/File:052-168_%D0%9A%D1%83%D1%82%D1%8B,_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B_%D0%BE%D1%82_%D0%B4%D0%BE%D1%82%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
 ![](01.jpg)
 

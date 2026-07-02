@@ -13,8 +13,10 @@ day = "2025-08-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/614"
 next_id = 615
 next_title = ""
+next_body = "How to ask for a #darkmode"
 prev_id = 613
 prev_title = ""
+prev_body = "#arsenmarkaryan\n#hairs\nВ волосах первородная космическая сила. Лысых пророков, или коротко стриженных, не бывало.\nSource"
 views = 34
 ids = [614]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1119"
 og_image = "5242389218842057393_1220588856_460004017.jpg"
 next_id = 1120
 next_title = ""
+next_body = "#ai\n#codex\n#love Codex, using it almost every day, recently solved a few long lasting technical problems thanks to him."
 prev_id = 1118
 prev_title = ""
+prev_body = "#python\nMy #geeknote (#evernote #cli) now available on PyPI"
 views = 14
 ids = [1119]
 +++

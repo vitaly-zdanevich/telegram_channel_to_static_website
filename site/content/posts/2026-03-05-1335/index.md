@@ -13,8 +13,10 @@ day = "2026-03-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1335"
 next_id = 1336
 next_title = ""
+next_body = "...one of my #bash aliases: to count files here:\nc() {\nls -1 | wc -l\n# count files here\nhistory -d \"$(history 1 | awk '{print $1}')\"\n# delete from history\n}"
 prev_id = 1334
 prev_title = ""
+prev_body = "#bash\nI love #cli, scripts, and sometimes I want my script to accept an argument that is the same as the folder name. How to pass that current folder name to the script?\nupload.py file.pdf --category \"${PWD##/}\"\nYep, it works."
 views = 9
 ids = [1335]
 +++

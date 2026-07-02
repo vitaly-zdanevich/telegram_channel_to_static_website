@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/828"
 og_image = "5377549657803788303_1252058348_460001295.jpg"
 next_id = 829
 next_title = ""
+next_body = "#microsoft\n#microsoftword\n#session"
 prev_id = 827
 prev_title = ""
+prev_body = "My #ram price is going up"
 views = 29
 ids = [828]
 +++

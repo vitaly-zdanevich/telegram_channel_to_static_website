@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/874"
 og_image = "5415925920737988187_1260993518_460000859.jpg"
 next_id = 875
 next_title = ""
+next_body = "#monument\n#belarus\n#globustut\n#airplane\nSource"
 prev_id = 873
 prev_title = ""
+prev_body = "#map\nThe Earth, centred around #newzealand\nSource"
 views = 15
 ids = [874]
 +++

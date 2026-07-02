@@ -13,8 +13,10 @@ day = "2025-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/374"
 next_id = 375
 next_title = ""
+next_body = "#game\n#armiesofexigo\nSource"
 prev_id = 372
 prev_title = ""
+prev_body = "Most Shocking Second a Day Video\nStill The Most Shocking Second A Day\n#ad\n#uk\n#war\n#girl\nSource\nSource"
 views = 94
 ids = [374]
 +++

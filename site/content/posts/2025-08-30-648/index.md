@@ -13,8 +13,10 @@ day = "2025-08-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/648"
 next_id = 649
 next_title = ""
+next_body = "Do you remember such #webdesign?\n#login\n#gamespot\nSource"
 prev_id = 647
 prev_title = ""
+prev_body = "#film\n#music\n#russia\n#korolishut\ns1e5, scene about a new girl Olga"
 views = 43
 ids = [648]
 +++

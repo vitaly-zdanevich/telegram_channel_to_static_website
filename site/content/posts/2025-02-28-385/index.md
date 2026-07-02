@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/385"
 og_image = "5336993870761815093_1242615718_456256565.jpg"
 next_id = 386
 next_title = ""
+next_body = "Released opera 2084"
 prev_id = 384
 prev_title = ""
-views = 48
+prev_body = "Source"
+views = 49
 ids = [385]
 +++
 

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/584"
 og_image = "5377444014489463329_1252033751_456256033.jpg"
 next_id = 585
 next_title = ""
+next_body = ""
 prev_id = 583
 prev_title = ""
+prev_body = "#photo\n#sakartvelo\n#botanicgarden\n#ladder"
 views = 36
 ids = [584]
 +++

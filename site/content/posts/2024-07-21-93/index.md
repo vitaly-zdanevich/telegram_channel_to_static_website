@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/93"
 og_image = "5253747019334409094_1223233300_456252294.jpg"
 next_id = 94
 next_title = ""
+next_body = "#firefox vertical tabs with plus custom CSS from"
 prev_id = 92
 prev_title = ""
+prev_body = "Guess the output #javascript\nconst obj4 = {\nname: \"obj4\",\ngetThis() {\nreturn this;\n},\n};\nconst obj5 = { name: \"obj5\" };\nobj5.getThis = obj4.getThis;\nconsole.log(obj5.getThis());"
 views = 54
 ids = [93]
 +++

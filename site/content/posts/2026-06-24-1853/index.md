@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1853"
 og_image = "5321338641957199181_1238970701_460004685.jpg"
 next_id = 1854
 next_title = ""
+next_body = "#llm did big #telegram #stickers, even the #pullrequest\nThe patch."
 prev_id = 1852
 prev_title = ""
-views = 9
+prev_body = "what a #stickerpack"
+views = 10
 ids = [1853]
 +++
 

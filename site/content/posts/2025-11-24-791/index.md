@@ -13,8 +13,10 @@ day = "2025-11-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/791"
 next_id = 792
 next_title = ""
+next_body = "#game\n#strategy\n#rtt\n#groundcontrol\nThe #bishop defector death - dramatic moment, from minute 9"
 prev_id = 790
 prev_title = ""
+prev_body = "#game\n#strategy\n#video\n#review\n#groundcontrol\n#year2000\nSource"
 views = 41
 ids = [791]
 +++

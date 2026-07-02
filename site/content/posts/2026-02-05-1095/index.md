@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1095"
 og_image = "01.jpg"
 next_id = 1097
 next_title = ""
+next_body = "I love #display aspect ratio 16x10 because I have the special space for #youtube #ui, when most videos are 16x9"
 prev_id = 1094
 prev_title = ""
+prev_body = "#firefox translation from #german to #russian"
 views = 17
 ids = [1095]
 +++

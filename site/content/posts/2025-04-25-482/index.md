@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/482"
 og_image = "5215716724605844765_1214378682_456260893.jpg"
 next_id = 483
 next_title = ""
+next_body = "My new article on #wikipedia"
 prev_id = 481
 prev_title = ""
-views = 34
+prev_body = "#sex\n#mouse\n#horoscope\nFrom"
+views = 35
 ids = [482]
 +++
 

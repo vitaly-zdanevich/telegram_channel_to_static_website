@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1110"
 og_image = "5220016957535490650_1215379908_460001882.jpg"
 next_id = 1111
 next_title = ""
+next_body = "#js\nI downloaded it - really 0 bytes."
 prev_id = 1109
 prev_title = ""
+prev_body = ""
 views = 19
 ids = [1110]
 +++

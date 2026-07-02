@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/836"
 og_image = "5384459448434233871_1253667159_460001807.jpg"
 next_id = 837
 next_title = ""
+next_body = "#vr\nSource"
 prev_id = 835
 prev_title = ""
+prev_body = "#webdesign\n#petersburg\n#theater"
 views = 23
 ids = [836]
 +++

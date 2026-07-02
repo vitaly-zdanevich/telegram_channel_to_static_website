@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/936"
 og_image = "01.jpg"
 next_id = 938
 next_title = ""
+next_body = "Top 1% by #python, hm, not sure why"
 prev_id = 935
 prev_title = ""
+prev_body = "#vibecoding without human review is #gambling\nFrom"
 views = 15
 ids = [936]
 +++

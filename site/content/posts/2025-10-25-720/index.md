@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/720"
 og_image = "5472354420839806576_1274131802_456259184.jpg"
 next_id = 724
 next_title = ""
+next_body = "#game\n#godofwar\n#playstation\n#compare\n🪓 Наглядное сравнение боя Кратоса и Тора из God of War Ragnarök на PS1 и PS5"
 prev_id = 719
 prev_title = ""
+prev_body = "#webdesign\n#games\n#rpg"
 views = 40
 ids = [720]
 +++

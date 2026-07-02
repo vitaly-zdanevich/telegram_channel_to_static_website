@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/814"
 og_image = "5361604072026346126_1248345727_460001934.jpg"
 next_id = 815
 next_title = ""
+next_body = "#starwars\n#village\n#татуиново\nSource"
 prev_id = 813
 prev_title = ""
+prev_body = "#ui\n#windows\n#windowsxp"
 views = 43
 ids = [814]
 +++

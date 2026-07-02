@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/712"
 og_image = "5458701707648303030_1270953032_456261558.jpg"
 next_id = 713
 next_title = ""
+next_body = "In #kitty terminal) you can always highlight something, for example \"error\" in any case:\nmap f2 togglemarker itext 1 error\nmark1foreground black\nmark1background red\nReload the config with Ctrl-Shift-F5\nPress F2 to toggle the highlight."
 prev_id = 711
 prev_title = ""
+prev_body = "#games\n#steam"
 views = 27
 ids = [712]
 +++

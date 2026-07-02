@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/752"
 og_image = "5229215222705359661_1217521546_460000045.jpg"
 next_id = 753
 next_title = ""
+next_body = "#design\n#webdesign\n#webdesignold\n#xbox"
 prev_id = 751
 prev_title = ""
+prev_body = "#design\n#webdesign\n#webdesignold"
 views = 20
 ids = [752]
 +++

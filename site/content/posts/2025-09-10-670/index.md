@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/670"
 og_image = "5334931646509611961_1242135569_456260537.jpg"
 next_id = 671
 next_title = ""
+next_body = "#video\n#film\n#nightwatch\n#zavulon\nSource"
 prev_id = 669
 prev_title = ""
+prev_body = "#map\n#isis\nSource"
 views = 47
 ids = [670]
 +++

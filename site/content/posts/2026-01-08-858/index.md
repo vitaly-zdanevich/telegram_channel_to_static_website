@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/858"
 og_image = "5404782293081068312_1258398940_460002072.jpg"
 next_id = 859
 next_title = ""
+next_body = "#belarus\n#iŭje\n#building\n#globustut\nSource"
 prev_id = 857
 prev_title = ""
+prev_body = "#belarus\n#minsk\n1941-1944\nSource"
 views = 17
 ids = [858]
 +++

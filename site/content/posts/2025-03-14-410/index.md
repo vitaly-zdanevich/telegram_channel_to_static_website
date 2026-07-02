@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/410"
 og_image = "5379612612196693870_1252538667_456259438.jpg"
 next_id = 411
 next_title = ""
+next_body = ""
 prev_id = 409
 prev_title = ""
+prev_body = "#universe\n#consciousness\nSource"
 views = 31
 ids = [410]
 +++

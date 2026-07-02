@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/189"
 og_image = "5308050846363281449_1235876895_456255529.jpg"
 next_id = 190
 next_title = ""
+next_body = "#game #stalker2"
 prev_id = 188
 prev_title = ""
+prev_body = "Love such comments #code"
 views = 40
 ids = [189]
 +++

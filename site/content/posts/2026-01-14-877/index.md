@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/877"
 og_image = "5422584726364556597_1262543892_460000565.jpg"
 next_id = 878
 next_title = ""
+next_body = "#saint\n#scull\n#fashion\nSaint Francis of Assisi, by José de Ribera, 1643\nSource"
 prev_id = 876
 prev_title = ""
+prev_body = "#macOS: to install #git I need 25 GB"
 views = 11
 ids = [877]
 +++

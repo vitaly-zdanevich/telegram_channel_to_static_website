@@ -13,8 +13,10 @@ day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/570"
 next_id = 571
 next_title = ""
+next_body = "#livecoding\n#batman\n#binarysearch\n#leetcode with games :("
 prev_id = 569
 prev_title = ""
+prev_body = "#stat\n#oscar\n#books\n#dantealigieri\nSource"
 views = 34
 ids = [570]
 +++
@@ -24,6 +26,6 @@ ids = [570]
 
 [Source](https://www.instagram.com/p/DGpQj-jvZQ3)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DGpQj-jvZQ3/") }}
 
 {{ tag(t="video") }}

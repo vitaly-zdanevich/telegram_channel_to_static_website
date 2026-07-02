@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/817"
 og_image = "5366212030769073340_1249418601_460000444.jpg"
 next_id = 818
 next_title = ""
+next_body = "#pypi\n#donation"
 prev_id = 816
 prev_title = ""
+prev_body = "#it\n#relocation\n#uzbekistan\n#tajikistan\n#afghanistan\n#iran\n#turkey\n#azerbaijan\n#armenia\n#syria\n#sakartvelo\n#iraq\nSource"
 views = 32
 ids = [817]
 +++
@@ -25,6 +27,7 @@ ids = [817]
 {{ tag(t="architecture") }}  
 {{ tag(t="building") }}  
 {{ tag(t="war") }}  
+
 [Source](https://www.pinterest.com/pin/109001253476493132)
 
 ![](5366212030769073340_1249418601_460000444.jpg)

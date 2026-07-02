@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1827"
 og_image = "01.jpg"
 next_id = 1829
 next_title = ""
+next_body = "#tech\n#psp\n#finalfantasy"
 prev_id = 1826
 prev_title = ""
+prev_body = "#bus\n#architecture\nSource"
 views = 96
 ids = [1827]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/548"
 og_image = "5330353748242985817_1241069694_456258393.jpg"
 next_id = 549
 next_title = ""
+next_body = "Another #userstyle: for #openstreetmap, only a few CSS lines"
 prev_id = 546
 prev_title = ""
+prev_body = "PromoDJ #music genres"
 views = 52
 ids = [548]
 +++

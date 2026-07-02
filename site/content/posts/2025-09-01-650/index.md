@@ -13,8 +13,10 @@ day = "2025-09-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/650"
 next_id = 651
 next_title = ""
+next_body = "#wikimediafoundation #office from 2024\nSource"
 prev_id = 649
 prev_title = ""
+prev_body = "Do you remember such #webdesign?\n#login\n#gamespot\nSource"
 views = 39
 ids = [650]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/436"
 og_image = "5384349651886533523_1253641595_456256403.jpg"
 next_id = 438
 next_title = ""
+next_body = "#dieantwoord\nSource"
 prev_id = 435
 prev_title = ""
+prev_body = "#dieantwoord\nSource"
 views = 44
 ids = [436]
 +++

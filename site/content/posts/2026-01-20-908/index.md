@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/908"
 og_image = "5440408303772044081_1266693767_460000049.jpg"
 next_id = 909
 next_title = ""
+next_body = "#belarus\n#village\n#year2004\n#globustut"
 prev_id = 907
 prev_title = ""
+prev_body = "wow I can edit #wikipedia in #vim, thanks to\nto #git pull/push\nand\nfor autocompletion"
 views = 9
 ids = [908]
 +++

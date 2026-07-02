@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/159"
 og_image = "5202194574125163612_1211230311_456254556.jpg"
 next_id = 160
 next_title = ""
+next_body = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
 prev_id = 158
 prev_title = ""
+prev_body = "Night Watch: Special Edition #game"
 views = 56
 ids = [159]
 +++

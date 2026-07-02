@@ -13,9 +13,11 @@ day = "2026-06-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1871"
 next_id = 1872
 next_title = ""
+next_body = "#death\n#jump\n#spirit\nSource"
 prev_id = 1870
 prev_title = ""
-views = 62
+prev_body = "#belarus\n#колодищи\n#architecture\n#church\nAuthor: Димитров Денис\nSource"
+views = 66
 ids = [1871]
 +++
 
@@ -27,6 +29,6 @@ ids = [1871]
 
 [Source](https://www.instagram.com/p/DZxxHvZIRyr)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DZxxHvZIRyr/") }}
 
 {{ tag(t="video") }}

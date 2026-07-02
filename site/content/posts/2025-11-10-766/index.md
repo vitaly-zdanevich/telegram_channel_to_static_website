@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/766"
 og_image = "5228869099880911230_1217440958_460001662.jpg"
 next_id = 767
 next_title = ""
+next_body = "#webdesign\n#webdesignold"
 prev_id = 765
 prev_title = ""
+prev_body = "#painting\n#gustavedore\nWoman of the Apocalypse\nSource"
 views = 36
 ids = [766]
 +++

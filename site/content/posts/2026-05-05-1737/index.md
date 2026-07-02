@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1737"
 og_image = "5463320146114974742_1272028346_460002326.jpg"
 next_id = 1738
 next_title = ""
+next_body = "#webdesign\n#video\n#bilibili"
 prev_id = 1736
 prev_title = ""
+prev_body = "#bilibili #convertion #progress - nice #ux"
 views = 14
 ids = [1737]
 +++

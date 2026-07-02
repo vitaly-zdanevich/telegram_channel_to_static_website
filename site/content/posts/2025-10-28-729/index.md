@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/729"
 og_image = "5190885594522320570_1208597234_456261306.jpg"
 next_id = 730
 next_title = ""
+next_body = "#sakartvelo\n#batumi\n#misha\n#trump"
 prev_id = 728
 prev_title = ""
+prev_body = "#design\n#purple\n#gamepad\n#gamecube\nSource"
 views = 31
 ids = [729]
 +++

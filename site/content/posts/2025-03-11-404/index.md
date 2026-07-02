@@ -13,8 +13,10 @@ day = "2025-03-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/404"
 next_id = 405
 next_title = ""
+next_body = "#health\n#pubmed\n#aura\nSource"
 prev_id = 403
 prev_title = ""
+prev_body = "I have custom CSS for a dozen of web services.\nCustom CSS for #firefox UI.\nCustom system UI (#i3).\nLove it. Black, minimal."
 views = 49
 ids = [404]
 +++
@@ -25,6 +27,7 @@ ids = [404]
 {{ tag(t="ai") }}  
 {{ tag(t="girl") }}  
 {{ tag(t="virtual") }}  
+
 [Source](https://www.youtube.com/watch?v=nkcKaNqfykg)
 
 {{ youtube(id="nkcKaNqfykg") }}

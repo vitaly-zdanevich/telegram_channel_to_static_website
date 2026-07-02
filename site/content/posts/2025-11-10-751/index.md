@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/751"
 og_image = "5229215222705359631_1217521546_460000015.jpg"
 next_id = 752
 next_title = ""
+next_body = "Another one is dead - the blue circles ended last month."
 prev_id = 750
 prev_title = ""
+prev_body = "Don Quixote by #gustavedore, 1863 year\n#painting\n#horse\n#sky\nSource"
 views = 19
 ids = [751]
 +++

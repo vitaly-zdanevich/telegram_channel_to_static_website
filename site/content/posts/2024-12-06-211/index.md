@@ -12,8 +12,10 @@ day = "2024-12-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/211"
 next_id = 212
 next_title = ""
+next_body = ""
 prev_id = 210
 prev_title = ""
+prev_body = "Reminder about data preservation"
 views = 50
 ids = [211]
 +++

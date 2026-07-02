@@ -13,15 +13,18 @@ day = "2025-01-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/342"
 next_id = 343
 next_title = ""
+next_body = "#ai\nSource"
 prev_id = 341
 prev_title = ""
+prev_body = "#bathroom\nSource"
 views = 56
 ids = [342]
 +++
 
 {{ tag(t="fear") }}  
+
 [Source](https://www.instagram.com/reel/DCkyu5BRe_t)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/reel/DCkyu5BRe_t/") }}
 
 {{ tag(t="video") }}

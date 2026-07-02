@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1623"
 og_image = "5391330184927058070_1255266877_460003478.jpg"
 next_id = 1624
 next_title = ""
+next_body = "#preview on #bilibili\n#anime"
 prev_id = 1622
 prev_title = ""
+prev_body = "Про #викиданные/#wikidata (открытая база данных на #SPARQL), #wikimedia, #wikipedia\nМоя #лекция/митап в Лаборатории (это бар в Батуми).\nВсе линки на видео"
 views = 23
 ids = [1623]
 +++

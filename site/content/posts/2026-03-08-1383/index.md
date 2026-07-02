@@ -13,9 +13,11 @@ day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1383"
 next_id = 1384
 next_title = ""
+next_body = "#village\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1382
 prev_title = ""
-views = 11
+prev_body = "#castle\n#abandone\n#belarus\n#globustut\n#year2005\nSource"
+views = 12
 ids = [1383]
 +++
 

@@ -13,8 +13,10 @@ day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/417"
 next_id = 418
 next_title = ""
+next_body = "#hookah\n#robot\nSource"
 prev_id = 416
 prev_title = ""
+prev_body = "#music\n#germany\n#tax\n#rammstein\nSource"
 views = 31
 ids = [417]
 +++
@@ -26,6 +28,6 @@ ids = [417]
 
 [Source](https://www.instagram.com/p/DGxcEVpCMtU)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DGxcEVpCMtU/") }}
 
 {{ tag(t="video") }}

@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/531"
 og_image = "5269656982653106475_1226937627_456259883.jpg"
 next_id = 532
 next_title = ""
+next_body = "From globustut.by\n#photo\n#building\n#ad\n#history\n#babruysk"
 prev_id = 530
 prev_title = ""
+prev_body = "You can #upload to #commons through #darktable with this free plugin"
 views = 43
 ids = [531]
 +++

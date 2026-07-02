@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/833"
 og_image = "5382044023251471194_1253104774_460000090.jpg"
 next_id = 834
 next_title = ""
+next_body = "#botanic\n#botanicillustration\nSourceBHL287631.jpg)"
 prev_id = 832
 prev_title = ""
+prev_body = "#language\nВе́псский язы́к (самоназвание — vepsän kel') — язык вепсов, входящий в северную подветвь прибалтийско-финских языков финно-угорской ветви уральской языковой семьи\nSource"
 views = 20
 ids = [833]
 +++

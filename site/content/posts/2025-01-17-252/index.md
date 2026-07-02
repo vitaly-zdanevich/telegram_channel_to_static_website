@@ -13,8 +13,10 @@ day = "2025-01-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/252"
 next_id = 253
 next_title = ""
+next_body = "#film\n#scifi\n#space"
 prev_id = 251
 prev_title = ""
+prev_body = ""
 views = 30
 ids = [252]
 +++

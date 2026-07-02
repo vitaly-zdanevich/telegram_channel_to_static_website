@@ -13,8 +13,10 @@ day = "2025-10-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/705"
 next_id = 706
 next_title = ""
+next_body = "#wikidata\n#linux\n#warcraft3"
 prev_id = 704
 prev_title = ""
+prev_body = "#culture\n#archivation\n#future\n#green\n#research\nSource"
 views = 28
 ids = [705]
 +++
@@ -26,8 +28,9 @@ ids = [705]
 {{ tag(t="orange") }}  
 {{ tag(t="brutality") }}  
 {{ tag(t="psy") }}  
+
 [Source](https://www.instagram.com/p/DPlr-YQjLPJ)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DPlr-YQjLPJ/") }}
 
 {{ tag(t="video") }}

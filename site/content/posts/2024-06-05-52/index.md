@@ -12,8 +12,10 @@ day = "2024-06-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/52"
 next_id = 53
 next_title = ""
+next_body = "#film\n#nightwatch\nNight Watch, love it"
 prev_id = 51
 prev_title = ""
+prev_body = "My another ebuild: the game Gigalomania - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help."
 views = 58
 ids = [52]
 +++

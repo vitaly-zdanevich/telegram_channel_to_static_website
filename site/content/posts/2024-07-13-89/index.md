@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/89"
 og_image = "5229189083530648568_1217515460_456252408.jpg"
 next_id = 90
 next_title = ""
+next_body = ""
 prev_id = 88
 prev_title = ""
+prev_body = "Меньше митингов"
 views = 49
 ids = [89]
 +++

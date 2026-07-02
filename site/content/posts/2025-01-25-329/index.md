@@ -12,11 +12,13 @@ id = 329
 day = "2025-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/329"
 og_image = "5233675498993872612_1218560035_456257252.jpg"
-next_id = 331
+next_id = 330
 next_title = ""
+next_body = "#music"
 prev_id = 328
 prev_title = ""
-views = 53
+prev_body = ""
+views = 54
 ids = [329]
 +++
 

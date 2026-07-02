@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/593"
 og_image = "5420289298269335369_1262009446_456257353.jpg"
 next_id = 594
 next_title = ""
+next_body = "#webdesign\n#plan9"
 prev_id = 592
 prev_title = ""
+prev_body = "#book Designing Data-Intensive Applications and #wine"
 views = 43
 ids = [593]
 +++

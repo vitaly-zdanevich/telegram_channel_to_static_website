@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/645"
 og_image = "5301208284855926733_1234283737_456261581.jpg"
 next_id = 646
 next_title = ""
+next_body = "#film\n#music\n#russia\n#korolishut\ns1e5, start of the episode - live show"
 prev_id = 644
 prev_title = ""
+prev_body = "#stat\n#wikipedia\n#ai\nWikipedia's traffic has fallen by 23% in three years\nSource"
 views = 35
 ids = [645]
 +++

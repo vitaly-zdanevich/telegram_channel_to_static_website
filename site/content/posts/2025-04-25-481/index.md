@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/481"
 og_image = "5215716724605844762_1214378682_456260890.jpg"
 next_id = 482
 next_title = ""
+next_body = "#cat\n#psy"
 prev_id = 480
 prev_title = ""
+prev_body = "#primeworld\n#belarussian\nAdding Belarusian language to the game"
 views = 34
 ids = [481]
 +++

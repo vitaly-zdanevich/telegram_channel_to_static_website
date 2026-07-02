@@ -13,8 +13,10 @@ day = "2025-02-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/366"
 next_id = 367
 next_title = ""
+next_body = "#turkey\n#istanbul\n#video\n#my\nAnimation on building by projectors, love it."
 prev_id = 362
 prev_title = ""
+prev_body = "#coin\nIts real coins, from Cook Islands\nSource"
 views = 40
 ids = [366]
 +++

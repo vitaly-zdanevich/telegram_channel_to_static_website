@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/447"
 og_image = "5415638411328479712_1260926577_456253920.jpg"
 next_id = 448
 next_title = ""
+next_body = "Раньше было лучше\n#history\n#psy"
 prev_id = 446
 prev_title = ""
+prev_body = "#teapot\n#update\nFrom"
 views = 28
 ids = [447]
 +++

@@ -13,8 +13,10 @@ day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/397"
 next_id = 398
 next_title = ""
+next_body = "#anime\n#voice\nSource"
 prev_id = 396
 prev_title = ""
+prev_body = "#alexjones\n#warhammer\nSource"
 views = 45
 ids = [397]
 +++
@@ -23,8 +25,7 @@ ids = [397]
 {{ tag(t="dating") }}  
 {{ tag(t="escort") }}  
 {{ tag(t="size") }}  
-[Source](https://www.youtube.com/shorts/w264DaBp6Ns)
 
-{{ youtube(id="w264DaBp6Ns") }}
+[Source](https://www.youtube.com/shorts/w264DaBp6Ns)
 
 📎 5 декабря 2024 г. \[w264DaBp6Ns\].webm *(not archived)*

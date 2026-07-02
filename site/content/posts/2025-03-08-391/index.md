@@ -13,8 +13,10 @@ day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/391"
 next_id = 392
 next_title = ""
+next_body = "#alexjones\n#warhammer\nSource"
 prev_id = 390
 prev_title = ""
+prev_body = "#webdesign"
 views = 63
 ids = [391]
 +++
@@ -23,6 +25,7 @@ ids = [391]
 {{ tag(t="warhammer") }}  
 
 Some people think that his speeches correlates with Warhammer.  
+
 [Source](https://youtu.be/NPrvkff5NIw)
 
 {{ youtube(id="NPrvkff5NIw") }}

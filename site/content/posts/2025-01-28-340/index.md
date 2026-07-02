@@ -13,14 +13,17 @@ day = "2025-01-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/340"
 next_id = 341
 next_title = ""
+next_body = "#bathroom\nSource"
 prev_id = 339
 prev_title = ""
+prev_body = "#kazakhstan\nSource"
 views = 61
 ids = [340]
 +++
 
 {{ tag(t="girl") }}  
 {{ tag(t="nails") }}  
+
 [Source](https://www.instagram.com/reel/DFDPBevMVD_)
 
 {{ video(src="01.mp4") }}

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/698"
 og_image = "5413585189327731507_1260448524_456260403.jpg"
 next_id = 699
 next_title = ""
+next_body = "#userscript for #youtube: audio only. Better for #cpu, #battery, #traffic"
 prev_id = 697
 prev_title = ""
+prev_body = "#turkey\n#map\n#population\nSource"
 views = 22
 ids = [698]
 +++

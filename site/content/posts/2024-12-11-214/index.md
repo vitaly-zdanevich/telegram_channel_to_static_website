@@ -13,8 +13,10 @@ day = "2024-12-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/214"
 next_id = 215
 next_title = ""
+next_body = "#belarus"
 prev_id = 213
 prev_title = ""
+prev_body = "#ad"
 views = 49
 ids = [214]
 +++

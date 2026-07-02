@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1703"
 og_image = "01.jpg"
 next_id = 1709
 next_title = ""
+next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource--01--0104--010104-01-00004image00004.jpg)"
 prev_id = 1695
 prev_title = ""
+prev_body = "#my\n#batumi\n#restaurant\n#art\n#food\n#sazandari"
 views = 20
 ids = [1703]
 +++

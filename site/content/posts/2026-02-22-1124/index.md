@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1124"
 og_image = "5249225806049908507_1222180623_460003099.jpg"
 next_id = 1125
 next_title = ""
+next_body = "#webdesign\n#gentoo\n#china"
 prev_id = 1123
 prev_title = ""
+prev_body = "#commons"
 views = 15
 ids = [1124]
 +++

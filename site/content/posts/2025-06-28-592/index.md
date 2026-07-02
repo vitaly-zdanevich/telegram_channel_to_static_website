@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/592"
 og_image = "5402456284818704335_1257857374_456263631.jpg"
 next_id = 593
 next_title = ""
+next_body = "#dog\n#love\n#mmorpg\nSource"
 prev_id = 591
 prev_title = ""
+prev_body = "#git\n#gitgraph"
 views = 50
 ids = [592]
 +++

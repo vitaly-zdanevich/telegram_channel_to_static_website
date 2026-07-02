@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/779"
 og_image = "5237697753050189079_1219496539_460000535.jpg"
 next_id = 780
 next_title = ""
+next_body = "#webdesign\n#webdesigngames\n#pink"
 prev_id = 778
 prev_title = ""
+prev_body = "#film\n#kindzadza\nГамарджоба\nAt 1:50:00"
 views = 62
 ids = [779]
 +++

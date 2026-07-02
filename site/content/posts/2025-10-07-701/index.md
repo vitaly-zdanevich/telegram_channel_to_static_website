@@ -13,13 +13,16 @@ day = "2025-10-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/701"
 next_id = 702
 next_title = ""
+next_body = "#reaction\n#classic\n#music\nSource"
 prev_id = 700
 prev_title = ""
+prev_body = "#chess\nSource"
 views = 32
 ids = [701]
 +++
 
 {{ tag(t="chess") }}  
+
 [Source](https://www.youtube.com/shorts/-nzC5WCbXdk)
 
 {{ youtube(id="-nzC5WCbXdk") }}

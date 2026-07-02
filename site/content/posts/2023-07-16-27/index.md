@@ -13,8 +13,10 @@ day = "2023-07-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/27"
 next_id = 29
 next_title = ""
+next_body = "#film\n#nightwatch\nNight Watch: episode with witch, in the beginning"
 prev_id = 26
 prev_title = ""
+prev_body = "#film\n#korolishut\nLove this scene from Korol i Shut, episode 2"
 views = 74
 ids = [27]
 +++

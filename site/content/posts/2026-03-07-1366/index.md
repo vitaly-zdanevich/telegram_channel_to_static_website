@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1366"
 og_image = "5289657696166548381_1231594406_460002205.jpg"
 next_id = 1367
 next_title = ""
+next_body = "#webdesign\n#anime\n#oldweb"
 prev_id = 1365
 prev_title = ""
+prev_body = "#webdesign\n#anime\n#oldweb"
 views = 9
 ids = [1366]
 +++

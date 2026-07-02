@@ -13,8 +13,10 @@ day = "2026-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1744"
 next_id = 1745
 next_title = ""
+next_body = "My another hobby project, made with #llm / #codex: converter of #wikipedia dumps into #man / #roff format, on #rust (because I love performance): for a #terminal, #offline reading. #love it, still fixing many markup cases, but mostly its readable already\nWrote about it at"
 prev_id = 1741
 prev_title = ""
+prev_body = "#odysee looks like #convert #video right in a #browser - without uploading to the backend."
 views = 22
 ids = [1744]
 +++

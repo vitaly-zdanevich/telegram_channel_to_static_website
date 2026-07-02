@@ -13,8 +13,10 @@ day = "2024-04-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/38"
 next_id = 39
 next_title = ""
+next_body = "I love this game too #game #flash"
 prev_id = 36
 prev_title = ""
+prev_body = "Part of our new opera"
 views = 47
 ids = [38]
 +++

@@ -13,8 +13,10 @@ day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/420"
 next_id = 421
 next_title = ""
+next_body = "#laser\n#cat\n#matrix\nSource"
 prev_id = 419
 prev_title = ""
+prev_body = "#music\n#cats\n#ai\nSource"
 views = 32
 ids = [420]
 +++
@@ -22,6 +24,7 @@ ids = [420]
 {{ tag(t="music") }}  
 {{ tag(t="cats") }}  
 {{ tag(t="meme") }}  
+
 [Source](https://www.instagram.com/p/DGHcjNII9IY)
 
 {{ video(src="01.mp4") }}

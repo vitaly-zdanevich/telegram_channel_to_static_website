@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1564"
 og_image = "5359418144126080783_1247836776_460003087.jpg"
 next_id = 1565
 next_title = ""
+next_body = "#alien\n#screenshot\n#horror\n#giger\n#gimp\n#green\n#rice\nSource"
 prev_id = 1563
 prev_title = ""
+prev_body = "#music\n#multitrack\n#parody\n#voice\n#unknownsource\nRice and peace."
 views = 23
 ids = [1564]
 +++

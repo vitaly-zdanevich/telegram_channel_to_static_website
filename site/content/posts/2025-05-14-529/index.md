@@ -13,8 +13,10 @@ day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/529"
 next_id = 530
 next_title = ""
+next_body = "You can #upload to #commons through #darktable with this free plugin"
 prev_id = 528
 prev_title = ""
+prev_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/"
 views = 40
 ids = [529]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1775"
 og_image = "01.jpg"
 next_id = 1776
 next_title = ""
+next_body = "#llm\n#quote"
 prev_id = 1765
 prev_title = ""
+prev_body = "#bilibili verification with 100 questions - to be able to leave comments"
 views = 33
 ids = [1775]
 +++

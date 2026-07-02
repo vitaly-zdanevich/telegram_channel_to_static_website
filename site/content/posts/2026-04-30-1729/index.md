@@ -13,8 +13,10 @@ day = "2026-04-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1729"
 next_id = 1730
 next_title = ""
+next_body = "#cats\n#religion\n#orthodox\n#blackandwhite\nSource"
 prev_id = 1721
 prev_title = ""
+prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
 views = 22
 ids = [1729]
 +++

@@ -13,8 +13,10 @@ day = "2026-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1501"
 next_id = 1502
 next_title = ""
+next_body = "#map\n#russia\n#russianempire\n#blacksea\n#sakartvelo\n#year1910"
 prev_id = 1500
 prev_title = ""
+prev_body = "#math\n#university\n#russian\n#video\n#animals\n#романамихайлов\nГруппы и теория гомотопий (трэш трейлер)"
 views = 18
 ids = [1501]
 +++

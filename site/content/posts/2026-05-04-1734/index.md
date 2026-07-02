@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1734"
 og_image = "5460766981331030800_1271433891_460002064.jpg"
 next_id = 1735
 next_title = ""
+next_body = "#architecture of #village houses in #sakartvelo\nSource"
 prev_id = 1733
 prev_title = ""
+prev_body = "#belarus\n#belarussian\n#arabic\n#language"
 views = 19
 ids = [1734]
 +++

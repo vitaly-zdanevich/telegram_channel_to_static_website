@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/827"
 og_image = "5373307329626967331_1251070604_460000547.jpg"
 next_id = 828
 next_title = ""
+next_body = "#preservation\n#library\n#books\nPage 68"
 prev_id = 826
 prev_title = ""
+prev_body = "#design\n#preservation\n#year1885"
 views = 33
 ids = [827]
 +++

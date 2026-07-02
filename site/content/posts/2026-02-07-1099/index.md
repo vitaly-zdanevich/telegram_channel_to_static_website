@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1099"
 og_image = "5204095548128956047_1211672916_460000911.jpg"
 next_id = 1100
 next_title = ""
+next_body = "#ai\nTrying #codex to organize scans - to create a folder for every newspaper issue, result is not very good - mistakes and slow"
 prev_id = 1098
 prev_title = ""
+prev_body = ""
 views = 16
 ids = [1099]
 +++

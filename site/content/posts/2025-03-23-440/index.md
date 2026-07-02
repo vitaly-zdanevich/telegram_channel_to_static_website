@@ -13,8 +13,10 @@ day = "2025-03-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/440"
 next_id = 441
 next_title = ""
+next_body = "On #Wikipedia, not all websites can be used as sources.\nEvery fact on Wikipedia must have a reliable source. Original research is not allowed — Wikipedia only summarizes facts from trusted, reputable places."
 prev_id = 439
 prev_title = ""
+prev_body = "#korea\n#ai\n#aivideo\n#starwars\n#demonflyingfox\nSource"
 views = 40
 ids = [440]
 +++
@@ -26,6 +28,6 @@ Mick Gordon - BFG division from {{ tag(t="doom3") }}
 
 [Source](https://www.instagram.com/p/DHOFQ4sND2s)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DHOFQ4sND2s/") }}
 
 {{ tag(t="video") }}

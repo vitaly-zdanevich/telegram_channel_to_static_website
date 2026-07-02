@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/471"
 og_image = "5474606413927015267_1274656135_456254307.jpg"
 next_id = 472
 next_title = ""
+next_body = "YouTube alternative on #blockchain"
 prev_id = 470
 prev_title = ""
+prev_body = "Source\n#sakartvelo\n#taxes"
 views = 50
 ids = [471]
 +++

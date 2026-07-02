@@ -13,8 +13,10 @@ day = "2025-02-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/370"
 next_id = 371
 next_title = ""
+next_body = "#ad from 2012\n#guardian\n#pigs\nSource"
 prev_id = 369
 prev_title = ""
+prev_body = "#cat\n#catblack\n#corporate\nNot my experience, this is just funny.\nSource"
 views = 45
 ids = [370]
 +++

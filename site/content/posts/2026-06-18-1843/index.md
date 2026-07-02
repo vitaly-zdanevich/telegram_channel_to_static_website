@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1843"
 og_image = "5305803182606851557_1235353570_460004837.jpg"
 next_id = 1844
 next_title = ""
+next_body = "#armiesofexigo\n#abandone"
 prev_id = 1842
 prev_title = ""
+prev_body = "#interior\n#cozy\n#bathroom\nFrom"
 views = 13
 ids = [1843]
 +++

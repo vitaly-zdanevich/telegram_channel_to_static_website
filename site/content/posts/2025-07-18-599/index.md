@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/599"
 og_image = "5462915113515351326_1271934042_456260894.jpg"
 next_id = 600
 next_title = ""
+next_body = "#religion\n#architecture\n#church\n#germany\nSource"
 prev_id = 598
 prev_title = ""
+prev_body = "mkdir aaa/bbb/ccc\ncp f aaa/bbb/ccc\nCan be simpler with the install command:\ninstall -D f aaa/bbb/ccc\nAnd even with integrated chmod:\nchmod 644 f\nWith a single command:\ninstall -Dm644 f aaa/bbb/ccc"
 views = 40
 ids = [599]
 +++

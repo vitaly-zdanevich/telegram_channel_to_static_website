@@ -13,14 +13,17 @@ day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/394"
 next_id = 395
 next_title = ""
+next_body = "#arsenmarkaryan\n#alexjones\n#warhammer"
 prev_id = 393
 prev_title = ""
+prev_body = "Channel photo updated"
 views = 64
 ids = [394]
 +++
 
 {{ tag(t="alex_jones") }}  
 {{ tag(t="warhammer") }}  
+
 [Source](https://www.youtube.com/watch?v=87FF0x8795o)
 
 {{ youtube(id="87FF0x8795o") }}

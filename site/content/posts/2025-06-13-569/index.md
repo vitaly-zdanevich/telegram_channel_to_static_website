@@ -13,8 +13,10 @@ day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/569"
 next_id = 570
 next_title = ""
+next_body = "#meditation\n#dantealigieri\nSource"
 prev_id = 568
 prev_title = ""
+prev_body = "#miracle\n#dantealigieri\nЧудо\nSource"
 views = 24
 ids = [569]
 +++
@@ -26,6 +28,6 @@ ids = [569]
 
 [Source](https://www.instagram.com/p/DIvRM77C5yd)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DIvRM77C5yd/") }}
 
 {{ tag(t="video") }}

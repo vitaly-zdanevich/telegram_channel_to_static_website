@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/98"
 og_image = "5348070522698719109_1245194702_456253317.jpg"
 next_id = 99
 next_title = ""
+next_body = ""
 prev_id = 97
 prev_title = ""
+prev_body = "From 13 Reasons Why - S1E4"
 views = 27
 ids = [98]
 +++

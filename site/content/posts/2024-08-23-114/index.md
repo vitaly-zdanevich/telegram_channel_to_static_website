@@ -12,8 +12,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/114"
 og_image = "5350383066234870835_1245733133_456252467.jpg"
 next_id = 115
 next_title = ""
+next_body = "Flashbacks"
 prev_id = 112
 prev_title = ""
+prev_body = ""
 views = 31
 ids = [114]
 +++

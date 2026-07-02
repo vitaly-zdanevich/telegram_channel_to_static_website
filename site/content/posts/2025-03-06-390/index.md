@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/390"
 og_image = "5352602726808283388_1246249938_456255740.jpg"
 next_id = 391
 next_title = ""
+next_body = "#alexjones\n#warhammer\nSome people think that his speeches correlates with Warhammer.\nSource"
 prev_id = 387
 prev_title = ""
+prev_body = "#office\n#india"
 views = 45
 ids = [390]
 +++

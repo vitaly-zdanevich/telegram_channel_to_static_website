@@ -14,13 +14,16 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/875"
 og_image = "5415925920737988965_1260993518_460001637.jpg"
 next_id = 876
 next_title = ""
+next_body = "#macOS: to install #git I need 25 GB"
 prev_id = 874
 prev_title = ""
+prev_body = "#wikipedia\n#bewiki\n#betarask\nI was not active here."
 views = 15
 ids = [875]
 +++
 
-{{ tag(t="monument") }}<https://orda.of.by/.add/gallery.php?arabovschi/tail>{{ tag(t="belarus") }}  
+{{ tag(t="monument") }}  
+<https://orda.of.by/.add/gallery.php?arabovschi/tail>{{ tag(t="belarus") }}  
 {{ tag(t="globustut") }}  
 {{ tag(t="airplane") }}  
 

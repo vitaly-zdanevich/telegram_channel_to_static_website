@@ -13,8 +13,10 @@ day = "2025-05-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/526"
 next_id = 527
 next_title = ""
+next_body = "Gold #games - because lovers recreate engines for the best one."
 prev_id = 525
 prev_title = ""
+prev_body = "#photo\n#history\n#face\n#medals"
 views = 34
 ids = [526]
 +++

@@ -13,9 +13,11 @@ day = "2025-04-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/483"
 next_id = 484
 next_title = ""
+next_body = "#complexnumbers\n#2084\nPublished to"
 prev_id = 482
 prev_title = ""
-views = 40
+prev_body = "#cat\n#psy"
+views = 41
 ids = [483]
 +++
 

@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/169"
 og_image = "5257958939142778279_1224213964_456256935.jpg"
 next_id = 170
 next_title = ""
+next_body = "#mpv can play a movie without #x, in #tty, and without #tearing"
 prev_id = 168
 prev_title = ""
+prev_body = "We are loosing the data"
 views = 42
 ids = [169]
 +++

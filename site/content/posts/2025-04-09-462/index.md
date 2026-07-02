@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/462"
 og_image = "5454138004248587563_1269890462_456256811.jpg"
 next_id = 464
 next_title = ""
+next_body = "Бежевый\n#psy\n#childhood\nSource"
 prev_id = 461
 prev_title = ""
+prev_body = "#belarus\n#belarussian\n#culture\nSource"
 views = 48
 ids = [462]
 +++

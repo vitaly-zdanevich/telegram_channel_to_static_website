@@ -13,8 +13,10 @@ day = "2025-05-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/515"
 next_id = 517
 next_title = ""
+next_body = ""
 prev_id = 514
 prev_title = ""
+prev_body = "#image\n#archiving\nSource"
 views = 28
 ids = [515]
 +++
@@ -26,6 +28,6 @@ ids = [515]
 
 [Source](https://www.instagram.com/p/DFiRe45JnJE)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DFiRe45JnJE/") }}
 
 {{ tag(t="video") }}

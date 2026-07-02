@@ -12,8 +12,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/498"
 og_image = "5244552787138834583_1221092601_456257687.jpg"
 next_id = 499
 next_title = ""
+next_body = "#evernote image editor: beautiful"
 prev_id = 497
 prev_title = ""
+prev_body = "#compression\n#xz\n#zstd\n#lz4\n#zlib\n#meta\nSource"
 views = 23
 ids = [498]
 +++

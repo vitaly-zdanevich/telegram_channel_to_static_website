@@ -13,8 +13,10 @@ day = "2025-09-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/689"
 next_id = 690
 next_title = ""
+next_body = "#archivation\nSource"
 prev_id = 688
 prev_title = ""
+prev_body = "#china\n#beauty\n#plastic\nSource"
 views = 34
 ids = [689]
 +++

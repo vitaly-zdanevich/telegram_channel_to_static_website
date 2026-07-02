@@ -13,8 +13,10 @@ day = "2025-06-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/574"
 next_id = 575
 next_title = ""
+next_body = "#my\n#film\n#korolishut\n#alcohol\ns1e6"
 prev_id = 573
 prev_title = ""
+prev_body = "#archiving\nLost."
 views = 38
 ids = [574]
 +++

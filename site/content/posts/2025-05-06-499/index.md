@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/499"
 og_image = "5246804586952518108_1221616889_456255964.jpg"
 next_id = 500
 next_title = ""
+next_body = "#film\n#jupiter\n#space"
 prev_id = 498
 prev_title = ""
+prev_body = ""
 views = 21
 ids = [499]
 +++

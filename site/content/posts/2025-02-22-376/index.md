@@ -13,13 +13,16 @@ day = "2025-02-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/376"
 next_id = 377
 next_title = ""
+next_body = "#music\n#rammstein\n#cult\n#drum\nSource"
 prev_id = 375
 prev_title = ""
+prev_body = "#game\n#armiesofexigo\nSource"
 views = 53
 ids = [376]
 +++
 
-**Are you winning son? Happy Birthday**<https://www.youtube.com/shorts/e6ouD8G8Iqc>  
+**Are you winning son? Happy Birthday**  
+<https://www.youtube.com/shorts/e6ouD8G8Iqc>  
 {{ tag(t="pain") }}  
 {{ tag(t="death") }}  
 {{ tag(t="loss") }}  

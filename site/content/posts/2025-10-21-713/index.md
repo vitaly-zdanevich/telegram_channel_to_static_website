@@ -13,8 +13,10 @@ day = "2025-10-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/713"
 next_id = 714
 next_title = ""
+next_body = "#consciousness\nSource"
 prev_id = 712
 prev_title = ""
+prev_body = "#webdesign, 2696 game reviews on\nWorking from 2001\n4.26k subscribers on YouTube\n#games"
 views = 28
 ids = [713]
 +++

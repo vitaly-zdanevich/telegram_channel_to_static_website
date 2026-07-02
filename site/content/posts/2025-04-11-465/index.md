@@ -13,8 +13,10 @@ day = "2025-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/465"
 next_id = 466
 next_title = ""
+next_body = "#fine\n#responsibility\nSource"
 prev_id = 464
 prev_title = ""
+prev_body = "Бежевый\n#psy\n#childhood\nSource"
 views = 38
 ids = [465]
 +++

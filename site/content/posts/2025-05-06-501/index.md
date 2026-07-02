@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/501"
 og_image = "5249437337480459705_1222229874_456259001.jpg"
 next_id = 502
 next_title = ""
+next_body = "#psy\n#lasers\n#girl\nSource"
 prev_id = 500
 prev_title = ""
+prev_body = "#film\n#jupiter\n#space"
 views = 25
 ids = [501]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/446"
 og_image = "5415638411328479675_1260926577_456253883.jpg"
 next_id = 447
 next_title = ""
+next_body = "#dune\n#ussr\n#mashup\nI do not know who is the author"
 prev_id = 445
 prev_title = ""
+prev_body = "#elonmusk\n#starwars\n#elections\n#romansalute\nSource"
 views = 29
 ids = [446]
 +++

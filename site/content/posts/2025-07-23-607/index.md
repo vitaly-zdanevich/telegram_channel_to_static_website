@@ -13,8 +13,10 @@ day = "2025-07-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/607"
 next_id = 608
 next_title = ""
+next_body = "So many hours\n#steam\n#masterororion"
 prev_id = 606
 prev_title = ""
+prev_body = "#harrypotter\n#northkorea\n#ai\n#demonflyingfox\nSource"
 views = 59
 ids = [607]
 +++
@@ -27,6 +29,6 @@ ids = [607]
 
 [Source](https://www.instagram.com/p/DKVZCNWM-P1)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DKVZCNWM-P1/") }}
 
 {{ tag(t="video") }}

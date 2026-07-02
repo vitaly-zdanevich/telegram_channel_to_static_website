@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1203"
 og_image = "5264957012829737976_1225843330_460002296.jpg"
 next_id = 1204
 next_title = ""
+next_body = "#calligraphy\n#microfilm\n#preservation"
 prev_id = 1202
 prev_title = ""
+prev_body = "My new #userscript for #evernote adds a few #hotkey"
 views = 6
 ids = [1203]
 +++

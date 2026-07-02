@@ -13,8 +13,10 @@ day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/395"
 next_id = 396
 next_title = ""
+next_body = "#alexjones\n#warhammer\nSource"
 prev_id = 394
 prev_title = ""
+prev_body = "#alexjones\n#warhammer\nSource"
 views = 64
 ids = [395]
 +++

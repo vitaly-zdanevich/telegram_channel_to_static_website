@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/758"
 og_image = "5229215222705359745_1217521546_460000129.jpg"
 next_id = 759
 next_title = ""
+next_body = "#design\n#artlebedev\nSource"
 prev_id = 757
 prev_title = ""
+prev_body = "#design\n#logo\n#artlebedevSource"
 views = 28
 ids = [758]
 +++

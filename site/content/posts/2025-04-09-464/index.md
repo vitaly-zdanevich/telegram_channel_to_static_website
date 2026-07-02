@@ -13,8 +13,10 @@ day = "2025-04-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/464"
 next_id = 465
 next_title = ""
+next_body = "#windows\n#linux\nSource"
 prev_id = 462
 prev_title = ""
+prev_body = "#pooh\n#bible\n#gun"
 views = 86
 ids = [464]
 +++
@@ -23,8 +25,9 @@ ids = [464]
 
 {{ tag(t="psy") }}  
 {{ tag(t="childhood") }}  
+
 [Source](https://www.instagram.com/p/DH3AUB5iHEy)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DH3AUB5iHEy/") }}
 
 {{ tag(t="video") }}

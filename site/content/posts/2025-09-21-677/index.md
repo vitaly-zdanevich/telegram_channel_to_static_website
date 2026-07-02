@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/677"
 og_image = "01.jpg"
 next_id = 678
 next_title = ""
+next_body = "#film\n#thefountain\n#darrenaronofsky\n#library\n#children"
 prev_id = 676
 prev_title = ""
+prev_body = "#drug\n#peterburg\n#airdefense\nИгорян? Олег? Обознался\nSource"
 views = 31
 ids = [677]
 +++

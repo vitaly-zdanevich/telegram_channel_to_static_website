@@ -13,8 +13,10 @@ day = "2026-03-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1421"
 next_id = 1422
 next_title = ""
+next_body = "#architecture\n#gray\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1420
 prev_title = ""
+prev_body = "#church\n#inside\n#table\n#lacecurtain\n#doubledoor\n#bucket\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE29%D0%BC%D0%B0%D1%8F2005.jpg)"
 views = 15
 ids = [1421]
 +++

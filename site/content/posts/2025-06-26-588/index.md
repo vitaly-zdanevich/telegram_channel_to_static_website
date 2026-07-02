@@ -13,8 +13,10 @@ day = "2025-06-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/588"
 next_id = 589
 next_title = ""
+next_body = "...for the previous post\nSource"
 prev_id = 587
 prev_title = ""
+prev_body = "In 2024 to #steam were published 19000 #games, its 52 games per day.\nSource"
 views = 43
 ids = [588]
 +++

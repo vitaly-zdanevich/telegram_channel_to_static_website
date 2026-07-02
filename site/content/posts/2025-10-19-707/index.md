@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/707"
 og_image = "5452161769536621413_1269430334_456264549.jpg"
 next_id = 708
 next_title = ""
+next_body = "#concert\n#rammstein\n#year2019\n#russia\nNot my photo."
 prev_id = 706
 prev_title = ""
+prev_body = "#wikidata\n#linux\n#warcraft3"
 views = 28
 ids = [707]
 +++

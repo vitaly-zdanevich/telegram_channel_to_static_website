@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1753"
 og_image = "01.jpg"
 next_id = 1755
 next_title = ""
+next_body = "#ai\n#screenshot from"
 prev_id = 1752
 prev_title = ""
+prev_body = "#scream\n#metal\nSource"
 views = 21
 ids = [1753]
 +++

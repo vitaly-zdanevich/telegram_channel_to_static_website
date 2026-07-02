@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/835"
 og_image = "5384459448434232199_1253667159_460000135.jpg"
 next_id = 836
 next_title = ""
+next_body = "#wikipedia\n#medals\n#awards"
 prev_id = 834
 prev_title = ""
+prev_body = "#botanic\n#botanicillustration\nSourceBHL287631.jpg)"
 views = 25
 ids = [835]
 +++

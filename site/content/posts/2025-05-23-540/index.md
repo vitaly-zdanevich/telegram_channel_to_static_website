@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/540"
 og_image = "5298909356366097467_1233748476_456256571.jpg"
 next_id = 541
 next_title = ""
+next_body = "#iphone\n#apple\n#newton\n10 years gap.\nSource"
 prev_id = 539
 prev_title = ""
+prev_body = "#book\n#health\n#zoloft\n#christian"
 views = 58
 ids = [540]
 +++

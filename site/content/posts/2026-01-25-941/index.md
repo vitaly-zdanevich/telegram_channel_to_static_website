@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/941"
 og_image = "01.jpg"
 next_id = 943
 next_title = ""
+next_body = "#aws\n#cpu\n#memory\n#ram\nFrom"
 prev_id = 939
 prev_title = ""
+prev_body = "#aws CTO Werner Vogels\nMentioned:\nFrom"
 views = 8
 ids = [941]
 +++

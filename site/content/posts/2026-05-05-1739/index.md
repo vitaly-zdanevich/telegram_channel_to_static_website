@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1739"
 og_image = "5463320146114974772_1272028346_460002356.jpg"
 next_id = 1740
 next_title = ""
+next_body = "#armiesofexigo: моя #лекция об игре, в Батуми\n#stillyoungbar\nТакже скачать эту заброшенную игру можно тут\nВсе ссылки на это #видео"
 prev_id = 1738
 prev_title = ""
+prev_body = "#webdesign\n#video\n#bilibili"
 views = 22
 ids = [1739]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1137"
 og_image = "01.jpg"
 next_id = 1142
 next_title = ""
+next_body = "#monument\n#airplane\n#belarus\n#globustut\nSource"
 prev_id = 1136
 prev_title = ""
+prev_body = "In #kitty terminal you can use independent clipboard:\nmap ctrl+space copytobuffer a1\nmap ctrl+shift+space pastefrombuffer a1\n# Kitty clipboard - independent from the system one"
 views = 5
 ids = [1137]
 +++

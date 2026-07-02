@@ -13,8 +13,10 @@ day = "2026-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1764"
 next_id = 1765
 next_title = ""
+next_body = "#bilibili verification with 100 questions - to be able to leave comments"
 prev_id = 1763
 prev_title = ""
+prev_body = "#error\n#gitlab\n#contradiction"
 views = 24
 ids = [1764]
 +++

@@ -12,8 +12,10 @@ day = "2024-04-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/33"
 next_id = 34
 next_title = ""
+next_body = "This website looks soooo special #design"
 prev_id = 32
 prev_title = ""
+prev_body = "#film\nLove, Sex & Robots S1.E3: The Witness"
 views = 43
 ids = [33]
 +++

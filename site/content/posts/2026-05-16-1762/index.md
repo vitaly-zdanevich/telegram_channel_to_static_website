@@ -13,9 +13,11 @@ day = "2026-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1762"
 next_id = 1763
 next_title = ""
+next_body = "#error\n#gitlab\n#contradiction"
 prev_id = 1761
 prev_title = ""
-views = 330
+prev_body = "I love #ci so much that for the first time I depleted free 400 minutes per month, on #gitlab, on my FOSS non-commercial projects."
+views = 337
 ids = [1762]
 +++
 

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/756"
 og_image = "5229215222705359739_1217521546_460000123.jpg"
 next_id = 757
 next_title = ""
+next_body = "#design\n#logo\n#artlebedevSource"
 prev_id = 755
 prev_title = ""
+prev_body = "#painting\n#bible\n#gustavedore\n#year1891\nThe Bible panorama, or The Holy Scriptures in picture and story (1891)\nSource(14598295740).jpg)"
 views = 26
 ids = [756]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/442"
 og_image = "01.jpg"
 next_id = 444
 next_title = ""
+next_body = "#monetization\n#spyware\n#security\n#webextension"
 prev_id = 441
 prev_title = ""
+prev_body = "On #Wikipedia, not all websites can be used as sources.\nEvery fact on Wikipedia must have a reliable source. Original research is not allowed — Wikipedia only summarizes facts from trusted, reputable places."
 views = 30
 ids = [442]
 +++

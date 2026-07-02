@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/792"
 og_image = "01.jpg"
 next_id = 793
 next_title = ""
+next_body = "#ad\n#game\n#tank\n#wwii\n#music\n#warpath\nSource"
 prev_id = 791
 prev_title = ""
+prev_body = "#game\n#strategy\n#rtt\n#groundcontrol\nSource"
 views = 51
 ids = [792]
 +++

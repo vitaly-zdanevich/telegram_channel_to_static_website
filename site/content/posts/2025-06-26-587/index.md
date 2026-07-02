@@ -13,8 +13,10 @@ day = "2025-06-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/587"
 next_id = 588
 next_title = ""
+next_body = "#game\n#demo\n#warhammer\n#dawnofwar\n#2004\nIf you see \"Failed to initialize video card\" - try to enable Gamescope. Works with Wine 8 for me."
 prev_id = 586
 prev_title = ""
+prev_body = "#map of articles and photos"
 views = 42
 ids = [587]
 +++

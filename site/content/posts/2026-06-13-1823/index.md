@@ -13,8 +13,10 @@ day = "2026-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1823"
 next_id = 1824
 next_title = ""
+next_body = "#wikipedia\n#armenian\n#ruwiki\n#language\n#table"
 prev_id = 1822
 prev_title = ""
+prev_body = "#tbc\n#money\nThis is why we have #crypto?"
 views = 17
 ids = [1823]
 +++

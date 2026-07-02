@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/80"
 og_image = "5460889881816455526_1271462506_456251750.jpg"
 next_id = 81
 next_title = ""
+next_body = "Wow, DIY laptop with easy interchangeable parts\nSad that fanless laptops looks like unpopular, the best of such - MacBook Air, but I love Linux."
 prev_id = 79
 prev_title = ""
+prev_body = "Love my designs"
 views = 53
 ids = [80]
 +++

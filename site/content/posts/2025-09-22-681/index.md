@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/681"
 og_image = "01.jpg"
 next_id = 683
 next_title = ""
+next_body = "Love this #logo\n#head\n#psy"
 prev_id = 680
 prev_title = ""
+prev_body = "#film\n#thefountain\n#darrenaronofsky\n#inquisitor\n#pain\n#torture\n#christianity"
 views = 35
 ids = [681]
 +++

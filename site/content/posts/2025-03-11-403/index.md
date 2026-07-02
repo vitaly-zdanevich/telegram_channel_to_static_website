@@ -13,8 +13,10 @@ day = "2025-03-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/403"
 next_id = 404
 next_title = ""
+next_body = "#video\n#ad\n#japan\n#ai\n#girl\n#virtual\nSource"
 prev_id = 402
 prev_title = ""
+prev_body = "Guess the country\nSource"
 views = 41
 ids = [403]
 +++

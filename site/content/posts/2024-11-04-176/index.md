@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/176"
 og_image = "01.jpg"
 next_id = 177
 next_title = ""
+next_body = ""
 prev_id = 175
 prev_title = ""
+prev_body = "#web3 audio platform, #opensource, on #ipfs, I uploaded #complexnumbers to it"
 views = 41
 ids = [176]
 +++

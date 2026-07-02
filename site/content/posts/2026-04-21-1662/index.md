@@ -13,8 +13,10 @@ day = "2026-04-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1662"
 next_id = 1667
 next_title = ""
+next_body = "#fashion\n#street\n#london\nSource"
 prev_id = 1656
 prev_title = ""
+prev_body = "#typography\n#preservation\n#russianempire\n#century19\nSource"
 views = 21
 ids = [1662]
 +++
@@ -27,14 +29,6 @@ Author: <https://www.instagram.com/kaluputics/>
 
 Found at <https://www.instagram.com/p/DXIbrRNiK6r/>
 
-{{ video(src="01.mp4") }}
-
-{{ video(src="02.mp4") }}
-
-{{ video(src="03.mp4") }}
-
-{{ video(src="04.mp4") }}
-
-{{ video(src="05.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DXIbrRNiK6r/") }}
 
 {{ tag(t="video") }}

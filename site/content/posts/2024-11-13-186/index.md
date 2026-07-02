@@ -12,8 +12,10 @@ day = "2024-11-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/186"
 next_id = 187
 next_title = ""
+next_body = "He is trying to improve Armies of Exigo, without the source code"
 prev_id = 185
 prev_title = ""
+prev_body = "#neovim\n#animation"
 views = 39
 ids = [186]
 +++

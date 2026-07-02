@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/583"
 og_image = "5375476537215808962_1251575662_456259010.jpg"
 next_id = 584
 next_title = ""
+next_body = "#commons\nTODO list"
 prev_id = 582
 prev_title = ""
+prev_body = ""
 views = 37
 ids = [583]
 +++

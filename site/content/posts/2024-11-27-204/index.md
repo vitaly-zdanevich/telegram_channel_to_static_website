@@ -13,8 +13,10 @@ day = "2024-11-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/204"
 next_id = 205
 next_title = ""
+next_body = "#webdesign"
 prev_id = 202
 prev_title = ""
+prev_body = "My #photo from 2012, for the defunct website of naked #cats\n#eyes"
 views = 44
 ids = [204]
 +++

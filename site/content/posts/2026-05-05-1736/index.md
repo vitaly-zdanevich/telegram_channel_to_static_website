@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1736"
 og_image = "5463320146114974737_1272028346_460002321.jpg"
 next_id = 1737
 next_title = ""
+next_body = "#webdesign\n#bilibili"
 prev_id = 1735
 prev_title = ""
+prev_body = "#architecture of #village houses in #sakartvelo\nSource"
 views = 12
 ids = [1736]
 +++

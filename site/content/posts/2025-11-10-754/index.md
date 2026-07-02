@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/754"
 og_image = "5229215222705359737_1217521546_460000121.jpg"
 next_id = 755
 next_title = ""
+next_body = "#painting\n#bible\n#gustavedore\n#year1891\nThe Bible panorama, or The Holy Scriptures in picture and story (1891)\nSource(14598295740).jpg)"
 prev_id = 753
 prev_title = ""
+prev_body = "#design\n#webdesign\n#webdesignold\n#xbox"
 views = 20
 ids = [754]
 +++
@@ -26,6 +28,7 @@ ids = [754]
 {{ tag(t="gustave_dore") }}  
 
 Study for "Jacob's Dream"  
+
 [Source](https://commons.wikimedia.org/wiki/Category:Art_depicting_the_Old_Testament_by_Gustave_Dor%C3%A9#/media/File:Gustave_Dor%C3%A9_-_Study_for_%22Jacob&#39;s_Dream%22_-_Walters_371319.jpg)
 
 ![](5229215222705359737_1217521546_460000121.jpg)

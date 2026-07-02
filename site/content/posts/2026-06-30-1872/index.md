@@ -13,8 +13,10 @@ day = "2026-06-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1872"
 next_id = 1873
 next_title = ""
+next_body = "#batumi\n#aksiarodak\n#year2024\n#my\n#lecture\n#wikimediacommons\n#preservation\nЗапіс ад снежня 2024.\nПлан лекцыі і ўсе спасылкі"
 prev_id = 1871
 prev_title = ""
+prev_body = "#death\n#grandmother\n#drink\n#kitchen\n#spirit\nSource"
 views = 10
 ids = [1872]
 +++
@@ -25,6 +27,6 @@ ids = [1872]
 
 [Source](https://www.instagram.com/p/DaGOrhcAeU2/)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DaGOrhcAeU2/") }}
 
 {{ tag(t="video") }}

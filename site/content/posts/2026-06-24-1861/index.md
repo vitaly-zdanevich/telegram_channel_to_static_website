@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1861"
 og_image = "5316786788372257655_1237910890_460004215.jpg"
 next_id = 1863
 next_title = ""
+next_body = "My new #bash #alias\nbind '\"ej\": \"!#:$ e^\"'\n# Alt J repeats prev word\n# This is useful when, for example, you want to rename a file,\n# for example - to adjust it file extension.\n/.inputrc syntax is simpler:\n\"ej\": \"!#:$ e^\""
 prev_id = 1860
 prev_title = ""
-views = 11
+prev_body = "💗 Любимый Кобулети — это место встреч, моря и тёплых воспоминаний.\nВ кадрах: Кобулети, Цихисдзири и Чакви, природные заповедные территории, крепость Пэтра и деревянный дом-ода в селе Легва."
+views = 12
 forwarded_from = "Кирилл Марс"
 ids = [1861]
 +++

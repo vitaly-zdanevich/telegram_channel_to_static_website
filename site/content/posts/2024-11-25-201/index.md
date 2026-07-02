@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/201"
 og_image = "5343870641683687785_1244216841_456255849.jpg"
 next_id = 202
 next_title = ""
+next_body = "My #photo from 2012, for the defunct website of naked #cats\n#eyes"
 prev_id = 200
 prev_title = ""
+prev_body = ""
 views = 38
 ids = [201]
 +++

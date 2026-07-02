@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1781"
 og_image = "01.jpg"
 next_id = 1784
 next_title = ""
+next_body = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #telegram - to search and listen to #youtube"
 prev_id = 1780
 prev_title = ""
-views = 36
+prev_body = "What a time - multiple #llm doing multiple projects, in parallel..."
+views = 37
 ids = [1781]
 +++
 

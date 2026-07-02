@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/188"
 og_image = "5310002453732779331_1236331289_456254787.jpg"
 next_id = 189
 next_title = ""
+next_body = "Source"
 prev_id = 187
 prev_title = ""
+prev_body = "He is trying to improve Armies of Exigo, without the source code"
 views = 38
 ids = [188]
 +++

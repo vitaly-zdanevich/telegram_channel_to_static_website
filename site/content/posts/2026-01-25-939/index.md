@@ -13,8 +13,10 @@ day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/939"
 next_id = 941
 next_title = ""
+next_body = "#aws custom #cpu: dropped the lid (#scalping) for the better #cooling"
 prev_id = 938
 prev_title = ""
+prev_body = "Top 1% by #python, hm, not sure why"
 views = 8
 ids = [939]
 +++

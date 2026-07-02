@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1152"
 og_image = "01.jpg"
 next_id = 1154
 next_title = ""
+next_body = "#building\n#abandone\n#belarus\n#globustut\nSource"
 prev_id = 1149
 prev_title = ""
+prev_body = "#obelisk\n#belarus\n#globustut\nSource"
 views = 3
 ids = [1152]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/50"
 og_image = "5400135666744023014_1257317063_456251366.jpg"
 next_id = 51
 next_title = ""
+next_body = "My another ebuild: the game Gigalomania - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help."
 prev_id = 49
 prev_title = ""
+prev_body = "Wooow, look at this beautiful Linux"
 views = 54
 ids = [50]
 +++

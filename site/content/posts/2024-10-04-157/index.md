@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/157"
 og_image = "5188692317933005566_1208086572_456256254.jpg"
 next_id = 158
 next_title = ""
+next_body = "Night Watch: Special Edition #game"
 prev_id = 156
 prev_title = ""
+prev_body = ""
 views = 50
 ids = [157]
 +++

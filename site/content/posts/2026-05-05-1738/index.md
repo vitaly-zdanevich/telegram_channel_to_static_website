@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1738"
 og_image = "01.jpg"
 next_id = 1739
 next_title = ""
+next_body = "#shotcut is pretty good #foss #videoeditor, #love it"
 prev_id = 1737
 prev_title = ""
+prev_body = "#webdesign\n#bilibili"
 views = 17
 ids = [1738]
 +++

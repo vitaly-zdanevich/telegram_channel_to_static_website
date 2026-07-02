@@ -13,8 +13,10 @@ day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/399"
 next_id = 400
 next_title = ""
+next_body = ""
 prev_id = 398
 prev_title = ""
+prev_body = "#anime\n#voice\nSource"
 views = 53
 ids = [399]
 +++
@@ -26,7 +28,5 @@ ids = [399]
 {{ tag(t="motivation") }}  
 
 [Source](https://www.youtube.com/shorts/L6HRvBpeoVo)
-
-{{ youtube(id="L6HRvBpeoVo") }}
 
 📎 #арсенмаркарян #ironman \[L6HRvBpeoVo\].webm *(not archived)*

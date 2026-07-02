@@ -13,8 +13,10 @@ day = "2025-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/398"
 next_id = 399
 next_title = ""
+next_body = "#ironman\n#arsenmarkaryan\n#meaning\n#comparison\n#motivation\nSource"
 prev_id = 397
 prev_title = ""
+prev_body = "#arsenmarkaryan\n#dating\n#escort\n#size\nSource"
 views = 45
 ids = [398]
 +++

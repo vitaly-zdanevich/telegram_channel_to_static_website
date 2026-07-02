@@ -13,8 +13,10 @@ day = "2025-02-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/352"
 next_id = 353
 next_title = ""
+next_body = "#trump\n#batumi"
 prev_id = 351
 prev_title = ""
+prev_body = "#religion\nSource"
 views = 41
 ids = [352]
 +++
@@ -25,6 +27,6 @@ ids = [352]
 
 [Source](https://www.instagram.com/p/DBdaWh-Mry3)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DBdaWh-Mry3/") }}
 
 {{ tag(t="video") }}

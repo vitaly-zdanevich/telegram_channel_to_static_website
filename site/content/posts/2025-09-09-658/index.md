@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/658"
 og_image = "01.jpg"
 next_id = 665
 next_title = ""
+next_body = "#film\n#russia\n#nightwatch\n#zavulon"
 prev_id = 657
 prev_title = ""
+prev_body = "#golang\n#utf8\nconst s = \"สวัสดี\"\nfmt.Println(\"Len:\", len(s)) // Len: 18"
 views = 29
 forwarded_from = "Батумчик 🌴 | Новости Батуми | Западная Грузия"
 forwarded_from_url = "https://t.me/batumchik/65094"

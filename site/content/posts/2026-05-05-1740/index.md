@@ -13,9 +13,11 @@ day = "2026-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1740"
 next_id = 1741
 next_title = ""
+next_body = "#odysee looks like #convert #video right in a #browser - without uploading to the backend."
 prev_id = 1739
 prev_title = ""
-views = 302
+prev_body = "#shotcut is pretty good #foss #videoeditor, #love it"
+views = 303
 ids = [1740]
 +++
 

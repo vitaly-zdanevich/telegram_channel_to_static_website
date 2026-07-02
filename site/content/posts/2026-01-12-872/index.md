@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/872"
 og_image = "5413674120924303146_1260469230_460001066.jpg"
 next_id = 873
 next_title = ""
+next_body = "#map\nThe Earth, centred around #newzealand\nSource"
 prev_id = 871
 prev_title = ""
+prev_body = "Wow on #wikimediacommons we can write #sql, for example to get red categories with files, for a specific user"
 views = 17
 ids = [872]
 +++

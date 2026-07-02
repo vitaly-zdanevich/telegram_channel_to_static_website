@@ -13,9 +13,11 @@ day = "2025-11-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/743"
 next_id = 744
 next_title = ""
+next_body = "#school in #sakartvelo\n#architecture\n#books"
 prev_id = 742
 prev_title = ""
-views = 28
+prev_body = "#webdesign\n#webdesigngames\nLike horizontal scrolling."
+views = 29
 ids = [743]
 +++
 

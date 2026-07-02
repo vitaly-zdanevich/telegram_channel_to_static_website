@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/480"
 og_image = "5215716724605844691_1214378682_456260819.jpg"
 next_id = 481
 next_title = ""
+next_body = "#sex\n#mouse\n#horoscope\nFrom"
 prev_id = 479
 prev_title = ""
+prev_body = "#article\n#primeworld\nI wrote."
 views = 32
 ids = [480]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/952"
 og_image = "5460806022583749965_1271442981_460000589.jpg"
 next_id = 953
 next_title = ""
+next_body = "#belarus\n#architecture\n#church\n#green\n#winter\n#блонь\n#year2005\n#globustut\nFrom"
 prev_id = 949
 prev_title = ""
+prev_body = "В эпоху рассвета ИИ становится всё актуальнее опера\nГде в альтернативной истории #ussr жив и всё больше переходит под контроль #ai\n#complexnumbers"
 views = 21
 ids = [952]
 +++

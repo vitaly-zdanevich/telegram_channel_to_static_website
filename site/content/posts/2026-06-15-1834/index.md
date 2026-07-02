@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1834"
 og_image = "5296434402940363406_1233172231_460006030.jpg"
 next_id = 1835
 next_title = ""
+next_body = "#xbox\n#gameconsole\n#tech\n#retro\n#green\nFrom"
 prev_id = 1833
 prev_title = ""
+prev_body = "#old\n#grandmother\n#religion\n#greatschema\n#candle\nSee also\nFrom"
 views = 15
 ids = [1834]
 +++

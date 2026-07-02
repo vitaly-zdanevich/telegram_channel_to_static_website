@@ -13,9 +13,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/331"
 og_image = "01.jpg"
 next_id = 333
 next_title = ""
-prev_id = 329
+next_body = "I built a very powerful PC, liquid cooling, 64 GB of DDR5, but Facebook still SLOW"
+prev_id = 330
 prev_title = ""
-views = 52
+prev_body = "#music"
+views = 53
 ids = [331]
 +++
 

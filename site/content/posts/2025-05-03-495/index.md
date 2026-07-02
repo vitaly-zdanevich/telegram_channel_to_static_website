@@ -11,8 +11,10 @@ day = "2025-05-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/495"
 next_id = 496
 next_title = ""
+next_body = "#wikipedia\n#ui\n#navigation"
 prev_id = 494
 prev_title = ""
+prev_body = ""
 views = 27
 ids = [495]
 +++

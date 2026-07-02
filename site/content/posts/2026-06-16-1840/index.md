@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1840"
 og_image = "5298686202754047490_1233696519_460004866.jpg"
 next_id = 1841
 next_title = ""
+next_body = "#ad\n#newspaper\n#design\n#toxic\nFrom"
 prev_id = 1839
 prev_title = ""
+prev_body = "#interior\n#refrigerator\n#green\nFrom"
 views = 16
 ids = [1840]
 +++

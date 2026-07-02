@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1668"
 og_image = "01.jpg"
 next_id = 1672
 next_title = ""
+next_body = "#mediawiki\n#fandom\n#infobox\n#template\n#concatenation\n#wikidata\n#armiesofexigo\nBefore:\nWikidata\nAfter:\nWikidata\n[ } }]"
 prev_id = 1667
 prev_title = ""
+prev_body = "#fashion\n#street\n#london\nSource"
 views = 13
 ids = [1668]
 +++

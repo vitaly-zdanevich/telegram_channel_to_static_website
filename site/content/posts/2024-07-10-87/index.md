@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/87"
 og_image = "5219778561077009585_1215324402_456252593.jpg"
 next_id = 88
 next_title = ""
+next_body = "Меньше митингов"
 prev_id = 86
 prev_title = ""
+prev_body = "I moved /.vim to /.config/vim, you also can"
 views = 51
 ids = [87]
 +++

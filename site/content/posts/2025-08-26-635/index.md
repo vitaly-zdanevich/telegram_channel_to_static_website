@@ -13,8 +13,10 @@ day = "2025-08-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/635"
 next_id = 638
 next_title = ""
+next_body = ""
 prev_id = 634
 prev_title = ""
+prev_body = "#dress\n#tshirt\n#git\n#github\n#porn\nSource"
 views = 30
 ids = [635]
 +++

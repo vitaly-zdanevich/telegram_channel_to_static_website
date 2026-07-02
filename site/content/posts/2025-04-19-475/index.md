@@ -13,10 +13,12 @@ day = "2025-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/475"
 next_id = 478
 next_title = ""
+next_body = "Artwork for the podcast"
 prev_id = 474
 prev_title = ""
-views = 60
-ids = [475]
+prev_body = "#archiving\n#preservation\n#internetarchive\n#jasonscott\n#man\n#hat\n#harddrives\nJason Scott, Internet Archive employee, photo in color\nFrom"
+views = 61
+ids = [475, 476]
 +++
 
 {{ tag(t="podcast") }} 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у Вiкiпэдыi  
@@ -87,3 +89,5 @@ ffmpeg \
 Ёсць што сказаць ці запытаць?  
 Кантакт Уладзіміра <https://t.me/wrusakovich>  
 [https://be.wikipedia.org/wiki/Удзельнік:W](https://be.wikipedia.org/wiki/%D0%A3%D0%B4%D0%B7%D0%B5%D0%BB%D1%8C%D0%BD%D1%96%D0%BA:W)
+
+{{ apple_podcast(url="https://embed.podcasts.apple.com/us/podcast/%D0%B7-%D1%83%D0%BB%D0%B0%D0%B4%D0%B7%D1%96%D0%BC%D0%B5%D1%80%D0%B0%D0%BC-%D1%80%D1%83%D1%81%D0%B0%D0%BA%D0%BE%D0%B2%D1%96%D1%87%D0%B0%D0%BC-%D1%81%D1%82%D0%B2%D0%B0%D1%80%D1%8B%D1%9E-1740-%D0%B0%D1%80%D1%82%D1%8B%D0%BA%D1%83%D0%BB%D0%B0%D1%9E-%D1%83/id1612721807?i=1000704095553") }}

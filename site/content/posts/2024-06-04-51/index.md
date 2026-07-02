@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/51"
 og_image = "5402581027848838338_1257886418_456252610.jpg"
 next_id = 52
 next_title = ""
+next_body = "I love this project: free personal VPN on WireGuard (integrated into Linux kernel), works on AWS free tier also\nI found that on MacDonalds Wi-Fi I cannot update my system - looks like it block some activity, but I can with VPN."
 prev_id = 50
 prev_title = ""
+prev_body = "#gitlab: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it.\nIts a dream to work for some open source company like #gitlab or #wikimedia, maybe in one day..."
 views = 53
 ids = [51]
 +++

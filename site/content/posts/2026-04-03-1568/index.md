@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1568"
 og_image = "5368664895181755976_1249989703_460002888.jpg"
 next_id = 1569
 next_title = ""
+next_body = "#russianempire\n#typography\n#метрическаякнига\nAt"
 prev_id = 1567
 prev_title = ""
+prev_body = "#preservation\n#wikimediacommons\n#unavailable"
 views = 19
 ids = [1568]
 +++

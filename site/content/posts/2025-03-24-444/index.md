@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/444"
 og_image = "5406954455607405651_1258904686_456256595.jpg"
 next_id = 445
 next_title = ""
+next_body = "#elonmusk\n#starwars\n#elections\n#romansalute\nSource"
 prev_id = 442
 prev_title = ""
+prev_body = "wow in #telegram we have a #crypto #wallet, and users can send money to their contacts, wow"
 views = 33
 ids = [444]
 +++

@@ -12,6 +12,7 @@ day = "2022-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1"
 next_id = 2
 next_title = ""
+next_body = "Записал подкаст с"
 ids = [1]
 +++
 

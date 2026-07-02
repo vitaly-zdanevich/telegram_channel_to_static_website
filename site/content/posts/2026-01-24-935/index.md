@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/935"
 og_image = "5451802121863892389_1269346597_460000677.jpg"
 next_id = 936
 next_title = ""
+next_body = "#gta3\n#compare\nOriginal VS #ps5 Definitive Edition"
 prev_id = 934
 prev_title = ""
+prev_body = "#ai\nFrom"
 views = 12
 ids = [935]
 +++

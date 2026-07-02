@@ -13,9 +13,11 @@ day = "2026-07-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1879"
 next_id = 1880
 next_title = ""
+next_body = "#belarus\n#abandone\n#trees\n#year2015\nSource.jpg)"
 prev_id = 1878
 prev_title = ""
-views = 4
+prev_body = "#psy\n#food\nХодим без настроения, срываемся, ругаемся"
+views = 5
 ids = [1879]
 +++
 

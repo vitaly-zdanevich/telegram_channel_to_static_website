@@ -13,8 +13,10 @@ day = "2026-06-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1873"
 next_id = 1874
 next_title = ""
+next_body = "#llm\n#prediction\n#cat\nSource"
 prev_id = 1872
 prev_title = ""
+prev_body = "#death\n#jump\n#spirit\nSource"
 views = 9
 ids = [1873]
 +++

@@ -13,9 +13,11 @@ day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1856"
 next_id = 1860
 next_title = ""
+next_body = "💗 Любимый Кобулети — это место встреч, моря и тёплых воспоминаний.\nВ кадрах: Кобулети, Цихисдзири и Чакви, природные заповедные территории, крепость Пэтра и деревянный дом-ода в селе Легва."
 prev_id = 1855
 prev_title = ""
-views = 8
+prev_body = "#armiesofexigo it own by #electronicarts\nТвёрдо и чётко."
+views = 9
 ids = [1856, 1857, 1858, 1859]
 +++
 

@@ -13,8 +13,10 @@ day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/810"
 next_id = 811
 next_title = ""
+next_body = "#minsk inside what country"
 prev_id = 809
 prev_title = ""
+prev_body = "#cli\n#tui\n#design"
 views = 46
 ids = [810]
 +++

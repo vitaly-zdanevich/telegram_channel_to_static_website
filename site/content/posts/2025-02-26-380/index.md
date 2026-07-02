@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/380"
 og_image = "5325658489994995451_1239976494_456255227.jpg"
 next_id = 381
 next_title = ""
+next_body = "#няшка"
 prev_id = 379
 prev_title = ""
+prev_body = "#anime\n#music\n#choir\nSource"
 views = 90
 forwarded_from = "Vitaly Zdanevich"
 forwarded_from_url = "https://t.me/vitaly_zdanevich"
@@ -32,6 +34,6 @@ ids = [380]
 
 Аб гульне <https://www.youtube.com/watch?v=P6j3WWh7Yc8>
 
-{{ youtube(id="q3gWi7ATybk") }}
+{{ youtube(id="P6j3WWh7Yc8") }}
 
 ![](5325658489994995451_1239976494_456255227.jpg)

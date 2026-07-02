@@ -13,8 +13,10 @@ day = "2026-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/948"
 next_id = 949
 next_title = ""
+next_body = "В эпоху рассвета ИИ становится всё актуальнее опера\nГде в альтернативной истории #ussr жив и всё больше переходит под контроль #ai\n#complexnumbers"
 prev_id = 946
 prev_title = ""
+prev_body = "#wikipedia\n#notability"
 views = 12
 ids = [948]
 +++

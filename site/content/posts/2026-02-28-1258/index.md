@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1258"
 og_image = "5264957012829738517_1225843330_460002837.jpg"
 next_id = 1259
 next_title = ""
+next_body = "#woodencart\n#village\n#rural\n#belarus\n#globustut\n#year2005\nSource,%D0%BD%D0%B0%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB%D0%B0,%D1%81%D0%BD%D1%8F%D1%82%D0%BE7%D0%BC%D0%B0%D1%8F2005.jpg)"
 prev_id = 1255
 prev_title = ""
+prev_body = "#cementery\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE7%D0%BC%D0%B0%D1%8F2005.jpg)"
 views = 5
 ids = [1258]
 +++

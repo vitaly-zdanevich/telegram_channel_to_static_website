@@ -13,8 +13,10 @@ day = "2025-09-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/675"
 next_id = 676
 next_title = ""
+next_body = "#drug\n#peterburg\n#airdefense\nИгорян? Олег? Обознался\nSource"
 prev_id = 674
 prev_title = ""
+prev_body = "#telegram with wide messages"
 views = 31
 ids = [675]
 +++
@@ -24,6 +26,6 @@ ids = [675]
 
 [Source](https://www.instagram.com/p/DOrCa-bjOUR)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DOrCa-bjOUR/") }}
 
 {{ tag(t="video") }}

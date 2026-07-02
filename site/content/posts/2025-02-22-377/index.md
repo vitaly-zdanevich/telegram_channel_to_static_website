@@ -13,8 +13,10 @@ day = "2025-02-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/377"
 next_id = 378
 next_title = ""
+next_body = "#ai\n#vacuumcleaner\nSource"
 prev_id = 376
 prev_title = ""
+prev_body = "Are you winning son? Happy Birthday\n#pain\n#death\n#loss\n#miss\nSource"
 views = 58
 ids = [377]
 +++

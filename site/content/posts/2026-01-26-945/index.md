@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/945"
 og_image = "5456393497737890606_1270415610_460000046.jpg"
 next_id = 946
 next_title = ""
+next_body = "#wikipedia\n#notability"
 prev_id = 944
 prev_title = ""
+prev_body = "#aws\n#awslambda\nFrom"
 views = 13
 ids = [945]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/565"
 og_image = "5350564279495028516_1245775325_456257316.jpg"
 next_id = 566
 next_title = ""
+next_body = "My new #darkmode: numbeo.com"
 prev_id = 557
 prev_title = ""
+prev_body = "Рисунки скриншотов из игр!\nКто узнал ВСЁ?"
 views = 35
 ids = [565]
 +++

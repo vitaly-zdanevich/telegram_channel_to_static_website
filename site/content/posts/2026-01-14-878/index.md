@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/878"
 og_image = "5422584726364556635_1262543892_460000603.jpg"
 next_id = 879
 next_title = ""
+next_body = "#belarus\n#architecture\n#castle\n#globustut\nKosava Castle\nSource"
 prev_id = 877
 prev_title = ""
+prev_body = "#belarus\n#church\n#globustut\n#abandone\nSource.%D0%A4%D1%80%D0%B0%D0%B3%D0%BC%D1%8D%D0%BD%D1%82%D1%8B.07.jpg)"
 views = 13
 ids = [878]
 +++
@@ -25,6 +27,7 @@ ids = [878]
 {{ tag(t="fashion") }}  
 
 Saint Francis of Assisi, by José de Ribera, 1643  
+
 [Source](https://commons.wikimedia.org/wiki/File:San_Francisco_de_As%C3%ADs,_por_Jos%C3%A9_de_Ribera.jpg)
 
 ![](5422584726364556635_1262543892_460000603.jpg)

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1733"
 og_image = "5460766981331030706_1271433891_460001970.jpg"
 next_id = 1734
 next_title = ""
+next_body = "#map\n#batumi\nBetween the Black Sea and the mountains."
 prev_id = 1732
 prev_title = ""
+prev_body = "#gentoo\n#golang\n#bootstrap"
 views = 20
 ids = [1733]
 +++

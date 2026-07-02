@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/617"
 og_image = "5233728241192268441_1218572315_456258201.jpg"
 next_id = 618
 next_title = ""
+next_body = "Georgian man (Zaal Sikharulidze) with falcon wearing Chokha on Tbilisoba festival\n#sakartvelo\n#fashion\n#chokha\nSource.jpg)"
 prev_id = 616
 prev_title = ""
+prev_body = "#darkmode\n#gif"
 views = 38
 ids = [617]
 +++

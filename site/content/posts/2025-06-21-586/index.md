@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/586"
 og_image = "5381901176930430068_1253071515_456256628.jpg"
 next_id = 587
 next_title = ""
+next_body = "In 2024 to #steam were published 19000 #games, its 52 games per day.\nSource"
 prev_id = 585
 prev_title = ""
+prev_body = ""
 views = 44
 ids = [586]
 +++

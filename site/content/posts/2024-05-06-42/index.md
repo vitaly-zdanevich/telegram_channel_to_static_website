@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/42"
 og_image = "5316864029060357579_1237928874_456252875.jpg"
 next_id = 43
 next_title = ""
+next_body = "Another coin from Belarus Легенда пра пчалу #bee #coin"
 prev_id = 41
 prev_title = ""
+prev_body = "I love this browser extension - shows Wikidata information about the current page"
 views = 45
 ids = [42]
 +++

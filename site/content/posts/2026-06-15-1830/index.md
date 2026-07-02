@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1830"
 og_image = "5296434402940362939_1233172231_460005563.jpg"
 next_id = 1831
 next_title = ""
+next_body = "#anime\n#phones\n#evangelion\nFrom"
 prev_id = 1829
 prev_title = ""
+prev_body = "#tech\n#psp\n#finalfantasy"
 views = 18
 ids = [1830]
 +++

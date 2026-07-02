@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/487"
 og_image = "5221952308450037653_1215830517_456265621.jpg"
 next_id = 488
 next_title = ""
+next_body = "wow\n#foss"
 prev_id = 486
 prev_title = ""
+prev_body = "Source"
 views = 33
 ids = [487]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/653"
 og_image = "5307778803134757101_1235813555_456259821.jpg"
 next_id = 654
 next_title = ""
+next_body = "#russia\n#israel\n#map\nSource"
 prev_id = 652
 prev_title = ""
+prev_body = "#wikimediafoundation\n#money\nSource\nSource"
 views = 37
 ids = [653]
 +++

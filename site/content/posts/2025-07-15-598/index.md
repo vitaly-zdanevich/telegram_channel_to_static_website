@@ -12,8 +12,10 @@ day = "2025-07-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/598"
 next_id = 599
 next_title = ""
+next_body = "#ventoy is a dream - cp ISOs to USB and choose any to boot.\nAnd it faster to boot than dd because ISOs are compressed."
 prev_id = 597
 prev_title = ""
+prev_body = "#music\n#anime\n#susumuhirasawa"
 views = 47
 ids = [598]
 +++

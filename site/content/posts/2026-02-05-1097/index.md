@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1097"
 og_image = "5199841215518544654_1210682377_460002062.jpg"
 next_id = 1098
 next_title = ""
+next_body = ""
 prev_id = 1095
 prev_title = ""
+prev_body = "#ai ai ai ai ai but looks like even text translation with not very big languages is so bad :(\nChecked in #firefox and #googletranslate"
 views = 17
 ids = [1097]
 +++

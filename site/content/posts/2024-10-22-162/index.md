@@ -12,8 +12,10 @@ day = "2024-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/162"
 next_id = 163
 next_title = ""
+next_body = "#webdesign"
 prev_id = 161
 prev_title = ""
+prev_body = "My talk in WMCEE 2024"
 views = 39
 ids = [162]
 +++

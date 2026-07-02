@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1758"
 og_image = "5199865542213308919_1210688041_460001783.jpg"
 next_id = 1759
 next_title = ""
+next_body = "Fix my #style for #mdn, #screenshot before and after\nSad that UI customization is rare."
 prev_id = 1756
 prev_title = ""
+prev_body = "#code\n#russian\n#yandex\n#language\nFrom"
 views = 21
 ids = [1758]
 +++

@@ -13,8 +13,10 @@ day = "2025-01-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/245"
 next_id = 246
 next_title = ""
+next_body = "#game\n#man2"
 prev_id = 244
 prev_title = ""
+prev_body = "Video from 2012 about #ai"
 views = 38
 ids = [245]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/29"
 og_image = "01.jpg"
 next_id = 30
 next_title = ""
+next_body = "#film\n#daywatch\nДневной Дозор: конец, эпизод с исправлением судьбы\nFrom"
 prev_id = 27
 prev_title = ""
+prev_body = "#my\n#film\n#korolishut"
 views = 72
 ids = [29]
 +++

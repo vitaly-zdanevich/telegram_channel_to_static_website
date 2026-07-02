@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/137"
 og_image = "5362002881210867572_1248438582_456253300.jpg"
 next_id = 138
 next_title = ""
+next_body = "Played yesterday of Moss: Book 2 in Quest 2 - great VR, great game."
 prev_id = 128
 prev_title = ""
+prev_body = "suno.com is great - the best service for songs generation. Supports russian too.\nOriginal song and #ai generated"
 views = 47
 ids = [137]
 +++

@@ -13,8 +13,10 @@ day = "2025-02-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/351"
 next_id = 352
 next_title = ""
+next_body = "#sakartvelo\n#ny\n#subway\nSource"
 prev_id = 350
 prev_title = ""
+prev_body = "#car\n#ussr\nSource"
 views = 35
 ids = [351]
 +++
@@ -23,6 +25,6 @@ ids = [351]
 
 [Source](https://www.instagram.com/p/DE3agRxSaJj)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DE3agRxSaJj/") }}
 
 {{ tag(t="video") }}

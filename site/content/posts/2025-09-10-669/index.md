@@ -14,14 +14,17 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/669"
 og_image = "5334824169247997201_1242110545_456260881.jpg"
 next_id = 670
 next_title = ""
+next_body = "#map\n#greenland\n#africa\n#mercator\nSource"
 prev_id = 665
 prev_title = ""
+prev_body = "#film\n#russia\n#nightwatch\n#zavulon"
 views = 32
 ids = [669]
 +++
 
 {{ tag(t="map") }}  
 {{ tag(t="isis") }}  
+
 [Source](https://www.instagram.com/p/DOVCm-xEUcy)
 
 ![](5334824169247997201_1242110545_456260881.jpg)

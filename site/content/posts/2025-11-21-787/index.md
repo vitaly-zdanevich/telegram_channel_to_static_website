@@ -13,8 +13,10 @@ day = "2025-11-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/787"
 next_id = 788
 next_title = ""
+next_body = "#webdesign\n#webdesigndark\n#webdesigndarkblue\n#webdesigngame\n#visualnovel"
 prev_id = 786
 prev_title = ""
+prev_body = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory\nPlaying on Linux through Lutris, Conty.\nGame version 1.4\n#game\n#strategy\n#rts\n#year2004\n#armiesofexigo\n#fallen\n#teonia"
 views = 37
 ids = [787]
 +++

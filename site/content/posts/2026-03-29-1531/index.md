@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1531"
 og_image = "5353089436800980032_1246363259_460002368.jpg"
 next_id = 1532
 next_title = ""
+next_body = "#architecture\n#abandone\n#Свиряны\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1529
 prev_title = ""
-views = 18
+prev_body = "#village\n#black\n#abandone\n#Пелегринда\n#belarus\n#globustut\n#year2005\nSource"
+views = 19
 ids = [1531]
 +++
 
@@ -26,6 +28,7 @@ ids = [1531]
 {{ tag(t="belarus") }}  
 {{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}  
+
 [Source](https://commons.wikimedia.org/wiki/File:059-266_%D0%93%D0%B5%D1%80%D0%B2%D1%8F%D1%82%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_19_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
 ![](5353089436800980032_1246363259_460002368.jpg)

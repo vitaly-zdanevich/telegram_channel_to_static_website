@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/929"
 og_image = "5440801563862568251_1266785330_460000571.jpg"
 next_id = 930
 next_title = ""
+next_body = "Did you know about git notes?\nAdds, removes, or reads notes attached to objects, without touching the objects themselves.\nBy default, notes are saved to and read from refs/notes/commits, but this default can be overridden. See the OPTIONS, CONFIGURATION, and ENVIRONMENT sections below. If this ref does not exist, it will be quietly created when it is first needed to store a note.\nA typical use of notes is to supplement a commit message without changing the commit itself. Notes can be shown by git log along with the original commit message. To distinguish these notes from the message stored in the commit object, the notes are indented like the message, after an unindented line saying \"Notes (&lt;refname&gt;):\" (or \"Notes:\" for refs/notes/commits).\nNotes can also be added to patches prepared with git format-patch by using the --notes option. Such notes are added as a patch commentary after a three dash separator line."
 prev_id = 928
 prev_title = ""
+prev_body = "#belarus\n#church\n#abandone\n#year2005\n#globustut"
 views = 13
 ids = [929]
 +++

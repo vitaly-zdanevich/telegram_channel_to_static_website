@@ -13,8 +13,10 @@ day = "2025-02-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/358"
 next_id = 360
 next_title = ""
+next_body = "#religion\nSource"
 prev_id = 357
 prev_title = ""
+prev_body = "#gui\n#cli"
 views = 42
 ids = [358, 359]
 +++

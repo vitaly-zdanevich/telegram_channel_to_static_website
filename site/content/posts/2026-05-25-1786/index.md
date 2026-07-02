@@ -13,8 +13,10 @@ day = "2026-05-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1786"
 next_id = 1787
 next_title = ""
+next_body = "Payment -&gt; #crypto -&gt; Select your #wallet\nwoodev.net"
 prev_id = 1785
 prev_title = ""
+prev_body = "Another #llm victory: repack of the official #evernote client"
 views = 33
 ids = [1786]
 +++

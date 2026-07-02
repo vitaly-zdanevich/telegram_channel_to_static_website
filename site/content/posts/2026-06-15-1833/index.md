@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1833"
 og_image = "5296434402940363385_1233172231_460006009.jpg"
 next_id = 1834
 next_title = ""
+next_body = "#playstation\n#playstation2\n#gameconsole\n#street\nFrom"
 prev_id = 1832
 prev_title = ""
+prev_body = "When #css is minified - so what can I do with that :(\nLeave comments in such #userstyle"
 views = 15
 ids = [1833]
 +++

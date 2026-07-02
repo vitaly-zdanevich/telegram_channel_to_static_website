@@ -12,8 +12,10 @@ day = "2024-08-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/140"
 next_id = 141
 next_title = ""
+next_body = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait\n#money"
 prev_id = 139
 prev_title = ""
+prev_body = "Categories"
 views = 59
 ids = [140]
 +++

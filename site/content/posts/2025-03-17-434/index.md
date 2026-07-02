@@ -13,8 +13,10 @@ day = "2025-03-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/434"
 next_id = 435
 next_title = ""
+next_body = "#dieantwoord\nSource"
 prev_id = 433
 prev_title = ""
+prev_body = "#music\n#techno\n#ritual\n#religion\n#islam\n#rave\nSource"
 views = 84
 ids = [434]
 +++

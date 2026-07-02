@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/21"
 og_image = "01.jpg"
 next_id = 23
 next_title = ""
+next_body = ""
 prev_id = 20
 prev_title = ""
+prev_body = "Great music\nFrom"
 views = 70
 ids = [21]
 +++

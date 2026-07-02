@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/34"
 og_image = "5289892081118075189_1231648978_456251701.jpg"
 next_id = 35
 next_title = ""
+next_body = "Forked and fixed my lovely Geeknote. After so many years as a user - now it my"
 prev_id = 33
 prev_title = ""
+prev_body = "&gt; For example, anhedonia, which is often associated with depression, decreases an individual's desire to participate in activities that provide short-term rewards, and instead, allows the individual to concentrate on long-term goals"
 views = 48
 ids = [34]
 +++

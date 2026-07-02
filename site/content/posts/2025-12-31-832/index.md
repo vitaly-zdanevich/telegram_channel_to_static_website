@@ -13,8 +13,10 @@ day = "2025-12-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/832"
 next_id = 833
 next_title = ""
+next_body = "#solarsystem\n#planets\n#year1872\nPage 30"
 prev_id = 830
 prev_title = ""
+prev_body = "#solarsystem\n#planets\n#year1872\nPage 18"
 views = 20
 ids = [832]
 +++

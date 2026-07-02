@@ -13,8 +13,10 @@ day = "2025-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/633"
 next_id = 634
 next_title = ""
+next_body = "#dress\n#tshirt\n#git\n#github\n#porn\nSource"
 prev_id = 632
 prev_title = ""
+prev_body = "Как работает дата-центр Яндекса в Финляндии\nHeating of a city by #datacenter\n#yandex\n#video\n#heat\nSource"
 views = 39
 ids = [633]
 +++

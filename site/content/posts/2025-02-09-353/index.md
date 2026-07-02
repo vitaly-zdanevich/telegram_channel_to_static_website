@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/353"
 og_image = "5280882184623878092_1229551198_456257484.jpg"
 next_id = 354
 next_title = ""
+next_body = "#music\n#anime\n#tatu\n#rammstein"
 prev_id = 352
 prev_title = ""
+prev_body = "#sakartvelo\n#ny\n#subway\nSource"
 views = 46
 ids = [353]
 +++

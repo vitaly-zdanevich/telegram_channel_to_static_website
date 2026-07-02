@@ -12,8 +12,10 @@ day = "2025-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/334"
 next_id = 335
 next_title = ""
+next_body = ""
 prev_id = 333
 prev_title = ""
+prev_body = "I built a very powerful PC, liquid cooling, 64 GB of DDR5, but Facebook still SLOW"
 views = 53
 ids = [334]
 +++

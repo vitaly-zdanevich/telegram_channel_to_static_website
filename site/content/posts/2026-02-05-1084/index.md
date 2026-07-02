@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1084"
 og_image = "5197589415704858321_1210158089_460000977.jpg"
 next_id = 1085
 next_title = ""
+next_body = "#logo\n#gitlab\n#git"
 prev_id = 1083
 prev_title = ""
+prev_body = "Why #facebook is so slow :(\n#firefox"
 views = 8
 ids = [1084]
 +++

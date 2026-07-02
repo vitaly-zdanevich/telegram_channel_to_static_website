@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/412"
 og_image = "5382363899527033788_1253179251_456258492.jpg"
 next_id = 413
 next_title = ""
+next_body = "#caffee\n#nightclub\nSource"
 prev_id = 411
 prev_title = ""
+prev_body = ""
 views = 26
 ids = [412]
 +++

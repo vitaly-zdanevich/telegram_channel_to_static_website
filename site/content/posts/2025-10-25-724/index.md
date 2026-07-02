@@ -13,8 +13,10 @@ day = "2025-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/724"
 next_id = 726
 next_title = ""
+next_body = "#logo\n#homm3\n#newworldcomputing\nFrom the YouTube commend:\nQuite possibly the most stylish and badass game company intros\nSource"
 prev_id = 720
 prev_title = ""
+prev_body = "Downloaded by #wget a dying website indiegamewebsite.com\nThe command:\nwget --mirror --convert-links --adjust-extension --page-requisites --no-parent --no-host-directories\nTelegram limit is 4GB, to extract:\ncat indiegamewebsite.part.tar.xz. indiegamewebsite.tar.xz\ntar -xvJf indiegamewebsite.tar.xz\nAlso published to and\n#archivation\n#games\n#website"
 views = 32
 ids = [724, 725]
 +++

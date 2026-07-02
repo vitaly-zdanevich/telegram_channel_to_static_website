@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/953"
 og_image = "5460806022583750002_1271442981_460000626.jpg"
 next_id = 954
 next_title = ""
+next_body = "#belarus\n#architecture\n#winter\n#блонь\n#year2005\n#globustut\nFrom"
 prev_id = 952
 prev_title = ""
+prev_body = "#timetravel\n#mail\n#марьино\n#year2005\n#year2026\n#year1976\n#globustut\nМарьино, капсула в будущее\nFrom"
 views = 10
 ids = [953]
 +++

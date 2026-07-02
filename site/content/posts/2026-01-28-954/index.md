@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/954"
 og_image = "5460806022583750006_1271442981_460000630.jpg"
 next_id = 955
 next_title = ""
+next_body = "#belarus\n#architecture\n#castle\n#winter\n#марьинагорка\n#year2005\n#globustut\nFrom"
 prev_id = 953
 prev_title = ""
+prev_body = "#belarus\n#architecture\n#church\n#green\n#winter\n#блонь\n#year2005\n#globustut\nFrom"
 views = 10
 ids = [954]
 +++

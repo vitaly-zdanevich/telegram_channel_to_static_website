@@ -11,11 +11,12 @@ tags = ["fashion", "street", "london"]
 id = 1667
 day = "2026-04-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1667"
-og_image = "01.jpg"
 next_id = 1668
 next_title = ""
+next_body = "#anime\n#cover\n#game\n#ps3\n#year2014\nAtelier Shallie Alchemists of the Dusk Sea"
 prev_id = 1662
 prev_title = ""
+prev_body = "#fashion\n#trash\n#black\nAuthor:\nFound at"
 views = 22
 ids = [1667]
 +++
@@ -26,6 +27,4 @@ ids = [1667]
 
 [Source](https://www.instagram.com/p/DWW5BiZCBpa/)
 
-![video](01.jpg)
-
-*▶ video — 1:15*
+{{ instagram(url="https://www.instagram.com/p/DWW5BiZCBpa/") }}

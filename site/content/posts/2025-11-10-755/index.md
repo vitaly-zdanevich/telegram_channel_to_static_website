@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/755"
 og_image = "5229215222705359738_1217521546_460000122.jpg"
 next_id = 756
 next_title = ""
+next_body = "#painting\n#bible\n#gustavedore\nThe Bible panorama, or The Holy Scriptures in picture and story\nSource(14598336348).jpg)"
 prev_id = 754
 prev_title = ""
+prev_body = "#painting\n#bible\n#angel\n#gustavedore\nStudy for \"Jacob's Dream\"\nSource"
 views = 21
 ids = [755]
 +++

@@ -13,8 +13,10 @@ day = "2025-07-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/601"
 next_id = 602
 next_title = ""
+next_body = "#webdesign"
 prev_id = 600
 prev_title = ""
+prev_body = "#religion\n#architecture\n#church\n#germany\nSource"
 views = 46
 ids = [601]
 +++

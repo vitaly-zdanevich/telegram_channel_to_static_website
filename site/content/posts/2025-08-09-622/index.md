@@ -13,8 +13,10 @@ day = "2025-08-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/622"
 next_id = 623
 next_title = ""
+next_body = "#games\n#steam\nCan you imagine that, I know this guy"
 prev_id = 621
 prev_title = ""
+prev_body = "#anime\n#gpu\nSource"
 views = 163
 ids = [622]
 +++

@@ -12,8 +12,10 @@ day = "2022-03-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/19"
 next_id = 20
 next_title = ""
+next_body = "Great music\nFrom"
 prev_id = 18
 prev_title = ""
+prev_body = "also great design"
 views = 91
 ids = [19]
 +++

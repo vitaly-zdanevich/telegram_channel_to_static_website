@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/762"
 og_image = "5229215222705359841_1217521546_460000225.jpg"
 next_id = 763
 next_title = ""
+next_body = "#painting\n#gustavedore\nGéraint et Enide sortant de la forêt Pierre noire, lavis brun, rehauts de blanc - 42,2 x 32,2 cm"
 prev_id = 761
 prev_title = ""
+prev_body = "#painting\n#bible\n#gustavedore\nThe Battle of Nicaea\nSource"
 views = 24
 ids = [762]
 +++

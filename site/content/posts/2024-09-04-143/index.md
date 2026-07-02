@@ -12,8 +12,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/143"
 og_image = "5388818866005729977_1254682165_456254137.jpg"
 next_id = 144
 next_title = ""
+next_body = ""
 prev_id = 142
 prev_title = ""
+prev_body = "#pupups"
 views = 55
 ids = [143]
 +++

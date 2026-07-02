@@ -12,8 +12,10 @@ day = "2023-07-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/25"
 next_id = 26
 next_title = ""
+next_body = "#film\n#korolishut\nLove this scene from Korol i Shut, episode 2"
 prev_id = 23
 prev_title = ""
+prev_body = ""
 views = 75
 ids = [25]
 +++

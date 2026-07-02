@@ -11,8 +11,10 @@ day = "2025-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/336"
 next_id = 337
 next_title = ""
+next_body = "Source"
 prev_id = 335
 prev_title = ""
+prev_body = ""
 views = 46
 ids = [336]
 +++

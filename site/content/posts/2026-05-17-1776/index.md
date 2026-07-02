@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1776"
 og_image = "5208783114090519616_1212764325_460004416.jpg"
 next_id = 1777
 next_title = ""
+next_body = "#log\nfailed"
 prev_id = 1775
 prev_title = ""
+prev_body = "#travel\n#philippines\n#trash\n#asia\n#video\nFrom"
 views = 36
 ids = [1776]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/944"
 og_image = "5454141697924207370_1269891322_460002058.jpg"
 next_id = 945
 next_title = ""
+next_body = "#aws\n#silicon\n#graviton\nTRN3 compute sled\nFrom"
 prev_id = 943
 prev_title = ""
+prev_body = "#aws\n#cpu\n#memory\n#ram\nFrom"
 views = 11
 ids = [944]
 +++

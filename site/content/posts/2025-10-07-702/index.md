@@ -13,8 +13,10 @@ day = "2025-10-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/702"
 next_id = 703
 next_title = ""
+next_body = "Звуковик имеет тягу к изучению языков, потому что имеет ощущение, что возможно на другом языке сможет выразить свои нехватки\n- Юрий Бурлан\nPhoto my, from Safranbolu"
 prev_id = 701
 prev_title = ""
+prev_body = "#chess\nSource"
 views = 31
 ids = [702]
 +++
@@ -22,6 +24,7 @@ ids = [702]
 {{ tag(t="reaction") }}  
 {{ tag(t="classic") }}  
 {{ tag(t="music") }}  
+
 [Source](https://www.instagram.com/p/DN4ZMJVje8B)
 
 {{ video(src="01.mp4") }}

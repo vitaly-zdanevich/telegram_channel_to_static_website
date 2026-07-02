@@ -13,8 +13,10 @@ day = "2025-02-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/354"
 next_id = 355
 next_title = ""
+next_body = "#music\n#anime\n#rammstein"
 prev_id = 353
 prev_title = ""
+prev_body = "#trump\n#batumi"
 views = 40
 ids = [354]
 +++
@@ -26,6 +28,6 @@ ids = [354]
 {{ tag(t="tatu") }}  
 {{ tag(t="rammstein") }}
 
-{{ youtube(id="TUAaUfb6dXA") }}
+{{ video(src="01.mp4") }}
 
 {{ tag(t="video") }}

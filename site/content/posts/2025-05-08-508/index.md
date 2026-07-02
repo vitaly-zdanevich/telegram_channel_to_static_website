@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/508"
 og_image = "5251537555013365162_1222718869_456256938.jpg"
 next_id = 509
 next_title = ""
+next_body = "#health\n#science"
 prev_id = 507
 prev_title = ""
+prev_body = "#design\n#apple\n#ipod"
 views = 25
 ids = [508]
 +++

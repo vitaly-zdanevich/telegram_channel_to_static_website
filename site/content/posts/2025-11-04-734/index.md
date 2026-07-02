@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/734"
 og_image = "01.jpg"
 next_id = 735
 next_title = ""
+next_body = "If WebArchive have it - it still not in Google - you cannot search the website. But you can try to download the website and host it for free on Gitlab/Github.\n#archivation\n#website"
 prev_id = 733
 prev_title = ""
+prev_body = "#webdesign"
 views = 29
 ids = [734]
 +++

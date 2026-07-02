@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/829"
 og_image = "5377540423624102473_1252056198_460001865.jpg"
 next_id = 830
 next_title = ""
+next_body = "#solarsystem\n#planets\n#year1872\nPage 18"
 prev_id = 828
 prev_title = ""
+prev_body = "#preservation\n#library\n#books\nPage 68"
 views = 27
 ids = [829]
 +++

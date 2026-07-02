@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/142"
 og_image = "5379759332574488213_1252572828_456255125.jpg"
 next_id = 143
 next_title = ""
+next_body = ""
 prev_id = 141
 prev_title = ""
+prev_body = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait\n#money"
 views = 52
 ids = [142]
 +++

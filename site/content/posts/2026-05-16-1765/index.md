@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1765"
 og_image = "01.jpg"
 next_id = 1775
 next_title = ""
+next_body = "#travel\n#philippines\n#trash\n#asia\n#video\nFrom"
 prev_id = 1764
 prev_title = ""
+prev_body = "#music\n#sunboy\nОстров в океане\nFrom\nПро исполнителя"
 views = 31
 ids = [1765]
 +++

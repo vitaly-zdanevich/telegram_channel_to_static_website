@@ -13,8 +13,10 @@ day = "2025-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/500"
 next_id = 501
 next_title = ""
+next_body = "Source"
 prev_id = 499
 prev_title = ""
+prev_body = "#evernote image editor: beautiful"
 views = 29
 ids = [500]
 +++

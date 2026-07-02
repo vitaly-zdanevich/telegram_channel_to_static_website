@@ -13,8 +13,10 @@ day = "2025-06-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/551"
 next_id = 552
 next_title = ""
+next_body = "#arsenmarkaryan\n#health\n#medicine\n#psy\n#mantoux\n#mercury\nSource"
 prev_id = 550
 prev_title = ""
+prev_body = "#music\n#languages mix\n#kraenkova: Slavic Blood\nSource"
 views = 47
 ids = [551]
 +++

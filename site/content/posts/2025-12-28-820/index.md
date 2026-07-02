@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/820"
 og_image = "01.jpg"
 next_id = 825
 next_title = ""
+next_body = "#webdesign"
 prev_id = 819
 prev_title = ""
+prev_body = "#preservation\n#wikimediacommons\n#pywikibot\n#my\nCreated a new tool: #python wrapper for Pywikibot to make uploading to Wikimedia Commons from #cli simpler"
 views = 28
 ids = [820]
 +++

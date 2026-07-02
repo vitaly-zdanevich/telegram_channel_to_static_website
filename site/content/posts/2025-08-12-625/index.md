@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/625"
 og_image = "5246998070934240894_1221661938_456261246.jpg"
 next_id = 626
 next_title = ""
+next_body = "#moneymuseum\n#money\n#rubles\nSource02.jpg)"
 prev_id = 624
 prev_title = ""
+prev_body = "#ai\n#llm\n#ddos"
 views = 29
 ids = [625]
 +++

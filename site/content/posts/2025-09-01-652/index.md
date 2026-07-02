@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/652"
 og_image = "5307862000946249677_1235832926_456261581.jpg"
 next_id = 653
 next_title = ""
+next_body = "#wikimediafoundation\n#money\nSource"
 prev_id = 651
 prev_title = ""
+prev_body = "#wikimediafoundation #office from 2024\nSource"
 views = 34
 ids = [652]
 +++

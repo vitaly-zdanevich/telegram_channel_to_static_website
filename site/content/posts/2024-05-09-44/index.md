@@ -12,8 +12,10 @@ day = "2024-05-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/44"
 next_id = 45
 next_title = ""
+next_body = ""
 prev_id = 43
 prev_title = ""
+prev_body = "Another coin from Belarus Легенда пра пчалу #bee #coin"
 views = 53
 ids = [44]
 +++

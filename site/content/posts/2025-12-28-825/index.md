@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/825"
 og_image = "5370960061280226917_1250524088_460000869.jpg"
 next_id = 826
 next_title = ""
+next_body = "#design\n#preservation\n#year1885"
 prev_id = 820
 prev_title = ""
+prev_body = "#hardware\n#laptop\nToshiba Libretto"
 views = 28
 ids = [825]
 +++

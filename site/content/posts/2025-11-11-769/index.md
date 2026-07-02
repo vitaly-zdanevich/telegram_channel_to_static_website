@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/769"
 og_image = "5231136868383002106_1217968964_460000762.jpg"
 next_id = 770
 next_title = ""
+next_body = "#games\n#segagenesis\n#neogeo\n#year1991\nSource"
 prev_id = 768
 prev_title = ""
+prev_body = "#webdesign\n#webdesignold"
 views = 41
 ids = [769]
 +++

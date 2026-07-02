@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/194"
 og_image = "5323556365496609563_1239487055_456256283.jpg"
 next_id = 195
 next_title = ""
+next_body = "#style love my custom YandexMail"
 prev_id = 193
 prev_title = ""
+prev_body = "#webdesign"
 views = 46
 ids = [194]
 +++

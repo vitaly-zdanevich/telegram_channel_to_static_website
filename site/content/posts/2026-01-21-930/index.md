@@ -12,8 +12,10 @@ day = "2026-01-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/930"
 next_id = 931
 next_title = ""
+next_body = "I am on #gentoo because it compiles for my CPU (-march=native and other flags - not generic x64, but I did not measure the performance numbers), and another point - USE flags and the ability to apply source based patches. For example in Firefox in about:firefoxview in Open tabs we have only 7 elements and no preferences to increase that number, so I found it in the source code and produced a simple patch for my system - and on every update the Portage package manager will try to apply that patch."
 prev_id = 929
 prev_title = ""
+prev_body = "#belarus\n#church\n#year2005\n#globustut"
 views = 13
 ids = [930]
 +++

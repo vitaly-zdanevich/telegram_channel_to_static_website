@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/32"
 og_image = "01.jpg"
 next_id = 33
 next_title = ""
+next_body = "&gt; For example, anhedonia, which is often associated with depression, decreases an individual's desire to participate in activities that provide short-term rewards, and instead, allows the individual to concentrate on long-term goals"
 prev_id = 31
 prev_title = ""
+prev_body = "#film\n#scifi\nLove, Death & Robots: ending from s1ep7 Beyond the Aquila Rift"
 views = 61
 ids = [32]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/450"
 og_image = "01.jpg"
 next_id = 452
 next_title = ""
+next_body = "#games\n#history\n#cds\n#shop\nFrom"
 prev_id = 449
 prev_title = ""
+prev_body = "#entrance\nFrom"
 views = 32
 ids = [450]
 +++

@@ -13,8 +13,10 @@ day = "2025-08-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/643"
 next_id = 644
 next_title = ""
+next_body = "#stat\n#wikipedia\n#ai\nWikipedia's traffic has fallen by 23% in three years\nSource"
 prev_id = 642
 prev_title = ""
+prev_body = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа\nNo comments.\nHorn of the Abyss 1.7.3\nPlaying through Conty on Gentoo Linux no-multilib profile\nPart from\n#my\n#year1999\n#video\n#game\n#strategy\n#tbs\n#homm3\n#hota\n#emeraldisles"
 views = 32
 ids = [643]
 +++

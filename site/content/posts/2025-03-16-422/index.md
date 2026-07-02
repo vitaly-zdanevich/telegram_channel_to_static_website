@@ -13,8 +13,10 @@ day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/422"
 next_id = 423
 next_title = ""
+next_body = "#psy\n#depression\nSource"
 prev_id = 421
 prev_title = ""
+prev_body = "#laser\n#cat\n#matrix\nSource"
 views = 186
 ids = [422]
 +++
@@ -23,8 +25,9 @@ ids = [422]
 {{ tag(t="techno") }}  
 {{ tag(t="religion") }}  
 {{ tag(t="mulsim") }}  
+
 [Source](https://www.instagram.com/p/DFdiJVDIhv5)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DFdiJVDIhv5/") }}
 
 {{ tag(t="video") }}

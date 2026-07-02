@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/470"
 og_image = "5472381565033115407_1274138122_456257295.jpg"
 next_id = 471
 next_title = ""
+next_body = "#archiving\n#photos"
 prev_id = 469
 prev_title = ""
+prev_body = "Looks what I found - another #archiving group"
 views = 44
 ids = [470]
 +++

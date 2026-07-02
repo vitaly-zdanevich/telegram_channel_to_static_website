@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/171"
 og_image = "5258275637146281326_1224287701_456254830.jpg"
 next_id = 172
 next_title = ""
+next_body = "Когда поиграл со шрифтами и проиграл -"
 prev_id = 170
 prev_title = ""
+prev_body = "#mpv can play a movie without #x, in #tty, and without #tearing"
 views = 46
 ids = [171]
 +++

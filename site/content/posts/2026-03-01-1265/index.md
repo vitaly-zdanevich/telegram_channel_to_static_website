@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1265"
 og_image = "01.jpg"
 next_id = 1268
 next_title = ""
+next_body = "Wow for the #kernel we have not only bright make menuconfig but black make nconfig"
 prev_id = 1263
 prev_title = ""
+prev_body = "#abandone\n#belarus\n#globustut\n#year2005\nSource"
 views = 10
 ids = [1265]
 +++

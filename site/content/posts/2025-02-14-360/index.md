@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/360"
 og_image = "5291921938496747598_1232121591_456259662.jpg"
 next_id = 361
 next_title = ""
+next_body = "#coin\nSource"
 prev_id = 358
 prev_title = ""
+prev_body = "#ui\n#button\n#css\nFuck minimalism"
 views = 43
 ids = [360]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1075"
 og_image = "01.jpg"
 next_id = 1077
 next_title = ""
+next_body = "#japan\nFrom"
 prev_id = 1073
 prev_title = ""
+prev_body = "#wikipedia\nАктёр озвучивания мужского пола Монгильо наиболее известен по роли главного героя, Синдзи\nМонгильо написал в Твиттере, что играть Синдзи было одной из величайших почестей в его жизни"
 views = 14
 ids = [1075]
 +++

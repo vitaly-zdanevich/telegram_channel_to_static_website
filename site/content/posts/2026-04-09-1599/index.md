@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1599"
 og_image = "5384230363468600311_1253613821_460002295.jpg"
 next_id = 1600
 next_title = ""
+next_body = "#icq\n#offline\n#abandone\n#sonyericsson\nSource"
 prev_id = 1595
 prev_title = ""
+prev_body = "#indika\n#game\n#religion\n#christianity\n#webdesign"
 views = 19
 ids = [1599]
 +++

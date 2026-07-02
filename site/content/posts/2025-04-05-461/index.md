@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/461"
 og_image = "5442691267864686271_1267225311_456257215.jpg"
 next_id = 462
 next_title = ""
+next_body = "#pooh\n#bible\n#gun"
 prev_id = 460
 prev_title = ""
+prev_body = "#games\n#igromania\n18 years ago. Golden age?\nSource"
 views = 46
 ids = [461]
 +++

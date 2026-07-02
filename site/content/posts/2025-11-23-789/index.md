@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/789"
 og_image = "5267041880149527904_1226328751_460000608.jpg"
 next_id = 790
 next_title = ""
+next_body = "#game\n#strategy\n#video\n#review\n#groundcontrol\n#year2000\nSource"
 prev_id = 788
 prev_title = ""
+prev_body = "#webdesign\n#webdesigndark\n#webdesigndarkblue\n#webdesigngame\n#visualnovel"
 views = 40
 ids = [789]
 +++

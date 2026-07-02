@@ -13,8 +13,10 @@ day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/430"
 next_id = 431
 next_title = ""
+next_body = "#australia\n#jug\nSource"
 prev_id = 429
 prev_title = ""
+prev_body = "#alarm\n#music\n#dreams\nSource"
 views = 70
 ids = [430]
 +++
@@ -25,6 +27,6 @@ ids = [430]
 
 [Source](https://www.instagram.com/p/DFQTr-SNUmr)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DFQTr-SNUmr/") }}
 
 {{ tag(t="video") }}

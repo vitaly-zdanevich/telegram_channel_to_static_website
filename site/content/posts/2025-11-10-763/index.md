@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/763"
 og_image = "5229215222705359857_1217521546_460000241.jpg"
 next_id = 764
 next_title = ""
+next_body = "#painting\n#gustavedore\nSource"
 prev_id = 762
 prev_title = ""
+prev_body = "#painting\n#angel\n#ship\n#gustavedore\nEngraving by Gustave Doré, representing the departure of Aigues-Mortes of Louis IX for the crusade\nSource"
 views = 23
 ids = [763]
 +++

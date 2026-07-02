@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/525"
 og_image = "5264726708089649363_1225789708_456259795.jpg"
 next_id = 526
 next_title = ""
+next_body = "#homm3\n#foss\n#vcmi"
 prev_id = 524
 prev_title = ""
+prev_body = ""
 views = 29
 ids = [525]
 +++

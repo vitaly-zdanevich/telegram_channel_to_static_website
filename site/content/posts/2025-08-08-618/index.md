@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/618"
 og_image = "5237834294351754182_1219528330_456258502.jpg"
 next_id = 619
 next_title = ""
+next_body = "Returned to uploading of artifacts from moneymuseum.by, through my new web extension, and again - sometime I see the beauty\n#money\n#moneymuseum\nSource"
 prev_id = 617
 prev_title = ""
+prev_body = "Imagine a 2d side-scroll quest-action game with such visual style\nDecoration sketch for the play 'King Lear' (1948) by Sergo Kobuladze Georgian State Museum of Theatre, Music, Film and Choreography - Art Palace\n#games\n#art\n#sergokobuladze 1909 - 1978\n#sakartvelo\nSourcebySergoKobuladzeGeorgianStateMuseumofTheatre,Music,FilmandChoreography-ArtPalace.jpg)"
 views = 36
 ids = [618]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/460"
 og_image = "5440653838458679407_1266750935_456257647.jpg"
 next_id = 461
 next_title = ""
+next_body = "#belarus\n#belarussian\n#culture\nSource"
 prev_id = 458
 prev_title = ""
+prev_body = "#ussr"
 views = 44
 ids = [460]
 +++
@@ -24,6 +26,7 @@ ids = [460]
 {{ tag(t="igromania") }}  
 
 18 years ago. Golden age?  
+
 [Source](https://vk.com/feed?z=photo-160168013_457515889%2F7054f886579f71b39a)
 
 ![](5440653838458679407_1266750935_456257647.jpg)

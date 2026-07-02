@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/387"
 og_image = "01.jpg"
 next_id = 390
 next_title = ""
+next_body = "#webdesign"
 prev_id = 386
 prev_title = ""
-views = 47
+prev_body = "Released opera 2084"
+views = 48
 ids = [387]
 +++
 

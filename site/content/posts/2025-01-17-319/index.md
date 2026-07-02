@@ -12,8 +12,10 @@ day = "2025-01-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/319"
 next_id = 320
 next_title = ""
+next_body = "RIP Art Lebedev Studio"
 prev_id = 318
 prev_title = ""
+prev_body = ""
 views = 51
 ids = [319]
 +++

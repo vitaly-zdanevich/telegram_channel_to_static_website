@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1759"
 og_image = "01.jpg"
 next_id = 1761
 next_title = ""
+next_body = "I love #ci so much that for the first time I depleted free 400 minutes per month, on #gitlab, on my FOSS non-commercial projects."
 prev_id = 1758
 prev_title = ""
+prev_body = "Wow my #reeknote (#evernote #cli) can now play audio and show images, in a terminal"
 views = 23
 ids = [1759]
 +++

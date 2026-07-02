@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/871"
 og_image = "5413490665691221626_1260426516_460000890.jpg"
 next_id = 872
 next_title = ""
+next_body = "Wow #wikipedia semi-automatic editing by a #python script"
 prev_id = 870
 prev_title = ""
+prev_body = "#games\n#gamazine\n#igromania\nSource"
 views = 20
 ids = [871]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1829"
 og_image = "5296434402940362934_1233172231_460005558.jpg"
 next_id = 1830
 next_title = ""
+next_body = "#religion\n#jesus"
 prev_id = 1827
 prev_title = ""
+prev_body = "#game\n#beyoundgoodandevil\n#pig\n#evolution\n#sequel\n#pain\nFrom official"
 views = 20
 ids = [1829]
 +++

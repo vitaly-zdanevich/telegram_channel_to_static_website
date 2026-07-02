@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/710"
 og_image = "01.jpg"
 next_id = 711
 next_title = ""
+next_body = "#games\n#steam"
 prev_id = 709
 prev_title = ""
+prev_body = "#wikidata script to show #youtube embeds, #spotify, #facebook and others\nExample item from the screenshot"
 views = 29
 ids = [710]
 +++

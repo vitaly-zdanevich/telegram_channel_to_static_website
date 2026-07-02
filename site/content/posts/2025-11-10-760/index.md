@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/760"
 og_image = "5229215222705359767_1217521546_460000151.jpg"
 next_id = 761
 next_title = ""
+next_body = "#painting\n#bible\n#gustavedore\nThe Battle of Nicaea\nSource"
 prev_id = 759
 prev_title = ""
+prev_body = "#design\n#artlebedev\nSource"
 views = 28
 ids = [760]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/646"
 og_image = "01.jpg"
 next_id = 647
 next_title = ""
+next_body = "#film\n#music\n#russia\n#korolishut\ns1e5, scene about a new girl Olga"
 prev_id = 645
 prev_title = ""
+prev_body = "Someones contributions to #wikipedia\n#delitism"
 views = 36
 ids = [646]
 +++

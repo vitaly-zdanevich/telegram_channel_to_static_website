@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1567"
 og_image = "5363938150528522306_1248889172_460003394.jpg"
 next_id = 1568
 next_title = ""
+next_body = "#ai\nI asked #gemini to port #primeworld from Windows to Linux, interesting if that possible...\nWe tried #wine of course - but some problems with #lutris - because native launcher need to run Wine..."
 prev_id = 1566
 prev_title = ""
+prev_body = "#equilibrium\nThat #movie is important to me, but surprise - 33/100 on #metacritic"
 views = 21
 ids = [1567]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/356"
 og_image = "5287487659641531079_1231089155_456256199.jpg"
 next_id = 357
 next_title = ""
+next_body = "#gui\n#cli"
 prev_id = 355
 prev_title = ""
+prev_body = "#music\n#anime\n#rammstein"
 views = 46
 ids = [356]
 +++

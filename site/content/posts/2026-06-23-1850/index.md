@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1850"
 og_image = "02.webp"
 next_id = 1852
 next_title = ""
+next_body = "what a #stickerpack"
 prev_id = 1849
 prev_title = ""
-views = 85
+prev_body = "#llm\n#codex\n#regex"
+views = 99
 ids = [1850, 1851]
 +++
 

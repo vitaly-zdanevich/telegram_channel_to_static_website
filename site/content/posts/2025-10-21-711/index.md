@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/711"
 og_image = "5458701707648302947_1270953032_456261475.jpg"
 next_id = 712
 next_title = ""
+next_body = "#webdesign, 2696 game reviews on\nWorking from 2001\n4.26k subscribers on YouTube\n#games"
 prev_id = 710
 prev_title = ""
+prev_body = "#film\n#korolishut\n#naked"
 views = 32
 ids = [711]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1306"
 og_image = "5271994226549920871_1227481809_460002407.jpg"
 next_id = 1307
 next_title = ""
+next_body = "#couchsurfing\n#money\n2000$ per year to #AWS"
 prev_id = 1299
 prev_title = ""
+prev_body = "#bunker\n#fortification\n#military\n#abandone\n#belarus\n#german\n#globustut\n#year2005\nSource"
 views = 16
 ids = [1306]
 +++

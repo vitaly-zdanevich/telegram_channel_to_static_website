@@ -13,8 +13,10 @@ day = "2025-07-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/606"
 next_id = 607
 next_title = ""
+next_body = "#music\n#rap\n#babushka\n#russia\n#pain\nSource"
 prev_id = 605
 prev_title = ""
+prev_body = "#berlin\n#germany\n#harrypotter\n#ai\n#demonflyingfox\nSource"
 views = 55
 ids = [606]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1870"
 og_image = "5339406624478667762_1243177481_460006386.jpg"
 next_id = 1871
 next_title = ""
+next_body = "#death\n#grandmother\n#drink\n#kitchen\n#spirit\nSource"
 prev_id = 1869
 prev_title = ""
+prev_body = "#clown\n#mime\nSource"
 views = 9
 ids = [1870]
 +++

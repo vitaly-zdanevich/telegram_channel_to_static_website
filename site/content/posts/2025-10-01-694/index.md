@@ -13,8 +13,10 @@ day = "2025-10-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/694"
 next_id = 695
 next_title = ""
+next_body = "#journal\nAfter traveling through multiple countries, I feel that I prefer video games, books, YouTube.\nSome people love to travel so much..."
 prev_id = 693
 prev_title = ""
+prev_body = "#webdesign\n#wikimedia"
 views = 27
 ids = [694]
 +++
@@ -24,8 +26,9 @@ ids = [694]
 {{ tag(t="pain") }}  
 {{ tag(t="cry") }}  
 {{ tag(t="secret") }}  
+
 [Source](https://www.instagram.com/p/DMcEFKFslug)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DMcEFKFslug/") }}
 
 {{ tag(t="video") }}

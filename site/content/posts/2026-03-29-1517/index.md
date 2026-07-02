@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1517"
 og_image = "01.jpg"
 next_id = 1521
 next_title = ""
+next_body = "#cementery\n#virginmary\n#blue\n#monument\n#belarus\n#ивашковцы\n#globustut\n#year2005\nSource"
 prev_id = 1511
 prev_title = ""
+prev_body = "#abandone\n#columns\n#святск\n#belarus\n#globustut\n#year2005\nSource"
 views = 17
 ids = [1517]
 +++
@@ -27,6 +29,7 @@ ids = [1517]
 {{ tag(t="belarus") }}  
 {{ tag(t="globustut") }}  
 {{ tag(t="year_2005") }}  
+
 [Source](https://commons.wikimedia.org/wiki/File:057-561_%D0%9B%D0%BE%D0%B9%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
 ![](01.jpg)

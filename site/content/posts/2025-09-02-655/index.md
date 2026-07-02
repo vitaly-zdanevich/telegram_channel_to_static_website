@@ -13,8 +13,10 @@ day = "2025-09-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/655"
 next_id = 656
 next_title = ""
+next_body = "#iran\n#tehran\n#photo\nSource"
 prev_id = 654
 prev_title = ""
+prev_body = "#russia\n#israel\n#map\nSource"
 views = 40
 ids = [655]
 +++

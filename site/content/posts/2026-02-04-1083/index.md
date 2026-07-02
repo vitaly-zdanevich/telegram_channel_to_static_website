@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1083"
 og_image = "5197706105671322714_1210185258_460000346.jpg"
 next_id = 1084
 next_title = ""
+next_body = "#logo\n#foobar\n#audioplayer"
 prev_id = 1082
 prev_title = ""
+prev_body = "#people\n#fashion\n#zara"
 views = 10
 ids = [1083]
 +++

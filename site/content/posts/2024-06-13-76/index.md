@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/76"
 og_image = "5429382499949205565_1264126622_456251453.jpg"
 next_id = 77
 next_title = ""
+next_body = "Wow YouTube in fullscreen but as a normal tab"
 prev_id = 75
 prev_title = ""
+prev_body = "Copyright from 1429"
 views = 61
 ids = [76]
 +++

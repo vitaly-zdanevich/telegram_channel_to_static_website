@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1392"
 og_image = "01.jpg"
 next_id = 1393
 next_title = ""
+next_body = "#webdesign\n#pink\n#hellokitty\n#oldweb"
 prev_id = 1390
 prev_title = ""
+prev_body = "#architecture\n#bricks\n#brown\n#новогрудок\n#belarus\n#globustut\n#year2005\nSource"
 views = 10
 ids = [1392]
 +++

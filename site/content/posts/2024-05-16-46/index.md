@@ -11,8 +11,10 @@ day = "2024-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/46"
 next_id = 47
 next_title = ""
+next_body = ""
 prev_id = 45
 prev_title = ""
+prev_body = ""
 views = 50
 ids = [46]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/506"
 og_image = "5251374041313439124_1222680798_456256916.jpg"
 next_id = 507
 next_title = ""
+next_body = "#design\n#apple\n#ipod"
 prev_id = 504
 prev_title = ""
+prev_body = "#biology\n#symbiosis\n#leopoldthecat\n#cat\nРебята, давайте сосуществовать симбиотически\nSource"
 views = 23
 ids = [506]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1493"
 og_image = "5325703114708947786_1239986884_460002122.jpg"
 next_id = 1494
 next_title = ""
+next_body = "#steam: almost 25% is on #linux?"
 prev_id = 1492
 prev_title = ""
+prev_body = "#typography\n#year1907\n#sakartvelo\n#newspaper\n#isari\nSource"
 views = 21
 ids = [1493]
 +++

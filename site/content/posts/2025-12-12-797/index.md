@@ -14,13 +14,16 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/797"
 og_image = "01.jpg"
 next_id = 799
 next_title = ""
+next_body = "#preservation\n#games\n#beard\nFrom"
 prev_id = 796
 prev_title = ""
+prev_body = "#architecture\nДом со щуками\nFrom"
 views = 60
 ids = [797]
 +++
 
 > С помощью нехитрых приспособлений буханку хлеба можно превратить в троллейбус, но зачем
+
 <https://t.me/it_laboratory_bar/1/11399>{{ tag(t="ai") }}  
 {{ tag(t="nano_banana") }}  
 

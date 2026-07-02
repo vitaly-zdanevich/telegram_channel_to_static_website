@@ -13,9 +13,11 @@ day = "2026-06-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1867"
 next_id = 1868
 next_title = ""
+next_body = "#love\n#toy\n#breakup\nEсли тяжело засыпать одному - можно обнимать кота-батота, представляя что это близкий человек - так засыпать спокойнее.\nSource"
 prev_id = 1865
 prev_title = ""
-views = 9
+prev_body = "Wow, Gemini generates good logos, tried it for the first time\n#gemini\n#logo\n#telegrambot\n#wikimediacommons"
+views = 11
 ids = [1867]
 +++
 
@@ -28,6 +30,6 @@ ids = [1867]
 
 [Source](https://www.instagram.com/p/DZLS78ZxsEX/)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DZLS78ZxsEX/") }}
 
 {{ tag(t="video") }}

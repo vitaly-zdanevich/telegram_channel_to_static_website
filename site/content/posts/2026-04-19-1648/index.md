@@ -13,8 +13,10 @@ day = "2026-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1648"
 next_id = 1649
 next_title = ""
+next_body = "#typography\n#russian\n#preservation\n#century19\nSource"
 prev_id = 1647
 prev_title = ""
+prev_body = "#captcha"
 views = 17
 ids = [1648]
 +++
@@ -30,4 +32,4 @@ ids = [1648]
 
 <https://www.wikidata.org/wiki/Q110906634>
 
-📎 Parabol *(not archived)*
+{{ yandex_music(url="https://music.yandex.ru/iframe/#track/142481672/38048345") }}

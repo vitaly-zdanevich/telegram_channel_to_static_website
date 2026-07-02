@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/197"
 og_image = "5327938726787148268_1240507403_456255980.jpg"
 next_id = 198
 next_title = ""
+next_body = "#music"
 prev_id = 196
 prev_title = ""
+prev_body = "#space\n#film #extract Lost in Space) from 1998, movie ending, love it\n#lostinspace"
 views = 53
 ids = [197]
 +++

@@ -13,8 +13,10 @@ day = "2026-06-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1806"
 next_id = 1807
 next_title = ""
+next_body = "#love this #extension - #highlight predefined list of words, on predefined URLs."
 prev_id = 1805
 prev_title = ""
+prev_body = "My yet another project: @wikipediaunofficialbot\nBuilt with #llm #gpt 5.5 xhigh"
 views = 20
 ids = [1806]
 +++

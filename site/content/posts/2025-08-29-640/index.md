@@ -12,8 +12,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/640"
 og_image = "01.jpg"
 next_id = 642
 next_title = ""
+next_body = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа\nNo comments.\nHorn of the Abyss 1.7.3\nPlaying through Conty on Gentoo Linux no-multilib profile\nPart from\n#my\n#year1999\n#video\n#game\n#strategy\n#tbs\n#homm3\n#hota\n#emeraldisles"
 prev_id = 638
 prev_title = ""
+prev_body = ""
 views = 23
 ids = [640]
 +++

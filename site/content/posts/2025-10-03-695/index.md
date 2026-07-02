@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/695"
 og_image = "5404768918549166216_1258395826_456259720.jpg"
 next_id = 696
 next_title = ""
+next_body = "#film\n#scifi\nLove, Death & Robots: fan mashup of s1ep7 Beyond the Aquila Rift\nSource"
 prev_id = 694
 prev_title = ""
+prev_body = "#psy\n#success\n#pain\n#cry\n#secret\nSource"
 views = 24
 ids = [695]
 +++

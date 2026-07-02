@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1307"
 og_image = "5271994226549921339_1227481809_460002875.jpg"
 next_id = 1308
 next_title = ""
+next_body = "Wow in #kitty we can switch to a prev active tab:\nmap ctrl+alt+p gototab -1\n# Go to prev active tab"
 prev_id = 1306
 prev_title = ""
+prev_body = "Magic that I can say #codex to download all scan - and I get it, for #commons"
 views = 16
 ids = [1307]
 +++

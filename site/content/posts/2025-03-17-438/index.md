@@ -13,8 +13,10 @@ day = "2025-03-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/438"
 next_id = 439
 next_title = ""
+next_body = "#korea\n#ai\n#aivideo\n#starwars\n#demonflyingfox\nSource"
 prev_id = 436
 prev_title = ""
+prev_body = "#dieantwoord\nSource"
 views = 45
 ids = [438]
 +++

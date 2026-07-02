@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/79"
 og_image = "5456153825674123622_1270359807_456251750.jpg"
 next_id = 80
 next_title = ""
+next_body = "Tried #thunderbird again, after many years - and its good. UI space can be optimized though - to be more compact. Even Google Calendar sync (with an extension)."
 prev_id = 78
 prev_title = ""
+prev_body = "Offline documentation"
 views = 49
 ids = [79]
 +++

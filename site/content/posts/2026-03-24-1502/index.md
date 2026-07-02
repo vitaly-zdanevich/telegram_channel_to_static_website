@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1502"
 og_image = "5336893059293188649_1242592246_460001833.jpg"
 next_id = 1503
 next_title = ""
+next_body = "#wikipedia\n#wikimediacommons\nПишите авторам контентов - иногда они соглашаются сделать его Creative Commons"
 prev_id = 1501
 prev_title = ""
+prev_body = "Unreleased game Империя from #elementalgames, like #spacerangers\n#year2012"
 views = 19
 ids = [1502]
 +++

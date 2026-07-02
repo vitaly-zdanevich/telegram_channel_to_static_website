@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/620"
 og_image = "5240341610359812844_1220112110_456258284.jpg"
 next_id = 621
 next_title = ""
+next_body = "#anime\n#gpu\nSource"
 prev_id = 619
 prev_title = ""
+prev_body = "Returned to uploading of artifacts from moneymuseum.by, through my new web extension, and again - sometime I see the beauty\n#money\n#moneymuseum\nSource"
 views = 34
 ids = [620]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/869"
 og_image = "5407034092894751540_1258923228_460000052.jpg"
 next_id = 870
 next_title = ""
+next_body = "#games\n#gamazine\n#igromania\nSource"
 prev_id = 868
 prev_title = ""
+prev_body = "#belarus\n#building\n#globustut\n#year2004\nSource"
 views = 19
 ids = [869]
 +++

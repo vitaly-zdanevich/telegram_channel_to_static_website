@@ -13,8 +13,10 @@ day = "2025-08-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/627"
 next_id = 629
 next_title = ""
+next_body = "On January 29, 2015, about 15 years after the original release of Heroes of Might & Magic III, Ubisoft released a new high-definition version of the game compatible with PCs as well as Android and iOS tablets. The expansion packs were not included because the source code for those releases was lost\n#game\n#heroes\n#archiving\n#lost"
 prev_id = 626
 prev_title = ""
+prev_body = "#moneymuseum\n#money\n#rubles\nSource02.jpg)"
 views = 36
 ids = [627, 628]
 +++

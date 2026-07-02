@@ -13,8 +13,10 @@ day = "2026-05-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1779"
 next_id = 1780
 next_title = ""
+next_body = "What a time - multiple #llm doing multiple projects, in parallel..."
 prev_id = 1777
 prev_title = ""
+prev_body = "#log\nfailed"
 views = 38
 ids = [1779]
 +++

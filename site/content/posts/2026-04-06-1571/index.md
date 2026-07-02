@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1571"
 og_image = "01.jpg"
 next_id = 1580
 next_title = ""
+next_body = "#typography\n#scans\n#russianempire\n#kiev\n#18thcentury"
 prev_id = 1570
 prev_title = ""
-views = 15
+prev_body = "#ai\n#gpu\n#nvidia"
+views = 16
 ids = [1571]
 +++
 

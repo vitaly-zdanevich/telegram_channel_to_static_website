@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1817"
 og_image = "5282991447361658515_1230042299_460005011.jpg"
 next_id = 1818
 next_title = ""
+next_body = "#aws\n#billing\n#cost\n#graph"
 prev_id = 1807
 prev_title = ""
+prev_body = "#love this #extension - #highlight predefined list of words, on predefined URLs."
 views = 14
 ids = [1817]
 +++

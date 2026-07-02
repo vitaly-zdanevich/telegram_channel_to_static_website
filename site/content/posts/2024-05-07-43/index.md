@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/43"
 og_image = "5321356655046285584_1238974895_456251664.jpg"
 next_id = 44
 next_title = ""
+next_body = "Created browser extension to show Wikimedia Commons links on a museum website moneymuseum.by"
 prev_id = 42
 prev_title = ""
+prev_body = "Coin 5 years of Lithuania independence, from #coin"
 views = 47
 ids = [43]
 +++

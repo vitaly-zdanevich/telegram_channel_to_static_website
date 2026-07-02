@@ -11,12 +11,14 @@ tags = ["podcast"]
 id = 5
 day = "2022-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/5"
-next_id = 6
+next_id = 7
 next_title = ""
+next_body = "Упоминалось:\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
 prev_id = 3
 prev_title = ""
+prev_body = "Channel photo updated"
 views = 41
-ids = [5]
+ids = [5, 6]
 +++
 
 {{ tag(t="podcast") }}  
@@ -65,8 +67,8 @@ ids = [5]
 
 <https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples>  
 
-Записано на телефон Poco X3 Pro (Виталий), минимальный монтаж на Audacity, Gentoo.  
+Записано на телефон Poco X3 Pro (Виталий), минимальный монтаж на Audacity, Gentoo.
 
-<https://www.youtube.com/watch?v=FvoWznjetFc&list=PL7MgT49tMAJ4NMsqvBgfqEvLaP1-Rtipz&index=2>
+Второй подкаст с Анатолием Бабеней, про блокчейн, крипту, ИТ в Беларуси и мире, самоорганизацию, психологию, общественные проекты, работа, деньги, выгорание
 
 {{ youtube(id="5pkrlZGFzF0") }}

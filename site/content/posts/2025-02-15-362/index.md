@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/362"
 og_image = "01.jpg"
 next_id = 366
 next_title = ""
+next_body = "#game\n#man2"
 prev_id = 361
 prev_title = ""
+prev_body = "#coin\nSource"
 views = 42
 ids = [362]
 +++

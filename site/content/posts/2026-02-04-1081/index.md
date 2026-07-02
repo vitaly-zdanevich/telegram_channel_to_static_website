@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1081"
 og_image = "5195454305857638732_1209660970_460001612.jpg"
 next_id = 1082
 next_title = ""
+next_body = "#people\n#fashion\n#zara"
 prev_id = 1080
 prev_title = ""
+prev_body = "#ussr\n#history\nСегодня их существует пять плюс три молитвенных дома. А ведь еще в 1939 году, до прихода коммунистов, мечетей по стране было больше сорока"
 views = 14
 ids = [1081]
 +++

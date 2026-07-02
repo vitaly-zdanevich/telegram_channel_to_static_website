@@ -12,8 +12,10 @@ day = "2025-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/344"
 next_id = 345
 next_title = ""
+next_body = "#lapenko\n#art\n#dog\n#painting\n#religion\nSource"
 prev_id = 343
 prev_title = ""
+prev_body = "#ai\nSource"
 views = 46
 ids = [344]
 +++

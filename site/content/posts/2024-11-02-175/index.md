@@ -13,8 +13,10 @@ day = "2024-11-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/175"
 next_id = 176
 next_title = ""
+next_body = "#vr"
 prev_id = 174
 prev_title = ""
+prev_body = "Wow border-radius generator, so many values"
 views = 39
 ids = [175]
 +++

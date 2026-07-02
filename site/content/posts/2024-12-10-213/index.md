@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/213"
 og_image = "5384454698196658644_1253666053_456255956.jpg"
 next_id = 214
 next_title = ""
+next_body = "My first #lutris install script"
 prev_id = 212
 prev_title = ""
+prev_body = ""
 views = 51
 ids = [213]
 +++

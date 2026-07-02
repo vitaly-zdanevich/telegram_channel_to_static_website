@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1880"
 og_image = "5341828788465115300_1243741435_460005540.jpg"
 next_id = 1881
 next_title = ""
+next_body = "Моя #лекция про мой #telegrambot для #rutracker - не только ищет но и скачивает, на #oraclecloud\nОбзор, и про техническую реализацию.\nSource\nEvernote"
 prev_id = 1879
 prev_title = ""
-views = 4
+prev_body = "#belarus\n#cementery\n#sun\n#sky\n#blue\n#year2015\nSource.jpg)"
+views = 5
 ids = [1880]
 +++
 

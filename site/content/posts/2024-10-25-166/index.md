@@ -12,8 +12,10 @@ day = "2024-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/166"
 next_id = 167
 next_title = ""
+next_body = "Source:\nAuthor: Oleg Paschenko"
 prev_id = 165
 prev_title = ""
+prev_body = "#rice"
 views = 31
 ids = [166]
 +++

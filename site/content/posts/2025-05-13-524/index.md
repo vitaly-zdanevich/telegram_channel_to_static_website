@@ -12,8 +12,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/524"
 og_image = "5264726708089649361_1225789708_456259793.jpg"
 next_id = 525
 next_title = ""
+next_body = "#photo\n#history\n#face\n#medals"
 prev_id = 523
 prev_title = ""
+prev_body = "#belarus\n#history\n#lost\n#offline"
 views = 26
 ids = [524]
 +++

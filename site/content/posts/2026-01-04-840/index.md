@@ -13,8 +13,10 @@ day = "2026-01-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/840"
 next_id = 841
 next_title = ""
+next_body = "#photo\n#notmy\n#belarus\n#monument"
 prev_id = 838
 prev_title = ""
+prev_body = "#bendingspoons\n#aol\nSource"
 views = 17
 ids = [840]
 +++

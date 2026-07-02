@@ -13,9 +13,11 @@ day = "2025-11-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/738"
 next_id = 739
 next_title = ""
+next_body = "#music\n#musicrussian\n#rap\n#raprussian\n#musichumor\n#нтр"
 prev_id = 737
 prev_title = ""
-views = 26
+prev_body = "#webdesign\n#webdesignblack"
+views = 27
 ids = [738]
 +++
 
@@ -29,4 +31,6 @@ ids = [738]
 
 [https://ru.wikipedia.org/wiki/Корпускулярно-волновой\_дуализм](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE-%D0%B2%D0%BE%D0%BB%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B4%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC)  
 
-<https://genius.com/Nauchnotechnicheskirap-wave-particle-duality-lyrics>
+<https://genius.com/Nauchnotechnicheskirap-wave-particle-duality-lyrics>  
+
+<https://music.yandex.ru/album/10927229/track/66808674>

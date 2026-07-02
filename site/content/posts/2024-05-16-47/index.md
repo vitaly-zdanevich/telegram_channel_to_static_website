@@ -12,8 +12,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/47"
 og_image = "5346114461448135845_1244739271_456254629.jpg"
 next_id = 48
 next_title = ""
+next_body = "Overlay toolbars in Firefox, like in Safari!"
 prev_id = 46
 prev_title = ""
+prev_body = ""
 views = 55
 ids = [47]
 +++

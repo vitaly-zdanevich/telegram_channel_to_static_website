@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1120"
 og_image = "5244641018655740008_1221113144_460001384.jpg"
 next_id = 1121
 next_title = ""
+next_body = "#webdesign\n#buttons\n#animation\n#game\n#mmo\n#myst"
 prev_id = 1119
 prev_title = ""
+prev_body = "#bash\n#history\n#mcfly: ctrl-r replacement with \"suggestions are prioritized in real time with a small neural network.\"\nDid a color scheme for it."
 views = 14
 ids = [1120]
 +++

@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1080"
 og_image = "5190706876641906521_1208555623_460001113.jpg"
 next_id = 1081
 next_title = ""
+next_body = "#preservation\n#belarus\ngeo block\nI uploaded a lot from to Commons, and will continue."
 prev_id = 1079
 prev_title = ""
+prev_body = "#webdesign\n#game"
 views = 13
 ids = [1080]
 +++

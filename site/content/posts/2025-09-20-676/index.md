@@ -13,8 +13,10 @@ day = "2025-09-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/676"
 next_id = 677
 next_title = ""
+next_body = "#film\n#thefountain\n#darrenaronofsky\n#death\n#hospital\n#tree"
 prev_id = 675
 prev_title = ""
+prev_body = "#smell\n#dating\nSource"
 views = 29
 ids = [676]
 +++

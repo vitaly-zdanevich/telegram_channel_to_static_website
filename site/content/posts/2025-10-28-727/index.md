@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/727"
 og_image = "5190435396050353820_1208492414_456261276.jpg"
 next_id = 728
 next_title = ""
+next_body = "#design\n#purple\n#gamepad\n#gamecube\nSource"
 prev_id = 726
 prev_title = ""
+prev_body = "#logo\n#homm3\n#newworldcomputing\nFrom the YouTube commend:\nQuite possibly the most stylish and badass game company intros\nSource"
 views = 25
 ids = [727]
 +++

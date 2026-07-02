@@ -12,8 +12,10 @@ day = "2024-04-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/35"
 next_id = 36
 next_title = ""
+next_body = "Part of our new opera"
 prev_id = 34
 prev_title = ""
+prev_body = "This website looks soooo special #design"
 views = 49
 ids = [35]
 +++

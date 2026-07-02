@@ -13,8 +13,10 @@ day = "2025-05-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/518"
 next_id = 521
 next_title = ""
+next_body = "#displays\nDream setup. Now I have 4.\nSource"
 prev_id = 517
 prev_title = ""
+prev_body = ""
 views = 29
 ids = [518]
 +++
@@ -27,5 +29,3 @@ ids = [518]
 {{ tag(t="music") }}
 
 {{ youtube(id="QydzTeVCeAA") }}
-
-📎 Audio *(not archived)*

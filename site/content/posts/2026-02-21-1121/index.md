@@ -13,8 +13,10 @@ day = "2026-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1121"
 next_id = 1122
 next_title = ""
+next_body = "#mmo #myst #stat"
 prev_id = 1120
 prev_title = ""
+prev_body = "#ai\n#codex\n#love Codex, using it almost every day, recently solved a few long lasting technical problems thanks to him."
 views = 14
 ids = [1121]
 +++

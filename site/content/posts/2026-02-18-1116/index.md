@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1116"
 og_image = "5235963432371165215_1219092736_460003359.jpg"
 next_id = 1117
 next_title = ""
+next_body = "#gcc\n#make"
 prev_id = 1115
 prev_title = ""
+prev_body = "#zst is so much smaller #archive"
 views = 13
 ids = [1116]
 +++

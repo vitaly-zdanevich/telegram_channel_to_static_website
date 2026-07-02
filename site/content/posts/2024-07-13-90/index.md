@@ -11,8 +11,10 @@ day = "2024-07-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/90"
 next_id = 91
 next_title = ""
+next_body = ""
 prev_id = 89
 prev_title = ""
+prev_body = "Another good #design"
 views = 48
 ids = [90]
 +++

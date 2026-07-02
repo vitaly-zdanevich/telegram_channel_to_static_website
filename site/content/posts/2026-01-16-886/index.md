@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/886"
 og_image = "5429641422056394562_1264186907_460001090.jpg"
 next_id = 887
 next_title = ""
+next_body = "#commons: #count uploads from a specific user for a period of time, #python:\nimport requests\nuser = 'Globustut'\nstart = '2026-01-20T00:00:00Z' # newer\nend = '2026-01-01T00:00:00Z' # older\nparams = {\n'action': 'query',\n'format': 'json',\n'list': 'usercontribs',\n'ucuser': user,\n'ucnamespace': '6',\n'ucshow': 'new',\n'ucstart': start,\n'ucend': end,\n'uclimit': 'max',\n}\nheaders = {'User-Agent': 'commons-upload-count/1.0'}\ntotal = 0\ns = requests.Session()\nwhile True:\ndata = s.get(' params=params, headers=headers, timeout=30).json()\ntotal += len(data.get('query', {}).get('usercontribs', []))\nif 'continue' not in data:\nbreak\nprint('.', end='')\nparams.update(data['continue'])\nprint(total)"
 prev_id = 879
 prev_title = ""
+prev_body = "#belarus\n#architecture\n#castle\n#globustut\nKosava Castle\nSource"
 views = 11
 ids = [886]
 +++

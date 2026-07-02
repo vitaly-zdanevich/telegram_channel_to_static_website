@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/31"
 og_image = "01.jpg"
 next_id = 32
 next_title = ""
+next_body = "#film\nLove, Sex & Robots S1.E3: The Witness"
 prev_id = 30
 prev_title = ""
+prev_body = "#film\n#daywatch\nДневной Дозор: конец, эпизод с исправлением судьбы\nFrom"
 views = 76
 ids = [31]
 +++

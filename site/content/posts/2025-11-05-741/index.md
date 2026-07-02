@@ -13,9 +13,11 @@ day = "2025-11-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/741"
 next_id = 742
 next_title = ""
+next_body = "#webdesign\n#webdesigngames\nLike horizontal scrolling."
 prev_id = 739
 prev_title = ""
-views = 27
+prev_body = "#music\n#musicrussian\n#rap\n#raprussian\n#musichumor\n#нтр"
+views = 28
 ids = [741]
 +++
 

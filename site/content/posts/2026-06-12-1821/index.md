@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1821"
 og_image = "5287622628992557020_1231120580_460005340.jpg"
 next_id = 1822
 next_title = ""
+next_body = "#tbc\n#money\nThis is why we have #crypto?"
 prev_id = 1819
 prev_title = ""
+prev_body = "My another #userstyle: for #gemini, before and after"
 views = 16
 ids = [1821]
 +++

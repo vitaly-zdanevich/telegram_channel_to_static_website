@@ -12,8 +12,10 @@ day = "2022-03-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/8"
 next_id = 9
 next_title = ""
-prev_id = 6
+next_body = "С"
+prev_id = 7
 prev_title = ""
+prev_body = "Упоминалось:\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
 views = 56
 ids = [8]
 +++
@@ -47,6 +49,4 @@ Safecast maintains the largest open dataset of background radiation measurements
 
 <https://www.youtube.com/watch?v=3n36kUs8QSk&list=PL7MgT49tMAJ4NMsqvBgfqEvLaP1-Rtipz&index=3>
 
-{{ youtube(id="hSoCmAoIMOU") }}
-
-📎 003-vitaly-zdanevich-and-anatoly-babenia--with-metadata.mp3 *(not archived)*
+{{ youtube(id="3n36kUs8QSk") }}

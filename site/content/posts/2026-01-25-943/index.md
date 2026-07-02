@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/943"
 og_image = "5451802121863892647_1269346597_460000935.jpg"
 next_id = 944
 next_title = ""
+next_body = "#aws\n#awslambda\nFrom"
 prev_id = 941
 prev_title = ""
+prev_body = "#aws custom #cpu: dropped the lid (#scalping) for the better #cooling"
 views = 10
 ids = [943]
 +++

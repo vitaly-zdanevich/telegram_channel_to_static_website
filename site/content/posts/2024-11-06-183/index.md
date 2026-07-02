@@ -11,8 +11,10 @@ day = "2024-11-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/183"
 next_id = 184
 next_title = ""
+next_body = ""
 prev_id = 182
 prev_title = ""
+prev_body = "&gt; Telegram is not a commercial organization"
 views = 43
 ids = [183]
 +++

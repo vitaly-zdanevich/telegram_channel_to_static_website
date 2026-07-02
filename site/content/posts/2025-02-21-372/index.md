@@ -13,8 +13,10 @@ day = "2025-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/372"
 next_id = 374
 next_title = ""
+next_body = "Банк Империал - Конрад III\n#ad is old, around 2000 year? This bank is not exists anymore.\nSource"
 prev_id = 371
 prev_title = ""
+prev_body = "#ad from 2012\n#guardian\n#pigs\nSource"
 views = 55
 ids = [372]
 +++
@@ -30,7 +32,7 @@ Still The Most Shocking Second A Day**
 [Source](https://youtu.be/RBQ-IoHfimQ)  
 [Source](https://youtu.be/nKDgFCojiT8)
 
-{{ youtube(id="RBQ-IoHfimQ") }}
+{{ youtube(id="nKDgFCojiT8") }}
 
 📎 Most Shocking Second a Day Video \[RBQ-IoHfimQ\].webm *(not archived)*
 

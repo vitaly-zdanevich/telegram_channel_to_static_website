@@ -13,8 +13,10 @@ day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/424"
 next_id = 425
 next_title = ""
+next_body = "#pain\n#millenials\n#depression\n#dophin\nSource"
 prev_id = 423
 prev_title = ""
+prev_body = "#psy\n#depression\nSource"
 views = 127
 ids = [424]
 +++
@@ -28,6 +30,6 @@ ids = [424]
 
 [Source](https://www.instagram.com/p/DCeXWaDSAMP)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DCeXWaDSAMP/") }}
 
 {{ tag(t="video") }}

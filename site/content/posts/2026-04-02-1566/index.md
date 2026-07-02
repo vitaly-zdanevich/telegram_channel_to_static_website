@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1566"
 og_image = "5363938150528522300_1248889172_460003388.jpg"
 next_id = 1567
 next_title = ""
+next_body = "#preservation\n#wikimediacommons\n#unavailable"
 prev_id = 1565
 prev_title = ""
+prev_body = "#alien\n#screenshot\n#horror\n#giger\n#gimp\n#green\n#rice\nSource"
 views = 22
 ids = [1566]
 +++

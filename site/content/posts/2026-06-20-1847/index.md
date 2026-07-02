@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2026-06-20T15:23:51+00:00
-description = "game trailer music year2009 halo xbox xbox360 One of the best game trailerSource"
+description = "game trailer music year2009 halo xbox xbox360 One of the best game trailer Source"
 
 [taxonomies]
 days = ["2026-06-20"]
@@ -13,8 +13,10 @@ day = "2026-06-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1847"
 next_id = 1848
 next_title = ""
+next_body = "#batumi\nOh my, I live here\nFrom"
 prev_id = 1846
 prev_title = ""
+prev_body = "#webdesign\n#animation\n#videoeditor\n#cinelerra"
 views = 14
 ids = [1847]
 +++
@@ -27,7 +29,9 @@ ids = [1847]
 {{ tag(t="xbox") }}  
 {{ tag(t="xbox_360") }}  
 
-One of the best game trailer[Source](https://www.youtube.com/watch?v=uWSLHcAyy90)
+One of the best game trailer
+
+[Source](https://www.youtube.com/watch?v=uWSLHcAyy90)
 
 {{ youtube(id="uWSLHcAyy90") }}
 

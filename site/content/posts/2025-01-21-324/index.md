@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/324"
 og_image = "5463090545749504965_1271974888_456242117.jpg"
 next_id = 326
 next_title = ""
+next_body = "full metal alchemist"
 prev_id = 322
 prev_title = ""
+prev_body = "#girl"
 views = 42
 ids = [324, 325]
 +++

@@ -13,8 +13,10 @@ day = "2026-03-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1507"
 next_id = 1508
 next_title = ""
+next_body = "#nvidia\n#laser\n#agro"
 prev_id = 1506
 prev_title = ""
+prev_body = "#shutdown\n#cloudflare\n#preservation\n#school\n#error\nЧто вы будете делать когда вот это всё отключат по всему миру?\nЧто ты будешь делать без этой подсказки?"
 views = 17
 ids = [1507]
 +++

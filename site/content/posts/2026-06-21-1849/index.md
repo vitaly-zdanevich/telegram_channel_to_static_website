@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1849"
 og_image = "5317060712796460834_1237974668_460003106.jpg"
 next_id = 1850
 next_title = ""
+next_body = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио\nРепозиторий проекта\n#my\n#stillyoungbar\n#lecture\n#telegrambot\n#youtube\nSource\nEvernote"
 prev_id = 1848
 prev_title = ""
-views = 10
+prev_body = "#batumi\nOh my, I live here\nFrom"
+views = 11
 ids = [1849]
 +++
 

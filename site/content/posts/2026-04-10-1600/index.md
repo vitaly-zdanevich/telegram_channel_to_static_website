@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1600"
 og_image = "01.jpg"
 next_id = 1602
 next_title = ""
+next_body = "#typography\n#russianempire\n#century18\nSource"
 prev_id = 1599
 prev_title = ""
+prev_body = "My first blog #post to #wikimediadiff, about #wikimediacommons, #preservation\nAlso at"
 views = 14
 ids = [1600]
 +++

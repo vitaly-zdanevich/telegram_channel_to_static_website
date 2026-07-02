@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/647"
 og_image = "01.jpg"
 next_id = 648
 next_title = ""
+next_body = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы\n#game\n#homm3\n#hornoftheabyss"
 prev_id = 646
 prev_title = ""
+prev_body = "#film\n#music\n#russia\n#korolishut\ns1e5, start of the episode - live show"
 views = 40
 ids = [647]
 +++

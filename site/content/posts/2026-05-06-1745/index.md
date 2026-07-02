@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1745"
 og_image = "5465571945928660178_1272552634_460002514.jpg"
 next_id = 1746
 next_title = ""
+next_body = "#leetcode is often produce #error"
 prev_id = 1744
 prev_title = ""
+prev_body = "#python\n#mojo\n#llm\n#gemini\n2. Mojo (The New Challenger)\nMojo is a new programming language designed by Chris Lattner (creator of LLVM and Swift).\nIt is a superset of Python that looks and feels like Python but includes optional strong, static typing.\nIt claims to be up to 35,000x faster than Python because it compiles to machine code and utilizes hardware features like SIMD.\nKey Innovations: Introduces features like let for immutable variables\nWhy not #const?"
 views = 23
 ids = [1745]
 +++

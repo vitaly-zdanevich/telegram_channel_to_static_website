@@ -12,8 +12,10 @@ day = "2024-08-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/95"
 next_id = 96
 next_title = ""
+next_body = ""
 prev_id = 94
 prev_title = ""
+prev_body = "#firefox vertical tabs with plus custom CSS from"
 views = 52
 ids = [95]
 +++

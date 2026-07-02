@@ -13,8 +13,10 @@ day = "2026-01-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/949"
 next_id = 952
 next_title = ""
+next_body = "#timetravel\n#mail\n#марьино\n#year2005\n#year2026\n#year1976\n#globustut\nМарьино, капсула в будущее\nFrom"
 prev_id = 948
 prev_title = ""
+prev_body = "#css\nWow I did a good ::selection for my #evernote style\na::selection\n{\ncolor: lightblue;\ntext-decoration: underline solid blue 5px;\n}"
 views = 11
 ids = [949]
 +++

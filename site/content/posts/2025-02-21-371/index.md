@@ -13,8 +13,10 @@ day = "2025-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/371"
 next_id = 372
 next_title = ""
+next_body = "Most Shocking Second a Day Video\nStill The Most Shocking Second A Day\n#ad\n#uk\n#war\n#girl\nSource\nSource"
 prev_id = 370
 prev_title = ""
+prev_body = "#ai\n#aicalls\nТы упомянул свой стартап по поиску жилья pro.placy.ai\n— …да, ИИ-ассистент, которму сейчас не подвластно только одно — открыть ключом дверь в квартиру, которую ты хочешь арендовать или купить. Всё остальное он делает — подбирает для тебя разные объёкты, общается с агентствами недвижимости, советует, что лучше, а что хуже. Надо будет — обзвонит агентства и уточнит по твоему запросу, есть ли возле конкретного дома два парковочных места."
 views = 53
 ids = [371]
 +++
@@ -22,6 +24,7 @@ ids = [371]
 {{ tag(t="ad") }} from 2012  
 {{ tag(t="guardian") }}  
 {{ tag(t="pigs") }}  
+
 [Source](https://www.youtube.com/watch?v=vDGrfhJH1P4)
 
 {{ youtube(id="vDGrfhJH1P4") }}

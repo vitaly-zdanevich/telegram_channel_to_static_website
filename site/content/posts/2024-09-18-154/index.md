@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/154"
 og_image = "5431701550360814121_1264666568_456253993.jpg"
 next_id = 155
 next_title = ""
+next_body = "Python in a browser"
 prev_id = 153
 prev_title = ""
+prev_body = ""
 views = 73
 ids = [154]
 +++

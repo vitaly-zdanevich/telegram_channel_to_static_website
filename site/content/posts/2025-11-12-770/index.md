@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/770"
 og_image = "5233719668441288226_1218570319_460000802.jpg"
 next_id = 771
 next_title = ""
+next_body = "#webdesign\n#webdesignold\n#xbox\nWikidata\nSource"
 prev_id = 769
 prev_title = ""
+prev_body = "#mp3\n#hardware\n#sandisc\nSexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008."
 views = 36
 ids = [770]
 +++

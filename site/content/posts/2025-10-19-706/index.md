@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/706"
 og_image = "5452023402870209880_1269398118_456260952.jpg"
 next_id = 707
 next_title = ""
+next_body = "#archivation\n#games\nTrying to #zim it"
 prev_id = 705
 prev_title = ""
+prev_body = "#coffee\n#americano\n#latte\n#raspberry\n#orange\n#brutality\n#psy\nSource"
 views = 27
 ids = [706]
 +++

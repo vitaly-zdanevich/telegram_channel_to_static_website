@@ -14,9 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1629"
 og_image = "01.jpg"
 next_id = 1636
 next_title = ""
+next_body = "#linux\n#france\n#news\nFrance to ditch Windows for Linux to reduce reliance on US tech\nFrance is trying to move on from Microsoft Windows. The country said it plans to move some of its government computers currently running Windows to the open source operating system Linux to further reduce its reliance on U.S. technology.\nLinux is an open source operating system that is free to download and use, with various customized distributions that are tailored and designed for specific use cases or operations.\nIn a statement, French minister David Amiel said (translated) that the effort was to “regain control of our digital destiny” by relying less on U.S. tech companies. Amiel said that the French government can no longer accept that it doesn’t have control over its data and digital infrastructure."
 prev_id = 1624
 prev_title = ""
-views = 18
+prev_body = "#preview on #bilibili\n#anime"
+views = 19
 ids = [1629]
 +++
 

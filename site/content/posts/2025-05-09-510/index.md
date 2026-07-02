@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/510"
 og_image = "01.jpg"
 next_id = 512
 next_title = ""
+next_body = "#mpv\n#anime\n#readme"
 prev_id = 509
 prev_title = ""
+prev_body = "#health\n#science"
 views = 23
 ids = [510]
 +++

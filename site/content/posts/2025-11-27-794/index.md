@@ -13,8 +13,10 @@ day = "2025-11-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/794"
 next_id = 795
 next_title = ""
+next_body = "Фильм \"Лучше не бывает\": несколько минут в разных русских озвучках\nОбратил внимание как отличается перевод/озвучка.\n#film\n#asgoodasitgets\n#translation\n#russian"
 prev_id = 793
 prev_title = ""
+prev_body = "#ad\n#game\n#tank\n#wwii\n#music\n#warpath\nSource"
 views = 56
 ids = [794]
 +++

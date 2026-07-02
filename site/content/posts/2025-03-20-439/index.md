@@ -13,8 +13,10 @@ day = "2025-03-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/439"
 next_id = 440
 next_title = ""
+next_body = "#music\n#car\nMick Gordon - BFG division from #doom3\nSource"
 prev_id = 438
 prev_title = ""
+prev_body = "#dieantwoord\nSource"
 views = 73
 ids = [439]
 +++
@@ -24,6 +26,7 @@ ids = [439]
 {{ tag(t="ai_video") }}  
 {{ tag(t="star_wars") }}  
 {{ tag(t="demonflyingfox") }}  
+
 [Source](https://youtu.be/EICWYazyqu4)
 
 {{ youtube(id="EICWYazyqu4") }}

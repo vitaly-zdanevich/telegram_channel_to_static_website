@@ -13,9 +13,11 @@ day = "2025-04-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/485"
 next_id = 486
 next_title = ""
+next_body = "Source"
 prev_id = 484
 prev_title = ""
-views = 58
+prev_body = "#complexnumbers\n#2084\nPublished to"
+views = 59
 ids = [485]
 +++
 
@@ -27,8 +29,9 @@ ids = [485]
 {{ tag(t="caw") }}  
 {{ tag(t="liver") }}  
 {{ tag(t="worms") }}  
+
 [Source](https://www.instagram.com/p/DIL-UZUif5t)
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/DIL-UZUif5t/") }}
 
 {{ tag(t="video") }}

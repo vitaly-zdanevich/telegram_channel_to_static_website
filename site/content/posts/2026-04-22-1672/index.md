@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1672"
 og_image = "01.jpg"
 next_id = 1674
 next_title = ""
+next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
 prev_id = 1668
 prev_title = ""
+prev_body = "#anime\n#cover\n#game\n#ps3\n#year2014\nAtelier Shallie Alchemists of the Dusk Sea"
 views = 15
 ids = [1672]
 +++

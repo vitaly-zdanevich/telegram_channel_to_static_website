@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/82"
 og_image = "5190535735076315675_1208515776_456253979.jpg"
 next_id = 83
 next_title = ""
+next_body = "Local (off-the-grid) social network with chat, on #blockchain (so you cannot edit your messages), looks like abandoned\nYou can use this without internet."
 prev_id = 81
 prev_title = ""
+prev_body = "Wow, DIY laptop with easy interchangeable parts\nSad that fanless laptops looks like unpopular, the best of such - MacBook Air, but I love Linux."
 views = 61
 ids = [82]
 +++

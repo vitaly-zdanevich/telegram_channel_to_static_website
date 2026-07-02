@@ -12,14 +12,16 @@ day = "2024-09-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/149"
 next_id = 152
 next_title = ""
+next_body = ""
 prev_id = 148
 prev_title = ""
+prev_body = ""
 views = 60
 ids = [149, 150]
 +++
 
 <https://www.instagram.com/p/Cp7-1oIo10L/>
 
-{{ video(src="01.mp4") }}
+{{ instagram(url="https://www.instagram.com/p/Cp7-1oIo10L/") }}
 
 {{ tag(t="video") }}

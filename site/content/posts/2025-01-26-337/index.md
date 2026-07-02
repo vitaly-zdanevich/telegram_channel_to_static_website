@@ -13,8 +13,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/337"
 og_image = "5240297161743265404_1220101761_456257148.jpg"
 next_id = 338
 next_title = ""
+next_body = "#warcraft\nSource"
 prev_id = 336
 prev_title = ""
+prev_body = ""
 views = 48
 ids = [337]
 +++

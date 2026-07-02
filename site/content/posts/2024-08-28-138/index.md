@@ -12,8 +12,10 @@ day = "2024-08-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/138"
 next_id = 139
 next_title = ""
+next_body = "Categories"
 prev_id = 137
 prev_title = ""
+prev_body = "So many platforms for a game)"
 views = 56
 ids = [138]
 +++

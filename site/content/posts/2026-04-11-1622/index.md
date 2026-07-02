@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1622"
 og_image = "01.jpg"
 next_id = 1623
 next_title = ""
+next_body = "Usual #school in #china? #lenin\n【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】"
 prev_id = 1613
 prev_title = ""
+prev_body = "#typography\n#russianempire\n#ukraine\n#century18\nSource"
 views = 23
 ids = [1622]
 +++

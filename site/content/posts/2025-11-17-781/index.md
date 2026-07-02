@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/781"
 og_image = "5249251099112311939_1222186512_460000387.jpg"
 next_id = 782
 next_title = ""
+next_body = "#ad\n#retro\n#nokia\nSource"
 prev_id = 780
 prev_title = ""
+prev_body = "#webdesign\n#webdesigngames\n#pink"
 views = 35
 ids = [781]
 +++

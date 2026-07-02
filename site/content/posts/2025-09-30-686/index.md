@@ -14,8 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/686"
 og_image = "5395445158729875858_1256224969_456262034.jpg"
 next_id = 687
 next_title = ""
+next_body = "#cinema\n#spunchbob\n#gruz200\nSource"
 prev_id = 685
 prev_title = ""
+prev_body = "#fear\n#airplane\nSource"
 views = 20
 ids = [686]
 +++
