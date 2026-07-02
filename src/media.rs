@@ -280,4 +280,34 @@ mod tests {
         assert_eq!(ext_from_url("https://cdn/file/x.mp4?token=abc", "bin"), "mp4");
         assert_eq!(ext_from_url("https://cdn/file/noext", "jpg"), "jpg");
     }
+
+    #[tokio::test]
+    async fn download_writes_then_caches() {
+        use wiremock::matchers::{method, path};
+        use wiremock::{Mock, MockServer, ResponseTemplate};
+
+        let server = MockServer::start().await;
+        Mock::given(method("GET"))
+            .and(path("/a.jpg"))
+            .respond_with(ResponseTemplate::new(200).set_body_string("IMAGEDATA"))
+            .expect(1) // fetched exactly once — the second run must hit the cache
+            .mount(&server)
+            .await;
+
+        let dir = std::env::temp_dir().join(format!("tg2-dl-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        let job = Job {
+            url: format!("{}/a.jpg", server.uri()),
+            dest: dir.join("a.jpg"),
+            force: false,
+            local: None,
+        };
+        let client = reqwest::Client::new();
+        download_all(&client, std::slice::from_ref(&job), 2).await.unwrap();
+        assert_eq!(std::fs::read(&job.dest).unwrap(), b"IMAGEDATA");
+        // dest now exists and force is off → the second call skips the download.
+        download_all(&client, std::slice::from_ref(&job), 2).await.unwrap();
+        // The mock's expect(1) is verified when `server` drops.
+        let _ = std::fs::remove_dir_all(&dir);
+    }
 }

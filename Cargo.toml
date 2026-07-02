@@ -38,6 +38,9 @@ grammers-mtsender = { version = "0.8", optional = true }
 base64 = { version = "0.22", optional = true }
 rpassword = { version = "7", optional = true }
 
+[dev-dependencies]
+wiremock = "0.6"
+
 [features]
 default = []
 mtproto = ["dep:grammers-client", "dep:grammers-session", "dep:grammers-mtsender", "dep:base64", "dep:rpassword"]
