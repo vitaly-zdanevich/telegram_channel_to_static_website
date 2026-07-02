@@ -20,6 +20,10 @@ concurrency:
 
 env:
   ZOLA_VERSION: v0.22.1
+  # Silence the noisy "punycode module is deprecated" (DEP0040) warning that
+  # Node-based actions' transitive deps emit — it's not from our code and not
+  # actionable here.
+  NODE_OPTIONS: --no-deprecation
   # Which channel to sync. Set a repository *variable* named CHANNEL to override
   # the `channel` in tg2zola.toml without editing the file.
   CHANNEL: ${{ vars.CHANNEL }}
