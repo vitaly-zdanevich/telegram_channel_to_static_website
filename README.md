@@ -46,8 +46,9 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   via `prefers-color-scheme` (OLED-friendly), with no external theme dependency.
   An external theme can be layered on with a guaranteed fallback (see [Theming](#theming)).
 - **Smart video handling** (in priority order):
-  1. attached video **+ a YouTube link** → embed YouTube, drop the video
-     (set `KEEP_MEDIA`/`--keep-media` to keep + show the attached video too);
+  1. attached video **+ a live YouTube/Instagram link** → embed it, drop the video
+     (the CI default, to save space; a dead link keeps the video). Locally
+     everything is downloaded by default — `KEEP_MEDIA`/`--keep-media` forces it;
   2. directly downloadable video → local `<video>`;
   3. otherwise → save the **poster frame** + duration (the public page doesn't
      expose the file; see [Limitations](#limitations)).
@@ -248,7 +249,7 @@ These are *variables*, not secrets — all of it is public.
 | `STRIP_TITLE` | `--strip-title` | off | With `DERIVE_TITLES`, also remove that first sentence from the body so it isn't shown twice |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
-| `KEEP_MEDIA` | `--keep-media` | off | `true` to keep (download + show) attached **video/audio** even when the post links YouTube / Apple Podcasts (default: the embed replaces the attached media, to save hosting space) |
+| `KEEP_MEDIA` | `--keep-media` | CI: off · local: on | `true` to keep (download + show) attached **video/audio** even when the post links YouTube / Apple Podcasts / Instagram. The default is environment-aware: on CI (GitHub Actions / GitLab) the embed replaces the attached media to save hosting space; on a local machine everything is downloaded for a complete backup |
 | `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (fetches the page for its YouTube video + lyrics widget) |
 | `LIVENESS` | `--no-liveness` | on | `false` skips the YouTube liveness check; a removed video (oEmbed 404) otherwise keeps its local media instead of showing a dead embed |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |

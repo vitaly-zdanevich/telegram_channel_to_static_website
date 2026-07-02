@@ -366,7 +366,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         strip_title: g.strip_title || fc.strip_title.unwrap_or(false),
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
-        keep_media: g.keep_media || fc.keep_media.unwrap_or(false),
+        // Default flips by environment: on CI (GitHub Actions / GitLab) prefer
+        // embeds over downloads to fit the static-host budget; on a local machine
+        // download everything for a complete backup. An explicit --keep-media or
+        // a config `keep_media` value still wins.
+        keep_media: g.keep_media || fc.keep_media.unwrap_or_else(|| !running_in_ci()),
         genius: if g.no_genius {
             false
         } else {
@@ -455,6 +459,17 @@ fn resolve_search(engine: Option<String>, custom: Option<String>, base_url: &str
     }
 }
 
+/// True on a CI runner (GitHub Actions, GitLab CI, or a generic `CI=true`). There
+/// the `keep_media` default flips to space-saving — a live YouTube/Instagram link
+/// replaces the attached video instead of downloading it, to fit the ~1 GB
+/// static-host budget. Off CI (a local machine) the default is to download
+/// everything for a complete backup.
+fn running_in_ci() -> bool {
+    ["GITHUB_ACTIONS", "GITLAB_CI", "CI"]
+        .iter()
+        .any(|k| std::env::var(k).is_ok_and(|v| matches!(v.trim(), "true" | "1" | "yes")))
+}
+
 /// Host of a base URL (`https://host/path` → `host`); None for "/" (offline
 /// builds), where domain-scoped search doesn't apply.
 fn host_of(base_url: &str) -> Option<String> {
@@ -471,6 +486,15 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     let started = std::time::Instant::now();
     let client = http_client()?;
 
+    info!(
+        "running {} — media: {}",
+        if running_in_ci() { "in CI" } else { "locally" },
+        if s.keep_media {
+            "downloading all media (full backup)"
+        } else {
+            "embedding live YouTube/Instagram to save space"
+        },
+    );
     info!("scraping https://t.me/s/{}", s.channel);
     let scraper = scrape::Scraper::new(client.clone(), s.channel.clone(), s.page_delay_ms);
     let (messages, channel_info) = scraper.fetch_all(s.max_pages).await?;
