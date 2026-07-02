@@ -397,7 +397,7 @@ pub fn about(lang: &str) -> About {
 const EN_ABOUT: About = About {
     intro: "A static mirror of the public Telegram channel {channel}.",
     mtproto_on: "The optional MTProto backend was used to fetch audio and long videos.",
-    mtproto_off: "The optional MTProto backend was not used — public web preview only.",
+    mtproto_off: "The optional MTProto backend was not used — public web preview only. Enable it with the `mtproto` build feature and Telegram API credentials.",
     size_limit: "The site occupies **__TOTAL_SIZE__** — **__PERCENT__** of the {limit_link}.",
     size_plain: "The site occupies **__TOTAL_SIZE__** on disk.",
     limit_phrase: "{display} {name} limit",
@@ -416,7 +416,7 @@ const EN_ABOUT: About = About {
 const RU_ABOUT: About = About {
     intro: "Статичная копия публичного Telegram-канала {channel}.",
     mtproto_on: "Опциональный бэкенд MTProto использовался для загрузки аудио и длинных видео.",
-    mtproto_off: "Опциональный бэкенд MTProto не использовался — только публичное веб-превью.",
+    mtproto_off: "Опциональный бэкенд MTProto не использовался — только публичное веб-превью. Включается сборкой с функцией `mtproto` и учётными данными Telegram API.",
     size_limit: "Сайт занимает **__TOTAL_SIZE__** — **__PERCENT__** от {limit_link}.",
     size_plain: "Сайт занимает **__TOTAL_SIZE__** на диске.",
     limit_phrase: "лимита {name} в {display}",
@@ -435,7 +435,7 @@ const RU_ABOUT: About = About {
 const UK_ABOUT: About = About {
     intro: "Статична копія публічного Telegram-каналу {channel}.",
     mtproto_on: "Опціональний бекенд MTProto використовувався для завантаження аудіо та довгих відео.",
-    mtproto_off: "Опціональний бекенд MTProto не використовувався — лише публічне вебпрев’ю.",
+    mtproto_off: "Опціональний бекенд MTProto не використовувався — лише публічне вебпрев’ю. Вмикається збіркою з функцією `mtproto` та обліковими даними Telegram API.",
     size_limit: "Сайт займає **__TOTAL_SIZE__** — **__PERCENT__** від {limit_link}.",
     size_plain: "Сайт займає **__TOTAL_SIZE__** на диску.",
     limit_phrase: "ліміту {name} у {display}",
@@ -454,7 +454,7 @@ const UK_ABOUT: About = About {
 const BE_ABOUT: About = About {
     intro: "Статычная копія публічнага Telegram-канала {channel}.",
     mtproto_on: "Апцыянальны бэкенд MTProto выкарыстоўваўся для спампоўкі аўдыя і доўгіх відэа.",
-    mtproto_off: "Апцыянальны бэкенд MTProto не выкарыстоўваўся — толькі публічнае вэб-прэв’ю.",
+    mtproto_off: "Апцыянальны бэкенд MTProto не выкарыстоўваўся — толькі публічнае вэб-прэв’ю. Уключаецца зборкай з функцыяй `mtproto` і ўліковымі данымі Telegram API.",
     size_limit: "Сайт займае **__TOTAL_SIZE__** — **__PERCENT__** ад {limit_link}.",
     size_plain: "Сайт займае **__TOTAL_SIZE__** на дыску.",
     limit_phrase: "ліміту {name} у {display}",
@@ -473,7 +473,7 @@ const BE_ABOUT: About = About {
 const DE_ABOUT: About = About {
     intro: "Eine statische Kopie des öffentlichen Telegram-Kanals {channel}.",
     mtproto_on: "Das optionale MTProto-Backend wurde verwendet, um Audio und lange Videos zu laden.",
-    mtproto_off: "Das optionale MTProto-Backend wurde nicht verwendet — nur die öffentliche Web-Vorschau.",
+    mtproto_off: "Das optionale MTProto-Backend wurde nicht verwendet — nur die öffentliche Web-Vorschau. Aktivierbar über das Build-Feature `mtproto` und Telegram-API-Zugangsdaten.",
     size_limit: "Die Website belegt **__TOTAL_SIZE__** — **__PERCENT__** des {limit_link}.",
     size_plain: "Die Website belegt **__TOTAL_SIZE__** auf der Festplatte.",
     limit_phrase: "Limits von {name} ({display})",
@@ -492,7 +492,7 @@ const DE_ABOUT: About = About {
 const FR_ABOUT: About = About {
     intro: "Une copie statique de la chaîne Telegram publique {channel}.",
     mtproto_on: "Le backend MTProto optionnel a été utilisé pour récupérer l’audio et les vidéos longues.",
-    mtproto_off: "Le backend MTProto optionnel n’a pas été utilisé — uniquement l’aperçu web public.",
+    mtproto_off: "Le backend MTProto optionnel n’a pas été utilisé — uniquement l’aperçu web public. Activez-le via la fonctionnalité de build `mtproto` et des identifiants de l’API Telegram.",
     size_limit: "Le site occupe **__TOTAL_SIZE__** — **__PERCENT__** de la {limit_link}.",
     size_plain: "Le site occupe **__TOTAL_SIZE__** sur le disque.",
     limit_phrase: "limite de {name} ({display})",
@@ -511,7 +511,7 @@ const FR_ABOUT: About = About {
 const ZH_ABOUT: About = About {
     intro: "公开 Telegram 频道 {channel} 的静态镜像。",
     mtproto_on: "已使用可选的 MTProto 后端来获取音频和长视频。",
-    mtproto_off: "未使用可选的 MTProto 后端 — 仅使用公开网页预览。",
+    mtproto_off: "未使用可选的 MTProto 后端 — 仅使用公开网页预览。使用 `mtproto` 构建功能和 Telegram API 凭据即可启用。",
     size_limit: "本站占用 **__TOTAL_SIZE__**，为 {limit_link} 的 **__PERCENT__**。",
     size_plain: "本站在磁盘上占用 **__TOTAL_SIZE__**。",
     limit_phrase: "{name} {display} 限额",
@@ -530,7 +530,7 @@ const ZH_ABOUT: About = About {
 const JA_ABOUT: About = About {
     intro: "公開 Telegram チャンネル {channel} の静的ミラー。",
     mtproto_on: "オプションの MTProto バックエンドを使用して音声と長い動画を取得しました。",
-    mtproto_off: "オプションの MTProto バックエンドは使用していません — 公開ウェブプレビューのみ。",
+    mtproto_off: "オプションの MTProto バックエンドは使用していません — 公開ウェブプレビューのみ。`mtproto` ビルド機能と Telegram API 認証情報で有効化できます。",
     size_limit: "このサイトは **__TOTAL_SIZE__** を使用 — {limit_link}の **__PERCENT__** です。",
     size_plain: "このサイトはディスク上で **__TOTAL_SIZE__** を使用しています。",
     limit_phrase: "{name} の {display} 制限",
@@ -549,7 +549,7 @@ const JA_ABOUT: About = About {
 const PL_ABOUT: About = About {
     intro: "Statyczna kopia publicznego kanału Telegram {channel}.",
     mtproto_on: "Opcjonalny backend MTProto został użyty do pobrania audio i długich filmów.",
-    mtproto_off: "Opcjonalny backend MTProto nie został użyty — tylko publiczny podgląd sieciowy.",
+    mtproto_off: "Opcjonalny backend MTProto nie został użyty — tylko publiczny podgląd sieciowy. Włącz go funkcją kompilacji `mtproto` i danymi uwierzytelniającymi API Telegrama.",
     size_limit: "Witryna zajmuje **__TOTAL_SIZE__** — **__PERCENT__** {limit_link}.",
     size_plain: "Witryna zajmuje **__TOTAL_SIZE__** na dysku.",
     limit_phrase: "limitu {name} ({display})",
@@ -568,7 +568,7 @@ const PL_ABOUT: About = About {
 const ES_ABOUT: About = About {
     intro: "Una copia estática del canal público de Telegram {channel}.",
     mtproto_on: "Se usó el backend opcional MTProto para obtener audio y vídeos largos.",
-    mtproto_off: "No se usó el backend opcional MTProto — solo la vista previa web pública.",
+    mtproto_off: "No se usó el backend opcional MTProto — solo la vista previa web pública. Actívalo con la función de compilación `mtproto` y credenciales de la API de Telegram.",
     size_limit: "El sitio ocupa **__TOTAL_SIZE__** — el **__PERCENT__** del {limit_link}.",
     size_plain: "El sitio ocupa **__TOTAL_SIZE__** en disco.",
     limit_phrase: "límite de {name} ({display})",
@@ -587,7 +587,7 @@ const ES_ABOUT: About = About {
 const KO_ABOUT: About = About {
     intro: "공개 Telegram 채널 {channel}의 정적 미러.",
     mtproto_on: "선택적 MTProto 백엔드를 사용하여 오디오와 긴 동영상을 가져왔습니다.",
-    mtproto_off: "선택적 MTProto 백엔드를 사용하지 않았습니다 — 공개 웹 미리보기만 사용.",
+    mtproto_off: "선택적 MTProto 백엔드를 사용하지 않았습니다 — 공개 웹 미리보기만 사용. `mtproto` 빌드 기능과 Telegram API 자격 증명으로 활성화할 수 있습니다.",
     size_limit: "이 사이트는 **__TOTAL_SIZE__**을(를) 사용 — {limit_link}의 **__PERCENT__**입니다.",
     size_plain: "이 사이트는 디스크에서 **__TOTAL_SIZE__**을(를) 사용합니다.",
     limit_phrase: "{name} {display} 제한",
@@ -606,7 +606,7 @@ const KO_ABOUT: About = About {
 const KA_ABOUT: About = About {
     intro: "საჯარო Telegram-არხის {channel} სტატიკური ასლი.",
     mtproto_on: "სურვილისამებრ MTProto backend გამოყენებულია აუდიოსა და გრძელი ვიდეოების ჩამოსატვირთად.",
-    mtproto_off: "სურვილისამებრ MTProto backend არ გამოყენებულა — მხოლოდ საჯარო ვებ-გადახედვა.",
+    mtproto_off: "სურვილისამებრ MTProto backend არ გამოყენებულა — მხოლოდ საჯარო ვებ-გადახედვა. ჩართეთ `mtproto` build-ფუნქციითა და Telegram API-ის მონაცემებით.",
     size_limit: "საიტი იკავებს **__TOTAL_SIZE__**-ს ({limit_link}: **__PERCENT__**).",
     size_plain: "საიტი დისკზე იკავებს **__TOTAL_SIZE__**-ს.",
     limit_phrase: "{name}-ის {display} ლიმიტი",
@@ -631,7 +631,7 @@ const HI_ABOUT: About = About {
     largest_files: "सबसे बड़ी फ़ाइलें:",
     generated_in: "**__BUILD_TIME__** में तैयार किया गया।",
     mtproto_on: "ऑडियो और मूल-गुणवत्ता की तस्वीरें लाने के लिए वैकल्पिक MTProto बैकएंड का उपयोग किया गया।",
-    mtproto_off: "वैकल्पिक MTProto बैकएंड का उपयोग नहीं किया गया — केवल सार्वजनिक वेब पूर्वावलोकन।",
+    mtproto_off: "वैकल्पिक MTProto बैकएंड का उपयोग नहीं किया गया — केवल सार्वजनिक वेब पूर्वावलोकन। इसे `mtproto` बिल्ड फ़ीचर और Telegram API क्रेडेंशियल के साथ सक्षम करें।",
     source_repo: "स्रोत कोड रिपॉज़िटरी:",
     no_api: "**किसी Telegram बॉट, टोकन या API की आवश्यकता नहीं** — साइट सार्वजनिक वेब पूर्वावलोकन से बनाई जाती है और सभी मीडिया स्थानीय रूप से डाउनलोड किए जाते हैं, इसलिए चैनल हटाए जाने पर भी यह काम करती रहती है।",
     kind_text: "टेक्स्ट",
