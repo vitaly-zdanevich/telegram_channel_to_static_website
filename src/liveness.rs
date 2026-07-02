@@ -105,7 +105,7 @@ fn apple_podcast_id(url: &str) -> Option<String> {
 
 #[cfg(test)]
 mod tests {
-    use super::{apple_podcast_id, yandex_track_id};
+    use super::{apple_podcast_id, has_nonempty_og, yandex_track_id};
 
     #[test]
     fn extract_yandex_track_id() {
@@ -128,6 +128,23 @@ mod tests {
             Some("999")
         );
         assert_eq!(apple_podcast_id("https://example.com/foo"), None);
+    }
+
+    #[test]
+    fn og_title_presence() {
+        // A live Instagram post has a non-empty og:title; a removed one doesn't.
+        assert!(has_nonempty_og(
+            r#"<meta property="og:title" content="Venjent on Instagram">"#,
+            "og:title"
+        ));
+        assert!(!has_nonempty_og(
+            r#"<meta property="og:title" content="">"#,
+            "og:title"
+        ));
+        assert!(!has_nonempty_og(
+            r#"<meta property="og:description" content="x">"#,
+            "og:title"
+        ));
     }
 }
 

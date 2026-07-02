@@ -780,3 +780,50 @@ fn init_tracing(level: &str) {
         .without_time()
         .init();
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn search_default_is_elasticlunr() {
+        // No engine and no custom URL → the self-contained default.
+        assert!(matches!(resolve_search(None, None, "/"), Search::Elasticlunr));
+        for name in ["elasticlunr", "lunr", "local"] {
+            assert!(
+                matches!(resolve_search(Some(name.into()), None, "/"), Search::Elasticlunr),
+                "{name}"
+            );
+        }
+    }
+
+    #[test]
+    fn search_engines_and_overrides() {
+        // Google keeps the host for its `site:` filter.
+        match resolve_search(Some("google".into()), None, "https://ex.github.io/") {
+            Search::Google { site } => assert_eq!(site.as_deref(), Some("ex.github.io")),
+            other => panic!("expected Google, got {other:?}"),
+        }
+        // A custom URL wins over any engine name.
+        match resolve_search(Some("google".into()), Some("https://s/?q=".into()), "/") {
+            Search::Custom { url } => assert_eq!(url, "https://s/?q="),
+            other => panic!("expected Custom, got {other:?}"),
+        }
+        // Named web engines resolve to a Custom URL.
+        assert!(matches!(
+            resolve_search(Some("duckduckgo".into()), None, "/"),
+            Search::Custom { .. }
+        ));
+        // Explicit off, and any unknown engine, disable the box.
+        assert!(matches!(resolve_search(Some("none".into()), None, "/"), Search::None));
+        assert!(matches!(resolve_search(Some("nonsense".into()), None, "/"), Search::None));
+    }
+
+    #[test]
+    fn host_extraction() {
+        assert_eq!(host_of("https://user.github.io/repo/").as_deref(), Some("user.github.io"));
+        assert_eq!(host_of("http://example.com").as_deref(), Some("example.com"));
+        assert_eq!(host_of("/"), None); // relative (offline build)
+        assert_eq!(host_of("nothost"), None); // no dot → not a host
+    }
+}
