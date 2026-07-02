@@ -1,6 +1,6 @@
 # tg2zola
 
-🌐 **English** · [Беларуская](README.be.md) · [Українська](README.uk.md) · [Русский](README.ru.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Polski](README.pl.md) · [Español](README.es.md) · [한국어](README.ko.md) · [ქართული](README.ka.md)
+🌐 **English** · [Беларуская](README.be.md) · [Українська](README.uk.md) · [Русский](README.ru.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Polski](README.pl.md) · [Español](README.es.md) · [한국어](README.ko.md) · [ქართული](README.ka.md) · [हिन्दी](README.hi.md)
 
 [![daily build](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/workflows/daily.yml/badge.svg)](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/workflows/daily.yml)
 
@@ -77,8 +77,8 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   pagination redirect script, so the offline copy opens straight from `file://`
   with zero JavaScript and no web server.
 - **Localized UI** — the site chrome (Newer/Older/Tags/About, the search box,
-  dates) renders in any of 12 languages via `LANGUAGE` / `--language`
-  (en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka), with month and weekday names localized
+  dates) renders in any of 13 languages via `LANGUAGE` / `--language`
+  (en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka/hi), with month and weekday names localized
   too. Post content keeps the channel's own language.
 
 ## Install
@@ -244,7 +244,7 @@ These are *variables*, not secrets — all of it is public.
 | `FOOTER` | `--footer` | — | Footer content — plain text, Markdown or HTML |
 | `PAGES_HOST` | `--pages-host` | auto | Host for the About-page size limit: `github` / `gitlab` / `none` (auto-detected from the URL) |
 | `DATE_FORMAT` | `--date-format` | `%Y %B %d` | strftime format for displayed dates (e.g. `2025 October 28`; `%Y` for year only) |
-| `LANGUAGE` | `--language` | `en` | UI language for the site chrome (Newer/Older/Tags/About/…): `en`/`be`/`uk`/`ru`/`de`/`fr`/`zh`/`ja`/`pl`/`es`/`ko`/`ka` (Georgian). Post content keeps the channel's own language; dates are localized to match |
+| `LANGUAGE` | `--language` | `en` | UI language for the site chrome (Newer/Older/Tags/About/…): `en`/`be`/`uk`/`ru`/`de`/`fr`/`zh`/`ja`/`pl`/`es`/`ko`/`ka` (Georgian)/`hi` (Hindi). Post content keeps the channel's own language; dates are localized to match |
 | `DERIVE_TITLES` | `--derive-titles` | off | `true` derives a post title from its first sentence; default shows a clickable `#id` on the post's date/views line instead |
 | `STRIP_TITLE` | `--strip-title` | off | With `DERIVE_TITLES`, also remove that first sentence from the body so it isn't shown twice |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
