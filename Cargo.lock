@@ -2219,7 +2219,7 @@ dependencies = [
 
 [[package]]
 name = "tg2zola"
-version = "0.30.0"
+version = "0.31.0"
 dependencies = [
  "anyhow",
  "base64",

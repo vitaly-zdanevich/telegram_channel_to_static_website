@@ -93,6 +93,10 @@ env:
   # Set to "false" to skip resolving genius.com links (which otherwise fetch the
   # page for its YouTube video + lyrics widget). On by default.
   GENIUS: ${{ vars.GENIUS }}
+  # Optional Genius API Client Access Token (a *secret*, not a variable). When
+  # set, genius.com links resolve via the API instead of scraping (which
+  # Cloudflare blocks on CI IPs). Create one at https://genius.com/api-clients.
+  GENIUS_TOKEN: ${{ secrets.GENIUS_TOKEN }}
   # Set to "false" to skip the YouTube liveness check (a removed video otherwise
   # keeps its local media instead of being replaced by a dead embed).
   LIVENESS: ${{ vars.LIVENESS }}

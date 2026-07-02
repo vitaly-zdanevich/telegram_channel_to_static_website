@@ -252,7 +252,8 @@ and variables → Actions → **Variables**) के ज़रिए कॉन्
 | `LINK_UNDERLINE` | `--link-underline` | बंद | `true` लिंक को underline करता है (डिफ़ॉल्ट: कोई underline नहीं) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | बंद | no-JS click-to-load YouTube thumbnail के लिए `true` (डिफ़ॉल्ट: सीधा iframe) |
 | `KEEP_MEDIA` | `--keep-media` | CI: बंद · स्थानीय: चालू | संलग्न **वीडियो/ऑडियो** को रखने (डाउनलोड + दिखाने) के लिए `true`, तब भी जब पोस्ट में YouTube / Apple Podcasts / Instagram लिंक हो। डिफ़ॉल्ट परिवेश-आधारित है: CI (GitHub Actions / GitLab) पर embed संलग्न मीडिया की जगह लेता है ताकि होस्टिंग जगह बचे; स्थानीय मशीन पर पूरे बैकअप के लिए सब कुछ डाउनलोड होता है |
-| `GENIUS` | `--no-genius` | चालू | `false` genius.com लिंक हल करना छोड़ देता है (उसके YouTube वीडियो + lyrics widget के लिए पेज लाता है) |
+| `GENIUS` | `--no-genius` | चालू | `false` genius.com लिंक हल करना छोड़ देता है (उनके YouTube वीडियो + lyrics widget id के लिए) |
+| `GENIUS_TOKEN` (secret) | — | — | Genius API [Client Access Token](https://genius.com/api-clients)। सेट होने पर genius लिंक स्क्रैपिंग के बजाय **API** से हल होते हैं (CI में काम करता है) — genius वेब पेज datacenter IPs पर Cloudflare-अवरुद्ध हैं। इसे Actions **secret** के रूप में रखें, variable नहीं |
 | `LIVENESS` | `--no-liveness` | चालू | `false` YouTube liveness जाँच छोड़ देता है; हटाया गया वीडियो (oEmbed 404) अन्यथा dead embed दिखाने के बजाय अपना स्थानीय मीडिया रखता है |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | अल्पविराम से अलग किए गए tags जो शीर्ष nav में `#tag` लिंक के रूप में दिखते हैं (जैसे `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | डार्क-मोड पृष्ठभूमि (कोई भी CSS रंग) |
