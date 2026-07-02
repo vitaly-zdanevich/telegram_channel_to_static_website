@@ -132,10 +132,11 @@ pub async fn login() -> Result<()> {
 
 /// Best-effort enrichment. Skips silently when MTProto isn't configured; logs a
 /// warning (and continues with the web-only result) on any failure — a backup
-/// run must never abort because the optional backend had a problem.
-pub async fn maybe_enrich(posts: &mut [Post], s: &Settings) {
+/// run must never abort because the optional backend had a problem. Returns
+/// whether MTProto actually enriched the posts (surfaced on the About page).
+pub async fn maybe_enrich(posts: &mut [Post], s: &Settings) -> bool {
     if std::env::var("TG_API_ID").is_err() || std::env::var("TG_API_HASH").is_err() {
-        return; // not configured — stay a pure web scraper
+        return false; // not configured — stay a pure web scraper
     }
     tracing::info!(
         "MTProto: configured — fetching audio{}",
@@ -145,8 +146,12 @@ pub async fn maybe_enrich(posts: &mut [Post], s: &Settings) {
             " (set MTPROTO_IMAGES=1 for original photos)"
         }
     );
-    if let Err(e) = enrich(posts, s).await {
-        tracing::warn!("MTProto enrichment skipped: {:#}", e);
+    match enrich(posts, s).await {
+        Ok(()) => true,
+        Err(e) => {
+            tracing::warn!("MTProto enrichment skipped: {:#}", e);
+            false
+        }
     }
 }
 

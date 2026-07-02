@@ -512,7 +512,9 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // original-quality photos) the web preview omits. Runs before the empty-post
     // filter so an audio-only post survives. No-op without the feature or creds.
     #[cfg(feature = "mtproto")]
-    mtproto::maybe_enrich(&mut posts, &s).await;
+    let mtproto_used = mtproto::maybe_enrich(&mut posts, &s).await;
+    #[cfg(not(feature = "mtproto"))]
+    let mtproto_used = false;
 
     // Drop posts with nothing worth showing (e.g. a lone non-downloadable file).
     let before = posts.len();
@@ -660,6 +662,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         started.elapsed(),
         &i18n::about(&s.language),
         &biggest,
+        mtproto_used,
     );
 
     // Total on-disk footprint + per-kind breakdown (also shown on the About page).

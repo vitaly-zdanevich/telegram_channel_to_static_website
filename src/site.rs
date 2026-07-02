@@ -543,6 +543,7 @@ pub fn set_about_size(
     elapsed: std::time::Duration,
     about: &crate::i18n::About,
     largest: &[(std::path::PathBuf, u64)],
+    mtproto_used: bool,
 ) {
     let about_path = site.join("content/pages/about.md");
     let Ok(s) = fs::read_to_string(&about_path) else {
@@ -589,7 +590,11 @@ pub fn set_about_size(
         .replace("__PERCENT__", &percent)
         .replace("__SIZE_BREAKDOWN__", &breakdown)
         .replace("__LARGEST_FILES__", &largest_block)
-        .replace("__BUILD_TIME__", &human_duration(elapsed));
+        .replace("__BUILD_TIME__", &human_duration(elapsed))
+        .replace(
+            "__MTPROTO__",
+            if mtproto_used { about.mtproto_on } else { about.mtproto_off },
+        );
     let _ = fs::write(&about_path, out);
 }
 
@@ -836,14 +841,9 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                 b.push_str("{{ avatar() }}\n\n");
             }
             let channel_link = format!("[@{ch}](https://t.me/{ch})", ch = s.channel);
-            let tool_link =
-                "[tg2zola](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website)";
             b.push_str(&format!(
                 "*{}*\n\n",
-                about
-                    .intro
-                    .replace("{channel}", &channel_link)
-                    .replace("{tool}", tool_link)
+                about.intro.replace("{channel}", &channel_link)
             ));
             if let Some(info) = info {
                 if let Some(desc) = &info.description_md {
@@ -875,6 +875,7 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
             b.push_str(&format!("{}\n\n__SIZE_BREAKDOWN__\n\n", about.by_kind));
             b.push_str("__LARGEST_FILES__\n\n");
             b.push_str(&format!("{}\n\n", about.generated_in));
+            b.push_str("__MTPROTO__\n\n");
             b.push_str(&format!(
                 "{} [{repo}]({repo})\n\n{no_api}",
                 about.source_repo,
