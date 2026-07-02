@@ -310,10 +310,12 @@ pub fn render_post(
 
     // Per spec, a YouTube link only *replaces an attached video*. On posts with
     // no video the YouTube URL stays as an ordinary link in the text.
-    let has_video = post
-        .media
-        .iter()
-        .any(|m| matches!(m, Media::Video { .. } | Media::VideoPoster { .. }));
+    let has_video = post.media.iter().any(|m| {
+        matches!(
+            m,
+            Media::Video { .. } | Media::VideoPoster { .. } | Media::LocalVideo { .. }
+        )
+    });
     // A YouTube link normally *replaces* the attached video. With `keep_media`
     // we download and show the video anyway (the YouTube embed stays too).
     // A *live* YouTube link replaces the attached video; a removed one (liveness
@@ -484,12 +486,38 @@ pub fn render_post(
                 }
                 body.push_str(&format!("![]({fname})\n\n"));
             }
+            Media::LocalVideo { path } => {
+                // Full video from MTProto, replacing the web's poster-only
+                // placeholder. A live YouTube/Instagram embed still replaces it,
+                // the same drop_videos rule as Media::Video (enrich already skips
+                // the download in that case unless keep_media, so this is belt +
+                // braces).
+                if drop_videos {
+                    continue;
+                }
+                let ext = path
+                    .extension()
+                    .and_then(|e| e.to_str())
+                    .filter(|e| !e.is_empty())
+                    .unwrap_or("mp4");
+                let fname = format!("{idx:02}.{ext}");
+                downloads.push(Download {
+                    url: String::new(),
+                    filename: fname.clone(),
+                    force: false,
+                    local: Some(path.clone()),
+                });
+                body.push_str(&format!("{{{{ video(src=\"{fname}\") }}}}\n\n"));
+            }
         }
     }
 
     // Auto #video tag in the body for posts with a playable video, unless the
     // author already wrote it (matches the taxonomy tag added in main).
-    let has_video = post.media.iter().any(|m| matches!(m, Media::Video { .. }));
+    let has_video = post
+        .media
+        .iter()
+        .any(|m| matches!(m, Media::Video { .. } | Media::LocalVideo { .. }));
     if has_video && !body.contains("tag(t=\"video\")") {
         body.push_str("{{ tag(t=\"video\") }}\n\n");
     }
@@ -1108,5 +1136,31 @@ mod tests {
         let dead = render(true);
         assert!(dead.contains("{{ video("), "video dropped on dead IG: {dead}");
         assert!(!dead.contains("{{ instagram("), "embed on dead IG: {dead}");
+    }
+
+    #[test]
+    fn mtproto_video_renders_and_respects_embed() {
+        use std::path::PathBuf;
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let render = |youtube: Option<&str>, keep: bool| {
+            let mut p = post_with_body("clip");
+            p.media = vec![Media::LocalVideo {
+                path: PathBuf::from("/cache/1.mp4"),
+            }];
+            p.youtube = youtube.map(|s| s.to_string());
+            render_post(&p, &rw, 200, false, None, None, &crate::i18n::ui("en"), false, false, keep)
+                .index_md
+        };
+        // No link → the fetched video is shown.
+        assert!(render(None, false).contains("{{ video("), "video missing");
+        // Live YouTube, keep_media off (CI) → the embed replaces the video.
+        let r = render(Some("abc123"), false);
+        assert!(!r.contains("{{ video("), "video not dropped for a live embed: {r}");
+        assert!(r.contains("{{ youtube("), "no youtube embed: {r}");
+        // Live YouTube but keep_media on (local) → keep the video too.
+        assert!(
+            render(Some("abc123"), true).contains("{{ video("),
+            "video dropped despite keep_media"
+        );
     }
 }

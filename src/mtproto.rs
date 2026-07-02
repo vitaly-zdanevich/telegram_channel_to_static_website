@@ -138,14 +138,14 @@ pub async fn maybe_enrich(posts: &mut [Post], s: &Settings) -> bool {
     if std::env::var("TG_API_ID").is_err() || std::env::var("TG_API_HASH").is_err() {
         return false; // not configured — stay a pure web scraper
     }
-    tracing::info!(
-        "MTProto: configured — fetching audio{}",
-        if want_photos() {
-            " + original photos"
-        } else {
-            " (set MTPROTO_IMAGES=1 for original photos)"
-        }
-    );
+    let mut extras = String::new();
+    if want_photos() {
+        extras.push_str(" + original photos");
+    }
+    if want_videos() {
+        extras.push_str(" + videos");
+    }
+    tracing::info!("MTProto: configured — fetching audio{extras}");
     match enrich(posts, s).await {
         Ok(()) => true,
         Err(e) => {
@@ -158,6 +158,16 @@ pub async fn maybe_enrich(posts: &mut [Post], s: &Settings) -> bool {
 fn want_photos() -> bool {
     matches!(
         std::env::var("MTPROTO_IMAGES").ok().as_deref(),
+        Some("1") | Some("true") | Some("yes") | Some("on")
+    )
+}
+
+/// Opt-in (`MTPROTO_VIDEOS=1`): also download the *original video* for posts the
+/// web preview shows only as a poster (large/long videos). Off by default —
+/// videos are large, so this is for a full local backup, not the CI budget.
+fn want_videos() -> bool {
+    matches!(
+        std::env::var("MTPROTO_VIDEOS").ok().as_deref(),
         Some("1") | Some("true") | Some("yes") | Some("on")
     )
 }
@@ -188,12 +198,14 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let cache = s.site.join(".mtproto-cache");
     tokio::fs::create_dir_all(&cache).await.ok();
     let photos = want_photos();
+    let videos = want_videos();
 
     // (cache path, original filename, label) per post.
     let mut audio_for: HashMap<usize, Vec<(PathBuf, Option<String>, Option<String>)>> =
         HashMap::new();
     let mut photo_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
-    let (mut n_audio, mut n_photo) = (0usize, 0usize);
+    let mut video_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
+    let (mut n_audio, mut n_photo, mut n_video) = (0usize, 0usize, 0usize);
 
     let mut iter = client.iter_messages(peer);
     while let Some(msg) = iter.next().await.context("iterating channel messages")? {
@@ -231,6 +243,29 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     let label = audio_label(doc.audio_title(), doc.performer());
                     audio_for.entry(pi).or_default().push((dest, orig_name, label));
                     n_audio += 1;
+                } else if mime.starts_with("video/") && videos {
+                    // Only the *unavailable* videos (shown as a poster) are worth
+                    // fetching; a web-downloadable Media::Video already has its file.
+                    let has_poster = posts[pi]
+                        .media
+                        .iter()
+                        .any(|m| matches!(m, Media::VideoPoster { .. }));
+                    // A live YouTube/Instagram embed stands in for the video — skip
+                    // the (large) download unless keep_media is set.
+                    let embed_replaces = !s.keep_media
+                        && ((posts[pi].youtube.is_some() && !posts[pi].youtube_dead)
+                            || (posts[pi].instagram.is_some() && !posts[pi].instagram_dead));
+                    if has_poster && !embed_replaces {
+                        let dest = cache.join(format!("{id}.{}", video_ext(mime)));
+                        if !dest.exists() {
+                            client
+                                .download_media(&media, &dest)
+                                .await
+                                .with_context(|| format!("downloading video from message {id}"))?;
+                        }
+                        video_for.entry(pi).or_default().push((id, dest));
+                        n_video += 1;
+                    }
                 }
             }
             TlMedia::Photo(_) if photos => {
@@ -273,8 +308,22 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
             }
         }
     }
+    // Replace each poster-only video with the fetched original, in id order.
+    for (pi, mut items) in video_for {
+        items.sort_by_key(|(id, _)| *id);
+        let mut originals = items.into_iter().map(|(_, p)| p);
+        for m in posts[pi].media.iter_mut() {
+            if matches!(m, Media::VideoPoster { .. }) {
+                if let Some(path) = originals.next() {
+                    *m = Media::LocalVideo { path };
+                }
+            }
+        }
+    }
 
-    tracing::info!("MTProto: {n_audio} audio file(s), {n_photo} original photo(s)");
+    tracing::info!(
+        "MTProto: {n_audio} audio file(s), {n_photo} original photo(s), {n_video} video(s)"
+    );
     Ok(())
 }
 
@@ -302,5 +351,14 @@ fn audio_ext(mime: &str) -> &'static str {
         "audio/wav" | "audio/x-wav" => "wav",
         "audio/flac" => "flac",
         _ => "bin",
+    }
+}
+
+/// File extension for a video MIME type.
+fn video_ext(mime: &str) -> &'static str {
+    match mime {
+        "video/webm" => "webm",
+        "video/quicktime" => "mov",
+        _ => "mp4",
     }
 }

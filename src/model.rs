@@ -68,6 +68,12 @@ pub enum Media {
         path: std::path::PathBuf,
         key: Option<String>,
     },
+    /// A full video fetched via MTProto, replacing a web [`Media::VideoPoster`] —
+    /// the large/long videos `t.me/s/` exposes only as a poster + duration, with
+    /// no downloadable file. Copied into the bundle by the normal media step.
+    /// Only constructed with the `mtproto` feature (opt-in `MTPROTO_VIDEOS=1`).
+    #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
+    LocalVideo { path: std::path::PathBuf },
 }
 
 /// One raw Telegram message as scraped from `t.me/s/<channel>`.

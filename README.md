@@ -333,8 +333,8 @@ This writes **`tg2zola.session`** and prints a base64 **`TG_SESSION`** string.
 From then on, runs are non-interactive.
 
 **3. Generate** with the credentials in the environment — a normal run then also
-pulls audio into each post's bundle (and replaces web photos with originals when
-`MTPROTO_IMAGES=1`):
+pulls audio into each post's bundle (and, with `MTPROTO_IMAGES=1` / `MTPROTO_VIDEOS=1`,
+original-quality photos / the full videos the preview shows only as a poster):
 
 ```sh
 TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
@@ -346,6 +346,7 @@ TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
 | `TG_API_ID` / `TG_API_HASH` | App credentials from my.telegram.org (required) |
 | `TG_SESSION` | base64 session from `tg2zola login`; alternatively a `tg2zola.session` file in the working dir is used |
 | `MTPROTO_IMAGES` | `1`/`true` to also fetch original-quality photos (audio is always fetched) |
+| `MTPROTO_VIDEOS` | `1`/`true` to also fetch the full video for posts the web preview shows only as a poster (large files — for a local backup; off by default) |
 | `TG_SESSION_FILE` | override the session-file path (default `tg2zola.session`) |
 
 **For CI:** run `tg2zola login` **locally** (the interactive step can't run in
@@ -369,9 +370,10 @@ The public web preview is the trade-off for needing **zero authentication**
   instead. The data model leaves room to add real reactions later via the
   authenticated MTProto API (the [`grammers`](https://codeberg.org/Lonami/grammers)
   crate) if you ever want them.
-- **Large videos aren't downloadable** — the preview only serves a poster image
-  and duration for them (short/auto-play videos *are* downloadable). Archiving
-  the actual file would also require the MTProto API.
+- **Large videos aren't downloadable** *from the public preview* — it serves only
+  a poster image and duration for them (short/auto-play videos *are* downloadable).
+  The optional [MTProto backend](#optional-mtproto-backend) with `MTPROTO_VIDEOS=1`
+  fetches the real file for these.
 - **Sticker packs aren't linkable** — the pack name is loaded by Telegram's
   JavaScript and isn't in the scraped HTML; stickers are saved as plain images.
 - **Music files (audio documents) aren't downloadable** from `t.me/s/` — their
