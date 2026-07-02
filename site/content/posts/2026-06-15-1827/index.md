@@ -18,7 +18,7 @@ next_body = "#tech\n#psp\n#finalfantasy"
 prev_id = 1826
 prev_title = ""
 prev_body = "#bus\n#architecture\nSource"
-views = 96
+views = 98
 ids = [1827]
 +++
 
