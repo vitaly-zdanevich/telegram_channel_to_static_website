@@ -533,7 +533,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         liveness::check_youtube(&client, &mut posts, s.concurrency).await;
         liveness::check_apple(&client, &mut posts, s.concurrency).await;
         liveness::check_yandex(&client, &mut posts, s.concurrency).await;
-        liveness::check_instagram(&client, &mut posts).await;
+        liveness::check_instagram(&client, &mut posts, &s.base_url).await;
     }
 
     // Optional MTProto backend: pull audio/voice (and, with MTPROTO_IMAGES=1,

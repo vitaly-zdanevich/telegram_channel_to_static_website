@@ -44,7 +44,10 @@ pub async fn enrich(client: &reqwest::Client, posts: &mut [Post], concurrency: u
                 let html = match client.get(&url).send().await.and_then(|r| r.error_for_status()) {
                     Ok(r) => r.text().await.unwrap_or_default(),
                     Err(e) => {
-                        tracing::warn!("genius fetch failed for {url}: {e}");
+                        // Best-effort enrichment; genius.com routinely 403s
+                        // datacenter IPs (CI). Not critical — the post keeps its
+                        // plain link — so this is INFO, not a warning.
+                        tracing::info!("genius enrichment skipped for {url}: {e}");
                         return (i, None, None);
                     }
                 };

@@ -224,7 +224,7 @@ const INSTAGRAM_DELAY_SECS: u64 = 30;
 /// kept instead of a dead embed. Only posts that actually have a video are
 /// checked (that's the only case the embed replaces). Sequential with a delay,
 /// and every failure is logged so throttling is visible later.
-pub async fn check_instagram(client: &reqwest::Client, posts: &mut [Post]) {
+pub async fn check_instagram(client: &reqwest::Client, posts: &mut [Post], base_url: &str) {
     let targets: Vec<(usize, String)> = posts
         .iter()
         .enumerate()
@@ -244,7 +244,8 @@ pub async fn check_instagram(client: &reqwest::Client, posts: &mut [Post]) {
         if n > 0 {
             tokio::time::sleep(std::time::Duration::from_secs(INSTAGRAM_DELAY_SECS)).await;
         }
-        if is_instagram_removed(client, url).await {
+        let post_url = post_link(base_url, posts[*i].primary_id);
+        if is_instagram_removed(client, url, &post_url).await {
             posts[*i].instagram_dead = true;
             kept += 1;
         } else {
@@ -261,7 +262,7 @@ pub async fn check_instagram(client: &reqwest::Client, posts: &mut [Post]) {
 /// non-confirmed case is logged with status and body size: a login/challenge
 /// redirect is a small body, a real "post unavailable" page is the full ~600 KB
 /// shell, so throttling stays distinguishable in the logs if it shows up.
-async fn is_instagram_removed(client: &reqwest::Client, url: &str) -> bool {
+async fn is_instagram_removed(client: &reqwest::Client, url: &str, post_url: &str) -> bool {
     let resp = match client
         .get(url)
         .header(reqwest::header::USER_AGENT, INSTAGRAM_UA)
@@ -270,7 +271,7 @@ async fn is_instagram_removed(client: &reqwest::Client, url: &str) -> bool {
     {
         Ok(r) => r,
         Err(e) => {
-            tracing::warn!("Instagram liveness request failed ({url}): {e:#}");
+            tracing::warn!("Instagram liveness request failed ({url}) for {post_url}: {e:#}");
             return true;
         }
     };
@@ -280,12 +281,14 @@ async fn is_instagram_removed(client: &reqwest::Client, url: &str) -> bool {
         return false; // confirmed live → replace the video with the embed
     }
     if status.is_success() {
-        tracing::warn!(
-            "Instagram liveness: 200 without og:title for {url} ({} bytes) — keeping the video",
+        // A live IG post always exposes og:title; its absence means the post is
+        // gone — a normal, expected outcome (not a warning). Keep the local video.
+        tracing::info!(
+            "Instagram liveness: 200 without og:title (post gone) — keeping the video for {post_url} ({url}, {} bytes)",
             body.len()
         );
     } else {
-        tracing::warn!("Instagram liveness: HTTP {status} for {url} — keeping the video");
+        tracing::warn!("Instagram liveness: HTTP {status} for {url} (post {post_url}) — keeping the video");
     }
     true
 }
@@ -295,6 +298,12 @@ fn has_nonempty_og(body: &str, prop: &str) -> bool {
     let needle = format!("property=\"{prop}\" content=\"");
     body.find(&needle)
         .is_some_and(|i| !body[i + needle.len()..].starts_with('"'))
+}
+
+/// The deployed blog URL of a post, for logs (base_url is "/" for local/offline
+/// builds, the real host in CI).
+fn post_link(base_url: &str, id: u64) -> String {
+    format!("{}/posts/{id}/", base_url.trim_end_matches('/'))
 }
 
 fn has_video(media: &[crate::model::Media]) -> bool {
