@@ -181,6 +181,15 @@ struct GenerateArgs {
     #[arg(long)]
     no_genius: bool,
 
+    /// Replace a Spotify link with the Spotify player (opt-in; note it plays a
+    /// ~30s preview for non-Premium listeners).
+    #[arg(long)]
+    spotify: bool,
+
+    /// Don't replace a Pinterest pin link with the embedded pin (default: embed).
+    #[arg(long)]
+    no_pinterest: bool,
+
     /// Skip the YouTube liveness check (a removed video otherwise keeps its local
     /// media instead of being replaced by a dead embed).
     #[arg(long)]
@@ -378,6 +387,12 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             false
         } else {
             fc.genius.unwrap_or(true)
+        },
+        spotify: g.spotify || fc.spotify.unwrap_or(false),
+        pinterest: if g.no_pinterest {
+            false
+        } else {
+            fc.pinterest.unwrap_or(true)
         },
         liveness: if g.no_liveness {
             false
@@ -596,6 +611,8 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         derive_titles: s.derive_titles,
         strip_title: s.strip_title,
         keep_media: s.keep_media,
+        spotify: s.spotify,
+        pinterest: s.pinterest,
     };
 
     // Render PAGE posts first so their nav entries are ready for scaffolding.

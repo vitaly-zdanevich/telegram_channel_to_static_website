@@ -114,6 +114,14 @@ pub fn scaffold(
         &site.join("templates/shortcodes/instagram.html"),
         INSTAGRAM_SHORTCODE,
     )?;
+    write_file(
+        &site.join("templates/shortcodes/spotify.html"),
+        SPOTIFY_SHORTCODE,
+    )?;
+    write_file(
+        &site.join("templates/shortcodes/pinterest.html"),
+        PINTEREST_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
@@ -1298,6 +1306,16 @@ const YANDEX_MUSIC_SHORTCODE: &str = r#"<div class="ym-embed"><iframe frameborde
 const INSTAGRAM_SHORTCODE: &str = r#"<blockquote class="instagram-media" data-instgrm-permalink="{{ url }}" data-instgrm-version="14" style="max-width:540px;margin:1rem auto"><a href="{{ url }}">View on Instagram</a></blockquote><script async src="//www.instagram.com/embed.js"></script>
 "#;
 
+// Spotify player (iframe). Over file:// it degrades to the "Open in Spotify"
+// link. Plays a ~30s preview for non-Premium listeners.
+const SPOTIFY_SHORTCODE: &str = r#"<div class="sp-embed"><iframe src="{{ url }}" height="152" loading="lazy" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe><a class="sp-link" href="{{ url }}">Open in Spotify</a></div>
+"#;
+
+// Pinterest embedded pin (pinit.js turns the <a> into the pin). The offline pass
+// strips the script, leaving the "View on Pinterest" link.
+const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" href="{{ url }}">View on Pinterest</a><script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+"#;
+
 // Resolve colocated media against the post's permalink so it works both on the
 // post page and when the post is shown in full on the homepage feed (a relative
 // src would otherwise break off the post's own page).
@@ -1371,6 +1389,9 @@ audio { width: 100%; }
 .ym-embed iframe { width: 100%; max-width: 900px; height: 180px; border: 0; }
 .ym-embed .ym-link { display: block; font-size: .85rem; margin-top: .3rem; }
 blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1rem; }
+.sp-embed { margin: 1rem 0; }
+.sp-embed iframe { width: 100%; max-width: 660px; height: 152px; border: 0; border-radius: 12px; }
+.sp-embed .sp-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }

@@ -97,6 +97,11 @@ env:
   # set, genius.com links resolve via the API instead of scraping (which
   # Cloudflare blocks on CI IPs). Create one at https://genius.com/api-clients.
   GENIUS_TOKEN: ${{ secrets.GENIUS_TOKEN }}
+  # Set to "true" to replace a Spotify link with the Spotify player (opt-in;
+  # ~30s preview for non-Premium listeners).
+  SPOTIFY: ${{ vars.SPOTIFY }}
+  # Set to "false" to stop replacing Pinterest pin links with the embedded pin.
+  PINTEREST: ${{ vars.PINTEREST }}
   # Set to "false" to skip the YouTube liveness check (a removed video otherwise
   # keeps its local media instead of being replaced by a dead embed).
   LIVENESS: ${{ vars.LIVENESS }}
@@ -195,6 +200,8 @@ jobs:
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ "${KEEP_MEDIA:-}" = "true" ] && args+=(--keep-media)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)
+            [ "${SPOTIFY:-}" = "true" ] && args+=(--spotify)
+            [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
             [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")

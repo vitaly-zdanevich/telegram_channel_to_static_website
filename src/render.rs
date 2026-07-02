@@ -246,6 +246,10 @@ pub struct RenderOpts<'a> {
     pub derive_titles: bool,
     pub strip_title: bool,
     pub keep_media: bool,
+    /// Replace a Spotify link with the Spotify player (opt-in).
+    pub spotify: bool,
+    /// Replace a Pinterest pin link with the embedded pin (default on).
+    pub pinterest: bool,
 }
 
 pub fn render_post(
@@ -262,6 +266,8 @@ pub fn render_post(
         derive_titles,
         strip_title,
         keep_media,
+        spotify,
+        pinterest,
     } = *opts;
     // A PAGE-marked post becomes a standalone page; work on a copy with the
     // marker line removed and use a plain first-sentence title.
@@ -300,13 +306,25 @@ pub fn render_post(
         }
     };
 
-    // If an Apple Podcasts embed will stand in, drop the now-redundant standalone
-    // link line(s) from the body so the link isn't shown twice.
-    let body_src = if post.apple_podcast.is_some() {
-        strip_apple_links(&body_src)
-    } else {
-        body_src
-    };
+    // Opt-in Spotify / default Pinterest link → embed (replacing the link).
+    let spotify_embed = spotify
+        .then(|| crate::media::spotify_from(&post.links))
+        .flatten();
+    let pinterest_embed = pinterest
+        .then(|| crate::media::pinterest_from(&post.links))
+        .flatten();
+
+    // Drop the standalone link(s) an embed replaces, so nothing shows twice.
+    let mut body_src = body_src;
+    if post.apple_podcast.is_some() {
+        body_src = strip_apple_links(&body_src);
+    }
+    if spotify_embed.is_some() {
+        body_src = strip_platform_links(&body_src, &SPOTIFY_LINK);
+    }
+    if pinterest_embed.is_some() {
+        body_src = strip_platform_links(&body_src, &PINTEREST_LINK);
+    }
 
     let mut downloads = Vec::new();
     let mut body = String::new();
@@ -377,6 +395,14 @@ pub fn render_post(
         if let Some(url) = &post.instagram {
             body.push_str(&format!("{{{{ instagram(url=\"{url}\") }}}}\n\n"));
         }
+    }
+    // Spotify player replacing its link (opt-in).
+    if let Some(url) = &spotify_embed {
+        body.push_str(&format!("{{{{ spotify(url=\"{url}\") }}}}\n\n"));
+    }
+    // Pinterest embedded pin replacing its link (default on).
+    if let Some(url) = &pinterest_embed {
+        body.push_str(&format!("{{{{ pinterest(url=\"{url}\") }}}}\n\n"));
     }
 
     for m in &post.media {
@@ -916,6 +942,36 @@ fn strip_apple_links(body: &str) -> String {
     out.join("\n")
 }
 
+static SPOTIFY_LINK: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(
+        r"\[[^\]]*\]\(\s*<?https?://open\.spotify\.com/[^)\s]*>?\s*\)|<?https?://open\.spotify\.com/[^\s>)\]]*>?",
+    )
+    .unwrap()
+});
+
+static PINTEREST_LINK: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(
+        r"\[[^\]]*\]\(\s*<?https?://(?:[a-z]+\.)?pinterest\.[a-z.]+/pin/[^)\s]*>?\s*\)|<?https?://(?:[a-z]+\.)?pinterest\.[a-z.]+/pin/[^\s>)\]]*>?",
+    )
+    .unwrap()
+});
+
+/// Drop each `link`-matching URL from the body (keeping surrounding text), so an
+/// embed can replace the plain link. Lines that become empty are dropped.
+fn strip_platform_links(body: &str, link: &Regex) -> String {
+    body.lines()
+        .filter_map(|l| {
+            if link.is_match(l) {
+                let s = link.replace_all(l, "").trim().to_string();
+                (!s.is_empty()).then_some(s)
+            } else {
+                Some(l.to_string())
+            }
+        })
+        .collect::<Vec<_>>()
+        .join("\n")
+}
+
 fn truncate_chars(s: &str, max: usize) -> String {
     if s.chars().count() <= max {
         return s.to_string();
@@ -1094,6 +1150,8 @@ mod tests {
                 derive_titles: false,
                 strip_title: false,
                 keep_media: false,
+                spotify: false,
+                pinterest: false,
             },
         );
         assert_eq!(r.title, "My Cool Page");
@@ -1150,6 +1208,8 @@ mod tests {
                     derive_titles: false,
                     strip_title: false,
                     keep_media: false,
+                    spotify: false,
+                    pinterest: false,
                 },
             )
             .index_md
@@ -1189,6 +1249,8 @@ mod tests {
                     derive_titles: false,
                     strip_title: false,
                     keep_media: keep,
+                    spotify: false,
+                    pinterest: false,
                 },
             )
             .index_md
@@ -1204,5 +1266,39 @@ mod tests {
             render(Some("abc123"), true).contains("{{ video("),
             "video dropped despite keep_media"
         );
+    }
+
+    #[test]
+    fn spotify_optin_and_pinterest_default() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let mut p = post_with_body("music + pin");
+        p.links = vec![
+            "https://open.spotify.com/track/abc123".into(),
+            "https://www.pinterest.com/pin/42/".into(),
+        ];
+        let ui = crate::i18n::ui("en");
+        let opts = |spotify, pinterest| RenderOpts {
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify,
+            pinterest,
+        };
+        // Pinterest default-on emits; Spotify (off) does not.
+        let a = render_post(&p, &rw, false, None, None, &opts(false, true)).index_md;
+        assert!(
+            a.contains("{{ pinterest(url=\"https://www.pinterest.com/pin/42/\") }}"),
+            "no pinterest: {a}"
+        );
+        assert!(!a.contains("{{ spotify("), "spotify emitted while off: {a}");
+        // Spotify opt-in emits the embed URL; Pinterest (off) does not.
+        let b = render_post(&p, &rw, false, None, None, &opts(true, false)).index_md;
+        assert!(
+            b.contains("{{ spotify(url=\"https://open.spotify.com/embed/track/abc123\") }}"),
+            "no spotify: {b}"
+        );
+        assert!(!b.contains("{{ pinterest("), "pinterest emitted while off: {b}");
     }
 }

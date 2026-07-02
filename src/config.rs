@@ -62,6 +62,10 @@ pub struct FileConfig {
     pub keep_media: Option<bool>,
     /// Resolve genius.com links (fetch the page for its YouTube + lyrics widget).
     pub genius: Option<bool>,
+    /// Replace a Spotify link with the Spotify player (opt-in, default off).
+    pub spotify: Option<bool>,
+    /// Replace a Pinterest pin link with the embedded pin (default on).
+    pub pinterest: Option<bool>,
     /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
     /// its local media instead of a dead embed. Default on.
     pub liveness: Option<bool>,
@@ -153,6 +157,10 @@ pub struct Settings {
     pub keep_media: bool,
     /// Resolve genius.com links (default true).
     pub genius: bool,
+    /// Replace Spotify links with the Spotify player (opt-in, default false).
+    pub spotify: bool,
+    /// Replace Pinterest pin links with the embedded pin (default true).
+    pub pinterest: bool,
     /// YouTube liveness check (default true).
     pub liveness: bool,
     /// Comma-separated tags to surface as links in the top nav.

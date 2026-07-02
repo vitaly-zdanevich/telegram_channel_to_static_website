@@ -77,6 +77,31 @@ pub fn yandex_music_from(links: &[String]) -> Option<String> {
     })
 }
 
+static SPOTIFY: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(r"open\.spotify\.com/(track|album|playlist|episode|show)/([A-Za-z0-9]+)").unwrap()
+});
+
+/// The Spotify **embed** URL for the last spotify link in a post, if any:
+/// `open.spotify.com/<type>/<id>` → `open.spotify.com/embed/<type>/<id>`.
+pub fn spotify_from(links: &[String]) -> Option<String> {
+    links.iter().rev().find_map(|l| {
+        SPOTIFY
+            .captures(l)
+            .map(|c| format!("https://open.spotify.com/embed/{}/{}", &c[1], &c[2]))
+    })
+}
+
+static PINTEREST: Lazy<Regex> = Lazy::new(|| Regex::new(r"pinterest\.[a-z.]+/pin/(\d+)").unwrap());
+
+/// The canonical Pinterest pin URL for the last pinterest pin link in a post.
+pub fn pinterest_from(links: &[String]) -> Option<String> {
+    links.iter().rev().find_map(|l| {
+        PINTEREST
+            .captures(l)
+            .map(|c| format!("https://www.pinterest.com/pin/{}/", &c[1]))
+    })
+}
+
 /// True if a filename looks like audio (by extension).
 pub fn is_audio_name(name: &str) -> bool {
     let n = name.to_ascii_lowercase();
@@ -242,6 +267,33 @@ mod tests {
             Some("https://www.instagram.com/reel/ABC123/")
         );
         assert_eq!(instagram_from(&["https://example.com/x".into()]), None);
+    }
+
+    #[test]
+    fn spotify_embed_url() {
+        assert_eq!(
+            spotify_from(&["listen https://open.spotify.com/track/1ZKipeRdw2frIZBd6Y0wNZ?si=x".into()])
+                .as_deref(),
+            Some("https://open.spotify.com/embed/track/1ZKipeRdw2frIZBd6Y0wNZ")
+        );
+        assert_eq!(
+            spotify_from(&["https://open.spotify.com/album/ABC123".into()]).as_deref(),
+            Some("https://open.spotify.com/embed/album/ABC123")
+        );
+        assert_eq!(spotify_from(&["https://example.com/x".into()]), None);
+    }
+
+    #[test]
+    fn pinterest_pin_url() {
+        assert_eq!(
+            pinterest_from(&["see https://www.pinterest.com/pin/1234567890/".into()]).as_deref(),
+            Some("https://www.pinterest.com/pin/1234567890/")
+        );
+        assert_eq!(
+            pinterest_from(&["https://pinterest.co.uk/pin/42/sent".into()]).as_deref(),
+            Some("https://www.pinterest.com/pin/42/")
+        );
+        assert_eq!(pinterest_from(&["https://example.com/x".into()]), None);
     }
 
     #[test]
