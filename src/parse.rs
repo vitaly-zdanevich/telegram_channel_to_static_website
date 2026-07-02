@@ -329,4 +329,43 @@ mod tests {
         assert_eq!(parse_views("3M"), Some(3_000_000));
         assert_eq!(parse_views(""), None);
     }
+
+    #[test]
+    fn parse_page_message_and_cursor() {
+        let html = r#"
+            <div class="tgme_widget_message_wrap">
+              <div class="tgme_widget_message js-widget_message" data-post="testchan/42">
+                <div class="tgme_widget_message_text">Hello <b>world</b></div>
+                <div class="tgme_widget_message_date"><time datetime="2025-01-15T10:30:00+00:00"></time></div>
+                <span class="tgme_widget_message_views">1.2K</span>
+              </div>
+            </div>
+            <a class="tme_messages_more" data-before="40"></a>
+        "#;
+        let (msgs, before) = parse_page(html, "testchan").unwrap();
+        assert_eq!(before, Some(40)); // pagination cursor for the next older page
+        assert_eq!(msgs.len(), 1);
+        let m = &msgs[0];
+        assert_eq!(m.id, 42);
+        assert_eq!(m.channel, "testchan");
+        assert_eq!(m.views, Some(1200));
+        assert_eq!(m.date.format("%Y-%m-%d").to_string(), "2025-01-15");
+        assert!(m.body_md.contains("world"), "body: {}", m.body_md);
+    }
+
+    #[test]
+    fn parse_channel_header() {
+        let html = r#"
+            <div class="tgme_channel_info_header_title">My Channel</div>
+            <div class="tgme_channel_info_description">A test channel</div>
+            <div class="tgme_channel_info_counter"><span class="counter_value">1.5K</span> <span class="counter_type">subscribers</span></div>
+        "#;
+        let info = parse_channel_info(html).expect("channel info");
+        assert_eq!(info.title.as_deref(), Some("My Channel"));
+        assert_eq!(info.description_md.as_deref(), Some("A test channel"));
+        assert_eq!(
+            info.counters,
+            vec![("1.5K".to_string(), "subscribers".to_string())]
+        );
+    }
 }
