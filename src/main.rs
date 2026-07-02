@@ -21,6 +21,9 @@ mod render;
 mod scrape;
 mod site;
 
+#[cfg(test)]
+mod e2e_tests;
+
 use anyhow::{Context, Result};
 use clap::{Args, Parser, Subcommand};
 use std::path::PathBuf;
@@ -558,7 +561,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         let has_video = p
             .media
             .iter()
-            .any(|m| matches!(m, model::Media::Video { .. }));
+            .any(|m| matches!(m, model::Media::Video { .. } | model::Media::LocalVideo { .. }));
         if has_video && !p.tags.iter().any(|t| t == "video") {
             p.tags.push("video".to_string());
         }
