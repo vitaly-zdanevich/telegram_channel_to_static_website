@@ -17,7 +17,7 @@ next_body = "#death\n#jump\n#spirit\nSource"
 prev_id = 1870
 prev_title = ""
 prev_body = "#belarus\n#колодищи\n#architecture\n#church\nAuthor: Димитров Денис\nSource"
-views = 69
+views = 79
 ids = [1871]
 +++
 

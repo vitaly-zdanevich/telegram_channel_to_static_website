@@ -26,6 +26,8 @@ ids = [481]
 {{ tag(t="mouse") }}  
 {{ tag(t="horoscope") }}  
 
-From <https://www.pinterest.com/pin/7036943162752920>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/7036943162752920/") }}
 
 ![](5215716724605844762_1214378682_456260890.jpg)

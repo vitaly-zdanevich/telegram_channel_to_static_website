@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-03-14T13:21:05+00:00
-description = "Girl with a Pearl Earring art Artwork by Olga Pavolga Shot by Thatch John Yuyi “Will We Be Safer” by Glen Wexler Painting by Nigel Van Wieck Photography by Sebastian Sellner Source"
+description = "Girl with a Pearl Earring art Artwork by Olga Pavolga Shot by Thatch John Yuyi “Will We Be Safer” by Glen Wexler Painting by Nigel Van Wieck Photography by Sebastian Sellner"
 
 [taxonomies]
 days = ["2025-03-14"]
@@ -25,8 +25,8 @@ ids = [410]
 Girl with a Pearl Earring  
 
 {{ tag(t="art") }}  
-*Artwork by Olga Pavolga Shot by Thatch John Yuyi “Will We Be Safer” by Glen Wexler Painting by Nigel Van Wieck Photography by Sebastian Sellner*  
+*Artwork by Olga Pavolga Shot by Thatch John Yuyi “Will We Be Safer” by Glen Wexler Painting by Nigel Van Wieck Photography by Sebastian Sellner*
 
-[Source](https://ru.pinterest.com/pin/321796335878643329)
+{{ pinterest(url="https://www.pinterest.com/pin/321796335878643329/") }}
 
 ![](5379612612196693870_1252538667_456259438.jpg)

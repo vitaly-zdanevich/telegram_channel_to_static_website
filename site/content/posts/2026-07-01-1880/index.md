@@ -18,7 +18,7 @@ next_body = "Моя #лекция про мой #telegrambot для #rutracker -
 prev_id = 1879
 prev_title = ""
 prev_body = "#belarus\n#cementery\n#sun\n#sky\n#blue\n#year2015\nSource.jpg)"
-views = 5
+views = 8
 ids = [1880]
 +++
 

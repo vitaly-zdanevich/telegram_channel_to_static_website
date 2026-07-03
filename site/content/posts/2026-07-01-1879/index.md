@@ -17,7 +17,7 @@ next_body = "#belarus\n#abandone\n#trees\n#year2015\nSource.jpg)"
 prev_id = 1878
 prev_title = ""
 prev_body = "#psy\n#food\nХодим без настроения, срываемся, ругаемся"
-views = 5
+views = 8
 ids = [1879]
 +++
 

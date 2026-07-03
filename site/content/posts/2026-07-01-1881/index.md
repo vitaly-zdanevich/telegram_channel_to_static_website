@@ -11,10 +11,13 @@ tags = ["лекция", "telegram_bot", "rutracker", "oracle_cloud"]
 id = 1881
 day = "2026-07-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1881"
+next_id = 1882
+next_title = ""
+next_body = "#belarus\n#photo\n#abandone\n#year2005\n#globustut\nSource"
 prev_id = 1880
 prev_title = ""
 prev_body = "#belarus\n#abandone\n#trees\n#year2015\nSource.jpg)"
-views = 93
+views = 110
 ids = [1881]
 +++
 

@@ -26,6 +26,8 @@ ids = [1842]
 {{ tag(t="cozy") }}  
 {{ tag(t="bathroom") }}  
 
-From <https://www.pinterest.com/pin/96475617015161786/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015161786/") }}
 
 ![](5305263081879445551_1235227818_460005423.jpg)

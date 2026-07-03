@@ -23,8 +23,8 @@ ids = [1830]
 +++
 
 {{ tag(t="religion") }}  
-{{ tag(t="jesus") }}  
+{{ tag(t="jesus") }}
 
-<https://www.pinterest.com/pin/631137335379673801/>
+{{ pinterest(url="https://www.pinterest.com/pin/631137335379673801/") }}
 
 ![](5296434402940362939_1233172231_460005563.jpg)

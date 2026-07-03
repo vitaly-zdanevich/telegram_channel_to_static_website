@@ -28,6 +28,8 @@ ids = [1838]
 {{ tag(t="custom") }}  
 {{ tag(t="glass") }}  
 
-From <https://www.pinterest.com/pin/96475617015149142/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015149142/") }}
 
 ![](5296434402940363410_1233172231_460006034.jpg)

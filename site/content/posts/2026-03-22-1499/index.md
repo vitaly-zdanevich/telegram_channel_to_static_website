@@ -29,4 +29,4 @@ ids = [1499]
 
 <https://genius.com/Poppy-im-poppy-lyrics>
 
-📎 I'm Poppy *(not archived)*
+{{ youtube(id="E4vUxVwb_G8") }}

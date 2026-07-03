@@ -18,7 +18,7 @@ next_body = "Source"
 prev_id = 187
 prev_title = ""
 prev_body = "He is trying to improve Armies of Exigo, without the source code"
-views = 38
+views = 39
 ids = [188]
 +++
 

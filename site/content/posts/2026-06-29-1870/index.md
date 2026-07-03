@@ -18,7 +18,7 @@ next_body = "#death\n#grandmother\n#drink\n#kitchen\n#spirit\nSource"
 prev_id = 1869
 prev_title = ""
 prev_body = "#clown\n#mime\nSource"
-views = 9
+views = 10
 ids = [1870]
 +++
 

@@ -44,6 +44,9 @@ audio { width: 100%; }
 .ym-embed iframe { width: 100%; max-width: 900px; height: 180px; border: 0; }
 .ym-embed .ym-link { display: block; font-size: .85rem; margin-top: .3rem; }
 blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1rem; }
+.sp-embed { margin: 1rem 0; }
+.sp-embed iframe { width: 100%; max-width: 660px; height: 152px; border: 0; border-radius: 12px; }
+.sp-embed .sp-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }
@@ -64,6 +67,17 @@ pre code { padding: 0; background: none; }
 /* Expand on click/focus — CSS only, no JS. */
 .site-search input:focus, input.site-search:focus { width: min(22rem, 60vw); }
 input.site-search { margin-left: auto; }
+.site-search.els { position: relative; margin-left: auto; }
+.search-results {
+  position: absolute; right: 0; top: 100%; z-index: 30;
+  margin: .25rem 0 0; padding: 0; list-style: none;
+  min-width: 14rem; max-width: min(28rem, 80vw); max-height: 60vh; overflow: auto;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+}
+.search-results[hidden] { display: none; }
+.search-results li { margin: 0; padding: 0; }
+.search-results a { display: block; padding: .4rem .6rem; text-decoration: none; color: var(--fg); }
+.search-results a:hover, .search-results a:focus { background: var(--input-bg); }
 .post-list { list-style: none; padding: 0; }
 .post-list li { padding: .2rem 0; }
 .post-list time { color: var(--muted); font-size: .85em; margin-left: .5rem; }

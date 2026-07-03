@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2026-06-14T20:04:17+00:00
-description = "bus architecture Source"
+description = "bus architecture"
 
 [taxonomies]
 days = ["2026-06-14"]
@@ -23,8 +23,8 @@ ids = [1826]
 +++
 
 {{ tag(t="bus") }}  
-{{ tag(t="architecture") }}  
+{{ tag(t="architecture") }}
 
-[Source](https://www.pinterest.com/pin/904731012662040112/)
+{{ pinterest(url="https://www.pinterest.com/pin/904731012662040112/") }}
 
 ![](5294016825978986518_1232609345_460005398.jpg)

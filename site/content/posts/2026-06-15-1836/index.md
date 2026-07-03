@@ -27,6 +27,8 @@ ids = [1836]
 {{ tag(t="sky") }}  
 {{ tag(t="evangelion") }}  
 
-From <https://www.pinterest.com/pin/96475617015147313/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015147313/") }}
 
 ![](5296434402940363408_1233172231_460006032.jpg)

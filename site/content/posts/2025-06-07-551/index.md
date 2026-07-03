@@ -32,4 +32,4 @@ ids = [551]
 
 [https://oxxxymiron.com](https://oxxxymiron.com/)
 
-📎 ''Где нас нет'' *(not archived)*
+{{ youtube(id="ByEDNOcu7bg") }}

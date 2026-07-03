@@ -32,4 +32,6 @@ ids = [1648]
 
 <https://www.wikidata.org/wiki/Q110906634>
 
+{{ youtube(id="ynzDDi9Y044") }}
+
 {{ yandex_music(url="https://music.yandex.ru/iframe/#track/142481672/38048345") }}

@@ -29,3 +29,5 @@ ids = [10]
 <https://genius.com/Meanna-a-parallel-world-lyrics>
 
 {{ yandex_music(url="https://music.yandex.ru/iframe/#track/60046766/9244199") }}
+
+<div class="rg_embed_link" data-song-id="3822405"><a href="https://genius.com/Meanna-a-parallel-world-lyrics">Lyrics on Genius</a></div><script crossorigin src="//genius.com/songs/3822405/embed.js"></script>

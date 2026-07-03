@@ -27,6 +27,8 @@ ids = [1841]
 {{ tag(t="design") }}  
 {{ tag(t="toxic") }}  
 
-From <https://www.pinterest.com/pin/96475617015161790/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015161790/") }}
 
 ![](5305803182606851540_1235353570_460004820.jpg)

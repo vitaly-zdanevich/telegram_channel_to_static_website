@@ -24,8 +24,8 @@ ids = [1829]
 
 {{ tag(t="tech") }}  
 {{ tag(t="psp") }}  
-{{ tag(t="final_fantasy") }}  
+{{ tag(t="final_fantasy") }}
 
-<https://www.pinterest.com/pin/626844841927915392/>
+{{ pinterest(url="https://www.pinterest.com/pin/626844841927915392/") }}
 
 ![](5296434402940362934_1233172231_460005558.jpg)

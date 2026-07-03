@@ -24,6 +24,8 @@ ids = [1840]
 
 {{ tag(t="lamp") }}  
 
-From <https://www.pinterest.com/pin/96475617015149878/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015149878/") }}
 
 ![](5298686202754047490_1233696519_460004866.jpg)

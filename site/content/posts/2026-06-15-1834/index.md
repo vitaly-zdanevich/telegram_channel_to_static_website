@@ -27,6 +27,8 @@ ids = [1834]
 {{ tag(t="game_console") }}  
 {{ tag(t="street") }}  
 
-From <https://www.pinterest.com/pin/96475617015148876/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015148876/") }}
 
 ![](5296434402940363406_1233172231_460006030.jpg)

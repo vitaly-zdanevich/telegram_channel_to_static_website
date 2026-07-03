@@ -17,7 +17,7 @@ next_body = "#game #stalker2"
 prev_id = 188
 prev_title = ""
 prev_body = "Love such comments #code"
-views = 40
+views = 41
 ids = [189]
 +++
 

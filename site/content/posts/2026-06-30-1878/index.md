@@ -17,7 +17,7 @@ next_body = "#belarus\n#cementery\n#sun\n#sky\n#blue\n#year2015\nSource.jpg)"
 prev_id = 1875
 prev_title = ""
 prev_body = "\"На пляжах Батуми все стабильно\"- подписчица\nМафия выбирает только самые лучшие места"
-views = 8
+views = 10
 ids = [1878]
 +++
 

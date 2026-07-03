@@ -30,4 +30,4 @@ ids = [1383]
 
 <https://genius.com/Black-dresses-gay-ugly-and-hard-to-understand-lyrics>
 
-📎 GAY UGLY AND HARD TO UNDERSTAND *(not archived)*
+{{ youtube(id="DjCspDAzptE") }}

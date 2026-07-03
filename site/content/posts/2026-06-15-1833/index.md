@@ -30,6 +30,8 @@ ids = [1833]
 
 See also <https://en.wikipedia.org/wiki/Degrees_of_Eastern_Orthodox_monasticism#Great_Schema>  
 
-From <https://www.pinterest.com/pin/96475617015147143/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015147143/") }}
 
 ![](5296434402940363385_1233172231_460006009.jpg)

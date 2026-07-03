@@ -17,7 +17,7 @@ next_body = "#belarus\n#колодищи\n#architecture\n#church\nAuthor: Дим
 prev_id = 1868
 prev_title = ""
 prev_body = "#love\n#toy\n#breakup\nEсли тяжело засыпать одному - можно обнимать кота-батота, представляя что это близкий человек - так засыпать спокойнее.\nSource"
-views = 11
+views = 12
 ids = [1869]
 +++
 

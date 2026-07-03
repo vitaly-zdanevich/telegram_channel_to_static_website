@@ -26,6 +26,8 @@ ids = [1837]
 {{ tag(t="bomb") }}  
 {{ tag(t="bible") }}  
 
-From <https://www.pinterest.com/pin/96475617015149146/>
+From
+
+{{ pinterest(url="https://www.pinterest.com/pin/96475617015149146/") }}
 
 ![](5296434402940363409_1233172231_460006033.jpg)

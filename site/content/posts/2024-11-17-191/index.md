@@ -16,7 +16,7 @@ next_body = "#warcraft"
 prev_id = 190
 prev_title = ""
 prev_body = "#game #stalker2"
-views = 37
+views = 38
 ids = [191]
 +++
 

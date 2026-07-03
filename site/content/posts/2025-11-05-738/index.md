@@ -34,3 +34,5 @@ ids = [738]
 <https://genius.com/Nauchnotechnicheskirap-wave-particle-duality-lyrics>  
 
 <https://music.yandex.ru/album/10927229/track/66808674>
+
+{{ youtube(id="UeKRiKODMQs") }}

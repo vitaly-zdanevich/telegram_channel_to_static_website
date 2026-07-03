@@ -18,7 +18,7 @@ next_body = "#movie\n#blackandwhite\n#faust\n#year1926\nВ этом году ф�
 prev_id = 1864
 prev_title = ""
 prev_body = "And another #bash #alias:\n# Better word movement: treat aaabbbccc as ONE word\n# Ctrl + Left → move left by \"word\" (including underscores)\n# Ctrl + Right → move right by \"word\" (including underscores)\nif [[ $- == i ]]; then\nbind '\"e[1;5D\": shell-backward-word' # Ctrl + Left Arrow\nbind '\"e[1;5C\": shell-forward-word' # Ctrl + Right Arrow\nfi"
-views = 19
+views = 20
 ids = [1865]
 +++
 
