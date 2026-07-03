@@ -16,8 +16,8 @@ next_title = ""
 next_body = "#arsenmarkaryan\n#hairs\nВ волосах первородная космическая сила. Лысых пророков, или коротко стриженных, не бывало.\nSource"
 prev_id = 611
 prev_title = ""
-prev_body = "#music\n#musicvideo\n#temakresta\n#travel\n#elephants\n#tinder\n#2023\nЗолото рейна\nSource"
-views = 70
+prev_body = "#music\n#musicvideo\n#temakresta\n#travel\n#elephants\n#tinder\n#year2023\nЗолото рейна\nSource"
+views = 71
 ids = [612]
 +++
 

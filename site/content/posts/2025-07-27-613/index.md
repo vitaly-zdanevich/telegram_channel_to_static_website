@@ -17,7 +17,7 @@ next_body = "#telegram bot that sends to email, its mean to #evernote too!\n@sel
 prev_id = 612
 prev_title = ""
 prev_body = "#retro\n#cd\n#vhs\nSource"
-views = 75
+views = 76
 ids = [613]
 +++
 
