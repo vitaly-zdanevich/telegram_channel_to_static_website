@@ -641,6 +641,62 @@ pub fn set_about_size(
     let _ = fs::write(&about_path, out);
 }
 
+/// Fill the About page's `__PAGESPEED__` placeholder with the Lighthouse scores,
+/// or clear it when scoring is disabled / unavailable. Runs after
+/// `set_about_size` (which leaves this placeholder untouched).
+pub fn set_about_pagespeed(
+    site: &Path,
+    scores: Option<crate::pagespeed::Scores>,
+    about: &crate::i18n::About,
+) {
+    let about_path = site.join("content/pages/about.md");
+    let Ok(s) = fs::read_to_string(&about_path) else {
+        return;
+    };
+    if !s.contains("__PAGESPEED__") {
+        return;
+    }
+    let block = match scores {
+        Some(sc) if !sc.entries().is_empty() => {
+            let items = sc
+                .entries()
+                .iter()
+                .map(|(name, v)| format!("- **{name}** {v}"))
+                .collect::<Vec<_>>()
+                .join("\n");
+            format!("{}\n\n{items}", about.pagespeed)
+        }
+        _ => String::new(),
+    };
+    let out = s.replace("__PAGESPEED__", &block);
+    let _ = fs::write(&about_path, out);
+}
+
+/// Write a shields.io endpoint JSON for each Lighthouse score under `static/`
+/// (published at `<site>/lighthouse-<metric>.json`), returning how many were
+/// written. README badges point at these via `img.shields.io/endpoint`.
+pub fn write_pagespeed_badges(site: &Path, scores: &crate::pagespeed::Scores) -> Result<usize> {
+    let dir = site.join("static");
+    fs::create_dir_all(&dir)?;
+    let metrics = [
+        ("performance", "Performance", scores.performance),
+        ("accessibility", "Accessibility", scores.accessibility),
+        ("best-practices", "Best Practices", scores.best_practices),
+        ("seo", "SEO", scores.seo),
+    ];
+    let mut written = 0;
+    for (slug, label, score) in metrics {
+        let Some(score) = score else { continue };
+        let json = format!(
+            r#"{{"schemaVersion":1,"label":"{label}","message":"{score}","color":"{}"}}"#,
+            crate::pagespeed::badge_color(score)
+        );
+        write_file(&dir.join(format!("lighthouse-{slug}.json")), &json)?;
+        written += 1;
+    }
+    Ok(written)
+}
+
 /// A markdown list item for a largest-file entry, linking to the owning post
 /// (`content/posts/<slug>/…` → `@/posts/<slug>/index.md`, base_url-aware) with
 /// that post's text as a hover `title` tooltip. Files outside a post bundle are
@@ -941,6 +997,7 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
             b.push_str(&format!("{}\n\n__SIZE_BREAKDOWN__\n\n", about.by_kind));
             b.push_str("__LARGEST_FILES__\n\n");
             b.push_str(&format!("{}\n\n", about.generated_in));
+            b.push_str("__PAGESPEED__\n\n");
             b.push_str("__MTPROTO__\n\n");
             b.push_str(&format!(
                 "{} [{repo}]({repo})\n\n{no_api}",

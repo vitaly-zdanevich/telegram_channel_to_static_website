@@ -16,6 +16,7 @@ mod model;
 #[cfg(feature = "mtproto")]
 mod mtproto;
 mod offline;
+mod pagespeed;
 mod parse;
 mod render;
 mod scrape;
@@ -199,6 +200,11 @@ struct GenerateArgs {
     /// can pin them to their boards (opt-in; needs JavaScript).
     #[arg(long)]
     pinterest_save: bool,
+
+    /// Don't fetch Google Lighthouse scores (default: fetch them for the About
+    /// page + shields.io badge endpoints, when base_url is an http(s) URL).
+    #[arg(long)]
+    no_pagespeed: bool,
 
     /// Skip the YouTube liveness check (a removed video otherwise keeps its local
     /// media instead of being replaced by a dead embed).
@@ -406,6 +412,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             fc.pinterest.unwrap_or(true)
         },
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
+        pagespeed: if g.no_pagespeed {
+            false
+        } else {
+            fc.pagespeed.unwrap_or(true)
+        },
         liveness: if g.no_liveness {
             false
         } else {
@@ -745,6 +756,30 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         &site::LargestFiles { files: &biggest, previews: &preview_by_slug },
         mtproto_used,
     );
+
+    // Optional Google Lighthouse scores for the deployed site → About page +
+    // shields.io badge endpoints under static/. Best-effort; it measures the
+    // currently-live deploy, so scores lag a run behind. The placeholder is
+    // always cleared, so a disabled/failed fetch never shows literal text.
+    let pagespeed_scores = if s.pagespeed && s.base_url.starts_with("http") {
+        info!("PageSpeed: fetching Lighthouse scores for {}", s.base_url);
+        pagespeed::fetch(&client, &s.base_url).await
+    } else {
+        None
+    };
+    if let Some(sc) = &pagespeed_scores {
+        let summary = sc
+            .entries()
+            .iter()
+            .map(|(n, v)| format!("{n} {v}"))
+            .collect::<Vec<_>>()
+            .join(", ");
+        info!("PageSpeed (mobile): {summary}");
+        if let Err(e) = site::write_pagespeed_badges(&s.site, sc) {
+            tracing::warn!("PageSpeed: writing badge endpoints failed: {e:#}");
+        }
+    }
+    site::set_about_pagespeed(&s.site, pagespeed_scores, &i18n::about(&s.language));
 
     // Total on-disk footprint + per-kind breakdown (also shown on the About page).
     info!(

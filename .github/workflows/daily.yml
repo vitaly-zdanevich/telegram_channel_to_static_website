@@ -108,6 +108,11 @@ env:
   # Set to "true" to add a Pinterest "Save" hover button to the site's own images
   # so visitors can pin them (opt-in; needs JavaScript).
   PINTEREST_SAVE: ${{ vars.PINTEREST_SAVE }}
+  # Google Lighthouse scores (About page + README badges) are ON by default; set
+  # this repository *variable* to "false" to disable. An optional API key (a
+  # *secret*) raises the PageSpeed Insights rate limit.
+  PAGESPEED: ${{ vars.PAGESPEED }}
+  PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
   # Optional MTProto backend — fetches audio / original photos / big videos the
   # web preview omits. Compiled + run only when TG_SESSION is set (all three are
   # needed). TG_SESSION is FULL account access — keep it a *secret*. Mint it
@@ -235,6 +240,7 @@ jobs:
             [ "${INSTAGRAM:-}" = "true" ] && args+=(--instagram)
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
+            [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
             [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")

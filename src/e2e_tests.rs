@@ -65,6 +65,7 @@ fn settings(site: PathBuf) -> Settings {
         instagram: false,
         pinterest: false,
         pinterest_save: false,
+        pagespeed: false,
         liveness: false,
         tags_to_pages: None,
         pages: None,
@@ -400,6 +401,16 @@ fn about_page_renders_tooltip_and_mtproto_link() {
         &site::LargestFiles { files: &biggest, previews: &previews },
         true,
     );
+    site::set_about_pagespeed(
+        &s.site,
+        Some(crate::pagespeed::Scores {
+            performance: Some(98),
+            accessibility: Some(100),
+            best_practices: Some(92),
+            seo: Some(85),
+        }),
+        &crate::i18n::about(&s.language),
+    );
 
     let out = Command::new("zola")
         .arg("--root")
@@ -413,6 +424,9 @@ fn about_page_renders_tooltip_and_mtproto_link() {
     // Placeholders were substituted.
     assert!(!about.contains("__TOTAL_SIZE__"), "size placeholder left unfilled:\n{about}");
     assert!(!about.contains("__LARGEST_FILES__"), "largest-files placeholder left unfilled");
+    assert!(!about.contains("__PAGESPEED__"), "pagespeed placeholder left unfilled");
+    // The Lighthouse scores render on the About page.
+    assert!(about.contains("Performance") && about.contains("98"), "lighthouse scores missing:\n{about}");
     // The largest-file entry links to its post and carries the body as a tooltip.
     assert!(
         about.contains("title=\"Tooltip body of the biggest post.\""),

@@ -2219,7 +2219,7 @@ dependencies = [
 
 [[package]]
 name = "tg2zola"
-version = "0.36.0"
+version = "0.37.0"
 dependencies = [
  "anyhow",
  "base64",
@@ -2236,6 +2236,7 @@ dependencies = [
  "rpassword",
  "scraper",
  "serde",
+ "serde_json",
  "tokio",
  "toml",
  "tracing",

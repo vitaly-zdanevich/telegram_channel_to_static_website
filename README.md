@@ -12,6 +12,12 @@
 [![Duplicated Lines](https://sonarcloud.io/api/project_badges/measure?project=vitaly-zdanevich_telegram_channel_to_static_website&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=vitaly-zdanevich_telegram_channel_to_static_website)
 [![Maintainability](https://sonarcloud.io/api/project_badges/measure?project=vitaly-zdanevich_telegram_channel_to_static_website&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=vitaly-zdanevich_telegram_channel_to_static_website)
 [![Reliability](https://sonarcloud.io/api/project_badges/measure?project=vitaly-zdanevich_telegram_channel_to_static_website&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=vitaly-zdanevich_telegram_channel_to_static_website)
+
+Google Lighthouse (mobile, updated by the daily run):
+[![Lighthouse Performance](https://img.shields.io/endpoint?url=https%3A%2F%2Fvitaly-zdanevich.github.io%2Ftelegram_channel_to_static_website%2Flighthouse-performance.json)](https://pagespeed.web.dev/analysis?url=https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/)
+[![Lighthouse Accessibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fvitaly-zdanevich.github.io%2Ftelegram_channel_to_static_website%2Flighthouse-accessibility.json)](https://pagespeed.web.dev/analysis?url=https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/)
+[![Lighthouse Best Practices](https://img.shields.io/endpoint?url=https%3A%2F%2Fvitaly-zdanevich.github.io%2Ftelegram_channel_to_static_website%2Flighthouse-best-practices.json)](https://pagespeed.web.dev/analysis?url=https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/)
+[![Lighthouse SEO](https://img.shields.io/endpoint?url=https%3A%2F%2Fvitaly-zdanevich.github.io%2Ftelegram_channel_to_static_website%2Flighthouse-seo.json)](https://pagespeed.web.dev/analysis?url=https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/)
 [![Security](https://sonarcloud.io/api/project_badges/measure?project=vitaly-zdanevich_telegram_channel_to_static_website&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=vitaly-zdanevich_telegram_channel_to_static_website)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=vitaly-zdanevich_telegram_channel_to_static_website&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=vitaly-zdanevich_telegram_channel_to_static_website)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=vitaly-zdanevich_telegram_channel_to_static_website&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=vitaly-zdanevich_telegram_channel_to_static_website)
@@ -260,6 +266,8 @@ These are *variables*, not secrets — all of it is public.
 | `PINTEREST` | `--no-pinterest` | on | `false` stops replacing a Pinterest pin link with the embedded pin |
 | `PINTEREST_SAVE` | `--pinterest-save` | off | `true` adds a Pinterest **"Save" hover button** to the site's own images so visitors can pin them to their boards (opt-in; needs JavaScript, loads pinit.js) |
 | `LIVENESS` | `--no-liveness` | on | `false` skips the liveness checks (YouTube / Apple Podcasts / Yandex / Instagram / Spotify / Pinterest). Otherwise a removed item keeps its local media, or shows the plain link, instead of a dead/broken embed |
+| `PAGESPEED` | `--no-pagespeed` | on | `false` skips fetching Google Lighthouse (mobile) scores for the deployed site. When on, the four category scores are shown on the About page and written as shields.io badge endpoints (`lighthouse-*.json`) for the README. Needs a live `base_url`; measures the previous deploy |
+| `PAGESPEED_API_KEY` (secret) | — | — | Optional [PageSpeed Insights API key](https://developers.google.com/speed/docs/insights/v5/get-started) to raise the rate limit (one call/day works without it) |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
