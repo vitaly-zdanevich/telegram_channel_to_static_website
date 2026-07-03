@@ -109,90 +109,6 @@ fn apple_podcast_id(url: &str) -> Option<String> {
     (!digits.is_empty()).then_some(digits)
 }
 
-#[cfg(test)]
-mod tests {
-    use super::{
-        apple_body_removed, apple_podcast_id, has_nonempty_og, oembed_removed, yandex_body_removed,
-        yandex_track_id, youtube_status_removed,
-    };
-
-    #[test]
-    fn extract_yandex_track_id() {
-        assert_eq!(
-            yandex_track_id("https://music.yandex.ru/iframe/#track/103670414/22206733").as_deref(),
-            Some("103670414")
-        );
-        assert_eq!(yandex_track_id("https://music.yandex.ru/iframe/#album/1"), None);
-    }
-
-    #[test]
-    fn extract_apple_podcast_id() {
-        assert_eq!(
-            apple_podcast_id("https://embed.podcasts.apple.com/us/podcast/x/id1234567?i=456")
-                .as_deref(),
-            Some("1234567")
-        );
-        assert_eq!(
-            apple_podcast_id("https://podcasts.apple.com/podcast/id999").as_deref(),
-            Some("999")
-        );
-        assert_eq!(apple_podcast_id("https://example.com/foo"), None);
-    }
-
-    #[test]
-    fn og_title_presence() {
-        // A live Instagram post has a non-empty og:title; a removed one doesn't.
-        assert!(has_nonempty_og(
-            r#"<meta property="og:title" content="Venjent on Instagram">"#,
-            "og:title"
-        ));
-        assert!(!has_nonempty_og(
-            r#"<meta property="og:title" content="">"#,
-            "og:title"
-        ));
-        assert!(!has_nonempty_og(
-            r#"<meta property="og:description" content="x">"#,
-            "og:title"
-        ));
-    }
-
-    #[test]
-    fn youtube_status_classification() {
-        for s in [400, 401, 403, 404] {
-            assert!(youtube_status_removed(s), "{s} should be removed");
-        }
-        for s in [200, 429, 500, 301] {
-            assert!(!youtube_status_removed(s), "{s} should not be removed");
-        }
-    }
-
-    #[test]
-    fn apple_lookup_body() {
-        assert!(apple_body_removed(r#"{"resultCount":0, "results":[]}"#));
-        assert!(apple_body_removed(r#"{"results":[],"resultCount":0}"#));
-        assert!(!apple_body_removed(r#"{"resultCount":1,"results":[{"x":1}]}"#));
-        assert!(!apple_body_removed("garbage"));
-    }
-
-    #[test]
-    fn yandex_track_body() {
-        assert!(yandex_body_removed(r#"{"result":{"available":false}}"#));
-        assert!(yandex_body_removed(r#"{"result":{}}"#)); // present but not available
-        assert!(!yandex_body_removed(r#"{"result":{"available":true,"id":"1"}}"#));
-        assert!(!yandex_body_removed(r#"{"error":"not-found"}"#)); // no result → alive
-    }
-
-    #[test]
-    fn oembed_status_classification() {
-        // Spotify/Pinterest oEmbed: a definitive client error means the item is gone.
-        assert!(oembed_removed(400)); // Pinterest's "gone"
-        assert!(oembed_removed(404)); // Spotify's "gone"
-        assert!(!oembed_removed(200));
-        assert!(!oembed_removed(429)); // rate-limited → assume alive
-        assert!(!oembed_removed(500));
-    }
-}
-
 /// True only when iTunes Lookup reports the podcast id no longer exists
 /// (`resultCount` 0). Non-200 responses and errors are treated as alive.
 async fn is_apple_removed(client: &reqwest::Client, id: &str) -> bool {
@@ -475,4 +391,89 @@ async fn is_pinterest_removed(client: &reqwest::Client, url: &str) -> bool {
 /// statuses and network errors are treated as alive.
 fn oembed_removed(status: u16) -> bool {
     matches!(status, 400 | 404)
+}
+
+
+#[cfg(test)]
+mod tests {
+    use super::{
+        apple_body_removed, apple_podcast_id, has_nonempty_og, oembed_removed, yandex_body_removed,
+        yandex_track_id, youtube_status_removed,
+    };
+
+    #[test]
+    fn extract_yandex_track_id() {
+        assert_eq!(
+            yandex_track_id("https://music.yandex.ru/iframe/#track/103670414/22206733").as_deref(),
+            Some("103670414")
+        );
+        assert_eq!(yandex_track_id("https://music.yandex.ru/iframe/#album/1"), None);
+    }
+
+    #[test]
+    fn extract_apple_podcast_id() {
+        assert_eq!(
+            apple_podcast_id("https://embed.podcasts.apple.com/us/podcast/x/id1234567?i=456")
+                .as_deref(),
+            Some("1234567")
+        );
+        assert_eq!(
+            apple_podcast_id("https://podcasts.apple.com/podcast/id999").as_deref(),
+            Some("999")
+        );
+        assert_eq!(apple_podcast_id("https://example.com/foo"), None);
+    }
+
+    #[test]
+    fn og_title_presence() {
+        // A live Instagram post has a non-empty og:title; a removed one doesn't.
+        assert!(has_nonempty_og(
+            r#"<meta property="og:title" content="Venjent on Instagram">"#,
+            "og:title"
+        ));
+        assert!(!has_nonempty_og(
+            r#"<meta property="og:title" content="">"#,
+            "og:title"
+        ));
+        assert!(!has_nonempty_og(
+            r#"<meta property="og:description" content="x">"#,
+            "og:title"
+        ));
+    }
+
+    #[test]
+    fn youtube_status_classification() {
+        for s in [400, 401, 403, 404] {
+            assert!(youtube_status_removed(s), "{s} should be removed");
+        }
+        for s in [200, 429, 500, 301] {
+            assert!(!youtube_status_removed(s), "{s} should not be removed");
+        }
+    }
+
+    #[test]
+    fn apple_lookup_body() {
+        assert!(apple_body_removed(r#"{"resultCount":0, "results":[]}"#));
+        assert!(apple_body_removed(r#"{"results":[],"resultCount":0}"#));
+        assert!(!apple_body_removed(r#"{"resultCount":1,"results":[{"x":1}]}"#));
+        assert!(!apple_body_removed("garbage"));
+    }
+
+    #[test]
+    fn yandex_track_body() {
+        assert!(yandex_body_removed(r#"{"result":{"available":false}}"#));
+        assert!(yandex_body_removed(r#"{"result":{}}"#)); // present but not available
+        assert!(!yandex_body_removed(r#"{"result":{"available":true,"id":"1"}}"#));
+        assert!(!yandex_body_removed(r#"{"error":"not-found"}"#)); // no result → alive
+    }
+
+    #[test]
+    fn oembed_status_classification() {
+        // Spotify/Pinterest oEmbed: a definitive client error means the item is gone.
+        assert!(oembed_removed(400)); // Pinterest's "gone"
+        assert!(oembed_removed(404)); // Spotify's "gone"
+        assert!(!oembed_removed(200));
+        assert!(!oembed_removed(429)); // rate-limited → assume alive
+        assert!(!oembed_removed(500));
+    }
 }
