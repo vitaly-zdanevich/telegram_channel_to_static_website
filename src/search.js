@@ -14,6 +14,10 @@
 			}[c];
 		});
 	}
+	function snippet(s) {
+		const t = String(s).replace(/\s+/g, ' ').trim();
+		return t.length > 150 ? t.slice(0, 150) + '…' : t;
+	}
 	function render(items) {
 		if (!items.length) {
 			results.innerHTML = '';
@@ -23,8 +27,13 @@
 		results.innerHTML = items
 			.map(function (it) {
 				const doc = index.documentStore.getDoc(it.ref) || {};
-				const title = doc.title && doc.title.trim() ? doc.title : it.ref;
-				return '<li><a href="' + esc(it.ref) + '">' + esc(title) + '</a></li>';
+				const body = doc.body && doc.body.trim();
+				const text = body
+					? snippet(body)
+					: doc.title && doc.title.trim()
+						? doc.title
+						: it.ref;
+				return '<li><a href="' + esc(it.ref) + '">' + esc(text) + '</a></li>';
 			})
 			.join('');
 		results.hidden = false;
