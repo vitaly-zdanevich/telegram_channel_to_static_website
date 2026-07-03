@@ -174,11 +174,14 @@ jobs:
           zola --version
 
       - name: Build tg2zola
-        # Compile the opt-in MTProto backend only when a session is configured,
-        # so ordinary builds stay light (it pulls in grammers + vendored core2).
+        # Compile the opt-in MTProto backend only when all three credentials are
+        # set — ordinary builds stay light (it pulls in grammers + vendored
+        # core2), and we don't compile it just to have enrich() no-op at runtime.
         run: |
           feats=""
-          [ -n "${TG_SESSION:-}" ] && feats="--features mtproto"
+          if [ -n "${TG_API_ID:-}" ] && [ -n "${TG_API_HASH:-}" ] && [ -n "${TG_SESSION:-}" ]; then
+            feats="--features mtproto"
+          fi
           echo "building${feats:+ with mtproto}"
           cargo build --release --locked $feats
 
