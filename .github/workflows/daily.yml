@@ -118,10 +118,12 @@ env:
   # *secret*) raises the PageSpeed Insights rate limit.
   PAGESPEED: ${{ vars.PAGESPEED }}
   PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
-  # Set to "true" for offline mode + an installable PWA: a service worker
-  # precaches the whole archive on any non-cellular connection (Wi-Fi or wired,
-  # never mobile data) and the site becomes installable (hides the address bar).
-  # Off by default; needs JavaScript.
+  # Installable PWA (web app manifest + service worker; hides the address bar) is
+  # ON by default — set this repository *variable* to "false" to disable it.
+  PWA: ${{ vars.PWA }}
+  # Set to "true" for offline mode: the service worker precaches the whole archive
+  # on any non-cellular connection (Wi-Fi or wired, never mobile data) so the site
+  # works fully offline. Off by default; needs JavaScript.
   OFFLINE: ${{ vars.OFFLINE }}
   # Videos are offloaded to this repo's GitHub Releases (kept off the Pages 1 GB
   # quota) by default; set this repository *variable* to "false" to keep them
@@ -257,6 +259,7 @@ jobs:
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
             [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
+            [ "${PWA:-}" = "false" ] && args+=(--no-pwa)
             [ "${OFFLINE:-}" = "true" ] && args+=(--offline)
             [ "${VIDEO_RELEASES:-}" = "false" ] && args+=(--no-video-releases)
             [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)

@@ -72,7 +72,9 @@ pub struct FileConfig {
     pub pinterest_save: Option<bool>,
     /// Fetch Google PageSpeed/Lighthouse scores for the deployed site (opt-in).
     pub pagespeed: Option<bool>,
-    /// Offline mode + installable PWA: precaching service worker + manifest (opt-in).
+    /// Installable PWA: web app manifest + a service worker (default on).
+    pub pwa: Option<bool>,
+    /// Offline mode: the service worker precaches the whole archive (opt-in).
     pub offline: Option<bool>,
     /// Offload videos to this repo's GitHub Releases (kept off the Pages quota).
     pub video_releases: Option<bool>,
@@ -181,7 +183,9 @@ pub struct Settings {
     pub pinterest_save: bool,
     /// Fetch Google Lighthouse scores for the About page + README badges (opt-in, default false).
     pub pagespeed: bool,
-    /// Offline mode + installable PWA (opt-in, default false).
+    /// Installable PWA: web app manifest + service worker (default true).
+    pub pwa: bool,
+    /// Offline mode: the service worker precaches the whole archive (opt-in, default false).
     pub offline: bool,
     /// Offload videos to this repo's GitHub Releases (default true; needs a
     /// github.com repo_url + the CI upload step). Falls back to inline otherwise.

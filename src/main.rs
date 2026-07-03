@@ -213,10 +213,14 @@ struct GenerateArgs {
     #[arg(long)]
     no_pagespeed: bool,
 
-    /// Offline mode + installable PWA: emit a service worker that precaches the
-    /// whole archive (on any non-cellular connection) + a web app manifest
-    /// (opt-in; needs JavaScript).
-    /// Run `tg2zola pwa <public>` after `zola build` to write the precache list.
+    /// Don't make the site an installable PWA (default: emit a web app manifest
+    /// + a service worker so it can be installed / hides the address bar).
+    #[arg(long)]
+    no_pwa: bool,
+
+    /// Offline mode: the service worker precaches the whole archive (on any
+    /// non-cellular connection) so the site works fully offline (opt-in; needs
+    /// JavaScript). Run `tg2zola pwa <public>` after `zola build` for the list.
     #[arg(long)]
     offline: bool,
 
@@ -452,6 +456,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.pagespeed.unwrap_or(true)
         },
+        pwa: if g.no_pwa { false } else { fc.pwa.unwrap_or(true) },
         offline: g.offline || fc.offline.unwrap_or(false),
         video_releases: if g.no_video_releases {
             false
