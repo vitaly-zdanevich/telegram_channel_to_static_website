@@ -64,6 +64,8 @@ pub struct FileConfig {
     pub genius: Option<bool>,
     /// Replace a Spotify link with the Spotify player (opt-in, default off).
     pub spotify: Option<bool>,
+    /// Embed a live Instagram post replacing an attached video (opt-in, default off).
+    pub instagram: Option<bool>,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: Option<bool>,
     /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
@@ -159,6 +161,8 @@ pub struct Settings {
     pub genius: bool,
     /// Replace Spotify links with the Spotify player (opt-in, default false).
     pub spotify: bool,
+    /// Embed a live Instagram post replacing an attached video (opt-in, default false).
+    pub instagram: bool,
     /// Replace Pinterest pin links with the embedded pin (default true).
     pub pinterest: bool,
     /// YouTube liveness check (default true).

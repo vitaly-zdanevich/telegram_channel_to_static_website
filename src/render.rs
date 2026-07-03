@@ -248,6 +248,8 @@ pub struct RenderOpts<'a> {
     pub keep_media: bool,
     /// Replace a Spotify link with the Spotify player (opt-in).
     pub spotify: bool,
+    /// Embed a live Instagram post replacing an attached video (opt-in).
+    pub instagram: bool,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: bool,
 }
@@ -267,6 +269,7 @@ pub fn render_post(
         strip_title,
         keep_media,
         spotify,
+        instagram,
         pinterest,
     } = *opts;
     // A PAGE-marked post becomes a standalone page; work on a copy with the
@@ -354,8 +357,8 @@ pub fn render_post(
     // check) keeps the local video instead. keep_media keeps it regardless.
     let youtube_live = post.youtube.is_some() && !post.youtube_dead;
     let apple_live = post.apple_podcast.is_some() && !post.apple_dead;
-    // A live Instagram post replaces an attached *video*.
-    let instagram_live = post.instagram.is_some() && !post.instagram_dead;
+    // A live Instagram post replaces an attached *video* (opt-in embed).
+    let instagram_live = instagram && post.instagram.is_some() && !post.instagram_dead;
     // Yandex Music replaces an *attached audio* file only (per the rule), and
     // only when the track is still live.
     let has_attached_audio = post.media.iter().any(|m| match m {
@@ -1166,6 +1169,7 @@ mod tests {
                 strip_title: false,
                 keep_media: false,
                 spotify: false,
+                instagram: false,
                 pinterest: false,
             },
         );
@@ -1224,6 +1228,7 @@ mod tests {
                     strip_title: false,
                     keep_media: false,
                     spotify: false,
+                    instagram: true,
                     pinterest: false,
                 },
             )
@@ -1266,6 +1271,7 @@ mod tests {
                     strip_title: false,
                     keep_media: false,
                     spotify: false,
+                    instagram: false,
                     pinterest: false,
                 },
             )
@@ -1312,6 +1318,7 @@ mod tests {
                     strip_title: false,
                     keep_media: keep,
                     spotify: false,
+                    instagram: false,
                     pinterest: false,
                 },
             )
@@ -1338,6 +1345,7 @@ mod tests {
         p.pinterest = Some("https://www.pinterest.com/pin/42/".into());
         let ui = crate::i18n::ui("en");
         let opts = |spotify, pinterest| RenderOpts {
+            instagram: false,
             ui: &ui,
             title_max: 200,
             derive_titles: false,

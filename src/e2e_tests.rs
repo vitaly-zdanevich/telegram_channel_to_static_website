@@ -62,6 +62,7 @@ fn settings(site: PathBuf) -> Settings {
         keep_media: false,
         genius: false,
         spotify: false,
+        instagram: false,
         pinterest: false,
         liveness: false,
         tags_to_pages: None,
@@ -139,7 +140,8 @@ fn zola_build_produces_expected_html() {
         ),
         // Attached video + a live YouTube link → the embed replaces the video.
         post(2, "Watch this clip.", &[], vec![Media::Video { url: "https://example.com/v.mp4".into() }], Some("dQw4w9WgXcQ"), None),
-        // Attached video + a live Instagram link → the Instagram embed.
+        // Attached video + an Instagram link → the video is kept (IG embed is
+        // opt-in and off by default).
         post(
             3,
             "A reel.",
@@ -207,6 +209,7 @@ fn zola_build_produces_expected_html() {
                     strip_title: false,
                     keep_media: s.keep_media,
                     spotify: false,
+                    instagram: false,
                     pinterest: false,
                 },
             )
@@ -249,23 +252,23 @@ fn zola_build_produces_expected_html() {
     );
     assert!(!p2.contains("<video"), "attached video not dropped for the embed:\n{p2}");
 
-    // Post 3: the Instagram embed (blockquote + embed.js) replaced the video.
+    // Post 3: Instagram embedding is off by default (opt-in), so the attached
+    // video is kept and no Instagram embed is emitted.
     let p3 = read("posts/3/index.html");
-    assert!(p3.contains("instagram-media"), "instagram embed missing:\n{p3}");
-    assert!(p3.contains("embed.js"), "embed.js should be present before the offline pass");
-    assert!(!p3.contains("<video"), "attached video not dropped for the IG embed:\n{p3}");
+    assert!(p3.contains("<video"), "attached video should be kept when IG is off:\n{p3}");
+    assert!(!p3.contains("instagram-media"), "no IG embed expected (off by default):\n{p3}");
+    assert!(!p3.contains("embed.js"), "no IG embed.js expected (off by default):\n{p3}");
 
     // Post 4: a downloaded MTProto video plays as a <video>, and is #video-tagged.
     let p4 = read("posts/4/index.html");
     assert!(p4.contains("<video"), "LocalVideo <video> missing:\n{p4}");
     assert!(public.join("tags/video/index.html").exists(), "video tag page missing");
 
-    // The offline pass strips scripts (the IG embed degrades to its link) and
-    // rewrites to relative links, so the copy opens from file://.
+    // The offline pass strips scripts and rewrites to relative links, so the
+    // copy opens from file://.
     crate::offline::relativize(&public).expect("offline relativize");
     let p3o = read("posts/3/index.html");
-    assert!(p3o.contains("instagram-media"), "IG blockquote should remain after offline");
-    assert!(!p3o.contains("embed.js"), "offline pass should strip embed.js:\n{p3o}");
+    assert!(p3o.contains("<video"), "kept video should remain after offline:\n{p3o}");
     assert!(!p3o.contains("<script"), "offline pass should strip all <script>:\n{p3o}");
 
     let _ = fs::remove_dir_all(&dir);
@@ -301,6 +304,7 @@ fn elasticlunr_search_builds() {
                     strip_title: false,
                     keep_media: s.keep_media,
                     spotify: false,
+                    instagram: false,
                     pinterest: false,
                 },
             )
@@ -372,6 +376,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
                     strip_title: false,
                     keep_media: s.keep_media,
                     spotify: false,
+                    instagram: false,
                     pinterest: false,
                 },
             )

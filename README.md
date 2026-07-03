@@ -46,9 +46,10 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   via `prefers-color-scheme` (OLED-friendly), with no external theme dependency.
   An external theme can be layered on with a guaranteed fallback (see [Theming](#theming)).
 - **Smart video handling** (in priority order):
-  1. attached video **+ a live YouTube/Instagram link** → embed it, drop the video
-     (the CI default, to save space; a dead link keeps the video). Locally
-     everything is downloaded by default — `KEEP_MEDIA`/`--keep-media` forces it;
+  1. attached video **+ a live YouTube link** (or an Instagram link with
+     `INSTAGRAM`/`--instagram` enabled) → embed it, drop the video (the CI
+     default, to save space; a dead link keeps the video). Locally everything is
+     downloaded by default — `KEEP_MEDIA`/`--keep-media` forces it;
   2. directly downloadable video → local `<video>`;
   3. otherwise → save the **poster frame** + duration (the public page doesn't
      expose the file; see [Limitations](#limitations)).
@@ -255,6 +256,7 @@ These are *variables*, not secrets — all of it is public.
 | `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (for their YouTube video + lyrics-widget id) |
 | `GENIUS_TOKEN` (secret) | — | — | Genius API [Client Access Token](https://genius.com/api-clients). When set, genius links resolve via the **API** (works in CI) instead of scraping — the genius web pages are Cloudflare-blocked on datacenter IPs. Store it as an Actions **secret**, not a variable |
 | `SPOTIFY` | `--spotify` | off | `true` to replace a Spotify link with the Spotify player (opt-in — it plays a ~30s preview for non-Premium listeners) |
+| `INSTAGRAM` | `--instagram` | off | `true` to embed a live Instagram post in place of an attached video (opt-in — the widget needs JavaScript and loads from instagram.com; otherwise the attached video is kept) |
 | `PINTEREST` | `--no-pinterest` | on | `false` stops replacing a Pinterest pin link with the embedded pin |
 | `LIVENESS` | `--no-liveness` | on | `false` skips the liveness checks (YouTube / Apple Podcasts / Yandex / Instagram / Spotify / Pinterest). Otherwise a removed item keeps its local media, or shows the plain link, instead of a dead/broken embed |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |

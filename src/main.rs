@@ -186,6 +186,11 @@ struct GenerateArgs {
     #[arg(long)]
     spotify: bool,
 
+    /// Embed a live Instagram post in place of an attached video (opt-in; the
+    /// widget needs JavaScript and loads from instagram.com).
+    #[arg(long)]
+    instagram: bool,
+
     /// Don't replace a Pinterest pin link with the embedded pin (default: embed).
     #[arg(long)]
     no_pinterest: bool,
@@ -389,6 +394,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             fc.genius.unwrap_or(true)
         },
         spotify: g.spotify || fc.spotify.unwrap_or(false),
+        instagram: g.instagram || fc.instagram.unwrap_or(false),
         pinterest: if g.no_pinterest {
             false
         } else {
@@ -556,7 +562,9 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         liveness::check_youtube(&client, &mut posts, s.concurrency).await;
         liveness::check_apple(&client, &mut posts, s.concurrency).await;
         liveness::check_yandex(&client, &mut posts, s.concurrency).await;
-        liveness::check_instagram(&client, &mut posts, &s.base_url).await;
+        if s.instagram {
+            liveness::check_instagram(&client, &mut posts, &s.base_url).await;
+        }
         if s.spotify {
             liveness::check_spotify(&client, &mut posts, s.concurrency).await;
         }
@@ -620,6 +628,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         strip_title: s.strip_title,
         keep_media: s.keep_media,
         spotify: s.spotify,
+        instagram: s.instagram,
         pinterest: s.pinterest,
     };
 

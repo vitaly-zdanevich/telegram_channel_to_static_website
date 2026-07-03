@@ -100,6 +100,9 @@ env:
   # Set to "true" to replace a Spotify link with the Spotify player (opt-in;
   # ~30s preview for non-Premium listeners).
   SPOTIFY: ${{ vars.SPOTIFY }}
+  # Set to "true" to embed a live Instagram post in place of an attached video
+  # (opt-in, off by default; the widget needs JavaScript).
+  INSTAGRAM: ${{ vars.INSTAGRAM }}
   # Set to "false" to stop replacing Pinterest pin links with the embedded pin.
   PINTEREST: ${{ vars.PINTEREST }}
   # Optional MTProto backend — fetches audio / original photos / big videos the
@@ -221,6 +224,7 @@ jobs:
             [ "${KEEP_MEDIA:-}" = "true" ] && args+=(--keep-media)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)
             [ "${SPOTIFY:-}" = "true" ] && args+=(--spotify)
+            [ "${INSTAGRAM:-}" = "true" ] && args+=(--instagram)
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
             [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
