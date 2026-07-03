@@ -542,6 +542,13 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         info!("{} PAGE post(s) → pages", page_posts.len());
     }
 
+    // Resolve genius.com links into the YouTube video they reference (+ song id)
+    // *before* the liveness check below, so a genius-resolved video is verified
+    // for embeddability too — not just direct YouTube links.
+    if s.genius {
+        genius::enrich(&client, &mut posts, s.concurrency).await;
+    }
+
     // Check YouTube links for liveness so a *removed* video keeps its local
     // media instead of being replaced by a dead embed (before the MTProto
     // audio-skip + render, which both consult it).
@@ -571,11 +578,6 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     posts.retain(|p| !render::is_empty_post(p));
     if before != posts.len() {
         info!("skipped {} empty post(s)", before - posts.len());
-    }
-
-    // Resolve genius.com links into the YouTube video they reference (+ song id).
-    if s.genius {
-        genius::enrich(&client, &mut posts, s.concurrency).await;
     }
 
     // Auto-tag posts that have a playable (downloadable) video with #video,
