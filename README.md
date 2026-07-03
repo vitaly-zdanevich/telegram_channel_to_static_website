@@ -352,7 +352,7 @@ TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
 |---|---|
 | `TG_API_ID` / `TG_API_HASH` | App credentials from my.telegram.org (required) |
 | `TG_SESSION` | base64 session from `tg2zola login`; alternatively a `tg2zola.session` file in the working dir is used |
-| `MTPROTO_IMAGES` | `1`/`true` to also fetch original-quality photos (audio is always fetched) |
+| `MTPROTO_IMAGES` | `1`/`true` to also fetch original-quality photos **and pasted images Telegram stored as files** (shown *not archived* on the web preview); audio is always fetched |
 | `MTPROTO_VIDEOS` | `1`/`true` to also fetch the full video for posts the web preview shows only as a poster (large files — for a local backup; off by default) |
 | `TG_SESSION_FILE` | override the session-file path (default `tg2zola.session`) |
 
@@ -389,7 +389,8 @@ The public web preview is the trade-off for needing **zero authentication**
 - **Music files (audio documents) aren't downloadable** from `t.me/s/` — their
   URL isn't in the scraped HTML (only voice notes, with direct `.oga` URLs, are).
   The optional [MTProto backend](#optional-mtproto-backend) fetches audio
-  (voice + music); without it, for an attachment we can't fetch we keep its
+  (voice + music), and with `MTPROTO_IMAGES` also the pasted images Telegram
+  stored as files; without it, for an attachment we can't fetch we keep its
   **filename** (marked *not archived*) so you know it existed; a post that is
   *only* such a reference (or a lone undownloadable file) is skipped rather than
   published empty.

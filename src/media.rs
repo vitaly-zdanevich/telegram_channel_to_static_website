@@ -119,6 +119,18 @@ pub fn is_probably_audio_doc(name: &str) -> bool {
     is_audio_name(name) || !has_file_extension(name)
 }
 
+/// A "(not archived)" document that's an image — a pasted screenshot Telegram
+/// stored as a *file* rather than a photo, so the web preview can't download it.
+/// MTProto (MTPROTO_IMAGES) fetches these and shows them as photos. Matched by a
+/// common image extension. Only used by the MTProto backend.
+#[cfg(feature = "mtproto")]
+pub fn is_probably_image_doc(name: &str) -> bool {
+    let n = name.trim().to_ascii_lowercase();
+    [".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp"]
+        .iter()
+        .any(|e| n.ends_with(e))
+}
+
 fn has_file_extension(name: &str) -> bool {
     match name.rsplit_once('.') {
         Some((_, ext)) => {
@@ -254,6 +266,19 @@ mod tests {
         // A distinct real file (non-audio extension) is kept.
         assert!(!is_probably_audio_doc("report.pdf"));
         assert!(!is_probably_audio_doc("archive.zip"));
+    }
+
+    #[cfg(feature = "mtproto")]
+    #[test]
+    fn probably_image_doc_matches_image_extensions() {
+        // Pasted screenshots Telegram stores as files.
+        assert!(is_probably_image_doc("image_2026-07-01_07-36-10.png"));
+        assert!(is_probably_image_doc("Photo.JPG"));
+        assert!(is_probably_image_doc("meme.webp"));
+        // Non-images are left alone.
+        assert!(!is_probably_image_doc("report.pdf"));
+        assert!(!is_probably_image_doc("track.mp3"));
+        assert!(!is_probably_image_doc("Episode 5 — the best one"));
     }
 
     #[test]

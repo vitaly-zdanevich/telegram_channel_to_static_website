@@ -207,7 +207,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let mut audio_for: AudioFor = HashMap::new();
     let mut photo_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
     let mut video_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
-    let (mut n_audio, mut n_photo, mut n_video) = (0usize, 0usize, 0usize);
+    // Pasted images stored as *documents* (Media::DocumentRef): (filename, path).
+    let mut doc_image_for: HashMap<usize, Vec<(String, PathBuf)>> = HashMap::new();
+    let (mut n_audio, mut n_photo, mut n_video, mut n_doc_image) = (0usize, 0usize, 0usize, 0usize);
 
     let mut iter = client.iter_messages(peer);
     while let Some(msg) = iter.next().await.context("iterating channel messages")? {
@@ -268,6 +270,20 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                         video_for.entry(pi).or_default().push((id, dest));
                         n_video += 1;
                     }
+                } else if mime.starts_with("image/") && photos {
+                    // A pasted image Telegram stored as a *file* — the web preview
+                    // can't download it (shown "(not archived)"), so fetch it and
+                    // show it as a photo. Gated on MTPROTO_IMAGES like real photos.
+                    let dest = cache.join(format!("{id}.{}", image_ext(mime)));
+                    if !dest.exists() {
+                        client
+                            .download_media(&media, &dest)
+                            .await
+                            .with_context(|| format!("downloading image document from message {id}"))?;
+                    }
+                    let name = doc.name().trim().to_string();
+                    doc_image_for.entry(pi).or_default().push((name, dest));
+                    n_doc_image += 1;
                 }
             }
             TlMedia::Photo(_) if photos => {
@@ -322,9 +338,29 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
             }
         }
     }
+    // Replace each "(not archived)" image document with the fetched original,
+    // matched by filename (else the first image-typed reference in the post).
+    for (pi, items) in doc_image_for {
+        for (name, path) in items {
+            let media = &mut posts[pi].media;
+            let idx = media
+                .iter()
+                .position(|m| matches!(m, Media::DocumentRef { filename } if *filename == name))
+                .or_else(|| {
+                    media.iter().position(|m| {
+                        matches!(m, Media::DocumentRef { filename } if crate::media::is_probably_image_doc(filename))
+                    })
+                });
+            match idx {
+                Some(i) => media[i] = Media::LocalPhoto { path, key: None },
+                None => media.push(Media::LocalPhoto { path, key: None }),
+            }
+        }
+    }
 
     tracing::info!(
-        "MTProto: {n_audio} audio file(s), {n_photo} original photo(s), {n_video} video(s)"
+        "MTProto: {n_audio} audio file(s), {n_photo} original photo(s), \
+         {n_doc_image} image file(s), {n_video} video(s)"
     );
     Ok(())
 }
@@ -362,5 +398,16 @@ fn video_ext(mime: &str) -> &'static str {
         "video/webm" => "webm",
         "video/quicktime" => "mov",
         _ => "mp4",
+    }
+}
+
+/// File extension for an image MIME type (pasted-image documents).
+fn image_ext(mime: &str) -> &'static str {
+    match mime {
+        "image/png" => "png",
+        "image/gif" => "gif",
+        "image/webp" => "webp",
+        "image/bmp" => "bmp",
+        _ => "jpg",
     }
 }
