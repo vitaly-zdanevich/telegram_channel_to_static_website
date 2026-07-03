@@ -258,6 +258,7 @@ These are *variables*, not secrets — all of it is public.
 | `SPOTIFY` | `--spotify` | off | `true` to replace a Spotify link with the Spotify player (opt-in — it plays a ~30s preview for non-Premium listeners) |
 | `INSTAGRAM` | `--instagram` | off | `true` to embed a live Instagram post in place of an attached video (opt-in — the widget needs JavaScript and loads from instagram.com; otherwise the attached video is kept) |
 | `PINTEREST` | `--no-pinterest` | on | `false` stops replacing a Pinterest pin link with the embedded pin |
+| `PINTEREST_SAVE` | `--pinterest-save` | off | `true` adds a Pinterest **"Save" hover button** to the site's own images so visitors can pin them to their boards (opt-in; needs JavaScript, loads pinit.js) |
 | `LIVENESS` | `--no-liveness` | on | `false` skips the liveness checks (YouTube / Apple Podcasts / Yandex / Instagram / Spotify / Pinterest). Otherwise a removed item keeps its local media, or shows the plain link, instead of a dead/broken embed |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |

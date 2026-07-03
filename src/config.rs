@@ -68,6 +68,8 @@ pub struct FileConfig {
     pub instagram: Option<bool>,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: Option<bool>,
+    /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
+    pub pinterest_save: Option<bool>,
     /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
     /// its local media instead of a dead embed. Default on.
     pub liveness: Option<bool>,
@@ -165,6 +167,8 @@ pub struct Settings {
     pub instagram: bool,
     /// Replace Pinterest pin links with the embedded pin (default true).
     pub pinterest: bool,
+    /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).
+    pub pinterest_save: bool,
     /// YouTube liveness check (default true).
     pub liveness: bool,
     /// Comma-separated tags to surface as links in the top nav.

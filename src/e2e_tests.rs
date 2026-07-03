@@ -64,6 +64,7 @@ fn settings(site: PathBuf) -> Settings {
         spotify: false,
         instagram: false,
         pinterest: false,
+        pinterest_save: false,
         liveness: false,
         tags_to_pages: None,
         pages: None,

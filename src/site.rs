@@ -404,6 +404,10 @@ fn config_toml(
             if s.telegram_link { "true" } else { "false" },
         )
         .replace("__YT_FACADE__", if s.youtube_facade { "true" } else { "false" })
+        .replace(
+            "__PINTEREST_SAVE__",
+            if s.pinterest_save { "true" } else { "false" },
+        )
         .replace("__CALENDAR__", if days.is_empty() { "false" } else { "true" })
         .replace("__FEDI__", &fedi)
         .replace("__SEARCH__", &search)
@@ -1093,6 +1097,7 @@ next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
 youtube_facade = __YT_FACADE__
+pinterest_save = __PINTEREST_SAVE__
 calendar = __CALENDAR__
 __FEDI__
 __SEARCH__
@@ -1154,6 +1159,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.footer %}<footer class="site-footer">{{ config.extra.footer | markdown(inline=true) | safe }}</footer>{% endif %}
   {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
   {% if config.extra.search_elasticlunr %}<script src="{{ get_url(path='elasticlunr.min.js') | safe }}"></script><script src="{{ get_url(path='search_index.' ~ config.default_language ~ '.js') | safe }}"></script><script src="{{ get_url(path='search.js') | safe }}"></script>{% endif %}
+  {% if config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>{% endif %}
 </body>
 </html>
 "#;
@@ -1358,7 +1364,7 @@ const SPOTIFY_SHORTCODE: &str = r#"<div class="sp-embed"><iframe src="{{ url }}"
 
 // Pinterest embedded pin (pinit.js turns the <a> into the pin). The offline pass
 // strips the script, leaving the "View on Pinterest" link.
-const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" data-pin-width="large" href="{{ url }}">View on Pinterest</a><script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" data-pin-width="large" href="{{ url }}">View on Pinterest</a>{% if not config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js"></script>{% endif %}
 "#;
 
 // Resolve colocated media against the post's permalink so it works both on the

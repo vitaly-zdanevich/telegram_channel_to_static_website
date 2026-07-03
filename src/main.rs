@@ -195,6 +195,11 @@ struct GenerateArgs {
     #[arg(long)]
     no_pinterest: bool,
 
+    /// Add a Pinterest "Save" hover button to the site's own images so visitors
+    /// can pin them to their boards (opt-in; needs JavaScript).
+    #[arg(long)]
+    pinterest_save: bool,
+
     /// Skip the YouTube liveness check (a removed video otherwise keeps its local
     /// media instead of being replaced by a dead embed).
     #[arg(long)]
@@ -400,6 +405,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.pinterest.unwrap_or(true)
         },
+        pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         liveness: if g.no_liveness {
             false
         } else {
