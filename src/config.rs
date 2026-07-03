@@ -88,6 +88,10 @@ pub struct FileConfig {
     pub background_light: Option<String>,
     /// Extra CSS appended to the built-in stylesheet.
     pub css: Option<String>,
+    /// Body font-family CSS (a local/system font stack, e.g. `Georgia, serif`).
+    pub font: Option<String>,
+    /// A Google Fonts family to load and use for the body (e.g. `Inter`).
+    pub google_font: Option<String>,
     /// Optional theme name (a directory under `site/themes/`). When set, the
     /// built-in templates are not written and the theme drives the look.
     pub theme: Option<String>,
@@ -183,6 +187,10 @@ pub struct Settings {
     pub background_dark: String,
     pub background_light: String,
     pub css: Option<String>,
+    /// Body font-family (local/system font stack). Empty → the default stack.
+    pub font: Option<String>,
+    /// A Google Fonts family name to load + use for the body. Empty → none.
+    pub google_font: Option<String>,
     pub theme: Option<String>,
     pub max_pages: Option<usize>,
     pub page_delay_ms: u64,

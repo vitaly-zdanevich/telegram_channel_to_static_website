@@ -241,6 +241,15 @@ struct GenerateArgs {
     #[arg(long)]
     css: Option<String>,
 
+    /// Body font-family CSS — a local/system font stack, e.g. "Georgia, serif".
+    #[arg(long)]
+    font: Option<String>,
+
+    /// A Google Fonts family to load and use for the body text, e.g. "Inter".
+    /// Loads it from fonts.googleapis.com (an external request).
+    #[arg(long)]
+    google_font: Option<String>,
+
     /// Stop after N pages (~20 messages each). Omit to fetch the whole history.
     #[arg(long)]
     max_pages: Option<usize>,
@@ -440,6 +449,12 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .filter(|s| !s.trim().is_empty())
             .unwrap_or_else(|| "#ffffff".to_string()),
         css: g.css.clone().or(fc.css).filter(|s| !s.trim().is_empty()),
+        font: g.font.clone().or(fc.font).filter(|s| !s.trim().is_empty()),
+        google_font: g
+            .google_font
+            .clone()
+            .or(fc.google_font)
+            .filter(|s| !s.trim().is_empty()),
         site: g
             .site
             .clone()

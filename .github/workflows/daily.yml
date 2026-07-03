@@ -49,6 +49,11 @@ env:
   BACKGROUND_LIGHT_COLOR: ${{ vars.BACKGROUND_LIGHT_COLOR }}
   # Extra CSS appended to the built-in stylesheet.
   CSS: ${{ vars.CSS }}
+  # Body font. FONT is a local/system font stack (e.g. "Georgia, serif").
+  # GOOGLE_FONT names a Google Fonts family to load (e.g. "Inter") — an external
+  # request. If both are set, the Google font wins.
+  FONT: ${{ vars.FONT }}
+  GOOGLE_FONT: ${{ vars.GOOGLE_FONT }}
   # Set to "false" to disable post Next/Prev nav, the "View on Telegram" link,
   # or the RSS feed (all on by default).
   NEXT_PREV: ${{ vars.NEXT_PREV }}
@@ -219,6 +224,8 @@ jobs:
             [ -n "${BACKGROUND_DARK_COLOR:-}" ] && args+=(--background-dark-color "$BACKGROUND_DARK_COLOR")
             [ -n "${BACKGROUND_LIGHT_COLOR:-}" ] && args+=(--background-light-color "$BACKGROUND_LIGHT_COLOR")
             [ -n "${CSS:-}" ] && args+=(--css "$CSS")
+            [ -n "${FONT:-}" ] && args+=(--font "$FONT")
+            [ -n "${GOOGLE_FONT:-}" ] && args+=(--google-font "$GOOGLE_FONT")
             [ "${NEXT_PREV:-}" = "false" ] && args+=(--no-next-prev)
             [ "${TELEGRAM_LINK:-}" = "false" ] && args+=(--no-telegram-link)
             [ "${RSS:-}" = "false" ] && args+=(--no-rss)

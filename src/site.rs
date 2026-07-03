@@ -409,6 +409,13 @@ fn config_toml(
             if s.pinterest_save { "true" } else { "false" },
         )
         .replace("__CALENDAR__", if days.is_empty() { "false" } else { "true" })
+        .replace(
+            "__GOOGLE_FONT__",
+            &match google_font_href(s.google_font.as_deref()) {
+                Some(href) => format!("google_font_href = \"{href}\""),
+                None => String::new(),
+            },
+        )
         .replace("__FEDI__", &fedi)
         .replace("__SEARCH__", &search)
         .replace(
@@ -1100,6 +1107,41 @@ fn posts_index_md(s: &Settings) -> String {
     o
 }
 
+/// The body font-family CSS value: a Google font (quoted, with a system
+/// fallback), a local/system stack from `font`, or the built-in default. User
+/// input is stripped of CSS-structural characters so it can't break the rule.
+fn font_family(google: Option<&str>, font: Option<&str>) -> String {
+    let strip = |v: &str, drop_quotes: bool| -> String {
+        v.chars()
+            .filter(|c| {
+                !(matches!(c, ';' | '{' | '}' | '\n' | '\r') || (drop_quotes && *c == '"'))
+            })
+            .collect::<String>()
+            .trim()
+            .to_string()
+    };
+    match (
+        google.map(str::trim).filter(|g| !g.is_empty()),
+        font.map(str::trim).filter(|f| !f.is_empty()),
+    ) {
+        (Some(g), _) => format!("\"{}\", system-ui, sans-serif", strip(g, true)),
+        (None, Some(f)) => strip(f, false),
+        (None, None) => "system-ui, -apple-system, sans-serif".to_string(),
+    }
+}
+
+/// The `fonts.googleapis.com` stylesheet URL for the configured Google font, if any.
+fn google_font_href(google: Option<&str>) -> Option<String> {
+    google.map(str::trim).filter(|g| !g.is_empty()).map(|g| {
+        let fam: String = g
+            .chars()
+            .filter(|c| c.is_alphanumeric() || matches!(c, ' ' | '-'))
+            .collect::<String>()
+            .replace(' ', "+");
+        format!("https://fonts.googleapis.com/css2?family={fam}:wght@400;600;700&display=swap")
+    })
+}
+
 fn style_css(s: &Settings) -> String {
     // Strip characters that could break out of the CSS value.
     let clean = |c: &str| -> String {
@@ -1110,6 +1152,10 @@ fn style_css(s: &Settings) -> String {
     let mut css = STYLE_CSS
         .replace("__BG_LIGHT__", &clean(&s.background_light))
         .replace("__BG_DARK__", &clean(&s.background_dark))
+        .replace(
+            "__FONT_FAMILY__",
+            &font_family(s.google_font.as_deref(), s.font.as_deref()),
+        )
         .replace(
             "__LINK_DECO__",
             if s.link_underline { "underline" } else { "none" },
@@ -1156,6 +1202,7 @@ rss = __RSS__
 youtube_facade = __YT_FACADE__
 pinterest_save = __PINTEREST_SAVE__
 calendar = __CALENDAR__
+__GOOGLE_FONT__
 __FEDI__
 __SEARCH__
 __FOOTER__
@@ -1197,6 +1244,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if og_image %}<meta name="twitter:image" content="{{ og_image | safe }}">{% endif %}
   {% if config.extra.fediverse_creator %}<meta name="fediverse:creator" content="{{ config.extra.fediverse_creator }}">{% endif %}
   {% if config.extra.fediverse_profile %}<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">{% endif %}
+  {% if config.extra.google_font_href %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{{ config.extra.google_font_href | safe }}">{% endif %}
   <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
 </head>
 <body>
@@ -1467,7 +1515,7 @@ const STYLE_CSS: &str = r#":root {
 * { box-sizing: border-box; }
 body {
   width: 95vw; margin: 0 auto; padding: 1rem;
-  font-family: system-ui, -apple-system, sans-serif; line-height: 1.6;
+  font-family: __FONT_FAMILY__; line-height: 1.6;
   background: var(--bg); color: var(--fg);
   min-height: 100vh; display: flex; flex-direction: column;
 }
@@ -1599,6 +1647,34 @@ mod tests {
         let out = md_title_attr(&"x".repeat(400));
         assert!(out.ends_with("…\""), "{out}");
         assert_eq!(out.chars().filter(|&c| c == 'x').count(), 300);
+    }
+
+    #[test]
+    fn font_family_and_google_href() {
+        // Default when neither is set.
+        assert_eq!(font_family(None, None), "system-ui, -apple-system, sans-serif");
+        // A local stack is used verbatim (sans CSS-structural chars).
+        assert_eq!(font_family(None, Some("Georgia, serif")), "Georgia, serif");
+        // A Google font is quoted with a fallback and wins over `font`.
+        assert_eq!(
+            font_family(Some("Open Sans"), Some("Georgia")),
+            "\"Open Sans\", system-ui, sans-serif"
+        );
+        // Injection attempts have their CSS-structural characters stripped.
+        let injected = font_family(None, Some("x; } body{display:none"));
+        assert!(
+            !injected.contains([';', '{', '}']),
+            "structural chars not stripped: {injected}"
+        );
+        assert!(!font_family(Some("a\"}"), None).contains('}'));
+
+        // The Google Fonts URL encodes spaces and is None when unset.
+        assert_eq!(
+            google_font_href(Some("Open Sans")),
+            Some("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap".into())
+        );
+        assert_eq!(google_font_href(None), None);
+        assert_eq!(google_font_href(Some("  ")), None);
     }
 
     #[test]

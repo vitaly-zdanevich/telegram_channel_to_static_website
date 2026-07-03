@@ -74,6 +74,8 @@ fn settings(site: PathBuf) -> Settings {
         background_dark: "#000000".into(),
         background_light: "#ffffff".into(),
         css: None,
+        font: None,
+        google_font: None,
         theme: None,
         max_pages: None,
         page_delay_ms: 0,
