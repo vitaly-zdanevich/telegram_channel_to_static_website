@@ -356,9 +356,12 @@ TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
 
 **For CI:** run `tg2zola login` **locally** (the interactive step can't run in
 Actions), then store `TG_API_ID`, `TG_API_HASH` and the printed `TG_SESSION` as
-**Actions secrets**. The session has no fixed expiry — it lasts until you log it
-out, Telegram revokes it, or it goes unused for ~6 months — so a daily run keeps
-it alive indefinitely.
+**Actions secrets**. The bundled [`daily.yml`](.github/workflows/daily.yml) then
+compiles the `mtproto` feature and runs it automatically whenever `TG_SESSION` is
+set (set the `MTPROTO_IMAGES` / `MTPROTO_VIDEOS` repository *variables* to `1` for
+original photos / big videos). The session has no fixed expiry — it lasts until
+you log it out, Telegram revokes it, or it goes unused for ~6 months — so a daily
+run keeps it alive indefinitely.
 
 > ⚠️ **`TG_SESSION` is full access to your account** — treat it like a password
 > (a *secret*, unlike the public `CHANNEL` variable). Consider a secondary

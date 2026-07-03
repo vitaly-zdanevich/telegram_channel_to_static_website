@@ -102,6 +102,17 @@ env:
   SPOTIFY: ${{ vars.SPOTIFY }}
   # Set to "false" to stop replacing Pinterest pin links with the embedded pin.
   PINTEREST: ${{ vars.PINTEREST }}
+  # Optional MTProto backend — fetches audio / original photos / big videos the
+  # web preview omits. Compiled + run only when TG_SESSION is set (all three are
+  # needed). TG_SESSION is FULL account access — keep it a *secret*. Mint it
+  # locally with `tg2zola login`.
+  TG_API_ID: ${{ secrets.TG_API_ID }}
+  TG_API_HASH: ${{ secrets.TG_API_HASH }}
+  TG_SESSION: ${{ secrets.TG_SESSION }}
+  # Set these repository *variables* to "1" to also fetch original-quality photos
+  # / the full "poster-only" videos (large — audio is fetched regardless).
+  MTPROTO_IMAGES: ${{ vars.MTPROTO_IMAGES }}
+  MTPROTO_VIDEOS: ${{ vars.MTPROTO_VIDEOS }}
   # Set to "false" to skip the YouTube liveness check (a removed video otherwise
   # keeps its local media instead of being replaced by a dead embed).
   LIVENESS: ${{ vars.LIVENESS }}
@@ -163,7 +174,13 @@ jobs:
           zola --version
 
       - name: Build tg2zola
-        run: cargo build --release --locked
+        # Compile the opt-in MTProto backend only when a session is configured,
+        # so ordinary builds stay light (it pulls in grammers + vendored core2).
+        run: |
+          feats=""
+          [ -n "${TG_SESSION:-}" ] && feats="--features mtproto"
+          echo "building${feats:+ with mtproto}"
+          cargo build --release --locked $feats
 
       # Generate with the theme if set; if it (or its build) fails, fall back to
       # the built-in templates so the blog ALWAYS publishes.
