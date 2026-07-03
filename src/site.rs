@@ -1347,7 +1347,7 @@ const SPOTIFY_SHORTCODE: &str = r#"<div class="sp-embed"><iframe src="{{ url }}"
 
 // Pinterest embedded pin (pinit.js turns the <a> into the pin). The offline pass
 // strips the script, leaving the "View on Pinterest" link.
-const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" href="{{ url }}">View on Pinterest</a><script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" data-pin-width="large" href="{{ url }}">View on Pinterest</a><script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 "#;
 
 // Resolve colocated media against the post's permalink so it works both on the
