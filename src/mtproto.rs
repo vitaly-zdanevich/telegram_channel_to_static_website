@@ -407,6 +407,7 @@ fn image_ext(mime: &str) -> &'static str {
         "image/png" => "png",
         "image/gif" => "gif",
         "image/webp" => "webp",
+        "image/avif" => "avif",
         "image/bmp" => "bmp",
         _ => "jpg",
     }

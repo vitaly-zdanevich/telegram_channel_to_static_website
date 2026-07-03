@@ -470,7 +470,7 @@ fn accumulate(path: &Path, b: &mut SizeBreakdown) {
                 .to_lowercase();
             let bucket = match ext.as_str() {
                 "md" | "txt" => &mut b.text,
-                "jpg" | "jpeg" | "png" | "webp" | "gif" | "svg" | "bmp" => &mut b.images,
+                "jpg" | "jpeg" | "png" | "webp" | "avif" | "gif" | "svg" | "bmp" => &mut b.images,
                 "mp4" | "webm" | "mov" | "mkv" | "avi" | "m4v" => &mut b.videos,
                 "mp3" | "ogg" | "oga" | "opus" | "m4a" | "wav" | "flac" => &mut b.audio,
                 _ => &mut b.other,

@@ -126,7 +126,7 @@ pub fn is_probably_audio_doc(name: &str) -> bool {
 #[cfg(feature = "mtproto")]
 pub fn is_probably_image_doc(name: &str) -> bool {
     let n = name.trim().to_ascii_lowercase();
-    [".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp"]
+    [".png", ".jpg", ".jpeg", ".gif", ".webp", ".avif", ".bmp"]
         .iter()
         .any(|e| n.ends_with(e))
 }
