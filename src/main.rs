@@ -714,13 +714,18 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     let breakdown = site::size_breakdown(&[&s.site.join("content"), &s.site.join("static")]);
     let limit = site::pages_limit(&s.base_url, s.pages_host.as_deref()).map(|l| l.bytes);
     let biggest = site::largest_files(&[&s.site.join("content"), &s.site.join("static")], 10);
+    // Post text keyed by slug → the hover tooltip on each largest-file link.
+    let preview_by_slug: std::collections::HashMap<String, String> = posts
+        .iter()
+        .map(|p| (render::slug_for(p), render::post_preview(p)))
+        .collect();
     site::set_about_size(
         &s.site,
         &breakdown,
         limit,
         started.elapsed(),
         &i18n::about(&s.language),
-        &biggest,
+        &site::LargestFiles { files: &biggest, previews: &preview_by_slug },
         mtproto_used,
     );
 

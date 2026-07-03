@@ -557,6 +557,14 @@ pub fn pages_limit(base_url: &str, explicit: Option<&str>) -> Option<PagesLimit>
     }
 }
 
+/// The largest files (path, size) plus per-post preview text keyed by slug (for
+/// their hover tooltips) — bundled so `set_about_size` stays within the argument
+/// limit.
+pub struct LargestFiles<'a> {
+    pub files: &'a [(std::path::PathBuf, u64)],
+    pub previews: &'a std::collections::HashMap<String, String>,
+}
+
 /// Fill the About page's size placeholders: `__TOTAL_SIZE__` (total),
 /// `__PERCENT__` (share of the host limit, if known) and `__SIZE_BREAKDOWN__`
 /// (per-kind sizes). Computed after media download, so it's the real footprint.
@@ -566,7 +574,7 @@ pub fn set_about_size(
     limit: Option<u64>,
     elapsed: std::time::Duration,
     about: &crate::i18n::About,
-    largest: &[(std::path::PathBuf, u64)],
+    largest: &LargestFiles,
     mtproto_used: bool,
 ) {
     let about_path = site.join("content/pages/about.md");
@@ -576,13 +584,15 @@ pub fn set_about_size(
     if !s.contains("__TOTAL_SIZE__") {
         return;
     }
-    // The 10 biggest files as a list linking to each owning post.
-    let largest_block = if largest.is_empty() {
+    // The 10 biggest files as a list linking to each owning post (with the post's
+    // text as a hover tooltip).
+    let largest_block = if largest.files.is_empty() {
         String::new()
     } else {
         let items = largest
+            .files
             .iter()
-            .map(|(p, sz)| about_largest_link(p.strip_prefix(site).unwrap_or(p), *sz))
+            .map(|(p, sz)| about_largest_link(p.strip_prefix(site).unwrap_or(p), *sz, largest.previews))
             .collect::<Vec<_>>()
             .join("\n");
         format!("{}\n\n{items}", about.largest_files)
@@ -609,37 +619,61 @@ pub fn set_about_size(
         .map(|(n, v)| format!("- **{n}** {}", human_size(*v)))
         .collect::<Vec<_>>()
         .join("\n");
+    // Link the first "MTProto" mention to grammers, the library that implements
+    // the backend (https://github.com/Lonami/grammers).
+    let mtproto_line = if mtproto_used { about.mtproto_on } else { about.mtproto_off }
+        .replacen("MTProto", "[MTProto](https://github.com/Lonami/grammers)", 1);
     let out = s
         .replace("__TOTAL_SIZE__", &human_size(total))
         .replace("__PERCENT__", &percent)
         .replace("__SIZE_BREAKDOWN__", &breakdown)
         .replace("__LARGEST_FILES__", &largest_block)
         .replace("__BUILD_TIME__", &human_duration(elapsed))
-        .replace(
-            "__MTPROTO__",
-            if mtproto_used { about.mtproto_on } else { about.mtproto_off },
-        );
+        .replace("__MTPROTO__", &mtproto_line);
     let _ = fs::write(&about_path, out);
 }
 
 /// A markdown list item for a largest-file entry, linking to the owning post
-/// (`content/posts/<slug>/…` → `@/posts/<slug>/index.md`, base_url-aware). Files
-/// outside a post bundle are shown without a link.
-fn about_largest_link(rel: &Path, size: u64) -> String {
+/// (`content/posts/<slug>/…` → `@/posts/<slug>/index.md`, base_url-aware) with
+/// that post's text as a hover `title` tooltip. Files outside a post bundle are
+/// shown without a link.
+fn about_largest_link(
+    rel: &Path,
+    size: u64,
+    previews: &std::collections::HashMap<String, String>,
+) -> String {
     let comps: Vec<&str> = rel
         .components()
         .filter_map(|c| c.as_os_str().to_str())
         .collect();
     let fname = comps.last().copied().unwrap_or("file");
     if comps.len() >= 3 && comps[0] == "content" && comps[1] == "posts" {
+        let title = previews.get(comps[2]).map(|t| md_title_attr(t)).unwrap_or_default();
         format!(
-            "- [{} — {fname}](@/posts/{}/index.md)",
+            "- [{} — {fname}](@/posts/{}/index.md{title})",
             human_size(size),
             comps[2]
         )
     } else {
         format!("- {} — {fname}", human_size(size))
     }
+}
+
+/// A CommonMark link-title suffix ` "…"` (rendered as a hover `title` tooltip)
+/// from a post's plain-text preview: whitespace collapsed to a single line,
+/// capped, with `\` and `"` backslash-escaped so the title parses. Empty when
+/// there's nothing to show.
+fn md_title_attr(text: &str) -> String {
+    let one_line = text.split_whitespace().collect::<Vec<_>>().join(" ");
+    if one_line.is_empty() {
+        return String::new();
+    }
+    let mut capped: String = one_line.chars().take(300).collect();
+    if one_line.chars().count() > 300 {
+        capped.push('…');
+    }
+    let escaped = capped.replace('\\', "\\\\").replace('"', "\\\"");
+    format!(" \"{escaped}\"")
 }
 
 /// Human-readable duration, e.g. `2m 30s` / `45s`.
@@ -1469,3 +1503,48 @@ table.cal td.c3 a { font-size: 1.35rem; font-weight: 800; }
   .cal-months { gap: .9rem; }
 }
 "#;
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use std::collections::HashMap;
+    use std::path::PathBuf;
+
+    #[test]
+    fn md_title_collapses_escapes_and_caps() {
+        assert_eq!(md_title_attr(""), "");
+        assert_eq!(md_title_attr("   \n\t "), "");
+        // Newlines / runs of whitespace collapse to single spaces.
+        assert_eq!(md_title_attr("hello\n\n  world"), " \"hello world\"");
+        // `"` and `\` are backslash-escaped so the CommonMark title parses.
+        assert_eq!(
+            md_title_attr(r#"a "quote" and \ back"#),
+            r#" "a \"quote\" and \\ back""#
+        );
+        // Over-long text is capped (300 chars) with an ellipsis.
+        let out = md_title_attr(&"x".repeat(400));
+        assert!(out.ends_with("…\""), "{out}");
+        assert_eq!(out.chars().filter(|&c| c == 'x').count(), 300);
+    }
+
+    #[test]
+    fn largest_link_tooltip_and_linking() {
+        let mut previews = HashMap::new();
+        previews.insert("2024-01-02-7".to_string(), "post body".to_string());
+
+        // Known post → internal link carrying the body as a title tooltip.
+        let link = about_largest_link(&PathBuf::from("content/posts/2024-01-02-7/photo.jpg"), 2048, &previews);
+        assert!(link.contains("(@/posts/2024-01-02-7/index.md \"post body\")"), "{link}");
+        assert!(link.contains("photo.jpg"), "{link}");
+
+        // Post with no preview on record → link, but no title.
+        let link2 = about_largest_link(&PathBuf::from("content/posts/1999-12-31-1/a.mp4"), 1024, &previews);
+        assert!(link2.contains("(@/posts/1999-12-31-1/index.md)"), "{link2}");
+        assert!(!link2.contains('"'), "no title expected: {link2}");
+
+        // File outside a post bundle → plain text, no link.
+        let link3 = about_largest_link(&PathBuf::from("static/search.js"), 512, &previews);
+        assert!(!link3.contains("]("), "no link expected: {link3}");
+        assert!(link3.contains("search.js"), "{link3}");
+    }
+}
