@@ -72,6 +72,8 @@ pub struct FileConfig {
     pub pinterest_save: Option<bool>,
     /// Fetch Google PageSpeed/Lighthouse scores for the deployed site (opt-in).
     pub pagespeed: Option<bool>,
+    /// Offline mode + installable PWA: precaching service worker + manifest (opt-in).
+    pub offline: Option<bool>,
     /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
     /// its local media instead of a dead embed. Default on.
     pub liveness: Option<bool>,
@@ -177,6 +179,8 @@ pub struct Settings {
     pub pinterest_save: bool,
     /// Fetch Google Lighthouse scores for the About page + README badges (opt-in, default false).
     pub pagespeed: bool,
+    /// Offline mode + installable PWA (opt-in, default false).
+    pub offline: bool,
     /// YouTube liveness check (default true).
     pub liveness: bool,
     /// Comma-separated tags to surface as links in the top nav.

@@ -118,6 +118,11 @@ env:
   # *secret*) raises the PageSpeed Insights rate limit.
   PAGESPEED: ${{ vars.PAGESPEED }}
   PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+  # Set to "true" for offline mode + an installable PWA: a service worker
+  # precaches the whole archive on any non-cellular connection (Wi-Fi or wired,
+  # never mobile data) and the site becomes installable (hides the address bar).
+  # Off by default; needs JavaScript.
+  OFFLINE: ${{ vars.OFFLINE }}
   # Optional MTProto backend — fetches audio / original photos / big videos the
   # web preview omits. Compiled + run only when TG_SESSION is set (all three are
   # needed). TG_SESSION is FULL account access — keep it a *secret*. Mint it
@@ -248,6 +253,7 @@ jobs:
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
             [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
+            [ "${OFFLINE:-}" = "true" ] && args+=(--offline)
             [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")
@@ -263,6 +269,12 @@ jobs:
           fi
           gen ""
           zola --root site build --base-url "$BASE"
+
+      # After the build, list every published file for the service worker to
+      # precache (offline mode only).
+      - name: Write PWA precache list
+        if: env.OFFLINE == 'true'
+        run: ./target/release/tg2zola pwa site/public
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

@@ -55,5 +55,5 @@ jobs:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       # npx (Node is preinstalled on the runner) — no extra pinned action; the
       # Biome version is pinned here. Lints our JS, ignoring vendored min.js.
-      - name: Lint src/search.js with Biome
-        run: npx --yes @biomejs/biome@1.9.4 ci src/search.js
+      - name: Lint JS with Biome
+        run: npx --yes @biomejs/biome@1.9.4 ci src/search.js src/sw.js

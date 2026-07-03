@@ -18,6 +18,7 @@ mod mtproto;
 mod offline;
 mod pagespeed;
 mod parse;
+mod pwa;
 mod render;
 mod scrape;
 mod site;
@@ -51,6 +52,12 @@ enum Commands {
     /// Rewrite a built site (the Zola `public/` directory) into relative links
     /// so it opens directly via file:// with no web server.
     Offline {
+        /// The built site directory, e.g. site/public
+        dir: PathBuf,
+    },
+    /// Write `asset-manifest.json` (the service-worker precache list) for a built
+    /// site. Run after `zola build` when `--offline` was used.
+    Pwa {
         /// The built site directory, e.g. site/public
         dir: PathBuf,
     },
@@ -206,6 +213,13 @@ struct GenerateArgs {
     #[arg(long)]
     no_pagespeed: bool,
 
+    /// Offline mode + installable PWA: emit a service worker that precaches the
+    /// whole archive (on any non-cellular connection) + a web app manifest
+    /// (opt-in; needs JavaScript).
+    /// Run `tg2zola pwa <public>` after `zola build` to write the precache list.
+    #[arg(long)]
+    offline: bool,
+
     /// Skip the YouTube liveness check (a removed video otherwise keeps its local
     /// media instead of being replaced by a dead embed).
     #[arg(long)]
@@ -287,6 +301,12 @@ async fn main() -> Result<()> {
         Some(Commands::Offline { dir }) => {
             init_tracing("info");
             offline::relativize(&dir)
+        }
+        Some(Commands::Pwa { dir }) => {
+            init_tracing("info");
+            let n = pwa::write_asset_manifest(&dir)?;
+            info!("pwa: wrote asset-manifest.json with {n} URL(s) to precache");
+            Ok(())
         }
         #[cfg(feature = "mtproto")]
         Some(Commands::Login) => {
@@ -426,6 +446,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.pagespeed.unwrap_or(true)
         },
+        offline: g.offline || fc.offline.unwrap_or(false),
         liveness: if g.no_liveness {
             false
         } else {

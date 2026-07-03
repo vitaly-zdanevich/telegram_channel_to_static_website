@@ -66,6 +66,7 @@ fn settings(site: PathBuf) -> Settings {
         pinterest: false,
         pinterest_save: false,
         pagespeed: false,
+        offline: false,
         liveness: false,
         tags_to_pages: None,
         pages: None,

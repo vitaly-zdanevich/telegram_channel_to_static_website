@@ -157,6 +157,17 @@ pub fn scaffold(
             let _ = fs::remove_file(site.join("static/elasticlunr.min.js"));
             let _ = fs::remove_file(site.join("static/search.js"));
         }
+        // Offline mode: the service worker + web app manifest (opt-in). The
+        // precache list (asset-manifest.json) is written post-build by `tg2zola pwa`.
+        if s.offline {
+            write_file(&site.join("static/sw.js"), crate::pwa::SW_JS)?;
+            let has_avatar = site.join("static/channel-avatar.jpg").exists();
+            let manifest = crate::pwa::manifest_json(&s.title, &s.background_dark, has_avatar);
+            write_file(&site.join("static/manifest.webmanifest"), &manifest)?;
+        } else {
+            let _ = fs::remove_file(site.join("static/sw.js"));
+            let _ = fs::remove_file(site.join("static/manifest.webmanifest"));
+        }
     } else {
         // Theme mode: remove our built-ins so they don't shadow the theme.
         for (path, _) in builtins {
@@ -166,6 +177,8 @@ pub fn scaffold(
         let _ = fs::remove_file(site.join("static/style.css"));
         let _ = fs::remove_file(site.join("static/elasticlunr.min.js"));
         let _ = fs::remove_file(site.join("static/search.js"));
+        let _ = fs::remove_file(site.join("static/sw.js"));
+        let _ = fs::remove_file(site.join("static/manifest.webmanifest"));
     }
     Ok(())
 }
@@ -408,6 +421,7 @@ fn config_toml(
             "__PINTEREST_SAVE__",
             if s.pinterest_save { "true" } else { "false" },
         )
+        .replace("__OFFLINE__", if s.offline { "true" } else { "false" })
         .replace("__CALENDAR__", if days.is_empty() { "false" } else { "true" })
         .replace(
             "__GOOGLE_FONT__",
@@ -1201,6 +1215,7 @@ telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
 youtube_facade = __YT_FACADE__
 pinterest_save = __PINTEREST_SAVE__
+offline = __OFFLINE__
 calendar = __CALENDAR__
 __GOOGLE_FONT__
 __FEDI__
@@ -1245,6 +1260,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.fediverse_creator %}<meta name="fediverse:creator" content="{{ config.extra.fediverse_creator }}">{% endif %}
   {% if config.extra.fediverse_profile %}<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">{% endif %}
   {% if config.extra.google_font_href %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{{ config.extra.google_font_href | safe }}">{% endif %}
+  {% if config.extra.offline %}<link rel="manifest" href="{{ get_url(path='manifest.webmanifest') | safe }}">{% endif %}
   <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
 </head>
 <body>
@@ -1265,6 +1281,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
   {% if config.extra.search_elasticlunr %}<script src="{{ get_url(path='elasticlunr.min.js') | safe }}"></script><script src="{{ get_url(path='search_index.' ~ config.default_language ~ '.js') | safe }}"></script><script src="{{ get_url(path='search.js') | safe }}"></script>{% endif %}
   {% if config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>{% endif %}
+  {% if config.extra.offline %}<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('{{ get_url(path='sw.js') | safe }}');});}</script>{% endif %}
 </body>
 </html>
 "#;
