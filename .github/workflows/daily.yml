@@ -116,6 +116,10 @@ env:
   # / the full "poster-only" videos (large — audio is fetched regardless).
   MTPROTO_IMAGES: ${{ vars.MTPROTO_IMAGES }}
   MTPROTO_VIDEOS: ${{ vars.MTPROTO_VIDEOS }}
+  # Archiving other attachments (pdf, zip, rar, …) is on by default; set this
+  # repository *variable* to "false" to disable it (large videos still need
+  # MTPROTO_VIDEOS).
+  MTPROTO_FILES: ${{ vars.MTPROTO_FILES }}
   # Set to "false" to skip the YouTube liveness check (a removed video otherwise
   # keeps its local media instead of being replaced by a dead embed).
   LIVENESS: ${{ vars.LIVENESS }}

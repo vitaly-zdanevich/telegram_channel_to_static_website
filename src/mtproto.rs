@@ -145,6 +145,9 @@ pub async fn maybe_enrich(posts: &mut [Post], s: &Settings) -> bool {
     if want_videos() {
         extras.push_str(" + videos");
     }
+    if want_files() {
+        extras.push_str(" + attachments");
+    }
     tracing::info!("MTProto: configured — fetching audio{extras}");
     match enrich(posts, s).await {
         Ok(()) => true,
@@ -169,6 +172,17 @@ fn want_videos() -> bool {
     matches!(
         std::env::var("MTPROTO_VIDEOS").ok().as_deref(),
         Some("1") | Some("true") | Some("yes") | Some("on")
+    )
+}
+
+/// On by default: also download *every other* attachment (pdf, zip, rar, … and
+/// images when `MTPROTO_IMAGES` is off) the web preview can't fetch, as a
+/// downloadable file. Disable with `MTPROTO_FILES=false`. Large videos stay
+/// behind `MTPROTO_VIDEOS` for the hosting budget, so they're never fetched here.
+fn want_files() -> bool {
+    !matches!(
+        std::env::var("MTPROTO_FILES").ok().as_deref(),
+        Some("0") | Some("false") | Some("no") | Some("off")
     )
 }
 
@@ -202,6 +216,7 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     tokio::fs::create_dir_all(&cache).await.ok();
     let photos = want_photos();
     let videos = want_videos();
+    let files = want_files();
 
     // (cache path, original filename, label) per post.
     let mut audio_for: AudioFor = HashMap::new();
@@ -209,7 +224,10 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let mut video_for: HashMap<usize, Vec<(i32, PathBuf)>> = HashMap::new();
     // Pasted images stored as *documents* (Media::DocumentRef): (filename, path).
     let mut doc_image_for: HashMap<usize, Vec<(String, PathBuf)>> = HashMap::new();
-    let (mut n_audio, mut n_photo, mut n_video, mut n_doc_image) = (0usize, 0usize, 0usize, 0usize);
+    // Any other attachment (pdf/zip/rar/…) to archive as a download: (name, path).
+    let mut doc_file_for: HashMap<usize, Vec<(String, PathBuf)>> = HashMap::new();
+    let (mut n_audio, mut n_photo, mut n_video, mut n_doc_image, mut n_file) =
+        (0usize, 0usize, 0usize, 0usize, 0usize);
 
     let mut iter = client.iter_messages(peer);
     while let Some(msg) = iter.next().await.context("iterating channel messages")? {
@@ -247,28 +265,32 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     let label = audio_label(doc.audio_title(), doc.performer());
                     audio_for.entry(pi).or_default().push((dest, orig_name, label));
                     n_audio += 1;
-                } else if mime.starts_with("video/") && videos {
-                    // Only the *unavailable* videos (shown as a poster) are worth
-                    // fetching; a web-downloadable Media::Video already has its file.
-                    let has_poster = posts[pi]
-                        .media
-                        .iter()
-                        .any(|m| matches!(m, Media::VideoPoster { .. }));
-                    // A live YouTube/Instagram embed stands in for the video — skip
-                    // the (large) download unless keep_media is set.
-                    let embed_replaces = !s.keep_media
-                        && ((posts[pi].youtube.is_some() && !posts[pi].youtube_dead)
-                            || (posts[pi].instagram.is_some() && !posts[pi].instagram_dead));
-                    if has_poster && !embed_replaces {
-                        let dest = cache.join(format!("{id}.{}", video_ext(mime)));
-                        if !dest.exists() {
-                            client
-                                .download_media(&media, &dest)
-                                .await
-                                .with_context(|| format!("downloading video from message {id}"))?;
+                } else if mime.starts_with("video/") {
+                    // Large videos stay behind MTPROTO_VIDEOS (hosting budget), so a
+                    // video is never archived as a generic file in the branch below.
+                    if videos {
+                        // Only the *unavailable* videos (shown as a poster) are worth
+                        // fetching; a web-downloadable Media::Video already has its file.
+                        let has_poster = posts[pi]
+                            .media
+                            .iter()
+                            .any(|m| matches!(m, Media::VideoPoster { .. }));
+                        // A live YouTube/Instagram embed stands in for the video — skip
+                        // the (large) download unless keep_media is set.
+                        let embed_replaces = !s.keep_media
+                            && ((posts[pi].youtube.is_some() && !posts[pi].youtube_dead)
+                                || (posts[pi].instagram.is_some() && !posts[pi].instagram_dead));
+                        if has_poster && !embed_replaces {
+                            let dest = cache.join(format!("{id}.{}", video_ext(mime)));
+                            if !dest.exists() {
+                                client
+                                    .download_media(&media, &dest)
+                                    .await
+                                    .with_context(|| format!("downloading video from message {id}"))?;
+                            }
+                            video_for.entry(pi).or_default().push((id, dest));
+                            n_video += 1;
                         }
-                        video_for.entry(pi).or_default().push((id, dest));
-                        n_video += 1;
                     }
                 } else if mime.starts_with("image/") && photos {
                     // A pasted image Telegram stored as a *file* — the web preview
@@ -284,6 +306,19 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     let name = doc.name().trim().to_string();
                     doc_image_for.entry(pi).or_default().push((name, dest));
                     n_doc_image += 1;
+                } else if files {
+                    // Every other attachment (pdf/zip/rar/…), plus images when
+                    // MTPROTO_IMAGES is off — archive it as a downloadable file.
+                    let name = doc.name().trim().to_string();
+                    let dest = cache.join(format!("{id}.{}", file_ext(&name)));
+                    if !dest.exists() {
+                        client
+                            .download_media(&media, &dest)
+                            .await
+                            .with_context(|| format!("downloading attachment from message {id}"))?;
+                    }
+                    doc_file_for.entry(pi).or_default().push((name, dest));
+                    n_file += 1;
                 }
             }
             TlMedia::Photo(_) if photos => {
@@ -357,10 +392,32 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
             }
         }
     }
+    // Archive every other attachment as a downloadable file, replacing its
+    // "(not archived)" reference (matched by filename, else the first
+    // non-audio/non-image reference in the post).
+    for (pi, items) in doc_file_for {
+        for (name, path) in items {
+            let media = &mut posts[pi].media;
+            let idx = media
+                .iter()
+                .position(|m| matches!(m, Media::DocumentRef { filename } if *filename == name))
+                .or_else(|| {
+                    media.iter().position(|m| {
+                        matches!(m, Media::DocumentRef { filename }
+                            if !crate::media::is_probably_audio_doc(filename)
+                                && !crate::media::is_probably_image_doc(filename))
+                    })
+                });
+            match idx {
+                Some(i) => media[i] = Media::LocalDocument { path, name },
+                None => media.push(Media::LocalDocument { path, name }),
+            }
+        }
+    }
 
     tracing::info!(
         "MTProto: {n_audio} audio file(s), {n_photo} original photo(s), \
-         {n_doc_image} image file(s), {n_video} video(s)"
+         {n_doc_image} image file(s), {n_video} video(s), {n_file} attachment(s)"
     );
     Ok(())
 }
@@ -411,4 +468,13 @@ fn image_ext(mime: &str) -> &'static str {
         "image/bmp" => "bmp",
         _ => "jpg",
     }
+}
+
+/// Extension for an attachment's cache file, taken from its filename (lowercased,
+/// alphanumeric, ≤8 chars); `bin` when there's no usable extension.
+fn file_ext(name: &str) -> String {
+    name.rsplit_once('.')
+        .map(|(_, e)| e.to_ascii_lowercase())
+        .filter(|e| (1..=8).contains(&e.chars().count()) && e.chars().all(|c| c.is_ascii_alphanumeric()))
+        .unwrap_or_else(|| "bin".to_string())
 }

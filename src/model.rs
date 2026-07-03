@@ -74,6 +74,16 @@ pub enum Media {
     /// Only constructed with the `mtproto` feature (opt-in `MTPROTO_VIDEOS=1`).
     #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
     LocalVideo { path: std::path::PathBuf },
+    /// Any attachment (pdf, zip, rar, …) fetched via MTProto, replacing a web
+    /// [`Media::DocumentRef`] the public page couldn't download. Copied into the
+    /// bundle and shown as a download link. Only constructed with the `mtproto`
+    /// feature (on by default; disable with `MTPROTO_FILES=false`).
+    #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
+    LocalDocument {
+        path: std::path::PathBuf,
+        /// Original attachment filename (`Document::name()`).
+        name: String,
+    },
 }
 
 /// One raw Telegram message as scraped from `t.me/s/<channel>`.

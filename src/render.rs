@@ -556,6 +556,23 @@ pub fn render_post(
                 });
                 body.push_str(&format!("{{{{ video(src=\"{fname}\") }}}}\n\n"));
             }
+            Media::LocalDocument { path, name } => {
+                // Any attachment fetched via MTProto (pdf, zip, …): copy the local
+                // file into the bundle under a safe name and link to it.
+                let ext = path
+                    .extension()
+                    .and_then(|e| e.to_str())
+                    .filter(|e| !e.is_empty())
+                    .unwrap_or("bin");
+                let fname = sanitize_filename(name, ext, idx);
+                downloads.push(Download {
+                    url: String::new(),
+                    filename: fname.clone(),
+                    force: false,
+                    local: Some(path.clone()),
+                });
+                body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(name)));
+            }
         }
     }
 
@@ -1293,6 +1310,38 @@ mod tests {
         let removed = render(true, false, false);
         assert!(!removed.contains("youtube_link"), "facade on removed: {removed}");
         assert!(!removed.contains("{{ youtube(id="), "embed on removed: {removed}");
+    }
+
+    #[test]
+    fn local_document_renders_download_link() {
+        use std::path::{Path, PathBuf};
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let mut p = post_with_body("here is a file");
+        p.media = vec![Media::LocalDocument {
+            path: PathBuf::from("/cache/12.zip"),
+            name: "archive.zip".into(),
+        }];
+        let out = render_post(
+            &p,
+            &rw,
+            false,
+            None,
+            None,
+            &RenderOpts {
+                ui: &crate::i18n::ui("en"),
+                title_max: 200,
+                derive_titles: false,
+                strip_title: false,
+                keep_media: false,
+                spotify: false,
+                instagram: false,
+                pinterest: false,
+            },
+        );
+        // A 📎 download link plus one local-copy job for the bundled file.
+        assert!(out.index_md.contains("📎 archive.zip"), "no download link: {}", out.index_md);
+        assert_eq!(out.downloads.len(), 1, "expected one download job");
+        assert_eq!(out.downloads[0].local.as_deref(), Some(Path::new("/cache/12.zip")));
     }
 
     #[test]
