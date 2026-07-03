@@ -81,6 +81,8 @@ pub struct FileConfig {
     /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
     /// its local media instead of a dead embed. Default on.
     pub liveness: Option<bool>,
+    /// Show per-emoji reaction counts (MTProto backend only). Default on.
+    pub reactions: Option<bool>,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
@@ -192,6 +194,10 @@ pub struct Settings {
     pub video_releases: bool,
     /// YouTube liveness check (default true).
     pub liveness: bool,
+    /// Show per-emoji reaction counts, via MTProto (default true). Only read by
+    /// the MTProto backend, which is the only source of reactions.
+    #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
+    pub reactions: bool,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     pub pages: Option<String>,

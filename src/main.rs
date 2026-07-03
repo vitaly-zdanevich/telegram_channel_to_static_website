@@ -235,6 +235,11 @@ struct GenerateArgs {
     #[arg(long)]
     no_liveness: bool,
 
+    /// Don't show per-emoji reaction counts (they're fetched by the MTProto
+    /// backend when it runs; the web preview never exposes reactions).
+    #[arg(long)]
+    no_reactions: bool,
+
     /// Comma-separated tags to surface as `#tag` links in the top nav.
     #[arg(long)]
     tags_to_pages: Option<String>,
@@ -467,6 +472,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             false
         } else {
             fc.liveness.unwrap_or(true)
+        },
+        reactions: if g.no_reactions {
+            false
+        } else {
+            fc.reactions.unwrap_or(true)
         },
         tags_to_pages: g
             .tags_to_pages

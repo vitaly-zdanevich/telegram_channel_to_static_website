@@ -15,6 +15,7 @@ use std::path::PathBuf;
 use std::sync::Arc;
 
 use base64::Engine;
+use grammers_client::grammers_tl_types as tl;
 use grammers_client::types::Media as TlMedia;
 use grammers_client::{Client, SignInError};
 use grammers_mtsender::SenderPool;
@@ -218,6 +219,8 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let photos = want_photos();
     let videos = want_videos();
     let files = want_files();
+    let reactions = s.reactions;
+    let mut n_reactions = 0usize;
 
     // (cache path, original filename, label) per post.
     let mut audio_for: AudioFor = HashMap::new();
@@ -236,6 +239,16 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
         let Some(&pi) = id_to_post.get(&id) else {
             continue;
         };
+        // Reactions (web preview never exposes them). A grouped post keeps the
+        // first message's reactions. Done before the media-only `continue` below
+        // so a text-only post's reactions are captured too.
+        if reactions && posts[pi].reactions.is_empty() {
+            let rx = reactions_of(&msg);
+            if !rx.is_empty() {
+                posts[pi].reactions = rx;
+                n_reactions += 1;
+            }
+        }
         let Some(media) = msg.media() else { continue };
         match &media {
             TlMedia::Document(doc) => {
@@ -421,7 +434,8 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
 
     tracing::info!(
         "MTProto: {n_audio} audio file(s), {n_photo} original photo(s), \
-         {n_doc_image} image file(s), {n_video} video(s), {n_file} attachment(s)"
+         {n_doc_image} image file(s), {n_video} video(s), {n_file} attachment(s), \
+         {n_reactions} post(s) with reactions"
     );
     Ok(())
 }
@@ -481,4 +495,28 @@ fn file_ext(name: &str) -> String {
         .map(|(_, e)| e.to_ascii_lowercase())
         .filter(|e| (1..=8).contains(&e.chars().count()) && e.chars().all(|c| c.is_ascii_alphanumeric()))
         .unwrap_or_else(|| "bin".to_string())
+}
+
+/// Per-emoji reaction counts for a message (standard emojis only — custom/paid
+/// reactions are skipped, since resolving their glyph needs extra lookups).
+fn reactions_of(msg: &grammers_client::types::Message) -> Vec<(String, u64)> {
+    let tl::enums::Message::Message(m) = &msg.raw else {
+        return Vec::new();
+    };
+    let Some(tl::enums::MessageReactions::Reactions(r)) = &m.reactions else {
+        return Vec::new();
+    };
+    r.results
+        .iter()
+        .filter_map(|rc| {
+            let tl::enums::ReactionCount::Count(rc) = rc;
+            match &rc.reaction {
+                tl::enums::Reaction::Emoji(e) => Some((e.emoticon.clone(), rc.count.max(0) as u64)),
+                // Paid ("stars") reactions → a star glyph.
+                tl::enums::Reaction::Paid => Some(("⭐".to_string(), rc.count.max(0) as u64)),
+                // Custom emoji resolve to a downloaded image separately (below).
+                _ => None,
+            }
+        })
+        .collect()
 }

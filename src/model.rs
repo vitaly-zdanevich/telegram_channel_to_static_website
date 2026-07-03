@@ -124,6 +124,9 @@ pub struct Post {
     pub views: Option<u64>,
     /// True if any constituent message was edited (forces media re-download).
     pub edited: bool,
+    /// Per-emoji reaction counts `(emoji, count)`, richest first. Only populated
+    /// by the MTProto backend — the `t.me/s/` web preview never exposes reactions.
+    pub reactions: Vec<(String, u64)>,
     /// Aggregated external links (not serialized; used for YouTube detection).
     pub links: Vec<String>,
     /// YouTube video id, if any link in the post points at YouTube.

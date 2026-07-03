@@ -109,6 +109,7 @@ fn to_post(m: RawMessage) -> Post {
         media: m.media,
         views: m.views,
         edited: m.edited,
+        reactions: Vec::new(),
         links: m.links,
         youtube,
         apple_podcast,

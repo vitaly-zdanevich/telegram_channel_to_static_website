@@ -617,6 +617,17 @@ pub fn render_post(
         }
     }
 
+    // Reaction counts (MTProto only) as a subtle footer line.
+    if !post.reactions.is_empty() {
+        let line = post
+            .reactions
+            .iter()
+            .map(|(emoji, count)| format!("{emoji} {count}"))
+            .collect::<Vec<_>>()
+            .join(" · ");
+        body.push_str(&format!("{line}\n\n"));
+    }
+
     // Auto #video tag in the body for posts with a playable video, unless the
     // author already wrote it (matches the taxonomy tag added in main).
     let has_video = post
@@ -1192,6 +1203,7 @@ mod tests {
             media: vec![],
             views: None,
             edited: false,
+            reactions: vec![],
             links: vec![],
             youtube: None,
             apple_podcast: None,
@@ -1426,6 +1438,30 @@ mod tests {
         assert_eq!(on.downloads.len(), 1);
         assert!(on.downloads[0].release, "video should be staged for release");
         assert!(on.downloads[0].filename.starts_with(&format!("{}-", p.primary_id)), "{}", on.downloads[0].filename);
+    }
+
+    #[test]
+    fn reactions_render_as_a_footer_line() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let ui = crate::i18n::ui("en");
+        let opts = RenderOpts {
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            instagram: false,
+            pinterest: false,
+            video_releases: None,
+        };
+        let mut p = post_with_body("hi");
+        p.reactions = vec![("👍".into(), 42), ("❤️".into(), 10)];
+        let out = render_post(&p, &rw, false, None, None, &opts);
+        assert!(out.index_md.contains("👍 42 · ❤️ 10"), "{}", out.index_md);
+        // No reactions → no footer.
+        let plain = render_post(&post_with_body("hi"), &rw, false, None, None, &opts);
+        assert!(!plain.index_md.contains('👍'), "{}", plain.index_md);
     }
 
     #[test]
