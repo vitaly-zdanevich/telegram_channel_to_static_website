@@ -751,18 +751,24 @@ fn excerpt(md: &str, max: usize) -> String {
     truncate_chars(joined.trim(), max)
 }
 
-/// Plain-text preview of a post's body for the Newer/Older hover `title`: line
-/// breaks kept (intra-line whitespace collapsed, blank lines dropped), capped so
-/// a long post doesn't produce a giant tooltip.
-pub fn post_preview(post: &Post) -> String {
-    let text = strip_md(&post.body_md, true)
+/// A post's body as normalized plain text: markdown stripped (hashtag words
+/// kept), each line's inner whitespace collapsed, blank lines dropped. Uncapped
+/// — used for the daily-run largest-files log, which prints the whole post.
+pub fn post_text_plain(post: &Post) -> String {
+    strip_md(&post.body_md, true)
         .lines()
         .map(|l| l.split_whitespace().collect::<Vec<_>>().join(" "))
         .filter(|l| !l.is_empty())
         .collect::<Vec<_>>()
-        .join("\n");
+        .join("\n")
+}
+
+/// Plain-text preview of a post's body for the Newer/Older hover `title`: line
+/// breaks kept (intra-line whitespace collapsed, blank lines dropped), capped so
+/// a long post doesn't produce a giant tooltip.
+pub fn post_preview(post: &Post) -> String {
     // Most posts are short (shown in full); only a very long one is trimmed.
-    truncate_chars(text.trim(), 1000)
+    truncate_chars(post_text_plain(post).trim(), 1000)
 }
 
 /// The post title plus the body to render. The title is the first body line

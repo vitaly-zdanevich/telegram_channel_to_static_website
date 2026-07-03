@@ -742,13 +742,28 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
 
     // Show the 10 biggest files (descending) — what's eating the hosting budget.
     // Each is a file:// link to the post's built page so it opens in a browser
-    // (the HTML exists after `zola build`).
+    // (the HTML exists after `zola build`), with the owning post's full text
+    // printed beneath it so the log alone says what the file is.
     if !biggest.is_empty() {
         let site_abs = std::fs::canonicalize(&s.site).unwrap_or_else(|_| s.site.clone());
+        let text_by_slug: std::collections::HashMap<String, String> = posts
+            .iter()
+            .map(|p| (render::slug_for(p), render::post_text_plain(p)))
+            .collect();
         info!("10 largest files:");
         for (p, sz) in &biggest {
             let rel = p.strip_prefix(&s.site).unwrap_or(p);
             info!("  {:>9}  {}", site::human_size(*sz), largest_link(&site_abs, rel));
+            if let Some(text) = largest_slug(rel).and_then(|slug| text_by_slug.get(slug)) {
+                if !text.is_empty() {
+                    let indented = text
+                        .lines()
+                        .map(|l| format!("             {l}"))
+                        .collect::<Vec<_>>()
+                        .join("\n");
+                    info!("{indented}");
+                }
+            }
         }
     }
 
@@ -785,6 +800,17 @@ fn largest_link(site_abs: &std::path::Path, rel: &std::path::Path) -> String {
         }
     }
     format!("file://{}", site_abs.join(rel).display())
+}
+
+/// The post slug owning a bundle file (`content/posts/<slug>/…`), if any — used
+/// to look up the post's text for the largest-files log.
+fn largest_slug(rel: &std::path::Path) -> Option<&str> {
+    let comps: Vec<&str> = rel.components().filter_map(|c| c.as_os_str().to_str()).collect();
+    if comps.len() >= 3 && comps[0] == "content" && comps[1] == "posts" {
+        Some(comps[2])
+    } else {
+        None
+    }
 }
 
 fn http_client() -> Result<reqwest::Client> {
