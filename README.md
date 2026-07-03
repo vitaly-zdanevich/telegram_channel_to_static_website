@@ -278,6 +278,8 @@ These are *variables*, not secrets — all of it is public.
 | `CSS` | `--css` | — | Extra CSS appended to the built-in stylesheet |
 | `FONT` | `--font` | system | Body `font-family` — a local/system font stack, e.g. `Georgia, serif` |
 | `GOOGLE_FONT` | `--google-font` | — | A [Google Fonts](https://fonts.google.com) family to load and use for the body, e.g. `Inter` (an external request to fonts.googleapis.com; wins over `FONT`) |
+| `GOOGLE_ANALYTICS` | `--google-analytics` | — | Google Analytics measurement ID (e.g. `G-XXXXXXX`) — injects `gtag.js`. Adds JavaScript + a third-party request |
+| `YANDEX_METRICA` | `--yandex-metrica` | — | Yandex Metrica counter ID (a number) — injects the Metrica tag (+ a `<noscript>` pixel). Adds JavaScript + a third-party request |
 | `THEME_REPO` | `--theme` (name) | built-in black theme | External Zola theme git URL (https/ssh); auto-falls-back if it fails |
 | `REPO_URL` | `--repo-url` | tg2zola repo | "Source repository" link on About (CI auto-sets it to your repo) |
 

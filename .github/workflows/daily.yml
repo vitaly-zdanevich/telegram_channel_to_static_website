@@ -54,6 +54,10 @@ env:
   # request. If both are set, the Google font wins.
   FONT: ${{ vars.FONT }}
   GOOGLE_FONT: ${{ vars.GOOGLE_FONT }}
+  # Optional web analytics — set the ID as a repository *variable* to inject the
+  # tag. GOOGLE_ANALYTICS: a "G-…" measurement ID. YANDEX_METRICA: a counter number.
+  GOOGLE_ANALYTICS: ${{ vars.GOOGLE_ANALYTICS }}
+  YANDEX_METRICA: ${{ vars.YANDEX_METRICA }}
   # Set to "false" to disable post Next/Prev nav, the "View on Telegram" link,
   # or the RSS feed (all on by default).
   NEXT_PREV: ${{ vars.NEXT_PREV }}
@@ -240,6 +244,8 @@ jobs:
             [ -n "${CSS:-}" ] && args+=(--css "$CSS")
             [ -n "${FONT:-}" ] && args+=(--font "$FONT")
             [ -n "${GOOGLE_FONT:-}" ] && args+=(--google-font "$GOOGLE_FONT")
+            [ -n "${GOOGLE_ANALYTICS:-}" ] && args+=(--google-analytics "$GOOGLE_ANALYTICS")
+            [ -n "${YANDEX_METRICA:-}" ] && args+=(--yandex-metrica "$YANDEX_METRICA")
             [ "${NEXT_PREV:-}" = "false" ] && args+=(--no-next-prev)
             [ "${TELEGRAM_LINK:-}" = "false" ] && args+=(--no-telegram-link)
             [ "${RSS:-}" = "false" ] && args+=(--no-rss)

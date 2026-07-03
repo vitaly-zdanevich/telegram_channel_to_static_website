@@ -100,6 +100,10 @@ pub struct FileConfig {
     pub font: Option<String>,
     /// A Google Fonts family to load and use for the body (e.g. `Inter`).
     pub google_font: Option<String>,
+    /// Google Analytics measurement ID (e.g. `G-XXXXXXX`) — loads gtag.js.
+    pub google_analytics: Option<String>,
+    /// Yandex Metrica counter ID (a number) — loads the Metrica tag.
+    pub yandex_metrica: Option<String>,
     /// Optional theme name (a directory under `site/themes/`). When set, the
     /// built-in templates are not written and the theme drives the look.
     pub theme: Option<String>,
@@ -210,6 +214,10 @@ pub struct Settings {
     pub font: Option<String>,
     /// A Google Fonts family name to load + use for the body. Empty → none.
     pub google_font: Option<String>,
+    /// Google Analytics measurement ID (`G-…`); loads gtag.js when set.
+    pub google_analytics: Option<String>,
+    /// Yandex Metrica counter ID (numeric); loads the Metrica tag when set.
+    pub yandex_metrica: Option<String>,
     pub theme: Option<String>,
     pub max_pages: Option<usize>,
     pub page_delay_ms: u64,

@@ -439,6 +439,14 @@ fn config_toml(
                 None => String::new(),
             },
         )
+        .replace(
+            "__GOOGLE_ANALYTICS__",
+            &analytics_toml("google_analytics", s.google_analytics.as_deref()),
+        )
+        .replace(
+            "__YANDEX_METRICA__",
+            &analytics_toml("yandex_metrica", s.yandex_metrica.as_deref()),
+        )
         .replace("__FEDI__", &fedi)
         .replace("__SEARCH__", &search)
         .replace(
@@ -1153,6 +1161,22 @@ fn font_family(google: Option<&str>, font: Option<&str>) -> String {
     }
 }
 
+/// A `[extra]` line `key = "id"` for an analytics ID — sanitized to
+/// alphanumeric / `-` / `_` so it can't break out of the TOML string or the
+/// injected script — or empty when unset.
+fn analytics_toml(key: &str, id: Option<&str>) -> String {
+    let clean: String = id
+        .unwrap_or("")
+        .chars()
+        .filter(|c| c.is_ascii_alphanumeric() || matches!(c, '-' | '_'))
+        .collect();
+    if clean.is_empty() {
+        String::new()
+    } else {
+        format!("{key} = \"{clean}\"")
+    }
+}
+
 /// The `fonts.googleapis.com` stylesheet URL for the configured Google font, if any.
 fn google_font_href(google: Option<&str>) -> Option<String> {
     google.map(str::trim).filter(|g| !g.is_empty()).map(|g| {
@@ -1235,6 +1259,8 @@ __AVATAR__
 __NAV__
 __NAV_TAGS__
 __TAGS__
+__GOOGLE_ANALYTICS__
+__YANDEX_METRICA__
 
 [extra.i18n]
 __I18N__
@@ -1272,6 +1298,8 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.google_font_href %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{{ config.extra.google_font_href | safe }}">{% endif %}
   {% if config.extra.pwa %}<link rel="manifest" href="{{ get_url(path='manifest.webmanifest') | safe }}">{% endif %}
   <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+  {% if config.extra.google_analytics %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics }}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ config.extra.google_analytics }}');</script>{% endif %}
+  {% if config.extra.yandex_metrica %}<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');ym({{ config.extra.yandex_metrica }},'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/{{ config.extra.yandex_metrica }}" style="position:absolute;left:-9999px" alt=""></div></noscript>{% endif %}
 </head>
 <body>
   <header class="site-header">
@@ -1677,6 +1705,20 @@ mod tests {
         let out = md_title_attr(&"x".repeat(400));
         assert!(out.ends_with("…\""), "{out}");
         assert_eq!(out.chars().filter(|&c| c == 'x').count(), 300);
+    }
+
+    #[test]
+    fn analytics_toml_sanitizes_and_omits() {
+        assert_eq!(
+            analytics_toml("google_analytics", Some("G-ABC123")),
+            "google_analytics = \"G-ABC123\""
+        );
+        assert_eq!(analytics_toml("yandex_metrica", Some("12345678")), "yandex_metrica = \"12345678\"");
+        // Injection characters are stripped.
+        assert_eq!(analytics_toml("k", Some("a\"; alert(1)//")), "k = \"aalert1\"");
+        // Empty / unset → nothing emitted.
+        assert_eq!(analytics_toml("k", None), "");
+        assert_eq!(analytics_toml("k", Some("  ")), "");
     }
 
     #[test]

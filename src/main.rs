@@ -279,6 +279,14 @@ struct GenerateArgs {
     #[arg(long)]
     google_font: Option<String>,
 
+    /// Google Analytics measurement ID (e.g. "G-XXXXXXX") — injects gtag.js.
+    #[arg(long)]
+    google_analytics: Option<String>,
+
+    /// Yandex Metrica counter ID (a number) — injects the Metrica tag.
+    #[arg(long)]
+    yandex_metrica: Option<String>,
+
     /// Stop after N pages (~20 messages each). Omit to fetch the whole history.
     #[arg(long)]
     max_pages: Option<usize>,
@@ -501,6 +509,16 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .google_font
             .clone()
             .or(fc.google_font)
+            .filter(|s| !s.trim().is_empty()),
+        google_analytics: g
+            .google_analytics
+            .clone()
+            .or(fc.google_analytics)
+            .filter(|s| !s.trim().is_empty()),
+        yandex_metrica: g
+            .yandex_metrica
+            .clone()
+            .or(fc.yandex_metrica)
             .filter(|s| !s.trim().is_empty()),
         site: g
             .site

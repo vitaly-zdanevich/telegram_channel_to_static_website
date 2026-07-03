@@ -80,6 +80,8 @@ fn settings(site: PathBuf) -> Settings {
         css: None,
         font: None,
         google_font: None,
+        google_analytics: None,
+        yandex_metrica: None,
         theme: None,
         max_pages: None,
         page_delay_ms: 0,
