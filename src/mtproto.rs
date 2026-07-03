@@ -165,13 +165,14 @@ fn want_photos() -> bool {
     )
 }
 
-/// Opt-in (`MTPROTO_VIDEOS=1`): also download the *original video* for posts the
-/// web preview shows only as a poster (large/long videos). Off by default —
-/// videos are large, so this is for a full local backup, not the CI budget.
+/// On by default: download the *original video* for posts the web preview shows
+/// only as a poster (no downloadable file), unless a YouTube/Instagram embed
+/// stands in for it. Disable with `MTPROTO_VIDEOS=false` — these can be large, so
+/// a video-heavy channel may want it off to stay within the hosting budget.
 fn want_videos() -> bool {
-    matches!(
+    !matches!(
         std::env::var("MTPROTO_VIDEOS").ok().as_deref(),
-        Some("1") | Some("true") | Some("yes") | Some("on")
+        Some("0") | Some("false") | Some("no") | Some("off")
     )
 }
 
@@ -266,8 +267,8 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     audio_for.entry(pi).or_default().push((dest, orig_name, label));
                     n_audio += 1;
                 } else if mime.starts_with("video/") {
-                    // Large videos stay behind MTPROTO_VIDEOS (hosting budget), so a
-                    // video is never archived as a generic file in the branch below.
+                    // Videos are handled here (fetched by default unless an embed
+                    // replaces them) — never archived as a generic file below.
                     if videos {
                         // Only the *unavailable* videos (shown as a poster) are worth
                         // fetching; a web-downloadable Media::Video already has its file.
@@ -276,10 +277,13 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                             .iter()
                             .any(|m| matches!(m, Media::VideoPoster { .. }));
                         // A live YouTube/Instagram embed stands in for the video — skip
-                        // the (large) download unless keep_media is set.
+                        // the (large) download unless keep_media is set. Instagram only
+                        // counts when its embed is enabled (opt-in).
                         let embed_replaces = !s.keep_media
                             && ((posts[pi].youtube.is_some() && !posts[pi].youtube_dead)
-                                || (posts[pi].instagram.is_some() && !posts[pi].instagram_dead));
+                                || (s.instagram
+                                    && posts[pi].instagram.is_some()
+                                    && !posts[pi].instagram_dead));
                         if has_poster && !embed_replaces {
                             let dest = cache.join(format!("{id}.{}", video_ext(mime)));
                             if !dest.exists() {

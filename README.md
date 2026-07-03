@@ -353,8 +353,8 @@ TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
 | `TG_API_ID` / `TG_API_HASH` | App credentials from my.telegram.org (required) |
 | `TG_SESSION` | base64 session from `tg2zola login`; alternatively a `tg2zola.session` file in the working dir is used |
 | `MTPROTO_IMAGES` | `1`/`true` to also fetch original-quality photos **and pasted images Telegram stored as files** (shown *not archived* on the web preview); audio is always fetched |
-| `MTPROTO_VIDEOS` | `1`/`true` to also fetch the full video for posts the web preview shows only as a poster (large files — for a local backup; off by default) |
-| `MTPROTO_FILES` | archives **every other attachment** (pdf, zip, rar, … — any file type) as a download; **on by default**, set `false`/`0` to disable. Large videos still need `MTPROTO_VIDEOS` (the budget guard) |
+| `MTPROTO_VIDEOS` | downloads the full video for posts the web preview shows only as a poster **when no YouTube/Instagram embed replaces it** — **on by default**; set `false`/`0` to disable (these can be large) |
+| `MTPROTO_FILES` | archives **every other attachment** (pdf, zip, rar, … — any file type) as a download; **on by default**, set `false`/`0` to disable |
 | `TG_SESSION_FILE` | override the session-file path (default `tg2zola.session`) |
 
 **For CI:** run `tg2zola login` **locally** (the interactive step can't run in
