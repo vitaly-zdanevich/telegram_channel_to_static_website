@@ -256,7 +256,7 @@ These are *variables*, not secrets — all of it is public.
 | `GENIUS_TOKEN` (secret) | — | — | Genius API [Client Access Token](https://genius.com/api-clients). When set, genius links resolve via the **API** (works in CI) instead of scraping — the genius web pages are Cloudflare-blocked on datacenter IPs. Store it as an Actions **secret**, not a variable |
 | `SPOTIFY` | `--spotify` | off | `true` to replace a Spotify link with the Spotify player (opt-in — it plays a ~30s preview for non-Premium listeners) |
 | `PINTEREST` | `--no-pinterest` | on | `false` stops replacing a Pinterest pin link with the embedded pin |
-| `LIVENESS` | `--no-liveness` | on | `false` skips the YouTube liveness check; a removed video (oEmbed 404) otherwise keeps its local media instead of showing a dead embed |
+| `LIVENESS` | `--no-liveness` | on | `false` skips the liveness checks (YouTube / Apple Podcasts / Yandex / Instagram / Spotify / Pinterest). Otherwise a removed item keeps its local media, or shows the plain link, instead of a dead/broken embed |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |

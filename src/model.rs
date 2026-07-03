@@ -124,6 +124,10 @@ pub struct Post {
     pub yandex_music: Option<String>,
     /// Canonical Instagram post URL, if any link points at an instagram post/reel.
     pub instagram: Option<String>,
+    /// Spotify embed URL, if any link points at open.spotify.com (opt-in embed).
+    pub spotify: Option<String>,
+    /// Canonical Pinterest pin URL, if any link points at a pinterest pin.
+    pub pinterest: Option<String>,
     /// YouTube link confirmed removed (oEmbed 404) — keep the local media instead
     /// of replacing it with a dead embed. Default false (assume alive).
     pub youtube_dead: bool,
@@ -136,6 +140,10 @@ pub struct Post {
     /// Instagram post not confirmed live (no og:title via the crawler UA) — keep
     /// the local video instead of a dead embed. Default false.
     pub instagram_dead: bool,
+    /// Spotify track/album removed (oEmbed 404) — show the link, not a dead embed.
+    pub spotify_dead: bool,
+    /// Pinterest pin removed (oEmbed 400/404) — show the link, not a dead embed.
+    pub pinterest_dead: bool,
     /// Genius song id (resolved by fetching a linked genius.com page), for the
     /// lyrics widget when the post carries no lyrics of its own.
     pub genius_song_id: Option<String>,

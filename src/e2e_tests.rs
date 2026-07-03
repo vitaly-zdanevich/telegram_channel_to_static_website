@@ -61,6 +61,8 @@ fn settings(site: PathBuf) -> Settings {
         youtube_facade: false,
         keep_media: false,
         genius: false,
+        spotify: false,
+        pinterest: false,
         liveness: false,
         tags_to_pages: None,
         pages: None,
@@ -100,10 +102,14 @@ fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&
         apple_podcast: None,
         yandex_music: None,
         instagram: instagram.map(String::from),
+        spotify: None,
+        pinterest: None,
         youtube_dead: false,
         apple_dead: false,
         yandex_dead: false,
         instagram_dead: false,
+        spotify_dead: false,
+        pinterest_dead: false,
         genius_song_id: None,
     }
 }
@@ -199,6 +205,8 @@ fn zola_build_produces_expected_html() {
                     derive_titles: false,
                     strip_title: false,
                     keep_media: s.keep_media,
+                    spotify: false,
+                    pinterest: false,
                 },
             )
         })
@@ -291,6 +299,8 @@ fn elasticlunr_search_builds() {
                     derive_titles: false,
                     strip_title: false,
                     keep_media: s.keep_media,
+                    spotify: false,
+                    pinterest: false,
                 },
             )
         })

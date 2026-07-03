@@ -307,11 +307,11 @@ pub fn render_post(
     };
 
     // Opt-in Spotify / default Pinterest link → embed (replacing the link).
-    let spotify_embed = spotify
-        .then(|| crate::media::spotify_from(&post.links))
+    let spotify_embed = (spotify && !post.spotify_dead)
+        .then(|| post.spotify.clone())
         .flatten();
-    let pinterest_embed = pinterest
-        .then(|| crate::media::pinterest_from(&post.links))
+    let pinterest_embed = (pinterest && !post.pinterest_dead)
+        .then(|| post.pinterest.clone())
         .flatten();
 
     // Drop the standalone link(s) an embed replaces, so nothing shows twice.
@@ -1125,10 +1125,14 @@ mod tests {
             apple_podcast: None,
             yandex_music: None,
             instagram: None,
+            spotify: None,
+            pinterest: None,
             youtube_dead: false,
             apple_dead: false,
             yandex_dead: false,
             instagram_dead: false,
+            spotify_dead: false,
+            pinterest_dead: false,
             genius_song_id: None,
         }
     }
@@ -1272,10 +1276,8 @@ mod tests {
     fn spotify_optin_and_pinterest_default() {
         let rw = LinkRewriter::with_index("c", HashMap::new());
         let mut p = post_with_body("music + pin");
-        p.links = vec![
-            "https://open.spotify.com/track/abc123".into(),
-            "https://www.pinterest.com/pin/42/".into(),
-        ];
+        p.spotify = Some("https://open.spotify.com/embed/track/abc123".into());
+        p.pinterest = Some("https://www.pinterest.com/pin/42/".into());
         let ui = crate::i18n::ui("en");
         let opts = |spotify, pinterest| RenderOpts {
             ui: &ui,

@@ -256,7 +256,7 @@ and variables → Actions → **Variables**) के ज़रिए कॉन्
 | `GENIUS_TOKEN` (secret) | — | — | Genius API [Client Access Token](https://genius.com/api-clients)। सेट होने पर genius लिंक स्क्रैपिंग के बजाय **API** से हल होते हैं (CI में काम करता है) — genius वेब पेज datacenter IPs पर Cloudflare-अवरुद्ध हैं। इसे Actions **secret** के रूप में रखें, variable नहीं |
 | `SPOTIFY` | `--spotify` | बंद | Spotify लिंक को Spotify player से बदलने के लिए `true` (opt-in — गैर-Premium श्रोताओं के लिए ~30s प्रीव्यू चलता है) |
 | `PINTEREST` | `--no-pinterest` | चालू | `false` Pinterest pin लिंक को embedded pin से बदलना रोक देता है |
-| `LIVENESS` | `--no-liveness` | चालू | `false` YouTube liveness जाँच छोड़ देता है; हटाया गया वीडियो (oEmbed 404) अन्यथा dead embed दिखाने के बजाय अपना स्थानीय मीडिया रखता है |
+| `LIVENESS` | `--no-liveness` | चालू | `false` liveness जाँच छोड़ देता है (YouTube / Apple Podcasts / Yandex / Instagram / Spotify / Pinterest)। अन्यथा हटाया गया आइटम dead/broken embed दिखाने के बजाय अपना स्थानीय मीडिया रखता है या सादा लिंक दिखाता है |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | अल्पविराम से अलग किए गए tags जो शीर्ष nav में `#tag` लिंक के रूप में दिखते हैं (जैसे `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | डार्क-मोड पृष्ठभूमि (कोई भी CSS रंग) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | लाइट-मोड पृष्ठभूमि |

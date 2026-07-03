@@ -112,7 +112,7 @@ fn apple_podcast_id(url: &str) -> Option<String> {
 #[cfg(test)]
 mod tests {
     use super::{
-        apple_body_removed, apple_podcast_id, has_nonempty_og, yandex_body_removed,
+        apple_body_removed, apple_podcast_id, has_nonempty_og, oembed_removed, yandex_body_removed,
         yandex_track_id, youtube_status_removed,
     };
 
@@ -180,6 +180,16 @@ mod tests {
         assert!(yandex_body_removed(r#"{"result":{}}"#)); // present but not available
         assert!(!yandex_body_removed(r#"{"result":{"available":true,"id":"1"}}"#));
         assert!(!yandex_body_removed(r#"{"error":"not-found"}"#)); // no result → alive
+    }
+
+    #[test]
+    fn oembed_status_classification() {
+        // Spotify/Pinterest oEmbed: a definitive client error means the item is gone.
+        assert!(oembed_removed(400)); // Pinterest's "gone"
+        assert!(oembed_removed(404)); // Spotify's "gone"
+        assert!(!oembed_removed(200));
+        assert!(!oembed_removed(429)); // rate-limited → assume alive
+        assert!(!oembed_removed(500));
     }
 }
 
@@ -369,4 +379,100 @@ fn has_video(media: &[crate::model::Media]) -> bool {
     media
         .iter()
         .any(|m| matches!(m, Media::Video { .. } | Media::VideoPoster { .. }))
+}
+
+/// Mark posts whose Spotify track/album is removed (oEmbed 404), so the link is
+/// shown instead of a dead player. Run only when the Spotify embed is enabled.
+pub async fn check_spotify(client: &reqwest::Client, posts: &mut [Post], concurrency: usize) {
+    let targets: Vec<(usize, String)> = posts
+        .iter()
+        .enumerate()
+        .filter_map(|(i, p)| p.spotify.clone().map(|u| (i, u)))
+        .collect();
+    if targets.is_empty() {
+        return;
+    }
+    tracing::info!("checking {} Spotify link(s) for liveness", targets.len());
+    let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, url)| {
+        let client = client.clone();
+        async move { (i, is_spotify_removed(&client, &url).await) }
+    }))
+    .buffer_unordered(concurrency.max(1))
+    .collect()
+    .await;
+    let mut dead = 0usize;
+    for (i, removed) in results {
+        if removed {
+            posts[i].spotify_dead = true;
+            dead += 1;
+        }
+    }
+    if dead > 0 {
+        tracing::info!("{dead} Spotify item(s) removed — showing the link, not a dead embed");
+    }
+}
+
+/// Spotify oEmbed says the track/album is gone (`404`). The embed URL is turned
+/// back into the public URL the oEmbed endpoint expects.
+async fn is_spotify_removed(client: &reqwest::Client, embed_url: &str) -> bool {
+    let public = embed_url.replacen("/embed/", "/", 1);
+    match client
+        .get("https://open.spotify.com/oembed")
+        .query(&[("url", public.as_str())])
+        .send()
+        .await
+    {
+        Ok(resp) => oembed_removed(resp.status().as_u16()),
+        Err(_) => false,
+    }
+}
+
+/// Mark posts whose Pinterest pin is removed (oEmbed 400/404), so the link is
+/// shown instead of a broken embed. Run only when the Pinterest embed is enabled.
+pub async fn check_pinterest(client: &reqwest::Client, posts: &mut [Post], concurrency: usize) {
+    let targets: Vec<(usize, String)> = posts
+        .iter()
+        .enumerate()
+        .filter_map(|(i, p)| p.pinterest.clone().map(|u| (i, u)))
+        .collect();
+    if targets.is_empty() {
+        return;
+    }
+    tracing::info!("checking {} Pinterest link(s) for liveness", targets.len());
+    let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, url)| {
+        let client = client.clone();
+        async move { (i, is_pinterest_removed(&client, &url).await) }
+    }))
+    .buffer_unordered(concurrency.max(1))
+    .collect()
+    .await;
+    let mut dead = 0usize;
+    for (i, removed) in results {
+        if removed {
+            posts[i].pinterest_dead = true;
+            dead += 1;
+        }
+    }
+    if dead > 0 {
+        tracing::info!("{dead} Pinterest pin(s) removed — showing the link, not a broken embed");
+    }
+}
+
+/// Pinterest oEmbed says the pin is gone (`400`/`404`).
+async fn is_pinterest_removed(client: &reqwest::Client, url: &str) -> bool {
+    match client
+        .get("https://www.pinterest.com/oembed.json")
+        .query(&[("url", url)])
+        .send()
+        .await
+    {
+        Ok(resp) => oembed_removed(resp.status().as_u16()),
+        Err(_) => false,
+    }
+}
+
+/// A definitive oEmbed client error (`400`/`404`) means the item is gone; other
+/// statuses and network errors are treated as alive.
+fn oembed_removed(status: u16) -> bool {
+    matches!(status, 400 | 404)
 }
