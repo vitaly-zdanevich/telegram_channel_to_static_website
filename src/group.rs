@@ -117,6 +117,7 @@ fn to_post(m: RawMessage) -> Post {
         spotify,
         pinterest,
         youtube_dead: false,
+        youtube_watchable: false,
         apple_dead: false,
         yandex_dead: false,
         instagram_dead: false,

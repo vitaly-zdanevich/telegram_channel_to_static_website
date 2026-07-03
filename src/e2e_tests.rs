@@ -105,6 +105,7 @@ fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&
         spotify: None,
         pinterest: None,
         youtube_dead: false,
+        youtube_watchable: false,
         apple_dead: false,
         yandex_dead: false,
         instagram_dead: false,

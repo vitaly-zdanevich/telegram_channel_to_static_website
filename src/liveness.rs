@@ -11,7 +11,21 @@ use futures::stream::{self, StreamExt};
 
 use crate::model::Post;
 
-/// Mark posts whose YouTube link is confirmed removed (`Post::youtube_dead`).
+/// How a post's YouTube link renders after the liveness check.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+enum YtStatus {
+    /// oEmbed 200 (or a transient failure) — embed the iframe.
+    Embeddable,
+    /// Not embeddable, but the video still plays on youtube.com (its thumbnail
+    /// exists) — embedding is merely disabled, so link out instead of dropping it.
+    EmbedDisabled,
+    /// Gone: not embeddable and no thumbnail — drop the embed.
+    Removed,
+}
+
+/// Classify each post's YouTube link. A removed/embedding-disabled video sets
+/// `Post::youtube_dead` (no dead embed); an embedding-disabled-but-playable one
+/// also sets `Post::youtube_watchable` so the renderer can link out to it.
 pub async fn check_youtube(client: &reqwest::Client, posts: &mut [Post], concurrency: usize) {
     let targets: Vec<(usize, String)> = posts
         .iter()
@@ -23,41 +37,72 @@ pub async fn check_youtube(client: &reqwest::Client, posts: &mut [Post], concurr
     }
     tracing::info!("checking {} YouTube link(s) for liveness", targets.len());
 
-    let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, id)| {
+    let results: Vec<(usize, YtStatus)> = stream::iter(targets.into_iter().map(|(i, id)| {
         let client = client.clone();
-        async move { (i, is_youtube_removed(&client, &id).await) }
+        async move { (i, youtube_status(&client, &id).await) }
     }))
     .buffer_unordered(concurrency.max(1))
     .collect()
     .await;
 
-    let mut dead = 0usize;
-    for (i, removed) in results {
-        if removed {
-            posts[i].youtube_dead = true;
-            dead += 1;
+    let (mut removed, mut disabled) = (0usize, 0usize);
+    for (i, status) in results {
+        match status {
+            YtStatus::Embeddable => {}
+            YtStatus::EmbedDisabled => {
+                posts[i].youtube_dead = true;
+                posts[i].youtube_watchable = true;
+                disabled += 1;
+            }
+            YtStatus::Removed => {
+                posts[i].youtube_dead = true;
+                removed += 1;
+            }
         }
     }
-    if dead > 0 {
-        tracing::info!("{dead} YouTube video(s) removed — keeping their local media");
+    if removed > 0 || disabled > 0 {
+        tracing::info!(
+            "YouTube: {removed} removed, {disabled} embedding-disabled (still playable) \
+             — keeping local media / linking out"
+        );
     }
 }
 
-/// True when YouTube's oEmbed endpoint says the video can't be embedded — gone,
-/// private or embedding-disabled. oEmbed returns `200` for a live public video
-/// and a client error otherwise (a *nonexistent* id is `400`, not `404`). Only a
-/// definitive 4xx counts; `429`/`5xx`/network errors are transient → treated as
-/// alive, so rate-limiting never makes us keep media for live videos.
-async fn is_youtube_removed(client: &reqwest::Client, id: &str) -> bool {
+/// Classify a YouTube video. oEmbed `200` (or a transient `429`/`5xx`/network
+/// failure) is treated as embeddable so rate-limiting never drops a live embed.
+/// A definitive 4xx means "not embeddable"; a thumbnail-existence check then
+/// tells "embedding disabled but still plays" (real thumbnail) apart from "gone"
+/// (a nonexistent id 404s its thumbnail).
+async fn youtube_status(client: &reqwest::Client, id: &str) -> YtStatus {
     let url = format!("https://www.youtube.com/oembed?url=https://youtu.be/{id}&format=json");
-    match client.get(&url).send().await {
-        Ok(resp) => youtube_status_removed(resp.status().as_u16()),
-        Err(_) => false,
+    let status = match client.get(&url).send().await {
+        Ok(resp) => resp.status().as_u16(),
+        Err(_) => return YtStatus::Embeddable, // network error → assume alive
+    };
+    if !youtube_status_removed(status) {
+        return YtStatus::Embeddable; // 200, or transient (429 / 5xx / …)
+    }
+    if youtube_thumbnail_exists(client, id).await {
+        YtStatus::EmbedDisabled
+    } else {
+        YtStatus::Removed
     }
 }
 
-/// oEmbed status → removed? A definitive 4xx (gone / private / embedding-off; a
-/// nonexistent id is 400, not 404) counts; 200 / 429 / 5xx / network do not.
+/// Whether YouTube still serves a thumbnail for the id — a real video (even one
+/// with embedding disabled) returns `200`; a removed/nonexistent id `404`s. A
+/// transient error is treated as "exists" (prefer linking out over dropping).
+async fn youtube_thumbnail_exists(client: &reqwest::Client, id: &str) -> bool {
+    let url = format!("https://img.youtube.com/vi/{id}/hqdefault.jpg");
+    match client.get(&url).send().await {
+        Ok(resp) => resp.status().is_success(),
+        Err(_) => true,
+    }
+}
+
+/// oEmbed status → a *definitive* non-embeddable response? A 4xx (gone / private
+/// / embedding-off; a nonexistent id is 400, not 404) counts; 200 / 429 / 5xx /
+/// network do not (transient → assume embeddable).
 fn youtube_status_removed(status: u16) -> bool {
     matches!(status, 400 | 401 | 403 | 404)
 }

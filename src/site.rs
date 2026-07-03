@@ -103,6 +103,10 @@ pub fn scaffold(
     // theme's), so generated `{{ youtube(...) }}` always resolves.
     write_file(&site.join("templates/shortcodes/youtube.html"), YOUTUBE_SHORTCODE)?;
     write_file(
+        &site.join("templates/shortcodes/youtube_link.html"),
+        YOUTUBE_LINK_SHORTCODE,
+    )?;
+    write_file(
         &site.join("templates/shortcodes/apple_podcast.html"),
         APPLE_PODCAST_SHORTCODE,
     )?;
@@ -1325,6 +1329,13 @@ const YOUTUBE_SHORTCODE: &str = r#"<div class="yt-embed">
 </div>
 "#;
 
+// A video that plays on YouTube but has embedding disabled: a thumbnail facade
+// linking out to the watch page (no iframe), plus a labelled caption. Static
+// HTML, so it survives the offline pass and needs no JavaScript.
+const YOUTUBE_LINK_SHORTCODE: &str = r#"<div class="yt-embed"><a class="yt-facade" href="https://www.youtube.com/watch?v={{ id }}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/{{ id }}/hqdefault.jpg" alt="Watch on YouTube" loading="lazy"><span class="yt-btn" aria-hidden="true">▶</span></a></div>
+<a class="yt-link" href="https://www.youtube.com/watch?v={{ id }}" target="_blank" rel="noopener">▶ Watch on YouTube</a>
+"#;
+
 // Apple Podcasts episode embed. The iframe needs an origin, so over file:// it
 // won't load — the "Listen on Apple Podcasts" link below it is the fallback.
 const APPLE_PODCAST_SHORTCODE: &str = r#"<div class="ap-embed"><iframe src="{{ url }}" height="175" loading="lazy" frameborder="0" allow="autoplay *; encrypted-media *;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe><a class="ap-link" href="{{ url }}">Listen on Apple Podcasts</a></div>
@@ -1408,7 +1419,7 @@ video { display: block; }
 audio { width: 100%; }
 .yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
 .yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.yt-link { font-size: .9em; margin-top: .25rem; }
+.yt-link { display: block; font-size: .9em; margin-top: .25rem; }
 /* CSS-only click-to-load facade (no JS): the iframe is display:none until the
    hidden checkbox is checked, so loading=lazy defers its fetch until click. */
 .yt-embed .yt-toggle { position: absolute; width: 0; height: 0; opacity: 0; }

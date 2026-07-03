@@ -128,9 +128,13 @@ pub struct Post {
     pub spotify: Option<String>,
     /// Canonical Pinterest pin URL, if any link points at a pinterest pin.
     pub pinterest: Option<String>,
-    /// YouTube link confirmed removed (oEmbed 404) — keep the local media instead
-    /// of replacing it with a dead embed. Default false (assume alive).
+    /// YouTube link not embeddable (oEmbed non-200) — keep the local media / link
+    /// out instead of a dead embed. Default false (assume embeddable).
     pub youtube_dead: bool,
+    /// A non-embeddable YouTube video that still plays on youtube.com (its
+    /// thumbnail exists) — embedding is merely disabled, so we can link out to it
+    /// rather than drop it. Only meaningful with `youtube_dead`. Default false.
+    pub youtube_watchable: bool,
     /// Apple Podcasts podcast confirmed removed (iTunes lookup `resultCount` 0) —
     /// keep the local audio instead of a dead embed. Default false.
     pub apple_dead: bool,

@@ -375,6 +375,10 @@ pub fn render_post(
     if let Some(yt) = &post.youtube {
         if !post.youtube_dead {
             body.push_str(&format!("{{{{ youtube(id=\"{yt}\") }}}}\n\n"));
+        } else if post.youtube_watchable && !has_video {
+            // Plays on YouTube but embedding is disabled, and there's no local
+            // video to fall back on — link out with a thumbnail facade.
+            body.push_str(&format!("{{{{ youtube_link(id=\"{yt}\") }}}}\n\n"));
         }
     }
     // Apple Podcasts episode embed (an <iframe>; over file:// it degrades to the
@@ -1134,6 +1138,7 @@ mod tests {
             spotify: None,
             pinterest: None,
             youtube_dead: false,
+            youtube_watchable: false,
             apple_dead: false,
             yandex_dead: false,
             instagram_dead: false,
@@ -1235,6 +1240,53 @@ mod tests {
         let dead = render(true);
         assert!(dead.contains("{{ video("), "video dropped on dead IG: {dead}");
         assert!(!dead.contains("{{ instagram("), "embed on dead IG: {dead}");
+    }
+
+    #[test]
+    fn youtube_link_facade_only_when_embed_disabled_and_no_local_video() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let render = |dead: bool, watchable: bool, video: bool| {
+            let mut p = post_with_body("song");
+            p.youtube = Some("abc123XYZ".into());
+            p.youtube_dead = dead;
+            p.youtube_watchable = watchable;
+            if video {
+                p.media = vec![Media::Video { url: "https://cdn/x.mp4".into() }];
+            }
+            render_post(
+                &p,
+                &rw,
+                false,
+                None,
+                None,
+                &RenderOpts {
+                    ui: &crate::i18n::ui("en"),
+                    title_max: 200,
+                    derive_titles: false,
+                    strip_title: false,
+                    keep_media: false,
+                    spotify: false,
+                    pinterest: false,
+                },
+            )
+            .index_md
+        };
+        // Embeddable → the normal iframe embed, no facade.
+        let live = render(false, false, false);
+        assert!(live.contains("{{ youtube(id=\"abc123XYZ\") }}"), "no embed: {live}");
+        assert!(!live.contains("youtube_link"), "unexpected facade: {live}");
+        // Embedding disabled but still plays, no local video → link-out facade.
+        let facade = render(true, true, false);
+        assert!(facade.contains("{{ youtube_link(id=\"abc123XYZ\") }}"), "no facade: {facade}");
+        assert!(!facade.contains("{{ youtube(id="), "dead embed shown: {facade}");
+        // Embedding disabled but a local video exists → keep the video, no facade.
+        let with_video = render(true, true, true);
+        assert!(with_video.contains("{{ video("), "video dropped: {with_video}");
+        assert!(!with_video.contains("youtube_link"), "facade despite local video: {with_video}");
+        // Removed (not watchable) → neither a dead embed nor a facade.
+        let removed = render(true, false, false);
+        assert!(!removed.contains("youtube_link"), "facade on removed: {removed}");
+        assert!(!removed.contains("{{ youtube(id="), "embed on removed: {removed}");
     }
 
     #[test]
