@@ -333,3 +333,90 @@ fn elasticlunr_search_builds() {
 
     let _ = fs::remove_dir_all(&dir);
 }
+
+/// The About page's dynamic fields (filled by `set_about_size` after the media
+/// footprint is known): the largest-files list links each file to its owning
+/// post with the post text as a hover `title` tooltip, and the "MTProto" mention
+/// links to grammers. Exercises the Markdown-title survival through Zola's `@/`
+/// internal-link resolution end to end.
+#[test]
+fn about_page_renders_tooltip_and_mtproto_link() {
+    if !zola_ready() {
+        return;
+    }
+    let dir = std::env::temp_dir().join(format!("tg2zola-about-{}", std::process::id()));
+    let _ = fs::remove_dir_all(&dir);
+    let s = settings(dir.join("site"));
+
+    // One real post so the largest-file link's `@/posts/…` target resolves.
+    let posts = vec![post(1, "The body of the biggest post.", &[], vec![], None, None)];
+    let slug = render::slug_for(&posts[0]);
+
+    let rewriter = render::LinkRewriter::new(&s.channel, &posts);
+    let ui = crate::i18n::ui(&s.language);
+    site::scaffold(&s, None, &[], &[], &[]).expect("scaffold");
+    let rendered: Vec<RenderedPost> = posts
+        .iter()
+        .map(|p| {
+            render::render_post(
+                p,
+                &rewriter,
+                false,
+                None,
+                None,
+                &render::RenderOpts {
+                    ui: &ui,
+                    title_max: s.title_max_len,
+                    derive_titles: false,
+                    strip_title: false,
+                    keep_media: s.keep_media,
+                    spotify: false,
+                    pinterest: false,
+                },
+            )
+        })
+        .collect();
+    site::write_site(&s, &rendered).expect("write_site");
+
+    // Fill the About page: one largest file owned by the post (with the post
+    // text as a tooltip) and the MTProto line (used → links to grammers).
+    let breakdown = site::size_breakdown(&[&s.site.join("content"), &s.site.join("static")]);
+    let biggest = vec![(s.site.join(format!("content/posts/{slug}/photo.jpg")), 123_456u64)];
+    let mut previews = HashMap::new();
+    previews.insert(slug.clone(), "Tooltip body of the biggest post.".to_string());
+    site::set_about_size(
+        &s.site,
+        &breakdown,
+        Some(1_000_000_000),
+        std::time::Duration::from_secs(3),
+        &crate::i18n::about(&s.language),
+        &site::LargestFiles { files: &biggest, previews: &previews },
+        true,
+    );
+
+    let out = Command::new("zola")
+        .arg("--root")
+        .arg(&s.site)
+        .arg("build")
+        .output()
+        .expect("run zola");
+    assert!(out.status.success(), "zola build failed:\n{}", String::from_utf8_lossy(&out.stderr));
+
+    let about = fs::read_to_string(s.site.join("public/about/index.html")).expect("about html");
+    // Placeholders were substituted.
+    assert!(!about.contains("__TOTAL_SIZE__"), "size placeholder left unfilled:\n{about}");
+    assert!(!about.contains("__LARGEST_FILES__"), "largest-files placeholder left unfilled");
+    // The largest-file entry links to its post and carries the body as a tooltip.
+    assert!(
+        about.contains("title=\"Tooltip body of the biggest post.\""),
+        "largest-file hover tooltip missing:\n{about}"
+    );
+    assert!(about.contains("photo.jpg"), "largest-file name missing");
+    // The MTProto mention links to grammers.
+    assert!(
+        about.contains("https://github.com/Lonami/grammers"),
+        "MTProto link missing:\n{about}"
+    );
+
+    let _ = fs::remove_dir_all(&dir);
+}
