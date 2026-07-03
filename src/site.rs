@@ -127,6 +127,10 @@ pub fn scaffold(
         PINTEREST_SHORTCODE,
     )?;
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
+    write_file(
+        &site.join("templates/shortcodes/video_ext.html"),
+        VIDEO_EXT_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/avatar.html"), AVATAR_SHORTCODE)?;
@@ -1494,6 +1498,9 @@ const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" data-pin-width="l
 // src would otherwise break off the post's own page).
 const VIDEO_SHORTCODE: &str =
     "<video controls preload=\"metadata\" src=\"{{ page.permalink | safe }}{{ src }}\"></video>\n";
+// Video hosted off-site (a GitHub Release asset) — the src is the absolute URL.
+const VIDEO_EXT_SHORTCODE: &str =
+    "<video controls preload=\"metadata\" src=\"{{ url | safe }}\"></video>\n";
 const AUDIO_SHORTCODE: &str =
     "<audio controls src=\"{{ page.permalink | safe }}{{ src }}\"></audio>\n";
 

@@ -220,6 +220,12 @@ struct GenerateArgs {
     #[arg(long)]
     offline: bool,
 
+    /// Don't offload videos to GitHub Releases (default: for a github.com repo,
+    /// videos are staged for upload to a `media` release and played from there,
+    /// keeping them off the Pages 1 GB quota).
+    #[arg(long)]
+    no_video_releases: bool,
+
     /// Skip the YouTube liveness check (a removed video otherwise keeps its local
     /// media instead of being replaced by a dead embed).
     #[arg(long)]
@@ -447,6 +453,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             fc.pagespeed.unwrap_or(true)
         },
         offline: g.offline || fc.offline.unwrap_or(false),
+        video_releases: if g.no_video_releases {
+            false
+        } else {
+            fc.video_releases.unwrap_or(true)
+        },
         liveness: if g.no_liveness {
             false
         } else {
@@ -674,6 +685,13 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Localized UI strings for rendered post bodies (e.g. the "not archived"
     // attachment note). Template chrome is localized via config.extra.i18n.
     let ui = i18n::ui(&s.language);
+    // GitHub Releases base URL for offloaded videos — only for a github.com repo
+    // (the URL scheme is GitHub-specific); otherwise videos stay inline.
+    let video_release_base = (s.video_releases && s.repo_url.contains("github.com"))
+        .then(|| format!("{}/releases/download/media", s.repo_url.trim_end_matches('/')));
+    if let Some(base) = &video_release_base {
+        info!("videos offloaded to GitHub Releases: {base}/…");
+    }
     let render_opts = render::RenderOpts {
         ui: &ui,
         title_max: s.title_max_len,
@@ -683,6 +701,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         spotify: s.spotify,
         instagram: s.instagram,
         pinterest: s.pinterest,
+        video_releases: video_release_base.as_deref(),
     };
 
     // Render PAGE posts first so their nav entries are ready for scaffolding.
@@ -748,10 +767,18 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     site::write_pages(&s, &rendered_pages)?;
 
     if s.download_media {
+        // Videos flagged for GitHub Releases are staged outside the published
+        // tree (the CI step uploads them); everything else lands in its bundle.
+        let staging = s.site.join(".video-releases");
         let job_for = |dir: std::path::PathBuf| {
+            let staging = staging.clone();
             move |d: &render::Download| media::Job {
                 url: d.url.clone(),
-                dest: dir.join(&d.filename),
+                dest: if d.release {
+                    staging.join(&d.filename)
+                } else {
+                    dir.join(&d.filename)
+                },
                 force: d.force,
                 local: d.local.clone(),
             }

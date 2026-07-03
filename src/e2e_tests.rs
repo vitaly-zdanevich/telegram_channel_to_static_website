@@ -67,6 +67,7 @@ fn settings(site: PathBuf) -> Settings {
         pinterest_save: false,
         pagespeed: false,
         offline: false,
+        video_releases: false,
         liveness: false,
         tags_to_pages: None,
         pages: None,
@@ -216,6 +217,7 @@ fn zola_build_produces_expected_html() {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    video_releases: None,
                 },
             )
         })
@@ -311,6 +313,7 @@ fn elasticlunr_search_builds() {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    video_releases: None,
                 },
             )
         })
@@ -383,6 +386,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    video_releases: None,
                 },
             )
         })

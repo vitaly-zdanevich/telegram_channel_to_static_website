@@ -74,6 +74,8 @@ pub struct FileConfig {
     pub pagespeed: Option<bool>,
     /// Offline mode + installable PWA: precaching service worker + manifest (opt-in).
     pub offline: Option<bool>,
+    /// Offload videos to this repo's GitHub Releases (kept off the Pages quota).
+    pub video_releases: Option<bool>,
     /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
     /// its local media instead of a dead embed. Default on.
     pub liveness: Option<bool>,
@@ -181,6 +183,9 @@ pub struct Settings {
     pub pagespeed: bool,
     /// Offline mode + installable PWA (opt-in, default false).
     pub offline: bool,
+    /// Offload videos to this repo's GitHub Releases (default true; needs a
+    /// github.com repo_url + the CI upload step). Falls back to inline otherwise.
+    pub video_releases: bool,
     /// YouTube liveness check (default true).
     pub liveness: bool,
     /// Comma-separated tags to surface as links in the top nav.

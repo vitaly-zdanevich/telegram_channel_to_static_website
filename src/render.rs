@@ -23,6 +23,10 @@ pub struct Download {
     /// When set, the file already exists locally (fetched via MTProto) and is
     /// copied from here instead of fetched over HTTP (`url` is then empty).
     pub local: Option<std::path::PathBuf>,
+    /// Stage this file for upload to GitHub Releases (kept out of the published
+    /// bundle) instead of the page bundle — used for videos when `video_releases`
+    /// is on, so they don't count against the Pages quota.
+    pub release: bool,
 }
 
 pub struct RenderedPost {
@@ -252,6 +256,10 @@ pub struct RenderOpts<'a> {
     pub instagram: bool,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: bool,
+    /// When set, videos are offloaded to GitHub Releases: the base download URL
+    /// (`…/releases/download/<tag>`) that each video's filename is appended to,
+    /// and the file is staged for upload instead of bundled.
+    pub video_releases: Option<&'a str>,
 }
 
 pub fn render_post(
@@ -271,6 +279,7 @@ pub fn render_post(
         spotify,
         instagram,
         pinterest,
+        video_releases,
     } = *opts;
     // A PAGE-marked post becomes a standalone page; work on a copy with the
     // marker line removed and use a plain first-sentence title.
@@ -427,9 +436,24 @@ pub fn render_post(
                 if drop_videos {
                     continue;
                 }
-                let fname = format!("{idx:02}.{}", ext_from_url(url, "mp4"));
-                push_dl(&mut downloads, url, &fname, post.edited);
-                body.push_str(&format!("{{{{ video(src=\"{fname}\") }}}}\n\n"));
+                let ext = ext_from_url(url, "mp4");
+                if let Some(base) = video_releases {
+                    // Offload to GitHub Releases (kept off the Pages quota): stage
+                    // the file under a globally-unique name, link to the release URL.
+                    let fname = format!("{}-{idx:02}.{ext}", post.primary_id);
+                    downloads.push(Download {
+                        url: url.to_string(),
+                        filename: fname.clone(),
+                        force: post.edited,
+                        local: None,
+                        release: true,
+                    });
+                    body.push_str(&format!("{{{{ video_ext(url=\"{base}/{fname}\") }}}}\n\n"));
+                } else {
+                    let fname = format!("{idx:02}.{ext}");
+                    push_dl(&mut downloads, url, &fname, post.edited);
+                    body.push_str(&format!("{{{{ video(src=\"{fname}\") }}}}\n\n"));
+                }
             }
             Media::VideoPoster { poster, duration } => {
                 if drop_videos {
@@ -500,6 +524,7 @@ pub fn render_post(
                     filename: fname.clone(),
                     force: false,
                     local: Some(path.clone()),
+                    release: false,
                 });
                 if let Some(t) = title {
                     if !t.is_empty() {
@@ -527,6 +552,7 @@ pub fn render_post(
                     // Overwrite the smaller web photo cached from an earlier run.
                     force: true,
                     local: Some(path.clone()),
+                    release: false,
                 });
                 if og_image.is_none() {
                     og_image = Some(fname.clone());
@@ -547,14 +573,28 @@ pub fn render_post(
                     .and_then(|e| e.to_str())
                     .filter(|e| !e.is_empty())
                     .unwrap_or("mp4");
-                let fname = format!("{idx:02}.{ext}");
-                downloads.push(Download {
-                    url: String::new(),
-                    filename: fname.clone(),
-                    force: false,
-                    local: Some(path.clone()),
-                });
-                body.push_str(&format!("{{{{ video(src=\"{fname}\") }}}}\n\n"));
+                if let Some(base) = video_releases {
+                    // Offload to GitHub Releases, same as Media::Video.
+                    let fname = format!("{}-{idx:02}.{ext}", post.primary_id);
+                    downloads.push(Download {
+                        url: String::new(),
+                        filename: fname.clone(),
+                        force: false,
+                        local: Some(path.clone()),
+                        release: true,
+                    });
+                    body.push_str(&format!("{{{{ video_ext(url=\"{base}/{fname}\") }}}}\n\n"));
+                } else {
+                    let fname = format!("{idx:02}.{ext}");
+                    downloads.push(Download {
+                        url: String::new(),
+                        filename: fname.clone(),
+                        force: false,
+                        local: Some(path.clone()),
+                        release: false,
+                    });
+                    body.push_str(&format!("{{{{ video(src=\"{fname}\") }}}}\n\n"));
+                }
             }
             Media::LocalDocument { path, name } => {
                 // Any attachment fetched via MTProto (pdf, zip, …): copy the local
@@ -570,6 +610,7 @@ pub fn render_post(
                     filename: fname.clone(),
                     force: false,
                     local: Some(path.clone()),
+                    release: false,
                 });
                 body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(name)));
             }
@@ -656,6 +697,7 @@ fn push_dl(downloads: &mut Vec<Download>, url: &str, fname: &str, force: bool) {
         filename: fname.to_string(),
         force,
         local: None,
+        release: false,
     });
 }
 
@@ -1188,6 +1230,7 @@ mod tests {
                 spotify: false,
                 instagram: false,
                 pinterest: false,
+                video_releases: None,
             },
         );
         assert_eq!(r.title, "My Cool Page");
@@ -1247,6 +1290,7 @@ mod tests {
                     spotify: false,
                     instagram: true,
                     pinterest: false,
+                    video_releases: None,
                 },
             )
             .index_md
@@ -1290,6 +1334,7 @@ mod tests {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    video_releases: None,
                 },
             )
             .index_md
@@ -1336,12 +1381,51 @@ mod tests {
                 spotify: false,
                 instagram: false,
                 pinterest: false,
+                video_releases: None,
             },
         );
         // A 📎 download link plus one local-copy job for the bundled file.
         assert!(out.index_md.contains("📎 archive.zip"), "no download link: {}", out.index_md);
         assert_eq!(out.downloads.len(), 1, "expected one download job");
         assert_eq!(out.downloads[0].local.as_deref(), Some(Path::new("/cache/12.zip")));
+    }
+
+    #[test]
+    fn video_offloaded_to_releases_when_enabled() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let ui = crate::i18n::ui("en");
+        let mut p = post_with_body("clip");
+        p.media = vec![Media::Video { url: "https://cdn/x.mp4".into() }];
+        let base = "https://github.com/o/r/releases/download/media";
+        let common = RenderOpts {
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            instagram: false,
+            pinterest: false,
+            video_releases: None,
+        };
+        // Off → inline <video>, bundled locally.
+        let off = render_post(&p, &rw, false, None, None, &common);
+        assert!(off.index_md.contains("{{ video(src="), "{}", off.index_md);
+        assert!(off.downloads.iter().all(|d| !d.release), "nothing should be staged");
+        // On → external video_ext with the release URL, staged for upload under a
+        // globally-unique (post-id-prefixed) name.
+        let on = render_post(
+            &p,
+            &rw,
+            false,
+            None,
+            None,
+            &RenderOpts { video_releases: Some(base), ..common },
+        );
+        assert!(on.index_md.contains(&format!("{{{{ video_ext(url=\"{base}/")), "{}", on.index_md);
+        assert_eq!(on.downloads.len(), 1);
+        assert!(on.downloads[0].release, "video should be staged for release");
+        assert!(on.downloads[0].filename.starts_with(&format!("{}-", p.primary_id)), "{}", on.downloads[0].filename);
     }
 
     #[test]
@@ -1369,6 +1453,7 @@ mod tests {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    video_releases: None,
                 },
             )
             .index_md
@@ -1395,6 +1480,7 @@ mod tests {
         let ui = crate::i18n::ui("en");
         let opts = |spotify, pinterest| RenderOpts {
             instagram: false,
+            video_releases: None,
             ui: &ui,
             title_max: 200,
             derive_titles: false,

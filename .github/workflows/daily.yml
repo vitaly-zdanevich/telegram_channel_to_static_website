@@ -123,6 +123,10 @@ env:
   # never mobile data) and the site becomes installable (hides the address bar).
   # Off by default; needs JavaScript.
   OFFLINE: ${{ vars.OFFLINE }}
+  # Videos are offloaded to this repo's GitHub Releases (kept off the Pages 1 GB
+  # quota) by default; set this repository *variable* to "false" to keep them
+  # inline in the site instead.
+  VIDEO_RELEASES: ${{ vars.VIDEO_RELEASES }}
   # Optional MTProto backend — fetches audio / original photos / big videos the
   # web preview omits. Compiled + run only when TG_SESSION is set (all three are
   # needed). TG_SESSION is FULL account access — keep it a *secret*. Mint it
@@ -254,6 +258,7 @@ jobs:
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
             [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
             [ "${OFFLINE:-}" = "true" ] && args+=(--offline)
+            [ "${VIDEO_RELEASES:-}" = "false" ] && args+=(--no-video-releases)
             [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")
@@ -269,6 +274,22 @@ jobs:
           fi
           gen ""
           zola --root site build --base-url "$BASE"
+
+      # Offload videos to this repo's Releases (they play from there, so they
+      # don't count against the Pages 1 GB quota). tg2zola staged them under
+      # site/.video-releases and pointed each <video> at the release URL.
+      - name: Upload videos to GitHub Releases
+        if: env.VIDEO_RELEASES != 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -d site/.video-releases ] && [ -n "$(ls -A site/.video-releases 2>/dev/null)" ]; then
+            gh release view media >/dev/null 2>&1 \
+              || gh release create media --title "Media" \
+                   --notes "Video assets for the archive, kept off the Pages quota."
+            gh release upload media site/.video-releases/* --clobber
+          fi
 
       # After the build, list every published file for the service worker to
       # precache (offline mode only).
@@ -303,7 +324,7 @@ jobs:
           fi
           # Mirror content + media + templates; the external theme is re-cloned
           # each run and the built output is regenerated, so both are excluded.
-          rsync -a --delete --exclude '/public' --exclude '/themes' site/ "$work/site/"
+          rsync -a --delete --exclude '/public' --exclude '/themes' --exclude '/.video-releases' site/ "$work/site/"
           cd "$work"
           git add -A -f site
           if git diff --cached --quiet; then
