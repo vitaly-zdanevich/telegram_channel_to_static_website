@@ -268,6 +268,8 @@ These are *variables*, not secrets — all of it is public.
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
 | `CAROUSEL` | `--carousel` | off | `true` shows a multi-image post as a swipeable **carousel** (one image at a time, with arrows + dots) instead of a vertical stack. The swipe is native CSS `scroll-snap`; arrows/dots need JavaScript. Default is the stack (no JS) |
+| `EMBED` | `--embed` | off | `true` ships a tiny script so the site **auto-resizes when embedded in a cross-origin `<iframe>`**. The page is already iframe-embeddable without it (GitHub Pages sets no `X-Frame-Options`); this only adds height reporting so the host iframe grows to fit — see [Embedding the blog](#embedding-the-blog) |
+| `HIDE_NAV` | `--hide-nav` | off | `true` hides the header navigation links (tags / calendar / about / custom), leaving only the search box |
 | `KEEP_MEDIA` | `--keep-media` | CI: off · local: on | `true` to keep (download + show) attached **video/audio** even when the post links YouTube / Apple Podcasts / Instagram. The default is environment-aware: on CI (GitHub Actions / GitLab) the embed replaces the attached media to save hosting space; on a local machine everything is downloaded for a complete backup |
 | `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (for their YouTube video + lyrics-widget id) |
 | `GENIUS_TOKEN` (secret) | — | — | Genius API [Client Access Token](https://genius.com/api-clients). When set, genius links resolve via the **API** (works in CI) instead of scraping — the genius web pages are Cloudflare-blocked on datacenter IPs. Store it as an Actions **secret**, not a variable |
@@ -338,6 +340,38 @@ ActivityPub). Two ways to let people subscribe anyway:
 
 So: rich previews + author attribution + profile verification work out of the
 box; true "follow from Mastodon" is one bridge away, using the RSS feed as input.
+
+## Embedding the blog
+
+The generated site is **already embeddable in an `<iframe>`** on any other page —
+GitHub Pages sends no `X-Frame-Options` / `frame-ancestors` header, so a plain
+iframe just works:
+
+```html
+<iframe src="https://you.github.io/" style="width:100%;height:80vh;border:0"
+        title="My blog"></iframe>
+```
+
+The one catch is height: a cross-origin iframe can't size itself to its content,
+so you get a fixed box with its own scrollbar. Enable `EMBED` (`--embed`) to ship
+a small script that posts the page height to the host, and add this listener on
+the **host** page so the iframe grows to fit and never shows an inner scrollbar:
+
+```html
+<iframe id="blog" src="https://you.github.io/" style="width:100%;border:0"
+        title="My blog"></iframe>
+<script>
+	addEventListener('message', (e) => {
+		if (e.origin === 'https://you.github.io' && e.data?.type === 'tg2zola:height') {
+			document.getElementById('blog').style.height = `${e.data.height}px`;
+		}
+	});
+</script>
+```
+
+With `EMBED` on, the framed page also tags `<html>` with an `embedded` class, so
+a fork can hide the header/footer in embed context with a CSS rule of its own.
+Pair it with `HIDE_NAV` to drop the nav links and keep just search.
 
 ## Optional MTProto backend
 

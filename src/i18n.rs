@@ -30,6 +30,7 @@ pub struct Ui {
     pub calendar: &'static str,
     pub newer_day: &'static str,
     pub older_day: &'static str,
+    pub not_found: &'static str,
 }
 
 /// Normalize a user-supplied language tag to one of [`SUPPORTED`], falling back
@@ -101,6 +102,7 @@ const EN: Ui = Ui {
     calendar: "Calendar",
     newer_day: "Newer day",
     older_day: "Older day",
+    not_found: "Page not found",
 };
 
 const RU: Ui = Ui {
@@ -121,6 +123,7 @@ const RU: Ui = Ui {
     calendar: "Календарь",
     newer_day: "Новее день",
     older_day: "Старее день",
+    not_found: "Страница не найдена",
 };
 
 const UK: Ui = Ui {
@@ -141,6 +144,7 @@ const UK: Ui = Ui {
     calendar: "Календар",
     newer_day: "Новіший день",
     older_day: "Старіший день",
+    not_found: "Сторінку не знайдено",
 };
 
 const BE: Ui = Ui {
@@ -161,6 +165,7 @@ const BE: Ui = Ui {
     calendar: "Каляндар",
     newer_day: "Навейшы дзень",
     older_day: "Старэйшы дзень",
+    not_found: "Старонка не знойдзена",
 };
 
 const DE: Ui = Ui {
@@ -181,6 +186,7 @@ const DE: Ui = Ui {
     calendar: "Kalender",
     newer_day: "Neuerer Tag",
     older_day: "Älterer Tag",
+    not_found: "Seite nicht gefunden",
 };
 
 const FR: Ui = Ui {
@@ -201,6 +207,7 @@ const FR: Ui = Ui {
     calendar: "Calendrier",
     newer_day: "Jour plus récent",
     older_day: "Jour plus ancien",
+    not_found: "Page introuvable",
 };
 
 const ZH: Ui = Ui {
@@ -221,6 +228,7 @@ const ZH: Ui = Ui {
     calendar: "日历",
     newer_day: "较新一天",
     older_day: "较旧一天",
+    not_found: "页面未找到",
 };
 
 const JA: Ui = Ui {
@@ -241,6 +249,7 @@ const JA: Ui = Ui {
     calendar: "カレンダー",
     newer_day: "新しい日",
     older_day: "古い日",
+    not_found: "ページが見つかりません",
 };
 
 const PL: Ui = Ui {
@@ -261,6 +270,7 @@ const PL: Ui = Ui {
     calendar: "Kalendarz",
     newer_day: "Nowszy dzień",
     older_day: "Starszy dzień",
+    not_found: "Nie znaleziono strony",
 };
 
 const ES: Ui = Ui {
@@ -281,6 +291,7 @@ const ES: Ui = Ui {
     calendar: "Calendario",
     newer_day: "Día más reciente",
     older_day: "Día más antiguo",
+    not_found: "Página no encontrada",
 };
 
 const KO: Ui = Ui {
@@ -301,6 +312,7 @@ const KO: Ui = Ui {
     calendar: "달력",
     newer_day: "다음 날",
     older_day: "이전 날",
+    not_found: "페이지를 찾을 수 없습니다",
 };
 
 const KA: Ui = Ui {
@@ -321,6 +333,7 @@ const KA: Ui = Ui {
     calendar: "კალენდარი",
     newer_day: "უფრო ახალი დღე",
     older_day: "უფრო ძველი დღე",
+    not_found: "გვერდი ვერ მოიძებნა",
 };
 
 const HI: Ui = Ui {
@@ -341,6 +354,7 @@ const HI: Ui = Ui {
     calendar: "कैलेंडर",
     newer_day: "नया दिन",
     older_day: "पुराना दिन",
+    not_found: "पृष्ठ नहीं मिला",
 };
 
 /// Translatable prose for the About page. Sentence templates use `{placeholder}`

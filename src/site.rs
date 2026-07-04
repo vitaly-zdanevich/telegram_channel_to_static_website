@@ -149,6 +149,7 @@ pub fn scaffold(
         ("templates/tag_full.html", TAG_FULL_HTML),
         ("templates/day_full.html", DAY_FULL_HTML),
         ("templates/calendar.html", CALENDAR_HTML),
+        ("templates/404.html", NOT_FOUND_HTML),
     ];
     if s.theme.is_none() {
         fs::create_dir_all(site.join("templates/tags"))?;
@@ -170,6 +171,12 @@ pub fn scaffold(
             write_file(&site.join("static/carousel.js"), CAROUSEL_JS)?;
         } else {
             let _ = fs::remove_file(site.join("static/carousel.js"));
+        }
+        // Iframe auto-resize helper (opt-in): reports height to the host page.
+        if s.embed {
+            write_file(&site.join("static/embed.js"), EMBED_JS)?;
+        } else {
+            let _ = fs::remove_file(site.join("static/embed.js"));
         }
         // Service worker: for the installable PWA and/or offline precaching. The
         // precache list (asset-manifest.json) is written post-build by `tg2zola pwa`.
@@ -198,6 +205,7 @@ pub fn scaffold(
         let _ = fs::remove_file(site.join("static/sw.js"));
         let _ = fs::remove_file(site.join("static/manifest.webmanifest"));
         let _ = fs::remove_file(site.join("static/carousel.js"));
+        let _ = fs::remove_file(site.join("static/embed.js"));
     }
     Ok(())
 }
@@ -411,6 +419,7 @@ fn config_toml(
         ("calendar", u.calendar),
         ("newer_day", u.newer_day),
         ("older_day", u.older_day),
+        ("not_found", u.not_found),
     ]
     .iter()
     .map(|&(k, v)| format!("{k} = \"{}\"", toml_escape(v)))
@@ -437,6 +446,8 @@ fn config_toml(
         )
         .replace("__YT_FACADE__", if s.youtube_facade { "true" } else { "false" })
         .replace("__CAROUSEL__", if s.carousel { "true" } else { "false" })
+        .replace("__EMBED__", if s.embed { "true" } else { "false" })
+        .replace("__HIDE_NAV__", if s.hide_nav { "true" } else { "false" })
         .replace(
             "__PINTEREST_SAVE__",
             if s.pinterest_save { "true" } else { "false" },
@@ -1313,6 +1324,8 @@ telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
 youtube_facade = __YT_FACADE__
 carousel = __CAROUSEL__
+embed = __EMBED__
+hide_nav = __HIDE_NAV__
 pinterest_save = __PINTEREST_SAVE__
 pwa = __PWA__
 offline = __OFFLINE__
@@ -1368,16 +1381,19 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.yandex_metrica %}<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');ym({{ config.extra.yandex_metrica }},'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/{{ config.extra.yandex_metrica }}" style="position:absolute;left:-9999px" alt=""></div></noscript>{% endif %}
 </head>
 <body>
+  {# current_path is undefined on the 404 page; default it so the nav's path
+     tests below don't fail there. #}
+  {% set current_path = current_path | default(value="") %}
   <header class="site-header">
     {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}" alt=""></a>{% endif %}
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
-    <nav>
+    {% if not config.extra.hide_nav %}<nav>
       {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
       {% if current_path is matching("/tags/$") %}<span class="here">{{ config.extra.i18n.tags }}</span>{% else %}<a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>{% endif %}
       {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
-    </nav>
+    </nav>{% endif %}
     {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% elif config.extra.search_elasticlunr %}<span class="site-search els"><input type="search" id="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off"><ul id="search-results" class="search-results" hidden></ul></span>{% endif %}
   </header>
   <main>{% block content %}{% endblock content %}</main>
@@ -1385,6 +1401,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
   {% if config.extra.search_elasticlunr %}<script src="{{ get_url(path='elasticlunr.min.js') | safe }}"></script><script src="{{ get_url(path='search_index.' ~ config.default_language ~ '.js') | safe }}"></script><script src="{{ get_url(path='search.js') | safe }}"></script>{% endif %}
   {% if config.extra.carousel %}<script src="{{ get_url(path='carousel.js') | safe }}"></script>{% endif %}
+  {% if config.extra.embed %}<script src="{{ get_url(path='embed.js') | safe }}" defer></script>{% endif %}
   {% if config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>{% endif %}
   {% if config.extra.pwa or config.extra.offline %}<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('{{ get_url(path='sw.js') | safe }}');});}</script>{% endif %}
 </body>
@@ -1548,6 +1565,20 @@ const CALENDAR_HTML: &str = r#"{% extends "base.html" %}
 {% endblock content %}
 "#;
 
+// Custom 404. Extends base.html, so it inherits style.css (and its
+// prefers-color-scheme dark/light rules) — the page follows the OS theme like
+// the rest of the site instead of falling back to the host's default 404.
+const NOT_FOUND_HTML: &str = r#"{% extends "base.html" %}
+{% block title %}404 · {{ config.title }}{% endblock title %}
+{% block content %}
+  <article class="not-found">
+    <h1>404</h1>
+    <p>{{ config.extra.i18n.not_found }}</p>
+    <p><a href="{{ config.base_url | safe }}">{{ config.title }}</a></p>
+  </article>
+{% endblock content %}
+"#;
+
 // YouTube shortcode (Zola no longer ships one). Uses the regular youtube.com
 // host so a played video counts toward the viewer's history. Default is a
 // direct iframe; with config.extra.youtube_facade it's a CSS-only click-to-load
@@ -1624,6 +1655,9 @@ const SEARCH_JS: &str = include_str!("search.js");
 /// Carousel enhancement (prev/next arrows + dots) for `--carousel`. The swipe is
 /// CSS scroll-snap, so touch works without this; kept in a real .js file.
 const CAROUSEL_JS: &str = include_str!("carousel.js");
+
+/// Iframe auto-resize helper for `--embed`: posts page height to the host page.
+const EMBED_JS: &str = include_str!("embed.js");
 
 // Channel avatar at its original size on the About page (base_url-aware).
 const AVATAR_SHORTCODE: &str =

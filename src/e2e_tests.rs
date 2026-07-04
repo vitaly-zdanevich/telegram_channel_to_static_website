@@ -62,6 +62,8 @@ fn settings(site: PathBuf) -> Settings {
         link_underline: false,
         youtube_facade: false,
         carousel: false,
+        embed: false,
+        hide_nav: false,
         keep_media: false,
         genius: false,
         spotify: false,
@@ -255,6 +257,13 @@ fn zola_build_produces_expected_html() {
     assert!(public.join("about/index.html").exists(), "about page missing");
     assert!(public.join("rss.xml").exists(), "rss feed missing");
     assert!(public.join("tags/greeting/index.html").exists(), "tag page missing");
+
+    // Custom 404 exists and links the themed stylesheet (which carries the
+    // prefers-color-scheme dark/light rules), so it follows the OS theme.
+    assert!(public.join("404.html").exists(), "404 page missing");
+    let notfound = read("404.html");
+    assert!(notfound.contains("style.css"), "404 doesn't link the theme stylesheet");
+    assert!(notfound.contains("404"), "404 page missing its heading");
 
     // Post 1: the photo became an <img>, no video machinery.
     let p1 = read("posts/1/index.html");

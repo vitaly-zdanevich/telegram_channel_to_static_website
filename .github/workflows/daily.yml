@@ -102,6 +102,12 @@ env:
   # Set to "true" to show multi-image posts as a swipeable carousel (opt-in; the
   # swipe is CSS, arrows/dots need JavaScript).
   CAROUSEL: ${{ vars.CAROUSEL }}
+  # Set to "true" to ship a small script that reports page height to a host page
+  # so the site auto-resizes when embedded in a cross-origin iframe (opt-in).
+  EMBED: ${{ vars.EMBED }}
+  # Set to "true" to hide the header nav links (tags/calendar/about/custom),
+  # leaving only the search box (opt-in).
+  HIDE_NAV: ${{ vars.HIDE_NAV }}
   # Set to "true" to keep (download + show) attached media — video and audio —
   # even when the post links YouTube / Apple Podcasts (default: the embed
   # replaces the attached media, to save hosting space).
@@ -275,6 +281,8 @@ jobs:
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ "${CAROUSEL:-}" = "true" ] && args+=(--carousel)
+            [ "${EMBED:-}" = "true" ] && args+=(--embed)
+            [ "${HIDE_NAV:-}" = "true" ] && args+=(--hide-nav)
             [ "${KEEP_MEDIA:-}" = "true" ] && args+=(--keep-media)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)
             [ "${SPOTIFY:-}" = "true" ] && args+=(--spotify)

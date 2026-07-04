@@ -186,6 +186,16 @@ struct GenerateArgs {
     #[arg(long)]
     carousel: bool,
 
+    /// Ship a small script that posts the page height to a host page so the site
+    /// auto-resizes when embedded in a cross-origin iframe (opt-in).
+    #[arg(long)]
+    embed: bool,
+
+    /// Hide the header navigation links (tags/calendar/about/custom), leaving
+    /// only the search box (opt-in).
+    #[arg(long)]
+    hide_nav: bool,
+
     /// Keep (download + show) attached media — video and audio — even when the
     /// post also links YouTube / Apple Podcasts (default: the embed replaces it).
     #[arg(long)]
@@ -470,6 +480,8 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
         carousel: g.carousel || fc.carousel.unwrap_or(false),
+        embed: g.embed || fc.embed.unwrap_or(false),
+        hide_nav: g.hide_nav || fc.hide_nav.unwrap_or(false),
         // Default flips by environment: on CI (GitHub Actions / GitLab) prefer
         // embeds over downloads to fit the static-host budget; on a local machine
         // download everything for a complete backup. An explicit --keep-media or

@@ -63,6 +63,12 @@ pub struct FileConfig {
     pub youtube_facade: Option<bool>,
     /// Show multi-image posts as a swipeable carousel instead of a stack (opt-in).
     pub carousel: Option<bool>,
+    /// Ship a tiny script that reports page height to a host page so the site
+    /// auto-resizes when embedded in a cross-origin iframe (opt-in).
+    pub embed: Option<bool>,
+    /// Hide the header navigation links (tags/calendar/about/custom), leaving
+    /// only the search box (opt-in).
+    pub hide_nav: Option<bool>,
     /// Download + show an attached video even when the post also links YouTube
     /// (default off → the YouTube embed replaces the attached video).
     pub keep_media: Option<bool>,
@@ -189,6 +195,10 @@ pub struct Settings {
     pub youtube_facade: bool,
     /// Show multi-image posts as a swipeable carousel (opt-in, default false).
     pub carousel: bool,
+    /// Report page height to a host page for iframe auto-resize (opt-in, default false).
+    pub embed: bool,
+    /// Hide the header nav links, leaving only search (opt-in, default false).
+    pub hide_nav: bool,
     /// Keep an attached video even alongside a YouTube link (default false).
     pub keep_media: bool,
     /// Resolve genius.com links (default true).
