@@ -637,6 +637,7 @@ pub struct LargestFiles<'a> {
 /// Fill the About page's size placeholders: `__TOTAL_SIZE__` (total),
 /// `__PERCENT__` (share of the host limit, if known) and `__SIZE_BREAKDOWN__`
 /// (per-kind sizes). Computed after media download, so it's the real footprint.
+#[allow(clippy::too_many_arguments)]
 pub fn set_about_size(
     site: &Path,
     b: &SizeBreakdown,
@@ -645,6 +646,9 @@ pub fn set_about_size(
     about: &crate::i18n::About,
     largest: &LargestFiles,
     mtproto_used: bool,
+    now: &str,
+    ci_url: Option<&str>,
+    releases: u64,
 ) {
     let about_path = site.join("content/pages/about.md");
     let Ok(s) = fs::read_to_string(&about_path) else {
@@ -692,12 +696,26 @@ pub fn set_about_size(
     // the backend (https://github.com/Lonami/grammers).
     let mtproto_line = if mtproto_used { about.mtproto_on } else { about.mtproto_off }
         .replacen("MTProto", "[MTProto](https://github.com/Lonami/grammers)", 1);
+    // "Last updated <time>" with an optional link to the CI job that built it.
+    let mut last_build = format!("{} **{now}**", about.last_updated);
+    if let Some(url) = ci_url {
+        last_build.push_str(&format!(" · [{}]({url})", about.build_log));
+    }
+    // Video offloaded to GitHub Releases doesn't count against the Pages quota,
+    // so it's reported on its own line (omitted when there's none).
+    let releases_line = if releases > 0 {
+        about.releases_size.replace("__RELEASES_SIZE__", &human_size(releases))
+    } else {
+        String::new()
+    };
     let out = s
         .replace("__TOTAL_SIZE__", &human_size(total))
         .replace("__PERCENT__", &percent)
+        .replace("__RELEASES__", &releases_line)
         .replace("__SIZE_BREAKDOWN__", &breakdown)
         .replace("__LARGEST_FILES__", &largest_block)
         .replace("__BUILD_TIME__", &human_duration(elapsed))
+        .replace("__LAST_BUILD__", &last_build)
         .replace("__MTPROTO__", &mtproto_line);
     let _ = fs::write(&about_path, out);
 }
@@ -705,13 +723,24 @@ pub fn set_about_size(
 /// Fill the About page's `__ABOUT_ME__` placeholder with the scraped about.me
 /// bio, social links and a contact button (about.me blocks iframing, so the
 /// button links to the profile), or clear it.
-pub fn set_about_me(site: &Path, am: Option<&crate::aboutme::AboutMe>, photo: Option<&str>) {
+pub fn set_about_me(
+    site: &Path,
+    am: Option<&crate::aboutme::AboutMe>,
+    photo: Option<&str>,
+    include_bio: bool,
+    both_images: bool,
+) {
     let about_path = site.join("content/pages/about.md");
-    let Ok(s) = fs::read_to_string(&about_path) else {
+    let Ok(mut s) = fs::read_to_string(&about_path) else {
         return;
     };
     if !s.contains("__ABOUT_ME__") {
         return;
+    }
+    // When an about.me photo is shown, drop the channel avatar by default so the
+    // page doesn't lead with two portraits (unless the user asked for both).
+    if photo.is_some() && !both_images {
+        s = s.replace("{{ avatar() }}\n\n", "");
     }
     let block = match am {
         Some(am) if !am.is_empty() => {
@@ -719,13 +748,14 @@ pub fn set_about_me(site: &Path, am: Option<&crate::aboutme::AboutMe>, photo: Op
             if let Some(photo) = photo {
                 b.push_str(&format!("{{{{ aboutme_photo(src=\"{photo}\") }}}}\n\n"));
             }
-            if !am.bio.is_empty() {
+            if include_bio && !am.bio.is_empty() {
                 b.push_str(am.bio.trim());
                 b.push_str("\n\n");
             }
-            if !am.links.is_empty() {
-                let row = am
-                    .links
+            // Skip any Telegram link — the channel is already linked at the top.
+            let links: Vec<_> = am.links.iter().filter(|(_, url)| !is_telegram_url(url)).collect();
+            if !links.is_empty() {
+                let row = links
                     .iter()
                     .map(|(label, url)| format!("[{}]({url})", link_label(label)))
                     .collect::<Vec<_>>()
@@ -745,6 +775,20 @@ pub fn set_about_me(site: &Path, am: Option<&crate::aboutme::AboutMe>, photo: Op
     };
     let out = s.replace("__ABOUT_ME__", &block);
     let _ = fs::write(&about_path, out);
+}
+
+/// True for a Telegram URL (t.me / telegram.me / telegram.org). Used to drop a
+/// redundant Telegram social link from about.me — the channel is already at top.
+fn is_telegram_url(url: &str) -> bool {
+    let host = url
+        .split_once("://")
+        .map_or(url, |(_, rest)| rest)
+        .split(['/', '?', '#'])
+        .next()
+        .unwrap_or("")
+        .trim_start_matches("www.")
+        .to_ascii_lowercase();
+    matches!(host.as_str(), "t.me" | "telegram.me" | "telegram.org" | "telegram.dog")
 }
 
 /// A social-link label safe to drop into a Markdown `[label](url)` (drops the
@@ -1108,9 +1152,11 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                 None => format!("{}\n\n", about.size_plain),
             };
             b.push_str(&size_line);
+            b.push_str("__RELEASES__\n\n");
             b.push_str(&format!("{}\n\n__SIZE_BREAKDOWN__\n\n", about.by_kind));
             b.push_str("__LARGEST_FILES__\n\n");
             b.push_str(&format!("{}\n\n", about.generated_in));
+            b.push_str("__LAST_BUILD__\n\n");
             b.push_str("__PAGESPEED__\n\n");
             b.push_str("__MTPROTO__\n\n");
             b.push_str(&format!(
@@ -1697,7 +1743,10 @@ audio { width: 100%; }
 .yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
 .yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .yt-link { display: block; font-size: .9em; margin-top: .25rem; }
-.contact-btn { display: inline-block; padding: .4rem .85rem; border-radius: 6px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: .9em; }
+.contact-btn { display: inline-block; padding: .45rem .9rem; border-radius: 6px; background: var(--code-bg); color: var(--fg); border: 1px solid var(--border); text-decoration: none; font-size: .9em; transition: background .15s ease, border-color .15s ease, transform .1s ease; }
+.contact-btn:hover { background: var(--input-bg); border-color: var(--muted); transform: translateY(-1px); }
+.contact-btn:active { background: var(--border); transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .contact-btn { transition: none; } .contact-btn:hover { transform: none; } }
 .about-photo { max-width: 320px; width: 100%; height: auto; border-radius: 10px; display: block; margin: .5rem 0; }
 /* Image carousel (opt-in) — swipe is native CSS scroll-snap; JS adds arrows/dots. */
 .carousel { position: relative; margin: 1rem 0; }
@@ -1810,6 +1859,15 @@ mod tests {
     use super::*;
     use std::collections::HashMap;
     use std::path::PathBuf;
+
+    #[test]
+    fn telegram_urls_are_recognized() {
+        assert!(is_telegram_url("https://t.me/some_channel"));
+        assert!(is_telegram_url("http://www.telegram.me/x"));
+        assert!(is_telegram_url("https://telegram.org"));
+        assert!(!is_telegram_url("https://github.com/t.me"));
+        assert!(!is_telegram_url("https://example.com/telegram"));
+    }
 
     #[test]
     fn md_title_collapses_escapes_and_caps() {

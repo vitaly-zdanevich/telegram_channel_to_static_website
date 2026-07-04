@@ -97,6 +97,11 @@ pub struct FileConfig {
     pub reactions: Option<bool>,
     /// Enrich the About page from an about.me link in the channel description. Default on.
     pub about_me: Option<bool>,
+    /// Copy the about.me bio text onto the About page (opt-in; default off).
+    pub aboutme_bio: Option<bool>,
+    /// Keep the Telegram channel avatar even when an about.me photo is shown
+    /// (opt-in; default drops the avatar to avoid two portraits).
+    pub aboutme_both_images: Option<bool>,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
@@ -228,6 +233,10 @@ pub struct Settings {
     pub reactions: bool,
     /// Enrich the About page from an about.me link in the description (default true).
     pub about_me: bool,
+    /// Copy the about.me bio text onto the About page (opt-in, default false).
+    pub aboutme_bio: bool,
+    /// Keep the channel avatar alongside the about.me photo (opt-in, default false).
+    pub aboutme_both_images: bool,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     pub pages: Option<String>,

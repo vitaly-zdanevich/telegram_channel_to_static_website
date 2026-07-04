@@ -64,6 +64,8 @@ fn settings(site: PathBuf) -> Settings {
         carousel: false,
         embed: false,
         hide_nav: false,
+        aboutme_bio: false,
+        aboutme_both_images: false,
         keep_media: false,
         genius: false,
         spotify: false,
@@ -428,6 +430,9 @@ fn about_page_renders_tooltip_and_mtproto_link() {
         &crate::i18n::about(&s.language),
         &site::LargestFiles { files: &biggest, previews: &previews },
         true,
+        "2026-07-04 12:00 UTC",
+        Some("https://github.com/x/y/actions/runs/42"),
+        7_654_321,
     );
     site::set_about_pagespeed(
         &s.site,
@@ -439,7 +444,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
         }),
         &crate::i18n::about(&s.language),
     );
-    site::set_about_me(&s.site, None, None);
+    site::set_about_me(&s.site, None, None, false, false);
 
     let out = Command::new("zola")
         .arg("--root")

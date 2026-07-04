@@ -172,6 +172,12 @@ env:
   # links + a contact button are added to the About page (on by default); set
   # this repository *variable* to "false" to disable.
   ABOUT_ME: ${{ vars.ABOUT_ME }}
+  # Set to "true" to also copy the about.me bio text onto the About page (default:
+  # only its photo, social links and contact button are used).
+  ABOUTME_BIO: ${{ vars.ABOUTME_BIO }}
+  # Set to "true" to keep the Telegram channel avatar alongside the about.me
+  # photo (default: the avatar is dropped when an about.me photo is shown).
+  ABOUTME_BOTH_IMAGES: ${{ vars.ABOUTME_BOTH_IMAGES }}
   # Comma-separated tags to surface as #tag links in the top nav, e.g.
   # "music, batumi, cooking".
   TAGS_TO_PAGES: ${{ vars.TAGS_TO_PAGES }}
@@ -296,6 +302,8 @@ jobs:
             [ "${LIVENESS:-}" = "false" ] && args+=(--no-liveness)
             [ "${REACTIONS:-}" = "false" ] && args+=(--no-reactions)
             [ "${ABOUT_ME:-}" = "false" ] && args+=(--no-about-me)
+            [ "${ABOUTME_BIO:-}" = "true" ] && args+=(--aboutme-bio)
+            [ "${ABOUTME_BOTH_IMAGES:-}" = "true" ] && args+=(--aboutme-both-images)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"

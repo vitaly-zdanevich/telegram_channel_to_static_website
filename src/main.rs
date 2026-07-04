@@ -258,9 +258,19 @@ struct GenerateArgs {
     no_reactions: bool,
 
     /// Don't enrich the About page from an about.me link in the channel
-    /// description (default: pull its bio + social links + a contact button).
+    /// description (default: pull its social links + a contact button).
     #[arg(long)]
     no_about_me: bool,
+
+    /// Also copy the about.me bio text onto the About page (default: skip it;
+    /// only the social links, photo and contact button are used).
+    #[arg(long)]
+    aboutme_bio: bool,
+
+    /// Show both the Telegram channel avatar and the about.me photo (default:
+    /// when an about.me photo is present, the channel avatar is dropped).
+    #[arg(long)]
+    aboutme_both_images: bool,
 
     /// Generate a podcast feed (audio posts) at /podcast.xml (opt-in). Cover from
     /// the about.me photo, else a post tagged `podcast_description`; that post's
@@ -527,6 +537,8 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.about_me.unwrap_or(true)
         },
+        aboutme_bio: g.aboutme_bio || fc.aboutme_bio.unwrap_or(false),
+        aboutme_both_images: g.aboutme_both_images || fc.aboutme_both_images.unwrap_or(false),
         podcast: g.podcast || fc.podcast.unwrap_or(false),
         podcast_tagged: g.podcast_tagged || fc.podcast_tagged.unwrap_or(false),
         tags_to_pages: g
@@ -887,6 +899,12 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         .iter()
         .map(|p| (render::slug_for(p), render::post_preview(p)))
         .collect();
+    // Video offloaded to GitHub Releases lives outside the published tree and
+    // doesn't count against the Pages quota — measured separately so the About
+    // page can report it on its own line.
+    let releases = site::size_breakdown(&[&s.site.join(".video-releases")]).total();
+    let now = chrono::Utc::now().format("%Y-%m-%d %H:%M UTC").to_string();
+    let ci_url = ci_job_url();
     site::set_about_size(
         &s.site,
         &breakdown,
@@ -895,6 +913,9 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         &i18n::about(&s.language),
         &site::LargestFiles { files: &biggest, previews: &preview_by_slug },
         mtproto_used,
+        &now,
+        ci_url.as_deref(),
+        releases,
     );
 
     // Optional Google Lighthouse scores for the deployed site → About page +
@@ -950,7 +971,13 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         }
         _ => None,
     };
-    site::set_about_me(&s.site, about_me.as_ref(), about_me_photo.as_deref());
+    site::set_about_me(
+        &s.site,
+        about_me.as_ref(),
+        about_me_photo.as_deref(),
+        s.aboutme_bio,
+        s.aboutme_both_images,
+    );
 
     // Podcast feed (opt-in): the channel's audio posts as an iTunes RSS feed.
     // Needs absolute URLs, so it's skipped for a relative base_url.
@@ -1031,6 +1058,21 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     info!("done — Zola site at {}", s.site.display());
     info!("build it with:  zola --root {} build", s.site.display());
     Ok(())
+}
+
+/// URL of the CI job that produced this build, if running in a recognized CI, so
+/// the About page's "last updated" line can link to the build log. GitLab
+/// exposes the job URL directly; GitHub Actions assembles it from the run id.
+fn ci_job_url() -> Option<String> {
+    if let Ok(url) = std::env::var("CI_JOB_URL") {
+        if !url.is_empty() {
+            return Some(url);
+        }
+    }
+    let server = std::env::var("GITHUB_SERVER_URL").ok().filter(|v| !v.is_empty())?;
+    let repo = std::env::var("GITHUB_REPOSITORY").ok().filter(|v| !v.is_empty())?;
+    let run = std::env::var("GITHUB_RUN_ID").ok().filter(|v| !v.is_empty())?;
+    Some(format!("{server}/{repo}/actions/runs/{run}"))
 }
 
 /// Count how many posts use each tag, sorted by count (descending), then name.
