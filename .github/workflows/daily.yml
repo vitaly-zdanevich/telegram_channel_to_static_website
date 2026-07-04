@@ -20,132 +20,172 @@ concurrency:
 
 env:
   ZOLA_VERSION: v0.22.1
+
   # Silence the noisy "punycode module is deprecated" (DEP0040) warning that
   # Node-based actions' transitive deps emit — it's not from our code and not
   # actionable here.
   NODE_OPTIONS: --no-deprecation
+
   # Which channel to sync. Set a repository *variable* named CHANNEL to override
   # the `channel` in tg2zola.toml without editing the file.
   CHANNEL: ${{ vars.CHANNEL }}
+
   # Optional external theme (https or ssh git URL). Set a repository *variable*
   # named THEME_REPO to override the built-in black theme. Empty = built-in.
   THEME_REPO: ${{ vars.THEME_REPO }}
+
   # Repository link shown on the About page → this deployment repo.
   REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+
   # Optional custom HTML for the About page. Set a repository *variable* named
   # ABOUT to replace the default channel/repo text.
   ABOUT: ${{ vars.ABOUT }}
+
   # Optional blog title (defaults to the channel name).
   TITLE: ${{ vars.TITLE }}
+
   # Set the repository variable TAGS_FOOTER to "true" to show the per-post tag
   # footer (tags are clickable in the body regardless).
   TAGS_FOOTER: ${{ vars.TAGS_FOOTER }}
+
   # Extra pages (Markdown, each starting with a `# Title` heading).
   PAGES: ${{ vars.PAGES }}
+
   # Full posts per page on the home feed (default 20).
   POSTS_PER_PAGE: ${{ vars.POSTS_PER_PAGE }}
+
   # Background colors (any CSS color). Defaults: dark #000000, light #ffffff.
   BACKGROUND_DARK_COLOR: ${{ vars.BACKGROUND_DARK_COLOR }}
   BACKGROUND_LIGHT_COLOR: ${{ vars.BACKGROUND_LIGHT_COLOR }}
+
   # Extra CSS appended to the built-in stylesheet.
   CSS: ${{ vars.CSS }}
+
   # Body font. FONT is a local/system font stack (e.g. "Georgia, serif").
   # GOOGLE_FONT names a Google Fonts family to load (e.g. "Inter") — an external
   # request. If both are set, the Google font wins.
   FONT: ${{ vars.FONT }}
   GOOGLE_FONT: ${{ vars.GOOGLE_FONT }}
+
   # Optional web analytics — set the ID as a repository *variable* to inject the
   # tag. GOOGLE_ANALYTICS: a "G-…" measurement ID. YANDEX_METRICA: a counter number.
   GOOGLE_ANALYTICS: ${{ vars.GOOGLE_ANALYTICS }}
   YANDEX_METRICA: ${{ vars.YANDEX_METRICA }}
+
   # Set to "false" to disable post Next/Prev nav, the "View on Telegram" link,
   # or the RSS feed (all on by default).
   NEXT_PREV: ${{ vars.NEXT_PREV }}
   TELEGRAM_LINK: ${{ vars.TELEGRAM_LINK }}
   RSS: ${{ vars.RSS }}
+
   # Set to "true" to also generate a podcast feed (audio posts) at /podcast.xml.
   # PODCAST_TAGGED "true" limits it to posts tagged `podcast` (default: all audio).
   PODCAST: ${{ vars.PODCAST }}
   PODCAST_TAGGED: ${{ vars.PODCAST_TAGGED }}
+
   # Mastodon handle (@user@instance) → fediverse:creator byline on shared-link
   # previews + a rel="me" profile-verification link. Leave empty to omit.
   FEDIVERSE_CREATOR: ${{ vars.FEDIVERSE_CREATOR }}
+
   # Max post-title length (chars) before truncation (default 200); a truncated
   # title keeps its full first sentence in the body.
   TITLE_MAX_LEN: ${{ vars.TITLE_MAX_LEN }}
+
   # Header search box. SEARCH_ENGINE: google (default, JS-free form) / duckduckgo
   # / yandex / bing / none. SEARCH_URL: a custom prefix the query is appended to
   # (overrides the engine; uses a tiny inline Enter handler).
   SEARCH_ENGINE: ${{ vars.SEARCH_ENGINE }}
   SEARCH_URL: ${{ vars.SEARCH_URL }}
+
   # Footer content (plain text, Markdown or HTML). Empty = no footer.
   FOOTER: ${{ vars.FOOTER }}
+
   # Static host for the About-page size limit: github / gitlab / none. Empty =
   # auto-detect from the Pages URL (github.io / gitlab.io).
   PAGES_HOST: ${{ vars.PAGES_HOST }}
+
   # strftime format for displayed dates (default "%Y %B %d" → 2025 October 28;
   # use "%Y" for year only).
   DATE_FORMAT: ${{ vars.DATE_FORMAT }}
+
   # UI language for the site chrome (Newer/Older/Tags/About/…): one of
   # en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka (default en). Post content is unchanged.
   LANGUAGE: ${{ vars.LANGUAGE }}
+
   # By default each post is shown by a clickable #id on its date/views line. Set
   # DERIVE_TITLES=true to derive a title from the first sentence instead; with
   # STRIP_TITLE=true that sentence is also dropped from the body.
   DERIVE_TITLES: ${{ vars.DERIVE_TITLES }}
   STRIP_TITLE: ${{ vars.STRIP_TITLE }}
+
   # Set to "true" to underline links (default: no underline).
   LINK_UNDERLINE: ${{ vars.LINK_UNDERLINE }}
+
   # Set to "true" for a CSS-only click-to-load YouTube facade (default: direct
   # iframe). Both use youtube.com so plays count toward the viewer's history.
   YOUTUBE_FACADE: ${{ vars.YOUTUBE_FACADE }}
+
   # Set to "true" to show multi-image posts as a swipeable carousel (opt-in; the
   # swipe is CSS, arrows/dots need JavaScript).
   CAROUSEL: ${{ vars.CAROUSEL }}
+
   # Set to "true" to ship a small script that reports page height to a host page
   # so the site auto-resizes when embedded in a cross-origin iframe (opt-in).
   EMBED: ${{ vars.EMBED }}
+
   # Set to "true" to hide the header nav links (tags/calendar/about/custom),
   # leaving only the search box (opt-in).
   HIDE_NAV: ${{ vars.HIDE_NAV }}
+
   # Set to "true" to keep (download + show) attached media — video and audio —
   # even when the post links YouTube / Apple Podcasts (default: the embed
   # replaces the attached media, to save hosting space).
   KEEP_MEDIA: ${{ vars.KEEP_MEDIA }}
+
   # Set to "false" to skip resolving genius.com links (which otherwise fetch the
   # page for its YouTube video + lyrics widget). On by default.
   GENIUS: ${{ vars.GENIUS }}
+
   # Optional Genius API Client Access Token (a *secret*, not a variable). When
   # set, genius.com links resolve via the API instead of scraping (which
   # Cloudflare blocks on CI IPs). Create one at https://genius.com/api-clients.
   GENIUS_TOKEN: ${{ secrets.GENIUS_TOKEN }}
+
   # Set to "true" to replace a Spotify link with the Spotify player (opt-in;
   # ~30s preview for non-Premium listeners).
   SPOTIFY: ${{ vars.SPOTIFY }}
+
   # Set to "true" to embed a live Instagram post in place of an attached video
   # (opt-in, off by default; the widget needs JavaScript).
   INSTAGRAM: ${{ vars.INSTAGRAM }}
+
   # Set to "false" to stop replacing Pinterest pin links with the embedded pin.
   PINTEREST: ${{ vars.PINTEREST }}
+
   # Set to "true" to add a Pinterest "Save" hover button to the site's own images
   # so visitors can pin them (opt-in; needs JavaScript).
   PINTEREST_SAVE: ${{ vars.PINTEREST_SAVE }}
+
   # Google Lighthouse scores (About page + README badges) are ON by default; set
   # this repository *variable* to "false" to disable. An optional API key (a
   # *secret*) raises the PageSpeed Insights rate limit.
   PAGESPEED: ${{ vars.PAGESPEED }}
   PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+
   # Installable PWA (web app manifest + service worker; hides the address bar) is
   # ON by default — set this repository *variable* to "false" to disable it.
   PWA: ${{ vars.PWA }}
+
   # Set to "true" for offline mode: the service worker precaches the whole archive
   # on any non-cellular connection (Wi-Fi or wired, never mobile data) so the site
   # works fully offline. Off by default; needs JavaScript.
   OFFLINE: ${{ vars.OFFLINE }}
+
   # Videos are offloaded to this repo's GitHub Releases (kept off the Pages 1 GB
   # quota) by default; set this repository *variable* to "false" to keep them
   # inline in the site instead.
   VIDEO_RELEASES: ${{ vars.VIDEO_RELEASES }}
+
   # Optional MTProto backend — fetches audio / original photos / big videos the
   # web preview omits. Compiled + run only when TG_SESSION is set (all three are
   # needed). TG_SESSION is FULL account access — keep it a *secret*. Mint it
@@ -153,37 +193,47 @@ env:
   TG_API_ID: ${{ secrets.TG_API_ID }}
   TG_API_HASH: ${{ secrets.TG_API_HASH }}
   TG_SESSION: ${{ secrets.TG_SESSION }}
+
   # MTPROTO_IMAGES: set to "1" to also fetch original-quality photos (opt-in).
   # MTPROTO_VIDEOS: fetching poster-only videos that have no YouTube/Instagram
   # embed is ON by default; set to "false" to disable it (these can be large).
   # Audio is always fetched.
   MTPROTO_IMAGES: ${{ vars.MTPROTO_IMAGES }}
   MTPROTO_VIDEOS: ${{ vars.MTPROTO_VIDEOS }}
+
   # Archiving other attachments (pdf, zip, rar, …) is on by default; set this
   # repository *variable* to "false" to disable it.
   MTPROTO_FILES: ${{ vars.MTPROTO_FILES }}
+
   # Set to "false" to skip the YouTube liveness check (a removed video otherwise
   # keeps its local media instead of being replaced by a dead embed).
   LIVENESS: ${{ vars.LIVENESS }}
+
   # Per-emoji reaction counts (MTProto backend only) are shown by default; set
   # this repository *variable* to "false" to hide them.
   REACTIONS: ${{ vars.REACTIONS }}
+
   # If the channel description links to an about.me profile, its bio + social
   # links + a contact button are added to the About page (on by default); set
   # this repository *variable* to "false" to disable.
   ABOUT_ME: ${{ vars.ABOUT_ME }}
+
   # Set to "true" to also copy the about.me bio text onto the About page (default:
   # only its photo, social links and contact button are used).
   ABOUTME_BIO: ${{ vars.ABOUTME_BIO }}
+
   # Set to "true" to keep the Telegram channel avatar alongside the about.me
   # photo (default: the avatar is dropped when an about.me photo is shown).
   ABOUTME_BOTH_IMAGES: ${{ vars.ABOUTME_BOTH_IMAGES }}
+
   # Wikidata item id (e.g. "Q42") → a statements table on the About page. Any
   # wikidata.org/wiki/Q… link in a post also gets its own table appended.
   WIKIDATA: ${{ vars.WIKIDATA }}
+
   # Set to "true" to collapse in-post Wikidata tables behind a click-to-expand
   # emoji (the About-page table stays expanded).
   WIKIDATA_SPOILER: ${{ vars.WIKIDATA_SPOILER }}
+
   # Comma-separated tags to surface as #tag links in the top nav, e.g.
   # "music, batumi, cooking".
   TAGS_TO_PAGES: ${{ vars.TAGS_TO_PAGES }}

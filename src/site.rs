@@ -1808,7 +1808,7 @@ blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1r
 pre { background: var(--code-bg); padding: .75rem; border-radius: 4px; overflow-x: auto; }
 code { background: var(--code-bg); padding: .1rem .3rem; border-radius: 4px; }
 pre code { padding: 0; background: none; }
-.site-header { display: flex; gap: .6rem; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.site-header { display: flex; gap: .6rem; align-items: center; padding-bottom: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
 .site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
