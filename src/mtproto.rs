@@ -220,7 +220,10 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let videos = want_videos();
     let files = want_files();
     let reactions = s.reactions;
-    let mut n_reactions = 0usize;
+    // Reactions before custom-emoji resolution, keyed by post index, plus the
+    // custom-emoji document ids to resolve to their `alt` glyph in one batch.
+    let mut raw_reactions: HashMap<usize, Vec<(RawReaction, u64)>> = HashMap::new();
+    let mut custom_emoji_ids: Vec<i64> = Vec::new();
 
     // (cache path, original filename, label) per post.
     let mut audio_for: AudioFor = HashMap::new();
@@ -242,11 +245,15 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
         // Reactions (web preview never exposes them). A grouped post keeps the
         // first message's reactions. Done before the media-only `continue` below
         // so a text-only post's reactions are captured too.
-        if reactions && posts[pi].reactions.is_empty() {
-            let rx = reactions_of(&msg);
+        if reactions && !raw_reactions.contains_key(&pi) {
+            let rx = raw_reactions_of(&msg);
             if !rx.is_empty() {
-                posts[pi].reactions = rx;
-                n_reactions += 1;
+                for (r, _) in &rx {
+                    if let RawReaction::Custom(id) = r {
+                        custom_emoji_ids.push(*id);
+                    }
+                }
+                raw_reactions.insert(pi, rx);
             }
         }
         let Some(media) = msg.media() else { continue };
@@ -431,6 +438,23 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
             }
         }
     }
+    // Resolve custom-emoji reactions to their unicode `alt` glyph (one batch),
+    // then attach each post's reactions.
+    let alt = resolve_custom_emoji_alts(&client, &mut custom_emoji_ids).await;
+    let mut n_reactions = 0usize;
+    for (pi, raw) in raw_reactions {
+        let resolved: Vec<(String, u64)> = raw
+            .into_iter()
+            .filter_map(|(r, count)| match r {
+                RawReaction::Glyph(g) => Some((g, count)),
+                RawReaction::Custom(id) => alt.get(&id).cloned().map(|g| (g, count)),
+            })
+            .collect();
+        if !resolved.is_empty() {
+            posts[pi].reactions = resolved;
+            n_reactions += 1;
+        }
+    }
 
     tracing::info!(
         "MTProto: {n_audio} audio file(s), {n_photo} original photo(s), \
@@ -497,9 +521,16 @@ fn file_ext(name: &str) -> String {
         .unwrap_or_else(|| "bin".to_string())
 }
 
-/// Per-emoji reaction counts for a message (standard emojis only — custom/paid
-/// reactions are skipped, since resolving their glyph needs extra lookups).
-fn reactions_of(msg: &grammers_client::types::Message) -> Vec<(String, u64)> {
+/// A reaction before custom-emoji resolution: a ready glyph, or a custom-emoji
+/// document id awaiting its `alt` fallback.
+enum RawReaction {
+    Glyph(String),
+    Custom(i64),
+}
+
+/// Reaction counts for a message: standard emojis and paid (⭐) become glyphs
+/// immediately; custom emojis carry their document id for a later batch lookup.
+fn raw_reactions_of(msg: &grammers_client::types::Message) -> Vec<(RawReaction, u64)> {
     let tl::enums::Message::Message(m) = &msg.raw else {
         return Vec::new();
     };
@@ -510,13 +541,47 @@ fn reactions_of(msg: &grammers_client::types::Message) -> Vec<(String, u64)> {
         .iter()
         .filter_map(|rc| {
             let tl::enums::ReactionCount::Count(rc) = rc;
+            let count = rc.count.max(0) as u64;
             match &rc.reaction {
-                tl::enums::Reaction::Emoji(e) => Some((e.emoticon.clone(), rc.count.max(0) as u64)),
-                // Paid ("stars") reactions → a star glyph.
-                tl::enums::Reaction::Paid => Some(("⭐".to_string(), rc.count.max(0) as u64)),
-                // Custom emoji resolve to a downloaded image separately (below).
-                _ => None,
+                tl::enums::Reaction::Emoji(e) => Some((RawReaction::Glyph(e.emoticon.clone()), count)),
+                tl::enums::Reaction::Paid => Some((RawReaction::Glyph("⭐".to_string()), count)),
+                tl::enums::Reaction::CustomEmoji(c) => Some((RawReaction::Custom(c.document_id), count)),
+                tl::enums::Reaction::Empty => None,
             }
         })
         .collect()
+}
+
+/// Resolve custom-emoji document ids to their unicode `alt` glyph, in batches.
+/// Best-effort: ids that fail to resolve (or have no alt) are simply dropped.
+async fn resolve_custom_emoji_alts(client: &Client, ids: &mut Vec<i64>) -> HashMap<i64, String> {
+    let mut out = HashMap::new();
+    if ids.is_empty() {
+        return out;
+    }
+    ids.sort_unstable();
+    ids.dedup();
+    for chunk in ids.chunks(200) {
+        let req = tl::functions::messages::GetCustomEmojiDocuments {
+            document_id: chunk.to_vec(),
+        };
+        match client.invoke(&req).await {
+            Ok(docs) => {
+                for doc in docs {
+                    let tl::enums::Document::Document(doc) = doc else {
+                        continue;
+                    };
+                    for attr in &doc.attributes {
+                        if let tl::enums::DocumentAttribute::CustomEmoji(ce) = attr {
+                            if !ce.alt.is_empty() {
+                                out.insert(doc.id, ce.alt.clone());
+                            }
+                        }
+                    }
+                }
+            }
+            Err(e) => tracing::info!("MTProto: custom-emoji reaction lookup failed: {e}"),
+        }
+    }
+    out
 }
