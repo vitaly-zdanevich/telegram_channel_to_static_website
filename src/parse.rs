@@ -368,4 +368,106 @@ mod tests {
             vec![("1.5K".to_string(), "subscribers".to_string())]
         );
     }
+
+    // --- Fixture tests: realistic `t.me/s/` markup (synthetic, no real content)
+    //     so the media/message parsing is guarded against Telegram markup drift. ---
+
+    /// Wrap message-inner HTML in the real `.tgme_widget_message_wrap` structure.
+    fn page(inner: &str) -> String {
+        format!(
+            r#"<div class="tgme_widget_message_wrap">
+              <div class="tgme_widget_message js-widget_message" data-post="chan/7">
+                <div class="tgme_widget_message_date"><time datetime="2025-03-01T12:00:00+00:00"></time></div>
+                {inner}
+              </div>
+            </div>"#
+        )
+    }
+
+    /// Parse a single fixture message.
+    fn one(inner: &str) -> RawMessage {
+        let (mut msgs, _) = parse_page(&page(inner), "chan").unwrap();
+        assert_eq!(msgs.len(), 1, "expected exactly one message");
+        assert_eq!(msgs[0].id, 7);
+        msgs.remove(0)
+    }
+
+    #[test]
+    fn photo_album_urls_and_content_keys() {
+        // The numeric class tokens are the stable file id (the cache key); the
+        // wrapper's other classes (blured/js-…) must be ignored.
+        let m = one(
+            r#"<a class="tgme_widget_message_photo_wrap blured 5308054982420535730 1235877858_460003762 js-message_photo" href="https://t.me/chan/7" style="width:600px;background-image:url('https://cdn.tg/a.jpg')"></a>
+               <a class="tgme_widget_message_photo_wrap 987654321 111_222" href="https://t.me/chan/7" style="background-image:url('https://cdn.tg/b.jpg')"></a>"#,
+        );
+        assert_eq!(m.media.len(), 2, "{:?}", m.media);
+        match &m.media[0] {
+            Media::Photo { url, key } => {
+                assert_eq!(url, "https://cdn.tg/a.jpg");
+                assert_eq!(key.as_deref(), Some("5308054982420535730_1235877858_460003762"));
+            }
+            other => panic!("{other:?}"),
+        }
+        assert!(matches!(&m.media[1], Media::Photo { key, .. } if key.as_deref() == Some("987654321_111_222")));
+    }
+
+    #[test]
+    fn downloadable_video_and_poster_only_video() {
+        let dl = one(r#"<video src="https://cdn.tg/v.mp4" class="tgme_widget_message_video blured" muted></video>"#);
+        assert!(matches!(&dl.media[..], [Media::Video { url }] if url == "https://cdn.tg/v.mp4"), "{:?}", dl.media);
+
+        // A player with no <video> file → keep the poster + duration.
+        let poster = one(
+            r#"<a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/chan/7">
+                 <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn.tg/poster.jpg')"></i>
+                 <time class="message_video_duration">0:09</time>
+               </a>"#,
+        );
+        match &poster.media[..] {
+            [Media::VideoPoster { poster, duration }] => {
+                assert_eq!(poster.as_deref(), Some("https://cdn.tg/poster.jpg"));
+                assert_eq!(duration.as_deref(), Some("0:09"));
+            }
+            other => panic!("{other:?}"),
+        }
+    }
+
+    #[test]
+    fn voice_note_and_documents() {
+        // A voice-note player carries the URL on a data attribute (no <audio> tag).
+        let voice = one(r#"<a class="tgme_widget_message_voice" data-src="https://cdn.tg/voice.ogg"></a>"#);
+        assert!(matches!(&voice.media[..], [Media::Audio { url, .. }] if url == "https://cdn.tg/voice.ogg"), "{:?}", voice.media);
+        // A music file exposes a real <audio src>.
+        let music = one(r#"<audio src="https://cdn.tg/song.mp3"></audio>"#);
+        assert!(matches!(&music.media[..], [Media::Audio { url, .. }] if url == "https://cdn.tg/song.mp3"));
+
+        // Downloadable document → Media::Document.
+        let doc = one(r#"<a class="tgme_widget_message_document_wrap" href="https://cdn.tg/report.pdf"><div class="tgme_widget_message_document_title">report.pdf</div></a>"#);
+        assert!(matches!(&doc.media[..], [Media::Document { filename, .. }] if filename == "report.pdf"), "{:?}", doc.media);
+
+        // No downloadable URL (or a t.me link) → keep the filename only.
+        let noref = one(r#"<div class="tgme_widget_message_document_wrap"><div class="tgme_widget_message_document_title">image_2026-07-01_07-36-10.png</div></div>"#);
+        assert!(matches!(&noref.media[..], [Media::DocumentRef { filename }] if filename == "image_2026-07-01_07-36-10.png"));
+    }
+
+    #[test]
+    fn sticker_from_data_webp() {
+        let m = one(r#"<i class="tgme_widget_message_sticker" data-webp="https://cdn.tg/s.webp"></i>"#);
+        assert!(matches!(&m.media[..], [Media::Sticker { url, .. }] if url == "https://cdn.tg/s.webp"));
+    }
+
+    #[test]
+    fn forwarded_edited_and_views_metadata() {
+        let m = one(
+            r#"<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/src">Source Chan</a>
+               <div class="tgme_widget_message_text">hello</div>
+               <div class="tgme_widget_message_meta"><span class="tgme_widget_message_views">1.2K</span> edited</div>"#,
+        );
+        let fwd = m.forwarded_from.as_ref().expect("forwarded");
+        assert_eq!(fwd.name, "Source Chan");
+        assert_eq!(fwd.url.as_deref(), Some("https://t.me/src"));
+        assert!(m.edited, "should be marked edited");
+        assert_eq!(m.views, Some(1200));
+        assert!(m.body_md.contains("hello"));
+    }
 }
