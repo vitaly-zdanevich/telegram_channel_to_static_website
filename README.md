@@ -30,7 +30,9 @@ Back up a **public Telegram channel** into a **self-contained [Zola](https://www
 
 It scrapes the public web preview (`https://t.me/s/<channel>`), downloads all
 media locally, and regenerates a complete Zola blog on every run. **No Telegram
-bot, token, or API is needed** — it reads only the public web page. The output has
+bot, token, or API is needed** for that — it reads only the public web page (the
+optional [MTProto backend](#optional-mtproto-backend) does log in with API
+credentials to add audio/photos/videos). The output has
 **no Telegram dependency**: media is local, there are no embeds, and links to the
 channel's *own* posts are rewritten to internal relative links — so the site
 keeps working even if the channel is later removed. Links you wrote to other
