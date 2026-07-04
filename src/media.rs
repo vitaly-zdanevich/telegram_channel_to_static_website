@@ -81,6 +81,24 @@ static SPOTIFY: Lazy<Regex> = Lazy::new(|| {
     Regex::new(r"open\.spotify\.com/(track|album|playlist|episode|show)/([A-Za-z0-9]+)").unwrap()
 });
 
+static WIKIDATA: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"(?i)wikidata\.org/(?:wiki|entity)/(Q\d+)").unwrap());
+
+/// Every distinct Wikidata item id (`Q…`) linked from a post, in first-seen
+/// order — one statements table is rendered per id.
+pub fn wikidata_qids(links: &[String]) -> Vec<String> {
+    let mut out: Vec<String> = Vec::new();
+    for l in links {
+        for c in WIKIDATA.captures_iter(l) {
+            let qid = c[1].to_ascii_uppercase();
+            if !out.contains(&qid) {
+                out.push(qid);
+            }
+        }
+    }
+    out
+}
+
 /// The Spotify **embed** URL for the last spotify link in a post, if any:
 /// `open.spotify.com/<type>/<id>` → `open.spotify.com/embed/<type>/<id>`.
 pub fn spotify_from(links: &[String]) -> Option<String> {
@@ -279,6 +297,18 @@ mod tests {
         assert!(!is_probably_image_doc("report.pdf"));
         assert!(!is_probably_image_doc("track.mp3"));
         assert!(!is_probably_image_doc("Episode 5 — the best one"));
+    }
+
+    #[test]
+    fn wikidata_qids_dedup_and_normalize() {
+        let links = vec![
+            "see https://www.wikidata.org/wiki/Q42 and".into(),
+            "http://wikidata.org/entity/q42".into(), // dup, lowercased
+            "https://www.wikidata.org/wiki/Q5".into(),
+            "https://example.com/Q999".into(), // not wikidata
+        ];
+        assert_eq!(wikidata_qids(&links), vec!["Q42".to_string(), "Q5".to_string()]);
+        assert!(wikidata_qids(&["https://example.com".into()]).is_empty());
     }
 
     #[test]

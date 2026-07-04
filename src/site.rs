@@ -777,6 +777,19 @@ pub fn set_about_me(
     let _ = fs::write(&about_path, out);
 }
 
+/// Fill the About page's `__WIKIDATA__` placeholder with a Wikidata statements
+/// table (raw HTML from [`crate::wikidata::Table::to_html`]), or clear it.
+pub fn set_about_wikidata(site: &Path, html: Option<&str>) {
+    let about_path = site.join("content/pages/about.md");
+    let Ok(s) = fs::read_to_string(&about_path) else {
+        return;
+    };
+    if !s.contains("__WIKIDATA__") {
+        return;
+    }
+    let _ = fs::write(&about_path, s.replace("__WIKIDATA__", html.unwrap_or("")));
+}
+
 /// True for a Telegram URL (t.me / telegram.me / telegram.org). Used to drop a
 /// redundant Telegram social link from about.me — the channel is already at top.
 fn is_telegram_url(url: &str) -> bool {
@@ -1140,6 +1153,8 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
             }
             // Enrichment from an about.me link in the description (filled later).
             b.push_str("__ABOUT_ME__\n\n");
+            // Optional Wikidata statements table for a configured QID.
+            b.push_str("__WIKIDATA__\n\n");
             let size_line = match pages_limit(&s.base_url, s.pages_host.as_deref()) {
                 Some(l) => {
                     let phrase = about
@@ -1748,6 +1763,17 @@ audio { width: 100%; }
 .contact-btn:active { background: var(--border); transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) { .contact-btn { transition: none; } .contact-btn:hover { transform: none; } }
 .about-photo { max-width: 320px; width: 100%; height: auto; border-radius: 10px; display: block; margin: .5rem 0; }
+/* Wikidata statements table (About page + in-post). */
+.wd { margin: 1rem 0; overflow-x: auto; }
+.wd figcaption { font-weight: 600; margin-bottom: .3rem; }
+.wd .wd-qid { color: var(--muted); font-weight: 400; font-size: .85em; }
+.wd table { border-collapse: collapse; width: 100%; font-size: .9em; }
+.wd th, .wd td { text-align: left; padding: .3rem .6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+.wd th { color: var(--muted); font-weight: 500; }
+.wd-spoiler { margin: 1rem 0; }
+.wd-spoiler > summary { cursor: pointer; user-select: none; color: var(--link); }
+.wd-spoiler > summary:hover { text-decoration: underline; }
+.wd-spoiler .wd { margin-top: .5rem; }
 /* Image carousel (opt-in) — swipe is native CSS scroll-snap; JS adds arrows/dots. */
 .carousel { position: relative; margin: 1rem 0; }
 .carousel-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }

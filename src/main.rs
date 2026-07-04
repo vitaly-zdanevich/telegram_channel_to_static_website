@@ -24,6 +24,7 @@ mod pwa;
 mod render;
 mod scrape;
 mod site;
+mod wikidata;
 
 #[cfg(test)]
 mod e2e_tests;
@@ -271,6 +272,17 @@ struct GenerateArgs {
     /// when an about.me photo is present, the channel avatar is dropped).
     #[arg(long)]
     aboutme_both_images: bool,
+
+    /// Wikidata item id (e.g. `Q42`) to render as a statements table on the
+    /// About page. Also, any `wikidata.org/wiki/Q…` link in a post gets its own
+    /// table appended (this flag only controls the About-page entity).
+    #[arg(long)]
+    wikidata: Option<String>,
+
+    /// Collapse in-post Wikidata tables behind a click-to-expand emoji (the
+    /// About-page table is always shown expanded).
+    #[arg(long)]
+    wikidata_spoiler: bool,
 
     /// Generate a podcast feed (audio posts) at /podcast.xml (opt-in). Cover from
     /// the about.me photo, else a post tagged `podcast_description`; that post's
@@ -539,6 +551,8 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         },
         aboutme_bio: g.aboutme_bio || fc.aboutme_bio.unwrap_or(false),
         aboutme_both_images: g.aboutme_both_images || fc.aboutme_both_images.unwrap_or(false),
+        wikidata: g.wikidata.clone().or(fc.wikidata.clone()),
+        wikidata_spoiler: g.wikidata_spoiler || fc.wikidata_spoiler.unwrap_or(false),
         podcast: g.podcast || fc.podcast.unwrap_or(false),
         podcast_tagged: g.podcast_tagged || fc.podcast_tagged.unwrap_or(false),
         tags_to_pages: g
@@ -738,6 +752,51 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     posts.retain(|p| !render::is_empty_post(p));
     if before != posts.len() {
         info!("skipped {} empty post(s)", before - posts.len());
+    }
+
+    // Wikidata: render a statements table for every wikidata.org item linked in a
+    // post (and the About-page entity). Each entity is fetched once via the public
+    // API (no key); the result is static HTML that also works offline.
+    let mut about_wikidata_html: Option<String> = None;
+    {
+        use futures::StreamExt;
+        let mut qids: std::collections::BTreeSet<String> =
+            posts.iter().flat_map(|p| media::wikidata_qids(&p.links)).collect();
+        if let Some(q) = &s.wikidata {
+            qids.insert(q.trim().to_ascii_uppercase());
+        }
+        if !qids.is_empty() {
+            info!("wikidata: resolving {} entit(ies)", qids.len());
+            let fetched: Vec<(String, Option<wikidata::Table>)> = futures::stream::iter(
+                qids.into_iter().map(|q| async {
+                    let t = wikidata::fetch(&client, &q, &s.language).await;
+                    (q, t)
+                }),
+            )
+            .buffer_unordered(s.concurrency.max(1))
+            .collect()
+            .await;
+            let tables: std::collections::HashMap<String, wikidata::Table> =
+                fetched.into_iter().filter_map(|(q, t)| t.map(|t| (q, t))).collect();
+            let about = i18n::about(&s.language);
+            for p in &mut posts {
+                for q in media::wikidata_qids(&p.links) {
+                    if let Some(t) = tables.get(&q) {
+                        let html = t.to_html(about.wd_property, about.wd_value);
+                        p.wikidata_html.push(if s.wikidata_spoiler {
+                            wikidata::spoiler(&html)
+                        } else {
+                            html
+                        });
+                    }
+                }
+            }
+            if let Some(q) = &s.wikidata {
+                if let Some(t) = tables.get(&q.trim().to_ascii_uppercase()) {
+                    about_wikidata_html = Some(t.to_html(about.wd_property, about.wd_value));
+                }
+            }
+        }
     }
 
     // Auto-tag posts that have a playable (downloadable) video with #video,
@@ -978,6 +1037,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         s.aboutme_bio,
         s.aboutme_both_images,
     );
+    site::set_about_wikidata(&s.site, about_wikidata_html.as_deref());
 
     // Podcast feed (opt-in): the channel's audio posts as an iTunes RSS feed.
     // Needs absolute URLs, so it's skipped for a relative base_url.

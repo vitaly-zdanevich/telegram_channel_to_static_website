@@ -178,6 +178,12 @@ env:
   # Set to "true" to keep the Telegram channel avatar alongside the about.me
   # photo (default: the avatar is dropped when an about.me photo is shown).
   ABOUTME_BOTH_IMAGES: ${{ vars.ABOUTME_BOTH_IMAGES }}
+  # Wikidata item id (e.g. "Q42") → a statements table on the About page. Any
+  # wikidata.org/wiki/Q… link in a post also gets its own table appended.
+  WIKIDATA: ${{ vars.WIKIDATA }}
+  # Set to "true" to collapse in-post Wikidata tables behind a click-to-expand
+  # emoji (the About-page table stays expanded).
+  WIKIDATA_SPOILER: ${{ vars.WIKIDATA_SPOILER }}
   # Comma-separated tags to surface as #tag links in the top nav, e.g.
   # "music, batumi, cooking".
   TAGS_TO_PAGES: ${{ vars.TAGS_TO_PAGES }}
@@ -304,6 +310,8 @@ jobs:
             [ "${ABOUT_ME:-}" = "false" ] && args+=(--no-about-me)
             [ "${ABOUTME_BIO:-}" = "true" ] && args+=(--aboutme-bio)
             [ "${ABOUTME_BOTH_IMAGES:-}" = "true" ] && args+=(--aboutme-both-images)
+            [ -n "${WIKIDATA:-}" ] && args+=(--wikidata "$WIKIDATA")
+            [ "${WIKIDATA_SPOILER:-}" = "true" ] && args+=(--wikidata-spoiler)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"

@@ -102,6 +102,10 @@ pub struct FileConfig {
     /// Keep the Telegram channel avatar even when an about.me photo is shown
     /// (opt-in; default drops the avatar to avoid two portraits).
     pub aboutme_both_images: Option<bool>,
+    /// Wikidata QID (e.g. `Q42`); renders a statements table on the About page.
+    pub wikidata: Option<String>,
+    /// Collapse in-post Wikidata tables behind a click-to-expand emoji (opt-in).
+    pub wikidata_spoiler: Option<bool>,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
@@ -237,6 +241,10 @@ pub struct Settings {
     pub aboutme_bio: bool,
     /// Keep the channel avatar alongside the about.me photo (opt-in, default false).
     pub aboutme_both_images: bool,
+    /// Wikidata QID for the About-page statements table (`None` = disabled).
+    pub wikidata: Option<String>,
+    /// Collapse in-post Wikidata tables behind a click-to-expand emoji (default false).
+    pub wikidata_spoiler: bool,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     pub pages: Option<String>,

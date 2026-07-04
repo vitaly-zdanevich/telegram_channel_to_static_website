@@ -718,6 +718,13 @@ pub fn render_post(
         }
     }
 
+    // Wikidata statement tables for any wikidata.org link in the post (raw HTML,
+    // already spoiler-wrapped upstream when enabled). Static — survives offline.
+    for table in &post.wikidata_html {
+        body.push_str(table);
+        body.push_str("\n\n");
+    }
+
     let (slug, front) = if page {
         let slug = crate::site::slugify(&title);
         let front = format!(
@@ -1264,6 +1271,7 @@ mod tests {
             views: None,
             edited: false,
             reactions: vec![],
+            wikidata_html: vec![],
             links: vec![],
             youtube: None,
             apple_podcast: None,

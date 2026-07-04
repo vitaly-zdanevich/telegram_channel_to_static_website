@@ -66,6 +66,8 @@ fn settings(site: PathBuf) -> Settings {
         hide_nav: false,
         aboutme_bio: false,
         aboutme_both_images: false,
+        wikidata: None,
+        wikidata_spoiler: false,
         keep_media: false,
         genius: false,
         spotify: false,
@@ -132,6 +134,7 @@ fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&
         spotify_dead: false,
         pinterest_dead: false,
         genius_song_id: None,
+        wikidata_html: vec![],
     }
 }
 
