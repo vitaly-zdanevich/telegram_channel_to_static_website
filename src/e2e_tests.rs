@@ -59,6 +59,7 @@ fn settings(site: PathBuf) -> Settings {
         strip_title: false,
         link_underline: false,
         youtube_facade: false,
+        carousel: false,
         keep_media: false,
         genius: false,
         spotify: false,
@@ -224,6 +225,7 @@ fn zola_build_produces_expected_html() {
                     instagram: false,
                     pinterest: false,
                     video_releases: None,
+                    carousel: false,
                 },
             )
         })
@@ -320,6 +322,7 @@ fn elasticlunr_search_builds() {
                     instagram: false,
                     pinterest: false,
                     video_releases: None,
+                    carousel: false,
                 },
             )
         })
@@ -393,6 +396,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
                     instagram: false,
                     pinterest: false,
                     video_releases: None,
+                    carousel: false,
                 },
             )
         })

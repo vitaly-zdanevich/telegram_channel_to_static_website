@@ -57,6 +57,8 @@ pub struct FileConfig {
     pub link_underline: Option<bool>,
     /// CSS-only click-to-load YouTube facade (default true); false = direct iframe.
     pub youtube_facade: Option<bool>,
+    /// Show multi-image posts as a swipeable carousel instead of a stack (opt-in).
+    pub carousel: Option<bool>,
     /// Download + show an attached video even when the post also links YouTube
     /// (default off → the YouTube embed replaces the attached video).
     pub keep_media: Option<bool>,
@@ -177,6 +179,8 @@ pub struct Settings {
     pub link_underline: bool,
     /// CSS-only click-to-load YouTube facade (default true).
     pub youtube_facade: bool,
+    /// Show multi-image posts as a swipeable carousel (opt-in, default false).
+    pub carousel: bool,
     /// Keep an attached video even alongside a YouTube link (default false).
     pub keep_media: bool,
     /// Resolve genius.com links (default true).

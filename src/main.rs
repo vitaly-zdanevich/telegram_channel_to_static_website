@@ -180,6 +180,11 @@ struct GenerateArgs {
     #[arg(long)]
     youtube_facade: bool,
 
+    /// Show multi-image posts as a swipeable carousel instead of a vertical
+    /// stack (opt-in; the swipe is CSS scroll-snap, arrows/dots need JavaScript).
+    #[arg(long)]
+    carousel: bool,
+
     /// Keep (download + show) attached media — video and audio — even when the
     /// post also links YouTube / Apple Podcasts (default: the embed replaces it).
     #[arg(long)]
@@ -452,6 +457,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         strip_title: g.strip_title || fc.strip_title.unwrap_or(false),
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
+        carousel: g.carousel || fc.carousel.unwrap_or(false),
         // Default flips by environment: on CI (GitHub Actions / GitLab) prefer
         // embeds over downloads to fit the static-host budget; on a local machine
         // download everything for a complete backup. An explicit --keep-media or
@@ -746,6 +752,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         instagram: s.instagram,
         pinterest: s.pinterest,
         video_releases: video_release_base.as_deref(),
+        carousel: s.carousel,
     };
 
     // Render PAGE posts first so their nav entries are ready for scaffolding.

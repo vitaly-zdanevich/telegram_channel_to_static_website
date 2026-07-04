@@ -165,6 +165,12 @@ pub fn scaffold(
             let _ = fs::remove_file(site.join("static/elasticlunr.min.js"));
             let _ = fs::remove_file(site.join("static/search.js"));
         }
+        // Carousel enhancement script (opt-in); the swipe itself is CSS-only.
+        if s.carousel {
+            write_file(&site.join("static/carousel.js"), CAROUSEL_JS)?;
+        } else {
+            let _ = fs::remove_file(site.join("static/carousel.js"));
+        }
         // Service worker: for the installable PWA and/or offline precaching. The
         // precache list (asset-manifest.json) is written post-build by `tg2zola pwa`.
         if s.pwa || s.offline {
@@ -191,6 +197,7 @@ pub fn scaffold(
         let _ = fs::remove_file(site.join("static/search.js"));
         let _ = fs::remove_file(site.join("static/sw.js"));
         let _ = fs::remove_file(site.join("static/manifest.webmanifest"));
+        let _ = fs::remove_file(site.join("static/carousel.js"));
     }
     Ok(())
 }
@@ -429,6 +436,7 @@ fn config_toml(
             if s.telegram_link { "true" } else { "false" },
         )
         .replace("__YT_FACADE__", if s.youtube_facade { "true" } else { "false" })
+        .replace("__CAROUSEL__", if s.carousel { "true" } else { "false" })
         .replace(
             "__PINTEREST_SAVE__",
             if s.pinterest_save { "true" } else { "false" },
@@ -1304,6 +1312,7 @@ next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
 youtube_facade = __YT_FACADE__
+carousel = __CAROUSEL__
 pinterest_save = __PINTEREST_SAVE__
 pwa = __PWA__
 offline = __OFFLINE__
@@ -1375,6 +1384,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.footer %}<footer class="site-footer">{{ config.extra.footer | markdown(inline=true) | safe }}</footer>{% endif %}
   {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
   {% if config.extra.search_elasticlunr %}<script src="{{ get_url(path='elasticlunr.min.js') | safe }}"></script><script src="{{ get_url(path='search_index.' ~ config.default_language ~ '.js') | safe }}"></script><script src="{{ get_url(path='search.js') | safe }}"></script>{% endif %}
+  {% if config.extra.carousel %}<script src="{{ get_url(path='carousel.js') | safe }}"></script>{% endif %}
   {% if config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>{% endif %}
   {% if config.extra.pwa or config.extra.offline %}<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('{{ get_url(path='sw.js') | safe }}');});}</script>{% endif %}
 </body>
@@ -1611,6 +1621,10 @@ const ELASTICLUNR_JS: &str = include_str!("elasticlunr.min.js");
 /// (the header emits the three scripts in that order).
 const SEARCH_JS: &str = include_str!("search.js");
 
+/// Carousel enhancement (prev/next arrows + dots) for `--carousel`. The swipe is
+/// CSS scroll-snap, so touch works without this; kept in a real .js file.
+const CAROUSEL_JS: &str = include_str!("carousel.js");
+
 // Channel avatar at its original size on the About page (base_url-aware).
 const AVATAR_SHORTCODE: &str =
     "<img class=\"about-avatar\" src=\"{{ get_url(path='channel-avatar.jpg') | safe }}\" alt=\"channel avatar\">";
@@ -1651,6 +1665,17 @@ audio { width: 100%; }
 .yt-link { display: block; font-size: .9em; margin-top: .25rem; }
 .contact-btn { display: inline-block; padding: .4rem .85rem; border-radius: 6px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: .9em; }
 .about-photo { max-width: 320px; width: 100%; height: auto; border-radius: 10px; display: block; margin: .5rem 0; }
+/* Image carousel (opt-in) — swipe is native CSS scroll-snap; JS adds arrows/dots. */
+.carousel { position: relative; margin: 1rem 0; }
+.carousel-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-track img { scroll-snap-align: center; flex: 0 0 100%; width: 100%; height: auto; }
+.carousel-prev, .carousel-next { position: absolute; top: 50%; transform: translateY(-50%); width: 2.2rem; height: 2.2rem; border: 0; border-radius: 50%; background: rgba(0,0,0,.55); color: #fff; font-size: 1.3rem; line-height: 1; cursor: pointer; }
+.carousel-prev { left: .4rem; }
+.carousel-next { right: .4rem; }
+.carousel-dots { display: flex; gap: .35rem; justify-content: center; margin-top: .4rem; }
+.carousel-dots button { width: .5rem; height: .5rem; padding: 0; border: 0; border-radius: 50%; background: var(--muted); cursor: pointer; }
+.carousel-dots button.active { background: var(--fg); }
 /* CSS-only click-to-load facade (no JS): the iframe is display:none until the
    hidden checkbox is checked, so loading=lazy defers its fetch until click. */
 .yt-embed .yt-toggle { position: absolute; width: 0; height: 0; opacity: 0; }

@@ -260,6 +260,8 @@ pub struct RenderOpts<'a> {
     /// (`…/releases/download/<tag>`) that each video's filename is appended to,
     /// and the file is staged for upload instead of bundled.
     pub video_releases: Option<&'a str>,
+    /// Show a photo-album post (2+ images, nothing else) as a swipeable carousel.
+    pub carousel: bool,
 }
 
 pub fn render_post(
@@ -280,6 +282,7 @@ pub fn render_post(
         instagram,
         pinterest,
         video_releases,
+        carousel,
     } = *opts;
     // A PAGE-marked post becomes a standalone page; work on a copy with the
     // marker line removed and use a plain first-sentence title.
@@ -421,7 +424,64 @@ pub fn render_post(
         body.push_str(&format!("{{{{ pinterest(url=\"{url}\") }}}}\n\n"));
     }
 
+    // Photo-album carousel (opt-in): when a post's *media* is 2+ images and no
+    // video/audio/documents, show them as one swipeable widget instead of a
+    // vertical stack. The post's text and tags render normally, above.
+    let carousel_album = carousel
+        && post.media.len() >= 2
+        && post.media.iter().all(|m| {
+            matches!(m, Media::Photo { .. } | Media::Sticker { .. } | Media::LocalPhoto { .. })
+        });
+    if carousel_album {
+        let mut imgs = String::new();
+        for (i, m) in post.media.iter().enumerate() {
+            let n = i + 1;
+            let (fname, dl) = match m {
+                Media::Photo { url, key } | Media::Sticker { url, key } => {
+                    let (fname, force) = media_name(key, url, "jpg", n, post.edited);
+                    let dl = Download {
+                        url: url.clone(),
+                        filename: fname.clone(),
+                        force,
+                        local: None,
+                        release: false,
+                    };
+                    (fname, dl)
+                }
+                Media::LocalPhoto { path, key } => {
+                    let ext = path.extension().and_then(|e| e.to_str()).filter(|e| !e.is_empty()).unwrap_or("jpg");
+                    let fname = match key {
+                        Some(k) => format!("{}.{ext}", sanitize_key(k)),
+                        None => format!("{n:02}.{ext}"),
+                    };
+                    let dl = Download {
+                        url: String::new(),
+                        filename: fname.clone(),
+                        force: true,
+                        local: Some(path.clone()),
+                        release: false,
+                    };
+                    (fname, dl)
+                }
+                _ => unreachable!("carousel_album is all-images"),
+            };
+            downloads.push(dl);
+            if og_image.is_none() {
+                og_image = Some(fname.clone());
+            }
+            imgs.push_str(&format!("<img src=\"{fname}\" loading=\"lazy\">"));
+        }
+        body.push_str(&format!(
+            "<div class=\"carousel\"><div class=\"carousel-track\">{imgs}</div>\
+             <button class=\"carousel-prev\" type=\"button\" aria-label=\"Previous\">‹</button>\
+             <button class=\"carousel-next\" type=\"button\" aria-label=\"Next\">›</button></div>\n\n"
+        ));
+    }
+
     for m in &post.media {
+        if carousel_album {
+            break; // the album was rendered as the carousel above
+        }
         idx += 1;
         match m {
             Media::Photo { url, key } | Media::Sticker { url, key } => {
@@ -1243,6 +1303,7 @@ mod tests {
                 instagram: false,
                 pinterest: false,
                 video_releases: None,
+                carousel: false,
             },
         );
         assert_eq!(r.title, "My Cool Page");
@@ -1303,6 +1364,7 @@ mod tests {
                     instagram: true,
                     pinterest: false,
                     video_releases: None,
+                    carousel: false,
                 },
             )
             .index_md
@@ -1347,6 +1409,7 @@ mod tests {
                     instagram: false,
                     pinterest: false,
                     video_releases: None,
+                    carousel: false,
                 },
             )
             .index_md
@@ -1394,6 +1457,7 @@ mod tests {
                 instagram: false,
                 pinterest: false,
                 video_releases: None,
+                carousel: false,
             },
         );
         // A 📎 download link plus one local-copy job for the bundled file.
@@ -1419,6 +1483,7 @@ mod tests {
             instagram: false,
             pinterest: false,
             video_releases: None,
+            carousel: false,
         };
         // Off → inline <video>, bundled locally.
         let off = render_post(&p, &rw, false, None, None, &common);
@@ -1454,6 +1519,7 @@ mod tests {
             instagram: false,
             pinterest: false,
             video_releases: None,
+            carousel: false,
         };
         let mut p = post_with_body("hi");
         p.reactions = vec![("👍".into(), 42), ("❤️".into(), 10)];
@@ -1462,6 +1528,43 @@ mod tests {
         // No reactions → no footer.
         let plain = render_post(&post_with_body("hi"), &rw, false, None, None, &opts);
         assert!(!plain.index_md.contains('👍'), "{}", plain.index_md);
+    }
+
+    #[test]
+    fn carousel_wraps_multi_image_albums_when_enabled() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let ui = crate::i18n::ui("en");
+        let base = RenderOpts {
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            instagram: false,
+            pinterest: false,
+            video_releases: None,
+            carousel: false,
+        };
+        let mut album = post_with_body("album");
+        album.media = vec![
+            Media::Photo { url: "https://cdn/a.jpg".into(), key: Some("k1".into()) },
+            Media::Photo { url: "https://cdn/b.jpg".into(), key: Some("k2".into()) },
+        ];
+        // Off → a normal image stack, no carousel.
+        let off = render_post(&album, &rw, false, None, None, &base);
+        assert!(!off.index_md.contains("carousel"), "{}", off.index_md);
+        assert!(off.index_md.contains("!["), "expected markdown images: {}", off.index_md);
+        // On → one carousel holding both images, and both are still downloaded.
+        let on = render_post(&album, &rw, false, None, None, &RenderOpts { carousel: true, ..base });
+        assert!(on.index_md.contains(r#"<div class="carousel">"#), "{}", on.index_md);
+        assert_eq!(on.index_md.matches("<img").count(), 2, "{}", on.index_md);
+        assert_eq!(on.downloads.len(), 2);
+        // A single image is never a carousel, even enabled.
+        let mut solo = post_with_body("solo");
+        solo.media = vec![Media::Photo { url: "https://cdn/a.jpg".into(), key: None }];
+        let out = render_post(&solo, &rw, false, None, None, &RenderOpts { carousel: true, ..base });
+        assert!(!out.index_md.contains("carousel"), "{}", out.index_md);
     }
 
     #[test]
@@ -1490,6 +1593,7 @@ mod tests {
                     instagram: false,
                     pinterest: false,
                     video_releases: None,
+                    carousel: false,
                 },
             )
             .index_md
@@ -1517,6 +1621,7 @@ mod tests {
         let opts = |spotify, pinterest| RenderOpts {
             instagram: false,
             video_releases: None,
+            carousel: false,
             ui: &ui,
             title_max: 200,
             derive_titles: false,

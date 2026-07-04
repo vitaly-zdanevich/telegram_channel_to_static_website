@@ -260,6 +260,7 @@ These are *variables*, not secrets — all of it is public.
 | `STRIP_TITLE` | `--strip-title` | off | With `DERIVE_TITLES`, also remove that first sentence from the body so it isn't shown twice |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
+| `CAROUSEL` | `--carousel` | off | `true` shows a multi-image post as a swipeable **carousel** (one image at a time, with arrows + dots) instead of a vertical stack. The swipe is native CSS `scroll-snap`; arrows/dots need JavaScript. Default is the stack (no JS) |
 | `KEEP_MEDIA` | `--keep-media` | CI: off · local: on | `true` to keep (download + show) attached **video/audio** even when the post links YouTube / Apple Podcasts / Instagram. The default is environment-aware: on CI (GitHub Actions / GitLab) the embed replaces the attached media to save hosting space; on a local machine everything is downloaded for a complete backup |
 | `GENIUS` | `--no-genius` | on | `false` skips resolving genius.com links (for their YouTube video + lyrics-widget id) |
 | `GENIUS_TOKEN` (secret) | — | — | Genius API [Client Access Token](https://genius.com/api-clients). When set, genius links resolve via the **API** (works in CI) instead of scraping — the genius web pages are Cloudflare-blocked on datacenter IPs. Store it as an Actions **secret**, not a variable |

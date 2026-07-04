@@ -95,6 +95,9 @@ env:
   # Set to "true" for a CSS-only click-to-load YouTube facade (default: direct
   # iframe). Both use youtube.com so plays count toward the viewer's history.
   YOUTUBE_FACADE: ${{ vars.YOUTUBE_FACADE }}
+  # Set to "true" to show multi-image posts as a swipeable carousel (opt-in; the
+  # swipe is CSS, arrows/dots need JavaScript).
+  CAROUSEL: ${{ vars.CAROUSEL }}
   # Set to "true" to keep (download + show) attached media — video and audio —
   # even when the post links YouTube / Apple Podcasts (default: the embed
   # replaces the attached media, to save hosting space).
@@ -265,6 +268,7 @@ jobs:
             [ "${STRIP_TITLE:-}" = "true" ] && args+=(--strip-title)
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
+            [ "${CAROUSEL:-}" = "true" ] && args+=(--carousel)
             [ "${KEEP_MEDIA:-}" = "true" ] && args+=(--keep-media)
             [ "${GENIUS:-}" = "false" ] && args+=(--no-genius)
             [ "${SPOTIFY:-}" = "true" ] && args+=(--spotify)
