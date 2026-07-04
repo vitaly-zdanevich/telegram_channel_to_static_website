@@ -75,6 +75,11 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   complete feed, not just recent items), advertised via a `<link rel="alternate">`
   so feed readers auto-discover it from the site URL. On by default; disable
   with `RSS=false` / `--no-rss`.
+- **Podcast feed** *(opt-in)* — turn the channel's audio posts into a personal
+  **podcast** at `/podcast.xml`: an iTunes-tagged RSS feed with per-episode
+  `<enclosure>`s, subscribable in podcast apps (and, with a ≥1400×1400px square
+  cover, submittable to **Apple Podcasts**). Enable with `PODCAST=true` /
+  `--podcast`; `PODCAST_TAGGED` limits it to posts tagged `podcast`.
 - **Rich link previews + Mastodon** — every page emits Open Graph and Twitter
   Card tags (title, description, the post's first image), so shared links render
   as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews
@@ -248,6 +253,8 @@ These are *variables*, not secrets — all of it is public.
 | `NEXT_PREV` | `--no-next-prev` | on | `false` hides the Next/Prev post navigation |
 | `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post "View on Telegram" link |
 | `RSS` | `--no-rss` | on | `false` disables the RSS feed at `/rss.xml` (with reader autodiscovery) |
+| `PODCAST` | `--podcast` | off | `true` also generates a **podcast feed** (the channel's audio posts, with iTunes tags + `<enclosure>`s) at `/podcast.xml`. Cover comes from the about.me photo, else a post tagged `podcast_description` (whose text is the podcast description). Needs an `http(s)` base URL; Apple also wants a **≥1400×1400px square** cover |
+| `PODCAST_TAGGED` | `--podcast-tagged` | off | with `PODCAST`, include only audio posts tagged `podcast` (default: all audio posts) |
 | `FEDIVERSE_CREATOR` | `--fediverse-creator` | — | Mastodon `@user@instance` → `fediverse:creator` byline + `rel="me"` profile link |
 | `SEARCH_ENGINE` | `--search-engine` | `elasticlunr` | Header search box: `google` (JS-free form) / `duckduckgo` / `yandex` / `bing` / `elasticlunr` ([Elasticlunr](http://elasticlunr.com/) — Zola's built-in client-side full-text search over the post content — needs JS, bundled with no CDN; the offline copy strips it, so it works on the deployed site only) / `none` |
 | `SEARCH_URL` | `--search-url` | — | Custom search URL prefix; the query is appended on Enter (overrides the engine) |

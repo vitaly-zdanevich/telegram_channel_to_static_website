@@ -19,6 +19,7 @@ mod mtproto;
 mod offline;
 mod pagespeed;
 mod parse;
+mod podcast;
 mod pwa;
 mod render;
 mod scrape;
@@ -250,6 +251,17 @@ struct GenerateArgs {
     /// description (default: pull its bio + social links + a contact button).
     #[arg(long)]
     no_about_me: bool,
+
+    /// Generate a podcast feed (audio posts) at /podcast.xml (opt-in). Cover from
+    /// the about.me photo, else a post tagged `podcast_description`; that post's
+    /// text (or the channel description) is the podcast description.
+    #[arg(long)]
+    podcast: bool,
+
+    /// Restrict the podcast feed to audio posts tagged `podcast` (default: all
+    /// audio posts). Only meaningful with `--podcast`.
+    #[arg(long)]
+    podcast_tagged: bool,
 
     /// Comma-separated tags to surface as `#tag` links in the top nav.
     #[arg(long)]
@@ -503,6 +515,8 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.about_me.unwrap_or(true)
         },
+        podcast: g.podcast || fc.podcast.unwrap_or(false),
+        podcast_tagged: g.podcast_tagged || fc.podcast_tagged.unwrap_or(false),
         tags_to_pages: g
             .tags_to_pages
             .clone()
@@ -926,6 +940,44 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     };
     site::set_about_me(&s.site, about_me.as_ref(), about_me_photo.as_deref());
 
+    // Podcast feed (opt-in): the channel's audio posts as an iTunes RSS feed.
+    // Needs absolute URLs, so it's skipped for a relative base_url.
+    if s.podcast && s.base_url.starts_with("http") {
+        let episodes = podcast_episodes(&posts, &rendered, &s);
+        if episodes.is_empty() {
+            info!("podcast: no matching audio posts — skipping podcast.xml");
+        } else {
+            let cover = about_me
+                .as_ref()
+                .and_then(|a| a.image.clone())
+                .or_else(|| podcast_cover(&posts, &rendered, &s.base_url));
+            let description = posts
+                .iter()
+                .find(|p| p.tags.iter().any(|t| t == "podcast_description"))
+                .map(render::post_text_plain)
+                .filter(|d| !d.is_empty())
+                .or_else(|| channel_info.as_ref().and_then(|i| i.description_md.clone()))
+                .unwrap_or_default();
+            let title = channel_info
+                .as_ref()
+                .and_then(|i| i.title.clone())
+                .unwrap_or_else(|| s.title.clone());
+            let ch = podcast::Channel {
+                author: title.clone(),
+                title,
+                description,
+                link: s.base_url.clone(),
+                cover: cover.unwrap_or_default(),
+                language: s.language.clone(),
+                category: "Personal Journals".into(),
+            };
+            match std::fs::write(s.site.join("static/podcast.xml"), podcast::feed(&ch, &episodes)) {
+                Ok(()) => info!("podcast: wrote podcast.xml with {} episode(s)", episodes.len()),
+                Err(e) => tracing::warn!("podcast: writing podcast.xml failed: {e}"),
+            }
+        }
+    }
+
     // Total on-disk footprint + per-kind breakdown (also shown on the About page).
     info!(
         "total size: {} — images {}, videos {}, audio {}, text {}, other {}",
@@ -1008,6 +1060,90 @@ fn largest_slug(rel: &std::path::Path) -> Option<&str> {
     } else {
         None
     }
+}
+
+/// Ensure a base URL ends with `/` so `posts/…` appends cleanly.
+fn ensure_slash(base: &str) -> String {
+    if base.ends_with('/') {
+        base.to_string()
+    } else {
+        format!("{base}/")
+    }
+}
+
+fn is_audio_file(name: &str) -> bool {
+    let n = name.to_ascii_lowercase();
+    [".mp3", ".ogg", ".oga", ".m4a", ".opus", ".wav", ".flac", ".aac"].iter().any(|e| n.ends_with(e))
+}
+
+fn is_image_file(name: &str) -> bool {
+    let n = name.to_ascii_lowercase();
+    [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"].iter().any(|e| n.ends_with(e))
+}
+
+fn audio_mime(name: &str) -> &'static str {
+    let n = name.to_ascii_lowercase();
+    if n.ends_with(".mp3") {
+        "audio/mpeg"
+    } else if n.ends_with(".m4a") || n.ends_with(".aac") {
+        "audio/mp4"
+    } else if n.ends_with(".wav") {
+        "audio/wav"
+    } else if n.ends_with(".flac") {
+        "audio/flac"
+    } else {
+        "audio/ogg"
+    }
+}
+
+/// The channel's audio posts as podcast episodes (base_url-aware enclosure URLs +
+/// on-disk file size). With `podcast_tagged`, only posts tagged `podcast` qualify.
+fn podcast_episodes(
+    posts: &[model::Post],
+    rendered: &[render::RenderedPost],
+    s: &config::Settings,
+) -> Vec<podcast::Episode> {
+    let base = ensure_slash(&s.base_url);
+    posts
+        .iter()
+        .zip(rendered)
+        .filter_map(|(post, r)| {
+            if s.podcast_tagged && !post.tags.iter().any(|t| t == "podcast") {
+                return None;
+            }
+            let audio = r.downloads.iter().find(|d| is_audio_file(&d.filename))?;
+            let id = post.primary_id;
+            let path = s.site.join("content/posts").join(&r.slug).join(&audio.filename);
+            let length = std::fs::metadata(&path).map(|m| m.len()).unwrap_or(0);
+            let derived = render::post_title(post, s.title_max_len, true);
+            let title = if derived.is_empty() { format!("#{id}") } else { derived };
+            Some(podcast::Episode {
+                title,
+                description: render::post_text_plain(post),
+                url: format!("{base}posts/{id}/{}", audio.filename),
+                mime: audio_mime(&audio.filename).to_string(),
+                length,
+                date: post.date,
+                guid: format!("{base}posts/{id}/"),
+            })
+        })
+        .collect()
+}
+
+/// Cover URL from the first image of a post tagged `podcast_description`, if any.
+fn podcast_cover(
+    posts: &[model::Post],
+    rendered: &[render::RenderedPost],
+    base_url: &str,
+) -> Option<String> {
+    let base = ensure_slash(base_url);
+    posts.iter().zip(rendered).find_map(|(post, r)| {
+        if !post.tags.iter().any(|t| t == "podcast_description") {
+            return None;
+        }
+        let img = r.downloads.iter().find(|d| is_image_file(&d.filename))?;
+        Some(format!("{base}posts/{}/{}", post.primary_id, img.filename))
+    })
 }
 
 fn http_client() -> Result<reqwest::Client> {

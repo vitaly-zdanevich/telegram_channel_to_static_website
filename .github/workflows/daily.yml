@@ -63,6 +63,10 @@ env:
   NEXT_PREV: ${{ vars.NEXT_PREV }}
   TELEGRAM_LINK: ${{ vars.TELEGRAM_LINK }}
   RSS: ${{ vars.RSS }}
+  # Set to "true" to also generate a podcast feed (audio posts) at /podcast.xml.
+  # PODCAST_TAGGED "true" limits it to posts tagged `podcast` (default: all audio).
+  PODCAST: ${{ vars.PODCAST }}
+  PODCAST_TAGGED: ${{ vars.PODCAST_TAGGED }}
   # Mastodon handle (@user@instance) → fediverse:creator byline on shared-link
   # previews + a rel="me" profile-verification link. Leave empty to omit.
   FEDIVERSE_CREATOR: ${{ vars.FEDIVERSE_CREATOR }}
@@ -256,6 +260,8 @@ jobs:
             [ "${NEXT_PREV:-}" = "false" ] && args+=(--no-next-prev)
             [ "${TELEGRAM_LINK:-}" = "false" ] && args+=(--no-telegram-link)
             [ "${RSS:-}" = "false" ] && args+=(--no-rss)
+            [ "${PODCAST:-}" = "true" ] && args+=(--podcast)
+            [ "${PODCAST_TAGGED:-}" = "true" ] && args+=(--podcast-tagged)
             [ -n "${FEDIVERSE_CREATOR:-}" ] && args+=(--fediverse-creator "$FEDIVERSE_CREATOR")
             [ -n "${TITLE_MAX_LEN:-}" ] && args+=(--title-max-len "$TITLE_MAX_LEN")
             [ -n "${SEARCH_ENGINE:-}" ] && args+=(--search-engine "$SEARCH_ENGINE")

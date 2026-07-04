@@ -49,6 +49,8 @@ fn settings(site: PathBuf) -> Settings {
         next_prev: true,
         telegram_link: true,
         rss: true,
+        podcast: false,
+        podcast_tagged: false,
         fediverse_creator: None,
         search: Search::None,
         footer: None,
