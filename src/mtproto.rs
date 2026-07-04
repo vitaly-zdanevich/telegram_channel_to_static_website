@@ -188,6 +188,11 @@ fn want_files() -> bool {
     )
 }
 
+/// Files above this size are skipped: GitHub Releases caps a single asset at
+/// 2 GiB, so a larger attachment could never be published anyway (and would
+/// bloat the archive regardless).
+const MAX_FILE_BYTES: i64 = 2 * 1024 * 1024 * 1024;
+
 /// Per-post-index MTProto audio: (cache path, original filename, label).
 type AudioFor = HashMap<usize, Vec<(PathBuf, Option<String>, Option<String>)>>;
 
@@ -259,6 +264,13 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
         let Some(media) = msg.media() else { continue };
         match &media {
             TlMedia::Document(doc) => {
+                if doc.size() > MAX_FILE_BYTES {
+                    tracing::warn!(
+                        "message {id}: skipping {:.1} GB attachment (over the 2 GiB limit)",
+                        doc.size() as f64 / (1024.0 * 1024.0 * 1024.0)
+                    );
+                    continue;
+                }
                 let mime = doc.mime_type().unwrap_or("");
                 if mime.starts_with("audio/") {
                     // A YouTube / Apple Podcasts link stands in for the audio —
