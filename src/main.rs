@@ -5,6 +5,7 @@
 //! references only local files and YouTube — never Telegram — so it survives the
 //! channel being removed.
 
+mod aboutme;
 mod config;
 mod genius;
 mod group;
@@ -239,6 +240,11 @@ struct GenerateArgs {
     /// backend when it runs; the web preview never exposes reactions).
     #[arg(long)]
     no_reactions: bool,
+
+    /// Don't enrich the About page from an about.me link in the channel
+    /// description (default: pull its bio + social links + a contact button).
+    #[arg(long)]
+    no_about_me: bool,
 
     /// Comma-separated tags to surface as `#tag` links in the top nav.
     #[arg(long)]
@@ -485,6 +491,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             false
         } else {
             fc.reactions.unwrap_or(true)
+        },
+        about_me: if g.no_about_me {
+            false
+        } else {
+            fc.about_me.unwrap_or(true)
         },
         tags_to_pages: g
             .tags_to_pages
@@ -876,6 +887,37 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         }
     }
     site::set_about_pagespeed(&s.site, pagespeed_scores, &i18n::about(&s.language));
+
+    // Enrich the About page from an about.me link in the channel description
+    // (bio + social links + a contact button). Best-effort; clears the placeholder
+    // when disabled / absent / unreachable.
+    let about_me = match s.about_me.then(|| {
+        channel_info
+            .as_ref()
+            .and_then(|i| i.description_md.as_deref())
+            .and_then(aboutme::url_in)
+    }) {
+        Some(Some(url)) => {
+            info!("about.me: enriching the About page from {url}");
+            aboutme::fetch(&client, &url).await
+        }
+        _ => None,
+    };
+    // Download the full profile photo into the bundle (base-aware static path).
+    let about_me_photo = match about_me.as_ref().and_then(|a| a.image.as_deref()) {
+        Some(img) if s.download_media => {
+            let file = format!("aboutme.{}", media::ext_from_url(img, "jpg"));
+            let job = media::Job {
+                url: img.to_string(),
+                dest: s.site.join("static").join(&file),
+                force: false,
+                local: None,
+            };
+            media::download_all(&client, &[job], 1).await.ok().map(|()| file)
+        }
+        _ => None,
+    };
+    site::set_about_me(&s.site, about_me.as_ref(), about_me_photo.as_deref());
 
     // Total on-disk footprint + per-kind breakdown (also shown on the About page).
     info!(

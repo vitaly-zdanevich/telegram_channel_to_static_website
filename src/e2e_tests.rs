@@ -71,6 +71,7 @@ fn settings(site: PathBuf) -> Settings {
         video_releases: false,
         liveness: false,
         reactions: false,
+        about_me: false,
         tags_to_pages: None,
         pages: None,
         posts_per_page: 20,
@@ -423,6 +424,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
         }),
         &crate::i18n::about(&s.language),
     );
+    site::set_about_me(&s.site, None, None);
 
     let out = Command::new("zola")
         .arg("--root")

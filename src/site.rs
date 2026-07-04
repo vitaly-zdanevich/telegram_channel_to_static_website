@@ -131,6 +131,10 @@ pub fn scaffold(
         &site.join("templates/shortcodes/video_ext.html"),
         VIDEO_EXT_SHORTCODE,
     )?;
+    write_file(
+        &site.join("templates/shortcodes/aboutme_photo.html"),
+        ABOUTME_PHOTO_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/avatar.html"), AVATAR_SHORTCODE)?;
@@ -679,6 +683,57 @@ pub fn set_about_size(
     let _ = fs::write(&about_path, out);
 }
 
+/// Fill the About page's `__ABOUT_ME__` placeholder with the scraped about.me
+/// bio, social links and a contact button (about.me blocks iframing, so the
+/// button links to the profile), or clear it.
+pub fn set_about_me(site: &Path, am: Option<&crate::aboutme::AboutMe>, photo: Option<&str>) {
+    let about_path = site.join("content/pages/about.md");
+    let Ok(s) = fs::read_to_string(&about_path) else {
+        return;
+    };
+    if !s.contains("__ABOUT_ME__") {
+        return;
+    }
+    let block = match am {
+        Some(am) if !am.is_empty() => {
+            let mut b = String::new();
+            if let Some(photo) = photo {
+                b.push_str(&format!("{{{{ aboutme_photo(src=\"{photo}\") }}}}\n\n"));
+            }
+            if !am.bio.is_empty() {
+                b.push_str(am.bio.trim());
+                b.push_str("\n\n");
+            }
+            if !am.links.is_empty() {
+                let row = am
+                    .links
+                    .iter()
+                    .map(|(label, url)| format!("[{}]({url})", link_label(label)))
+                    .collect::<Vec<_>>()
+                    .join(" · ");
+                b.push_str(&row);
+                b.push_str("\n\n");
+            }
+            if !am.url.is_empty() {
+                b.push_str(&format!(
+                    "<a class=\"contact-btn\" href=\"{}\">✉ Message me on about.me</a>",
+                    am.url
+                ));
+            }
+            b.trim_end().to_string()
+        }
+        _ => String::new(),
+    };
+    let out = s.replace("__ABOUT_ME__", &block);
+    let _ = fs::write(&about_path, out);
+}
+
+/// A social-link label safe to drop into a Markdown `[label](url)` (drops the
+/// brackets/parens that would break the link).
+fn link_label(label: &str) -> String {
+    label.chars().filter(|c| !matches!(c, '[' | ']' | '(' | ')')).collect()
+}
+
 /// Fill the About page's `__PAGESPEED__` placeholder with the Lighthouse scores,
 /// or clear it when scoring is disabled / unavailable. Runs after
 /// `set_about_size` (which leaves this placeholder untouched).
@@ -1020,6 +1075,8 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                     b.push_str("\n\n");
                 }
             }
+            // Enrichment from an about.me link in the description (filled later).
+            b.push_str("__ABOUT_ME__\n\n");
             let size_line = match pages_limit(&s.base_url, s.pages_host.as_deref()) {
                 Some(l) => {
                     let phrase = about
@@ -1535,6 +1592,9 @@ const VIDEO_SHORTCODE: &str =
 // Video hosted off-site (a GitHub Release asset) — the src is the absolute URL.
 const VIDEO_EXT_SHORTCODE: &str =
     "<video controls preload=\"metadata\" src=\"{{ url | safe }}\"></video>\n";
+// The full about.me profile photo (a base-aware static file).
+const ABOUTME_PHOTO_SHORTCODE: &str =
+    "<img class=\"about-photo\" src=\"{{ get_url(path=src) }}\" alt=\"\" loading=\"lazy\">\n";
 const AUDIO_SHORTCODE: &str =
     "<audio controls src=\"{{ page.permalink | safe }}{{ src }}\"></audio>\n";
 
@@ -1589,6 +1649,8 @@ audio { width: 100%; }
 .yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
 .yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .yt-link { display: block; font-size: .9em; margin-top: .25rem; }
+.contact-btn { display: inline-block; padding: .4rem .85rem; border-radius: 6px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: .9em; }
+.about-photo { max-width: 320px; width: 100%; height: auto; border-radius: 10px; display: block; margin: .5rem 0; }
 /* CSS-only click-to-load facade (no JS): the iframe is display:none until the
    hidden checkbox is checked, so loading=lazy defers its fetch until click. */
 .yt-embed .yt-toggle { position: absolute; width: 0; height: 0; opacity: 0; }
