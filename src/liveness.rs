@@ -247,7 +247,7 @@ const INSTAGRAM_UA: &str =
     "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)";
 /// Instagram aggressively rate-limits datacenter IPs, so checks run one at a time
 /// with this gap between them (not concurrent).
-const INSTAGRAM_DELAY_SECS: u64 = 30;
+const INSTAGRAM_DELAY_SECS: u64 = 5;
 
 /// Mark posts whose Instagram post isn't confirmed live, so an attached video is
 /// kept instead of a dead embed. Only posts that actually have a video are
