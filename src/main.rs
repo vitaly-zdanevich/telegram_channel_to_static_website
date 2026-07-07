@@ -22,6 +22,7 @@ mod parse;
 mod podcast;
 mod pwa;
 mod render;
+mod linktitles;
 mod scrape;
 mod site;
 mod wikidata;
@@ -283,6 +284,11 @@ struct GenerateArgs {
     /// About-page table is always shown expanded).
     #[arg(long)]
     wikidata_spoiler: bool,
+
+    /// Don't add hover tooltips (a `title=`) to Wikipedia / MediaWiki / Wikimedia
+    /// Commons / YouTube links from the linked page's intro (default: add them).
+    #[arg(long)]
+    no_link_titles: bool,
 
     /// Generate a podcast feed (audio posts) at /podcast.xml (opt-in). Cover from
     /// the about.me photo, else a post tagged `podcast_description`; that post's
@@ -553,6 +559,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         aboutme_both_images: g.aboutme_both_images || fc.aboutme_both_images.unwrap_or(false),
         wikidata: g.wikidata.clone().or(fc.wikidata.clone()),
         wikidata_spoiler: g.wikidata_spoiler || fc.wikidata_spoiler.unwrap_or(false),
+        link_titles: if g.no_link_titles {
+            false
+        } else {
+            fc.link_titles.unwrap_or(true)
+        },
         podcast: g.podcast || fc.podcast.unwrap_or(false),
         podcast_tagged: g.podcast_tagged || fc.podcast_tagged.unwrap_or(false),
         tags_to_pages: g
@@ -752,6 +763,12 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     posts.retain(|p| !render::is_empty_post(p));
     if before != posts.len() {
         info!("skipped {} empty post(s)", before - posts.len());
+    }
+
+    // Hover tooltips: attach the linked page's intro as a `title=` on Wikipedia /
+    // MediaWiki / Wikimedia Commons / YouTube links (build-time fetch, no key).
+    if s.link_titles {
+        linktitles::enrich(&client, &mut posts, s.concurrency).await;
     }
 
     // Wikidata: render a statements table for every wikidata.org item linked in a

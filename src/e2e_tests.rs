@@ -68,6 +68,7 @@ fn settings(site: PathBuf) -> Settings {
         aboutme_both_images: false,
         wikidata: None,
         wikidata_spoiler: false,
+        link_titles: false,
         keep_media: false,
         genius: false,
         spotify: false,

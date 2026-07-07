@@ -106,6 +106,9 @@ pub struct FileConfig {
     pub wikidata: Option<String>,
     /// Collapse in-post Wikidata tables behind a click-to-expand emoji (opt-in).
     pub wikidata_spoiler: Option<bool>,
+    /// Add hover tooltips (a `title=`) to Wikipedia/MediaWiki/YouTube links from
+    /// the linked page's intro. Default on.
+    pub link_titles: Option<bool>,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     /// Extra pages, each starting with a `# Title` Markdown heading.
@@ -245,6 +248,8 @@ pub struct Settings {
     pub wikidata: Option<String>,
     /// Collapse in-post Wikidata tables behind a click-to-expand emoji (default false).
     pub wikidata_spoiler: bool,
+    /// Hover tooltips on Wikipedia/MediaWiki/Commons/YouTube links (default true).
+    pub link_titles: bool,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
     pub pages: Option<String>,

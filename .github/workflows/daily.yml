@@ -234,6 +234,11 @@ env:
   # emoji (the About-page table stays expanded).
   WIKIDATA_SPOILER: ${{ vars.WIKIDATA_SPOILER }}
 
+  # Hover tooltips: attach the linked page's intro as a title= on Wikipedia /
+  # MediaWiki / Wikimedia Commons (author + date) / YouTube (video title) / Habr
+  # (user stats) links. On by default; set to "false" to disable.
+  LINK_TITLES: ${{ vars.LINK_TITLES }}
+
   # Comma-separated tags to surface as #tag links in the top nav, e.g.
   # "music, batumi, cooking".
   TAGS_TO_PAGES: ${{ vars.TAGS_TO_PAGES }}
@@ -362,6 +367,7 @@ jobs:
             [ "${ABOUTME_BOTH_IMAGES:-}" = "true" ] && args+=(--aboutme-both-images)
             [ -n "${WIKIDATA:-}" ] && args+=(--wikidata "$WIKIDATA")
             [ "${WIKIDATA_SPOILER:-}" = "true" ] && args+=(--wikidata-spoiler)
+            [ "${LINK_TITLES:-}" = "false" ] && args+=(--no-link-titles)
             [ -n "${TAGS_TO_PAGES:-}" ] && args+=(--tags-to-pages "$TAGS_TO_PAGES")
             [ -n "${1:-}" ] && args+=(--theme "$1")
             ./target/release/tg2zola "${args[@]}"
