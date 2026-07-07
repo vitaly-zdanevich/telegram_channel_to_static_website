@@ -164,6 +164,9 @@ pub struct Post {
     /// Genius song id (resolved by fetching a linked genius.com page), for the
     /// lyrics widget when the post carries no lyrics of its own.
     pub genius_song_id: Option<String>,
+    /// Bandcamp EmbeddedPlayer URL (resolved by fetching a linked album/track
+    /// page), replacing the plain link with the player. Default on.
+    pub bandcamp: Option<String>,
     /// Rendered Wikidata statement tables (raw HTML, spoiler-wrapped if enabled)
     /// for each `wikidata.org/wiki/Q…` link in the post — appended after the body.
     pub wikidata_html: Vec<String>,

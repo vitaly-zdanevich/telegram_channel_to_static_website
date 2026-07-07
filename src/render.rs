@@ -340,6 +340,11 @@ pub fn render_post(
     if pinterest_embed.is_some() {
         body_src = strip_platform_links(&body_src, &PINTEREST_LINK);
     }
+    // Bandcamp player replacing its album/track link (default on; resolved only
+    // when enabled, so presence of `post.bandcamp` is the gate).
+    if post.bandcamp.is_some() {
+        body_src = strip_platform_links(&body_src, &BANDCAMP_LINK);
+    }
 
     let mut downloads = Vec::new();
     let mut body = String::new();
@@ -422,6 +427,10 @@ pub fn render_post(
     // Pinterest embedded pin replacing its link (default on).
     if let Some(url) = &pinterest_embed {
         body.push_str(&format!("{{{{ pinterest(url=\"{url}\") }}}}\n\n"));
+    }
+    // Bandcamp player replacing its link (default on).
+    if let Some(url) = &post.bandcamp {
+        body.push_str(&format!("{{{{ bandcamp(url=\"{url}\") }}}}\n\n"));
     }
 
     // Photo-album carousel (opt-in): when a post's *media* is 2+ images and no
@@ -1106,6 +1115,13 @@ static PINTEREST_LINK: Lazy<Regex> = Lazy::new(|| {
     .unwrap()
 });
 
+static BANDCAMP_LINK: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(
+        r"\[[^\]]*\]\(\s*<?https?://[a-z0-9-]+\.bandcamp\.com/(?:album|track)/[^)\s]*>?\s*\)|<?https?://[a-z0-9-]+\.bandcamp\.com/(?:album|track)/[^\s>)\]]*>?",
+    )
+    .unwrap()
+});
+
 /// Drop each `link`-matching URL from the body (keeping surrounding text), so an
 /// embed can replace the plain link. Lines that become empty are dropped.
 fn strip_platform_links(body: &str, link: &Regex) -> String {
@@ -1271,6 +1287,7 @@ mod tests {
             views: None,
             edited: false,
             reactions: vec![],
+            bandcamp: None,
             wikidata_html: vec![],
             links: vec![],
             youtube: None,
@@ -1652,5 +1669,30 @@ mod tests {
             "no spotify: {b}"
         );
         assert!(!b.contains("{{ pinterest("), "pinterest emitted while off: {b}");
+    }
+
+    #[test]
+    fn bandcamp_player_replaces_link() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let mut p =
+            post_with_body("great album <https://argonov.bandcamp.com/album/rethinking-progress>");
+        let embed = "https://bandcamp.com/EmbeddedPlayer/album=3840020883/size=large/tracklist=false/artwork=small/transparent=true/";
+        p.bandcamp = Some(embed.into());
+        let ui = crate::i18n::ui("en");
+        let opts = RenderOpts {
+            instagram: false,
+            video_releases: None,
+            carousel: false,
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            pinterest: false,
+        };
+        let out = render_post(&p, &rw, false, None, None, &opts).index_md;
+        assert!(out.contains(&format!("{{{{ bandcamp(url=\"{embed}\") }}}}")), "no player: {out}");
+        assert!(!out.contains("/album/rethinking-progress"), "link not stripped: {out}");
     }
 }

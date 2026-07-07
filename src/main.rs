@@ -7,6 +7,7 @@
 
 mod aboutme;
 mod config;
+mod bandcamp;
 mod genius;
 mod group;
 mod html2md;
@@ -221,6 +222,11 @@ struct GenerateArgs {
     /// Don't replace a Pinterest pin link with the embedded pin (default: embed).
     #[arg(long)]
     no_pinterest: bool,
+
+    /// Don't replace a Bandcamp album/track link with the Bandcamp player
+    /// (default: fetch the page and embed the player).
+    #[arg(long)]
+    no_bandcamp: bool,
 
     /// Add a Pinterest "Save" hover button to the site's own images so visitors
     /// can pin them to their boards (opt-in; needs JavaScript).
@@ -527,6 +533,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.pinterest.unwrap_or(true)
         },
+        bandcamp: if g.no_bandcamp {
+            false
+        } else {
+            fc.bandcamp.unwrap_or(true)
+        },
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
             false
@@ -730,6 +741,11 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // for embeddability too — not just direct YouTube links.
     if s.genius {
         genius::enrich(&client, &mut posts, s.concurrency).await;
+    }
+
+    // Resolve Bandcamp album/track links to their embeddable player (page fetch).
+    if s.bandcamp {
+        bandcamp::enrich(&client, &mut posts, s.concurrency).await;
     }
 
     // Check YouTube links for liveness so a *removed* video keeps its local

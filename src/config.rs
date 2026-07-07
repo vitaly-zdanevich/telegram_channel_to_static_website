@@ -80,6 +80,8 @@ pub struct FileConfig {
     pub instagram: Option<bool>,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: Option<bool>,
+    /// Replace a Bandcamp album/track link with the Bandcamp player (default on).
+    pub bandcamp: Option<bool>,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
     pub pinterest_save: Option<bool>,
     /// Fetch Google PageSpeed/Lighthouse scores for the deployed site (opt-in).
@@ -221,6 +223,8 @@ pub struct Settings {
     pub instagram: bool,
     /// Replace Pinterest pin links with the embedded pin (default true).
     pub pinterest: bool,
+    /// Replace Bandcamp album/track links with the Bandcamp player (default true).
+    pub bandcamp: bool,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).
     pub pinterest_save: bool,
     /// Fetch Google Lighthouse scores for the About page + README badges (opt-in, default false).

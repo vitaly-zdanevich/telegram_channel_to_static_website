@@ -84,6 +84,16 @@ static SPOTIFY: Lazy<Regex> = Lazy::new(|| {
 static WIKIDATA: Lazy<Regex> =
     Lazy::new(|| Regex::new(r"(?i)wikidata\.org/(?:wiki|entity)/(Q\d+)").unwrap());
 
+static BANDCAMP: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(r"https?://[a-z0-9][a-z0-9-]*\.bandcamp\.com/(?:album|track)/[a-z0-9-]+").unwrap()
+});
+
+/// The first Bandcamp album/track page URL linked from a post, if any — the
+/// page is fetched later to resolve the embeddable player.
+pub fn bandcamp_page(links: &[String]) -> Option<String> {
+    links.iter().find_map(|l| BANDCAMP.find(l).map(|m| m.as_str().to_string()))
+}
+
 /// Every distinct Wikidata item id (`Q…`) linked from a post, in first-seen
 /// order — one statements table is rendered per id.
 pub fn wikidata_qids(links: &[String]) -> Vec<String> {

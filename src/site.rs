@@ -126,6 +126,10 @@ pub fn scaffold(
         &site.join("templates/shortcodes/pinterest.html"),
         PINTEREST_SHORTCODE,
     )?;
+    write_file(
+        &site.join("templates/shortcodes/bandcamp.html"),
+        BANDCAMP_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
     write_file(
         &site.join("templates/shortcodes/video_ext.html"),
@@ -1703,6 +1707,11 @@ const SPOTIFY_SHORTCODE: &str = r#"<div class="sp-embed"><iframe src="{{ url }}"
 const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" data-pin-width="large" href="{{ url }}">View on Pinterest</a>{% if not config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js"></script>{% endif %}
 "#;
 
+// Bandcamp player. The EmbeddedPlayer iframe is a plain, self-contained iframe
+// (no JS shim), so it works offline once cached and needs no fallback swap.
+const BANDCAMP_SHORTCODE: &str = r#"<div class="bc-embed"><iframe src="{{ url }}" seamless loading="lazy" frameborder="0"></iframe></div>
+"#;
+
 // Resolve colocated media against the post's permalink so it works both on the
 // post page and when the post is shown in full on the homepage feed (a relative
 // src would otherwise break off the post's own page).
@@ -1830,6 +1839,8 @@ blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1r
 .sp-embed { margin: 1rem 0; }
 .sp-embed iframe { width: 100%; max-width: 660px; height: 152px; border: 0; border-radius: 12px; }
 .sp-embed .sp-link { display: block; font-size: .85rem; margin-top: .3rem; }
+.bc-embed { margin: 1rem 0; }
+.bc-embed iframe { width: 100%; max-width: 400px; height: 120px; border: 0; }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }

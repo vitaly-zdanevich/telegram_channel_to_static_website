@@ -162,6 +162,10 @@ env:
   # Set to "false" to stop replacing Pinterest pin links with the embedded pin.
   PINTEREST: ${{ vars.PINTEREST }}
 
+  # Set to "false" to stop replacing Bandcamp album/track links with the player
+  # (default: fetch the page and embed the Bandcamp player).
+  BANDCAMP: ${{ vars.BANDCAMP }}
+
   # Set to "true" to add a Pinterest "Save" hover button to the site's own images
   # so visitors can pin them (opt-in; needs JavaScript).
   PINTEREST_SAVE: ${{ vars.PINTEREST_SAVE }}
@@ -355,6 +359,7 @@ jobs:
             [ "${SPOTIFY:-}" = "true" ] && args+=(--spotify)
             [ "${INSTAGRAM:-}" = "true" ] && args+=(--instagram)
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
+            [ "${BANDCAMP:-}" = "false" ] && args+=(--no-bandcamp)
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
             [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
             [ "${PWA:-}" = "false" ] && args+=(--no-pwa)
