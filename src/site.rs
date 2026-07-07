@@ -1814,6 +1814,17 @@ audio { width: 100%; }
 .ap-embed .ap-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .ym-embed { margin: 1rem 0; }
 .ym-embed iframe { width: 100%; max-width: 900px; height: 180px; border: 0; }
+/* Genius (and, if ever embedded, Reddit) ship a light-theme widget with no dark
+   option; under a dark OS theme approximate one by inverting luminance and
+   rotating hues back so colours stay roughly true. The Genius song embed injects
+   an inline `.rg_embed` card (not always an iframe), so target both — but not
+   `.rg_embed_link`, the fallback link left after the offline pass strips the JS. */
+@media (prefers-color-scheme: dark) {
+  .rg_embed,
+  iframe[src*="genius.com"],
+  iframe[src*="redditmedia.com"],
+  iframe[src*="embed.reddit.com"] { filter: invert(1) hue-rotate(180deg); }
+}
 .ym-embed .ym-link { display: block; font-size: .85rem; margin-top: .3rem; }
 blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1rem; }
 .sp-embed { margin: 1rem 0; }
