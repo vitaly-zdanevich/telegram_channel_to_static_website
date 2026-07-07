@@ -420,13 +420,29 @@ fn config_toml(
         ("newer_day", u.newer_day),
         ("older_day", u.older_day),
         ("not_found", u.not_found),
+        ("posts", u.posts),
     ]
     .iter()
     .map(|&(k, v)| format!("{k} = \"{}\"", toml_escape(v)))
     .collect::<Vec<_>>()
     .join("\n");
 
+    // Per-tag post counts, looked up by the tag shortcode + nav for a hover
+    // tooltip ("17 posts"). Localized here so templates need no number logic.
+    let tag_counts_block = if tags.is_empty() {
+        String::new()
+    } else {
+        let word = crate::i18n::ui(&s.language).posts;
+        let rows = tags
+            .iter()
+            .map(|(name, n)| format!("\"{}\" = \"{n} {word}\"", toml_escape(name)))
+            .collect::<Vec<_>>()
+            .join("\n");
+        format!("\n[extra.tag_counts]\n{rows}")
+    };
+
     CONFIG_TOML
+        .replace("__TAG_COUNTS__", &tag_counts_block)
         .replace("__LANGUAGE__", &toml_escape(&s.language))
         .replace("__DATE_LOCALE__", crate::i18n::date_locale(&s.language))
         .replace("__I18N__", &i18n_block)
@@ -1404,6 +1420,7 @@ __YANDEX_METRICA__
 
 [extra.i18n]
 __I18N__
+__TAG_COUNTS__
 "#;
 
 const BASE_HTML: &str = r#"<!DOCTYPE html>
@@ -1449,7 +1466,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
     {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}" alt=""></a>{% endif %}
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
     {% if not config.extra.hide_nav %}<nav>
-      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
+      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}" title="{{ config.extra.tag_counts[t] | default(value='') }}">#{{ t }}</a>{% endfor %}
       {% if current_path is matching("/tags/$") %}<span class="here">{{ config.extra.i18n.tags }}</span>{% else %}<a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>{% endif %}
       {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
@@ -1568,7 +1585,7 @@ const TAGS_LIST: &str = r#"{% extends "base.html" %}
   <h1>{{ config.extra.i18n.tags }}</h1>
   <ul class="tag-cloud">
   {% for t in config.extra.tags | default(value=[]) %}
-    <li><a href="{{ get_taxonomy_url(kind='tags', name=t.name) | safe }}">#{{ t.name }}</a> <a class="count" href="{{ get_url(path='/tags/' ~ t.slug ~ '/full/') | safe }}" title="{{ config.extra.i18n.full_posts }}">{{ t.count }}</a></li>
+    <li><a href="{{ get_taxonomy_url(kind='tags', name=t.name) | safe }}" title="{{ t.count }} {{ config.extra.i18n.posts }}">#{{ t.name }}</a> <a class="count" href="{{ get_url(path='/tags/' ~ t.slug ~ '/full/') | safe }}" title="{{ config.extra.i18n.full_posts }}">{{ t.count }}</a></li>
   {% endfor %}
   </ul>
 {% endblock content %}
@@ -1702,7 +1719,7 @@ const AUDIO_SHORTCODE: &str =
 
 // Inline clickable hashtag → its taxonomy page (base_url-aware).
 const TAG_SHORTCODE: &str =
-    "<a class=\"tag\" href=\"{{ get_taxonomy_url(kind='tags', name=t) | safe }}\">#{{ t }}</a>";
+    "<a class=\"tag\" href=\"{{ get_taxonomy_url(kind='tags', name=t) | safe }}\" title=\"{{ config.extra.tag_counts[t] | default(value='') }}\">#{{ t }}</a>";
 
 /// The bundled Elasticlunr library (0.9.5, http://elasticlunr.com/), written to
 /// static/ only when Elasticlunr search is enabled (SEARCH_ENGINE=elasticlunr).

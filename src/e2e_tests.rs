@@ -264,6 +264,10 @@ fn zola_build_produces_expected_html() {
     assert!(public.join("rss.xml").exists(), "rss feed missing");
     assert!(public.join("tags/greeting/index.html").exists(), "tag page missing");
 
+    // Each tag link carries a post-count hover tooltip (localized "N posts").
+    let tags_page = read("tags/index.html");
+    assert!(tags_page.contains("title=\"1 posts\""), "tag count tooltip missing: {tags_page}");
+
     // Custom 404 exists and links the themed stylesheet (which carries the
     // prefers-color-scheme dark/light rules), so it follows the OS theme.
     assert!(public.join("404.html").exists(), "404 page missing");
