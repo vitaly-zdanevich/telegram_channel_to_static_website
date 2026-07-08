@@ -73,6 +73,7 @@ fn settings(site: PathBuf) -> Settings {
         vk: false,
         related: false,
         dedup: false,
+        dead_links: false,
         keep_media: false,
         genius: false,
         spotify: false,

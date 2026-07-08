@@ -245,6 +245,11 @@ struct GenerateArgs {
     #[arg(long)]
     no_dedup: bool,
 
+    /// Check every outbound link and log the dead ones (404/410) — a diagnostic
+    /// for the CI log; it doesn't change the site.
+    #[arg(long)]
+    dead_links: bool,
+
     /// Add a Pinterest "Save" hover button to the site's own images so visitors
     /// can pin them to their boards (opt-in; needs JavaScript).
     #[arg(long)]
@@ -566,6 +571,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.dedup.unwrap_or(true)
         },
+        dead_links: g.dead_links || fc.dead_links.unwrap_or(false),
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
             false
@@ -807,6 +813,11 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         if s.pinterest {
             liveness::check_pinterest(&client, &mut posts, s.concurrency).await;
         }
+    }
+
+    // Opt-in diagnostic: log outbound links that are gone (404/410) to the CI log.
+    if s.dead_links {
+        liveness::report_dead_links(&client, &posts, s.concurrency).await;
     }
 
     // Optional MTProto backend: pull audio/voice (and, with MTPROTO_IMAGES=1,

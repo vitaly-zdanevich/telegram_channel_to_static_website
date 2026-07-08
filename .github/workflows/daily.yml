@@ -179,6 +179,10 @@ env:
   # by default (smaller published site); set to "false" to keep per-post copies.
   DEDUP: ${{ vars.DEDUP }}
 
+  # Set to "true" to check every outbound link and log the dead ones (404/410)
+  # in this job's output — a diagnostic; it doesn't change the site.
+  DEAD_LINKS: ${{ vars.DEAD_LINKS }}
+
   # Set to "true" to add a Pinterest "Save" hover button to the site's own images
   # so visitors can pin them (opt-in; needs JavaScript).
   PINTEREST_SAVE: ${{ vars.PINTEREST_SAVE }}
@@ -376,6 +380,7 @@ jobs:
             [ "${VK:-}" = "true" ] && args+=(--vk)
             [ "${RELATED:-}" = "false" ] && args+=(--no-related)
             [ "${DEDUP:-}" = "false" ] && args+=(--no-dedup)
+            [ "${DEAD_LINKS:-}" = "true" ] && args+=(--dead-links)
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
             [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
             [ "${PWA:-}" = "false" ] && args+=(--no-pwa)

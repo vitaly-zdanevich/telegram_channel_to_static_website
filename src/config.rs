@@ -89,6 +89,8 @@ pub struct FileConfig {
     pub related: Option<bool>,
     /// Merge identical media across posts into a shared store (default on).
     pub dedup: Option<bool>,
+    /// Check outbound links and log the dead ones (opt-in diagnostic).
+    pub dead_links: Option<bool>,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
     pub pinterest_save: Option<bool>,
     /// Fetch Google PageSpeed/Lighthouse scores for the deployed site (opt-in).
@@ -238,6 +240,8 @@ pub struct Settings {
     pub related: bool,
     /// Merge identical media across posts into a shared store (default true).
     pub dedup: bool,
+    /// Check outbound links and log the dead ones (opt-in, default false).
+    pub dead_links: bool,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).
     pub pinterest_save: bool,
     /// Fetch Google Lighthouse scores for the About page + README badges (opt-in, default false).

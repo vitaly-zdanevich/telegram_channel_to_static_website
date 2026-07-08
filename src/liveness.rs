@@ -438,12 +438,62 @@ fn oembed_removed(status: u16) -> bool {
     matches!(status, 400 | 404)
 }
 
+/// True for an outbound link worth checking: an `http(s)` URL that isn't a
+/// Telegram link (those are internal / handled elsewhere).
+fn is_external(url: &str) -> bool {
+    url.starts_with("http")
+        && !url.contains("//t.me/")
+        && !url.contains("//telegram.")
+}
+
+/// A definitively-gone link (`404`/`410`). A HEAD is enough and cheap; a server
+/// that rejects HEAD, a timeout, a block (401/403) or a 5xx is *not* reported.
+async fn link_is_gone(client: &reqwest::Client, url: &str) -> bool {
+    match client.head(url).send().await {
+        Ok(resp) => matches!(resp.status().as_u16(), 404 | 410),
+        Err(_) => false,
+    }
+}
+
+/// Diagnostic (opt-in): check every outbound link across the posts and log the
+/// ones that are gone, so link rot shows up in the CI log. Read-only — it never
+/// changes the site. Conservative on purpose (only 404/410), to avoid false
+/// alarms from bot-blocking or transient failures.
+pub async fn report_dead_links(client: &reqwest::Client, posts: &[Post], concurrency: usize) {
+    // Unique links, remembering the first post that carries each (for the log).
+    let mut seen: std::collections::HashMap<String, u64> = std::collections::HashMap::new();
+    for p in posts {
+        for l in &p.links {
+            if is_external(l) {
+                seen.entry(l.clone()).or_insert(p.primary_id);
+            }
+        }
+    }
+    if seen.is_empty() {
+        return;
+    }
+    let total = seen.len();
+    tracing::info!("dead-link report: checking {total} outbound link(s)");
+    let mut gone: Vec<(u64, String)> = stream::iter(seen.into_iter().map(|(url, id)| {
+        let client = client.clone();
+        async move { link_is_gone(&client, &url).await.then_some((id, url)) }
+    }))
+    .buffer_unordered(concurrency.max(1))
+    .filter_map(|r| async move { r })
+    .collect()
+    .await;
+    gone.sort();
+    for (id, url) in &gone {
+        tracing::warn!("dead link in post #{id}: {url}");
+    }
+    tracing::info!("dead-link report: {} dead of {total} checked", gone.len());
+}
 
 #[cfg(test)]
 mod tests {
     use super::{
-        apple_body_removed, apple_podcast_id, has_nonempty_og, oembed_removed, yandex_body_removed,
-        yandex_track_id, youtube_status_removed,
+        apple_body_removed, apple_podcast_id, has_nonempty_og, is_external, oembed_removed,
+        yandex_body_removed, yandex_track_id, youtube_status_removed,
     };
 
     #[test]
@@ -510,6 +560,15 @@ mod tests {
         assert!(yandex_body_removed(r#"{"result":{}}"#)); // present but not available
         assert!(!yandex_body_removed(r#"{"result":{"available":true,"id":"1"}}"#));
         assert!(!yandex_body_removed(r#"{"error":"not-found"}"#)); // no result → alive
+    }
+
+    #[test]
+    fn external_link_classification() {
+        assert!(is_external("https://example.com/page"));
+        assert!(is_external("http://a.b/c"));
+        assert!(!is_external("https://t.me/chan/5")); // internal
+        assert!(!is_external("https://telegram.org/faq")); // telegram
+        assert!(!is_external("mailto:x@y.z")); // not http
     }
 
     #[test]
