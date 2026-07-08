@@ -1446,7 +1446,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% set og_desc = page.description | default(value=config.description) %}
   {% set og_url = page.permalink | default(value=config.base_url) %}
   {% set_global og_image = "" %}
-  {% if page.extra.og_image %}{% set_global og_image = page.permalink ~ page.extra.og_image %}
+  {% if page.extra.og_image %}{% if page.extra.og_image is starting_with("http") %}{% set_global og_image = page.extra.og_image %}{% else %}{% set_global og_image = page.permalink ~ page.extra.og_image %}{% endif %}
   {% elif config.extra.avatar %}{% set_global og_image = get_url(path=config.extra.avatar) %}{% endif %}
   {% if og_desc %}<meta name="description" content="{{ og_desc }}">{% endif %}
   <meta property="og:site_name" content="{{ config.title }}">

@@ -72,6 +72,7 @@ fn settings(site: PathBuf) -> Settings {
         bandcamp: false,
         vk: false,
         related: false,
+        dedup: false,
         keep_media: false,
         genius: false,
         spotify: false,

@@ -87,6 +87,8 @@ pub struct FileConfig {
     pub vk: Option<bool>,
     /// Append a "Related" list to each post, ranked by shared-tag overlap (default on).
     pub related: Option<bool>,
+    /// Merge identical media across posts into a shared store (default on).
+    pub dedup: Option<bool>,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
     pub pinterest_save: Option<bool>,
     /// Fetch Google PageSpeed/Lighthouse scores for the deployed site (opt-in).
@@ -234,6 +236,8 @@ pub struct Settings {
     pub vk: bool,
     /// Append a shared-tag "Related" list to each post (default true).
     pub related: bool,
+    /// Merge identical media across posts into a shared store (default true).
+    pub dedup: bool,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).
     pub pinterest_save: bool,
     /// Fetch Google Lighthouse scores for the About page + README badges (opt-in, default false).

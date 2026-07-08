@@ -8,6 +8,7 @@
 mod aboutme;
 mod config;
 mod bandcamp;
+mod dedup;
 mod genius;
 mod group;
 mod html2md;
@@ -238,6 +239,11 @@ struct GenerateArgs {
     /// that share the most tags with it).
     #[arg(long)]
     no_related: bool,
+
+    /// Don't merge identical media across posts into a shared /media/ store
+    /// (default: dedup so the published site serves one copy of a reposted file).
+    #[arg(long)]
+    no_dedup: bool,
 
     /// Add a Pinterest "Save" hover button to the site's own images so visitors
     /// can pin them to their boards (opt-in; needs JavaScript).
@@ -554,6 +560,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             false
         } else {
             fc.related.unwrap_or(true)
+        },
+        dedup: if g.no_dedup {
+            false
+        } else {
+            fc.dedup.unwrap_or(true)
         },
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
@@ -1009,6 +1020,22 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         );
         info!("{} media references across posts/pages", jobs.len());
         media::download_all(&client, &jobs, s.concurrency).await?;
+
+        // Deduplicate identical media across bundles into a shared store, so the
+        // published site serves one copy of a reposted file. Runs before the size
+        // report so the About page reflects the deduped footprint.
+        if s.dedup {
+            match dedup::run(&s.site, &s.base_url) {
+                Ok(st) if st.files_removed > 0 => info!(
+                    "dedup: merged {} duplicate file(s) across {} group(s), saved {}",
+                    st.files_removed,
+                    st.groups,
+                    site::human_size(st.bytes_saved)
+                ),
+                Ok(_) => {}
+                Err(e) => info!("dedup: skipped ({e})"),
+            }
+        }
     } else {
         info!("--no-media: skipping downloads");
     }
