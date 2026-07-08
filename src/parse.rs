@@ -8,7 +8,7 @@ use regex::Regex;
 use scraper::{ElementRef, Html, Selector};
 
 use crate::html2md;
-use crate::model::{ChannelInfo, Forward, Media, RawMessage};
+use crate::model::{ChannelInfo, Forward, Media, RawMessage, Reply};
 
 macro_rules! sel {
     ($name:ident, $q:literal) => {
@@ -23,7 +23,12 @@ sel!(S_OWNER, ".tgme_widget_message_owner_name");
 sel!(S_FWD, ".tgme_widget_message_forwarded_from_name");
 sel!(S_VIEWS, ".tgme_widget_message_views");
 sel!(S_META, ".tgme_widget_message_meta");
-sel!(S_TEXT, ".tgme_widget_message_text");
+// The reply preview reuses `tgme_widget_message_text` (+ js-message_reply_text)
+// and sits *before* the real body, so the body selector must exclude it.
+sel!(S_TEXT, ".tgme_widget_message_text:not(.js-message_reply_text)");
+sel!(S_REPLY, "a.tgme_widget_message_reply");
+sel!(S_REPLY_TEXT, ".js-message_reply_text");
+sel!(S_AUTHOR_NAME, ".tgme_widget_message_author_name");
 sel!(S_PHOTO, ".tgme_widget_message_photo_wrap");
 sel!(S_VIDEO_TAG, "video");
 sel!(S_VIDEO_PLAYER, ".tgme_widget_message_video_player");
@@ -124,6 +129,21 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
         url: e.value().attr("href").map(|h| h.to_string()),
     });
 
+    let reply = wrap.select(&S_REPLY).next().and_then(|a| {
+        let url = a.value().attr("href")?.to_string();
+        // Same-channel reply → the message id, for an internal link.
+        let to_id = reply_target_id(&url, channel);
+        let author = a
+            .select(&S_AUTHOR_NAME)
+            .next()
+            .map(|e| collapse_ws(&e.text().collect::<String>()))
+            .filter(|s| !s.is_empty());
+        let text = collapse_ws(
+            &a.select(&S_REPLY_TEXT).next().map(|e| e.text().collect::<String>()).unwrap_or_default(),
+        );
+        Some(Reply { to_id, url, author, text })
+    });
+
     let views = wrap
         .select(&S_VIEWS)
         .next()
@@ -152,6 +172,7 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
         date,
         author,
         forwarded_from,
+        reply,
         body_md,
         tags,
         links,
@@ -295,6 +316,25 @@ fn is_audio(url: &str) -> bool {
 
 fn is_downloadable(href: &str) -> bool {
     href.starts_with("http") && !href.contains("//t.me/") && !href.contains("//telegram.")
+}
+
+/// The message id from a `t.me/<channel>/<id>` reply link when it targets this
+/// same channel (so it can become an internal link), else `None`.
+fn reply_target_id(url: &str, channel: &str) -> Option<u64> {
+    let after = url.split("//").nth(1)?;
+    let mut segs = after.split('/');
+    let host = segs.next()?;
+    if !matches!(host, "t.me" | "telegram.me" | "telegram.dog") {
+        return None;
+    }
+    let mut seg = segs.next()?;
+    if seg == "s" {
+        seg = segs.next()?;
+    }
+    if !seg.eq_ignore_ascii_case(channel) {
+        return None;
+    }
+    segs.next()?.split(['?', '#']).next()?.parse::<u64>().ok()
 }
 
 /// Parse a views string like `"42"`, `"1.2K"`, `"3.4M"` into a number.
@@ -469,5 +509,23 @@ mod tests {
         assert!(m.edited, "should be marked edited");
         assert_eq!(m.views, Some(1200));
         assert!(m.body_md.contains("hello"));
+    }
+
+    #[test]
+    fn reply_parsed_and_body_excludes_reply_snippet() {
+        // The reply preview reuses `tgme_widget_message_text` and comes first —
+        // the body must still be the real message, not the quoted snippet.
+        let m = one(
+            r#"<a class="tgme_widget_message_reply" href="https://t.me/chan/4">
+                 <div class="tgme_widget_message_author"><span class="tgme_widget_message_author_name">Someone</span></div>
+                 <div class="tgme_widget_message_text js-message_reply_text">quoted earlier message</div>
+               </a>
+               <div class="tgme_widget_message_text">my actual answer</div>"#,
+        );
+        let r = m.reply.as_ref().expect("reply parsed");
+        assert_eq!(r.to_id, Some(4), "same-channel reply id");
+        assert_eq!(r.author.as_deref(), Some("Someone"));
+        assert!(r.text.contains("quoted earlier message"), "snippet: {}", r.text);
+        assert_eq!(m.body_md.trim(), "my actual answer", "body must exclude the reply snippet");
     }
 }

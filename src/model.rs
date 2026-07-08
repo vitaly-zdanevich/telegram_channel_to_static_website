@@ -23,6 +23,19 @@ pub struct Forward {
     pub url: Option<String>,
 }
 
+/// The message a post replies to (from the `t.me/s/` reply preview).
+#[derive(Debug, Clone)]
+pub struct Reply {
+    /// The replied-to message id when it's in this same channel (→ internal link).
+    pub to_id: Option<u64>,
+    /// The reply link (`t.me/<channel>/<id>`); the fallback when not archived.
+    pub url: String,
+    /// Author name shown on the reply preview, if any.
+    pub author: Option<String>,
+    /// The quoted snippet of the replied-to message.
+    pub text: String,
+}
+
 /// A single piece of media attached to a message.
 #[derive(Debug, Clone)]
 pub enum Media {
@@ -94,6 +107,8 @@ pub struct RawMessage {
     pub date: DateTime<FixedOffset>,
     pub author: Option<String>,
     pub forwarded_from: Option<Forward>,
+    /// The message this one replies to, if the preview shows a reply.
+    pub reply: Option<Reply>,
     /// Message text already converted to Markdown.
     pub body_md: String,
     /// Hashtags lifted out of the text (without the leading `#`).
@@ -118,6 +133,8 @@ pub struct Post {
     pub date: DateTime<FixedOffset>,
     pub author: Option<String>,
     pub forwarded_from: Option<Forward>,
+    /// The message this post replies to (rendered as a quoted backlink).
+    pub reply: Option<Reply>,
     pub body_md: String,
     pub tags: Vec<String>,
     pub media: Vec<Media>,

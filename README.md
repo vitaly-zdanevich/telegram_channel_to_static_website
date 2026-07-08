@@ -69,6 +69,9 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   posted at the same instant (e.g. forwarding several at once) are merged.
 - **Self-navigating** — a link to another message in the *same* channel becomes a
   relative link to that post in the blog; links to other channels stay external.
+- **Threaded replies** — when a post replies to an earlier message, it's shown as
+  a quoted **↩ backlink** to that post (an internal link when it's in the archive,
+  otherwise the `t.me` link).
 - **Engagement** — exports per-post **view counts**. (Reactions/likes aren't
   available from the public page — see [Limitations](#limitations).)
 - **RSS feed** — a standard `/rss.xml` of **every post** with full content (a

@@ -120,23 +120,31 @@ pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String)>> {
         .collect()
 }
 
-/// A short, link-safe label for a related post: its first line of text with
-/// Markdown-active characters dropped, or its `#id` when it's media-only.
-fn related_label(post: &Post) -> String {
-    let clean: String = post_preview(post)
+/// Collapse whitespace, drop Markdown-active characters and cap length — safe to
+/// drop inside a `[label](url)`.
+fn md_link_label(text: &str, max: usize) -> String {
+    let clean: String = text
         .split_whitespace()
         .collect::<Vec<_>>()
         .join(" ")
         .chars()
         .filter(|c| !matches!(c, '[' | ']' | '(' | ')' | '*' | '_' | '`' | '<' | '>' | '|'))
         .collect();
-    if clean.is_empty() {
-        return format!("#{}", post.primary_id);
-    }
-    if clean.chars().count() > 64 {
-        format!("{}…", clean.chars().take(64).collect::<String>().trim_end())
+    if clean.chars().count() > max {
+        format!("{}…", clean.chars().take(max).collect::<String>().trim_end())
     } else {
         clean
+    }
+}
+
+/// A short, link-safe label for a related post: its first line of text, or its
+/// `#id` when it's media-only.
+fn related_label(post: &Post) -> String {
+    let l = md_link_label(&post_preview(post), 64);
+    if l.is_empty() {
+        format!("#{}", post.primary_id)
+    } else {
+        l
     }
 }
 
@@ -419,6 +427,23 @@ pub fn render_post(
     let mut used_names: HashSet<String> = HashSet::new();
     // First image in the post → og:image for social/Mastodon link previews.
     let mut og_image: Option<String> = None;
+
+    // Reply context: a quoted backlink to the message this one answers. A
+    // same-channel reply becomes an internal link (via the rewriter); an
+    // unarchived / cross-channel one keeps its t.me link.
+    if let Some(reply) = &post.reply {
+        let mut label = md_link_label(&reply.text, 90);
+        if label.is_empty() {
+            label = reply
+                .author
+                .clone()
+                .or_else(|| reply.to_id.map(|id| format!("#{id}")))
+                .unwrap_or_else(|| "↩".into());
+        }
+        let line = links.rewrite(&format!("> ↩ [{label}]({})", reply.url));
+        body.push_str(&line);
+        body.push_str("\n\n");
+    }
 
     if !body_src.trim().is_empty() {
         let text = links.rewrite(&body_src);
@@ -1374,6 +1399,7 @@ mod tests {
                 .unwrap(),
             author: None,
             forwarded_from: None,
+            reply: None,
             body_md: body.into(),
             tags: vec![],
             media: vec![],
@@ -1764,6 +1790,38 @@ mod tests {
             "no spotify: {b}"
         );
         assert!(!b.contains("{{ pinterest("), "pinterest emitted while off: {b}");
+    }
+
+    #[test]
+    fn reply_renders_as_internal_backlink() {
+        let mut idx = HashMap::new();
+        idx.insert(4u64, "2025-01-01-4".to_string());
+        let rw = LinkRewriter::with_index("c", idx);
+        let mut p = post_with_body("my answer");
+        p.reply = Some(crate::model::Reply {
+            to_id: Some(4),
+            url: "https://t.me/c/4".into(),
+            author: Some("Someone".into()),
+            text: "the earlier message".into(),
+        });
+        let ui = crate::i18n::ui("en");
+        let opts = RenderOpts {
+            instagram: false,
+            video_releases: None,
+            carousel: false,
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            pinterest: false,
+        };
+        let out = render_post(&p, &rw, false, None, None, &opts).index_md;
+        assert!(
+            out.contains("> ↩ [the earlier message](@/posts/2025-01-01-4/index.md)"),
+            "reply backlink missing/not internalized: {out}"
+        );
     }
 
     #[test]
