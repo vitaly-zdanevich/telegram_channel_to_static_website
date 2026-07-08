@@ -8,7 +8,7 @@ use regex::Regex;
 use scraper::{ElementRef, Html, Selector};
 
 use crate::html2md;
-use crate::model::{ChannelInfo, Forward, Media, RawMessage, Reply};
+use crate::model::{ChannelInfo, Forward, Media, Poll, PollOption, RawMessage, Reply};
 
 macro_rules! sel {
     ($name:ident, $q:literal) => {
@@ -29,6 +29,12 @@ sel!(S_TEXT, ".tgme_widget_message_text:not(.js-message_reply_text)");
 sel!(S_REPLY, "a.tgme_widget_message_reply");
 sel!(S_REPLY_TEXT, ".js-message_reply_text");
 sel!(S_AUTHOR_NAME, ".tgme_widget_message_author_name");
+sel!(S_POLL, ".tgme_widget_message_poll");
+sel!(S_POLL_Q, ".tgme_widget_message_poll_question");
+sel!(S_POLL_OPT, ".tgme_widget_message_poll_option");
+sel!(S_POLL_OPT_PCT, ".tgme_widget_message_poll_option_percent");
+sel!(S_POLL_OPT_TEXT, ".tgme_widget_message_poll_option_text");
+sel!(S_VOTERS, ".tgme_widget_message_voters");
 sel!(S_PHOTO, ".tgme_widget_message_photo_wrap");
 sel!(S_VIDEO_TAG, "video");
 sel!(S_VIDEO_PLAYER, ".tgme_widget_message_video_player");
@@ -144,6 +150,8 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
         Some(Reply { to_id, url, author, text })
     });
 
+    let poll = parse_poll(wrap);
+
     let views = wrap
         .select(&S_VIEWS)
         .next()
@@ -173,6 +181,7 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
         author,
         forwarded_from,
         reply,
+        poll,
         body_md,
         tags,
         links,
@@ -180,6 +189,37 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
         views,
         edited,
     })
+}
+
+fn parse_poll(wrap: ElementRef) -> Option<Poll> {
+    let poll = wrap.select(&S_POLL).next()?;
+    let question =
+        poll.select(&S_POLL_Q).next().map(|e| collapse_ws(&e.text().collect::<String>()))?;
+    let options: Vec<PollOption> = poll
+        .select(&S_POLL_OPT)
+        .map(|opt| {
+            let percent = opt
+                .select(&S_POLL_OPT_PCT)
+                .next()
+                .map(|e| e.text().collect::<String>())
+                .and_then(|s| s.trim().trim_end_matches('%').trim().parse::<u8>().ok())
+                .unwrap_or(0);
+            let text = opt
+                .select(&S_POLL_OPT_TEXT)
+                .next()
+                .map(|e| collapse_ws(&e.text().collect::<String>()))
+                .unwrap_or_default();
+            PollOption { text, percent }
+        })
+        .collect();
+    if options.is_empty() {
+        return None;
+    }
+    let voters = wrap
+        .select(&S_VOTERS)
+        .next()
+        .and_then(|e| parse_views(&e.text().collect::<String>()));
+    Some(Poll { question, options, voters })
 }
 
 fn parse_media(wrap: ElementRef) -> Vec<Media> {
@@ -527,5 +567,34 @@ mod tests {
         assert_eq!(r.author.as_deref(), Some("Someone"));
         assert!(r.text.contains("quoted earlier message"), "snippet: {}", r.text);
         assert_eq!(m.body_md.trim(), "my actual answer", "body must exclude the reply snippet");
+    }
+
+    #[test]
+    fn poll_question_options_and_voters() {
+        let m = one(
+            r#"<div class="tgme_widget_message_poll js-poll">
+                 <div class="tgme_widget_message_poll_question">Which do you prefer?</div>
+                 <div class="tgme_widget_message_poll_type">Anonymous Poll</div>
+                 <a class="tgme_widget_message_poll_options" href="https://t.me/chan/7">
+                   <div class="tgme_widget_message_poll_option">
+                     <div class="tgme_widget_message_poll_option_percent">27%</div>
+                     <div class="tgme_widget_message_poll_option_value"><div class="tgme_widget_message_poll_option_text">Toncoin</div></div>
+                   </div>
+                   <div class="tgme_widget_message_poll_option">
+                     <div class="tgme_widget_message_poll_option_percent">73%</div>
+                     <div class="tgme_widget_message_poll_option_value"><div class="tgme_widget_message_poll_option_text">Bitcoin</div></div>
+                   </div>
+                 </a>
+               </div>
+               <span class="tgme_widget_message_voters">132</span>"#,
+        );
+        let p = m.poll.as_ref().expect("poll parsed");
+        assert_eq!(p.question, "Which do you prefer?");
+        assert_eq!(p.options.len(), 2);
+        assert_eq!(p.options[0].text, "Toncoin");
+        assert_eq!(p.options[0].percent, 27);
+        assert_eq!(p.options[1].text, "Bitcoin");
+        assert_eq!(p.options[1].percent, 73);
+        assert_eq!(p.voters, Some(132));
     }
 }

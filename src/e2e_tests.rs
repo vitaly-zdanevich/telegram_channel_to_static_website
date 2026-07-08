@@ -118,6 +118,7 @@ fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&
         author: None,
         forwarded_from: None,
         reply: None,
+        poll: None,
         body_md: body.into(),
         tags: tags.iter().map(|t| t.to_string()).collect(),
         media,

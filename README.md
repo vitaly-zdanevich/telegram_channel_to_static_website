@@ -72,6 +72,8 @@ Written in Rust: a single static binary, easy to run locally or in CI.
 - **Threaded replies** — when a post replies to an earlier message, it's shown as
   a quoted **↩ backlink** to that post (an internal link when it's in the archive,
   otherwise the `t.me` link).
+- **Polls** — rendered as static result bars (question, options with vote shares,
+  and voter count) — no JavaScript.
 - **Engagement** — exports per-post **view counts**. (Reactions/likes aren't
   available from the public page — see [Limitations](#limitations).)
 - **RSS feed** — a standard `/rss.xml` of **every post** with full content (a

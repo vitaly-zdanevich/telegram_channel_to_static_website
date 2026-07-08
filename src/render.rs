@@ -8,7 +8,7 @@ use regex::Regex;
 use std::collections::{HashMap, HashSet};
 
 use crate::media::ext_from_url;
-use crate::model::{Forward, Media, Post};
+use crate::model::{Forward, Media, Poll, Post};
 
 /// One media file to fetch directly into the page bundle. The bundle (committed
 /// to the `blog` branch) is itself the cache: if the file is already there, the
@@ -48,6 +48,7 @@ pub fn is_page(post: &Post) -> bool {
 pub fn is_empty_post(post: &Post) -> bool {
     post.body_md.trim().is_empty()
         && post.youtube.is_none()
+        && post.poll.is_none()
         && !post
             .media
             .iter()
@@ -118,6 +119,31 @@ pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String)>> {
                 .collect()
         })
         .collect()
+}
+
+/// A poll as static result bars — raw HTML (no JS), so it survives the offline
+/// pass. Bar widths come straight from the scraped vote shares.
+fn render_poll(poll: &Poll) -> String {
+    let esc = |s: &str| s.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;");
+    let mut h = format!(
+        "<div class=\"tg-poll\"><div class=\"tg-poll-q\">{}</div><ol class=\"tg-poll-opts\">",
+        esc(&poll.question)
+    );
+    for o in &poll.options {
+        h.push_str(&format!(
+            "<li><div class=\"tg-poll-row\"><span class=\"tg-poll-txt\">{}</span>\
+             <span class=\"tg-poll-pct\">{p}%</span></div>\
+             <div class=\"tg-poll-bar\" style=\"width:{p}%\"></div></li>",
+            esc(&o.text),
+            p = o.percent
+        ));
+    }
+    h.push_str("</ol>");
+    if let Some(v) = poll.voters {
+        h.push_str(&format!("<div class=\"tg-poll-voters\">👥 {v}</div>"));
+    }
+    h.push_str("</div>");
+    h
 }
 
 /// Collapse whitespace, drop Markdown-active characters and cap length — safe to
@@ -442,6 +468,12 @@ pub fn render_post(
         }
         let line = links.rewrite(&format!("> ↩ [{label}]({})", reply.url));
         body.push_str(&line);
+        body.push_str("\n\n");
+    }
+
+    // Poll → static result bars (raw HTML, no JS; survives the offline pass).
+    if let Some(poll) = &post.poll {
+        body.push_str(&render_poll(poll));
         body.push_str("\n\n");
     }
 
@@ -1400,6 +1432,7 @@ mod tests {
             author: None,
             forwarded_from: None,
             reply: None,
+            poll: None,
             body_md: body.into(),
             tags: vec![],
             media: vec![],

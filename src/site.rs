@@ -1853,6 +1853,15 @@ blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1r
 .bc-embed iframe { width: 100%; max-width: 400px; height: 120px; border: 0; }
 .related { margin: 1rem 0 0; font-size: .9em; }
 .related ul { margin: .2rem 0 0; padding-left: 1.2rem; }
+/* Poll → static result bars (no JS). */
+.tg-poll { margin: 1rem 0; padding: .6rem .8rem; border: 1px solid var(--border); border-radius: 8px; }
+.tg-poll-q { font-weight: 600; margin-bottom: .5rem; }
+.tg-poll-opts { list-style: none; margin: 0; padding: 0; }
+.tg-poll-opts li { margin: .45rem 0; }
+.tg-poll-row { display: flex; justify-content: space-between; gap: .5rem; font-size: .9em; }
+.tg-poll-pct { color: var(--muted); flex: none; }
+.tg-poll-bar { height: 6px; margin-top: .25rem; border-radius: 3px; background: var(--link); min-width: 2px; }
+.tg-poll-voters { color: var(--muted); font-size: .85em; margin-top: .5rem; }
 .vk-playlist { margin: 1rem 0; }
 /* VK's widget is light-only; approximate a dark variant under a dark OS theme. */
 @media (prefers-color-scheme: dark) { .vk-playlist iframe { filter: invert(1) hue-rotate(180deg); } }

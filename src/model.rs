@@ -36,6 +36,22 @@ pub struct Reply {
     pub text: String,
 }
 
+/// A poll from the `t.me/s/` preview (question + options with vote shares).
+#[derive(Debug, Clone)]
+pub struct Poll {
+    pub question: String,
+    pub options: Vec<PollOption>,
+    /// Total voters, when shown.
+    pub voters: Option<u64>,
+}
+
+#[derive(Debug, Clone)]
+pub struct PollOption {
+    pub text: String,
+    /// Vote share, 0–100.
+    pub percent: u8,
+}
+
 /// A single piece of media attached to a message.
 #[derive(Debug, Clone)]
 pub enum Media {
@@ -109,6 +125,8 @@ pub struct RawMessage {
     pub forwarded_from: Option<Forward>,
     /// The message this one replies to, if the preview shows a reply.
     pub reply: Option<Reply>,
+    /// A poll, if the message is one.
+    pub poll: Option<Poll>,
     /// Message text already converted to Markdown.
     pub body_md: String,
     /// Hashtags lifted out of the text (without the leading `#`).
@@ -135,6 +153,8 @@ pub struct Post {
     pub forwarded_from: Option<Forward>,
     /// The message this post replies to (rendered as a quoted backlink).
     pub reply: Option<Reply>,
+    /// A poll attached to the post (rendered as static result bars).
+    pub poll: Option<Poll>,
     pub body_md: String,
     pub tags: Vec<String>,
     pub media: Vec<Media>,
