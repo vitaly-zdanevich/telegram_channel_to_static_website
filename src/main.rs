@@ -228,6 +228,12 @@ struct GenerateArgs {
     #[arg(long)]
     no_bandcamp: bool,
 
+    /// Replace a VK music playlist link with the VK playlist widget (opt-in).
+    /// Note: VK music playback needs a logged-in VK session and is blocked in
+    /// some regions; a fallback "Open on VK" link is always shown.
+    #[arg(long)]
+    vk: bool,
+
     /// Add a Pinterest "Save" hover button to the site's own images so visitors
     /// can pin them to their boards (opt-in; needs JavaScript).
     #[arg(long)]
@@ -538,6 +544,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.bandcamp.unwrap_or(true)
         },
+        vk: g.vk || fc.vk.unwrap_or(false),
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
             false
@@ -746,6 +753,13 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Resolve Bandcamp album/track links to their embeddable player (page fetch).
     if s.bandcamp {
         bandcamp::enrich(&client, &mut posts, s.concurrency).await;
+    }
+
+    // VK music playlist links → the opt-in VK widget (pure URL parse, no fetch).
+    if s.vk {
+        for p in &mut posts {
+            p.vk_playlist = media::vk_playlist_url(&p.links);
+        }
     }
 
     // Check YouTube links for liveness so a *removed* video keeps its local

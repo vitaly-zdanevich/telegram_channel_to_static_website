@@ -70,6 +70,7 @@ fn settings(site: PathBuf) -> Settings {
         wikidata_spoiler: false,
         link_titles: false,
         bandcamp: false,
+        vk: false,
         keep_media: false,
         genius: false,
         spotify: false,
@@ -137,6 +138,7 @@ fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&
         pinterest_dead: false,
         genius_song_id: None,
         bandcamp: None,
+        vk_playlist: None,
         wikidata_html: vec![],
     }
 }

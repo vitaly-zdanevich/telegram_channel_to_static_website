@@ -166,6 +166,11 @@ env:
   # (default: fetch the page and embed the Bandcamp player).
   BANDCAMP: ${{ vars.BANDCAMP }}
 
+  # Set to "true" to embed VK music playlist links as the VK playlist widget.
+  # Off by default: VK music playback needs a logged-in VK session and is blocked
+  # in some regions (e.g. Ukraine); a fallback "Open on VK" link always shows.
+  VK: ${{ vars.VK }}
+
   # Set to "true" to add a Pinterest "Save" hover button to the site's own images
   # so visitors can pin them (opt-in; needs JavaScript).
   PINTEREST_SAVE: ${{ vars.PINTEREST_SAVE }}
@@ -360,6 +365,7 @@ jobs:
             [ "${INSTAGRAM:-}" = "true" ] && args+=(--instagram)
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
             [ "${BANDCAMP:-}" = "false" ] && args+=(--no-bandcamp)
+            [ "${VK:-}" = "true" ] && args+=(--vk)
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
             [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
             [ "${PWA:-}" = "false" ] && args+=(--no-pwa)

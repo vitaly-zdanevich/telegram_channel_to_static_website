@@ -94,6 +94,26 @@ pub fn bandcamp_page(links: &[String]) -> Option<String> {
     links.iter().find_map(|l| BANDCAMP.find(l).map(|m| m.as_str().to_string()))
 }
 
+static VK_PLAYLIST: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(
+        r"(?:https?://)?(?:www\.)?vk\.com/(?:music/(?:playlist|album)/|audio_playlist)(-?\d+)_(\d+)(?:[/_]([0-9A-Za-z]+))?",
+    )
+    .unwrap()
+});
+
+/// The first VK music playlist/album URL linked from a post, if any.
+pub fn vk_playlist_url(links: &[String]) -> Option<String> {
+    links.iter().find_map(|l| VK_PLAYLIST.find(l).map(|m| m.as_str().to_string()))
+}
+
+/// `(owner_id, playlist_id, access_key)` parsed from a VK playlist URL — the
+/// arguments for `VK.Widgets.Playlist`. The access key is empty for a fully
+/// public playlist.
+pub fn vk_playlist_parts(url: &str) -> Option<(String, String, String)> {
+    let c = VK_PLAYLIST.captures(url)?;
+    Some((c[1].to_string(), c[2].to_string(), c.get(3).map_or(String::new(), |m| m.as_str().to_string())))
+}
+
 /// Every distinct Wikidata item id (`Q…`) linked from a post, in first-seen
 /// order — one statements table is rendered per id.
 pub fn wikidata_qids(links: &[String]) -> Vec<String> {
@@ -319,6 +339,23 @@ mod tests {
         ];
         assert_eq!(wikidata_qids(&links), vec!["Q42".to_string(), "Q5".to_string()]);
         assert!(wikidata_qids(&["https://example.com".into()]).is_empty());
+    }
+
+    #[test]
+    fn vk_playlist_parsing() {
+        assert_eq!(
+            vk_playlist_parts("https://vk.com/music/playlist/-147845620_1"),
+            Some(("-147845620".into(), "1".into(), String::new()))
+        );
+        assert_eq!(
+            vk_playlist_parts("https://vk.com/music/album/-2000123_456_abcDEF123"),
+            Some(("-2000123".into(), "456".into(), "abcDEF123".into()))
+        );
+        assert_eq!(
+            vk_playlist_url(&["x https://vk.com/audio_playlist-1_2/deadbeef y".into()]).as_deref(),
+            Some("https://vk.com/audio_playlist-1_2/deadbeef")
+        );
+        assert_eq!(vk_playlist_url(&["https://vk.com/wall-1_2".into()]), None);
     }
 
     #[test]

@@ -345,6 +345,10 @@ pub fn render_post(
     if post.bandcamp.is_some() {
         body_src = strip_platform_links(&body_src, &BANDCAMP_LINK);
     }
+    // VK playlist widget replacing its link (opt-in; populated only when enabled).
+    if post.vk_playlist.is_some() {
+        body_src = strip_platform_links(&body_src, &VK_LINK);
+    }
 
     let mut downloads = Vec::new();
     let mut body = String::new();
@@ -431,6 +435,16 @@ pub fn render_post(
     // Bandcamp player replacing its link (default on).
     if let Some(url) = &post.bandcamp {
         body.push_str(&format!("{{{{ bandcamp(url=\"{url}\") }}}}\n\n"));
+    }
+    // VK playlist widget replacing its link (opt-in). The widget is login/region
+    // gated, so the shortcode also renders a fallback "Open on VK" link.
+    if let Some(url) = &post.vk_playlist {
+        if let Some((owner, id, key)) = crate::media::vk_playlist_parts(url) {
+            let elid = format!("vk_pl_{}_{}", owner.replace('-', "n"), id);
+            body.push_str(&format!(
+                "{{{{ vk_playlist(elid=\"{elid}\", owner=\"{owner}\", id=\"{id}\", key=\"{key}\", url=\"{url}\") }}}}\n\n"
+            ));
+        }
     }
 
     // Photo-album carousel (opt-in): when a post's *media* is 2+ images and no
@@ -1122,6 +1136,13 @@ static BANDCAMP_LINK: Lazy<Regex> = Lazy::new(|| {
     .unwrap()
 });
 
+static VK_LINK: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(
+        r"\[[^\]]*\]\(\s*<?https?://(?:www\.)?vk\.com/(?:music/(?:playlist|album)|audio_playlist)[^)\s]*>?\s*\)|<?https?://(?:www\.)?vk\.com/(?:music/(?:playlist|album)|audio_playlist)[^\s>)\]]*>?",
+    )
+    .unwrap()
+});
+
 /// Drop each `link`-matching URL from the body (keeping surrounding text), so an
 /// embed can replace the plain link. Lines that become empty are dropped.
 fn strip_platform_links(body: &str, link: &Regex) -> String {
@@ -1288,6 +1309,7 @@ mod tests {
             edited: false,
             reactions: vec![],
             bandcamp: None,
+            vk_playlist: None,
             wikidata_html: vec![],
             links: vec![],
             youtube: None,
@@ -1694,5 +1716,33 @@ mod tests {
         let out = render_post(&p, &rw, false, None, None, &opts).index_md;
         assert!(out.contains(&format!("{{{{ bandcamp(url=\"{embed}\") }}}}")), "no player: {out}");
         assert!(!out.contains("/album/rethinking-progress"), "link not stripped: {out}");
+    }
+
+    #[test]
+    fn vk_playlist_widget_replaces_link() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let mut p = post_with_body("mix <https://vk.com/music/album/-2000123_456_ab12cd>");
+        p.vk_playlist = Some("https://vk.com/music/album/-2000123_456_ab12cd".into());
+        let ui = crate::i18n::ui("en");
+        let opts = RenderOpts {
+            instagram: false,
+            video_releases: None,
+            carousel: false,
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            pinterest: false,
+        };
+        let out = render_post(&p, &rw, false, None, None, &opts).index_md;
+        assert!(
+            out.contains("vk_playlist(elid=\"vk_pl_n2000123_456\", owner=\"-2000123\", id=\"456\", key=\"ab12cd\""),
+            "no vk widget: {out}"
+        );
+        // The plain autolink is gone (the URL still appears in the shortcode's
+        // fallback `url=` arg, which is expected).
+        assert!(!out.contains("<https://vk.com"), "vk autolink not stripped: {out}");
     }
 }

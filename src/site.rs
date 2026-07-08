@@ -130,6 +130,10 @@ pub fn scaffold(
         &site.join("templates/shortcodes/bandcamp.html"),
         BANDCAMP_SHORTCODE,
     )?;
+    write_file(
+        &site.join("templates/shortcodes/vk_playlist.html"),
+        VK_PLAYLIST_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
     write_file(
         &site.join("templates/shortcodes/video_ext.html"),
@@ -1712,6 +1716,12 @@ const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" data-pin-width="l
 const BANDCAMP_SHORTCODE: &str = r#"<div class="bc-embed"><iframe src="{{ url }}" seamless loading="lazy" frameborder="0"></iframe></div>
 "#;
 
+// VK playlist widget (openapi.js turns the div into the player). Login/region
+// gated, so the div holds a fallback "Open on VK" link that stays if the widget
+// can't load; the offline pass strips the scripts, leaving just that link.
+const VK_PLAYLIST_SHORTCODE: &str = r#"<div class="vk-playlist"><div id="{{ elid }}"><a href="{{ url | safe }}">▶ Open playlist on VK</a></div><script src="https://vk.com/js/api/openapi.js?169" async></script><script>(function(){function go(){if(window.VK&&VK.Widgets&&VK.Widgets.Playlist){VK.Widgets.Playlist("{{ elid }}",{{ owner }},{{ id }},"{{ key }}");}else{setTimeout(go,300);}}go();})();</script></div>
+"#;
+
 // Resolve colocated media against the post's permalink so it works both on the
 // post page and when the post is shown in full on the homepage feed (a relative
 // src would otherwise break off the post's own page).
@@ -1841,6 +1851,9 @@ blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1r
 .sp-embed .sp-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .bc-embed { margin: 1rem 0; }
 .bc-embed iframe { width: 100%; max-width: 400px; height: 120px; border: 0; }
+.vk-playlist { margin: 1rem 0; }
+/* VK's widget is light-only; approximate a dark variant under a dark OS theme. */
+@media (prefers-color-scheme: dark) { .vk-playlist iframe { filter: invert(1) hue-rotate(180deg); } }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }

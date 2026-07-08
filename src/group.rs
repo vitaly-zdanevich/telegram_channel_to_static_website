@@ -126,6 +126,7 @@ fn to_post(m: RawMessage) -> Post {
         pinterest_dead: false,
         genius_song_id: None,
         bandcamp: None,
+        vk_playlist: None,
         wikidata_html: Vec::new(),
     }
 }

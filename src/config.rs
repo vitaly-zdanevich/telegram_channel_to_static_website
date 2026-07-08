@@ -82,6 +82,9 @@ pub struct FileConfig {
     pub pinterest: Option<bool>,
     /// Replace a Bandcamp album/track link with the Bandcamp player (default on).
     pub bandcamp: Option<bool>,
+    /// Replace a VK music playlist link with the VK playlist widget (opt-in;
+    /// login/region-gated, so a fallback link is always shown).
+    pub vk: Option<bool>,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
     pub pinterest_save: Option<bool>,
     /// Fetch Google PageSpeed/Lighthouse scores for the deployed site (opt-in).
@@ -225,6 +228,8 @@ pub struct Settings {
     pub pinterest: bool,
     /// Replace Bandcamp album/track links with the Bandcamp player (default true).
     pub bandcamp: bool,
+    /// Replace VK music playlist links with the VK playlist widget (opt-in, default false).
+    pub vk: bool,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).
     pub pinterest_save: bool,
     /// Fetch Google Lighthouse scores for the About page + README badges (opt-in, default false).

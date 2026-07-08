@@ -167,6 +167,9 @@ pub struct Post {
     /// Bandcamp EmbeddedPlayer URL (resolved by fetching a linked album/track
     /// page), replacing the plain link with the player. Default on.
     pub bandcamp: Option<String>,
+    /// A VK music playlist/album URL linked in the post, for the opt-in VK
+    /// playlist widget (login/region-gated; a fallback link always shows).
+    pub vk_playlist: Option<String>,
     /// Rendered Wikidata statement tables (raw HTML, spoiler-wrapped if enabled)
     /// for each `wikidata.org/wiki/Q…` link in the post — appended after the body.
     pub wikidata_html: Vec<String>,
