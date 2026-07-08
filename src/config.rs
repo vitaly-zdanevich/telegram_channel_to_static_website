@@ -85,7 +85,7 @@ pub struct FileConfig {
     /// Replace a VK music playlist link with the VK playlist widget (opt-in;
     /// login/region-gated, so a fallback link is always shown).
     pub vk: Option<bool>,
-    /// Append a "Related" list to each post, ranked by shared-tag overlap (opt-in).
+    /// Append a "Related" list to each post, ranked by shared-tag overlap (default on).
     pub related: Option<bool>,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
     pub pinterest_save: Option<bool>,
@@ -232,7 +232,7 @@ pub struct Settings {
     pub bandcamp: bool,
     /// Replace VK music playlist links with the VK playlist widget (opt-in, default false).
     pub vk: bool,
-    /// Append a shared-tag "Related" list to each post (opt-in, default false).
+    /// Append a shared-tag "Related" list to each post (default true).
     pub related: bool,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).
     pub pinterest_save: bool,
