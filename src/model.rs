@@ -170,6 +170,9 @@ pub struct Post {
     /// A VK music playlist/album URL linked in the post, for the opt-in VK
     /// playlist widget (login/region-gated; a fallback link always shows).
     pub vk_playlist: Option<String>,
+    /// Related posts (opt-in), ranked by shared-tag count: `(slug, label)` for
+    /// each, rendered as an internal-link list under the post.
+    pub related: Vec<(String, String)>,
     /// Rendered Wikidata statement tables (raw HTML, spoiler-wrapped if enabled)
     /// for each `wikidata.org/wiki/Q…` link in the post — appended after the body.
     pub wikidata_html: Vec<String>,

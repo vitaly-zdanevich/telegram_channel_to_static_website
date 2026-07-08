@@ -33,6 +33,8 @@ pub struct Ui {
     pub not_found: &'static str,
     /// Plural noun for the tag-count hover tooltip, e.g. "posts" in "17 posts".
     pub posts: &'static str,
+    /// Heading for the related-posts list under a post.
+    pub related: &'static str,
 }
 
 /// Normalize a user-supplied language tag to one of [`SUPPORTED`], falling back
@@ -106,6 +108,7 @@ const EN: Ui = Ui {
     older_day: "Older day",
     not_found: "Page not found",
     posts: "posts",
+    related: "Related",
 };
 
 const RU: Ui = Ui {
@@ -128,6 +131,7 @@ const RU: Ui = Ui {
     older_day: "Старее день",
     not_found: "Страница не найдена",
     posts: "постов",
+    related: "Похожие",
 };
 
 const UK: Ui = Ui {
@@ -150,6 +154,7 @@ const UK: Ui = Ui {
     older_day: "Старіший день",
     not_found: "Сторінку не знайдено",
     posts: "дописів",
+    related: "Схожі",
 };
 
 const BE: Ui = Ui {
@@ -172,6 +177,7 @@ const BE: Ui = Ui {
     older_day: "Старэйшы дзень",
     not_found: "Старонка не знойдзена",
     posts: "запісаў",
+    related: "Падобныя",
 };
 
 const DE: Ui = Ui {
@@ -194,6 +200,7 @@ const DE: Ui = Ui {
     older_day: "Älterer Tag",
     not_found: "Seite nicht gefunden",
     posts: "Beiträge",
+    related: "Ähnliche",
 };
 
 const FR: Ui = Ui {
@@ -216,6 +223,7 @@ const FR: Ui = Ui {
     older_day: "Jour plus ancien",
     not_found: "Page introuvable",
     posts: "publications",
+    related: "Similaires",
 };
 
 const ZH: Ui = Ui {
@@ -238,6 +246,7 @@ const ZH: Ui = Ui {
     older_day: "较旧一天",
     not_found: "页面未找到",
     posts: "篇",
+    related: "相关",
 };
 
 const JA: Ui = Ui {
@@ -260,6 +269,7 @@ const JA: Ui = Ui {
     older_day: "古い日",
     not_found: "ページが見つかりません",
     posts: "件",
+    related: "関連",
 };
 
 const PL: Ui = Ui {
@@ -282,6 +292,7 @@ const PL: Ui = Ui {
     older_day: "Starszy dzień",
     not_found: "Nie znaleziono strony",
     posts: "wpisów",
+    related: "Podobne",
 };
 
 const ES: Ui = Ui {
@@ -304,6 +315,7 @@ const ES: Ui = Ui {
     older_day: "Día más antiguo",
     not_found: "Página no encontrada",
     posts: "publicaciones",
+    related: "Relacionadas",
 };
 
 const KO: Ui = Ui {
@@ -326,6 +338,7 @@ const KO: Ui = Ui {
     older_day: "이전 날",
     not_found: "페이지를 찾을 수 없습니다",
     posts: "개 글",
+    related: "관련 글",
 };
 
 const KA: Ui = Ui {
@@ -348,6 +361,7 @@ const KA: Ui = Ui {
     older_day: "უფრო ძველი დღე",
     not_found: "გვერდი ვერ მოიძებნა",
     posts: "პოსტი",
+    related: "მსგავსი",
 };
 
 const HI: Ui = Ui {
@@ -370,6 +384,7 @@ const HI: Ui = Ui {
     older_day: "पुराना दिन",
     not_found: "पृष्ठ नहीं मिला",
     posts: "पोस्ट",
+    related: "संबंधित",
 };
 
 /// Translatable prose for the About page. Sentence templates use `{placeholder}`

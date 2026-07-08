@@ -1851,6 +1851,8 @@ blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1r
 .sp-embed .sp-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .bc-embed { margin: 1rem 0; }
 .bc-embed iframe { width: 100%; max-width: 400px; height: 120px; border: 0; }
+.related { margin: 1rem 0 0; font-size: .9em; }
+.related ul { margin: .2rem 0 0; padding-left: 1.2rem; }
 .vk-playlist { margin: 1rem 0; }
 /* VK's widget is light-only; approximate a dark variant under a dark OS theme. */
 @media (prefers-color-scheme: dark) { .vk-playlist iframe { filter: invert(1) hue-rotate(180deg); } }

@@ -234,6 +234,11 @@ struct GenerateArgs {
     #[arg(long)]
     vk: bool,
 
+    /// Append a "Related" list to each post, ranked by how many tags it shares
+    /// with others (opt-in).
+    #[arg(long)]
+    related: bool,
+
     /// Add a Pinterest "Save" hover button to the site's own images so visitors
     /// can pin them to their boards (opt-in; needs JavaScript).
     #[arg(long)]
@@ -545,6 +550,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             fc.bandcamp.unwrap_or(true)
         },
         vk: g.vk || fc.vk.unwrap_or(false),
+        related: g.related || fc.related.unwrap_or(false),
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
             false
@@ -759,6 +765,14 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     if s.vk {
         for p in &mut posts {
             p.vk_playlist = media::vk_playlist_url(&p.links);
+        }
+    }
+
+    // Related posts (opt-in): rank each post's neighbours by shared-tag overlap.
+    if s.related {
+        let related = render::compute_related(&posts, 5);
+        for (p, r) in posts.iter_mut().zip(related) {
+            p.related = r;
         }
     }
 

@@ -127,6 +127,7 @@ fn to_post(m: RawMessage) -> Post {
         genius_song_id: None,
         bandcamp: None,
         vk_playlist: None,
+        related: Vec::new(),
         wikidata_html: Vec::new(),
     }
 }

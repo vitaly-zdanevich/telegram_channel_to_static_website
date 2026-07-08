@@ -71,6 +71,7 @@ fn settings(site: PathBuf) -> Settings {
         link_titles: false,
         bandcamp: false,
         vk: false,
+        related: false,
         keep_media: false,
         genius: false,
         spotify: false,
@@ -139,6 +140,7 @@ fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&
         genius_song_id: None,
         bandcamp: None,
         vk_playlist: None,
+        related: vec![],
         wikidata_html: vec![],
     }
 }

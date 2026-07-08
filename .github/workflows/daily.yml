@@ -171,6 +171,10 @@ env:
   # in some regions (e.g. Ukraine); a fallback "Open on VK" link always shows.
   VK: ${{ vars.VK }}
 
+  # Set to "true" to append a "Related" list to each post, ranked by how many
+  # tags it shares with other posts.
+  RELATED: ${{ vars.RELATED }}
+
   # Set to "true" to add a Pinterest "Save" hover button to the site's own images
   # so visitors can pin them (opt-in; needs JavaScript).
   PINTEREST_SAVE: ${{ vars.PINTEREST_SAVE }}
@@ -366,6 +370,7 @@ jobs:
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
             [ "${BANDCAMP:-}" = "false" ] && args+=(--no-bandcamp)
             [ "${VK:-}" = "true" ] && args+=(--vk)
+            [ "${RELATED:-}" = "true" ] && args+=(--related)
             [ "${PINTEREST_SAVE:-}" = "true" ] && args+=(--pinterest-save)
             [ "${PAGESPEED:-}" = "false" ] && args+=(--no-pagespeed)
             [ "${PWA:-}" = "false" ] && args+=(--no-pwa)

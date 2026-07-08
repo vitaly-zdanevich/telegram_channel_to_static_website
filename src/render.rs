@@ -78,6 +78,68 @@ pub fn slug_for(post: &Post) -> String {
     format!("{}-{}", post.date.format("%Y-%m-%d"), post.primary_id)
 }
 
+/// For each post, the top `n` related posts ranked by how many tags they share
+/// (the *whole* tag set, not a single tag). An inverted index keeps it near
+/// linear. Ties break toward a tighter match (candidate with fewer tags) then
+/// recency. A post with no tags — or no tag-sharing neighbour — gets none.
+pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String)>> {
+    use std::collections::HashMap;
+    let mut by_tag: HashMap<&str, Vec<usize>> = HashMap::new();
+    for (i, p) in posts.iter().enumerate() {
+        for t in &p.tags {
+            by_tag.entry(t.as_str()).or_default().push(i);
+        }
+    }
+    posts
+        .iter()
+        .enumerate()
+        .map(|(i, p)| {
+            if p.tags.is_empty() {
+                return Vec::new();
+            }
+            let mut shared: HashMap<usize, u32> = HashMap::new();
+            for t in &p.tags {
+                for &j in &by_tag[t.as_str()] {
+                    if j != i {
+                        *shared.entry(j).or_default() += 1;
+                    }
+                }
+            }
+            let mut ranked: Vec<(usize, u32)> = shared.into_iter().collect();
+            ranked.sort_by(|&(ja, sa), &(jb, sb)| {
+                sb.cmp(&sa)
+                    .then(posts[ja].tags.len().cmp(&posts[jb].tags.len()))
+                    .then(posts[jb].primary_id.cmp(&posts[ja].primary_id))
+            });
+            ranked
+                .into_iter()
+                .take(n)
+                .map(|(j, _)| (slug_for(&posts[j]), related_label(&posts[j])))
+                .collect()
+        })
+        .collect()
+}
+
+/// A short, link-safe label for a related post: its first line of text with
+/// Markdown-active characters dropped, or its `#id` when it's media-only.
+fn related_label(post: &Post) -> String {
+    let clean: String = post_preview(post)
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
+        .chars()
+        .filter(|c| !matches!(c, '[' | ']' | '(' | ')' | '*' | '_' | '`' | '<' | '>' | '|'))
+        .collect();
+    if clean.is_empty() {
+        return format!("#{}", post.primary_id);
+    }
+    if clean.chars().count() > 64 {
+        format!("{}…", clean.chars().take(64).collect::<String>().trim_end())
+    } else {
+        clean
+    }
+}
+
 /// Rewrites links that point at *this* channel's own messages into internal
 /// (relative) Zola links, so the backup is self-navigating and survives the
 /// channel's removal. Links to other channels are left untouched.
@@ -748,6 +810,16 @@ pub fn render_post(
         body.push_str("\n\n");
     }
 
+    // Related posts (opt-in), by shared-tag overlap. Internal @/ links resolve
+    // under any base_url and survive the channel's removal.
+    if !post.related.is_empty() {
+        body.push_str(&format!("<nav class=\"related\">\n\n**{}:**\n\n", ui.related));
+        for (slug, label) in &post.related {
+            body.push_str(&format!("- [{label}](@/posts/{slug}/index.md)\n"));
+        }
+        body.push_str("\n</nav>\n\n");
+    }
+
     let (slug, front) = if page {
         let slug = crate::site::slugify(&title);
         let front = format!(
@@ -1310,6 +1382,7 @@ mod tests {
             reactions: vec![],
             bandcamp: None,
             vk_playlist: None,
+            related: vec![],
             wikidata_html: vec![],
             links: vec![],
             youtube: None,
@@ -1691,6 +1764,51 @@ mod tests {
             "no spotify: {b}"
         );
         assert!(!b.contains("{{ pinterest("), "pinterest emitted while off: {b}");
+    }
+
+    #[test]
+    fn related_ranks_by_shared_tag_overlap() {
+        let mk = |id: u64, tags: &[&str]| {
+            let mut p = post_with_body(&format!("body of post {id}"));
+            p.primary_id = id;
+            p.tags = tags.iter().map(|s| s.to_string()).collect();
+            p
+        };
+        // a shares 2 tags with b, 1 with c, 0 with d (untagged).
+        let posts = vec![
+            mk(1, &["x", "y", "z"]),
+            mk(2, &["x", "y"]),
+            mk(3, &["x"]),
+            mk(4, &[]),
+        ];
+        let rel = compute_related(&posts, 5);
+        // a's neighbours: b (2 shared) before c (1 shared); d excluded (0).
+        assert_eq!(rel[0].len(), 2);
+        assert_eq!(rel[0][0].0, slug_for(&posts[1]));
+        assert_eq!(rel[0][1].0, slug_for(&posts[2]));
+        // an untagged post has no related.
+        assert!(rel[3].is_empty());
+
+        // The section renders as a nav with internal @/ links.
+        let mut a = posts[0].clone();
+        a.related = rel[0].clone();
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let ui = crate::i18n::ui("en");
+        let opts = RenderOpts {
+            instagram: false,
+            video_releases: None,
+            carousel: false,
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            pinterest: false,
+        };
+        let out = render_post(&a, &rw, false, None, None, &opts).index_md;
+        assert!(out.contains("<nav class=\"related\">"), "no related nav: {out}");
+        assert!(out.contains(&format!("(@/posts/{}/index.md)", slug_for(&posts[1]))), "no link: {out}");
     }
 
     #[test]
