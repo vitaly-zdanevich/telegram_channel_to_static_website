@@ -1470,7 +1470,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
     {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}" alt=""></a>{% endif %}
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
     {% if not config.extra.hide_nav %}<nav>
-      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}" title="{{ config.extra.tag_counts[t] | default(value='') }}">#{{ t }}</a>{% endfor %}
+      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}" title="{{ config.extra.tag_counts | get(key=t, default='') }}">#{{ t }}</a>{% endfor %}
       {% if current_path is matching("/tags/$") %}<span class="here">{{ config.extra.i18n.tags }}</span>{% else %}<a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>{% endif %}
       {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
@@ -1728,7 +1728,7 @@ const AUDIO_SHORTCODE: &str =
 
 // Inline clickable hashtag → its taxonomy page (base_url-aware).
 const TAG_SHORTCODE: &str =
-    "<a class=\"tag\" href=\"{{ get_taxonomy_url(kind='tags', name=t) | safe }}\" title=\"{{ config.extra.tag_counts[t] | default(value='') }}\">#{{ t }}</a>";
+    "<a class=\"tag\" href=\"{{ get_taxonomy_url(kind='tags', name=t) | safe }}\" title=\"{{ config.extra.tag_counts | get(key=t, default='') }}\">#{{ t }}</a>";
 
 /// The bundled Elasticlunr library (0.9.5, http://elasticlunr.com/), written to
 /// static/ only when Elasticlunr search is enabled (SEARCH_ENGINE=elasticlunr).

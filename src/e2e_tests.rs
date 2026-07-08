@@ -155,7 +155,10 @@ fn zola_build_produces_expected_html() {
         post(
             1,
             "Hello world with a photo.",
-            &["greeting"],
+            // A non-ASCII tag guards the tag-count tooltip lookup: a `[t]` map
+            // subscript on a Cyrillic key panics Tera mid-char (broke the daily
+            // build); the `get(key=t)` filter must handle it.
+            &["greeting", "александровщина"],
             vec![Media::Photo {
                 url: "https://example.com/a.jpg".into(),
                 key: Some("k1".into()),
