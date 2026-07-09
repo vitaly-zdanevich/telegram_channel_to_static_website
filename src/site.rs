@@ -1030,7 +1030,24 @@ fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
             }
             let first = NaiveDate::from_ymd_opt(*y, m, 1).unwrap();
             let name = first.format_localized("%B", locale).to_string();
-            b.push_str(&format!("<table class=\"cal\"><caption>{name}</caption><thead><tr>"));
+            // Post count for the month + its first day-with-posts, so the caption
+            // shows the total and links into that month.
+            let (mut month_count, mut first_day) = (0usize, None);
+            for d in dates.iter().filter(|d| d.year() == *y && d.month() == m) {
+                let key = d.format("%Y-%m-%d").to_string();
+                if let Some(meta) = present.get(key.as_str()) {
+                    month_count += meta.count;
+                    first_day.get_or_insert(key);
+                }
+            }
+            let caption = match &first_day {
+                Some(d) => format!(
+                    "<a href=\"{}\">{name}</a> <span class=\"cal-mcount\">{month_count}</span>",
+                    day_url(&s.base_url, d)
+                ),
+                None => name,
+            };
+            b.push_str(&format!("<table class=\"cal\"><caption>{caption}</caption><thead><tr>"));
             for wd in &weekdays {
                 b.push_str(&format!("<th>{wd}</th>"));
             }
@@ -1969,6 +1986,7 @@ blockquote { border-left: 3px solid var(--border); margin: .5rem 0; padding-left
 .cal-months { display: flex; flex-wrap: wrap; gap: 1.4rem; }
 table.cal { border-collapse: collapse; font-size: .8rem; }
 table.cal caption { text-align: left; font-weight: 700; padding-bottom: .3rem; }
+table.cal caption .cal-mcount { color: var(--muted); font-weight: 400; font-size: .85em; }
 table.cal th { font-weight: 400; color: var(--muted); padding: .1rem; text-align: center; }
 table.cal td { width: 1.95rem; height: 1.7rem; text-align: center; padding: 0; }
 table.cal td.on a { display: block; line-height: 1.7rem; border-radius: 4px; text-decoration: none; background: var(--code-bg); font-weight: 700; }
