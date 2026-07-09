@@ -146,6 +146,19 @@ fn render_poll(poll: &Poll) -> String {
     h
 }
 
+/// An archive.org URL in `links` whose file name matches `filename` — the same
+/// file mirrored there, so we can link it instead of storing our own copy.
+fn archive_org_url_for(links: &[String], filename: &str) -> Option<String> {
+    links
+        .iter()
+        .find(|l| {
+            l.contains("archive.org")
+                && l.rsplit('/').next().map(|seg| seg.split(['?', '#']).next().unwrap_or(seg))
+                    == Some(filename)
+        })
+        .cloned()
+}
+
 /// Collapse whitespace, drop Markdown-active characters and cap length — safe to
 /// drop inside a `[label](url)`.
 fn md_link_label(text: &str, max: usize) -> String {
@@ -164,9 +177,18 @@ fn md_link_label(text: &str, max: usize) -> String {
 }
 
 /// A short, link-safe label for a related post: its first line of text, or its
-/// `#id` when it's media-only.
+/// `#id` when it's media-only. A trailing "Source" line (a forwarded post's
+/// backlink) is dropped — it's noise as a label.
 fn related_label(post: &Post) -> String {
-    let l = md_link_label(&post_preview(post), 64);
+    let text = post_text_plain(post);
+    let mut lines: Vec<&str> = text.lines().collect();
+    while lines
+        .last()
+        .is_some_and(|l| l.trim().is_empty() || l.trim().eq_ignore_ascii_case("source"))
+    {
+        lines.pop();
+    }
+    let l = md_link_label(&lines.join(" "), 64);
     if l.is_empty() {
         format!("#{}", post.primary_id)
     } else {
@@ -691,15 +713,33 @@ pub fn render_post(
                 body.push_str(&format!("{{{{ audio(src=\"{fname}\") }}}}\n\n"));
             }
             Media::Document { url, filename } => {
-                let ext = ext_from_url(url, "bin");
-                let fname = sanitize_filename(filename, &ext, idx);
-                push_dl(&mut downloads, url, &fname, post.edited);
-                body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(filename)));
+                if let Some(a) = archive_org_url_for(&post.links, filename) {
+                    // Mirrored on archive.org — link there instead of storing a copy.
+                    body.push_str(&format!("[📎 {}]({a})\n\n", label_escape(filename)));
+                } else {
+                    let ext = ext_from_url(url, "bin");
+                    let fname = sanitize_filename(filename, &ext, idx);
+                    push_dl(&mut downloads, url, &fname, post.edited);
+                    body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(filename)));
+                }
             }
             Media::DocumentRef { filename } => {
                 // A YouTube/Apple Podcasts embed stands in for a podcast track —
                 // drop the redundant "(not archived)" note for that audio.
                 if drop_audio && crate::media::is_probably_audio_doc(filename) {
+                    continue;
+                }
+                // A downloaded-video file named after the YouTube id (yt-dlp's
+                // `<title>_<id>.<ext>`) is the same video the embed already shows.
+                if let Some(yt) = &post.youtube {
+                    if !post.youtube_dead && filename.contains(yt.as_str()) {
+                        continue;
+                    }
+                }
+                // If the same file is mirrored on archive.org, link there rather
+                // than showing a "(not archived)" note.
+                if let Some(a) = archive_org_url_for(&post.links, filename) {
+                    body.push_str(&format!("[📎 {}]({a})\n\n", label_escape(filename)));
                     continue;
                 }
                 // The file isn't on the public page; note the attachment + name.
@@ -1903,6 +1943,26 @@ mod tests {
             out.contains(&format!("path = \"@/posts/{}/index.md\"", slug_for(&posts[1]))),
             "no related path: {out}"
         );
+    }
+
+    #[test]
+    fn archive_org_mirror_detection() {
+        let links = vec![
+            "https://archive.org/download/foo/warhammer.tar.xz".to_string(),
+            "https://example.com/x".to_string(),
+        ];
+        assert_eq!(
+            archive_org_url_for(&links, "warhammer.tar.xz").as_deref(),
+            Some("https://archive.org/download/foo/warhammer.tar.xz")
+        );
+        assert_eq!(archive_org_url_for(&links, "other.zip"), None);
+    }
+
+    #[test]
+    fn related_label_drops_trailing_source() {
+        let mut p = post_with_body("Cool clip\n\n[Source](https://t.me/x/1)");
+        p.primary_id = 9;
+        assert_eq!(related_label(&p), "Cool clip");
     }
 
     #[test]
