@@ -125,8 +125,13 @@ pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String)>> {
 /// pass. Bar widths come straight from the scraped vote shares.
 fn render_poll(poll: &Poll) -> String {
     let esc = |s: &str| s.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;");
+    let kind = poll
+        .kind
+        .as_deref()
+        .map(|k| format!("<div class=\"tg-poll-kind\">{}</div>", esc(k)))
+        .unwrap_or_default();
     let mut h = format!(
-        "<div class=\"tg-poll\"><div class=\"tg-poll-q\">{}</div><ol class=\"tg-poll-opts\">",
+        "<div class=\"tg-poll\"><div class=\"tg-poll-q\">{}</div>{kind}<ol class=\"tg-poll-opts\">",
         esc(&poll.question)
     );
     for o in &poll.options {

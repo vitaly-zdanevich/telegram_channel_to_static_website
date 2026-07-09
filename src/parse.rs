@@ -31,6 +31,7 @@ sel!(S_REPLY_TEXT, ".js-message_reply_text");
 sel!(S_AUTHOR_NAME, ".tgme_widget_message_author_name");
 sel!(S_POLL, ".tgme_widget_message_poll");
 sel!(S_POLL_Q, ".tgme_widget_message_poll_question");
+sel!(S_POLL_TYPE, ".tgme_widget_message_poll_type");
 sel!(S_POLL_OPT, ".tgme_widget_message_poll_option");
 sel!(S_POLL_OPT_PCT, ".tgme_widget_message_poll_option_percent");
 sel!(S_POLL_OPT_TEXT, ".tgme_widget_message_poll_option_text");
@@ -219,7 +220,12 @@ fn parse_poll(wrap: ElementRef) -> Option<Poll> {
         .select(&S_VOTERS)
         .next()
         .and_then(|e| parse_views(&e.text().collect::<String>()));
-    Some(Poll { question, options, voters })
+    let kind = poll
+        .select(&S_POLL_TYPE)
+        .next()
+        .map(|e| collapse_ws(&e.text().collect::<String>()))
+        .filter(|s| !s.is_empty());
+    Some(Poll { question, options, voters, kind })
 }
 
 fn parse_media(wrap: ElementRef) -> Vec<Media> {
@@ -596,5 +602,6 @@ mod tests {
         assert_eq!(p.options[1].text, "Bitcoin");
         assert_eq!(p.options[1].percent, 73);
         assert_eq!(p.voters, Some(132));
+        assert_eq!(p.kind.as_deref(), Some("Anonymous Poll"));
     }
 }

@@ -1890,7 +1890,8 @@ blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1r
 .related ul { margin: .2rem 0 0; padding-left: 1.2rem; }
 /* Poll → static result bars (no JS). */
 .tg-poll { margin: 1rem 0; padding: .6rem .8rem; border: 1px solid var(--border); border-radius: 8px; }
-.tg-poll-q { font-weight: 600; margin-bottom: .5rem; }
+.tg-poll-q { font-weight: 600; margin-bottom: .2rem; }
+.tg-poll-kind { color: var(--muted); font-size: .8em; margin-bottom: .5rem; }
 .tg-poll-opts { list-style: none; margin: 0; padding: 0; }
 .tg-poll-opts li { margin: .45rem 0; }
 .tg-poll-row { display: flex; justify-content: space-between; gap: .5rem; font-size: .9em; }

@@ -43,6 +43,9 @@ pub struct Poll {
     pub options: Vec<PollOption>,
     /// Total voters, when shown.
     pub voters: Option<u64>,
+    /// Telegram's type label, e.g. "Anonymous Poll" or "Quiz" (the public
+    /// preview never reveals a quiz's correct answer, so we only show the kind).
+    pub kind: Option<String>,
 }
 
 #[derive(Debug, Clone)]
