@@ -745,7 +745,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     );
     info!("scraping https://t.me/s/{}", s.channel);
     let scraper = scrape::Scraper::new(client.clone(), s.channel.clone(), s.page_delay_ms);
-    let (messages, channel_info) = scraper.fetch_all(s.max_pages).await?;
+    let (messages, mut channel_info) = scraper.fetch_all(s.max_pages).await?;
     anyhow::ensure!(
         !messages.is_empty(),
         "no messages found — is '{}' a public channel with the web preview enabled?",
@@ -971,6 +971,15 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         })
         .collect();
 
+    // Telegram's header has no "audios" counter, so add one from the audio media
+    // we actually archived (voice/music, incl. MTProto).
+    if let Some(info) = channel_info.as_mut() {
+        let audios = posts.iter().flat_map(|p| &p.media).filter(|m| is_audio_media(m)).count();
+        if audios > 0 {
+            info.counters.push((audios.to_string(), "audios".into()));
+        }
+    }
+
     if init_site {
         site::scaffold(&s, channel_info.as_ref(), &tag_counts, &page_nav, &days)?;
     }
@@ -1078,6 +1087,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         &now,
         ci_url.as_deref(),
         releases,
+        &s.repo_url,
     );
 
     // Optional Google Lighthouse scores for the deployed site → About page +
@@ -1102,7 +1112,21 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             tracing::warn!("PageSpeed: writing badge endpoints failed: {e:#}");
         }
     }
-    site::set_about_pagespeed(&s.site, pagespeed_scores, &i18n::about(&s.language));
+    // Link the scores to the full PageSpeed Insights report (mobile + desktop).
+    let psi_report = s.base_url.starts_with("http").then(|| {
+        let enc = percent_encoding::utf8_percent_encode(
+            &s.base_url,
+            percent_encoding::NON_ALPHANUMERIC,
+        )
+        .to_string();
+        format!("https://pagespeed.web.dev/analysis?url={enc}")
+    });
+    site::set_about_pagespeed(
+        &s.site,
+        pagespeed_scores,
+        &i18n::about(&s.language),
+        psi_report.as_deref(),
+    );
 
     // Enrich the About page from an about.me link in the channel description
     // (bio + social links + a contact button). Best-effort; clears the placeholder
@@ -1236,6 +1260,18 @@ fn ci_job_url() -> Option<String> {
     let repo = std::env::var("GITHUB_REPOSITORY").ok().filter(|v| !v.is_empty())?;
     let run = std::env::var("GITHUB_RUN_ID").ok().filter(|v| !v.is_empty())?;
     Some(format!("{server}/{repo}/actions/runs/{run}"))
+}
+
+/// Whether a media item is audio (voice/music), for the "audios" channel counter.
+fn is_audio_media(m: &model::Media) -> bool {
+    use model::Media::*;
+    match m {
+        Audio { .. } | LocalAudio { .. } => true,
+        Document { filename, .. } | DocumentRef { filename } => {
+            media::is_probably_audio_doc(filename)
+        }
+        _ => false,
+    }
 }
 
 /// Count how many posts use each tag, sorted by count (descending), then name.

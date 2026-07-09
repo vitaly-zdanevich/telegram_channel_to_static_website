@@ -13,6 +13,20 @@ use crate::model::{Media, Post};
 use crate::render::{self, RenderedPost};
 use crate::site::{self, DayMeta};
 
+/// Recursively collect every `.html` file under `dir`.
+fn collect_html(dir: &std::path::Path, out: &mut Vec<PathBuf>) {
+    if let Ok(rd) = fs::read_dir(dir) {
+        for e in rd.flatten() {
+            let p = e.path();
+            if p.is_dir() {
+                collect_html(&p, out);
+            } else if p.extension().and_then(|x| x.to_str()) == Some("html") {
+                out.push(p);
+            }
+        }
+    }
+}
+
 fn zola_available() -> bool {
     Command::new("zola")
         .arg("--version")
@@ -281,6 +295,27 @@ fn zola_build_produces_expected_html() {
     let tags_page = read("tags/index.html");
     assert!(tags_page.contains("title=\"1 posts\""), "tag count tooltip missing: {tags_page}");
 
+    // Every absolute internal link (href/src="/…") in the built site must resolve
+    // to a real file — guards dangling nav links (e.g. a calendar 404).
+    let mut htmls = Vec::new();
+    collect_html(&public, &mut htmls);
+    let link_re = regex::Regex::new(r#"(?:href|src)="(/[^"]*)""#).unwrap();
+    let mut checked = 0usize;
+    for f in &htmls {
+        let html = fs::read_to_string(f).unwrap();
+        for cap in link_re.captures_iter(&html) {
+            let path = cap[1].split(['?', '#']).next().unwrap_or("");
+            if path.is_empty() || path == "/" || path.starts_with("//") {
+                continue;
+            }
+            let rel = path.trim_start_matches('/');
+            let ok = public.join(rel).exists() || public.join(rel).join("index.html").exists();
+            assert!(ok, "dead internal link {path} (in {})", f.display());
+            checked += 1;
+        }
+    }
+    assert!(checked > 5, "internal-link checker found too few links ({checked})");
+
     // Custom 404 exists and links the themed stylesheet (which carries the
     // prefers-color-scheme dark/light rules), so it follows the OS theme.
     assert!(public.join("404.html").exists(), "404 page missing");
@@ -454,6 +489,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
         "2026-07-04 12:00 UTC",
         Some("https://github.com/x/y/actions/runs/42"),
         7_654_321,
+        "https://github.com/x/y",
     );
     site::set_about_pagespeed(
         &s.site,
@@ -464,6 +500,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
             seo: Some(85),
         }),
         &crate::i18n::about(&s.language),
+        Some("https://pagespeed.web.dev/analysis?url=x"),
     );
     site::set_about_me(&s.site, None, None, false, false);
 

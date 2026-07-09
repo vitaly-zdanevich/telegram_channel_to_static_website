@@ -63,13 +63,16 @@ fn parse(html: &str) -> AboutMe {
         .and_then(|e| e.value().attr("content"))
         .map(|c| c.split_whitespace().collect::<Vec<_>>().join(" "))
         .unwrap_or_default();
+    // about.me's og:image is a cropped, downscaled social-card render (its query
+    // carries width/quality/crop). Dropping the query makes the CDN serve the
+    // full-resolution original (verified ~3× larger).
     let image = Selector::parse(r#"meta[property="og:image"]"#)
         .ok()
         .and_then(|s| doc.select(&s).next())
         .and_then(|e| e.value().attr("content"))
         .map(str::trim)
         .filter(|c| c.starts_with("http"))
-        .map(String::from);
+        .map(|c| c.split('?').next().unwrap_or(c).to_string());
 
     let mut links = Vec::new();
     if let Ok(sel) = Selector::parse("a.social-link") {

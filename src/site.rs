@@ -674,6 +674,7 @@ pub fn set_about_size(
     now: &str,
     ci_url: Option<&str>,
     releases: u64,
+    repo_url: &str,
 ) {
     let about_path = site.join("content/pages/about.md");
     let Ok(s) = fs::read_to_string(&about_path) else {
@@ -729,7 +730,11 @@ pub fn set_about_size(
     // Video offloaded to GitHub Releases doesn't count against the Pages quota,
     // so it's reported on its own line (omitted when there's none).
     let releases_line = if releases > 0 {
-        about.releases_size.replace("__RELEASES_SIZE__", &human_size(releases))
+        let repo = repo_url.trim_end_matches('/');
+        about
+            .releases_size
+            .replace("__RELEASES_SIZE__", &human_size(releases))
+            .replace("GitHub Releases", &format!("[GitHub Releases]({repo}/releases)"))
     } else {
         String::new()
     };
@@ -842,6 +847,7 @@ pub fn set_about_pagespeed(
     site: &Path,
     scores: Option<crate::pagespeed::Scores>,
     about: &crate::i18n::About,
+    report_url: Option<&str>,
 ) {
     let about_path = site.join("content/pages/about.md");
     let Ok(s) = fs::read_to_string(&about_path) else {
@@ -858,7 +864,12 @@ pub fn set_about_pagespeed(
                 .map(|(name, v)| format!("- **{name}** {v}"))
                 .collect::<Vec<_>>()
                 .join("\n");
-            format!("{}\n\n{items}", about.pagespeed)
+            // Linkify the heading to the full PageSpeed report (mobile + desktop).
+            let heading = match report_url {
+                Some(u) => format!("[{}]({u})", about.pagespeed),
+                None => about.pagespeed.to_string(),
+            };
+            format!("{heading}\n\n{items}")
         }
         _ => String::new(),
     };
@@ -937,10 +948,13 @@ fn md_title_attr(text: &str) -> String {
 /// Human-readable duration, e.g. `2m 30s` / `45s`.
 fn human_duration(d: std::time::Duration) -> String {
     let s = d.as_secs();
-    if s >= 60 {
-        format!("{}m {}s", s / 60, s % 60)
+    let (h, m, sec) = (s / 3600, (s % 3600) / 60, s % 60);
+    if h > 0 {
+        format!("{h}h {m}m {sec}s")
+    } else if m > 0 {
+        format!("{m}m {sec}s")
     } else {
-        format!("{s}s")
+        format!("{sec}s")
     }
 }
 
@@ -967,6 +981,12 @@ pub struct DayMeta {
 /// The `/calendar/` page: one month grid per month that has posts, grouped by
 /// year (newest first). Days with posts link to their `/day/<date>/` page; month
 /// and weekday names follow LANGUAGE. `days` is "YYYY-MM-DD" sorted ascending.
+/// The `/day/<date>/` URL for the calendar, joined so a base_url without a
+/// trailing slash doesn't glue into `…websiteday/` (a 404).
+fn day_url(base_url: &str, day: &str) -> String {
+    format!("{}/day/{day}/", base_url.trim_end_matches('/'))
+}
+
 fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
     use chrono::{Datelike, NaiveDate};
     let locale =
@@ -1047,8 +1067,8 @@ fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
                         format!(" title=\"{tags}\"")
                     };
                     b.push_str(&format!(
-                        "<td class=\"{cls}\"{title}><a href=\"{}day/{key}/\">{dd}</a></td>",
-                        s.base_url
+                        "<td class=\"{cls}\"{title}><a href=\"{}\">{dd}</a></td>",
+                        day_url(&s.base_url, &key)
                     ));
                 } else {
                     b.push_str(&format!("<td class=\"off\">{dd}</td>"));
@@ -1167,10 +1187,18 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                     b.push_str("\n\n");
                 }
                 if !info.counters.is_empty() {
+                    // Telegram labels its counter "photos"; call it "images".
                     let stats: Vec<String> = info
                         .counters
                         .iter()
-                        .map(|(v, t)| format!("**{v}** {t}"))
+                        .map(|(v, t)| {
+                            let label = match t.as_str() {
+                                "photos" => "images",
+                                "photo" => "image",
+                                other => other,
+                            };
+                            format!("**{v}** {label}")
+                        })
                         .collect();
                     b.push_str(&stats.join(" · "));
                     b.push_str("\n\n");
@@ -1955,6 +1983,14 @@ mod tests {
     use super::*;
     use std::collections::HashMap;
     use std::path::PathBuf;
+
+    #[test]
+    fn day_url_keeps_the_slash_after_base() {
+        // A base_url with no trailing slash must not glue into "…websiteday/".
+        assert_eq!(day_url("https://x.io/repo", "2025-12-28"), "https://x.io/repo/day/2025-12-28/");
+        assert_eq!(day_url("https://x.io/repo/", "2025-12-28"), "https://x.io/repo/day/2025-12-28/");
+        assert_eq!(day_url("/", "2025-12-28"), "/day/2025-12-28/");
+    }
 
     #[test]
     fn telegram_urls_are_recognized() {
