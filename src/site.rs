@@ -429,6 +429,7 @@ fn config_toml(
         ("older_day", u.older_day),
         ("not_found", u.not_found),
         ("posts", u.posts),
+        ("related", u.related),
     ]
     .iter()
     .map(|&(k, v)| format!("{k} = \"{}\"", toml_escape(v)))
@@ -1562,6 +1563,12 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
     {% endif %}
     {% if config.extra.telegram_link and page.extra.tg_url %}<p class="tg-link"><a href="{{ page.extra.tg_url }}">{{ config.extra.i18n.view_on_telegram }} ↗</a></p>{% endif %}
   </article>
+  {% if page.extra.related %}
+  <nav class="related">
+    <strong>{{ config.extra.i18n.related }}:</strong>
+    <ul>{% for r in page.extra.related %}<li><a href="{{ get_url(path=r.path) | safe }}">{{ r.label }}</a></li>{% endfor %}</ul>
+  </nav>
+  {% endif %}
   {% if config.extra.next_prev %}
   <nav class="post-nav">
     <span>{% if page.extra.next_id %}<a href="{{ get_url(path='/posts/' ~ page.extra.next_id ~ '/') | safe }}" title="{{ page.extra.next_body }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer }}</a>{% endif %}</span>

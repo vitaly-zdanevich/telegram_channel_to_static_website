@@ -867,16 +867,6 @@ pub fn render_post(
         body.push_str("\n\n");
     }
 
-    // Related posts (opt-in), by shared-tag overlap. Internal @/ links resolve
-    // under any base_url and survive the channel's removal.
-    if !post.related.is_empty() {
-        body.push_str(&format!("<nav class=\"related\">\n\n**{}:**\n\n", ui.related));
-        for (slug, label) in &post.related {
-            body.push_str(&format!("- [{label}](@/posts/{slug}/index.md)\n"));
-        }
-        body.push_str("\n</nav>\n\n");
-    }
-
     let (slug, front) = if page {
         let slug = crate::site::slugify(&title);
         let front = format!(
@@ -998,6 +988,14 @@ fn front_matter(
     }
     let ids: Vec<String> = post.ids.iter().map(|i| i.to_string()).collect();
     fm.push_str(&format!("ids = [{}]\n", ids.join(", ")));
+    // Related posts as data, so only the single-post template renders them (not
+    // the feed). `get_url` resolves the @/ path to each post's permalink. Must be
+    // last in [extra] — an array-of-tables closes the inline table above.
+    for (slug, label) in &post.related {
+        fm.push_str("\n[[extra.related]]\n");
+        fm.push_str(&format!("path = \"@/posts/{slug}/index.md\"\n"));
+        fm.push_str(&format!("label = {}\n", toml_str(label)));
+    }
     fm.push_str("+++\n\n");
     fm
 }
@@ -1898,8 +1896,13 @@ mod tests {
             pinterest: false,
         };
         let out = render_post(&a, &rw, false, None, None, &opts).index_md;
-        assert!(out.contains("<nav class=\"related\">"), "no related nav: {out}");
-        assert!(out.contains(&format!("(@/posts/{}/index.md)", slug_for(&posts[1]))), "no link: {out}");
+        // Related is emitted as front-matter data (the post-page template renders
+        // it), not into the body — so the feed doesn't show it.
+        assert!(out.contains("[[extra.related]]"), "no related front-matter: {out}");
+        assert!(
+            out.contains(&format!("path = \"@/posts/{}/index.md\"", slug_for(&posts[1]))),
+            "no related path: {out}"
+        );
     }
 
     #[test]
