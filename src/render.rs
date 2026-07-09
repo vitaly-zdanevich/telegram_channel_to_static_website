@@ -659,7 +659,7 @@ pub fn render_post(
                 if og_image.is_none() {
                     og_image = Some(fname.clone());
                 }
-                body.push_str(&format!("![]({fname})\n\n"));
+                body.push_str(&format!("{{{{ img(src=\"{fname}\") }}}}\n\n"));
             }
             Media::Video { url } => {
                 if drop_videos {
@@ -804,7 +804,7 @@ pub fn render_post(
                 if og_image.is_none() {
                     og_image = Some(fname.clone());
                 }
-                body.push_str(&format!("![]({fname})\n\n"));
+                body.push_str(&format!("{{{{ img(src=\"{fname}\") }}}}\n\n"));
             }
             Media::LocalVideo { path } => {
                 // Full video from MTProto, replacing the web's poster-only
@@ -1776,7 +1776,7 @@ mod tests {
         // Off → a normal image stack, no carousel.
         let off = render_post(&album, &rw, false, None, None, &base);
         assert!(!off.index_md.contains("carousel"), "{}", off.index_md);
-        assert!(off.index_md.contains("!["), "expected markdown images: {}", off.index_md);
+        assert_eq!(off.index_md.matches("{{ img(src=").count(), 2, "expected 2 image shortcodes: {}", off.index_md);
         // On → one carousel holding both images, and both are still downloaded.
         let on = render_post(&album, &rw, false, None, None, &RenderOpts { carousel: true, ..base });
         assert!(on.index_md.contains(r#"<div class="carousel">"#), "{}", on.index_md);

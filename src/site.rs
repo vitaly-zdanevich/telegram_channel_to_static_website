@@ -144,6 +144,7 @@ pub fn scaffold(
         ABOUTME_PHOTO_SHORTCODE,
     )?;
     write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
+    write_file(&site.join("templates/shortcodes/img.html"), IMG_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/avatar.html"), AVATAR_SHORTCODE)?;
 
@@ -1500,7 +1501,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
      tests below don't fail there. #}
   {% set current_path = current_path | default(value="") %}
   <header class="site-header">
-    {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}" alt=""></a>{% endif %}
+    {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}"></a>{% endif %}
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
     {% if not config.extra.hide_nav %}<nav>
       {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}" title="{{ config.extra.tag_counts | get(key=t, default='') }}">#{{ t }}</a>{% endfor %}
@@ -1707,7 +1708,7 @@ const NOT_FOUND_HTML: &str = r#"{% extends "base.html" %}
 // checkbox reveals it, so no JavaScript is involved.
 const YOUTUBE_SHORTCODE: &str = r#"<div class="yt-embed">
 {%- if config.extra.youtube_facade -%}
-<input type="checkbox" id="yt-{{ id }}" class="yt-toggle"><label for="yt-{{ id }}" class="yt-facade"><img src="https://i.ytimg.com/vi/{{ id }}/hqdefault.jpg" alt="" loading="lazy"><span class="yt-btn" aria-hidden="true">▶</span></label><iframe class="yt-frame" src="https://www.youtube.com/embed/{{ id }}?autoplay=1" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<input type="checkbox" id="yt-{{ id }}" class="yt-toggle"><label for="yt-{{ id }}" class="yt-facade"><img src="https://i.ytimg.com/vi/{{ id }}/hqdefault.jpg" loading="lazy"><span class="yt-btn" aria-hidden="true">▶</span></label><iframe class="yt-frame" src="https://www.youtube.com/embed/{{ id }}?autoplay=1" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 {%- else -%}
 <iframe src="https://www.youtube.com/embed/{{ id }}" title="YouTube video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 {%- endif -%}
@@ -1760,16 +1761,25 @@ const VK_PLAYLIST_SHORTCODE: &str = r#"<div class="vk-playlist"><div id="{{ elid
 // Resolve colocated media against the post's permalink so it works both on the
 // post page and when the post is shown in full on the homepage feed (a relative
 // src would otherwise break off the post's own page).
+// In every media shortcode below, `src` is bundle-relative (prefix the post's
+// permalink) unless dedup rewrote it to an absolute shared-store URL (http /
+// root-relative `/media/…`), which is used as-is:
+//   {% if src is starting_with('http') or src is starting_with('/') %}{{ src | safe }}{% else %}{{ page.permalink | safe }}{{ src }}{% endif %}
 const VIDEO_SHORTCODE: &str =
-    "<video controls preload=\"metadata\" src=\"{{ page.permalink | safe }}{{ src }}\"></video>\n";
+    "<video controls preload=\"metadata\" src=\"{% if src is starting_with('http') or src is starting_with('/') %}{{ src | safe }}{% else %}{{ page.permalink | safe }}{{ src }}{% endif %}\"></video>\n";
+
+/// Post image — no `alt` (the photos are decorative; this avoids the empty
+/// `alt=\"\"` the Markdown renderer would emit). Dedup-safe src like the others.
+const IMG_SHORTCODE: &str =
+    "<img loading=\"lazy\" src=\"{% if src is starting_with('http') or src is starting_with('/') %}{{ src | safe }}{% else %}{{ page.permalink | safe }}{{ src }}{% endif %}\">\n";
 // Video hosted off-site (a GitHub Release asset) — the src is the absolute URL.
 const VIDEO_EXT_SHORTCODE: &str =
     "<video controls preload=\"metadata\" src=\"{{ url | safe }}\"></video>\n";
 // The full about.me profile photo (a base-aware static file).
 const ABOUTME_PHOTO_SHORTCODE: &str =
-    "<img class=\"about-photo\" src=\"{{ get_url(path=src) }}\" alt=\"\" loading=\"lazy\">\n";
+    "<img class=\"about-photo\" src=\"{{ get_url(path=src) }}\" loading=\"lazy\">\n";
 const AUDIO_SHORTCODE: &str =
-    "<audio controls src=\"{{ page.permalink | safe }}{{ src }}\"></audio>\n";
+    "<audio controls src=\"{% if src is starting_with('http') or src is starting_with('/') %}{{ src | safe }}{% else %}{{ page.permalink | safe }}{{ src }}{% endif %}\"></audio>\n";
 
 // Inline clickable hashtag → its taxonomy page (base_url-aware).
 const TAG_SHORTCODE: &str =
