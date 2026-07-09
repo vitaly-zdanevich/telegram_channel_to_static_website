@@ -71,7 +71,8 @@ enum Commands {
     },
     /// Fold a built site into one self-contained HTML file (CSS inlined, local
     /// images/media embedded as data: URIs). Build the site with base_url="/"
-    /// first. Best for small/text archives — inlining media is heavy.
+    /// first. Best for small/text archives: base64 makes each inlined image ~33%
+    /// bigger, so a media-heavy site becomes a huge file.
     SingleFile {
         /// The built site directory, e.g. site/public
         dir: PathBuf,

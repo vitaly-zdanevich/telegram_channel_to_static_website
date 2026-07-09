@@ -133,7 +133,8 @@ tg2zola offline site/public  # then open site/public/index.html via file://
 
 # (optional) Fold the whole archive into ONE self-contained HTML (CSS + images
 # inlined as data: URIs). Build with base_url="/" first. Best for small/text
-# archives — inlining lots of media makes a huge file:
+# archives: base64-encoding makes each inlined image ~33% bigger, so a
+# media-heavy site becomes a huge file (for those, prefer the SQLite export):
 tg2zola single-file site/public archive.html
 ```
 
