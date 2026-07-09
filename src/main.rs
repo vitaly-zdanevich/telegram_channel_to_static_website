@@ -27,6 +27,7 @@ mod pwa;
 mod render;
 mod linktitles;
 mod scrape;
+mod singlefile;
 mod site;
 mod wikidata;
 
@@ -67,6 +68,16 @@ enum Commands {
     Pwa {
         /// The built site directory, e.g. site/public
         dir: PathBuf,
+    },
+    /// Fold a built site into one self-contained HTML file (CSS inlined, local
+    /// images/media embedded as data: URIs). Build the site with base_url="/"
+    /// first. Best for small/text archives — inlining media is heavy.
+    SingleFile {
+        /// The built site directory, e.g. site/public
+        dir: PathBuf,
+        /// Output HTML file (default: single-file.html in the current directory)
+        #[arg(default_value = "single-file.html")]
+        output: PathBuf,
     },
     /// One-time MTProto login: create a reusable user session. Writes
     /// `tg2zola.session` and prints a base64 `TG_SESSION` for a CI secret.
@@ -421,6 +432,10 @@ async fn main() -> Result<()> {
             let n = pwa::write_asset_manifest(&dir)?;
             info!("pwa: wrote asset-manifest.json with {n} URL(s) to precache");
             Ok(())
+        }
+        Some(Commands::SingleFile { dir, output }) => {
+            init_tracing("info");
+            singlefile::build(&dir, &output)
         }
         #[cfg(feature = "mtproto")]
         Some(Commands::Login) => {

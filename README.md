@@ -130,6 +130,11 @@ zola --root site build       # output in site/public/
 
 # (optional) Make it viewable with NO web server, straight from disk:
 tg2zola offline site/public  # then open site/public/index.html via file://
+
+# (optional) Fold the whole archive into ONE self-contained HTML (CSS + images
+# inlined as data: URIs). Build with base_url="/" first. Best for small/text
+# archives — inlining lots of media makes a huge file:
+tg2zola single-file site/public archive.html
 ```
 
 Quick local test (one page, ~20 messages):
