@@ -13,6 +13,7 @@ mod genius;
 mod group;
 mod html2md;
 mod i18n;
+mod integrity;
 mod liveness;
 mod media;
 mod model;
@@ -1240,6 +1241,21 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
                 }
             }
         }
+    }
+
+    // Integrity: every local media file the pages reference must exist on disk.
+    let integ = integrity::check(&s.site);
+    if integ.missing.is_empty() {
+        info!("integrity: all {} referenced media file(s) present", integ.checked);
+    } else {
+        for (post, rf) in &integ.missing {
+            tracing::warn!("integrity: {post} references missing media '{rf}'");
+        }
+        tracing::warn!(
+            "integrity: {} of {} referenced media file(s) missing",
+            integ.missing.len(),
+            integ.checked
+        );
     }
 
     info!("done — Zola site at {}", s.site.display());
