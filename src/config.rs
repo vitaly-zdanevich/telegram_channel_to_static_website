@@ -91,6 +91,9 @@ pub struct FileConfig {
     pub related: Option<bool>,
     /// Merge identical media across posts into a shared store (default on).
     pub dedup: Option<bool>,
+    /// Also export the whole archive to a SQLite database at this path (blobs
+    /// included). Off unless set.
+    pub sqlite: Option<String>,
     /// Check outbound links and log the dead ones (opt-in diagnostic).
     pub dead_links: Option<bool>,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
@@ -242,6 +245,8 @@ pub struct Settings {
     pub related: bool,
     /// Merge identical media across posts into a shared store (default true).
     pub dedup: bool,
+    /// Path to also export a SQLite archive (blobs included); `None` = don't.
+    pub sqlite: Option<std::path::PathBuf>,
     /// Check outbound links and log the dead ones (opt-in, default false).
     pub dead_links: bool,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).

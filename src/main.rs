@@ -29,6 +29,7 @@ mod linktitles;
 mod scrape;
 mod singlefile;
 mod site;
+mod sqlite;
 mod wikidata;
 
 #[cfg(test)]
@@ -262,6 +263,12 @@ struct GenerateArgs {
     /// for the CI log; it doesn't change the site.
     #[arg(long)]
     dead_links: bool,
+
+    /// Also export the whole archive to a SQLite database at this path — posts,
+    /// tags, links, reactions and every media file as a BLOB (for preservation /
+    /// analytics).
+    #[arg(long)]
+    sqlite: Option<PathBuf>,
 
     /// Add a Pinterest "Save" hover button to the site's own images so visitors
     /// can pin them to their boards (opt-in; needs JavaScript).
@@ -590,6 +597,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             fc.dedup.unwrap_or(true)
         },
         dead_links: g.dead_links || fc.dead_links.unwrap_or(false),
+        sqlite: g.sqlite.clone().or_else(|| fc.sqlite.clone().map(PathBuf::from)),
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
             false
@@ -1066,6 +1074,14 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         );
         info!("{} media references across posts/pages", jobs.len());
         media::download_all(&client, &jobs, s.concurrency).await?;
+
+        // SQLite export (opt-in): before dedup, while every media file is still in
+        // its post bundle, so each blob is read straight from there.
+        if let Some(db) = &s.sqlite {
+            if let Err(e) = sqlite::export(&posts, &rendered, &s.site, db) {
+                tracing::warn!("sqlite: export failed: {e:#}");
+            }
+        }
 
         // Deduplicate identical media across bundles into a shared store, so the
         // published site serves one copy of a reposted file. Runs before the size

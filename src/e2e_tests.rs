@@ -88,6 +88,7 @@ fn settings(site: PathBuf) -> Settings {
         related: false,
         dedup: false,
         dead_links: false,
+        sqlite: None,
         keep_media: false,
         genius: false,
         spotify: false,

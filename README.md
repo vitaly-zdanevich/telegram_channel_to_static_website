@@ -136,6 +136,12 @@ tg2zola offline site/public  # then open site/public/index.html via file://
 # archives: base64-encoding makes each inlined image ~33% bigger, so a
 # media-heavy site becomes a huge file (for those, prefer the SQLite export):
 tg2zola single-file site/public archive.html
+
+# (optional) Export the whole archive to ONE SQLite file — posts, tags, links,
+# reactions + every media file as a raw BLOB. Great for preservation and
+# SELECT-based analytics, and fine for media-heavy channels (blobs aren't
+# inflated). Pass while generating:
+tg2zola --channel <name> --site site --base-url https://… --sqlite archive.db
 ```
 
 Quick local test (one page, ~20 messages):
