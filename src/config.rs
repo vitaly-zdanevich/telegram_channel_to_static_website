@@ -29,10 +29,12 @@ pub struct FileConfig {
     pub telegram_link: Option<bool>,
     /// Generate an RSS feed at /rss.xml (default on).
     pub rss: Option<bool>,
-    /// Generate a podcast feed (audio posts) at /podcast.xml (opt-in, default off).
+    /// Generate an audio podcast feed at /podcast.xml from `#audio`-tagged posts
+    /// that have audio (default on).
     pub podcast: Option<bool>,
-    /// Podcast feed includes only posts tagged `podcast` (default off → all audio).
-    pub podcast_tagged: Option<bool>,
+    /// Generate a video podcast feed at /video-podcast.xml from posts that have
+    /// video file(s), no tag required (default on).
+    pub video_podcast: Option<bool>,
     /// Mastodon `@user@instance` handle for `fediverse:creator` + `rel="me"`.
     pub fediverse_creator: Option<String>,
     /// Search-engine name for the header search box (google/duckduckgo/yandex/bing).
@@ -192,10 +194,10 @@ pub struct Settings {
     pub next_prev: bool,
     pub telegram_link: bool,
     pub rss: bool,
-    /// Generate a podcast feed at /podcast.xml (opt-in, default false).
+    /// Audio podcast feed at /podcast.xml from `#audio`-tagged audio posts (default true).
     pub podcast: bool,
-    /// Podcast feed includes only posts tagged `podcast` (default false → all audio).
-    pub podcast_tagged: bool,
+    /// Video podcast feed at /video-podcast.xml from posts with video (default true).
+    pub video_podcast: bool,
     pub fediverse_creator: Option<String>,
     /// Resolved header search box behaviour.
     pub search: Search,

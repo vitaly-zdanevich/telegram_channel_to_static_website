@@ -80,11 +80,14 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   complete feed, not just recent items), advertised via a `<link rel="alternate">`
   so feed readers auto-discover it from the site URL. On by default; disable
   with `RSS=false` / `--no-rss`.
-- **Podcast feed** *(opt-in)* — turn the channel's audio posts into a personal
-  **podcast** at `/podcast.xml`: an iTunes-tagged RSS feed with per-episode
+- **Podcast feeds** *(on by default)* — iTunes-tagged RSS feeds with per-episode
   `<enclosure>`s, subscribable in podcast apps (and, with a ≥1400×1400px square
-  cover, submittable to **Apple Podcasts**). Enable with `PODCAST=true` /
-  `--podcast`; `PODCAST_TAGGED` limits it to posts tagged `podcast`.
+  cover, submittable to **Apple Podcasts**). An **audio** feed at `/podcast.xml`
+  from posts tagged **`#audio`** that have audio, and a **video** feed at
+  `/video-podcast.xml` from posts with video file(s) (no tag needed). Both are
+  advertised via `<link rel="alternate">` so podcast apps auto-discover them.
+  Disable with `PODCAST=false` / `--no-podcast` and `VIDEO_PODCAST=false` /
+  `--no-video-podcast`.
 - **Rich link previews + Mastodon** — every page emits Open Graph and Twitter
   Card tags (title, description, the post's first image), so shared links render
   as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews

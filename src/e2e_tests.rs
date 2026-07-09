@@ -64,7 +64,7 @@ fn settings(site: PathBuf) -> Settings {
         telegram_link: true,
         rss: true,
         podcast: false,
-        podcast_tagged: false,
+        video_podcast: false,
         fediverse_creator: None,
         search: Search::None,
         footer: None,

@@ -319,16 +319,17 @@ struct GenerateArgs {
     #[arg(long)]
     no_link_titles: bool,
 
-    /// Generate a podcast feed (audio posts) at /podcast.xml (opt-in). Cover from
-    /// the about.me photo, else a post tagged `podcast_description`; that post's
-    /// text (or the channel description) is the podcast description.
+    /// Don't generate the audio podcast feed (/podcast.xml from `#audio`-tagged
+    /// posts that have audio). Cover from the about.me photo, else a post tagged
+    /// `podcast_description`; that post's text (or the channel description) is the
+    /// podcast description.
     #[arg(long)]
-    podcast: bool,
+    no_podcast: bool,
 
-    /// Restrict the podcast feed to audio posts tagged `podcast` (default: all
-    /// audio posts). Only meaningful with `--podcast`.
+    /// Don't generate the video podcast feed (/video-podcast.xml from posts that
+    /// have video file(s); no tag required).
     #[arg(long)]
-    podcast_tagged: bool,
+    no_video_podcast: bool,
 
     /// Comma-separated tags to surface as `#tag` links in the top nav.
     #[arg(long)]
@@ -610,8 +611,16 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.link_titles.unwrap_or(true)
         },
-        podcast: g.podcast || fc.podcast.unwrap_or(false),
-        podcast_tagged: g.podcast_tagged || fc.podcast_tagged.unwrap_or(false),
+        podcast: if g.no_podcast {
+            false
+        } else {
+            fc.podcast.unwrap_or(true)
+        },
+        video_podcast: if g.no_video_podcast {
+            false
+        } else {
+            fc.video_podcast.unwrap_or(true)
+        },
         tags_to_pages: g
             .tags_to_pages
             .clone()
@@ -1167,41 +1176,47 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     );
     site::set_about_wikidata(&s.site, about_wikidata_html.as_deref());
 
-    // Podcast feed (opt-in): the channel's audio posts as an iTunes RSS feed.
-    // Needs absolute URLs, so it's skipped for a relative base_url.
-    if s.podcast && s.base_url.starts_with("http") {
-        let episodes = podcast_episodes(&posts, &rendered, &s);
-        if episodes.is_empty() {
-            info!("podcast: no matching audio posts — skipping podcast.xml");
-        } else {
-            let cover = about_me
-                .as_ref()
-                .and_then(|a| a.image.clone())
-                .or_else(|| podcast_cover(&posts, &rendered, &s.base_url));
-            let description = posts
-                .iter()
-                .find(|p| p.tags.iter().any(|t| t == "podcast_description"))
-                .map(render::post_text_plain)
-                .filter(|d| !d.is_empty())
-                .or_else(|| channel_info.as_ref().and_then(|i| i.description_md.clone()))
-                .unwrap_or_default();
-            let title = channel_info
-                .as_ref()
-                .and_then(|i| i.title.clone())
-                .unwrap_or_else(|| s.title.clone());
-            let ch = podcast::Channel {
-                author: title.clone(),
-                title,
-                description,
-                link: s.base_url.clone(),
-                cover: cover.unwrap_or_default(),
-                language: s.language.clone(),
-                category: "Personal Journals".into(),
-            };
-            match std::fs::write(s.site.join("static/podcast.xml"), podcast::feed(&ch, &episodes)) {
-                Ok(()) => info!("podcast: wrote podcast.xml with {} episode(s)", episodes.len()),
-                Err(e) => tracing::warn!("podcast: writing podcast.xml failed: {e}"),
+    // Podcast feeds (iTunes RSS): audio (#audio-tagged) and video. Both need
+    // absolute URLs, so they're skipped for a relative base_url. The feed is
+    // written whenever its toggle is on — even with 0 episodes, so the <link>
+    // advertised in the page head is never dead.
+    if (s.podcast || s.video_podcast) && s.base_url.starts_with("http") {
+        let cover = about_me
+            .as_ref()
+            .and_then(|a| a.image.clone())
+            .or_else(|| podcast_cover(&posts, &rendered, &s.base_url))
+            .unwrap_or_default();
+        let description = posts
+            .iter()
+            .find(|p| p.tags.iter().any(|t| t == "podcast_description"))
+            .map(render::post_text_plain)
+            .filter(|d| !d.is_empty())
+            .or_else(|| channel_info.as_ref().and_then(|i| i.description_md.clone()))
+            .unwrap_or_default();
+        let base_title =
+            channel_info.as_ref().and_then(|i| i.title.clone()).unwrap_or_else(|| s.title.clone());
+        let channel = |suffix: &str| podcast::Channel {
+            author: base_title.clone(),
+            title: format!("{base_title}{suffix}"),
+            description: description.clone(),
+            link: s.base_url.clone(),
+            cover: cover.clone(),
+            language: s.language.clone(),
+            category: "Personal Journals".into(),
+        };
+        let write = |file: &str, ch: &podcast::Channel, eps: &[podcast::Episode]| {
+            match std::fs::write(s.site.join("static").join(file), podcast::feed(ch, eps)) {
+                Ok(()) => info!("podcast: wrote {file} with {} episode(s)", eps.len()),
+                Err(e) => tracing::warn!("podcast: writing {file} failed: {e}"),
             }
+        };
+        if s.podcast {
+            let eps = podcast_episodes(&posts, &rendered, &s);
+            write("podcast.xml", &channel(""), &eps);
+        }
+        if s.video_podcast {
+            let eps = video_episodes(&posts, &rendered, &s, video_release_base.as_deref());
+            write("video-podcast.xml", &channel(" (video)"), &eps);
         }
     }
 
@@ -1345,6 +1360,71 @@ fn is_audio_file(name: &str) -> bool {
     [".mp3", ".ogg", ".oga", ".m4a", ".opus", ".wav", ".flac", ".aac"].iter().any(|e| n.ends_with(e))
 }
 
+fn is_video_file(name: &str) -> bool {
+    let n = name.to_ascii_lowercase();
+    [".mp4", ".webm", ".mov", ".m4v", ".mkv"].iter().any(|e| n.ends_with(e))
+}
+
+fn video_mime(name: &str) -> &'static str {
+    let n = name.to_ascii_lowercase();
+    if n.ends_with(".webm") {
+        "video/webm"
+    } else if n.ends_with(".mov") {
+        "video/quicktime"
+    } else if n.ends_with(".mkv") {
+        "video/x-matroska"
+    } else {
+        "video/mp4"
+    }
+}
+
+/// Video podcast episodes: one per video file across the posts (no tag filter).
+/// A file offloaded to GitHub Releases points at its release URL, otherwise at
+/// its bundle URL.
+fn video_episodes(
+    posts: &[model::Post],
+    rendered: &[render::RenderedPost],
+    s: &config::Settings,
+    release_base: Option<&str>,
+) -> Vec<podcast::Episode> {
+    let base = ensure_slash(&s.base_url);
+    let mut out = Vec::new();
+    for (post, r) in posts.iter().zip(rendered) {
+        let videos: Vec<_> = r.downloads.iter().filter(|d| is_video_file(&d.filename)).collect();
+        let id = post.primary_id;
+        let derived = render::post_title(post, s.title_max_len, true);
+        let base_title = if derived.is_empty() { format!("#{id}") } else { derived };
+        for (i, d) in videos.iter().enumerate() {
+            let (url, path) = match (d.release, release_base) {
+                (true, Some(rb)) => (
+                    format!("{}/{}", rb.trim_end_matches('/'), d.filename),
+                    s.site.join(".video-releases").join(&d.filename),
+                ),
+                _ => (
+                    format!("{base}posts/{id}/{}", d.filename),
+                    s.site.join("content/posts").join(&r.slug).join(&d.filename),
+                ),
+            };
+            let length = std::fs::metadata(&path).map(|m| m.len()).unwrap_or(0);
+            let title = if videos.len() > 1 {
+                format!("{base_title} ({})", i + 1)
+            } else {
+                base_title.clone()
+            };
+            out.push(podcast::Episode {
+                title,
+                description: render::post_text_plain(post),
+                url,
+                mime: video_mime(&d.filename).to_string(),
+                length,
+                date: post.date,
+                guid: format!("{base}posts/{id}/#v{i}"),
+            });
+        }
+    }
+    out
+}
+
 fn is_image_file(name: &str) -> bool {
     let n = name.to_ascii_lowercase();
     [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"].iter().any(|e| n.ends_with(e))
@@ -1377,7 +1457,7 @@ fn podcast_episodes(
         .iter()
         .zip(rendered)
         .filter_map(|(post, r)| {
-            if s.podcast_tagged && !post.tags.iter().any(|t| t == "podcast") {
+            if !post.tags.iter().any(|t| t == "audio") {
                 return None;
             }
             let audio = r.downloads.iter().find(|d| is_audio_file(&d.filename))?;

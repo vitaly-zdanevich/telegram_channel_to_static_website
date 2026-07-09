@@ -462,6 +462,14 @@ fn config_toml(
         .replace("__THEME__", &theme_line)
         .replace("__FEEDS__", feeds)
         .replace("__RSS__", if s.rss { "true" } else { "false" })
+        .replace(
+            "__PODCAST__",
+            if s.podcast && s.base_url.starts_with("http") { "true" } else { "false" },
+        )
+        .replace(
+            "__VIDEO_PODCAST__",
+            if s.video_podcast && s.base_url.starts_with("http") { "true" } else { "false" },
+        )
         .replace("__CHANNEL__", &toml_escape(&s.channel))
         .replace("__DATE_FORMAT__", &toml_escape(&s.date_format))
         .replace("__TAGS_FOOTER__", if s.tags_footer { "true" } else { "false" })
@@ -1454,6 +1462,8 @@ tags_footer = __TAGS_FOOTER__
 next_prev = __NEXT_PREV__
 telegram_link = __TELEGRAM_LINK__
 rss = __RSS__
+podcast = __PODCAST__
+video_podcast = __VIDEO_PODCAST__
 youtube_facade = __YT_FACADE__
 carousel = __CAROUSEL__
 embed = __EMBED__
@@ -1486,6 +1496,8 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   {% if config.extra.avatar %}<link rel="icon" type="image/jpeg" href="{{ get_url(path=config.extra.avatar) }}">{% endif %}
   {% if config.extra.rss %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path='rss.xml', trailing_slash=false) | safe }}">{% endif %}
+  {% if config.extra.podcast %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }} — Podcast" href="{{ get_url(path='podcast.xml', trailing_slash=false) | safe }}">{% endif %}
+  {% if config.extra.video_podcast %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }} — Video podcast" href="{{ get_url(path='video-podcast.xml', trailing_slash=false) | safe }}">{% endif %}
   {# Social cards (Open Graph + Twitter) and Mastodon attribution. `page` is
      only defined on post/page templates; sections fall back to site defaults. #}
   {% set_global og_title = config.title %}
