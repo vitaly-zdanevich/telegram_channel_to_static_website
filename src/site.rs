@@ -1230,6 +1230,20 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                     b.push_str("\n\n");
                 }
             }
+            // Podcast feed links (only generated for an http base_url).
+            if s.base_url.starts_with("http") {
+                let root = s.base_url.trim_end_matches('/');
+                let mut feeds = Vec::new();
+                if s.podcast {
+                    feeds.push(format!("[audio]({root}/podcast.xml)"));
+                }
+                if s.video_podcast {
+                    feeds.push(format!("[video]({root}/video-podcast.xml)"));
+                }
+                if !feeds.is_empty() {
+                    b.push_str(&format!("🎧 Podcast: {}\n\n", feeds.join(" · ")));
+                }
+            }
             // Enrichment from an about.me link in the description (filled later).
             b.push_str("__ABOUT_ME__\n\n");
             // Optional Wikidata statements table for a configured QID.

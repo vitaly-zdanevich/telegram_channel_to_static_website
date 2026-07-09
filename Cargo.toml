@@ -1,6 +1,6 @@
 [package]
 name = "tg2zola"
-version = "0.70.1"
+version = "0.71.0"
 edition = "2021"
 description = "Sync a public Telegram channel into a Zola static website - no Telegram dependency at runtime - we parse t.me - optional MTProto backend to extract audio, original-quality photos, and big videos"
 license = "MIT"
