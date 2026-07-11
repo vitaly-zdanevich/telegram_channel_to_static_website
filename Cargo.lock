@@ -1196,6 +1196,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "md-5"
+version = "0.10.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d89e7ee0cfbedfc4da3340218492196241d89eefb6dab27de5df917a6d2e78cf"
+dependencies = [
+ "cfg-if",
+ "digest",
+]
+
+[[package]]
 name = "md5"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2219,7 +2229,7 @@ dependencies = [
 
 [[package]]
 name = "tg2zola"
-version = "0.72.0"
+version = "0.73.0"
 dependencies = [
  "anyhow",
  "base64",
@@ -2229,6 +2239,7 @@ dependencies = [
  "grammers-client",
  "grammers-mtsender",
  "grammers-session",
+ "md-5",
  "once_cell",
  "percent-encoding",
  "regex",

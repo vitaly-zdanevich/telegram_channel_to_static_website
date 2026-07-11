@@ -94,6 +94,8 @@ pub struct FileConfig {
     /// Also export the whole archive to a SQLite database at this path (blobs
     /// included). Off unless set.
     pub sqlite: Option<String>,
+    /// Also export the archive as an Evernote ENEX file at this path. Off unless set.
+    pub enex: Option<String>,
     /// Check outbound links and log the dead ones (opt-in diagnostic).
     pub dead_links: Option<bool>,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in).
@@ -247,6 +249,8 @@ pub struct Settings {
     pub dedup: bool,
     /// Path to also export a SQLite archive (blobs included); `None` = don't.
     pub sqlite: Option<std::path::PathBuf>,
+    /// Path to also export an Evernote ENEX file; `None` = don't.
+    pub enex: Option<std::path::PathBuf>,
     /// Check outbound links and log the dead ones (opt-in, default false).
     pub dead_links: bool,
     /// Add a Pinterest "Save" hover button to the site's own images (opt-in, default false).

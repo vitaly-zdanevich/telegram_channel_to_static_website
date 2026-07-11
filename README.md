@@ -142,6 +142,9 @@ tg2zola single-file site/public archive.html
 # SELECT-based analytics, and fine for media-heavy channels (blobs aren't
 # inflated). Pass while generating:
 tg2zola --channel <name> --site site --base-url https://… --sqlite archive.db
+
+# (optional) Export as Evernote ENEX (--enex archive.enex): one note per post,
+# media attached as base64 resources — importable straight into Evernote.
 ```
 
 Quick local test (one page, ~20 messages):

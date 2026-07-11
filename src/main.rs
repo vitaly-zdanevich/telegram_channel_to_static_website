@@ -9,6 +9,7 @@ mod aboutme;
 mod config;
 mod bandcamp;
 mod dedup;
+mod enex;
 mod genius;
 mod group;
 mod html2md;
@@ -269,6 +270,11 @@ struct GenerateArgs {
     /// analytics).
     #[arg(long)]
     sqlite: Option<PathBuf>,
+
+    /// Also export the archive as an Evernote ENEX file at this path — one note
+    /// per post, media attached as base64 resources.
+    #[arg(long)]
+    enex: Option<PathBuf>,
 
     /// Add a Pinterest "Save" hover button to the site's own images so visitors
     /// can pin them to their boards (opt-in; needs JavaScript).
@@ -598,6 +604,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         },
         dead_links: g.dead_links || fc.dead_links.unwrap_or(false),
         sqlite: g.sqlite.clone().or_else(|| fc.sqlite.clone().map(PathBuf::from)),
+        enex: g.enex.clone().or_else(|| fc.enex.clone().map(PathBuf::from)),
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
             false
@@ -1080,6 +1087,11 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         if let Some(db) = &s.sqlite {
             if let Err(e) = sqlite::export(&posts, &rendered, &s.site, db) {
                 tracing::warn!("sqlite: export failed: {e:#}");
+            }
+        }
+        if let Some(path) = &s.enex {
+            if let Err(e) = enex::export(&posts, &rendered, &s.site, path) {
+                tracing::warn!("enex: export failed: {e:#}");
             }
         }
 

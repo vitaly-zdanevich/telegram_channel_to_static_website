@@ -1,6 +1,6 @@
 [package]
 name = "tg2zola"
-version = "0.72.0"
+version = "0.73.0"
 edition = "2021"
 description = "Sync a public Telegram channel into a Zola static website - no Telegram dependency at runtime - we parse t.me - optional MTProto backend to extract audio, original-quality photos, and big videos"
 license = "MIT"
@@ -34,6 +34,8 @@ percent-encoding = "2"
 # source, so the build needs a C compiler) and is the same one grammers-session
 # uses, so the two share one native sqlite3 (no `links` conflict).
 sqlite = "0.37"
+# ENEX (Evernote) export needs MD5 for each resource's en-media hash.
+md-5 = "0.10"
 
 # Optional MTProto backend (feature `mtproto`): log in as a user to fetch media
 # the public web preview omits (voice/audio notes, original-quality photos).
