@@ -1266,13 +1266,15 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
             b.push_str(&format!("{}\n\n", about.generated_in));
             b.push_str("__LAST_BUILD__\n\n");
             b.push_str("__PAGESPEED__\n\n");
-            b.push_str("__MTPROTO__\n\n");
+            // The "no API needed" note first, then the MTProto provenance line
+            // (which qualifies it — audio/big videos do come via MTProto).
             b.push_str(&format!(
-                "{} [{repo}]({repo})\n\n{no_api}",
+                "{} [{repo}]({repo})\n\n{no_api}\n\n",
                 about.source_repo,
                 repo = s.repo_url,
                 no_api = about.no_api,
             ));
+            b.push_str("__MTPROTO__\n\n");
             if let Some(commits) = recent_commits(&s.repo_url) {
                 b.push_str("\n\n");
                 b.push_str(&commits);
