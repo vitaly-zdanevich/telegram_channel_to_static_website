@@ -21,6 +21,7 @@ pub fn scaffold(
     tags: &[(String, usize)],
     page_nav: &[(String, String)],
     days: &[DayMeta],
+    page_tag_titles: &[String],
 ) -> Result<()> {
     let site = &s.site;
     fs::create_dir_all(site.join("templates/shortcodes"))?;
@@ -44,7 +45,10 @@ pub fn scaffold(
     }
 
     // Regenerated every run (deterministic) so theme switches take effect.
-    write_file(&site.join("config.toml"), &config_toml(s, &pages, tags, page_nav, days))?;
+    write_file(
+        &site.join("config.toml"),
+        &config_toml(s, &pages, tags, page_nav, days, page_tag_titles),
+    )?;
     write_file(&site.join("content/_index.md"), &root_index_md(s))?;
     write_file(&site.join("content/posts/_index.md"), &posts_index_md(s))?;
     // Static pages live in a non-rendered subsection so they don't appear in the
@@ -303,12 +307,68 @@ fn write_if_absent(path: &Path, contents: &str) -> Result<()> {
     write_file(path, contents)
 }
 
+/// Per-homepage tag summaries, newest page first. `post_tags` must follow the
+/// same oldest-to-newest order as the posts passed through the render pipeline.
+/// Each title is safe raw HTML for a `title` attribute: tag names are escaped
+/// and line breaks use character references so native tooltips stay multiline.
+pub fn pagination_tag_titles<'a>(
+    post_tags: impl IntoIterator<Item = &'a [String]>,
+    posts_per_page: usize,
+) -> Vec<String> {
+    let post_tags: Vec<&[String]> = post_tags.into_iter().collect();
+    post_tags
+        .rchunks(posts_per_page.max(1))
+        .map(|page| {
+            let mut counts: std::collections::HashMap<&str, usize> =
+                std::collections::HashMap::new();
+            for &tags in page {
+                for tag in tags {
+                    *counts.entry(tag.as_str()).or_default() += 1;
+                }
+            }
+            let mut counts: Vec<(&str, usize)> = counts.into_iter().collect();
+            counts.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(b.0)));
+            counts
+                .into_iter()
+                .map(|(tag, count)| format!("#{} — {count}", html_escape(tag)))
+                .collect::<Vec<_>>()
+                .join("&#10;")
+        })
+        .collect()
+}
+
+/// Attach the tag summary of each destination page to the source page. Keeping
+/// the current page index in each row avoids dynamic array indexing in Tera.
+fn pagination_nav_toml(page_tag_titles: &[String]) -> String {
+    if page_tag_titles.len() < 2 {
+        return String::new();
+    }
+    let value = |title: Option<&String>| {
+        toml_escape(title.map(String::as_str).unwrap_or(""))
+            .replace('\n', " ")
+            .replace('\r', "")
+    };
+    let rows = (0..page_tag_titles.len())
+        .map(|i| {
+            let newer = value(i.checked_sub(1).and_then(|j| page_tag_titles.get(j)));
+            let older = value(page_tag_titles.get(i + 1));
+            format!(
+                "{{ index = {}, newer = \"{newer}\", older = \"{older}\" }}",
+                i + 1
+            )
+        })
+        .collect::<Vec<_>>()
+        .join(", ");
+    format!("page_tag_nav = [{rows}]")
+}
+
 fn config_toml(
     s: &Settings,
     pages: &[Page],
     tags: &[(String, usize)],
     page_nav: &[(String, String)],
     days: &[DayMeta],
+    page_tag_titles: &[String],
 ) -> String {
     let theme_line = match &s.theme {
         Some(t) => format!("theme = \"{}\"\n", toml_escape(t)),
@@ -450,6 +510,7 @@ fn config_toml(
             .join("\n");
         format!("\n[extra.tag_counts]\n{rows}")
     };
+    let page_tag_nav = pagination_nav_toml(page_tag_titles);
 
     CONFIG_TOML
         .replace("__TAG_COUNTS__", &tag_counts_block)
@@ -515,6 +576,7 @@ fn config_toml(
         .replace("__NAV__", &nav)
         .replace("__NAV_TAGS__", &nav_tags)
         .replace("__TAGS__", &tags_toml)
+        .replace("__PAGE_TAG_NAV__", &page_tag_nav)
 }
 
 /// Derive a Mastodon profile URL from an `@user@instance.tld` handle, for the
@@ -1010,6 +1072,14 @@ fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
     years.sort();
     years.dedup();
     years.reverse();
+    let mut year_counts: std::collections::HashMap<i32, usize> =
+        std::collections::HashMap::new();
+    for date in &dates {
+        let key = date.format("%Y-%m-%d").to_string();
+        if let Some(meta) = present.get(key.as_str()) {
+            *year_counts.entry(date.year()).or_default() += meta.count;
+        }
+    }
 
     // Localized Mon..Sun headers (2024-01-06 is a Monday).
     let monday = NaiveDate::from_ymd_opt(2024, 1, 1).unwrap();
@@ -1024,13 +1094,17 @@ fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
     let mut b = String::new();
     b.push_str("<nav class=\"cal-years\">");
     for y in &years {
-        b.push_str(&format!("<a href=\"#y{y}\">{y}</a>"));
+        let count = year_counts.get(y).copied().unwrap_or_default();
+        b.push_str(&format!(
+            "<a href=\"#y{y}\">{y} <span class=\"cal-ycount\">{count}</span></a>"
+        ));
     }
     b.push_str("</nav>\n\n");
 
     for y in &years {
+        let count = year_counts.get(y).copied().unwrap_or_default();
         b.push_str(&format!(
-            "<h2 id=\"y{y}\" class=\"cal-year\">{y}</h2>\n<div class=\"cal-months\">\n"
+            "<h2 id=\"y{y}\" class=\"cal-year\">{y} <span class=\"cal-ycount\">{count}</span></h2>\n<div class=\"cal-months\">\n"
         ));
         for m in 1..=12u32 {
             if !dates.iter().any(|d| d.year() == *y && d.month() == m) {
@@ -1496,6 +1570,7 @@ __AVATAR__
 __NAV__
 __NAV_TAGS__
 __TAGS__
+__PAGE_TAG_NAV__
 __GOOGLE_ANALYTICS__
 __YANDEX_METRICA__
 
@@ -1588,9 +1663,9 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
     </article>
   {% endfor %}
   <nav class="pager">
-    {% if paginator.previous %}<a href="{{ paginator.previous | safe }}">← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
+    {% if paginator.previous %}<a href="{{ paginator.previous | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.newer != "" %} title="{{ nav.newer | safe }}"{% endif %}{% endfor %}>← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
     <span>{{ paginator.current_index }} / {{ paginator.number_pagers }}</span>
-    {% if paginator.next %}<a href="{{ paginator.next | safe }}">{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
+    {% if paginator.next %}<a href="{{ paginator.next | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.older != "" %} title="{{ nav.older | safe }}"{% endif %}{% endfor %}>{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
   </nav>
 {% endblock content %}
 "#;
@@ -2010,6 +2085,7 @@ blockquote { border-left: 3px solid var(--border); margin: .5rem 0; padding-left
 /* Calendar */
 .cal-years { margin: .5rem 0 1.5rem; line-height: 1.9; }
 .cal-years a { margin-right: .7rem; }
+.cal-ycount { color: var(--muted); font-size: .65em; font-weight: 400; }
 .cal-year { margin: 1.5rem 0 .5rem; }
 .cal-months { display: flex; flex-wrap: wrap; gap: 1.4rem; }
 table.cal { border-collapse: collapse; font-size: .8rem; }
@@ -2047,6 +2123,34 @@ mod tests {
         assert_eq!(day_url("https://x.io/repo", "2025-12-28"), "https://x.io/repo/day/2025-12-28/");
         assert_eq!(day_url("https://x.io/repo/", "2025-12-28"), "https://x.io/repo/day/2025-12-28/");
         assert_eq!(day_url("/", "2025-12-28"), "/day/2025-12-28/");
+    }
+
+    #[test]
+    fn pagination_tag_titles_follow_page_order_and_popularity() {
+        // Input follows the render pipeline: oldest post first. The first
+        // homepage summary therefore comes from the final two posts.
+        let post_tags = [
+            vec!["old".to_string()],
+            vec!["same".to_string(), "beta".to_string()],
+            vec!["same".to_string(), "<escaped>".to_string()],
+            vec!["same".to_string()],
+        ];
+        let titles = pagination_tag_titles(post_tags.iter().map(Vec::as_slice), 2);
+        assert_eq!(
+            titles,
+            [
+                "#same — 2&#10;#&lt;escaped&gt; — 1",
+                "#beta — 1&#10;#old — 1&#10;#same — 1",
+            ]
+        );
+
+        let nav = pagination_nav_toml(&titles);
+        assert!(nav.contains(
+            r##"{ index = 1, newer = "", older = "#beta — 1&#10;#old — 1&#10;#same — 1" }"##
+        ));
+        assert!(nav.contains(
+            r##"{ index = 2, newer = "#same — 2&#10;#&lt;escaped&gt; — 1", older = "" }"##
+        ));
     }
 
     #[test]

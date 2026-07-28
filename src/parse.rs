@@ -174,8 +174,20 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
     };
 
     let media = parse_media(wrap);
+    // Telegram albums can be one wrapper (`data-post=channel/2061`) containing
+    // document links for 2061, 2062, … . Keep every constituent id so MTProto
+    // enrichment can fetch every attachment rather than only the first.
+    let mut ids = vec![id];
+    ids.extend(
+        wrap.select(&S_DOC)
+            .filter_map(|d| d.value().attr("href"))
+            .filter_map(|href| reply_target_id(href, channel)),
+    );
+    ids.sort_unstable();
+    ids.dedup();
 
     Some(RawMessage {
+        ids,
         id,
         channel: channel.to_string(),
         date,
@@ -537,6 +549,25 @@ mod tests {
     }
 
     #[test]
+    fn document_album_keeps_all_message_ids() {
+        let m = one(
+            r#"
+            <a class="tgme_widget_message_document_wrap" href="https://t.me/chan/7?single">
+              <div class="tgme_widget_message_document_title">one.bin</div>
+            </a>
+            <a class="tgme_widget_message_document_wrap" href="https://t.me/chan/8?single">
+              <div class="tgme_widget_message_document_title">two.bin</div>
+            </a>
+            <a class="tgme_widget_message_document_wrap" href="https://t.me/chan/9?single">
+              <div class="tgme_widget_message_document_title">three.bin</div>
+            </a>
+            "#,
+        );
+        assert_eq!(m.ids, vec![7, 8, 9]);
+        assert_eq!(m.media.len(), 3);
+    }
+
+    #[test]
     fn sticker_from_data_webp() {
         let m = one(r#"<i class="tgme_widget_message_sticker" data-webp="https://cdn.tg/s.webp"></i>"#);
         assert!(matches!(&m.media[..], [Media::Sticker { url, .. }] if url == "https://cdn.tg/s.webp"));
@@ -555,6 +586,13 @@ mod tests {
         assert!(m.edited, "should be marked edited");
         assert_eq!(m.views, Some(1200));
         assert!(m.body_md.contains("hello"));
+
+        let unlinked = one(
+            r#"<span class="tgme_widget_message_forwarded_from_name">Pavel Durov</span>"#,
+        );
+        let fwd = unlinked.forwarded_from.as_ref().expect("unlinked forward");
+        assert_eq!(fwd.name, "Pavel Durov");
+        assert_eq!(fwd.url, None);
     }
 
     #[test]

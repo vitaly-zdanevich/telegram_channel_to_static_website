@@ -48,7 +48,9 @@ pub fn group(mut msgs: Vec<RawMessage>, window_secs: i64) -> Vec<Post> {
 
         if merge {
             let last = posts.last_mut().unwrap();
-            last.ids.push(m.id);
+            last.ids.extend(m.ids);
+            last.ids.sort_unstable();
+            last.ids.dedup();
             if !m.body_md.trim().is_empty() {
                 if !last.body_md.trim().is_empty() {
                     last.body_md.push_str("\n\n");
@@ -99,7 +101,7 @@ fn to_post(m: RawMessage) -> Post {
     let pinterest = media::pinterest_from(&m.links);
     Post {
         primary_id: m.id,
-        ids: vec![m.id],
+        ids: m.ids,
         channel: m.channel,
         date: m.date,
         author: m.author,
@@ -156,6 +158,7 @@ mod tests {
 
     fn msg(id: u64, tags: &[&str], body: &str) -> RawMessage {
         RawMessage {
+            ids: vec![id],
             id,
             channel: "c".into(),
             // Same instant for all, so only the tag rule decides merging.
@@ -244,5 +247,14 @@ mod tests {
         assert_eq!(posts.len(), 1, "same-instant posts should unite");
         assert_eq!(posts[0].ids, vec![1787, 1797]);
         assert_eq!(posts[0].tags, vec!["crypto", "wallet"]);
+    }
+
+    #[test]
+    fn preserves_all_ids_from_one_album_wrapper() {
+        let mut album = msg(2061, &["scan"], "album");
+        album.ids = vec![2061, 2062, 2063, 2064, 2065];
+        let posts = group(vec![album], 1);
+        assert_eq!(posts[0].primary_id, 2061);
+        assert_eq!(posts[0].ids, vec![2061, 2062, 2063, 2064, 2065]);
     }
 }

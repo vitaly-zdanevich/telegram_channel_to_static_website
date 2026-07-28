@@ -13,9 +13,8 @@ pub struct ChannelInfo {
     pub counters: Vec<(String, String)>,
 }
 
-/// A "forwarded from" attribution. We keep only the display name as plain
-/// text — never a `t.me` link — so the generated site has no Telegram
-/// dependency.
+/// A "forwarded from" attribution. Public sources keep an exact link to the
+/// original message; hidden/private sources remain plain display text.
 #[derive(Debug, Clone)]
 pub struct Forward {
     pub name: String,
@@ -121,6 +120,10 @@ pub enum Media {
 /// One raw Telegram message as scraped from `t.me/s/<channel>`.
 #[derive(Debug, Clone)]
 pub struct RawMessage {
+    /// Every Telegram message id represented by this web-preview bubble. Albums
+    /// can expose several `/channel/<id>?single` attachment links while keeping
+    /// only the first id in `data-post`.
+    pub ids: Vec<u64>,
     pub id: u64,
     pub channel: String,
     pub date: DateTime<FixedOffset>,

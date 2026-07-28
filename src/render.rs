@@ -24,8 +24,8 @@ pub struct Download {
     /// copied from here instead of fetched over HTTP (`url` is then empty).
     pub local: Option<std::path::PathBuf>,
     /// Stage this file for upload to GitHub Releases (kept out of the published
-    /// bundle) instead of the page bundle — used for videos when `video_releases`
-    /// is on, so they don't count against the Pages quota.
+    /// bundle) instead of the page bundle — used for videos and large archive
+    /// attachments so they don't count against the Pages quota.
     pub release: bool,
 }
 
@@ -379,9 +379,9 @@ pub struct RenderOpts<'a> {
     pub instagram: bool,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: bool,
-    /// When set, videos are offloaded to GitHub Releases: the base download URL
-    /// (`…/releases/download/<tag>`) that each video's filename is appended to,
-    /// and the file is staged for upload instead of bundled.
+    /// When set, videos and `.tar.xz` attachments are offloaded to GitHub
+    /// Releases: the base download URL (`…/releases/download/<tag>`) that each
+    /// staged filename is appended to.
     pub video_releases: Option<&'a str>,
     /// Show a photo-album post (2+ images, nothing else) as a swipeable carousel.
     pub carousel: bool,
@@ -724,8 +724,23 @@ pub fn render_post(
                 } else {
                     let ext = ext_from_url(url, "bin");
                     let fname = sanitize_filename(filename, &ext, idx);
-                    push_dl(&mut downloads, url, &fname, post.edited);
-                    body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(filename)));
+                    if let Some(base) = video_releases.filter(|_| is_tar_xz(filename)) {
+                        let release_name = format!("{}-{idx:02}-{fname}", post.primary_id);
+                        downloads.push(Download {
+                            url: url.clone(),
+                            filename: release_name.clone(),
+                            force: post.edited,
+                            local: None,
+                            release: true,
+                        });
+                        body.push_str(&format!(
+                            "[📎 {}]({base}/{release_name})\n\n",
+                            label_escape(filename)
+                        ));
+                    } else {
+                        push_dl(&mut downloads, url, &fname, post.edited);
+                        body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(filename)));
+                    }
                 }
             }
             Media::DocumentRef { filename } => {
@@ -845,21 +860,32 @@ pub fn render_post(
             }
             Media::LocalDocument { path, name } => {
                 // Any attachment fetched via MTProto (pdf, zip, …): copy the local
-                // file into the bundle under a safe name and link to it.
+                // file into the bundle under a safe name and link to it. Large
+                // tar.xz archives follow videos into GitHub Releases when enabled.
                 let ext = path
                     .extension()
                     .and_then(|e| e.to_str())
                     .filter(|e| !e.is_empty())
                     .unwrap_or("bin");
                 let fname = sanitize_filename(name, ext, idx);
+                let release = video_releases.is_some() && is_tar_xz(name);
+                let staged_name = if release {
+                    format!("{}-{idx:02}-{fname}", post.primary_id)
+                } else {
+                    fname.clone()
+                };
                 downloads.push(Download {
                     url: String::new(),
-                    filename: fname.clone(),
+                    filename: staged_name.clone(),
                     force: false,
                     local: Some(path.clone()),
-                    release: false,
+                    release,
                 });
-                body.push_str(&format!("[📎 {}]({fname})\n\n", label_escape(name)));
+                let href = match video_releases.filter(|_| release) {
+                    Some(base) => format!("{base}/{staged_name}"),
+                    None => staged_name,
+                };
+                body.push_str(&format!("[📎 {}]({href})\n\n", label_escape(name)));
             }
         }
     }
@@ -964,6 +990,10 @@ fn push_dl(downloads: &mut Vec<Download>, url: &str, fname: &str, force: bool) {
         local: None,
         release: false,
     });
+}
+
+fn is_tar_xz(filename: &str) -> bool {
+    filename.to_ascii_lowercase().ends_with(".tar.xz")
 }
 
 fn front_matter(
@@ -1536,6 +1566,40 @@ mod tests {
     }
 
     #[test]
+    fn forwarded_attribution_keeps_original_post_url() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let mut p = post_with_body("forwarded text");
+        p.forwarded_from = Some(Forward {
+            name: "Pavel Durov".into(),
+            url: Some("https://t.me/durov/534".into()),
+        });
+        let out = render_post(
+            &p,
+            &rw,
+            false,
+            None,
+            None,
+            &RenderOpts {
+                ui: &crate::i18n::ui("en"),
+                title_max: 200,
+                derive_titles: false,
+                strip_title: false,
+                keep_media: false,
+                spotify: false,
+                instagram: false,
+                pinterest: false,
+                video_releases: None,
+                carousel: false,
+            },
+        );
+        assert!(out.index_md.contains("forwarded_from = \"Pavel Durov\""));
+        assert!(
+            out.index_md
+                .contains("forwarded_from_url = \"https://t.me/durov/534\"")
+        );
+    }
+
+    #[test]
     fn preview_blockquote_keeps_line_breaks() {
         // Blockquote internal breaks are <br>; the tooltip must keep them.
         let p = post_with_body("Intro\n\n> line one<br>line two<br>line three");
@@ -1686,6 +1750,58 @@ mod tests {
         assert!(out.index_md.contains("📎 archive.zip"), "no download link: {}", out.index_md);
         assert_eq!(out.downloads.len(), 1, "expected one download job");
         assert_eq!(out.downloads[0].local.as_deref(), Some(Path::new("/cache/12.zip")));
+    }
+
+    #[test]
+    fn tar_xz_documents_are_offloaded_to_releases_when_enabled() {
+        use std::path::{Path, PathBuf};
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let mut p = post_with_body("large archives");
+        p.media = vec![
+            Media::Document {
+                url: "https://cdn.example/archive.tar.xz".into(),
+                filename: "archive.tar.xz".into(),
+            },
+            Media::LocalDocument {
+                path: PathBuf::from("/cache/bundle.tar.xz"),
+                name: "bundle.tar.xz".into(),
+            },
+        ];
+        let base = "https://github.com/o/r/releases/download/media";
+        let out = render_post(
+            &p,
+            &rw,
+            false,
+            None,
+            None,
+            &RenderOpts {
+                ui: &crate::i18n::ui("en"),
+                title_max: 200,
+                derive_titles: false,
+                strip_title: false,
+                keep_media: false,
+                spotify: false,
+                instagram: false,
+                pinterest: false,
+                video_releases: Some(base),
+                carousel: false,
+            },
+        );
+        assert!(out.index_md.contains(&format!(
+            "[📎 archive.tar.xz]({base}/1-01-archive.tar.xz)"
+        )));
+        assert!(out.index_md.contains(&format!(
+            "[📎 bundle.tar.xz]({base}/1-02-bundle.tar.xz)"
+        )));
+        assert_eq!(out.downloads.len(), 2);
+        assert!(out.downloads.iter().all(|d| d.release));
+        assert_eq!(out.downloads[0].filename, "1-01-archive.tar.xz");
+        assert_eq!(out.downloads[1].filename, "1-02-bundle.tar.xz");
+        assert_eq!(
+            out.downloads[1].local.as_deref(),
+            Some(Path::new("/cache/bundle.tar.xz"))
+        );
+        assert!(is_tar_xz("UPPER.TAR.XZ"));
     }
 
     #[test]

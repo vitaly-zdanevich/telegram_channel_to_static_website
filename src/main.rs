@@ -297,9 +297,9 @@ struct GenerateArgs {
     #[arg(long)]
     offline: bool,
 
-    /// Don't offload videos to GitHub Releases (default: for a github.com repo,
-    /// videos are staged for upload to a `media` release and played from there,
-    /// keeping them off the Pages 1 GB quota).
+    /// Don't offload videos and .tar.xz attachments to GitHub Releases (default:
+    /// for a github.com repo, they are staged for a `media` release, keeping
+    /// them off the Pages 1 GB quota).
     #[arg(long)]
     no_video_releases: bool,
 
@@ -339,8 +339,8 @@ struct GenerateArgs {
     #[arg(long)]
     wikidata_spoiler: bool,
 
-    /// Don't add hover tooltips (a `title=`) to Wikipedia / MediaWiki / Wikimedia
-    /// Commons / YouTube links from the linked page's intro (default: add them).
+    /// Don't add build-time hover tooltips to supported knowledge/media links
+    /// and GitHub repositories (default: add them).
     #[arg(long)]
     no_link_titles: bool,
 
@@ -876,8 +876,8 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         info!("skipped {} empty post(s)", before - posts.len());
     }
 
-    // Hover tooltips: attach the linked page's intro as a `title=` on Wikipedia /
-    // MediaWiki / Wikimedia Commons / YouTube links (build-time fetch, no key).
+    // Build-time hover tooltips for supported knowledge/media links and GitHub
+    // repository metadata (the Actions token raises GitHub's API rate limit).
     if s.link_titles {
         linktitles::enrich(&client, &mut posts, s.concurrency).await;
     }
@@ -940,6 +940,8 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     }
 
     let tag_counts = count_tags(&posts);
+    let page_tag_titles =
+        site::pagination_tag_titles(posts.iter().map(|p| p.tags.as_slice()), s.posts_per_page);
 
     // Download the channel avatar (for the header) before scaffolding so the
     // config can reference it.
@@ -960,12 +962,12 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Localized UI strings for rendered post bodies (e.g. the "not archived"
     // attachment note). Template chrome is localized via config.extra.i18n.
     let ui = i18n::ui(&s.language);
-    // GitHub Releases base URL for offloaded videos — only for a github.com repo
-    // (the URL scheme is GitHub-specific); otherwise videos stay inline.
+    // GitHub Releases base URL for offloaded videos and .tar.xz attachments —
+    // only for a github.com repo (the URL scheme is GitHub-specific).
     let video_release_base = (s.video_releases && s.repo_url.contains("github.com"))
         .then(|| format!("{}/releases/download/media", s.repo_url.trim_end_matches('/')));
     if let Some(base) = &video_release_base {
-        info!("videos offloaded to GitHub Releases: {base}/…");
+        info!("large assets offloaded to GitHub Releases: {base}/…");
     }
     let render_opts = render::RenderOpts {
         ui: &ui,
@@ -1022,7 +1024,14 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     }
 
     if init_site {
-        site::scaffold(&s, channel_info.as_ref(), &tag_counts, &page_nav, &days)?;
+        site::scaffold(
+            &s,
+            channel_info.as_ref(),
+            &tag_counts,
+            &page_nav,
+            &days,
+            &page_tag_titles,
+        )?;
     }
 
     // Posts are id-ascending; neighbour id+title drive the Next/Prev nav.
@@ -1052,7 +1061,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     site::write_pages(&s, &rendered_pages)?;
 
     if s.download_media {
-        // Videos flagged for GitHub Releases are staged outside the published
+        // Files flagged for GitHub Releases are staged outside the published
         // tree (the CI step uploads them); everything else lands in its bundle.
         let staging = s.site.join(".video-releases");
         let job_for = |dir: std::path::PathBuf| {
@@ -1124,9 +1133,8 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         .iter()
         .map(|p| (render::slug_for(p), render::post_preview(p)))
         .collect();
-    // Video offloaded to GitHub Releases lives outside the published tree and
-    // doesn't count against the Pages quota — measured separately so the About
-    // page can report it on its own line.
+    // Assets offloaded to GitHub Releases live outside the published tree and
+    // don't count against the Pages quota — measure them separately.
     let releases = site::size_breakdown(&[&s.site.join(".video-releases")]).total();
     let now = chrono::Utc::now().format("%Y-%m-%d %H:%M UTC").to_string();
     let ci_url = ci_job_url();

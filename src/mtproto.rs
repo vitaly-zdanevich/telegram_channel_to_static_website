@@ -16,9 +16,10 @@ use std::sync::Arc;
 
 use base64::Engine;
 use grammers_client::grammers_tl_types as tl;
-use grammers_client::types::Media as TlMedia;
+use grammers_client::types::{Media as TlMedia, Peer};
 use grammers_client::{Client, SignInError};
 use grammers_mtsender::SenderPool;
+use grammers_session::defs::{PeerId, PeerRef};
 use grammers_session::storages::TlSession;
 
 use crate::config::Settings;
@@ -196,6 +197,66 @@ const MAX_FILE_BYTES: i64 = 2 * 1024 * 1024 * 1024;
 /// Per-post-index MTProto audio: (cache path, original filename, label).
 type AudioFor = HashMap<usize, Vec<(PathBuf, Option<String>, Option<String>)>>;
 
+fn forwarded_channel_post(header: tl::enums::MessageFwdHeader) -> Option<(i64, i32)> {
+    let tl::enums::MessageFwdHeader::Header(header) = header;
+    let tl::enums::Peer::Channel(channel) = header.from_id? else {
+        return None;
+    };
+    let post_id = header.channel_post.filter(|id| *id > 0)?;
+    Some((channel.channel_id, post_id))
+}
+
+fn telegram_post_url(username: &str, post_id: i32) -> Option<String> {
+    let username = username.trim().trim_start_matches('@');
+    (!username.is_empty() && post_id > 0).then(|| format!("https://t.me/{username}/{post_id}"))
+}
+
+fn telegram_post_id(url: &str) -> Option<i32> {
+    let after_scheme = url.split("//").nth(1)?;
+    let mut segments = after_scheme.split('/');
+    let host = segments.next()?.to_ascii_lowercase();
+    if !matches!(host.as_str(), "t.me" | "telegram.me" | "telegram.dog") {
+        return None;
+    }
+    segments
+        .rfind(|segment| !segment.is_empty() && *segment != "s")?
+        .split(['?', '#'])
+        .next()?
+        .parse()
+        .ok()
+}
+
+async fn resolve_forward_source(
+    client: &Client,
+    archive_peer: tl::enums::InputPeer,
+    archive_message_id: i32,
+    source_channel_id: i64,
+) -> Result<Option<String>> {
+    let response = client
+        .invoke(&tl::functions::channels::GetChannels {
+            id: vec![tl::enums::InputChannel::FromMessage(
+                tl::types::InputChannelFromMessage {
+                    peer: archive_peer,
+                    msg_id: archive_message_id,
+                    channel_id: source_channel_id,
+                },
+            )],
+        })
+        .await?;
+    let source_id = PeerId::channel(source_channel_id);
+    Ok(response
+        .chats()
+        .into_iter()
+        .map(Peer::from_raw)
+        .find(|peer| peer.id() == source_id)
+        .and_then(|peer| peer.username().map(str::to_owned)))
+}
+
+fn same_filename(a: &str, b: &str) -> bool {
+    let normalize = |s: &str| s.split_whitespace().collect::<Vec<_>>().join(" ");
+    normalize(a) == normalize(b)
+}
+
 async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let (client, _session) = build_client()?;
     if !client.is_authorized().await? {
@@ -210,6 +271,8 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
         .await
         .with_context(|| format!("resolving @{}", s.channel))?
         .with_context(|| format!("channel @{} not found", s.channel))?;
+    let archive_peer: PeerRef = (&peer).into();
+    let archive_input_peer: tl::enums::InputPeer = archive_peer.into();
 
     // message id -> index into `posts` (each post bundles one or more ids).
     let mut id_to_post: HashMap<i32, usize> = HashMap::new();
@@ -238,6 +301,8 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
     let mut doc_image_for: HashMap<usize, Vec<(String, PathBuf)>> = HashMap::new();
     // Any other attachment (pdf/zip/rar/…) to archive as a download: (name, path).
     let mut doc_file_for: HashMap<usize, Vec<(String, PathBuf)>> = HashMap::new();
+    // Source channel id -> public username (or None when it cannot be resolved).
+    let mut forward_sources: HashMap<i64, Option<String>> = HashMap::new();
     let (mut n_audio, mut n_photo, mut n_video, mut n_doc_image, mut n_file) =
         (0usize, 0usize, 0usize, 0usize, 0usize);
 
@@ -247,6 +312,45 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
         let Some(&pi) = id_to_post.get(&id) else {
             continue;
         };
+        // The web preview sometimes shows only an unlinked forwarded-from name.
+        // MTProto carries the exact source channel + source message id.
+        let needs_forward_url = id == posts[pi].primary_id as i32
+            && posts[pi].forwarded_from.as_ref().is_some_and(|f| {
+                f.url.as_deref().and_then(telegram_post_id).is_none()
+            });
+        if needs_forward_url {
+            if let Some((source_channel_id, source_post_id)) =
+                msg.forward_header().and_then(forwarded_channel_post)
+            {
+                let username = if let Some(cached) = forward_sources.get(&source_channel_id) {
+                    cached.clone()
+                } else {
+                    let resolved = resolve_forward_source(
+                        &client,
+                        archive_input_peer.clone(),
+                        id,
+                        source_channel_id,
+                    )
+                    .await;
+                    let username = match resolved {
+                        Ok(username) => username,
+                        Err(e) => {
+                            tracing::debug!("message {id}: forwarded source lookup failed: {e}");
+                            None
+                        }
+                    };
+                    forward_sources.insert(source_channel_id, username.clone());
+                    username
+                };
+                if let Some(url) =
+                    username.as_deref().and_then(|u| telegram_post_url(u, source_post_id))
+                {
+                    if let Some(forward) = posts[pi].forwarded_from.as_mut() {
+                        forward.url = Some(url);
+                    }
+                }
+            }
+        }
         // Reactions (web preview never exposes them). A grouped post keeps the
         // first message's reactions. Done before the media-only `continue` below
         // so a text-only post's reactions are captured too.
@@ -416,7 +520,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
             let media = &mut posts[pi].media;
             let idx = media
                 .iter()
-                .position(|m| matches!(m, Media::DocumentRef { filename } if *filename == name))
+                .position(|m| {
+                    matches!(m, Media::DocumentRef { filename } if same_filename(filename, &name))
+                })
                 .or_else(|| {
                     media.iter().position(|m| {
                         matches!(m, Media::DocumentRef { filename } if crate::media::is_probably_image_doc(filename))
@@ -436,7 +542,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
             let media = &mut posts[pi].media;
             let idx = media
                 .iter()
-                .position(|m| matches!(m, Media::DocumentRef { filename } if *filename == name))
+                .position(|m| {
+                    matches!(m, Media::DocumentRef { filename } if same_filename(filename, &name))
+                })
                 .or_else(|| {
                     media.iter().position(|m| {
                         matches!(m, Media::DocumentRef { filename }
@@ -596,4 +704,67 @@ async fn resolve_custom_emoji_alts(client: &Client, ids: &mut Vec<i64>) -> HashM
         }
     }
     out
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn forward_header(
+        from_id: Option<tl::enums::Peer>,
+        channel_post: Option<i32>,
+    ) -> tl::enums::MessageFwdHeader {
+        tl::enums::MessageFwdHeader::Header(tl::types::MessageFwdHeader {
+            imported: false,
+            saved_out: false,
+            from_id,
+            from_name: None,
+            date: 0,
+            channel_post,
+            post_author: None,
+            saved_from_peer: None,
+            saved_from_msg_id: None,
+            saved_from_id: None,
+            saved_from_name: None,
+            saved_date: None,
+            psa_type: None,
+        })
+    }
+
+    #[test]
+    fn extracts_forwarded_channel_message() {
+        let header = forward_header(
+            Some(tl::enums::Peer::Channel(tl::types::PeerChannel {
+                channel_id: 42,
+            })),
+            Some(534),
+        );
+        assert_eq!(forwarded_channel_post(header), Some((42, 534)));
+        assert_eq!(
+            telegram_post_url("@durov", 534).as_deref(),
+            Some("https://t.me/durov/534")
+        );
+        assert_eq!(telegram_post_id("https://t.me/durov/534"), Some(534));
+        assert_eq!(telegram_post_id("https://t.me/durov"), None);
+    }
+
+    #[test]
+    fn forward_without_public_channel_post_stays_unlinked() {
+        let user = forward_header(
+            Some(tl::enums::Peer::User(tl::types::PeerUser { user_id: 42 })),
+            None,
+        );
+        assert_eq!(forwarded_channel_post(user), None);
+        assert_eq!(telegram_post_url("", 534), None);
+        assert_eq!(telegram_post_url("durov", 0), None);
+    }
+
+    #[test]
+    fn attachment_filename_matching_collapses_whitespace() {
+        assert!(same_filename(
+            "F 1-75-0012 0003.jpg",
+            "F 1-75-0012  0003.jpg"
+        ));
+        assert!(!same_filename("0003.jpg", "0005.jpg"));
+    }
 }

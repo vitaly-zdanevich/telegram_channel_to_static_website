@@ -173,7 +173,8 @@ fn zola_build_produces_expected_html() {
 
     let dir = std::env::temp_dir().join(format!("tg2zola-e2e-{}", std::process::id()));
     let _ = fs::remove_dir_all(&dir);
-    let s = settings(dir.join("site"));
+    let mut s = settings(dir.join("site"));
+    s.posts_per_page = 2;
 
     let mut posts = vec![
         post(
@@ -244,7 +245,9 @@ fn zola_build_produces_expected_html() {
         .map(|(day, (count, tags))| DayMeta { day, count, tags: tags.into_iter().collect() })
         .collect();
 
-    site::scaffold(&s, None, &tag_counts, &[], &days).expect("scaffold");
+    let page_tag_titles =
+        site::pagination_tag_titles(posts.iter().map(|p| p.tags.as_slice()), s.posts_per_page);
+    site::scaffold(&s, None, &tag_counts, &[], &days, &page_tag_titles).expect("scaffold");
     let rendered: Vec<RenderedPost> = posts
         .iter()
         .map(|p| {
@@ -296,6 +299,30 @@ fn zola_build_produces_expected_html() {
     // Each tag link carries a post-count hover tooltip (localized "N posts").
     let tags_page = read("tags/index.html");
     assert!(tags_page.contains("title=\"1 posts\""), "tag count tooltip missing: {tags_page}");
+
+    // Homepage pagination previews the destination page's tags, ranked by post
+    // count. Character references keep the native title tooltip multiline.
+    let home = read("index.html");
+    assert!(
+        home.contains("title=\"#greeting — 1\n#video — 1\n#александровщина — 1\""),
+        "Older page tag tooltip missing or unsorted: {home}"
+    );
+    let older_page = read("page/2/index.html");
+    assert!(
+        older_page.contains("title=\"#video — 2\""),
+        "Newer page tag tooltip missing: {older_page}"
+    );
+
+    // Calendar year labels show the total number of posts in that year in both
+    // the jump navigation and the year heading.
+    let calendar = read("calendar/index.html");
+    let year_count =
+        regex::Regex::new(r#"class="?cal-ycount"?>4</span>"#).unwrap();
+    assert_eq!(
+        year_count.find_iter(&calendar).count(),
+        2,
+        "calendar year post count missing: {calendar}"
+    );
 
     // Every absolute internal link (href/src="/…") in the built site must resolve
     // to a real file — guards dangling nav links (e.g. a calendar 404).
@@ -373,7 +400,7 @@ fn elasticlunr_search_builds() {
     let posts = vec![post(1, "a searchable body of text", &[], vec![], None, None)];
     let rewriter = render::LinkRewriter::new(&s.channel, &posts);
     let ui = crate::i18n::ui(&s.language);
-    site::scaffold(&s, None, &[], &[], &[]).expect("scaffold");
+    site::scaffold(&s, None, &[], &[], &[], &[]).expect("scaffold");
     let rendered: Vec<RenderedPost> = posts
         .iter()
         .map(|p| {
@@ -447,7 +474,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
 
     let rewriter = render::LinkRewriter::new(&s.channel, &posts);
     let ui = crate::i18n::ui(&s.language);
-    site::scaffold(&s, None, &[], &[], &[]).expect("scaffold");
+    site::scaffold(&s, None, &[], &[], &[], &[]).expect("scaffold");
     let rendered: Vec<RenderedPost> = posts
         .iter()
         .map(|p| {

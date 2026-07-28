@@ -67,6 +67,9 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   tag pages for free, while still showing as text in the post.
 - **Grouped posts** — albums are one post automatically; bursts of messages
   posted at the same instant (e.g. forwarding several at once) are merged.
+- **Forward attribution** — a public “forwarded from” source links to the exact
+  original message (the optional MTProto backend recovers links omitted by the
+  public web preview); hidden/private sources remain plain text.
 - **Self-navigating** — a link to another message in the *same* channel becomes a
   relative link to that post in the blog; links to other channels stay external.
 - **Threaded replies** — when a post replies to an earlier message, it's shown as
@@ -312,12 +315,12 @@ These are *variables*, not secrets — all of it is public.
 | `ABOUTME_BOTH_IMAGES` | `--aboutme-both-images` | off | `true` shows **both** the Telegram channel avatar and the about.me photo. By default, when an about.me photo is present the channel avatar is dropped to avoid two portraits |
 | `WIKIDATA` | `--wikidata Q…` | off | a Wikidata item id (e.g. `Q42`) → renders a **statements table** for it on the About page (properties and item values link back to wikidata.org). Independently, any `wikidata.org/wiki/Q…` link **in a post** gets its own table appended. Fetched at build time from the public API — no key |
 | `WIKIDATA_SPOILER` | `--wikidata-spoiler` | off | `true` collapses each **in-post** Wikidata table behind a no-JS 🔎 click-to-expand `<details>`. The About-page table stays expanded |
-| `LINK_TITLES` | `--no-link-titles` | on | attach a hover **tooltip** (`title=`) to links: **Wikipedia / MediaWiki** (e.g. miraheze, fandom) get the article intro, **Wikimedia Commons** files get author + date, **YouTube** gets the video title, **Habr** user pages get their stats (articles/posts/news/comments/registered/rating). Fetched at build time — no keys. `false` disables |
+| `LINK_TITLES` | `--no-link-titles` | on | attach a hover **tooltip** (`title=`) to links: **Wikipedia / MediaWiki** (e.g. miraheze, fandom) get the article intro, **Wikimedia Commons** files get author + date, **YouTube** gets the video title, **Habr** user pages get their stats, and **GitHub repositories** get description, stars, languages, default-branch commits, forks, open issues/PRs, license, archive state and last push. Fetched at build time; public GitHub repos need no key, while CI uses its built-in token for a higher rate limit. `false` disables |
 | `PAGESPEED` | `--no-pagespeed` | on | `false` skips fetching Google Lighthouse (mobile) scores for the deployed site. When on, the four category scores are shown on the About page and written as shields.io badge endpoints (`lighthouse-*.json`) for the README. Needs a live `base_url`; measures the previous deploy |
 | `PAGESPEED_API_KEY` (secret) | — | — | Optional [PageSpeed Insights API key](https://developers.google.com/speed/docs/insights/v5/get-started) to raise the rate limit (one call/day works without it) |
 | `PWA` | `--no-pwa` | on | installable **PWA** — a web app manifest (`display: standalone`, so the site can be installed and hides the address bar) plus a service worker that caches pages/media as you browse. On by default; needs JavaScript, built-in templates only |
 | `OFFLINE` | `--offline` | off | `true` makes the service worker **precache the whole archive** (audio, video, attachments) on the first visit over **any non-cellular connection** (Wi-Fi or wired — it skips only cellular / Data Saver), so the site works fully offline (not just visited pages) |
-| `VIDEO_RELEASES` | `--no-video-releases` | on | videos are uploaded to **this repo's GitHub Releases** and played from there, so they don't count against the Pages **1 GB** quota (release assets are separate storage — 2 GB/file, CDN-backed). `false` keeps videos inline. Needs a `github.com` repo + the workflow's release-upload step |
+| `VIDEO_RELEASES` | `--no-video-releases` | on | videos and `.tar.xz` attachments are uploaded to **this repo's GitHub Releases**, so they don't count against the Pages **1 GB** quota (release assets are separate storage — 2 GB/file, CDN-backed). `false` keeps them inline. Needs a `github.com` repo + the workflow's release-upload step |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |

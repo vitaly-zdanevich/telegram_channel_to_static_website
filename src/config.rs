@@ -106,7 +106,7 @@ pub struct FileConfig {
     pub pwa: Option<bool>,
     /// Offline mode: the service worker precaches the whole archive (opt-in).
     pub offline: Option<bool>,
-    /// Offload videos to this repo's GitHub Releases (kept off the Pages quota).
+    /// Offload videos and .tar.xz files to this repo's GitHub Releases.
     pub video_releases: Option<bool>,
     /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
     /// its local media instead of a dead embed. Default on.
@@ -124,8 +124,8 @@ pub struct FileConfig {
     pub wikidata: Option<String>,
     /// Collapse in-post Wikidata tables behind a click-to-expand emoji (opt-in).
     pub wikidata_spoiler: Option<bool>,
-    /// Add hover tooltips (a `title=`) to Wikipedia/MediaWiki/YouTube links from
-    /// the linked page's intro. Default on.
+    /// Add build-time hover tooltips to supported knowledge/media links and
+    /// GitHub repositories. Default on.
     pub link_titles: Option<bool>,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
@@ -261,8 +261,8 @@ pub struct Settings {
     pub pwa: bool,
     /// Offline mode: the service worker precaches the whole archive (opt-in, default false).
     pub offline: bool,
-    /// Offload videos to this repo's GitHub Releases (default true; needs a
-    /// github.com repo_url + the CI upload step). Falls back to inline otherwise.
+    /// Offload videos and .tar.xz files to this repo's GitHub Releases (default
+    /// true; needs a github.com repo_url + the CI upload step).
     pub video_releases: bool,
     /// YouTube liveness check (default true).
     pub liveness: bool,
@@ -280,7 +280,7 @@ pub struct Settings {
     pub wikidata: Option<String>,
     /// Collapse in-post Wikidata tables behind a click-to-expand emoji (default false).
     pub wikidata_spoiler: bool,
-    /// Hover tooltips on Wikipedia/MediaWiki/Commons/YouTube links (default true).
+    /// Hover tooltips on supported links, including GitHub repos (default true).
     pub link_titles: bool,
     /// Comma-separated tags to surface as links in the top nav.
     pub tags_to_pages: Option<String>,
