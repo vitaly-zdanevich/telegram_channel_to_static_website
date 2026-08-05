@@ -1028,8 +1028,15 @@ fn push_dl(downloads: &mut Vec<Download>, url: &str, fname: &str, force: bool) {
     });
 }
 
+/// Recognize a complete tar+xz archive or one of GNU `split`'s default
+/// two-letter parts, such as `.tar.xzaa`, `.tar.xzab`, or `.tar.xzac`.
 fn is_tar_xz(filename: &str) -> bool {
-    filename.to_ascii_lowercase().ends_with(".tar.xz")
+    let filename = filename.to_ascii_lowercase();
+    let Some((_, split_suffix)) = filename.rsplit_once(".tar.xz") else {
+        return false;
+    };
+    split_suffix.is_empty()
+        || (split_suffix.len() == 2 && split_suffix.bytes().all(|byte| byte.is_ascii_lowercase()))
 }
 
 fn front_matter(
@@ -1895,6 +1902,56 @@ mod tests {
             Some(Path::new("/cache/bundle.tar.xz"))
         );
         assert!(is_tar_xz("UPPER.TAR.XZ"));
+    }
+
+    #[test]
+    fn split_tar_xz_parts_are_offloaded_to_releases_when_enabled() {
+        use std::path::PathBuf;
+
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let mut p = post_with_body("split archive");
+        p.media = vec![
+            Media::Document {
+                url: "https://cdn.example/archive.part.tar.xzac".into(),
+                filename: "archive.part.tar.xzac".into(),
+            },
+            Media::LocalDocument {
+                path: PathBuf::from("/cache/bundle.part.tar.xzAB"),
+                name: "bundle.part.tar.xzAB".into(),
+            },
+        ];
+        let base = "https://github.com/o/r/releases/download/media";
+        let out = render_post(
+            &p,
+            &rw,
+            false,
+            None,
+            None,
+            &RenderOpts {
+                ui: &crate::i18n::ui("en"),
+                title_max: 200,
+                derive_titles: false,
+                strip_title: false,
+                keep_media: false,
+                spotify: false,
+                instagram: false,
+                pinterest: false,
+                video_releases: Some(base),
+                carousel: false,
+            },
+        );
+
+        assert!(out.index_md.contains(&format!(
+            "[📎 archive.part.tar.xzac]({base}/1-01-archive.part.tar.xzac)"
+        )));
+        assert!(out.index_md.contains(&format!(
+            "[📎 bundle.part.tar.xzAB]({base}/1-02-bundle.part.tar.xzAB)"
+        )));
+        assert_eq!(out.downloads.len(), 2);
+        assert!(out.downloads.iter().all(|download| download.release));
+        assert!(!is_tar_xz("archive.tar.xza"));
+        assert!(!is_tar_xz("archive.tar.xzabc"));
+        assert!(!is_tar_xz("archive.tar.xz.exe"));
     }
 
     #[test]
