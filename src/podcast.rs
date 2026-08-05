@@ -52,7 +52,11 @@ fn rfc2822(d: &DateTime<FixedOffset>) -> String {
 pub fn feed(ch: &Channel, episodes: &[Episode]) -> String {
     let mut items = String::new();
     for e in episodes {
-        let length = if e.length > 0 { e.length.to_string() } else { "0".to_string() };
+        let length = if e.length > 0 {
+            e.length.to_string()
+        } else {
+            "0".to_string()
+        };
         items.push_str(&format!(
             "  <item>\n\
              \x20   <title>{title}</title>\n\
@@ -102,7 +106,10 @@ mod tests {
     use chrono::TimeZone;
 
     fn dt() -> DateTime<FixedOffset> {
-        FixedOffset::east_opt(0).unwrap().timestamp_opt(1_700_000_000, 0).unwrap()
+        FixedOffset::east_opt(0)
+            .unwrap()
+            .timestamp_opt(1_700_000_000, 0)
+            .unwrap()
     }
 
     #[test]

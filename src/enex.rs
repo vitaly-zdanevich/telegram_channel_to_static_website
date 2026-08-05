@@ -24,7 +24,11 @@ pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, out: &Path
     let (mut n_notes, mut n_res) = (0usize, 0usize);
     for (post, r) in posts.iter().zip(rendered) {
         let title = crate::render::post_title(post, 200, true);
-        let title = if title.is_empty() { format!("#{}", post.primary_id) } else { title };
+        let title = if title.is_empty() {
+            format!("#{}", post.primary_id)
+        } else {
+            title
+        };
         let created = post.date.with_timezone(&Utc).format("%Y%m%dT%H%M%SZ");
 
         // ENML body: the post text (newlines → <br/>), then an <en-media> per file.
@@ -32,7 +36,9 @@ pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, out: &Path
         let mut resources = String::new();
         for d in &r.downloads {
             let path = site.join("content/posts").join(&r.slug).join(&d.filename);
-            let Ok(bytes) = std::fs::read(&path) else { continue };
+            let Ok(bytes) = std::fs::read(&path) else {
+                continue;
+            };
             let hash = hex(&Md5::digest(&bytes));
             let mime = mime(&d.filename);
             let _ = write!(body, "<br/><en-media type=\"{mime}\" hash=\"{hash}\"/>");
@@ -63,7 +69,10 @@ pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, out: &Path
     }
     xml.push_str("</en-export>\n");
     std::fs::write(out, &xml).with_context(|| format!("writing {}", out.display()))?;
-    tracing::info!("enex: wrote {} — {n_notes} note(s), {n_res} resource(s)", out.display());
+    tracing::info!(
+        "enex: wrote {} — {n_notes} note(s), {n_res} resource(s)",
+        out.display()
+    );
     Ok(())
 }
 
@@ -72,7 +81,10 @@ fn hex(bytes: &[u8]) -> String {
 }
 
 fn esc(s: &str) -> String {
-    s.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;").replace('"', "&quot;")
+    s.replace('&', "&amp;")
+        .replace('<', "&lt;")
+        .replace('>', "&gt;")
+        .replace('"', "&quot;")
 }
 
 fn mime(name: &str) -> &'static str {
@@ -105,7 +117,10 @@ mod tests {
     #[test]
     fn md5_hex_matches_known_vector() {
         // Guards the en-media hash: MD5("abc") is a well-known value.
-        assert_eq!(hex(&Md5::digest(b"abc")), "900150983cd24fb0d6963f7d28e17f72");
+        assert_eq!(
+            hex(&Md5::digest(b"abc")),
+            "900150983cd24fb0d6963f7d28e17f72"
+        );
     }
 
     #[test]

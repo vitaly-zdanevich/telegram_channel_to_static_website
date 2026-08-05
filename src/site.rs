@@ -54,14 +54,23 @@ pub fn scaffold(
     // Static pages live in a non-rendered subsection so they don't appear in the
     // homepage post feed; `path` keeps them at /about/, /<slug>/.
     fs::create_dir_all(site.join("content/pages"))?;
-    write_file(&site.join("content/pages/_index.md"), "+++\nrender = false\n+++\n")?;
+    write_file(
+        &site.join("content/pages/_index.md"),
+        "+++\nrender = false\n+++\n",
+    )?;
     write_file(&site.join("content/pages/about.md"), &about_md(s, info))?;
     // The calendar page (a year/month grid linking to the /day/<date>/ pages).
     if s.theme.is_none() && !days.is_empty() {
-        write_file(&site.join("content/pages/calendar.md"), &calendar_md(s, days))?;
+        write_file(
+            &site.join("content/pages/calendar.md"),
+            &calendar_md(s, days),
+        )?;
     }
     for p in &pages {
-        write_file(&site.join(format!("content/pages/{}.md", p.slug)), &page_md(s, p))?;
+        write_file(
+            &site.join(format!("content/pages/{}.md", p.slug)),
+            &page_md(s, p),
+        )?;
     }
     // Per-tag "full posts" pages at /tags/<slug>/full/ (the number on the Tags
     // page links here; the tag name links to the titles-only term page). Only
@@ -105,7 +114,10 @@ pub fn scaffold(
     }
     // Always provide our YouTube shortcode (project shortcodes override the
     // theme's), so generated `{{ youtube(...) }}` always resolves.
-    write_file(&site.join("templates/shortcodes/youtube.html"), YOUTUBE_SHORTCODE)?;
+    write_file(
+        &site.join("templates/shortcodes/youtube.html"),
+        YOUTUBE_SHORTCODE,
+    )?;
     write_file(
         &site.join("templates/shortcodes/youtube_link.html"),
         YOUTUBE_LINK_SHORTCODE,
@@ -138,7 +150,10 @@ pub fn scaffold(
         &site.join("templates/shortcodes/vk_playlist.html"),
         VK_PLAYLIST_SHORTCODE,
     )?;
-    write_file(&site.join("templates/shortcodes/video.html"), VIDEO_SHORTCODE)?;
+    write_file(
+        &site.join("templates/shortcodes/video.html"),
+        VIDEO_SHORTCODE,
+    )?;
     write_file(
         &site.join("templates/shortcodes/video_ext.html"),
         VIDEO_EXT_SHORTCODE,
@@ -147,10 +162,16 @@ pub fn scaffold(
         &site.join("templates/shortcodes/aboutme_photo.html"),
         ABOUTME_PHOTO_SHORTCODE,
     )?;
-    write_file(&site.join("templates/shortcodes/audio.html"), AUDIO_SHORTCODE)?;
+    write_file(
+        &site.join("templates/shortcodes/audio.html"),
+        AUDIO_SHORTCODE,
+    )?;
     write_file(&site.join("templates/shortcodes/img.html"), IMG_SHORTCODE)?;
     write_file(&site.join("templates/shortcodes/tag.html"), TAG_SHORTCODE)?;
-    write_file(&site.join("templates/shortcodes/avatar.html"), AVATAR_SHORTCODE)?;
+    write_file(
+        &site.join("templates/shortcodes/avatar.html"),
+        AVATAR_SHORTCODE,
+    )?;
 
     let builtins = [
         ("templates/base.html", BASE_HTML),
@@ -439,7 +460,13 @@ fn config_toml(
         .iter()
         .map(|p| (p.title.as_str(), p.slug.as_str()))
         .chain(page_nav.iter().map(|(t, s)| (t.as_str(), s.as_str())))
-        .map(|(title, slug)| format!("{{ title = \"{}\", path = \"/{}/\" }}", toml_escape(title), slug))
+        .map(|(title, slug)| {
+            format!(
+                "{{ title = \"{}\", path = \"/{}/\" }}",
+                toml_escape(title),
+                slug
+            )
+        })
         .collect();
     let nav = if nav_items.is_empty() {
         String::new()
@@ -451,8 +478,10 @@ fn config_toml(
     // actually exist (case-insensitively) so get_taxonomy_url can't fail.
     let nav_tags = match &s.tags_to_pages {
         Some(input) => {
-            let canon: std::collections::HashMap<String, &str> =
-                tags.iter().map(|(n, _)| (n.to_lowercase(), n.as_str())).collect();
+            let canon: std::collections::HashMap<String, &str> = tags
+                .iter()
+                .map(|(n, _)| (n.to_lowercase(), n.as_str()))
+                .collect();
             let items: Vec<String> = input
                 .split(',')
                 .map(|t| t.trim().trim_start_matches('#').trim().to_lowercase())
@@ -525,21 +554,35 @@ fn config_toml(
         .replace("__RSS__", if s.rss { "true" } else { "false" })
         .replace(
             "__PODCAST__",
-            if s.podcast && s.base_url.starts_with("http") { "true" } else { "false" },
+            if s.podcast && s.base_url.starts_with("http") {
+                "true"
+            } else {
+                "false"
+            },
         )
         .replace(
             "__VIDEO_PODCAST__",
-            if s.video_podcast && s.base_url.starts_with("http") { "true" } else { "false" },
+            if s.video_podcast && s.base_url.starts_with("http") {
+                "true"
+            } else {
+                "false"
+            },
         )
         .replace("__CHANNEL__", &toml_escape(&s.channel))
         .replace("__DATE_FORMAT__", &toml_escape(&s.date_format))
-        .replace("__TAGS_FOOTER__", if s.tags_footer { "true" } else { "false" })
+        .replace(
+            "__TAGS_FOOTER__",
+            if s.tags_footer { "true" } else { "false" },
+        )
         .replace("__NEXT_PREV__", if s.next_prev { "true" } else { "false" })
         .replace(
             "__TELEGRAM_LINK__",
             if s.telegram_link { "true" } else { "false" },
         )
-        .replace("__YT_FACADE__", if s.youtube_facade { "true" } else { "false" })
+        .replace(
+            "__YT_FACADE__",
+            if s.youtube_facade { "true" } else { "false" },
+        )
         .replace("__CAROUSEL__", if s.carousel { "true" } else { "false" })
         .replace("__EMBED__", if s.embed { "true" } else { "false" })
         .replace("__HIDE_NAV__", if s.hide_nav { "true" } else { "false" })
@@ -549,7 +592,10 @@ fn config_toml(
         )
         .replace("__PWA__", if s.pwa { "true" } else { "false" })
         .replace("__OFFLINE__", if s.offline { "true" } else { "false" })
-        .replace("__CALENDAR__", if days.is_empty() { "false" } else { "true" })
+        .replace(
+            "__CALENDAR__",
+            if days.is_empty() { "false" } else { "true" },
+        )
         .replace(
             "__GOOGLE_FONT__",
             &match google_font_href(s.google_font.as_deref()) {
@@ -569,7 +615,11 @@ fn config_toml(
         .replace("__SEARCH__", &search)
         .replace(
             "__BUILD_SEARCH__",
-            if matches!(s.search, Search::Elasticlunr) { "true" } else { "false" },
+            if matches!(s.search, Search::Elasticlunr) {
+                "true"
+            } else {
+                "false"
+            },
         )
         .replace("__FOOTER__", &footer)
         .replace("__AVATAR__", avatar)
@@ -698,7 +748,10 @@ pub struct PagesLimit {
 /// Pages cap a published site at ~1 GB. None = unknown host (no limit shown).
 pub fn pages_limit(base_url: &str, explicit: Option<&str>) -> Option<PagesLimit> {
     const GIB: u64 = 1024 * 1024 * 1024;
-    let key = match explicit.map(|s| s.trim().to_lowercase()).filter(|s| !s.is_empty()) {
+    let key = match explicit
+        .map(|s| s.trim().to_lowercase())
+        .filter(|s| !s.is_empty())
+    {
         Some(e) if matches!(e.as_str(), "none" | "off" | "no") => return None,
         Some(e) => e,
         None => base_url.to_lowercase(),
@@ -762,7 +815,9 @@ pub fn set_about_size(
         let items = largest
             .files
             .iter()
-            .map(|(p, sz)| about_largest_link(p.strip_prefix(site).unwrap_or(p), *sz, largest.previews))
+            .map(|(p, sz)| {
+                about_largest_link(p.strip_prefix(site).unwrap_or(p), *sz, largest.previews)
+            })
             .collect::<Vec<_>>()
             .join("\n");
         format!("{}\n\n{items}", about.largest_files)
@@ -791,8 +846,16 @@ pub fn set_about_size(
         .join("\n");
     // Link the first "MTProto" mention to grammers, the library that implements
     // the backend (https://github.com/Lonami/grammers).
-    let mtproto_line = if mtproto_used { about.mtproto_on } else { about.mtproto_off }
-        .replacen("MTProto", "[MTProto](https://github.com/Lonami/grammers)", 1);
+    let mtproto_line = if mtproto_used {
+        about.mtproto_on
+    } else {
+        about.mtproto_off
+    }
+    .replacen(
+        "MTProto",
+        "[MTProto](https://github.com/Lonami/grammers)",
+        1,
+    );
     // "Last updated <time>" with an optional link to the CI job that built it.
     let mut last_build = format!("{} **{now}**", about.last_updated);
     if let Some(url) = ci_url {
@@ -805,7 +868,10 @@ pub fn set_about_size(
         about
             .releases_size
             .replace("__RELEASES_SIZE__", &human_size(releases))
-            .replace("GitHub Releases", &format!("[GitHub Releases]({repo}/releases)"))
+            .replace(
+                "GitHub Releases",
+                &format!("[GitHub Releases]({repo}/releases)"),
+            )
     } else {
         String::new()
     };
@@ -854,7 +920,11 @@ pub fn set_about_me(
                 b.push_str("\n\n");
             }
             // Skip any Telegram link — the channel is already linked at the top.
-            let links: Vec<_> = am.links.iter().filter(|(_, url)| !is_telegram_url(url)).collect();
+            let links: Vec<_> = am
+                .links
+                .iter()
+                .filter(|(_, url)| !is_telegram_url(url))
+                .collect();
             if !links.is_empty() {
                 let row = links
                     .iter()
@@ -902,13 +972,19 @@ fn is_telegram_url(url: &str) -> bool {
         .unwrap_or("")
         .trim_start_matches("www.")
         .to_ascii_lowercase();
-    matches!(host.as_str(), "t.me" | "telegram.me" | "telegram.org" | "telegram.dog")
+    matches!(
+        host.as_str(),
+        "t.me" | "telegram.me" | "telegram.org" | "telegram.dog"
+    )
 }
 
 /// A social-link label safe to drop into a Markdown `[label](url)` (drops the
 /// brackets/parens that would break the link).
 fn link_label(label: &str) -> String {
-    label.chars().filter(|c| !matches!(c, '[' | ']' | '(' | ')')).collect()
+    label
+        .chars()
+        .filter(|c| !matches!(c, '[' | ']' | '(' | ')'))
+        .collect()
 }
 
 /// Fill the About page's `__PAGESPEED__` placeholder with the Lighthouse scores,
@@ -988,7 +1064,10 @@ fn about_largest_link(
         .collect();
     let fname = comps.last().copied().unwrap_or("file");
     if comps.len() >= 3 && comps[0] == "content" && comps[1] == "posts" {
-        let title = previews.get(comps[2]).map(|t| md_title_attr(t)).unwrap_or_default();
+        let title = previews
+            .get(comps[2])
+            .map(|t| md_title_attr(t))
+            .unwrap_or_default();
         format!(
             "- [{} — {fname}](@/posts/{}/index.md{title})",
             human_size(size),
@@ -1033,7 +1112,10 @@ fn human_duration(d: std::time::Duration) -> String {
 /// `transparent` posts section). Zola emits a `page/1/` redirect stub with a
 /// <script>; the offline pass strips it so the output stays JS-free.
 fn root_index_md(s: &Settings) -> String {
-    let mut o = format!("+++\nsort_by = \"date\"\npaginate_by = {}\n", s.posts_per_page);
+    let mut o = format!(
+        "+++\nsort_by = \"date\"\npaginate_by = {}\n",
+        s.posts_per_page
+    );
     if s.theme.is_none() {
         o.push_str("template = \"index.html\"\n");
     }
@@ -1060,8 +1142,8 @@ fn day_url(base_url: &str, day: &str) -> String {
 
 fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
     use chrono::{Datelike, NaiveDate};
-    let locale =
-        chrono::Locale::try_from(crate::i18n::date_locale(&s.language)).unwrap_or(chrono::Locale::en_US);
+    let locale = chrono::Locale::try_from(crate::i18n::date_locale(&s.language))
+        .unwrap_or(chrono::Locale::en_US);
     let present: std::collections::HashMap<&str, &DayMeta> =
         days.iter().map(|d| (d.day.as_str(), d)).collect();
     let dates: Vec<NaiveDate> = days
@@ -1072,8 +1154,7 @@ fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
     years.sort();
     years.dedup();
     years.reverse();
-    let mut year_counts: std::collections::HashMap<i32, usize> =
-        std::collections::HashMap::new();
+    let mut year_counts: std::collections::HashMap<i32, usize> = std::collections::HashMap::new();
     for date in &dates {
         let key = date.format("%Y-%m-%d").to_string();
         if let Some(meta) = present.get(key.as_str()) {
@@ -1129,7 +1210,9 @@ fn calendar_md(s: &Settings, days: &[DayMeta]) -> String {
                 ),
                 None => name,
             };
-            b.push_str(&format!("<table class=\"cal\"><caption>{caption}</caption><thead><tr>"));
+            b.push_str(&format!(
+                "<table class=\"cal\"><caption>{caption}</caption><thead><tr>"
+            ));
             for wd in &weekdays {
                 b.push_str(&format!("<th>{wd}</th>"));
             }
@@ -1329,7 +1412,10 @@ fn about_md(s: &Settings, info: Option<&ChannelInfo>) -> String {
                         .replace("{display}", l.display)
                         .replace("{name}", l.name);
                     let limit_link = format!("[{}]({})", phrase, l.doc);
-                    format!("{}\n\n", about.size_limit.replace("{limit_link}", &limit_link))
+                    format!(
+                        "{}\n\n",
+                        about.size_limit.replace("{limit_link}", &limit_link)
+                    )
                 }
                 None => format!("{}\n\n", about.size_plain),
             };
@@ -1450,9 +1536,7 @@ fn posts_index_md(s: &Settings) -> String {
 fn font_family(google: Option<&str>, font: Option<&str>) -> String {
     let strip = |v: &str, drop_quotes: bool| -> String {
         v.chars()
-            .filter(|c| {
-                !(matches!(c, ';' | '{' | '}' | '\n' | '\r') || (drop_quotes && *c == '"'))
-            })
+            .filter(|c| !(matches!(c, ';' | '{' | '}' | '\n' | '\r') || (drop_quotes && *c == '"')))
             .collect::<String>()
             .trim()
             .to_string()
@@ -1511,7 +1595,11 @@ fn style_css(s: &Settings) -> String {
         )
         .replace(
             "__LINK_DECO__",
-            if s.link_underline { "underline" } else { "none" },
+            if s.link_underline {
+                "underline"
+            } else {
+                "none"
+            },
         );
     if let Some(extra) = &s.css {
         css.push_str("\n/* custom CSS (from --css / CSS) */\n");
@@ -2120,8 +2208,14 @@ mod tests {
     #[test]
     fn day_url_keeps_the_slash_after_base() {
         // A base_url with no trailing slash must not glue into "…websiteday/".
-        assert_eq!(day_url("https://x.io/repo", "2025-12-28"), "https://x.io/repo/day/2025-12-28/");
-        assert_eq!(day_url("https://x.io/repo/", "2025-12-28"), "https://x.io/repo/day/2025-12-28/");
+        assert_eq!(
+            day_url("https://x.io/repo", "2025-12-28"),
+            "https://x.io/repo/day/2025-12-28/"
+        );
+        assert_eq!(
+            day_url("https://x.io/repo/", "2025-12-28"),
+            "https://x.io/repo/day/2025-12-28/"
+        );
         assert_eq!(day_url("/", "2025-12-28"), "/day/2025-12-28/");
     }
 
@@ -2185,9 +2279,15 @@ mod tests {
             analytics_toml("google_analytics", Some("G-ABC123")),
             "google_analytics = \"G-ABC123\""
         );
-        assert_eq!(analytics_toml("yandex_metrica", Some("12345678")), "yandex_metrica = \"12345678\"");
+        assert_eq!(
+            analytics_toml("yandex_metrica", Some("12345678")),
+            "yandex_metrica = \"12345678\""
+        );
         // Injection characters are stripped.
-        assert_eq!(analytics_toml("k", Some("a\"; alert(1)//")), "k = \"aalert1\"");
+        assert_eq!(
+            analytics_toml("k", Some("a\"; alert(1)//")),
+            "k = \"aalert1\""
+        );
         // Empty / unset → nothing emitted.
         assert_eq!(analytics_toml("k", None), "");
         assert_eq!(analytics_toml("k", Some("  ")), "");
@@ -2196,7 +2296,10 @@ mod tests {
     #[test]
     fn font_family_and_google_href() {
         // Default when neither is set.
-        assert_eq!(font_family(None, None), "system-ui, -apple-system, sans-serif");
+        assert_eq!(
+            font_family(None, None),
+            "system-ui, -apple-system, sans-serif"
+        );
         // A local stack is used verbatim (sans CSS-structural chars).
         assert_eq!(font_family(None, Some("Georgia, serif")), "Georgia, serif");
         // A Google font is quoted with a fallback and wins over `font`.
@@ -2215,7 +2318,10 @@ mod tests {
         // The Google Fonts URL encodes spaces and is None when unset.
         assert_eq!(
             google_font_href(Some("Open Sans")),
-            Some("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap".into())
+            Some(
+                "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+                    .into()
+            )
         );
         assert_eq!(google_font_href(None), None);
         assert_eq!(google_font_href(Some("  ")), None);
@@ -2227,12 +2333,23 @@ mod tests {
         previews.insert("2024-01-02-7".to_string(), "post body".to_string());
 
         // Known post → internal link carrying the body as a title tooltip.
-        let link = about_largest_link(&PathBuf::from("content/posts/2024-01-02-7/photo.jpg"), 2048, &previews);
-        assert!(link.contains("(@/posts/2024-01-02-7/index.md \"post body\")"), "{link}");
+        let link = about_largest_link(
+            &PathBuf::from("content/posts/2024-01-02-7/photo.jpg"),
+            2048,
+            &previews,
+        );
+        assert!(
+            link.contains("(@/posts/2024-01-02-7/index.md \"post body\")"),
+            "{link}"
+        );
         assert!(link.contains("photo.jpg"), "{link}");
 
         // Post with no preview on record → link, but no title.
-        let link2 = about_largest_link(&PathBuf::from("content/posts/1999-12-31-1/a.mp4"), 1024, &previews);
+        let link2 = about_largest_link(
+            &PathBuf::from("content/posts/1999-12-31-1/a.mp4"),
+            1024,
+            &previews,
+        );
         assert!(link2.contains("(@/posts/1999-12-31-1/index.md)"), "{link2}");
         assert!(!link2.contains('"'), "no title expected: {link2}");
 

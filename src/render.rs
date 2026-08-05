@@ -124,7 +124,11 @@ pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String)>> {
 /// A poll as static result bars — raw HTML (no JS), so it survives the offline
 /// pass. Bar widths come straight from the scraped vote shares.
 fn render_poll(poll: &Poll) -> String {
-    let esc = |s: &str| s.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;");
+    let esc = |s: &str| {
+        s.replace('&', "&amp;")
+            .replace('<', "&lt;")
+            .replace('>', "&gt;")
+    };
     let kind = poll
         .kind
         .as_deref()
@@ -158,7 +162,9 @@ fn archive_org_url_for(links: &[String], filename: &str) -> Option<String> {
         .iter()
         .find(|l| {
             l.contains("archive.org")
-                && l.rsplit('/').next().map(|seg| seg.split(['?', '#']).next().unwrap_or(seg))
+                && l.rsplit('/')
+                    .next()
+                    .map(|seg| seg.split(['?', '#']).next().unwrap_or(seg))
                     == Some(filename)
         })
         .cloned()
@@ -175,7 +181,10 @@ fn md_link_label(text: &str, max: usize) -> String {
         .filter(|c| !matches!(c, '[' | ']' | '(' | ')' | '*' | '_' | '`' | '<' | '>' | '|'))
         .collect();
     if clean.chars().count() > max {
-        format!("{}…", clean.chars().take(max).collect::<String>().trim_end())
+        format!(
+            "{}…",
+            clean.chars().take(max).collect::<String>().trim_end()
+        )
     } else {
         clean
     }
@@ -249,7 +258,9 @@ impl LinkRewriter {
             .into_owned();
         let s = self
             .root_md
-            .replace_all(&s, |c: &regex::Captures| format!("[{}](@/_index.md)", &c[1]))
+            .replace_all(&s, |c: &regex::Captures| {
+                format!("[{}](@/_index.md)", &c[1])
+            })
             .into_owned();
         self.bare
             .replace_all(&s, |c: &regex::Captures| {
@@ -327,14 +338,19 @@ fn commons_page_name(url: &str) -> Option<String> {
         .find(|(k, _)| k == "title")
         .map(|(_, v)| v.into_owned())
         .or_else(|| {
-            let seg = parsed.path().strip_prefix("/wiki/").filter(|s| !s.is_empty())?;
+            let seg = parsed
+                .path()
+                .strip_prefix("/wiki/")
+                .filter(|s| !s.is_empty())?;
             Some(
                 percent_encoding::percent_decode_str(seg)
                     .decode_utf8_lossy()
                     .into_owned(),
             )
         })?;
-    let name = strip_wiki_namespace(&raw.replace('_', " ")).trim().to_string();
+    let name = strip_wiki_namespace(&raw.replace('_', " "))
+        .trim()
+        .to_string();
     (!name.is_empty()).then_some(name)
 }
 
@@ -355,10 +371,7 @@ fn strip_wiki_namespace(s: &str) -> &str {
 /// the URL are encoded so the Markdown link isn't cut short.
 fn wiki_body(body: &str, text: &str, url: &str) -> String {
     let href = url.replace('(', "%28").replace(')', "%29");
-    let rest: Vec<&str> = body
-        .lines()
-        .filter(|l| !contains_wiki_domain(l))
-        .collect();
+    let rest: Vec<&str> = body.lines().filter(|l| !contains_wiki_domain(l)).collect();
     format!("[{text}]({href})\n\n{}", rest.join("\n").trim())
         .trim_end()
         .to_string()
@@ -599,7 +612,10 @@ pub fn render_post(
     let carousel_album = carousel
         && post.media.len() >= 2
         && post.media.iter().all(|m| {
-            matches!(m, Media::Photo { .. } | Media::Sticker { .. } | Media::LocalPhoto { .. })
+            matches!(
+                m,
+                Media::Photo { .. } | Media::Sticker { .. } | Media::LocalPhoto { .. }
+            )
         });
     if carousel_album {
         let mut imgs = String::new();
@@ -618,7 +634,11 @@ pub fn render_post(
                     (fname, dl)
                 }
                 Media::LocalPhoto { path, key } => {
-                    let ext = path.extension().and_then(|e| e.to_str()).filter(|e| !e.is_empty()).unwrap_or("jpg");
+                    let ext = path
+                        .extension()
+                        .and_then(|e| e.to_str())
+                        .filter(|e| !e.is_empty())
+                        .unwrap_or("jpg");
                     let fname = match key {
                         Some(k) => format!("{}.{ext}", sanitize_key(k)),
                         None => format!("{n:02}.{ext}"),
@@ -915,7 +935,10 @@ pub fn render_post(
     // blockquote). It's JavaScript (Genius has no static embed), so the offline
     // pass strips it, leaving just the fallback link.
     if let Some(song) = &post.genius_song_id {
-        let has_quote = post.body_md.lines().any(|l| l.trim_start().starts_with('>'));
+        let has_quote = post
+            .body_md
+            .lines()
+            .any(|l| l.trim_start().starts_with('>'));
         if !has_quote {
             let url = post
                 .links
@@ -947,7 +970,14 @@ pub fn render_post(
         (slug, front)
     } else {
         let description = excerpt(&body_src, 200);
-        let front = front_matter(post, &title, &description, og_image.as_deref(), newer, older);
+        let front = front_matter(
+            post,
+            &title,
+            &description,
+            og_image.as_deref(),
+            newer,
+            older,
+        );
         (slug_for(post), front)
     };
     let index_md = format!("{}{}\n", front, body.trim_end());
@@ -978,7 +1008,13 @@ fn media_name(
 
 fn sanitize_key(k: &str) -> String {
     k.chars()
-        .map(|c| if c.is_ascii_alphanumeric() || c == '_' { c } else { '_' })
+        .map(|c| {
+            if c.is_ascii_alphanumeric() || c == '_' {
+                c
+            } else {
+                '_'
+            }
+        })
         .collect()
 }
 
@@ -1084,8 +1120,7 @@ static HTML_TAG: Lazy<Regex> = Lazy::new(|| Regex::new(r"<[^>]+>").unwrap());
 static BR_TAG: Lazy<Regex> = Lazy::new(|| Regex::new(r"(?i)<br\s*/?>").unwrap());
 static SHORTCODE: Lazy<Regex> = Lazy::new(|| Regex::new(r"\{\{[^}]*\}\}").unwrap());
 static IMG_MD: Lazy<Regex> = Lazy::new(|| Regex::new(r"!\[[^\]]*\]\([^)]*\)").unwrap());
-static MD_LINK_LABEL: Lazy<Regex> =
-    Lazy::new(|| Regex::new(r"\[([^\]]*)\]\([^)]*\)").unwrap());
+static MD_LINK_LABEL: Lazy<Regex> = Lazy::new(|| Regex::new(r"\[([^\]]*)\]\([^)]*\)").unwrap());
 
 /// Strip a Markdown body to plain text: keep hashtag words + link text, drop
 /// shortcodes, images, URLs and markup. Line breaks are left intact; the caller
@@ -1210,15 +1245,17 @@ fn title_from_body(body: &str, max: usize) -> Option<(String, usize, bool, bool)
         // Drop a trailing ":" (e.g. "… #alias:" -> "… alias").
         let t = joined.trim_end_matches(':').trim();
         if t.is_empty()
-            || matches!(t.to_lowercase().as_str(), "from" | "source" | "src" | "via" | "link")
+            || matches!(
+                t.to_lowercase().as_str(),
+                "from" | "source" | "src" | "via" | "link"
+            )
         {
             continue;
         }
         let (title, partial) = first_sentence_capped(t, max);
         // Keep the line in the body when it carries a link: the title drops
         // links, so removing the line would lose it.
-        let has_link =
-            MD_LINK.is_match(raw) || AUTOLINK.is_match(raw) || BARE_URL.is_match(raw);
+        let has_link = MD_LINK.is_match(raw) || AUTOLINK.is_match(raw) || BARE_URL.is_match(raw);
         return Some((title, idx, TAG_SC.is_match(raw), partial || has_link));
     }
     None
@@ -1234,8 +1271,7 @@ fn first_sentence_capped(line: &str, max: usize) -> (String, bool) {
     // Requiring whitespace avoids splitting "three.js" or "Opus 4.5".
     let mut end = None;
     for i in 0..chars.len() {
-        if matches!(chars[i], '.' | '!' | '?')
-            && chars.get(i + 1).is_none_or(|c| c.is_whitespace())
+        if matches!(chars[i], '.' | '!' | '?') && chars.get(i + 1).is_none_or(|c| c.is_whitespace())
         {
             end = Some(i);
             break;
@@ -1256,8 +1292,9 @@ fn first_sentence_capped(line: &str, max: usize) -> (String, bool) {
 
 static STANDALONE_LINK: Lazy<Regex> =
     Lazy::new(|| Regex::new(r"^\[([^\]]*)\]\(([^)]+)\)$").unwrap());
-static TME_CHANNEL: Lazy<Regex> =
-    Lazy::new(|| Regex::new(r"(?:t\.me|telegram\.me|telegram\.dog)/(?:s/)?([A-Za-z0-9_]+)").unwrap());
+static TME_CHANNEL: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(r"(?:t\.me|telegram\.me|telegram\.dog)/(?:s/)?([A-Za-z0-9_]+)").unwrap()
+});
 
 /// The Telegram channel username referenced by a URL, lowercased.
 fn tme_channel(url: &str) -> Option<String> {
@@ -1404,7 +1441,12 @@ fn label_escape(s: &str) -> String {
 
 /// Bundle filename for an MTProto audio track: the sanitized original filename
 /// when present (kept unique within the bundle), else a positional name.
-fn local_audio_name(orig: Option<&str>, ext: &str, idx: usize, used: &mut HashSet<String>) -> String {
+fn local_audio_name(
+    orig: Option<&str>,
+    ext: &str,
+    idx: usize,
+    used: &mut HashSet<String>,
+) -> String {
     let base = match orig {
         Some(n) if !n.trim().is_empty() => sanitize_filename(n, ext, idx),
         _ => format!("{idx:02}.{ext}"),
@@ -1444,7 +1486,8 @@ fn sanitize_filename(name: &str, ext: &str, idx: usize) -> String {
     // Keep an existing real extension, otherwise append the detected one.
     match base.rsplit_once('.') {
         Some((_, e))
-            if (1..=5).contains(&e.chars().count()) && e.chars().all(|c| c.is_ascii_alphanumeric()) =>
+            if (1..=5).contains(&e.chars().count())
+                && e.chars().all(|c| c.is_ascii_alphanumeric()) =>
         {
             base
         }
@@ -1559,10 +1602,22 @@ mod tests {
             },
         );
         assert_eq!(r.title, "My Cool Page");
-        assert!(r.index_md.contains("path = \"/my-cool-page/\""), "{}", r.index_md);
-        assert!(r.index_md.contains("template = \"page.html\""), "{}", r.index_md);
+        assert!(
+            r.index_md.contains("path = \"/my-cool-page/\""),
+            "{}",
+            r.index_md
+        );
+        assert!(
+            r.index_md.contains("template = \"page.html\""),
+            "{}",
+            r.index_md
+        );
         assert!(r.index_md.contains("More text."), "{}", r.index_md);
-        assert!(!r.index_md.contains("PAGE"), "marker dropped: {}", r.index_md);
+        assert!(
+            !r.index_md.contains("PAGE"),
+            "marker dropped: {}",
+            r.index_md
+        );
     }
 
     #[test]
@@ -1593,10 +1648,9 @@ mod tests {
             },
         );
         assert!(out.index_md.contains("forwarded_from = \"Pavel Durov\""));
-        assert!(
-            out.index_md
-                .contains("forwarded_from_url = \"https://t.me/durov/534\"")
-        );
+        assert!(out
+            .index_md
+            .contains("forwarded_from_url = \"https://t.me/durov/534\""));
     }
 
     #[test]
@@ -1613,7 +1667,10 @@ mod tests {
             sanitize_filename("1. Название эпизода.flac", "flac", 3),
             "1._Название_эпизода.flac"
         );
-        assert_eq!(sanitize_filename("005-vitaly-geo.m4a", "m4a", 3), "005-vitaly-geo.m4a");
+        assert_eq!(
+            sanitize_filename("005-vitaly-geo.m4a", "m4a", 3),
+            "005-vitaly-geo.m4a"
+        );
         assert_eq!(sanitize_filename("Эпизод", "ogg", 1), "Эпизод.ogg");
         // All-punctuation → positional, never a row of underscores.
         assert_eq!(sanitize_filename("!!! ??? …", "mp3", 7), "07.mp3");
@@ -1622,7 +1679,8 @@ mod tests {
     #[test]
     fn commons_file_path_decoded() {
         // Pretty `/wiki/File:` URL form (percent-encoded, namespace dropped).
-        let url = "https://commons.wikimedia.org/wiki/File:Slonim_%D1%81%D0%BD%D1%8F%D1%82%D0%BE.jpg";
+        let url =
+            "https://commons.wikimedia.org/wiki/File:Slonim_%D1%81%D0%BD%D1%8F%D1%82%D0%BE.jpg";
         assert_eq!(commons_page_name(url).as_deref(), Some("Slonim снято.jpg"));
     }
 
@@ -1631,7 +1689,9 @@ mod tests {
         let rw = LinkRewriter::with_index("c", HashMap::new());
         let render = |dead: bool| {
             let mut p = post_with_body("watch this");
-            p.media = vec![Media::Video { url: "https://cdn/x.mp4".into() }];
+            p.media = vec![Media::Video {
+                url: "https://cdn/x.mp4".into(),
+            }];
             p.instagram = Some("https://www.instagram.com/reel/ABC/".into());
             p.instagram_dead = dead;
             render_post(
@@ -1664,7 +1724,10 @@ mod tests {
         assert!(!live.contains("{{ video("), "video not dropped: {live}");
         // Removed / unverified → keep the video, show no dead embed.
         let dead = render(true);
-        assert!(dead.contains("{{ video("), "video dropped on dead IG: {dead}");
+        assert!(
+            dead.contains("{{ video("),
+            "video dropped on dead IG: {dead}"
+        );
         assert!(!dead.contains("{{ instagram("), "embed on dead IG: {dead}");
     }
 
@@ -1677,7 +1740,9 @@ mod tests {
             p.youtube_dead = dead;
             p.youtube_watchable = watchable;
             if video {
-                p.media = vec![Media::Video { url: "https://cdn/x.mp4".into() }];
+                p.media = vec![Media::Video {
+                    url: "https://cdn/x.mp4".into(),
+                }];
             }
             render_post(
                 &p,
@@ -1702,20 +1767,41 @@ mod tests {
         };
         // Embeddable → the normal iframe embed, no facade.
         let live = render(false, false, false);
-        assert!(live.contains("{{ youtube(id=\"abc123XYZ\") }}"), "no embed: {live}");
+        assert!(
+            live.contains("{{ youtube(id=\"abc123XYZ\") }}"),
+            "no embed: {live}"
+        );
         assert!(!live.contains("youtube_link"), "unexpected facade: {live}");
         // Embedding disabled but still plays, no local video → link-out facade.
         let facade = render(true, true, false);
-        assert!(facade.contains("{{ youtube_link(id=\"abc123XYZ\") }}"), "no facade: {facade}");
-        assert!(!facade.contains("{{ youtube(id="), "dead embed shown: {facade}");
+        assert!(
+            facade.contains("{{ youtube_link(id=\"abc123XYZ\") }}"),
+            "no facade: {facade}"
+        );
+        assert!(
+            !facade.contains("{{ youtube(id="),
+            "dead embed shown: {facade}"
+        );
         // Embedding disabled but a local video exists → keep the video, no facade.
         let with_video = render(true, true, true);
-        assert!(with_video.contains("{{ video("), "video dropped: {with_video}");
-        assert!(!with_video.contains("youtube_link"), "facade despite local video: {with_video}");
+        assert!(
+            with_video.contains("{{ video("),
+            "video dropped: {with_video}"
+        );
+        assert!(
+            !with_video.contains("youtube_link"),
+            "facade despite local video: {with_video}"
+        );
         // Removed (not watchable) → neither a dead embed nor a facade.
         let removed = render(true, false, false);
-        assert!(!removed.contains("youtube_link"), "facade on removed: {removed}");
-        assert!(!removed.contains("{{ youtube(id="), "embed on removed: {removed}");
+        assert!(
+            !removed.contains("youtube_link"),
+            "facade on removed: {removed}"
+        );
+        assert!(
+            !removed.contains("{{ youtube(id="),
+            "embed on removed: {removed}"
+        );
     }
 
     #[test]
@@ -1747,9 +1833,16 @@ mod tests {
             },
         );
         // A 📎 download link plus one local-copy job for the bundled file.
-        assert!(out.index_md.contains("📎 archive.zip"), "no download link: {}", out.index_md);
+        assert!(
+            out.index_md.contains("📎 archive.zip"),
+            "no download link: {}",
+            out.index_md
+        );
         assert_eq!(out.downloads.len(), 1, "expected one download job");
-        assert_eq!(out.downloads[0].local.as_deref(), Some(Path::new("/cache/12.zip")));
+        assert_eq!(
+            out.downloads[0].local.as_deref(),
+            Some(Path::new("/cache/12.zip"))
+        );
     }
 
     #[test]
@@ -1787,12 +1880,12 @@ mod tests {
                 carousel: false,
             },
         );
-        assert!(out.index_md.contains(&format!(
-            "[📎 archive.tar.xz]({base}/1-01-archive.tar.xz)"
-        )));
-        assert!(out.index_md.contains(&format!(
-            "[📎 bundle.tar.xz]({base}/1-02-bundle.tar.xz)"
-        )));
+        assert!(out
+            .index_md
+            .contains(&format!("[📎 archive.tar.xz]({base}/1-01-archive.tar.xz)")));
+        assert!(out
+            .index_md
+            .contains(&format!("[📎 bundle.tar.xz]({base}/1-02-bundle.tar.xz)")));
         assert_eq!(out.downloads.len(), 2);
         assert!(out.downloads.iter().all(|d| d.release));
         assert_eq!(out.downloads[0].filename, "1-01-archive.tar.xz");
@@ -1809,7 +1902,9 @@ mod tests {
         let rw = LinkRewriter::with_index("c", HashMap::new());
         let ui = crate::i18n::ui("en");
         let mut p = post_with_body("clip");
-        p.media = vec![Media::Video { url: "https://cdn/x.mp4".into() }];
+        p.media = vec![Media::Video {
+            url: "https://cdn/x.mp4".into(),
+        }];
         let base = "https://github.com/o/r/releases/download/media";
         let common = RenderOpts {
             ui: &ui,
@@ -1826,7 +1921,10 @@ mod tests {
         // Off → inline <video>, bundled locally.
         let off = render_post(&p, &rw, false, None, None, &common);
         assert!(off.index_md.contains("{{ video(src="), "{}", off.index_md);
-        assert!(off.downloads.iter().all(|d| !d.release), "nothing should be staged");
+        assert!(
+            off.downloads.iter().all(|d| !d.release),
+            "nothing should be staged"
+        );
         // On → external video_ext with the release URL, staged for upload under a
         // globally-unique (post-id-prefixed) name.
         let on = render_post(
@@ -1835,12 +1933,29 @@ mod tests {
             false,
             None,
             None,
-            &RenderOpts { video_releases: Some(base), ..common },
+            &RenderOpts {
+                video_releases: Some(base),
+                ..common
+            },
         );
-        assert!(on.index_md.contains(&format!("{{{{ video_ext(url=\"{base}/")), "{}", on.index_md);
+        assert!(
+            on.index_md
+                .contains(&format!("{{{{ video_ext(url=\"{base}/")),
+            "{}",
+            on.index_md
+        );
         assert_eq!(on.downloads.len(), 1);
-        assert!(on.downloads[0].release, "video should be staged for release");
-        assert!(on.downloads[0].filename.starts_with(&format!("{}-", p.primary_id)), "{}", on.downloads[0].filename);
+        assert!(
+            on.downloads[0].release,
+            "video should be staged for release"
+        );
+        assert!(
+            on.downloads[0]
+                .filename
+                .starts_with(&format!("{}-", p.primary_id)),
+            "{}",
+            on.downloads[0].filename
+        );
     }
 
     #[test]
@@ -1886,22 +2001,60 @@ mod tests {
         };
         let mut album = post_with_body("album");
         album.media = vec![
-            Media::Photo { url: "https://cdn/a.jpg".into(), key: Some("k1".into()) },
-            Media::Photo { url: "https://cdn/b.jpg".into(), key: Some("k2".into()) },
+            Media::Photo {
+                url: "https://cdn/a.jpg".into(),
+                key: Some("k1".into()),
+            },
+            Media::Photo {
+                url: "https://cdn/b.jpg".into(),
+                key: Some("k2".into()),
+            },
         ];
         // Off → a normal image stack, no carousel.
         let off = render_post(&album, &rw, false, None, None, &base);
         assert!(!off.index_md.contains("carousel"), "{}", off.index_md);
-        assert_eq!(off.index_md.matches("{{ img(src=").count(), 2, "expected 2 image shortcodes: {}", off.index_md);
+        assert_eq!(
+            off.index_md.matches("{{ img(src=").count(),
+            2,
+            "expected 2 image shortcodes: {}",
+            off.index_md
+        );
         // On → one carousel holding both images, and both are still downloaded.
-        let on = render_post(&album, &rw, false, None, None, &RenderOpts { carousel: true, ..base });
-        assert!(on.index_md.contains(r#"<div class="carousel">"#), "{}", on.index_md);
+        let on = render_post(
+            &album,
+            &rw,
+            false,
+            None,
+            None,
+            &RenderOpts {
+                carousel: true,
+                ..base
+            },
+        );
+        assert!(
+            on.index_md.contains(r#"<div class="carousel">"#),
+            "{}",
+            on.index_md
+        );
         assert_eq!(on.index_md.matches("<img").count(), 2, "{}", on.index_md);
         assert_eq!(on.downloads.len(), 2);
         // A single image is never a carousel, even enabled.
         let mut solo = post_with_body("solo");
-        solo.media = vec![Media::Photo { url: "https://cdn/a.jpg".into(), key: None }];
-        let out = render_post(&solo, &rw, false, None, None, &RenderOpts { carousel: true, ..base });
+        solo.media = vec![Media::Photo {
+            url: "https://cdn/a.jpg".into(),
+            key: None,
+        }];
+        let out = render_post(
+            &solo,
+            &rw,
+            false,
+            None,
+            None,
+            &RenderOpts {
+                carousel: true,
+                ..base
+            },
+        );
         assert!(!out.index_md.contains("carousel"), "{}", out.index_md);
     }
 
@@ -1940,7 +2093,10 @@ mod tests {
         assert!(render(None, false).contains("{{ video("), "video missing");
         // Live YouTube, keep_media off (CI) → the embed replaces the video.
         let r = render(Some("abc123"), false);
-        assert!(!r.contains("{{ video("), "video not dropped for a live embed: {r}");
+        assert!(
+            !r.contains("{{ video("),
+            "video not dropped for a live embed: {r}"
+        );
         assert!(r.contains("{{ youtube("), "no youtube embed: {r}");
         // Live YouTube but keep_media on (local) → keep the video too.
         assert!(
@@ -1981,7 +2137,10 @@ mod tests {
             b.contains("{{ spotify(url=\"https://open.spotify.com/embed/track/abc123\") }}"),
             "no spotify: {b}"
         );
-        assert!(!b.contains("{{ pinterest("), "pinterest emitted while off: {b}");
+        assert!(
+            !b.contains("{{ pinterest("),
+            "pinterest emitted while off: {b}"
+        );
     }
 
     #[test]
@@ -2059,9 +2218,15 @@ mod tests {
         let out = render_post(&a, &rw, false, None, None, &opts).index_md;
         // Related is emitted as front-matter data (the post-page template renders
         // it), not into the body — so the feed doesn't show it.
-        assert!(out.contains("[[extra.related]]"), "no related front-matter: {out}");
         assert!(
-            out.contains(&format!("path = \"@/posts/{}/index.md\"", slug_for(&posts[1]))),
+            out.contains("[[extra.related]]"),
+            "no related front-matter: {out}"
+        );
+        assert!(
+            out.contains(&format!(
+                "path = \"@/posts/{}/index.md\"",
+                slug_for(&posts[1])
+            )),
             "no related path: {out}"
         );
     }
@@ -2107,8 +2272,14 @@ mod tests {
             pinterest: false,
         };
         let out = render_post(&p, &rw, false, None, None, &opts).index_md;
-        assert!(out.contains(&format!("{{{{ bandcamp(url=\"{embed}\") }}}}")), "no player: {out}");
-        assert!(!out.contains("/album/rethinking-progress"), "link not stripped: {out}");
+        assert!(
+            out.contains(&format!("{{{{ bandcamp(url=\"{embed}\") }}}}")),
+            "no player: {out}"
+        );
+        assert!(
+            !out.contains("/album/rethinking-progress"),
+            "link not stripped: {out}"
+        );
     }
 
     #[test]
@@ -2136,6 +2307,9 @@ mod tests {
         );
         // The plain autolink is gone (the URL still appears in the shortcode's
         // fallback `url=` arg, which is expected).
-        assert!(!out.contains("<https://vk.com"), "vk autolink not stripped: {out}");
+        assert!(
+            !out.contains("<https://vk.com"),
+            "vk autolink not stripped: {out}"
+        );
     }
 }

@@ -315,9 +315,10 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
         // The web preview sometimes shows only an unlinked forwarded-from name.
         // MTProto carries the exact source channel + source message id.
         let needs_forward_url = id == posts[pi].primary_id as i32
-            && posts[pi].forwarded_from.as_ref().is_some_and(|f| {
-                f.url.as_deref().and_then(telegram_post_id).is_none()
-            });
+            && posts[pi]
+                .forwarded_from
+                .as_ref()
+                .is_some_and(|f| f.url.as_deref().and_then(telegram_post_id).is_none());
         if needs_forward_url {
             if let Some((source_channel_id, source_post_id)) =
                 msg.forward_header().and_then(forwarded_channel_post)
@@ -342,8 +343,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     forward_sources.insert(source_channel_id, username.clone());
                     username
                 };
-                if let Some(url) =
-                    username.as_deref().and_then(|u| telegram_post_url(u, source_post_id))
+                if let Some(url) = username
+                    .as_deref()
+                    .and_then(|u| telegram_post_url(u, source_post_id))
                 {
                     if let Some(forward) = posts[pi].forwarded_from.as_mut() {
                         forward.url = Some(url);
@@ -400,7 +402,10 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                         (!n.is_empty()).then(|| n.to_string())
                     };
                     let label = audio_label(doc.audio_title(), doc.performer());
-                    audio_for.entry(pi).or_default().push((dest, orig_name, label));
+                    audio_for
+                        .entry(pi)
+                        .or_default()
+                        .push((dest, orig_name, label));
                     n_audio += 1;
                 } else if mime.starts_with("video/") {
                     // Videos are handled here (fetched by default unless an embed
@@ -426,7 +431,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                                 client
                                     .download_media(&media, &dest)
                                     .await
-                                    .with_context(|| format!("downloading video from message {id}"))?;
+                                    .with_context(|| {
+                                        format!("downloading video from message {id}")
+                                    })?;
                             }
                             video_for.entry(pi).or_default().push((id, dest));
                             n_video += 1;
@@ -441,7 +448,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                         client
                             .download_media(&media, &dest)
                             .await
-                            .with_context(|| format!("downloading image document from message {id}"))?;
+                            .with_context(|| {
+                                format!("downloading image document from message {id}")
+                            })?;
                     }
                     let name = doc.name().trim().to_string();
                     doc_image_for.entry(pi).or_default().push((name, dest));
@@ -483,7 +492,9 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
             !matches!(m, Media::DocumentRef { filename } if crate::media::is_probably_audio_doc(filename))
         });
         for (path, name, title) in items {
-            posts[pi].media.push(Media::LocalAudio { path, name, title });
+            posts[pi]
+                .media
+                .push(Media::LocalAudio { path, name, title });
         }
     }
     // Replace each web Photo with the original, matched in message-id order.
@@ -593,7 +604,10 @@ fn audio_label(title: Option<String>, performer: Option<String>) -> Option<Strin
         .map(|s| s.trim().to_string())
         .filter(|s| !s.is_empty())
         .filter(|s| !s.ends_with('…') && !s.ends_with("..."))?;
-    match performer.map(|s| s.trim().to_string()).filter(|s| !s.is_empty()) {
+    match performer
+        .map(|s| s.trim().to_string())
+        .filter(|s| !s.is_empty())
+    {
         Some(p) => Some(format!("{p} — {t}")),
         None => Some(t),
     }
@@ -637,7 +651,9 @@ fn image_ext(mime: &str) -> &'static str {
 fn file_ext(name: &str) -> String {
     name.rsplit_once('.')
         .map(|(_, e)| e.to_ascii_lowercase())
-        .filter(|e| (1..=8).contains(&e.chars().count()) && e.chars().all(|c| c.is_ascii_alphanumeric()))
+        .filter(|e| {
+            (1..=8).contains(&e.chars().count()) && e.chars().all(|c| c.is_ascii_alphanumeric())
+        })
         .unwrap_or_else(|| "bin".to_string())
 }
 
@@ -663,9 +679,13 @@ fn raw_reactions_of(msg: &grammers_client::types::Message) -> Vec<(RawReaction, 
             let tl::enums::ReactionCount::Count(rc) = rc;
             let count = rc.count.max(0) as u64;
             match &rc.reaction {
-                tl::enums::Reaction::Emoji(e) => Some((RawReaction::Glyph(e.emoticon.clone()), count)),
+                tl::enums::Reaction::Emoji(e) => {
+                    Some((RawReaction::Glyph(e.emoticon.clone()), count))
+                }
                 tl::enums::Reaction::Paid => Some((RawReaction::Glyph("⭐".to_string()), count)),
-                tl::enums::Reaction::CustomEmoji(c) => Some((RawReaction::Custom(c.document_id), count)),
+                tl::enums::Reaction::CustomEmoji(c) => {
+                    Some((RawReaction::Custom(c.document_id), count))
+                }
                 tl::enums::Reaction::Empty => None,
             }
         })

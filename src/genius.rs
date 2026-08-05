@@ -12,8 +12,10 @@ use regex::Regex;
 use crate::model::Post;
 
 static YT_ID: Lazy<Regex> = Lazy::new(|| {
-    Regex::new(r"youtube\.com/(?:watch\?v=|embed/)([A-Za-z0-9_-]{11})|youtu\.be/([A-Za-z0-9_-]{11})")
-        .unwrap()
+    Regex::new(
+        r"youtube\.com/(?:watch\?v=|embed/)([A-Za-z0-9_-]{11})|youtu\.be/([A-Za-z0-9_-]{11})",
+    )
+    .unwrap()
 });
 static SONG_ID: Lazy<Regex> = Lazy::new(|| Regex::new(r"songs/(\d+)/embed").unwrap());
 
@@ -176,7 +178,9 @@ async fn resolve_via_api_inner(
 /// A search query from a genius URL: its slug, minus the `-lyrics` suffix.
 fn slug_to_query(link: &str) -> String {
     let slug = link.trim_end_matches('/').rsplit('/').next().unwrap_or("");
-    slug.strip_suffix("-lyrics").unwrap_or(slug).replace('-', " ")
+    slug.strip_suffix("-lyrics")
+        .unwrap_or(slug)
+        .replace('-', " ")
 }
 
 /// Whether two genius URLs are the same song (ignoring a trailing `/` and scheme).
@@ -200,7 +204,12 @@ fn youtube_id(url: &str) -> Option<String> {
 /// Fetch the genius page and parse it. Cloudflare blocks datacenter/CI IPs, so
 /// this is best-effort — a failure just leaves the post's plain link.
 async fn scrape_page(client: &reqwest::Client, url: &str) -> (Option<String>, Option<String>) {
-    match client.get(url).send().await.and_then(|r| r.error_for_status()) {
+    match client
+        .get(url)
+        .send()
+        .await
+        .and_then(|r| r.error_for_status())
+    {
         Ok(r) => parse_genius(&r.text().await.unwrap_or_default()),
         Err(e) => {
             tracing::info!("genius enrichment skipped for {url}: {e}");
@@ -244,12 +253,18 @@ mod tests {
 
     #[test]
     fn slug_query_and_same_song() {
-        assert_eq!(slug_to_query("https://genius.com/Tool-parabol-lyrics"), "Tool parabol");
+        assert_eq!(
+            slug_to_query("https://genius.com/Tool-parabol-lyrics"),
+            "Tool parabol"
+        );
         assert_eq!(
             slug_to_query("https://genius.com/Some-artist-a-song-lyrics/"),
             "Some artist a song"
         );
-        assert!(same_song("https://genius.com/x-lyrics", "https://genius.com/x-lyrics/"));
+        assert!(same_song(
+            "https://genius.com/x-lyrics",
+            "https://genius.com/x-lyrics/"
+        ));
         assert!(same_song("http://genius.com/x", "https://genius.com/x"));
         assert!(!same_song("https://genius.com/a", "https://genius.com/b"));
     }

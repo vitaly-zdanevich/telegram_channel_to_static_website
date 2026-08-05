@@ -155,7 +155,10 @@ mod tests {
 
     #[test]
     fn root_page_and_anchor() {
-        let out = rewrite(r#"<link href="/style.css"><a href="/tags"><a href="/posts/1/#sec">"#, 0);
+        let out = rewrite(
+            r#"<link href="/style.css"><a href="/tags"><a href="/posts/1/#sec">"#,
+            0,
+        );
         assert!(out.contains(r#"href="style.css""#), "{out}");
         assert!(out.contains(r#"href="tags/index.html""#), "{out}");
         assert!(out.contains(r#"href="posts/1/index.html#sec""#), "{out}");
@@ -176,7 +179,13 @@ mod tests {
         assert!(out.contains(r#"src="../search_index.en.js""#), "{out}");
         assert!(out.contains(r#"src="../search.js""#), "{out}");
         // Network-dependent scripts are stripped.
-        assert!(!out.contains("window.location"), "pagination redirect kept: {out}");
-        assert!(!out.contains("instagram.com/embed.js"), "IG embed kept: {out}");
+        assert!(
+            !out.contains("window.location"),
+            "pagination redirect kept: {out}"
+        );
+        assert!(
+            !out.contains("instagram.com/embed.js"),
+            "IG embed kept: {out}"
+        );
     }
 }

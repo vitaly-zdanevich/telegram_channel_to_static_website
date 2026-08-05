@@ -31,7 +31,9 @@ impl AboutMe {
 
 /// The first about.me profile URL in a channel description, if any.
 pub fn url_in(description: &str) -> Option<String> {
-    ABOUT_ME_URL.find(description).map(|m| m.as_str().to_string())
+    ABOUT_ME_URL
+        .find(description)
+        .map(|m| m.as_str().to_string())
 }
 
 /// Fetch + parse an about.me profile. `None` on any network/HTTP error — the

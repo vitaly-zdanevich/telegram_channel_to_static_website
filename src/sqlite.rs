@@ -44,7 +44,10 @@ pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, db: &Path)
                 (2, Value::String(post.date.to_rfc3339())),
                 (3, post.author.clone().map_or(Value::Null, Value::String)),
                 (4, Value::String(post.body_md.clone())),
-                (5, post.views.map_or(Value::Null, |v| Value::Integer(v as i64))),
+                (
+                    5,
+                    post.views.map_or(Value::Null, |v| Value::Integer(v as i64)),
+                ),
                 (6, Value::Integer(post.edited as i64)),
             ],
         )?;
@@ -88,7 +91,10 @@ pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, db: &Path)
         n_posts += 1;
     }
     conn.execute("COMMIT")?;
-    tracing::info!("sqlite: wrote {} — {n_posts} post(s), {n_media} media blob(s)", db.display());
+    tracing::info!(
+        "sqlite: wrote {} — {n_posts} post(s), {n_media} media blob(s)",
+        db.display()
+    );
     Ok(())
 }
 
@@ -138,8 +144,9 @@ mod tests {
         st.bind((4, &[1u8, 2, 3][..])).unwrap();
         st.next().unwrap();
 
-        let mut q =
-            conn.prepare("SELECT mime, length(bytes) FROM media WHERE post_id = 1").unwrap();
+        let mut q = conn
+            .prepare("SELECT mime, length(bytes) FROM media WHERE post_id = 1")
+            .unwrap();
         q.next().unwrap();
         assert_eq!(q.read::<String, _>(0).unwrap(), "image/jpeg");
         assert_eq!(q.read::<i64, _>(1).unwrap(), 3);

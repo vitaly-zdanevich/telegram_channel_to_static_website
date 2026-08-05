@@ -38,16 +38,17 @@ pub async fn enrich(client: &reqwest::Client, posts: &mut [Post], concurrency: u
     if urls.is_empty() && github_repos.is_empty() {
         return;
     }
-    let mut titles: HashMap<String, String> = futures::stream::iter(urls.into_iter().map(|u| async {
-        let t = fetch_title(client, &u).await;
-        (u, t)
-    }))
-    .buffer_unordered(concurrency.max(1))
-    .collect::<Vec<_>>()
-    .await
-    .into_iter()
-    .filter_map(|(u, t)| t.map(|t| (u, t)))
-    .collect();
+    let mut titles: HashMap<String, String> =
+        futures::stream::iter(urls.into_iter().map(|u| async {
+            let t = fetch_title(client, &u).await;
+            (u, t)
+        }))
+        .buffer_unordered(concurrency.max(1))
+        .collect::<Vec<_>>()
+        .await
+        .into_iter()
+        .filter_map(|(u, t)| t.map(|t| (u, t)))
+        .collect();
 
     // A repository needs up to three REST calls (metadata, languages, commits).
     // Keep those calls serial, reuse one result for every URL into the same
@@ -147,7 +148,9 @@ fn mediawiki(url: &str) -> Option<(String, String)> {
     }
     let title = u.path().strip_prefix("/wiki/").filter(|t| !t.is_empty())?;
     let origin = format!("{}://{}", u.scheme(), u.host_str()?);
-    let title = percent_decode_str(title).decode_utf8_lossy().replace('_', " ");
+    let title = percent_decode_str(title)
+        .decode_utf8_lossy()
+        .replace('_', " ");
     Some((origin, title))
 }
 
@@ -465,14 +468,22 @@ async fn habr_card(client: &reqwest::Client, alias: &str) -> Option<String> {
     let j = get_json(client, &api).await?;
     let mut parts: Vec<String> = Vec::new();
     let count = |ptr: &str, label: &str| {
-        j.pointer(ptr).and_then(J::as_i64).map(|v| format!("{v} {label}"))
+        j.pointer(ptr)
+            .and_then(J::as_i64)
+            .map(|v| format!("{v} {label}"))
     };
-    parts.extend(count("/counterStats/publicationStats/articleCount", "articles"));
+    parts.extend(count(
+        "/counterStats/publicationStats/articleCount",
+        "articles",
+    ));
     parts.extend(count("/counterStats/publicationStats/postCount", "posts"));
     parts.extend(count("/counterStats/publicationStats/newsCount", "news"));
     parts.extend(count("/counterStats/commentCount", "comments"));
     if let Some(reg) = j.get("registerDateTime").and_then(J::as_str) {
-        parts.push(format!("registered {}", reg.split('T').next().unwrap_or(reg)));
+        parts.push(format!(
+            "registered {}",
+            reg.split('T').next().unwrap_or(reg)
+        ));
     }
     if let Some(r) = j.get("rating").and_then(J::as_f64) {
         parts.push(format!("rating {r}"));
@@ -548,7 +559,9 @@ async fn mediawiki_extract(client: &reqwest::Client, origin: &str, title: &str) 
             "{origin}{path}?action=query&prop=extracts&exintro=1&explaintext=1\
              &exsentences=2&redirects=1&format=json&titles={enc}"
         );
-        let Some(j) = get_json(client, &api).await else { continue };
+        let Some(j) = get_json(client, &api).await else {
+            continue;
+        };
         if let Some(pages) = j.pointer("/query/pages").and_then(J::as_object) {
             for (_, page) in pages {
                 if let Some(text) = page.get("extract").and_then(J::as_str) {
@@ -581,7 +594,12 @@ fn clean(s: &str) -> Option<String> {
         return None;
     }
     if out.chars().count() > 300 {
-        out = out.chars().take(297).collect::<String>().trim_end().to_string();
+        out = out
+            .chars()
+            .take(297)
+            .collect::<String>()
+            .trim_end()
+            .to_string();
         out.push('…');
     }
     Some(out)
@@ -615,11 +633,17 @@ mod tests {
     fn detects_mediawiki_pages() {
         assert_eq!(
             mediawiki("https://en.wikipedia.org/wiki/Rust_(programming_language)"),
-            Some(("https://en.wikipedia.org".into(), "Rust (programming language)".into()))
+            Some((
+                "https://en.wikipedia.org".into(),
+                "Rust (programming language)".into()
+            ))
         );
         assert_eq!(
             mediawiki("https://homm.miraheze.org/wiki/One_Bad_Day_(Allies)"),
-            Some(("https://homm.miraheze.org".into(), "One Bad Day (Allies)".into()))
+            Some((
+                "https://homm.miraheze.org".into(),
+                "One Bad Day (Allies)".into()
+            ))
         );
         assert_eq!(mediawiki("https://example.com/blog/post"), None);
     }
@@ -642,21 +666,26 @@ mod tests {
         );
         assert_eq!(github_repo("https://github.com/topics/rust"), None);
         assert_eq!(github_repo("https://github.com/only-an-owner"), None);
-        assert_eq!(github_repo("https://github.com.example.com/acme/tool"), None);
+        assert_eq!(
+            github_repo("https://github.com.example.com/acme/tool"),
+            None
+        );
     }
 
     #[test]
     fn formats_language_mix_and_commit_pagination() {
         assert_eq!(
-            github_languages(&json!({"Rust": 850, "Shell": 100, "Lua": 50, "Other": 1}))
-                .as_deref(),
+            github_languages(&json!({"Rust": 850, "Shell": 100, "Lua": 50, "Other": 1})).as_deref(),
             Some("Languages: Rust 85%, Shell 10%, Lua 5%")
         );
         let link = concat!(
             "<https://api.github.com/repos/acme/tool/commits?per_page=1&page=2>; rel=\"next\", ",
             "<https://api.github.com/repos/acme/tool/commits?per_page=1&page=42>; rel=\"last\""
         );
-        assert_eq!(github_commit_count(Some(link), Some(&json!([{}]))), Some(42));
+        assert_eq!(
+            github_commit_count(Some(link), Some(&json!([{}]))),
+            Some(42)
+        );
         assert_eq!(github_commit_count(None, Some(&json!([]))), Some(0));
         assert_eq!(github_commit_count(None, Some(&json!([{}]))), Some(1));
     }
@@ -793,7 +822,10 @@ mod tests {
             habr_user("https://habr.com/en/users/zdanevich-vitaly/").as_deref(),
             Some("zdanevich-vitaly")
         );
-        assert_eq!(habr_user("https://habr.com/ru/users/foo/posts/").as_deref(), Some("foo"));
+        assert_eq!(
+            habr_user("https://habr.com/ru/users/foo/posts/").as_deref(),
+            Some("foo")
+        );
         assert_eq!(habr_user("https://habr.com/en/articles/123/"), None);
         assert_eq!(habr_user("https://example.com/users/x/"), None);
     }
@@ -814,6 +846,9 @@ mod tests {
 
         let mut inline = format!("see [here]({url}) ok");
         add_title(&mut inline, url, r#"He said "hi""#);
-        assert_eq!(inline, format!("see [here](<{url}> \"He said \\\"hi\\\"\") ok"));
+        assert_eq!(
+            inline,
+            format!("see [here](<{url}> \"He said \\\"hi\\\"\") ok")
+        );
     }
 }

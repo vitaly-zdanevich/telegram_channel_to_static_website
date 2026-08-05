@@ -29,16 +29,26 @@ pub fn check(site: &Path) -> Report {
     let static_dir = site.join("static");
     let mut r = Report::default();
     for sub in ["content/posts", "content/pages"] {
-        let Ok(bundles) = fs::read_dir(site.join(sub)) else { continue };
+        let Ok(bundles) = fs::read_dir(site.join(sub)) else {
+            continue;
+        };
         for entry in bundles.flatten() {
             let bundle = entry.path();
             if !bundle.is_dir() {
                 continue;
             }
-            let Ok(md) = fs::read_to_string(bundle.join("index.md")) else { continue };
-            let name = bundle.file_name().and_then(|s| s.to_str()).unwrap_or("").to_string();
+            let Ok(md) = fs::read_to_string(bundle.join("index.md")) else {
+                continue;
+            };
+            let name = bundle
+                .file_name()
+                .and_then(|s| s.to_str())
+                .unwrap_or("")
+                .to_string();
             let mut seen = HashSet::new();
-            let refs = REF_LINK.captures_iter(&md).chain(REF_SRC.captures_iter(&md));
+            let refs = REF_LINK
+                .captures_iter(&md)
+                .chain(REF_SRC.captures_iter(&md));
             for c in refs {
                 let rf = c[1].trim();
                 if !seen.insert(rf.to_string()) {

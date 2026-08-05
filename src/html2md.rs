@@ -156,7 +156,9 @@ fn handle_anchor(el: ElementRef, out: &mut String, ctx: &mut Ctx) {
 
     // Hashtag search link -> taxonomy term + a clickable `tag` shortcode (which
     // resolves to the right base_url-aware /tags/<slug>/ URL).
-    if href.starts_with("?q=") || href.contains("q=%23") || (href.contains("/s/") && href.contains("%23"))
+    if href.starts_with("?q=")
+        || href.contains("q=%23")
+        || (href.contains("/s/") && href.contains("%23"))
     {
         let tag = rt.trim_start_matches('#').trim();
         if !tag.is_empty() && !tag.contains('"') {

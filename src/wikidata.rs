@@ -81,7 +81,10 @@ pub fn spoiler(html: &str) -> String {
 
 /// Minimal HTML escaping for text dropped into the table.
 fn esc(s: &str) -> String {
-    s.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;").replace('"', "&quot;")
+    s.replace('&', "&amp;")
+        .replace('<', "&lt;")
+        .replace('>', "&gt;")
+        .replace('"', "&quot;")
 }
 
 /// `Q42`/`q42`/`Q42 ` → `Q42`; anything that isn't a bare item id → `None`.
@@ -121,7 +124,11 @@ pub async fn fetch(client: &reqwest::Client, raw_qid: &str, lang: &str) -> Optio
             *label = label_of(id);
         }
     }
-    Some(Table { label: label_of(&qid), qid, rows })
+    Some(Table {
+        label: label_of(&qid),
+        qid,
+        rows,
+    })
 }
 
 /// Parse an entity's `claims` into rows (first statement per property) plus the
@@ -144,7 +151,9 @@ fn parse_entity(entity: &J) -> (Vec<Row>, HashSet<String>) {
         if main.get("snaktype").and_then(J::as_str) != Some("value") {
             continue; // "novalue" / "somevalue" — nothing to show
         }
-        let Some(cell) = snak_cell(main) else { continue };
+        let Some(cell) = snak_cell(main) else {
+            continue;
+        };
         if let Cell::Item { id, .. } = &cell {
             ids.insert(id.clone());
         }
@@ -152,7 +161,11 @@ fn parse_entity(entity: &J) -> (Vec<Row>, HashSet<String>) {
         if let Some(n) = prop.strip_prefix('P').and_then(|d| d.parse::<u64>().ok()) {
             ordered.insert(
                 n,
-                Row { prop: prop.clone(), prop_label: prop.clone(), value: cell },
+                Row {
+                    prop: prop.clone(),
+                    prop_label: prop.clone(),
+                    value: cell,
+                },
             );
         }
     }
@@ -168,7 +181,10 @@ fn snak_cell(main: &J) -> Option<Cell> {
     match dv.get("type").and_then(J::as_str)? {
         "wikibase-entityid" => {
             let id = value.get("id").and_then(J::as_str)?.to_string();
-            Some(Cell::Item { label: id.clone(), id })
+            Some(Cell::Item {
+                label: id.clone(),
+                id,
+            })
         }
         "string" => {
             let s = value.as_str()?.to_string();
@@ -181,7 +197,11 @@ fn snak_cell(main: &J) -> Option<Cell> {
         "monolingualtext" => Some(Cell::Text(value.get("text")?.as_str()?.to_string())),
         "time" => Some(Cell::Text(format_time(value.get("time")?.as_str()?))),
         "quantity" => {
-            let amount = value.get("amount")?.as_str()?.trim_start_matches('+').to_string();
+            let amount = value
+                .get("amount")?
+                .as_str()?
+                .trim_start_matches('+')
+                .to_string();
             Some(Cell::Text(amount))
         }
         "globecoordinate" => {
@@ -214,7 +234,11 @@ async fn fetch_labels(
     let mut out = BTreeMap::new();
     let all: Vec<&String> = ids.iter().collect();
     for chunk in all.chunks(50) {
-        let joined = chunk.iter().map(|s| s.as_str()).collect::<Vec<_>>().join("|");
+        let joined = chunk
+            .iter()
+            .map(|s| s.as_str())
+            .collect::<Vec<_>>()
+            .join("|");
         let url = format!(
             "https://www.wikidata.org/w/api.php?action=wbgetentities&ids={joined}\
              &props=labels&languages={lang}|en&format=json"

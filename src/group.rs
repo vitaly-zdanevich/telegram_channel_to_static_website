@@ -241,7 +241,10 @@ mod tests {
         // An album (no tags) and a same-instant post with a non-adjacent ID (the
         // album consumed the IDs between) still unite; the tags carry over.
         let posts = group(
-            vec![msg(1787, &[], "album"), msg(1797, &["crypto", "wallet"], "caption")],
+            vec![
+                msg(1787, &[], "album"),
+                msg(1797, &["crypto", "wallet"], "caption"),
+            ],
             1,
         );
         assert_eq!(posts.len(), 1, "same-instant posts should unite");

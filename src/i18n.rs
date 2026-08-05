@@ -46,7 +46,11 @@ pub fn normalize(lang: &str) -> &'static str {
         .next()
         .unwrap_or("")
         .to_ascii_lowercase();
-    SUPPORTED.iter().copied().find(|&l| l == base).unwrap_or("en")
+    SUPPORTED
+        .iter()
+        .copied()
+        .find(|&l| l == base)
+        .unwrap_or("en")
 }
 
 /// chrono locale (for Zola's `date` filter) giving localized month/weekday

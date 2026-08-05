@@ -100,7 +100,10 @@ pub async fn fetch(client: &reqwest::Client, url: &str) -> Option<Scores> {
         .await
         .ok()?;
     if !resp.status().is_success() {
-        tracing::info!("PageSpeed: API returned {} — skipping scores", resp.status());
+        tracing::info!(
+            "PageSpeed: API returned {} — skipping scores",
+            resp.status()
+        );
         return None;
     }
     let body = resp.text().await.ok()?;
@@ -140,7 +143,8 @@ mod tests {
 
     #[test]
     fn missing_pieces_are_none_not_errors() {
-        let s = parse(r#"{"lighthouseResult":{"categories":{"performance":{"score":0.5}}}}"#).unwrap();
+        let s =
+            parse(r#"{"lighthouseResult":{"categories":{"performance":{"score":0.5}}}}"#).unwrap();
         assert_eq!(s.performance, Some(50));
         assert_eq!(s.seo, None);
         assert_eq!(s.entries(), vec![("Performance", 50)]);

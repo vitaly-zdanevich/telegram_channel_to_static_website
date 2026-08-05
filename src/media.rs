@@ -91,7 +91,9 @@ static BANDCAMP: Lazy<Regex> = Lazy::new(|| {
 /// The first Bandcamp album/track page URL linked from a post, if any — the
 /// page is fetched later to resolve the embeddable player.
 pub fn bandcamp_page(links: &[String]) -> Option<String> {
-    links.iter().find_map(|l| BANDCAMP.find(l).map(|m| m.as_str().to_string()))
+    links
+        .iter()
+        .find_map(|l| BANDCAMP.find(l).map(|m| m.as_str().to_string()))
 }
 
 static VK_PLAYLIST: Lazy<Regex> = Lazy::new(|| {
@@ -103,7 +105,9 @@ static VK_PLAYLIST: Lazy<Regex> = Lazy::new(|| {
 
 /// The first VK music playlist/album URL linked from a post, if any.
 pub fn vk_playlist_url(links: &[String]) -> Option<String> {
-    links.iter().find_map(|l| VK_PLAYLIST.find(l).map(|m| m.as_str().to_string()))
+    links
+        .iter()
+        .find_map(|l| VK_PLAYLIST.find(l).map(|m| m.as_str().to_string()))
 }
 
 /// `(owner_id, playlist_id, access_key)` parsed from a VK playlist URL — the
@@ -111,7 +115,11 @@ pub fn vk_playlist_url(links: &[String]) -> Option<String> {
 /// public playlist.
 pub fn vk_playlist_parts(url: &str) -> Option<(String, String, String)> {
     let c = VK_PLAYLIST.captures(url)?;
-    Some((c[1].to_string(), c[2].to_string(), c.get(3).map_or(String::new(), |m| m.as_str().to_string())))
+    Some((
+        c[1].to_string(),
+        c[2].to_string(),
+        c.get(3).map_or(String::new(), |m| m.as_str().to_string()),
+    ))
 }
 
 /// Every distinct Wikidata item id (`Q…`) linked from a post, in first-seen
@@ -153,9 +161,11 @@ pub fn pinterest_from(links: &[String]) -> Option<String> {
 /// True if a filename looks like audio (by extension).
 pub fn is_audio_name(name: &str) -> bool {
     let n = name.to_ascii_lowercase();
-    [".mp3", ".ogg", ".oga", ".opus", ".m4a", ".wav", ".flac", ".aac"]
-        .iter()
-        .any(|e| n.ends_with(e))
+    [
+        ".mp3", ".ogg", ".oga", ".opus", ".m4a", ".wav", ".flac", ".aac",
+    ]
+    .iter()
+    .any(|e| n.ends_with(e))
 }
 
 /// A "(not archived)" document to treat as the audio track (and drop once MTProto
@@ -210,7 +220,11 @@ pub fn ext_from_url(url: &str, default: &str) -> String {
 /// URLs are tokenized and expire, so we persist the bytes, not the URL.
 /// Failures are logged and tolerated — a backup run should never abort because
 /// one file 404'd.
-pub async fn download_all(client: &reqwest::Client, jobs: &[Job], concurrency: usize) -> Result<()> {
+pub async fn download_all(
+    client: &reqwest::Client,
+    jobs: &[Job],
+    concurrency: usize,
+) -> Result<()> {
     let mut seen = std::collections::HashSet::new();
     let mut todo: Vec<Job> = Vec::new();
     for j in jobs {
@@ -308,7 +322,9 @@ mod tests {
     #[test]
     fn probably_audio_doc_covers_titles() {
         // A podcast document shows a title, not a filename → treated as audio.
-        assert!(is_probably_audio_doc("Георгий Мевлудович Горгиладзе: занялся здоровьем"));
+        assert!(is_probably_audio_doc(
+            "Георгий Мевлудович Горгиладзе: занялся здоровьем"
+        ));
         assert!(is_probably_audio_doc("Episode 5 — the best one"));
         assert!(is_probably_audio_doc("track.mp3"));
         // A distinct real file (non-audio extension) is kept.
@@ -337,7 +353,10 @@ mod tests {
             "https://www.wikidata.org/wiki/Q5".into(),
             "https://example.com/Q999".into(), // not wikidata
         ];
-        assert_eq!(wikidata_qids(&links), vec!["Q42".to_string(), "Q5".to_string()]);
+        assert_eq!(
+            wikidata_qids(&links),
+            vec!["Q42".to_string(), "Q5".to_string()]
+        );
         assert!(wikidata_qids(&["https://example.com".into()]).is_empty());
     }
 
@@ -374,8 +393,10 @@ mod tests {
     #[test]
     fn spotify_embed_url() {
         assert_eq!(
-            spotify_from(&["listen https://open.spotify.com/track/1ZKipeRdw2frIZBd6Y0wNZ?si=x".into()])
-                .as_deref(),
+            spotify_from(&[
+                "listen https://open.spotify.com/track/1ZKipeRdw2frIZBd6Y0wNZ?si=x".into()
+            ])
+            .as_deref(),
             Some("https://open.spotify.com/embed/track/1ZKipeRdw2frIZBd6Y0wNZ")
         );
         assert_eq!(
@@ -405,7 +426,10 @@ mod tests {
                 .as_deref(),
             Some("https://music.yandex.ru/iframe/#track/103670414/22206733")
         );
-        assert_eq!(yandex_music_from(&["https://music.yandex.ru/album/1".into()]), None);
+        assert_eq!(
+            yandex_music_from(&["https://music.yandex.ru/album/1".into()]),
+            None
+        );
         assert_eq!(yandex_music_from(&["https://example.com/x".into()]), None);
     }
 
@@ -431,7 +455,10 @@ mod tests {
     #[test]
     fn extensions() {
         assert_eq!(ext_from_url("https://cdn/file/x.jpg", "bin"), "jpg");
-        assert_eq!(ext_from_url("https://cdn/file/x.mp4?token=abc", "bin"), "mp4");
+        assert_eq!(
+            ext_from_url("https://cdn/file/x.mp4?token=abc", "bin"),
+            "mp4"
+        );
         assert_eq!(ext_from_url("https://cdn/file/noext", "jpg"), "jpg");
     }
 
@@ -457,10 +484,14 @@ mod tests {
             local: None,
         };
         let client = reqwest::Client::new();
-        download_all(&client, std::slice::from_ref(&job), 2).await.unwrap();
+        download_all(&client, std::slice::from_ref(&job), 2)
+            .await
+            .unwrap();
         assert_eq!(std::fs::read(&job.dest).unwrap(), b"IMAGEDATA");
         // dest now exists and force is off → the second call skips the download.
-        download_all(&client, std::slice::from_ref(&job), 2).await.unwrap();
+        download_all(&client, std::slice::from_ref(&job), 2)
+            .await
+            .unwrap();
         // The mock's expect(1) is verified when `server` drops.
         let _ = std::fs::remove_dir_all(&dir);
     }

@@ -125,7 +125,10 @@ pub async fn check_apple(client: &reqwest::Client, posts: &mut [Post], concurren
     if targets.is_empty() {
         return;
     }
-    tracing::info!("checking {} Apple Podcasts link(s) for liveness", targets.len());
+    tracing::info!(
+        "checking {} Apple Podcasts link(s) for liveness",
+        targets.len()
+    );
 
     let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, id)| {
         let client = client.clone();
@@ -164,7 +167,10 @@ async fn is_apple_removed(client: &reqwest::Client, id: &str) -> bool {
     if resp.status() != reqwest::StatusCode::OK {
         return false;
     }
-    resp.text().await.map(|b| apple_body_removed(&b)).unwrap_or(false)
+    resp.text()
+        .await
+        .map(|b| apple_body_removed(&b))
+        .unwrap_or(false)
 }
 
 /// iTunes Lookup body → removed? `resultCount` 0 means the podcast id is gone.
@@ -191,7 +197,10 @@ pub async fn check_yandex(client: &reqwest::Client, posts: &mut [Post], concurre
     if targets.is_empty() {
         return;
     }
-    tracing::info!("checking {} Yandex Music link(s) for liveness", targets.len());
+    tracing::info!(
+        "checking {} Yandex Music link(s) for liveness",
+        targets.len()
+    );
 
     let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, id)| {
         let client = client.clone();
@@ -317,7 +326,9 @@ async fn is_instagram_removed(client: &reqwest::Client, url: &str, post_url: &st
             body.len()
         );
     } else {
-        tracing::warn!("Instagram liveness: HTTP {status} for {url} (post {post_url}) — keeping the video");
+        tracing::warn!(
+            "Instagram liveness: HTTP {status} for {url} (post {post_url}) — keeping the video"
+        );
     }
     true
 }
@@ -441,9 +452,7 @@ fn oembed_removed(status: u16) -> bool {
 /// True for an outbound link worth checking: an `http(s)` URL that isn't a
 /// Telegram link (those are internal / handled elsewhere).
 fn is_external(url: &str) -> bool {
-    url.starts_with("http")
-        && !url.contains("//t.me/")
-        && !url.contains("//telegram.")
+    url.starts_with("http") && !url.contains("//t.me/") && !url.contains("//telegram.")
 }
 
 /// A definitively-gone link (`404`/`410`). A HEAD is enough and cheap; a server
@@ -502,7 +511,10 @@ mod tests {
             yandex_track_id("https://music.yandex.ru/iframe/#track/103670414/22206733").as_deref(),
             Some("103670414")
         );
-        assert_eq!(yandex_track_id("https://music.yandex.ru/iframe/#album/1"), None);
+        assert_eq!(
+            yandex_track_id("https://music.yandex.ru/iframe/#album/1"),
+            None
+        );
     }
 
     #[test]
@@ -550,7 +562,9 @@ mod tests {
     fn apple_lookup_body() {
         assert!(apple_body_removed(r#"{"resultCount":0, "results":[]}"#));
         assert!(apple_body_removed(r#"{"results":[],"resultCount":0}"#));
-        assert!(!apple_body_removed(r#"{"resultCount":1,"results":[{"x":1}]}"#));
+        assert!(!apple_body_removed(
+            r#"{"resultCount":1,"results":[{"x":1}]}"#
+        ));
         assert!(!apple_body_removed("garbage"));
     }
 
@@ -558,7 +572,9 @@ mod tests {
     fn yandex_track_body() {
         assert!(yandex_body_removed(r#"{"result":{"available":false}}"#));
         assert!(yandex_body_removed(r#"{"result":{}}"#)); // present but not available
-        assert!(!yandex_body_removed(r#"{"result":{"available":true,"id":"1"}}"#));
+        assert!(!yandex_body_removed(
+            r#"{"result":{"available":true,"id":"1"}}"#
+        ));
         assert!(!yandex_body_removed(r#"{"error":"not-found"}"#)); // no result → alive
     }
 

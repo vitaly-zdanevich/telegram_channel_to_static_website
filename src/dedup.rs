@@ -33,7 +33,10 @@ pub fn run(site: &Path, base_url: &str) -> std::io::Result<Stats> {
         let Ok(bytes) = fs::read(&file) else { continue };
         let mut h = DefaultHasher::new();
         bytes.hash(&mut h);
-        buckets.entry((bytes.len() as u64, h.finish())).or_default().push(file);
+        buckets
+            .entry((bytes.len() as u64, h.finish()))
+            .or_default()
+            .push(file);
     }
 
     let media_dir = site.join("static/media");
@@ -57,7 +60,9 @@ pub fn run(site: &Path, base_url: &str) -> std::io::Result<Stats> {
             if dupes.len() < 2 {
                 continue;
             }
-            merge_group(&content, &dupes, &media_dir, base_url, &mut used, &mut stats)?;
+            merge_group(
+                &content, &dupes, &media_dir, base_url, &mut used, &mut stats,
+            )?;
         }
     }
     Ok(stats)
@@ -72,7 +77,11 @@ fn merge_group(
     used: &mut HashSet<String>,
     stats: &mut Stats,
 ) -> std::io::Result<()> {
-    let ext = dupes[0].extension().and_then(|e| e.to_str()).filter(|e| !e.is_empty()).unwrap_or("bin");
+    let ext = dupes[0]
+        .extension()
+        .and_then(|e| e.to_str())
+        .filter(|e| !e.is_empty())
+        .unwrap_or("bin");
     let mut h = DefaultHasher::new();
     content.hash(&mut h);
     // Stable, collision-proof name (append a counter only on the rare hash clash).
@@ -89,7 +98,9 @@ fn merge_group(
     let sep = if base_url.ends_with('/') { "" } else { "/" };
     let url = format!("{base_url}{sep}media/{name}");
     for f in dupes {
-        let Some(fname) = f.file_name().and_then(|s| s.to_str()) else { continue };
+        let Some(fname) = f.file_name().and_then(|s| s.to_str()) else {
+            continue;
+        };
         let idx = f.with_file_name("index.md");
         if let Ok(md) = fs::read_to_string(&idx) {
             // The filename appears as a Markdown target `](name)`, a shortcode /
@@ -111,12 +122,16 @@ fn merge_group(
 fn bundle_files(site: &Path) -> Vec<PathBuf> {
     let mut out = Vec::new();
     for sub in ["content/posts", "content/pages"] {
-        let Ok(bundles) = fs::read_dir(site.join(sub)) else { continue };
+        let Ok(bundles) = fs::read_dir(site.join(sub)) else {
+            continue;
+        };
         for b in bundles.flatten() {
             if !b.path().is_dir() {
                 continue;
             }
-            let Ok(files) = fs::read_dir(b.path()) else { continue };
+            let Ok(files) = fs::read_dir(b.path()) else {
+                continue;
+            };
             for f in files.flatten() {
                 let p = f.path();
                 if p.is_file() && p.file_name().and_then(|s| s.to_str()) != Some("index.md") {
@@ -149,7 +164,10 @@ mod tests {
         write(&b.join("archive.zip"), b"PK-same-bytes");
         write(&c.join("other.zip"), b"PK-different");
         write(&a.join("index.md"), b"+++\n+++\n[archive](archive.zip)\n");
-        write(&b.join("index.md"), b"+++\n+++\ngrab [it](archive.zip) here\n");
+        write(
+            &b.join("index.md"),
+            b"+++\n+++\ngrab [it](archive.zip) here\n",
+        );
         write(&c.join("index.md"), b"+++\n+++\n[x](other.zip)\n");
 
         let stats = run(&dir, "https://ex.com/site/").unwrap();

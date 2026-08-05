@@ -25,7 +25,10 @@ sel!(S_VIEWS, ".tgme_widget_message_views");
 sel!(S_META, ".tgme_widget_message_meta");
 // The reply preview reuses `tgme_widget_message_text` (+ js-message_reply_text)
 // and sits *before* the real body, so the body selector must exclude it.
-sel!(S_TEXT, ".tgme_widget_message_text:not(.js-message_reply_text)");
+sel!(
+    S_TEXT,
+    ".tgme_widget_message_text:not(.js-message_reply_text)"
+);
 sel!(S_REPLY, "a.tgme_widget_message_reply");
 sel!(S_REPLY_TEXT, ".js-message_reply_text");
 sel!(S_AUTHOR_NAME, ".tgme_widget_message_author_name");
@@ -54,8 +57,9 @@ sel!(S_CH_COUNTER, ".tgme_channel_info_counter");
 sel!(S_COUNTER_VAL, ".counter_value");
 sel!(S_COUNTER_TYPE, ".counter_type");
 
-static BG_URL: Lazy<Regex> =
-    Lazy::new(|| Regex::new(r"background-image\s*:\s*url\(['\x22]?(?P<u>[^'\x22)]+)['\x22]?\)").unwrap());
+static BG_URL: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(r"background-image\s*:\s*url\(['\x22]?(?P<u>[^'\x22)]+)['\x22]?\)").unwrap()
+});
 
 /// Parse a full page; returns the messages and the `before` cursor for the
 /// next (older) page, if any.
@@ -146,9 +150,17 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
             .map(|e| collapse_ws(&e.text().collect::<String>()))
             .filter(|s| !s.is_empty());
         let text = collapse_ws(
-            &a.select(&S_REPLY_TEXT).next().map(|e| e.text().collect::<String>()).unwrap_or_default(),
+            &a.select(&S_REPLY_TEXT)
+                .next()
+                .map(|e| e.text().collect::<String>())
+                .unwrap_or_default(),
         );
-        Some(Reply { to_id, url, author, text })
+        Some(Reply {
+            to_id,
+            url,
+            author,
+            text,
+        })
     });
 
     let poll = parse_poll(wrap);
@@ -206,8 +218,10 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
 
 fn parse_poll(wrap: ElementRef) -> Option<Poll> {
     let poll = wrap.select(&S_POLL).next()?;
-    let question =
-        poll.select(&S_POLL_Q).next().map(|e| collapse_ws(&e.text().collect::<String>()))?;
+    let question = poll
+        .select(&S_POLL_Q)
+        .next()
+        .map(|e| collapse_ws(&e.text().collect::<String>()))?;
     let options: Vec<PollOption> = poll
         .select(&S_POLL_OPT)
         .map(|opt| {
@@ -237,7 +251,12 @@ fn parse_poll(wrap: ElementRef) -> Option<Poll> {
         .next()
         .map(|e| collapse_ws(&e.text().collect::<String>()))
         .filter(|s| !s.is_empty());
-    Some(Poll { question, options, voters, kind })
+    Some(Poll {
+        question,
+        options,
+        voters,
+        kind,
+    })
 }
 
 fn parse_media(wrap: ElementRef) -> Vec<Media> {
@@ -502,17 +521,28 @@ mod tests {
         match &m.media[0] {
             Media::Photo { url, key } => {
                 assert_eq!(url, "https://cdn.tg/a.jpg");
-                assert_eq!(key.as_deref(), Some("5308054982420535730_1235877858_460003762"));
+                assert_eq!(
+                    key.as_deref(),
+                    Some("5308054982420535730_1235877858_460003762")
+                );
             }
             other => panic!("{other:?}"),
         }
-        assert!(matches!(&m.media[1], Media::Photo { key, .. } if key.as_deref() == Some("987654321_111_222")));
+        assert!(
+            matches!(&m.media[1], Media::Photo { key, .. } if key.as_deref() == Some("987654321_111_222"))
+        );
     }
 
     #[test]
     fn downloadable_video_and_poster_only_video() {
-        let dl = one(r#"<video src="https://cdn.tg/v.mp4" class="tgme_widget_message_video blured" muted></video>"#);
-        assert!(matches!(&dl.media[..], [Media::Video { url }] if url == "https://cdn.tg/v.mp4"), "{:?}", dl.media);
+        let dl = one(
+            r#"<video src="https://cdn.tg/v.mp4" class="tgme_widget_message_video blured" muted></video>"#,
+        );
+        assert!(
+            matches!(&dl.media[..], [Media::Video { url }] if url == "https://cdn.tg/v.mp4"),
+            "{:?}",
+            dl.media
+        );
 
         // A player with no <video> file → keep the poster + duration.
         let poster = one(
@@ -533,25 +563,41 @@ mod tests {
     #[test]
     fn voice_note_and_documents() {
         // A voice-note player carries the URL on a data attribute (no <audio> tag).
-        let voice = one(r#"<a class="tgme_widget_message_voice" data-src="https://cdn.tg/voice.ogg"></a>"#);
-        assert!(matches!(&voice.media[..], [Media::Audio { url, .. }] if url == "https://cdn.tg/voice.ogg"), "{:?}", voice.media);
+        let voice =
+            one(r#"<a class="tgme_widget_message_voice" data-src="https://cdn.tg/voice.ogg"></a>"#);
+        assert!(
+            matches!(&voice.media[..], [Media::Audio { url, .. }] if url == "https://cdn.tg/voice.ogg"),
+            "{:?}",
+            voice.media
+        );
         // A music file exposes a real <audio src>.
         let music = one(r#"<audio src="https://cdn.tg/song.mp3"></audio>"#);
-        assert!(matches!(&music.media[..], [Media::Audio { url, .. }] if url == "https://cdn.tg/song.mp3"));
+        assert!(
+            matches!(&music.media[..], [Media::Audio { url, .. }] if url == "https://cdn.tg/song.mp3")
+        );
 
         // Downloadable document → Media::Document.
-        let doc = one(r#"<a class="tgme_widget_message_document_wrap" href="https://cdn.tg/report.pdf"><div class="tgme_widget_message_document_title">report.pdf</div></a>"#);
-        assert!(matches!(&doc.media[..], [Media::Document { filename, .. }] if filename == "report.pdf"), "{:?}", doc.media);
+        let doc = one(
+            r#"<a class="tgme_widget_message_document_wrap" href="https://cdn.tg/report.pdf"><div class="tgme_widget_message_document_title">report.pdf</div></a>"#,
+        );
+        assert!(
+            matches!(&doc.media[..], [Media::Document { filename, .. }] if filename == "report.pdf"),
+            "{:?}",
+            doc.media
+        );
 
         // No downloadable URL (or a t.me link) → keep the filename only.
-        let noref = one(r#"<div class="tgme_widget_message_document_wrap"><div class="tgme_widget_message_document_title">image_2026-07-01_07-36-10.png</div></div>"#);
-        assert!(matches!(&noref.media[..], [Media::DocumentRef { filename }] if filename == "image_2026-07-01_07-36-10.png"));
+        let noref = one(
+            r#"<div class="tgme_widget_message_document_wrap"><div class="tgme_widget_message_document_title">image_2026-07-01_07-36-10.png</div></div>"#,
+        );
+        assert!(
+            matches!(&noref.media[..], [Media::DocumentRef { filename }] if filename == "image_2026-07-01_07-36-10.png")
+        );
     }
 
     #[test]
     fn document_album_keeps_all_message_ids() {
-        let m = one(
-            r#"
+        let m = one(r#"
             <a class="tgme_widget_message_document_wrap" href="https://t.me/chan/7?single">
               <div class="tgme_widget_message_document_title">one.bin</div>
             </a>
@@ -561,16 +607,18 @@ mod tests {
             <a class="tgme_widget_message_document_wrap" href="https://t.me/chan/9?single">
               <div class="tgme_widget_message_document_title">three.bin</div>
             </a>
-            "#,
-        );
+            "#);
         assert_eq!(m.ids, vec![7, 8, 9]);
         assert_eq!(m.media.len(), 3);
     }
 
     #[test]
     fn sticker_from_data_webp() {
-        let m = one(r#"<i class="tgme_widget_message_sticker" data-webp="https://cdn.tg/s.webp"></i>"#);
-        assert!(matches!(&m.media[..], [Media::Sticker { url, .. }] if url == "https://cdn.tg/s.webp"));
+        let m =
+            one(r#"<i class="tgme_widget_message_sticker" data-webp="https://cdn.tg/s.webp"></i>"#);
+        assert!(
+            matches!(&m.media[..], [Media::Sticker { url, .. }] if url == "https://cdn.tg/s.webp")
+        );
     }
 
     #[test]
@@ -587,9 +635,8 @@ mod tests {
         assert_eq!(m.views, Some(1200));
         assert!(m.body_md.contains("hello"));
 
-        let unlinked = one(
-            r#"<span class="tgme_widget_message_forwarded_from_name">Pavel Durov</span>"#,
-        );
+        let unlinked =
+            one(r#"<span class="tgme_widget_message_forwarded_from_name">Pavel Durov</span>"#);
         let fwd = unlinked.forwarded_from.as_ref().expect("unlinked forward");
         assert_eq!(fwd.name, "Pavel Durov");
         assert_eq!(fwd.url, None);
@@ -609,14 +656,21 @@ mod tests {
         let r = m.reply.as_ref().expect("reply parsed");
         assert_eq!(r.to_id, Some(4), "same-channel reply id");
         assert_eq!(r.author.as_deref(), Some("Someone"));
-        assert!(r.text.contains("quoted earlier message"), "snippet: {}", r.text);
-        assert_eq!(m.body_md.trim(), "my actual answer", "body must exclude the reply snippet");
+        assert!(
+            r.text.contains("quoted earlier message"),
+            "snippet: {}",
+            r.text
+        );
+        assert_eq!(
+            m.body_md.trim(),
+            "my actual answer",
+            "body must exclude the reply snippet"
+        );
     }
 
     #[test]
     fn poll_question_options_and_voters() {
-        let m = one(
-            r#"<div class="tgme_widget_message_poll js-poll">
+        let m = one(r#"<div class="tgme_widget_message_poll js-poll">
                  <div class="tgme_widget_message_poll_question">Which do you prefer?</div>
                  <div class="tgme_widget_message_poll_type">Anonymous Poll</div>
                  <a class="tgme_widget_message_poll_options" href="https://t.me/chan/7">
@@ -630,8 +684,7 @@ mod tests {
                    </div>
                  </a>
                </div>
-               <span class="tgme_widget_message_voters">132</span>"#,
-        );
+               <span class="tgme_widget_message_voters">132</span>"#);
         let p = m.poll.as_ref().expect("poll parsed");
         assert_eq!(p.question, "Which do you prefer?");
         assert_eq!(p.options.len(), 2);

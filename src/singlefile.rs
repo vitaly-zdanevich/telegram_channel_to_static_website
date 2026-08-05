@@ -23,7 +23,10 @@ pub fn build(public: &Path, output: &Path) -> Result<()> {
     let title = fs::read_to_string(public.join("index.html"))
         .ok()
         .and_then(|h| {
-            Regex::new(r"<title>([^<]*)</title>").unwrap().captures(&h).map(|c| c[1].to_string())
+            Regex::new(r"<title>([^<]*)</title>")
+                .unwrap()
+                .captures(&h)
+                .map(|c| c[1].to_string())
         })
         .unwrap_or_else(|| "Archive".into());
 
@@ -63,7 +66,11 @@ pub fn build(public: &Path, output: &Path) -> Result<()> {
     out = ASSET
         .replace_all(&out.clone(), |c: &regex::Captures| {
             let (attr, url) = (&c[1], &c[2]);
-            let rel = url.trim_start_matches('/').split(['?', '#']).next().unwrap_or("");
+            let rel = url
+                .trim_start_matches('/')
+                .split(['?', '#'])
+                .next()
+                .unwrap_or("");
             let file = public.join(rel);
             match fs::metadata(&file) {
                 Ok(m) if m.len() <= MAX_INLINE => match fs::read(&file) {
@@ -119,7 +126,9 @@ fn mime(name: &str) -> &'static str {
 }
 
 fn esc(s: &str) -> String {
-    s.replace('&', "&amp;").replace('<', "&lt;").replace('>', "&gt;")
+    s.replace('&', "&amp;")
+        .replace('<', "&lt;")
+        .replace('>', "&gt;")
 }
 
 /// Minimal standard base64 (no external dep — `base64` is gated behind mtproto).
@@ -133,8 +142,16 @@ pub(crate) fn b64(data: &[u8]) -> String {
         let n = (b0 << 16) | (b1 << 8) | b2;
         out.push(T[(n >> 18 & 63) as usize] as char);
         out.push(T[(n >> 12 & 63) as usize] as char);
-        out.push(if chunk.len() > 1 { T[(n >> 6 & 63) as usize] as char } else { '=' });
-        out.push(if chunk.len() > 2 { T[(n & 63) as usize] as char } else { '=' });
+        out.push(if chunk.len() > 1 {
+            T[(n >> 6 & 63) as usize] as char
+        } else {
+            '='
+        });
+        out.push(if chunk.len() > 2 {
+            T[(n & 63) as usize] as char
+        } else {
+            '='
+        });
     }
     out
 }
@@ -171,8 +188,14 @@ mod tests {
         let html = fs::read_to_string(&out).unwrap();
         assert!(html.contains("<title>My Site</title>"), "{html}");
         assert!(html.contains("body{color:red}"), "css not inlined: {html}");
-        assert!(html.contains("hi <img src=\"data:image/jpeg;base64,"), "img not inlined: {html}");
-        assert!(!html.contains("/posts/1/photo.jpg"), "raw asset ref remains: {html}");
+        assert!(
+            html.contains("hi <img src=\"data:image/jpeg;base64,"),
+            "img not inlined: {html}"
+        );
+        assert!(
+            !html.contains("/posts/1/photo.jpg"),
+            "raw asset ref remains: {html}"
+        );
         let _ = fs::remove_dir_all(&dir);
     }
 }

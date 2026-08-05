@@ -42,7 +42,10 @@ pub fn write_asset_manifest(public: &Path) -> Result<usize> {
     collect(public, public, &mut urls)?;
     urls.sort();
     urls.dedup();
-    fs::write(public.join("asset-manifest.json"), serde_json::to_string(&urls)?)?;
+    fs::write(
+        public.join("asset-manifest.json"),
+        serde_json::to_string(&urls)?,
+    )?;
     Ok(urls.len())
 }
 
@@ -103,7 +106,8 @@ mod tests {
 
         let n = write_asset_manifest(&dir).unwrap();
         let urls: Vec<String> =
-            serde_json::from_str(&fs::read_to_string(dir.join("asset-manifest.json")).unwrap()).unwrap();
+            serde_json::from_str(&fs::read_to_string(dir.join("asset-manifest.json")).unwrap())
+                .unwrap();
         assert_eq!(n, urls.len());
         assert!(urls.contains(&"./".to_string()), "{urls:?}");
         assert!(urls.contains(&"posts/7/".to_string()), "{urls:?}");
@@ -111,7 +115,10 @@ mod tests {
         assert!(urls.contains(&"style.css".to_string()), "{urls:?}");
         // sw.js and the manifest itself are excluded.
         assert!(!urls.iter().any(|u| u == "sw.js"), "{urls:?}");
-        assert!(!urls.iter().any(|u| u.contains("asset-manifest")), "{urls:?}");
+        assert!(
+            !urls.iter().any(|u| u.contains("asset-manifest")),
+            "{urls:?}"
+        );
         let _ = fs::remove_dir_all(&dir);
     }
 }

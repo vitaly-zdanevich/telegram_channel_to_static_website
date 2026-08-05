@@ -123,7 +123,14 @@ fn settings(site: PathBuf) -> Settings {
     }
 }
 
-fn post(id: u64, body: &str, tags: &[&str], media: Vec<Media>, youtube: Option<&str>, instagram: Option<&str>) -> Post {
+fn post(
+    id: u64,
+    body: &str,
+    tags: &[&str],
+    media: Vec<Media>,
+    youtube: Option<&str>,
+    instagram: Option<&str>,
+) -> Post {
     use chrono::TimeZone;
     Post {
         primary_id: id,
@@ -192,14 +199,25 @@ fn zola_build_produces_expected_html() {
             None,
         ),
         // Attached video + a live YouTube link → the embed replaces the video.
-        post(2, "Watch this clip.", &[], vec![Media::Video { url: "https://example.com/v.mp4".into() }], Some("dQw4w9WgXcQ"), None),
+        post(
+            2,
+            "Watch this clip.",
+            &[],
+            vec![Media::Video {
+                url: "https://example.com/v.mp4".into(),
+            }],
+            Some("dQw4w9WgXcQ"),
+            None,
+        ),
         // Attached video + an Instagram link → the video is kept (IG embed is
         // opt-in and off by default).
         post(
             3,
             "A reel.",
             &[],
-            vec![Media::Video { url: "https://example.com/r.mp4".into() }],
+            vec![Media::Video {
+                url: "https://example.com/r.mp4".into(),
+            }],
             None,
             Some("https://www.instagram.com/reel/ABC123/"),
         ),
@@ -208,7 +226,9 @@ fn zola_build_produces_expected_html() {
             4,
             "MTProto video.",
             &[],
-            vec![Media::LocalVideo { path: PathBuf::from("/nonexistent/4.mp4") }],
+            vec![Media::LocalVideo {
+                path: PathBuf::from("/nonexistent/4.mp4"),
+            }],
             None,
             None,
         ),
@@ -232,7 +252,9 @@ fn zola_build_produces_expected_html() {
     let mut tc: HashMap<String, usize> = HashMap::new();
     let mut by_day: BTreeMap<String, (usize, BTreeSet<String>)> = BTreeMap::new();
     for p in &posts {
-        let e = by_day.entry(p.date.format("%Y-%m-%d").to_string()).or_default();
+        let e = by_day
+            .entry(p.date.format("%Y-%m-%d").to_string())
+            .or_default();
         e.0 += 1;
         for t in &p.tags {
             *tc.entry(t.clone()).or_default() += 1;
@@ -242,7 +264,11 @@ fn zola_build_produces_expected_html() {
     let tag_counts: Vec<(String, usize)> = tc.into_iter().collect();
     let days: Vec<DayMeta> = by_day
         .into_iter()
-        .map(|(day, (count, tags))| DayMeta { day, count, tags: tags.into_iter().collect() })
+        .map(|(day, (count, tags))| DayMeta {
+            day,
+            count,
+            tags: tags.into_iter().collect(),
+        })
         .collect();
 
     let page_tag_titles =
@@ -288,17 +314,28 @@ fn zola_build_produces_expected_html() {
     );
 
     let public = s.site.join("public");
-    let read = |rel: &str| fs::read_to_string(public.join(rel)).unwrap_or_else(|e| panic!("read {rel}: {e}"));
+    let read = |rel: &str| {
+        fs::read_to_string(public.join(rel)).unwrap_or_else(|e| panic!("read {rel}: {e}"))
+    };
 
     // Core pages exist.
     assert!(public.join("index.html").exists(), "home page missing");
-    assert!(public.join("about/index.html").exists(), "about page missing");
+    assert!(
+        public.join("about/index.html").exists(),
+        "about page missing"
+    );
     assert!(public.join("rss.xml").exists(), "rss feed missing");
-    assert!(public.join("tags/greeting/index.html").exists(), "tag page missing");
+    assert!(
+        public.join("tags/greeting/index.html").exists(),
+        "tag page missing"
+    );
 
     // Each tag link carries a post-count hover tooltip (localized "N posts").
     let tags_page = read("tags/index.html");
-    assert!(tags_page.contains("title=\"1 posts\""), "tag count tooltip missing: {tags_page}");
+    assert!(
+        tags_page.contains("title=\"1 posts\""),
+        "tag count tooltip missing: {tags_page}"
+    );
 
     // Homepage pagination previews the destination page's tags, ranked by post
     // count. Character references keep the native title tooltip multiline.
@@ -316,8 +353,7 @@ fn zola_build_produces_expected_html() {
     // Calendar year labels show the total number of posts in that year in both
     // the jump navigation and the year heading.
     let calendar = read("calendar/index.html");
-    let year_count =
-        regex::Regex::new(r#"class="?cal-ycount"?>4</span>"#).unwrap();
+    let year_count = regex::Regex::new(r#"class="?cal-ycount"?>4</span>"#).unwrap();
     assert_eq!(
         year_count.find_iter(&calendar).count(),
         2,
@@ -343,13 +379,19 @@ fn zola_build_produces_expected_html() {
             checked += 1;
         }
     }
-    assert!(checked > 5, "internal-link checker found too few links ({checked})");
+    assert!(
+        checked > 5,
+        "internal-link checker found too few links ({checked})"
+    );
 
     // Custom 404 exists and links the themed stylesheet (which carries the
     // prefers-color-scheme dark/light rules), so it follows the OS theme.
     assert!(public.join("404.html").exists(), "404 page missing");
     let notfound = read("404.html");
-    assert!(notfound.contains("style.css"), "404 doesn't link the theme stylesheet");
+    assert!(
+        notfound.contains("style.css"),
+        "404 doesn't link the theme stylesheet"
+    );
     assert!(notfound.contains("404"), "404 page missing its heading");
 
     // Post 1: the photo became an <img>, no video machinery.
@@ -363,26 +405,47 @@ fn zola_build_produces_expected_html() {
         p2.contains("https://www.youtube.com/embed/dQw4w9WgXcQ"),
         "youtube iframe missing:\n{p2}"
     );
-    assert!(!p2.contains("<video"), "attached video not dropped for the embed:\n{p2}");
+    assert!(
+        !p2.contains("<video"),
+        "attached video not dropped for the embed:\n{p2}"
+    );
 
     // Post 3: Instagram embedding is off by default (opt-in), so the attached
     // video is kept and no Instagram embed is emitted.
     let p3 = read("posts/3/index.html");
-    assert!(p3.contains("<video"), "attached video should be kept when IG is off:\n{p3}");
-    assert!(!p3.contains("instagram-media"), "no IG embed expected (off by default):\n{p3}");
-    assert!(!p3.contains("embed.js"), "no IG embed.js expected (off by default):\n{p3}");
+    assert!(
+        p3.contains("<video"),
+        "attached video should be kept when IG is off:\n{p3}"
+    );
+    assert!(
+        !p3.contains("instagram-media"),
+        "no IG embed expected (off by default):\n{p3}"
+    );
+    assert!(
+        !p3.contains("embed.js"),
+        "no IG embed.js expected (off by default):\n{p3}"
+    );
 
     // Post 4: a downloaded MTProto video plays as a <video>, and is #video-tagged.
     let p4 = read("posts/4/index.html");
     assert!(p4.contains("<video"), "LocalVideo <video> missing:\n{p4}");
-    assert!(public.join("tags/video/index.html").exists(), "video tag page missing");
+    assert!(
+        public.join("tags/video/index.html").exists(),
+        "video tag page missing"
+    );
 
     // The offline pass strips scripts and rewrites to relative links, so the
     // copy opens from file://.
     crate::offline::relativize(&public).expect("offline relativize");
     let p3o = read("posts/3/index.html");
-    assert!(p3o.contains("<video"), "kept video should remain after offline:\n{p3o}");
-    assert!(!p3o.contains("<script"), "offline pass should strip all <script>:\n{p3o}");
+    assert!(
+        p3o.contains("<video"),
+        "kept video should remain after offline:\n{p3o}"
+    );
+    assert!(
+        !p3o.contains("<script"),
+        "offline pass should strip all <script>:\n{p3o}"
+    );
 
     let _ = fs::remove_dir_all(&dir);
 }
@@ -397,7 +460,14 @@ fn elasticlunr_search_builds() {
     let mut s = settings(dir.join("site"));
     s.search = Search::Elasticlunr;
 
-    let posts = vec![post(1, "a searchable body of text", &[], vec![], None, None)];
+    let posts = vec![post(
+        1,
+        "a searchable body of text",
+        &[],
+        vec![],
+        None,
+        None,
+    )];
     let rewriter = render::LinkRewriter::new(&s.channel, &posts);
     let ui = crate::i18n::ui(&s.language);
     site::scaffold(&s, None, &[], &[], &[], &[]).expect("scaffold");
@@ -433,23 +503,45 @@ fn elasticlunr_search_builds() {
         .arg("build")
         .output()
         .expect("run zola");
-    assert!(out.status.success(), "zola build failed:\n{}", String::from_utf8_lossy(&out.stderr));
+    assert!(
+        out.status.success(),
+        "zola build failed:\n{}",
+        String::from_utf8_lossy(&out.stderr)
+    );
 
     let public = s.site.join("public");
     // Zola built the Elasticlunr index (http://elasticlunr.com/), and we bundled
     // the library + wiring.
-    assert!(public.join("search_index.en.js").exists(), "search index not generated");
-    assert!(public.join("elasticlunr.min.js").exists(), "elasticlunr library not bundled");
-    assert!(public.join("search.js").exists(), "search wiring not bundled");
+    assert!(
+        public.join("search_index.en.js").exists(),
+        "search index not generated"
+    );
+    assert!(
+        public.join("elasticlunr.min.js").exists(),
+        "elasticlunr library not bundled"
+    );
+    assert!(
+        public.join("search.js").exists(),
+        "search wiring not bundled"
+    );
     let home = fs::read_to_string(public.join("index.html")).expect("home html");
-    assert!(home.contains("search-results"), "search UI missing:\n{home}");
+    assert!(
+        home.contains("search-results"),
+        "search UI missing:\n{home}"
+    );
 
     // The offline pass keeps the local search scripts (they run from local files),
     // so client-side search works over file:// too.
     crate::offline::relativize(&public).expect("offline relativize");
     let home_off = fs::read_to_string(public.join("index.html")).expect("home html");
-    assert!(home_off.contains("elasticlunr.min.js"), "search library dropped offline:\n{home_off}");
-    assert!(home_off.contains("search.js"), "search wiring dropped offline");
+    assert!(
+        home_off.contains("elasticlunr.min.js"),
+        "search library dropped offline:\n{home_off}"
+    );
+    assert!(
+        home_off.contains("search.js"),
+        "search wiring dropped offline"
+    );
 
     let _ = fs::remove_dir_all(&dir);
 }
@@ -469,7 +561,14 @@ fn about_page_renders_tooltip_and_mtproto_link() {
     let s = settings(dir.join("site"));
 
     // One real post so the largest-file link's `@/posts/…` target resolves.
-    let posts = vec![post(1, "The body of the biggest post.", &[], vec![], None, None)];
+    let posts = vec![post(
+        1,
+        "The body of the biggest post.",
+        &[],
+        vec![],
+        None,
+        None,
+    )];
     let slug = render::slug_for(&posts[0]);
 
     let rewriter = render::LinkRewriter::new(&s.channel, &posts);
@@ -504,16 +603,25 @@ fn about_page_renders_tooltip_and_mtproto_link() {
     // Fill the About page: one largest file owned by the post (with the post
     // text as a tooltip) and the MTProto line (used → links to grammers).
     let breakdown = site::size_breakdown(&[&s.site.join("content"), &s.site.join("static")]);
-    let biggest = vec![(s.site.join(format!("content/posts/{slug}/photo.jpg")), 123_456u64)];
+    let biggest = vec![(
+        s.site.join(format!("content/posts/{slug}/photo.jpg")),
+        123_456u64,
+    )];
     let mut previews = HashMap::new();
-    previews.insert(slug.clone(), "Tooltip body of the biggest post.".to_string());
+    previews.insert(
+        slug.clone(),
+        "Tooltip body of the biggest post.".to_string(),
+    );
     site::set_about_size(
         &s.site,
         &breakdown,
         Some(1_000_000_000),
         std::time::Duration::from_secs(3),
         &crate::i18n::about(&s.language),
-        &site::LargestFiles { files: &biggest, previews: &previews },
+        &site::LargestFiles {
+            files: &biggest,
+            previews: &previews,
+        },
         true,
         "2026-07-04 12:00 UTC",
         Some("https://github.com/x/y/actions/runs/42"),
@@ -539,15 +647,31 @@ fn about_page_renders_tooltip_and_mtproto_link() {
         .arg("build")
         .output()
         .expect("run zola");
-    assert!(out.status.success(), "zola build failed:\n{}", String::from_utf8_lossy(&out.stderr));
+    assert!(
+        out.status.success(),
+        "zola build failed:\n{}",
+        String::from_utf8_lossy(&out.stderr)
+    );
 
     let about = fs::read_to_string(s.site.join("public/about/index.html")).expect("about html");
     // Placeholders were substituted.
-    assert!(!about.contains("__TOTAL_SIZE__"), "size placeholder left unfilled:\n{about}");
-    assert!(!about.contains("__LARGEST_FILES__"), "largest-files placeholder left unfilled");
-    assert!(!about.contains("__PAGESPEED__"), "pagespeed placeholder left unfilled");
+    assert!(
+        !about.contains("__TOTAL_SIZE__"),
+        "size placeholder left unfilled:\n{about}"
+    );
+    assert!(
+        !about.contains("__LARGEST_FILES__"),
+        "largest-files placeholder left unfilled"
+    );
+    assert!(
+        !about.contains("__PAGESPEED__"),
+        "pagespeed placeholder left unfilled"
+    );
     // The Lighthouse scores render on the About page.
-    assert!(about.contains("Performance") && about.contains("98"), "lighthouse scores missing:\n{about}");
+    assert!(
+        about.contains("Performance") && about.contains("98"),
+        "lighthouse scores missing:\n{about}"
+    );
     // The largest-file entry links to its post and carries the body as a tooltip.
     assert!(
         about.contains("title=\"Tooltip body of the biggest post.\""),

@@ -6,8 +6,8 @@
 //! channel being removed.
 
 mod aboutme;
-mod config;
 mod bandcamp;
+mod config;
 mod dedup;
 mod enex;
 mod genius;
@@ -15,6 +15,7 @@ mod group;
 mod html2md;
 mod i18n;
 mod integrity;
+mod linktitles;
 mod liveness;
 mod media;
 mod model;
@@ -26,7 +27,6 @@ mod parse;
 mod podcast;
 mod pwa;
 mod render;
-mod linktitles;
 mod scrape;
 mod singlefile;
 mod site;
@@ -501,7 +501,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
     let language = i18n::normalize(&raw_language).to_string();
 
     Ok(Settings {
-        title: g.title.clone().or(fc.title).unwrap_or_else(|| channel.clone()),
+        title: g
+            .title
+            .clone()
+            .or(fc.title)
+            .unwrap_or_else(|| channel.clone()),
         description: g.description.clone().or(fc.description).unwrap_or_default(),
         base_url: base_url.clone(),
         repo_url: g.repo_url.clone().or(fc.repo_url).unwrap_or_else(|| {
@@ -533,7 +537,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             .clone()
             .or(fc.fediverse_creator)
             .filter(|s| !s.trim().is_empty()),
-        pages: g.pages.clone().or(fc.pages).filter(|s| !s.trim().is_empty()),
+        pages: g
+            .pages
+            .clone()
+            .or(fc.pages)
+            .filter(|s| !s.trim().is_empty()),
         posts_per_page: g
             .posts_per_page
             .or(fc.posts_per_page)
@@ -549,7 +557,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             g.search_url.clone().or(fc.search_url),
             &base_url,
         ),
-        footer: g.footer.clone().or(fc.footer).filter(|s| !s.trim().is_empty()),
+        footer: g
+            .footer
+            .clone()
+            .or(fc.footer)
+            .filter(|s| !s.trim().is_empty()),
         pages_host: g
             .pages_host
             .clone()
@@ -603,15 +615,25 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
             fc.dedup.unwrap_or(true)
         },
         dead_links: g.dead_links || fc.dead_links.unwrap_or(false),
-        sqlite: g.sqlite.clone().or_else(|| fc.sqlite.clone().map(PathBuf::from)),
-        enex: g.enex.clone().or_else(|| fc.enex.clone().map(PathBuf::from)),
+        sqlite: g
+            .sqlite
+            .clone()
+            .or_else(|| fc.sqlite.clone().map(PathBuf::from)),
+        enex: g
+            .enex
+            .clone()
+            .or_else(|| fc.enex.clone().map(PathBuf::from)),
         pinterest_save: g.pinterest_save || fc.pinterest_save.unwrap_or(false),
         pagespeed: if g.no_pagespeed {
             false
         } else {
             fc.pagespeed.unwrap_or(true)
         },
-        pwa: if g.no_pwa { false } else { fc.pwa.unwrap_or(true) },
+        pwa: if g.no_pwa {
+            false
+        } else {
+            fc.pwa.unwrap_or(true)
+        },
         offline: g.offline || fc.offline.unwrap_or(false),
         video_releases: if g.no_video_releases {
             false
@@ -715,7 +737,10 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
 /// `google` is a JS-free form, the other web engines get an Enter handler with
 /// `site:<host>` folded into the query, `none`/`off` disables it.
 fn resolve_search(engine: Option<String>, custom: Option<String>, base_url: &str) -> Search {
-    if let Some(u) = custom.map(|s| s.trim().to_string()).filter(|s| !s.is_empty()) {
+    if let Some(u) = custom
+        .map(|s| s.trim().to_string())
+        .filter(|s| !s.is_empty())
+    {
         return Search::Custom { url: u };
     }
     let host = host_of(base_url);
@@ -805,8 +830,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     info!("grouped into {} posts", posts.len());
 
     // PAGE-marked posts become standalone pages (in the nav), not feed posts.
-    let (page_posts, mut posts): (Vec<_>, Vec<_>) =
-        posts.into_iter().partition(render::is_page);
+    let (page_posts, mut posts): (Vec<_>, Vec<_>) = posts.into_iter().partition(render::is_page);
     if !page_posts.is_empty() {
         info!("{} PAGE post(s) → pages", page_posts.len());
     }
@@ -888,24 +912,27 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     let mut about_wikidata_html: Option<String> = None;
     {
         use futures::StreamExt;
-        let mut qids: std::collections::BTreeSet<String> =
-            posts.iter().flat_map(|p| media::wikidata_qids(&p.links)).collect();
+        let mut qids: std::collections::BTreeSet<String> = posts
+            .iter()
+            .flat_map(|p| media::wikidata_qids(&p.links))
+            .collect();
         if let Some(q) = &s.wikidata {
             qids.insert(q.trim().to_ascii_uppercase());
         }
         if !qids.is_empty() {
             info!("wikidata: resolving {} entit(ies)", qids.len());
-            let fetched: Vec<(String, Option<wikidata::Table>)> = futures::stream::iter(
-                qids.into_iter().map(|q| async {
+            let fetched: Vec<(String, Option<wikidata::Table>)> =
+                futures::stream::iter(qids.into_iter().map(|q| async {
                     let t = wikidata::fetch(&client, &q, &s.language).await;
                     (q, t)
-                }),
-            )
-            .buffer_unordered(s.concurrency.max(1))
-            .collect()
-            .await;
-            let tables: std::collections::HashMap<String, wikidata::Table> =
-                fetched.into_iter().filter_map(|(q, t)| t.map(|t| (q, t))).collect();
+                }))
+                .buffer_unordered(s.concurrency.max(1))
+                .collect()
+                .await;
+            let tables: std::collections::HashMap<String, wikidata::Table> = fetched
+                .into_iter()
+                .filter_map(|(q, t)| t.map(|t| (q, t)))
+                .collect();
             let about = i18n::about(&s.language);
             for p in &mut posts {
                 for q in media::wikidata_qids(&p.links) {
@@ -930,10 +957,12 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Auto-tag posts that have a playable (downloadable) video with #video,
     // unless the author already tagged it.
     for p in &mut posts {
-        let has_video = p
-            .media
-            .iter()
-            .any(|m| matches!(m, model::Media::Video { .. } | model::Media::LocalVideo { .. }));
+        let has_video = p.media.iter().any(|m| {
+            matches!(
+                m,
+                model::Media::Video { .. } | model::Media::LocalVideo { .. }
+            )
+        });
         if has_video && !p.tags.iter().any(|t| t == "video") {
             p.tags.push("video".to_string());
         }
@@ -964,8 +993,12 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     let ui = i18n::ui(&s.language);
     // GitHub Releases base URL for offloaded videos and .tar.xz attachments —
     // only for a github.com repo (the URL scheme is GitHub-specific).
-    let video_release_base = (s.video_releases && s.repo_url.contains("github.com"))
-        .then(|| format!("{}/releases/download/media", s.repo_url.trim_end_matches('/')));
+    let video_release_base = (s.video_releases && s.repo_url.contains("github.com")).then(|| {
+        format!(
+            "{}/releases/download/media",
+            s.repo_url.trim_end_matches('/')
+        )
+    });
     if let Some(base) = &video_release_base {
         info!("large assets offloaded to GitHub Releases: {base}/…");
     }
@@ -994,8 +1027,10 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
 
     // Per-day post count + tags (ascending by day) drive the /day/<date>/ pages
     // and the calendar (cell size by count, the day's tags in the hover title).
-    let mut by_day: std::collections::BTreeMap<String, (usize, std::collections::BTreeSet<String>)> =
-        std::collections::BTreeMap::new();
+    let mut by_day: std::collections::BTreeMap<
+        String,
+        (usize, std::collections::BTreeSet<String>),
+    > = std::collections::BTreeMap::new();
     for p in &posts {
         let e = by_day
             .entry(p.date.format("%Y-%m-%d").to_string())
@@ -1017,7 +1052,11 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Telegram's header has no "audios" counter, so add one from the audio media
     // we actually archived (voice/music, incl. MTProto).
     if let Some(info) = channel_info.as_mut() {
-        let audios = posts.iter().flat_map(|p| &p.media).filter(|m| is_audio_media(m)).count();
+        let audios = posts
+            .iter()
+            .flat_map(|p| &p.media)
+            .filter(|m| is_audio_media(m))
+            .count();
         if audios > 0 {
             info.counters.push((audios.to_string(), "audios".into()));
         }
@@ -1045,12 +1084,20 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         .iter()
         .enumerate()
         .map(|(i, p)| {
-            let newer = posts
-                .get(i + 1)
-                .map(|q| (q.primary_id, titles[i + 1].as_str(), previews[i + 1].as_str()));
-            let older = i
-                .checked_sub(1)
-                .map(|j| (posts[j].primary_id, titles[j].as_str(), previews[j].as_str()));
+            let newer = posts.get(i + 1).map(|q| {
+                (
+                    q.primary_id,
+                    titles[i + 1].as_str(),
+                    previews[i + 1].as_str(),
+                )
+            });
+            let older = i.checked_sub(1).map(|j| {
+                (
+                    posts[j].primary_id,
+                    titles[j].as_str(),
+                    previews[j].as_str(),
+                )
+            });
             render::render_post(p, &rewriter, false, newer, older, &render_opts)
         })
         .collect();
@@ -1144,7 +1191,10 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         limit,
         started.elapsed(),
         &i18n::about(&s.language),
-        &site::LargestFiles { files: &biggest, previews: &preview_by_slug },
+        &site::LargestFiles {
+            files: &biggest,
+            previews: &preview_by_slug,
+        },
         mtproto_used,
         &now,
         ci_url.as_deref(),
@@ -1176,11 +1226,9 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     }
     // Link the scores to the full PageSpeed Insights report (mobile + desktop).
     let psi_report = s.base_url.starts_with("http").then(|| {
-        let enc = percent_encoding::utf8_percent_encode(
-            &s.base_url,
-            percent_encoding::NON_ALPHANUMERIC,
-        )
-        .to_string();
+        let enc =
+            percent_encoding::utf8_percent_encode(&s.base_url, percent_encoding::NON_ALPHANUMERIC)
+                .to_string();
         format!("https://pagespeed.web.dev/analysis?url={enc}")
     });
     site::set_about_pagespeed(
@@ -1215,7 +1263,10 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
                 force: false,
                 local: None,
             };
-            media::download_all(&client, &[job], 1).await.ok().map(|()| file)
+            media::download_all(&client, &[job], 1)
+                .await
+                .ok()
+                .map(|()| file)
         }
         _ => None,
     };
@@ -1245,8 +1296,10 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             .filter(|d| !d.is_empty())
             .or_else(|| channel_info.as_ref().and_then(|i| i.description_md.clone()))
             .unwrap_or_default();
-        let base_title =
-            channel_info.as_ref().and_then(|i| i.title.clone()).unwrap_or_else(|| s.title.clone());
+        let base_title = channel_info
+            .as_ref()
+            .and_then(|i| i.title.clone())
+            .unwrap_or_else(|| s.title.clone());
         let channel = |suffix: &str| podcast::Channel {
             author: base_title.clone(),
             title: format!("{base_title}{suffix}"),
@@ -1256,12 +1309,14 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
             language: s.language.clone(),
             category: "Personal Journals".into(),
         };
-        let write = |file: &str, ch: &podcast::Channel, eps: &[podcast::Episode]| {
-            match std::fs::write(s.site.join("static").join(file), podcast::feed(ch, eps)) {
+        let write =
+            |file: &str, ch: &podcast::Channel, eps: &[podcast::Episode]| match std::fs::write(
+                s.site.join("static").join(file),
+                podcast::feed(ch, eps),
+            ) {
                 Ok(()) => info!("podcast: wrote {file} with {} episode(s)", eps.len()),
                 Err(e) => tracing::warn!("podcast: writing {file} failed: {e}"),
-            }
-        };
+            };
         if s.podcast {
             let eps = podcast_episodes(&posts, &rendered, &s);
             write("podcast.xml", &channel(""), &eps);
@@ -1296,7 +1351,11 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         info!("10 largest files:");
         for (p, sz) in &biggest {
             let rel = p.strip_prefix(&s.site).unwrap_or(p);
-            info!("  {:>9}  {}", site::human_size(*sz), largest_link(&site_abs, rel));
+            info!(
+                "  {:>9}  {}",
+                site::human_size(*sz),
+                largest_link(&site_abs, rel)
+            );
             if let Some(text) = largest_slug(rel).and_then(|slug| text_by_slug.get(slug)) {
                 if !text.is_empty() {
                     let indented = text
@@ -1313,7 +1372,10 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // Integrity: every local media file the pages reference must exist on disk.
     let integ = integrity::check(&s.site);
     if integ.missing.is_empty() {
-        info!("integrity: all {} referenced media file(s) present", integ.checked);
+        info!(
+            "integrity: all {} referenced media file(s) present",
+            integ.checked
+        );
     } else {
         for (post, rf) in &integ.missing {
             tracing::warn!("integrity: {post} references missing media '{rf}'");
@@ -1339,9 +1401,15 @@ fn ci_job_url() -> Option<String> {
             return Some(url);
         }
     }
-    let server = std::env::var("GITHUB_SERVER_URL").ok().filter(|v| !v.is_empty())?;
-    let repo = std::env::var("GITHUB_REPOSITORY").ok().filter(|v| !v.is_empty())?;
-    let run = std::env::var("GITHUB_RUN_ID").ok().filter(|v| !v.is_empty())?;
+    let server = std::env::var("GITHUB_SERVER_URL")
+        .ok()
+        .filter(|v| !v.is_empty())?;
+    let repo = std::env::var("GITHUB_REPOSITORY")
+        .ok()
+        .filter(|v| !v.is_empty())?;
+    let run = std::env::var("GITHUB_RUN_ID")
+        .ok()
+        .filter(|v| !v.is_empty())?;
     Some(format!("{server}/{repo}/actions/runs/{run}"))
 }
 
@@ -1365,7 +1433,10 @@ fn count_tags(posts: &[model::Post]) -> Vec<(String, usize)> {
             *counts.entry(t.as_str()).or_insert(0) += 1;
         }
     }
-    let mut v: Vec<(String, usize)> = counts.into_iter().map(|(k, n)| (k.to_string(), n)).collect();
+    let mut v: Vec<(String, usize)> = counts
+        .into_iter()
+        .map(|(k, n)| (k.to_string(), n))
+        .collect();
     v.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
     v
 }
@@ -1390,7 +1461,10 @@ fn largest_link(site_abs: &std::path::Path, rel: &std::path::Path) -> String {
 /// The post slug owning a bundle file (`content/posts/<slug>/…`), if any — used
 /// to look up the post's text for the largest-files log.
 fn largest_slug(rel: &std::path::Path) -> Option<&str> {
-    let comps: Vec<&str> = rel.components().filter_map(|c| c.as_os_str().to_str()).collect();
+    let comps: Vec<&str> = rel
+        .components()
+        .filter_map(|c| c.as_os_str().to_str())
+        .collect();
     if comps.len() >= 3 && comps[0] == "content" && comps[1] == "posts" {
         Some(comps[2])
     } else {
@@ -1409,12 +1483,18 @@ fn ensure_slash(base: &str) -> String {
 
 fn is_audio_file(name: &str) -> bool {
     let n = name.to_ascii_lowercase();
-    [".mp3", ".ogg", ".oga", ".m4a", ".opus", ".wav", ".flac", ".aac"].iter().any(|e| n.ends_with(e))
+    [
+        ".mp3", ".ogg", ".oga", ".m4a", ".opus", ".wav", ".flac", ".aac",
+    ]
+    .iter()
+    .any(|e| n.ends_with(e))
 }
 
 fn is_video_file(name: &str) -> bool {
     let n = name.to_ascii_lowercase();
-    [".mp4", ".webm", ".mov", ".m4v", ".mkv"].iter().any(|e| n.ends_with(e))
+    [".mp4", ".webm", ".mov", ".m4v", ".mkv"]
+        .iter()
+        .any(|e| n.ends_with(e))
 }
 
 fn video_mime(name: &str) -> &'static str {
@@ -1442,10 +1522,18 @@ fn video_episodes(
     let base = ensure_slash(&s.base_url);
     let mut out = Vec::new();
     for (post, r) in posts.iter().zip(rendered) {
-        let videos: Vec<_> = r.downloads.iter().filter(|d| is_video_file(&d.filename)).collect();
+        let videos: Vec<_> = r
+            .downloads
+            .iter()
+            .filter(|d| is_video_file(&d.filename))
+            .collect();
         let id = post.primary_id;
         let derived = render::post_title(post, s.title_max_len, true);
-        let base_title = if derived.is_empty() { format!("#{id}") } else { derived };
+        let base_title = if derived.is_empty() {
+            format!("#{id}")
+        } else {
+            derived
+        };
         for (i, d) in videos.iter().enumerate() {
             let (url, path) = match (d.release, release_base) {
                 (true, Some(rb)) => (
@@ -1479,7 +1567,9 @@ fn video_episodes(
 
 fn is_image_file(name: &str) -> bool {
     let n = name.to_ascii_lowercase();
-    [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"].iter().any(|e| n.ends_with(e))
+    [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"]
+        .iter()
+        .any(|e| n.ends_with(e))
 }
 
 fn audio_mime(name: &str) -> &'static str {
@@ -1514,10 +1604,18 @@ fn podcast_episodes(
             }
             let audio = r.downloads.iter().find(|d| is_audio_file(&d.filename))?;
             let id = post.primary_id;
-            let path = s.site.join("content/posts").join(&r.slug).join(&audio.filename);
+            let path = s
+                .site
+                .join("content/posts")
+                .join(&r.slug)
+                .join(&audio.filename);
             let length = std::fs::metadata(&path).map(|m| m.len()).unwrap_or(0);
             let derived = render::post_title(post, s.title_max_len, true);
-            let title = if derived.is_empty() { format!("#{id}") } else { derived };
+            let title = if derived.is_empty() {
+                format!("#{id}")
+            } else {
+                derived
+            };
             Some(podcast::Episode {
                 title,
                 description: render::post_text_plain(post),
@@ -1576,10 +1674,16 @@ mod tests {
     #[test]
     fn search_default_is_elasticlunr() {
         // No engine and no custom URL → the self-contained default.
-        assert!(matches!(resolve_search(None, None, "/"), Search::Elasticlunr));
+        assert!(matches!(
+            resolve_search(None, None, "/"),
+            Search::Elasticlunr
+        ));
         for name in ["elasticlunr", "lunr", "local"] {
             assert!(
-                matches!(resolve_search(Some(name.into()), None, "/"), Search::Elasticlunr),
+                matches!(
+                    resolve_search(Some(name.into()), None, "/"),
+                    Search::Elasticlunr
+                ),
                 "{name}"
             );
         }
@@ -1603,14 +1707,26 @@ mod tests {
             Search::Custom { .. }
         ));
         // Explicit off, and any unknown engine, disable the box.
-        assert!(matches!(resolve_search(Some("none".into()), None, "/"), Search::None));
-        assert!(matches!(resolve_search(Some("nonsense".into()), None, "/"), Search::None));
+        assert!(matches!(
+            resolve_search(Some("none".into()), None, "/"),
+            Search::None
+        ));
+        assert!(matches!(
+            resolve_search(Some("nonsense".into()), None, "/"),
+            Search::None
+        ));
     }
 
     #[test]
     fn host_extraction() {
-        assert_eq!(host_of("https://user.github.io/repo/").as_deref(), Some("user.github.io"));
-        assert_eq!(host_of("http://example.com").as_deref(), Some("example.com"));
+        assert_eq!(
+            host_of("https://user.github.io/repo/").as_deref(),
+            Some("user.github.io")
+        );
+        assert_eq!(
+            host_of("http://example.com").as_deref(),
+            Some("example.com")
+        );
         assert_eq!(host_of("/"), None); // relative (offline build)
         assert_eq!(host_of("nothost"), None); // no dot → not a host
     }
