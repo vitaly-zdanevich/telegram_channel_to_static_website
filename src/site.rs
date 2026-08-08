@@ -1952,7 +1952,7 @@ const SPOTIFY_SHORTCODE: &str = r#"<div class="sp-embed"><iframe src="{{ url }}"
 
 // Pinterest embedded pin (pinit.js turns the <a> into the pin). The offline pass
 // strips the script, leaving the "View on Pinterest" link.
-const PINTEREST_SHORTCODE: &str = r#"<a data-pin-do="embedPin" data-pin-width="large" href="{{ url }}">View on Pinterest</a>{% if not config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js"></script>{% endif %}
+const PINTEREST_SHORTCODE: &str = r#"<div class="pin-embed"><a data-pin-do="embedPin" data-pin-width="large" href="{{ url }}">View on Pinterest</a>{% if not config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js"></script>{% endif %}</div>
 "#;
 
 // Bandcamp player. The EmbeddedPlayer iframe is a plain, self-contained iframe
@@ -2097,6 +2097,16 @@ audio { width: 100%; }
   iframe[src*="redditmedia.com"],
   iframe[src*="embed.reddit.com"] { filter: invert(1) hue-rotate(180deg); }
 }
+/* Pinterest offers no dark Pin-widget theme. Its script injects the footer into
+   the host page with its current generated logging attributes, so recolour only
+   its two white containers and leave the Pin image and avatar untouched. */
+@media (prefers-color-scheme: dark) {
+  .pin-embed [data-pin-log='embed_pin_follow'][class*='_footer'],
+  .pin-embed [data-pin-log='embed_pin_follow'][class*='_container'] {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+  }
+}
 .ym-embed .ym-link { display: block; font-size: .85rem; margin-top: .3rem; }
 blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1rem; }
 .sp-embed { margin: 1rem 0; }
@@ -2202,8 +2212,47 @@ table.cal td.c3 a { font-size: 1.35rem; font-weight: 800; }
 #[cfg(test)]
 mod tests {
     use super::*;
+    use scraper::{Html, Selector};
     use std::collections::HashMap;
     use std::path::PathBuf;
+
+    #[test]
+    fn pinterest_footer_uses_dark_site_palette() {
+        assert!(
+            PINTEREST_SHORTCODE.contains(r#"class="pin-embed""#),
+            "Pinterest styling needs a local scope"
+        );
+        assert!(
+            STYLE_CSS.contains(
+                r#"@media (prefers-color-scheme: dark) {
+  .pin-embed [data-pin-log='embed_pin_follow'][class*='_footer'],
+  .pin-embed [data-pin-log='embed_pin_follow'][class*='_container'] {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+  }
+}"#
+            ),
+            "Pinterest's injected footer must follow the dark site palette"
+        );
+
+        // Pinterest timestamps its generated class prefix. Match the semantic
+        // suffixes and logging attribute without depending on that prefix.
+        let markup = Html::parse_fragment(
+            r#"<div class='pin-embed'>
+<span class='PIN_123_embed_pin PIN_123_large' data-pin-log='embed_pin'>
+  <span class='PIN_123_footer PIN_123_uno' data-pin-log='embed_pin_follow'>
+    <span class='PIN_123_container' data-pin-log='embed_pin_follow'></span>
+  </span>
+</span>
+</div>"#,
+        );
+        let selector = Selector::parse(
+            r#".pin-embed [data-pin-log='embed_pin_follow'][class*='_footer'],
+.pin-embed [data-pin-log='embed_pin_follow'][class*='_container']"#,
+        )
+        .expect("valid Pinterest footer selector");
+        assert_eq!(markup.select(&selector).count(), 2);
+    }
 
     #[test]
     fn day_url_keeps_the_slash_after_base() {
