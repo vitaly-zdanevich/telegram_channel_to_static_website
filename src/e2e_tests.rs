@@ -50,6 +50,25 @@ fn zola_ready() -> bool {
     false
 }
 
+/// The scheduled backup must not force MTProto's potentially multi-gigabyte
+/// download cache into ordinary Git history.
+#[test]
+fn daily_blog_backup_excludes_mtproto_cache() {
+    let workflow = include_str!("../.github/workflows/daily.yml");
+    let (_, backup_step) = workflow
+        .split_once("- name: Commit site to blog branch")
+        .expect("daily workflow must contain the blog backup step");
+
+    assert!(
+        backup_step.contains("--exclude '/.mtproto-cache'"),
+        "the blog snapshot must exclude .mtproto-cache"
+    );
+    assert!(
+        backup_step.contains("rm -rf -- \"${work:?}/site/.mtproto-cache\""),
+        "the blog snapshot must remove cache files already tracked on the blog branch"
+    );
+}
+
 fn settings(site: PathBuf) -> Settings {
     Settings {
         channel: "testchan".into(),

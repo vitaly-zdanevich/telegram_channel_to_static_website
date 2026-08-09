@@ -466,7 +466,17 @@ jobs:
           fi
           # Mirror content + media + templates; the external theme is re-cloned
           # each run and the built output is regenerated, so both are excluded.
-          rsync -a --delete --exclude '/public' --exclude '/themes' --exclude '/.video-releases' site/ "$work/site/"
+          # MTProto's cache can contain Release-backed files above GitHub's
+          # 100 MB Git blob limit, so it must stay out of the blog branch.
+          rsync -a --delete \
+            --exclude '/public' \
+            --exclude '/themes' \
+            --exclude '/.video-releases' \
+            --exclude '/.mtproto-cache' \
+            site/ "$work/site/"
+          # rsync protects excluded destination paths from --delete. Remove the
+          # cache left by older blog snapshots before staging the new snapshot.
+          rm -rf -- "${work:?}/site/.mtproto-cache"
           cd "$work"
           git add -A -f site
           if git diff --cached --quiet; then
