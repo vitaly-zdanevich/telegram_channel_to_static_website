@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#obelisk\n#belarus\n#globustut\nSource"
 views = 3
 ids = [1152]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1198/index.md"
+label = "#church #blue #belarus #globustut #year2005 Source,%D1%81%D0%BD%…"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1158/index.md"
+label = "#church #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-855/index.md"
+label = "#belarus #church #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1178/index.md"
+label = "#church #architecture #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1171/index.md"
+label = "#church #belarus #abandone #globustut"
 +++
 
 {{ tag(t="church") }}  
@@ -29,6 +49,6 @@ ids = [1152]
 
 [Source](https://commons.wikimedia.org/wiki/File:047-474_%D0%94%D1%8F%D1%82%D0%BB%D0%BE%D0%B2%D0%BE,_%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB_(%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_16_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#packagemanager\n#appimage\nFor example portable #git in a single file"
 views = 20
 ids = [512]
+
+[[extra.related]]
+path = "@/posts/2025-08-09-621/index.md"
+label = "#anime #gpu"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-398/index.md"
+label = "#anime #voice"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-252/index.md"
+label = "#movie #anime"
+
+[[extra.related]]
+path = "@/posts/2026-07-27-2074/index.md"
+label = "#anime #war #ground"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1831/index.md"
+label = "#anime #phones #evangelion From"
 +++
 
 {{ tag(t="mpv") }}  
 {{ tag(t="anime") }}  
 {{ tag(t="readme") }}
 
-![](5258181706211520084_1224265831_456257108.jpg)
+{{ img(src="5258181706211520084_1224265831_456257108.jpg") }}

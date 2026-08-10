@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#quote\n#kindzadza\nво время съёмок фильма к власти в СССР пришёл К. У. Черненко и, чтобы фильм не запретили, Данелия и Габриадзе решили переозвучить слово «Ку», которое совпадало с инициалами генерального секретаря ЦК КПСС, на какое-нибудь другое слово. Выдвигались варианты «Ка», «Ко», «Кы» и др., однако вскоре Черненко скончался и слово «Ку» в фильме осталось"
 views = 43
 ids = [776]
+
+[[extra.related]]
+path = "@/posts/2025-11-13-775/index.md"
+label = "#quote #kindzadza во время съёмок фильма к власти в СССР пришёл…"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2037/index.md"
+label = "#kindzadza #trailer"
+
+[[extra.related]]
+path = "@/posts/2026-05-17-1776/index.md"
+label = "#llm #quote"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2025-12-15-801/index.md"
+label = "#kindzadza #suicide #oxygen Планета Хануд. Здесь теперь всегда н…"
 +++
 
 {{ tag(t="quote") }}  

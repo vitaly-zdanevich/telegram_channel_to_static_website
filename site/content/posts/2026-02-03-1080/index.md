@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#game"
 views = 13
 ids = [1080]
+
+[[extra.related]]
+path = "@/posts/2025-03-27-458/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-457/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-456/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-455/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2132/index.md"
+label = "#ussr #pc"
 +++
 
 {{ tag(t="ussr") }}  
@@ -29,4 +49,4 @@ ids = [1080]
 
 <https://www.kp.ru/daily/24116.4/339051/>
 
-![](5190706876641906521_1208555623_460001113.jpg)
+{{ img(src="5190706876641906521_1208555623_460001113.jpg") }}

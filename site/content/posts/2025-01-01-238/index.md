@@ -18,7 +18,7 @@ next_body = ""
 prev_id = 237
 prev_title = ""
 prev_body = "#ai"
-views = 48
+views = 49
 forwarded_from = "Малоизвестное интересное"
 forwarded_from_url = "https://t.me/theworldisnoteasy/2010"
 ids = [238]
@@ -42,4 +42,4 @@ ids = [238]
 
 {{ tag(t="LLM") }} {{ tag(t="КогнитивныеИскажения") }} {{ tag(t="ПолитическаяПредвзятость") }}
 
-![](5429357657858367725_1264120838_456253677.jpg)
+{{ img(src="5429357657858367725_1264120838_456253677.jpg") }}

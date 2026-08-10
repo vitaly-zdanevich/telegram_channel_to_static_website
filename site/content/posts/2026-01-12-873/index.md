@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Wow #wikipedia semi-automatic editing by a #python script"
 views = 25
 ids = [873]
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2025-09-10-669/index.md"
+label = "#map #isis"
+
+[[extra.related]]
+path = "@/posts/2025-10-05-697/index.md"
+label = "#turkey #map #population"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-654/index.md"
+label = "#russia #israel #map"
 +++
 
 {{ tag(t="map") }}  
@@ -28,4 +48,4 @@ The Earth, centred around {{ tag(t="new_zealand") }}
 
 [Source](https://www.facebook.com/share/p/1CEN8od24T/)
 
-![](5413674120924303858_1260469230_460001778.jpg)
+{{ img(src="5413674120924303858_1260469230_460001778.jpg") }}

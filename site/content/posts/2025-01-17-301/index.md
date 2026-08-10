@@ -16,12 +16,12 @@ next_body = ""
 prev_id = 300
 prev_title = ""
 prev_body = ""
-views = 27
+views = 28
 ids = [301]
 +++
 
 <https://coub.com/view/2at32d>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/301-01.mp4") }}
 
 {{ tag(t="video") }}

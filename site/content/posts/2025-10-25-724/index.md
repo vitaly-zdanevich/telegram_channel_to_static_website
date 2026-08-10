@@ -13,12 +13,32 @@ day = "2025-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/724"
 next_id = 726
 next_title = ""
-next_body = "#logo\n#homm3\n#newworldcomputing\nFrom the YouTube commend:\nQuite possibly the most stylish and badass game company intros\nSource"
+next_body = "#logo\n#homm3\n#newworldcomputing\nFrom the YouTube commend:\nQuite possibly the most stylish and badass game company intros\n\"New World Computing (2002)\")\nSource\") \"New World Computing (2002)\")"
 prev_id = 720
 prev_title = ""
 prev_body = "Downloaded by #wget a dying website indiegamewebsite.com\nThe command:\nwget --mirror --convert-links --adjust-extension --page-requisites --no-parent --no-host-directories\nTelegram limit is 4GB, to extract:\ncat indiegamewebsite.part.tar.xz. indiegamewebsite.tar.xz\ntar -xvJf indiegamewebsite.tar.xz\nAlso published to and\n#archivation\n#games\n#website"
-views = 32
+views = 33
 ids = [724, 725]
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2025-02-15-366/index.md"
+label = "#game #man2"
+
+[[extra.related]]
+path = "@/posts/2025-01-15-246/index.md"
+label = "#game #man2"
 +++
 
 {{ tag(t="game") }}  
@@ -28,6 +48,6 @@ ids = [724, 725]
 
 ****🪓**** **Наглядное сравнение боя Кратоса и Тора из God of War Ragnarök на PS1 и PS5**
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/724-01.mp4") }}
 
 {{ tag(t="video") }}

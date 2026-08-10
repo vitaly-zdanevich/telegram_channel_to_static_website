@@ -14,16 +14,28 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/436"
 og_image = "5384349651886533523_1253641595_456256403.jpg"
 next_id = 438
 next_title = ""
-next_body = "#dieantwoord\nSource"
+next_body = "#dieantwoord\nSource\")"
 prev_id = 435
 prev_title = ""
 prev_body = "#dieantwoord\nSource"
 views = 44
 ids = [436]
+
+[[extra.related]]
+path = "@/posts/2025-03-17-438/index.md"
+label = "#dieantwoord"
+
+[[extra.related]]
+path = "@/posts/2025-03-17-435/index.md"
+label = "#dieantwoord"
+
+[[extra.related]]
+path = "@/posts/2025-03-17-434/index.md"
+label = "#music #dieantwoord"
 +++
 
 {{ tag(t="die_antwoord") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:Die_Antwoord_Ninja_and_Yolandi_on_the_street.jpg)
 
-![](5384349651886533523_1253641595_456256403.jpg)
+{{ img(src="5384349651886533523_1253641595_456256403.jpg") }}

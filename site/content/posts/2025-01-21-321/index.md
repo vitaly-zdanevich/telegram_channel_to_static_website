@@ -16,12 +16,12 @@ next_body = "#girl"
 prev_id = 320
 prev_title = ""
 prev_body = "RIP Art Lebedev Studio"
-views = 40
+views = 41
 forwarded_from = "Двач"
 forwarded_from_url = "https://t.me/dvachannel/76304"
 ids = [321]
 +++
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/321-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -20,6 +20,14 @@ prev_title = ""
 prev_body = "#web3 audio platform, #opensource, on #ipfs, I uploaded #complexnumbers to it"
 views = 41
 ids = [176]
+
+[[extra.related]]
+path = "@/posts/2026-01-03-837/index.md"
+label = "#vr"
+
+[[extra.related]]
+path = "@/posts/2024-10-13-160/index.md"
+label = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
 +++
 
 {{ tag(t="vr") }}

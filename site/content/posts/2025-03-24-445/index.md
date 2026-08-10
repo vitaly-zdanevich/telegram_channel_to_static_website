@@ -17,8 +17,16 @@ next_body = "#teapot\n#update\nFrom"
 prev_id = 444
 prev_title = ""
 prev_body = "#monetization\n#spyware\n#security\n#webextension"
-views = 171
+views = 172
 ids = [445]
+
+[[extra.related]]
+path = "@/posts/2025-12-26-815/index.md"
+label = "#starwars #village #татуиново"
+
+[[extra.related]]
+path = "@/posts/2025-03-20-439/index.md"
+label = "#korea #ai #aivideo #starwars #demonflyingfox"
 +++
 
 {{ tag(t="elon_musk") }}  
@@ -28,6 +36,6 @@ ids = [445]
 
 [Source](https://www.instagram.com/p/DGwoexUtWij)
 
-{{ instagram(url="https://www.instagram.com/p/DGwoexUtWij/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/445-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-05-14T01:47:37+00:00
-description = "mount archive (zip, rar and others) as read-only fuse, love it fuse-archive f.rar /mnt/"
+description = "mount archive (zip, rar and others) as read-only fuse, love it fuse-archive f.rar /mnt/ · 260 stars · Languages: C++ 51%, Python 40%, Roff 7% · 496 commits · 28 forks · 1 open issues/PRs · Apache-2.0…"
 
 [taxonomies]
 days = ["2025-05-14"]
@@ -18,14 +18,18 @@ next_body = "I avoid mentioning that I run gentoo\nBut when I have to, I try to 
 prev_id = 527
 prev_title = ""
 prev_body = "Gold #games - because lovers recreate engines for the best one."
-views = 37
+views = 38
 ids = [528]
+
+[[extra.related]]
+path = "@/posts/2026-02-18-1115/index.md"
+label = "#zst is so much smaller #archive"
 +++
 
 {{ tag(t="mount") }} {{ tag(t="archive") }} ({{ tag(t="zip") }}, {{ tag(t="rar") }} and others) as read-only {{ tag(t="fuse") }}, love it  
 
 `fuse-archive f.rar ~/mnt/`  
 
-<https://github.com/google/fuse-archive>
+[https://github.com/google/fuse-archive](<https://github.com/google/fuse-archive> "FUSE file system for archives and compressed files (ZIP, RAR, 7Z, ISO, TGZ, XZ...) · 260 stars · Languages: C++ 51%, Python 40%, Roff 7% · 496 commits · 28 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-08-07")
 
-![](5269656982653106298_1226937627_456259706.jpg)
+{{ img(src="5269656982653106298_1226937627_456259706.jpg") }}

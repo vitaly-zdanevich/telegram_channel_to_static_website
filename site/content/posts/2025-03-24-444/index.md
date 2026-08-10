@@ -18,8 +18,16 @@ next_body = "#elonmusk\n#starwars\n#elections\n#romansalute\nSource"
 prev_id = 442
 prev_title = ""
 prev_body = "wow in #telegram we have a #crypto #wallet, and users can send money to their contacts, wow"
-views = 33
+views = 34
 ids = [444]
+
+[[extra.related]]
+path = "@/posts/2025-06-08-554/index.md"
+label = "#security #wish"
+
+[[extra.related]]
+path = "@/posts/2026-04-15-1640/index.md"
+label = "#firefox #webextension: after #tab close - switch to the previou…"
 +++
 
 {{ tag(t="monetization") }}  
@@ -27,6 +35,6 @@ ids = [444]
 {{ tag(t="security") }}  
 {{ tag(t="webextension") }}  
 
-<https://github.com/extesy/hoverzoom/discussions/670>
+[https://github.com/extesy/hoverzoom/discussions/670](<https://github.com/extesy/hoverzoom/discussions/670> "Google Chrome extension for zooming images on mouse hover · 2049 stars · Languages: JavaScript 91%, CSS 6%, HTML 2% · 2112 commits · 217 forks · 251 open issues/PRs · MIT · last push 2026-08-03")
 
-![](5406954455607405651_1258904686_456256595.jpg)
+{{ img(src="5406954455607405651_1258904686_456256595.jpg") }}

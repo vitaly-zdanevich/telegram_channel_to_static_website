@@ -18,10 +18,30 @@ next_body = "#webdesign"
 prev_id = 224
 prev_title = ""
 prev_body = "#game #ui #pathofexile2"
-views = 41
+views = 42
 ids = [225]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }} <https://handbookhmm.ru/nwcomputing>
 
-![](5444996905093424599_1267762134_456254935.jpg)
+{{ img(src="5444996905093424599_1267762134_456254935.jpg") }}

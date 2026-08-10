@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = ""
 views = 39
 ids = [222]
+
+[[extra.related]]
+path = "@/posts/2026-02-07-1099/index.md"
+label = "#love it - against #youtube #clickbait"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1097/index.md"
+label = "I love #display aspect ratio 16x10 because I have the special sp…"
+
+[[extra.related]]
+path = "@/posts/2025-11-02-731/index.md"
+label = "good #evernote #youtube #ifttt"
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1681/index.md"
+label = "#serp #armiesofexigo #google found a quote that exists on #youtu…"
+
+[[extra.related]]
+path = "@/posts/2025-10-20-709/index.md"
+label = "#wikidata script to show #youtube embeds, #spotify, #facebook an…"
 +++
 
 {{ tag(t="youtube") }}
 
-![](5424929739849720904_1263089883_456254536.jpg)
+{{ img(src="5424929739849720904_1263089883_456254536.jpg") }}

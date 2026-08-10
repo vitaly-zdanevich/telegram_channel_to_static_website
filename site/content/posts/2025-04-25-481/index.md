@@ -20,6 +20,10 @@ prev_title = ""
 prev_body = "#primeworld\n#belarussian\nAdding Belarusian language to the game"
 views = 34
 ids = [481]
+
+[[extra.related]]
+path = "@/posts/2026-07-27-2075/index.md"
+label = "#animal #mouse #grass #ground #watering #cares"
 +++
 
 {{ tag(t="sex") }}  
@@ -30,4 +34,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/7036943162752920/") }}
 
-![](5215716724605844762_1214378682_456260890.jpg)
+{{ img(src="5215716724605844762_1214378682_456260890.jpg") }}

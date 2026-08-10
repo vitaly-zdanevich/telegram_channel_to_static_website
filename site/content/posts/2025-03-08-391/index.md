@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#webdesign"
 views = 63
 ids = [391]
+
+[[extra.related]]
+path = "@/posts/2025-03-08-396/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-394/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-392/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-395/index.md"
+label = "#arsenmarkaryan #alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-588/index.md"
+label = "#game #demo #warhammer #dawnofwar #2004 If you see \"Failed to in…"
 +++
 
 {{ tag(t="alex_jones") }}  
@@ -26,8 +46,6 @@ ids = [391]
 
 Some people think that his speeches correlates with Warhammer.  
 
-[Source](https://youtu.be/NPrvkff5NIw)
+[Source](<https://youtu.be/NPrvkff5NIw> "Rogal Dorns Heroic Defence At The Siege Of Terra")
 
 {{ youtube(id="NPrvkff5NIw") }}
-
-📎 Rogal_Dorns_Heroic_Defence_At_The_Siege_Of_Terra_NPrvkff5NIw.webm *(not archived)*

@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#kazakhstan\nSource"
 views = 61
 ids = [340]
+
+[[extra.related]]
+path = "@/posts/2025-01-21-322/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-181/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-408/index.md"
+label = "#girl #face"
+
+[[extra.related]]
+path = "@/posts/2025-01-30-348/index.md"
+label = "#spider #girl"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
 +++
 
 {{ tag(t="girl") }}  
@@ -26,6 +46,6 @@ ids = [340]
 
 [Source](https://www.instagram.com/reel/DFDPBevMVD_)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/340-01.mp4") }}
 
 {{ tag(t="video") }}

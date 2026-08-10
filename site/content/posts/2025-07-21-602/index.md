@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "...addition to the previous post: that photo reminds me of this video ARK, from 2007\n#cgi\n#virus\n#ship\nSource"
 views = 44
 ids = [602]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-06-10-565/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
 
 [http://dar.linux.free.fr](http://dar.linux.free.fr/)
 
-![](5474557069047754958_1274644646_456257742.jpg)
+{{ img(src="5474557069047754958_1274644646_456257742.jpg") }}

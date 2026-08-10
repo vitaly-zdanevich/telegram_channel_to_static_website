@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#interior\n#cozy\n#bathroom\nFrom"
 views = 13
 ids = [1843]
+
+[[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-857/index.md"
+label = "#belarus #minsk 1941-1944"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2083/index.md"
+label = "#abandoned #veterinary #belarus"
+
+[[extra.related]]
+path = "@/posts/2026-03-22-1496/index.md"
+label = "#webdesign #belarus #belarussian"
 +++
 
 {{ tag(t="home") }}  
@@ -27,10 +47,10 @@ ids = [1843]
 {{ tag(t="belarus") }}  
 {{ tag(t="onliner") }}  
 
-From <https://youtu.be/WsW_9nZUGnE>  
+From [https://youtu.be/WsW_9nZUGnE](<https://youtu.be/WsW_9nZUGnE> "Уехал в глушь, чтобы строить дома из грязи")  
 
 <https://realt.onliner.by/2020/06/04/belorus-stroit-doma-iz-gryazi>
 
 {{ youtube(id="WsW_9nZUGnE") }}
 
-![](5305803182606851557_1235353570_460004837.jpg)
+{{ img(src="5305803182606851557_1235353570_460004837.jpg") }}

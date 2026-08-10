@@ -18,8 +18,28 @@ next_body = "#firefox\n#extension\nCopy non-latin links without #percent"
 prev_id = 1195
 prev_title = ""
 prev_body = "#architecture\n#blue\n#window\n#belarus\n#globustut\nSource"
-views = 3
+views = 4
 ids = [1196]
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1208/index.md"
+label = "#belarus #abandone #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-922/index.md"
+label = "#belarus #abandone #year2005 #globustut"
 +++
 
 {{ tag(t="abandone") }}  
@@ -30,4 +50,4 @@ ids = [1196]
 
 [Source](https://commons.wikimedia.org/wiki/File:048-454_%D0%97%D0%BB%D0%BE%D0%B1%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D0%BC%D0%B5%D0%BD%D1%8C%D1%88%D0%B8%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](5260412709797302306_1224785277_460001314.jpg)
+{{ img(src="5260412709797302306_1224785277_460001314.jpg") }}

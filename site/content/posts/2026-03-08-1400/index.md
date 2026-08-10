@@ -17,7 +17,7 @@ next_body = "Интересная пометка в Paint"
 prev_id = 1399
 prev_title = ""
 prev_body = "Отличная 3D карта общественного транспорта Токио в реальном времени\n#сервисы@daniilak\nDaniilak — Канал"
-views = 14
+views = 15
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1710"
 ids = [1400]
@@ -28,8 +28,8 @@ ids = [1400]
 
 Кстати, а какой-нибудь сайт поставит анимацию снежинок?
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1400-01.mp4") }}
 
-{{ video(src="02.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1400-02.mp4") }}
 
 {{ tag(t="video") }}

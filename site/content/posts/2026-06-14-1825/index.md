@@ -17,8 +17,20 @@ next_body = "#bus\n#architecture\nSource"
 prev_id = 1824
 prev_title = ""
 prev_body = "#wikipedia\n#armenian\n#ruwiki\n#language\n#table"
-views = 19
+views = 20
 ids = [1825]
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
+
+[[extra.related]]
+path = "@/posts/2026-02-01-1072/index.md"
+label = "#wikipedia article writing, in #vim"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-907/index.md"
+label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
 +++
 
 {{ tag(t="vim") }}  

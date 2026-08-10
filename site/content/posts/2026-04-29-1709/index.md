@@ -18,8 +18,28 @@ next_body = "#webdesign\n#dark"
 prev_id = 1703
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
-views = 16
+views = 17
 ids = [1709]
+
+[[extra.related]]
+path = "@/posts/2026-07-20-2061/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-30-1721/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-28-1703/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-28-1688/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-23-1674/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
 +++
 
 {{ tag(t="typography") }}  
@@ -30,22 +50,22 @@ ids = [1709]
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%94%D0%90_%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96_(%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE)--01--0104--010104-01-00004_image00004.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}
 
-![](09.jpg)
+{{ img(src="09.jpg") }}
 
-![](10.jpg)
+{{ img(src="10.jpg") }}

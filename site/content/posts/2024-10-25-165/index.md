@@ -19,10 +19,14 @@ prev_title = ""
 prev_body = "#javascript: guess the output\n[1,2,3]+[4,5,6]"
 views = 30
 ids = [165]
+
+[[extra.related]]
+path = "@/posts/2026-04-01-1565/index.md"
+label = "#alien #screenshot #horror #giger #gimp #green #rice"
 +++
 
 {{ tag(t="rice") }} [https://hyprland.org](https://hyprland.org/)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/165-01.mp4") }}
 
 {{ tag(t="video") }}

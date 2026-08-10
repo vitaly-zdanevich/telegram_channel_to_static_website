@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#cementery\n#belarus\n#globustut\n#year2005\nSource"
 views = 12
 ids = [1382]
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1294/index.md"
+label = "#abandone #castle #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1443/index.md"
+label = "#abandone #castle #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1385/index.md"
+label = "#castle #abandone #новогрудок #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-07-06-2010/index.md"
+label = "#belarus #ружаны #photo #abandone #castle #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-07-06-2004/index.md"
+label = "#belarus #коссово #photo #abandone #castle #year2005 #globustut"
 +++
 
 {{ tag(t="castle") }}  
@@ -30,4 +50,4 @@ ids = [1382]
 
 [Source](https://commons.wikimedia.org/wiki/File:055-111_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5291909495980233707_1232118694_460002283.jpg)
+{{ img(src="5291909495980233707_1232118694_460002283.jpg") }}

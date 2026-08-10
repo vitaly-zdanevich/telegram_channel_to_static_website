@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch\n#music\n#anime\n#russian\n#sugar\nSource"
 views = 39
 ids = [634]
+
+[[extra.related]]
+path = "@/posts/2026-01-18-892/index.md"
+label = "Storing my configs in #git #gitlab, because its open - #github i…"
+
+[[extra.related]]
+path = "@/posts/2025-05-27-542/index.md"
+label = "#git"
+
+[[extra.related]]
+path = "@/posts/2026-01-13-876/index.md"
+label = "#macOS: to install #git I need 25 GB"
+
+[[extra.related]]
+path = "@/posts/2025-06-27-591/index.md"
+label = "#git #gitgraph"
+
+[[extra.related]]
+path = "@/posts/2026-06-10-1817/index.md"
+label = "#logo #progy #github"
 +++
 
 {{ tag(t="dress") }}  
@@ -30,4 +50,4 @@ ids = [634]
 
 [Source](https://www.artificial-intelligence.store/cdn/shop/files/github-for-adults-t-shirt-unisex-black-m-273.jpg?v=1750800189)
 
-![](5280789993150872257_1229529733_456260289.jpg)
+{{ img(src="5280789993150872257_1229529733_456260289.jpg") }}

@@ -19,13 +19,31 @@ prev_title = ""
 prev_body = "#arsenmarkaryan\n#alexjones\n#warhammer"
 views = 63
 ids = [396]
+
+[[extra.related]]
+path = "@/posts/2025-03-08-394/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-392/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-391/index.md"
+label = "#alexjones #warhammer Some people think that his speeches correl…"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-395/index.md"
+label = "#arsenmarkaryan #alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-588/index.md"
+label = "#game #demo #warhammer #dawnofwar #2004 If you see \"Failed to in…"
 +++
 
 {{ tag(t="alex_jones") }}  
 {{ tag(t="warhammer") }}  
 
-[Source](https://youtu.be/WQmrZXewToE)
+[Source](<https://youtu.be/WQmrZXewToE> "Grey Knights when they see World Eaters")
 
 {{ youtube(id="WQmrZXewToE") }}
-
-📎 Grey Knights when they see World Eaters \[WQmrZXewToE\].webm *(not archived)*

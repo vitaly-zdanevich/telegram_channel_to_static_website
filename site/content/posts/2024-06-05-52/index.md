@@ -16,10 +16,10 @@ next_body = "#film\n#nightwatch\nNight Watch, love it"
 prev_id = 51
 prev_title = ""
 prev_body = "My another ebuild: the game Gigalomania - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help."
-views = 58
+views = 59
 ids = [52]
 +++
 
-I love this project: free personal VPN on WireGuard (integrated into Linux kernel), works on AWS free tier also <https://github.com/trailofbits/algo>  
+I love this project: free personal VPN on WireGuard (integrated into Linux kernel), works on AWS free tier also [https://github.com/trailofbits/algo](<https://github.com/trailofbits/algo> "Set up a personal VPN in the cloud · 30353 stars · Languages: Python 67%, Jinja 16%, Shell 15% · 1344 commits · 2363 forks · 78 open issues/PRs · AGPL-3.0 · last push 2026-08-05")  
 
 I found that on MacDonalds Wi-Fi I cannot update my system - looks like it block some activity, but I can with VPN.

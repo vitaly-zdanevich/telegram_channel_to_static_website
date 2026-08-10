@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#church\n#night\n#distortion\n#year2005\n#globustut\nFrom"
 views = 11
 ids = [1069]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [1069]
 {{ tag(t="wolt") }}  
 {{ tag(t="delivery") }}
 
-![](5471949199269104497_1274037454_460000113.jpg)
+{{ img(src="5471949199269104497_1274037454_460000113.jpg") }}

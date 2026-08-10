@@ -18,8 +18,28 @@ next_body = "#firefox\n#webextension: after #tab close - switch to the previousl
 prev_id = 1636
 prev_title = ""
 prev_body = "#linux\n#france\n#news\nFrance to ditch Windows for Linux to reduce reliance on US tech\nFrance is trying to move on from Microsoft Windows. The country said it plans to move some of its government computers currently running Windows to the open source operating system Linux to further reduce its reliance on U.S. technology.\nLinux is an open source operating system that is free to download and use, with various customized distributions that are tailored and designed for specific use cases or operations.\nIn a statement, French minister David Amiel said (translated) that the effort was to “regain control of our digital destiny” by relying less on U.S. tech companies. Amiel said that the French government can no longer accept that it doesn’t have control over its data and digital infrastructure."
-views = 22
+views = 23
 ids = [1637]
+
+[[extra.related]]
+path = "@/posts/2026-07-20-2061/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-30-1721/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-29-1709/index.md"
+label = "#typography #scan #preservation #russianempire #century19 Source…"
+
+[[extra.related]]
+path = "@/posts/2026-04-28-1703/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-28-1688/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
 +++
 
 {{ tag(t="preservation") }}  
@@ -29,8 +49,8 @@ ids = [1637]
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%94%D0%90_%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96--01_%D0%A4%D0%BE%D0%BD%D0%B4%D0%B8_%D0%B4%D0%BE_1917_%D1%80%D0%BE%D0%BA%D1%83--0230--010230-01-01583_image01086.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}

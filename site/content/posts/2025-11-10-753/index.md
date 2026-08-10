@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Another one is dead - the blue circles ended last month."
 views = 21
 ids = [753]
+
+[[extra.related]]
+path = "@/posts/2025-11-12-771/index.md"
+label = "#webdesign #webdesignold #xbox Wikidata"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-751/index.md"
+label = "#design #webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-12-772/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-11-768/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-11-767/index.md"
+label = "#webdesign #webdesignold"
 +++
 
 {{ tag(t="design") }}  
@@ -29,4 +49,4 @@ ids = [753]
 
 <https://www.xboxexclusive.com/reviews/Blood_Wake>
 
-![](5229215222705359666_1217521546_460000050.jpg)
+{{ img(src="5229215222705359666_1217521546_460000050.jpg") }}

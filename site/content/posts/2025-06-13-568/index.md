@@ -19,6 +19,14 @@ prev_title = ""
 prev_body = "#darkpattern"
 views = 23
 ids = [568]
+
+[[extra.related]]
+path = "@/posts/2025-06-13-570/index.md"
+label = "#meditation #dantealigieri"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-569/index.md"
+label = "#stat #oscar #books #dantealigieri"
 +++
 
 {{ tag(t="miracle") }}  
@@ -28,6 +36,6 @@ ids = [568]
 
 [Source](https://www.instagram.com/p/DKOrF01i-_4)
 
-{{ instagram(url="https://www.instagram.com/p/DKOrF01i-_4/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/568-01.mp4") }}
 
 {{ tag(t="video") }}

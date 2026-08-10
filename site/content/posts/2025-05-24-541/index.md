@@ -20,6 +20,22 @@ prev_title = ""
 prev_body = "#wikipedia\n#bewiki\n#logo\nSource"
 views = 59
 ids = [541]
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1330/index.md"
+label = "#webdesign #apple #icloud"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-507/index.md"
+label = "#design #apple #ipod"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-506/index.md"
+label = "#design #apple #ipod"
+
+[[extra.related]]
+path = "@/posts/2025-02-28-385/index.md"
+label = "#pelevin #apple #buddhism"
 +++
 
 {{ tag(t="iphone") }}  
@@ -30,4 +46,4 @@ ids = [541]
 
 [Source](https://commons.wikimedia.org/wiki/File:Apple_Newton_and_iPhone.jpg)
 
-![](5301205759415154029_1234283149_456258925.jpg)
+{{ img(src="5301205759415154029_1234283149_456258925.jpg") }}

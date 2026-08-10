@@ -18,8 +18,28 @@ next_body = "#armiesofexigo\n#tool\nСофт\nТам к софту есть ин
 prev_id = 1854
 prev_title = ""
 prev_body = "#llm did big #telegram #stickers, even the #pullrequest\nThe patch."
-views = 14
+views = 16
 ids = [1855]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1856/index.md"
+label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+
+[[extra.related]]
+path = "@/posts/2026-06-19-1844/index.md"
+label = "#armiesofexigo #abandone"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2026-05-31-1802/index.md"
+label = "With #llm I added 1920x1200 to #armiesofexigo #game And increase…"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1740/index.md"
+label = "#armiesofexigo: моя #лекция об игре, в Батуми #stillyoungbar Так…"
 +++
 
 {{ tag(t="armies_of_exigo") }} it own by {{ tag(t="electronic_arts") }}  
@@ -28,4 +48,4 @@ ids = [1855]
 
 <https://tmsearch.uspto.gov/search/search-results/78382355>
 
-![](5323590441770885239_1239494989_460005495.jpg)
+{{ img(src="5323590441770885239_1239494989_460005495.jpg") }}

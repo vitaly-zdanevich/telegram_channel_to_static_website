@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#monument\n#belarus\n#globustut\n#airplane\nSource"
 views = 12
 ids = [876]
+
+[[extra.related]]
+path = "@/posts/2025-05-27-542/index.md"
+label = "#git"
+
+[[extra.related]]
+path = "@/posts/2025-06-27-591/index.md"
+label = "#git #gitgraph"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1085/index.md"
+label = "#logo #gitlab #git"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-907/index.md"
+label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
+
+[[extra.related]]
+path = "@/posts/2025-12-21-810/index.md"
+label = "#software #tui #git"
 +++
 
 {{ tag(t="macOS") }}: to install {{ tag(t="git") }} I need 25 GB
 
-![](5417957474628735649_1261466526_460001953.jpg)
+{{ img(src="5417957474628735649_1261466526_460001953.jpg") }}

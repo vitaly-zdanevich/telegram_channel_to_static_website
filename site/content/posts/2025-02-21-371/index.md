@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2025-02-21T05:16:54+00:00
-description = "ad from 2012 guardian pigs Source"
+description = "ad from 2012 uk guardian pigs Source"
 
 [taxonomies]
 days = ["2025-02-21"]
-tags = ["ad", "guardian", "pigs"]
+tags = ["ad", "uk", "guardian", "pigs"]
 
 [extra]
 id = 371
@@ -17,16 +17,35 @@ next_body = "Most Shocking Second a Day Video\nStill The Most Shocking Second A 
 prev_id = 370
 prev_title = ""
 prev_body = "#ai\n#aicalls\nТы упомянул свой стартап по поиску жилья pro.placy.ai\n— …да, ИИ-ассистент, которму сейчас не подвластно только одно — открыть ключом дверь в квартиру, которую ты хочешь арендовать или купить. Всё остальное он делает — подбирает для тебя разные объёкты, общается с агентствами недвижимости, советует, что лучше, а что хуже. Надо будет — обзвонит агентства и уточнит по твоему запросу, есть ли возле конкретного дома два парковочных места."
-views = 53
+views = 54
 ids = [371]
+
+[[extra.related]]
+path = "@/posts/2025-02-21-372/index.md"
+label = "Most Shocking Second a Day Video Still The Most Shocking Second…"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-782/index.md"
+label = "#ad #retro #nokia"
 +++
 
 {{ tag(t="ad") }} from 2012  
+{{ tag(t="uk") }}  
 {{ tag(t="guardian") }}  
 {{ tag(t="pigs") }}  
 
-[Source](https://www.youtube.com/watch?v=vDGrfhJH1P4)
+[Source](<https://www.youtube.com/watch?v=vDGrfhJH1P4> "Cannes Lion Award-Winning \"Three Little Pigs advert\"")
 
 {{ youtube(id="vDGrfhJH1P4") }}
-
-📎 Cannes_Lion_Award_Winning_＂Three_Little_Pigs_advert＂_vDGrfhJH1P4.webm *(not archived)*

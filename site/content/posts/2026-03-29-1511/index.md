@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#monument\n#belarus\n#globustut\n#year2005\nSource"
 views = 15
 ids = [1511]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1546/index.md"
+label = "#abandone #columns #Оболь #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1387/index.md"
+label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="abandone") }}  
@@ -31,14 +51,14 @@ ids = [1511]
 
 [Source](https://commons.wikimedia.org/wiki/File:057-258_%D0%A1%D0%B2%D1%8F%D1%82%D1%81%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}

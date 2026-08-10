@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#village\n#black\n#abandone\n#Пелегринда\n#belarus\n#globustut\n#year2005\nSource"
 views = 19
 ids = [1531]
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1240/index.md"
+label = "#cross #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1258/index.md"
+label = "#cross #monument #belarus #globustut #year2005 Source,%D1%81%D0%…"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1521/index.md"
+label = "#cementery #virginmary #blue #monument #belarus #ивашковцы #glob…"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-924/index.md"
+label = "#belarus #monument #christianity #virginmary #nature #village #y…"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
 +++
 
 {{ tag(t="wood") }}  
@@ -31,4 +51,4 @@ ids = [1531]
 
 [Source](https://commons.wikimedia.org/wiki/File:059-266_%D0%93%D0%B5%D1%80%D0%B2%D1%8F%D1%82%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_19_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](5353089436800980032_1246363259_460002368.jpg)
+{{ img(src="5353089436800980032_1246363259_460002368.jpg") }}

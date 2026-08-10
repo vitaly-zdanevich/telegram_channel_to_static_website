@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#mp3\n#hardware\n#sandisc\nSexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008."
 views = 36
 ids = [770]
+
+[[extra.related]]
+path = "@/posts/2025-05-13-527/index.md"
+label = "Gold #games - because lovers recreate engines for the best one."
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-623/index.md"
+label = "#games #steam Can you imagine that, I know this guy"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-587/index.md"
+label = "In 2024 to #steam were published 19000 #games, its 52 games per…"
 +++
 
 {{ tag(t="games") }}  
@@ -31,4 +51,4 @@ ids = [770]
 
 [Source](https://web.archive.org/web/20090213071630/http://www.gamebrink.com/wp-content/uploads/2008/05/snkletter.jpg)
 
-![](5233719668441288226_1218570319_460000802.jpg)
+{{ img(src="5233719668441288226_1218570319_460000802.jpg") }}

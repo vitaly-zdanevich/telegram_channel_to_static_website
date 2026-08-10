@@ -27,4 +27,4 @@ ids = [838]
 
 [Source](https://www.linkedin.com/posts/bendingspoons_officially-aol-welcome-to-bending-spoons-activity-7412909368691687424-JKBM)
 
-![](5388832167523192169_1254685262_460000617.jpg)
+{{ img(src="5388832167523192169_1254685262_460000617.jpg") }}

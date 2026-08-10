@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#oldweb\n#anime"
 views = 6
 ids = [1363]
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1366/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1365/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1362/index.md"
+label = "#webdesign #oldweb #anime"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [1363]
 
 <https://calico.nekoweb.org/>
 
-![](5289657696166548348_1231594406_460002172.jpg)
+{{ img(src="5289657696166548348_1231594406_460002172.jpg") }}

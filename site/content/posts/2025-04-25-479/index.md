@@ -19,6 +19,18 @@ prev_title = ""
 prev_body = "Artwork for the podcast"
 views = 35
 ids = [479]
+
+[[extra.related]]
+path = "@/posts/2025-04-25-480/index.md"
+label = "#primeworld #belarussian Adding Belarusian language to the game"
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1679/index.md"
+label = "#log Still running my experiment about #porting #primeworld from…"
+
+[[extra.related]]
+path = "@/posts/2026-04-03-1568/index.md"
+label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
 +++
 
 {{ tag(t="article") }}  

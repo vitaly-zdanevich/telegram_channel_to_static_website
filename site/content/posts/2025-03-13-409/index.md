@@ -20,6 +20,10 @@ prev_title = ""
 prev_body = "#girl\n#face\nSource"
 views = 37
 ids = [409]
+
+[[extra.related]]
+path = "@/posts/2025-10-22-714/index.md"
+label = "#consciousness"
 +++
 
 {{ tag(t="universe") }}  
@@ -27,4 +31,4 @@ ids = [409]
 
 [Source](https://x.com/ArseniosMarkos/status/1831799696731599018)
 
-![](5375405086139870811_1251559026_456257115.jpg)
+{{ img(src="5375405086139870811_1251559026_456257115.jpg") }}

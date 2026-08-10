@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#music\n#blackdresses\nGAY UGLY AND HARD TO UNDERSTAND\n[Intro: Devi McCallion]\nUm, shoutout to Big Freedia\nNew Orleans Bounce music\nUhh, every Bitch Track ever made for\nNYC drag balls in the 90's before RuPaul made being gay uncool\n[Verse 1: Devi McCallion, Ada Rook]\nGay, ugly, and hard to understand\nI thought that people could handle it but they- but they can't\nBut they can't! Haha!\nI don't want to let you have it (have it)\nI don't want to let you have it (have it)\nI don't want to let you have it (have it)\nYou can't earn it\nThis shit is not on trend (On trend)\nThis shit is not on trend (On trend)\nThis shit is not pretend (Pretend)\nIt's a- (Ahh, ahh!)\nYeah, I'm just doing my shit (My shit)\nI'm just doing my shit (My shit)\nYou could never do it like this (Like this)"
 views = 12
 ids = [1384]
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1280/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1285/index.md"
+label = "#village #house #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-07-04-1922/index.md"
+label = "#belarus #шерстин #photo #village #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1259/index.md"
+label = "#woodencart #village #rural #belarus #globustut #year2005 Source…"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-921/index.md"
+label = "#belarus #architecture #nature #village #year2005 #globustut"
 +++
 
 {{ tag(t="village") }}  
@@ -29,4 +49,4 @@ ids = [1384]
 
 [Source](https://commons.wikimedia.org/wiki/File:055-219_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D0%B2%D0%B8%D0%B4_%D1%81_%D0%B7%D0%B0%D0%BC%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B3%D0%BE%D1%80%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5291909495980233763_1232118694_460002339.jpg)
+{{ img(src="5291909495980233763_1232118694_460002339.jpg") }}

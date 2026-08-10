@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#my\n#movie\n#korolishut"
 views = 32
 ids = [255]
+
+[[extra.related]]
+path = "@/posts/2025-01-17-254/index.md"
+label = "#my #movie #korolishut"
+
+[[extra.related]]
+path = "@/posts/2023-07-16-27/index.md"
+label = "#my #film #korolishut"
+
+[[extra.related]]
+path = "@/posts/2025-06-16-575/index.md"
+label = "#my #film #korolishut #alcohol s1e6"
+
+[[extra.related]]
+path = "@/posts/2025-06-16-574/index.md"
+label = "#korolishut"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-252/index.md"
+label = "#movie #anime"
 +++
 
 {{ tag(t="my") }}  
@@ -27,6 +47,6 @@ ids = [255]
 
 <https://coub.com/view/3c3p94>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/255-01.mp4") }}
 
 {{ tag(t="video") }}

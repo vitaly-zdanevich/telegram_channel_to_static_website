@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Wow #design"
 views = 65
 ids = [160]
+
+[[extra.related]]
+path = "@/posts/2026-01-03-837/index.md"
+label = "#vr"
+
+[[extra.related]]
+path = "@/posts/2024-11-04-176/index.md"
+label = "#vr"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
 +++
 
 LOVE this {{ tag(t="vr") }} {{ tag(t="game") }}, {{ tag(t="oculus_quest3") }} {{ tag(t="asgards_wrath2") }}  

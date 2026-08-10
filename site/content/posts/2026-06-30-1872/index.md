@@ -17,8 +17,28 @@ next_body = "#batumi\n#aksiarodak\n#year2024\n#my\n#lecture\n#wikimediacommons\n
 prev_id = 1871
 prev_title = ""
 prev_body = "#death\n#grandmother\n#drink\n#kitchen\n#spirit\nSource"
-views = 11
+views = 14
 ids = [1872]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2134/index.md"
+label = "#death #spirit #electro"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1871/index.md"
+label = "#death #grandmother #drink #kitchen #spirit"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
+
+[[extra.related]]
+path = "@/posts/2025-10-22-716/index.md"
+label = "#medicine #death"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2136/index.md"
+label = "#death #car #sound"
 +++
 
 {{ tag(t="death") }}  
@@ -27,6 +47,6 @@ ids = [1872]
 
 [Source](https://www.instagram.com/p/DaGOrhcAeU2/)
 
-{{ instagram(url="https://www.instagram.com/p/DaGOrhcAeU2/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1872-01.mp4") }}
 
 {{ tag(t="video") }}

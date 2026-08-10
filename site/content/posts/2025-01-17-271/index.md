@@ -16,12 +16,12 @@ next_body = ""
 prev_id = 270
 prev_title = ""
 prev_body = "#plastic\n#letov"
-views = 27
+views = 28
 ids = [271]
 +++
 
 <https://coub.com/view/2kf31s>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/271-01.mp4") }}
 
 {{ tag(t="video") }}

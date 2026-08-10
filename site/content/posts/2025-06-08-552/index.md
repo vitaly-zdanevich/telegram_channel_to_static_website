@@ -18,8 +18,28 @@ next_body = "#format\nSource"
 prev_id = 551
 prev_title = ""
 prev_body = "#music\n#oxxxymiron\n[Интро: Mikolt Gyuricza]\nSino hora sancta morta\nSino hora sancta morta\nSino hora sancta morta\n[Припев: Oxxxymiron]\nТам, где нас нет, — горит невиданный рассвет\nГде нас нет — море и рубиновый закат\nГде нас нет — лес как малахитовый браслет\nГде нас нет, на Лебединых островах\nГде нас нет, услышь меня и вытащи из омута\nВеди в мой вымышленный город, вымощенный золотом\nВо сне я вижу дали иноземные\nГде милосердие правит, где берега кисельные\n[Куплет 1: Oxxxymiron]\nЭй, йоу\n«Ну-ка, слёзы вытер!\nТо ли дело их сын, сразу видно, что он лидер»\n«Слышишь, если спросят, то ты ничего не видел»\n«Ай, он весь в отца, из него ничего не выйдет»\n«Кто ж её не знает-то, всему двору сосала»\n«Это что такое? Руки! Я кому сказала?»\n«Всё разворовали, а бывал непобедимым»\n«Ваш ребёнок замкнут и не ладит с коллективом»\n«Марш в детский сад!» «Дружный класс». «Дважды два»\n«Раз на раз, баш на баш». «Чё, зассал? Не пацан?»\n«Токо глянь на себя, тут фингал, там синяк\nХулиган! Стыдоба! Как ты смел, кем…"
-views = 45
+views = 46
 ids = [552]
+
+[[extra.related]]
+path = "@/posts/2025-11-06-743/index.md"
+label = "Emotional reasoning is a cognitive process by which an individua…"
+
+[[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1878/index.md"
+label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+
+[[extra.related]]
+path = "@/posts/2025-10-22-716/index.md"
+label = "#medicine #death"
+
+[[extra.related]]
+path = "@/posts/2025-07-27-613/index.md"
+label = "#arsenmarkaryan #hairs В волосах первородная космическая сила. Л…"
 +++
 
 {{ tag(t="arsen_markaryan") }}  

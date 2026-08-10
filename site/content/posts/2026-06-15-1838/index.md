@@ -18,8 +18,28 @@ next_body = "#interior\n#refrigerator\n#green\nFrom"
 prev_id = 1837
 prev_title = ""
 prev_body = "#dolphin\n#bomb\n#bible\nFrom"
-views = 17
+views = 18
 ids = [1838]
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1835/index.md"
+label = "#xbox #gameconsole #tech #retro #green From"
+
+[[extra.related]]
+path = "@/posts/2025-11-12-771/index.md"
+label = "#webdesign #webdesignold #xbox Wikidata"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1834/index.md"
+label = "#playstation #playstation2 #gameconsole #street From"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-753/index.md"
+label = "#design #webdesign #webdesignold #xbox"
+
+[[extra.related]]
+path = "@/posts/2026-06-20-1847/index.md"
+label = "#game #trailer #music #year2009 #halo #xbox #xbox360 One of the…"
 +++
 
 {{ tag(t="xbox") }}  
@@ -32,4 +52,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015149142/") }}
 
-![](5296434402940363410_1233172231_460006034.jpg)
+{{ img(src="5296434402940363410_1233172231_460006034.jpg") }}

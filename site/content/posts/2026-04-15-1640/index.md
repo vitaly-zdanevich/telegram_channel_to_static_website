@@ -18,8 +18,28 @@ next_body = "#podcast\n#my\n#health\n#startup\n#geogorgiladze\nГеоргий Г
 prev_id = 1637
 prev_title = ""
 prev_body = "#preservation\n#century19\n#scan\n#hand\nSource"
-views = 24
+views = 25
 ids = [1640]
+
+[[extra.related]]
+path = "@/posts/2024-07-21-94/index.md"
+label = "#firefox vertical tabs with plus custom CSS from"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1083/index.md"
+label = "Why #facebook is so slow : #firefox"
+
+[[extra.related]]
+path = "@/posts/2025-11-17-781/index.md"
+label = "#js Out of memory, but RAM is used to 64% #firefox"
+
+[[extra.related]]
+path = "@/posts/2025-03-11-403/index.md"
+label = "I have custom CSS for a dozen of web services. Custom CSS for #f…"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1197/index.md"
+label = "#firefox #extension Copy non-latin links without #percent"
 +++
 
 {{ tag(t="firefox") }}  
@@ -27,4 +47,4 @@ ids = [1640]
 
 <https://addons.mozilla.org/en-US/firefox/addon/select-after-closing-current/>
 
-![](5404543896626336747_1258343434_460002283.jpg)
+{{ img(src="5404543896626336747_1258343434_460002283.jpg") }}

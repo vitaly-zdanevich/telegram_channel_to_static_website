@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#minsk\n1941-1944\nSource"
 views = 17
 ids = [858]
+
+[[extra.related]]
+path = "@/posts/2026-01-08-859/index.md"
+label = "#belarus #iŭje #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-866/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-865/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-864/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-863/index.md"
+label = "#belarus #building #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [858]
 
 [Source](https://commons.wikimedia.org/wiki/File:Globustut_183_%D0%98%D0%B2%D1%8C%D0%B5.jpg)
 
-![](5404782293081068312_1258398940_460002072.jpg)
+{{ img(src="5404782293081068312_1258398940_460002072.jpg") }}

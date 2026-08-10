@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#building\n#castle\n#abandoned\n#globustut\nSource"
 views = 14
 ids = [844]
+
+[[extra.related]]
+path = "@/posts/2026-01-07-843/index.md"
+label = "#belarus #building #castle #abandoned #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-852/index.md"
+label = "#belarus #building #abandoned #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-851/index.md"
+label = "#belarus #building #abandoned #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-866/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-865/index.md"
+label = "#belarus #building #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,12 +50,12 @@ ids = [844]
 
 [Source](https://commons.wikimedia.org/wiki/File:022-466_%D0%94%D0%B8%D0%BA%D1%83%D1%88%D0%BA%D0%B8,_09-10-2004.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

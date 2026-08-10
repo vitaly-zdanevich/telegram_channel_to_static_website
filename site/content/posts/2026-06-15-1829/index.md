@@ -18,8 +18,20 @@ next_body = "#religion\n#jesus"
 prev_id = 1827
 prev_title = ""
 prev_body = "#game\n#beyoundgoodandevil\n#pig\n#evolution\n#sequel\n#pain\nFrom official"
-views = 20
+views = 21
 ids = [1829]
+
+[[extra.related]]
+path = "@/posts/2026-07-26-2070/index.md"
+label = "#psp #vita #game"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1835/index.md"
+label = "#xbox #gameconsole #tech #retro #green From"
+
+[[extra.related]]
+path = "@/posts/2025-06-01-545/index.md"
+label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
 +++
 
 {{ tag(t="tech") }}  
@@ -28,4 +40,4 @@ ids = [1829]
 
 {{ pinterest(url="https://www.pinterest.com/pin/626844841927915392/") }}
 
-![](5296434402940362934_1233172231_460005558.jpg)
+{{ img(src="5296434402940362934_1233172231_460005558.jpg") }}

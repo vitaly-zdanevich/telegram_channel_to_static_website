@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#polotsk\n#church\n#globustut\nSource"
 views = 17
 ids = [857]
+
+[[extra.related]]
+path = "@/posts/2025-12-24-811/index.md"
+label = "#minsk inside what country"
+
+[[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2083/index.md"
+label = "#abandoned #veterinary #belarus"
+
+[[extra.related]]
+path = "@/posts/2026-03-22-1496/index.md"
+label = "#webdesign #belarus #belarussian"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [857]
 
 [Source](https://www.facebook.com/share/p/1ZzTCvYgwi/)
 
-![](5404320244794330224_1258291361_460000368.jpg)
+{{ img(src="5404320244794330224_1258291361_460000368.jpg") }}

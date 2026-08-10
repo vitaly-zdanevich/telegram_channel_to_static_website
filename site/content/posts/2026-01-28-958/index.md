@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#winter\n#куноса\n#year2005\n#globustut\nFrom"
 views = 7
 ids = [958]
+
+[[extra.related]]
+path = "@/posts/2026-01-28-961/index.md"
+label = "#belarus #architecture #church #несвиж #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-925/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1426/index.md"
+label = "#church #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,4 +50,4 @@ ids = [958]
 
 From [https://commons.wikimedia.org/wiki/File:042-319\_Несвиж,\_фарный\_костел\_(внутри),\_снято\_29\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:042-319_%D0%9D%D0%B5%D1%81%D0%B2%D0%B8%D0%B6,_%D1%84%D0%B0%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB_(%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5460806022583750231_1271442981_460000855.jpg)
+{{ img(src="5460806022583750231_1271442981_460000855.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#abandone\n#church\n#мартиново\n#year2005\n#globustut\nFrom"
 views = 4
 ids = [1037]
+
+[[extra.related]]
+path = "@/posts/2026-01-20-914/index.md"
+label = "#belarus #pillar #abandone #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1058/index.md"
+label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1015/index.md"
+label = "#belarus #abandone #winter #почаевичи #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-1000/index.md"
+label = "#belarus #abandone #winter #novogrudok #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-19-905/index.md"
+label = "#belarus #architecture #abandone #winter #year2004 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -32,12 +52,12 @@ ids = [1037]
 
 From [https://commons.wikimedia.org/wiki/File:045-286\_Бочейково,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-286_%D0%91%D0%BE%D1%87%D0%B5%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

@@ -1,1 +1,1 @@
-<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>
+<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}" title="{{ config.extra.tag_counts | get(key=t, default='') }}">#{{ t }}</a>

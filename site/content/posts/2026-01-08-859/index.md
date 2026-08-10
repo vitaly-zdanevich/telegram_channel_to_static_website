@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#iŭje\n#building\n#globustut\nSource"
 views = 16
 ids = [859]
+
+[[extra.related]]
+path = "@/posts/2026-01-08-858/index.md"
+label = "#belarus #iŭje #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-866/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-865/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-864/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-863/index.md"
+label = "#belarus #building #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [859]
 
 [Source](https://commons.wikimedia.org/wiki/File:Globustut_187_%D0%98%D0%B2%D1%8C%D0%B5.jpg)
 
-![](5404782293081068314_1258398940_460002074.jpg)
+{{ img(src="5404782293081068314_1258398940_460002074.jpg") }}

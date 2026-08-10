@@ -18,8 +18,28 @@ next_body = "wow #wikibase/#wikidata in #cli"
 prev_id = 1491
 prev_title = ""
 prev_body = "#telegram added a feature request\nAdd option to cache/prefetch all or selected channels\nLike podcasts app can download episodes when Wi-Fi is available.\nWhy: when I have wi-fi at home but mobile network is not working on street."
-views = 20
+views = 21
 ids = [1492]
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1438/index.md"
+label = "#design #typography #newspaper #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2024/index.md"
+label = "#typography #scan"
+
+[[extra.related]]
+path = "@/posts/2025-04-15-470/index.md"
+label = "Source #sakartvelo #taxes"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
 +++
 
 {{ tag(t="typography") }}  
@@ -30,4 +50,4 @@ ids = [1492]
 
 [Source](https://commons.wikimedia.org/wiki/File:Isari_1907_N213-.pdf)
 
-![](5321398183088820949_1238984564_460002005.jpg)
+{{ img(src="5321398183088820949_1238984564_460002005.jpg") }}

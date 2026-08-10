@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#anime\n#oldweb"
 views = 9
 ids = [1366]
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1365/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1363/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1362/index.md"
+label = "#webdesign #oldweb #anime"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [1366]
 
 <https://inoue.cafe/>
 
-![](5289657696166548381_1231594406_460002205.jpg)
+{{ img(src="5289657696166548381_1231594406_460002205.jpg") }}

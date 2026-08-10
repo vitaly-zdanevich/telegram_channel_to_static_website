@@ -18,8 +18,16 @@ next_body = "Internet Archive ceramic archivists\n“Brewster Kahle, founder of 
 prev_id = 1125
 prev_title = ""
 prev_body = "#webdesign\n#gentoo\n#china"
-views = 14
+views = 15
 ids = [1126]
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1680/index.md"
+label = "#preservation #internetarchive #short #music #tape #audio"
+
+[[extra.related]]
+path = "@/posts/2025-04-18-474/index.md"
+label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
 +++
 
 {{ tag(t="internet_archive") }}  
@@ -28,4 +36,4 @@ ids = [1126]
 
 <https://commons.wikimedia.org/wiki/File:Internet_Archive_Headquarters_-_51434767124.jpg>
 
-![](5249225806049908841_1222180623_460003433.jpg)
+{{ img(src="5249225806049908841_1222180623_460003433.jpg") }}

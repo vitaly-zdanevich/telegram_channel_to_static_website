@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#zst is so much smaller #archive"
 views = 13
 ids = [1116]
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+
+[[extra.related]]
+path = "@/posts/2025-02-02-349/index.md"
+label = "#translate #pain"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
 +++
 
 {{ tag(t="pain") }}  
@@ -35,4 +55,4 @@ The old one
 
 <https://t.me/kulinkovich_live>
 
-![](5235963432371165215_1219092736_460003359.jpg)
+{{ img(src="5235963432371165215_1219092736_460003359.jpg") }}

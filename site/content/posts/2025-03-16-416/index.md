@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#cat\n#robot\n#lasers\nSource"
 views = 43
 ids = [416]
+
+[[extra.related]]
+path = "@/posts/2025-02-10-355/index.md"
+label = "#music #anime #rammstein"
+
+[[extra.related]]
+path = "@/posts/2025-02-22-377/index.md"
+label = "#music #rammstein #cult #drum"
+
+[[extra.related]]
+path = "@/posts/2025-02-10-354/index.md"
+label = "#music #anime #tatu #rammstein"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2131/index.md"
+label = "#music #germany #goth #cassette #cementery"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
 +++
 
 {{ tag(t="music") }}  
@@ -28,6 +48,6 @@ ids = [416]
 
 [Source](https://www.instagram.com/p/DHLThSoKq1v)
 
-{{ instagram(url="https://www.instagram.com/p/DHLThSoKq1v/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/416-01.mp4") }}
 
 {{ tag(t="video") }}

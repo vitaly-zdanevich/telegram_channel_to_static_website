@@ -18,11 +18,27 @@ next_body = "This is how in #go we remove an element from a collection\nfunc rm(
 prev_id = 1747
 prev_title = ""
 prev_body = "Oh my...\n#leetcode"
-views = 28
+views = 29
 ids = [1749]
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1747/index.md"
+label = "Oh my... #leetcode"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1746/index.md"
+label = "#leetcode is often produce #error"
+
+[[extra.related]]
+path = "@/posts/2026-05-12-1753/index.md"
+label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-571/index.md"
+label = "#livecoding #batman #binarysearch #leetcode with games :"
 +++
 
 {{ tag(t="leetcode") }}  
 {{ tag(t="validation") }}
 
-![](5465571945928661644_1272552634_460003980.jpg)
+{{ img(src="5465571945928661644_1272552634_460003980.jpg") }}

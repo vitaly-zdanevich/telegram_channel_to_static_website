@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#castle\n#globustut\nKosava Castle\nSource"
 views = 11
 ids = [886]
+
+[[extra.related]]
+path = "@/posts/2026-01-16-888/index.md"
+label = "#sql #quarry #globustut #commons: red category links with one or…"
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1123/index.md"
+label = "#commons"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1093/index.md"
+label = "#commons My account is big, my account is very big"
+
+[[extra.related]]
+path = "@/posts/2025-06-19-584/index.md"
+label = "#commons TODO list"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1306/index.md"
+label = "Magic that I can say #codex to download all scan - and I get it,…"
 +++
 
 {{ tag(t="sql") }}  
@@ -46,4 +66,4 @@ SELECT
 
 <https://quarry.wmcloud.org/query/101097>
 
-![](5429641422056394562_1264186907_460001090.jpg)
+{{ img(src="5429641422056394562_1264186907_460001090.jpg") }}

@@ -17,8 +17,28 @@ next_body = "Batumi real estate market"
 prev_id = 329
 prev_title = ""
 prev_body = "#homm3\nSource"
-views = 45
+views = 46
 ids = [330]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1764/index.md"
+label = "#music #sunboy Остров в океане From Про исполнителя"
+
+[[extra.related]]
+path = "@/posts/2026-04-19-1648/index.md"
+label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
 +++
 
 {{ tag(t="music") }}  

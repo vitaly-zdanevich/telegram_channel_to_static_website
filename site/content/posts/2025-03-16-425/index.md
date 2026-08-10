@@ -17,8 +17,28 @@ next_body = "#life\n#esoteric\n#brodsky\nSource"
 prev_id = 424
 prev_title = ""
 prev_body = "#businessidea\n#china\n#rave\n#health\n#fitness\n#music\nSource"
-views = 87
+views = 88
 ids = [425]
+
+[[extra.related]]
+path = "@/posts/2025-03-16-423/index.md"
+label = "#psy #depression"
+
+[[extra.related]]
+path = "@/posts/2025-02-02-349/index.md"
+label = "#translate #pain"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
+
+[[extra.related]]
+path = "@/posts/2026-02-18-1116/index.md"
+label = "#pain #ad #event #sergeykulinkovich The old one Унижение и боль…"
+
+[[extra.related]]
+path = "@/posts/2025-02-22-376/index.md"
+label = "Are you winning son? Happy Birthday #pain #death #loss #miss"
 +++
 
 {{ tag(t="pain") }}  
@@ -28,6 +48,6 @@ ids = [425]
 
 [Source](https://www.instagram.com/p/DFP43LxpnEv)
 
-{{ instagram(url="https://www.instagram.com/p/DFP43LxpnEv/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/425-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -20,6 +20,14 @@ prev_title = ""
 prev_body = "#ad\n#newspaper\n#design\n#toxic\nFrom"
 views = 12
 ids = [1842]
+
+[[extra.related]]
+path = "@/posts/2025-01-28-341/index.md"
+label = "#bathroom"
+
+[[extra.related]]
+path = "@/posts/2026-06-16-1839/index.md"
+label = "#interior #refrigerator #green From"
 +++
 
 {{ tag(t="interior") }}  
@@ -30,4 +38,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015161786/") }}
 
-![](5305263081879445551_1235227818_460005423.jpg)
+{{ img(src="5305263081879445551_1235227818_460005423.jpg") }}

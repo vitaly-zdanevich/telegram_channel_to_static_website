@@ -23,18 +23,18 @@ ids = [116]
 
 Not my.
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/media/11a7fd52e3dd742e.jpg") }}
 
-![](05.jpg)
+{{ img(src="https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/media/11a7fd52e3dd742e.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}

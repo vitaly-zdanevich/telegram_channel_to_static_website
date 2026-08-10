@@ -20,6 +20,10 @@ prev_title = ""
 prev_body = "#vibecoding without human review is #gambling\nFrom"
 views = 15
 ids = [936]
+
+[[extra.related]]
+path = "@/posts/2025-10-25-724/index.md"
+label = "#game #godofwar #playstation #compare 🪓 Наглядное сравнение боя…"
 +++
 
 {{ tag(t="gta3") }}  
@@ -27,6 +31,6 @@ ids = [936]
 
 [Original](https://gta.fandom.com/wiki/Evidence_Dash) VS {{ tag(t="ps5") }} Definitive Edition
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

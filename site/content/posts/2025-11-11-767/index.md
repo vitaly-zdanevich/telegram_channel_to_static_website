@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#about\n#gamejournalism\n#webdesign\n#webdesignold\nVideo Game Talk was started in 1853 by four Irish coal mining brothers who immigrated to Pennsylvania to escape Ireland's Potato Famine of 1845-1849. Seeking to make a life for their children, they followed their dream of starting up a video game review website. Unfortunately, neither video games nor the Web existed at the time, and so they sold the business and became boxers. One of the founders, a Mr. Tom \"Ginger Fury\" O'Mahony, actually went on to achieve relative success in his new career.\nVideo Game Talk passed through a number of hands throughout the next century and a half until it finally ended up in the hands of Geoffrey Kleinman of Kleinman.com, Inc. in 2002. Mr. Kleinman fulfilled the original wishes of the brothers by registering the domain name (\"VideoGameTalk.com\") and employing reviewers, something no other owner had thought to do."
 views = 34
 ids = [767]
+
+[[extra.related]]
+path = "@/posts/2025-11-12-772/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-11-768/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-779/index.md"
+label = "#webdesign #webdesignold #webdesigngames Year: 2000"
+
+[[extra.related]]
+path = "@/posts/2025-11-12-771/index.md"
+label = "#webdesign #webdesignold #xbox Wikidata"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-751/index.md"
+label = "#design #webdesign #webdesignold"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [767]
 
 <https://web.archive.org/web/20080509195658/http://www.thewiire.com/review/384/3/SEGA_Bass_Fishing>
 
-![](5228869099880911243_1217440958_460001675.jpg)
+{{ img(src="5228869099880911243_1217440958_460001675.jpg") }}

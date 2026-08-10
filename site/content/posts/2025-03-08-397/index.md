@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#alexjones\n#warhammer\nSource"
 views = 45
 ids = [397]
+
+[[extra.related]]
+path = "@/posts/2025-09-20-675/index.md"
+label = "#smell #dating"
+
+[[extra.related]]
+path = "@/posts/2025-07-27-613/index.md"
+label = "#arsenmarkaryan #hairs В волосах первородная космическая сила. Л…"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-395/index.md"
+label = "#arsenmarkaryan #alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-399/index.md"
+label = "#ironman #arsenmarkaryan #meaning #comparison #motivation"
+
+[[extra.related]]
+path = "@/posts/2025-06-08-552/index.md"
+label = "#arsenmarkaryan #health #medicine #psy #mantoux #mercury"
 +++
 
 {{ tag(t="arsen_markaryan") }}  

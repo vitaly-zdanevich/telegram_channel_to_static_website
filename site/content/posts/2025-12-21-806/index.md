@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#anime\n#logo\n#mascon\n#design"
 views = 40
 ids = [806]
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2025-10-03-696/index.md"
+label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+
+[[extra.related]]
+path = "@/posts/2025-05-29-543/index.md"
+label = "Wow #blackandwhite #webdesign is interesting"
+
+[[extra.related]]
+path = "@/posts/2024-06-11-53/index.md"
+label = "#film #nightwatch Night Watch, love it"
 +++
 
 {{ tag(t="alien") }}  
@@ -31,4 +51,4 @@ ids = [806]
 
 [Source](https://www.avpgalaxy.net/alien-movies/alien-covenant/gallery/posters/)
 
-![](5350719435192339929_1245811450_460000729.jpg)
+{{ img(src="5350719435192339929_1245811450_460000729.jpg") }}

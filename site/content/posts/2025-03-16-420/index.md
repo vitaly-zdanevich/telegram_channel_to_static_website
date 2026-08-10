@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#music\n#cats\n#ai\nSource"
 views = 32
 ids = [420]
+
+[[extra.related]]
+path = "@/posts/2025-03-16-419/index.md"
+label = "#music #cats #ai"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
 +++
 
 {{ tag(t="music") }}  
@@ -27,6 +47,6 @@ ids = [420]
 
 [Source](https://www.instagram.com/p/DGHcjNII9IY)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/420-01.mp4") }}
 
 {{ tag(t="video") }}

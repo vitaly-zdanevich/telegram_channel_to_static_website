@@ -19,12 +19,32 @@ prev_title = ""
 prev_body = "#map\n#batumi\nBetween the Black Sea and the mountains."
 views = 15
 ids = [1735]
+
+[[extra.related]]
+path = "@/posts/2025-11-08-744/index.md"
+label = "#school in #sakartvelo #architecture #books"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-921/index.md"
+label = "#belarus #architecture #nature #village #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2025-12-10-796/index.md"
+label = "#architecture Дом со щуками From"
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-06-14-1826/index.md"
+label = "#bus #architecture"
 +++
 
 {{ tag(t="architecture") }} of {{ tag(t="village") }} houses in {{ tag(t="sakartvelo") }}  
 
 [Source](https://t.me/batumchik/72665)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1735-01.mp4") }}
 
 {{ tag(t="video") }}

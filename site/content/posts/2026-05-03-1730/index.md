@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote (#cli of #evernote) to #rust, a few iterations - and I got #reeknote - faster geeknote."
 views = 17
 ids = [1730]
+
+[[extra.related]]
+path = "@/posts/2025-02-14-360/index.md"
+label = "#religion"
+
+[[extra.related]]
+path = "@/posts/2025-02-08-351/index.md"
+label = "#religion"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1830/index.md"
+label = "#religion #jesus"
+
+[[extra.related]]
+path = "@/posts/2025-05-29-543/index.md"
+label = "Wow #blackandwhite #webdesign is interesting"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-420/index.md"
+label = "#music #cats #meme"
 +++
 
 {{ tag(t="cats") }}  
@@ -29,4 +49,4 @@ ids = [1730]
 
 [Source](https://www.instagram.com/p/DID3oPGsGLA/)
 
-![](5454183865913119800_1269901140_460002360.jpg)
+{{ img(src="5454183865913119800_1269901140_460002360.jpg") }}

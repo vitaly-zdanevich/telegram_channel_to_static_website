@@ -1,1 +1,1 @@
-<video controls preload="metadata" src="{{ page.permalink | safe }}{{ src }}"></video>
+<video controls preload="metadata" src="{% if src is starting_with('http') or src is starting_with('/') %}{{ src | safe }}{% else %}{{ page.permalink | safe }}{{ src }}{% endif %}"></video>

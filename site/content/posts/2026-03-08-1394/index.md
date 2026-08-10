@@ -17,10 +17,14 @@ next_body = "Да, нейросети упрощают разработку.\nН
 prev_id = 1393
 prev_title = ""
 prev_body = "#webdesign\n#pink\n#hellokitty\n#oldweb"
-views = 8
+views = 9
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1903"
 ids = [1394]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1399/index.md"
+label = "Отличная 3D карта общественного транспорта Токио в реальном врем…"
 +++
 
 Кто-то сделал полноценный 3D-симулятор электрических цепей, который работает прямо в браузере  
@@ -33,6 +37,6 @@ ids = [1394]
 
 {{ tag(t="сервисы@daniilak") }}
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1394-01.mp4") }}
 
 {{ tag(t="video") }}

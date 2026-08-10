@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Wow for the #kernel we have not only bright make menuconfig but black make nconfig"
 views = 10
 ids = [1269]
+
+[[extra.related]]
+path = "@/posts/2026-01-29-1013/index.md"
+label = "#webdesign #blue #batumi"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [1269]
 
 <https://www.osinit.com/#contacts>
 
-![](5269742426736234967_1226957521_460001751.jpg)
+{{ img(src="5269742426736234967_1226957521_460001751.jpg") }}

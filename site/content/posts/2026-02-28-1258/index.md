@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#cementery\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE7%D0%BC%D0%B0%D1%8F2005.jpg)"
 views = 5
 ids = [1258]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1240/index.md"
+label = "#cross #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1271/index.md"
+label = "#stones #monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1531/index.md"
+label = "#wood #cross #virginmary #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1260/index.md"
+label = "#monument #bird #eagle #belarus #globustut #year2005"
 +++
 
 {{ tag(t="cross") }}  
@@ -30,4 +50,4 @@ ids = [1258]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-061_%D0%92%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%BE_(%D0%92%D0%BE%D0%BB%D0%BE%D0%B6_%D1%80-%D0%BD),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5264957012829738517_1225843330_460002837.jpg)
+{{ img(src="5264957012829738517_1225843330_460002837.jpg") }}

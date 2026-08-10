@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#design\n#software\n#gthumb\n#scan\n#preservation"
 views = 6
 ids = [1204]
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2026-04-02-1567/index.md"
+label = "#preservation #wikimediacommons #unavailable"
+
+[[extra.related]]
+path = "@/posts/2025-12-30-828/index.md"
+label = "#preservation #library #books Page 68"
+
+[[extra.related]]
+path = "@/posts/2025-12-29-826/index.md"
+label = "#design #preservation #year1885"
+
+[[extra.related]]
+path = "@/posts/2025-12-14-799/index.md"
+label = "#preservation #games #beard From"
 +++
 
 {{ tag(t="calligraphy") }}  
 {{ tag(t="microfilm") }}  
 {{ tag(t="preservation") }}
 
-![](5264957012829737994_1225843330_460002314.jpg)
+{{ img(src="5264957012829737994_1225843330_460002314.jpg") }}

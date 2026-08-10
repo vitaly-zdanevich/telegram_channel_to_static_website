@@ -20,6 +20,10 @@ prev_title = ""
 prev_body = "#ai\n#ruwiki\nNo trust in robots."
 views = 17
 ids = [1111]
+
+[[extra.related]]
+path = "@/posts/2025-11-17-781/index.md"
+label = "#js Out of memory, but RAM is used to 64% #firefox"
 +++
 
 {{ tag(t="js") }}  
@@ -28,4 +32,4 @@ I downloaded it - really 0 bytes.
 
 <http://vanilla-js.com/>
 
-![](5224374876167148716_1216394565_460002476.jpg)
+{{ img(src="5224374876167148716_1216394565_460002476.jpg") }}

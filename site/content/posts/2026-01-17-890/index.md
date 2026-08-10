@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#globustut\nSource"
 views = 76
 ids = [890]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 +++
 
 {{ tag(t="game") }}  
@@ -33,4 +53,4 @@ ids = [890]
 
 <https://en.wikipedia.org/wiki/Ultracore>
 
-![](5431893221870079798_1264711195_460001078.jpg)
+{{ img(src="5431893221870079798_1264711195_460001078.jpg") }}

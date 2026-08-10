@@ -17,8 +17,28 @@ next_body = "#preservation\n#century19\n#scan\n#hand\nSource"
 prev_id = 1629
 prev_title = ""
 prev_body = "#typography\n#russianempire\n#ukraine\n#century18\nSource"
-views = 22
+views = 24
 ids = [1636]
+
+[[extra.related]]
+path = "@/posts/2026-03-21-1494/index.md"
+label = "#steam: almost 25% is on #linux?"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1090/index.md"
+label = "#linux #gamex"
+
+[[extra.related]]
+path = "@/posts/2025-04-11-465/index.md"
+label = "#windows #linux"
+
+[[extra.related]]
+path = "@/posts/2025-10-19-706/index.md"
+label = "#wikidata #linux #warcraft3"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1091/index.md"
+label = "#linux #game #wwii #landing #ad #warthunder warthunder.com"
 +++
 
 {{ tag(t="linux") }}  

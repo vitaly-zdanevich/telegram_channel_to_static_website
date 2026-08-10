@@ -20,10 +20,14 @@ prev_title = ""
 prev_body = "#design\n#preservation\n#year1885"
 views = 33
 ids = [827]
+
+[[extra.related]]
+path = "@/posts/2026-01-25-943/index.md"
+label = "#aws #cpu #memory #ram From"
 +++
 
 My {{ tag(t="ram") }} price is going up  
 
 <https://pcpartpicker.com/product/Xg2WGX/gskill-trident-z5-neo-64-gb-2-x-32-gb-ddr5-6000-cl30-memory-f5-6000j3040g32gx2-tz5n>
 
-![](5373307329626967331_1251070604_460000547.jpg)
+{{ img(src="5373307329626967331_1251070604_460000547.jpg") }}

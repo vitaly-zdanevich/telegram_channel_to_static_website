@@ -17,10 +17,10 @@ next_body = "Tried #thunderbird again, after many years - and its good. UI space
 prev_id = 78
 prev_title = ""
 prev_body = "Offline documentation"
-views = 49
+views = 50
 ids = [79]
 +++
 
 Love my designs <https://userstyles.world/user/vitaly-zdanevich>
 
-![](5456153825674123622_1270359807_456251750.jpg)
+{{ img(src="5456153825674123622_1270359807_456251750.jpg") }}

@@ -17,8 +17,12 @@ next_body = ""
 prev_id = 269
 prev_title = ""
 prev_body = ""
-views = 24
+views = 25
 ids = [270]
+
+[[extra.related]]
+path = "@/posts/2025-09-30-688/index.md"
+label = "#china #beauty #plastic"
 +++
 
 <https://coub.com/view/2s0m4r>  

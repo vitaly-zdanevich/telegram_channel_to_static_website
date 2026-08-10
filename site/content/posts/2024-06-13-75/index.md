@@ -17,10 +17,10 @@ next_body = "BIG navigation"
 prev_id = 74
 prev_title = ""
 prev_body = ""
-views = 56
+views = 57
 ids = [75]
 +++
 
 Copyright from 1429
 
-![](5427084988798590552_1263591691_456253016.jpg)
+{{ img(src="5427084988798590552_1263591691_456253016.jpg") }}

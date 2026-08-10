@@ -20,18 +20,38 @@ prev_title = ""
 prev_body = "In #kitty terminal you can use independent clipboard:\nmap ctrl+space copytobuffer a1\nmap ctrl+shift+space pastefrombuffer a1\n# Kitty clipboard - independent from the system one"
 views = 5
 ids = [1137]
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2024-08-25-128/index.md"
+label = "suno.com is great - the best service for songs generation. Suppo…"
 +++
 
 {{ tag(t="ai") }}  
 
 <https://rentahuman.ai/>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

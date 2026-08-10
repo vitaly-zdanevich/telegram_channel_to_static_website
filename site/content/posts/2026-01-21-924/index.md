@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#village\n#year2005\n#abandone"
 views = 7
 ids = [924]
+
+[[extra.related]]
+path = "@/posts/2026-01-21-927/index.md"
+label = "#belarus #monument #nature #year2005 #year1915 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-921/index.md"
+label = "#belarus #architecture #nature #village #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-912/index.md"
+label = "#belarus #village #nature #river #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1521/index.md"
+label = "#cementery #virginmary #blue #monument #belarus #ивашковцы #glob…"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -33,4 +53,4 @@ ids = [924]
 
 [https://commons.wikimedia.org/wiki/File:038-638\_Гончары,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-638_%D0%93%D0%BE%D0%BD%D1%87%D0%B0%D1%80%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440801563862568211_1266785330_460000531.jpg)
+{{ img(src="5440801563862568211_1266785330_460000531.jpg") }}

@@ -17,7 +17,7 @@ next_body = "#7мая2026 (чт) 21.30-01:00 айтишная посиделка
 prev_id = 1749
 prev_title = ""
 prev_body = "#leetcode\n#validation"
-views = 27
+views = 28
 ids = [1750]
 +++
 

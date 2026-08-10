@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#design\n#apple\n#ipod"
 views = 25
 ids = [508]
+
+[[extra.related]]
+path = "@/posts/2025-09-30-689/index.md"
+label = "The proportion of people on the #autism spectrum among #wikipedi…"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-407/index.md"
+label = "#health #food"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2114/index.md"
+label = "#духота #health #powerlifting"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2112/index.md"
+label = "#health #духота #kozhemiako"
 +++
 
 {{ tag(t="wifi") }}  
@@ -28,4 +48,4 @@ ids = [508]
 {{ tag(t="sick") }}  
 {{ tag(t="health") }}
 
-![](5251537555013365162_1222718869_456256938.jpg)
+{{ img(src="5251537555013365162_1222718869_456256938.jpg") }}

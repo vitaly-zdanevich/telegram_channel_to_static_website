@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#old\n#grandmother\n#religion\n#greatschema\n#candle\nSee also\nFrom"
 views = 15
 ids = [1834]
+
+[[extra.related]]
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1667/index.md"
+label = "#fashion #street #london"
+
+[[extra.related]]
+path = "@/posts/2025-10-25-724/index.md"
+label = "#game #godofwar #playstation #compare 🪓 Наглядное сравнение боя…"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1838/index.md"
+label = "#xbox #xbox360 #gameconsole #custom #glass From"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1835/index.md"
+label = "#xbox #gameconsole #tech #retro #green From"
 +++
 
 {{ tag(t="playstation") }}  
@@ -31,4 +51,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015148876/") }}
 
-![](5296434402940363406_1233172231_460006030.jpg)
+{{ img(src="5296434402940363406_1233172231_460006030.jpg") }}

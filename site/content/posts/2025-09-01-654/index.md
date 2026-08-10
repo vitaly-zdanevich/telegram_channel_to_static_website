@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#wikimediafoundation\n#money\nSource"
 views = 37
 ids = [654]
+
+[[extra.related]]
+path = "@/posts/2026-03-24-1502/index.md"
+label = "#map #russia #russianempire #blacksea #sakartvelo #year1910"
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2026-01-12-873/index.md"
+label = "#map The Earth, centred around #newzealand"
+
+[[extra.related]]
+path = "@/posts/2025-09-10-669/index.md"
+label = "#map #isis"
 +++
 
 {{ tag(t="russia") }}  
@@ -30,4 +50,4 @@ ids = [654]
 
 <https://en.wikipedia.org/wiki/Jewish_Autonomous_Oblast>
 
-![](5307778803134757166_1235813555_456259886.jpg)
+{{ img(src="5307778803134757166_1235813555_456259886.jpg") }}

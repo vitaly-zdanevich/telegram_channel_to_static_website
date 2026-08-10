@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#phone\n#psy"
 views = 33
 ids = [452]
+
+[[extra.related]]
+path = "@/posts/2025-05-13-527/index.md"
+label = "Gold #games - because lovers recreate engines for the best one."
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1080/index.md"
+label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-623/index.md"
+label = "#games #steam Can you imagine that, I know this guy"
 +++
 
 {{ tag(t="games") }}  
@@ -29,4 +49,4 @@ ids = [452]
 
 From <https://vk.com/randompicc>
 
-![](5415638411328479718_1260926577_456253926.jpg)
+{{ img(src="5415638411328479718_1260926577_456253926.jpg") }}

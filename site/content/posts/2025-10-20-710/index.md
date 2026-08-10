@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#wikidata script to show #youtube embeds, #spotify, #facebook and others\nExample item from the screenshot"
 views = 29
 ids = [710]
+
+[[extra.related]]
+path = "@/posts/2023-07-16-26/index.md"
+label = "#film #korolishut Love this scene from Korol i Shut, episode 2"
+
+[[extra.related]]
+path = "@/posts/2023-07-16-27/index.md"
+label = "#my #film #korolishut"
+
+[[extra.related]]
+path = "@/posts/2025-08-30-647/index.md"
+label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+
+[[extra.related]]
+path = "@/posts/2025-08-30-646/index.md"
+label = "#film #music #russia #korolishut s1e5, start of the episode - li…"
+
+[[extra.related]]
+path = "@/posts/2025-06-16-575/index.md"
+label = "#my #film #korolishut #alcohol s1e6"
 +++
 
 {{ tag(t="film") }}  

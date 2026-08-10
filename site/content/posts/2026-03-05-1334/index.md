@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#design\n#graph\n#wikimedia"
 views = 9
 ids = [1334]
+
+[[extra.related]]
+path = "@/posts/2026-03-05-1336/index.md"
+label = "...one of my #bash aliases: to count files here: c { ls -1  wc -…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1864/index.md"
+label = "And another #bash #alias: # Better word movement: treat aaabbbcc…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1863/index.md"
+label = "My new #bash #alias bind '\"ej\": \"!#:$ e^\"' # Alt J repeats prev…"
+
+[[extra.related]]
+path = "@/posts/2026-02-10-1103/index.md"
+label = "My new #bash alias: one function to go to the next folder like f…"
+
+[[extra.related]]
+path = "@/posts/2025-02-12-357/index.md"
+label = "#gui #cli"
 +++
 
 {{ tag(t="bash") }}  

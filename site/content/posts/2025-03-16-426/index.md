@@ -17,8 +17,16 @@ next_body = "#coffee\nSource"
 prev_id = 425
 prev_title = ""
 prev_body = "#pain\n#millenials\n#depression\n#dophin\nSource"
-views = 91
+views = 92
 ids = [426]
+
+[[extra.related]]
+path = "@/posts/2025-10-22-717/index.md"
+label = "#life #deep #silence Почему ты всё время молчишь, у тебя нет тем…"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2036/index.md"
+label = "#life #death #captcha #cat #usb"
 +++
 
 {{ tag(t="life") }}  
@@ -27,6 +35,6 @@ ids = [426]
 
 [Source](https://www.instagram.com/p/DFYWbwQAMnd)
 
-{{ instagram(url="https://www.instagram.com/p/DFYWbwQAMnd/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/426-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#linux\n#gamex"
 views = 12
 ids = [1091]
+
+[[extra.related]]
+path = "@/posts/2025-11-26-793/index.md"
+label = "#ad #game #tank #wwii #music #warpath"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-03-21-1494/index.md"
+label = "#steam: almost 25% is on #linux?"
 +++
 
 {{ tag(t="linux") }}  

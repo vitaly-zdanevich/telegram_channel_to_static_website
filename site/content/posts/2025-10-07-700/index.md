@@ -19,12 +19,16 @@ prev_title = ""
 prev_body = "#userscript for #youtube: audio only. Better for #cpu, #battery, #traffic"
 views = 28
 ids = [700]
+
+[[extra.related]]
+path = "@/posts/2025-10-07-701/index.md"
+label = "#chess"
 +++
 
 {{ tag(t="chess") }}  
 
 [Source](https://www.instagram.com/p/DMxv95FNqk9)
 
-{{ instagram(url="https://www.instagram.com/p/DMxv95FNqk9/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/700-01.mp4") }}
 
 {{ tag(t="video") }}

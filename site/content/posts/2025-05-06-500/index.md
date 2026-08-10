@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#evernote image editor: beautiful"
 views = 29
 ids = [500]
+
+[[extra.related]]
+path = "@/posts/2025-01-17-253/index.md"
+label = "#film #scifi #space"
+
+[[extra.related]]
+path = "@/posts/2024-11-20-196/index.md"
+label = "#space #film #extract Lost in Space from 1998, movie ending, lov…"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2025-10-03-696/index.md"
+label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
 +++
 
 {{ tag(t="film") }}  
@@ -27,6 +47,6 @@ ids = [500]
 
 <https://en.wikipedia.org/wiki/Another_Earth>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/500-01.mp4") }}
 
 {{ tag(t="video") }}

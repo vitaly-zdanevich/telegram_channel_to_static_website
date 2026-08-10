@@ -4,7 +4,6 @@ date = 2025-01-17T02:30:40+00:00
 
 [taxonomies]
 days = ["2025-01-17"]
-tags = ["video"]
 
 [extra]
 id = 286
@@ -21,7 +20,3 @@ ids = [286]
 +++
 
 <https://coub.com/view/2f5z2f>
-
-{{ video(src="01.mp4") }}
-
-{{ tag(t="video") }}

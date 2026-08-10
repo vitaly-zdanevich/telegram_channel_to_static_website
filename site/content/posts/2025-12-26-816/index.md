@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#starwars\n#village\n#татуиново\nSource"
 views = 32
 ids = [816]
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1370/index.md"
+label = "#webdesign #armenia"
+
+[[extra.related]]
+path = "@/posts/2025-04-15-470/index.md"
+label = "Source #sakartvelo #taxes"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-10-05-697/index.md"
+label = "#turkey #map #population"
 +++
 
 {{ tag(t="it") }}  
@@ -36,6 +56,6 @@ ids = [816]
 
 [Source](https://www.tiktok.com/@juniornaveka/video/7485035604887997718)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/816-01.mp4") }}
 
 {{ tag(t="video") }}

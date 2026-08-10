@@ -18,12 +18,32 @@ next_body = "Моя лекция про мой Telegram бот YouTube, с по�
 prev_id = 1848
 prev_title = ""
 prev_body = "#batumi\nOh my, I live here\nFrom"
-views = 11
+views = 14
 ids = [1849]
+
+[[extra.related]]
+path = "@/posts/2026-05-21-1784/index.md"
+label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1745/index.md"
+label = "My another hobby project, made with #llm / #codex: converter of…"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1780/index.md"
+label = "What a time - multiple #llm doing multiple projects, in parallel…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1853/index.md"
+label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
 +++
 
 {{ tag(t="llm") }}  
 {{ tag(t="codex") }}  
 {{ tag(t="regex") }}
 
-![](5317060712796460834_1237974668_460003106.jpg)
+{{ img(src="5317060712796460834_1237974668_460003106.jpg") }}

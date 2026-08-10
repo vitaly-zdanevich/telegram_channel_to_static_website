@@ -16,8 +16,8 @@ next_body = "Overlay toolbars in Firefox, like in Safari!"
 prev_id = 46
 prev_title = ""
 prev_body = ""
-views = 55
+views = 56
 ids = [47]
 +++
 
-![](5346114461448135845_1244739271_456254629.jpg)
+{{ img(src="5346114461448135845_1244739271_456254629.jpg") }}

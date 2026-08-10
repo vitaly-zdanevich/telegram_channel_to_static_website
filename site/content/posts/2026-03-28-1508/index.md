@@ -19,6 +19,14 @@ prev_title = ""
 prev_body = "#tinder\n#factory"
 views = 18
 ids = [1508]
+
+[[extra.related]]
+path = "@/posts/2026-04-05-1570/index.md"
+label = "#ai #gpu #nvidia"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-421/index.md"
+label = "#laser #cat #matrix"
 +++
 
 {{ tag(t="nvidia") }}  

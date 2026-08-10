@@ -20,10 +20,14 @@ prev_title = ""
 prev_body = "Раньше было лучше\n#history\n#psy"
 views = 29
 ids = [449]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1170/index.md"
+label = "#entrance #abandone #belarus"
 +++
 
 {{ tag(t="entrance") }}  
 
 From <https://vk.com/ae__ye>
 
-![](5415638411328479713_1260926577_456253921.jpg)
+{{ img(src="5415638411328479713_1260926577_456253921.jpg") }}

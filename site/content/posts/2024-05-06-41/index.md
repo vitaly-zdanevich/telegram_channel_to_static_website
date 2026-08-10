@@ -16,7 +16,7 @@ next_body = "Coin 5 years of Lithuania independence, from #coin"
 prev_id = 40
 prev_title = ""
 prev_body = ""
-views = 49
+views = 51
 ids = [41]
 +++
 

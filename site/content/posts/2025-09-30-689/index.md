@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#china\n#beauty\n#plastic\nSource"
 views = 34
 ids = [689]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
 +++
 
 > The proportion of people on the {{ tag(t="autism") }} spectrum among {{ tag(t="wikipedia") }} editors is higher than in the general population

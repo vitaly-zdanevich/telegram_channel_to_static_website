@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#anime\n#phones\n#evangelion\nFrom"
 views = 15
 ids = [1832]
+
+[[extra.related]]
+path = "@/posts/2026-06-12-1819/index.md"
+label = "My another #userstyle: for #gemini, before and after"
+
+[[extra.related]]
+path = "@/posts/2026-01-26-948/index.md"
+label = "#css Wow I did a good ::selection for my #evernote style a::sele…"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-650/index.md"
+label = "Wow in #svg we can have #css, like .spinnera { animation: spinne…"
+
+[[extra.related]]
+path = "@/posts/2025-07-25-610/index.md"
+label = "Can you imagine #userstyle with so much configs #lastfm"
+
+[[extra.related]]
+path = "@/posts/2025-06-04-549/index.md"
+label = "Another #userstyle: for #openstreetmap, only a few CSS lines"
 +++
 
 When {{ tag(t="css") }} is minified - so what can I do with that :(  
 
 Leave comments in such {{ tag(t="userstyle") }}
 
-![](5296434402940363365_1233172231_460005989.jpg)
+{{ img(src="5296434402940363365_1233172231_460005989.jpg") }}

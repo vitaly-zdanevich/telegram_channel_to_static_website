@@ -20,12 +20,32 @@ prev_title = ""
 prev_body = "#love it - against #youtube #clickbait"
 views = 18
 ids = [1100]
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1120/index.md"
+label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+
+[[extra.related]]
+path = "@/posts/2026-04-27-1687/index.md"
+label = "#my #evernote #telegrambot #awslambda #ai #codex #gpt5 Article a…"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }}  
 
 Trying {{ tag(t="codex") }} to organize scans - to create a folder for every newspaper issue, result is not very good - mistakes and slow
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

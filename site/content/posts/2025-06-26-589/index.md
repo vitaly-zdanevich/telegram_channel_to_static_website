@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-06-26T21:32:52+00:00
-description = "...for the previous post Source"
+description = "...for the previous post Source\")"
 
 [taxonomies]
 days = ["2025-06-26"]
@@ -16,12 +16,12 @@ next_body = "#comment\n#health\n#magnesium"
 prev_id = 588
 prev_title = ""
 prev_body = "#game\n#demo\n#warhammer\n#dawnofwar\n#2004\nIf you see \"Failed to initialize video card\" - try to enable Gamescope. Works with Wine 8 for me."
-views = 48
+views = 49
 ids = [589]
 +++
 
 ...for the previous post
 
-[Source](https://www.youtube.com/watch?v=nEr-h2FV2ns)
+[Source](<https://www.youtube.com/watch?v=nEr-h2FV2ns> "Warhammer 40,000: Dawn of War Demo (Relic Entertainment, 2004)")
 
 {{ youtube(id="nEr-h2FV2ns") }}

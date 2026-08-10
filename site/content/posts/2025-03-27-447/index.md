@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#teapot\n#update\nFrom"
 views = 28
 ids = [447]
+
+[[extra.related]]
+path = "@/posts/2025-03-27-458/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-457/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-456/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-455/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2132/index.md"
+label = "#ussr #pc"
 +++
 
 {{ tag(t="dune") }}  
@@ -28,4 +48,4 @@ ids = [447]
 
 I do not know who is the author
 
-![](5415638411328479712_1260926577_456253920.jpg)
+{{ img(src="5415638411328479712_1260926577_456253920.jpg") }}

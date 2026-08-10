@@ -1,1 +1,1 @@
-<audio controls src="{{ page.permalink | safe }}{{ src }}"></audio>
+<audio controls src="{% if src is starting_with('http') or src is starting_with('/') %}{{ src | safe }}{% else %}{{ page.permalink | safe }}{{ src }}{% endif %}"></audio>

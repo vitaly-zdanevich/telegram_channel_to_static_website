@@ -18,8 +18,28 @@ next_body = "Wow on #wikimediacommons we can write #sql, for example to get red 
 prev_id = 869
 prev_title = ""
 prev_body = "#belarus\n#nature\n#globustut\n#year2004\nSource"
-views = 21
+views = 22
 ids = [870]
+
+[[extra.related]]
+path = "@/posts/2025-04-04-460/index.md"
+label = "#games #igromania 18 years ago. Golden age?"
+
+[[extra.related]]
+path = "@/posts/2025-05-13-527/index.md"
+label = "Gold #games - because lovers recreate engines for the best one."
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-623/index.md"
+label = "#games #steam Can you imagine that, I know this guy"
 +++
 
 {{ tag(t="games") }}  
@@ -28,4 +48,4 @@ ids = [870]
 
 [Source](https://store.igromania.ru/shop/magazine-25-12)
 
-![](5407034092894751563_1258923228_460000075.jpg)
+{{ img(src="5407034092894751563_1258923228_460000075.jpg") }}

@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "I have custom CSS for a dozen of web services.\nCustom CSS for #firefox UI.\nCustom system UI (#i3).\nLove it. Black, minimal."
 views = 49
 ids = [404]
+
+[[extra.related]]
+path = "@/posts/2025-07-24-609/index.md"
+label = "#girl #relationship #ai Source You generated pictures and videos…"
+
+[[extra.related]]
+path = "@/posts/2025-05-07-503/index.md"
+label = "#ai #girl #relationships #psy"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-372/index.md"
+label = "Most Shocking Second a Day Video Still The Most Shocking Second…"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1077/index.md"
+label = "#japan From"
 +++
 
 {{ tag(t="video") }}  
@@ -28,6 +48,6 @@ ids = [404]
 {{ tag(t="girl") }}  
 {{ tag(t="virtual") }}  
 
-[Source](https://www.youtube.com/watch?v=nkcKaNqfykg)
+[Source](<https://www.youtube.com/watch?v=nkcKaNqfykg> "Gatebox - Promotion Movie \"OKAERI\"_english")
 
 {{ youtube(id="nkcKaNqfykg") }}

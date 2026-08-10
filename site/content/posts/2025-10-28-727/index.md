@@ -17,9 +17,29 @@ next_title = ""
 next_body = "#design\n#purple\n#gamepad\n#gamecube\nSource"
 prev_id = 726
 prev_title = ""
-prev_body = "#logo\n#homm3\n#newworldcomputing\nFrom the YouTube commend:\nQuite possibly the most stylish and badass game company intros\nSource"
-views = 25
+prev_body = "#logo\n#homm3\n#newworldcomputing\nFrom the YouTube commend:\nQuite possibly the most stylish and badass game company intros\n\"New World Computing (2002)\")\nSource\") \"New World Computing (2002)\")"
+views = 26
 ids = [727]
+
+[[extra.related]]
+path = "@/posts/2025-12-25-813/index.md"
+label = "#ui #windows #windowsxp"
+
+[[extra.related]]
+path = "@/posts/2025-12-25-814/index.md"
+label = "#windowsxp"
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
 +++
 
 {{ tag(t="os") }}  
@@ -27,4 +47,4 @@ ids = [727]
 {{ tag(t="windows") }}  
 {{ tag(t="windows_xp") }}
 
-![](5190435396050353820_1208492414_456261276.jpg)
+{{ img(src="5190435396050353820_1208492414_456261276.jpg") }}

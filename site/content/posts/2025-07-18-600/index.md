@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#ventoy is a dream - cp ISOs to USB and choose any to boot.\nAnd it faster to boot than dd because ISOs are compressed."
 views = 43
 ids = [600]
+
+[[extra.related]]
+path = "@/posts/2026-06-29-1870/index.md"
+label = "#belarus #колодищи #architecture #church Author: Димитров Денис"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1178/index.md"
+label = "#church #architecture #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-962/index.md"
+label = "#belarus #architecture #church #вселюб #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-28-961/index.md"
+label = "#belarus #architecture #church #несвиж #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-28-956/index.md"
+label = "#belarus #architecture #church #раубичи #year2005 #globustut Fro…"
 +++
 
 {{ tag(t="religion") }}  
@@ -29,4 +49,4 @@ ids = [600]
 
 [Source](https://commons.wikimedia.org/wiki/File:Wiesbaden_-_Mariae_Heimsuchung.jpg)
 
-![](5465166913329034167_1272458330_456258487.jpg)
+{{ img(src="5465166913329034167_1272458330_456258487.jpg") }}

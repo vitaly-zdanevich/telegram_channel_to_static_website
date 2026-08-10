@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#church\n#belarus\n#abandone\n#globustut\nSource"
 views = 10
 ids = [1176]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1521/index.md"
+label = "#cementery #virginmary #blue #monument #belarus #ивашковцы #glob…"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1373/index.md"
+label = "#cementery #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1255/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1248/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
 +++
 
 {{ tag(t="monument") }}  
@@ -29,6 +49,6 @@ ids = [1176]
 
 [Source](https://commons.wikimedia.org/wiki/File:048-235_%D0%92%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D1%8B%D1%81%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

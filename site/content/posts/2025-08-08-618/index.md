@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Imagine a 2d side-scroll quest-action game with such visual style\nDecoration sketch for the play 'King Lear' (1948) by Sergo Kobuladze Georgian State Museum of Theatre, Music, Film and Choreography - Art Palace\n#games\n#art\n#sergokobuladze 1909 - 1978\n#sakartvelo\nSourcebySergoKobuladzeGeorgianStateMuseumofTheatre,Music,FilmandChoreography-ArtPalace.jpg)"
 views = 36
 ids = [618]
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-01-29-346/index.md"
+label = "#fashion"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1087/index.md"
+label = "#fashion #boy"
+
+[[extra.related]]
+path = "@/posts/2025-09-30-686/index.md"
+label = "#fashion #istanbul"
+
+[[extra.related]]
+path = "@/posts/2025-04-15-470/index.md"
+label = "Source #sakartvelo #taxes"
 +++
 
 > Georgian man (Zaal Sikharulidze) with falcon wearing Chokha on Tbilisoba festival
@@ -30,4 +50,4 @@ ids = [618]
 
 [Source](https://commons.wikimedia.org/wiki/File:Georgian_(604).jpg)
 
-![](5237834294351754182_1219528330_456258502.jpg)
+{{ img(src="5237834294351754182_1219528330_456258502.jpg") }}

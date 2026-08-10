@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#wikipedia\nАктёр озвучивания мужского пола Монгильо наиболее известен по роли главного героя, Синдзи\nМонгильо написал в Твиттере, что играть Синдзи было одной из величайших почестей в его жизни"
 views = 14
 ids = [1075]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,6 +47,6 @@ ids = [1075]
 
 <https://melbournehouse.kknd2.com/story.html>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

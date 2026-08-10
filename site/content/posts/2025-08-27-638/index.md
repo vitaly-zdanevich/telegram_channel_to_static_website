@@ -20,6 +20,6 @@ views = 29
 ids = [638]
 +++
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

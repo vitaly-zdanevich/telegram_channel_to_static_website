@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#belarussian\n#arabic\n#language"
 views = 19
 ids = [1734]
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1848/index.md"
+label = "#batumi Oh my, I live here From"
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+
+[[extra.related]]
+path = "@/posts/2026-01-12-873/index.md"
+label = "#map The Earth, centred around #newzealand"
+
+[[extra.related]]
+path = "@/posts/2025-09-10-669/index.md"
+label = "#map #isis"
+
+[[extra.related]]
+path = "@/posts/2025-04-28-487/index.md"
+label = "#trump #batumi"
 +++
 
 {{ tag(t="map") }}  
@@ -27,4 +47,4 @@ ids = [1734]
 
 Between the Black Sea and the mountains.
 
-![](5460766981331030800_1271433891_460002064.jpg)
+{{ img(src="5460766981331030800_1271433891_460002064.jpg") }}

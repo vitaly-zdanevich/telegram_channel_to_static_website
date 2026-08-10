@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#school in #sakartvelo\n#architecture\n#books"
 views = 25
 ids = [745]
+
+[[extra.related]]
+path = "@/posts/2025-11-08-748/index.md"
+label = "#wikipedia #mimino Самому Данелии участие в Московском фестивале…"
+
+[[extra.related]]
+path = "@/posts/2025-11-08-747/index.md"
+label = "#wikipedia #mimino По замыслу сценаристов, часть действия картин…"
+
+[[extra.related]]
+path = "@/posts/2025-11-08-746/index.md"
+label = "#wikipedia #mimino Уже после выхода «Мимино» к Данелии обратилис…"
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
 +++
 
 {{ tag(t="wikipedia") }}  

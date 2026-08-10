@@ -18,8 +18,28 @@ next_body = "#shotcut is pretty good #foss #videoeditor, #love it"
 prev_id = 1737
 prev_title = ""
 prev_body = "#webdesign\n#bilibili"
-views = 17
+views = 18
 ids = [1738]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1737/index.md"
+label = "#webdesign #bilibili"
+
+[[extra.related]]
+path = "@/posts/2025-05-10-513/index.md"
+label = "#bilibili #anime #webdesign #stream #ui"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1765/index.md"
+label = "#bilibili verification with 100 questions - to be able to leave…"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  

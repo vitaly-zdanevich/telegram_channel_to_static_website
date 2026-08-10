@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#painting\n#bible\n#gustavedore\nThe Bible panorama, or The Holy Scriptures in picture and story\nSource(14598336348).jpg)"
 views = 27
 ids = [757]
+
+[[extra.related]]
+path = "@/posts/2025-12-21-805/index.md"
+label = "#anime #logo #mascon #design"
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
 +++
 
 {{ tag(t="design") }}  
 {{ tag(t="logo") }}  
 [#artlebedevSource](https://www.artlebedev.ru/uteplist/logo2/)
 
-![](5229215222705359741_1217521546_460000125.jpg)
+{{ img(src="5229215222705359741_1217521546_460000125.jpg") }}

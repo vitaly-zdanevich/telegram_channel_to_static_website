@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "...one of my #bash aliases: to count files here:\nc() {\nls -1 | wc -l\n# count files here\nhistory -d \"$(history 1 | awk '{print $1}')\"\n# delete from history\n}"
 views = 5
 ids = [1337]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1373/index.md"
+label = "#cementery #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1255/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1248/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1350/index.md"
+label = "#cementery #abandone #belarus #globustut #year2005 Source,%D1%81…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1309/index.md"
+label = "#cementery #abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="nest") }}  
@@ -30,4 +50,4 @@ ids = [1337]
 
 [Source](https://commons.wikimedia.org/wiki/File:053-029_%D0%9E%D0%B1%D1%80%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_9_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5287405896352863414_1231070118_460002486.jpg)
+{{ img(src="5287405896352863414_1231070118_460002486.jpg") }}

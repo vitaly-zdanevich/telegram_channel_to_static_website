@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#sakartvelo\n#batumi\n#misha\n#trump"
 views = 23
 ids = [731]
+
+[[extra.related]]
+path = "@/posts/2025-05-06-499/index.md"
+label = "#evernote image editor: beautiful"
+
+[[extra.related]]
+path = "@/posts/2024-12-22-222/index.md"
+label = "#youtube"
+
+[[extra.related]]
+path = "@/posts/2026-05-25-1785/index.md"
+label = "Another #llm victory: repack of the official #evernote client"
+
+[[extra.related]]
+path = "@/posts/2026-01-26-948/index.md"
+label = "#css Wow I did a good ::selection for my #evernote style a::sele…"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-614/index.md"
+label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
 +++
 
 good  
@@ -30,4 +50,4 @@ good
 {{ tag(t="youtube") }}  
 {{ tag(t="ifttt") }}
 
-![](5206578739305712414_1212251079_460000030.jpg)
+{{ img(src="5206578739305712414_1212251079_460000030.jpg") }}

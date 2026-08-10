@@ -5,7 +5,7 @@ description = "belarus church abandone winter globustut year2004 Source"
 
 [taxonomies]
 days = ["2026-01-19"]
-tags = ["belarus", "church", "abandone", "winter", "globustut", "year_2004"]
+tags = ["belarus", "church", "abandone", "winter", "globustut", "year2004"]
 
 [extra]
 id = 902
@@ -18,8 +18,28 @@ next_body = "#belarus\n#nature\n#winter\n#globustut\n#year2004"
 prev_id = 901
 prev_title = ""
 prev_body = "#balarus\n#religion\n#sign\n#globustut\n#year2004\nSource"
-views = 7
+views = 8
 ids = [902]
+
+[[extra.related]]
+path = "@/posts/2026-01-19-904/index.md"
+label = "#belarus #architecture #church #abandone #winter #year2004 #glob…"
+
+[[extra.related]]
+path = "@/posts/2026-01-19-905/index.md"
+label = "#belarus #architecture #abandone #winter #year2004 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1046/index.md"
+label = "#belarus #abandone #church #слабодка #winter #year2005 #globustu…"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1171/index.md"
+label = "#church #belarus #abandone #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-910/index.md"
+label = "#belarus #abandone #year2004 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -27,8 +47,8 @@ ids = [902]
 {{ tag(t="abandone") }}  
 {{ tag(t="winter") }}  
 {{ tag(t="globustut") }}  
-{{ tag(t="year_2004") }}  
+{{ tag(t="year2004") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:035-076_%D0%91%D0%B5%D0%BB%D0%B0%D1%8F_%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_25_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 
-![](5438156503958359239_1266169479_460000455.jpg)
+{{ img(src="5438156503958359239_1266169479_460000455.jpg") }}

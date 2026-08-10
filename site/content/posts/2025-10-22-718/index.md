@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#life\n#deep\n#silence\nПочему ты всё время молчишь, у тебя нет тем для разговора\nSource"
 views = 29
 ids = [718]
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2026-04-09-1595/index.md"
+label = "#indika #game #religion #christianity #webdesign"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1121/index.md"
+label = "#webdesign #buttons #animation #game #mmo #myst"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -33,4 +53,4 @@ It still alive
 
 <https://en.wikipedia.org/wiki/Ragnarok_Online>
 
-![](5460802865779047402_1271442246_456260586.jpg)
+{{ img(src="5460802865779047402_1271442246_456260586.jpg") }}

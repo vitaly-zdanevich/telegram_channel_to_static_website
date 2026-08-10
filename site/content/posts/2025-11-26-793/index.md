@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#game\n#strategy\n#rtt\n#groundcontrol\nThe #bishop defector death - dramatic moment, from minute 9"
 views = 53
 ids = [793]
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1091/index.md"
+label = "#linux #game #wwii #landing #ad #warthunder warthunder.com"
+
+[[extra.related]]
+path = "@/posts/2025-06-01-545/index.md"
+label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
+
+[[extra.related]]
+path = "@/posts/2026-06-20-1847/index.md"
+label = "#game #trailer #music #year2009 #halo #xbox #xbox360 One of the…"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
 +++
 
 {{ tag(t="ad") }}  
@@ -28,6 +48,6 @@ ids = [793]
 {{ tag(t="music") }}  
 {{ tag(t="warpath") }}  
 
-[Source](https://www.youtube.com/watch?v=eqeSGjCKV68)
+[Source](<https://www.youtube.com/watch?v=eqeSGjCKV68> "Warpath - Official Live Action Cinematic Trailer")
 
 {{ youtube(id="eqeSGjCKV68") }}

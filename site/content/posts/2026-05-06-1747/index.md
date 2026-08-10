@@ -18,14 +18,30 @@ next_body = "#leetcode\n#validation"
 prev_id = 1746
 prev_title = ""
 prev_body = "#leetcode is often produce #error"
-views = 28
+views = 29
 ids = [1747]
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1749/index.md"
+label = "#leetcode #validation"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1746/index.md"
+label = "#leetcode is often produce #error"
+
+[[extra.related]]
+path = "@/posts/2026-05-12-1753/index.md"
+label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-571/index.md"
+label = "#livecoding #batman #binarysearch #leetcode with games :"
 +++
 
 Oh my...  
 
 {{ tag(t="leetcode") }}
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

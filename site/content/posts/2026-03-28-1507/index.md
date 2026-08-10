@@ -19,11 +19,15 @@ prev_title = ""
 prev_body = "#shutdown\n#cloudflare\n#preservation\n#school\n#error\nЧто вы будете делать когда вот это всё отключат по всему миру?\nЧто ты будешь делать без этой подсказки?"
 views = 17
 ids = [1507]
+
+[[extra.related]]
+path = "@/posts/2025-07-25-611/index.md"
+label = "#music #musicvideo #temakresta #travel #elephants #tinder #year2…"
 +++
 
 {{ tag(t="tinder") }}  
 {{ tag(t="factory") }}
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1507-01.mp4") }}
 
 {{ tag(t="video") }}

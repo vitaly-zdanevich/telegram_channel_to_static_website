@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#complexnumbers\n#2084\nPublished to"
 views = 59
 ids = [485]
+
+[[extra.related]]
+path = "@/posts/2026-01-20-913/index.md"
+label = "#belarus #nature #river #green #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-912/index.md"
+label = "#belarus #village #nature #river #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-407/index.md"
+label = "#health #food"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2138/index.md"
+label = "#village #nature #career"
 +++
 
 {{ tag(t="health") }}  
@@ -32,6 +52,6 @@ ids = [485]
 
 [Source](https://www.instagram.com/p/DIL-UZUif5t)
 
-{{ instagram(url="https://www.instagram.com/p/DIL-UZUif5t/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/485-01.mp4") }}
 
 {{ tag(t="video") }}

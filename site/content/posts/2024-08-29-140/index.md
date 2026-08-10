@@ -24,7 +24,7 @@ ids = [140]
 
 In VR it more dramatic, real. I love VR games.  
 
-I cut the video fragment from <https://youtu.be/LDkWkYs8YHI>
+I cut the video fragment from [https://youtu.be/LDkWkYs8YHI](<https://youtu.be/LDkWkYs8YHI> "Moss Book 2 | Full Game Walkthrough | No Commentary")
 
 {{ youtube(id="LDkWkYs8YHI") }}
 

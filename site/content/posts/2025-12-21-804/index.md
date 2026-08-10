@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Love this #logo"
 views = 33
 ids = [804]
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1848/index.md"
+label = "#batumi Oh my, I live here From"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1080/index.md"
+label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+
+[[extra.related]]
+path = "@/posts/2025-04-28-487/index.md"
+label = "#trump #batumi"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-448/index.md"
+label = "Раньше было лучше #history #psy"
 +++
 
 <https://en.wikipedia.org/wiki/Batumi>  
@@ -28,4 +48,4 @@ ids = [804]
 {{ tag(t="batumi") }}  
 {{ tag(t="countries") }}
 
-![](5350606245624220539_1245785096_460000123.jpg)
+{{ img(src="5350606245624220539_1245785096_460000123.jpg") }}

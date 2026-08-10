@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#nvidia\n#laser\n#agro"
 views = 15
 ids = [1509]
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1271/index.md"
+label = "#stones #monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1258/index.md"
+label = "#cross #monument #belarus #globustut #year2005 Source,%D1%81%D0%…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1260/index.md"
+label = "#monument #bird #eagle #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-927/index.md"
+label = "#belarus #monument #nature #year2005 #year1915 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1521/index.md"
+label = "#cementery #virginmary #blue #monument #belarus #ивашковцы #glob…"
 +++
 
 {{ tag(t="monument") }}  
@@ -29,6 +49,6 @@ ids = [1509]
 
 [Source](https://commons.wikimedia.org/wiki/File:057-097_%D0%9A%D0%BE%D0%BC%D0%BE%D1%82%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

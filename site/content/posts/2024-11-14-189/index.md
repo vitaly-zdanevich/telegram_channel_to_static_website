@@ -23,4 +23,4 @@ ids = [189]
 
 [Source](https://www.linkedin.com/posts/valerian-gegidze_remoteteams-outsourcing-outstaffing-activity-7231903299489124353-p5Xs)
 
-![](5308050846363281449_1235876895_456255529.jpg)
+{{ img(src="5308050846363281449_1235876895_456255529.jpg") }}

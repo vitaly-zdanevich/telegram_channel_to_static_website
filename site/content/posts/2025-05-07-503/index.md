@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#psy\n#lasers\n#girl\nSource"
 views = 26
 ids = [503]
+
+[[extra.related]]
+path = "@/posts/2025-07-24-609/index.md"
+label = "#girl #relationship #ai Source You generated pictures and videos…"
+
+[[extra.related]]
+path = "@/posts/2025-05-07-502/index.md"
+label = "#psy #lasers #girl"
+
+[[extra.related]]
+path = "@/posts/2025-03-11-404/index.md"
+label = "#video #ad #japan #ai #girl #virtual"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
 +++
 
 {{ tag(t="ai") }}  
@@ -26,6 +46,6 @@ ids = [503]
 {{ tag(t="relationships") }}  
 {{ tag(t="psy") }}
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/503-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb, и немного про dtMediaWiki для Darktable\n#video\n#my\n#commons\nРепозиторий этого моего нового скрипта\nМои скрипты, для Википедии и прочего\nМои темы\nМоя тема для Википедии\nМой тикет про segmentation fault\nМоя тема для Darktable\nПлагин для загрузки в Wikipedia Commons для Darktable"
 views = 55
 ids = [539]
+
+[[extra.related]]
+path = "@/posts/2025-06-28-592/index.md"
+label = "#book Designing Data-Intensive Applications and #wine"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-407/index.md"
+label = "#health #food"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2114/index.md"
+label = "#духота #health #powerlifting"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2112/index.md"
+label = "#health #духота #kozhemiako"
 +++
 
 <https://www.amazon.com/Am-Better-Christian-Zoloft-Questions/dp/0800746287>  
@@ -29,4 +49,4 @@ ids = [539]
 {{ tag(t="zoloft") }}  
 {{ tag(t="christian") }}
 
-![](5296715169243722942_1233237602_456258750.jpg)
+{{ img(src="5296715169243722942_1233237602_456258750.jpg") }}

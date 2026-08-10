@@ -18,10 +18,30 @@ next_body = "Меньше митингов"
 prev_id = 86
 prev_title = ""
 prev_body = "I moved /.vim to /.config/vim, you also can"
-views = 51
+views = 52
 ids = [87]
+
+[[extra.related]]
+path = "@/posts/2026-05-15-1761/index.md"
+label = "I love #ci so much that for the first time I depleted free 400 m…"
+
+[[extra.related]]
+path = "@/posts/2024-06-03-50/index.md"
+label = "#gitlab: I love that it is possible to push to a repo that is no…"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1763/index.md"
+label = "#error #gitlab #contradiction"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1085/index.md"
+label = "#logo #gitlab #git"
+
+[[extra.related]]
+path = "@/posts/2026-01-18-892/index.md"
+label = "Storing my configs in #git #gitlab, because its open - #github i…"
 +++
 
 Wow {{ tag(t="gitlab") }} has a {{ tag(t="cron") }}...
 
-![](5219778561077009585_1215324402_456252593.jpg)
+{{ img(src="5219778561077009585_1215324402_456252593.jpg") }}

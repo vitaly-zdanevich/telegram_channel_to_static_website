@@ -15,7 +15,7 @@ next_title = ""
 next_body = "С"
 prev_id = 7
 prev_title = ""
-prev_body = "Упоминалось:\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
+prev_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
 views = 56
 ids = [8]
 +++
@@ -24,7 +24,7 @@ ids = [8]
 
 Упоминалось:  
 
-Doom <https://youtu.be/hSoCmAoIMOU>  
+Doom [https://youtu.be/hSoCmAoIMOU](<https://youtu.be/hSoCmAoIMOU> "Windows Task Manager Runs Doom (896 cores)")  
 
 <https://yandex.ru/q/question/kak_ponimat_tsitatu_esli_dolgo_smotrish_v_ce9e2e8b/>  
 
@@ -47,6 +47,6 @@ Safecast maintains the largest open dataset of background radiation measurements
 <https://bike.org.by/dostizheniya>  
 [https://ru.wikipedia.org/wiki/Велодвижение\_в\_Беларуси](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%B8)  
 
-<https://www.youtube.com/watch?v=3n36kUs8QSk&list=PL7MgT49tMAJ4NMsqvBgfqEvLaP1-Rtipz&index=3>
+[https://www.youtube.com/watch?v=3n36kUs8QSk&list=PL7MgT49tMAJ4NMsqvBgfqEvLaP1-Rtipz&index=3](<https://www.youtube.com/watch?v=3n36kUs8QSk&list=PL7MgT49tMAJ4NMsqvBgfqEvLaP1-Rtipz&index=3> "Про блокчейн, ИТ в Беларуси и мире, самоорганизацию, психологию, работа, деньги, выгорание")
 
 {{ youtube(id="3n36kUs8QSk") }}

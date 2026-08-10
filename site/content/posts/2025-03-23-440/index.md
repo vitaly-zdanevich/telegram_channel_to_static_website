@@ -16,9 +16,29 @@ next_title = ""
 next_body = "On #Wikipedia, not all websites can be used as sources.\nEvery fact on Wikipedia must have a reliable source. Original research is not allowed — Wikipedia only summarizes facts from trusted, reputable places."
 prev_id = 439
 prev_title = ""
-prev_body = "#korea\n#ai\n#aivideo\n#starwars\n#demonflyingfox\nSource"
+prev_body = "#korea\n#ai\n#aivideo\n#starwars\n#demonflyingfox\nSource\")"
 views = 40
 ids = [440]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
 +++
 
 {{ tag(t="music") }}  
@@ -28,6 +48,6 @@ Mick Gordon - BFG division from {{ tag(t="doom3") }}
 
 [Source](https://www.instagram.com/p/DHOFQ4sND2s)
 
-{{ instagram(url="https://www.instagram.com/p/DHOFQ4sND2s/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/440-01.mp4") }}
 
 {{ tag(t="video") }}

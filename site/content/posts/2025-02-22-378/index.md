@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#music\n#rammstein\n#cult\n#drum\nSource"
 views = 56
 ids = [378]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }}  
@@ -26,6 +46,6 @@ ids = [378]
 
 [Source](https://www.instagram.com/p/DGK0dcxM4IJ)
 
-{{ instagram(url="https://www.instagram.com/p/DGK0dcxM4IJ/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/378-01.mp4") }}
 
 {{ tag(t="video") }}

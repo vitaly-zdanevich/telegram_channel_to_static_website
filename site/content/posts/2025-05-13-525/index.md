@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = ""
 views = 29
 ids = [525]
+
+[[extra.related]]
+path = "@/posts/2025-05-14-532/index.md"
+label = "From globustut.by #photo #building #ad #history #babruysk"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1080/index.md"
+label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-534/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-533/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-448/index.md"
+label = "Раньше было лучше #history #psy"
 +++
 
 {{ tag(t="photo") }}  
@@ -29,4 +49,4 @@ ids = [525]
 
 <https://commons.wikimedia.org/wiki/File:Alfred_duke_of_Edinburgh.jpg>
 
-![](5264726708089649363_1225789708_456259795.jpg)
+{{ img(src="5264726708089649363_1225789708_456259795.jpg") }}

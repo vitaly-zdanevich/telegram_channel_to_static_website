@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#cat\n#psy"
 views = 41
 ids = [483]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
+
+[[extra.related]]
+path = "@/posts/2026-02-11-1106/index.md"
+label = "#wikipedia #job"
 +++
 
 My new article on {{ tag(t="wikipedia") }} [https://ru.wikipedia.org/wiki/Летний\_театр\_(Батуми)](https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%82%D0%BD%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_(%D0%91%D0%B0%D1%82%D1%83%D0%BC%D0%B8))

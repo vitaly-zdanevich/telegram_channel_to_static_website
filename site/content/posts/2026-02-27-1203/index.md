@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "My new #userscript for #evernote adds a few #hotkey"
 views = 6
 ids = [1203]
+
+[[extra.related]]
+path = "@/posts/2025-12-29-826/index.md"
+label = "#design #preservation #year1885"
+
+[[extra.related]]
+path = "@/posts/2026-04-14-1637/index.md"
+label = "#preservation #century19 #scan #hand"
+
+[[extra.related]]
+path = "@/posts/2026-07-20-2061/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-30-1721/index.md"
+label = "#typography #scan #preservation #russianempire #century19"
+
+[[extra.related]]
+path = "@/posts/2026-04-29-1709/index.md"
+label = "#typography #scan #preservation #russianempire #century19 Source…"
 +++
 
 {{ tag(t="design") }}  
@@ -28,4 +48,4 @@ ids = [1203]
 {{ tag(t="scan") }}  
 {{ tag(t="preservation") }}
 
-![](5264957012829737976_1225843330_460002296.jpg)
+{{ img(src="5264957012829737976_1225843330_460002296.jpg") }}

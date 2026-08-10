@@ -1,0 +1,1 @@
+<div class="vk-playlist"><div id="{{ elid }}"><a href="{{ url | safe }}">▶ Open playlist on VK</a></div><script src="https://vk.com/js/api/openapi.js?169" async></script><script>(function(){function go(){if(window.VK&&VK.Widgets&&VK.Widgets.Playlist){VK.Widgets.Playlist("{{ elid }}",{{ owner }},{{ id }},"{{ key }}");}else{setTimeout(go,300);}}go();})();</script></div>

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#church\n#несвиж\n#year2005\n#globustut\nFrom"
 views = 6
 ids = [962]
+
+[[extra.related]]
+path = "@/posts/2026-01-28-961/index.md"
+label = "#belarus #architecture #church #несвиж #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-28-956/index.md"
+label = "#belarus #architecture #church #раубичи #year2005 #globustut Fro…"
+
+[[extra.related]]
+path = "@/posts/2026-07-05-1945/index.md"
+label = "#belarus #КрасныйПартизан #photo #architecture #church #year2005…"
+
+[[extra.related]]
+path = "@/posts/2026-07-04-1925/index.md"
+label = "#belarus #gomel #photo #architecture #church #year2005 #globustu…"
+
+[[extra.related]]
+path = "@/posts/2026-07-04-1898/index.md"
+label = "#belarus #architecture #church #photo #abandone #year2005 #globu…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -31,4 +51,4 @@ ids = [962]
 
 From [https://commons.wikimedia.org/wiki/File:043-048\_Вселюб,\_усыпальница,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-048_%D0%92%D1%81%D0%B5%D0%BB%D1%8E%D0%B1,_%D1%83%D1%81%D1%8B%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](5465427364444572439_1272518971_460000023.jpg)
+{{ img(src="5465427364444572439_1272518971_460000023.jpg") }}

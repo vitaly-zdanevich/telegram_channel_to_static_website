@@ -19,10 +19,30 @@ prev_title = ""
 prev_body = "#ipv6"
 views = 53
 ids = [94]
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1083/index.md"
+label = "Why #facebook is so slow : #firefox"
+
+[[extra.related]]
+path = "@/posts/2025-11-17-781/index.md"
+label = "#js Out of memory, but RAM is used to 64% #firefox"
+
+[[extra.related]]
+path = "@/posts/2025-03-11-403/index.md"
+label = "I have custom CSS for a dozen of web services. Custom CSS for #f…"
+
+[[extra.related]]
+path = "@/posts/2026-04-15-1640/index.md"
+label = "#firefox #webextension: after #tab close - switch to the previou…"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1197/index.md"
+label = "#firefox #extension Copy non-latin links without #percent"
 +++
 
-{{ tag(t="firefox") }} vertical tabs with <https://github.com/mbnuqw/sidebery> plus custom CSS from <https://github.com/lucaspar/firefox-vertical-tabs>
+{{ tag(t="firefox") }} vertical tabs with [https://github.com/mbnuqw/sidebery](<https://github.com/mbnuqw/sidebery> "Firefox extension for managing tabs and bookmarks in sidebar. · 4642 stars · Languages: TypeScript 65%, Vue 23%, Stylus 9% · 2468 commits · 246 forks · 846 open issues/PRs · MIT · last push 2026-07-17") plus custom CSS from [https://github.com/lucaspar/firefox-vertical-tabs](<https://github.com/lucaspar/firefox-vertical-tabs> "Stylesheets for collapsible vertical tabs for Firefox. · 32 stars · Languages: CSS 96%, Python 4% · 20 commits · 3 forks · 1 open issues/PRs · MIT · last push 2025-05-07")
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/94-01.mp4") }}
 
 {{ tag(t="video") }}

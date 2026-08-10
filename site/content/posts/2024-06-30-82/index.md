@@ -18,8 +18,28 @@ next_body = "Local (off-the-grid) social network with chat, on #blockchain (so y
 prev_id = 81
 prev_title = ""
 prev_body = "Wow, DIY laptop with easy interchangeable parts\nSad that fanless laptops looks like unpopular, the best of such - MacBook Air, but I love Linux."
-views = 61
+views = 62
 ids = [82]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
 +++
 
 I contribute to {{ tag(t="wikipedia") }} and other projects on {{ tag(t="mediawiki") }} engine and other wikis like {{ tag(t="mdn") }}. When I talk with somebody about his technical problem - sometimes I say something like "...and when you finally figure out the root cause - please check some related wiki about that and 𝐮𝐩𝐝𝐚𝐭𝐞 𝐢𝐭 𝐢𝐟 𝐢𝐭𝐬 𝐧𝐞𝐰 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧". Yep, please. Corporate Wikis/Confluence also. When you write - it is improving your understanding. Bring awareness. Help people. And after a few years - you will google the same problem. If no Wiki for some project - you can create question and answer it on [https://superuser.com](https://superuser.com/)  
@@ -28,4 +48,4 @@ It can be just a few lines - like 𝑖𝑓 𝑦𝑜𝑢 ℎ𝑎𝑣𝑒 𝑡ℎ�
 
 Not {{ tag(t="reddit") }} - their user content license is not clear.
 
-![](5190535735076315675_1208515776_456253979.jpg)
+{{ img(src="5190535735076315675_1208515776_456253979.jpg") }}

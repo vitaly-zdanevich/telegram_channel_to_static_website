@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#winter\n#лепель\n#year2005\n#globustut\nFrom"
 views = 6
 ids = [1015]
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1058/index.md"
+label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-1000/index.md"
+label = "#belarus #abandone #winter #novogrudok #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1046/index.md"
+label = "#belarus #abandone #church #слабодка #winter #year2005 #globustu…"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -31,22 +51,22 @@ ids = [1015]
 
 From [https://commons.wikimedia.org/wiki/File:045-144\_Почаевичи,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-144_%D0%9F%D0%BE%D1%87%D0%B0%D0%B5%D0%B2%D0%B8%D1%87%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}
 
-![](09.jpg)
+{{ img(src="09.jpg") }}
 
-![](10.jpg)
+{{ img(src="10.jpg") }}

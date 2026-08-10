@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#russia\n#yeltsin\n#ketchup\n#tea\n#sugar\n#year1991\nSource"
 views = 28
 ids = [673]
+
+[[extra.related]]
+path = "@/posts/2025-03-14-410/index.md"
+label = "Girl with a Pearl Earring #art Artwork by Olga Pavolga Shot by T…"
+
+[[extra.related]]
+path = "@/posts/2026-08-04-2117/index.md"
+label = "#sound #mem By dendertyofficial"
+
+[[extra.related]]
+path = "@/posts/2026-08-04-2116/index.md"
+label = "#sound #mem By dendertyofficial"
+
+[[extra.related]]
+path = "@/posts/2024-11-30-206/index.md"
+label = "#mem #games"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2130/index.md"
+label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
 +++
 
 {{ tag(t="mem") }}  
@@ -31,4 +51,4 @@ ids = [673]
 
 *Kubernetes in my day-to-day life VS how it was sold to me*
 
-![](5364054960750329725_1248916369_456261501.jpg)
+{{ img(src="5364054960750329725_1248916369_456261501.jpg") }}

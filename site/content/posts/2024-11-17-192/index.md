@@ -19,9 +19,13 @@ prev_title = ""
 prev_body = ""
 views = 47
 ids = [192]
+
+[[extra.related]]
+path = "@/posts/2025-01-28-338/index.md"
+label = "#warcraft"
 +++
 
-<https://youtu.be/DWjZQzviTUs>  
+[https://youtu.be/DWjZQzviTUs](<https://youtu.be/DWjZQzviTUs> "Warcraft 2 Remastered - Full Orc Campaign Gameplay & Story (Speedrun / Walkthrough)")  
 
 {{ tag(t="warcraft") }}
 

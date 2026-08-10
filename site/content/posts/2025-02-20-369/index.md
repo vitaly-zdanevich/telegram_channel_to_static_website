@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#love\n#poop\n#johnnydepp\n#amberheard\nSource"
 views = 54
 ids = [369]
+
+[[extra.related]]
+path = "@/posts/2025-04-25-482/index.md"
+label = "#cat #psy"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2096/index.md"
+label = "#cat #laugh #slow By dustythegingercat"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1874/index.md"
+label = "#llm #prediction #cat"
+
+[[extra.related]]
+path = "@/posts/2026-03-13-1439/index.md"
+label = "#webdesign #animal #cat"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-421/index.md"
+label = "#laser #cat #matrix"
 +++
 
 {{ tag(t="cat") }}  
@@ -29,6 +49,6 @@ Not my experience, this is just funny.
 
 [Source](https://www.instagram.com/p/DD-AJrBPExK)
 
-{{ instagram(url="https://www.instagram.com/p/DD-AJrBPExK/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/369-01.mp4") }}
 
 {{ tag(t="video") }}

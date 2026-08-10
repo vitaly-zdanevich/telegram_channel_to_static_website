@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = ""
 views = 16
 ids = [843]
+
+[[extra.related]]
+path = "@/posts/2026-01-07-844/index.md"
+label = "#belarus #building #castle #abandoned #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-852/index.md"
+label = "#belarus #building #abandoned #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-851/index.md"
+label = "#belarus #building #abandoned #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-866/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-865/index.md"
+label = "#belarus #building #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,4 +50,4 @@ ids = [843]
 
 [Source](https://commons.wikimedia.org/wiki/File:022-384_%D0%96%D0%B5%D0%BB%D1%83%D0%B4%D0%BE%D0%BA,_09-10-2004.jpg)
 
-![](5399816645166960855_1257242785_460001495.jpg)
+{{ img(src="5399816645166960855_1257242785_460001495.jpg") }}

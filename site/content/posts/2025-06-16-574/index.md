@@ -19,10 +19,30 @@ prev_title = ""
 prev_body = "#archiving\nLost."
 views = 38
 ids = [574]
+
+[[extra.related]]
+path = "@/posts/2023-07-16-26/index.md"
+label = "#film #korolishut Love this scene from Korol i Shut, episode 2"
+
+[[extra.related]]
+path = "@/posts/2025-10-20-710/index.md"
+label = "#film #korolishut #naked"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-255/index.md"
+label = "#my #movie #korolishut"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-254/index.md"
+label = "#my #movie #korolishut"
+
+[[extra.related]]
+path = "@/posts/2023-07-16-27/index.md"
+label = "#my #film #korolishut"
 +++
 
 {{ tag(t="korol_i_shut") }}  
 
-[Source](https://www.youtube.com/watch?v=B9-skz9692g)
+[Source](<https://www.youtube.com/watch?v=B9-skz9692g> "Король и Шут Фотосессия 1998, полная версия")
 
 {{ youtube(id="B9-skz9692g") }}

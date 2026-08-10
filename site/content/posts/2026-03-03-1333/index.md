@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#logo\n#horse"
 views = 11
 ids = [1333]
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-758/index.md"
+label = "#design #artlebedev"
 +++
 
 {{ tag(t="design") }}  
@@ -28,4 +48,4 @@ ids = [1333]
 
 <https://phabricator.wikimedia.org/T414121>
 
-![](5276106936908716151_1228439374_460003447.jpg)
+{{ img(src="5276106936908716151_1228439374_460003447.jpg") }}

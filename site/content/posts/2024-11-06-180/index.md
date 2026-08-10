@@ -20,9 +20,29 @@ prev_title = ""
 prev_body = ""
 views = 36
 ids = [180]
+
+[[extra.related]]
+path = "@/posts/2026-03-22-1497/index.md"
+label = "#webdesign #bag #girl #pain #thorns #poppy #disagree"
+
+[[extra.related]]
+path = "@/posts/2025-01-21-322/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-181/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-408/index.md"
+label = "#girl #face"
+
+[[extra.related]]
+path = "@/posts/2025-02-02-349/index.md"
+label = "#translate #pain"
 +++
 
 {{ tag(t="girl") }}  
 {{ tag(t="pain") }}
 
-![](5285445200828817939_1230613608_456253971.jpg)
+{{ img(src="5285445200828817939_1230613608_456253971.jpg") }}

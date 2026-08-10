@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#css\nWow I did a good ::selection for my #evernote style\na::selection\n{\ncolor: lightblue;\ntext-decoration: underline solid blue 5px;\n}"
 views = 11
 ids = [949]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-458/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-457/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-456/index.md"
+label = "#ussr"
 +++
 
 В эпоху рассвета ИИ становится всё актуальнее опера <https://complexnumbers.ru/2032/>  

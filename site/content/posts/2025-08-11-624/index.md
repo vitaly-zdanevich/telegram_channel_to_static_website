@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#games\n#steam\nCan you imagine that, I know this guy"
 views = 29
 ids = [624]
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1780/index.md"
+label = "What a time - multiple #llm doing multiple projects, in parallel…"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
 +++
 
 {{ tag(t="ai") }}  
 {{ tag(t="llm") }}  
 {{ tag(t="ddos") }}
 
-![](5246841888743486844_1221625574_456258940.jpg)
+{{ img(src="5246841888743486844_1221625574_456258940.jpg") }}

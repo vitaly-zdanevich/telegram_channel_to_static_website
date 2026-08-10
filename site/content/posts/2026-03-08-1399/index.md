@@ -21,6 +21,10 @@ views = 12
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1724"
 ids = [1399]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1394/index.md"
+label = "Кто-то сделал полноценный 3D-симулятор электрических цепей, кото…"
 +++
 
 Отличная 3D карта общественного транспорта Токио в реальном времени  
@@ -29,6 +33,6 @@ ids = [1399]
 
 {{ tag(t="сервисы@daniilak") }}
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1399-01.mp4") }}
 
 {{ tag(t="video") }}

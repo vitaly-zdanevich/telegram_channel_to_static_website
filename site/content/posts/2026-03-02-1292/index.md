@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#village\n#house\n#belarus\n#globustut\n#year2005\nSource"
 views = 12
 ids = [1292]
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-925/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1426/index.md"
+label = "#church #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1226/index.md"
+label = "#church #abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="church") }}  
@@ -31,6 +51,6 @@ ids = [1292]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-209_%D0%91%D0%BE%D1%80%D1%83%D0%BD%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -20,12 +20,32 @@ prev_title = ""
 prev_body = "#armiesofexigo: моя #лекция об игре, в Батуми\n#stillyoungbar\nТакже скачать эту заброшенную игру можно тут\nВсе ссылки на это #видео"
 views = 19
 ids = [1741]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+
+[[extra.related]]
+path = "@/posts/2025-05-22-538/index.md"
+label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+
+[[extra.related]]
+path = "@/posts/2025-01-11-245/index.md"
+label = "#war #video #warpath"
+
+[[extra.related]]
+path = "@/posts/2025-09-15-671/index.md"
+label = "#video #film #nightwatch #zavulon"
+
+[[extra.related]]
+path = "@/posts/2025-08-20-632/index.md"
+label = "Как работает дата-центр Яндекса в Финляндии Heating of a city by…"
 +++
 
 {{ tag(t="odysee") }} looks like {{ tag(t="convert") }} {{ tag(t="video") }} right in a {{ tag(t="browser") }} - without uploading to the backend.
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}

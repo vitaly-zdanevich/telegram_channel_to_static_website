@@ -19,13 +19,33 @@ prev_title = ""
 prev_body = "My another #userscript: small toggle for #darkmode on #stackexchange\n// ==UserScript==\n// @name StackExchange dark mode work-in-progress\n// @version 2025july4\n// @description From\n// @author daniel.z.tg and Vitaly Zdanevich\n// @match\n// @match\n// @match\n// @match\n// @match\n// @match\n// @run-at document-body\n// ==/UserScript==\n// NOT working for all sites\ndocument.body.classList.add('theme-dark');"
 views = 43
 ids = [597]
+
+[[extra.related]]
+path = "@/posts/2025-02-22-379/index.md"
+label = "#anime #music #choir"
+
+[[extra.related]]
+path = "@/posts/2025-02-10-355/index.md"
+label = "#music #anime #rammstein"
+
+[[extra.related]]
+path = "@/posts/2025-08-20-633/index.md"
+label = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch #music #anime #russi…"
+
+[[extra.related]]
+path = "@/posts/2025-02-10-354/index.md"
+label = "#music #anime #tatu #rammstein"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
 +++
 
 {{ tag(t="music") }}  
 {{ tag(t="anime") }}  
 {{ tag(t="susumu_hirasawa") }}  
 
-<https://youtu.be/1X4YQEgWJsw>  
+[https://youtu.be/1X4YQEgWJsw](<https://youtu.be/1X4YQEgWJsw> "Susumu Hirasawa - Chaser")  
 
 <https://en.wikipedia.org/wiki/Susumu_Hirasawa>
 

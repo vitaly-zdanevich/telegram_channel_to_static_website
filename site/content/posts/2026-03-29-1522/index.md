@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#cementery\n#virginmary\n#blue\n#monument\n#belarus\n#ивашковцы\n#globustut\n#year2005\nSource"
 views = 16
 ids = [1522]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1529/index.md"
+label = "#village #black #abandone #Пелегринда #belarus #globustut #year2…"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1208/index.md"
+label = "#belarus #abandone #globustut #year2005"
 +++
 
 {{ tag(t="abandone") }}  
@@ -30,16 +50,16 @@ ids = [1522]
 
 [Source](https://commons.wikimedia.org/wiki/File:059-111_%D0%9F%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B8%D0%BD%D0%B4%D0%B0,_%D1%83%D1%81%D1%8B%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_19_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#column\n#belarus\n#abandone\n#globustut\n#year2005\nSource,%D0%B1%D1%80%D0%B0%D0%BC%D0%B0,%D1%81%D0%BD%D1%8F%D1%82%D0%BE30%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F2005.jpg)"
 views = 5
 ids = [1212]
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1223/index.md"
+label = "#grave #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1265/index.md"
+label = "#grave #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="grave") }}  
@@ -30,22 +50,22 @@ ids = [1212]
 
 [Source](https://commons.wikimedia.org/wiki/File:051-441_%D0%94%D1%83%D0%B1%D0%BE%D0%B9_(%D0%9F%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%80-%D0%BD),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_30_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}
 
-![](09.jpg)
+{{ img(src="09.jpg") }}
 
-![](10.jpg)
+{{ img(src="10.jpg") }}

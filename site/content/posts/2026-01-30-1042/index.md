@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#abandone\n#pillar\n#бочейково\n#winter\n#year2025\n#globustut\nFrom"
 views = 5
 ids = [1042]
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1046/index.md"
+label = "#belarus #abandone #church #слабодка #winter #year2005 #globustu…"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1226/index.md"
+label = "#church #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-928/index.md"
+label = "#belarus #church #abandone #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1554/index.md"
+label = "#abandone #church #Островно #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -32,10 +52,10 @@ ids = [1042]
 
 From [https://commons.wikimedia.org/wiki/File:045-309\_Свеча,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-309_%D0%A1%D0%B2%D0%B5%D1%87%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}

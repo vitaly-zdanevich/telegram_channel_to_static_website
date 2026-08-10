@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "# cd to a first sorted folder, exclude hidden\nfirst() {\nlocal first\nfirst=\"$(\nfind . -mindepth 1 -maxdepth 1 -type d ! -name '.' -printf '%fn'\n| sort\n| head -n 1\n)\"\nif [[ -z \"$first\" ]]; then\necho \"no folders\"\nreturn 1\nfi\ncd \"./$first\"\n}"
 views = 19
 ids = [1105]
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1123/index.md"
+label = "#commons"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1093/index.md"
+label = "#commons My account is big, my account is very big"
+
+[[extra.related]]
+path = "@/posts/2025-06-19-584/index.md"
+label = "#commons TODO list"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1306/index.md"
+label = "Magic that I can say #codex to download all scan - and I get it,…"
+
+[[extra.related]]
+path = "@/posts/2026-01-16-887/index.md"
+label = "#commons: #count uploads from a specific user for a period of ti…"
 +++
 
 {{ tag(t="commons") }}  
@@ -44,4 +64,4 @@ for page_index in range(len(doc)):
 
 and upload through my {{ tag(t="pywikibot") }} wrapper <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 
-![](5215513357908120858_1214331332_460002586.jpg)
+{{ img(src="5215513357908120858_1214331332_460002586.jpg") }}

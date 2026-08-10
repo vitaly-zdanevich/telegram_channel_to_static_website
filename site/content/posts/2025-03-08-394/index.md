@@ -19,12 +19,32 @@ prev_title = ""
 prev_body = "Channel photo updated"
 views = 64
 ids = [394]
+
+[[extra.related]]
+path = "@/posts/2025-03-08-396/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-392/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-391/index.md"
+label = "#alexjones #warhammer Some people think that his speeches correl…"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-395/index.md"
+label = "#arsenmarkaryan #alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-588/index.md"
+label = "#game #demo #warhammer #dawnofwar #2004 If you see \"Failed to in…"
 +++
 
 {{ tag(t="alex_jones") }}  
 {{ tag(t="warhammer") }}  
 
-[Source](https://www.youtube.com/watch?v=87FF0x8795o)
+[Source](<https://www.youtube.com/watch?v=87FF0x8795o> "If Alex Jones gave a speech to the Cadians | SPACE MARINE 2 | WARHAMMER 40K")
 
 {{ youtube(id="87FF0x8795o") }}
 

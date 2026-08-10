@@ -30,8 +30,8 @@ ids = [1406]
 
 Если я его куплю, он сможет устроиться вместо меня на работу или выполнять другую деятельность?
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-{{ video(src="02.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1406-02.mp4") }}
 
 {{ tag(t="video") }}

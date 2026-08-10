@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Returned to uploading of artifacts from moneymuseum.by, through my new web extension, and again - sometime I see the beauty\n#money\n#moneymuseum\nSource"
 views = 34
 ids = [620]
+
+[[extra.related]]
+path = "@/posts/2025-03-27-458/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-457/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-456/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-455/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
 +++
 
 {{ tag(t="money") }}  
@@ -28,4 +48,4 @@ ids = [620]
 
 [Source](https://commons.wikimedia.org/wiki/Category:250_rubles_banknotes#/media/File:25_%D1%82%D1%83%D0%BC%D0%B0%D0%BD_(%D0%B0%D0%B2%D0%B5%D1%80%D1%81).png)
 
-![](5240341610359812844_1220112110_456258284.jpg)
+{{ img(src="5240341610359812844_1220112110_456258284.jpg") }}

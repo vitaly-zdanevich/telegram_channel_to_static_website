@@ -17,8 +17,28 @@ next_body = "#cats\n#religion\n#orthodox\n#blackandwhite\nSource"
 prev_id = 1721
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
-views = 22
+views = 24
 ids = [1729]
+
+[[extra.related]]
+path = "@/posts/2026-05-13-1758/index.md"
+label = "Wow my #reeknote #evernote #cli can now play audio and show imag…"
+
+[[extra.related]]
+path = "@/posts/2026-02-20-1118/index.md"
+label = "#python My #geeknote #evernote #cli now available on PyPI"
+
+[[extra.related]]
+path = "@/posts/2026-04-27-1687/index.md"
+label = "#my #evernote #telegrambot #awslambda #ai #codex #gpt5 Article a…"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1745/index.md"
+label = "My another hobby project, made with #llm / #codex: converter of…"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 +++
 
-Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} <https://github.com/vitaly-zdanevich/reeknote> - faster geeknote.
+Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} [https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 78 commits · GPL-3.0 · last push 2026-07-17") - faster geeknote.

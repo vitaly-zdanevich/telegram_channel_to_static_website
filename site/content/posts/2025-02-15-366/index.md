@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#coin\nIts real coins, from Cook Islands\nSource"
 views = 40
 ids = [366]
+
+[[extra.related]]
+path = "@/posts/2025-01-15-246/index.md"
+label = "#game #man2"
+
+[[extra.related]]
+path = "@/posts/2024-12-12-216/index.md"
+label = "#man2"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
 +++
 
 {{ tag(t="game") }}  

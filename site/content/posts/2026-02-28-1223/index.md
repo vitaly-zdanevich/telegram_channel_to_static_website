@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#architecture\n#column\n#white\n#belarus\n#globustut\n#year2005\nSource"
 views = 5
 ids = [1223]
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1212/index.md"
+label = "#grave #abandone #belarus #globustut #year2005 Source,%D1%81%D0%…"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1265/index.md"
+label = "#grave #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="grave") }}  
@@ -30,8 +50,8 @@ ids = [1223]
 
 [Source](https://commons.wikimedia.org/wiki/File:051-570_%D0%9D%D0%BE%D0%B2_%D0%9F%D0%BE%D0%BF%D0%B8%D0%BD%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_30_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}

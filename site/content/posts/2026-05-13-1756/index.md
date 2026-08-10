@@ -18,8 +18,28 @@ next_body = "Wow my #reeknote (#evernote #cli) can now play audio and show image
 prev_id = 1755
 prev_title = ""
 prev_body = "#ai\n#screenshot from"
-views = 24
+views = 25
 ids = [1756]
+
+[[extra.related]]
+path = "@/posts/2025-12-31-832/index.md"
+label = "#language Ве́псский язы́к самоназвание — vepsän kel' — язык вепс…"
+
+[[extra.related]]
+path = "@/posts/2024-11-14-188/index.md"
+label = "Love such comments #code"
+
+[[extra.related]]
+path = "@/posts/2025-05-19-537/index.md"
+label = "#webdesign #yandex"
+
+[[extra.related]]
+path = "@/posts/2025-05-12-522/index.md"
+label = "Wikipedia templates #code #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1094/index.md"
+label = "#firefox translation from #german to #russian"
 +++
 
 {{ tag(t="code") }}  
@@ -29,6 +49,6 @@ ids = [1756]
 
 From <https://t.me/Yandex4Developers/1513>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

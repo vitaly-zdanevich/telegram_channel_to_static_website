@@ -19,6 +19,14 @@ prev_title = ""
 prev_body = "#medicine\n#death\nSource"
 views = 28
 ids = [717]
+
+[[extra.related]]
+path = "@/posts/2025-03-16-426/index.md"
+label = "#life #esoteric #brodsky"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2036/index.md"
+label = "#life #death #captcha #cat #usb"
 +++
 
 {{ tag(t="life") }}  
@@ -29,6 +37,6 @@ ids = [717]
 
 [Source](https://www.instagram.com/p/DMdf1hwMGFr)
 
-{{ instagram(url="https://www.instagram.com/p/DMdf1hwMGFr/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/717-01.mp4") }}
 
 {{ tag(t="video") }}

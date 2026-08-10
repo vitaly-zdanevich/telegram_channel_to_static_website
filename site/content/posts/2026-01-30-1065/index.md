@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#museum\n#red\n#сенно\nFrom"
 views = 11
 ids = [1065]
+
+[[extra.related]]
+path = "@/posts/2026-01-29-962/index.md"
+label = "#belarus #architecture #church #вселюб #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-28-961/index.md"
+label = "#belarus #architecture #church #несвиж #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-28-956/index.md"
+label = "#belarus #architecture #church #раубичи #year2005 #globustut Fro…"
+
+[[extra.related]]
+path = "@/posts/2026-07-05-1945/index.md"
+label = "#belarus #КрасныйПартизан #photo #architecture #church #year2005…"
+
+[[extra.related]]
+path = "@/posts/2026-07-04-1925/index.md"
+label = "#belarus #gomel #photo #architecture #church #year2005 #globustu…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -32,10 +52,10 @@ ids = [1065]
 
 From [https://commons.wikimedia.org/wiki/File:045-464\_Монастырь,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-464_%D0%9C%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#church\n#раубичи\n#year2005\n#globustut\nFrom"
 views = 10
 ids = [957]
+
+[[extra.related]]
+path = "@/posts/2026-01-29-989/index.md"
+label = "#belarus #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1055/index.md"
+label = "#belarus #sign #winter #year2005 #globustut Рубеж From"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1054/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-995/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut Близ Новогру…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-986/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,4 +50,4 @@ ids = [957]
 
 From [https://commons.wikimedia.org/wiki/File:042-077\_Куноса,\_снято\_29\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:042-077_%D0%9A%D1%83%D0%BD%D0%BE%D1%81%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5460806022583750227_1271442981_460000851.jpg)
+{{ img(src="5460806022583750227_1271442981_460000851.jpg") }}

@@ -18,8 +18,28 @@ next_body = "#film\n#daywatch\nДневной Дозор: конец, эпизо
 prev_id = 27
 prev_title = ""
 prev_body = "#my\n#film\n#korolishut"
-views = 72
+views = 74
 ids = [29]
+
+[[extra.related]]
+path = "@/posts/2024-06-11-53/index.md"
+label = "#film #nightwatch Night Watch, love it"
+
+[[extra.related]]
+path = "@/posts/2023-07-11-21/index.md"
+label = "#film #nightwatch Love these episodes from Night Watch Ночной До…"
+
+[[extra.related]]
+path = "@/posts/2025-09-15-671/index.md"
+label = "#video #film #nightwatch #zavulon"
+
+[[extra.related]]
+path = "@/posts/2025-09-09-665/index.md"
+label = "#film #russia #nightwatch #zavulon"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
 +++
 
 {{ tag(t="film") }}  

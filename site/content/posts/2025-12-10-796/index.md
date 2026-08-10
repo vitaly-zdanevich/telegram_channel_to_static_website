@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Фильм \"Лучше не бывает\": несколько минут в разных русских озвучках\nОбратил внимание как отличается перевод/озвучка.\n#film\n#asgoodasitgets\n#translation\n#russian"
 views = 48
 ids = [796]
+
+[[extra.related]]
+path = "@/posts/2026-06-14-1826/index.md"
+label = "#bus #architecture"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-06-29-1870/index.md"
+label = "#belarus #колодищи #architecture #church Author: Димитров Денис"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
 +++
 
 {{ tag(t="architecture") }}  
@@ -28,4 +48,4 @@ ids = [796]
 
 From <https://t-j.ru/zaozerie>
 
-![](5319041246770696146_1238435797_460001234.jpg)
+{{ img(src="5319041246770696146_1238435797_460001234.jpg") }}

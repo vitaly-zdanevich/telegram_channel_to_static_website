@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Percent of people who think their culture is superior to others\n#map\n#culture\n#sakartvelo\nSource"
 views = 40
 ids = [632]
+
+[[extra.related]]
+path = "@/posts/2025-05-19-537/index.md"
+label = "#webdesign #yandex"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1078/index.md"
+label = "#ui #yandex #samara"
+
+[[extra.related]]
+path = "@/posts/2025-05-22-538/index.md"
+label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+
+[[extra.related]]
+path = "@/posts/2025-01-11-245/index.md"
+label = "#war #video #warpath"
 +++
 
 **Как работает дата-центр Яндекса в Финляндии**  
@@ -29,6 +49,6 @@ Heating of a city by {{ tag(t="datacenter") }}
 {{ tag(t="video") }}  
 {{ tag(t="heat") }}  
 
-[Source](https://www.youtube.com/watch?v=-hE8jkyfqMw)
+[Source](<https://www.youtube.com/watch?v=-hE8jkyfqMw> "Как работает дата-центр Яндекса в Финляндии")
 
 {{ youtube(id="-hE8jkyfqMw") }}

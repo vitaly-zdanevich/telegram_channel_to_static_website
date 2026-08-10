@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#pillar\n#abandone\n#year2005\n#globustut"
 views = 8
 ids = [915]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1532/index.md"
+label = "#architecture #abandone #Свиряны #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1058/index.md"
+label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+
+[[extra.related]]
+path = "@/posts/2026-07-05-1951/index.md"
+label = "#belarus #ленино #photo #architecture #abandone #year2005 #globu…"
+
+[[extra.related]]
+path = "@/posts/2026-07-05-1940/index.md"
+label = "#belarus #хальч #photo #architecture #abandone #year2005 #globus…"
+
+[[extra.related]]
+path = "@/posts/2026-07-05-1930/index.md"
+label = "#belarus #демьянки #photo #architecture #abandone #year2005 #glo…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,4 +50,4 @@ ids = [915]
 
 [https://commons.wikimedia.org/wiki/File:038-110\_Ошмяны,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-110_%D0%9E%D1%88%D0%BC%D1%8F%D0%BD%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440408303772044160_1266693767_460000128.jpg)
+{{ img(src="5440408303772044160_1266693767_460000128.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#design\n#logo\n#artlebedevSource"
 views = 28
 ids = [758]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
 +++
 
 {{ tag(t="design") }}  
@@ -27,4 +47,4 @@ ids = [758]
 
 [Source](https://www.artlebedev.ru/dominanta/svet-objects/)
 
-![](5229215222705359745_1217521546_460000129.jpg)
+{{ img(src="5229215222705359745_1217521546_460000129.jpg") }}

@@ -18,8 +18,28 @@ next_body = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory\nPlayin
 prev_id = 784
 prev_title = ""
 prev_body = "#punk\n#logo\n#music\n#korolishut\nSource"
-views = 41
+views = 42
 ids = [785]
+
+[[extra.related]]
+path = "@/posts/2025-11-21-788/index.md"
+label = "#webdesign #webdesigndark #webdesigndarkblue #webdesigngame #vis…"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [785]
 
 <https://www.allods.gipat.ru/index.php?p=news&id=476>
 
-![](5256072907337698864_1223774838_460000816.jpg)
+{{ img(src="5256072907337698864_1223774838_460000816.jpg") }}

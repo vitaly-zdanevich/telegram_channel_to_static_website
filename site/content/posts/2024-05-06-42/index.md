@@ -18,10 +18,26 @@ next_body = "Another coin from Belarus Легенда пра пчалу #bee #co
 prev_id = 41
 prev_title = ""
 prev_body = "I love this browser extension - shows Wikidata information about the current page"
-views = 45
+views = 47
 ids = [42]
+
+[[extra.related]]
+path = "@/posts/2025-02-15-362/index.md"
+label = "#coin Its real coins, from Cook Islands"
+
+[[extra.related]]
+path = "@/posts/2025-02-15-361/index.md"
+label = "#coin"
+
+[[extra.related]]
+path = "@/posts/2024-05-07-43/index.md"
+label = "Another coin from Belarus Легенда пра пчалу #bee #coin"
+
+[[extra.related]]
+path = "@/posts/2025-09-22-681/index.md"
+label = "#coin #belarus #history Uploaded to"
 +++
 
 Coin 5 years of Lithuania independence, from [https://commons.wikimedia.org/wiki/File:Монета\_5\_лет\_Независимости\_50\_литов\_back.jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%B0_5_%D0%BB%D0%B5%D1%82_%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_50_%D0%BB%D0%B8%D1%82%D0%BE%D0%B2_back.jpg) {{ tag(t="coin") }}
 
-![](5316864029060357579_1237928874_456252875.jpg)
+{{ img(src="5316864029060357579_1237928874_456252875.jpg") }}

@@ -23,4 +23,4 @@ ids = [139]
 
 [Categories](https://en.wikipedia.org/wiki/Duke_Nukem_3D)
 
-![](5366491319603683533_1249483628_456253645.jpg)
+{{ img(src="5366491319603683533_1249483628_456253645.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#os\n#design\n#windows\n#windowsxp"
 views = 26
 ids = [728]
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-758/index.md"
+label = "#design #artlebedev"
 +++
 
 {{ tag(t="design") }}  
@@ -29,4 +49,4 @@ ids = [728]
 
 [Source](https://commons.wikimedia.org/wiki/File:Gamecube-controller-breakdown.jpg)
 
-![](5190435396050354424_1208492414_456261880.jpg)
+{{ img(src="5190435396050354424_1208492414_456261880.jpg") }}

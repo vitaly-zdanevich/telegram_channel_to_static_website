@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Как работает дата-центр Яндекса в Финляндии\nHeating of a city by #datacenter\n#yandex\n#video\n#heat\nSource"
 views = 39
 ids = [633]
+
+[[extra.related]]
+path = "@/posts/2025-07-12-597/index.md"
+label = "#music #anime #susumuhirasawa"
+
+[[extra.related]]
+path = "@/posts/2025-02-22-379/index.md"
+label = "#anime #music #choir"
+
+[[extra.related]]
+path = "@/posts/2025-02-10-355/index.md"
+label = "#music #anime #rammstein"
+
+[[extra.related]]
+path = "@/posts/2025-02-10-354/index.md"
+label = "#music #anime #tatu #rammstein"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
 +++
 
 `【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch`  
@@ -28,6 +48,6 @@ ids = [633]
 {{ tag(t="russian") }}  
 {{ tag(t="sugar") }}  
 
-[Source](https://youtu.be/WLJeJar3Cgg)
+[Source](<https://youtu.be/WLJeJar3Cgg> "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch")
 
 {{ youtube(id="WLJeJar3Cgg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#church\n#globustut\nSource"
 views = 16
 ids = [856]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1158/index.md"
+label = "#church #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-855/index.md"
+label = "#belarus #church #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1178/index.md"
+label = "#church #architecture #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1171/index.md"
+label = "#church #belarus #abandone #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1152/index.md"
+label = "#church #blue #belarus #globustut Source,%D1%81%D0%BD%D1%8F%D1%8…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [856]
 
 [Source](https://commons.wikimedia.org/wiki/File:027-418_%D0%9F%D0%BE%D0%BB%D0%BE%D1%86%D0%BA,_04-11-2004.jpg)
 
-![](5404320244794329923_1258291361_460000067.jpg)
+{{ img(src="5404320244794329923_1258291361_460000067.jpg") }}

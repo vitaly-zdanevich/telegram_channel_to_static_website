@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#painting\n#angel\n#ship\n#gustavedore\nEngraving by Gustave Doré, representing the departure of Aigues-Mortes of Louis IX for the crusade\nSource"
 views = 23
 ids = [763]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-765/index.md"
+label = "#painting #gustavedore Woman of the Apocalypse"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-764/index.md"
+label = "#painting #gustavedore"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-762/index.md"
+label = "#painting #angel #ship #gustavedore Engraving by Gustave Doré, r…"
 +++
 
 {{ tag(t="painting") }}  
@@ -27,4 +47,4 @@ ids = [763]
 
 Géraint et Enide sortant de la forêt Pierre noire, lavis brun, rehauts de blanc - 42,2 x 32,2 cm
 
-![](5229215222705359857_1217521546_460000241.jpg)
+{{ img(src="5229215222705359857_1217521546_460000241.jpg") }}

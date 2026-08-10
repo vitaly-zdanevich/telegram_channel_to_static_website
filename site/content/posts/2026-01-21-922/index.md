@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#nature\n#village\n#year2005\n#globustut"
 views = 5
 ids = [922]
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1208/index.md"
+label = "#belarus #abandone #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-918/index.md"
+label = "#belarus #abandone #year2005 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [922]
 
 [https://commons.wikimedia.org/wiki/File:038-497\_Михайловщина,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-497_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440801563862568209_1266785330_460000529.jpg)
+{{ img(src="5440801563862568209_1266785330_460000529.jpg") }}

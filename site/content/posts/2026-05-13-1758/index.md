@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#code\n#russian\n#yandex\n#language\nFrom"
 views = 21
 ids = [1758]
+
+[[extra.related]]
+path = "@/posts/2026-04-30-1729/index.md"
+label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
+
+[[extra.related]]
+path = "@/posts/2026-02-20-1118/index.md"
+label = "#python My #geeknote #evernote #cli now available on PyPI"
+
+[[extra.related]]
+path = "@/posts/2025-05-06-499/index.md"
+label = "#evernote image editor: beautiful"
+
+[[extra.related]]
+path = "@/posts/2026-05-25-1785/index.md"
+label = "Another #llm victory: repack of the official #evernote client"
+
+[[extra.related]]
+path = "@/posts/2026-03-05-1334/index.md"
+label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
 +++
 
 Wow my {{ tag(t="reeknote") }} ({{ tag(t="evernote") }} {{ tag(t="cli") }}) can now play audio and show images, in a terminal  
 
-<https://github.com/vitaly-zdanevich/reeknote>
+[https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 78 commits · GPL-3.0 · last push 2026-07-17")
 
-![](5199865542213308919_1210688041_460001783.jpg)
+{{ img(src="5199865542213308919_1210688041_460001783.jpg") }}

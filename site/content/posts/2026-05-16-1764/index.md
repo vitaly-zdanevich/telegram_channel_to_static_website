@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#error\n#gitlab\n#contradiction"
 views = 24
 ids = [1764]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-04-19-1648/index.md"
+label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
 +++
 
 {{ tag(t="music") }}  
@@ -26,7 +46,7 @@ ids = [1764]
 
 **Остров в океане**  
 
-From <https://www.youtube.com/watch?v=rjvImL06_1k>  
+From [https://www.youtube.com/watch?v=rjvImL06_1k](<https://www.youtube.com/watch?v=rjvImL06_1k> "Остров в океане ане ане - ПРОРОК САН БОЙ (MemMusic #12)")  
 
 Про исполнителя [https://ru.wikipedia.org/wiki/Пророк\_Санбой](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%80%D0%BE%D0%BA_%D0%A1%D0%B0%D0%BD%D0%B1%D0%BE%D0%B9)
 

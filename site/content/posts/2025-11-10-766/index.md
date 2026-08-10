@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#painting\n#gustavedore\nWoman of the Apocalypse\nSource"
 views = 36
 ids = [766]
+
+[[extra.related]]
+path = "@/posts/2025-11-12-772/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-11-768/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-11-767/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-779/index.md"
+label = "#webdesign #webdesignold #webdesigngames Year: 2000"
+
+[[extra.related]]
+path = "@/posts/2025-11-12-771/index.md"
+label = "#webdesign #webdesignold #xbox Wikidata"
 +++
 
 {{ tag(t="about") }}  
@@ -31,4 +51,4 @@ ids = [766]
 
 <https://web.archive.org/web/20150905154717/http://www.videogametalk.com/about.php>
 
-![](5228869099880911230_1217440958_460001662.jpg)
+{{ img(src="5228869099880911230_1217440958_460001662.jpg") }}

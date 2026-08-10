@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#castle\n#abandone\n#новогрудок\n#belarus\n#globustut\n#year2005\nSource"
 views = 9
 ids = [1386]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1389/index.md"
+label = "#building #orange #новогрудок #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1437/index.md"
+label = "#building #bricks #village #white #slonim #belarus #globustut #y…"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-866/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-865/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-864/index.md"
+label = "#belarus #building #globustut"
 +++
 
 {{ tag(t="building") }}  
@@ -31,4 +51,4 @@ ids = [1386]
 
 [Source](https://commons.wikimedia.org/wiki/File:055-243_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D1%83%D0%B3%D0%BE%D0%BB_%D1%83%D0%BB_%D0%97%D0%B0%D0%BC%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B8_%D1%83%D0%BB_1-%D0%B3%D0%BE_%D0%9C%D0%B0%D1%8F,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5291909495980233790_1232118694_460002366.jpg)
+{{ img(src="5291909495980233790_1232118694_460002366.jpg") }}

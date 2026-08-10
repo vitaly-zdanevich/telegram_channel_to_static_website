@@ -17,7 +17,7 @@ next_body = "#няшка"
 prev_id = 379
 prev_title = ""
 prev_body = "#anime\n#music\n#choir\nSource"
-views = 90
+views = 91
 forwarded_from = "Vitaly Zdanevich"
 forwarded_from_url = "https://t.me/vitaly_zdanevich"
 ids = [380]
@@ -28,12 +28,12 @@ ids = [380]
 Перакладаць будзем тут <https://gitlab.com/vitaly-zdanevich/space-rangers-to-be>  
 Стварыце там аккаунт, я адкрыт для дапамогi, калi там нешта незразумела.  
 
-Там таксама i крыху аудыя, можа гэта я ужо сам, паглядзiм. Яшчэ ў канцы ёсць [песня пра космас](https://youtu.be/q3gWi7ATybk) - калi хто жадае спець :)  
+Там таксама i крыху аудыя, можа гэта я ужо сам, паглядзiм. Яшчэ ў канцы ёсць [песня пра космас](<https://youtu.be/q3gWi7ATybk> "Космические Рейнджеры 2 / Space Rangers 2 - Мы улетим (4-х голосная версия)") - калi хто жадае спець :)  
 
 Калi ласка перашлiце гэта тым хто быць можа зацiкаўлены.  
 
-Аб гульне <https://www.youtube.com/watch?v=P6j3WWh7Yc8>
+Аб гульне [https://www.youtube.com/watch?v=P6j3WWh7Yc8](<https://www.youtube.com/watch?v=P6j3WWh7Yc8> "10 ЛЕТ в Космических Рейнджерах 2")
 
 {{ youtube(id="P6j3WWh7Yc8") }}
 
-![](5325658489994995451_1239976494_456255227.jpg)
+{{ img(src="5325658489994995451_1239976494_456255227.jpg") }}

@@ -17,10 +17,30 @@ next_body = "#scream\n#metal\nSource"
 prev_id = 1750
 prev_title = ""
 prev_body = "This is how in #go we remove an element from a collection\nfunc rm(i int, lists[]ListNode) []ListNode {\nreturn append(lists[:i], lists[i+1:]...)\n}\nUsually its a library call."
-views = 27
+views = 28
 forwarded_from = "Andrei Vavilov"
 forwarded_from_url = "https://t.me/AMVavilov"
 ids = [1751]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1861/index.md"
+label = "#26июня2026 пт 21.30-23:00 айтишная посиделка в Friends club #бе…"
+
+[[extra.related]]
+path = "@/posts/2026-05-28-1799/index.md"
+label = "#28мая2026 чт 21:00–01:00 — айтишная посиделка в Still Young Bar…"
+
+[[extra.related]]
+path = "@/posts/2026-02-26-1200/index.md"
+label = "#27февраля2026 пт 21.30-01:00 Hard IT в Laboratory Bar #безоплат…"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1088/index.md"
+label = "#6февраля2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
+
+[[extra.related]]
+path = "@/posts/2026-01-23-933/index.md"
+label = "#23января2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
 +++
 
 {{ tag(t="7мая2026") }} (чт) 21.30-01:00 айтишная посиделка в [Still Young Bar](https://yandex.com.ge/maps/-/CHb8FN07)  

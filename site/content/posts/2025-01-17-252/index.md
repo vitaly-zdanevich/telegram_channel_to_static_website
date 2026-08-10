@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = ""
 views = 30
 ids = [252]
+
+[[extra.related]]
+path = "@/posts/2025-08-09-621/index.md"
+label = "#anime #gpu"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-398/index.md"
+label = "#anime #voice"
+
+[[extra.related]]
+path = "@/posts/2026-07-27-2074/index.md"
+label = "#anime #war #ground"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1831/index.md"
+label = "#anime #phones #evangelion From"
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1624/index.md"
+label = "#preview on #bilibili #anime"
 +++
 
 {{ tag(t="movie") }}  
@@ -26,6 +46,6 @@ ids = [252]
 
 <https://coub.com/view/3e8rbc>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/252-01.mp4") }}
 
 {{ tag(t="video") }}

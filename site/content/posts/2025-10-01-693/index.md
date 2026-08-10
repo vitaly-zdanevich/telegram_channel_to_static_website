@@ -17,9 +17,29 @@ next_title = ""
 next_body = "#psy\n#success\n#pain\n#cry\n#secret\nSource"
 prev_id = 692
 prev_title = ""
-prev_body = "Александр Исачёв, лишившись поддержки мецената, возвращается в Речицу, где 14 ноября 1987 года проходит его первая персональная выставка. Её посетило более 20 тысяч человек. Это событие стало настоящей сенсацией в культурной жизни БССР. Да и сам Исачев был счастлив, что его наконец-то признали. Через три дня он умер от сердечного приступа, в 33 года.\nAlexander Isachev, having lost the support of the philanthropist, returns to Rechitsa, where on November 14, 1987 his first personal exhibition is being held. It was visited by more than 20 thousand people. This event became a real sensation in the cultural life of the BSSR. Isachev himself was happy that he was finally recognized. Three days later, he died of a heart attack, on 33 years.\nSource"
+prev_body = "Александр Исачёв, лишившись поддержки мецената, возвращается в Речицу, где 14 ноября 1987 года проходит его первая персональная выставка. Её посетило более 20 тысяч человек. Это событие стало настоящей сенсацией в культурной жизни БССР. Да и сам Исачев был счастлив, что его наконец-то признали. Через три дня он умер от сердечного приступа, в 33 года.\nAlexander Isachev, having lost the support of the philanthropist, returns to Rechitsa, where on November 14, 1987 his first personal exhibition is being held. It was visited by more than 20 thousand people. This event became a real sensation in the cultural life of the BSSR. Isachev himself was happy that he was finally recognized. Three days later, he died of a heart attack, on 33 years.\n— советский художник, график.\")\nSource"
 views = 25
 ids = [693]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  

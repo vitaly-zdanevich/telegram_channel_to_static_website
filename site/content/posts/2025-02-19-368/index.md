@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#turkey\n#istanbul\n#video\n#my\nAnimation on building by projectors, love it."
 views = 40
 ids = [368]
+
+[[extra.related]]
+path = "@/posts/2026-06-27-1868/index.md"
+label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
+
+[[extra.related]]
+path = "@/posts/2026-06-10-1807/index.md"
+label = "#love this #extension - #highlight predefined list of words, on…"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1120/index.md"
+label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+
+[[extra.related]]
+path = "@/posts/2026-02-07-1099/index.md"
+label = "#love it - against #youtube #clickbait"
+
+[[extra.related]]
+path = "@/posts/2025-07-03-593/index.md"
+label = "#dog #love #mmorpg"
 +++
 
 {{ tag(t="love") }}  
@@ -29,4 +49,4 @@ ids = [368]
 
 [Source](https://www.facebook.com/share/p/1A3sXdEuP3)
 
-![](5309901582130865796_1236307803_456255108.jpg)
+{{ img(src="5309901582130865796_1236307803_456255108.jpg") }}

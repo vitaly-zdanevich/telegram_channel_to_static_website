@@ -18,13 +18,33 @@ next_body = "#meanna\n#sergeykurginyan\nК моим мыслям о челове
 prev_id = 201
 prev_title = ""
 prev_body = "#wikipedia"
-views = 35
+views = 36
 ids = [202]
+
+[[extra.related]]
+path = "@/posts/2025-05-14-534/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-533/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2026-04-25-1686/index.md"
+label = "#photo #batumi #dog"
+
+[[extra.related]]
+path = "@/posts/2025-09-08-656/index.md"
+label = "#iran #tehran #photo"
+
+[[extra.related]]
+path = "@/posts/2025-06-16-576/index.md"
+label = "#photo #batumi #chandelier"
 +++
 
 My {{ tag(t="photo") }} from 2012, for the defunct website of naked {{ tag(t="cats") }}  
 {{ tag(t="eyes") }}
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -16,8 +16,8 @@ next_body = ""
 prev_id = 44
 prev_title = ""
 prev_body = "Created browser extension to show Wikimedia Commons links on a museum website moneymuseum.by"
-views = 49
+views = 50
 ids = [45]
 +++
 
-![](5348321752515730728_1245253196_456252712.jpg)
+{{ img(src="5348321752515730728_1245253196_456252712.jpg") }}

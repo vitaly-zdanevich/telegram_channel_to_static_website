@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = ""
 views = 21
 ids = [499]
+
+[[extra.related]]
+path = "@/posts/2026-05-25-1785/index.md"
+label = "Another #llm victory: repack of the official #evernote client"
+
+[[extra.related]]
+path = "@/posts/2026-01-26-948/index.md"
+label = "#css Wow I did a good ::selection for my #evernote style a::sele…"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-614/index.md"
+label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
+
+[[extra.related]]
+path = "@/posts/2026-05-13-1758/index.md"
+label = "Wow my #reeknote #evernote #cli can now play audio and show imag…"
+
+[[extra.related]]
+path = "@/posts/2026-02-27-1202/index.md"
+label = "My new #userscript for #evernote adds a few #hotkey"
 +++
 
 {{ tag(t="evernote") }} image editor: beautiful
 
-![](5246804586952518108_1221616889_456255964.jpg)
+{{ img(src="5246804586952518108_1221616889_456255964.jpg") }}

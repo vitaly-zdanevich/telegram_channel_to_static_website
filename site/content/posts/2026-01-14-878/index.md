@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#church\n#globustut\n#abandone\nSource.%D0%A4%D1%80%D0%B0%D0%B3%D0%BC%D1%8D%D0%BD%D1%82%D1%8B.07.jpg)"
 views = 13
 ids = [878]
+
+[[extra.related]]
+path = "@/posts/2025-01-29-346/index.md"
+label = "#fashion"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1087/index.md"
+label = "#fashion #boy"
+
+[[extra.related]]
+path = "@/posts/2025-09-30-686/index.md"
+label = "#fashion #istanbul"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1667/index.md"
+label = "#fashion #street #london"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1662/index.md"
+label = "#fashion #trash #black Author: Found at"
 +++
 
 {{ tag(t="saint") }}  
@@ -30,4 +50,4 @@ Saint Francis of Assisi, by José de Ribera, 1643
 
 [Source](https://commons.wikimedia.org/wiki/File:San_Francisco_de_As%C3%ADs,_por_Jos%C3%A9_de_Ribera.jpg)
 
-![](5422584726364556635_1262543892_460000603.jpg)
+{{ img(src="5422584726364556635_1262543892_460000603.jpg") }}

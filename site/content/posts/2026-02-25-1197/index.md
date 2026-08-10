@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#abandone\n#dark\n#belarus\n#globustut\n#year2005\nSource"
 views = 2
 ids = [1197]
+
+[[extra.related]]
+path = "@/posts/2024-07-21-94/index.md"
+label = "#firefox vertical tabs with plus custom CSS from"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1083/index.md"
+label = "Why #facebook is so slow : #firefox"
+
+[[extra.related]]
+path = "@/posts/2025-11-17-781/index.md"
+label = "#js Out of memory, but RAM is used to 64% #firefox"
+
+[[extra.related]]
+path = "@/posts/2025-03-11-403/index.md"
+label = "I have custom CSS for a dozen of web services. Custom CSS for #f…"
+
+[[extra.related]]
+path = "@/posts/2026-06-10-1807/index.md"
+label = "#love this #extension - #highlight predefined list of words, on…"
 +++
 
 {{ tag(t="firefox") }}  
@@ -27,4 +47,4 @@ ids = [1197]
 
 Copy non-latin links without {{ tag(t="percent") }} <https://addons.mozilla.org/en-US/firefox/addon/copy-decoded-link/>
 
-![](5260412709797302308_1224785277_460001316.jpg)
+{{ img(src="5260412709797302308_1224785277_460001316.jpg") }}

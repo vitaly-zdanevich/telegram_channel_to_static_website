@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#health\n#science"
 views = 23
 ids = [510]
+
+[[extra.related]]
+path = "@/posts/2025-05-27-542/index.md"
+label = "#git"
+
+[[extra.related]]
+path = "@/posts/2026-01-13-876/index.md"
+label = "#macOS: to install #git I need 25 GB"
+
+[[extra.related]]
+path = "@/posts/2025-06-27-591/index.md"
+label = "#git #gitgraph"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1085/index.md"
+label = "#logo #gitlab #git"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-907/index.md"
+label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
 +++
 
 {{ tag(t="package_manager") }}  
@@ -29,6 +49,6 @@ ids = [510]
 
 For example portable {{ tag(t="git") }} in a single file <https://pkgs.pkgforge.dev/repo/pkgcache/x86_64-linux/git/appimage/ppkg/stable/git>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

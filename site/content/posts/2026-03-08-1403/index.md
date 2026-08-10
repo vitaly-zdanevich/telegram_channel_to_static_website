@@ -17,7 +17,7 @@ next_body = "Микросервисы повышают устойчивость 
 prev_id = 1402
 prev_title = ""
 prev_body = "Интересная пометка в Paint"
-views = 13
+views = 14
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1680"
 ids = [1403]
@@ -25,6 +25,6 @@ ids = [1403]
 
 Визуализация того, что находится внутри моделей нейросетей, а именно их слои
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1403-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#design\n#artlebedev\nSource"
 views = 28
 ids = [760]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-755/index.md"
+label = "#painting #bible #gustavedore #year1891 The Bible panorama, or T…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-754/index.md"
+label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
+
+[[extra.related]]
+path = "@/posts/2025-11-10-750/index.md"
+label = "Don Quixote by #gustavedore, 1863 year #painting #horse #sky"
 +++
 
 {{ tag(t="painting") }}  
@@ -33,4 +53,4 @@ Gustave Dore - Death on the Pale Horse
 
 [Source](https://commons.wikimedia.org/wiki/File:Gustave_Dore_-_Death_on_the_Pale_Horse.png)
 
-![](5229215222705359767_1217521546_460000151.jpg)
+{{ img(src="5229215222705359767_1217521546_460000151.jpg") }}

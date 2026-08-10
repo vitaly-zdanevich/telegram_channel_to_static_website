@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#winter\n#полберег\n#year2005\n#globustut\nFrom"
 views = 8
 ids = [986]
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1054/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-995/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut Близ Новогру…"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1058/index.md"
+label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1014/index.md"
+label = "#belarus #architecture #winter #лепель #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-990/index.md"
+label = "#belarus #architecture #winter #адамполь #year2005 #globustut Fr…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,4 +50,4 @@ ids = [986]
 
 From [https://commons.wikimedia.org/wiki/File:043-241\_Полберег,\_дом\_(или\_хозп-ка),\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-241_%D0%9F%D0%BE%D0%BB%D0%B1%D0%B5%D1%80%D0%B5%D0%B3,_%D0%B4%D0%BE%D0%BC_(%D0%B8%D0%BB%D0%B8_%D1%85%D0%BE%D0%B7%D0%BF-%D0%BA%D0%B0),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](5465427364444572592_1272518971_460000176.jpg)
+{{ img(src="5465427364444572592_1272518971_460000176.jpg") }}

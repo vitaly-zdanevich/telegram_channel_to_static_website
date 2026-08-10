@@ -18,8 +18,28 @@ next_body = "#tech\n#psp\n#finalfantasy"
 prev_id = 1826
 prev_title = ""
 prev_body = "#bus\n#architecture\nSource"
-views = 99
+views = 111
 ids = [1827]
+
+[[extra.related]]
+path = "@/posts/2025-01-17-273/index.md"
+label = "#pig"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2025-02-15-366/index.md"
+label = "#game #man2"
 +++
 
 {{ tag(t="game") }}  
@@ -31,6 +51,6 @@ ids = [1827]
 
 From official <https://www.ubisoft.com/en-us/game/beyond-good-and-evil-2>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

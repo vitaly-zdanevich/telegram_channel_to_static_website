@@ -18,8 +18,28 @@ next_body = "#movie\n#blackandwhite\n#faust\n#year1926\nВ этом году ф�
 prev_id = 1864
 prev_title = ""
 prev_body = "And another #bash #alias:\n# Better word movement: treat aaabbbccc as ONE word\n# Ctrl + Left → move left by \"word\" (including underscores)\n# Ctrl + Right → move right by \"word\" (including underscores)\nif [[ $- == i ]]; then\nbind '\"e[1;5D\": shell-backward-word' # Ctrl + Left Arrow\nbind '\"e[1;5C\": shell-forward-word' # Ctrl + Right Arrow\nfi"
-views = 20
+views = 25
 ids = [1865]
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-06-12-1819/index.md"
+label = "My another #userstyle: for #gemini, before and after"
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1779/index.md"
+label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 +++
 
 **Wow, Gemini generates good logos, tried it for the first time**  
@@ -29,6 +49,6 @@ ids = [1865]
 {{ tag(t="telegram_bot") }}  
 {{ tag(t="wikimedia_commons") }}
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

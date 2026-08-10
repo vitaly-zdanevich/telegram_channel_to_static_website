@@ -17,8 +17,28 @@ next_body = "#odysee looks like #convert #video right in a #browser - without up
 prev_id = 1739
 prev_title = ""
 prev_body = "#shotcut is pretty good #foss #videoeditor, #love it"
-views = 304
+views = 325
 ids = [1740]
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1762/index.md"
+label = "#лекция про мой #telegram #бот для #evernote #stillyoungbar #bat…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1856/index.md"
+label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1855/index.md"
+label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+
+[[extra.related]]
+path = "@/posts/2026-06-19-1844/index.md"
+label = "#armiesofexigo #abandone"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
 +++
 
 {{ tag(t="armies_of_exigo") }}: моя {{ tag(t="лекция") }} об игре, в Батуми  
@@ -37,7 +57,7 @@ ids = [1740]
 
 Также скачать эту заброшенную игру можно тут <https://drive.google.com/drive/folders/0B7dj3mkKVF9Kfmt0bnNZVkZvSEh2WjhsazZEc0NmdnlUbWdKSUR0S2kzRWZaSHFhME1mWmM>  
 
-<https://www.youtube.com/watch?v=a8LrB396JUg>  
+[https://www.youtube.com/watch?v=a8LrB396JUg](<https://www.youtube.com/watch?v=a8LrB396JUg> "Armies of Exigo: моя лекция об игре, в Батуми")  
 
 Все ссылки на это {{ tag(t="видео") }} <https://share.evernote.com/note/ba0b0200-6bce-5d48-25cf-19b7e76f0fb0>
 

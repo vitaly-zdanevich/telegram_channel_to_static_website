@@ -20,9 +20,29 @@ prev_title = ""
 prev_body = "#webdesign\n#blue"
 views = 8
 ids = [1270]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
 {{ tag(t="cloud") }}
 
-![](5269742426736235445_1226957521_460002229.jpg)
+{{ img(src="5269742426736235445_1226957521_460002229.jpg") }}

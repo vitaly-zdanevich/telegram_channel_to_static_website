@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#gentoo\n#golang\n#bootstrap"
 views = 20
 ids = [1733]
+
+[[extra.related]]
+path = "@/posts/2026-03-22-1496/index.md"
+label = "#webdesign #belarus #belarussian"
+
+[[extra.related]]
+path = "@/posts/2025-04-05-461/index.md"
+label = "#belarus #belarussian #culture"
+
+[[extra.related]]
+path = "@/posts/2025-12-31-832/index.md"
+label = "#language Ве́псский язы́к самоназвание — vepsän kel' — язык вепс…"
+
+[[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [1733]
 
 [https://ru.wikipedia.org/wiki/Белорусский\_арабский\_алфавит](https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D1%80%D0%B0%D0%B1%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82)
 
-![](5460766981331030706_1271433891_460001970.jpg)
+{{ img(src="5460766981331030706_1271433891_460001970.jpg") }}

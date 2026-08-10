@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+  <title>Vitaly Zdanevich channel</title>
+  <link>https://vitaly-zdanevich.github.io/telegram_channel_to_static_website</link>
+  <language>en</language>
+  <description>&lt;https://about.me/zdanevich&gt;  
+
+Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia country UTC+4). Working with Golang, AWS. Program in Vim. Love Gentoo Linux. Respect free and open software. Contributor to Wikipedia and other projects.</description>
+  <itunes:author>Vitaly Zdanevich channel</itunes:author>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:category text="Personal Journals"/>
+  <itunes:image href="https://aboutme.b-cdn.net/background/users/z/d/a/zdanevich_1741377686_445.png"/>
+</channel>
+</rss>

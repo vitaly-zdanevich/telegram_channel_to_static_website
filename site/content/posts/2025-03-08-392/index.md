@@ -19,13 +19,31 @@ prev_title = ""
 prev_body = "#alexjones\n#warhammer\nSome people think that his speeches correlates with Warhammer.\nSource"
 views = 62
 ids = [392]
+
+[[extra.related]]
+path = "@/posts/2025-03-08-396/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-394/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-391/index.md"
+label = "#alexjones #warhammer Some people think that his speeches correl…"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-395/index.md"
+label = "#arsenmarkaryan #alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-588/index.md"
+label = "#game #demo #warhammer #dawnofwar #2004 If you see \"Failed to in…"
 +++
 
 {{ tag(t="alex_jones") }}  
 {{ tag(t="warhammer") }}
 
-[Source](https://www.youtube.com/watch?v=Ss2S8w2LzbA&amp;pp=ygUVYWxleCBqb25lcyB3YXJoYW1tZXIg)
+[Source](<https://www.youtube.com/watch?v=Ss2S8w2LzbA&amp;pp=ygUVYWxleCBqb25lcyB3YXJoYW1tZXIg> "Thunder Warriors when they learned the truth of their doom")
 
 {{ youtube(id="Ss2S8w2LzbA") }}
-
-📎 Thunder_Warriors_when_they_learned_the_truth_of_their_doom_Ss2S8w2LzbA.webm *(not archived)*

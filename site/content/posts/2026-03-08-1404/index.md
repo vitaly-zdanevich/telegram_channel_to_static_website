@@ -17,7 +17,7 @@ next_body = ""
 prev_id = 1403
 prev_title = ""
 prev_body = "Визуализация того, что находится внутри моделей нейросетей, а именно их слои"
-views = 14
+views = 15
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1671"
 ids = [1404]
@@ -35,6 +35,6 @@ ids = [1404]
 
 Пока без хештега...
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1404-01.mp4") }}
 
 {{ tag(t="video") }}

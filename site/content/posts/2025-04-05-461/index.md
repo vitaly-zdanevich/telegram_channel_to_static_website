@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#games\n#igromania\n18 years ago. Golden age?\nSource"
 views = 46
 ids = [461]
+
+[[extra.related]]
+path = "@/posts/2026-03-22-1496/index.md"
+label = "#webdesign #belarus #belarussian"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1733/index.md"
+label = "#belarus #belarussian #arabic #language"
+
+[[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-857/index.md"
+label = "#belarus #minsk 1941-1944"
 +++
 
 {{ tag(t="belarus") }}  
@@ -28,4 +48,4 @@ ids = [461]
 
 [Source](https://rutube.ru/video/88effd9c79ed10485c5877db2ceaa120)
 
-![](5442691267864686271_1267225311_456257215.jpg)
+{{ img(src="5442691267864686271_1267225311_456257215.jpg") }}

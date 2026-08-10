@@ -20,9 +20,29 @@ prev_title = ""
 prev_body = "#sex\n#mouse\n#horoscope\nFrom"
 views = 35
 ids = [482]
+
+[[extra.related]]
+path = "@/posts/2025-11-06-743/index.md"
+label = "Emotional reasoning is a cognitive process by which an individua…"
+
+[[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1878/index.md"
+label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+
+[[extra.related]]
+path = "@/posts/2025-04-09-464/index.md"
+label = "Бежевый #psy #childhood"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-450/index.md"
+label = "#phone #psy"
 +++
 
 {{ tag(t="cat") }}  
 {{ tag(t="psy") }}
 
-![](5215716724605844765_1214378682_456260893.jpg)
+{{ img(src="5215716724605844765_1214378682_456260893.jpg") }}

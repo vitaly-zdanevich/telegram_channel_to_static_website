@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "--- /home/vitaly/.gemini/tmp/prime-world/chats -------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n/..\n9.7 GiB [##############################] session-2026-05-07T23-09-4fd3b828.jsonl\n1.6 GiB [#### ] session-2026-05-16T20-57-da3d0d98.jsonl\n34.7 MiB [ ] session-2026-04-30T08-34-bb3adf87.json\n1.3 MiB [ ] /da3d0d98-dc88-4b74-b46e-398b62a13f7c\n4.0 KiB [ ] session-2026-05-14T13-37-1c22149c.jsonl\n#gemini\n#llm"
 views = 38
 ids = [1780]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1853/index.md"
+label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
+
+[[extra.related]]
+path = "@/posts/2026-06-05-1805/index.md"
+label = "My yet another project: @wikipediaunofficialbot Built with #llm…"
+
+[[extra.related]]
+path = "@/posts/2026-05-25-1785/index.md"
+label = "Another #llm victory: repack of the official #evernote client"
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1779/index.md"
+label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+
+[[extra.related]]
+path = "@/posts/2026-05-17-1776/index.md"
+label = "#llm #quote"
 +++
 
 What a time - multiple {{ tag(t="llm") }} doing multiple projects, in parallel...

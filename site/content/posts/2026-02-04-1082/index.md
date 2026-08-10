@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#preservation\n#belarus\ngeo block\nI uploaded a lot from to Commons, and will continue."
 views = 8
 ids = [1082]
+
+[[extra.related]]
+path = "@/posts/2025-01-29-346/index.md"
+label = "#fashion"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1087/index.md"
+label = "#fashion #boy"
+
+[[extra.related]]
+path = "@/posts/2025-09-30-686/index.md"
+label = "#fashion #istanbul"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1667/index.md"
+label = "#fashion #street #london"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1662/index.md"
+label = "#fashion #trash #black Author: Found at"
 +++
 
 {{ tag(t="people") }}  
 {{ tag(t="fashion") }}  
 {{ tag(t="zara") }}
 
-![](5195454305857638992_1209660970_460001872.jpg)
+{{ img(src="5195454305857638992_1209660970_460001872.jpg") }}

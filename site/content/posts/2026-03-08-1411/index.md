@@ -30,4 +30,4 @@ ids = [1411]
 
  [yandex.ru/project/maps/3d](http://yandex.ru/project/maps/3d)
 
-![](5312387973058264486_1236886711_456261030.jpg)
+{{ img(src="5312387973058264486_1236886711_456261030.jpg") }}

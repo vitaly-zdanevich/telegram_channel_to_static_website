@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Old design"
 views = 51
 ids = [158]
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2025-02-15-366/index.md"
+label = "#game #man2"
+
+[[extra.related]]
+path = "@/posts/2025-01-15-246/index.md"
+label = "#game #man2"
+
+[[extra.related]]
+path = "@/posts/2024-11-17-190/index.md"
+label = "#game #stalker2"
 +++
 
 Night Watch: Special Edition {{ tag(t="game") }}

@@ -26,4 +26,4 @@ On {{ tag(t="Wikipedia") }}, not all websites can be used as sources.
 
 Every fact on Wikipedia must have a reliable source. Original research is not allowed — Wikipedia only summarizes facts from trusted, reputable places.
 
-![](5406954455607405557_1258904686_456256501.jpg)
+{{ img(src="5406954455607405557_1258904686_456256501.jpg") }}

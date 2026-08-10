@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#car\n#russia\n#tax\nSource"
 views = 25
 ids = [716]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2136/index.md"
+label = "#death #car #sound"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2135/index.md"
+label = "#death #cementery #urban"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2134/index.md"
+label = "#death #spirit #electro"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1872/index.md"
+label = "#death #jump #spirit"
 +++
 
 {{ tag(t="medicine") }}  
@@ -26,6 +46,6 @@ ids = [716]
 
 [Source](https://www.instagram.com/p/DNbKiMksEZA)
 
-{{ instagram(url="https://www.instagram.com/p/DNbKiMksEZA/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/716-01.mp4") }}
 
 {{ tag(t="video") }}

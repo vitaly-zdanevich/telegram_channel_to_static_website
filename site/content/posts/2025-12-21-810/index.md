@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#cli\n#tui\n#design"
 views = 46
 ids = [810]
+
+[[extra.related]]
+path = "@/posts/2025-12-21-808/index.md"
+label = "#software #tui #torrent"
+
+[[extra.related]]
+path = "@/posts/2025-05-27-542/index.md"
+label = "#git"
+
+[[extra.related]]
+path = "@/posts/2026-01-13-876/index.md"
+label = "#macOS: to install #git I need 25 GB"
+
+[[extra.related]]
+path = "@/posts/2025-06-27-591/index.md"
+label = "#git #gitgraph"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1085/index.md"
+label = "#logo #gitlab #git"
 +++
 
 {{ tag(t="software") }}  
@@ -27,6 +47,6 @@ ids = [810]
 
 <https://terminaltrove.com/gitlogue>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/810-01.mp4") }}
 
 {{ tag(t="video") }}

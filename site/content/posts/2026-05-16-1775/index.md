@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#bilibili verification with 100 questions - to be able to leave comments"
 views = 33
 ids = [1775]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1662/index.md"
+label = "#fashion #trash #black Author: Found at"
+
+[[extra.related]]
+path = "@/posts/2025-05-22-538/index.md"
+label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+
+[[extra.related]]
+path = "@/posts/2025-01-11-245/index.md"
+label = "#war #video #warpath"
+
+[[extra.related]]
+path = "@/posts/2026-07-12-2047/index.md"
+label = "#me #travel #botanicgarden #nature"
 +++
 
 {{ tag(t="travel") }}  

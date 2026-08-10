@@ -20,10 +20,18 @@ prev_title = ""
 prev_body = "#wikipedia\n#medals\n#awards"
 views = 19
 ids = [837]
+
+[[extra.related]]
+path = "@/posts/2024-11-04-176/index.md"
+label = "#vr"
+
+[[extra.related]]
+path = "@/posts/2024-10-13-160/index.md"
+label = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
 +++
 
 {{ tag(t="vr") }}  
 
 [Source](https://www.linkedin.com/posts/gregoryvkornev_the-meta-horizon-start-developer-competition-activity-7412496691653771264-DgK3)
 
-![](5388832167523192165_1254685262_460000613.jpg)
+{{ img(src="5388832167523192165_1254685262_460000613.jpg") }}

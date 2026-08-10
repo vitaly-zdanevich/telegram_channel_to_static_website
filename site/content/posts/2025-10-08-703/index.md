@@ -17,7 +17,7 @@ next_body = "#culture\n#archivation\n#future\n#green\n#research\nSource"
 prev_id = 702
 prev_title = ""
 prev_body = "#reaction\n#classic\n#music\nSource"
-views = 29
+views = 30
 ids = [703]
 +++
 
@@ -25,4 +25,4 @@ ids = [703]
 
 Photo my, from [Safranbolu](https://tr.wikipedia.org/wiki/Safranbolu)
 
-![](5418294831421193355_1261545073_456260747.jpg)
+{{ img(src="5418294831421193355_1261545073_456260747.jpg") }}

@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#architecture of #village houses in #sakartvelo\nSource"
 views = 12
 ids = [1736]
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1765/index.md"
+label = "#bilibili verification with 100 questions - to be able to leave…"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1737/index.md"
+label = "#webdesign #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1624/index.md"
+label = "#preview on #bilibili #anime"
+
+[[extra.related]]
+path = "@/posts/2025-05-10-513/index.md"
+label = "#bilibili #anime #webdesign #stream #ui"
 +++
 
 {{ tag(t="bilibili") }} {{ tag(t="convertion") }} {{ tag(t="progress") }} - nice {{ tag(t="ux") }}
 
-![](5463320146114974737_1272028346_460002321.jpg)
+{{ img(src="5463320146114974737_1272028346_460002321.jpg") }}

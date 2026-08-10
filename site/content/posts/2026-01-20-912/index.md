@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#winter\n#tractor\n#year2005\n#globustut"
 views = 8
 ids = [912]
+
+[[extra.related]]
+path = "@/posts/2026-01-21-921/index.md"
+label = "#belarus #architecture #nature #village #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-924/index.md"
+label = "#belarus #monument #christianity #virginmary #nature #village #y…"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1384/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1280/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-854/index.md"
+label = "#belarus #nature #village #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -31,4 +51,4 @@ ids = [912]
 
 [https://commons.wikimedia.org/wiki/File:038-054\_Двор-Новоселки,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-054_%D0%94%D0%B2%D0%BE%D1%80-%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B5%D0%BB%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440408303772044144_1266693767_460000112.jpg)
+{{ img(src="5440408303772044144_1266693767_460000112.jpg") }}

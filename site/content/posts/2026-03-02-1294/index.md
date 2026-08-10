@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#church\n#horse\n#woodencart\n#belarus\n#globustut\n#year2005\nSource"
 views = 16
 ids = [1294]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1382/index.md"
+label = "#castle #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1443/index.md"
+label = "#abandone #castle #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1385/index.md"
+label = "#castle #abandone #новогрудок #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-07-06-2010/index.md"
+label = "#belarus #ружаны #photo #abandone #castle #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-07-06-2004/index.md"
+label = "#belarus #коссово #photo #abandone #castle #year2005 #globustut"
 +++
 
 {{ tag(t="abandone") }}  
@@ -30,10 +50,10 @@ ids = [1294]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-236_%D0%9A%D1%80%D0%B5%D0%B2%D0%BE,_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}

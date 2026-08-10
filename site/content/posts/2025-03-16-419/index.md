@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#hookah\n#robot\nSource"
 views = 29
 ids = [419]
+
+[[extra.related]]
+path = "@/posts/2025-03-16-420/index.md"
+label = "#music #cats #meme"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
 +++
 
 {{ tag(t="music") }}  
@@ -27,6 +47,6 @@ ids = [419]
 
 [Source](https://www.instagram.com/p/DGEC0lMyIhO)
 
-{{ instagram(url="https://www.instagram.com/p/DGEC0lMyIhO/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/419-01.mp4") }}
 
 {{ tag(t="video") }}

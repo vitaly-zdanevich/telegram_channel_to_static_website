@@ -17,13 +17,33 @@ next_body = "Homepage - Cypherpunk Zero\nBeautiful, but I do not understand"
 prev_id = 14
 prev_title = ""
 prev_body = "#music\n#meanna"
-views = 58
+views = 61
 ids = [15]
+
+[[extra.related]]
+path = "@/posts/2024-11-27-204/index.md"
+label = "#meanna #sergeykurginyan К моим мыслям о человеческом счастье вс…"
+
+[[extra.related]]
+path = "@/posts/2022-03-17-14/index.md"
+label = "#music #meanna"
+
+[[extra.related]]
+path = "@/posts/2022-03-17-13/index.md"
+label = "#music #meanna"
+
+[[extra.related]]
+path = "@/posts/2022-03-17-12/index.md"
+label = "#music #meanna"
+
+[[extra.related]]
+path = "@/posts/2022-03-17-10/index.md"
+label = "#music #meanna"
 +++
 
 {{ tag(t="meanna") }}  
 
-<https://www.youtube.com/watch?v=1bOPp9kFztM>  
+[https://www.youtube.com/watch?v=1bOPp9kFztM](<https://www.youtube.com/watch?v=1bOPp9kFztM> "babangida - на дне (feat meanna)")  
 
 <https://genius.com/Babangida-the-lower-depths-lyrics>
 

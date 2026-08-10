@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#sql\n#quarry\n#globustut\n#commons: files from a specific user in a non-existing categories, #sql:\nsql\nSELECT\nimgname,\nclto AS missingcategory\nFROM image\nJOIN actor ON actorid = imgactor\nJOIN page ON pagenamespace = 6 AND pagetitle = imgname\nJOIN categorylinks ON clfrom = pageid\nLEFT JOIN page AS cat\nON cat.pagenamespace = 14\nAND cat.pagetitle = clto\nWHERE actorname = 'Globustut'\nAND cat.pageid IS NULL\nORDER BY imgname;"
 views = 11
 ids = [887]
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1123/index.md"
+label = "#commons"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1093/index.md"
+label = "#commons My account is big, my account is very big"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-938/index.md"
+label = "Top 1% by #python, hm, not sure why"
+
+[[extra.related]]
+path = "@/posts/2025-06-19-584/index.md"
+label = "#commons TODO list"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1306/index.md"
+label = "Magic that I can say #codex to download all scan - and I get it,…"
 +++
 
 {{ tag(t="commons") }}: {{ tag(t="count") }} uploads from a specific user for a period of time, {{ tag(t="python") }}:  

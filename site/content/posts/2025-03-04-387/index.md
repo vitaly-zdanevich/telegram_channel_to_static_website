@@ -20,13 +20,17 @@ prev_title = ""
 prev_body = "Released opera 2084"
 views = 48
 ids = [387]
+
+[[extra.related]]
+path = "@/posts/2025-09-01-651/index.md"
+label = "#wikimediafoundation #office from 2024"
 +++
 
 {{ tag(t="office") }}  
 {{ tag(t="india") }}
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}

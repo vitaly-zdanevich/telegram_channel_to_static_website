@@ -18,8 +18,28 @@ next_body = "In #kitty terminal) you can always highlight something, for example
 prev_id = 711
 prev_title = ""
 prev_body = "#games\n#steam"
-views = 27
+views = 28
 ids = [712]
+
+[[extra.related]]
+path = "@/posts/2025-10-22-719/index.md"
+label = "#webdesign #games #rpg"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}, 2696 game reviews on <https://www.metacritic.com/publication/gamers-temple>  
@@ -30,4 +50,4 @@ Working from 2001
 
 {{ tag(t="games") }}
 
-![](5458701707648303030_1270953032_456261558.jpg)
+{{ img(src="5458701707648303030_1270953032_456261558.jpg") }}

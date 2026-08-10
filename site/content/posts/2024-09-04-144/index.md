@@ -22,4 +22,4 @@ ids = [144]
 
 <https://commons.wikimedia.org/wiki/File:5roubles1925b.JPG>
 
-![](5388631055675811450_1254638437_456255098.jpg)
+{{ img(src="5388631055675811450_1254638437_456255098.jpg") }}

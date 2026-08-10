@@ -20,14 +20,34 @@ prev_title = ""
 prev_body = "#aws CTO Werner Vogels\nMentioned:\nFrom"
 views = 8
 ids = [941]
+
+[[extra.related]]
+path = "@/posts/2026-01-25-943/index.md"
+label = "#aws #cpu #memory #ram From"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-939/index.md"
+label = "#aws CTO Werner Vogels Mentioned: From"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-944/index.md"
+label = "#aws #awslambda From"
+
+[[extra.related]]
+path = "@/posts/2026-01-26-945/index.md"
+label = "#aws #silicon #graviton TRN3 compute sled From"
+
+[[extra.related]]
+path = "@/posts/2026-06-11-1818/index.md"
+label = "#aws #billing #cost #graph"
 +++
 
 {{ tag(t="aws") }} custom {{ tag(t="cpu") }}: dropped the lid ({{ tag(t="scalping") }}) for the better {{ tag(t="cooling") }}  
 
-<https://youtu.be/JeUpUK0nhC0?t=955>
+[https://youtu.be/JeUpUK0nhC0?t=955](<https://youtu.be/JeUpUK0nhC0?t=955> "AWS re:Invent 2025 - Keynote with Peter DeSantis and Dave Brown")
 
 {{ youtube(id="JeUpUK0nhC0") }}
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#year2005\n#globustut"
 views = 5
 ids = [920]
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-926/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-919/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1445/index.md"
+label = "#architecture #orange #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [920]
 
 [https://commons.wikimedia.org/wiki/File:038-399\_Гольшаны,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-399_%D0%93%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D0%BD%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440801563862568206_1266785330_460000526.jpg)
+{{ img(src="5440801563862568206_1266785330_460000526.jpg") }}

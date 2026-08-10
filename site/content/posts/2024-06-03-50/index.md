@@ -18,12 +18,32 @@ next_body = "My another ebuild: the game Gigalomania - libre clone of Mega-Lo-Ma
 prev_id = 49
 prev_title = ""
 prev_body = "Wooow, look at this beautiful Linux"
-views = 54
+views = 55
 ids = [50]
+
+[[extra.related]]
+path = "@/posts/2026-05-15-1761/index.md"
+label = "I love #ci so much that for the first time I depleted free 400 m…"
+
+[[extra.related]]
+path = "@/posts/2025-10-01-693/index.md"
+label = "#webdesign #wikimedia"
+
+[[extra.related]]
+path = "@/posts/2024-07-10-87/index.md"
+label = "Wow #gitlab has a #cron..."
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1763/index.md"
+label = "#error #gitlab #contradiction"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1333/index.md"
+label = "#design #graph #wikimedia"
 +++
 
 {{ tag(t="gitlab") }}: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it.  
 
 Its a dream to work for some open source company like {{ tag(t="gitlab") }} or {{ tag(t="wikimedia") }}, maybe in one day...
 
-![](5400135666744023014_1257317063_456251366.jpg)
+{{ img(src="5400135666744023014_1257317063_456251366.jpg") }}

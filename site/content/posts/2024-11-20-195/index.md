@@ -18,10 +18,14 @@ next_body = "#space\n#film #extract Lost in Space) from 1998, movie ending, love
 prev_id = 194
 prev_title = ""
 prev_body = "About games preservation"
-views = 40
+views = 41
 ids = [195]
+
+[[extra.related]]
+path = "@/posts/2026-05-13-1759/index.md"
+label = "Fix my #style for #mdn, #screenshot before and after Sad that UI…"
 +++
 
 {{ tag(t="style") }} love my custom YandexMail <https://gitlab.com/vitaly-zdanevich-styles/yandex-mail>
 
-![](5325686926973462534_1239983115_456255494.jpg)
+{{ img(src="5325686926973462534_1239983115_456255494.jpg") }}

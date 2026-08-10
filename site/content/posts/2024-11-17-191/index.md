@@ -22,4 +22,4 @@ ids = [191]
 
 <https://store.wikimedia.org/products/internet-in-a-box>
 
-![](5319219569514111371_1238477316_456253835.jpg)
+{{ img(src="5319219569514111371_1238477316_456253835.jpg") }}

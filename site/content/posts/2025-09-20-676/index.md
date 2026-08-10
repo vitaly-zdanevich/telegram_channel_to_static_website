@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#smell\n#dating\nSource"
 views = 29
 ids = [676]
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2043/index.md"
+label = "#drug #transformation Как происходит трансформация зависимого, п…"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2110/index.md"
+label = "#drug #ayahuasca #lake By allavolkogon"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2100/index.md"
+label = "#drug #traktor #interstellar Принял таблетки для сердца, потому…"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2041/index.md"
+label = "#drug #spoon #icecream"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-414/index.md"
+label = "#health #eyes #drug"
 +++
 
 {{ tag(t="drug") }}  

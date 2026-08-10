@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#biology\n#symbiosis\n#leopoldthecat\n#cat\nРебята, давайте сосуществовать симбиотически\nSource"
 views = 23
 ids = [506]
+
+[[extra.related]]
+path = "@/posts/2025-05-08-507/index.md"
+label = "#design #apple #ipod"
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
 +++
 
 {{ tag(t="design") }}  
 {{ tag(t="apple") }}  
 {{ tag(t="ipod") }}
 
-![](5251374041313439124_1222680798_456256916.jpg)
+{{ img(src="5251374041313439124_1222680798_456256916.jpg") }}

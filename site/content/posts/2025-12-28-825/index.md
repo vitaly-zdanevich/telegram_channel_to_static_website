@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#hardware\n#laptop\nToshiba Libretto"
 views = 28
 ids = [825]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-06-10-565/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
 
 <https://nemesis.de/wizards/>
 
-![](5370960061280226917_1250524088_460000869.jpg)
+{{ img(src="5370960061280226917_1250524088_460000869.jpg") }}

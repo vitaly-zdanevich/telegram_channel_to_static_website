@@ -16,8 +16,8 @@ next_body = "Copyright from 1429"
 prev_id = 73
 prev_title = ""
 prev_body = "Wikimedia Commons: wrote user script that shows categories in Uploads page"
-views = 58
+views = 60
 ids = [74]
 +++
 
-![](5424803596660239339_1263060513_456256491.jpg)
+{{ img(src="5424803596660239339_1263060513_456256491.jpg") }}

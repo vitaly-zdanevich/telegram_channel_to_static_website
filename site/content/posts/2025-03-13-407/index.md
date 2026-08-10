@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#health\n#science\n#references\n#source\n#walk\n#chad"
 views = 35
 ids = [407]
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1878/index.md"
+label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2137/index.md"
+label = "#sound #food #poor"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2114/index.md"
+label = "#духота #health #powerlifting"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2112/index.md"
+label = "#health #духота #kozhemiako"
 +++
 
 {{ tag(t="health") }}  
@@ -27,4 +47,4 @@ ids = [407]
 
 [Source](https://x.com/ArseniosMarkos/status/1837057863912464891)
 
-![](5375465043883325153_1251572986_456259297.jpg)
+{{ img(src="5375465043883325153_1251572986_456259297.jpg") }}

@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#windowsxp"
 views = 45
 ids = [815]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2138/index.md"
+label = "#village #nature #career"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-01-18-891/index.md"
+label = "#belarus #population #village Source#%D0%9D%D0%B0%D1%81%D0%B5%D0…"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1384/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1280/index.md"
+label = "#village #belarus #globustut #year2005"
 +++
 
 {{ tag(t="star_wars") }}  

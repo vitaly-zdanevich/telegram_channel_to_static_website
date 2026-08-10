@@ -18,8 +18,28 @@ next_body = "#church\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1422
 prev_title = ""
 prev_body = "#architecture\n#gray\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
-views = 16
+views = 17
 ids = [1424]
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1450/index.md"
+label = "#abandone #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1443/index.md"
+label = "#abandone #castle #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="abandone") }}  
@@ -30,6 +50,6 @@ ids = [1424]
 
 [Source](https://commons.wikimedia.org/wiki/File:056-153_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

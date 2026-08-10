@@ -18,8 +18,28 @@ next_body = "Кто-то сделал полноценный 3D-симулято
 prev_id = 1392
 prev_title = ""
 prev_body = "#webdesign\n#oldweb"
-views = 10
+views = 11
 ids = [1393]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1392/index.md"
+label = "#webdesign #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1368/index.md"
+label = "#webdesign #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1415/index.md"
+label = "#webdesign #oldweb #animation"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -29,4 +49,4 @@ ids = [1393]
 
 <https://pizzacatdelights.neocities.org/Blog4>
 
-![](5291909495980234245_1232118694_460002821.jpg)
+{{ img(src="5291909495980234245_1232118694_460002821.jpg") }}

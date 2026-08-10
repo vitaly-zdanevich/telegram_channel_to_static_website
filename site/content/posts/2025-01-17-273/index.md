@@ -17,14 +17,18 @@ next_body = ""
 prev_id = 272
 prev_title = ""
 prev_body = ""
-views = 124
+views = 125
 ids = [273]
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1827/index.md"
+label = "#game #beyoundgoodandevil #pig #evolution #sequel #pain From off…"
 +++
 
 <https://coub.com/view/2jiqcz>  
 
 {{ tag(t="pig") }}
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/273-01.mp4") }}
 
 {{ tag(t="video") }}

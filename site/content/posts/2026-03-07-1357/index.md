@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#cementery\n#abandone\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE9%D0%BC%D0%B0%D1%8F2005.jpg)"
 views = 7
 ids = [1357]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [1357]
 
 <https://toyhamu.nekoweb.org/mainpage>
 
-![](5289657696166548192_1231594406_460002016.jpg)
+{{ img(src="5289657696166548192_1231594406_460002016.jpg") }}

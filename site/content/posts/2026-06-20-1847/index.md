@@ -17,8 +17,28 @@ next_body = "#batumi\nOh my, I live here\nFrom"
 prev_id = 1846
 prev_title = ""
 prev_body = "#webdesign\n#animation\n#videoeditor\n#cinelerra"
-views = 14
+views = 15
 ids = [1847]
+
+[[extra.related]]
+path = "@/posts/2025-06-01-545/index.md"
+label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
+
+[[extra.related]]
+path = "@/posts/2025-11-26-793/index.md"
+label = "#ad #game #tank #wwii #music #warpath"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
 +++
 
 {{ tag(t="game") }}  
@@ -33,6 +53,6 @@ One of the best game trailer
 
 [Source](https://www.youtube.com/watch?v=uWSLHcAyy90)
 
-{{ youtube(id="uWSLHcAyy90") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1847-01.mp4") }}
 
 {{ tag(t="video") }}

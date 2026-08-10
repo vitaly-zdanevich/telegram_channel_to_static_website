@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Звуковик имеет тягу к изучению языков, потому что имеет ощущение, что возможно на другом языке сможет выразить свои нехватки\n- Юрий Бурлан\nPhoto my, from Safranbolu"
 views = 29
 ids = [704]
+
+[[extra.related]]
+path = "@/posts/2025-09-30-690/index.md"
+label = "#archivation"
+
+[[extra.related]]
+path = "@/posts/2025-11-04-735/index.md"
+label = "If WebArchive have it - it still not in Google - you cannot sear…"
+
+[[extra.related]]
+path = "@/posts/2026-06-16-1839/index.md"
+label = "#interior #refrigerator #green From"
+
+[[extra.related]]
+path = "@/posts/2025-10-19-707/index.md"
+label = "#archivation #games Trying to #zim it"
+
+[[extra.related]]
+path = "@/posts/2025-08-20-631/index.md"
+label = "Percent of people who think their culture is superior to others…"
 +++
 
 {{ tag(t="culture") }}  
@@ -29,6 +49,6 @@ ids = [704]
 
 [Source](https://www.instagram.com/reel/DOQhSZUjWQz)
 
-{{ instagram(url="https://www.instagram.com/reel/DOQhSZUjWQz/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/704-01.mp4") }}
 
 {{ tag(t="video") }}

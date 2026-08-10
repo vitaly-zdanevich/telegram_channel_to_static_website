@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#ping\n#anime\n#japan"
 views = 16
 ids = [1415]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1392/index.md"
+label = "#webdesign #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1368/index.md"
+label = "#webdesign #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1366/index.md"
+label = "#webdesign #oldweb #anime"
 +++
 
 {{ tag(t="webdesign") }}  

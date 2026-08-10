@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#abandone\n#Губино\n#belarus\n#globustut\n#year2005\nSource"
 views = 18
 ids = [1546]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1511/index.md"
+label = "#abandone #columns #святск #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1387/index.md"
+label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="abandone") }}  
@@ -31,18 +51,18 @@ ids = [1546]
 
 [Source](https://commons.wikimedia.org/wiki/File:060-0133_%D0%9E%D0%B1%D0%BE%D0%BB%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_24_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}

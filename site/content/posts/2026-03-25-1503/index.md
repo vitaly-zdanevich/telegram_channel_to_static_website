@@ -18,8 +18,28 @@ next_body = "#darkmode"
 prev_id = 1502
 prev_title = ""
 prev_body = "#map\n#russia\n#russianempire\n#blacksea\n#sakartvelo\n#year1910"
-views = 18
+views = 19
 ids = [1503]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
+
+[[extra.related]]
+path = "@/posts/2026-02-11-1106/index.md"
+label = "#wikipedia #job"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -27,8 +47,8 @@ ids = [1503]
 
 Пишите авторам контентов - иногда они соглашаются сделать его Creative Commons  
 
-<https://www.youtube.com/watch?v=SzvkVpPDYtU>
+[https://www.youtube.com/watch?v=SzvkVpPDYtU](<https://www.youtube.com/watch?v=SzvkVpPDYtU> "Как создавались «Космические Рейнджеры»? Интервью с основателем студии Katauri и Неодинамика")
 
 {{ youtube(id="SzvkVpPDYtU") }}
 
-![](5341786066425420454_1243731488_460004006.jpg)
+{{ img(src="5341786066425420454_1243731488_460004006.jpg") }}

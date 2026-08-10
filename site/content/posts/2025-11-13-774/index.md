@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#webdesignold"
 views = 41
 ids = [774]
+
+[[extra.related]]
+path = "@/posts/2025-11-13-777/index.md"
+label = "#film #kindzadza #batumi Соедините меня с Батуми"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1848/index.md"
+label = "#batumi Oh my, I live here From"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2037/index.md"
+label = "#kindzadza #trailer"
 +++
 
 {{ tag(t="film") }}  

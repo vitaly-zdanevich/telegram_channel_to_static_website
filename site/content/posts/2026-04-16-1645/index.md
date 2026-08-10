@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#podcast\n#my\n#health\n#startup\n#geogorgiladze\nГеоргий Горгиладзе: от тяжелых болезней к выздоровлению, рекорду Гиннесса и стартапу в области HealthTech\nГость из Книги Рекордов Гиннеса, который первый в мире простоял на гвоздях 12 часов, демонстрирует экстремальные возможности человеческого тела на ТВ и международных мероприятиях, до этого много болел, 13 раз лежал в больницах, врачи запрещали физические нагрузки, что подвинуло Георгия серьёзно и самостоятельно заняться своим здоровьем, начав в 12 лет с экспериментального лечения иглоукалыванием, изучением восточной медицины и физиологии, вылечив себя самостоятельно. А сейчас делает стартап по здоровью GeoHealth\nВикипедия о госте:\nЗаписано на Gentoo Linux в ffmpeg и Audacity (в два отдельных канала), клики в аудио удалил через\n#podcast\n#northkorea\n#голоскореи\nFrom"
 views = 25
 ids = [1645]
+
+[[extra.related]]
+path = "@/posts/2026-04-16-1641/index.md"
+label = "#podcast #my #health #startup #geogorgiladze Георгий Горгиладзе:…"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -29,6 +49,6 @@ ids = [1645]
 
 <http://www.vok.rep.kp/index.php/home/main/ru>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

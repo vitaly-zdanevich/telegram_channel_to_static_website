@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#js\nI downloaded it - really 0 bytes."
 views = 16
 ids = [1112]
+
+[[extra.related]]
+path = "@/posts/2026-02-01-1072/index.md"
+label = "#wikipedia article writing, in #vim"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-907/index.md"
+label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
 +++
 
 Editing {{ tag(t="wikipedia") }}, in {{ tag(t="vim") }}
 
-![](5224336960195859472_1216385737_460002320.jpg)
+{{ img(src="5224336960195859472_1216385737_460002320.jpg") }}

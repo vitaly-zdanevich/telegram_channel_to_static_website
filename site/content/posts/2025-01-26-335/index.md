@@ -22,4 +22,4 @@ ids = [335]
 
 <https://caitlynrichardson.substack.com/p/the-quiet-rebellion-of-a-little-life>
 
-![](5238071647129431378_1219583593_456256850.jpg)
+{{ img(src="5238071647129431378_1219583593_456256850.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Editing #wikipedia, in #vim"
 views = 17
 ids = [1113]
+
+[[extra.related]]
+path = "@/posts/2024-11-25-199/index.md"
+label = "The stand-alone expansion Homeworld: Cataclysm was not announced…"
+
+[[extra.related]]
+path = "@/posts/2025-11-21-787/index.md"
+label = "#preservation #game #groundcontrol #wwiii From the game Ground C…"
+
+[[extra.related]]
+path = "@/posts/2026-01-04-840/index.md"
+label = "#game #gta #remaster #preservation #lost Rosado claimed \"the art…"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 +++
 
 {{ tag(t="preservation") }}  
@@ -31,4 +51,4 @@ ids = [1113]
 
 Thanks Sergey.
 
-![](5228703266898647414_1217402347_460003702.jpg)
+{{ img(src="5228703266898647414_1217402347_460003702.jpg") }}

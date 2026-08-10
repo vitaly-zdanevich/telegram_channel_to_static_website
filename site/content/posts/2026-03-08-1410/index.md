@@ -24,6 +24,6 @@ ids = [1410]
 
 Разработчица искала идеальный файловый менеджер, но так и не нашла... поэтому [сделала](https://x.com/fishlooker_/status/1965102682160726298) свою идеальную версию!
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1410-01.mp4") }}
 
 {{ tag(t="video") }}

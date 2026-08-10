@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#anime\n#oldweb"
 views = 7
 ids = [1368]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1392/index.md"
+label = "#webdesign #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1415/index.md"
+label = "#webdesign #oldweb #animation"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1366/index.md"
+label = "#webdesign #oldweb #anime"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [1368]
 
 <https://dollarchive.neocities.org/>
 
-![](5289657696166548392_1231594406_460002216.jpg)
+{{ img(src="5289657696166548392_1231594406_460002216.jpg") }}

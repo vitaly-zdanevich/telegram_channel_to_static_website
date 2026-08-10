@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#macOS: to install #git I need 25 GB"
 views = 11
 ids = [877]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1171/index.md"
+label = "#church #belarus #abandone #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1226/index.md"
+label = "#church #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-928/index.md"
+label = "#belarus #church #abandone #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1554/index.md"
+label = "#abandone #church #Островно #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [877]
 
 [Source](https://be-tarask.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%9A%D0%B0%D1%81%D1%8C%D1%86%D1%91%D0%BB_%D0%9D%D0%B0%D0%B9%D1%81%D1%8C%D0%B2%D1%8F%D1%86%D0%B5%D0%B9%D1%88%D0%B0%D0%B9_%D0%A2%D1%80%D0%BE%D0%B9%D1%86%D1%8B_(%D0%9B%D1%8B%D1%81%D0%BA%D0%B0%D0%B2%D0%B0)._%D0%A4%D1%80%D0%B0%D0%B3%D0%BC%D1%8D%D0%BD%D1%82%D1%8B._07.jpg)
 
-![](5422584726364556597_1262543892_460000565.jpg)
+{{ img(src="5422584726364556597_1262543892_460000565.jpg") }}

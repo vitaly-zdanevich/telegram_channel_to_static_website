@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#music\n#multitrack\n#parody\n#voice\n#unknownsource\nRice and peace."
 views = 23
 ids = [1564]
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2025-02-15-366/index.md"
+label = "#game #man2"
+
+[[extra.related]]
+path = "@/posts/2025-01-15-246/index.md"
+label = "#game #man2"
 +++
 
 {{ tag(t="god") }}  
 {{ tag(t="smartphone") }}  
 {{ tag(t="game") }}
 
-![](5359418144126080783_1247836776_460003087.jpg)
+{{ img(src="5359418144126080783_1247836776_460003087.jpg") }}

@@ -20,6 +20,22 @@ prev_title = ""
 prev_body = "#meditation\n#dantealigieri\nSource"
 views = 31
 ids = [571]
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1747/index.md"
+label = "Oh my... #leetcode"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1749/index.md"
+label = "#leetcode #validation"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1746/index.md"
+label = "#leetcode is often produce #error"
+
+[[extra.related]]
+path = "@/posts/2026-05-12-1753/index.md"
+label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
 +++
 
 {{ tag(t="livecoding") }}  

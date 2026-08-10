@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#design\n#artlebedev\nSource"
 views = 25
 ids = [759]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-758/index.md"
+label = "#design #artlebedev"
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
 +++
 
 {{ tag(t="design") }}  
@@ -27,4 +47,4 @@ ids = [759]
 
 [Source](https://www.artlebedev.ru/vkontakte/backgrounds/)
 
-![](5229215222705359746_1217521546_460000130.jpg)
+{{ img(src="5229215222705359746_1217521546_460000130.jpg") }}

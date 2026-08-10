@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#video\n#film\n#nightwatch\n#zavulon\nSource"
 views = 34
 ids = [672]
+
+[[extra.related]]
+path = "@/posts/2025-10-22-715/index.md"
+label = "#car #russia #tax"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-654/index.md"
+label = "#russia #israel #map"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2097/index.md"
+label = "#health #sugar #cola #mellstroy By dashka.lawki"
+
+[[extra.related]]
+path = "@/posts/2025-11-12-770/index.md"
+label = "#games #segagenesis #neogeo #year1991"
+
+[[extra.related]]
+path = "@/posts/2025-10-20-708/index.md"
+label = "#concert #rammstein #year2019 #russia Not my photo."
 +++
 
 {{ tag(t="russia") }}  
@@ -30,6 +50,6 @@ ids = [672]
 
 [Source](https://www.instagram.com/p/DOomGBKDGCU)
 
-{{ instagram(url="https://www.instagram.com/p/DOomGBKDGCU/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/672-01.mp4") }}
 
 {{ tag(t="video") }}

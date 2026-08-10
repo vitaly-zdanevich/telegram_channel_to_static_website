@@ -17,8 +17,28 @@ next_body = "#death\n#jump\n#spirit\nSource"
 prev_id = 1870
 prev_title = ""
 prev_body = "#belarus\n#колодищи\n#architecture\n#church\nAuthor: Димитров Денис\nSource"
-views = 82
+views = 130
 ids = [1871]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2134/index.md"
+label = "#death #spirit #electro"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1872/index.md"
+label = "#death #jump #spirit"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
+
+[[extra.related]]
+path = "@/posts/2025-10-22-716/index.md"
+label = "#medicine #death"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2136/index.md"
+label = "#death #car #sound"
 +++
 
 {{ tag(t="death") }}  
@@ -29,6 +49,6 @@ ids = [1871]
 
 [Source](https://www.instagram.com/p/DZxxHvZIRyr)
 
-{{ instagram(url="https://www.instagram.com/p/DZxxHvZIRyr/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1871-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -18,8 +18,28 @@ next_body = "#playstation\n#playstation2\n#gameconsole\n#street\nFrom"
 prev_id = 1832
 prev_title = ""
 prev_body = "When #css is minified - so what can I do with that :(\nLeave comments in such #userstyle"
-views = 15
+views = 16
 ids = [1833]
+
+[[extra.related]]
+path = "@/posts/2025-02-14-360/index.md"
+label = "#religion"
+
+[[extra.related]]
+path = "@/posts/2025-02-08-351/index.md"
+label = "#religion"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1830/index.md"
+label = "#religion #jesus"
+
+[[extra.related]]
+path = "@/posts/2026-01-07-853/index.md"
+label = "#belarus #grandmother #globustut"
+
+[[extra.related]]
+path = "@/posts/2025-04-12-467/index.md"
+label = "Пройти тест, узнай кто ты #psy #old #test"
 +++
 
 {{ tag(t="old") }}  
@@ -34,4 +54,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015147143/") }}
 
-![](5296434402940363385_1233172231_460006009.jpg)
+{{ img(src="5296434402940363385_1233172231_460006009.jpg") }}

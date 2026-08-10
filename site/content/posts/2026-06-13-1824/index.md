@@ -18,8 +18,28 @@ next_body = "#vim\n#java\n#hover #balloon with type definition ftplugin/java.vim
 prev_id = 1823
 prev_title = ""
 prev_body = "#shell\n#productivity\n#love my mg alias - clickable #grep in #kitty - opens file and line in Vim:\n# Grep, click to link - open in Vim, exact line\nmg() {\nkitty +kitten hyperlinkedgrep --smart-case -C 9 \"$@\"\n}\n-C 9 is the context - to have a few lines before and after.\nFor this, also you need to have in /.config/kitty/open-actions.conf:\nprotocol file\nfragmentmatches [0-9]+\naction launch --type=overlay -- vim +$FRAGMENT -- $FILEPATH"
-views = 18
+views = 19
 ids = [1824]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-12-31-832/index.md"
+label = "#language Ве́псский язы́к самоназвание — vepsän kel' — язык вепс…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -30,4 +50,4 @@ ids = [1824]
 
 [https://ru.wikipedia.org/wiki/Армянский\_язык](https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA)
 
-![](5289874428806242056_1231644868_460005128.jpg)
+{{ img(src="5289874428806242056_1231644868_460005128.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#grave\n#stones\n#belarus\n#globustut\n#year2005\nSource"
 views = 7
 ids = [1240]
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1258/index.md"
+label = "#cross #monument #belarus #globustut #year2005 Source,%D1%81%D0%…"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1531/index.md"
+label = "#wood #cross #virginmary #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
 +++
 
 {{ tag(t="cross") }}  
@@ -29,14 +49,14 @@ ids = [1240]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-034_%D0%A1%D0%BB%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}

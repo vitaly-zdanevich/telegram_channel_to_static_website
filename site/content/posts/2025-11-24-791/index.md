@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#game\n#strategy\n#video\n#review\n#groundcontrol\n#year2000\nSource"
 views = 41
 ids = [791]
+
+[[extra.related]]
+path = "@/posts/2025-11-24-792/index.md"
+label = "#game #strategy #rtt #groundcontrol The #bishop defector death -…"
+
+[[extra.related]]
+path = "@/posts/2025-11-23-790/index.md"
+label = "#game #strategy #video #review #groundcontrol #year2000"
+
+[[extra.related]]
+path = "@/posts/2025-11-21-787/index.md"
+label = "#preservation #game #groundcontrol #wwiii From the game Ground C…"
+
+[[extra.related]]
+path = "@/posts/2025-06-01-545/index.md"
+label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
+
+[[extra.related]]
+path = "@/posts/2025-11-20-786/index.md"
+label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
 +++
 
 {{ tag(t="game") }}  
@@ -26,6 +46,6 @@ ids = [791]
 {{ tag(t="rtt") }}  
 {{ tag(t="ground_control") }}  
 
-[Source](https://youtu.be/cS7PxDUxzVs)
+[Source](<https://youtu.be/cS7PxDUxzVs> "Ground Control - Multiplayer FFA 4 Players")
 
 {{ youtube(id="cS7PxDUxzVs") }}

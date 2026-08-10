@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#wikipedia\n#ui\n#navigation"
 views = 43
 ids = [790]
+
+[[extra.related]]
+path = "@/posts/2025-11-24-791/index.md"
+label = "#game #strategy #rtt #groundcontrol"
+
+[[extra.related]]
+path = "@/posts/2025-11-24-792/index.md"
+label = "#game #strategy #rtt #groundcontrol The #bishop defector death -…"
+
+[[extra.related]]
+path = "@/posts/2025-11-04-734/index.md"
+label = "#my #video #game #strategy #homm3 #hota #onebadday Heroes of Mig…"
+
+[[extra.related]]
+path = "@/posts/2025-08-29-642/index.md"
+label = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя…"
+
+[[extra.related]]
+path = "@/posts/2025-11-21-787/index.md"
+label = "#preservation #game #groundcontrol #wwiii From the game Ground C…"
 +++
 
 {{ tag(t="game") }}  
@@ -28,6 +48,6 @@ ids = [790]
 {{ tag(t="ground_control") }}  
 {{ tag(t="year_2000") }}  
 
-[Source](https://youtu.be/cuHmPEhpJFo)
+[Source](<https://youtu.be/cuHmPEhpJFo> "Ground Control Review: Truly Massive")
 
 {{ youtube(id="cuHmPEhpJFo") }}

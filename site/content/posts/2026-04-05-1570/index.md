@@ -18,8 +18,28 @@ next_body = "#typography\n#scans\n#russianempire\n#kiev\n#18thcentury"
 prev_id = 1569
 prev_title = ""
 prev_body = "#russianempire\n#typography\n#метрическаякнига\nAt"
-views = 16
+views = 17
 ids = [1570]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }}  
@@ -28,4 +48,4 @@ ids = [1570]
 
 <https://www.newegg.com/p/N82E16888892002>
 
-![](5373211311338100505_1251048248_460003097.jpg)
+{{ img(src="5373211311338100505_1251048248_460003097.jpg") }}

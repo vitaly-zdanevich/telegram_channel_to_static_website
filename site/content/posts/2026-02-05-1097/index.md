@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#ai ai ai ai ai but looks like even text translation with not very big languages is so bad :(\nChecked in #firefox and #googletranslate"
 views = 17
 ids = [1097]
+
+[[extra.related]]
+path = "@/posts/2024-12-22-222/index.md"
+label = "#youtube"
+
+[[extra.related]]
+path = "@/posts/2026-02-07-1099/index.md"
+label = "#love it - against #youtube #clickbait"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1078/index.md"
+label = "#ui #yandex #samara"
+
+[[extra.related]]
+path = "@/posts/2025-12-25-813/index.md"
+label = "#ui #windows #windowsxp"
+
+[[extra.related]]
+path = "@/posts/2025-12-25-812/index.md"
+label = "#winamp #ui #audioplayer"
 +++
 
 I love {{ tag(t="display") }} aspect ratio 16x10 because I have the special space for {{ tag(t="youtube") }} {{ tag(t="ui") }}, when most videos are 16x9
 
-![](5199841215518544654_1210682377_460002062.jpg)
+{{ img(src="5199841215518544654_1210682377_460002062.jpg") }}

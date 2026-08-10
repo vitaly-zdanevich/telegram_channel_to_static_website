@@ -18,11 +18,11 @@ next_body = "Reminder about data preservation"
 prev_id = 208
 prev_title = ""
 prev_body = "About games archiving"
-views = 41
+views = 42
 ids = [209]
 +++
 
 {{ tag(t="license") }}  
 <https://pkg.go.dev/sync?tab=licenses>
 
-![](5366158232004978363_1249406075_456255163.jpg)
+{{ img(src="5366158232004978363_1249406075_456255163.jpg") }}

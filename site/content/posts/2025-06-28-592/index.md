@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#git\n#gitgraph"
 views = 50
 ids = [592]
+
+[[extra.related]]
+path = "@/posts/2026-04-25-1685/index.md"
+label = "#quote #book #ночьвлиссабоне #ремарк"
+
+[[extra.related]]
+path = "@/posts/2026-04-25-1684/index.md"
+label = "#quote #book #ночьвлиссабоне #ремарк – Я тоже. В ту пору я вконе…"
+
+[[extra.related]]
+path = "@/posts/2025-08-16-627/index.md"
+label = "Она окончила Ленинградский университет по специальности искусств…"
+
+[[extra.related]]
+path = "@/posts/2025-05-23-539/index.md"
+label = "#book #health #zoloft #christian"
+
+[[extra.related]]
+path = "@/posts/2026-04-03-1568/index.md"
+label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
 +++
 
 {{ tag(t="book") }} Designing Data-Intensive Applications and {{ tag(t="wine") }}
 
-![](5402456284818704335_1257857374_456263631.jpg)
+{{ img(src="5402456284818704335_1257857374_456263631.jpg") }}

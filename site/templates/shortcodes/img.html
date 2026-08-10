@@ -1,0 +1,1 @@
+<img loading="lazy" src="{% if src is starting_with('http') or src is starting_with('/') %}{{ src | safe }}{% else %}{{ page.permalink | safe }}{{ src }}{% endif %}">

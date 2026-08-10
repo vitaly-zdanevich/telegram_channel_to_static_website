@@ -20,10 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#buttons\n#animation\n#game\n#mmo\n#myst"
 views = 17
 ids = [1122]
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1121/index.md"
+label = "#webdesign #buttons #animation #game #mmo #myst"
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1124/index.md"
+label = "#steam #myst forever #games"
+
+[[extra.related]]
+path = "@/posts/2025-08-29-644/index.md"
+label = "#stat #wikipedia #ai Wikipedia's traffic has fallen by 23% in th…"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-569/index.md"
+label = "#stat #oscar #books #dantealigieri"
 +++
 
 {{ tag(t="mmo") }} {{ tag(t="myst") }} {{ tag(t="stat") }}  
 
 <https://account.mystonline.com/stats/index.php?action=active&day=260219>
 
-![](5244641018655740070_1221113144_460001446.jpg)
+{{ img(src="5244641018655740070_1221113144_460001446.jpg") }}

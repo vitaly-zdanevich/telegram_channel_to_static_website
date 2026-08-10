@@ -20,9 +20,29 @@ prev_title = ""
 prev_body = "#chip\nFrom"
 views = 37
 ids = [454]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1764/index.md"
+label = "#music #sunboy Остров в океане From Про исполнителя"
 +++
 
 {{ tag(t="music") }}  
 {{ tag(t="afisha") }}
 
-![](5415638411328479728_1260926577_456253936.jpg)
+{{ img(src="5415638411328479728_1260926577_456253936.jpg") }}

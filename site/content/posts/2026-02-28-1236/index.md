@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#church\n#abandone\n#belarus\n#globustut\n#year2005\nSource"
 views = 8
 ids = [1236]
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1265/index.md"
+label = "#grave #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1298/index.md"
+label = "#stone #grave #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1284/index.md"
+label = "#grave #stone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1271/index.md"
+label = "#stones #monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1223/index.md"
+label = "#grave #abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="grave") }}  
@@ -30,10 +50,10 @@ ids = [1236]
 
 [Source](https://commons.wikimedia.org/wiki/File:051-698_%D0%90%D0%BD%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_30_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}

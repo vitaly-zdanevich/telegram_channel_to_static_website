@@ -25,4 +25,4 @@ Another one is dead - the blue circles ended last month.
 
 [https://ugo.com](https://ugo.com/)
 
-![](5229215222705359661_1217521546_460000045.jpg)
+{{ img(src="5229215222705359661_1217521546_460000045.jpg") }}

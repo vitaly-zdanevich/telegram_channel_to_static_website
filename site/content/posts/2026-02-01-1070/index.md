@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#map\n#openstreetmap\n#wolt\n#delivery"
 views = 12
 ids = [1070]
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1622/index.md"
+label = "Про #викиданные/#wikidata открытая база данных на #SPARQL, #wiki…"
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1332/index.md"
+label = "#logo #horse"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
 +++
 
 {{ tag(t="logo") }}  
@@ -29,4 +49,4 @@ ids = [1070]
 
 From <https://www.facebook.com/photo/?fbid=10164764933016042&set=a.10150419617396042>
 
-![](5188422654120103187_1208023786_460000531.jpg)
+{{ img(src="5188422654120103187_1208023786_460000531.jpg") }}

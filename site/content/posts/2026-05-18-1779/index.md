@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#log\nfailed"
 views = 38
 ids = [1779]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1744/index.md"
+label = "#python #mojo #llm #gemini 2. Mojo The New Challenger Mojo is a…"
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1780/index.md"
+label = "What a time - multiple #llm doing multiple projects, in parallel…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1853/index.md"
+label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
+
+[[extra.related]]
+path = "@/posts/2026-06-12-1819/index.md"
+label = "My another #userstyle: for #gemini, before and after"
+
+[[extra.related]]
+path = "@/posts/2026-06-05-1805/index.md"
+label = "My yet another project: @wikipediaunofficialbot Built with #llm…"
 +++
 
 ```

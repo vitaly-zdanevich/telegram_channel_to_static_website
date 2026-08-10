@@ -22,6 +22,6 @@ forwarded_from_url = "https://t.me/unforget_games/11511"
 ids = [556]
 +++
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/556-01.mp4") }}
 
 {{ tag(t="video") }}

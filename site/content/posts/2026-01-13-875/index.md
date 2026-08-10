@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#wikipedia\n#bewiki\n#betarask\nI was not active here."
 views = 15
 ids = [875]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1142/index.md"
+label = "#monument #airplane #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1176/index.md"
+label = "#monument #cementery #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1164/index.md"
+label = "#monument #abandone #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1271/index.md"
+label = "#stones #monument #belarus #globustut #year2005"
 +++
 
 {{ tag(t="monument") }}  
@@ -29,4 +49,4 @@ ids = [875]
 
 [Source](https://orda.of.by/.add/gallery.php?arabovschi/tail)
 
-![](5415925920737988965_1260993518_460001637.jpg)
+{{ img(src="5415925920737988965_1260993518_460001637.jpg") }}

@@ -18,10 +18,30 @@ next_body = "Oh my...\n#leetcode"
 prev_id = 1745
 prev_title = ""
 prev_body = "My another hobby project, made with #llm / #codex: converter of #wikipedia dumps into #man / #roff format, on #rust (because I love performance): for a #terminal, #offline reading. #love it, still fixing many markup cases, but mostly its readable already\nWrote about it at"
-views = 24
+views = 25
 ids = [1746]
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1747/index.md"
+label = "Oh my... #leetcode"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1749/index.md"
+label = "#leetcode #validation"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1763/index.md"
+label = "#error #gitlab #contradiction"
+
+[[extra.related]]
+path = "@/posts/2026-05-12-1753/index.md"
+label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-571/index.md"
+label = "#livecoding #batman #binarysearch #leetcode with games :"
 +++
 
 {{ tag(t="leetcode") }} is often produce {{ tag(t="error") }}
 
-![](5465571945928660974_1272552634_460003310.jpg)
+{{ img(src="5465571945928660974_1272552634_460003310.jpg") }}

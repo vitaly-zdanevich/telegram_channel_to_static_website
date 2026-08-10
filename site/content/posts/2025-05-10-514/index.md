@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#bilibili\n#anime\n#webdesign\n#stream\n#ui"
 views = 23
 ids = [514]
+
+[[extra.related]]
+path = "@/posts/2025-06-13-573/index.md"
+label = "#archiving Lost."
+
+[[extra.related]]
+path = "@/posts/2025-04-15-469/index.md"
+label = "Looks what I found - another #archiving group"
+
+[[extra.related]]
+path = "@/posts/2025-04-15-471/index.md"
+label = "#archiving #photos"
+
+[[extra.related]]
+path = "@/posts/2025-08-16-629/index.md"
+label = "On January 29, 2015, about 15 years after the original release o…"
+
+[[extra.related]]
+path = "@/posts/2025-04-18-474/index.md"
+label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
 +++
 
 {{ tag(t="image") }}  
@@ -27,4 +47,4 @@ ids = [514]
 
 [Source](https://blog.archive.org/2025/05/07/vanishing-culture-recovering-lost-software)
 
-![](5260248925510693602_1224747143_456258274.jpg)
+{{ img(src="5260248925510693602_1224747143_456258274.jpg") }}

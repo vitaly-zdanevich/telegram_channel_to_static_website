@@ -19,6 +19,10 @@ prev_title = ""
 prev_body = "#chess\nSource"
 views = 32
 ids = [701]
+
+[[extra.related]]
+path = "@/posts/2025-10-07-700/index.md"
+label = "#chess"
 +++
 
 {{ tag(t="chess") }}  

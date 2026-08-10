@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#painting\n#bible\n#gustavedore\nThe Battle of Nicaea\nSource"
 views = 24
 ids = [762]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-754/index.md"
+label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
+
+[[extra.related]]
+path = "@/posts/2025-11-10-765/index.md"
+label = "#painting #gustavedore Woman of the Apocalypse"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-764/index.md"
+label = "#painting #gustavedore"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-763/index.md"
+label = "#painting #gustavedore Géraint et Enide sortant de la forêt Pier…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
 +++
 
 {{ tag(t="painting") }}  
@@ -31,4 +51,4 @@ Engraving by Gustave Doré, representing the departure of Aigues-Mortes of Louis
 
 [Source](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9,_le_d%C3%A9part_de_Louis_IX_pour_la_croisade.jpg)
 
-![](5229215222705359841_1217521546_460000225.jpg)
+{{ img(src="5229215222705359841_1217521546_460000225.jpg") }}

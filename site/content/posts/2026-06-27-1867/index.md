@@ -17,8 +17,28 @@ next_body = "#love\n#toy\n#breakup\nEсли тяжело засыпать одн
 prev_id = 1865
 prev_title = ""
 prev_body = "Wow, Gemini generates good logos, tried it for the first time\n#gemini\n#logo\n#telegrambot\n#wikimediacommons"
-views = 12
+views = 19
 ids = [1867]
+
+[[extra.related]]
+path = "@/posts/2025-05-29-543/index.md"
+label = "Wow #blackandwhite #webdesign is interesting"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-252/index.md"
+label = "#movie #anime"
+
+[[extra.related]]
+path = "@/posts/2026-04-02-1566/index.md"
+label = "#equilibrium That #movie is important to me, but surprise - 33/1…"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-255/index.md"
+label = "#my #movie #korolishut"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-254/index.md"
+label = "#my #movie #korolishut"
 +++
 
 {{ tag(t="movie") }}  
@@ -30,6 +50,6 @@ ids = [1867]
 
 [Source](https://www.instagram.com/p/DZLS78ZxsEX/)
 
-{{ instagram(url="https://www.instagram.com/p/DZLS78ZxsEX/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1867-01.mp4") }}
 
 {{ tag(t="video") }}

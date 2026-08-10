@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#cinema\n#spunchbob\n#gruz200\nSource"
 views = 25
 ids = [688]
+
+[[extra.related]]
+path = "@/posts/2025-01-17-270/index.md"
+label = "#plastic #letov"
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1623/index.md"
+label = "Usual #school in #china? #lenin 【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】"
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1125/index.md"
+label = "#webdesign #gentoo #china"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2035/index.md"
+label = "#china #buy #sell #yogurt #smoke"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-424/index.md"
+label = "#businessidea #china #rave #health #fitness #music"
 +++
 
 {{ tag(t="china") }}  
@@ -27,6 +47,6 @@ ids = [688]
 
 [Source](https://www.instagram.com/p/DHa4m9TIhVC)
 
-{{ instagram(url="https://www.instagram.com/p/DHa4m9TIhVC/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/688-01.mp4") }}
 
 {{ tag(t="video") }}

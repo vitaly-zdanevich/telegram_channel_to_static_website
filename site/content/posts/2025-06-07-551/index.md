@@ -17,8 +17,28 @@ next_body = "#arsenmarkaryan\n#health\n#medicine\n#psy\n#mantoux\n#mercury\nSour
 prev_id = 550
 prev_title = ""
 prev_body = "#music\n#languages mix\n#kraenkova: Slavic Blood\nSource"
-views = 47
+views = 48
 ids = [551]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1764/index.md"
+label = "#music #sunboy Остров в океане From Про исполнителя"
 +++
 
 {{ tag(t="music") }}  

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#music\n#rap\n#babushka\n#russia\n#pain\nSource"
 views = 50
 ids = [608]
+
+[[extra.related]]
+path = "@/posts/2026-03-21-1494/index.md"
+label = "#steam: almost 25% is on #linux?"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-623/index.md"
+label = "#games #steam Can you imagine that, I know this guy"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-587/index.md"
+label = "In 2024 to #steam were published 19000 #games, its 52 games per…"
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1124/index.md"
+label = "#steam #myst forever #games"
 +++
 
 So many hours  
@@ -27,4 +47,4 @@ So many hours
 {{ tag(t="steam") }}  
 {{ tag(t="master_or_orion") }}
 
-![](5190527334120291504_1208513820_456260784.jpg)
+{{ img(src="5190527334120291504_1208513820_456260784.jpg") }}

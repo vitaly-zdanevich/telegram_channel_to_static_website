@@ -20,12 +20,16 @@ prev_title = ""
 prev_body = "#llm\n#quote"
 views = 34
 ids = [1777]
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1679/index.md"
+label = "#log Still running my experiment about #porting #primeworld from…"
 +++
 
 {{ tag(t="log") }}  
 
 failed
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

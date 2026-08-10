@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = ""
 views = 26
 ids = [412]
+
+[[extra.related]]
+path = "@/posts/2026-01-22-931/index.md"
+label = "I am on #gentoo because it compiles for my CPU -march=native and…"
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1332/index.md"
+label = "#logo #horse"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
 +++
 
 {{ tag(t="gentoo") }}  
@@ -27,4 +47,4 @@ ids = [412]
 
 [Source](https://www.reddit.com/r/linuxmasterrace/comments/lyeija/gentowo)
 
-![](5382363899527033788_1253179251_456258492.jpg)
+{{ img(src="5382363899527033788_1253179251_456258492.jpg") }}

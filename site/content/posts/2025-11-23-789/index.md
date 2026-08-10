@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#webdesigndark\n#webdesigndarkblue\n#webdesigngame\n#visualnovel"
 views = 40
 ids = [789]
+
+[[extra.related]]
+path = "@/posts/2025-05-04-496/index.md"
+label = "#wikipedia #ui #navigation"
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -28,4 +48,4 @@ ids = [789]
 
 <https://en.wikipedia.org/wiki/As_Good_as_It_Gets>
 
-![](5267041880149527904_1226328751_460000608.jpg)
+{{ img(src="5267041880149527904_1226328751_460000608.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#equilibrium\nThat #movie is important to me, but surprise - 33/100 on #metacritic"
 views = 21
 ids = [1567]
+
+[[extra.related]]
+path = "@/posts/2026-04-09-1599/index.md"
+label = "My first blog #post to #wikimediadiff, about #wikimediacommons,…"
+
+[[extra.related]]
+path = "@/posts/2025-12-27-819/index.md"
+label = "#preservation #wikimediacommons #pywikibot #my Created a new too…"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1873/index.md"
+label = "#batumi #aksiarodak #year2024 #my #lecture #wikimediacommons #pr…"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 +++
 
 {{ tag(t="preservation") }}  
@@ -28,4 +48,4 @@ ids = [1567]
 
 [#1506](@/posts/2026-03-28-1506/index.md)
 
-![](5363938150528522306_1248889172_460003394.jpg)
+{{ img(src="5363938150528522306_1248889172_460003394.jpg") }}

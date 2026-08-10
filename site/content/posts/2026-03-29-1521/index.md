@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#abandone\n#architecture\n#stork\n#лойки\n#belarus\n#globustut\n#year2005\nSource"
 views = 16
 ids = [1521]
+
+[[extra.related]]
+path = "@/posts/2026-01-21-924/index.md"
+label = "#belarus #monument #christianity #virginmary #nature #village #y…"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1373/index.md"
+label = "#cementery #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1255/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1248/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
 +++
 
 {{ tag(t="cementery") }}  
@@ -33,4 +53,4 @@ ids = [1521]
 
 [Source](https://commons.wikimedia.org/wiki/File:059-040_%D0%98%D0%B2%D0%B0%D1%88%D0%BA%D0%BE%D0%B2%D1%86%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_19_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](5353089436800979966_1246363259_460002302.jpg)
+{{ img(src="5353089436800979966_1246363259_460002302.jpg") }}

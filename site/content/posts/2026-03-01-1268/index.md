@@ -24,4 +24,4 @@ ids = [1268]
 
 Wow for the {{ tag(t="kernel") }} we have not only bright `make menuconfig` but black `make nconfig`
 
-![](5269742426736234904_1226957521_460001688.jpg)
+{{ img(src="5269742426736234904_1226957521_460001688.jpg") }}

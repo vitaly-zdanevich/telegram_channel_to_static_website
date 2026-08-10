@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#game\n#armiesofexigo\nSource"
 views = 53
 ids = [376]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
+
+[[extra.related]]
+path = "@/posts/2025-10-22-716/index.md"
+label = "#medicine #death"
+
+[[extra.related]]
+path = "@/posts/2025-02-02-349/index.md"
+label = "#translate #pain"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2136/index.md"
+label = "#death #car #sound"
 +++
 
 **Are you winning son? Happy Birthday**  

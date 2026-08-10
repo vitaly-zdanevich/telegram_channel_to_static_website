@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#darkmode\n#gif"
 views = 38
 ids = [617]
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-05-13-527/index.md"
+label = "Gold #games - because lovers recreate engines for the best one."
+
+[[extra.related]]
+path = "@/posts/2025-03-14-410/index.md"
+label = "Girl with a Pearl Earring #art Artwork by Olga Pavolga Shot by T…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
 +++
 
 Imagine a 2d side-scroll quest-action game with such visual style  
@@ -35,4 +55,4 @@ Imagine a 2d side-scroll quest-action game with such visual style
 
 <https://artsandculture.google.com/search/asset?q=Sergo%20Kobuladze>
 
-![](5233728241192268441_1218572315_456258201.jpg)
+{{ img(src="5233728241192268441_1218572315_456258201.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#valve\n#hl2\n#rip"
 views = 55
 ids = [474]
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1680/index.md"
+label = "#preservation #internetarchive #short #music #tape #audio"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-573/index.md"
+label = "#archiving Lost."
+
+[[extra.related]]
+path = "@/posts/2025-04-15-469/index.md"
+label = "Looks what I found - another #archiving group"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2025-05-10-514/index.md"
+label = "#image #archiving"
 +++
 
 {{ tag(t="archiving") }}  
@@ -34,4 +54,4 @@ Jason Scott, Internet Archive employee, photo in color
 
 From <https://x.com/textfiles/status/1850987321052578168/photo/1>
 
-![](5192688952505658006_1209017111_456256150.jpg)
+{{ img(src="5192688952505658006_1209017111_456256150.jpg") }}

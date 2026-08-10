@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#image\n#archiving\nSource"
 views = 28
 ids = [515]
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2026-08-04-2117/index.md"
+label = "#sound #mem By dendertyofficial"
+
+[[extra.related]]
+path = "@/posts/2026-08-04-2116/index.md"
+label = "#sound #mem By dendertyofficial"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2025-10-03-696/index.md"
+label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
 +++
 
 {{ tag(t="film") }}  
@@ -28,6 +48,6 @@ ids = [515]
 
 [Source](https://www.instagram.com/p/DFiRe45JnJE)
 
-{{ instagram(url="https://www.instagram.com/p/DFiRe45JnJE/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/515-01.mp4") }}
 
 {{ tag(t="video") }}

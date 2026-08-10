@@ -17,8 +17,28 @@ next_body = "#wikipedia\n#armenian\n#ruwiki\n#language\n#table"
 prev_id = 1822
 prev_title = ""
 prev_body = "#tbc\n#money\nThis is why we have #crypto?"
-views = 17
+views = 18
 ids = [1823]
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1308/index.md"
+label = "Wow in #kitty we can switch to a prev active tab: map ctrl+alt+p…"
+
+[[extra.related]]
+path = "@/posts/2026-02-24-1136/index.md"
+label = "In #kitty terminal you can use independent clipboard: map ctrl+s…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-713/index.md"
+label = "In #kitty terminal you can always highlight something, for examp…"
+
+[[extra.related]]
+path = "@/posts/2026-06-27-1868/index.md"
+label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
+
+[[extra.related]]
+path = "@/posts/2026-06-12-1821/index.md"
+label = "Make #tree clickable, tested in #kitty Replace to #eza eza --tre…"
 +++
 
 {{ tag(t="shell") }}  

@@ -17,8 +17,28 @@ next_body = "Love this #logo"
 prev_id = 799
 prev_title = ""
 prev_body = "#preservation\n#games\n#beard\nFrom"
-views = 45
+views = 46
 ids = [801]
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2037/index.md"
+label = "#kindzadza #trailer"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-776/index.md"
+label = "#quote #kindzadza Фильм был изначально запланирован как двухсери…"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-775/index.md"
+label = "#quote #kindzadza во время съёмок фильма к власти в СССР пришёл…"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-777/index.md"
+label = "#film #kindzadza #batumi Соедините меня с Батуми"
 +++
 
 {{ tag(t="kin_dza_dza") }}  
@@ -29,6 +49,6 @@ ids = [801]
 
 [https://ru.wikipedia.org/wiki/Кин-дза-дза](https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD-%D0%B4%D0%B7%D0%B0-%D0%B4%D0%B7%D0%B0)!  
 
-Full legal <https://youtu.be/EYHv8eJrW2Y>
+Full legal [https://youtu.be/EYHv8eJrW2Y](<https://youtu.be/EYHv8eJrW2Y> "Кин-дза-дза! (FullHD, комедия, реж. Георгий Данелия, 1986 г.)")
 
 {{ youtube(id="EYHv8eJrW2Y") }}

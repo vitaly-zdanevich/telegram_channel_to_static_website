@@ -22,6 +22,6 @@ ids = [640]
 
 <https://mightandmagic.fandom.com/wiki/Main_Page>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

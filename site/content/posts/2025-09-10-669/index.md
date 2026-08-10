@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#film\n#russia\n#nightwatch\n#zavulon"
 views = 32
 ids = [669]
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2026-01-12-873/index.md"
+label = "#map The Earth, centred around #newzealand"
+
+[[extra.related]]
+path = "@/posts/2025-10-05-697/index.md"
+label = "#turkey #map #population"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-654/index.md"
+label = "#russia #israel #map"
 +++
 
 {{ tag(t="map") }}  
@@ -27,4 +47,4 @@ ids = [669]
 
 [Source](https://www.instagram.com/p/DOVCm-xEUcy)
 
-![](5334824169247997201_1242110545_456260881.jpg)
+{{ img(src="5334824169247997201_1242110545_456260881.jpg") }}

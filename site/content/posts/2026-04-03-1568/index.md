@@ -20,14 +20,34 @@ prev_title = ""
 prev_body = "#preservation\n#wikimediacommons\n#unavailable"
 views = 19
 ids = [1568]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }}  
 
 I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} from Windows to Linux, interesting if that possible...  
 
-<https://github.com/Prime-World-Classic/Prime-World>  
+[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 8 stars · Languages: C++ 35%, C# 22%, Python 16% · 1282 commits · 5 forks · last push 2026-07-17")  
 
 We tried {{ tag(t="wine") }} of course - but some problems with {{ tag(t="lutris") }} - because native launcher need to run Wine...
 
-![](5368664895181755976_1249989703_460002888.jpg)
+{{ img(src="5368664895181755976_1249989703_460002888.jpg") }}

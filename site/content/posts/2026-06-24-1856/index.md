@@ -17,8 +17,28 @@ next_body = "💗 Любимый Кобулети — это место встр
 prev_id = 1855
 prev_title = ""
 prev_body = "#armiesofexigo it own by #electronicarts\nТвёрдо и чётко."
-views = 10
+views = 13
 ids = [1856, 1857, 1858, 1859]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1855/index.md"
+label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+
+[[extra.related]]
+path = "@/posts/2026-06-19-1844/index.md"
+label = "#armiesofexigo #abandone"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2026-05-31-1802/index.md"
+label = "With #llm I added 1920x1200 to #armiesofexigo #game And increase…"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1740/index.md"
+label = "#armiesofexigo: моя #лекция об игре, в Батуми #stillyoungbar Так…"
 +++
 
 {{ tag(t="armies_of_exigo") }}  

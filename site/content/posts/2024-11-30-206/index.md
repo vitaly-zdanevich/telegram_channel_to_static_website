@@ -18,8 +18,28 @@ next_body = ""
 prev_id = 205
 prev_title = ""
 prev_body = "#webdesign"
-views = 46
+views = 47
 ids = [206]
+
+[[extra.related]]
+path = "@/posts/2025-05-13-527/index.md"
+label = "Gold #games - because lovers recreate engines for the best one."
+
+[[extra.related]]
+path = "@/posts/2026-08-04-2117/index.md"
+label = "#sound #mem By dendertyofficial"
+
+[[extra.related]]
+path = "@/posts/2026-08-04-2116/index.md"
+label = "#sound #mem By dendertyofficial"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
 +++
 
 {{ tag(t="mem") }}  
@@ -27,4 +47,4 @@ ids = [206]
 
 <https://www.facebook.com/photo/?fbid=884170197219922>
 
-![](5359558941740230783_1247869558_456255615.jpg)
+{{ img(src="5359558941740230783_1247869558_456255615.jpg") }}

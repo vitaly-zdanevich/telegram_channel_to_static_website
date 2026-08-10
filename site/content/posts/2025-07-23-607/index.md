@@ -16,9 +16,29 @@ next_title = ""
 next_body = "So many hours\n#steam\n#masterororion"
 prev_id = 606
 prev_title = ""
-prev_body = "#harrypotter\n#northkorea\n#ai\n#demonflyingfox\nSource"
+prev_body = "#harrypotter\n#northkorea\n#ai\n#demonflyingfox\nSource\")"
 views = 59
 ids = [607]
+
+[[extra.related]]
+path = "@/posts/2025-08-30-647/index.md"
+label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+
+[[extra.related]]
+path = "@/posts/2025-08-30-646/index.md"
+label = "#film #music #russia #korolishut s1e5, start of the episode - li…"
+
+[[extra.related]]
+path = "@/posts/2025-11-05-739/index.md"
+label = "#music #musicrussian #rap #raprussian #musichumor #нтр"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
 +++
 
 {{ tag(t="music") }}  
@@ -29,6 +49,6 @@ ids = [607]
 
 [Source](https://www.instagram.com/p/DKVZCNWM-P1)
 
-{{ instagram(url="https://www.instagram.com/p/DKVZCNWM-P1/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/607-01.mp4") }}
 
 {{ tag(t="video") }}

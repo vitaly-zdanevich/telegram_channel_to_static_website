@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#python\n#mojo\n#llm\n#gemini\n2. Mojo (The New Challenger)\nMojo is a new programming language designed by Chris Lattner (creator of LLVM and Swift).\nIt is a superset of Python that looks and feels like Python but includes optional strong, static typing.\nIt claims to be up to 35,000x faster than Python because it compiles to machine code and utilizes hardware features like SIMD.\nKey Innovations: Introduces features like let for immutable variables\nWhy not #const?"
 views = 23
 ids = [1745]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1849/index.md"
+label = "#llm #codex #regex"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1120/index.md"
+label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+
+[[extra.related]]
+path = "@/posts/2026-05-21-1784/index.md"
+label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
+
+[[extra.related]]
+path = "@/posts/2026-04-30-1729/index.md"
+label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
 +++
 
 My another hobby project, made with {{ tag(t="llm") }} / {{ tag(t="codex") }}: converter of {{ tag(t="wikipedia") }} dumps into {{ tag(t="man") }} / {{ tag(t="roff") }} format, on {{ tag(t="rust") }} (because I love performance): for a {{ tag(t="terminal") }}, {{ tag(t="offline") }} reading. {{ tag(t="love") }} it, still fixing many markup cases, but mostly its readable already <https://gitlab.com/vitaly-zdanevich/wiki2man_on_rust>  
 
 Wrote about it at <https://diff.wikimedia.org/2026/06/25/i-built-the-convertor-from-wikipedia-dumps-to-man-roff-format-for-offline-reading-in-a-terminal/>
 
-![](5465571945928660178_1272552634_460002514.jpg)
+{{ img(src="5465571945928660178_1272552634_460002514.jpg") }}

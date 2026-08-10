@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Looks like photos of every street"
 views = 49
 ids = [532]
+
+[[extra.related]]
+path = "@/posts/2025-05-14-534/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-533/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-05-13-525/index.md"
+label = "#photo #history #face #medals"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
 +++
 
 From [globustut.by](http://globustut.by/)  
@@ -30,4 +50,4 @@ From [globustut.by](http://globustut.by/)
 {{ tag(t="history") }}  
 {{ tag(t="babruysk") }}
 
-![](5271908782466788847_1227461915_456257007.jpg)
+{{ img(src="5271908782466788847_1227461915_456257007.jpg") }}

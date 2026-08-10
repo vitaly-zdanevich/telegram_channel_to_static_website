@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#xbox\n#gameconsole\n#tech\n#retro\n#green\nFrom"
 views = 16
 ids = [1836]
+
+[[extra.related]]
+path = "@/posts/2025-01-21-322/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-181/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-408/index.md"
+label = "#girl #face"
+
+[[extra.related]]
+path = "@/posts/2025-01-30-348/index.md"
+label = "#spider #girl"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-340/index.md"
+label = "#girl #nails"
 +++
 
 {{ tag(t="girl") }}  
@@ -31,4 +51,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015147313/") }}
 
-![](5296434402940363408_1233172231_460006032.jpg)
+{{ img(src="5296434402940363408_1233172231_460006032.jpg") }}

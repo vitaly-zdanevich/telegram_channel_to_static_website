@@ -18,8 +18,28 @@ next_body = "#webdesign\n#video\n#bilibili"
 prev_id = 1736
 prev_title = ""
 prev_body = "#bilibili #convertion #progress - nice #ux"
-views = 14
+views = 15
 ids = [1737]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+
+[[extra.related]]
+path = "@/posts/2025-05-10-513/index.md"
+label = "#bilibili #anime #webdesign #stream #ui"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1765/index.md"
+label = "#bilibili verification with 100 questions - to be able to leave…"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [1737]
 
 [https://www.bilibili.com](https://www.bilibili.com/)
 
-![](5463320146114974742_1272028346_460002326.jpg)
+{{ img(src="5463320146114974742_1272028346_460002326.jpg") }}

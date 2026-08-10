@@ -18,19 +18,39 @@ next_body = "#typography\n#russianempire\n#ukraine\n#century18\nSource"
 prev_id = 1623
 prev_title = ""
 prev_body = "Usual #school in #china? #lenin\n【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】"
-views = 21
+views = 22
 ids = [1624]
+
+[[extra.related]]
+path = "@/posts/2025-05-10-513/index.md"
+label = "#bilibili #anime #webdesign #stream #ui"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1765/index.md"
+label = "#bilibili verification with 100 questions - to be able to leave…"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1737/index.md"
+label = "#webdesign #bilibili"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-621/index.md"
+label = "#anime #gpu"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-398/index.md"
+label = "#anime #voice"
 +++
 
 {{ tag(t="preview") }} on {{ tag(t="bilibili") }}  
 {{ tag(t="anime") }}
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

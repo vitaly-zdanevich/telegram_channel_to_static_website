@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#livecoding\n#batman\n#binarysearch\n#leetcode with games :("
 views = 39
 ids = [573]
+
+[[extra.related]]
+path = "@/posts/2025-04-15-469/index.md"
+label = "Looks what I found - another #archiving group"
+
+[[extra.related]]
+path = "@/posts/2025-05-10-514/index.md"
+label = "#image #archiving"
+
+[[extra.related]]
+path = "@/posts/2025-04-15-471/index.md"
+label = "#archiving #photos"
+
+[[extra.related]]
+path = "@/posts/2025-08-16-629/index.md"
+label = "On January 29, 2015, about 15 years after the original release o…"
+
+[[extra.related]]
+path = "@/posts/2025-04-18-474/index.md"
+label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
 +++
 
 {{ tag(t="archiving") }}  
 
 Lost.
 
-![](5359475683799200970_1247850173_456258762.jpg)
+{{ img(src="5359475683799200970_1247850173_456258762.jpg") }}

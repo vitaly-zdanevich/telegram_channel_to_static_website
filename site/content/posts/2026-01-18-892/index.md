@@ -18,8 +18,28 @@ next_body = "#webdesign\n#arctic\n#year2004\narcticdigitalnomads.com"
 prev_id = 891
 prev_title = ""
 prev_body = "#belarus\n#population\n#village\nSource#%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)"
-views = 15
+views = 16
 ids = [892]
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1085/index.md"
+label = "#logo #gitlab #git"
+
+[[extra.related]]
+path = "@/posts/2025-08-22-634/index.md"
+label = "#dress #tshirt #git #github #porn"
+
+[[extra.related]]
+path = "@/posts/2025-05-27-542/index.md"
+label = "#git"
+
+[[extra.related]]
+path = "@/posts/2026-05-15-1761/index.md"
+label = "I love #ci so much that for the first time I depleted free 400 m…"
+
+[[extra.related]]
+path = "@/posts/2026-01-13-876/index.md"
+label = "#macOS: to install #git I need 25 GB"
 +++
 
 Storing my configs in {{ tag(t="git") }} ({{ tag(t="gitlab") }}, because its open - {{ tag(t="github") }} is not). Dozens of repos. I recommend you. And I love that Gitlab creates a repo if it does not exist, private by default - so I can {{ tag(t="backup") }} my another preferences folder without touching a web browser.  
@@ -39,4 +59,4 @@ alias log='git log'
 alias lo='git log --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" --date=short prod..master'
 ```
 
-![](5434005031519719175_1265202889_460001031.jpg)
+{{ img(src="5434005031519719175_1265202889_460001031.jpg") }}

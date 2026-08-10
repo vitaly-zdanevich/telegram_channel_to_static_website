@@ -55,4 +55,4 @@ chroot . /bin/bash
 
 and run from root (because requires [CAP\_SYS\_CHROOT](https://man7.org/linux/man-pages/man7/capabilities.7.html))
 
-![](5208565307709003033_1212713613_460002585.jpg)
+{{ img(src="5208565307709003033_1212713613_460002585.jpg") }}

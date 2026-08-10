@@ -16,10 +16,10 @@ next_body = "I love this browser extension - shows Wikidata information about th
 prev_id = 39
 prev_title = ""
 prev_body = "I love this game too #game #flash"
-views = 46
+views = 48
 ids = [40]
 +++
 
 <https://dan.langille.org/2023/12/30/blatant-self-interest-monitor-light/>
 
-![](5314369340256148441_1237348034_456252377.jpg)
+{{ img(src="5314369340256148441_1237348034_456252377.jpg") }}

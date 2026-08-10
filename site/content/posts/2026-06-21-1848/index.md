@@ -18,8 +18,28 @@ next_body = "#llm\n#codex\n#regex"
 prev_id = 1847
 prev_title = ""
 prev_body = "#game\n#trailer\n#music\n#year2009\n#halo\n#xbox\n#xbox360\nOne of the best game trailer\nSource"
-views = 12
+views = 14
 ids = [1848]
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2025-04-28-487/index.md"
+label = "#trump #batumi"
+
+[[extra.related]]
+path = "@/posts/2025-02-09-353/index.md"
+label = "#trump #batumi"
+
+[[extra.related]]
+path = "@/posts/2026-04-25-1686/index.md"
+label = "#photo #batumi #dog"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-1013/index.md"
+label = "#webdesign #blue #batumi"
 +++
 
 {{ tag(t="batumi") }}  
@@ -28,4 +48,4 @@ Oh my, I live here
 
 From <https://www.threads.com/@suhanovisual/post/DZ0JpJyjWBX>
 
-![](5312216122830559705_1236846699_460003801.jpg)
+{{ img(src="5312216122830559705_1236846699_460003801.jpg") }}

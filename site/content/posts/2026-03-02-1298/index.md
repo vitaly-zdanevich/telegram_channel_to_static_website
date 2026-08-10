@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#abandone\n#castle\n#belarus\n#globustut\n#year2005\nSource"
 views = 15
 ids = [1298]
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1284/index.md"
+label = "#grave #stone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1265/index.md"
+label = "#grave #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1236/index.md"
+label = "#grave #stones #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1223/index.md"
+label = "#grave #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1212/index.md"
+label = "#grave #abandone #belarus #globustut #year2005 Source,%D1%81%D0%…"
 +++
 
 {{ tag(t="stone") }}  
@@ -30,4 +50,4 @@ ids = [1298]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-255_%D0%9A%D1%80%D0%B5%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5271994226549920851_1227481809_460002387.jpg)
+{{ img(src="5271994226549920851_1227481809_460002387.jpg") }}

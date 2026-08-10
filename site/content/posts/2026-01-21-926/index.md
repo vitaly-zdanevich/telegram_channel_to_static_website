@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#church\n#year2005\n#globustut"
 views = 9
 ids = [926]
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-920/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-919/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1445/index.md"
+label = "#architecture #orange #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [926]
 
 [https://commons.wikimedia.org/wiki/File:039-460\_Трокеники,\_снято\_15\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:039-460_%D0%A2%D1%80%D0%BE%D0%BA%D0%B5%D0%BD%D0%B8%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_15_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440801563862568223_1266785330_460000543.jpg)
+{{ img(src="5440801563862568223_1266785330_460000543.jpg") }}

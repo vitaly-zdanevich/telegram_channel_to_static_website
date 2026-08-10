@@ -20,10 +20,26 @@ prev_title = ""
 prev_body = "Source"
 views = 49
 ids = [385]
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1330/index.md"
+label = "#webdesign #apple #icloud"
+
+[[extra.related]]
+path = "@/posts/2025-05-24-541/index.md"
+label = "#iphone #apple #newton 10 years gap."
+
+[[extra.related]]
+path = "@/posts/2025-05-08-507/index.md"
+label = "#design #apple #ipod"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-506/index.md"
+label = "#design #apple #ipod"
 +++
 
 {{ tag(t="pelevin") }}  
 {{ tag(t="apple") }}  
 {{ tag(t="buddhism") }}
 
-![](5336993870761815093_1242615718_456256565.jpg)
+{{ img(src="5336993870761815093_1242615718_456256565.jpg") }}

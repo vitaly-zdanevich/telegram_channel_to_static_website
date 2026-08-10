@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#firefox translation from #german to #russian"
 views = 17
 ids = [1095]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }} ai ai ai ai but looks like even text translation with not very big languages is so bad :(  
@@ -28,6 +48,6 @@ Checked in {{ tag(t="firefox") }} and {{ tag(t="google_translate") }}
 
 <https://hrej.cz/article/zakon-pouste>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

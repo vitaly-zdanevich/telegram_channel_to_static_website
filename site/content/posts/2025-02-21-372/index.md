@@ -16,9 +16,29 @@ next_title = ""
 next_body = "Банк Империал - Конрад III\n#ad is old, around 2000 year? This bank is not exists anymore.\nSource"
 prev_id = 371
 prev_title = ""
-prev_body = "#ad from 2012\n#guardian\n#pigs\nSource"
+prev_body = "#ad from 2012\n#uk\n#guardian\n#pigs\nSource"
 views = 55
-ids = [372]
+ids = [372, 373]
+
+[[extra.related]]
+path = "@/posts/2025-02-21-371/index.md"
+label = "#ad from 2012 #uk #guardian #pigs"
+
+[[extra.related]]
+path = "@/posts/2025-03-11-404/index.md"
+label = "#video #ad #japan #ai #girl #virtual"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2025-01-21-322/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
 +++
 
 **Most Shocking Second a Day Video  
@@ -29,11 +49,9 @@ Still The Most Shocking Second A Day**
 {{ tag(t="war") }}  
 {{ tag(t="girl") }}  
 
-[Source](https://youtu.be/RBQ-IoHfimQ)  
-[Source](https://youtu.be/nKDgFCojiT8)
+[Source](<https://youtu.be/RBQ-IoHfimQ> "Most Shocking Second a Day Video")  
+[Source](<https://youtu.be/nKDgFCojiT8> "Still The Most Shocking Second A Day")
 
 {{ youtube(id="nKDgFCojiT8") }}
 
 📎 Most Shocking Second a Day Video \[RBQ-IoHfimQ\].webm *(not archived)*
-
-📎 Still The Most Shocking Second A Day \[nKDgFCojiT8\].webm *(not archived)*

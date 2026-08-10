@@ -18,8 +18,28 @@ next_body = "From , ending"
 prev_id = 195
 prev_title = ""
 prev_body = "#style love my custom YandexMail"
-views = 53
+views = 54
 ids = [196]
+
+[[extra.related]]
+path = "@/posts/2025-05-06-500/index.md"
+label = "#film #jupiter #space"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-253/index.md"
+label = "#film #scifi #space"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2025-10-03-696/index.md"
+label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
 +++
 
 {{ tag(t="space") }}  

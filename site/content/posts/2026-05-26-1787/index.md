@@ -18,34 +18,42 @@ next_body = "#28мая2026 (чт) 21:00–01:00 — айтишная посид�
 prev_id = 1786
 prev_title = ""
 prev_body = "Finally I forked #nixnote, and migrated from #qt5 to #qt6, by #llm #gpt 5.5 xhigh"
-views = 36
+views = 37
 ids = [1787, 1797]
+
+[[extra.related]]
+path = "@/posts/2025-03-24-442/index.md"
+label = "wow in #telegram we have a #crypto #wallet, and users can send m…"
+
+[[extra.related]]
+path = "@/posts/2026-06-13-1822/index.md"
+label = "#tbc #money This is why we have #crypto?"
 +++
 
 > Payment -&gt; {{ tag(t="crypto") }} -&gt; Select your {{ tag(t="wallet") }}
 
 [woodev.net](http://woodev.net/)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}
 
-![](09.jpg)
+{{ img(src="09.jpg") }}
 
-![](10.jpg)
+{{ img(src="10.jpg") }}
 
-![](11.jpg)
+{{ img(src="11.jpg") }}
 
-![](12.jpg)
+{{ img(src="12.jpg") }}

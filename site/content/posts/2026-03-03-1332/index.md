@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#logo\n#bird\n#red"
 views = 10
 ids = [1332]
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
+
+[[extra.related]]
+path = "@/posts/2025-03-15-412/index.md"
+label = "#gentoo #logo"
+
+[[extra.related]]
+path = "@/posts/2026-06-10-1817/index.md"
+label = "#logo #progy #github"
 +++
 
 {{ tag(t="logo") }}  
@@ -27,4 +47,4 @@ ids = [1332]
 
 <https://criu.org/P.Haul>
 
-![](5276106936908715961_1228439374_460003257.jpg)
+{{ img(src="5276106936908715961_1228439374_460003257.jpg") }}

@@ -16,8 +16,8 @@ next_body = "#ad"
 prev_id = 211
 prev_title = ""
 prev_body = "Only 13 percent of all classic games released between 1960 and 2009 are currently commercially available, according to the \"Survey of the Video Game Reissue Market in the United States,\" published last summer by Phil Salvadorb for the Video Game History Foundation and the Software Preservation Network"
-views = 50
+views = 51
 ids = [212]
 +++
 
-![](5379967372200369765_1252621266_456253029.jpg)
+{{ img(src="5379967372200369765_1252621266_456253029.jpg") }}

@@ -19,11 +19,31 @@ prev_title = ""
 prev_body = ""
 views = 29
 ids = [518]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1764/index.md"
+label = "#music #sunboy Остров в океане From Про исполнителя"
+
+[[extra.related]]
+path = "@/posts/2026-04-19-1648/index.md"
+label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
 +++
 
 > The life was quiet all around  <br>A cute little island  <br>Nice and non-violent  <br>But everything turned upside down  <br>  <br>When a new guy came to town  <br>We got along, he showed me ways  <br>To craft and test things  <br>That cut intestines  <br>Said we could party at his place  <br>All the holidays  <br>  <br>It's just what I need  <br>To watch demons bleed  <br>Their blood on my paws  <br>Unholy hordes slaughtered  <br>Now I feel complete  <br>  <br>Our worlds collide on eternal horizons  <br>A wild ride, every turn is surprising  <br>We rip and tear until it's done  <br>Then head back home and have some fun  <br>Together we are  <br>  <br>One! One! One! One!  <br>Together we are  <br>One! One! One! One!  <br>  <br>Reports and papers, nine to five  <br>I kept things in order  <br>Dying of boredom  <br>Always enraged, he spent his life  <br>Giving imps PTSD  <br>  <br>Unlikely friends, two troubled minds  <br>Like sister and brother  <br>We learn from each other  <br>A simple work-life balance guide  <br>That made us a perfect team
 
-[Source](https://music.youtube.com/watch?v=QydzTeVCeAA)  
+[Source](<https://music.youtube.com/watch?v=QydzTeVCeAA> "Doom Crossing: Eternal Horizons (feat. Natalia Natchan)")  
 [Lyric](https://genius.com/The-chalkeaters-doom-crossing-eternal-horizons-lyrics)  
 
 {{ tag(t="music") }}

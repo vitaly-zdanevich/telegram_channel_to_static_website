@@ -19,6 +19,14 @@ prev_title = ""
 prev_body = "#church\n#inside\n#table\n#lacecurtain\n#doubledoor\n#bucket\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE29%D0%BC%D0%B0%D1%8F2005.jpg)"
 views = 15
 ids = [1421]
+
+[[extra.related]]
+path = "@/posts/2025-09-02-655/index.md"
+label = "#chatgpt 5: Escape shell $ as $$ inside Makefile recipes #gemini…"
+
+[[extra.related]]
+path = "@/posts/2025-02-11-356/index.md"
+label = "#ai #chatgpt"
 +++
 
 {{ tag(t="chatgpt") }}  

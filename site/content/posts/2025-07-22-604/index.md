@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#dune\n#fashion\n#balenciaga\n#demonflyingfox\nSource"
 views = 46
 ids = [604]
+
+[[extra.related]]
+path = "@/posts/2025-07-22-605/index.md"
+label = "#berlin #germany #harrypotter #ai #demonflyingfox"
+
+[[extra.related]]
+path = "@/posts/2025-07-22-606/index.md"
+label = "#harrypotter #northkorea #ai #demonflyingfox"
+
+[[extra.related]]
+path = "@/posts/2025-03-20-439/index.md"
+label = "#korea #ai #aivideo #starwars #demonflyingfox"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
 +++
 
 {{ tag(t="berlin") }}  
@@ -27,7 +47,7 @@ ids = [604]
 {{ tag(t="the_lord_of_the_rings") }}  
 {{ tag(t="demonflyingfox") }}  
 
-[Source](https://youtu.be/qXsnx1DS608)
+[Source](<https://youtu.be/qXsnx1DS608> "The Lord of the Rings but in Berlin")
 
 {{ youtube(id="qXsnx1DS608") }}
 

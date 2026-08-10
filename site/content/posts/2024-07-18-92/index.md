@@ -19,6 +19,10 @@ prev_title = ""
 prev_body = ""
 views = 53
 ids = [92]
+
+[[extra.related]]
+path = "@/posts/2024-10-25-164/index.md"
+label = "#javascript: guess the output 1,2,3+4,5,6"
 +++
 
 Guess the output {{ tag(t="javascript") }}  

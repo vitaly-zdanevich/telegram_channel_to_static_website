@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Another #userstyle: for #openstreetmap, only a few CSS lines"
 views = 45
 ids = [550]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1764/index.md"
+label = "#music #sunboy Остров в океане From Про исполнителя"
 +++
 
 {{ tag(t="music") }}  
@@ -26,6 +46,6 @@ ids = [550]
 
 {{ tag(t="kraenkova") }}: Slavic Blood  
 
-[Source](https://youtu.be/XDt8RT0aXUk)
+[Source](<https://youtu.be/XDt8RT0aXUk> "kraenkova - Slavic Blood [official music video]")
 
 {{ youtube(id="XDt8RT0aXUk") }}

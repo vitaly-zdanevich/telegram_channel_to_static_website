@@ -20,10 +20,14 @@ prev_title = ""
 prev_body = "#webdesign\n#armenia"
 views = 8
 ids = [1371]
+
+[[extra.related]]
+path = "@/posts/2025-02-12-358/index.md"
+label = "#ui #button #css Fuck minimalism"
 +++
 
 {{ tag(t="button") }}  
 
 <https://lattice9.net/buttons>
 
-![](5289657696166549213_1231594406_460003037.jpg)
+{{ img(src="5289657696166549213_1231594406_460003037.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#ad\n#playstation\n#playstation2\nSource"
 views = 38
 ids = [784]
+
+[[extra.related]]
+path = "@/posts/2025-08-30-647/index.md"
+label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+
+[[extra.related]]
+path = "@/posts/2025-08-30-646/index.md"
+label = "#film #music #russia #korolishut s1e5, start of the episode - li…"
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2025-06-16-574/index.md"
+label = "#korolishut"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
 +++
 
 {{ tag(t="punk") }}  
@@ -29,4 +49,4 @@ ids = [784]
 
 {{ pinterest(url="https://www.pinterest.com/pin/606437906115011230/") }}
 
-![](5253740353548913982_1223231748_460000574.jpg)
+{{ img(src="5253740353548913982_1223231748_460000574.jpg") }}

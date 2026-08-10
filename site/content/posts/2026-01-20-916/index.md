@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#architecture\n#abandone\n#year2005\n#globustut"
 views = 9
 ids = [916]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1387/index.md"
+label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [916]
 
 [https://commons.wikimedia.org/wiki/File:038-151\_Болтуп,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-151_%D0%91%D0%BE%D0%BB%D1%82%D1%83%D0%BF,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440408303772044170_1266693767_460000138.jpg)
+{{ img(src="5440408303772044170_1266693767_460000138.jpg") }}

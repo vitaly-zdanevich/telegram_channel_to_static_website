@@ -17,8 +17,8 @@
     </article>
   {% endfor %}
   <nav class="pager">
-    {% if paginator.previous %}<a href="{{ paginator.previous | safe }}">← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
+    {% if paginator.previous %}<a href="{{ paginator.previous | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.newer != "" %} title="{{ nav.newer | safe }}"{% endif %}{% endfor %}>← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
     <span>{{ paginator.current_index }} / {{ paginator.number_pagers }}</span>
-    {% if paginator.next %}<a href="{{ paginator.next | safe }}">{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
+    {% if paginator.next %}<a href="{{ paginator.next | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.older != "" %} title="{{ nav.older | safe }}"{% endif %}{% endfor %}>{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
   </nav>
 {% endblock content %}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#cloud"
 views = 9
 ids = [1271]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1258/index.md"
+label = "#cross #monument #belarus #globustut #year2005 Source,%D1%81%D0%…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1236/index.md"
+label = "#grave #stones #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1260/index.md"
+label = "#monument #bird #eagle #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-927/index.md"
+label = "#belarus #monument #nature #year2005 #year1915 #globustut"
 +++
 
 {{ tag(t="stones") }}  
@@ -30,20 +50,20 @@ ids = [1271]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-143_%D0%9A%D1%83%D1%82%D1%8B,_%D0%BD%D0%B5%D0%BC_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_1-%D0%B9_%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}
 
-![](09.jpg)
+{{ img(src="09.jpg") }}

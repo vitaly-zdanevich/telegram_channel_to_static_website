@@ -20,6 +20,22 @@ prev_title = ""
 prev_body = "Wow my #reeknote (#evernote #cli) can now play audio and show images, in a terminal"
 views = 23
 ids = [1759]
+
+[[extra.related]]
+path = "@/posts/2024-11-20-195/index.md"
+label = "#style love my custom YandexMail"
+
+[[extra.related]]
+path = "@/posts/2026-05-12-1755/index.md"
+label = "#ai #screenshot from"
+
+[[extra.related]]
+path = "@/posts/2024-06-30-82/index.md"
+label = "I contribute to #wikipedia and other projects on #mediawiki engi…"
+
+[[extra.related]]
+path = "@/posts/2026-04-01-1565/index.md"
+label = "#alien #screenshot #horror #giger #gimp #green #rice"
 +++
 
 Fix my {{ tag(t="style") }} for {{ tag(t="mdn") }}, {{ tag(t="screenshot") }} before and after  
@@ -28,6 +44,6 @@ Sad that UI customization is rare.
 
 <https://gitlab.com/vitaly-zdanevich-styles/mdn>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#game\n#man2"
 views = 49
 ids = [367]
+
+[[extra.related]]
+path = "@/posts/2025-05-22-538/index.md"
+label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+
+[[extra.related]]
+path = "@/posts/2025-11-04-734/index.md"
+label = "#my #video #game #strategy #homm3 #hota #onebadday Heroes of Mig…"
+
+[[extra.related]]
+path = "@/posts/2025-08-29-642/index.md"
+label = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя…"
+
+[[extra.related]]
+path = "@/posts/2025-09-30-686/index.md"
+label = "#fashion #istanbul"
+
+[[extra.related]]
+path = "@/posts/2026-08-06-2120/index.md"
+label = "#my another small project: #wikidata #pwa to get nearby items, w…"
 +++
 
 {{ tag(t="turkey") }}  

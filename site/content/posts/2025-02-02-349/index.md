@@ -20,9 +20,29 @@ prev_title = ""
 prev_body = "#spider\n#girl\nSource"
 views = 52
 ids = [349]
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
+
+[[extra.related]]
+path = "@/posts/2026-02-18-1116/index.md"
+label = "#pain #ad #event #sergeykulinkovich The old one Унижение и боль…"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-425/index.md"
+label = "#pain #millenials #depression #dophin"
+
+[[extra.related]]
+path = "@/posts/2025-02-22-376/index.md"
+label = "Are you winning son? Happy Birthday #pain #death #loss #miss"
+
+[[extra.related]]
+path = "@/posts/2025-10-01-694/index.md"
+label = "#psy #success #pain #cry #secret"
 +++
 
 {{ tag(t="translate") }}  
 {{ tag(t="pain") }}
 
-![](5258347380279995651_1224304405_456256771.jpg)
+{{ img(src="5258347380279995651_1224304405_456256771.jpg") }}

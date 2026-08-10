@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#sign\n#winter\n#year2005\n#globustut\nРубеж\nFrom"
 views = 6
 ids = [1058]
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1054/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-995/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut Близ Новогру…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-986/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-915/index.md"
+label = "#belarus #architecture #abandone #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1532/index.md"
+label = "#architecture #abandone #Свиряны #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -31,4 +51,4 @@ ids = [1058]
 
 From [https://commons.wikimedia.org/wiki/File:045-415\_Турово,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-415_%D0%A2%D1%83%D1%80%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](5469697399455419625_1273513166_460000489.jpg)
+{{ img(src="5469697399455419625_1273513166_460000489.jpg") }}

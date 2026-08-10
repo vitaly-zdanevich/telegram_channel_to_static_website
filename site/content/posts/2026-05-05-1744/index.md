@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#odysee looks like #convert #video right in a #browser - without uploading to the backend."
 views = 22
 ids = [1744]
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1779/index.md"
+label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1780/index.md"
+label = "What a time - multiple #llm doing multiple projects, in parallel…"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-938/index.md"
+label = "Top 1% by #python, hm, not sure why"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1853/index.md"
+label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
+
+[[extra.related]]
+path = "@/posts/2026-06-12-1819/index.md"
+label = "My another #userstyle: for #gemini, before and after"
 +++
 
 {{ tag(t="python") }}  

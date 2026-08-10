@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = ""
 views = 34
 ids = [642]
+
+[[extra.related]]
+path = "@/posts/2025-11-04-734/index.md"
+label = "#my #video #game #strategy #homm3 #hota #onebadday Heroes of Mig…"
+
+[[extra.related]]
+path = "@/posts/2025-11-23-790/index.md"
+label = "#game #strategy #video #review #groundcontrol #year2000"
+
+[[extra.related]]
+path = "@/posts/2025-08-30-648/index.md"
+label = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пал…"
+
+[[extra.related]]
+path = "@/posts/2025-05-22-538/index.md"
+label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+
+[[extra.related]]
+path = "@/posts/2025-11-24-791/index.md"
+label = "#game #strategy #rtt #groundcontrol"
 +++
 
 **Heroes of Might and Magic 3: карта "Изумрудные острова": средняя сложность, 2 человека VS AI: победа**  
@@ -31,9 +51,9 @@ Horn of the Abyss 1.7.3 <https://h3hota.com/ru/documentation>
 
 <https://ru.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III>  
 
-Playing through Conty on Gentoo Linux no-multilib profile <https://github.com/Kron4ek/Conty>  
+Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1103 stars · Languages: Shell 98%, C 2% · 606 commits · 74 forks · 24 open issues/PRs · MIT · last push 2026-07-28")  
 
-Part from <https://youtu.be/r2ENwW565x0>  
+Part from [https://youtu.be/r2ENwW565x0](<https://youtu.be/r2ENwW565x0> "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа")  
 
 {{ tag(t="my") }}  
 {{ tag(t="year_1999") }}  

@@ -18,11 +18,31 @@ next_body = "#book Designing Data-Intensive Applications and #wine"
 prev_id = 590
 prev_title = ""
 prev_body = "#comment\n#health\n#magnesium"
-views = 46
+views = 47
 ids = [591]
+
+[[extra.related]]
+path = "@/posts/2025-05-27-542/index.md"
+label = "#git"
+
+[[extra.related]]
+path = "@/posts/2026-01-13-876/index.md"
+label = "#macOS: to install #git I need 25 GB"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1085/index.md"
+label = "#logo #gitlab #git"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-907/index.md"
+label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
+
+[[extra.related]]
+path = "@/posts/2025-12-21-810/index.md"
+label = "#software #tui #git"
 +++
 
 {{ tag(t="git") }}  
 {{ tag(t="git_graph") }}
 
-![](5402297976619135579_1257820515_456258139.jpg)
+{{ img(src="5402297976619135579_1257820515_456258139.jpg") }}

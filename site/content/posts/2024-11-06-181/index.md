@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#girl\n#pain"
 views = 36
 ids = [181]
+
+[[extra.related]]
+path = "@/posts/2025-01-21-322/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-408/index.md"
+label = "#girl #face"
+
+[[extra.related]]
+path = "@/posts/2025-01-30-348/index.md"
+label = "#spider #girl"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-340/index.md"
+label = "#girl #nails"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
 +++
 
 {{ tag(t="girl") }}
 
-![](5285445200828817940_1230613608_456253972.jpg)
+{{ img(src="5285445200828817940_1230613608_456253972.jpg") }}

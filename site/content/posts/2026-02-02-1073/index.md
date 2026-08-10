@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#wikipedia article writing, in #vim"
 views = 12
 ids = [1073]
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
+
+[[extra.related]]
+path = "@/posts/2026-02-11-1106/index.md"
+label = "#wikipedia #job"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -30,6 +50,6 @@ ids = [1073]
 
 > Монгильо написал в Твиттере, что играть Синдзи было одной из величайших почестей в его жизни
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

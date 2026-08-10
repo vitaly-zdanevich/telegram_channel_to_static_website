@@ -20,6 +20,6 @@ views = 56
 ids = [138]
 +++
 
-Played yesterday of **Moss: Book 2** in Quest 2 - great VR, great game. <https://youtu.be/fKildakaIqQ>
+Played yesterday of **Moss: Book 2** in Quest 2 - great VR, great game. [https://youtu.be/fKildakaIqQ](<https://youtu.be/fKildakaIqQ> "Moss: Book 2 Review")
 
 {{ youtube(id="fKildakaIqQ") }}

@@ -17,13 +17,33 @@ next_title = ""
 next_body = "#git\n#gitgraph"
 prev_id = 589
 prev_title = ""
-prev_body = "...for the previous post\nSource"
-views = 47
+prev_body = "...for the previous post\nSource\")"
+views = 48
 ids = [590]
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-407/index.md"
+label = "#health #food"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2114/index.md"
+label = "#духота #health #powerlifting"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2112/index.md"
+label = "#health #духота #kozhemiako"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-414/index.md"
+label = "#health #eyes #drug"
 +++
 
 {{ tag(t="comment") }}  
 {{ tag(t="health") }}  
 {{ tag(t="magnesium") }}
 
-![](5400035276178453878_1257293689_456258934.jpg)
+{{ img(src="5400035276178453878_1257293689_456258934.jpg") }}

@@ -22,4 +22,4 @@ ids = [145]
 
 <https://commons.wikimedia.org/wiki/File:Belarussian_rubles.jpg>
 
-![](5391347888778502778_1255270999_456254074.jpg)
+{{ img(src="5391347888778502778_1255270999_456254074.jpg") }}

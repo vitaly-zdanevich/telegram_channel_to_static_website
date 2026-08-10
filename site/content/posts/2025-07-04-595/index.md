@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#plan9"
 views = 50
 ids = [595]
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2025-12-30-828/index.md"
+label = "#preservation #library #books Page 68"
+
+[[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-857/index.md"
+label = "#belarus #minsk 1941-1944"
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
 +++
 
 {{ tag(t="preservation") }}  
@@ -31,4 +51,4 @@ ids = [595]
 
 <https://devby.io/news/belwiki>
 
-![](5422520353390981486_1262528904_456257902.jpg)
+{{ img(src="5422520353390981486_1262528904_456257902.jpg") }}

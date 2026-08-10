@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#abandone\n#church\n#Островно\n#belarus\n#globustut\n#year2005\nSource"
 views = 23
 ids = [1562]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -30,4 +50,4 @@ ids = [1562]
 
 <https://ice-pick.com/ru/about-us-ru/>
 
-![](5357256482791036067_1247333475_460002467.jpg)
+{{ img(src="5357256482791036067_1247333475_460002467.jpg") }}

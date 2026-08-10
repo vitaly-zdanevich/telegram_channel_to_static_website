@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "PromoDJ #music genres"
 views = 52
 ids = [548]
+
+[[extra.related]]
+path = "@/posts/2026-01-25-938/index.md"
+label = "Top 1% by #python, hm, not sure why"
+
+[[extra.related]]
+path = "@/posts/2026-02-16-1114/index.md"
+label = "#python Same #dot - different meaning for f in os.listdir'.' if…"
+
+[[extra.related]]
+path = "@/posts/2026-01-12-872/index.md"
+label = "Wow #wikipedia semi-automatic editing by a #python script"
+
+[[extra.related]]
+path = "@/posts/2025-06-04-549/index.md"
+label = "Another #userstyle: for #openstreetmap, only a few CSS lines"
+
+[[extra.related]]
+path = "@/posts/2026-01-16-887/index.md"
+label = "#commons: #count uploads from a specific user for a period of ti…"
 +++
 
 New small project: {{ tag(t="python") }} script for {{ tag(t="gthumb") }} (or other software, even standalone CLI) that read EXIF GPS and open {{ tag(t="openstreetmap") }}  
 
 <https://gitlab.com/vitaly-zdanevich/image-path-to-openstreetmap>
 
-![](5330353748242985817_1241069694_456258393.jpg)
+{{ img(src="5330353748242985817_1241069694_456258393.jpg") }}

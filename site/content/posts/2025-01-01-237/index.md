@@ -17,8 +17,28 @@ next_body = "Лево-либеральная пропасть стала еще 
 prev_id = 232
 prev_title = ""
 prev_body = "Its real"
-views = 40
+views = 41
 ids = [237]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2024-08-25-128/index.md"
+label = "suno.com is great - the best service for songs generation. Suppo…"
 +++
 
 {{ tag(t="ai") }}

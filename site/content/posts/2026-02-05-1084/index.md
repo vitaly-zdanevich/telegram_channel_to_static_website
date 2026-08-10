@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Why #facebook is so slow :(\n#firefox"
 views = 8
 ids = [1084]
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1332/index.md"
+label = "#logo #horse"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
+
+[[extra.related]]
+path = "@/posts/2025-03-15-412/index.md"
+label = "#gentoo #logo"
 +++
 
 {{ tag(t="logo") }}  
@@ -28,4 +48,4 @@ ids = [1084]
 
 <https://www.foobar2000.org/>
 
-![](5197589415704858321_1210158089_460000977.jpg)
+{{ img(src="5197589415704858321_1210158089_460000977.jpg") }}

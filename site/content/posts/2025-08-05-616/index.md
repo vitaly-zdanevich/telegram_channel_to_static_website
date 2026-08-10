@@ -19,11 +19,31 @@ prev_title = ""
 prev_body = "How to ask for a #darkmode"
 views = 33
 ids = [616]
+
+[[extra.related]]
+path = "@/posts/2026-03-28-1504/index.md"
+label = "#darkmode"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-615/index.md"
+label = "How to ask for a #darkmode"
+
+[[extra.related]]
+path = "@/posts/2025-06-10-566/index.md"
+label = "My new #darkmode: numbeo.com"
+
+[[extra.related]]
+path = "@/posts/2025-07-12-596/index.md"
+label = "My another #userscript: small toggle for #darkmode on #stackexch…"
+
+[[extra.related]]
+path = "@/posts/2026-02-27-1201/index.md"
+label = "#googledocs: #ai is integrated, but not the #darkmode If you do…"
 +++
 
 {{ tag(t="dark_mode") }}  
 {{ tag(t="gif") }}
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/616-01.mp4") }}
 
 {{ tag(t="video") }}

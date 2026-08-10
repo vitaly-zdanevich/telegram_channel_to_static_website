@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Someones contributions to #wikipedia\n#delitism"
 views = 36
 ids = [646]
+
+[[extra.related]]
+path = "@/posts/2025-08-30-647/index.md"
+label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+
+[[extra.related]]
+path = "@/posts/2023-07-16-26/index.md"
+label = "#film #korolishut Love this scene from Korol i Shut, episode 2"
+
+[[extra.related]]
+path = "@/posts/2025-10-20-710/index.md"
+label = "#film #korolishut #naked"
+
+[[extra.related]]
+path = "@/posts/2023-07-16-27/index.md"
+label = "#my #film #korolishut"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-784/index.md"
+label = "#punk #logo #music #korolishut"
 +++
 
 {{ tag(t="film") }}  

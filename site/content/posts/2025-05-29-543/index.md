@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#git\nSource"
 views = 59
 ids = [543]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 Wow {{ tag(t="black_and_white") }} {{ tag(t="webdesign") }} is interesting [https://io.net](https://io.net/)
 
-![](5312311033014122309_1236868797_456259397.jpg)
+{{ img(src="5312311033014122309_1236868797_456259397.jpg") }}

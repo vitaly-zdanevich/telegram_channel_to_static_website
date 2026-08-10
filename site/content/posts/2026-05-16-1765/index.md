@@ -20,26 +20,46 @@ prev_title = ""
 prev_body = "#music\n#sunboy\nОстров в океане\nFrom\nПро исполнителя"
 views = 31
 ids = [1765]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1737/index.md"
+label = "#webdesign #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1624/index.md"
+label = "#preview on #bilibili #anime"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1736/index.md"
+label = "#bilibili #convertion #progress - nice #ux"
+
+[[extra.related]]
+path = "@/posts/2025-05-10-513/index.md"
+label = "#bilibili #anime #webdesign #stream #ui"
 +++
 
 {{ tag(t="bilibili") }} verification with 100 questions - to be able to leave comments
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}
 
-![](09.jpg)
+{{ img(src="09.jpg") }}
 
-![](10.jpg)
+{{ img(src="10.jpg") }}

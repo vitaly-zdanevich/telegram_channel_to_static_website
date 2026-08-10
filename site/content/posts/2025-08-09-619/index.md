@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Georgian man (Zaal Sikharulidze) with falcon wearing Chokha on Tbilisoba festival\n#sakartvelo\n#fashion\n#chokha\nSource.jpg)"
 views = 34
 ids = [619]
+
+[[extra.related]]
+path = "@/posts/2025-08-12-626/index.md"
+label = "#moneymuseum #money #rubles Source02.jpg"
+
+[[extra.related]]
+path = "@/posts/2025-08-12-625/index.md"
+label = "#moneymuseum #money #rubles"
+
+[[extra.related]]
+path = "@/posts/2024-08-31-141/index.md"
+label = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait…"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-653/index.md"
+label = "#wikimediafoundation #money"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-652/index.md"
+label = "#wikimediafoundation #money"
 +++
 
 Returned to uploading of artifacts from [moneymuseum.by](http://moneymuseum.by/), through my [new web extension](https://gitlab.com/vitaly-zdanevich-extensions/web-extension-uploading-to-wikimedia-commons), and again - sometime I see the beauty  
@@ -29,4 +49,4 @@ Returned to uploading of artifacts from [moneymuseum.by](http://moneymuseum.by/)
 
 [Source](https://commons.wikimedia.org/wiki/File:250-rouble_note_of_Russia,_Azerbaijan_1919_-_back.jpg)
 
-![](5240341610359812839_1220112110_456258279.jpg)
+{{ img(src="5240341610359812839_1220112110_456258279.jpg") }}

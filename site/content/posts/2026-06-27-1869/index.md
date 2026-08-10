@@ -17,7 +17,7 @@ next_body = "#belarus\n#колодищи\n#architecture\n#church\nAuthor: Дим
 prev_id = 1868
 prev_title = ""
 prev_body = "#love\n#toy\n#breakup\nEсли тяжело засыпать одному - можно обнимать кота-батота, представляя что это близкий человек - так засыпать спокойнее.\nSource"
-views = 12
+views = 16
 ids = [1869]
 +++
 
@@ -26,6 +26,6 @@ ids = [1869]
 
 [Source](https://www.instagram.com/p/DaAN-xxuckx)
 
-{{ instagram(url="https://www.instagram.com/p/DaAN-xxuckx/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1869-01.mp4") }}
 
 {{ tag(t="video") }}

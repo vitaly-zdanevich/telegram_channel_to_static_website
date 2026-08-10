@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#pypi\n#donation"
 views = 26
 ids = [819]
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1873/index.md"
+label = "#batumi #aksiarodak #year2024 #my #lecture #wikimediacommons #pr…"
+
+[[extra.related]]
+path = "@/posts/2026-04-02-1567/index.md"
+label = "#preservation #wikimediacommons #unavailable"
+
+[[extra.related]]
+path = "@/posts/2026-04-09-1599/index.md"
+label = "My first blog #post to #wikimediadiff, about #wikimediacommons,…"
+
+[[extra.related]]
+path = "@/posts/2026-02-20-1118/index.md"
+label = "#python My #geeknote #evernote #cli now available on PyPI"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-938/index.md"
+label = "Top 1% by #python, hm, not sure why"
 +++
 
 {{ tag(t="preservation") }}  
@@ -27,8 +47,8 @@ ids = [819]
 {{ tag(t="pywikibot") }}  
 {{ tag(t="my") }}  
 
-Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](https://github.com/wikimedia/pywikibot) to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
+Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 764 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 20634 commits · 218 forks · MIT · last push 2026-08-09") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
 
 <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 
-![](5368708261466541835_1249999800_460001035.jpg)
+{{ img(src="5368708261466541835_1249999800_460001035.jpg") }}

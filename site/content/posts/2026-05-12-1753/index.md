@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#scream\n#metal\nSource"
 views = 21
 ids = [1753]
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1747/index.md"
+label = "Oh my... #leetcode"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1749/index.md"
+label = "#leetcode #validation"
+
+[[extra.related]]
+path = "@/posts/2026-05-06-1746/index.md"
+label = "#leetcode is often produce #error"
+
+[[extra.related]]
+path = "@/posts/2025-09-29-684/index.md"
+label = "#patch for #telegram for wide messages --- a/Telegram/SourceFile…"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-571/index.md"
+label = "#livecoding #batman #binarysearch #leetcode with games :"
 +++
 
 {{ tag(t="heap") }}  
@@ -70,6 +90,6 @@ class Solution:
 
 [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

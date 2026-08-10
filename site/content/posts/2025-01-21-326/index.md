@@ -23,6 +23,6 @@ ids = [326, 327]
 
 full metal alchemist
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/326-01.mp4") }}
 
 {{ tag(t="video") }}

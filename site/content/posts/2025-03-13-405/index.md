@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#video\n#ad\n#japan\n#ai\n#girl\n#virtual\nSource"
 views = 35
 ids = [405]
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-407/index.md"
+label = "#health #food"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2114/index.md"
+label = "#духота #health #powerlifting"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2112/index.md"
+label = "#health #духота #kozhemiako"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-590/index.md"
+label = "#comment #health #magnesium"
 +++
 
 {{ tag(t="health") }}  
@@ -28,4 +48,4 @@ ids = [405]
 
 [Source](https://x.com/ArseniosMarkos/status/1837373989724856393)
 
-![](5375405086139870428_1251559026_456256732.jpg)
+{{ img(src="5375405086139870428_1251559026_456256732.jpg") }}

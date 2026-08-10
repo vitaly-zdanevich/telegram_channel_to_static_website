@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#preservation\n#internetarchive\n#short\n#music\n#tape\n#audio\nSource"
 views = 17
 ids = [1681]
+
+[[extra.related]]
+path = "@/posts/2024-12-22-222/index.md"
+label = "#youtube"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1856/index.md"
+label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1855/index.md"
+label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+
+[[extra.related]]
+path = "@/posts/2026-06-19-1844/index.md"
+label = "#armiesofexigo #abandone"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
 +++
 
 {{ tag(t="serp") }}  
@@ -27,4 +47,4 @@ ids = [1681]
 
 {{ tag(t="google") }} found a quote that exists on {{ tag(t="youtube") }} only
 
-![](5431547614441706106_1264630727_460001914.jpg)
+{{ img(src="5431547614441706106_1264630727_460001914.jpg") }}

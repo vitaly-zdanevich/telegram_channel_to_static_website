@@ -17,8 +17,28 @@ next_body = "#webdesign\n#webdesigndark\n#webdesigndarkblue\n#webdesigngame\n#vi
 prev_id = 786
 prev_title = ""
 prev_body = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory\nPlaying on Linux through Lutris, Conty.\nGame version 1.4\n#game\n#strategy\n#rts\n#year2004\n#armiesofexigo\n#fallen\n#teonia"
-views = 37
+views = 38
 ids = [787]
+
+[[extra.related]]
+path = "@/posts/2024-11-25-199/index.md"
+label = "The stand-alone expansion Homeworld: Cataclysm was not announced…"
+
+[[extra.related]]
+path = "@/posts/2026-02-15-1113/index.md"
+label = "#preservation #nival #game #silentstorm Thanks Sergey."
+
+[[extra.related]]
+path = "@/posts/2025-11-24-791/index.md"
+label = "#game #strategy #rtt #groundcontrol"
+
+[[extra.related]]
+path = "@/posts/2026-01-04-840/index.md"
+label = "#game #gta #remaster #preservation #lost Rosado claimed \"the art…"
+
+[[extra.related]]
+path = "@/posts/2025-11-24-792/index.md"
+label = "#game #strategy #rtt #groundcontrol The #bishop defector death -…"
 +++
 
 {{ tag(t="preservation") }}  

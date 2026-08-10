@@ -18,8 +18,28 @@ next_body = "#kindzadza\n#suicide\n#oxygen\nПланета Хануд.\nЗдес
 prev_id = 797
 prev_title = ""
 prev_body = "С помощью нехитрых приспособлений буханку хлеба можно превратить в троллейбус, но зачем\n#ai\n#nanobanana\nSource"
-views = 36
+views = 37
 ids = [799]
+
+[[extra.related]]
+path = "@/posts/2025-05-13-527/index.md"
+label = "Gold #games - because lovers recreate engines for the best one."
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-623/index.md"
+label = "#games #steam Can you imagine that, I know this guy"
 +++
 
 {{ tag(t="preservation") }}  
@@ -28,6 +48,6 @@ ids = [799]
 
 From <https://gamehistory.org/our-impact-in-2025>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

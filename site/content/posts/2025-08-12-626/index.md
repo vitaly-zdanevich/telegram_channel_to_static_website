@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#moneymuseum\n#money\n#rubles\nSource"
 views = 31
 ids = [626]
+
+[[extra.related]]
+path = "@/posts/2025-08-12-625/index.md"
+label = "#moneymuseum #money #rubles"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-619/index.md"
+label = "Returned to uploading of artifacts from moneymuseum.by, through…"
+
+[[extra.related]]
+path = "@/posts/2024-08-31-141/index.md"
+label = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait…"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-653/index.md"
+label = "#wikimediafoundation #money"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-652/index.md"
+label = "#wikimediafoundation #money"
 +++
 
 {{ tag(t="moneymuseum") }}  
@@ -28,4 +48,4 @@ ids = [626]
 
 [Source](https://commons.wikimedia.org/wiki/File:100_Rubles_-_Bukharan_People&#39;s_Soviet_Republic_(1922)_02.jpg)
 
-![](5246998070934240901_1221661938_456261253.jpg)
+{{ img(src="5246998070934240901_1221661938_456261253.jpg") }}

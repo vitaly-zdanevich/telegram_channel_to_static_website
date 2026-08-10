@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#winamp\n#ui\n#audioplayer"
 views = 44
 ids = [813]
+
+[[extra.related]]
+path = "@/posts/2025-10-28-727/index.md"
+label = "#os #design #windows #windowsxp"
+
+[[extra.related]]
+path = "@/posts/2025-12-25-814/index.md"
+label = "#windowsxp"
+
+[[extra.related]]
+path = "@/posts/2025-04-11-465/index.md"
+label = "#windows #linux"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-38/index.md"
+label = "I love - developed in 2004 - but nobody sell it anymore in 2024.…"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1097/index.md"
+label = "I love #display aspect ratio 16x10 because I have the special sp…"
 +++
 
 {{ tag(t="ui") }}  
 {{ tag(t="windows") }}  
 {{ tag(t="windows_xp") }}
 
-![](5361787402705374639_1248388412_460000687.jpg)
+{{ img(src="5361787402705374639_1248388412_460000687.jpg") }}

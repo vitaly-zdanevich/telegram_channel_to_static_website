@@ -17,12 +17,12 @@ next_body = "I love this project: free personal VPN on WireGuard (integrated int
 prev_id = 50
 prev_title = ""
 prev_body = "#gitlab: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it.\nIts a dream to work for some open source company like #gitlab or #wikimedia, maybe in one day..."
-views = 53
+views = 54
 ids = [51]
 +++
 
-My another ebuild: the game [Gigalomania](https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania) - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
+My another ebuild: the game [Gigalomania](<https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania> "[MIRROR] GURU: repository of new packages maintained collaboratively by users · 316 stars · Languages: Shell 100%, Roff 0%, CMake 0% · 37564 commits · 243 forks · 69 open issues/PRs · last push 2026-08-10") - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
 
 <https://gigalomania.sourceforge.net/>
 
-![](5402581027848838338_1257886418_456252610.jpg)
+{{ img(src="5402581027848838338_1257886418_456252610.jpg") }}

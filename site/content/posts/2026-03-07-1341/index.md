@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#art\n#shop\n#продукты\n#belarus\n#globustut\n#year2005\nSource"
 views = 5
 ids = [1341]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1387/index.md"
+label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
 +++
 
 {{ tag(t="clouds") }}  
@@ -30,4 +50,4 @@ ids = [1341]
 
 [Source](https://commons.wikimedia.org/wiki/File:053-320,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_9_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5287405896352863453_1231070118_460002525.jpg)
+{{ img(src="5287405896352863453_1231070118_460002525.jpg") }}

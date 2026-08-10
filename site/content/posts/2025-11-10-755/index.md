@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#painting\n#bible\n#angel\n#gustavedore\nStudy for \"Jacob's Dream\"\nSource"
 views = 21
 ids = [755]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-754/index.md"
+label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
+
+[[extra.related]]
+path = "@/posts/2025-11-10-760/index.md"
+label = "#painting #bible #gustavedore #death #horse #year1865 Gustave Do…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-765/index.md"
+label = "#painting #gustavedore Woman of the Apocalypse"
 +++
 
 {{ tag(t="painting") }}  
@@ -31,4 +51,4 @@ The Bible panorama, or The Holy Scriptures in picture and story (1891)
 
 [Source](https://commons.wikimedia.org/wiki/File:The_Bible_panorama,_or_The_Holy_Scriptures_in_picture_and_story_(1891)_(14598295740).jpg)
 
-![](5229215222705359738_1217521546_460000122.jpg)
+{{ img(src="5229215222705359738_1217521546_460000122.jpg") }}

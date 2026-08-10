@@ -18,8 +18,28 @@ next_body = "#wikipedia\n#wikimediacommons\nПишите авторам конт
 prev_id = 1501
 prev_title = ""
 prev_body = "Unreleased game Империя from #elementalgames, like #spacerangers\n#year2012"
-views = 19
+views = 20
 ids = [1502]
+
+[[extra.related]]
+path = "@/posts/2025-09-01-654/index.md"
+label = "#russia #israel #map"
+
+[[extra.related]]
+path = "@/posts/2025-08-20-631/index.md"
+label = "Percent of people who think their culture is superior to others…"
+
+[[extra.related]]
+path = "@/posts/2026-07-09-2045/index.md"
+label = "#map #googlemap #turkiye #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
 +++
 
 {{ tag(t="map") }}  
@@ -31,4 +51,4 @@ ids = [1502]
 
 <https://commons.wikimedia.org/wiki/File:Evropayskye_gubernii_Rossii_1910.png>
 
-![](5336893059293188649_1242592246_460001833.jpg)
+{{ img(src="5336893059293188649_1242592246_460001833.jpg") }}

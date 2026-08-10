@@ -17,10 +17,10 @@ next_body = "#ai"
 prev_id = 226
 prev_title = ""
 prev_body = "#webdesign"
-views = 44
+views = 45
 ids = [232]
 +++
 
 Its real
 
-![](5451693721180561443_1269321358_456253475.jpg)
+{{ img(src="5451693721180561443_1269321358_456253475.jpg") }}

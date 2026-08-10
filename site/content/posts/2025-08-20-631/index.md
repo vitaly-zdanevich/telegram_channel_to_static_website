@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Кин-дза-дза Japanese disc\n#cover\n#design\n#scifi\n#bluray"
 views = 66
 ids = [631]
+
+[[extra.related]]
+path = "@/posts/2026-07-09-2045/index.md"
+label = "#map #googlemap #turkiye #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-03-24-1502/index.md"
+label = "#map #russia #russianempire #blacksea #sakartvelo #year1910"
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
 +++
 
 Percent of people who think their culture is superior to others  
@@ -30,4 +50,4 @@ Percent of people who think their culture is superior to others
 
 [Source](https://www.facebook.com/photo/?fbid=1109268631315746&amp;set=a.416664743909475)
 
-![](5274114063489695116_1227975372_456261004.jpg)
+{{ img(src="5274114063489695116_1227975372_456261004.jpg") }}

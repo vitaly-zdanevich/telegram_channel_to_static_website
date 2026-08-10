@@ -18,8 +18,28 @@ next_body = "#webdesign\n#pink\n#hellokitty\n#oldweb"
 prev_id = 1390
 prev_title = ""
 prev_body = "#architecture\n#bricks\n#brown\n#новогрудок\n#belarus\n#globustut\n#year2005\nSource"
-views = 10
+views = 11
 ids = [1392]
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1368/index.md"
+label = "#webdesign #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1415/index.md"
+label = "#webdesign #oldweb #animation"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1366/index.md"
+label = "#webdesign #oldweb #anime"
 +++
 
 {{ tag(t="webdesign") }}  

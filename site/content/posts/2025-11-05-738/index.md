@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#webdesign\n#webdesignblack"
 views = 27
 ids = [738]
+
+[[extra.related]]
+path = "@/posts/2025-11-05-741/index.md"
+label = "#music #musicrussian #нтр Куплет 1 У меня одна только радость на…"
+
+[[extra.related]]
+path = "@/posts/2025-11-05-739/index.md"
+label = "#music #musicrussian #rap #raprussian #musichumor #нтр"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
 +++
 
 {{ tag(t="music") }}  

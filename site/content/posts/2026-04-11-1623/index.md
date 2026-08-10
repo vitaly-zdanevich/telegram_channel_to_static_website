@@ -17,13 +17,33 @@ next_title = ""
 next_body = "#preview on #bilibili\n#anime"
 prev_id = 1622
 prev_title = ""
-prev_body = "Про #викиданные/#wikidata (открытая база данных на #SPARQL), #wikimedia, #wikipedia\nМоя #лекция/митап в Лаборатории (это бар в Батуми).\nВсе линки на видео"
-views = 23
+prev_body = "Про #викиданные/#wikidata (открытая база данных на #SPARQL), #wikimedia, #wikipedia\nМоя #лекция/митап в #laboratorybar (это бар в #batumi).\nВсе линки на видео"
+views = 24
 ids = [1623]
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1125/index.md"
+label = "#webdesign #gentoo #china"
+
+[[extra.related]]
+path = "@/posts/2025-09-30-688/index.md"
+label = "#china #beauty #plastic"
+
+[[extra.related]]
+path = "@/posts/2025-11-08-744/index.md"
+label = "#school in #sakartvelo #architecture #books"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2035/index.md"
+label = "#china #buy #sell #yogurt #smoke"
+
+[[extra.related]]
+path = "@/posts/2026-03-28-1506/index.md"
+label = "#shutdown #cloudflare #preservation #school #error Что вы будете…"
 +++
 
 Usual {{ tag(t="school") }} in {{ tag(t="china") }}? {{ tag(t="lenin") }}  
 
 【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】<https://www.bilibili.com/video/BV1ZXE4ziEgf?vd_source=bb5efb0fc5b9ab1f523b5e6d0a9f0a2f>
 
-![](5391330184927058070_1255266877_460003478.jpg)
+{{ img(src="5391330184927058070_1255266877_460003478.jpg") }}

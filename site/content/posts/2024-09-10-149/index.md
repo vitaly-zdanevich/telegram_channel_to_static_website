@@ -22,6 +22,6 @@ ids = [149, 150]
 
 <https://www.instagram.com/p/Cp7-1oIo10L/>
 
-{{ instagram(url="https://www.instagram.com/p/Cp7-1oIo10L/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/149-01.mp4") }}
 
 {{ tag(t="video") }}

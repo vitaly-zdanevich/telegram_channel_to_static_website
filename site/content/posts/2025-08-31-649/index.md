@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы\n#game\n#homm3\n#hornoftheabyss"
 views = 43
 ids = [649]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 Do you remember such {{ tag(t="webdesign") }}?  
@@ -28,4 +48,4 @@ Do you remember such {{ tag(t="webdesign") }}?
 
 [Source](https://web.archive.org/web/20030404151423/http://www.gamespot.com/features/heroesiii_dd/121798/page2.html)
 
-![](5305527003321070773_1235289267_456258741.jpg)
+{{ img(src="5305527003321070773_1235289267_456258741.jpg") }}

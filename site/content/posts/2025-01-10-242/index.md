@@ -16,8 +16,8 @@ next_body = ""
 prev_id = 241
 prev_title = ""
 prev_body = "NeoVIM as an editor for any textarea (no Vim)"
-views = 28
+views = 29
 ids = [242]
 +++
 
-![](5190416996410452233_1208488130_456255753.jpg)
+{{ img(src="5190416996410452233_1208488130_456255753.jpg") }}

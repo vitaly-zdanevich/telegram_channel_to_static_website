@@ -27,4 +27,4 @@ ids = [834]
 
 [Source](https://commons.wikimedia.org/wiki/File:Fragmenta_botanica,_figuris_coloratis_illustrata_(T._2)_BHL287631.jpg)
 
-![](5384459448434232145_1253667159_460000081.jpg)
+{{ img(src="5384459448434232145_1253667159_460000081.jpg") }}

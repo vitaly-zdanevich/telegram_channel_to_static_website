@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#ui\n#yandex\n#samara"
 views = 13
 ids = [1079]
+
+[[extra.related]]
+path = "@/posts/2025-10-22-718/index.md"
+label = "#webdesign #game #mmorpg #ragnarok It still alive"
+
+[[extra.related]]
+path = "@/posts/2026-04-09-1595/index.md"
+label = "#indika #game #religion #christianity #webdesign"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1121/index.md"
+label = "#webdesign #buttons #animation #game #mmo #myst"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [1079]
 
 <https://planet.kknd2.com/>
 
-![](5190706876641905801_1208555623_460000393.jpg)
+{{ img(src="5190706876641905801_1208555623_460000393.jpg") }}

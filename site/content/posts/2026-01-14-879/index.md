@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#saint\n#scull\n#fashion\nSaint Francis of Assisi, by José de Ribera, 1643\nSource"
 views = 15
 ids = [879]
+
+[[extra.related]]
+path = "@/posts/2026-01-28-955/index.md"
+label = "#belarus #architecture #castle #winter #марьинагорка #year2005 #…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1179/index.md"
+label = "#architecture #cream #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1178/index.md"
+label = "#church #architecture #belarus #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -31,14 +51,14 @@ Kosava Castle
 
 [Source](https://commons.wikimedia.org/wiki/Category:Kosava_Castle)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}

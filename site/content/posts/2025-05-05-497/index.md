@@ -31,4 +31,4 @@ ids = [497]
 
 [Source](https://engineering.fb.com/2016/08/31/core-infra/smaller-and-faster-data-compression-with-zstandard)
 
-![](5244618822261012731_1221107976_456259835.jpg)
+{{ img(src="5244618822261012731_1221107976_456259835.jpg") }}

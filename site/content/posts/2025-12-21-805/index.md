@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#history\n#batumi\n#countries"
 views = 32
 ids = [805]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
 +++
 
 {{ tag(t="anime") }}  
@@ -27,6 +47,6 @@ ids = [805]
 {{ tag(t="mascon") }}  
 {{ tag(t="design") }}  
 
-<https://github.com/TecharoHQ/anubis>
+[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 21268 stars · Languages: Go 87%, TypeScript 5%, Shell 3% · 872 commits · 677 forks · 344 open issues/PRs · MIT · last push 2026-08-10")
 
-![](5350719435192339794_1245811450_460000594.jpg)
+{{ img(src="5350719435192339794_1245811450_460000594.jpg") }}

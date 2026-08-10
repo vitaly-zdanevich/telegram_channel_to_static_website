@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "Wow on #wikimediacommons we can write #sql, for example to get red categories with files, for a specific user"
 views = 17
 ids = [872]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-938/index.md"
+label = "Top 1% by #python, hm, not sure why"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 +++
 
 Wow {{ tag(t="wikipedia") }} semi-automatic editing by a {{ tag(t="python") }} script  
 
 <https://gitlab.com/vitaly-zdanevich/globustut-domain-move-on-wikipedia>
 
-![](5413674120924303146_1260469230_460001066.jpg)
+{{ img(src="5413674120924303146_1260469230_460001066.jpg") }}

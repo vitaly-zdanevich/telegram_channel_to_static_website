@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#abandone\n#castle\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
 views = 12
 ids = [1444]
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1420/index.md"
+label = "#church #inside #table #lacecurtain #doubledoor #bucket #belarus…"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-925/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1426/index.md"
+label = "#church #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
 +++
 
 {{ tag(t="church") }}  
@@ -30,4 +50,4 @@ ids = [1444]
 
 [Source](https://commons.wikimedia.org/wiki/File:056-283_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](5312188123938757155_1236840180_460003875.jpg)
+{{ img(src="5312188123938757155_1236840180_460003875.jpg") }}

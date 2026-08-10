@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#abandone\n#belarus\n#globustut\n#year2005\nSource"
 views = 10
 ids = [1265]
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1298/index.md"
+label = "#stone #grave #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1284/index.md"
+label = "#grave #stone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1236/index.md"
+label = "#grave #stones #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1223/index.md"
+label = "#grave #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1212/index.md"
+label = "#grave #abandone #belarus #globustut #year2005 Source,%D1%81%D0%…"
 +++
 
 {{ tag(t="grave") }}  
@@ -29,8 +49,8 @@ ids = [1265]
 
 Source
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}

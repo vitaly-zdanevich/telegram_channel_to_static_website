@@ -27,6 +27,6 @@ ids = [430]
 
 [Source](https://www.instagram.com/p/DFQTr-SNUmr)
 
-{{ instagram(url="https://www.instagram.com/p/DFQTr-SNUmr/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/430-01.mp4") }}
 
 {{ tag(t="video") }}

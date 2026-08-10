@@ -18,8 +18,28 @@ next_body = "#building\n#gray\n#bricks\n#slonim\n#belarus\n#year2005\nSource,%D1
 prev_id = 1424
 prev_title = ""
 prev_body = "#abandone\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
-views = 19
+views = 20
 ids = [1426]
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1458/index.md"
+label = "#church #outside #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-925/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1450/index.md"
+label = "#abandone #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1424/index.md"
+label = "#abandone #slonim #belarus #globustut #year2005"
 +++
 
 {{ tag(t="church") }}  
@@ -30,22 +50,22 @@ ids = [1426]
 
 [Source](https://commons.wikimedia.org/wiki/File:056-177_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}
 
-![](07.jpg)
+{{ img(src="07.jpg") }}
 
-![](08.jpg)
+{{ img(src="08.jpg") }}
 
-![](09.jpg)
+{{ img(src="09.jpg") }}
 
-![](10.jpg)
+{{ img(src="10.jpg") }}

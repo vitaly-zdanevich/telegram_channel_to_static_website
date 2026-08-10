@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#apple\n#icloud"
 views = 9
 ids = [1331]
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1332/index.md"
+label = "#logo #horse"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
+
+[[extra.related]]
+path = "@/posts/2025-03-15-412/index.md"
+label = "#gentoo #logo"
 +++
 
 {{ tag(t="logo") }}  
@@ -28,4 +48,4 @@ ids = [1331]
 
 <https://criu.org/Main_Page>
 
-![](5276106936908715956_1228439374_460003252.jpg)
+{{ img(src="5276106936908715956_1228439374_460003252.jpg") }}

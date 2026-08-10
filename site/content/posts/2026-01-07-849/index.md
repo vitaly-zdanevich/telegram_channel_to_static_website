@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#building\n#castle\n#abandoned\n#globustut\nSource"
 views = 12
 ids = [849]
+
+[[extra.related]]
+path = "@/posts/2026-07-04-1922/index.md"
+label = "#belarus #шерстин #photo #village #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1384/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1280/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-909/index.md"
+label = "#belarus #village #year2004 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-908/index.md"
+label = "#belarus #village #year2004 #globustut"
 +++
 
 {{ tag(t="photo") }}  
@@ -29,4 +49,4 @@ ids = [849]
 
 [Source](https://commons.wikimedia.org/wiki/File:025-066_%D0%93%D0%B0%D0%B1%D1%80%D0%B8%D0%B5%D0%BB%D0%B5%D0%B2%D0%BA%D0%B0,_30-10-2004.jpg)
 
-![](5402068444980645556_1257767073_460000948.jpg)
+{{ img(src="5402068444980645556_1257767073_460000948.jpg") }}

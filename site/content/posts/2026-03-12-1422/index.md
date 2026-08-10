@@ -18,8 +18,28 @@ next_body = "#abandone\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1421
 prev_title = ""
 prev_body = "#chatgpt\n#jews\n› Идиш был одним из государственных языков БССР?\n• Да. В ранней БССР идиш (тогда часто писали «еврейский язык») был одним из официальных языков вместе с белорусским, русским и польским.\nЭто действовало в 1920-х и первой половине 1930-х; к концу 1930-х такой статус исчез."
-views = 14
+views = 15
 ids = [1422]
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-926/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-920/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-919/index.md"
+label = "#belarus #architecture #year2005 #globustut"
 +++
 
 {{ tag(t="architecture") }}  
@@ -31,6 +51,6 @@ ids = [1422]
 
 [Source](https://commons.wikimedia.org/wiki/File:056-146_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D0%B4%D0%BE%D0%BC_%D0%BD%D0%B0%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%90%D0%BD%D0%B4%D1%80_%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

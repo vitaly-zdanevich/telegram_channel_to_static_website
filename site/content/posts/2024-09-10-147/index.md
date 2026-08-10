@@ -22,4 +22,4 @@ ids = [147]
 
 <https://commons.wikimedia.org/wiki/File:Projekt_kolejna_faza_10_z%C5%82otych_1919_awers.jpg>
 
-![](5406610398662224764_1258824579_456256380.jpg)
+{{ img(src="5406610398662224764_1258824579_456256380.jpg") }}

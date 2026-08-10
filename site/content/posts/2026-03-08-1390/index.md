@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#building\n#orange\n#новогрудок\n#belarus\n#globustut\n#year2005\nSource"
 views = 10
 ids = [1390]
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-926/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-920/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-919/index.md"
+label = "#belarus #architecture #year2005 #globustut"
 +++
 
 {{ tag(t="architecture") }}  
@@ -32,6 +52,6 @@ ids = [1390]
 
 [Source](https://commons.wikimedia.org/wiki/File:055-274_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_12,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

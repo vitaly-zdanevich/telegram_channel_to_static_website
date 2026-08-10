@@ -20,10 +20,14 @@ prev_title = ""
 prev_body = "#python\nSame #dot - different meaning\nfor f in os.listdir('.')\nif not f.startswith('.')"
 views = 13
 ids = [1115]
+
+[[extra.related]]
+path = "@/posts/2025-05-14-528/index.md"
+label = "#mount #archive #zip, #rar and others as read-only #fuse, love i…"
 +++
 
 {{ tag(t="zst") }} is so much smaller {{ tag(t="archive") }}  
 
 <https://en.wikipedia.org/wiki/Zstd>
 
-![](5237858470726408289_1219533959_460003425.jpg)
+{{ img(src="5237858470726408289_1219533959_460003425.jpg") }}

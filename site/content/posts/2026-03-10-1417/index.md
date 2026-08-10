@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#resume\n#pony"
 views = 13
 ids = [1417]
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1298/index.md"
+label = "#stone #grave #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1284/index.md"
+label = "#grave #stone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
 +++
 
 {{ tag(t="stone") }}  
@@ -31,4 +51,4 @@ ids = [1417]
 
 [Source](https://commons.wikimedia.org/wiki/File:055-292_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D0%B2_%D0%BA%D1%80%D0%B0%D0%B5%D0%B2%D0%B5%D0%B4%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%BC_%D0%BC%D1%83%D0%B7%D0%B5%D0%B5,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5296309385032309549_1233143123_460004141.jpg)
+{{ img(src="5296309385032309549_1233143123_460004141.jpg") }}

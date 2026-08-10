@@ -16,10 +16,10 @@ next_body = "#license"
 prev_id = 207
 prev_title = ""
 prev_body = ""
-views = 42
+views = 43
 ids = [208]
 +++
 
-About games archiving <https://youtu.be/jiTUb2wvX40>
+About games archiving [https://youtu.be/jiTUb2wvX40](<https://youtu.be/jiTUb2wvX40> "Physical Is NOT Preservation")
 
 {{ youtube(id="jiTUb2wvX40") }}

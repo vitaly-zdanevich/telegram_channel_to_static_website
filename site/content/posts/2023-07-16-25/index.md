@@ -16,12 +16,12 @@ next_body = "#film\n#korolishut\nLove this scene from Korol i Shut, episode 2"
 prev_id = 23
 prev_title = ""
 prev_body = ""
-views = 75
+views = 77
 ids = [25]
 +++
 
 <https://coub.com/view/3c1ot4>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/25-01.mp4") }}
 
 {{ tag(t="video") }}

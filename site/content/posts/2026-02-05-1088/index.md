@@ -22,6 +22,26 @@ views = 12
 forwarded_from = "Анонсы Laboratory Bar & Hookah (Batumi)"
 forwarded_from_url = "https://t.me/it_laboratory_batumi/774"
 ids = [1088]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1861/index.md"
+label = "#26июня2026 пт 21.30-23:00 айтишная посиделка в Friends club #бе…"
+
+[[extra.related]]
+path = "@/posts/2026-05-28-1799/index.md"
+label = "#28мая2026 чт 21:00–01:00 — айтишная посиделка в Still Young Bar…"
+
+[[extra.related]]
+path = "@/posts/2026-05-07-1751/index.md"
+label = "#7мая2026 чт 21.30-01:00 айтишная посиделка в Still Young Bar #б…"
+
+[[extra.related]]
+path = "@/posts/2026-02-26-1200/index.md"
+label = "#27февраля2026 пт 21.30-01:00 Hard IT в Laboratory Bar #безоплат…"
+
+[[extra.related]]
+path = "@/posts/2026-01-23-933/index.md"
+label = "#23января2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
 +++
 
 {{ tag(t="6февраля2026") }} (пт) 21.30-01:00 Айтишные посиделки в Laboratory Bar  
@@ -51,4 +71,4 @@ ids = [1088]
 
 **💬** Все вопросы – в личку: [@marstut](https://t.me/marstut)
 
-![](5192855408261927781_1209055867_460002149.jpg)
+{{ img(src="5192855408261927781_1209055867_460002149.jpg") }}

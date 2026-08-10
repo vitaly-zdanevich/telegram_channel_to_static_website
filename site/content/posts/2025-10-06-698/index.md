@@ -27,4 +27,4 @@ ids = [698]
 [Source](https://www.instagram.com/p/DPeNiP2DDW5)  
 [Source B](https://brilliantmaps.com/vienna-1913-1914/)
 
-![](5413585189327731507_1260448524_456260403.jpg)
+{{ img(src="5413585189327731507_1260448524_456260403.jpg") }}

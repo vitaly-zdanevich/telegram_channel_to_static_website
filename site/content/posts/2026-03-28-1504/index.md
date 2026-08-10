@@ -20,12 +20,32 @@ prev_title = ""
 prev_body = "#wikipedia\n#wikimediacommons\nПишите авторам контентов - иногда они соглашаются сделать его Creative Commons"
 views = 14
 ids = [1504]
+
+[[extra.related]]
+path = "@/posts/2025-08-05-615/index.md"
+label = "How to ask for a #darkmode"
+
+[[extra.related]]
+path = "@/posts/2025-06-10-566/index.md"
+label = "My new #darkmode: numbeo.com"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-616/index.md"
+label = "#darkmode #gif"
+
+[[extra.related]]
+path = "@/posts/2025-07-12-596/index.md"
+label = "My another #userscript: small toggle for #darkmode on #stackexch…"
+
+[[extra.related]]
+path = "@/posts/2026-02-27-1201/index.md"
+label = "#googledocs: #ai is integrated, but not the #darkmode If you do…"
 +++
 
 {{ tag(t="dark_mode") }}  
 
 <https://join.ventionteams.com/thank>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

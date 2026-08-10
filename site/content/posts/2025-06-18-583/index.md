@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = ""
 views = 37
 ids = [583]
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-534/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-533/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-04-15-470/index.md"
+label = "Source #sakartvelo #taxes"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
 +++
 
 {{ tag(t="photo") }}  
@@ -27,4 +47,4 @@ ids = [583]
 {{ tag(t="botanic_garden") }}  
 {{ tag(t="ladder") }}
 
-![](5375476537215808962_1251575662_456259010.jpg)
+{{ img(src="5375476537215808962_1251575662_456259010.jpg") }}

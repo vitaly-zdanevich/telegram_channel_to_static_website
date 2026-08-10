@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#church\n#jesus\n#inside\n#globustut\n#year2005\nSource"
 views = 14
 ids = [1445]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1388/index.md"
+label = "#architecture #orange #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1372/index.md"
+label = "#architecture #orange #columns #belarus #globustut #year2005 Sou…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-926/index.md"
+label = "#belarus #architecture #year2005 #globustut"
 +++
 
 {{ tag(t="architecture") }}  
@@ -30,12 +50,12 @@ ids = [1445]
 
 [Source](https://commons.wikimedia.org/wiki/File:056-313_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

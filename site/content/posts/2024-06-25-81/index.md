@@ -16,7 +16,7 @@ next_body = "I contribute to #wikipedia and other projects on #mediawiki engine 
 prev_id = 80
 prev_title = ""
 prev_body = "Tried #thunderbird again, after many years - and its good. UI space can be optimized though - to be more compact. Even Google Calendar sync (with an extension)."
-views = 54
+views = 55
 ids = [81]
 +++
 

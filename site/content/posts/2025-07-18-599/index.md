@@ -28,4 +28,4 @@ And it faster to boot than `dd` because ISOs are compressed.
 
 <https://www.ventoy.net/en/index.html>
 
-![](5462915113515351326_1271934042_456260894.jpg)
+{{ img(src="5462915113515351326_1271934042_456260894.jpg") }}

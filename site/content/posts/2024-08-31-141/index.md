@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Moss: Book 2: one of the best VR game. I played on Meta Quest 2. And here - one of the most dramatic episode of the game industry. Usual gameplay is interrupted by painful death of the main character. So lovely animation. So much of love and pain. She is asking the player to help - but we cannot help, she is crying. Another book. Another hero - who does not like you.\nIn VR it more dramatic, real. I love VR games.\nI cut the video fragment from"
 views = 57
 ids = [141]
+
+[[extra.related]]
+path = "@/posts/2025-09-01-653/index.md"
+label = "#wikimediafoundation #money"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-652/index.md"
+label = "#wikimediafoundation #money"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-619/index.md"
+label = "Returned to uploading of artifacts from moneymuseum.by, through…"
+
+[[extra.related]]
+path = "@/posts/2026-06-13-1822/index.md"
+label = "#tbc #money This is why we have #crypto?"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1307/index.md"
+label = "#couchsurfing #money 2000$ per year to #AWS"
 +++
 
 > 1910 Russian Empire 100 rubles bill with Tzar Catherina portrait
@@ -28,4 +48,4 @@ ids = [141]
 
 {{ tag(t="money") }}
 
-![](5373261446487598673_1251059921_456255057.jpg)
+{{ img(src="5373261446487598673_1251059921_456255057.jpg") }}

@@ -16,7 +16,7 @@ next_body = ""
 prev_id = 171
 prev_title = ""
 prev_body = "The same story"
-views = 37
+views = 42
 ids = [172]
 +++
 

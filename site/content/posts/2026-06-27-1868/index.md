@@ -17,8 +17,28 @@ next_body = "#clown\n#mime\nSource"
 prev_id = 1867
 prev_title = ""
 prev_body = "#movie\n#blackandwhite\n#faust\n#year1926\nВ этом году фильм «Фауст», знаменитый шедевр немецкого экспрессионизма, отмечает свое 100-летие. Основанный на легенде о Фаусте и драме Иоганна Вольфганга фон Гёте, это был один из самых амбициозных фильмов эпохи Веймарской республики. Созданный компанией UFA (режиссер Ф. В. Мурнау) за примерно 2 миллиона марок и снятый в течение шести месяцев, это был один из самых дорогих и технически сложных немецких фильмов своего времени, новаторский в плане визуальных эффектов, которые остаются впечатляющими и спустя столетие.\nSource"
-views = 11
+views = 16
 ids = [1868]
+
+[[extra.related]]
+path = "@/posts/2026-07-27-2073/index.md"
+label = "#toy #animal #antlers"
+
+[[extra.related]]
+path = "@/posts/2026-06-10-1807/index.md"
+label = "#love this #extension - #highlight predefined list of words, on…"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1120/index.md"
+label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+
+[[extra.related]]
+path = "@/posts/2026-02-07-1099/index.md"
+label = "#love it - against #youtube #clickbait"
+
+[[extra.related]]
+path = "@/posts/2025-07-03-593/index.md"
+label = "#dog #love #mmorpg"
 +++
 
 {{ tag(t="love") }}  
@@ -29,6 +49,6 @@ ids = [1868]
 
 [Source](https://www.instagram.com/p/DWuZoTNjBdU/)
 
-{{ instagram(url="https://www.instagram.com/p/DWuZoTNjBdU/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1868-01.mp4") }}
 
 {{ tag(t="video") }}

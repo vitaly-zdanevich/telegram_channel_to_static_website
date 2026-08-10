@@ -19,6 +19,10 @@ prev_title = ""
 prev_body = "#religion\n#architecture\n#church\n#germany\nSource"
 views = 46
 ids = [601]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-762/index.md"
+label = "#painting #angel #ship #gustavedore Engraving by Gustave Doré, r…"
 +++
 
 ...addition to the previous post: that photo reminds me of this video ARK, from 2007  
@@ -29,6 +33,6 @@ ids = [601]
 
 <https://www.imdb.com/title/tt1029261>  
 
-[Source](https://youtu.be/WQneX-qK7MM)
+[Source](<https://youtu.be/WQneX-qK7MM> "CGI Animated Short Film HD \"ARK \" by Grzegorz Jonkajtys | Platige Image | CGMeetup")
 
 {{ youtube(id="WQneX-qK7MM") }}

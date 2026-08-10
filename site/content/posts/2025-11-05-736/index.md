@@ -18,10 +18,10 @@ next_body = "#webdesign\n#webdesignblack"
 prev_id = 735
 prev_title = ""
 prev_body = "If WebArchive have it - it still not in Google - you cannot search the website. But you can try to download the website and host it for free on Gitlab/Github.\n#archivation\n#website"
-views = 22
+views = 23
 ids = [736]
 +++
 
 {{ tag(t="btc") }} lost 20% for one month
 
-![](5211094055603867521_1213302383_460001153.jpg)
+{{ img(src="5211094055603867521_1213302383_460001153.jpg") }}

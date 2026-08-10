@@ -18,14 +18,34 @@ next_body = "Make #tree clickable, tested in #kitty\nReplace to #eza\neza --tree
 prev_id = 1818
 prev_title = ""
 prev_body = "#aws\n#billing\n#cost\n#graph"
-views = 15
+views = 16
 ids = [1819]
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1832/index.md"
+label = "When #css is minified - so what can I do with that : Leave comme…"
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1779/index.md"
+label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+
+[[extra.related]]
+path = "@/posts/2025-09-02-655/index.md"
+label = "#chatgpt 5: Escape shell $ as $$ inside Makefile recipes #gemini…"
+
+[[extra.related]]
+path = "@/posts/2025-07-25-610/index.md"
+label = "Can you imagine #userstyle with so much configs #lastfm"
+
+[[extra.related]]
+path = "@/posts/2025-06-04-549/index.md"
+label = "Another #userstyle: for #openstreetmap, only a few CSS lines"
 +++
 
 My another {{ tag(t="userstyle") }}: for {{ tag(t="gemini") }}, before and after  
 
 <https://gitlab.com/vitaly-zdanevich-styles/gemini>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

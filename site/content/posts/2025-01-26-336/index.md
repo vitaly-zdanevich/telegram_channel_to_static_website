@@ -19,6 +19,6 @@ views = 46
 ids = [336]
 +++
 
-<https://youtu.be/MBRqu0YOH14>
+[https://youtu.be/MBRqu0YOH14](<https://youtu.be/MBRqu0YOH14> "Optimistic Nihilism")
 
 {{ youtube(id="MBRqu0YOH14") }}

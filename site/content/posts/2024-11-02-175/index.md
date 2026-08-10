@@ -19,11 +19,15 @@ prev_title = ""
 prev_body = "Wow border-radius generator, so many values"
 views = 39
 ids = [175]
+
+[[extra.related]]
+path = "@/posts/2026-01-27-949/index.md"
+label = "В эпоху рассвета ИИ становится всё актуальнее опера Где в альтер…"
 +++
 
 {{ tag(t="web3") }} audio platform, {{ tag(t="opensource") }}, on {{ tag(t="ipfs") }}, I uploaded {{ tag(t="complexnumbers") }} to it <https://audius.co/complex_numbers>  
 
-<https://youtu.be/c50licHTOik>  
+[https://youtu.be/c50licHTOik](<https://youtu.be/c50licHTOik> "Building Web3: Audius")  
 
 <https://ecosystem.ipfs.tech/project/audius/>
 

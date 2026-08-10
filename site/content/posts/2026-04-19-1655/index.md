@@ -18,8 +18,28 @@ next_body = "#typography\n#preservation\n#russianempire\n#century19\nSource"
 prev_id = 1654
 prev_title = ""
 prev_body = "#ai\n#hi\n#qwen\n#terminal"
-views = 21
+views = 23
 ids = [1655]
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1332/index.md"
+label = "#logo #horse"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
 +++
 
 {{ tag(t="preservation") }}  
@@ -27,4 +47,4 @@ ids = [1655]
 {{ tag(t="symbol") }}  
 {{ tag(t="damage") }}
 
-![](5417832637109310022_1261437460_460001862.jpg)
+{{ img(src="5417832637109310022_1261437460_460001862.jpg") }}

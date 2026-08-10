@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "Рисунки скриншотов из игр!\nКто узнал ВСЁ?"
 views = 35
 ids = [565]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
 
 [https://tenebrae.sourceforge.net](https://tenebrae.sourceforge.net/)
 
-![](5350564279495028516_1245775325_456257316.jpg)
+{{ img(src="5350564279495028516_1245775325_456257316.jpg") }}

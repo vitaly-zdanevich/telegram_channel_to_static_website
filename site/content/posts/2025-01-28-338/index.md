@@ -19,12 +19,16 @@ prev_title = ""
 prev_body = "Source"
 views = 84
 ids = [338]
+
+[[extra.related]]
+path = "@/posts/2024-11-17-192/index.md"
+label = "#warcraft"
 +++
 
 {{ tag(t="warcraft") }}  
 
 [Source](https://www.instagram.com/reel/DEujPoxxP7y)
 
-{{ instagram(url="https://www.instagram.com/reel/DEujPoxxP7y/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/338-01.mp4") }}
 
 {{ tag(t="video") }}

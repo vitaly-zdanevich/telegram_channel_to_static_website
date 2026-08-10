@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#heap\n#lt\nWow in #leetcode we can #patch classes:\nListNode.lt = lambda self, other: self.val Optional[ListNode]:\nheap = []\nfor node in lists:\nif node:\nheapq.heappush(heap, node)\nhead: List[ListNode] = ListNode()\ntail = head\nwhile heap:\nnode = heapq.heappop(heap)\ntail.next = node\ntail = node\nif node.next:\nheapq.heappush(heap, node.next)\nreturn head.next\n23. Merge k Sorted Lists"
 views = 22
 ids = [1755]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }}  
 
 {{ tag(t="screenshot") }} from <https://alice.yandex.ru/>
 
-![](5197241093857154607_1210076989_460002863.jpg)
+{{ img(src="5197241093857154607_1210076989_460002863.jpg") }}

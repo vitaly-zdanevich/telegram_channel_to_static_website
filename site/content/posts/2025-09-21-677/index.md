@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#drug\n#peterburg\n#airdefense\nИгорян? Олег? Обознался\nSource"
 views = 31
 ids = [677]
+
+[[extra.related]]
+path = "@/posts/2025-09-21-679/index.md"
+label = "#film #thefountain #darrenaronofsky #hospital #tree"
+
+[[extra.related]]
+path = "@/posts/2025-09-21-678/index.md"
+label = "#film #thefountain #darrenaronofsky #library #children"
+
+[[extra.related]]
+path = "@/posts/2025-09-21-680/index.md"
+label = "#film #thefountain #darrenaronofsky #inquisitor #pain #torture #…"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
 +++
 
 {{ tag(t="film") }}  

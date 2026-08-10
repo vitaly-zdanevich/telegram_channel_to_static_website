@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#architecture\nДом со щуками\nFrom"
 views = 60
 ids = [797]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 > С помощью нехитрых приспособлений буханку хлеба можно превратить в троллейбус, но зачем
@@ -29,6 +49,6 @@ ids = [797]
 
 [Source](https://t.me/it_laboratory_bar/1/11399)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

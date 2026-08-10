@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#music\n#afisha"
 views = 40
 ids = [455]
+
+[[extra.related]]
+path = "@/posts/2025-03-27-458/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-457/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-456/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2132/index.md"
+label = "#ussr #pc"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1080/index.md"
+label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
 +++
 
 {{ tag(t="ussr") }}
 
-![](5415830246042760053_1260971242_456258421.jpg)
+{{ img(src="5415830246042760053_1260971242_456258421.jpg") }}

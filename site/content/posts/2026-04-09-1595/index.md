@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#typography\n#scans\n#russianempire\n#kiev\n#18thcentury"
 views = 18
 ids = [1595]
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-10-22-718/index.md"
+label = "#webdesign #game #mmorpg #ragnarok It still alive"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1121/index.md"
+label = "#webdesign #buttons #animation #game #mmo #myst"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="indika") }}  
@@ -30,10 +50,10 @@ ids = [1595]
 
 <https://indikathegame.com/>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}

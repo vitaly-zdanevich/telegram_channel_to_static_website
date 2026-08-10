@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#church\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
 views = 19
 ids = [1436]
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1437/index.md"
+label = "#building #bricks #village #white #slonim #belarus #globustut #y…"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1422/index.md"
+label = "#architecture #gray #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1450/index.md"
+label = "#abandone #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1426/index.md"
+label = "#church #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1424/index.md"
+label = "#abandone #slonim #belarus #globustut #year2005"
 +++
 
 {{ tag(t="building") }}  
@@ -31,4 +51,4 @@ ids = [1436]
 
 [Source](https://commons.wikimedia.org/wiki/File:056-215_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D0%B4%D0%BE%D0%BC_(%D0%B8%D0%B7_%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81%D0%B0),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](5301280942821414143_1234300654_460002559.jpg)
+{{ img(src="5301280942821414143_1234300654_460002559.jpg") }}

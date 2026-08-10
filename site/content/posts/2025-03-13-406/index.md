@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#health\n#pubmed\n#aura\nSource"
 views = 31
 ids = [406]
+
+[[extra.related]]
+path = "@/posts/2025-05-08-509/index.md"
+label = "#health #science"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2042/index.md"
+label = "#psychodel #walk Я опять вышел на прогулку"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-407/index.md"
+label = "#health #food"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2114/index.md"
+label = "#духота #health #powerlifting"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2112/index.md"
+label = "#health #духота #kozhemiako"
 +++
 
 {{ tag(t="health") }}  
@@ -29,4 +49,4 @@ ids = [406]
 {{ tag(t="walk") }}  
 {{ tag(t="chad") }}
 
-![](5375405086139870431_1251559026_456256735.jpg)
+{{ img(src="5375405086139870431_1251559026_456256735.jpg") }}

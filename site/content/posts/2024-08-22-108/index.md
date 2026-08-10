@@ -22,6 +22,6 @@ ids = [108]
 
 <https://moneymuseum.by/ru/collections/bonistika/132047/>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Source\n#sakartvelo\n#taxes"
 views = 50
 ids = [471]
+
+[[extra.related]]
+path = "@/posts/2025-06-13-573/index.md"
+label = "#archiving Lost."
+
+[[extra.related]]
+path = "@/posts/2025-04-15-469/index.md"
+label = "Looks what I found - another #archiving group"
+
+[[extra.related]]
+path = "@/posts/2025-05-10-514/index.md"
+label = "#image #archiving"
+
+[[extra.related]]
+path = "@/posts/2025-08-16-629/index.md"
+label = "On January 29, 2015, about 15 years after the original release o…"
+
+[[extra.related]]
+path = "@/posts/2025-04-18-474/index.md"
+label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
 +++
 
 <https://habr.com/en/articles/775726>  
@@ -27,4 +47,4 @@ ids = [471]
 {{ tag(t="archiving") }}  
 {{ tag(t="photos") }}
 
-![](5474606413927015267_1274656135_456254307.jpg)
+{{ img(src="5474606413927015267_1274656135_456254307.jpg") }}

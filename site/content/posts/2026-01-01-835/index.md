@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#botanic\n#botanicillustration\nSourceBHL287631.jpg)"
 views = 25
 ids = [835]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [835]
 
 <https://ptj.spb.ru/archive/101/independence-is-freedom/sobiraetsya-ryad-subektivnostej/>
 
-![](5384459448434232199_1253667159_460000135.jpg)
+{{ img(src="5384459448434232199_1253667159_460000135.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#abandone\n#winter\n#почаевичи\n#year2005\n#globustut\nFrom"
 views = 5
 ids = [1025]
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-925/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1426/index.md"
+label = "#church #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1226/index.md"
+label = "#church #abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,8 +50,8 @@ ids = [1025]
 
 From [https://commons.wikimedia.org/wiki/File:045-183\_Чашники,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-183_%D0%A7%D0%B0%D1%88%D0%BD%D0%B8%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}

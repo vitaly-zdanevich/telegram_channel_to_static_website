@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Бежевый\n#psy\n#childhood\nSource"
 views = 38
 ids = [465]
+
+[[extra.related]]
+path = "@/posts/2026-03-21-1494/index.md"
+label = "#steam: almost 25% is on #linux?"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1090/index.md"
+label = "#linux #gamex"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-38/index.md"
+label = "I love - developed in 2004 - but nobody sell it anymore in 2024.…"
+
+[[extra.related]]
+path = "@/posts/2026-04-12-1636/index.md"
+label = "#linux #france #news France to ditch Windows for Linux to reduce…"
+
+[[extra.related]]
+path = "@/posts/2025-12-25-813/index.md"
+label = "#ui #windows #windowsxp"
 +++
 
 {{ tag(t="windows") }}  
@@ -26,6 +46,6 @@ ids = [465]
 
 [Source](https://mastodon.social/@federicogazaba/112587687798347271)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/465-01.mp4") }}
 
 {{ tag(t="video") }}

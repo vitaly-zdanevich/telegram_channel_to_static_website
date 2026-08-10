@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#oldweb\n#anime"
 views = 7
 ids = [1359]
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1366/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1365/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1363/index.md"
+label = "#webdesign #oldweb #anime"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [1359]
 
 <https://yumeoi.skin/>
 
-![](5289657696166548202_1231594406_460002026.jpg)
+{{ img(src="5289657696166548202_1231594406_460002026.jpg") }}

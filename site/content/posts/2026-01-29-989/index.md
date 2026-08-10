@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#nature\n#winter\n#cementery\n#year2005\n#globustut\nНовосёлки\nFrom"
 views = 6
 ids = [989]
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1055/index.md"
+label = "#belarus #sign #winter #year2005 #globustut Рубеж From"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1054/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-995/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut Близ Новогру…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-986/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-976/index.md"
+label = "#belarus #winter #няньково #year2005 #globustut From"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [989]
 
 From [https://commons.wikimedia.org/wiki/File:043-275\_Лавришево,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-275_%D0%9B%D0%B0%D0%B2%D1%80%D0%B8%D1%88%D0%B5%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](5465427364444572600_1272518971_460000184.jpg)
+{{ img(src="5465427364444572600_1272518971_460000184.jpg") }}

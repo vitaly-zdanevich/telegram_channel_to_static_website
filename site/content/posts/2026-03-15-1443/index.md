@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#animal\n#cat"
 views = 13
 ids = [1443]
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1450/index.md"
+label = "#abandone #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1424/index.md"
+label = "#abandone #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1382/index.md"
+label = "#castle #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1294/index.md"
+label = "#abandone #castle #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1385/index.md"
+label = "#castle #abandone #новогрудок #belarus #globustut #year2005"
 +++
 
 {{ tag(t="abandone") }}  
@@ -31,4 +51,4 @@ ids = [1443]
 
 [Source](https://commons.wikimedia.org/wiki/File:056-248_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-![](5312188123938757154_1236840180_460003874.jpg)
+{{ img(src="5312188123938757154_1236840180_460003874.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Emotional reasoning is a cognitive process by which an individual concludes that their emotional reaction proves something is true, despite contrary empirical evidence. Emotional reasoning creates an 'emotional truth', which may be in direct conflict with the inverse 'perceptional truth'\nThe combination of an increase in emotional arousal and the inhibition of parts of the brain leads to emotional reasoning\n#psy"
 views = 25
 ids = [744]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-12-10-796/index.md"
+label = "#architecture Дом со щуками From"
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-06-14-1826/index.md"
+label = "#bus #architecture"
+
+[[extra.related]]
+path = "@/posts/2025-04-15-470/index.md"
+label = "Source #sakartvelo #taxes"
 +++
 
 {{ tag(t="school") }} in {{ tag(t="sakartvelo") }}  
@@ -29,4 +49,4 @@ ids = [744]
 
 <https://commons.wikimedia.org/wiki/File:Gurtskaya_Gymnasium_-_GG,_Zugdidi,_Georgia.jpg>
 
-![](5221979323798063967_1215836807_460000095.jpg)
+{{ img(src="5221979323798063967_1215836807_460000095.jpg") }}

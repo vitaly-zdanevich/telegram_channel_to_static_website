@@ -19,6 +19,18 @@ prev_title = ""
 prev_body = "#solarsystem\n#planets\n#year1872\nPage 18"
 views = 20
 ids = [832]
+
+[[extra.related]]
+path = "@/posts/2026-05-13-1756/index.md"
+label = "#code #russian #yandex #language From"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1733/index.md"
+label = "#belarus #belarussian #arabic #language"
+
+[[extra.related]]
+path = "@/posts/2026-06-13-1824/index.md"
+label = "#wikipedia #armenian #ruwiki #language #table"
 +++
 
 {{ tag(t="language") }}  

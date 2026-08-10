@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#painting\n#gustavedore\nSource"
 views = 40
 ids = [765]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-764/index.md"
+label = "#painting #gustavedore"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-763/index.md"
+label = "#painting #gustavedore Géraint et Enide sortant de la forêt Pier…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-762/index.md"
+label = "#painting #angel #ship #gustavedore Engraving by Gustave Doré, r…"
 +++
 
 {{ tag(t="painting") }}  
@@ -29,4 +49,4 @@ Woman of the Apocalypse
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%93._%D0%94%D0%BE%D1%80%D0%B5_%D0%96%D0%B5%D0%BD%D0%B0,_%D0%BE%D0%B1%D1%87%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B2_%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B5.jpg)
 
-![](5229215222705359893_1217521546_460000277.jpg)
+{{ img(src="5229215222705359893_1217521546_460000277.jpg") }}

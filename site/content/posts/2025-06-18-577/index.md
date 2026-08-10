@@ -20,18 +20,38 @@ prev_title = ""
 prev_body = "#photo\n#batumi\n#chandelier"
 views = 34
 ids = [577]
+
+[[extra.related]]
+path = "@/posts/2025-04-15-470/index.md"
+label = "Source #sakartvelo #taxes"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-08-20-631/index.md"
+label = "Percent of people who think their culture is superior to others…"
+
+[[extra.related]]
+path = "@/posts/2025-08-08-618/index.md"
+label = "Georgian man Zaal Sikharulidze with falcon wearing Chokha on Tbi…"
+
+[[extra.related]]
+path = "@/posts/2025-02-08-352/index.md"
+label = "#sakartvelo #ny #subway"
 +++
 
 {{ tag(t="sakartvelo") }}  
 
 [Source](https://georgiaabout.com/gold-lion-figurine-second-half-of-the-3rd-millennium-b-c-kakheti-tsnori)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#girl\n#paper\n#sky\n#evangelion\nFrom"
 views = 17
 ids = [1837]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-04-09-462/index.md"
+label = "#pooh #bible #gun"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-755/index.md"
+label = "#painting #bible #gustavedore #year1891 The Bible panorama, or T…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-754/index.md"
+label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
 +++
 
 {{ tag(t="dolphin") }}  
@@ -30,4 +50,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015149146/") }}
 
-![](5296434402940363409_1233172231_460006033.jpg)
+{{ img(src="5296434402940363409_1233172231_460006033.jpg") }}

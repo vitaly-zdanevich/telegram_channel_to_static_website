@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#alien\n#poster\n#film\n#blackandwhite\nSource"
 views = 40
 ids = [808]
+
+[[extra.related]]
+path = "@/posts/2025-12-21-810/index.md"
+label = "#software #tui #git"
+
+[[extra.related]]
+path = "@/posts/2025-12-21-809/index.md"
+label = "#cli #tui #design"
+
+[[extra.related]]
+path = "@/posts/2026-02-27-1203/index.md"
+label = "#design #software #gthumb #scan #preservation"
+
+[[extra.related]]
+path = "@/posts/2026-07-01-1881/index.md"
+label = "Моя #лекция про мой #telegrambot для #rutracker - не только ищет…"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 +++
 
 {{ tag(t="software") }}  
@@ -28,4 +48,4 @@ ids = [808]
 
 [Source](https://terminaltrove.com/superseedr)
 
-![](5350620010994404158_1245788301_460000062.jpg)
+{{ img(src="5350620010994404158_1245788301_460000062.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#universe\n#consciousness\nSource"
 views = 31
 ids = [410]
+
+[[extra.related]]
+path = "@/posts/2025-08-06-617/index.md"
+label = "Imagine a 2d side-scroll quest-action game with such visual styl…"
+
+[[extra.related]]
+path = "@/posts/2025-01-29-345/index.md"
+label = "#lapenko #art #dog #painting #religion"
+
+[[extra.related]]
+path = "@/posts/2026-04-28-1695/index.md"
+label = "#my #batumi #restaurant #art #food #sazandari"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1340/index.md"
+label = "#art #shop #продукты #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2025-09-19-673/index.md"
+label = "#mem #memit #kubernetes #art #monalisa #sexy Kubernetes in my da…"
 +++
 
 Girl with a Pearl Earring  
@@ -29,4 +49,4 @@ Girl with a Pearl Earring
 
 {{ pinterest(url="https://www.pinterest.com/pin/321796335878643329/") }}
 
-![](5379612612196693870_1252538667_456259438.jpg)
+{{ img(src="5379612612196693870_1252538667_456259438.jpg") }}

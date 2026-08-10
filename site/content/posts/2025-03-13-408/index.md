@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#health\n#food\nSource"
 views = 38
 ids = [408]
+
+[[extra.related]]
+path = "@/posts/2025-01-21-322/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-181/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2025-01-30-348/index.md"
+label = "#spider #girl"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-340/index.md"
+label = "#girl #nails"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
 +++
 
 {{ tag(t="girl") }}  
@@ -26,6 +46,6 @@ ids = [408]
 
 [Source](https://x.com/i/status/1836717976675893435)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/408-01.mp4") }}
 
 {{ tag(t="video") }}

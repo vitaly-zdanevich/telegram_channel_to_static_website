@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#webdesignold"
 views = 38
 ids = [768]
+
+[[extra.related]]
+path = "@/posts/2025-11-12-772/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-11-767/index.md"
+label = "#webdesign #webdesignold"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-779/index.md"
+label = "#webdesign #webdesignold #webdesigngames Year: 2000"
+
+[[extra.related]]
+path = "@/posts/2025-11-12-771/index.md"
+label = "#webdesign #webdesignold #xbox Wikidata"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-751/index.md"
+label = "#design #webdesign #webdesignold"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -27,4 +47,4 @@ ids = [768]
 
 <https://web.archive.org/web/20050830072425/http://www.pgnx.net/>
 
-![](5231120899694594878_1217965246_460000062.jpg)
+{{ img(src="5231120899694594878_1217965246_460000062.jpg") }}

@@ -19,6 +19,22 @@ prev_title = ""
 prev_body = "#retro\n#cd\n#vhs\nSource"
 views = 76
 ids = [613]
+
+[[extra.related]]
+path = "@/posts/2025-03-08-395/index.md"
+label = "#arsenmarkaryan #alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-397/index.md"
+label = "#arsenmarkaryan #dating #escort #size"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-399/index.md"
+label = "#ironman #arsenmarkaryan #meaning #comparison #motivation"
+
+[[extra.related]]
+path = "@/posts/2025-06-08-552/index.md"
+label = "#arsenmarkaryan #health #medicine #psy #mantoux #mercury"
 +++
 
 {{ tag(t="arsen_markaryan") }}  
@@ -28,6 +44,6 @@ ids = [613]
 
 [Source](https://youtu.be/rvi7FsoqblM?t=1237)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/613-01.mp4") }}
 
 {{ tag(t="video") }}

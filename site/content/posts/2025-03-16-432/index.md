@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#australia\n#jug\nSource"
 views = 37
 ids = [432]
+
+[[extra.related]]
+path = "@/posts/2026-07-27-2073/index.md"
+label = "#toy #animal #antlers"
+
+[[extra.related]]
+path = "@/posts/2026-06-27-1868/index.md"
+label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
+
+[[extra.related]]
+path = "@/posts/2026-06-10-1807/index.md"
+label = "#love this #extension - #highlight predefined list of words, on…"
+
+[[extra.related]]
+path = "@/posts/2026-03-13-1439/index.md"
+label = "#webdesign #animal #cat"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1120/index.md"
+label = "#ai #codex #love Codex, using it almost every day, recently solv…"
 +++
 
 {{ tag(t="animal") }}  
@@ -27,6 +47,6 @@ ids = [432]
 
 [Source](https://www.instagram.com/p/DHCszbBN1by)
 
-{{ instagram(url="https://www.instagram.com/p/DHCszbBN1by/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/432-01.mp4") }}
 
 {{ tag(t="video") }}

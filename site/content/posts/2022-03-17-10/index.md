@@ -17,8 +17,28 @@ next_body = "#music\n#meanna"
 prev_id = 9
 prev_title = ""
 prev_body = "С"
-views = 50
+views = 54
 ids = [10]
+
+[[extra.related]]
+path = "@/posts/2022-03-17-14/index.md"
+label = "#music #meanna"
+
+[[extra.related]]
+path = "@/posts/2022-03-17-13/index.md"
+label = "#music #meanna"
+
+[[extra.related]]
+path = "@/posts/2022-03-17-12/index.md"
+label = "#music #meanna"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
 +++
 
 {{ tag(t="music") }}  

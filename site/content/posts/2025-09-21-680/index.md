@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#film\n#thefountain\n#darrenaronofsky\n#hospital\n#tree"
 views = 37
 ids = [680]
+
+[[extra.related]]
+path = "@/posts/2025-09-21-679/index.md"
+label = "#film #thefountain #darrenaronofsky #hospital #tree"
+
+[[extra.related]]
+path = "@/posts/2025-09-21-678/index.md"
+label = "#film #thefountain #darrenaronofsky #library #children"
+
+[[extra.related]]
+path = "@/posts/2025-09-21-677/index.md"
+label = "#film #thefountain #darrenaronofsky #death #hospital #tree"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
 +++
 
 {{ tag(t="film") }}  

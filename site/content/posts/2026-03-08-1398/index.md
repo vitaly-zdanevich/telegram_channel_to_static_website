@@ -29,6 +29,6 @@ ids = [1398]
 
 Что же будет дальше? Интерактивное конфетти заполонит мозг читателей или кто-то наконец использует этот мощный инструмент, чтобы сказать что-то своё?
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1398-01.mp4") }}
 
 {{ tag(t="video") }}

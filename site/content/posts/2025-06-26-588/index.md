@@ -13,12 +13,32 @@ day = "2025-06-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/588"
 next_id = 589
 next_title = ""
-next_body = "...for the previous post\nSource"
+next_body = "...for the previous post\nSource\")"
 prev_id = 587
 prev_title = ""
 prev_body = "In 2024 to #steam were published 19000 #games, its 52 games per day.\nSource"
-views = 43
+views = 44
 ids = [588]
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-396/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-394/index.md"
+label = "#alexjones #warhammer"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-392/index.md"
+label = "#alexjones #warhammer"
 +++
 
 {{ tag(t="game") }}  
@@ -31,8 +51,10 @@ If you see "Failed to initialize video card" - try to enable Gamescope. Works wi
 
 <https://lutris.net/games/warhammer-40000-dawn-of-war>  
 
+<https://archive.org/download/warhammer4000-dawn-of-war-demo.tar/warhammer4000-dawn-of-war-demo.tar.xz>  
+
 <https://store.steampowered.com/app/4570>  
 
 <https://en.wikipedia.org/wiki/Warhammer_40,000:_Dawn_of_War>
 
-📎 warhammer4000-dawn-of-war-demo.tar.xz *(not archived)*
+[📎 warhammer4000-dawn-of-war-demo.tar.xz](https://archive.org/download/warhammer4000-dawn-of-war-demo.tar/warhammer4000-dawn-of-war-demo.tar.xz)

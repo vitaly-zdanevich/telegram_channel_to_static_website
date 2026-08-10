@@ -16,12 +16,12 @@ next_body = "#pig"
 prev_id = 271
 prev_title = ""
 prev_body = ""
-views = 25
+views = 26
 ids = [272]
 +++
 
 <https://coub.com/view/2kfym6>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/272-01.mp4") }}
 
 {{ tag(t="video") }}

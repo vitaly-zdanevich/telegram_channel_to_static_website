@@ -17,8 +17,28 @@ next_body = "#typography\n#russianempire\n#ukraine\n#century18\nSource"
 prev_id = 1602
 prev_title = ""
 prev_body = "#typography\n#russianempire\n#century18\nSource"
-views = 18
+views = 19
 ids = [1612]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 I wrote, with {{ tag(t="ai") }}, a nice {{ tag(t="script") }} to {{ tag(t="find") }} top {{ tag(t="biggest") }} {{ tag(t="folders") }} - that has no other subfolders ({{ tag(t="leaf") }} folders):  

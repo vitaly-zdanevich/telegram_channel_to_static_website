@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#fashion\n#street\n#london\nSource"
 views = 13
 ids = [1668]
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-621/index.md"
+label = "#anime #gpu"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-398/index.md"
+label = "#anime #voice"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
 +++
 
 {{ tag(t="anime") }}  
@@ -38,10 +58,10 @@ ids = [1668]
 
 <https://www.cubed3.com/games/reviews/playstation-3/atelier-shallie-alchemists-of-the-dusk-sea>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}

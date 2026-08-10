@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#mpv\n#anime\n#readme"
 views = 23
 ids = [513]
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1737/index.md"
+label = "#webdesign #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1624/index.md"
+label = "#preview on #bilibili #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
 +++
 
 {{ tag(t="bilibili") }}  
@@ -28,4 +48,4 @@ ids = [513]
 {{ tag(t="stream") }}  
 {{ tag(t="ui") }}
 
-![](5258181706211520137_1224265831_456257161.jpg)
+{{ img(src="5258181706211520137_1224265831_456257161.jpg") }}

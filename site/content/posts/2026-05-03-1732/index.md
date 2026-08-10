@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#colors\n#cables\n#pole\nSource"
 views = 18
 ids = [1732]
+
+[[extra.related]]
+path = "@/posts/2026-01-22-931/index.md"
+label = "I am on #gentoo because it compiles for my CPU -march=native and…"
+
+[[extra.related]]
+path = "@/posts/2025-09-08-657/index.md"
+label = "#golang #utf8 const s = \"สวัสดี\" fmt.Println\"Len:\", lens // Len:…"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-529/index.md"
+label = "I avoid mentioning that I run gentoo But when I have to, I try t…"
+
+[[extra.related]]
+path = "@/posts/2025-03-15-412/index.md"
+label = "#gentoo #logo"
+
+[[extra.related]]
+path = "@/posts/2026-02-22-1125/index.md"
+label = "#webdesign #gentoo #china"
 +++
 
 {{ tag(t="gentoo") }}  
 {{ tag(t="golang") }}  
 {{ tag(t="bootstrap") }}
 
-![](5456435665726806035_1270425428_460003347.jpg)
+{{ img(src="5456435665726806035_1270425428_460003347.jpg") }}

@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "On #Wikipedia, not all websites can be used as sources.\nEvery fact on Wikipedia must have a reliable source. Original research is not allowed — Wikipedia only summarizes facts from trusted, reputable places."
 views = 30
 ids = [442]
+
+[[extra.related]]
+path = "@/posts/2026-05-26-1787/index.md"
+label = "Payment -&gt; #crypto -&gt; Select your #wallet woodev.net"
+
+[[extra.related]]
+path = "@/posts/2026-03-17-1491/index.md"
+label = "#telegram added a feature request Add option to cache/prefetch a…"
+
+[[extra.related]]
+path = "@/posts/2025-09-20-674/index.md"
+label = "#telegram with wide messages"
+
+[[extra.related]]
+path = "@/posts/2025-09-29-684/index.md"
+label = "#patch for #telegram for wide messages --- a/Telegram/SourceFile…"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-614/index.md"
+label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
 +++
 
 wow in {{ tag(t="telegram") }} we have a {{ tag(t="crypto") }} {{ tag(t="wallet") }}, and users can send money to their contacts, wow
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

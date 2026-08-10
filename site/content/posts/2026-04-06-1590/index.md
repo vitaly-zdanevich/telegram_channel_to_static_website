@@ -18,8 +18,28 @@ next_body = "#indika\n#game\n#religion\n#christianity\n#webdesign"
 prev_id = 1580
 prev_title = ""
 prev_body = "#typography\n#scans\n#russianempire\n#kiev\n#18thcentury"
-views = 23
+views = 24
 ids = [1590]
+
+[[extra.related]]
+path = "@/posts/2026-04-06-1580/index.md"
+label = "#typography #scans #russianempire #kiev #18thcentury"
+
+[[extra.related]]
+path = "@/posts/2026-04-06-1571/index.md"
+label = "#typography #scans #russianempire #kiev #18thcentury"
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1602/index.md"
+label = "#typography #russianempire #century18"
+
+[[extra.related]]
+path = "@/posts/2026-04-04-1569/index.md"
+label = "#russianempire #typography #метрическаякнига At"
+
+[[extra.related]]
+path = "@/posts/2026-04-20-1656/index.md"
+label = "#typography #preservation #russianempire #century19"
 +++
 
 {{ tag(t="typography") }}  
@@ -30,12 +50,12 @@ ids = [1590]
 
 [https://commons.wikimedia.org/wiki/File:ІР\_НБУВ\_-\_Київська\_духовна\_академія\_1742\_IMG\_5180\_1742.JPG](https://commons.wikimedia.org/wiki/File:%D0%86%D0%A0_%D0%9D%D0%91%D0%A3%D0%92_-_%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BD%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F_1742_IMG_5180_1742.JPG)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

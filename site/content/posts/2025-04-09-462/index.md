@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#belarussian\n#culture\nSource"
 views = 48
 ids = [462]
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1837/index.md"
+label = "#dolphin #bomb #bible From"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-755/index.md"
+label = "#painting #bible #gustavedore #year1891 The Bible panorama, or T…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-754/index.md"
+label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
 +++
 
 {{ tag(t="pooh") }}  
@@ -28,4 +48,4 @@ ids = [462]
 
 <https://bible.by/verse/40/26/21>
 
-![](5454138004248587563_1269890462_456256811.jpg)
+{{ img(src="5454138004248587563_1269890462_456256811.jpg") }}

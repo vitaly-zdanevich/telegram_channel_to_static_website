@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#monument\n#airplane\n#belarus\n#globustut\nSource"
 views = 3
 ids = [1143]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1154/index.md"
+label = "#building #abandone #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-866/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-865/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-864/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-863/index.md"
+label = "#belarus #building #globustut"
 +++
 
 {{ tag(t="building") }}  
@@ -29,14 +49,14 @@ ids = [1143]
 
 [Source](https://commons.wikimedia.org/wiki/File:047-321_%D0%A9%D0%B5%D1%87%D0%B8%D1%86%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_16_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}
 
-![](06.jpg)
+{{ img(src="06.jpg") }}

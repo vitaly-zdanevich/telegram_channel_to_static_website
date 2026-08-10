@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#gta3\n#compare\nOriginal VS #ps5 Definitive Edition"
 views = 12
 ids = [938]
+
+[[extra.related]]
+path = "@/posts/2026-02-16-1114/index.md"
+label = "#python Same #dot - different meaning for f in os.listdir'.' if…"
+
+[[extra.related]]
+path = "@/posts/2026-01-12-872/index.md"
+label = "Wow #wikipedia semi-automatic editing by a #python script"
+
+[[extra.related]]
+path = "@/posts/2026-01-16-887/index.md"
+label = "#commons: #count uploads from a specific user for a period of ti…"
+
+[[extra.related]]
+path = "@/posts/2025-06-04-548/index.md"
+label = "New small project: #python script for #gthumb or other software,…"
+
+[[extra.related]]
+path = "@/posts/2026-02-20-1118/index.md"
+label = "#python My #geeknote #evernote #cli now available on PyPI"
 +++
 
 Top 1% by {{ tag(t="python") }}, hm, not sure why <https://algora.io/profile/vitaly-zdanevich>
 
-![](5451802121863892457_1269346597_460000745.jpg)
+{{ img(src="5451802121863892457_1269346597_460000745.jpg") }}

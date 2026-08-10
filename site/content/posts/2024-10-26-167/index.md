@@ -25,4 +25,4 @@ Source: <https://artz.work/project/ba7a9084b86045dda2fa6e07e989a7e8>
 
 Author: Oleg Paschenko
 
-![](5253985385724372133_1223288799_456254629.jpg)
+{{ img(src="5253985385724372133_1223288799_456254629.jpg") }}

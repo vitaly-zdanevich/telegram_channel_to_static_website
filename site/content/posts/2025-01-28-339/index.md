@@ -17,7 +17,7 @@ next_body = "#girl\n#nails\nSource"
 prev_id = 338
 prev_title = ""
 prev_body = "#warcraft\nSource"
-views = 132
+views = 133
 ids = [339]
 +++
 
@@ -25,6 +25,6 @@ ids = [339]
 
 [Source](https://www.instagram.com/reel/DE2OJCiNp2W)
 
-{{ instagram(url="https://www.instagram.com/reel/DE2OJCiNp2W/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/339-01.mp4") }}
 
 {{ tag(t="video") }}

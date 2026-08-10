@@ -20,9 +20,13 @@ prev_title = ""
 prev_body = "#format\nSource"
 views = 34
 ids = [554]
+
+[[extra.related]]
+path = "@/posts/2025-03-24-444/index.md"
+label = "#monetization #spyware #security #webextension"
 +++
 
 {{ tag(t="security") }}  
 {{ tag(t="wish") }}
 
-![](5343793027329684273_1244198770_456258353.jpg)
+{{ img(src="5343793027329684273_1244198770_456258353.jpg") }}

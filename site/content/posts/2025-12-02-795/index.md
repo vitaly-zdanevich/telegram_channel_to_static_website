@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#wikipedia\n#delitionism\nYou can see this stark difference between old Wikipedia and modern Wikipedia: in the early days you could have things like articles on each chapter of Atlas Shrugged or each Pokemon. Even if you personally did not like Objectivism or Pokemon, you knew that you could go into just as much detail about the topics you liked best—Wikipedia was not paper! We talked idealistically about how Wikipedia could become an encyclopedia of specialist encyclopedias, the superset of encyclopedias. “would you expect to see a Bulbasaur article in a Pokemon encyclopedia? yes? then let’s have a Bulbasaur article”. The potential was that Wikipedia would be the summary of the Internet and books/media. Instead of punching in a keyword to a search engine and getting 100 pages dealing with tiny fragments of the topic (in however much detail), you would get a coherent overview summarizing everything worth knowing about the topic, for almost all topics. But now Wikipedia’s narrowing focus…"
 views = 60
 ids = [795]
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+
+[[extra.related]]
+path = "@/posts/2025-10-03-696/index.md"
+label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+
+[[extra.related]]
+path = "@/posts/2024-06-11-53/index.md"
+label = "#film #nightwatch Night Watch, love it"
+
+[[extra.related]]
+path = "@/posts/2024-02-24-31/index.md"
+label = "#film #scifi Love, Death & Robots: ending from s1ep7 Beyond the…"
 +++
 
 Фильм "Лучше не бывает": несколько минут в разных русских озвучках  

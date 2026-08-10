@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#wikipedia\n#notability"
 views = 12
 ids = [948]
+
+[[extra.related]]
+path = "@/posts/2025-05-06-499/index.md"
+label = "#evernote image editor: beautiful"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1832/index.md"
+label = "When #css is minified - so what can I do with that : Leave comme…"
+
+[[extra.related]]
+path = "@/posts/2026-05-25-1785/index.md"
+label = "Another #llm victory: repack of the official #evernote client"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-650/index.md"
+label = "Wow in #svg we can have #css, like .spinnera { animation: spinne…"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-614/index.md"
+label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
 +++
 
 {{ tag(t="css") }}  
@@ -32,6 +52,6 @@ a::selection
 }
 ```
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/948-01.mp4") }}
 
 {{ tag(t="video") }}

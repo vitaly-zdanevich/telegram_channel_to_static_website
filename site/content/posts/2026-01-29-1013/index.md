@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#nature\n#winter\n#monument\n#year2005\n#novogrudok\nFrom"
 views = 7
 ids = [1013]
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1269/index.md"
+label = "#webdesign #blue"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1848/index.md"
+label = "#batumi Oh my, I live here From"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [1013]
 
 [http://print-office.ge](http://print-office.ge/)
 
-![](5465427364444573134_1272518971_460000718.jpg)
+{{ img(src="5465427364444573134_1272518971_460000718.jpg") }}

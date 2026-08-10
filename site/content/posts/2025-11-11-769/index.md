@@ -20,6 +20,14 @@ prev_title = ""
 prev_body = "#webdesign\n#webdesignold"
 views = 41
 ids = [769]
+
+[[extra.related]]
+path = "@/posts/2026-08-05-2119/index.md"
+label = "#hardware #player"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-820/index.md"
+label = "#hardware #laptop Toshiba Libretto"
 +++
 
 {{ tag(t="mp3") }}  
@@ -30,4 +38,4 @@ Sexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008.
 
 <https://web.archive.org/web/20080726103726/http://www.stuffmagazine.com/index.aspx>
 
-![](5231136868383002106_1217968964_460000762.jpg)
+{{ img(src="5231136868383002106_1217968964_460000762.jpg") }}

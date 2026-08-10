@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#ai\n#girl\n#relationships\n#psy"
 views = 28
 ids = [504]
+
+[[extra.related]]
+path = "@/posts/2025-04-25-482/index.md"
+label = "#cat #psy"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2096/index.md"
+label = "#cat #laugh #slow By dustythegingercat"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1874/index.md"
+label = "#llm #prediction #cat"
+
+[[extra.related]]
+path = "@/posts/2026-03-13-1439/index.md"
+label = "#webdesign #animal #cat"
+
+[[extra.related]]
+path = "@/posts/2025-03-16-421/index.md"
+label = "#laser #cat #matrix"
 +++
 
 {{ tag(t="biology") }}  
@@ -31,4 +51,4 @@ ids = [504]
 
 [Source](https://vk.com/wall-76040632_314265)
 
-![](5251537555013364695_1222718869_456256471.jpg)
+{{ img(src="5251537555013364695_1222718869_456256471.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#xbox\n#xbox360\n#gameconsole\n#custom\n#glass\nFrom"
 views = 14
 ids = [1839]
+
+[[extra.related]]
+path = "@/posts/2026-06-18-1842/index.md"
+label = "#interior #cozy #bathroom From"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2091/index.md"
+label = "#cat #death #fear #green #wash"
+
+[[extra.related]]
+path = "@/posts/2026-07-26-2069/index.md"
+label = "#fashion #ears #hood #cat #green"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1835/index.md"
+label = "#xbox #gameconsole #tech #retro #green From"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-913/index.md"
+label = "#belarus #nature #river #green #year2005"
 +++
 
 {{ tag(t="interior") }}  
@@ -30,4 +50,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015149872/") }}
 
-![](5298686202754047486_1233696519_460004862.jpg)
+{{ img(src="5298686202754047486_1233696519_460004862.jpg") }}

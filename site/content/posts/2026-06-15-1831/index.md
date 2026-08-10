@@ -18,8 +18,28 @@ next_body = "When #css is minified - so what can I do with that :(\nLeave commen
 prev_id = 1830
 prev_title = ""
 prev_body = "#religion\n#jesus"
-views = 16
+views = 18
 ids = [1831]
+
+[[extra.related]]
+path = "@/posts/2025-08-09-621/index.md"
+label = "#anime #gpu"
+
+[[extra.related]]
+path = "@/posts/2025-03-08-398/index.md"
+label = "#anime #voice"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-252/index.md"
+label = "#movie #anime"
+
+[[extra.related]]
+path = "@/posts/2026-07-27-2074/index.md"
+label = "#anime #war #ground"
+
+[[extra.related]]
+path = "@/posts/2026-04-11-1624/index.md"
+label = "#preview on #bilibili #anime"
 +++
 
 {{ tag(t="anime") }}  
@@ -30,4 +50,4 @@ From
 
 {{ pinterest(url="https://www.pinterest.com/pin/71494712830288342/") }}
 
-![](5296434402940362941_1233172231_460005565.jpg)
+{{ img(src="5296434402940362941_1233172231_460005565.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#book\n#health\n#zoloft\n#christian"
 views = 58
 ids = [540]
+
+[[extra.related]]
+path = "@/posts/2026-01-12-874/index.md"
+label = "#wikipedia #bewiki #betarask I was not active here."
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -28,4 +48,4 @@ ids = [540]
 
 [Source](https://vk.com/video-55012165_167580582?to=L3ZpZGVvLTU1MDEyMTY1XzE2NzU4MDU4Mj8-)
 
-![](5298909356366097467_1233748476_456256571.jpg)
+{{ img(src="5298909356366097467_1233748476_456256571.jpg") }}

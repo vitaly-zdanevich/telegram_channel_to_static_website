@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#preservation\n#game\n#groundcontrol\n#wwiii\nFrom the game Ground Control) released in 2000\nToday we know only that The Order of the New Dawn was founded by a small coalition of men and women of Faith, who united in common cause during the dark days of the latter 21st century. Foreseeing the coming cataclysm, these early cultists dedicated themselves to preserving as much technology and knowledge as possible, in order to bring about a New Dawn after the inevitable holocaust. Many analysts have observed that without the Sixteen Minutes' War, the Order would have been just another apocalyptic cult.\nBut the End of the Civilized World did indeed come, and the proto-Order was ready for it - and even the corporations, no matter what they may think of the Order in the present day, do not deny the debt all of humanity owes them. The greatest prize saved by the Order was the Liber Aurorae Novae, the Book of the New Dawn: millions of digitally stored books, recordings, and images, which members of…"
 views = 41
 ids = [788]
+
+[[extra.related]]
+path = "@/posts/2025-11-19-785/index.md"
+label = "#webdesign #webdesigngame"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -30,4 +50,4 @@ ids = [788]
 
 <https://vndb.org/v952>
 
-![](5262600643447294725_1225294695_460000005.jpg)
+{{ img(src="5262600643447294725_1225294695_460000005.jpg") }}

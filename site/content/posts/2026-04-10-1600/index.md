@@ -18,8 +18,28 @@ next_body = "#typography\n#russianempire\n#century18\nSource"
 prev_id = 1599
 prev_title = ""
 prev_body = "My first blog #post to #wikimediadiff, about #wikimediacommons, #preservation\nAlso at"
-views = 14
+views = 15
 ids = [1600]
+
+[[extra.related]]
+path = "@/posts/2026-06-19-1844/index.md"
+label = "#armiesofexigo #abandone"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1170/index.md"
+label = "#entrance #abandone #belarus"
+
+[[extra.related]]
+path = "@/posts/2026-07-01-1880/index.md"
+label = "#belarus #abandone #trees #year2015 Source.jpg"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
 +++
 
 {{ tag(t="icq") }}  
@@ -29,6 +49,6 @@ ids = [1600]
 
 [Source](https://www.threads.com/@icsarus_ads/post/DW9J4DxDdla?xmt=AQF064j_UZL_Ksxn4mDm5YNIc_R--YS95mC9huyt7BqmDg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

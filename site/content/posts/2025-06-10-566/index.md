@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#webdesign"
 views = 33
 ids = [566]
+
+[[extra.related]]
+path = "@/posts/2026-03-28-1504/index.md"
+label = "#darkmode"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-615/index.md"
+label = "How to ask for a #darkmode"
+
+[[extra.related]]
+path = "@/posts/2025-08-05-616/index.md"
+label = "#darkmode #gif"
+
+[[extra.related]]
+path = "@/posts/2025-07-12-596/index.md"
+label = "My another #userscript: small toggle for #darkmode on #stackexch…"
+
+[[extra.related]]
+path = "@/posts/2026-02-27-1201/index.md"
+label = "#googledocs: #ai is integrated, but not the #darkmode If you do…"
 +++
 
 My new {{ tag(t="dark_mode") }}: [numbeo.com](http://numbeo.com/)  
 
 <https://gitlab.com/vitaly-zdanevich/numbeo-com>
 
-![](5350564279495029241_1245775325_456258041.jpg)
+{{ img(src="5350564279495029241_1245775325_456258041.jpg") }}

@@ -17,8 +17,28 @@ next_body = "# cd to a first sorted folder, exclude hidden\nfirst() {\nlocal fir
 prev_id = 1102
 prev_title = ""
 prev_body = "How to make #ubuntu folder for #chroot\nwget\n# Only 34 MB\nwget\nsha256sum -c SHA256SUMS 2/dev/null\nmkdir ubuntu-base\ntar -xzf ubuntu-base-25.10-base-amd64.tar.gz -C ubuntu-base\ncd ubuntu-base/\ncp /etc/resolv.conf etc/resolv.conf\nCreate file inside:\nmount --bind /dev dev\nmount --bind /proc proc\nmount --bind /sys sys\nmount --bind /run run\nchroot . /bin/bash\nand run from root (because requires CAPSYSCHROOT)"
-views = 20
+views = 21
 ids = [1103]
+
+[[extra.related]]
+path = "@/posts/2026-04-25-1682/index.md"
+label = "My new great #bash #alias actually a #hotkey for faster #cd # Li…"
+
+[[extra.related]]
+path = "@/posts/2026-03-05-1336/index.md"
+label = "...one of my #bash aliases: to count files here: c { ls -1  wc -…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1864/index.md"
+label = "And another #bash #alias: # Better word movement: treat aaabbbcc…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1863/index.md"
+label = "My new #bash #alias bind '\"ej\": \"!#:$ e^\"' # Alt J repeats prev…"
+
+[[extra.related]]
+path = "@/posts/2026-03-05-1334/index.md"
+label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
 +++
 
 My new {{ tag(t="bash") }} alias: one function to go to the next folder (like from 2025 to 2026, from aaa to bbb) and the second one to {{ tag(t="cd") }} to prev:  

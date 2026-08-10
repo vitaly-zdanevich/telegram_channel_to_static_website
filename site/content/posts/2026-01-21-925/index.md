@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#monument\n#christianity\n#virginmary\n#nature\n#village\n#year2005\n#globustut"
 views = 8
 ids = [925]
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1426/index.md"
+label = "#church #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1226/index.md"
+label = "#church #abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1198/index.md"
+label = "#church #blue #belarus #globustut #year2005 Source,%D1%81%D0%BD%…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [925]
 
 [https://commons.wikimedia.org/wiki/File:039-012\_Цуденишки,\_снято\_15\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:039-012_%D0%A6%D1%83%D0%B4%D0%B5%D0%BD%D0%B8%D1%88%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_15_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440801563862568213_1266785330_460000533.jpg)
+{{ img(src="5440801563862568213_1266785330_460000533.jpg") }}

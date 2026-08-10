@@ -23,4 +23,4 @@ ids = [486]
 
 [Source](https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-)
 
-![](5221952308450035641_1215830517_456263609.jpg)
+{{ img(src="5221952308450035641_1215830517_456263609.jpg") }}

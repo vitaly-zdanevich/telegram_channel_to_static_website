@@ -19,6 +19,22 @@ prev_title = ""
 prev_body = "#couchsurfing\n#money\n2000$ per year to #AWS"
 views = 10
 ids = [1308]
+
+[[extra.related]]
+path = "@/posts/2026-02-24-1136/index.md"
+label = "In #kitty terminal you can use independent clipboard: map ctrl+s…"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-713/index.md"
+label = "In #kitty terminal you can always highlight something, for examp…"
+
+[[extra.related]]
+path = "@/posts/2026-06-12-1821/index.md"
+label = "Make #tree clickable, tested in #kitty Replace to #eza eza --tre…"
+
+[[extra.related]]
+path = "@/posts/2026-06-13-1823/index.md"
+label = "#shell #productivity #love my mg alias - clickable #grep in #kit…"
 +++
 
 Wow in {{ tag(t="kitty") }} we can switch to a prev active tab:  

@@ -22,6 +22,6 @@ ids = [290]
 
 <https://coub.com/view/2dyuyg>
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/290-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#games\n#gamazine\n#igromania\nSource"
 views = 20
 ids = [871]
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-07-17-2050/index.md"
+label = "#coatofarms #wikimediacommons #russianempire"
+
+[[extra.related]]
+path = "@/posts/2026-04-02-1567/index.md"
+label = "#preservation #wikimediacommons #unavailable"
+
+[[extra.related]]
+path = "@/posts/2026-07-17-2049/index.md"
+label = "My yet another #wikimedia project that I love: #wikimediacommons…"
+
+[[extra.related]]
+path = "@/posts/2026-06-25-1865/index.md"
+label = "Wow, Gemini generates good logos, tried it for the first time #g…"
 +++
 
 Wow on {{ tag(t="wikimedia_commons") }} we can write {{ tag(t="sql") }}, for example to get red categories with files, for a specific user <https://quarry.wmcloud.org/query/100891>
 
-![](5413490665691221626_1260426516_460000890.jpg)
+{{ img(src="5413490665691221626_1260426516_460000890.jpg") }}

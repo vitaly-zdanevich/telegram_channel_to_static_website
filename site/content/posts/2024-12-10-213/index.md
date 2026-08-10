@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = ""
 views = 51
 ids = [213]
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-782/index.md"
+label = "#ad #retro #nokia"
+
+[[extra.related]]
+path = "@/posts/2026-06-18-1841/index.md"
+label = "#ad #newspaper #design #toxic From"
+
+[[extra.related]]
+path = "@/posts/2026-02-18-1116/index.md"
+label = "#pain #ad #event #sergeykulinkovich The old one Унижение и боль…"
 +++
 
 {{ tag(t="ad") }}
 
-![](5384454698196658644_1253666053_456255956.jpg)
+{{ img(src="5384454698196658644_1253666053_456255956.jpg") }}

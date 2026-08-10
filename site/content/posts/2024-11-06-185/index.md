@@ -19,6 +19,18 @@ prev_title = ""
 prev_body = ""
 views = 48
 ids = [185]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1415/index.md"
+label = "#webdesign #oldweb #animation"
+
+[[extra.related]]
+path = "@/posts/2026-06-20-1846/index.md"
+label = "#webdesign #animation #videoeditor #cinelerra"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1121/index.md"
+label = "#webdesign #buttons #animation #game #mmo #myst"
 +++
 
 <https://neovide.dev/features.html>  
@@ -26,6 +38,6 @@ ids = [185]
 {{ tag(t="neovim") }}  
 {{ tag(t="animation") }}
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/185-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "В эпоху рассвета ИИ становится всё актуальнее опера\nГде в альтернативной истории #ussr жив и всё больше переходит под контроль #ai\n#complexnumbers"
 views = 21
 ids = [952]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1387/index.md"
+label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
 +++
 
 {{ tag(t="time_travel") }}  
@@ -34,4 +54,4 @@ ids = [952]
 
 From [https://commons.wikimedia.org/wiki/File:041-170\_Марьино,\_снято\_23\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:041-170_%D0%9C%D0%B0%D1%80%D1%8C%D0%B8%D0%BD%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5460806022583749965_1271442981_460000589.jpg)
+{{ img(src="5460806022583749965_1271442981_460000589.jpg") }}

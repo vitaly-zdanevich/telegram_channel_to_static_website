@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#monument\n#bird\n#eagle\n#belarus\n#globustut\n#year2005\nSource"
 views = 8
 ids = [1262]
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1271/index.md"
+label = "#stones #monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1236/index.md"
+label = "#grave #stones #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1181/index.md"
+label = "#belfry #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1158/index.md"
+label = "#church #belarus #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1149/index.md"
+label = "#obelisk #belarus #globustut"
 +++
 
 {{ tag(t="abandon") }}  
@@ -30,4 +50,4 @@ ids = [1262]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-115_%D0%93%D0%BE%D0%BB%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5267208812643423716_1226367618_460002788.jpg)
+{{ img(src="5267208812643423716_1226367618_460002788.jpg") }}

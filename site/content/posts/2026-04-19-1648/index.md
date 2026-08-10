@@ -17,8 +17,28 @@ next_body = "#typography\n#russian\n#preservation\n#century19\nSource"
 prev_id = 1647
 prev_title = ""
 prev_body = "#captcha"
-views = 17
+views = 18
 ids = [1648]
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1764/index.md"
+label = "#music #sunboy Остров в океане From Про исполнителя"
 +++
 
 {{ tag(t="music") }}  
@@ -35,3 +55,5 @@ ids = [1648]
 {{ youtube(id="ynzDDi9Y044") }}
 
 {{ yandex_music(url="https://music.yandex.ru/iframe/#track/142481672/38048345") }}
+
+<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q110906634">Parabol</a> · <span class="wd-qid">Q110906634</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q55850593">music track with vocals</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P175">performer</a></td><td><a href="https://www.wikidata.org/wiki/Q184827">Tool</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P437">distribution format</a></td><td><a href="https://www.wikidata.org/wiki/Q15982450">music streaming</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1243">ISRC</a></td><td>USVR10100014</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1476">title</a></td><td>Parabol</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1552">has characteristic</a></td><td><a href="https://www.wikidata.org/wiki/Q15975575">studio recording</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P2207">Spotify track ID</a></td><td>3EeoMkZF8NhX9FdCSxG8MB</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P2550">recording or performance of</a></td><td><a href="https://www.wikidata.org/wiki/Q6060444">Parabol</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P4404">MusicBrainz recording ID</a></td><td>5128c310-6d92-4e96-9dc3-5defec033a51</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P10135">recording date</a></td><td>2001</td></tr></tbody></table></figure>

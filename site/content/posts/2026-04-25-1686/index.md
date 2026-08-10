@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#quote\n#book\n#ночьвлиссабоне\n#ремарк"
 views = 17
 ids = [1686]
+
+[[extra.related]]
+path = "@/posts/2025-06-16-576/index.md"
+label = "#photo #batumi #chandelier"
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1848/index.md"
+label = "#batumi Oh my, I live here From"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2025-05-14-534/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-533/index.md"
+label = "From globustut.by #photo #babruysk"
 +++
 
 {{ tag(t="photo") }}  
 {{ tag(t="batumi") }}  
 {{ tag(t="dog") }}
 
-![](5431547614441706367_1264630727_460002175.jpg)
+{{ img(src="5431547614441706367_1264630727_460002175.jpg") }}

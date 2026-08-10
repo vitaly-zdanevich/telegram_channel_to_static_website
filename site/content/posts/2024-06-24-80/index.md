@@ -18,10 +18,10 @@ next_body = "Wow, DIY laptop with easy interchangeable parts\nSad that fanless l
 prev_id = 79
 prev_title = ""
 prev_body = "Love my designs"
-views = 53
+views = 54
 ids = [80]
 +++
 
 Tried {{ tag(t="thunderbird") }} again, after many years - and its good. UI space can be optimized though - to be more compact. Even Google Calendar sync (with an extension).
 
-![](5460889881816455526_1271462506_456251750.jpg)
+{{ img(src="5460889881816455526_1271462506_456251750.jpg") }}

@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#design\n#purple\n#gamepad\n#gamecube\nSource"
 views = 31
 ids = [729]
+
+[[extra.related]]
+path = "@/posts/2026-08-06-2120/index.md"
+label = "#my another small project: #wikidata #pwa to get nearby items, w…"
+
+[[extra.related]]
+path = "@/posts/2026-04-02-1566/index.md"
+label = "#equilibrium That #movie is important to me, but surprise - 33/1…"
+
+[[extra.related]]
+path = "@/posts/2026-03-20-1493/index.md"
+label = "wow #wikibase/#wikidata in #cli"
+
+[[extra.related]]
+path = "@/posts/2025-10-19-706/index.md"
+label = "#wikidata #linux #warcraft3"
+
+[[extra.related]]
+path = "@/posts/2026-02-01-1070/index.md"
+label = "#logo #wikimedia #wikidata #data From"
 +++
 
 I continue to write my script for importing ratings from {{ tag(t="metacritic") }} reviewers, creating {{ tag(t="wikidata") }} items for sites that no longer exists, and trying to download these dead sites from [web.archive.org](http://web.archive.org/) so that I can later put them on Gitlab’s free static hosting, because there is no content search on [web.archive.org](http://web.archive.org/)
 
-![](5190885594522320570_1208597234_456261306.jpg)
+{{ img(src="5190885594522320570_1208597234_456261306.jpg") }}

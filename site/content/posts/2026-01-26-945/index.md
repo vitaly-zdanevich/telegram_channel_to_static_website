@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#aws\n#awslambda\nFrom"
 views = 13
 ids = [945]
+
+[[extra.related]]
+path = "@/posts/2026-01-25-939/index.md"
+label = "#aws CTO Werner Vogels Mentioned: From"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-944/index.md"
+label = "#aws #awslambda From"
+
+[[extra.related]]
+path = "@/posts/2026-06-11-1818/index.md"
+label = "#aws #billing #cost #graph"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-943/index.md"
+label = "#aws #cpu #memory #ram From"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-941/index.md"
+label = "#aws custom #cpu: dropped the lid #scalping for the better #cool…"
 +++
 
 {{ tag(t="aws") }}  
@@ -28,8 +48,8 @@ ids = [945]
 
 TRN3 compute sled  
 
-From <https://youtu.be/JeUpUK0nhC0?t=4042>
+From [https://youtu.be/JeUpUK0nhC0?t=4042](<https://youtu.be/JeUpUK0nhC0?t=4042> "AWS re:Invent 2025 - Keynote with Peter DeSantis and Dave Brown")
 
 {{ youtube(id="JeUpUK0nhC0") }}
 
-![](5456393497737890606_1270415610_460000046.jpg)
+{{ img(src="5456393497737890606_1270415610_460000046.jpg") }}

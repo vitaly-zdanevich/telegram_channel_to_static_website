@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#software\n#tui\n#torrent\nSource"
 views = 41
 ids = [809]
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2026-03-05-1334/index.md"
+label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
 +++
 
 {{ tag(t="cli") }}  
@@ -28,4 +48,4 @@ ids = [809]
 
 <https://www.instagram.com/terminaltrove>
 
-![](5350620010994405337_1245788301_460001241.jpg)
+{{ img(src="5350620010994405337_1245788301_460001241.jpg") }}

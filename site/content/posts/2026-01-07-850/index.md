@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#photo\n#belarus\n#globustut\n#village\nSource"
 views = 13
 ids = [850]
+
+[[extra.related]]
+path = "@/posts/2026-01-08-866/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-865/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-864/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-863/index.md"
+label = "#belarus #building #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-862/index.md"
+label = "#belarus #building #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -28,4 +48,4 @@ ids = [850]
 
 [Source](https://commons.wikimedia.org/wiki/File:025-247_%D0%93%D1%80%D0%BE%D0%B7%D0%BE%D0%B2,_30-10-2004.jpg)
 
-![](5402068444980645673_1257767073_460001065.jpg)
+{{ img(src="5402068444980645673_1257767073_460001065.jpg") }}

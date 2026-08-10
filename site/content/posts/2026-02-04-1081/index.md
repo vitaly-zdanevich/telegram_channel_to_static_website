@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#ussr\n#history\nСегодня их существует пять плюс три молитвенных дома. А ведь еще в 1939 году, до прихода коммунистов, мечетей по стране было больше сорока"
 views = 14
 ids = [1081]
+
+[[extra.related]]
+path = "@/posts/2025-07-04-595/index.md"
+label = "#preservation #belarus #library #science Для меня было открытием…"
+
+[[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-857/index.md"
+label = "#belarus #minsk 1941-1944"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2083/index.md"
+label = "#abandoned #veterinary #belarus"
+
+[[extra.related]]
+path = "@/posts/2026-04-02-1567/index.md"
+label = "#preservation #wikimediacommons #unavailable"
 +++
 
 {{ tag(t="preservation") }}  
@@ -29,4 +49,4 @@ geo block
 
 I uploaded a lot from [https://moneymuseum.by](https://moneymuseum.by/) to Commons, and will continue.
 
-![](5195454305857638732_1209660970_460001612.jpg)
+{{ img(src="5195454305857638732_1209660970_460001612.jpg") }}

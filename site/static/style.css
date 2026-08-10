@@ -29,7 +29,34 @@ video { display: block; }
 audio { width: 100%; }
 .yt-embed { position: relative; aspect-ratio: 16 / 9; margin: 1rem 0; }
 .yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.yt-link { font-size: .9em; margin-top: .25rem; }
+.yt-link { display: block; font-size: .9em; margin-top: .25rem; }
+.contact-btn { display: inline-block; padding: .45rem .9rem; border-radius: 6px; background: var(--code-bg); color: var(--fg); border: 1px solid var(--border); text-decoration: none; font-size: .9em; transition: background .15s ease, border-color .15s ease, transform .1s ease; }
+.contact-btn:hover { background: var(--input-bg); border-color: var(--muted); transform: translateY(-1px); }
+.contact-btn:active { background: var(--border); transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .contact-btn { transition: none; } .contact-btn:hover { transform: none; } }
+.about-photo { max-width: 320px; width: 100%; height: auto; border-radius: 10px; display: block; margin: .5rem 0; }
+/* Wikidata statements table (About page + in-post). */
+.wd { margin: 1rem 0; overflow-x: auto; }
+.wd figcaption { font-weight: 600; margin-bottom: .3rem; }
+.wd .wd-qid { color: var(--muted); font-weight: 400; font-size: .85em; }
+.wd table { border-collapse: collapse; width: 100%; font-size: .9em; }
+.wd th, .wd td { text-align: left; padding: .3rem .6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+.wd th { color: var(--muted); font-weight: 500; }
+.wd-spoiler { margin: 1rem 0; }
+.wd-spoiler > summary { cursor: pointer; user-select: none; color: var(--link); }
+.wd-spoiler > summary:hover { text-decoration: underline; }
+.wd-spoiler .wd { margin-top: .5rem; }
+/* Image carousel (opt-in) — swipe is native CSS scroll-snap; JS adds arrows/dots. */
+.carousel { position: relative; margin: 1rem 0; }
+.carousel-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-track img { scroll-snap-align: center; flex: 0 0 100%; width: 100%; height: auto; }
+.carousel-prev, .carousel-next { position: absolute; top: 50%; transform: translateY(-50%); width: 2.2rem; height: 2.2rem; border: 0; border-radius: 50%; background: rgba(0,0,0,.55); color: #fff; font-size: 1.3rem; line-height: 1; cursor: pointer; }
+.carousel-prev { left: .4rem; }
+.carousel-next { right: .4rem; }
+.carousel-dots { display: flex; gap: .35rem; justify-content: center; margin-top: .4rem; }
+.carousel-dots button { width: .5rem; height: .5rem; padding: 0; border: 0; border-radius: 50%; background: var(--muted); cursor: pointer; }
+.carousel-dots button.active { background: var(--fg); }
 /* CSS-only click-to-load facade (no JS): the iframe is display:none until the
    hidden checkbox is checked, so loading=lazy defers its fetch until click. */
 .yt-embed .yt-toggle { position: absolute; width: 0; height: 0; opacity: 0; }
@@ -42,18 +69,56 @@ audio { width: 100%; }
 .ap-embed .ap-link { display: block; font-size: .85rem; margin-top: .3rem; }
 .ym-embed { margin: 1rem 0; }
 .ym-embed iframe { width: 100%; max-width: 900px; height: 180px; border: 0; }
+/* Genius (and, if ever embedded, Reddit) ship a light-theme widget with no dark
+   option; under a dark OS theme approximate one by inverting luminance and
+   rotating hues back so colours stay roughly true. The Genius song embed injects
+   an inline `.rg_embed` card (not always an iframe), so target both — but not
+   `.rg_embed_link`, the fallback link left after the offline pass strips the JS. */
+@media (prefers-color-scheme: dark) {
+  .rg_embed,
+  iframe[src*="genius.com"],
+  iframe[src*="redditmedia.com"],
+  iframe[src*="embed.reddit.com"] { filter: invert(1) hue-rotate(180deg); }
+}
+/* Pinterest offers no dark Pin-widget theme. Its script injects the footer into
+   the host page with its current generated logging attributes, so recolour only
+   its two white containers and leave the Pin image and avatar untouched. */
+@media (prefers-color-scheme: dark) {
+  .pin-embed [data-pin-log='embed_pin_follow'][class*='_footer'],
+  .pin-embed [data-pin-log='embed_pin_follow'][class*='_container'] {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+  }
+}
 .ym-embed .ym-link { display: block; font-size: .85rem; margin-top: .3rem; }
 blockquote.instagram-media { max-width: 540px; margin: 1rem 0; padding: .5rem 1rem; }
 .sp-embed { margin: 1rem 0; }
 .sp-embed iframe { width: 100%; max-width: 660px; height: 152px; border: 0; border-radius: 12px; }
 .sp-embed .sp-link { display: block; font-size: .85rem; margin-top: .3rem; }
+.bc-embed { margin: 1rem 0; }
+.bc-embed iframe { width: 100%; max-width: 400px; height: 120px; border: 0; }
+.related { margin: 1rem 0 0; font-size: .9em; }
+.related ul { margin: .2rem 0 0; padding-left: 1.2rem; }
+/* Poll → static result bars (no JS). */
+.tg-poll { margin: 1rem 0; padding: .6rem .8rem; border: 1px solid var(--border); border-radius: 8px; }
+.tg-poll-q { font-weight: 600; margin-bottom: .2rem; }
+.tg-poll-kind { color: var(--muted); font-size: .8em; margin-bottom: .5rem; }
+.tg-poll-opts { list-style: none; margin: 0; padding: 0; }
+.tg-poll-opts li { margin: .45rem 0; }
+.tg-poll-row { display: flex; justify-content: space-between; gap: .5rem; font-size: .9em; }
+.tg-poll-pct { color: var(--muted); flex: none; }
+.tg-poll-bar { height: 6px; margin-top: .25rem; border-radius: 3px; background: var(--link); min-width: 2px; }
+.tg-poll-voters { color: var(--muted); font-size: .85em; margin-top: .5rem; }
+.vk-playlist { margin: 1rem 0; }
+/* VK's widget is light-only; approximate a dark variant under a dark OS theme. */
+@media (prefers-color-scheme: dark) { .vk-playlist iframe { filter: invert(1) hue-rotate(180deg); } }
 .yt-embed .yt-toggle:checked ~ .yt-facade { display: none; }
 .yt-embed .yt-toggle:checked ~ .yt-frame { display: block; }
 .tag { white-space: nowrap; }
 pre { background: var(--code-bg); padding: .75rem; border-radius: 4px; overflow-x: auto; }
 code { background: var(--code-bg); padding: .1rem .3rem; border-radius: 4px; }
 pre code { padding: 0; background: none; }
-.site-header { display: flex; gap: .6rem; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.site-header { display: flex; gap: .6rem; align-items: center; padding-bottom: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
 .site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
@@ -101,10 +166,12 @@ blockquote { border-left: 3px solid var(--border); margin: .5rem 0; padding-left
 /* Calendar */
 .cal-years { margin: .5rem 0 1.5rem; line-height: 1.9; }
 .cal-years a { margin-right: .7rem; }
+.cal-ycount { color: var(--muted); font-size: .65em; font-weight: 400; }
 .cal-year { margin: 1.5rem 0 .5rem; }
 .cal-months { display: flex; flex-wrap: wrap; gap: 1.4rem; }
 table.cal { border-collapse: collapse; font-size: .8rem; }
 table.cal caption { text-align: left; font-weight: 700; padding-bottom: .3rem; }
+table.cal caption .cal-mcount { color: var(--muted); font-weight: 400; font-size: .85em; }
 table.cal th { font-weight: 400; color: var(--muted); padding: .1rem; text-align: center; }
 table.cal td { width: 1.95rem; height: 1.7rem; text-align: center; padding: 0; }
 table.cal td.on a { display: block; line-height: 1.7rem; border-radius: 4px; text-decoration: none; background: var(--code-bg); font-weight: 700; }

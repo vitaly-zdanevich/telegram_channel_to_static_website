@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Top 1% by #python, hm, not sure why"
 views = 8
 ids = [939]
+
+[[extra.related]]
+path = "@/posts/2026-01-25-944/index.md"
+label = "#aws #awslambda From"
+
+[[extra.related]]
+path = "@/posts/2026-01-26-945/index.md"
+label = "#aws #silicon #graviton TRN3 compute sled From"
+
+[[extra.related]]
+path = "@/posts/2026-06-11-1818/index.md"
+label = "#aws #billing #cost #graph"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-943/index.md"
+label = "#aws #cpu #memory #ram From"
+
+[[extra.related]]
+path = "@/posts/2026-01-25-941/index.md"
+label = "#aws custom #cpu: dropped the lid #scalping for the better #cool…"
 +++
 
 {{ tag(t="aws") }} CTO Werner Vogels  
@@ -29,6 +49,6 @@ Mentioned:
 
 <https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/>  
 
-From <https://youtu.be/3Y1G9najGiI?t=2020>
+From [https://youtu.be/3Y1G9najGiI?t=2020](<https://youtu.be/3Y1G9najGiI?t=2020> "AWS re:Invent 2025 - Keynote with Dr. Werner Vogels")
 
 {{ youtube(id="3Y1G9najGiI") }}

@@ -20,12 +20,32 @@ prev_title = ""
 prev_body = "wow #wikibase/#wikidata in #cli"
 views = 24
 ids = [1494]
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1090/index.md"
+label = "#linux #gamex"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-623/index.md"
+label = "#games #steam Can you imagine that, I know this guy"
+
+[[extra.related]]
+path = "@/posts/2025-07-24-608/index.md"
+label = "So many hours #steam #masterororion"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-587/index.md"
+label = "In 2024 to #steam were published 19000 #games, its 52 games per…"
 +++
 
 {{ tag(t="steam") }}: almost 25% is on {{ tag(t="linux") }}?  
 
 <https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=linux>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -25,4 +25,4 @@ Guess the country
 
 [Source](https://www.reddit.com/r/UrbanHell/comments/1ivohuw/the_city_of_tianducheng_china)
 
-![](5366044660184771940_1249379632_456256868.jpg)
+{{ img(src="5366044660184771940_1249379632_456256868.jpg") }}

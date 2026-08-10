@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#painting\n#bible\n#gustavedore\n#death\n#horse\n#year1865\nGustave Dore - Death on the Pale Horse\nSource"
 views = 25
 ids = [761]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-755/index.md"
+label = "#painting #bible #gustavedore #year1891 The Bible panorama, or T…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-754/index.md"
+label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
+
+[[extra.related]]
+path = "@/posts/2025-11-10-760/index.md"
+label = "#painting #bible #gustavedore #death #horse #year1865 Gustave Do…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-765/index.md"
+label = "#painting #gustavedore Woman of the Apocalypse"
 +++
 
 {{ tag(t="painting") }}  
@@ -30,4 +50,4 @@ The Battle of Nicaea
 
 [Source](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_The_Battle_of_Nicaea.jpg)
 
-![](5229215222705359837_1217521546_460000221.jpg)
+{{ img(src="5229215222705359837_1217521546_460000221.jpg") }}

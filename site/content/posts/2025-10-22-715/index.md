@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#consciousness\nSource"
 views = 26
 ids = [715]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
+
+[[extra.related]]
+path = "@/posts/2025-02-08-350/index.md"
+label = "#car #ussr"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2136/index.md"
+label = "#death #car #sound"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-654/index.md"
+label = "#russia #israel #map"
+
+[[extra.related]]
+path = "@/posts/2025-03-23-440/index.md"
+label = "#music #car Mick Gordon - BFG division from #doom3"
 +++
 
 {{ tag(t="car") }}  
@@ -27,6 +47,6 @@ ids = [715]
 
 [Source](https://www.instagram.com/p/DP1neI_CDuA)
 
-{{ instagram(url="https://www.instagram.com/p/DP1neI_CDuA/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/715-01.mp4") }}
 
 {{ tag(t="video") }}

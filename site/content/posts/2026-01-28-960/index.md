@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#door\n#несвиж\n#year2005\n#globustut\nFrom"
 views = 8
 ids = [960]
+
+[[extra.related]]
+path = "@/posts/2026-01-28-961/index.md"
+label = "#belarus #architecture #church #несвиж #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-926/index.md"
+label = "#belarus #architecture #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-920/index.md"
+label = "#belarus #architecture #year2005 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,4 +50,4 @@ ids = [960]
 
 From [https://commons.wikimedia.org/wiki/File:042-399\_Несвиж,\_снято\_29\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:042-399_%D0%9D%D0%B5%D1%81%D0%B2%D0%B8%D0%B6,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5460806022583750244_1271442981_460000868.jpg)
+{{ img(src="5460806022583750244_1271442981_460000868.jpg") }}

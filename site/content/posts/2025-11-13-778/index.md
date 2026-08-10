@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#film\n#kindzadza\n#batumi\nСоедините меня с Батуми"
 views = 61
 ids = [778]
+
+[[extra.related]]
+path = "@/posts/2025-11-13-777/index.md"
+label = "#film #kindzadza #batumi Соедините меня с Батуми"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-774/index.md"
+label = "#film #kindzadza #batumi Кин-дза-дза, на девятой минуте Скрипач…"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2037/index.md"
+label = "#kindzadza #trailer"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-776/index.md"
+label = "#quote #kindzadza Фильм был изначально запланирован как двухсери…"
 +++
 
 {{ tag(t="film") }}  

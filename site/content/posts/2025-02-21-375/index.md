@@ -19,13 +19,31 @@ prev_title = ""
 prev_body = "Банк Империал - Конрад III\n#ad is old, around 2000 year? This bank is not exists anymore.\nSource"
 views = 55
 ids = [375]
+
+[[extra.related]]
+path = "@/posts/2026-05-31-1802/index.md"
+label = "With #llm I added 1920x1200 to #armiesofexigo #game And increase…"
+
+[[extra.related]]
+path = "@/posts/2025-11-20-786/index.md"
+label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1856/index.md"
+label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1855/index.md"
+label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
 +++
 
 {{ tag(t="game") }}  
 {{ tag(t="armies_of_exigo") }}  
 
-[Source](https://youtu.be/VVbQ1MDToLs)
+[Source](<https://youtu.be/VVbQ1MDToLs> "Armies of Exigo | Review of a Forgotten WarCraft 3 Successor")
 
 {{ youtube(id="VVbQ1MDToLs") }}
-
-📎 Armies_of_Exigo_｜_Review_of_a_forgotten_WarCraft_3_Successor_VVbQ1MDToLs.webm *(not archived)*

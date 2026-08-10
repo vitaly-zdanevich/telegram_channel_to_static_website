@@ -17,12 +17,12 @@ next_body = "I built a very powerful PC, liquid cooling, 64 GB of DDR5, but Face
 prev_id = 330
 prev_title = ""
 prev_body = "#music"
-views = 53
+views = 54
 ids = [331]
 +++
 
 Batumi real estate market
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

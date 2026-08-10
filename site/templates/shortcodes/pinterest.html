@@ -1,1 +1,1 @@
-<a data-pin-do="embedPin" href="{{ url }}">View on Pinterest</a><script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<div class="pin-embed"><a data-pin-do="embedPin" data-pin-width="large" href="{{ url }}">View on Pinterest</a>{% if not config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js"></script>{% endif %}</div>

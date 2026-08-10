@@ -19,6 +19,14 @@ prev_title = ""
 prev_body = "#stat\n#oscar\n#books\n#dantealigieri\nSource"
 views = 34
 ids = [570]
+
+[[extra.related]]
+path = "@/posts/2025-06-13-568/index.md"
+label = "#miracle #dantealigieri Чудо"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-569/index.md"
+label = "#stat #oscar #books #dantealigieri"
 +++
 
 {{ tag(t="meditation") }}  
@@ -26,6 +34,6 @@ ids = [570]
 
 [Source](https://www.instagram.com/p/DGpQj-jvZQ3)
 
-{{ instagram(url="https://www.instagram.com/p/DGpQj-jvZQ3/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/570-01.mp4") }}
 
 {{ tag(t="video") }}

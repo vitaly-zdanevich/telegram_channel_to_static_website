@@ -20,12 +20,24 @@ prev_title = ""
 prev_body = "#webdesign\n#windows95"
 views = 13
 ids = [1077]
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2105/index.md"
+label = "#theater #japan #frog #death By silk.echo"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1414/index.md"
+label = "#webdesign #ping #anime #japan"
+
+[[extra.related]]
+path = "@/posts/2025-03-11-404/index.md"
+label = "#video #ad #japan #ai #girl #virtual"
 +++
 
 {{ tag(t="japan") }}  
 
-From <https://www.youtube.com/watch?v=bgrv5vuqd7g>
+From [https://www.youtube.com/watch?v=bgrv5vuqd7g](<https://www.youtube.com/watch?v=bgrv5vuqd7g> "БЕЗДОМНЫЕ АЛЬТУШКИ ИЗ ЯПОНИИ | TOYOKO KIDS")
 
 {{ youtube(id="bgrv5vuqd7g") }}
 
-![](5188455076828221944_1208031335_460001784.jpg)
+{{ img(src="5188455076828221944_1208031335_460001784.jpg") }}

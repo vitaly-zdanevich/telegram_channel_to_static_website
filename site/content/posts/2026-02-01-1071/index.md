@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#logo\n#wikimedia\n#wikidata\n#data\nFrom"
 views = 14
 ids = [1071]
+
+[[extra.related]]
+path = "@/posts/2025-10-03-695/index.md"
+label = "#journal After traveling through multiple countries, I feel that…"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2130/index.md"
+label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
 +++
 
 {{ tag(t="journal") }}  
@@ -27,4 +47,4 @@ ids = [1071]
 {{ tag(t="legs") }}  
 {{ tag(t="year_2005") }}
 
-![](5188525531471744627_1208047739_460000883.jpg)
+{{ img(src="5188525531471744627_1208047739_460000883.jpg") }}

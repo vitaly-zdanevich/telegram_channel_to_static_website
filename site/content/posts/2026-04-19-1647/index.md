@@ -20,8 +20,12 @@ prev_title = ""
 prev_body = "#webdesign\n#northkorea\n#radio\n#podcast"
 views = 18
 ids = [1647]
+
+[[extra.related]]
+path = "@/posts/2026-07-08-2036/index.md"
+label = "#life #death #captcha #cat #usb"
 +++
 
 {{ tag(t="captcha") }}
 
-![](5415658559023814537_1260931268_460003209.jpg)
+{{ img(src="5415658559023814537_1260931268_460003209.jpg") }}

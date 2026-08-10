@@ -17,8 +17,28 @@ next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSour
 prev_id = 1686
 prev_title = ""
 prev_body = "#photo\n#batumi\n#dog"
-views = 16
+views = 18
 ids = [1687]
+
+[[extra.related]]
+path = "@/posts/2026-02-08-1100/index.md"
+label = "#ai Trying #codex to organize scans - to create a folder for eve…"
+
+[[extra.related]]
+path = "@/posts/2026-02-21-1120/index.md"
+label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+
+[[extra.related]]
+path = "@/posts/2026-06-23-1850/index.md"
+label = "Моя лекция про мой Telegram бот YouTube, с поиском, который возв…"
+
+[[extra.related]]
+path = "@/posts/2026-04-30-1729/index.md"
+label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 +++
 
 {{ tag(t="my") }}  

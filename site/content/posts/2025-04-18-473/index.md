@@ -28,4 +28,4 @@ ids = [473]
 
 <https://multiplayer.it/notizie/e-morto-il-grande-viktor-antonov-lart-director-di-half-life-2-e-dishonored.html>
 
-![](5192688952505657959_1209017111_456256103.jpg)
+{{ img(src="5192688952505657959_1209017111_456256103.jpg") }}

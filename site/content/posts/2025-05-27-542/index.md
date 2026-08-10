@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#iphone\n#apple\n#newton\n10 years gap.\nSource"
 views = 53
 ids = [542]
+
+[[extra.related]]
+path = "@/posts/2026-01-13-876/index.md"
+label = "#macOS: to install #git I need 25 GB"
+
+[[extra.related]]
+path = "@/posts/2025-06-27-591/index.md"
+label = "#git #gitgraph"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1085/index.md"
+label = "#logo #gitlab #git"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-907/index.md"
+label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
+
+[[extra.related]]
+path = "@/posts/2025-12-21-810/index.md"
+label = "#software #tui #git"
 +++
 
 {{ tag(t="git") }}  
 
 [Source](https://www.facebook.com/photo/?fbid=1114418330706511&amp;set=a.447803574034660)
 
-![](5310099855001120614_1236353967_456257382.jpg)
+{{ img(src="5310099855001120614_1236353967_456257382.jpg") }}

@@ -16,7 +16,7 @@ next_body = "#gitlab: I love that it is possible to push to a repo that is not e
 prev_id = 48
 prev_title = ""
 prev_body = "Overlay toolbars in Firefox, like in Safari!"
-views = 53
+views = 54
 ids = [49]
 +++
 

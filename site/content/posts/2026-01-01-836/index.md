@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#petersburg\n#theater"
 views = 23
 ids = [836]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -28,4 +48,4 @@ ids = [836]
 
 [https://ru.wikipedia.org/wiki/Участник:Balabinrm](https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:Balabinrm)
 
-![](5384459448434233871_1253667159_460001807.jpg)
+{{ img(src="5384459448434233871_1253667159_460001807.jpg") }}

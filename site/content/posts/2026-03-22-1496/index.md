@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#steam: almost 25% is on #linux?"
 views = 20
 ids = [1496]
+
+[[extra.related]]
+path = "@/posts/2025-04-05-461/index.md"
+label = "#belarus #belarussian #culture"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1733/index.md"
+label = "#belarus #belarussian #arabic #language"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [1496]
 
 <https://bnkorpus.info/kazki/classification/%D0%9A%D0%B0%D0%B7%D0%BA%D1%96%20%D0%BF%D1%80%D0%B0%20%D0%B6%D1%8B%D0%B2%D1%91%D0%BB>
 
-![](5332599354717573599_1241592540_460001759.jpg)
+{{ img(src="5332599354717573599_1241592540_460001759.jpg") }}

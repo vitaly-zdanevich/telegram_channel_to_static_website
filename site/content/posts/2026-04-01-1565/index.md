@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#god\n#smartphone\n#game"
 views = 21
 ids = [1565]
+
+[[extra.related]]
+path = "@/posts/2024-10-25-165/index.md"
+label = "#rice"
+
+[[extra.related]]
+path = "@/posts/2026-05-12-1755/index.md"
+label = "#ai #screenshot from"
+
+[[extra.related]]
+path = "@/posts/2026-06-16-1839/index.md"
+label = "#interior #refrigerator #green From"
+
+[[extra.related]]
+path = "@/posts/2026-05-13-1759/index.md"
+label = "Fix my #style for #mdn, #screenshot before and after Sad that UI…"
+
+[[extra.related]]
+path = "@/posts/2025-12-21-806/index.md"
+label = "#alien #poster #film #blackandwhite"
 +++
 
 {{ tag(t="alien") }}  
@@ -32,4 +52,4 @@ ids = [1565]
 
 [Source](https://udeproject.sourceforge.net/screenshots.html)
 
-![](5363921743753450846_1248885352_460002654.jpg)
+{{ img(src="5363921743753450846_1248885352_460002654.jpg") }}

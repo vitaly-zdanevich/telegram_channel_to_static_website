@@ -19,6 +19,6 @@ views = 48
 ids = [96]
 +++
 
-<https://youtu.be/nkcKaNqfykg>
+[https://youtu.be/nkcKaNqfykg](<https://youtu.be/nkcKaNqfykg> "Gatebox - Promotion Movie \"OKAERI\"_english")
 
 {{ youtube(id="nkcKaNqfykg") }}

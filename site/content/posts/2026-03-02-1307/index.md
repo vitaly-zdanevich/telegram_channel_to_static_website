@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Magic that I can say #codex to download all scan - and I get it, for #commons"
 views = 16
 ids = [1307]
+
+[[extra.related]]
+path = "@/posts/2024-08-31-141/index.md"
+label = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait…"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-653/index.md"
+label = "#wikimediafoundation #money"
+
+[[extra.related]]
+path = "@/posts/2025-09-01-652/index.md"
+label = "#wikimediafoundation #money"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-619/index.md"
+label = "Returned to uploading of artifacts from moneymuseum.by, through…"
+
+[[extra.related]]
+path = "@/posts/2026-06-13-1822/index.md"
+label = "#tbc #money This is why we have #crypto?"
 +++
 
 {{ tag(t="couchsurfing") }}  
@@ -29,4 +49,4 @@ ids = [1307]
 
 <https://couchers.org/blog/2026/02/16/couchers-inc-financials-2025>
 
-![](5271994226549921339_1227481809_460002875.jpg)
+{{ img(src="5271994226549921339_1227481809_460002875.jpg") }}

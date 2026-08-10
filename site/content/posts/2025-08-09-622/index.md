@@ -17,7 +17,7 @@ next_body = "#games\n#steam\nCan you imagine that, I know this guy"
 prev_id = 621
 prev_title = ""
 prev_body = "#anime\n#gpu\nSource"
-views = 163
+views = 165
 ids = [622]
 +++
 
@@ -25,6 +25,6 @@ ids = [622]
 
 > AREA 5150:  demo for the original IBM PC (4.77MHz 8088), CGA video (RGBI monitor), PC speaker, 570K+ free RAM.  <br>This is the party version, released by CRTC+Hornet on 6 Aug. at Evoke 2022, voted 1st in the Alternative Demo compo.  <br>Video capture from the real hardware by Jim Leonard (Trixter).  For best fidelity, watch @ 60fps at the highest resolution supported by your display.  <br>  <br>VileR: code ■ graphics  <br>reenigne: code ■ hardware ■ tools  <br>UtterChaos: code  <br>Trixter: loader ■ decomp ■ wrangler  <br>Shiru1bit: music  <br>cTrix: music  <br>phoenix: additional support
 
-[Source](https://youtu.be/fWDxdoRTZPc)
+[Source](<https://youtu.be/fWDxdoRTZPc> "Area 5150 by CRTC & Hornet (Party Version) / IBM PC+CGA Demo, Hardware Capture")
 
 {{ youtube(id="fWDxdoRTZPc") }}

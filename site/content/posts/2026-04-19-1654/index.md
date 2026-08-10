@@ -18,8 +18,28 @@ next_body = "#preservation\n#logo\n#symbol\n#damage"
 prev_id = 1649
 prev_title = ""
 prev_body = "#typography\n#russian\n#preservation\n#century19\nSource"
-views = 21
+views = 22
 ids = [1654]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }}  
@@ -27,4 +47,4 @@ ids = [1654]
 {{ tag(t="qwen") }}  
 {{ tag(t="terminal") }}
 
-![](5417910358837498735_1261455556_460002159.jpg)
+{{ img(src="5417910358837498735_1261455556_460002159.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#fine\n#responsibility\nSource"
 views = 44
 ids = [467]
+
+[[extra.related]]
+path = "@/posts/2025-11-06-743/index.md"
+label = "Emotional reasoning is a cognitive process by which an individua…"
+
+[[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1878/index.md"
+label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-482/index.md"
+label = "#cat #psy"
+
+[[extra.related]]
+path = "@/posts/2025-04-09-464/index.md"
+label = "Бежевый #psy #childhood"
 +++
 
 *Пройти тест, узнай кто ты*  
@@ -30,4 +50,4 @@ ids = [467]
 
 [Source](https://www.threads.net/@_vitla_/post/DIS1LDItE15/media)
 
-![](5463124415861617785_1271982774_456258681.jpg)
+{{ img(src="5463124415861617785_1271982774_456258681.jpg") }}

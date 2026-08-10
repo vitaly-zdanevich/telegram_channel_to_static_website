@@ -17,8 +17,28 @@ next_body = "#belarus\n#abandone\n#trees\n#year2015\nSource.jpg)"
 prev_id = 1878
 prev_title = ""
 prev_body = "#psy\n#food\nХодим без настроения, срываемся, ругаемся"
-views = 8
+views = 13
 ids = [1879]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1521/index.md"
+label = "#cementery #virginmary #blue #monument #belarus #ивашковцы #glob…"
+
+[[extra.related]]
+path = "@/posts/2026-07-01-1880/index.md"
+label = "#belarus #abandone #trees #year2015 Source.jpg"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1373/index.md"
+label = "#cementery #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1255/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1248/index.md"
+label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
 +++
 
 {{ tag(t="belarus") }}  

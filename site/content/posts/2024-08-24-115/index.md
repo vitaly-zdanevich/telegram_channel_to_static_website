@@ -25,4 +25,4 @@ Flashbacks
 
 <https://moneymuseum.by/ru/collections/bonistika/?display=tile&PAGEN_1=18>
 
-![](5352634866048557292_1246257421_456253676.jpg)
+{{ img(src="5352634866048557292_1246257421_456253676.jpg") }}

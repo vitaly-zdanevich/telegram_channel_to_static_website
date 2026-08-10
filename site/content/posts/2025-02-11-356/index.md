@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#music\n#anime\n#rammstein"
 views = 46
 ids = [356]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+
+[[extra.related]]
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="ai") }}  
@@ -27,4 +47,4 @@ ids = [356]
 
 [Source](https://www.linkedin.com/posts/vladtukhtarov_did-you-know-that-prompt-engineering-isnt-activity-7293653993044529152-V7hd)
 
-![](5287487659641531079_1231089155_456256199.jpg)
+{{ img(src="5287487659641531079_1231089155_456256199.jpg") }}

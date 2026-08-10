@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "Как я загружаю в Wikimedia Commons, день из жизни\nУпоминаемые мои скрипты:"
 views = 35
 ids = [163]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}
 
-![](5251239312484331082_1222649429_456257098.jpg)
+{{ img(src="5251239312484331082_1222649429_456257098.jpg") }}

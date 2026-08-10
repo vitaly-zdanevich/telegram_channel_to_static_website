@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#game\n#sega\n#segagenesis\n#revive\n#ultracore\n#wikipedia\nUltracore (originally known as Hardcore) is a run and gun video game developed by DICE. Originally due to be released for Amiga, Genesis, and Sega CD platforms, the game was canceled by its publisher, Psygnosis, in 1994 after it had been almost finished. The game was salvaged by publisher Strictly Limited Games and released together with the Mega Sg aftermarket console in March 2019. A version compatible with original Sega Genesis systems was released in Japan in October 2019. Ports for Nintendo Switch, PlayStation 4, and PlayStation Vita were released in 2020; ports for Xbox One and Xbox Series X/S were released in December 2023"
 views = 12
 ids = [891]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1384/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1280/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-923/index.md"
+label = "#belarus #village #year2005 #abandone"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-909/index.md"
+label = "#belarus #village #year2004 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-20-908/index.md"
+label = "#belarus #village #year2004 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -28,4 +48,4 @@ ids = [891]
 
 [Source](https://ru.wikipedia.org/wiki/%D0%AF%D1%81%D0%B5%D0%BD%D0%B5%D1%86_(%D0%91%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD)#%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
-![](5431753231706033102_1264678601_460000206.jpg)
+{{ img(src="5431753231706033102_1264678601_460000206.jpg") }}

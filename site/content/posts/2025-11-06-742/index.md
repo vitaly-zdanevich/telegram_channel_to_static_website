@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#music\n#musicrussian\n#нтр\n[Куплет 1]\nУ меня одна только радость на лице\nВедь всегда найдётся такая точка c\nЧто f(b) - f(a) / b - a\nРавно f'(c). Оу, вот это да!\nЧто-то я забылся, пора знать честь\nF на [a; b] непрерывна и производная есть\nДавно прошли времена и хип-хопа и гранжа\nЧто же вечно? Теорема Лагранжа!\n[Припев]\nПерелети-переплыви туда-обратно Ла-Манш\nТы не найдёшь никого круче, чем Жозеф Луи Лагранж\nЗабудут Жоржа Помпиду (кого?), и даже Ассанжа\nНо будут помнить и в аду теорему Лагранжа\nПерелети-переплыви туда-обратно Ла-Манш\nТы не найдёшь никого круче, чем Жозеф Луи Лагранж\nЗабудут Жоржа Помпиду (кого?), и даже Ассанжа\nНо будут помнить и в аду теорему Лагранжа\n[Куплет 2]\nТеорема, в сущности, сдаётся без боя:\nСделаем из f к-к-к-кое-что другое\nВычтем f от a, юные зрители\nЕщё вычтем дробь, у неё в числителе:\nF(b) - f(a) на x - a\nВ знаменателе b - a... Ну как, ещё не спятили?\nЗачем конструкция? Не поняли что ли?\nДля неё же выполняется теорема Ролля!\n[Припев]\nПерелети-переплыви…"
 views = 25
 ids = [742]
+
+[[extra.related]]
+path = "@/posts/2025-11-14-780/index.md"
+label = "#webdesign #webdesigngames #pink"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-779/index.md"
+label = "#webdesign #webdesignold #webdesigngames Year: 2000"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,6 +48,6 @@ Like horizontal scrolling.
 
 [https://www.gamecrate.com](https://www.gamecrate.com/)
 
-{{ video(src="01.mp4") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/742-01.mp4") }}
 
 {{ tag(t="video") }}

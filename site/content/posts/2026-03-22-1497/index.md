@@ -18,8 +18,28 @@ next_body = "#music\n#poppy\n#8bitlike\n[Chorus]\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-
 prev_id = 1496
 prev_title = ""
 prev_body = "#webdesign\n#belarus\n#belarussian"
-views = 19
+views = 20
 ids = [1497]
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -32,6 +52,6 @@ ids = [1497]
 
 <https://eu.pahis.fi/product/30466/rocksax-poppy-disagree---crossbody-bag>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#tiktok\n#court\nSource"
 views = 53
 ids = [348]
+
+[[extra.related]]
+path = "@/posts/2025-01-21-322/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-181/index.md"
+label = "#girl"
+
+[[extra.related]]
+path = "@/posts/2025-03-13-408/index.md"
+label = "#girl #face"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-340/index.md"
+label = "#girl #nails"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
 +++
 
 {{ tag(t="spider") }}  
@@ -27,4 +47,4 @@ ids = [348]
 
 [Source](https://www.facebook.com/photo/?fbid=1014175210727922)
 
-![](5249386927449302502_1222218137_456254950.jpg)
+{{ img(src="5249386927449302502_1222218137_456254950.jpg") }}

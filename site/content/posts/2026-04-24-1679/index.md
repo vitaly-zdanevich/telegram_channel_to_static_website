@@ -20,10 +20,26 @@ prev_title = ""
 prev_body = "#armiesofexigo: #fallen 7: The First Seal: hard: victory\n#rts - like #warcraft3.\nGame version 1.4\nPlaying on Gentoo Linux through #lutris, #conty, free download of this abandoned game at\nFull:\nAll links at"
 views = 14
 ids = [1679]
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1777/index.md"
+label = "#log failed"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-480/index.md"
+label = "#primeworld #belarussian Adding Belarusian language to the game"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-479/index.md"
+label = "#article #primeworld I wrote."
+
+[[extra.related]]
+path = "@/posts/2026-04-03-1568/index.md"
+label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
 +++
 
 {{ tag(t="log") }}  
 
 Still running my experiment about {{ tag(t="porting") }} {{ tag(t="prime_world") }} from Windows/DirectX to Linux/OpenGL, 100% on autopilot...
 
-![](5429185537047728569_1264080763_460001721.jpg)
+{{ img(src="5429185537047728569_1264080763_460001721.jpg") }}

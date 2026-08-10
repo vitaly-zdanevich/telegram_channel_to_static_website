@@ -19,6 +19,18 @@ prev_title = ""
 prev_body = "#ad"
 views = 49
 ids = [214]
+
+[[extra.related]]
+path = "@/posts/2024-12-14-219/index.md"
+label = "My second #lutris yaml for #man2"
+
+[[extra.related]]
+path = "@/posts/2026-04-03-1568/index.md"
+label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1678/index.md"
+label = "#armiesofexigo: #fallen 7: The First Seal: hard: victory #rts -…"
 +++
 
 My first {{ tag(t="lutris") }} install script <https://lutris.net/games/armies-of-exigo/>

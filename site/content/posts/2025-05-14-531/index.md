@@ -23,4 +23,4 @@ ids = [531]
 
 Looks like photos of every street <https://commons.wikimedia.org/wiki/Category:Buildings_in_Babruysk>
 
-![](5269656982653106475_1226937627_456259883.jpg)
+{{ img(src="5269656982653106475_1226937627_456259883.jpg") }}

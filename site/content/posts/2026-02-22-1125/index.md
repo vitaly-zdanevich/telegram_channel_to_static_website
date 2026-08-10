@@ -18,8 +18,28 @@ next_body = "#internetarchive\n#flag\n#earth"
 prev_id = 1124
 prev_title = ""
 prev_body = "#steam\n#myst\nforever #games"
-views = 15
+views = 16
 ids = [1125]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2026-01-22-931/index.md"
+label = "I am on #gentoo because it compiles for my CPU -march=native and…"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -28,4 +48,4 @@ ids = [1125]
 
 <https://www.gentoo.org.cn/>
 
-![](5249225806049908772_1222180623_460003364.jpg)
+{{ img(src="5249225806049908772_1222180623_460003364.jpg") }}

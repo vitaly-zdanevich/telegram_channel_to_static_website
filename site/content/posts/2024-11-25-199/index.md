@@ -17,8 +17,28 @@ next_body = ""
 prev_id = 198
 prev_title = ""
 prev_body = "#music"
-views = 41
+views = 42
 ids = [199]
+
+[[extra.related]]
+path = "@/posts/2026-01-04-840/index.md"
+label = "#game #gta #remaster #preservation #lost Rosado claimed \"the art…"
+
+[[extra.related]]
+path = "@/posts/2026-02-15-1113/index.md"
+label = "#preservation #nival #game #silentstorm Thanks Sergey."
+
+[[extra.related]]
+path = "@/posts/2025-11-21-787/index.md"
+label = "#preservation #game #groundcontrol #wwiii From the game Ground C…"
+
+[[extra.related]]
+path = "@/posts/2025-08-16-629/index.md"
+label = "On January 29, 2015, about 15 years after the original release o…"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
 +++
 
 > The stand-alone expansion Homeworld: Cataclysm was not announced for a remake, despite the outspoken interest of Gearbox, as they were unable to find the original source code

@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#map\n#greenland\n#africa\n#mercator\nSource"
 views = 35
 ids = [671]
+
+[[extra.related]]
+path = "@/posts/2025-09-09-665/index.md"
+label = "#film #russia #nightwatch #zavulon"
+
+[[extra.related]]
+path = "@/posts/2024-06-11-53/index.md"
+label = "#film #nightwatch Night Watch, love it"
+
+[[extra.related]]
+path = "@/posts/2023-08-12-29/index.md"
+label = "#film #nightwatch Night Watch: episode with witch, in the beginn…"
+
+[[extra.related]]
+path = "@/posts/2023-07-11-21/index.md"
+label = "#film #nightwatch Love these episodes from Night Watch Ночной До…"
+
+[[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
 +++
 
 {{ tag(t="video") }}  
@@ -26,6 +46,6 @@ ids = [671]
 {{ tag(t="night_watch") }}  
 {{ tag(t="zavulon") }}
 
-[Source](https://youtu.be/LYnA4ik-9Lc)
+[Source](<https://youtu.be/LYnA4ik-9Lc> "Антон Городецкий vs Завулон")
 
 {{ youtube(id="LYnA4ik-9Lc") }}

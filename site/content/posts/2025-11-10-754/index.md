@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#design\n#webdesign\n#webdesignold\n#xbox"
 views = 20
 ids = [754]
+
+[[extra.related]]
+path = "@/posts/2025-11-10-761/index.md"
+label = "#painting #bible #gustavedore The Battle of Nicaea"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-756/index.md"
+label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-762/index.md"
+label = "#painting #angel #ship #gustavedore Engraving by Gustave Doré, r…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-755/index.md"
+label = "#painting #bible #gustavedore #year1891 The Bible panorama, or T…"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-760/index.md"
+label = "#painting #bible #gustavedore #death #horse #year1865 Gustave Do…"
 +++
 
 {{ tag(t="painting") }}  
@@ -31,4 +51,4 @@ Study for "Jacob's Dream"
 
 [Source](https://commons.wikimedia.org/wiki/Category:Art_depicting_the_Old_Testament_by_Gustave_Dor%C3%A9#/media/File:Gustave_Dor%C3%A9_-_Study_for_%22Jacob&#39;s_Dream%22_-_Walters_371319.jpg)
 
-![](5229215222705359737_1217521546_460000121.jpg)
+{{ img(src="5229215222705359737_1217521546_460000121.jpg") }}

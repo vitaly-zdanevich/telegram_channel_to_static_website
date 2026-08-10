@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "Looks what I found - another #archiving group"
 views = 44
 ids = [470]
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-05-05-1735/index.md"
+label = "#architecture of #village houses in #sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2025-08-20-631/index.md"
+label = "Percent of people who think their culture is superior to others…"
+
+[[extra.related]]
+path = "@/posts/2025-08-08-618/index.md"
+label = "Georgian man Zaal Sikharulidze with falcon wearing Chokha on Tbi…"
+
+[[extra.related]]
+path = "@/posts/2025-02-08-352/index.md"
+label = "#sakartvelo #ny #subway"
 +++
 
 [Source](https://habr.com/en/articles/848902)  
@@ -27,4 +47,4 @@ ids = [470]
 {{ tag(t="sakartvelo") }}  
 {{ tag(t="taxes") }}
 
-![](5472381565033115407_1274138122_456257295.jpg)
+{{ img(src="5472381565033115407_1274138122_456257295.jpg") }}

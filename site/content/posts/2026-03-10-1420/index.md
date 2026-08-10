@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#architecture\n#belarus\n#globustut\n#year2005\nSource"
 views = 14
 ids = [1420]
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-925/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-15-1444/index.md"
+label = "#church #jesus #inside #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-12-1426/index.md"
+label = "#church #slonim #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1342/index.md"
+label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
 +++
 
 {{ tag(t="church") }}  
@@ -34,4 +54,4 @@ ids = [1420]
 
 [Source](https://commons.wikimedia.org/wiki/File:055-355_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D1%86%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B3%D0%BB%D0%B5%D0%B1_(%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5296309385032309582_1233143123_460004174.jpg)
+{{ img(src="5296309385032309582_1233143123_460004174.jpg") }}

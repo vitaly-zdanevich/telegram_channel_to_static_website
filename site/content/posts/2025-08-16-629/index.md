@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "Она окончила Ленинградский университет по специальности искусствовед за несколько лет до войны и вскоре стала куратором Павловского дворца-музея. Когда же немцы оказались рядом и стало ясно, что не сегодня-завтра они займут Павловск, началась паника. Бежали все. Можно было только гадать, какая судьба ожидала дворец, но Анна Ивановна гадать не стала. Имея в своем распоряжении три грузовика с водителями, она совершила свой бессмертный подвиг: тщательнейшим образом собрала по одному образцу каждого экземпляра того, что хранилось во дворце. По одному креслу из каждого набора, по одному дивану, по одному предмету из десятков великолепных сервизов, по одной вилке, ложке, по одному ножу, по одному образцу всех видов обоев, шелков, по одной паркетине из каждой залы и комнаты – словом, не было пропущено ничего из этого бесконечного количества вещей. Все это занесли в специальный реестр, сфотографировали подробнейшим образом, упаковали и погрузили в машины. Я не знаю, правда ли, что Ной спас…"
 views = 105
 ids = [629]
+
+[[extra.related]]
+path = "@/posts/2024-11-25-199/index.md"
+label = "The stand-alone expansion Homeworld: Cataclysm was not announced…"
+
+[[extra.related]]
+path = "@/posts/2026-01-04-840/index.md"
+label = "#game #gta #remaster #preservation #lost Rosado claimed \"the art…"
+
+[[extra.related]]
+path = "@/posts/2025-06-13-573/index.md"
+label = "#archiving Lost."
+
+[[extra.related]]
+path = "@/posts/2025-04-15-469/index.md"
+label = "Looks what I found - another #archiving group"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
 +++
 
 > On January 29, 2015, about 15 years after the original release of Heroes of Might & Magic III, Ubisoft released a new high-definition version of the game compatible with PCs as well as Android and iOS tablets. The expansion packs were not included because the source code for those releases was lost

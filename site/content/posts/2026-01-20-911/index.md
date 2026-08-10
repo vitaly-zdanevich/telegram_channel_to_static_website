@@ -18,8 +18,28 @@ next_body = "#belarus\n#village\n#nature\n#river\n#year2005\n#globustut"
 prev_id = 910
 prev_title = ""
 prev_body = "#belarus\n#abandone\n#year2004\n#globustut"
-views = 8
+views = 9
 ids = [911]
+
+[[extra.related]]
+path = "@/posts/2026-01-29-989/index.md"
+label = "#belarus #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1055/index.md"
+label = "#belarus #sign #winter #year2005 #globustut Рубеж From"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1054/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-995/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut Близ Новогру…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-986/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
 +++
 
 {{ tag(t="belarus") }}  
@@ -30,4 +50,4 @@ ids = [911]
 
 [https://commons.wikimedia.org/wiki/File:037-301\_Кухчицы,\_снято\_2\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:037-301_%D0%9A%D1%83%D1%85%D1%87%D0%B8%D1%86%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_2_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-![](5440408303772044129_1266693767_460000097.jpg)
+{{ img(src="5440408303772044129_1266693767_460000097.jpg") }}

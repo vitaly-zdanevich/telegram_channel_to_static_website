@@ -17,7 +17,7 @@ next_body = "#psy\n#food\nХодим без настроения, срываем
 prev_id = 1874
 prev_title = ""
 prev_body = "#llm\n#prediction\n#cat\nSource"
-views = 10
+views = 13
 forwarded_from = "Батумчик 🌴 | Новости Батуми | Западная Грузия"
 forwarded_from_url = "https://t.me/batumchik/74903"
 ids = [1875]
@@ -27,8 +27,8 @@ ids = [1875]
 
 Мафия выбирает только самые лучшие места
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}

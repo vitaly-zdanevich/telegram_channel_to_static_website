@@ -23,4 +23,4 @@ ids = [174]
 
 Wow `border-radius` generator, so many values <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Border-radius_generator>
 
-![](5271829222492594981_1227443391_456254245.jpg)
+{{ img(src="5271829222492594981_1227443391_456254245.jpg") }}

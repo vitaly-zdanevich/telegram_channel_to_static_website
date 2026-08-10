@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#cross\n#monument\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE7%D0%BC%D0%B0%D1%8F2005.jpg)"
 views = 5
 ids = [1259]
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1384/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-01-1280/index.md"
+label = "#village #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1285/index.md"
+label = "#village #house #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-07-04-1922/index.md"
+label = "#belarus #шерстин #photo #village #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1292/index.md"
+label = "#church #horse #woodencart #belarus #globustut #year2005"
 +++
 
 {{ tag(t="wooden_cart") }}  
@@ -31,4 +51,4 @@ ids = [1259]
 
 [Source](https://commons.wikimedia.org/wiki/File:052-085_%D0%92%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%BE_(%D0%92%D0%BE%D0%BB%D0%BE%D0%B6_%D1%80-%D0%BD),_%D0%BD%D0%B0%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5264957012829738537_1225843330_460002857.jpg)
+{{ img(src="5264957012829738537_1225843330_460002857.jpg") }}

@@ -5,7 +5,7 @@ description = "belarus architecture cross globustut year2004 Source"
 
 [taxonomies]
 days = ["2026-01-19"]
-tags = ["belarus", "architecture", "cross", "globustut", "year_2004"]
+tags = ["belarus", "architecture", "cross", "globustut", "year2004"]
 
 [extra]
 id = 898
@@ -18,16 +18,36 @@ next_body = "#belarus\n#architecture\n#globustut\n#year2004\nSource"
 prev_id = 897
 prev_title = ""
 prev_body = "#belarus\n#architecture\n#globustut\n#year2004\nSource"
-views = 7
+views = 8
 ids = [898]
+
+[[extra.related]]
+path = "@/posts/2026-01-19-899/index.md"
+label = "#belarus #architecture #globustut #year2004"
+
+[[extra.related]]
+path = "@/posts/2026-01-19-897/index.md"
+label = "#belarus #architecture #globustut #year2004"
+
+[[extra.related]]
+path = "@/posts/2026-01-19-896/index.md"
+label = "#belarus #architecture #globustut #year2004"
+
+[[extra.related]]
+path = "@/posts/2026-01-19-906/index.md"
+label = "#belarus #architecture #death #grave #year2004 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-19-905/index.md"
+label = "#belarus #architecture #abandone #winter #year2004 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
 {{ tag(t="architecture") }}  
 {{ tag(t="cross") }}  
 {{ tag(t="globustut") }}  
-{{ tag(t="year_2004") }}  
+{{ tag(t="year2004") }}  
 
 [Source](https://commons.wikimedia.org/wiki/File:034-077_%D0%92%D0%BE%D0%B9%D1%81%D1%82%D0%BE%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_18_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 
-![](5438156503958359210_1266169479_460000426.jpg)
+{{ img(src="5438156503958359210_1266169479_460000426.jpg") }}

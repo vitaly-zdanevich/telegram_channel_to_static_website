@@ -20,6 +20,14 @@ prev_title = ""
 prev_body = "#preservation\n#wikimediacommons\n#pywikibot\n#my\nCreated a new tool: #python wrapper for Pywikibot to make uploading to Wikimedia Commons from #cli simpler"
 views = 28
 ids = [820]
+
+[[extra.related]]
+path = "@/posts/2026-08-05-2119/index.md"
+label = "#hardware #player"
+
+[[extra.related]]
+path = "@/posts/2025-11-11-769/index.md"
+label = "#mp3 #hardware #sandisc Sexy Girls Fun Gadgets Stuff Magazine, 2…"
 +++
 
 {{ tag(t="hardware") }}  
@@ -29,12 +37,12 @@ Toshiba Libretto
 
 <https://commons.wikimedia.org/wiki/Category:Toshiba_Libretto>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}
 
-![](05.jpg)
+{{ img(src="05.jpg") }}

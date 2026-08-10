@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "I continue to write my script for importing ratings from #metacritic reviewers, creating #wikidata items for sites that no longer exists, and trying to download these dead sites from web.archive.org so that I can later put them on Gitlab’s free static hosting, because there is no content search on web.archive.org"
 views = 150
 ids = [730]
+
+[[extra.related]]
+path = "@/posts/2025-04-28-487/index.md"
+label = "#trump #batumi"
+
+[[extra.related]]
+path = "@/posts/2025-02-09-353/index.md"
+label = "#trump #batumi"
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1848/index.md"
+label = "#batumi Oh my, I live here From"
+
+[[extra.related]]
+path = "@/posts/2025-06-18-577/index.md"
+label = "#sakartvelo"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2103/index.md"
+label = "#trump #gender By theceosonly"
 +++
 
 {{ tag(t="sakartvelo") }}  

@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = ""
 views = 59
 ids = [85]
+
+[[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-758/index.md"
+label = "#design #artlebedev"
 +++
 
 Good {{ tag(t="design") }} {{ tag(t="caddy") }}
 
-![](5197437665916609520_1210122757_456254448.jpg)
+{{ img(src="5197437665916609520_1210122757_456254448.jpg") }}

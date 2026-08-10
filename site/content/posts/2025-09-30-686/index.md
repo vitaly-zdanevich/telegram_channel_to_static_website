@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#fear\n#airplane\nSource"
 views = 20
 ids = [686]
+
+[[extra.related]]
+path = "@/posts/2025-01-29-346/index.md"
+label = "#fashion"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1087/index.md"
+label = "#fashion #boy"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1667/index.md"
+label = "#fashion #street #london"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1662/index.md"
+label = "#fashion #trash #black Author: Found at"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1082/index.md"
+label = "#people #fashion #zara"
 +++
 
 {{ tag(t="fashion") }}  
@@ -27,4 +47,4 @@ ids = [686]
 
 [Source](https://www.kozmosize.com/product-page/magician-panco-black)
 
-![](5395445158729875858_1256224969_456262034.jpg)
+{{ img(src="5395445158729875858_1256224969_456262034.jpg") }}

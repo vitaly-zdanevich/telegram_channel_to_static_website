@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#translate\n#pain"
 views = 42
 ids = [350]
+
+[[extra.related]]
+path = "@/posts/2025-03-27-458/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-457/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-456/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-455/index.md"
+label = "#ussr"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2133/index.md"
+label = "#car #death"
 +++
 
 {{ tag(t="car") }}  
@@ -26,6 +46,6 @@ ids = [350]
 
 [Source](https://www.instagram.com/reel/DFkh7Lvo48C)
 
-{{ instagram(url="https://www.instagram.com/reel/DFkh7Lvo48C/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/350-01.mp4") }}
 
 {{ tag(t="video") }}

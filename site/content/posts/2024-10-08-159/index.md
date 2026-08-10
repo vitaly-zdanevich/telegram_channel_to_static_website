@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "Night Watch: Special Edition #game"
 views = 56
 ids = [159]
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-758/index.md"
+label = "#design #artlebedev"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
 +++
 
 Wow {{ tag(t="design") }} [https://neon.tech](https://neon.tech/)
 
-![](5202194574125163612_1211230311_456254556.jpg)
+{{ img(src="5202194574125163612_1211230311_456254556.jpg") }}

@@ -24,9 +24,9 @@ ids = [162]
 
 Упоминаемые мои скрипты: <https://gitlab.com/users/vitaly-zdanevich/groups>  
 
-<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum>  
+[https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum](<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum> "Dark and minimum userstyle for Wikipedia. You can set this style at the admin area of Wikipedia for your account - without any plugins for… · 16 stars · Languages: CSS 98%, JavaScript 2% · 670 commits · 7 forks · Apache-2.0 · last push 2026-07-17")  
 
-<https://www.youtube.com/watch?v=SIyT3pPrpbk>
+[https://www.youtube.com/watch?v=SIyT3pPrpbk](<https://www.youtube.com/watch?v=SIyT3pPrpbk> "Как я загружаю в Wikimedia Commons, день из жизни")
 
 {{ youtube(id="SIyT3pPrpbk") }}
 

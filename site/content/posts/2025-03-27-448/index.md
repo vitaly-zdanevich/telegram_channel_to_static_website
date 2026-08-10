@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#dune\n#ussr\n#mashup\nI do not know who is the author"
 views = 28
 ids = [448]
+
+[[extra.related]]
+path = "@/posts/2025-11-06-743/index.md"
+label = "Emotional reasoning is a cognitive process by which an individua…"
+
+[[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1878/index.md"
+label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1080/index.md"
+label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-482/index.md"
+label = "#cat #psy"
 +++
 
 Раньше было лучше  
@@ -27,4 +47,4 @@ ids = [448]
 {{ tag(t="history") }}  
 {{ tag(t="psy") }}
 
-![](5415830246042759567_1260971242_456257935.jpg)
+{{ img(src="5415830246042759567_1260971242_456257935.jpg") }}

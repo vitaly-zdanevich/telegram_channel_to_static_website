@@ -19,6 +19,10 @@ prev_title = ""
 prev_body = "#telegram with wide messages"
 views = 31
 ids = [675]
+
+[[extra.related]]
+path = "@/posts/2025-03-08-397/index.md"
+label = "#arsenmarkaryan #dating #escort #size"
 +++
 
 {{ tag(t="smell") }}  
@@ -26,6 +30,6 @@ ids = [675]
 
 [Source](https://www.instagram.com/p/DOrCa-bjOUR)
 
-{{ instagram(url="https://www.instagram.com/p/DOrCa-bjOUR/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/675-01.mp4") }}
 
 {{ tag(t="video") }}

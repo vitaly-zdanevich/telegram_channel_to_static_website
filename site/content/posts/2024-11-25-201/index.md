@@ -18,12 +18,32 @@ next_body = "My #photo from 2012, for the defunct website of naked #cats\n#eyes"
 prev_id = 200
 prev_title = ""
 prev_body = ""
-views = 38
+views = 39
 ids = [201]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
+
+[[extra.related]]
+path = "@/posts/2026-02-11-1106/index.md"
+label = "#wikipedia #job"
 +++
 
 {{ tag(t="wikipedia") }}  
 
 <https://commons.wikimedia.org/wiki/Category:Magna_Carta_(An_Embroidery)>
 
-![](5343870641683687785_1244216841_456255849.jpg)
+{{ img(src="5343870641683687785_1244216841_456255849.jpg") }}

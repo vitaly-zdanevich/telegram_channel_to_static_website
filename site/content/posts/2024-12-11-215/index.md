@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "My first #lutris install script"
 views = 49
 ids = [215]
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+
+[[extra.related]]
+path = "@/posts/2026-01-08-857/index.md"
+label = "#belarus #minsk 1941-1944"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2083/index.md"
+label = "#abandoned #veterinary #belarus"
+
+[[extra.related]]
+path = "@/posts/2026-03-22-1496/index.md"
+label = "#webdesign #belarus #belarussian"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1181/index.md"
+label = "#belfry #belarus #globustut"
 +++
 
 {{ tag(t="belarus") }}
 
-![](5391209139860005754_1255238694_456254330.jpg)
+{{ img(src="5391209139860005754_1255238694_456254330.jpg") }}

@@ -24,8 +24,8 @@ ids = [935]
 
 {{ tag(t="vibe_coding") }} without human review is {{ tag(t="gambling") }}  
 
-From <https://youtu.be/3Y1G9najGiI?t=3390>
+From [https://youtu.be/3Y1G9najGiI?t=3390](<https://youtu.be/3Y1G9najGiI?t=3390> "AWS re:Invent 2025 - Keynote with Dr. Werner Vogels")
 
 {{ youtube(id="3Y1G9najGiI") }}
 
-![](5451802121863892389_1269346597_460000677.jpg)
+{{ img(src="5451802121863892389_1269346597_460000677.jpg") }}

@@ -17,10 +17,30 @@ next_body = "#remapped unused button on my laptop to #git #push, #i3 command:\nb
 prev_id = 1787
 prev_title = ""
 prev_body = "Payment -&gt; #crypto -&gt; Select your #wallet\nwoodev.net"
-views = 43
+views = 44
 forwarded_from = "IT Happens Batumi"
 forwarded_from_url = "https://t.me/it_happens_batumi/5"
 ids = [1799]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1861/index.md"
+label = "#26июня2026 пт 21.30-23:00 айтишная посиделка в Friends club #бе…"
+
+[[extra.related]]
+path = "@/posts/2026-05-07-1751/index.md"
+label = "#7мая2026 чт 21.30-01:00 айтишная посиделка в Still Young Bar #б…"
+
+[[extra.related]]
+path = "@/posts/2026-02-26-1200/index.md"
+label = "#27февраля2026 пт 21.30-01:00 Hard IT в Laboratory Bar #безоплат…"
+
+[[extra.related]]
+path = "@/posts/2026-02-05-1088/index.md"
+label = "#6февраля2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
+
+[[extra.related]]
+path = "@/posts/2026-01-23-933/index.md"
+label = "#23января2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
 +++
 
 {{ tag(t="28мая2026") }} (чт) 21:00–01:00 — айтишная посиделка в Still Young Bar **🍻**  

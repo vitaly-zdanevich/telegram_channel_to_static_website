@@ -6,6 +6,8 @@
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   {% if config.extra.avatar %}<link rel="icon" type="image/jpeg" href="{{ get_url(path=config.extra.avatar) }}">{% endif %}
   {% if config.extra.rss %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path='rss.xml', trailing_slash=false) | safe }}">{% endif %}
+  {% if config.extra.podcast %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }} — Podcast" href="{{ get_url(path='podcast.xml', trailing_slash=false) | safe }}">{% endif %}
+  {% if config.extra.video_podcast %}<link rel="alternate" type="application/rss+xml" title="{{ config.title }} — Video podcast" href="{{ get_url(path='video-podcast.xml', trailing_slash=false) | safe }}">{% endif %}
   {# Social cards (Open Graph + Twitter) and Mastodon attribution. `page` is
      only defined on post/page templates; sections fall back to site defaults. #}
   {% set_global og_title = config.title %}
@@ -13,7 +15,7 @@
   {% set og_desc = page.description | default(value=config.description) %}
   {% set og_url = page.permalink | default(value=config.base_url) %}
   {% set_global og_image = "" %}
-  {% if page.extra.og_image %}{% set_global og_image = page.permalink ~ page.extra.og_image %}
+  {% if page.extra.og_image %}{% if page.extra.og_image is starting_with("http") %}{% set_global og_image = page.extra.og_image %}{% else %}{% set_global og_image = page.permalink ~ page.extra.og_image %}{% endif %}
   {% elif config.extra.avatar %}{% set_global og_image = get_url(path=config.extra.avatar) %}{% endif %}
   {% if og_desc %}<meta name="description" content="{{ og_desc }}">{% endif %}
   <meta property="og:site_name" content="{{ config.title }}">
@@ -27,24 +29,35 @@
   {% if og_image %}<meta name="twitter:image" content="{{ og_image | safe }}">{% endif %}
   {% if config.extra.fediverse_creator %}<meta name="fediverse:creator" content="{{ config.extra.fediverse_creator }}">{% endif %}
   {% if config.extra.fediverse_profile %}<link rel="me" href="{{ config.extra.fediverse_profile | safe }}">{% endif %}
+  {% if config.extra.google_font_href %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{{ config.extra.google_font_href | safe }}">{% endif %}
+  {% if config.extra.pwa %}<link rel="manifest" href="{{ get_url(path='manifest.webmanifest') | safe }}">{% endif %}
   <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+  {% if config.extra.google_analytics %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics }}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ config.extra.google_analytics }}');</script>{% endif %}
+  {% if config.extra.yandex_metrica %}<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');ym({{ config.extra.yandex_metrica }},'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/{{ config.extra.yandex_metrica }}" style="position:absolute;left:-9999px" alt=""></div></noscript>{% endif %}
 </head>
 <body>
+  {# current_path is undefined on the 404 page; default it so the nav's path
+     tests below don't fail there. #}
+  {% set current_path = current_path | default(value="") %}
   <header class="site-header">
-    {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}" alt=""></a>{% endif %}
+    {% if config.extra.avatar %}<a href="{{ config.base_url | safe }}"><img class="site-avatar" src="{{ get_url(path=config.extra.avatar) }}"></a>{% endif %}
     <a class="site-title" href="{{ config.base_url | safe }}">{{ config.title }}</a>
-    <nav>
-      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}">#{{ t }}</a>{% endfor %}
+    {% if not config.extra.hide_nav %}<nav>
+      {% for t in config.extra.nav_tags | default(value=[]) %}<a class="tag" href="{{ get_taxonomy_url(kind='tags', name=t) | safe }}" title="{{ config.extra.tag_counts | get(key=t, default='') }}">#{{ t }}</a>{% endfor %}
       {% if current_path is matching("/tags/$") %}<span class="here">{{ config.extra.i18n.tags }}</span>{% else %}<a href="{{ get_url(path='/tags/') }}">{{ config.extra.i18n.tags }}</a>{% endif %}
       {% if config.extra.calendar %}{% if current_path is containing("/calendar/") %}<span class="here">{{ config.extra.i18n.calendar }}</span>{% else %}<a href="{{ get_url(path='/calendar/') }}">{{ config.extra.i18n.calendar }}</a>{% endif %}{% endif %}
       {% if current_path is containing("/about/") %}<span class="here">{{ config.extra.i18n.about }}</span>{% else %}<a href="{{ get_url(path='/about/') }}">{{ config.extra.i18n.about }}</a>{% endif %}
       {% for p in config.extra.nav | default(value=[]) %}<a href="{{ get_url(path=p.path) }}">{{ p.title }}</a>{% endfor %}
-    </nav>
+    </nav>{% endif %}
     {% if config.extra.search_google %}<form class="site-search" action="https://www.google.com/search" method="get" role="search"><input type="search" name="q" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off">{% if config.extra.search_site %}<input type="hidden" name="sitesearch" value="{{ config.extra.search_site }}">{% endif %}</form>{% elif config.extra.search_url %}<input type="search" id="site-search" class="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" data-url="{{ config.extra.search_url | safe }}" autocomplete="off">{% elif config.extra.search_elasticlunr %}<span class="site-search els"><input type="search" id="site-search" placeholder="{{ config.extra.i18n.search }}" aria-label="{{ config.extra.i18n.search_aria }}" autocomplete="off"><ul id="search-results" class="search-results" hidden></ul></span>{% endif %}
   </header>
   <main>{% block content %}{% endblock content %}</main>
   {% if config.extra.footer %}<footer class="site-footer">{{ config.extra.footer | markdown(inline=true) | safe }}</footer>{% endif %}
   {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
   {% if config.extra.search_elasticlunr %}<script src="{{ get_url(path='elasticlunr.min.js') | safe }}"></script><script src="{{ get_url(path='search_index.' ~ config.default_language ~ '.js') | safe }}"></script><script src="{{ get_url(path='search.js') | safe }}"></script>{% endif %}
+  {% if config.extra.carousel %}<script src="{{ get_url(path='carousel.js') | safe }}"></script>{% endif %}
+  {% if config.extra.embed %}<script src="{{ get_url(path='embed.js') | safe }}" defer></script>{% endif %}
+  {% if config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>{% endif %}
+  {% if config.extra.pwa or config.extra.offline %}<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('{{ get_url(path='sw.js') | safe }}');});}</script>{% endif %}
 </body>
 </html>

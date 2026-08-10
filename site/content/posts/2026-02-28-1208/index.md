@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#ussr\n#god\n#conflict\n#belarus\n#globustut\n#year2005\nДа хранит вас Бог\nSource"
 views = 4
 ids = [1208]
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1328/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-02-28-1263/index.md"
+label = "#abandone #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-922/index.md"
+label = "#belarus #abandone #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-918/index.md"
+label = "#belarus #abandone #year2005 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -29,4 +49,4 @@ ids = [1208]
 
 [Source](https://commons.wikimedia.org/wiki/File:051-135_%D0%9E%D1%81%D0%BD%D0%B5%D0%B6%D0%B8%D1%86%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_30_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-![](5264957012829738042_1225843330_460002362.jpg)
+{{ img(src="5264957012829738042_1225843330_460002362.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#webgl\n#shopify"
 views = 16
 ids = [1414]
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1369/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1367/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1366/index.md"
+label = "#webdesign #oldweb #anime"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1365/index.md"
+label = "#webdesign #anime #oldweb"
+
+[[extra.related]]
+path = "@/posts/2026-03-07-1363/index.md"
+label = "#webdesign #oldweb #anime"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -29,4 +49,4 @@ ids = [1414]
 
 <https://pc98.club/piracy>
 
-![](5292159737954769940_1232176958_460004372.jpg)
+{{ img(src="5292159737954769940_1232176958_460004372.jpg") }}

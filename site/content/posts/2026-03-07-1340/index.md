@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#house\n#river\n#belarus\n#globustut\nSource"
 views = 6
 ids = [1340]
+
+[[extra.related]]
+path = "@/posts/2026-03-29-1509/index.md"
+label = "#monument #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-16-1475/index.md"
+label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1419/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-10-1418/index.md"
+label = "#architecture #belarus #globustut #year2005"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1387/index.md"
+label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
 +++
 
 {{ tag(t="art") }}  
@@ -31,4 +51,4 @@ ids = [1340]
 
 [Source](https://commons.wikimedia.org/wiki/File:053-208_%D0%A2%D0%B5%D0%BB%D0%B5%D1%85%D0%B0%D0%BD%D1%8B,_%D0%B4%D0%BE%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_9_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-![](5287761115918046577_1231152824_460002673.jpg)
+{{ img(src="5287761115918046577_1231152824_460002673.jpg") }}

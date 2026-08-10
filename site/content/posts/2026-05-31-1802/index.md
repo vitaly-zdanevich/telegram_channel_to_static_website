@@ -17,8 +17,28 @@ next_body = "In #batumi, to buy a coffee, sometimes we talk in three #languages:
 prev_id = 1800
 prev_title = ""
 prev_body = "#remapped unused button on my laptop to #git #push, #i3 command:\nbindsym XF86Launch1 exec --no-startup-id xdotool type \"git push\" && xdotool key Return\nHow get to know the button code: on #gentoo you need x11-misc/xdotool, run from root and press your any button. Here XF86Launch1 is the button name."
-views = 45
+views = 49
 ids = [1802]
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2025-11-20-786/index.md"
+label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
+
+[[extra.related]]
+path = "@/posts/2026-05-18-1780/index.md"
+label = "What a time - multiple #llm doing multiple projects, in parallel…"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1856/index.md"
+label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
 +++
 
 With {{ tag(t="llm") }} I added 1920x1200 to {{ tag(t="armies_of_exigo") }} {{ tag(t="game") }}  

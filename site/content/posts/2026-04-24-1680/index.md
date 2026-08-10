@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#log\nStill running my experiment about #porting #primeworld from Windows/DirectX to Linux/OpenGL, 100% on autopilot..."
 views = 17
 ids = [1680]
+
+[[extra.related]]
+path = "@/posts/2025-04-18-474/index.md"
+label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
+
+[[extra.related]]
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+
+[[extra.related]]
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+
+[[extra.related]]
+path = "@/posts/2025-01-25-330/index.md"
+label = "#music"
+
+[[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
 +++
 
 {{ tag(t="preservation") }}  

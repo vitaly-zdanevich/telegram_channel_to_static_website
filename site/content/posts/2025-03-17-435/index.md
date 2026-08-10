@@ -17,13 +17,25 @@ next_title = ""
 next_body = "#dieantwoord\nSource"
 prev_id = 434
 prev_title = ""
-prev_body = "#music\n#dieantwoord\nSource"
+prev_body = "#music\n#dieantwoord\nSource\")"
 views = 48
 ids = [435]
+
+[[extra.related]]
+path = "@/posts/2025-03-17-438/index.md"
+label = "#dieantwoord"
+
+[[extra.related]]
+path = "@/posts/2025-03-17-436/index.md"
+label = "#dieantwoord"
+
+[[extra.related]]
+path = "@/posts/2025-03-17-434/index.md"
+label = "#music #dieantwoord"
 +++
 
 {{ tag(t="die_antwoord") }}  
 
 [Source](https://en.wikipedia.org/wiki/Mount_Ninji_and_da_Nice_Time_Kid)
 
-![](5384349651886533522_1253641595_456256402.jpg)
+{{ img(src="5384349651886533522_1253641595_456256402.jpg") }}

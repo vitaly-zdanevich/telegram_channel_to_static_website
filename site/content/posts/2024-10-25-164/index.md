@@ -19,6 +19,10 @@ prev_title = ""
 prev_body = "#webdesign"
 views = 31
 ids = [164]
+
+[[extra.related]]
+path = "@/posts/2024-07-18-92/index.md"
+label = "Guess the output #javascript const obj4 = { name: \"obj4\", getThi…"
 +++
 
 {{ tag(t="javascript") }}: guess the output  

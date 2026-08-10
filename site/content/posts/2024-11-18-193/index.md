@@ -20,8 +20,28 @@ prev_title = ""
 prev_body = "#warcraft"
 views = 51
 ids = [193]
+
+[[extra.related]]
+path = "@/posts/2026-07-03-1890/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-12-28-825/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-733/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-11-03-732/index.md"
+label = "#webdesign"
+
+[[extra.related]]
+path = "@/posts/2025-07-21-602/index.md"
+label = "#webdesign"
 +++
 
 {{ tag(t="webdesign") }} <https://www.heavengames.com/previews/aox/>
 
-![](5321176670146782294_1238932989_456254550.jpg)
+{{ img(src="5321176670146782294_1238932989_456254550.jpg") }}

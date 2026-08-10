@@ -17,14 +17,18 @@ next_body = "#fear\nSource"
 prev_id = 340
 prev_title = ""
 prev_body = "#girl\n#nails\nSource"
-views = 149
+views = 150
 ids = [341]
+
+[[extra.related]]
+path = "@/posts/2026-06-18-1842/index.md"
+label = "#interior #cozy #bathroom From"
 +++
 
 {{ tag(t="bathroom") }}  
 
 [Source](https://www.instagram.com/reel/DCoYvURN9KF)
 
-{{ instagram(url="https://www.instagram.com/reel/DCoYvURN9KF/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/341-01.mp4") }}
 
 {{ tag(t="video") }}

@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "#webdesign\n#webdesigngames\nLike horizontal scrolling."
 views = 29
 ids = [743]
+
+[[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1878/index.md"
+label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-482/index.md"
+label = "#cat #psy"
+
+[[extra.related]]
+path = "@/posts/2025-04-09-464/index.md"
+label = "Бежевый #psy #childhood"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-450/index.md"
+label = "#phone #psy"
 +++
 
 > Emotional reasoning is a cognitive process by which an individual concludes that their emotional reaction proves something is true, despite contrary empirical evidence. Emotional reasoning creates an 'emotional truth', which may be in direct conflict with the inverse 'perceptional truth'

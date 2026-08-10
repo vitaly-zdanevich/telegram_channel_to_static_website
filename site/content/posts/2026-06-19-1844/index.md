@@ -18,11 +18,31 @@ next_body = "I did #kvantum/#qt6 theme, with #llm #gpt 5.5 xhigh, #love it, #bla
 prev_id = 1843
 prev_title = ""
 prev_body = "#home\n#diy\n#belarus\n#onliner\nFrom"
-views = 13
+views = 14
 ids = [1844]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1856/index.md"
+label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1855/index.md"
+label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1170/index.md"
+label = "#entrance #abandone #belarus"
+
+[[extra.related]]
+path = "@/posts/2026-07-01-1880/index.md"
+label = "#belarus #abandone #trees #year2015 Source.jpg"
 +++
 
 {{ tag(t="armies_of_exigo") }}  
 {{ tag(t="abandone") }}
 
-![](5308054982420535730_1235877858_460003762.jpg)
+{{ img(src="5308054982420535730_1235877858_460003762.jpg") }}

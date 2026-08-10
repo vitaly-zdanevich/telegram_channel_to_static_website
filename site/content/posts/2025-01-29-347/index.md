@@ -17,7 +17,7 @@ next_body = "#spider\n#girl\nSource"
 prev_id = 346
 prev_title = ""
 prev_body = "#fashion\nSource"
-views = 59
+views = 60
 ids = [347]
 +++
 
@@ -26,6 +26,6 @@ ids = [347]
 
 [Source](https://www.instagram.com/reel/DFBdp4ixRMV)
 
-{{ instagram(url="https://www.instagram.com/reel/DFBdp4ixRMV/") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/347-01.mp4") }}
 
 {{ tag(t="video") }}

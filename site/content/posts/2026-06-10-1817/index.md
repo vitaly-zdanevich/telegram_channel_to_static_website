@@ -18,8 +18,28 @@ next_body = "#aws\n#billing\n#cost\n#graph"
 prev_id = 1807
 prev_title = ""
 prev_body = "#love this #extension - #highlight predefined list of words, on predefined URLs."
-views = 14
+views = 16
 ids = [1817]
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1332/index.md"
+label = "#logo #horse"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
+
+[[extra.related]]
+path = "@/posts/2025-03-15-412/index.md"
+label = "#gentoo #logo"
 +++
 
 {{ tag(t="logo") }}  
@@ -28,4 +48,4 @@ ids = [1817]
 
 [Source](https://www.linkedin.com/posts/alxsuv_claudecode-aiforengineers-softwareengineering-share-7470087035169714176-72AF/)
 
-![](5282991447361658515_1230042299_460005011.jpg)
+{{ img(src="5282991447361658515_1230042299_460005011.jpg") }}

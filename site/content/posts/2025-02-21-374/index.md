@@ -19,13 +19,33 @@ prev_title = ""
 prev_body = "Most Shocking Second a Day Video\nStill The Most Shocking Second A Day\n#ad\n#uk\n#war\n#girl\nSource\nSource"
 views = 94
 ids = [374]
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-782/index.md"
+label = "#ad #retro #nokia"
+
+[[extra.related]]
+path = "@/posts/2026-06-18-1841/index.md"
+label = "#ad #newspaper #design #toxic From"
+
+[[extra.related]]
+path = "@/posts/2026-02-18-1116/index.md"
+label = "#pain #ad #event #sergeykulinkovich The old one Унижение и боль…"
 +++
 
 **Банк Империал - Конрад III**  
 
 {{ tag(t="ad") }} is old, around ~2000 year? This bank is not exists anymore.  
 
-[Source](https://www.youtube.com/watch?v=UHbre6vkc1w)
+[Source](<https://www.youtube.com/watch?v=UHbre6vkc1w> "Банк Империал - Конрад III")
 
 {{ youtube(id="UHbre6vkc1w") }}
 

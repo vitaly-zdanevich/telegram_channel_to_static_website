@@ -19,6 +19,26 @@ prev_title = ""
 prev_body = "How #heroesofmightandmagic3 developed - from diaries of Gregory Fulton:\nEveryone in the game industry knows the term \"crunch time.\" Those not in the industry may ask, \"What is crunch time?\" Long hours: 10-18 each day. We're starting our fourth crunch month. We have at least one more after this.\nBad take-out food: Mexican and Chinese food are New World's favorites. Today we had Taco Bell and Domino's pizza as part of NWC's \"work for food\" program.\nSocial Life: To work in the game industry you must already have some form of social retardation. When crunch mode begins, you may only speak in code to coworkers. Immediate family and friends may be seen on brief occasions so they don't file a missing-persons report. I'm one of the lucky ones; I don't remember having any friends or family.\nHygiene: Haircuts and showers become optional in favor of more sleep time. For me, showers are a must, but my hair is sprouting wings and a tail. Pretty soon I'll look like the lead singer from Flock of…"
 views = 33
 ids = [644]
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1137/index.md"
+label = "#ai"
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+
+[[extra.related]]
+path = "@/posts/2026-01-24-934/index.md"
+label = "#ai From"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2025-01-28-343/index.md"
+label = "#ai"
 +++
 
 {{ tag(t="stat") }}  

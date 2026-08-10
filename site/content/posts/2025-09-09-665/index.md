@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "В Кутаиси продолжается проект «Mural Fest» 🎨\nВ муниципалитете активно проходит роспись стен. Проект реализуется с 2023 года по инициативе Службы культуры, спорта, образования и молодежи при поддержке мэрии города.\nЗа это время уже расписано более 15 стен при участии известных художников.\n➡️ В этом году, в рамках фестиваля, ставшего уже традицией, были оформлены ещё 4 стены. Муралы органично вписываются в архитектурную среду и туристические маршруты, охватывая:\n➡️элементы фольклора,\n➡️литературные мотивы,\n➡️стилизованный флоральный арт и\n➡️натюрморт.\n👉 Цель проекта — разнообразить визуальный облик города и укрепить культурную атмосферу."
 views = 34
 ids = [665]
+
+[[extra.related]]
+path = "@/posts/2025-09-15-671/index.md"
+label = "#video #film #nightwatch #zavulon"
+
+[[extra.related]]
+path = "@/posts/2024-06-11-53/index.md"
+label = "#film #nightwatch Night Watch, love it"
+
+[[extra.related]]
+path = "@/posts/2023-08-12-29/index.md"
+label = "#film #nightwatch Night Watch: episode with witch, in the beginn…"
+
+[[extra.related]]
+path = "@/posts/2023-07-11-21/index.md"
+label = "#film #nightwatch Love these episodes from Night Watch Ночной До…"
+
+[[extra.related]]
+path = "@/posts/2025-08-30-647/index.md"
+label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
 +++
 
 {{ tag(t="film") }}  
@@ -29,10 +49,10 @@ ids = [665]
 
 <https://en.wikipedia.org/wiki/Night_Watch>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
 
-![](03.jpg)
+{{ img(src="03.jpg") }}
 
-![](04.jpg)
+{{ img(src="04.jpg") }}

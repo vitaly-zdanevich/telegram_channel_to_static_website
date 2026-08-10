@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#film\n#thefountain\n#darrenaronofsky\n#inquisitor\n#pain\n#torture\n#christianity"
 views = 35
 ids = [681]
+
+[[extra.related]]
+path = "@/posts/2025-05-12-523/index.md"
+label = "#belarus #history #lost #offline"
+
+[[extra.related]]
+path = "@/posts/2025-02-15-362/index.md"
+label = "#coin Its real coins, from Cook Islands"
+
+[[extra.related]]
+path = "@/posts/2025-02-15-361/index.md"
+label = "#coin"
+
+[[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+
+[[extra.related]]
+path = "@/posts/2024-05-06-42/index.md"
+label = "Coin 5 years of Lithuania independence, from #coin"
 +++
 
 {{ tag(t="coin") }}  
@@ -28,6 +48,6 @@ ids = [681]
 
 Uploaded to <https://commons.wikimedia.org/wiki/Category:Coins_of_Algirdas>
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}

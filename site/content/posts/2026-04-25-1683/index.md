@@ -17,8 +17,28 @@ next_body = "#quote\n#book\n#ночьвлиссабоне\n#ремарк\n– Я
 prev_id = 1682
 prev_title = ""
 prev_body = "My new great #bash #alias (actually a #hotkey) for faster #cd\n# Like cd, but accept a path with spaces - so no quotation is needed\n# How to use it: paste/type a path and press Ctrl-g\nbind \"\"C-g\": \"C-acd 'C-e'C-j\"\"\n# How it works: it executes multiple commands:\n# Ctrl-a to go to the line start\n# Types cd '\n# Ctrl-e to go to the line end\n# Add single quote\n# Ctrl-j hits the Enter\n# =====\n# I tried an alias/function\n# cd \"$\"\n# and\n# cd \"$1\"\n# but got error when path contains ("
-views = 19
+views = 21
 ids = [1683]
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1864/index.md"
+label = "And another #bash #alias: # Better word movement: treat aaabbbcc…"
+
+[[extra.related]]
+path = "@/posts/2026-06-24-1863/index.md"
+label = "My new #bash #alias bind '\"ej\": \"!#:$ e^\"' # Alt J repeats prev…"
+
+[[extra.related]]
+path = "@/posts/2026-04-25-1682/index.md"
+label = "My new great #bash #alias actually a #hotkey for faster #cd # Li…"
+
+[[extra.related]]
+path = "@/posts/2026-03-05-1336/index.md"
+label = "...one of my #bash aliases: to count files here: c { ls -1  wc -…"
+
+[[extra.related]]
+path = "@/posts/2026-03-05-1334/index.md"
+label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
 +++
 
 ...and another useful {{ tag(t="bash") }} {{ tag(t="alias") }} to {{ tag(t="remove") }} the text inside single {{ tag(t="quotes") }} by `esc-k`:  

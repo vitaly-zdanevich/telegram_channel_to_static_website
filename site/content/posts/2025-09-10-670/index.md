@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#map\n#isis\nSource"
 views = 47
 ids = [670]
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2026-01-12-873/index.md"
+label = "#map The Earth, centred around #newzealand"
+
+[[extra.related]]
+path = "@/posts/2025-09-10-669/index.md"
+label = "#map #isis"
+
+[[extra.related]]
+path = "@/posts/2025-10-05-697/index.md"
+label = "#turkey #map #population"
 +++
 
 {{ tag(t="map") }}  
@@ -29,4 +49,4 @@ ids = [670]
 
 [Source](https://www.instagram.com/p/DOVrzrrkUf4)
 
-![](5334931646509611961_1242135569_456260537.jpg)
+{{ img(src="5334931646509611961_1242135569_456260537.jpg") }}

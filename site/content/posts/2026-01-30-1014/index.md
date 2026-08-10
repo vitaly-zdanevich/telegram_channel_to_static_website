@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#webdesign\n#blue\n#batumi"
 views = 6
 ids = [1014]
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1054/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-995/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut Близ Новогру…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-986/index.md"
+label = "#belarus #architecture #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1058/index.md"
+label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-990/index.md"
+label = "#belarus #architecture #winter #адамполь #year2005 #globustut Fr…"
 +++
 
 {{ tag(t="belarus") }}  
@@ -31,4 +51,4 @@ ids = [1014]
 
 From [https://commons.wikimedia.org/wiki/File:045-033\_Лепель,\_напротив\_старой\_ц,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-033_%D0%9B%D0%B5%D0%BF%D0%B5%D0%BB%D1%8C,_%D0%BD%D0%B0%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%B9_%D1%86,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](5469697399455419433_1273513166_460000297.jpg)
+{{ img(src="5469697399455419433_1273513166_460000297.jpg") }}

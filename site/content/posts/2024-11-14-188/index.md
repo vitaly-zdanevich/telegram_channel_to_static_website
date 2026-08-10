@@ -20,8 +20,16 @@ prev_title = ""
 prev_body = "He is trying to improve Armies of Exigo, without the source code"
 views = 39
 ids = [188]
+
+[[extra.related]]
+path = "@/posts/2025-05-12-522/index.md"
+label = "Wikipedia templates #code #wikipedia"
+
+[[extra.related]]
+path = "@/posts/2026-05-13-1756/index.md"
+label = "#code #russian #yandex #language From"
 +++
 
 Love such comments {{ tag(t="code") }}
 
-![](5310002453732779331_1236331289_456254787.jpg)
+{{ img(src="5310002453732779331_1236331289_456254787.jpg") }}

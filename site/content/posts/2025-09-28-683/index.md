@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#coin\n#belarus\n#history\nUploaded to"
 views = 23
 ids = [683]
+
+[[extra.related]]
+path = "@/posts/2025-12-17-802/index.md"
+label = "Love this #logo"
+
+[[extra.related]]
+path = "@/posts/2025-11-06-743/index.md"
+label = "Emotional reasoning is a cognitive process by which an individua…"
+
+[[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+
+[[extra.related]]
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1878/index.md"
+label = "#psy #food Ходим без настроения, срываемся, ругаемся"
 +++
 
 Love this {{ tag(t="logo") }}  
@@ -28,4 +48,4 @@ Love this {{ tag(t="logo") }}
 
 <https://www.cavershambooksellers.com/home>
 
-![](5388950214695584492_1254712747_456262380.jpg)
+{{ img(src="5388950214695584492_1254712747_456262380.jpg") }}

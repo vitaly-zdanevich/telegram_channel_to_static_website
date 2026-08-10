@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#logo\n#gitlab\n#git"
 views = 10
 ids = [1087]
+
+[[extra.related]]
+path = "@/posts/2025-01-29-346/index.md"
+label = "#fashion"
+
+[[extra.related]]
+path = "@/posts/2025-09-30-686/index.md"
+label = "#fashion #istanbul"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1667/index.md"
+label = "#fashion #street #london"
+
+[[extra.related]]
+path = "@/posts/2026-04-21-1662/index.md"
+label = "#fashion #trash #black Author: Found at"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1082/index.md"
+label = "#people #fashion #zara"
 +++
 
 {{ tag(t="fashion") }}  
@@ -27,4 +47,4 @@ ids = [1087]
 
 <https://harajukustreetwear.com/>
 
-![](5197589415704858382_1210158089_460001038.jpg)
+{{ img(src="5197589415704858382_1210158089_460001038.jpg") }}

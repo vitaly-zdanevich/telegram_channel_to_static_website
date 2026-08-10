@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#ad\n#retro\n#nokia\nSource"
 views = 36
 ids = [783]
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1834/index.md"
+label = "#playstation #playstation2 #gameconsole #street From"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-782/index.md"
+label = "#ad #retro #nokia"
+
+[[extra.related]]
+path = "@/posts/2026-06-18-1841/index.md"
+label = "#ad #newspaper #design #toxic From"
 +++
 
 {{ tag(t="ad") }}  
@@ -28,4 +48,4 @@ ids = [783]
 
 {{ pinterest(url="https://www.pinterest.com/pin/251357222948286255/") }}
 
-![](5256097805263113139_1223780635_460000179.jpg)
+{{ img(src="5256097805263113139_1223780635_460000179.jpg") }}

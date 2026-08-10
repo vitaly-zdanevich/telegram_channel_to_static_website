@@ -20,10 +20,30 @@ prev_title = ""
 prev_body = "#my\n#film\n#korolishut\n#alcohol\ns1e6"
 views = 38
 ids = [576]
+
+[[extra.related]]
+path = "@/posts/2026-04-25-1686/index.md"
+label = "#photo #batumi #dog"
+
+[[extra.related]]
+path = "@/posts/2026-06-21-1848/index.md"
+label = "#batumi Oh my, I live here From"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+
+[[extra.related]]
+path = "@/posts/2025-05-14-534/index.md"
+label = "From globustut.by #photo #babruysk"
+
+[[extra.related]]
+path = "@/posts/2025-05-14-533/index.md"
+label = "From globustut.by #photo #babruysk"
 +++
 
 {{ tag(t="photo") }}  
 {{ tag(t="batumi") }}  
 {{ tag(t="chandelier") }}
 
-![](5370830868660219290_1250494008_456256922.jpg)
+{{ img(src="5370830868660219290_1250494008_456256922.jpg") }}

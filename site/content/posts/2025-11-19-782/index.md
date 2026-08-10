@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#js\nOut of memory, but RAM is used to 64%\n#firefox"
 views = 33
 ids = [782]
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+
+[[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
+
+[[extra.related]]
+path = "@/posts/2025-07-25-612/index.md"
+label = "#retro #cd #vhs"
+
+[[extra.related]]
+path = "@/posts/2026-06-18-1841/index.md"
+label = "#ad #newspaper #design #toxic From"
 +++
 
 {{ tag(t="ad") }}  
@@ -28,4 +48,4 @@ ids = [782]
 
 {{ pinterest(url="https://www.pinterest.com/pin/17170042325378816/") }}
 
-![](5253740353548913967_1223231748_460000559.jpg)
+{{ img(src="5253740353548913967_1223231748_460000559.jpg") }}

@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#commons"
 views = 15
 ids = [1124]
+
+[[extra.related]]
+path = "@/posts/2025-10-21-711/index.md"
+label = "#games #steam"
+
+[[extra.related]]
+path = "@/posts/2025-08-09-623/index.md"
+label = "#games #steam Can you imagine that, I know this guy"
+
+[[extra.related]]
+path = "@/posts/2025-06-26-587/index.md"
+label = "In 2024 to #steam were published 19000 #games, its 52 games per…"
+
+[[extra.related]]
+path = "@/posts/2025-05-13-527/index.md"
+label = "Gold #games - because lovers recreate engines for the best one."
+
+[[extra.related]]
+path = "@/posts/2026-03-21-1494/index.md"
+label = "#steam: almost 25% is on #linux?"
 +++
 
 {{ tag(t="steam") }}  
@@ -27,4 +47,4 @@ ids = [1124]
 
 forever {{ tag(t="games") }}
 
-![](5249225806049908507_1222180623_460003099.jpg)
+{{ img(src="5249225806049908507_1222180623_460003099.jpg") }}

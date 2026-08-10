@@ -20,8 +20,16 @@ prev_title = ""
 prev_body = "#ui\n#windows\n#windowsxp"
 views = 43
 ids = [814]
+
+[[extra.related]]
+path = "@/posts/2025-12-25-813/index.md"
+label = "#ui #windows #windowsxp"
+
+[[extra.related]]
+path = "@/posts/2025-10-28-727/index.md"
+label = "#os #design #windows #windowsxp"
 +++
 
 {{ tag(t="windows_xp") }}
 
-![](5361604072026346126_1248345727_460001934.jpg)
+{{ img(src="5361604072026346126_1248345727_460001934.jpg") }}

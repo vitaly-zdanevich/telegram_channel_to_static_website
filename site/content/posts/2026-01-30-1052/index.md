@@ -20,6 +20,26 @@ prev_title = ""
 prev_body = "#belarus\n#abandone\n#church\n#слабодка\n#winter\n#year2005\n#globustut\nFrom"
 views = 8
 ids = [1052]
+
+[[extra.related]]
+path = "@/posts/2026-01-30-1046/index.md"
+label = "#belarus #abandone #church #слабодка #winter #year2005 #globustu…"
+
+[[extra.related]]
+path = "@/posts/2026-01-28-953/index.md"
+label = "#belarus #architecture #church #green #winter #блонь #year2005 #…"
+
+[[extra.related]]
+path = "@/posts/2026-01-29-989/index.md"
+label = "#belarus #winter #year2005 #globustut From"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-929/index.md"
+label = "#belarus #church #year2005 #globustut"
+
+[[extra.related]]
+path = "@/posts/2026-01-21-925/index.md"
+label = "#belarus #church #year2005 #globustut"
 +++
 
 {{ tag(t="belarus") }}  
@@ -32,6 +52,6 @@ ids = [1052]
 
 From [https://commons.wikimedia.org/wiki/File:045-319\_Бешенковичи,\_костел\_(в\_доме),\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-319_%D0%91%D0%B5%D1%88%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B8%D1%87%D0%B8,_%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB_(%D0%B2_%D0%B4%D0%BE%D0%BC%D0%B5),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-![](01.jpg)
+{{ img(src="01.jpg") }}
 
-![](02.jpg)
+{{ img(src="02.jpg") }}
