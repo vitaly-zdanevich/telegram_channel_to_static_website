@@ -56,4 +56,6 @@ jobs:
       # npx (Node is preinstalled on the runner) — no extra pinned action; the
       # Biome version is pinned here. Lints our JS, ignoring vendored min.js.
       - name: Lint JS with Biome
-        run: npx --yes @biomejs/biome@1.9.4 ci src/search.js src/sw.js src/carousel.js src/embed.js
+        run: npx --yes @biomejs/biome@1.9.4 ci src/search.js src/sw.js src/sw.test.js src/carousel.js src/embed.js
+      - name: Test service worker
+        run: node src/sw.test.js

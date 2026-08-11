@@ -1,6 +1,7 @@
 //! Offline mode + installable PWA (opt-in `--offline` / `OFFLINE`). Ships a
 //! service worker (precaches the whole archive on any non-cellular connection,
-//! then serves cache-first) and a web app manifest (`display: standalone` hides
+//! refreshes navigations network-first, and serves assets cache-first) and a web
+//! app manifest (`display: standalone` hides
 //! the browser chrome, so the
 //! site is installable). All paths are relative, so it works under any base URL
 //! without baking one in.
