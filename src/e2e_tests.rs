@@ -309,8 +309,13 @@ fn zola_build_produces_expected_html() {
         })
         .collect();
 
-    let page_tag_titles =
-        site::pagination_tag_titles(posts.iter().map(|p| p.tags.as_slice()), s.posts_per_page);
+    let page_tag_titles = site::pagination_titles(
+        posts
+            .iter()
+            .map(|p| (p.date.date_naive(), p.tags.as_slice())),
+        s.posts_per_page,
+        &s.language,
+    );
     site::scaffold(&s, None, &tag_counts, &[], &days, &page_tag_titles).expect("scaffold");
     let rendered: Vec<RenderedPost> = posts
         .iter()
@@ -376,17 +381,20 @@ fn zola_build_produces_expected_html() {
         "tag count tooltip missing: {tags_page}"
     );
 
-    // Homepage pagination previews the destination page's tags, ranked by post
-    // count. Character references keep the native title tooltip multiline.
+    // Homepage pagination previews the destination page's date range and tags,
+    // ranked by post count. Character references keep the native tooltip
+    // multiline, with a blank line separating dates from tags.
     let home = read("index.html");
     assert!(
-        home.contains("title=\"#greeting — 1\n#video — 1\n#александровщина — 1\""),
-        "Older page tag tooltip missing or unsorted: {home}"
+        home.contains(
+            "title=\"15 November 2023 - 16 November 2023\n\n#greeting — 1\n#video — 1\n#александровщина — 1\""
+        ),
+        "Older page tooltip dates or tags are missing or unsorted: {home}"
     );
     let older_page = read("page/2/index.html");
     assert!(
-        older_page.contains("title=\"#video — 2\""),
-        "Newer page tag tooltip missing: {older_page}"
+        older_page.contains("title=\"17 November 2023 - 18 November 2023\n\n#video — 2\""),
+        "Newer page tooltip dates or tags are missing: {older_page}"
     );
 
     // Calendar year labels show the total number of posts in that year in both

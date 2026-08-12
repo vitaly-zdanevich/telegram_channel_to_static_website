@@ -328,32 +328,62 @@ fn write_if_absent(path: &Path, contents: &str) -> Result<()> {
     write_file(path, contents)
 }
 
-/// Per-homepage tag summaries, newest page first. `post_tags` must follow the
-/// same oldest-to-newest order as the posts passed through the render pipeline.
-/// Each title is safe raw HTML for a `title` attribute: tag names are escaped
-/// and line breaks use character references so native tooltips stay multiline.
-pub fn pagination_tag_titles<'a>(
-    post_tags: impl IntoIterator<Item = &'a [String]>,
+/// Per-homepage navigation titles, newest page first. `post_meta` must follow
+/// the same oldest-to-newest order as the posts passed through the render
+/// pipeline. Each title is safe raw HTML for a `title` attribute: text is
+/// escaped and line breaks use character references so native tooltips stay
+/// multiline.
+pub fn pagination_titles<'a>(
+    post_meta: impl IntoIterator<Item = (chrono::NaiveDate, &'a [String])>,
     posts_per_page: usize,
+    language: &str,
 ) -> Vec<String> {
-    let post_tags: Vec<&[String]> = post_tags.into_iter().collect();
-    post_tags
+    let locale = chrono::Locale::try_from(crate::i18n::date_locale(language))
+        .unwrap_or(chrono::Locale::en_US);
+    let post_meta: Vec<(chrono::NaiveDate, &[String])> = post_meta.into_iter().collect();
+    post_meta
         .rchunks(posts_per_page.max(1))
         .map(|page| {
+            let oldest = page
+                .iter()
+                .map(|(date, _)| *date)
+                .min()
+                .expect("pagination chunks are non-empty");
+            let newest = page
+                .iter()
+                .map(|(date, _)| *date)
+                .max()
+                .expect("pagination chunks are non-empty");
+            let format_date =
+                |date: chrono::NaiveDate| date.format_localized("%-d %B %Y", locale).to_string();
+            let oldest = format_date(oldest);
+            let newest = format_date(newest);
+            let date_range = if oldest == newest {
+                oldest
+            } else {
+                format!("{oldest} - {newest}")
+            };
+
             let mut counts: std::collections::HashMap<&str, usize> =
                 std::collections::HashMap::new();
-            for &tags in page {
+            for &(_, tags) in page {
                 for tag in tags {
                     *counts.entry(tag.as_str()).or_default() += 1;
                 }
             }
             let mut counts: Vec<(&str, usize)> = counts.into_iter().collect();
             counts.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(b.0)));
-            counts
+            let tags = counts
                 .into_iter()
                 .map(|(tag, count)| format!("#{} — {count}", html_escape(tag)))
                 .collect::<Vec<_>>()
-                .join("&#10;")
+                .join("&#10;");
+            let date_range = html_escape(&date_range);
+            if tags.is_empty() {
+                date_range
+            } else {
+                format!("{date_range}&#10;&#10;{tags}")
+            }
         })
         .collect()
 }
@@ -2269,31 +2299,62 @@ mod tests {
     }
 
     #[test]
-    fn pagination_tag_titles_follow_page_order_and_popularity() {
+    fn pagination_titles_put_localized_destination_dates_before_popular_tags() {
         // Input follows the render pipeline: oldest post first. The first
         // homepage summary therefore comes from the final two posts.
+        let dates = [
+            chrono::NaiveDate::from_ymd_opt(2020, 3, 10).unwrap(),
+            chrono::NaiveDate::from_ymd_opt(2025, 11, 20).unwrap(),
+            chrono::NaiveDate::from_ymd_opt(2026, 6, 29).unwrap(),
+            chrono::NaiveDate::from_ymd_opt(2026, 6, 30).unwrap(),
+        ];
         let post_tags = [
             vec!["old".to_string()],
             vec!["same".to_string(), "beta".to_string()],
             vec!["same".to_string(), "<escaped>".to_string()],
             vec!["same".to_string()],
         ];
-        let titles = pagination_tag_titles(post_tags.iter().map(Vec::as_slice), 2);
+        let posts = dates.into_iter().zip(post_tags.iter().map(Vec::as_slice));
+        let titles = pagination_titles(posts, 2, "en");
         assert_eq!(
             titles,
             [
-                "#same — 2&#10;#&lt;escaped&gt; — 1",
-                "#beta — 1&#10;#old — 1&#10;#same — 1",
+                "29 June 2026 - 30 June 2026&#10;&#10;#same — 2&#10;#&lt;escaped&gt; — 1",
+                "10 March 2020 - 20 November 2025&#10;&#10;#beta — 1&#10;#old — 1&#10;#same — 1",
             ]
         );
 
         let nav = pagination_nav_toml(&titles);
         assert!(nav.contains(
-            r##"{ index = 1, newer = "", older = "#beta — 1&#10;#old — 1&#10;#same — 1" }"##
+            r##"{ index = 1, newer = "", older = "10 March 2020 - 20 November 2025&#10;&#10;#beta — 1&#10;#old — 1&#10;#same — 1" }"##
         ));
         assert!(nav.contains(
-            r##"{ index = 2, newer = "#same — 2&#10;#&lt;escaped&gt; — 1", older = "" }"##
+            r##"{ index = 2, newer = "29 June 2026 - 30 June 2026&#10;&#10;#same — 2&#10;#&lt;escaped&gt; — 1", older = "" }"##
         ));
+
+        let french = pagination_titles(
+            dates[..2]
+                .iter()
+                .copied()
+                .zip(post_tags[..2].iter().map(Vec::as_slice)),
+            2,
+            "fr",
+        );
+        assert_eq!(
+            french,
+            ["10 mars 2020 - 20 novembre 2025&#10;&#10;#beta — 1&#10;#old — 1&#10;#same — 1"]
+        );
+
+        let no_tags: [String; 0] = [];
+        let one_day = pagination_titles(
+            [
+                (dates[0], no_tags.as_slice()),
+                (dates[0], no_tags.as_slice()),
+            ],
+            2,
+            "en",
+        );
+        assert_eq!(one_day, ["10 March 2020"]);
     }
 
     #[test]

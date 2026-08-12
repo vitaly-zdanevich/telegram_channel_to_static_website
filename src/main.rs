@@ -975,8 +975,13 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     }
 
     let tag_counts = count_tags(&posts);
-    let page_tag_titles =
-        site::pagination_tag_titles(posts.iter().map(|p| p.tags.as_slice()), s.posts_per_page);
+    let page_tag_titles = site::pagination_titles(
+        posts
+            .iter()
+            .map(|p| (p.date.date_naive(), p.tags.as_slice())),
+        s.posts_per_page,
+        &s.language,
+    );
 
     // Download the channel avatar (for the header) before scaffolding so the
     // config can reference it.
