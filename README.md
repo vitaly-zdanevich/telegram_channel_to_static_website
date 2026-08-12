@@ -292,6 +292,7 @@ These are *variables*, not secrets — all of it is public.
 | `DERIVE_TITLES` | `--derive-titles` | off | `true` derives a post title from its first sentence; default shows a clickable `#id` on the post's date/views line instead |
 | `STRIP_TITLE` | `--strip-title` | off | With `DERIVE_TITLES`, also remove that first sentence from the body so it isn't shown twice |
 | `LINK_UNDERLINE` | `--link-underline` | off | `true` underlines links (default: no underline) |
+| `POST_HEADER_LINE` | `--no-post-header-line` | on | In the built-in theme, a horizontal rule extends from each full-post date to the viewport's left edge. `false` disables it |
 | `YOUTUBE_FACADE` | `--youtube-facade` | off | `true` for a no-JS click-to-load YouTube thumbnail (default: direct iframe) |
 | `CAROUSEL` | `--carousel` | off | `true` shows a multi-image post as a swipeable **carousel** (one image at a time, with arrows + dots) instead of a vertical stack. The swipe is native CSS `scroll-snap`; arrows/dots need JavaScript. Default is the stack (no JS) |
 | `EMBED` | `--embed` | off | `true` ships a tiny script so the site **auto-resizes when embedded in a cross-origin `<iframe>`**. The page is already iframe-embeddable without it (GitHub Pages sets no `X-Frame-Options`); this only adds height reporting so the host iframe grows to fit — see [Embedding the blog](#embedding-the-blog) |

@@ -86,6 +86,21 @@ fn daily_wires_pinterest_keep_image_toggle() {
     );
 }
 
+/// The scheduled build must expose the default-on post-header line opt-out.
+#[test]
+fn daily_wires_post_header_line_toggle() {
+    let workflow = include_str!("../.github/workflows/daily.yml");
+    assert!(
+        workflow.contains("POST_HEADER_LINE: ${{ vars.POST_HEADER_LINE }}"),
+        "daily workflow must read the post-header line repository variable"
+    );
+    assert!(
+        workflow
+            .contains(r#"[ "${POST_HEADER_LINE:-}" = "false" ] && args+=(--no-post-header-line)"#),
+        "daily workflow must pass the post-header line opt-out to tg2zola"
+    );
+}
+
 fn settings(site: PathBuf) -> Settings {
     Settings {
         channel: "testchan".into(),
@@ -110,6 +125,7 @@ fn settings(site: PathBuf) -> Settings {
         derive_titles: false,
         strip_title: false,
         link_underline: false,
+        post_header_line: true,
         youtube_facade: false,
         carousel: false,
         embed: false,
@@ -374,6 +390,37 @@ fn zola_build_produces_expected_html() {
         "tag page missing"
     );
 
+    // Full-post metadata gets a viewport-edge rule by default, while a static
+    // page without a post date (About) must not be mistaken for a post header.
+    let home = read("index.html");
+    let post_page = read("posts/1/index.html");
+    let tag_full_page = read("tags/greeting/full/index.html");
+    let day_full_page = read("day/2023-11-15/index.html");
+    let about_page = read("about/index.html");
+    let css = read("style.css");
+    assert!(home.contains(r#"class="meta post-meta""#), "{home}");
+    assert!(
+        post_page.contains(r#"class="meta post-meta""#),
+        "{post_page}"
+    );
+    assert!(
+        tag_full_page.contains(r#"class="meta post-meta""#),
+        "{tag_full_page}"
+    );
+    assert!(
+        day_full_page.contains(r#"class="meta post-meta""#),
+        "{day_full_page}"
+    );
+    assert!(!about_page.contains("post-meta"), "{about_page}");
+    assert!(
+        css.contains(".post-meta::before")
+            && css.contains("left: calc(50% - 50vw)")
+            && css.contains("right: 100%")
+            && css.contains("overflow-x: clip")
+            && !css.contains("width: 100vw"),
+        "post-header viewport rule missing: {css}"
+    );
+
     // Each tag link carries a post-count hover tooltip (localized "N posts").
     let tags_page = read("tags/index.html");
     assert!(
@@ -384,7 +431,6 @@ fn zola_build_produces_expected_html() {
     // Homepage pagination previews the destination page's date range and tags,
     // ranked by post count. Character references keep the native tooltip
     // multiline, with a blank line separating dates from tags.
-    let home = read("index.html");
     assert!(
         home.contains(
             "title=\"15 November 2023 - 16 November 2023\n\n#greeting — 1\n#video — 1\n#александровщина — 1\""

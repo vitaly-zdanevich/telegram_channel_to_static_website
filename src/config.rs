@@ -61,6 +61,9 @@ pub struct FileConfig {
     pub strip_title: Option<bool>,
     /// Underline links (default false → `text-decoration: none`).
     pub link_underline: Option<bool>,
+    /// Draw a horizontal rule from each full-post date to the viewport's left
+    /// edge (default on).
+    pub post_header_line: Option<bool>,
     /// CSS-only click-to-load YouTube facade (default true); false = direct iframe.
     pub youtube_facade: Option<bool>,
     /// Show multi-image posts as a swipeable carousel instead of a stack (opt-in).
@@ -224,6 +227,9 @@ pub struct Settings {
     pub strip_title: bool,
     /// Underline links (default false).
     pub link_underline: bool,
+    /// Draw a horizontal rule from each full-post date to the viewport's left
+    /// edge (default true).
+    pub post_header_line: bool,
     /// CSS-only click-to-load YouTube facade (default true).
     pub youtube_facade: bool,
     /// Show multi-image posts as a swipeable carousel (opt-in, default false).

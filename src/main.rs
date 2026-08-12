@@ -196,6 +196,11 @@ struct GenerateArgs {
     #[arg(long)]
     link_underline: bool,
 
+    /// Don't draw a horizontal rule from each full-post date to the viewport's
+    /// left edge (default: draw the rule).
+    #[arg(long)]
+    no_post_header_line: bool,
+
     /// Enable the CSS click-to-load YouTube facade (default: direct iframe).
     #[arg(long)]
     youtube_facade: bool,
@@ -582,6 +587,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         derive_titles: g.derive_titles || fc.derive_titles.unwrap_or(false),
         strip_title: g.strip_title || fc.strip_title.unwrap_or(false),
         link_underline: g.link_underline || fc.link_underline.unwrap_or(false),
+        post_header_line: if g.no_post_header_line {
+            false
+        } else {
+            fc.post_header_line.unwrap_or(true)
+        },
         youtube_facade: g.youtube_facade || fc.youtube_facade.unwrap_or(false),
         carousel: g.carousel || fc.carousel.unwrap_or(false),
         embed: g.embed || fc.embed.unwrap_or(false),
@@ -1682,6 +1692,34 @@ fn init_tracing(level: &str) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn post_header_line_defaults_on_and_accepts_both_opt_outs() {
+        let defaults = Cli::try_parse_from(["tg2zola", "--channel", "x"]).unwrap();
+        assert!(
+            resolve(&defaults.generate, FileConfig::default())
+                .unwrap()
+                .post_header_line
+        );
+
+        let file_config: FileConfig =
+            toml::from_str("post_header_line = false").expect("valid test config");
+        assert!(
+            !resolve(&defaults.generate, file_config)
+                .unwrap()
+                .post_header_line
+        );
+
+        let cli_opt_out =
+            Cli::try_parse_from(["tg2zola", "--channel", "x", "--no-post-header-line"]).unwrap();
+        let file_config: FileConfig =
+            toml::from_str("post_header_line = true").expect("valid test config");
+        assert!(
+            !resolve(&cli_opt_out.generate, file_config)
+                .unwrap()
+                .post_header_line
+        );
+    }
 
     #[test]
     fn search_default_is_elasticlunr() {

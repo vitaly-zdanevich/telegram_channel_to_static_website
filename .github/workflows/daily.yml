@@ -122,6 +122,10 @@ env:
   # Set to "true" to underline links (default: no underline).
   LINK_UNDERLINE: ${{ vars.LINK_UNDERLINE }}
 
+  # A horizontal rule extends from each full-post date to the viewport's left
+  # edge by default. Set to "false" to disable it.
+  POST_HEADER_LINE: ${{ vars.POST_HEADER_LINE }}
+
   # Set to "true" for a CSS-only click-to-load YouTube facade (default: direct
   # iframe). Both use youtube.com so plays count toward the viewer's history.
   YOUTUBE_FACADE: ${{ vars.YOUTUBE_FACADE }}
@@ -379,6 +383,7 @@ jobs:
             [ "${DERIVE_TITLES:-}" = "true" ] && args+=(--derive-titles)
             [ "${STRIP_TITLE:-}" = "true" ] && args+=(--strip-title)
             [ "${LINK_UNDERLINE:-}" = "true" ] && args+=(--link-underline)
+            [ "${POST_HEADER_LINE:-}" = "false" ] && args+=(--no-post-header-line)
             [ "${YOUTUBE_FACADE:-}" = "true" ] && args+=(--youtube-facade)
             [ "${CAROUSEL:-}" = "true" ] && args+=(--carousel)
             [ "${EMBED:-}" = "true" ] && args+=(--embed)

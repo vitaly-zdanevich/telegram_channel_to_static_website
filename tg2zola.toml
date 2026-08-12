@@ -74,6 +74,10 @@ title = "Vitaly Zdanevich — Telegram channel mirror"
 # Underline links. Default false (text-decoration: none).
 # link_underline = true
 
+# Draw a horizontal rule from each full-post date to the viewport's left edge.
+# Default true.
+# post_header_line = false
+
 # CSS-only click-to-load YouTube facade (no JS). Default false (direct iframe).
 # Both use youtube.com so plays count toward the viewer's history.
 # youtube_facade = true

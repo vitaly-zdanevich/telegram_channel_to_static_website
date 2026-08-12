@@ -1630,6 +1630,10 @@ fn style_css(s: &Settings) -> String {
             } else {
                 "none"
             },
+        )
+        .replace(
+            "__POST_HEADER_LINE__",
+            post_header_line_css(s.post_header_line),
         );
     if let Some(extra) = &s.css {
         css.push_str("\n/* custom CSS (from --css / CSS) */\n");
@@ -1637,6 +1641,16 @@ fn style_css(s: &Settings) -> String {
         css.push('\n');
     }
     css
+}
+
+/// Optional CSS that joins each full-post date to the viewport's left edge
+/// without changing the metadata's position or participating in layout.
+fn post_header_line_css(enabled: bool) -> &'static str {
+    if enabled {
+        POST_HEADER_LINE_CSS
+    } else {
+        ""
+    }
 }
 
 fn toml_escape(s: &str) -> String {
@@ -1768,7 +1782,7 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
   {% for page in paginator.pages %}
     <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
       {% if page.title %}<h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>{% endif %}
-      <p class="meta">
+      <p class="meta post-meta">
         <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
         {% if page.extra.views %}· 👁 {{ page.extra.views }}{% endif %}
         {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
@@ -1815,11 +1829,11 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
 {% block content %}
   <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
     {% if not (current_path is containing("/about/")) %}<h1>{% if page.title %}{{ page.title }}{% else %}{{ page.extra.id }}{% endif %}</h1>{% endif %}
-    <p class="meta">
-      {% if page.date %}<a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% endif %}
+    {% if page.date %}<p class="meta post-meta">
+      <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
       {% if page.extra.views %}· 👁 {{ page.extra.views }} {{ config.extra.i18n.views }}{% endif %}
       {% if page.extra.forwarded_from %}· {{ config.extra.i18n.forwarded_from }} {% if page.extra.forwarded_from_url %}<a href="{{ page.extra.forwarded_from_url }}">{{ page.extra.forwarded_from }}</a>{% else %}{{ page.extra.forwarded_from }}{% endif %}{% endif %}
-    </p>
+    </p>{% endif %}
     <div class="content">{{ page.content | safe }}</div>
     {% if config.extra.tags_footer and page.taxonomies.tags %}
       <p class="tags">
@@ -1884,7 +1898,7 @@ const TAG_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% for p in term.pages %}
     <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
       {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
-      <p class="meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
+      <p class="meta post-meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
       <div class="content">{{ p.content | safe }}</div>
     </article>
   {% endfor %}
@@ -1903,7 +1917,7 @@ const DAY_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% for p in term.pages %}
     <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
       {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
-      <p class="meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
+      <p class="meta post-meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
       <div class="content">{{ p.content | safe }}</div>
     </article>
   {% endfor %}
@@ -2045,6 +2059,19 @@ const AVATAR_SHORTCODE: &str =
 
 // Built-in look: light by default, true-black #000 in dark mode (OLED-friendly),
 // following the OS via prefers-color-scheme.
+const POST_HEADER_LINE_CSS: &str = r#"html { overflow-x: clip; }
+.post-meta { position: relative; }
+.post-meta::before {
+  content: '';
+  position: absolute;
+  top: .8em;
+  left: calc(50% - 50vw);
+  right: 100%;
+  border-top: 1px solid var(--muted);
+  opacity: .45;
+  pointer-events: none;
+}"#;
+
 const STYLE_CSS: &str = r#":root {
   color-scheme: light dark;
   --bg: __BG_LIGHT__; --fg: #1a1a1a; --muted: #6b6b6b;
@@ -2200,6 +2227,7 @@ input.site-search { margin-left: auto; }
 .more { margin: 2rem 0; }
 .views, .meta { color: var(--muted); font-size: .85em; }
 .meta { font-size: .9em; }
+__POST_HEADER_LINE__
 .tags a { margin-right: .5rem; white-space: nowrap; }
 .pager { display: flex; justify-content: space-between; margin: 2rem 0; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; margin-top: auto; }
@@ -2245,6 +2273,18 @@ mod tests {
     use scraper::{Html, Selector};
     use std::collections::HashMap;
     use std::path::PathBuf;
+
+    #[test]
+    fn post_header_line_css_is_defaultable_without_affecting_layout() {
+        let enabled = post_header_line_css(true);
+        assert!(enabled.contains(".post-meta::before"));
+        assert!(enabled.contains("left: calc(50% - 50vw)"));
+        assert!(enabled.contains("right: 100%"));
+        assert!(enabled.contains("overflow-x: clip"));
+        assert!(enabled.contains("pointer-events: none"));
+        assert!(!enabled.contains("width: 100vw"));
+        assert_eq!(post_header_line_css(false), "");
+    }
 
     #[test]
     fn pinterest_footer_uses_dark_site_palette() {
