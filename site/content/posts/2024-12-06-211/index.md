@@ -23,3 +23,5 @@ ids = [211]
 > Only 13 percent of all classic games released between 1960 and 2009 are currently commercially available, according to the "Survey of the Video Game Reissue Market in the United States," [published last summer](https://gamehistory.org/study-explainer/) by Phil Salvadorb for the Video Game History Foundation and the Software Preservation Network
 
 <https://blog.archive.org/wp-content/uploads/2024/10/Vanishing-Culture-2024.pdf>
+
+👍 1 · 🙏 1

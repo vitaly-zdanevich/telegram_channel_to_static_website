@@ -93,3 +93,5 @@ class Solution:
 {{ img(src="01.jpg") }}
 
 {{ img(src="02.jpg") }}
+
+👍 1

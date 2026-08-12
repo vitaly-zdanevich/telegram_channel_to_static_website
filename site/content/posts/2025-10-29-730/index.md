@@ -5,13 +5,12 @@ description = "sakartvelo batumi misha trump"
 
 [taxonomies]
 days = ["2025-10-29"]
-tags = ["sakartvelo", "batumi", "misha", "trump"]
+tags = ["sakartvelo", "batumi", "misha", "trump", "video"]
 
 [extra]
 id = 730
 day = "2025-10-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/730"
-og_image = "01.jpg"
 next_id = 731
 next_title = ""
 next_body = "good\n#evernote\n#youtube\n#ifttt"
@@ -47,6 +46,8 @@ label = "#trump #gender By theceosonly"
 {{ tag(t="misha") }}  
 {{ tag(t="trump") }}
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/730-01.mp4") }}
 
-*▶ video — 0:58*
+👍 1
+
+{{ tag(t="video") }}

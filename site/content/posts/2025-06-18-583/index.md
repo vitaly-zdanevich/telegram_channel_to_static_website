@@ -48,3 +48,5 @@ label = "#architecture of #village houses in #sakartvelo"
 {{ tag(t="ladder") }}
 
 {{ img(src="5375476537215808962_1251575662_456259010.jpg") }}
+
+❤ 1

@@ -47,3 +47,5 @@ label = "#wikipedia #job"
 <https://commons.wikimedia.org/wiki/Category:Magna_Carta_(An_Embroidery)>
 
 {{ img(src="5343870641683687785_1244216841_456255849.jpg") }}
+
+👍 1

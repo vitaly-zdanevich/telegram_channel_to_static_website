@@ -56,3 +56,5 @@ label = "#belarus #architecture #nature #village #year2005 #globustut"
 {{ img(src="03.jpg") }}
 
 {{ img(src="04.jpg") }}
+
+👍 1

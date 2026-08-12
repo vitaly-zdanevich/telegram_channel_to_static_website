@@ -24,3 +24,5 @@ ids = [98]
 Uploading to [Commons](https://commons.wikimedia.org/wiki/Category:Museum_of_National_Bank_of_the_Republic_of_Belarus:_bonds)
 
 {{ img(src="5348070522698719109_1245194702_456253317.jpg") }}
+
+👍 1

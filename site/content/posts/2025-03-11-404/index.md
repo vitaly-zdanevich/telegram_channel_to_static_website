@@ -51,3 +51,5 @@ label = "#japan From"
 [Source](<https://www.youtube.com/watch?v=nkcKaNqfykg> "Gatebox - Promotion Movie \"OKAERI\"_english")
 
 {{ youtube(id="nkcKaNqfykg") }}
+
+❤ 1

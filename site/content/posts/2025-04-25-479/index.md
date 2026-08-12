@@ -39,3 +39,5 @@ label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
 I wrote.  
 
 <https://habr.com/en/articles/902838/>
+
+❤ 1 · 👎 1

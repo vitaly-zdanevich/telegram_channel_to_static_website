@@ -51,3 +51,5 @@ label = "#webdesign"
 <https://ice-pick.com/ru/about-us-ru/>
 
 {{ img(src="5357256482791036067_1247333475_460002467.jpg") }}
+
+🍓 1

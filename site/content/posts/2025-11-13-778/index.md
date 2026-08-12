@@ -5,13 +5,12 @@ description = "film kindzadza Гамарджоба At 1:50:00"
 
 [taxonomies]
 days = ["2025-11-13"]
-tags = ["film", "kin_dza_dza"]
+tags = ["film", "kin_dza_dza", "video"]
 
 [extra]
 id = 778
 day = "2025-11-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/778"
-og_image = "01.jpg"
 next_id = 779
 next_title = ""
 next_body = "#webdesign\n#webdesignold\n#webdesigngames\nYear: 2000"
@@ -49,6 +48,6 @@ label = "#quote #kindzadza Фильм был изначально заплани
 
 At 1:50:00
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/778-01.mp4") }}
 
-*▶ video — 0:16*
+{{ tag(t="video") }}

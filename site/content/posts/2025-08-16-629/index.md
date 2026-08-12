@@ -49,3 +49,5 @@ label = "Night Watch: Special Edition #game"
 {{ tag(t="heroes") }}  
 {{ tag(t="archiving") }}  
 {{ tag(t="lost") }}
+
+🤯 1

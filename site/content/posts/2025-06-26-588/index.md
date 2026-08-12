@@ -57,4 +57,4 @@ If you see "Failed to initialize video card" - try to enable Gamescope. Works wi
 
 <https://en.wikipedia.org/wiki/Warhammer_40,000:_Dawn_of_War>
 
-[📎 warhammer4000-dawn-of-war-demo.tar.xz](https://archive.org/download/warhammer4000-dawn-of-war-demo.tar/warhammer4000-dawn-of-war-demo.tar.xz)
+[📎 warhammer4000-dawn-of-war-demo.tar.xz](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/588-01-warhammer4000-dawn-of-war-demo.tar.xz)

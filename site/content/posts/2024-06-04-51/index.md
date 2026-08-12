@@ -21,7 +21,7 @@ views = 54
 ids = [51]
 +++
 
-My another ebuild: the game [Gigalomania](<https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania> "[MIRROR] GURU: repository of new packages maintained collaboratively by users · 316 stars · Languages: Shell 100%, Roff 0%, CMake 0% · 37564 commits · 243 forks · 69 open issues/PRs · last push 2026-08-10") - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
+My another ebuild: the game [Gigalomania](<https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania> "[MIRROR] GURU: repository of new packages maintained collaboratively by users · 318 stars · Languages: Shell 100%, Roff 0%, CMake 0% · 37564 commits · 246 forks · 72 open issues/PRs · last push 2026-08-12") - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
 
 <https://gigalomania.sourceforge.net/>
 

@@ -1,7 +1,8 @@
 // tg2zola offline service worker (opt-in). On install it precaches the whole
 // archive listed in asset-manifest.json — on any non-cellular connection
-// (Wi-Fi or wired), never over mobile data. Thereafter it serves cache-first and
-// keeps filling the cache from the network (again, not on a cellular link).
+// (Wi-Fi or wired), never over mobile data. Thereafter it refreshes page
+// navigations from the network with an offline fallback, while assets remain
+// cache-first and keep filling the cache (again, not on a cellular link).
 
 const CACHE = 'tg2zola-v1';
 const MANIFEST = 'asset-manifest.json';
@@ -62,25 +63,41 @@ self.addEventListener('activate', function (e) {
 	);
 });
 
+/** Fetch a request and remember a successful same-origin response. */
+function fetchAndCache(req) {
+	return fetch(req).then(function (resp) {
+		if (resp && resp.ok && resp.type === 'basic' && !metered()) {
+			const copy = resp.clone();
+			caches.open(CACHE).then(function (cache) {
+				cache.put(req, copy);
+			});
+		}
+		return resp;
+	});
+}
+
+/** Refresh an HTML navigation, retaining the cached page for offline use. */
+function networkFirst(req) {
+	return fetchAndCache(req).catch(function () {
+		return caches.match(req);
+	});
+}
+
+/** Reuse immutable or content-hashed assets before consulting the network. */
+function cacheFirst(req) {
+	return caches
+		.match(req)
+		.then(function (hit) {
+			if (hit) return hit;
+			return fetchAndCache(req);
+		})
+		.catch(function () {
+			return caches.match(req);
+		});
+}
+
 self.addEventListener('fetch', function (e) {
 	const req = e.request;
 	if (req.method !== 'GET') return;
-	e.respondWith(
-		caches.match(req).then(function (hit) {
-			if (hit) return hit;
-			return fetch(req)
-				.then(function (resp) {
-					if (resp && resp.ok && resp.type === 'basic' && !metered()) {
-						const copy = resp.clone();
-						caches.open(CACHE).then(function (cache) {
-							cache.put(req, copy);
-						});
-					}
-					return resp;
-				})
-				.catch(function () {
-					return caches.match(req);
-				});
-		}),
-	);
+	e.respondWith(req.mode === 'navigate' ? networkFirst(req) : cacheFirst(req));
 });

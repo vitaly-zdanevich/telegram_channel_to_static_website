@@ -30,3 +30,5 @@ label = "#monetization #spyware #security #webextension"
 {{ tag(t="wish") }}
 
 {{ img(src="5343793027329684273_1244198770_456258353.jpg") }}
+
+😁 1

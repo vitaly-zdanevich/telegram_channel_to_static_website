@@ -48,3 +48,5 @@ label = "Wikimedia Commons: загрузка через мой Python скрип
 [https://youtu.be/eqeSGjCKV68](<https://youtu.be/eqeSGjCKV68> "Warpath - Official Live Action Cinematic Trailer")
 
 {{ youtube(id="eqeSGjCKV68") }}
+
+🙏 1

@@ -54,3 +54,5 @@ It still alive
 <https://en.wikipedia.org/wiki/Ragnarok_Online>
 
 {{ img(src="5460802865779047402_1271442246_456260586.jpg") }}
+
+🔥 1

@@ -50,4 +50,6 @@ label = "#stat #wikipedia #ai Wikipedia's traffic has fallen by 23% in th…"
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/569-01.mp4") }}
 
+😁 1
+
 {{ tag(t="video") }}

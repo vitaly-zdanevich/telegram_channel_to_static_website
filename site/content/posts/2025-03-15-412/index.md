@@ -48,3 +48,5 @@ label = "#design #logo #artlebedevSource"
 [Source](https://www.reddit.com/r/linuxmasterrace/comments/lyeija/gentowo)
 
 {{ img(src="5382363899527033788_1253179251_456258492.jpg") }}
+
+👍 1

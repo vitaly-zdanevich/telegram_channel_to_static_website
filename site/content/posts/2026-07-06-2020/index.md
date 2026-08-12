@@ -18,7 +18,7 @@ next_body = "#typography\n#scan\nSource"
 prev_id = 2010
 prev_title = ""
 prev_body = "#belarus\n#ружаны\n#photo\n#abandone\n#castle\n#year2005\n#globustut\nSource"
-views = 13
+views = 14
 ids = [2020]
 
 [[extra.related]]

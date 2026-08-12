@@ -11,7 +11,6 @@ tags = ["webdesign", "video", "bilibili"]
 id = 1738
 day = "2026-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1738"
-og_image = "01.jpg"
 next_id = 1739
 next_title = ""
 next_body = "#shotcut is pretty good #foss #videoeditor, #love it"
@@ -46,6 +45,4 @@ label = "#webdesign"
 {{ tag(t="video") }}  
 {{ tag(t="bilibili") }}
 
-![video](01.jpg)
-
-*▶ video — 1:12*
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1738-01.mp4") }}

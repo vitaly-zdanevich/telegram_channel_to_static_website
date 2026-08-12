@@ -5,13 +5,12 @@ description = "webdesign oldweb"
 
 [taxonomies]
 days = ["2026-03-08"]
-tags = ["webdesign", "oldweb"]
+tags = ["webdesign", "oldweb", "video"]
 
 [extra]
 id = 1392
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1392"
-og_image = "01.jpg"
 next_id = 1393
 next_title = ""
 next_body = "#webdesign\n#pink\n#hellokitty\n#oldweb"
@@ -47,6 +46,6 @@ label = "#webdesign #oldweb #anime"
 
 <https://netsqhere.neocities.org/>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1392-01.mp4") }}
 
-*▶ video — 4:02*
+{{ tag(t="video") }}

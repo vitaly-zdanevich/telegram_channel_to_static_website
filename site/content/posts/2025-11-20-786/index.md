@@ -5,13 +5,12 @@ description = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Playi
 
 [taxonomies]
 days = ["2025-11-20"]
-tags = ["game", "strategy", "rts", "year2004", "armies_of_exigo", "fallen", "teonia"]
+tags = ["game", "strategy", "rts", "year2004", "armies_of_exigo", "fallen", "teonia", "video"]
 
 [extra]
 id = 786
 day = "2025-11-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/786"
-og_image = "01.jpg"
 next_id = 787
 next_title = ""
 next_body = "#preservation\n#game\n#groundcontrol\n#wwiii\nFrom the game Ground Control) released in 2000\nToday we know only that The Order of the New Dawn was founded by a small coalition of men and women of Faith, who united in common cause during the dark days of the latter 21st century. Foreseeing the coming cataclysm, these early cultists dedicated themselves to preserving as much technology and knowledge as possible, in order to bring about a New Dawn after the inevitable holocaust. Many analysts have observed that without the Sixteen Minutes' War, the Order would have been just another apocalyptic cult.\nBut the End of the Civilized World did indeed come, and the proto-Order was ready for it - and even the corporations, no matter what they may think of the Order in the present day, do not deny the debt all of humanity owes them. The greatest prize saved by the Order was the Liber Aurorae Novae, the Book of the New Dawn: millions of digitally stored books, recordings, and images, which members of…"
@@ -62,8 +61,8 @@ Game version 1.4
 {{ tag(t="fallen") }}  
 {{ tag(t="teonia") }}
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/786-01.mp4") }}
 
-*▶ video — 34:15*
+{{ tag(t="video") }}
 
 <figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136881294">Teonia</a> · <span class="wd-qid">Q136881294</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P155">follows</a></td><td><a href="https://www.wikidata.org/wiki/Q136676242">The Mines of Malrinor</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P156">followed by</a></td><td><a href="https://www.wikidata.org/wiki/Q139504868">The First Seal</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q136881307">Fallen campaign in Armies of Exigo</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P6262">Fandom article ID</a></td><td>armies-of-exigo:Teonia</td></tr></tbody></table></figure>

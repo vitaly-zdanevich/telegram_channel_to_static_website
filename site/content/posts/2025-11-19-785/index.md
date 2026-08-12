@@ -48,3 +48,5 @@ label = "#webdesign"
 <https://www.allods.gipat.ru/index.php?p=news&id=476>
 
 {{ img(src="5256072907337698864_1223774838_460000816.jpg") }}
+
+🔥 1

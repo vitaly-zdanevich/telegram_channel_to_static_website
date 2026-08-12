@@ -50,3 +50,5 @@ label = "#webdesign #webdesignold"
 <https://www.xboxexclusive.com/reviews/Blood_Wake>
 
 {{ img(src="5229215222705359666_1217521546_460000050.jpg") }}
+
+🔥 1

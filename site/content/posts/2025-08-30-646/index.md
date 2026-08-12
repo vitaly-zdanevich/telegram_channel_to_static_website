@@ -5,13 +5,12 @@ description = "film music russia korolishut s1e5, start of the episode - live sh
 
 [taxonomies]
 days = ["2025-08-30"]
-tags = ["film", "music", "russia", "korol_i_shut"]
+tags = ["film", "music", "russia", "korol_i_shut", "video"]
 
 [extra]
 id = 646
 day = "2025-08-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/646"
-og_image = "01.jpg"
 next_id = 647
 next_title = ""
 next_body = "#film\n#music\n#russia\n#korolishut\ns1e5, scene about a new girl Olga"
@@ -51,6 +50,8 @@ s1e5, start of the episode - live show
 
 [https://ru.wikipedia.org/wiki/Король\_и\_Шут\_(сериал)](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%B8_%D0%A8%D1%83%D1%82_(%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB))
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/646-01.mp4") }}
 
-*▶ video — 2:17*
+❤ 1
+
+{{ tag(t="video") }}

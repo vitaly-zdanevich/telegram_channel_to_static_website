@@ -17,7 +17,7 @@ next_body = "💗 Любимый Кобулети — это место встр
 prev_id = 1855
 prev_title = ""
 prev_body = "#armiesofexigo it own by #electronicarts\nТвёрдо и чётко."
-views = 13
+views = 14
 ids = [1856, 1857, 1858, 1859]
 
 [[extra.related]]
@@ -67,4 +67,4 @@ sound\\beasts\\bwkr\_select01.ogg
 6. в папке с игрой появится файл DataX.ork переименовываем его в Data3.ork  
 7. все
 
-📎 Armies of Exigo.7z *(not archived)*
+[📎 Armies of Exigo.7z](Armies_of_Exigo.7z)

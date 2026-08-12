@@ -39,3 +39,5 @@ Sexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008.
 <https://web.archive.org/web/20080726103726/http://www.stuffmagazine.com/index.aspx>
 
 {{ img(src="5231136868383002106_1217968964_460000762.jpg") }}
+
+😁 1

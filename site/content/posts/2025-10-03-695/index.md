@@ -33,3 +33,5 @@ After traveling through multiple countries, I feel that I prefer video games, bo
 Some people love to travel so much...
 
 {{ img(src="5404768918549166216_1258395826_456259720.jpg") }}
+
+💔 1

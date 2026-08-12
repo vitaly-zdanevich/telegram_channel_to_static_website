@@ -51,3 +51,5 @@ Year: 2000
 <https://web.archive.org/web/20000816084621/http://www.gameplay.com/spank/news_ps/>
 
 {{ img(src="5237697753050189079_1219496539_460000535.jpg") }}
+
+🔥 1

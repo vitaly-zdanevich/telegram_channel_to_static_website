@@ -5,13 +5,12 @@ description = "webdesign armenia"
 
 [taxonomies]
 days = ["2026-03-07"]
-tags = ["webdesign", "armenia"]
+tags = ["webdesign", "armenia", "video"]
 
 [extra]
 id = 1370
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1370"
-og_image = "01.jpg"
 next_id = 1371
 next_title = ""
 next_body = "#button"
@@ -47,6 +46,6 @@ label = "#webdesign"
 
 <https://khanofmir.neocities.org/ABOUT%20ME/About%20me>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1370-01.mp4") }}
 
-*▶ video — 0:46*
+{{ tag(t="video") }}

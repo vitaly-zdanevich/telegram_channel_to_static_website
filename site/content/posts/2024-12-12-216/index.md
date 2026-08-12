@@ -37,3 +37,5 @@ label = "My second #lutris yaml for #man2"
 {{ tag(t="man2") }}
 
 {{ img(src="5390848993967337299_1255154841_456257363.jpg") }}
+
+🙏 1

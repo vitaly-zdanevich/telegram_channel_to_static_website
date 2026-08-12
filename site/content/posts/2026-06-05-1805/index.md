@@ -46,3 +46,5 @@ My yet another project: [@wikipedia\_unofficial\_bot](https://t.me/wikipedia_uno
 Built with {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh  
 
 [https://github.com/vitaly-zdanevich/bot_telegram_wikipedia](<https://github.com/vitaly-zdanevich/bot_telegram_wikipedia> "Telegram bot for Wikipedia search on AWS Lambda · 0 stars · Languages: Rust 95%, Shell 3%, HCL 2% · 44 commits · MIT · last push 2026-06-18")
+
+👍 1

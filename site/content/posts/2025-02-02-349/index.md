@@ -46,3 +46,5 @@ label = "#psy #success #pain #cry #secret"
 {{ tag(t="pain") }}
 
 {{ img(src="5258347380279995651_1224304405_456256771.jpg") }}
+
+😁 1

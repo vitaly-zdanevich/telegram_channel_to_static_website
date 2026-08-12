@@ -45,3 +45,5 @@ label = "#pain #ad #event #sergeykulinkovich The old one Унижение и б�
 {{ tag(t="ad") }}
 
 {{ img(src="5384454698196658644_1253666053_456255956.jpg") }}
+
+🙏 1

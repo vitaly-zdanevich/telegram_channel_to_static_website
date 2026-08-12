@@ -5,13 +5,12 @@ description = "fashion street london Source"
 
 [taxonomies]
 days = ["2026-04-21"]
-tags = ["fashion", "street", "london"]
+tags = ["fashion", "street", "london", "video"]
 
 [extra]
 id = 1667
 day = "2026-04-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1667"
-og_image = "01.jpg"
 next_id = 1668
 next_title = ""
 next_body = "#anime\n#cover\n#game\n#ps3\n#year2014\nAtelier Shallie Alchemists of the Dusk Sea"
@@ -48,6 +47,6 @@ label = "#people #fashion #zara"
 
 [Source](https://www.instagram.com/p/DWW5BiZCBpa/)
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1667-01.mp4") }}
 
-*▶ video — 1:15*
+{{ tag(t="video") }}

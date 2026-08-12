@@ -24,3 +24,5 @@ ids = [157]
 [Old design](https://web.archive.org/web/20060308185714/http://www.nival.ru/nightwatch_ru/special/)
 
 {{ img(src="5188692317933005566_1208086572_456256254.jpg") }}
+
+🙏 1

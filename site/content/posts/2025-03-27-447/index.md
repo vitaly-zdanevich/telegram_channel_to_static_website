@@ -49,3 +49,5 @@ label = "#ussr #pc"
 I do not know who is the author
 
 {{ img(src="5415638411328479712_1260926577_456253920.jpg") }}
+
+🙏 1

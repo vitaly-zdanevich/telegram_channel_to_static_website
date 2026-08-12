@@ -24,3 +24,5 @@ ids = [86]
 I moved `~/.vim` to `~/.config/vim`, you also can
 
 {{ img(src="5197437665916610129_1210122757_456255057.jpg") }}
+
+❤ 1

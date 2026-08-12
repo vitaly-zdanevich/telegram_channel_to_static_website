@@ -34,3 +34,5 @@ label = "#wikimediafoundation #office from 2024"
 {{ img(src="02.jpg") }}
 
 {{ img(src="03.jpg") }}
+
+👍 1

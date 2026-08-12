@@ -37,3 +37,5 @@ ids = [64]
 {{ img(src="08.jpg") }}
 
 {{ img(src="09.jpg") }}
+
+🙏 1

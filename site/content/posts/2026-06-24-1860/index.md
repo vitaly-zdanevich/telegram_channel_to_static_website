@@ -5,19 +5,19 @@ description = "💗 Любимый Кобулети — это место вст
 
 [taxonomies]
 days = ["2026-06-24"]
+tags = ["video"]
 
 [extra]
 id = 1860
 day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1860"
-og_image = "01.jpg"
 next_id = 1861
 next_title = ""
 next_body = "#26июня2026 (пт) 21.30-23:00 айтишная посиделка в Friends club\n#безоплаты\nДоклады:\n1. [Soft] «Telegram bot для RuTracker - который не только ищет, как прочие, но и скачивает» (💻 @vitalyzdanevich)\n2. [Soft] batbus.app - автобусы в Батуми. Итоги 2-х месяцев. (🧖🏼@marstut) PS: Если успеем\n➡️Расписание\n🗓 21:00-21:30 - Сбор\n💬 21:30-22:00 - Знакомимся с Крякой\n🍺22:00-22:10 - Запасаемся пивом/медовухой/кальяном\n👨‍🏫22:10 - 22:55 Конкурс мокрых маек Доклад\n🍺23:00-до последнего итишника - Разговоры о высоком/Игры в шахматы/Нетворкинг\n📍Адрес: Friends club (Мемеда Абашидзе, 57)\n⏰ 21:30-23:00\n💬 Все вопросы – в личку: @marstut"
 prev_id = 1856
 prev_title = ""
 prev_body = "#armiesofexigo\n#tool\nСофт\nТам к софту есть инструкции но вот еще своими словами написал\nв файле list.LST все пути к игровым файлам\n===\nчтобы извлечь все файлы в консоли:\n\"tools/ork/orkdumper/orkdec\" Data.ork list.LST\n===\nчтобы заменить файл в игре на примере диалога выбора персонажа:\n1. создаем любой файл .LST пусть test.LST в папке с игрой\n2. в нем пишем список файлов которые хотим заменить (каждый с новой строки). Например:\nsoundbeastsbwkrselect01.ogg\n4. в папке с игрой по этому пути (soundbeastsbwkrselect01.ogg) вставляем новый файл на замену\n5. в консоли:\n\"tools/ork/orkcompiler/orkcmp\" -g DataX.ork test.LST\n6. в папке с игрой появится файл DataX.ork переименовываем его в Data3.ork\n7. все"
-views = 13
+views = 14
 forwarded_from = "Батумчик 🌴 | Новости Батуми | Западная Грузия"
 forwarded_from_url = "https://t.me/batumchik/74709"
 ids = [1860]
@@ -27,6 +27,6 @@ ids = [1860]
 
 В кадрах: Кобулети, Цихисдзири и Чакви, природные заповедные территории, крепость Пэтра и деревянный дом-ода в селе Легва.
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1860-01.mp4") }}
 
-*▶ video — 1:02*
+{{ tag(t="video") }}

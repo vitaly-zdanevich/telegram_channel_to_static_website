@@ -28,3 +28,5 @@ ids = [1416]
 <https://www.pjreddie.com/static/resume.pdf>
 
 {{ img(src="5291965923260568886_1232131832_460002614.jpg") }}
+
+🔥 1

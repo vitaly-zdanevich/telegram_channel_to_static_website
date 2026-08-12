@@ -42,3 +42,5 @@ label = "suno.com is great - the best service for songs generation. Suppo…"
 +++
 
 {{ tag(t="ai") }}
+
+🙏 1

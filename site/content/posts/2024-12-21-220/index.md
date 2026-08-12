@@ -46,3 +46,5 @@ label = "#phone #psy"
 <https://music.yandex.ru/album/22206733/track/103670414>
 
 {{ yandex_music(url="https://music.yandex.ru/iframe/#track/103670414/22206733") }}
+
+🙏 1

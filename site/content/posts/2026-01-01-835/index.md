@@ -49,3 +49,5 @@ label = "#webdesign"
 <https://ptj.spb.ru/archive/101/independence-is-freedom/sobiraetsya-ryad-subektivnostej/>
 
 {{ img(src="5384459448434232199_1253667159_460000135.jpg") }}
+
+😍 1

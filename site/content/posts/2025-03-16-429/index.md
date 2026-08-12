@@ -49,4 +49,6 @@ label = "#music #sunboy Остров в океане From Про исполни�
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/429-01.mp4") }}
 
+🔥 1
+
 {{ tag(t="video") }}

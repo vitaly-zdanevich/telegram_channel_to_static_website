@@ -50,3 +50,5 @@ label = "#games #steam Can you imagine that, I know this guy"
 [Source](https://vk.com/feed?z=photo-160168013_457515889%2F7054f886579f71b39a)
 
 {{ img(src="5440653838458679407_1266750935_456257647.jpg") }}
+
+👎 1

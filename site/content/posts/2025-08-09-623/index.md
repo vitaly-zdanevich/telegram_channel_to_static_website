@@ -48,3 +48,5 @@ label = "#steam: almost 25% is on #linux?"
 Can you imagine that, I know this guy
 
 {{ img(src="5240341610359814155_1220112110_456259595.jpg") }}
+
+😁 1

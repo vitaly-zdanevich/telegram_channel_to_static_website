@@ -30,3 +30,5 @@ ids = [692]
 [Source](https://hvali.by/belorusskie-hudozhniki/aleksandr-isachev/)
 
 {{ img(src="5397696958543559379_1256749257_456260307.jpg") }}
+
+🤯 1

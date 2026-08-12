@@ -48,3 +48,5 @@ label = "#belarus #belarussian #arabic #language"
 Adding Belarusian language to the game
 
 {{ img(src="5215716724605844691_1214378682_456260819.jpg") }}
+
+👌 2

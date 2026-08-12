@@ -47,3 +47,5 @@ Sad that UI customization is rare.
 {{ img(src="01.jpg") }}
 
 {{ img(src="02.jpg") }}
+
+👍 1

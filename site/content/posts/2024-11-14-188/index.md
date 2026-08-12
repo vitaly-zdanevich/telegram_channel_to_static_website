@@ -33,3 +33,5 @@ label = "#code #russian #yandex #language From"
 Love such comments {{ tag(t="code") }}
 
 {{ img(src="5310002453732779331_1236331289_456254787.jpg") }}
+
+🙏 1

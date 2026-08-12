@@ -30,3 +30,5 @@ label = "Guess the output #javascript const obj4 = { name: \"obj4\", getThi…"
 ```
 [1,2,3]+[4,5,6]
 ```
+
+🙏 1

@@ -54,3 +54,5 @@ label = "#wikipedia #wikimediacommons Пишите авторам контент
 <https://en.wikipedia.org/wiki/Ultracore>
 
 {{ img(src="5431893221870079798_1264711195_460001078.jpg") }}
+
+🔥 1

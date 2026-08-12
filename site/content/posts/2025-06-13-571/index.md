@@ -5,13 +5,12 @@ description = "livecoding batman binarysearch leetcode with games :("
 
 [taxonomies]
 days = ["2025-06-13"]
-tags = ["livecoding", "batman", "binary_search", "leetcode"]
+tags = ["livecoding", "batman", "binary_search", "leetcode", "video"]
 
 [extra]
 id = 571
 day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/571"
-og_image = "01.jpg"
 next_id = 573
 next_title = ""
 next_body = "#archiving\nLost."
@@ -48,6 +47,8 @@ label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
 
 <https://en.wikipedia.org/wiki/Binary_search>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/571-01.mp4") }}
 
-*▶ video — 0:59*
+👍 1
+
+{{ tag(t="video") }}

@@ -79,3 +79,5 @@ Vitaly Zdanevich — [@vitaly\_zdanevich](https://t.me/vitaly_zdanevich)
 **⏰** 21:00 — до последнего айтиш  
 
 **💬** Все вопросы — можно в личку: [@AMVavilov](https://t.me/AMVavilov)
+
+❤ 1

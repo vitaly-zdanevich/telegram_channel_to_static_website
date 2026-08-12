@@ -30,3 +30,5 @@ label = "#warcraft"
 {{ tag(t="warcraft") }}
 
 {{ youtube(id="DWjZQzviTUs") }}
+
+🙏 1

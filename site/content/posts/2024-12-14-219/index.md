@@ -45,3 +45,5 @@ label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
 My second {{ tag(t="lutris") }} yaml for {{ tag(t="man2") }} <https://lutris.net/games/massive-assault-network-2/>
 
 {{ img(src="5399898773527849409_1257261907_456255937.jpg") }}
+
+🙏 2

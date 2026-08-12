@@ -34,3 +34,5 @@ label = "#armiesofexigo: #fallen 7: The First Seal: hard: victory #rts -…"
 +++
 
 My first {{ tag(t="lutris") }} install script <https://lutris.net/games/armies-of-exigo/>
+
+🙏 1

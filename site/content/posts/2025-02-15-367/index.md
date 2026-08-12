@@ -11,7 +11,6 @@ tags = ["turkey", "istanbul", "video", "my"]
 id = 367
 day = "2025-02-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/367"
-og_image = "01.jpg"
 next_id = 368
 next_title = ""
 next_body = "#love\n#poop\n#johnnydepp\n#amberheard\nSource"
@@ -49,6 +48,4 @@ label = "#my another small project: #wikidata #pwa to get nearby items, w…"
 
 Animation on building by projectors, love it.
 
-![video](01.jpg)
-
-*▶ video — 6:14*
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/367-01.mp4") }}

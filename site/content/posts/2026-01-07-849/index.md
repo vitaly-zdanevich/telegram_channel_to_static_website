@@ -50,3 +50,5 @@ label = "#belarus #village #year2004 #globustut"
 [Source](https://commons.wikimedia.org/wiki/File:025-066_%D0%93%D0%B0%D0%B1%D1%80%D0%B8%D0%B5%D0%BB%D0%B5%D0%B2%D0%BA%D0%B0,_30-10-2004.jpg)
 
 {{ img(src="5402068444980645556_1257767073_460000948.jpg") }}
+
+❤ 1

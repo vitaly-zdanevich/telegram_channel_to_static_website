@@ -47,8 +47,8 @@ label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
 
 {{ tag(t="mcfly") }}: ctrl-r replacement with "suggestions are prioritized in real time with a small neural network."  
 
-Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7772 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14") for it.  
+Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7776 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14") for it.  
 
-[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7772 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14")
+[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7776 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14")
 
 {{ img(src="5242389218842057393_1220588856_460004017.jpg") }}

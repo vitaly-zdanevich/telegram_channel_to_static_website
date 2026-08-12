@@ -47,3 +47,5 @@ label = "#wikipedia #ui #navigation"
 {{ tag(t="samara") }}
 
 {{ img(src="5190505051833700620_1208508632_460001548.jpg") }}
+
+🔥 1 · 😁 1

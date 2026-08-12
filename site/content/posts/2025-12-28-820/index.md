@@ -46,3 +46,5 @@ Toshiba Libretto
 {{ img(src="04.jpg") }}
 
 {{ img(src="05.jpg") }}
+
+👍 1

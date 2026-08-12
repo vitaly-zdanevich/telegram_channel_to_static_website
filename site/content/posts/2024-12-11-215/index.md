@@ -45,3 +45,5 @@ label = "#belfry #belarus #globustut"
 {{ tag(t="belarus") }}
 
 {{ img(src="5391209139860005754_1255238694_456254330.jpg") }}
+
+💔 2

@@ -50,3 +50,5 @@ label = "#design #artlebedev"
 {{ tag(t="bluray") }}
 
 {{ img(src="5271934505025926821_1227467904_456259237.jpg") }}
+
+👍 1

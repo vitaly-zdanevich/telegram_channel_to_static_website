@@ -45,3 +45,5 @@ label = "#game #man2"
 {{ tag(t="game") }} {{ tag(t="ui") }} {{ tag(t="path_of_exile2") }}
 
 {{ img(src="5427298839515227193_1263641482_456254521.jpg") }}
+
+🙏 1

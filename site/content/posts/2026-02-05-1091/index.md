@@ -5,13 +5,12 @@ description = "linux game wwii landing ad warthunder warthunder.com"
 
 [taxonomies]
 days = ["2026-02-05"]
-tags = ["linux", "game", "wwii", "landing", "ad", "warthunder"]
+tags = ["linux", "game", "wwii", "landing", "ad", "warthunder", "video"]
 
 [extra]
 id = 1091
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1091"
-og_image = "01.jpg"
 next_id = 1092
 next_title = ""
 next_body = "#recording my screen (like previous message) with #ffmpeg:\nffmpeg -vaapidevice /dev/dri/renderD128\n-f x11grab -videosize 1366x768\n-i :0\n-vf setpts=N/FR/TB\n-c:v h264vaapi -vf 'format=nv12,hwupload'\n/record/out/$(date +%Y-%b-%d%a--%H-%M-%S | tr A-Z a-z).mp4\n#\n#\n# setpts=N/FR/TB\n# to be able to pause by Ctrl-Z, see"
@@ -51,6 +50,6 @@ label = "#steam: almost 25% is on #linux?"
 
 [warthunder.com](http://warthunder.com/)
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1091-01.mp4") }}
 
-*▶ video — 1:20*
+{{ tag(t="video") }}

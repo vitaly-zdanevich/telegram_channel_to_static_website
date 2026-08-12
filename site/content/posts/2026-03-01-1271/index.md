@@ -67,3 +67,5 @@ label = "#belarus #monument #nature #year2005 #year1915 #globustut"
 {{ img(src="08.jpg") }}
 
 {{ img(src="09.jpg") }}
+
+👍 1

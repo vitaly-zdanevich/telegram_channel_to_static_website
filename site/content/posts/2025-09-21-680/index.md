@@ -5,13 +5,12 @@ description = "film thefountain darrenaronofsky inquisitor pain torture christia
 
 [taxonomies]
 days = ["2025-09-21"]
-tags = ["film", "the_fountain", "darren_aronofsky", "inquisitor", "pain", "torture", "christianity"]
+tags = ["film", "the_fountain", "darren_aronofsky", "inquisitor", "pain", "torture", "christianity", "video"]
 
 [extra]
 id = 680
 day = "2025-09-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/680"
-og_image = "01.jpg"
 next_id = 681
 next_title = ""
 next_body = "#coin\n#belarus\n#history\nUploaded to"
@@ -52,6 +51,6 @@ label = "#film #kindzadza Гамарджоба At 1:50:00"
 
 <https://en.wikipedia.org/wiki/The_Fountain>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/680-01.mp4") }}
 
-*▶ video — 5:18*
+{{ tag(t="video") }}

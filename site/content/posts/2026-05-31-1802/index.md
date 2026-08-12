@@ -45,4 +45,6 @@ With {{ tag(t="llm") }} I added 1920x1200 to {{ tag(t="armies_of_exigo") }} {{ t
 
 And increased the {{ tag(t="camera") }} range.
 
-📎 Exigo1920x1200.exe *(not archived)*
+[📎 Exigo1920x1200.exe](Exigo1920x1200.exe)
+
+🤝 2

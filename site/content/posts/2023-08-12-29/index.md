@@ -5,13 +5,12 @@ description = "film nightwatch Night Watch: episode with witch, in the beginning
 
 [taxonomies]
 days = ["2023-08-12"]
-tags = ["film", "night_watch"]
+tags = ["film", "night_watch", "video"]
 
 [extra]
 id = 29
 day = "2023-08-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/29"
-og_image = "01.jpg"
 next_id = 30
 next_title = ""
 next_body = "#film\n#daywatch\nДневной Дозор: конец, эпизод с исправлением судьбы\nFrom"
@@ -47,6 +46,6 @@ label = "#film Love, Sex & Robots S1.E3: The Witness"
 
 Night Watch: episode with witch, in the beginning
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/29-01.mp4") }}
 
-*▶ video — 6:58*
+{{ tag(t="video") }}

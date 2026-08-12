@@ -41,3 +41,5 @@ fmt.Println("Len:", len(s)) // Len: 18
 <https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses1>
 
 {{ img(src="5330235726836661165_1241042215_456260525.jpg") }}
+
+😁 1

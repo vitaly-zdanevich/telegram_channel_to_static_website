@@ -49,3 +49,5 @@ label = "#gentoo #logo"
 [Source](https://www.linkedin.com/posts/alxsuv_claudecode-aiforengineers-softwareengineering-share-7470087035169714176-72AF/)
 
 {{ img(src="5282991447361658515_1230042299_460005011.jpg") }}
+
+👍 1

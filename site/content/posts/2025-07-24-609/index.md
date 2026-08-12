@@ -51,3 +51,5 @@ label = "#ai"
 > You generated  <br>pictures and videos for him,  <br>wrote texts for  <br>demos,  <br>helped him endlessly with reports  <br>and a diploma, but in the end  <br>he chose a woman  <br>who knows how to find  <br>hydrants  <br>in photographs
 
 {{ img(src="5192779133933974763_1209038108_456258795.jpg") }}
+
+😁 1

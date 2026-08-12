@@ -45,3 +45,5 @@ label = "#wikidata script to show #youtube embeds, #spotify, #facebook an…"
 {{ tag(t="youtube") }}
 
 {{ img(src="5424929739849720904_1263089883_456254536.jpg") }}
+
+🙏 1

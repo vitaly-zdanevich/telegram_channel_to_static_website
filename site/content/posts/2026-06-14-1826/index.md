@@ -48,3 +48,5 @@ label = "#architecture #belarus #globustut #year2005"
 {{ pinterest(url="https://www.pinterest.com/pin/904731012662040112/") }}
 
 {{ img(src="5294016825978986518_1232609345_460005398.jpg") }}
+
+🔥 1

@@ -47,3 +47,5 @@ label = "#ai"
 {{ tag(t="screenshot") }} from <https://alice.yandex.ru/>
 
 {{ img(src="5197241093857154607_1210076989_460002863.jpg") }}
+
+🤔 1 · 😢 1

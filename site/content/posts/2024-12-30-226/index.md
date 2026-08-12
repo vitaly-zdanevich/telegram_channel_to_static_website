@@ -45,3 +45,5 @@ label = "#webdesign"
 {{ tag(t="webdesign") }} <https://handbookhmm.ru/nwcomputing/fullgraf/fullgraf.html>
 
 {{ img(src="5444996905093424600_1267762134_456254936.jpg") }}
+
+🙏 1

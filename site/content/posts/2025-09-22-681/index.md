@@ -51,3 +51,5 @@ Uploaded to <https://commons.wikimedia.org/wiki/Category:Coins_of_Algirdas>
 {{ img(src="01.jpg") }}
 
 {{ img(src="02.jpg") }}
+
+❤ 1

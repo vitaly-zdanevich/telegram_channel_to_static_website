@@ -18,7 +18,7 @@ next_body = "#belarus\n#демьянки\n#photo\n#architecture\n#abandone\n#yea
 prev_id = 1922
 prev_title = ""
 prev_body = "#belarus\n#шерстин\n#photo\n#village\n#year2005\n#globustut\nSource"
-views = 9
+views = 10
 ids = [1925]
 
 [[extra.related]]
