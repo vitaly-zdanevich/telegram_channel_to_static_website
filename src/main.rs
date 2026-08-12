@@ -239,6 +239,11 @@ struct GenerateArgs {
     #[arg(long)]
     no_pinterest: bool,
 
+    /// Keep the sole attached photo beside a confirmed-live Pinterest widget
+    /// (default: the widget replaces that duplicate image).
+    #[arg(long)]
+    pinterest_keep_image: bool,
+
     /// Don't replace a Bandcamp album/track link with the Bandcamp player
     /// (default: fetch the page and embed the player).
     #[arg(long)]
@@ -303,8 +308,8 @@ struct GenerateArgs {
     #[arg(long)]
     no_video_releases: bool,
 
-    /// Skip the YouTube liveness check (a removed video otherwise keeps its local
-    /// media instead of being replaced by a dead embed).
+    /// Skip external-embed liveness checks. Unverified Pinterest pins keep their
+    /// local photo instead of replacing it.
     #[arg(long)]
     no_liveness: bool,
 
@@ -598,6 +603,7 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.pinterest.unwrap_or(true)
         },
+        pinterest_keep_image: g.pinterest_keep_image || fc.pinterest_keep_image.unwrap_or(false),
         bandcamp: if g.no_bandcamp {
             false
         } else {
@@ -1011,6 +1017,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         spotify: s.spotify,
         instagram: s.instagram,
         pinterest: s.pinterest,
+        pinterest_keep_image: s.pinterest_keep_image,
         video_releases: video_release_base.as_deref(),
         carousel: s.carousel,
     };

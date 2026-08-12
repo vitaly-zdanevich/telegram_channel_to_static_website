@@ -69,6 +69,23 @@ fn daily_blog_backup_excludes_mtproto_cache() {
     );
 }
 
+/// The scheduled build must expose the opt-out that retains a Pinterest post's
+/// local image beside its confirmed-live widget.
+#[test]
+fn daily_wires_pinterest_keep_image_toggle() {
+    let workflow = include_str!("../.github/workflows/daily.yml");
+    assert!(
+        workflow.contains("PINTEREST_KEEP_IMAGE: ${{ vars.PINTEREST_KEEP_IMAGE }}"),
+        "daily workflow must read the Pinterest image repository variable"
+    );
+    assert!(
+        workflow.contains(
+            r#"[ "${PINTEREST_KEEP_IMAGE:-}" = "true" ] && args+=(--pinterest-keep-image)"#
+        ),
+        "daily workflow must pass the Pinterest image override to tg2zola"
+    );
+}
+
 fn settings(site: PathBuf) -> Settings {
     Settings {
         channel: "testchan".into(),
@@ -114,6 +131,7 @@ fn settings(site: PathBuf) -> Settings {
         spotify: false,
         instagram: false,
         pinterest: false,
+        pinterest_keep_image: false,
         pinterest_save: false,
         pagespeed: false,
         pwa: false,
@@ -183,6 +201,7 @@ fn post(
         instagram_dead: false,
         spotify_dead: false,
         pinterest_dead: false,
+        pinterest_live: false,
         genius_song_id: None,
         bandcamp: None,
         vk_playlist: None,
@@ -311,6 +330,7 @@ fn zola_build_produces_expected_html() {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    pinterest_keep_image: false,
                     video_releases: None,
                     carousel: false,
                 },
@@ -508,6 +528,7 @@ fn elasticlunr_search_builds() {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    pinterest_keep_image: false,
                     video_releases: None,
                     carousel: false,
                 },
@@ -611,6 +632,7 @@ fn about_page_renders_tooltip_and_mtproto_link() {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    pinterest_keep_image: false,
                     video_releases: None,
                     carousel: false,
                 },

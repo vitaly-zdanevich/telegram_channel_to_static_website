@@ -1,4 +1,4 @@
-//! Best-effort liveness checks for external video links.
+//! Best-effort liveness checks for external embeds.
 //!
 //! When a post's attached media is replaced by an external embed to save hosting
 //! space, we first confirm the external copy still exists. Currently YouTube: a
@@ -399,8 +399,28 @@ async fn is_spotify_removed(client: &reqwest::Client, embed_url: &str) -> bool {
     }
 }
 
-/// Mark posts whose Pinterest pin is removed (oEmbed 400/404), so the link is
-/// shown instead of a broken embed. Run only when the Pinterest embed is enabled.
+/// Pinterest's authoritative oEmbed result. Unlike other embed checks, live and
+/// unknown must remain distinct because only a positive response may replace a
+/// locally archived photo.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+enum PinterestStatus {
+    Live,
+    Removed,
+    Unknown,
+}
+
+/// Convert a Pinterest oEmbed HTTP status into a conservative availability
+/// result. Rate limits and server failures retain the local image.
+fn pinterest_status(status: u16) -> PinterestStatus {
+    match status {
+        200 => PinterestStatus::Live,
+        400 | 404 => PinterestStatus::Removed,
+        _ => PinterestStatus::Unknown,
+    }
+}
+
+/// Record whether each Pinterest pin is positively live, removed, or unknown.
+/// Run only when the Pinterest embed is enabled.
 pub async fn check_pinterest(client: &reqwest::Client, posts: &mut [Post], concurrency: usize) {
     let targets: Vec<(usize, String)> = posts
         .iter()
@@ -411,35 +431,44 @@ pub async fn check_pinterest(client: &reqwest::Client, posts: &mut [Post], concu
         return;
     }
     tracing::info!("checking {} Pinterest link(s) for liveness", targets.len());
-    let results: Vec<(usize, bool)> = stream::iter(targets.into_iter().map(|(i, url)| {
-        let client = client.clone();
-        async move { (i, is_pinterest_removed(&client, &url).await) }
-    }))
-    .buffer_unordered(concurrency.max(1))
-    .collect()
-    .await;
-    let mut dead = 0usize;
-    for (i, removed) in results {
-        if removed {
-            posts[i].pinterest_dead = true;
-            dead += 1;
+    let results: Vec<(usize, PinterestStatus)> =
+        stream::iter(targets.into_iter().map(|(i, url)| {
+            let client = client.clone();
+            async move { (i, pinterest_item_status(&client, &url).await) }
+        }))
+        .buffer_unordered(concurrency.max(1))
+        .collect()
+        .await;
+    let (mut live, mut dead, mut unknown) = (0usize, 0usize, 0usize);
+    for (i, status) in results {
+        match status {
+            PinterestStatus::Live => {
+                posts[i].pinterest_live = true;
+                live += 1;
+            }
+            PinterestStatus::Removed => {
+                posts[i].pinterest_dead = true;
+                dead += 1;
+            }
+            PinterestStatus::Unknown => unknown += 1,
         }
     }
-    if dead > 0 {
-        tracing::info!("{dead} Pinterest pin(s) removed — showing the link, not a broken embed");
-    }
+    tracing::info!(
+        "Pinterest liveness: {live} live, {dead} removed, {unknown} unknown; unknown pins keep local photos"
+    );
 }
 
-/// Pinterest oEmbed says the pin is gone (`400`/`404`).
-async fn is_pinterest_removed(client: &reqwest::Client, url: &str) -> bool {
+/// Ask Pinterest oEmbed for a pin's availability. Network errors are unknown,
+/// never live, so a transient problem cannot discard the archived photo.
+async fn pinterest_item_status(client: &reqwest::Client, url: &str) -> PinterestStatus {
     match client
         .get("https://www.pinterest.com/oembed.json")
         .query(&[("url", url)])
         .send()
         .await
     {
-        Ok(resp) => oembed_removed(resp.status().as_u16()),
-        Err(_) => false,
+        Ok(resp) => pinterest_status(resp.status().as_u16()),
+        Err(_) => PinterestStatus::Unknown,
     }
 }
 
@@ -502,7 +531,8 @@ pub async fn report_dead_links(client: &reqwest::Client, posts: &[Post], concurr
 mod tests {
     use super::{
         apple_body_removed, apple_podcast_id, has_nonempty_og, is_external, oembed_removed,
-        yandex_body_removed, yandex_track_id, youtube_status_removed,
+        pinterest_status, yandex_body_removed, yandex_track_id, youtube_status_removed,
+        PinterestStatus,
     };
 
     #[test]
@@ -595,5 +625,14 @@ mod tests {
         assert!(!oembed_removed(200));
         assert!(!oembed_removed(429)); // rate-limited → assume alive
         assert!(!oembed_removed(500));
+    }
+
+    #[test]
+    fn pinterest_requires_positive_liveness_before_replacing_a_photo() {
+        assert_eq!(pinterest_status(200), PinterestStatus::Live);
+        assert_eq!(pinterest_status(400), PinterestStatus::Removed);
+        assert_eq!(pinterest_status(404), PinterestStatus::Removed);
+        assert_eq!(pinterest_status(429), PinterestStatus::Unknown);
+        assert_eq!(pinterest_status(500), PinterestStatus::Unknown);
     }
 }

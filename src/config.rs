@@ -82,6 +82,9 @@ pub struct FileConfig {
     pub instagram: Option<bool>,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: Option<bool>,
+    /// Keep the sole attached photo when a confirmed-live Pinterest widget is
+    /// shown (default false, so the duplicate local image is dropped).
+    pub pinterest_keep_image: Option<bool>,
     /// Replace a Bandcamp album/track link with the Bandcamp player (default on).
     pub bandcamp: Option<bool>,
     /// Replace a VK music playlist link with the VK playlist widget (opt-in;
@@ -108,8 +111,8 @@ pub struct FileConfig {
     pub offline: Option<bool>,
     /// Offload videos and .tar.xz files to this repo's GitHub Releases.
     pub video_releases: Option<bool>,
-    /// Check a post's YouTube link is still live (oEmbed); a removed video keeps
-    /// its local media instead of a dead embed. Default on.
+    /// Check external embeds before allowing them to replace local media. A
+    /// Pinterest photo is dropped only after a positive oEmbed response. Default on.
     pub liveness: Option<bool>,
     /// Show per-emoji reaction counts (MTProto backend only). Default on.
     pub reactions: Option<bool>,
@@ -239,6 +242,9 @@ pub struct Settings {
     pub instagram: bool,
     /// Replace Pinterest pin links with the embedded pin (default true).
     pub pinterest: bool,
+    /// Keep the sole attached photo beside a confirmed-live Pinterest widget
+    /// (default false).
+    pub pinterest_keep_image: bool,
     /// Replace Bandcamp album/track links with the Bandcamp player (default true).
     pub bandcamp: bool,
     /// Replace VK music playlist links with the VK playlist widget (opt-in, default false).
@@ -264,7 +270,7 @@ pub struct Settings {
     /// Offload videos and .tar.xz files to this repo's GitHub Releases (default
     /// true; needs a github.com repo_url + the CI upload step).
     pub video_releases: bool,
-    /// YouTube liveness check (default true).
+    /// External-embed liveness checks (default true).
     pub liveness: bool,
     /// Show per-emoji reaction counts, via MTProto (default true). Only read by
     /// the MTProto backend, which is the only source of reactions.

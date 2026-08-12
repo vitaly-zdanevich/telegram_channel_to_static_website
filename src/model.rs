@@ -204,6 +204,9 @@ pub struct Post {
     pub spotify_dead: bool,
     /// Pinterest pin removed (oEmbed 400/404) — show the link, not a dead embed.
     pub pinterest_dead: bool,
+    /// Pinterest oEmbed positively confirmed the pin is live. Only this state
+    /// may replace an attached photo; transient failures keep the local copy.
+    pub pinterest_live: bool,
     /// Genius song id (resolved by fetching a linked genius.com page), for the
     /// lyrics widget when the post carries no lyrics of its own.
     pub genius_song_id: Option<String>,

@@ -128,6 +128,7 @@ fn to_post(m: RawMessage) -> Post {
         instagram_dead: false,
         spotify_dead: false,
         pinterest_dead: false,
+        pinterest_live: false,
         genius_song_id: None,
         bandcamp: None,
         vk_playlist: None,

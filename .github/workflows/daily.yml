@@ -163,6 +163,10 @@ env:
   # Set to "false" to stop replacing Pinterest pin links with the embedded pin.
   PINTEREST: ${{ vars.PINTEREST }}
 
+  # Set to "true" to keep the sole attached image beside a confirmed-live
+  # Pinterest widget (default: the widget replaces the duplicate local image).
+  PINTEREST_KEEP_IMAGE: ${{ vars.PINTEREST_KEEP_IMAGE }}
+
   # Set to "false" to stop replacing Bandcamp album/track links with the player
   # (default: fetch the page and embed the Bandcamp player).
   BANDCAMP: ${{ vars.BANDCAMP }}
@@ -384,6 +388,7 @@ jobs:
             [ "${SPOTIFY:-}" = "true" ] && args+=(--spotify)
             [ "${INSTAGRAM:-}" = "true" ] && args+=(--instagram)
             [ "${PINTEREST:-}" = "false" ] && args+=(--no-pinterest)
+            [ "${PINTEREST_KEEP_IMAGE:-}" = "true" ] && args+=(--pinterest-keep-image)
             [ "${BANDCAMP:-}" = "false" ] && args+=(--no-bandcamp)
             [ "${VK:-}" = "true" ] && args+=(--vk)
             [ "${RELATED:-}" = "false" ] && args+=(--no-related)

@@ -392,6 +392,8 @@ pub struct RenderOpts<'a> {
     pub instagram: bool,
     /// Replace a Pinterest pin link with the embedded pin (default on).
     pub pinterest: bool,
+    /// Keep the sole attached photo beside a confirmed-live Pinterest widget.
+    pub pinterest_keep_image: bool,
     /// When set, videos and `.tar.xz` attachments are offloaded to GitHub
     /// Releases: the base download URL (`…/releases/download/<tag>`) that each
     /// staged filename is appended to.
@@ -417,6 +419,7 @@ pub fn render_post(
         spotify,
         instagram,
         pinterest,
+        pinterest_keep_image,
         video_releases,
         carousel,
     } = *opts;
@@ -464,6 +467,18 @@ pub fn render_post(
     let pinterest_embed = (pinterest && !post.pinterest_dead)
         .then(|| post.pinterest.clone())
         .flatten();
+    // Only a positively-live Pin may replace local data. Restrict replacement
+    // to a sole attached photo: with an album there is no reliable association
+    // between the Pin and each Telegram image, so preserve the whole album.
+    let attached_photo_count = post
+        .media
+        .iter()
+        .filter(|media| matches!(media, Media::Photo { .. } | Media::LocalPhoto { .. }))
+        .count();
+    let drop_pinterest_photo = pinterest_embed.is_some()
+        && post.pinterest_live
+        && !pinterest_keep_image
+        && attached_photo_count == 1;
 
     // Drop the standalone link(s) an embed replaces, so nothing shows twice.
     let mut body_src = body_src;
@@ -610,6 +625,7 @@ pub fn render_post(
     // video/audio/documents, show them as one swipeable widget instead of a
     // vertical stack. The post's text and tags render normally, above.
     let carousel_album = carousel
+        && !drop_pinterest_photo
         && post.media.len() >= 2
         && post.media.iter().all(|m| {
             matches!(
@@ -674,6 +690,9 @@ pub fn render_post(
         idx += 1;
         match m {
             Media::Photo { url, key } | Media::Sticker { url, key } => {
+                if drop_pinterest_photo && matches!(m, Media::Photo { .. }) {
+                    continue;
+                }
                 let (fname, force) = media_name(key, url, "jpg", idx, post.edited);
                 push_dl(&mut downloads, url, &fname, force);
                 if og_image.is_none() {
@@ -816,6 +835,9 @@ pub fn render_post(
                 body.push_str(&format!("{{{{ audio(src=\"{fname}\") }}}}\n\n"));
             }
             Media::LocalPhoto { path, key } => {
+                if drop_pinterest_photo {
+                    continue;
+                }
                 // Original-quality photo from MTProto, replacing the web Photo.
                 // Keep the content-addressed name (`key`) so the bundle file the
                 // web body referenced is overwritten in place.
@@ -1580,6 +1602,7 @@ mod tests {
             instagram_dead: false,
             spotify_dead: false,
             pinterest_dead: false,
+            pinterest_live: false,
             genius_song_id: None,
         }
     }
@@ -1604,6 +1627,7 @@ mod tests {
                 spotify: false,
                 instagram: false,
                 pinterest: false,
+                pinterest_keep_image: false,
                 video_releases: None,
                 carousel: false,
             },
@@ -1650,6 +1674,7 @@ mod tests {
                 spotify: false,
                 instagram: false,
                 pinterest: false,
+                pinterest_keep_image: false,
                 video_releases: None,
                 carousel: false,
             },
@@ -1716,6 +1741,7 @@ mod tests {
                     spotify: false,
                     instagram: true,
                     pinterest: false,
+                    pinterest_keep_image: false,
                     video_releases: None,
                     carousel: false,
                 },
@@ -1766,6 +1792,7 @@ mod tests {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    pinterest_keep_image: false,
                     video_releases: None,
                     carousel: false,
                 },
@@ -1835,6 +1862,7 @@ mod tests {
                 spotify: false,
                 instagram: false,
                 pinterest: false,
+                pinterest_keep_image: false,
                 video_releases: None,
                 carousel: false,
             },
@@ -1883,6 +1911,7 @@ mod tests {
                 spotify: false,
                 instagram: false,
                 pinterest: false,
+                pinterest_keep_image: false,
                 video_releases: Some(base),
                 carousel: false,
             },
@@ -1936,6 +1965,7 @@ mod tests {
                 spotify: false,
                 instagram: false,
                 pinterest: false,
+                pinterest_keep_image: false,
                 video_releases: Some(base),
                 carousel: false,
             },
@@ -1972,6 +2002,7 @@ mod tests {
             spotify: false,
             instagram: false,
             pinterest: false,
+            pinterest_keep_image: false,
             video_releases: None,
             carousel: false,
         };
@@ -2028,6 +2059,7 @@ mod tests {
             spotify: false,
             instagram: false,
             pinterest: false,
+            pinterest_keep_image: false,
             video_releases: None,
             carousel: false,
         };
@@ -2053,6 +2085,7 @@ mod tests {
             spotify: false,
             instagram: false,
             pinterest: false,
+            pinterest_keep_image: false,
             video_releases: None,
             carousel: false,
         };
@@ -2140,6 +2173,7 @@ mod tests {
                     spotify: false,
                     instagram: false,
                     pinterest: false,
+                    pinterest_keep_image: false,
                     video_releases: None,
                     carousel: false,
                 },
@@ -2180,6 +2214,7 @@ mod tests {
             keep_media: false,
             spotify,
             pinterest,
+            pinterest_keep_image: false,
         };
         // Pinterest default-on emits; Spotify (off) does not.
         let a = render_post(&p, &rw, false, None, None, &opts(false, true)).index_md;
@@ -2197,6 +2232,123 @@ mod tests {
         assert!(
             !b.contains("{{ pinterest("),
             "pinterest emitted while off: {b}"
+        );
+    }
+
+    #[test]
+    fn confirmed_pinterest_pin_replaces_only_the_sole_photo_by_default() {
+        let rw = LinkRewriter::with_index("c", HashMap::new());
+        let ui = crate::i18n::ui("en");
+        let opts = |pinterest, keep_image, carousel| RenderOpts {
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            instagram: false,
+            pinterest,
+            pinterest_keep_image: keep_image,
+            video_releases: None,
+            carousel,
+        };
+        let pin = "https://www.pinterest.com/pin/42/";
+        let mut post = post_with_body(&format!("[Pin]({pin})"));
+        post.pinterest = Some(pin.into());
+        post.pinterest_live = true;
+        post.media = vec![Media::Photo {
+            url: "https://cdn.example/photo.jpg".into(),
+            key: Some("photo-key".into()),
+        }];
+
+        let replaced = render_post(&post, &rw, false, None, None, &opts(true, false, false));
+        assert!(
+            replaced.index_md.contains("{{ pinterest("),
+            "{}",
+            replaced.index_md
+        );
+        assert!(
+            !replaced.index_md.contains("{{ img("),
+            "{}",
+            replaced.index_md
+        );
+        assert!(
+            !replaced.index_md.contains("og_image ="),
+            "{}",
+            replaced.index_md
+        );
+        assert!(replaced.downloads.is_empty(), "photo must be pruned");
+
+        let kept = render_post(&post, &rw, false, None, None, &opts(true, true, false));
+        assert!(kept.index_md.contains("{{ pinterest("), "{}", kept.index_md);
+        assert!(kept.index_md.contains("{{ img("), "{}", kept.index_md);
+        assert_eq!(kept.downloads.len(), 1);
+
+        post.pinterest_live = false;
+        let unknown = render_post(&post, &rw, false, None, None, &opts(true, false, false));
+        assert!(
+            unknown.index_md.contains("{{ pinterest("),
+            "{}",
+            unknown.index_md
+        );
+        assert!(unknown.index_md.contains("{{ img("), "{}", unknown.index_md);
+        assert_eq!(unknown.downloads.len(), 1);
+
+        post.pinterest_dead = true;
+        let removed = render_post(&post, &rw, false, None, None, &opts(true, false, false));
+        assert!(
+            !removed.index_md.contains("{{ pinterest("),
+            "{}",
+            removed.index_md
+        );
+        assert!(removed.index_md.contains(pin), "{}", removed.index_md);
+        assert!(removed.index_md.contains("{{ img("), "{}", removed.index_md);
+        assert_eq!(removed.downloads.len(), 1);
+
+        post.pinterest_dead = false;
+        let disabled = render_post(&post, &rw, false, None, None, &opts(false, false, false));
+        assert!(
+            !disabled.index_md.contains("{{ pinterest("),
+            "{}",
+            disabled.index_md
+        );
+        assert!(disabled.index_md.contains(pin), "{}", disabled.index_md);
+        assert!(
+            disabled.index_md.contains("{{ img("),
+            "{}",
+            disabled.index_md
+        );
+        assert_eq!(disabled.downloads.len(), 1);
+
+        post.pinterest_live = true;
+        post.media = vec![Media::LocalPhoto {
+            path: std::path::PathBuf::from("/cache/photo.png"),
+            key: None,
+        }];
+        let local = render_post(&post, &rw, false, None, None, &opts(true, false, false));
+        assert!(!local.index_md.contains("{{ img("), "{}", local.index_md);
+        assert!(local.downloads.is_empty(), "MTProto photo must be pruned");
+
+        post.media = vec![
+            Media::Photo {
+                url: "https://cdn.example/one.jpg".into(),
+                key: None,
+            },
+            Media::Photo {
+                url: "https://cdn.example/two.jpg".into(),
+                key: None,
+            },
+        ];
+        let album = render_post(&post, &rw, false, None, None, &opts(true, false, true));
+        assert!(
+            album.index_md.contains(r#"class="carousel""#),
+            "{}",
+            album.index_md
+        );
+        assert_eq!(
+            album.downloads.len(),
+            2,
+            "ambiguous albums must be preserved"
         );
     }
 
@@ -2224,6 +2376,7 @@ mod tests {
             keep_media: false,
             spotify: false,
             pinterest: false,
+            pinterest_keep_image: false,
         };
         let out = render_post(&p, &rw, false, None, None, &opts).index_md;
         assert!(
@@ -2271,6 +2424,7 @@ mod tests {
             keep_media: false,
             spotify: false,
             pinterest: false,
+            pinterest_keep_image: false,
         };
         let out = render_post(&a, &rw, false, None, None, &opts).index_md;
         // Related is emitted as front-matter data (the post-page template renders
@@ -2327,6 +2481,7 @@ mod tests {
             keep_media: false,
             spotify: false,
             pinterest: false,
+            pinterest_keep_image: false,
         };
         let out = render_post(&p, &rw, false, None, None, &opts).index_md;
         assert!(
@@ -2356,6 +2511,7 @@ mod tests {
             keep_media: false,
             spotify: false,
             pinterest: false,
+            pinterest_keep_image: false,
         };
         let out = render_post(&p, &rw, false, None, None, &opts).index_md;
         assert!(
