@@ -153,6 +153,18 @@ input.site-search { margin-left: auto; }
 .more { margin: 2rem 0; }
 .views, .meta { color: var(--muted); font-size: .85em; }
 .meta { font-size: .9em; }
+html { overflow-x: clip; }
+.post-meta { position: relative; }
+.post-meta::before {
+  content: '';
+  position: absolute;
+  top: .8em;
+  left: calc(50% - 50vw);
+  right: 100%;
+  border-top: 1px solid var(--muted);
+  opacity: .45;
+  pointer-events: none;
+}
 .tags a { margin-right: .5rem; white-space: nowrap; }
 .pager { display: flex; justify-content: space-between; margin: 2rem 0; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; margin-top: auto; }

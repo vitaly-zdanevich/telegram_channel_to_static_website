@@ -11,7 +11,6 @@ tags = ["anime", "war", "ground"]
 id = 2074
 day = "2026-07-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2074"
-og_image = "5422557461912164382_1262537544_460003358.jpg"
 next_id = 2075
 next_title = ""
 next_body = "#animal\n#mouse\n#grass\n#ground\n#watering\n#cares\nSource"
@@ -47,5 +46,3 @@ label = "#war The #radio broadcasts of Hanoi Hannah during the #vietnamwa…"
 {{ tag(t="ground") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015283703/") }}
-
-{{ img(src="5422557461912164382_1262537544_460003358.jpg") }}

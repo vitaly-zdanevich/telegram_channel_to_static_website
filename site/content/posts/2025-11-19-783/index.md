@@ -11,7 +11,6 @@ tags = ["ad", "playstation", "playstation2"]
 id = 783
 day = "2025-11-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/783"
-og_image = "5256097805263113139_1223780635_460000179.jpg"
 next_id = 784
 next_title = ""
 next_body = "#punk\n#logo\n#music\n#korolishut\nSource"
@@ -47,5 +46,3 @@ label = "#ad #newspaper #design #toxic From"
 {{ tag(t="playstation2") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/251357222948286255/") }}
-
-{{ img(src="5256097805263113139_1223780635_460000179.jpg") }}

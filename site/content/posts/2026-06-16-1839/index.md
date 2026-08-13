@@ -11,7 +11,6 @@ tags = ["interior", "refrigerator", "green"]
 id = 1839
 day = "2026-06-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1839"
-og_image = "5298686202754047486_1233696519_460004862.jpg"
 next_id = 1840
 next_title = ""
 next_body = "#lamp\nFrom"
@@ -49,5 +48,3 @@ label = "#belarus #nature #river #green #year2005"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015149872/") }}
-
-{{ img(src="5298686202754047486_1233696519_460004862.jpg") }}

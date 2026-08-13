@@ -11,7 +11,6 @@ tags = ["food", "hare", "banana", "blueberry"]
 id = 2071
 day = "2026-07-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2071"
-og_image = "5418053862284795573_1261488968_460005045.jpg"
 next_id = 2072
 next_title = ""
 next_body = "#beige\n#headphones\n#love\n#bear\nSource"
@@ -44,5 +43,3 @@ label = "#my #batumi #restaurant #art #food #sazandari"
 {{ tag(t="blueberry") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015276655/") }}
-
-{{ img(src="5418053862284795573_1261488968_460005045.jpg") }}

@@ -11,7 +11,6 @@ tags = ["ad", "newspaper", "design", "toxic"]
 id = 1841
 day = "2026-06-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1841"
-og_image = "5305803182606851540_1235353570_460004820.jpg"
 next_id = 1842
 next_title = ""
 next_body = "#interior\n#cozy\n#bathroom\nFrom"
@@ -50,5 +49,3 @@ label = "Another good #design"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015161790/") }}
-
-{{ img(src="5305803182606851540_1235353570_460004820.jpg") }}

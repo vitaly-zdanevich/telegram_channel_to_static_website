@@ -11,7 +11,6 @@ tags = ["bus", "architecture"]
 id = 1826
 day = "2026-06-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1826"
-og_image = "5294016825978986518_1232609345_460005398.jpg"
 next_id = 1827
 next_title = ""
 next_body = "#game\n#beyoundgoodandevil\n#pig\n#evolution\n#sequel\n#pain\nFrom official"
@@ -46,7 +45,5 @@ label = "#architecture #belarus #globustut #year2005"
 {{ tag(t="architecture") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/904731012662040112/") }}
-
-{{ img(src="5294016825978986518_1232609345_460005398.jpg") }}
 
 🔥 1

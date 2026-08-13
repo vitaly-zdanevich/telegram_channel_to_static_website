@@ -11,7 +11,6 @@ tags = ["xbox", "xbox360", "game_console", "custom", "glass"]
 id = 1838
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1838"
-og_image = "5296434402940363410_1233172231_460006034.jpg"
 next_id = 1839
 next_title = ""
 next_body = "#interior\n#refrigerator\n#green\nFrom"
@@ -51,5 +50,3 @@ label = "#game #trailer #music #year2009 #halo #xbox #xbox360 One of the…"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015149142/") }}
-
-{{ img(src="5296434402940363410_1233172231_460006034.jpg") }}

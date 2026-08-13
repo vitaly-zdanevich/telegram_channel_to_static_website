@@ -11,7 +11,6 @@ tags = ["animal", "mouse", "grass", "ground", "watering", "cares"]
 id = 2075
 day = "2026-07-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2075"
-og_image = "5422557461912164384_1262537544_460003360.jpg"
 next_id = 2076
 next_title = ""
 next_body = "What a nice #arabic #logo"
@@ -50,5 +49,3 @@ label = "#animal #flyingsquirrel #love"
 {{ tag(t="cares") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015283430/") }}
-
-{{ img(src="5422557461912164384_1262537544_460003360.jpg") }}

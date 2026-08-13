@@ -11,7 +11,6 @@ tags = ["punk", "logo", "music", "korol_i_shut"]
 id = 784
 day = "2025-11-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/784"
-og_image = "5253740353548913982_1223231748_460000574.jpg"
 next_id = 785
 next_title = ""
 next_body = "#webdesign\n#webdesigngame"
@@ -48,5 +47,3 @@ label = "PromoDJ #music genres"
 {{ tag(t="korol_i_shut") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/606437906115011230/") }}
-
-{{ img(src="5253740353548913982_1223231748_460000574.jpg") }}

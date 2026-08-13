@@ -11,7 +11,6 @@ tags = ["lamp"]
 id = 1840
 day = "2026-06-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1840"
-og_image = "5298686202754047490_1233696519_460004866.jpg"
 next_id = 1841
 next_title = ""
 next_body = "#ad\n#newspaper\n#design\n#toxic\nFrom"
@@ -27,5 +26,3 @@ ids = [1840]
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015149878/") }}
-
-{{ img(src="5298686202754047490_1233696519_460004866.jpg") }}

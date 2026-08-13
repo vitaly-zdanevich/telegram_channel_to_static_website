@@ -11,7 +11,6 @@ tags = ["interior", "cozy", "bathroom"]
 id = 1842
 day = "2026-06-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1842"
-og_image = "5305263081879445551_1235227818_460005423.jpg"
 next_id = 1843
 next_title = ""
 next_body = "#home\n#diy\n#belarus\n#onliner\nFrom"
@@ -37,5 +36,3 @@ label = "#interior #refrigerator #green From"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015161786/") }}
-
-{{ img(src="5305263081879445551_1235227818_460005423.jpg") }}

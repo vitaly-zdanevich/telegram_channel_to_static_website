@@ -11,7 +11,6 @@ tags = ["playstation", "playstation2", "game_console", "street"]
 id = 1834
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1834"
-og_image = "5296434402940363406_1233172231_460006030.jpg"
 next_id = 1835
 next_title = ""
 next_body = "#xbox\n#gameconsole\n#tech\n#retro\n#green\nFrom"
@@ -50,5 +49,3 @@ label = "#xbox #gameconsole #tech #retro #green From"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015148876/") }}
-
-{{ img(src="5296434402940363406_1233172231_460006030.jpg") }}

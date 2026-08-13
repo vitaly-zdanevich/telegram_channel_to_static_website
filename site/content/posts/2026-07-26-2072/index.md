@@ -11,7 +11,6 @@ tags = ["beige", "headphones", "love", "bear"]
 id = 2072
 day = "2026-07-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2072"
-og_image = "5418053862284795574_1261488968_460005046.jpg"
 next_id = 2073
 next_title = ""
 next_body = "#toy\n#animal\n#antlers\nSource"
@@ -48,5 +47,3 @@ label = "#dog #love #mmorpg"
 {{ tag(t="bear") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015276603/") }}
-
-{{ img(src="5418053862284795574_1261488968_460005046.jpg") }}

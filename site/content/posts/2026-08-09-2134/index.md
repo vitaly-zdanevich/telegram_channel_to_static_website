@@ -17,7 +17,7 @@ next_body = "#death\n#cementery\n#urban\nSource"
 prev_id = 2133
 prev_title = ""
 prev_body = "#car\n#death\nSource"
-views = 1
+views = 3
 ids = [2134]
 
 [[extra.related]]
@@ -48,5 +48,7 @@ label = "#death #car #sound"
 [Source](https://www.instagram.com/p/DbKw8L1J7l1/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2134-01.mp4") }}
+
+🔥 1
 
 {{ tag(t="video") }}

@@ -11,7 +11,6 @@ tags = ["toy", "animal", "antlers"]
 id = 2073
 day = "2026-07-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2073"
-og_image = "5422557461912164380_1262537544_460003356.jpg"
 next_id = 2074
 next_title = ""
 next_body = "#anime\n#war\n#ground\nSource"
@@ -47,5 +46,3 @@ label = "#stone #animal #museum #belarus #globustut #year2005"
 {{ tag(t="antlers") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015283429/") }}
-
-{{ img(src="5422557461912164380_1262537544_460003356.jpg") }}

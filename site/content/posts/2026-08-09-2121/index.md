@@ -38,6 +38,6 @@ My new {{ tag(t="project") }}: {{ tag(t="userscript") }} for {{ tag(t="instagram
 
 This is interesting that many web services from rich companies - are still in a poor quality, Linkedin included :(  
 
-[https://github.com/vitaly-zdanevich/instagram-likes-to-normal-media](<https://github.com/vitaly-zdanevich/instagram-likes-to-normal-media> "Userscript for Instagram Likes page: adds playable media, copy link, download buttons · 0 stars · Languages: TypeScript 64%, JavaScript 36% · 9 commits · MIT · last push 2026-08-09")
+[https://github.com/vitaly-zdanevich/instagram-likes-to-normal-media](<https://github.com/vitaly-zdanevich/instagram-likes-to-normal-media> "Userscript for Instagram Likes page: adds playable media, copy link, download buttons · 0 stars · Languages: TypeScript 66%, JavaScript 34% · 10 commits · MIT · last push 2026-08-12")
 
 {{ img(src="5458703172235893382_1270953373_460003974.jpg") }}

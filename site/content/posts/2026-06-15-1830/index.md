@@ -11,7 +11,6 @@ tags = ["religion", "jesus"]
 id = 1830
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1830"
-og_image = "5296434402940362939_1233172231_460005563.jpg"
 next_id = 1831
 next_title = ""
 next_body = "#anime\n#phones\n#evangelion\nFrom"
@@ -46,5 +45,3 @@ label = "#music #techno #religion #mulsim"
 {{ tag(t="jesus") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/631137335379673801/") }}
-
-{{ img(src="5296434402940362939_1233172231_460005563.jpg") }}

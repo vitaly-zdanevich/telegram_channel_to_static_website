@@ -11,7 +11,6 @@ tags = ["tech", "psp", "final_fantasy"]
 id = 1829
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1829"
-og_image = "5296434402940362934_1233172231_460005558.jpg"
 next_id = 1830
 next_title = ""
 next_body = "#religion\n#jesus"
@@ -39,5 +38,3 @@ label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
 {{ tag(t="final_fantasy") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/626844841927915392/") }}
-
-{{ img(src="5296434402940362934_1233172231_460005558.jpg") }}

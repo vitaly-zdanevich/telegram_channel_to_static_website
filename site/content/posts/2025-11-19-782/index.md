@@ -11,7 +11,6 @@ tags = ["ad", "retro", "nokia"]
 id = 782
 day = "2025-11-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/782"
-og_image = "5253740353548913967_1223231748_460000559.jpg"
 next_id = 783
 next_title = ""
 next_body = "#ad\n#playstation\n#playstation2\nSource"
@@ -47,5 +46,3 @@ label = "#ad #newspaper #design #toxic From"
 {{ tag(t="nokia") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/17170042325378816/") }}
-
-{{ img(src="5253740353548913967_1223231748_460000559.jpg") }}

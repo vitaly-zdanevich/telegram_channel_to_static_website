@@ -11,7 +11,6 @@ tags = ["fashion", "ears", "hood", "cat", "green"]
 id = 2069
 day = "2026-07-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2069"
-og_image = "5418053862284795564_1261488968_460005036.jpg"
 next_id = 2070
 next_title = ""
 next_body = "#psp\n#vita\n#game\nSource"
@@ -49,5 +48,3 @@ label = "#cat #psy"
 {{ tag(t="green") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015277561/") }}
-
-{{ img(src="5418053862284795564_1261488968_460005036.jpg") }}

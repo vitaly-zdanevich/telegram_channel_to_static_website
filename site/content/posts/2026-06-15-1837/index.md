@@ -11,7 +11,6 @@ tags = ["dolphin", "bomb", "bible"]
 id = 1837
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1837"
-og_image = "5296434402940363409_1233172231_460006033.jpg"
 next_id = 1838
 next_title = ""
 next_body = "#xbox\n#xbox360\n#gameconsole\n#custom\n#glass\nFrom"
@@ -49,5 +48,3 @@ label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015149146/") }}
-
-{{ img(src="5296434402940363409_1233172231_460006033.jpg") }}

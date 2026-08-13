@@ -11,7 +11,6 @@ tags = ["girl", "paper", "sky", "evangelion"]
 id = 1836
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1836"
-og_image = "5296434402940363408_1233172231_460006032.jpg"
 next_id = 1837
 next_title = ""
 next_body = "#dolphin\n#bomb\n#bible\nFrom"
@@ -50,5 +49,3 @@ label = "#girl #nails"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015147313/") }}
-
-{{ img(src="5296434402940363408_1233172231_460006032.jpg") }}

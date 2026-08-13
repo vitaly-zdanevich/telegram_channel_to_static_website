@@ -58,13 +58,13 @@ label = "#armiesofexigo: моя #лекция об игре, в Батуми #st
 [logseq.com](http://logseq.com/) свободные заметки в markdown  
 [github.com/boo-yee/nixnote2](<http://github.com/boo-yee/nixnote2> "Nixnote - Evernote desktop client for Linux · 5 stars · Languages: C++ 97%, Java 1%, CMake 1% · 2731 commits · GPL-3.0 · last push 2025-10-08") FOSS клиент для Evernote на C++ и Qt  
 [github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 78 commits · GPL-3.0 · last push 2026-07-17") мой CLI на Rust  
-[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 87583 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8176 commits · 5409 forks · 375 open issues/PRs · MPL-2.0 · last push 2026-08-12") FOSS синхронизация данных через ваши устройства  
+[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 87628 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8176 commits · 5417 forks · 374 open issues/PRs · MPL-2.0 · last push 2026-08-12") FOSS синхронизация данных через ваши устройства  
 
 Бесплатный хостинг:  
 [aws.amazon.com/lambda](http://aws.amazon.com/lambda)  
 
 Про стили - чтобы сайты выгляди как надо вам а не дизайнеру:  
-[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6817 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5117 commits · 378 forks · 91 open issues/PRs · GPL-3.0 · last push 2026-08-11")  
+[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6818 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5117 commits · 378 forks · 93 open issues/PRs · GPL-3.0 · last push 2026-08-11")  
 [userstyles.world/user/vitaly-zdanevich](http://userstyles.world/user/vitaly-zdanevich)  
 [gitlab.com/vitaly-zdanevich-styles/evernote](http://gitlab.com/vitaly-zdanevich-styles/evernote)  
 

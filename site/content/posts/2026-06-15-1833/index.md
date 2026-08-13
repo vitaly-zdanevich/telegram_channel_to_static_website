@@ -11,7 +11,6 @@ tags = ["old", "grandmother", "religion", "great_schema", "candle"]
 id = 1833
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1833"
-og_image = "5296434402940363385_1233172231_460006009.jpg"
 next_id = 1834
 next_title = ""
 next_body = "#playstation\n#playstation2\n#gameconsole\n#street\nFrom"
@@ -53,5 +52,3 @@ See also <https://en.wikipedia.org/wiki/Degrees_of_Eastern_Orthodox_monasticism#
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015147143/") }}
-
-{{ img(src="5296434402940363385_1233172231_460006009.jpg") }}

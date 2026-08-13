@@ -11,7 +11,6 @@ tags = ["sex", "mouse", "horoscope"]
 id = 481
 day = "2025-04-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/481"
-og_image = "5215716724605844762_1214378682_456260890.jpg"
 next_id = 482
 next_title = ""
 next_body = "#cat\n#psy"
@@ -33,7 +32,5 @@ label = "#animal #mouse #grass #ground #watering #cares"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/7036943162752920/") }}
-
-{{ img(src="5215716724605844762_1214378682_456260890.jpg") }}
 
 👎 1 · 🤣 1

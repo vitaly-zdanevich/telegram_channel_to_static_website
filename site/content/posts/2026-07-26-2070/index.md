@@ -11,7 +11,6 @@ tags = ["psp", "vita", "game"]
 id = 2070
 day = "2026-07-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2070"
-og_image = "5418053862284795572_1261488968_460005044.jpg"
 next_id = 2071
 next_title = ""
 next_body = "#food\n#hare\n#banana\n#blueberry\nSource"
@@ -47,5 +46,3 @@ label = "#game #man2"
 {{ tag(t="game") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015277537/") }}
-
-{{ img(src="5418053862284795572_1261488968_460005044.jpg") }}

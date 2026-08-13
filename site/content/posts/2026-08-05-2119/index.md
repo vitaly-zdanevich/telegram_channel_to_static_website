@@ -11,7 +11,6 @@ tags = ["hardware", "player"]
 id = 2119
 day = "2026-08-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2119"
-og_image = "5449907027674076792_1268905361_460002936.jpg"
 next_id = 2120
 next_title = ""
 next_body = "#my another small project: #wikidata #pwa to get nearby items, with photos, all properties, and backlinks. Without intermediate nodes - direct calls to Wikidata."
@@ -34,5 +33,3 @@ label = "#mp3 #hardware #sandisc Sexy Girls Fun Gadgets Stuff Magazine, 2…"
 {{ tag(t="player") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015317497/") }}
-
-{{ img(src="5449907027674076792_1268905361_460002936.jpg") }}

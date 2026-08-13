@@ -11,7 +11,6 @@ tags = ["psy", "lasers", "girl"]
 id = 502
 day = "2025-05-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/502"
-og_image = "5246870441686070041_1221632222_456258329.jpg"
 next_id = 503
 next_title = ""
 next_body = "#ai\n#girl\n#relationships\n#psy"
@@ -47,5 +46,3 @@ label = "#girl"
 {{ tag(t="girl") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/578220039676225104/") }}
-
-{{ img(src="5246870441686070041_1221632222_456258329.jpg") }}
