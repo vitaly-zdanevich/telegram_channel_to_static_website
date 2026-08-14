@@ -10,6 +10,7 @@
 
 use anyhow::{anyhow, bail, Context, Result};
 use std::collections::{BTreeMap, BTreeSet, HashMap};
+use std::future::Future;
 use std::io::Write;
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
@@ -17,11 +18,12 @@ use std::time::Duration;
 
 use base64::Engine;
 use grammers_client::grammers_tl_types as tl;
-use grammers_client::types::{Media as TlMedia, Peer};
+use grammers_client::types::{Downloadable, Media as TlMedia, Peer};
 use grammers_client::{Client, SignInError};
-use grammers_mtsender::SenderPool;
+use grammers_mtsender::{InvocationError, SenderPool};
 use grammers_session::defs::{PeerId, PeerRef};
 use grammers_session::storages::TlSession;
+use tokio::io::AsyncWriteExt;
 
 use crate::config::Settings;
 use crate::model::{Media, Post};
@@ -47,6 +49,14 @@ const IMAGE_RELEASE_BACKFILL_PER_RUN: usize = 500;
 const IMAGE_RELEASE_MANIFEST_VERSION: u8 = 2;
 /// A stuck Telegram media request must not consume the rest of a hosted job.
 const IMAGE_DOWNLOAD_TIMEOUT: Duration = Duration::from_secs(120);
+/// Telegram's maximum `upload.getFile` response and the normal grammers chunk.
+const IMAGE_DOWNLOAD_CHUNK_BYTES: usize = 512 * 1024;
+/// Telegram download offsets and limits must be aligned to at least 4 KiB.
+const IMAGE_DOWNLOAD_ALIGNMENT: u64 = 4 * 1024;
+/// Retry empty or incomplete direct responses without looping forever.
+const IMAGE_DOWNLOAD_CHUNK_ATTEMPTS: usize = 3;
+/// Telegram's RPC code for retrying a file request in another data center.
+const FILE_MIGRATE_ERROR: i32 = 303;
 /// Likewise, preserve an already-staged batch if walking channel history stalls.
 const MESSAGE_ITERATION_TIMEOUT: Duration = Duration::from_secs(120);
 
@@ -521,6 +531,170 @@ async fn stage_image_release(source: &Path, destination: &Path) -> Result<()> {
     Ok(())
 }
 
+/// Append exactly the bytes missing from a partial image download.
+///
+/// grammers 0.8 may report EOF before Telegram returns the last partial 512 KiB
+/// block. Any shorter prefix is rolled back to a full chunk boundary so resumed
+/// requests cannot cross Telegram's 1 MiB request boundaries. A response is
+/// written only when it contains the complete logical chunk, preventing gaps
+/// from being published.
+async fn complete_exact_image_download<Fetch, FetchFuture>(
+    path: &Path,
+    declared_bytes: u64,
+    mut fetch: Fetch,
+) -> Result<()>
+where
+    Fetch: FnMut(u64, usize) -> FetchFuture,
+    FetchFuture: Future<Output = Result<Vec<u8>>>,
+{
+    let mut downloaded_bytes = tokio::fs::metadata(path).await?.len();
+    if downloaded_bytes > declared_bytes {
+        bail!(
+            "partial image has {downloaded_bytes} bytes, more than its declared {declared_bytes} bytes"
+        );
+    }
+    if downloaded_bytes == declared_bytes {
+        return Ok(());
+    }
+
+    let chunk_bytes = IMAGE_DOWNLOAD_CHUNK_BYTES as u64;
+    let aligned_bytes = downloaded_bytes / chunk_bytes * chunk_bytes;
+    let mut file = tokio::fs::OpenOptions::new()
+        .write(true)
+        .append(true)
+        .open(path)
+        .await?;
+    if aligned_bytes != downloaded_bytes {
+        file.set_len(aligned_bytes).await?;
+        downloaded_bytes = aligned_bytes;
+    }
+
+    while downloaded_bytes < declared_bytes {
+        let logical_bytes = usize::try_from(
+            (declared_bytes - downloaded_bytes).min(IMAGE_DOWNLOAD_CHUNK_BYTES as u64),
+        )?;
+        for attempt in 1..=IMAGE_DOWNLOAD_CHUNK_ATTEMPTS {
+            let chunk = fetch(downloaded_bytes, logical_bytes).await?;
+            let response_bytes = chunk.len();
+            if chunk.len() == logical_bytes {
+                file.write_all(&chunk).await?;
+                downloaded_bytes += chunk.len() as u64;
+                break;
+            }
+            if attempt == IMAGE_DOWNLOAD_CHUNK_ATTEMPTS {
+                bail!(
+                    "image chunk at offset {downloaded_bytes} returned {response_bytes} bytes, expected {logical_bytes}, after {attempt} attempts"
+                );
+            }
+        }
+    }
+    file.flush().await?;
+    Ok(())
+}
+
+/// Owning Telegram data center for media handled by the original-image path.
+fn image_media_dc_id(media: &TlMedia) -> Option<i32> {
+    match media {
+        TlMedia::Photo(photo) => photo.raw.photo.as_ref().and_then(|photo| match photo {
+            tl::enums::Photo::Photo(photo) => Some(photo.dc_id),
+            _ => None,
+        }),
+        TlMedia::Document(document) => {
+            document
+                .raw
+                .document
+                .as_ref()
+                .and_then(|document| match document {
+                    tl::enums::Document::Document(document) => Some(document.dc_id),
+                    _ => None,
+                })
+        }
+        _ => None,
+    }
+}
+
+/// Round a logical final chunk up to Telegram's wire-level alignment.
+fn image_download_wire_limit(logical_bytes: usize) -> i32 {
+    let alignment = IMAGE_DOWNLOAD_ALIGNMENT as usize;
+    let rounded = logical_bytes.div_ceil(alignment) * alignment;
+    rounded.min(IMAGE_DOWNLOAD_CHUNK_BYTES) as i32
+}
+
+/// Copy the user's authorization to a media data center when grammers has not
+/// already done so while attempting its initial download.
+async fn copy_image_download_authorization(client: &Client, dc_id: i32) -> Result<()> {
+    let tl::enums::auth::ExportedAuthorization::Authorization(exported) = client
+        .invoke(&tl::functions::auth::ExportAuthorization { dc_id })
+        .await
+        .context("exporting Telegram authorization for an image data center")?;
+    client
+        .invoke_in_dc(
+            dc_id,
+            &tl::functions::auth::ImportAuthorization {
+                id: exported.id,
+                bytes: exported.bytes,
+            },
+        )
+        .await
+        .context("importing Telegram authorization for an image data center")?;
+    Ok(())
+}
+
+/// Fetch one size-aware image chunk directly from its owning data center.
+///
+/// `precise` permits the final request to use a smaller aligned limit instead
+/// of the 512 KiB request that returned an empty result for affected photos.
+async fn fetch_exact_image_chunk(
+    client: &Client,
+    media: &TlMedia,
+    offset: u64,
+    logical_bytes: usize,
+) -> Result<Vec<u8>> {
+    let location = media
+        .to_raw_input_location()
+        .context("original image has no Telegram download location")?;
+    let mut dc_id =
+        image_media_dc_id(media).context("original image has no Telegram data center")?;
+    let request = tl::functions::upload::GetFile {
+        precise: true,
+        cdn_supported: false,
+        location,
+        offset: i64::try_from(offset)?,
+        limit: image_download_wire_limit(logical_bytes),
+    };
+    let mut copied_authorization = false;
+    let mut migrations = 0usize;
+
+    loop {
+        match client.invoke_in_dc(dc_id, &request).await {
+            Ok(tl::enums::upload::File::File(file)) => return Ok(file.bytes),
+            Ok(tl::enums::upload::File::CdnRedirect(_)) => {
+                bail!("Telegram redirected an image despite CDN support being disabled")
+            }
+            Err(InvocationError::Rpc(error))
+                if error.name == "AUTH_KEY_UNREGISTERED" && !copied_authorization =>
+            {
+                copy_image_download_authorization(client, dc_id).await?;
+                copied_authorization = true;
+            }
+            Err(InvocationError::Rpc(error))
+                if error.code == FILE_MIGRATE_ERROR && migrations < 2 =>
+            {
+                dc_id = i32::try_from(
+                    error
+                        .value
+                        .context("Telegram image migration omitted its target data center")?,
+                )?;
+                copied_authorization = false;
+                migrations += 1;
+            }
+            Err(error) => {
+                return Err(error).context("fetching an exact original-image chunk");
+            }
+        }
+    }
+}
+
 /// Download atomically so a cancelled or timed-out request cannot leave a
 /// partial file that a later attempt mistakes for a complete cached original.
 async fn download_image_to_cache(
@@ -549,8 +723,20 @@ async fn download_image_to_cache(
             .unwrap_or("image")
     ));
     let _ = tokio::fs::remove_file(&part).await;
-    let result =
-        tokio::time::timeout(IMAGE_DOWNLOAD_TIMEOUT, client.download_media(media, &part)).await;
+    let download = async {
+        client
+            .download_media(media, &part)
+            .await
+            .context("downloading original image through grammers")?;
+        if declared_bytes > 0 {
+            complete_exact_image_download(&part, declared_bytes as u64, |offset, logical_bytes| {
+                fetch_exact_image_chunk(client, media, offset, logical_bytes)
+            })
+            .await?;
+        }
+        Ok::<(), anyhow::Error>(())
+    };
+    let result = tokio::time::timeout(IMAGE_DOWNLOAD_TIMEOUT, download).await;
     match result {
         Ok(Ok(())) => {}
         Ok(Err(error)) => {
@@ -1599,6 +1785,74 @@ mod tests {
         ] {
             assert!(!photos_enabled(value), "{value:?} should disable originals");
         }
+    }
+
+    #[tokio::test]
+    async fn exact_image_download_recovers_a_file_smaller_than_one_chunk() {
+        let path = std::env::temp_dir().join(format!(
+            "tg2zola-small-exact-image-download-{}",
+            std::process::id()
+        ));
+        let expected = (0..91_732)
+            .map(|index| (index % 251) as u8)
+            .collect::<Vec<_>>();
+        std::fs::write(&path, []).unwrap();
+        let fetched = expected.clone();
+        let attempts = Arc::new(std::sync::atomic::AtomicUsize::new(0));
+        let fetch_attempts = Arc::clone(&attempts);
+
+        complete_exact_image_download(&path, expected.len() as u64, move |offset, limit| {
+            let start = offset as usize;
+            let end = start + limit;
+            let chunk = if fetch_attempts.fetch_add(1, std::sync::atomic::Ordering::SeqCst) == 0 {
+                Vec::new()
+            } else {
+                fetched[start..end].to_vec()
+            };
+            async move { Ok(chunk) }
+        })
+        .await
+        .unwrap();
+
+        assert_eq!(attempts.load(std::sync::atomic::Ordering::SeqCst), 2);
+        assert_eq!(std::fs::read(&path).unwrap(), expected);
+        std::fs::remove_file(path).unwrap();
+    }
+
+    #[tokio::test]
+    async fn exact_image_download_recovers_a_partial_final_chunk() {
+        let path = std::env::temp_dir().join(format!(
+            "tg2zola-partial-exact-image-download-{}",
+            std::process::id()
+        ));
+        let expected = (0..714_554)
+            .map(|index| (index % 241) as u8)
+            .collect::<Vec<_>>();
+        std::fs::write(&path, &expected[..IMAGE_DOWNLOAD_CHUNK_BYTES]).unwrap();
+        let fetched = expected.clone();
+
+        complete_exact_image_download(&path, expected.len() as u64, move |offset, limit| {
+            let start = offset as usize;
+            let end = start + limit;
+            let chunk = fetched[start..end].to_vec();
+            async move { Ok(chunk) }
+        })
+        .await
+        .unwrap();
+
+        assert_eq!(std::fs::read(&path).unwrap(), expected);
+        std::fs::remove_file(path).unwrap();
+    }
+
+    #[test]
+    fn exact_image_download_shrinks_and_aligns_the_final_wire_request() {
+        assert_eq!(image_download_wire_limit(1), 4_096);
+        assert_eq!(image_download_wire_limit(91_732), 94_208);
+        assert_eq!(image_download_wire_limit(190_266), 192_512);
+        assert_eq!(
+            image_download_wire_limit(IMAGE_DOWNLOAD_CHUNK_BYTES),
+            IMAGE_DOWNLOAD_CHUNK_BYTES as i32
+        );
     }
 
     #[test]
