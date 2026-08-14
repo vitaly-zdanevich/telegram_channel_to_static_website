@@ -141,7 +141,18 @@ fn daily_uploads_and_persists_original_image_releases() {
 #[test]
 fn build_runs_mtproto_tests() {
     let workflow = include_str!("../.github/workflows/build.yml");
-    assert!(workflow.contains("cargo test --locked --features mtproto"));
+    let clippy = workflow
+        .split_once("  clippy:")
+        .and_then(|(_, tail)| tail.split_once("\n  biome:").map(|(job, _)| job))
+        .expect("build workflow must contain the Clippy job");
+    let zola = clippy
+        .find("- name: Install zola")
+        .expect("the MTProto test job must install Zola for end-to-end tests");
+    let tests = clippy
+        .find("cargo test --locked --features mtproto")
+        .expect("feature-gated regressions must run in CI");
+    assert!(zola < tests, "Zola must be installed before MTProto tests");
+    assert!(clippy.contains("${ZOLA_VERSION}"));
 }
 
 /// Oversized Pages output must fail before replacing the last good deployment.
