@@ -18,7 +18,7 @@ prev_id = 1126
 prev_title = ""
 prev_body = "#internetarchive\n#flag\n#earth"
 views = 18
-ids = [1127]
+ids = [1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135]
 +++
 
 > Internet Archive ceramic archivists  <br>  <br>“Brewster Kahle, founder of the Internet Archive, went to China and was impressed with the Xian warriors. After he got back, he decided to hire Nuala Creed to start making sculptures representing individuals who had dedicated at least three years of service to the \[Internet\] Archive. Nuala has made 100 to date \[2014\]. They are on display in the Great Room of the Internet Archive

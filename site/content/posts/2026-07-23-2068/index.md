@@ -16,7 +16,7 @@ next_body = "#fashion\n#ears\n#hood\n#cat\n#green\nSource"
 prev_id = 2067
 prev_title = ""
 prev_body = "Моя #лекция про #evernote проекты, #saas, #everpublich на #zola - для публикации ноутбука в статический сайт, без #api\n#friendsbar\n#batumi\neverpublich.my\nПатч для больших стикеров в #telegram\n#titleonhover\nreeknote evernote cli\nМой синхронизатор Телеграм канала в сайт\nTo Evernote: Pinterest, Wikipedia, YandexMusic\nqt6 Evernote app\nrepack of the Evernote app\nYouTube\nВсе линки"
-views = 12
+views = 13
 forwarded_from = "Pavel Durov"
 ids = [2068]
 +++

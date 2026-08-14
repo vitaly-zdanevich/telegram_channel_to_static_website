@@ -19,7 +19,7 @@ prev_id = 1503
 prev_title = ""
 prev_body = "#wikipedia\n#wikimediacommons\nПишите авторам контентов - иногда они соглашаются сделать его Creative Commons"
 views = 14
-ids = [1504]
+ids = [1504, 1505]
 
 [[extra.related]]
 path = "@/posts/2025-08-05-615/index.md"

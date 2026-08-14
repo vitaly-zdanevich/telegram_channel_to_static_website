@@ -19,7 +19,7 @@ prev_id = 1668
 prev_title = ""
 prev_body = "#anime\n#cover\n#game\n#ps3\n#year2014\nAtelier Shallie Alchemists of the Dusk Sea"
 views = 16
-ids = [1672]
+ids = [1672, 1673]
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1856/index.md"

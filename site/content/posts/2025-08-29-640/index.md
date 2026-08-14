@@ -17,7 +17,7 @@ prev_id = 638
 prev_title = ""
 prev_body = ""
 views = 23
-ids = [640]
+ids = [640, 641]
 +++
 
 <https://mightandmagic.fandom.com/wiki/Main_Page>

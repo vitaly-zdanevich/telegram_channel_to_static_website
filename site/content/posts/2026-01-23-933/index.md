@@ -18,7 +18,7 @@ next_body = "#ai\nFrom"
 prev_id = 931
 prev_title = ""
 prev_body = "I am on #gentoo because it compiles for my CPU (-march=native and other flags - not generic x64, but I did not measure the performance numbers), and another point - USE flags and the ability to apply source based patches. For example in Firefox in about:firefoxview in Open tabs we have only 7 elements and no preferences to increase that number, so I found it in the source code and produced a simple patch for my system - and on every update the Portage package manager will try to apply that patch."
-views = 14
+views = 15
 forwarded_from = "Анонсы Laboratory Bar & Hookah (Batumi)"
 forwarded_from_url = "https://t.me/it_laboratory_batumi/771"
 ids = [933]

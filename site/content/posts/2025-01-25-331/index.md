@@ -18,7 +18,7 @@ prev_id = 330
 prev_title = ""
 prev_body = "#music"
 views = 54
-ids = [331]
+ids = [331, 332]
 +++
 
 Batumi real estate market

@@ -19,7 +19,7 @@ prev_id = 1695
 prev_title = ""
 prev_body = "#my\n#batumi\n#restaurant\n#art\n#food\n#sazandari"
 views = 23
-ids = [1703]
+ids = [1703, 1704, 1705, 1706, 1707, 1708]
 
 [[extra.related]]
 path = "@/posts/2026-07-20-2061/index.md"

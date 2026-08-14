@@ -18,7 +18,7 @@ next_body = "#music\n#sunboy\nОстров в океане\nFrom\nПро исп�
 prev_id = 1762
 prev_title = ""
 prev_body = "#лекция про мой #telegram #бот для #evernote\n#stillyoungbar\n#batumi\nРепозиторий проекта:\nСоздано через #llm Codex gpt-5.5 xhigh, часов за 10. Сначала на Питоне - а потом попросил переписать на Расте - для скорости.\nУпоминались:\nevernote.com\nevernote.com/api/DeveloperToken.action\nhelp.evernote.com/hc/en-us/articles/209005347-Save-emails-into-Evernote\nnotesnook.com FOSS альтернатива\nobsidian.md проприетарный софт для заметок в markdown\nlogseq.com свободные заметки в markdown\ngithub.com/boo-yee/nixnote2 FOSS клиент для Evernote на C++ и Qt\ngithub.com/vitaly-zdanevich/reeknote мой CLI на Rust\ngithub.com/syncthing/syncthing FOSS синхронизация данных через ваши устройства\nБесплатный хостинг:\naws.amazon.com/lambda\nПро стили - чтобы сайты выгляди как надо вам а не дизайнеру:\ngithub.com/openstyles/stylus\nuserstyles.world/user/vitaly-zdanevich\ngitlab.com/vitaly-zdanevich-styles/evernote\ncss-tricks.com/css-keylogger"
-views = 24
+views = 25
 ids = [1763]
 
 [[extra.related]]

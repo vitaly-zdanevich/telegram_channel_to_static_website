@@ -19,7 +19,7 @@ prev_id = 1655
 prev_title = ""
 prev_body = "#preservation\n#logo\n#symbol\n#damage"
 views = 23
-ids = [1656]
+ids = [1656, 1657, 1658, 1659, 1660, 1661]
 
 [[extra.related]]
 path = "@/posts/2026-07-20-2061/index.md"

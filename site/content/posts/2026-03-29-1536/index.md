@@ -19,7 +19,7 @@ prev_id = 1532
 prev_title = ""
 prev_body = "#architecture\n#abandone\n#Свиряны\n#belarus\n#globustut\n#year2005\nSource"
 views = 18
-ids = [1536]
+ids = [1536, 1537, 1538, 1539, 1540, 1541, 1542, 1543, 1544, 1545]
 
 [[extra.related]]
 path = "@/posts/2026-03-16-1475/index.md"

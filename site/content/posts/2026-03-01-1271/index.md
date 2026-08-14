@@ -19,7 +19,7 @@ prev_id = 1270
 prev_title = ""
 prev_body = "#webdesign\n#cloud"
 views = 9
-ids = [1271]
+ids = [1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279]
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"

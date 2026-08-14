@@ -19,7 +19,7 @@ prev_id = 2076
 prev_title = ""
 prev_body = "What a nice #arabic #logo"
 views = 10
-ids = [2083]
+ids = [2083, 2084, 2085, 2086, 2087, 2088, 2089, 2090]
 
 [[extra.related]]
 path = "@/posts/2026-01-07-852/index.md"

@@ -19,7 +19,7 @@ prev_id = 1084
 prev_title = ""
 prev_body = "#logo\n#foobar\n#audioplayer"
 views = 8
-ids = [1085]
+ids = [1085, 1086]
 
 [[extra.related]]
 path = "@/posts/2026-01-18-892/index.md"
@@ -50,4 +50,4 @@ label = "I love #ci so much that for the first time I depleted free 400 m…"
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1086-5197589415704858326.jpg") }}

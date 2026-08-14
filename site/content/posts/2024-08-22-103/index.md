@@ -17,7 +17,7 @@ prev_id = 102
 prev_title = ""
 prev_body = ""
 views = 31
-ids = [103]
+ids = [103, 104]
 +++
 
 <https://moneymuseum.by/ru/collections/bonistika/132054/>

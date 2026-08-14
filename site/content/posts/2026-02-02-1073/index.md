@@ -19,7 +19,7 @@ prev_id = 1072
 prev_title = ""
 prev_body = "#wikipedia article writing, in #vim"
 views = 12
-ids = [1073]
+ids = [1073, 1074]
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"

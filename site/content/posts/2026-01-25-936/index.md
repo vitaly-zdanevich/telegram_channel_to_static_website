@@ -19,7 +19,7 @@ prev_id = 935
 prev_title = ""
 prev_body = "#vibecoding without human review is #gambling\nFrom"
 views = 15
-ids = [936]
+ids = [936, 937]
 
 [[extra.related]]
 path = "@/posts/2025-10-25-724/index.md"

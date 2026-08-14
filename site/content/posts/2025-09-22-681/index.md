@@ -19,7 +19,7 @@ prev_id = 680
 prev_title = ""
 prev_body = "#film\n#thefountain\n#darrenaronofsky\n#inquisitor\n#pain\n#torture\n#christianity"
 views = 35
-ids = [681]
+ids = [681, 682]
 
 [[extra.related]]
 path = "@/posts/2025-05-12-523/index.md"

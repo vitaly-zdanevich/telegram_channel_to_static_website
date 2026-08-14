@@ -19,7 +19,7 @@ prev_id = 201
 prev_title = ""
 prev_body = "#wikipedia"
 views = 36
-ids = [202]
+ids = [202, 203]
 
 [[extra.related]]
 path = "@/posts/2025-05-14-534/index.md"

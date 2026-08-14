@@ -17,8 +17,12 @@ next_body = "#odysee looks like #convert #video right in a #browser - without up
 prev_id = 1739
 prev_title = ""
 prev_body = "#shotcut is pretty good #foss #videoeditor, #love it"
-views = 327
+views = 329
 ids = [1740]
+
+[[extra.related]]
+path = "@/posts/2026-06-23-1850/index.md"
+label = "Моя лекция про мой Telegram бот YouTube, с поиском, который возв…"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1762/index.md"
@@ -35,10 +39,6 @@ label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
 [[extra.related]]
 path = "@/posts/2026-06-19-1844/index.md"
 label = "#armiesofexigo #abandone"
-
-[[extra.related]]
-path = "@/posts/2025-02-21-375/index.md"
-label = "#game #armiesofexigo"
 +++
 
 {{ tag(t="armies_of_exigo") }}: моя {{ tag(t="лекция") }} об игре, в Батуми  

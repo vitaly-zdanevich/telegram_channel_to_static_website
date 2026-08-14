@@ -19,7 +19,7 @@ prev_id = 449
 prev_title = ""
 prev_body = "#entrance\nFrom"
 views = 32
-ids = [450]
+ids = [450, 451]
 
 [[extra.related]]
 path = "@/posts/2025-11-06-743/index.md"

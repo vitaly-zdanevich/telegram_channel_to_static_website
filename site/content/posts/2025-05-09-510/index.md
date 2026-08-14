@@ -19,7 +19,7 @@ prev_id = 509
 prev_title = ""
 prev_body = "#health\n#science"
 views = 23
-ids = [510]
+ids = [510, 511]
 
 [[extra.related]]
 path = "@/posts/2025-05-27-542/index.md"

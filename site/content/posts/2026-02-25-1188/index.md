@@ -19,7 +19,7 @@ prev_id = 1181
 prev_title = ""
 prev_body = "#belfry\n#belarus\n#globustut\nSource"
 views = 4
-ids = [1188]
+ids = [1188, 1189, 1190, 1191, 1192, 1193, 1194]
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1373/index.md"

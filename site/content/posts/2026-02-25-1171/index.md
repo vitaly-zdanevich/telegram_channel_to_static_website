@@ -19,7 +19,7 @@ prev_id = 1170
 prev_title = ""
 prev_body = "#entrance\n#abandone\n#belarus\nSource"
 views = 3
-ids = [1171]
+ids = [1171, 1172, 1173, 1174, 1175]
 
 [[extra.related]]
 path = "@/posts/2026-01-14-877/index.md"

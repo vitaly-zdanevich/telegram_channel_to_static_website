@@ -19,7 +19,7 @@ prev_id = 1094
 prev_title = ""
 prev_body = "#firefox translation from #german to #russian"
 views = 17
-ids = [1095]
+ids = [1095, 1096]
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"

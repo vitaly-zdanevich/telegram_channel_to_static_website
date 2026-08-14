@@ -19,7 +19,7 @@ prev_id = 797
 prev_title = ""
 prev_body = "С помощью нехитрых приспособлений буханку хлеба можно превратить в троллейбус, но зачем\n#ai\n#nanobanana\nSource"
 views = 37
-ids = [799]
+ids = [799, 800]
 
 [[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"

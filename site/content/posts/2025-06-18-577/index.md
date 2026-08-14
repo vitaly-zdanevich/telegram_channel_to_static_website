@@ -19,7 +19,7 @@ prev_id = 576
 prev_title = ""
 prev_body = "#photo\n#batumi\n#chandelier"
 views = 34
-ids = [577]
+ids = [577, 578, 579, 580, 581]
 
 [[extra.related]]
 path = "@/posts/2025-04-15-470/index.md"

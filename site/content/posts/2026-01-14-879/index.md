@@ -19,7 +19,7 @@ prev_id = 878
 prev_title = ""
 prev_body = "#saint\n#scull\n#fashion\nSaint Francis of Assisi, by José de Ribera, 1643\nSource"
 views = 15
-ids = [879]
+ids = [879, 880, 881, 882, 883, 884]
 
 [[extra.related]]
 path = "@/posts/2026-01-28-955/index.md"
@@ -61,4 +61,4 @@ Kosava Castle
 
 {{ img(src="05.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-884-5422584726364557073.jpg") }}

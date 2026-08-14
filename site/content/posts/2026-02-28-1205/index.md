@@ -19,7 +19,7 @@ prev_id = 1204
 prev_title = ""
 prev_body = "#calligraphy\n#microfilm\n#preservation"
 views = 5
-ids = [1205]
+ids = [1205, 1206, 1207]
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"

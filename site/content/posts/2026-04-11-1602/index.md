@@ -19,7 +19,7 @@ prev_id = 1600
 prev_title = ""
 prev_body = "#icq\n#offline\n#abandone\n#sonyericsson\nSource"
 views = 17
-ids = [1602]
+ids = [1602, 1603, 1604, 1605, 1606, 1607, 1608, 1609, 1610, 1611]
 
 [[extra.related]]
 path = "@/posts/2026-04-12-1629/index.md"
@@ -64,6 +64,6 @@ label = "#typography #scan #preservation #russianempire #century19"
 
 {{ img(src="08.jpg") }}
 
-{{ img(src="09.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1610-5391330184927056932.jpg") }}
 
 {{ img(src="10.jpg") }}

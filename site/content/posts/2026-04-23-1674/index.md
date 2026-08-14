@@ -19,7 +19,7 @@ prev_id = 1672
 prev_title = ""
 prev_body = "#mediawiki\n#fandom\n#infobox\n#template\n#concatenation\n#wikidata\n#armiesofexigo\nBefore:\nWikidata\nAfter:\nWikidata\n[ } }]"
 views = 16
-ids = [1674]
+ids = [1674, 1675, 1676, 1677]
 
 [[extra.related]]
 path = "@/posts/2026-07-20-2061/index.md"

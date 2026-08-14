@@ -19,7 +19,7 @@ prev_id = 1752
 prev_title = ""
 prev_body = "#scream\n#metal\nSource"
 views = 21
-ids = [1753]
+ids = [1753, 1754]
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1747/index.md"
@@ -92,6 +92,6 @@ class Solution:
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1754-5197241093857153877.jpg") }}
 
 👍 1

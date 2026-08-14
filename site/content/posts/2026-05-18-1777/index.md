@@ -19,7 +19,7 @@ prev_id = 1776
 prev_title = ""
 prev_body = "#llm\n#quote"
 views = 34
-ids = [1777]
+ids = [1777, 1778]
 
 [[extra.related]]
 path = "@/posts/2026-04-24-1679/index.md"

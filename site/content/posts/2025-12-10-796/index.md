@@ -18,7 +18,7 @@ next_body = "С помощью нехитрых приспособлений б�
 prev_id = 795
 prev_title = ""
 prev_body = "Фильм \"Лучше не бывает\": несколько минут в разных русских озвучках\nОбратил внимание как отличается перевод/озвучка.\n#film\n#asgoodasitgets\n#translation\n#russian"
-views = 48
+views = 49
 ids = [796]
 
 [[extra.related]]

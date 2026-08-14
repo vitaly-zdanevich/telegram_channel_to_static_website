@@ -19,7 +19,7 @@ prev_id = 1740
 prev_title = ""
 prev_body = "#armiesofexigo: моя #лекция об игре, в Батуми\n#stillyoungbar\nТакже скачать эту заброшенную игру можно тут\nВсе ссылки на это #видео"
 views = 19
-ids = [1741]
+ids = [1741, 1742, 1743]
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1738/index.md"

@@ -19,7 +19,7 @@ prev_id = 1940
 prev_title = ""
 prev_body = "#belarus\n#хальч\n#photo\n#architecture\n#abandone\n#year2005\n#globustut\nSource"
 views = 7
-ids = [1945]
+ids = [1945, 1946, 1947, 1948, 1949, 1950]
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1925/index.md"

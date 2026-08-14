@@ -19,7 +19,7 @@ prev_id = 1746
 prev_title = ""
 prev_body = "#leetcode is often produce #error"
 views = 29
-ids = [1747]
+ids = [1747, 1748]
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1749/index.md"

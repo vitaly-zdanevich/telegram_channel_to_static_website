@@ -19,7 +19,7 @@ prev_id = 441
 prev_title = ""
 prev_body = "On #Wikipedia, not all websites can be used as sources.\nEvery fact on Wikipedia must have a reliable source. Original research is not allowed — Wikipedia only summarizes facts from trusted, reputable places."
 views = 30
-ids = [442]
+ids = [442, 443]
 
 [[extra.related]]
 path = "@/posts/2026-05-26-1787/index.md"

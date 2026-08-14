@@ -18,8 +18,8 @@ next_body = "#27февраля2026 (пт) 21.30-01:00 Hard IT в Laboratory Bar\
 prev_id = 1197
 prev_title = ""
 prev_body = "#firefox\n#extension\nCopy non-latin links without #percent"
-views = 6
-ids = [1198]
+views = 7
+ids = [1198, 1199]
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1152/index.md"

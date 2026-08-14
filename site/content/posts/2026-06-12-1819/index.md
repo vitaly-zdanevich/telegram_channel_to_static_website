@@ -19,7 +19,7 @@ prev_id = 1818
 prev_title = ""
 prev_body = "#aws\n#billing\n#cost\n#graph"
 views = 16
-ids = [1819]
+ids = [1819, 1820]
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1832/index.md"

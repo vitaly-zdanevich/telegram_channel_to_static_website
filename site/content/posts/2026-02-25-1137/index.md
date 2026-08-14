@@ -19,7 +19,7 @@ prev_id = 1136
 prev_title = ""
 prev_body = "In #kitty terminal you can use independent clipboard:\nmap ctrl+space copytobuffer a1\nmap ctrl+shift+space pastefrombuffer a1\n# Kitty clipboard - independent from the system one"
 views = 5
-ids = [1137]
+ids = [1137, 1138, 1139, 1140, 1141]
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"

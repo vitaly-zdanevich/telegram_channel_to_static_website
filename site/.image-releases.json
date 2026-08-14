@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "channel": "vitaly_zdanevich_chan",
+  "images": [
+    {
+      "message_id": 329,
+      "media_id": 5233675498993872612,
+      "declared_bytes": 148052,
+      "tag": "images-0000",
+      "asset": "telegram-image-329-5233675498993872612.jpg",
+      "bytes": 148052,
+      "source": {
+        "kind": "photo",
+        "web_key": "5233675498993872612_1218560035_456257252"
+      }
+    },
+    {
+      "message_id": 835,
+      "media_id": 5384459448434232199,
+      "declared_bytes": 525912,
+      "tag": "images-0500",
+      "asset": "telegram-image-835-5384459448434232199.jpg",
+      "bytes": 525912,
+      "source": {
+        "kind": "photo",
+        "web_key": "5384459448434232199_1253667159_460000135"
+      }
+    },
+    {
+      "message_id": 884,
+      "media_id": 5422584726364557073,
+      "declared_bytes": 2690,
+      "tag": "images-0500",
+      "asset": "telegram-image-884-5422584726364557073.jpg",
+      "bytes": 2690
+    },
+    {
+      "message_id": 1086,
+      "media_id": 5197589415704858326,
+      "declared_bytes": 7542,
+      "tag": "images-1000",
+      "asset": "telegram-image-1086-5197589415704858326.jpg",
+      "bytes": 7542
+    },
+    {
+      "message_id": 1458,
+      "media_id": 5312188123938757172,
+      "declared_bytes": 524385,
+      "tag": "images-1000",
+      "asset": "telegram-image-1458-5312188123938757172.jpg",
+      "bytes": 524385
+    },
+    {
+      "message_id": 1610,
+      "media_id": 5391330184927056932,
+      "declared_bytes": 1058890,
+      "tag": "images-1500",
+      "asset": "telegram-image-1610-5391330184927056932.jpg",
+      "bytes": 1058890
+    },
+    {
+      "message_id": 1754,
+      "media_id": 5197241093857153877,
+      "declared_bytes": 42754,
+      "tag": "images-1500",
+      "asset": "telegram-image-1754-5197241093857153877.jpg",
+      "bytes": 42754
+    }
+  ]
+}

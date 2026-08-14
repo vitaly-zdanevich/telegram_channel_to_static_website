@@ -19,7 +19,7 @@ prev_id = 1786
 prev_title = ""
 prev_body = "Finally I forked #nixnote, and migrated from #qt5 to #qt6, by #llm #gpt 5.5 xhigh"
 views = 37
-ids = [1787, 1797]
+ids = [1787, 1788, 1789, 1790, 1791, 1792, 1793, 1794, 1795, 1796, 1797, 1798]
 
 [[extra.related]]
 path = "@/posts/2025-03-24-442/index.md"

@@ -17,12 +17,20 @@ next_body = "Usual #school in #china? #lenin\n【【城】一行代码让整个�
 prev_id = 1613
 prev_title = ""
 prev_body = "#typography\n#russianempire\n#ukraine\n#century18\nSource"
-views = 26
+views = 27
 ids = [1622]
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 
 [[extra.related]]
 path = "@/posts/2026-02-01-1070/index.md"
 label = "#logo #wikimedia #wikidata #data From"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1873/index.md"
+label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1762/index.md"
@@ -31,14 +39,6 @@ label = "#лекция про мой #telegram #бот для #evernote #stillyo
 [[extra.related]]
 path = "@/posts/2026-07-23-2067/index.md"
 label = "Моя #лекция про #evernote проекты, #saas, #everpublich на #zola…"
-
-[[extra.related]]
-path = "@/posts/2026-06-21-1848/index.md"
-label = "#batumi Oh my, I live here From"
-
-[[extra.related]]
-path = "@/posts/2026-02-02-1073/index.md"
-label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
 +++
 
 Про {{ tag(t="викиданные") }}/{{ tag(t="wikidata") }} (открытая база данных на {{ tag(t="SPARQL") }}), {{ tag(t="wikimedia") }}, {{ tag(t="wikipedia") }}  

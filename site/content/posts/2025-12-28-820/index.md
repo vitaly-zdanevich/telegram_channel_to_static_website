@@ -19,7 +19,7 @@ prev_id = 819
 prev_title = ""
 prev_body = "#preservation\n#wikimediacommons\n#pywikibot\n#my\nCreated a new tool: #python wrapper for Pywikibot to make uploading to Wikimedia Commons from #cli simpler"
 views = 28
-ids = [820]
+ids = [820, 821, 822, 823, 824]
 
 [[extra.related]]
 path = "@/posts/2026-08-05-2119/index.md"

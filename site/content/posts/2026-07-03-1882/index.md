@@ -19,7 +19,7 @@ prev_id = 1881
 prev_title = ""
 prev_body = "Моя #лекция про мой #telegrambot для #rutracker - не только ищет но и скачивает, на #oraclecloud\n#torrent\n#friendsbar\nОбзор, и про техническую реализацию.\nSource\nEvernote"
 views = 8
-ids = [1882]
+ids = [1882, 1883, 1884, 1885, 1886, 1887, 1888, 1889]
 
 [[extra.related]]
 path = "@/posts/2026-07-06-1970/index.md"

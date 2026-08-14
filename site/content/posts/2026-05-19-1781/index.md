@@ -19,7 +19,7 @@ prev_id = 1780
 prev_title = ""
 prev_body = "What a time - multiple #llm doing multiple projects, in parallel..."
 views = 38
-ids = [1781]
+ids = [1781, 1782, 1783]
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2034/index.md"

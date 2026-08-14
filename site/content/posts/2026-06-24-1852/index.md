@@ -16,8 +16,8 @@ next_title = ""
 next_body = "#llm wow of today\n1) Fixed broken audio recording - when the iPhone turned off\n2) I put this audio to the #shotcut video editor - and said - sync cuts and keyframe dots"
 prev_id = 1850
 prev_title = ""
-prev_body = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио\nРепозиторий проекта\n#my\n#stillyoungbar\n#lecture\n#telegrambot\n#youtube\nSource\nEvernote"
-views = 13
+prev_body = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио\nРепозиторий проекта\n#my\n#stillyoungbar\n#лекция\n#telegrambot\n#youtube\nSource\nEvernote"
+views = 14
 ids = [1852]
 +++
 

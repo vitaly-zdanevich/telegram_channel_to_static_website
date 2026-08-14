@@ -19,7 +19,7 @@ prev_id = 1709
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource--01--0104--010104-01-00004image00004.jpg)"
 views = 22
-ids = [1719]
+ids = [1719, 1720]
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"

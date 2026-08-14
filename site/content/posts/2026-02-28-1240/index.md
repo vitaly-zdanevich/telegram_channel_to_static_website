@@ -19,7 +19,7 @@ prev_id = 1236
 prev_title = ""
 prev_body = "#grave\n#stones\n#belarus\n#globustut\n#year2005\nSource"
 views = 7
-ids = [1240]
+ids = [1240, 1241, 1242, 1243, 1244, 1245]
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1258/index.md"

@@ -20,7 +20,7 @@ prev_body = "#llm\n#prediction\n#cat\nSource"
 views = 13
 forwarded_from = "Батумчик 🌴 | Новости Батуми | Западная Грузия"
 forwarded_from_url = "https://t.me/batumchik/74903"
-ids = [1875]
+ids = [1875, 1876, 1877]
 +++
 
 "На пляжах Батуми все стабильно"- подписчица  

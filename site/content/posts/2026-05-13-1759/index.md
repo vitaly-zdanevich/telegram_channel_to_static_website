@@ -19,7 +19,7 @@ prev_id = 1758
 prev_title = ""
 prev_body = "Wow my #reeknote (#evernote #cli) can now play audio and show images, in a terminal"
 views = 23
-ids = [1759]
+ids = [1759, 1760]
 
 [[extra.related]]
 path = "@/posts/2024-11-20-195/index.md"

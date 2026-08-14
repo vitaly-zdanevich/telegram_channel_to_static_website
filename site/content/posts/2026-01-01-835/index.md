@@ -11,7 +11,7 @@ tags = ["webdesign", "petersburg", "theater"]
 id = 835
 day = "2026-01-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/835"
-og_image = "5384459448434232199_1253667159_460000135.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-835-5384459448434232199.jpg"
 next_id = 836
 next_title = ""
 next_body = "#wikipedia\n#medals\n#awards"
@@ -48,6 +48,6 @@ label = "#webdesign"
 
 <https://ptj.spb.ru/archive/101/independence-is-freedom/sobiraetsya-ryad-subektivnostej/>
 
-{{ img(src="5384459448434232199_1253667159_460000135.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-835-5384459448434232199.jpg") }}
 
 😍 1

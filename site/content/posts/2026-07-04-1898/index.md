@@ -19,7 +19,7 @@ prev_id = 1891
 prev_title = ""
 prev_body = "#belarus\n#пески\n#photo\n#abandone\n#year2005\n#globustut\nSource,%D0%BC%D0%B5%D0%BD%D1%8C%D1%88%D0%B0%D1%8F%D0%B1%D1%80%D0%B0%D0%BC%D0%B0,%D1%81%D0%BD%D1%8F%D1%82%D0%BE1%D0%B8%D1%8E%D0%BB%D1%8F2005.jpg)"
 views = 10
-ids = [1898]
+ids = [1898, 1899, 1900, 1901, 1902, 1903]
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1951/index.md"

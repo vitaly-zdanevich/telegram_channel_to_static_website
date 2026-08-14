@@ -18,8 +18,8 @@ next_body = "#preservation\n#games\n#beard\nFrom"
 prev_id = 796
 prev_title = ""
 prev_body = "#architecture\nДом со щуками\nFrom"
-views = 60
-ids = [797]
+views = 61
+ids = [797, 798]
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"

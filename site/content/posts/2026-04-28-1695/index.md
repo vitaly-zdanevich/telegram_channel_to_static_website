@@ -19,11 +19,15 @@ prev_id = 1688
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
 views = 20
-ids = [1695]
+ids = [1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702]
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
-label = "#batumi #aksiarodak #year2024 #my #lecture #wikimediacommons #pr…"
+label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+
+[[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1848/index.md"
@@ -36,10 +40,6 @@ label = "Girl with a Pearl Earring #art Artwork by Olga Pavolga Shot by T…"
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
-
-[[extra.related]]
-path = "@/posts/2026-05-04-1734/index.md"
-label = "#map #batumi Between the Black Sea and the mountains."
 +++
 
 {{ tag(t="my") }}  

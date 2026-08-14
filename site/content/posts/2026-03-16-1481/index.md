@@ -19,7 +19,7 @@ prev_id = 1475
 prev_title = ""
 prev_body = "#abandone\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE5%D0%B8%D1%8E%D0%BD%D1%8F2005.jpg)"
 views = 29
-ids = [1481]
+ids = [1481, 1482, 1483, 1484, 1485, 1486, 1487, 1488, 1489, 1490]
 
 [[extra.related]]
 path = "@/posts/2026-07-06-2004/index.md"

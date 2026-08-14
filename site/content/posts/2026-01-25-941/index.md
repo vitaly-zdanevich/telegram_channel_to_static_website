@@ -19,7 +19,7 @@ prev_id = 939
 prev_title = ""
 prev_body = "#aws CTO Werner Vogels\nMentioned:\nFrom"
 views = 8
-ids = [941]
+ids = [941, 942]
 
 [[extra.related]]
 path = "@/posts/2026-01-25-943/index.md"

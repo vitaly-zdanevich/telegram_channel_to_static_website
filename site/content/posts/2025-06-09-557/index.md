@@ -20,7 +20,7 @@ prev_body = ""
 views = 38
 forwarded_from = "Незабытые игры"
 forwarded_from_url = "https://t.me/unforget_games/11459"
-ids = [557]
+ids = [557, 558, 559, 560, 561, 562, 563, 564]
 +++
 
 Рисунки скриншотов из игр!  

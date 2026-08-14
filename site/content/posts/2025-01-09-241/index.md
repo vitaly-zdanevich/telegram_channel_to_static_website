@@ -20,6 +20,6 @@ views = 31
 ids = [241]
 +++
 
-NeoVIM as an editor for any textarea (no Vim) [https://github.com/glacambre/firenvim](<https://github.com/glacambre/firenvim> "Embed Neovim in Chrome, Firefox & others. · 6096 stars · Languages: TypeScript 73%, Vim Script 15%, Lua 5% · 1510 commits · 158 forks · 95 open issues/PRs · GPL-3.0 · last push 2026-08-04")
+NeoVIM as an editor for any textarea (no Vim) [https://github.com/glacambre/firenvim](<https://github.com/glacambre/firenvim> "Embed Neovim in Chrome, Firefox & others. · 6097 stars · Languages: TypeScript 73%, Vim Script 15%, Lua 5% · 1510 commits · 158 forks · 95 open issues/PRs · GPL-3.0 · last push 2026-08-04")
 
 🙏 1

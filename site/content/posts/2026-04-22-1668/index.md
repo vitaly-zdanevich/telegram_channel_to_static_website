@@ -19,7 +19,7 @@ prev_id = 1667
 prev_title = ""
 prev_body = "#fashion\n#street\n#london\nSource"
 views = 13
-ids = [1668]
+ids = [1668, 1669, 1670, 1671]
 
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"

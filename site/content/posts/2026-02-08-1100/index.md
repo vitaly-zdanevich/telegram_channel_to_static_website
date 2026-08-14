@@ -19,7 +19,7 @@ prev_id = 1099
 prev_title = ""
 prev_body = "#love it - against #youtube #clickbait"
 views = 18
-ids = [1100]
+ids = [1100, 1101]
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1120/index.md"

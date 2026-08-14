@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-06-30T09:42:24+00:00
-description = "batumi aksiarodak year2024 my lecture wikimediacommons preservation Запіс ад снежня 2024. План лекцыі і ўсе спасылкі"
+description = "batumi aksiarodak year2024 my лекция wikimediacommons preservation Запіс ад снежня 2024. План лекцыі і ўсе спасылкі"
 
 [taxonomies]
 days = ["2026-06-30"]
-tags = ["batumi", "aksiarodak", "year_2024", "my", "lecture", "wikimedia_commons", "preservation"]
+tags = ["batumi", "aksiarodak", "year_2024", "my", "лекция", "wikimedia_commons", "preservation"]
 
 [extra]
 id = 1873
@@ -25,6 +25,10 @@ path = "@/posts/2025-12-27-819/index.md"
 label = "#preservation #wikimediacommons #pywikibot #my Created a new too…"
 
 [[extra.related]]
+path = "@/posts/2026-08-09-2139/index.md"
+label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+
+[[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
 
@@ -35,17 +39,13 @@ label = "My first blog #post to #wikimediadiff, about #wikimediacommons,…"
 [[extra.related]]
 path = "@/posts/2026-06-23-1850/index.md"
 label = "Моя лекция про мой Telegram бот YouTube, с поиском, который возв…"
-
-[[extra.related]]
-path = "@/posts/2026-04-28-1695/index.md"
-label = "#my #batumi #restaurant #art #food #sazandari"
 +++
 
 {{ tag(t="batumi") }}  
 {{ tag(t="aksiarodak") }}  
 {{ tag(t="year_2024") }}  
 {{ tag(t="my") }}  
-{{ tag(t="lecture") }}  
+{{ tag(t="лекция") }}  
 {{ tag(t="wikimedia_commons") }}  
 {{ tag(t="preservation") }}  
 

@@ -19,7 +19,7 @@ prev_id = 1438
 prev_title = ""
 prev_body = "#design\n#typography\n#newspaper\n#sakartvelo\nSource"
 views = 14
-ids = [1439]
+ids = [1439, 1440, 1441, 1442]
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"

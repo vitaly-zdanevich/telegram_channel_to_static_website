@@ -17,7 +17,7 @@ prev_id = 54
 prev_title = ""
 prev_body = ""
 views = 51
-ids = [64]
+ids = [64, 65, 66, 67, 68, 69, 70, 71, 72]
 +++
 
 {{ img(src="01.jpg") }}

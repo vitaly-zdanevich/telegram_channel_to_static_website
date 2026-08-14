@@ -19,7 +19,7 @@ prev_id = 1308
 prev_title = ""
 prev_body = "Wow in #kitty we can switch to a prev active tab:\nmap ctrl+alt+p gototab -1\n# Go to prev active tab"
 views = 6
-ids = [1309]
+ids = [1309, 1310, 1311, 1312, 1313, 1314, 1315, 1316, 1317, 1318]
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1350/index.md"

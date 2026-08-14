@@ -19,7 +19,7 @@ prev_id = 945
 prev_title = ""
 prev_body = "#aws\n#silicon\n#graviton\nTRN3 compute sled\nFrom"
 views = 12
-ids = [946]
+ids = [946, 947]
 
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"

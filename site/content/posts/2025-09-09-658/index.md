@@ -20,7 +20,7 @@ prev_body = "#golang\n#utf8\nconst s = \"สวัสดี\"\nfmt.Println(\"Len
 views = 29
 forwarded_from = "Батумчик 🌴 | Новости Батуми | Западная Грузия"
 forwarded_from_url = "https://t.me/batumchik/65094"
-ids = [658]
+ids = [658, 659, 660, 661, 662, 663, 664]
 +++
 
 **В Кутаиси продолжается проект «Mural Fest» **🎨****  

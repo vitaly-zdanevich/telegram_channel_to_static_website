@@ -19,7 +19,7 @@ prev_id = 386
 prev_title = ""
 prev_body = "Released opera 2084"
 views = 48
-ids = [387]
+ids = [387, 388, 389]
 
 [[extra.related]]
 path = "@/posts/2025-09-01-651/index.md"

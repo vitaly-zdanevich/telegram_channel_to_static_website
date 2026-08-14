@@ -19,7 +19,7 @@ prev_id = 2049
 prev_title = ""
 prev_body = "My yet another #wikimedia project that I love: #wikimediacommons #pwa #uploader. Fast and simple."
 views = 21
-ids = [2050]
+ids = [2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059]
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"

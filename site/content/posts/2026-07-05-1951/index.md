@@ -19,7 +19,7 @@ prev_id = 1945
 prev_title = ""
 prev_body = "#belarus\n#КрасныйПартизан\n#photo\n#architecture\n#church\n#year2005\n#globustut\nSource"
 views = 8
-ids = [1951]
+ids = [1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960]
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1940/index.md"

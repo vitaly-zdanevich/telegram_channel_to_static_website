@@ -31,7 +31,7 @@ label = "#preservation #wikimediacommons #pywikibot #my Created a new too…"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
-label = "#batumi #aksiarodak #year2024 #my #lecture #wikimediacommons #pr…"
+label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"

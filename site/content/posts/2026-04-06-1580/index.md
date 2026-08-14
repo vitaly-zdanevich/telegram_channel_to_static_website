@@ -19,7 +19,7 @@ prev_id = 1571
 prev_title = ""
 prev_body = "#typography\n#scans\n#russianempire\n#kiev\n#18thcentury"
 views = 21
-ids = [1580]
+ids = [1580, 1581, 1582, 1583, 1584, 1585, 1586, 1587, 1588, 1589]
 
 [[extra.related]]
 path = "@/posts/2026-04-06-1590/index.md"

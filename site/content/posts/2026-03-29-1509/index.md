@@ -19,7 +19,7 @@ prev_id = 1508
 prev_title = ""
 prev_body = "#nvidia\n#laser\n#agro"
 views = 15
-ids = [1509]
+ids = [1509, 1510]
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1271/index.md"

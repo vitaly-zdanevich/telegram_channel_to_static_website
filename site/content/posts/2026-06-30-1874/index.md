@@ -17,7 +17,7 @@ next_title = ""
 next_body = "\"На пляжах Батуми все стабильно\"- подписчица\nМафия выбирает только самые лучшие места"
 prev_id = 1873
 prev_title = ""
-prev_body = "#batumi\n#aksiarodak\n#year2024\n#my\n#lecture\n#wikimediacommons\n#preservation\nЗапіс ад снежня 2024.\nПлан лекцыі і ўсе спасылкі"
+prev_body = "#batumi\n#aksiarodak\n#year2024\n#my\n#лекция\n#wikimediacommons\n#preservation\nЗапіс ад снежня 2024.\nПлан лекцыі і ўсе спасылкі"
 views = 17
 ids = [1874]
 

@@ -19,7 +19,7 @@ prev_id = 2010
 prev_title = ""
 prev_body = "#belarus\n#ружаны\n#photo\n#abandone\n#castle\n#year2005\n#globustut\nSource"
 views = 14
-ids = [2020]
+ids = [2020, 2021, 2022, 2023]
 
 [[extra.related]]
 path = "@/posts/2026-07-06-1970/index.md"

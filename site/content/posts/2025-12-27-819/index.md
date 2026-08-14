@@ -23,7 +23,7 @@ ids = [819]
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
-label = "#batumi #aksiarodak #year2024 #my #lecture #wikimediacommons #pr…"
+label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
 
 [[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
@@ -47,7 +47,7 @@ label = "Top 1% by #python, hm, not sure why"
 {{ tag(t="pywikibot") }}  
 {{ tag(t="my") }}  
 
-Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 766 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 20677 commits · 219 forks · MIT · last push 2026-08-12") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
+Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 767 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 20678 commits · 219 forks · MIT · last push 2026-08-13") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
 
 <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 

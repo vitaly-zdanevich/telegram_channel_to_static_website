@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-06-23T19:16:32+00:00
-description = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио Репозиторий проекта my stillyoungbar lecture telegrambot youtube Source Evernote"
+description = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио Репозиторий проекта my stillyoungbar лекция telegrambot youtube Source Evernote"
 
 [taxonomies]
 days = ["2026-06-23"]
-tags = ["my", "still_young_bar", "lecture", "telegram_bot", "youtube"]
+tags = ["my", "still_young_bar", "лекция", "telegram_bot", "youtube"]
 
 [extra]
 id = 1850
@@ -18,28 +18,28 @@ next_body = "what a #stickerpack"
 prev_id = 1849
 prev_title = ""
 prev_body = "#llm\n#codex\n#regex"
-views = 186
+views = 187
 ids = [1850, 1851]
-
-[[extra.related]]
-path = "@/posts/2026-06-30-1873/index.md"
-label = "#batumi #aksiarodak #year2024 #my #lecture #wikimediacommons #pr…"
-
-[[extra.related]]
-path = "@/posts/2026-04-27-1687/index.md"
-label = "#my #evernote #telegrambot #awslambda #ai #codex #gpt5 Article a…"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 
 [[extra.related]]
-path = "@/posts/2024-12-22-222/index.md"
-label = "#youtube"
+path = "@/posts/2026-05-05-1740/index.md"
+label = "#armiesofexigo: моя #лекция об игре, в Батуми #stillyoungbar Так…"
 
 [[extra.related]]
-path = "@/posts/2026-08-06-2120/index.md"
-label = "#my another small project: #wikidata #pwa to get nearby items, w…"
+path = "@/posts/2026-07-01-1881/index.md"
+label = "Моя #лекция про мой #telegrambot для #rutracker - не только ищет…"
+
+[[extra.related]]
+path = "@/posts/2026-06-30-1873/index.md"
+label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+
+[[extra.related]]
+path = "@/posts/2026-05-16-1762/index.md"
+label = "#лекция про мой #telegram #бот для #evernote #stillyoungbar #bat…"
 +++
 
 **Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио**  
@@ -49,7 +49,7 @@ label = "#my another small project: #wikidata #pwa to get nearby items, w…"
 
 {{ tag(t="my") }}  
 {{ tag(t="still_young_bar") }}  
-{{ tag(t="lecture") }}  
+{{ tag(t="лекция") }}  
 {{ tag(t="telegram_bot") }}  
 {{ tag(t="youtube") }}  
 

@@ -4,6 +4,7 @@ date = 2025-01-17T02:58:30+00:00
 
 [taxonomies]
 days = ["2025-01-17"]
+tags = ["video"]
 
 [extra]
 id = 296
@@ -20,3 +21,7 @@ ids = [296]
 +++
 
 <https://coub.com/view/2cezoh>
+
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/296-01.mp4") }}
+
+{{ tag(t="video") }}

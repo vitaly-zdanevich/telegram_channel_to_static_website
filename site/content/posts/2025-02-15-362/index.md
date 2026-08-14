@@ -19,7 +19,7 @@ prev_id = 361
 prev_title = ""
 prev_body = "#coin\nSource"
 views = 42
-ids = [362]
+ids = [362, 363, 364, 365]
 
 [[extra.related]]
 path = "@/posts/2025-02-15-361/index.md"

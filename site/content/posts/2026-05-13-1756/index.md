@@ -19,7 +19,7 @@ prev_id = 1755
 prev_title = ""
 prev_body = "#ai\n#screenshot from"
 views = 25
-ids = [1756]
+ids = [1756, 1757]
 
 [[extra.related]]
 path = "@/posts/2025-12-31-832/index.md"

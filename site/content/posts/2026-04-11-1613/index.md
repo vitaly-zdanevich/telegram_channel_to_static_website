@@ -18,8 +18,8 @@ next_body = "Про #викиданные/#wikidata (открытая база �
 prev_id = 1612
 prev_title = ""
 prev_body = "I wrote, with #ai, a nice #script to #find top #biggest #folders - that has no other subfolders (#leaf folders):\nfind . -type d -links 2 -exec du -sh {} + | sort -hr | head\nOutput example:\n6.3G ./ДА Житомирської області/01 Ф - фонди дорадянського періоду/0118/010118-14/010118-14-00018\n5.3G ./ЦДІАЛ/0080/010020-10-00088\n4.8G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/024/Beregszasz\n4.3G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/054\n4.3G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/045\n4.1G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/026/Beregszasz\n3.8G ./ДА Закарпатської області/Перепис Закарпаття 1921 року/044\n3.5G ./ДА Харківської області/01/0031/010031-141-00523\n3.4G ./ДА Донецької області/01/0020/010020-01-00007\n3.3G ./ДА Харківської області/01/0040/0105/010040-105-00969\nExplanation:\nOn most Linux filesystems (like ext4), a directory with no subdirectories has exactly 2 #hardlink (. and its entry in the parent). This is much faster…"
-views = 22
-ids = [1613]
+views = 23
+ids = [1613, 1614, 1615, 1616, 1617, 1618, 1619, 1620, 1621]
 
 [[extra.related]]
 path = "@/posts/2026-04-12-1629/index.md"

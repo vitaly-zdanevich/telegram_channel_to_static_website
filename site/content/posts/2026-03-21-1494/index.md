@@ -19,7 +19,7 @@ prev_id = 1493
 prev_title = ""
 prev_body = "wow #wikibase/#wikidata in #cli"
 views = 24
-ids = [1494]
+ids = [1494, 1495]
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1090/index.md"

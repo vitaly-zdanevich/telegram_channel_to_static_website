@@ -17,7 +17,7 @@ prev_id = 399
 prev_title = ""
 prev_body = "#ironman\n#arsenmarkaryan\n#meaning\n#comparison\n#motivation\nSource"
 views = 48
-ids = [400]
+ids = [400, 401]
 +++
 
 {{ img(src="01.jpg") }}

@@ -19,7 +19,7 @@ prev_id = 995
 prev_title = ""
 prev_body = "#belarus\n#architecture\n#winter\n#year2005\n#globustut\nБлиз Новогрудок\nFrom"
 views = 6
-ids = [1000]
+ids = [1000, 1001, 1002, 1003, 1004, 1005]
 
 [[extra.related]]
 path = "@/posts/2026-01-30-1058/index.md"

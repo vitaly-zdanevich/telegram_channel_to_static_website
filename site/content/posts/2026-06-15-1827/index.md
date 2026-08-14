@@ -19,7 +19,7 @@ prev_id = 1826
 prev_title = ""
 prev_body = "#bus\n#architecture\nSource"
 views = 111
-ids = [1827]
+ids = [1827, 1828]
 
 [[extra.related]]
 path = "@/posts/2025-01-17-273/index.md"

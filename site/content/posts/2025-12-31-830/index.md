@@ -19,7 +19,7 @@ prev_id = 829
 prev_title = ""
 prev_body = "#microsoft\n#microsoftword\n#session"
 views = 21
-ids = [830]
+ids = [830, 831]
 
 [[extra.related]]
 path = "@/posts/2025-12-31-833/index.md"

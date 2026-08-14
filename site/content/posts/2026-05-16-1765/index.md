@@ -19,7 +19,7 @@ prev_id = 1764
 prev_title = ""
 prev_body = "#music\n#sunboy\nОстров в океане\nFrom\nПро исполнителя"
 views = 31
-ids = [1765]
+ids = [1765, 1766, 1767, 1768, 1769, 1770, 1771, 1772, 1773, 1774]
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1737/index.md"

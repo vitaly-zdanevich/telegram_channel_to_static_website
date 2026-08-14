@@ -19,7 +19,7 @@ prev_id = 1890
 prev_title = ""
 prev_body = "#webdesign"
 views = 10
-ids = [1891]
+ids = [1891, 1892, 1893, 1894, 1895, 1896, 1897]
 
 [[extra.related]]
 path = "@/posts/2026-07-06-1970/index.md"

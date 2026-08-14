@@ -19,7 +19,7 @@ prev_id = 1624
 prev_title = ""
 prev_body = "#preview on #bilibili\n#anime"
 views = 20
-ids = [1629]
+ids = [1629, 1630, 1631, 1632, 1633, 1634, 1635]
 
 [[extra.related]]
 path = "@/posts/2026-04-11-1613/index.md"

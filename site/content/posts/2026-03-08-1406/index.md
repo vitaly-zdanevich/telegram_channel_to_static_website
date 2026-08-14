@@ -21,7 +21,7 @@ prev_body = ""
 views = 14
 forwarded_from = "Daniilak — Канал"
 forwarded_from_url = "https://t.me/daniilak/1555"
-ids = [1406]
+ids = [1406, 1407]
 +++
 
 Норвежский стартап 1X начал принимать предзаказы на первых в мире роботов для уборки домов и квартир  

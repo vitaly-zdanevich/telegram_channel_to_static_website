@@ -18,7 +18,7 @@ next_body = "#preview on #bilibili\n#anime"
 prev_id = 1622
 prev_title = ""
 prev_body = "Про #викиданные/#wikidata (открытая база данных на #SPARQL), #wikimedia, #wikipedia\nМоя #лекция/митап в #laboratorybar (это бар в #batumi).\nВсе линки на видео"
-views = 24
+views = 25
 ids = [1623]
 
 [[extra.related]]
