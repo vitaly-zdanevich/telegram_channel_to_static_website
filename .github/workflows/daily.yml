@@ -211,9 +211,9 @@ env:
   # works fully offline. Off by default; needs JavaScript.
   OFFLINE: ${{ vars.OFFLINE }}
 
-  # Videos and .tar.xz attachments are offloaded to this repo's GitHub Releases
-  # (kept off the Pages 1 GB quota) by default; set this repository *variable*
-  # to "false" to keep them inline in the site instead.
+  # Videos, .tar.xz attachments, and original MTProto images are offloaded to
+  # this repo's GitHub Releases (kept off the Pages 1 GB quota) by default; set
+  # this repository *variable* to "false" to keep them inline instead.
   VIDEO_RELEASES: ${{ vars.VIDEO_RELEASES }}
 
   # Optional MTProto backend — fetches audio / original photos / big videos the
@@ -224,7 +224,8 @@ env:
   TG_API_HASH: ${{ secrets.TG_API_HASH }}
   TG_SESSION: ${{ secrets.TG_SESSION }}
 
-  # MTPROTO_IMAGES: set to "1" to also fetch original-quality photos (opt-in).
+  # MTPROTO_IMAGES: original-quality photos are ON by default; set to "false" to
+  # keep the smaller images from Telegram's public web preview instead.
   # MTPROTO_VIDEOS: fetching poster-only videos that have no YouTube/Instagram
   # embed is ON by default; set to "false" to disable it (these can be large).
   # Audio is always fetched.
@@ -310,6 +311,48 @@ jobs:
             # Theme is re-cloned below; public/ is rebuilt.
             rsync -a --exclude '/themes' --exclude '/public' "$tmp/site/" site/
           fi
+          # This inventory is an ephemeral view of GitHub, never a blog-branch
+          # cache. Drop copies left by workflows predating that exclusion.
+          rm -f site/.image-releases.remote.tsv
+
+      # Snapshot only the long-lived media releases. Versioned application
+      # releases are unrelated to the archive and must not inflate its size.
+      # The generator also uses this inventory to trust a confirmed image only
+      # when GitHub still has the exact asset bytes recorded in the manifest.
+      - name: Inventory GitHub Release media
+        if: env.VIDEO_RELEASES != 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p site
+          releases="$RUNNER_TEMP/archive-releases.tsv"
+          inventory="$RUNNER_TEMP/image-releases.remote.tsv"
+          : > "$inventory"
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" \
+            --jq '.[] | select(.draft == false) | select(.tag_name == "media" or (.tag_name | startswith("images-"))) | [.id, .tag_name] | @tsv' \
+            > "$releases"
+          total=0
+          while IFS=$'\t' read -r release_id release_tag; do
+            [ -n "$release_id" ] || continue
+            assets="$RUNNER_TEMP/release-assets-${release_id}.tsv"
+            gh api --paginate \
+              "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets?per_page=100" \
+              --jq '.[] | [.name, .size] | @tsv' > "$assets"
+            while IFS=$'\t' read -r asset_name asset_size; do
+              [ -n "$asset_name" ] || continue
+              if [[ ! "$asset_size" =~ ^[0-9]+$ ]]; then
+                echo "::error::Invalid size for Release asset ${release_tag}/${asset_name}: ${asset_size}"
+                exit 1
+              fi
+              printf '%s\t%s\t%s\n' "$release_tag" "$asset_name" "$asset_size" >> "$inventory"
+              total=$((total + asset_size))
+            done < "$assets"
+          done < "$releases"
+          LC_ALL=C sort -t $'\t' -k1,1 -k2,2 "$inventory" \
+            > site/.image-releases.remote.tsv
+          echo "RELEASES_SIZE_BYTES=$total" >> "$GITHUB_ENV"
+          echo "Archived GitHub Release media: $total bytes"
 
       - name: Install theme
         if: env.THEME_REPO != ''
@@ -327,12 +370,13 @@ jobs:
           zola --version
 
       - name: Build tg2zola
-        # Compile the opt-in MTProto backend only when all three credentials are
-        # set — ordinary builds stay light (it pulls in grammers + vendored
-        # core2), and we don't compile it just to have enrich() no-op at runtime.
+        # A confirmed image manifest also needs the MTProto module so Release
+        # URLs remain usable while Telegram credentials are absent or rotating.
+        # Ordinary builds without credentials or a manifest stay lightweight.
         run: |
           feats=""
-          if [ -n "${TG_API_ID:-}" ] && [ -n "${TG_API_HASH:-}" ] && [ -n "${TG_SESSION:-}" ]; then
+          if [ -f site/.image-releases.json ] \
+            || { [ -n "${TG_API_ID:-}" ] && [ -n "${TG_API_HASH:-}" ] && [ -n "${TG_SESSION:-}" ]; }; then
             feats="--features mtproto"
           fi
           echo "building${feats:+ with mtproto}"
@@ -427,9 +471,9 @@ jobs:
           gen ""
           zola --root site build --base-url "$BASE"
 
-      # Offload videos and .tar.xz attachments to this repo's Releases, outside
-      # the Pages 1 GB quota. tg2zola stages all release assets under the legacy
-      # site/.video-releases directory and points the generated page at them.
+      # Offload videos, archives, and original images to this repo's Releases,
+      # outside the Pages 1 GB quota. Images use 500-message release buckets so
+      # every bucket stays below GitHub's 1,000-assets-per-release limit.
       - name: Upload large assets to GitHub Releases
         if: env.VIDEO_RELEASES != 'false'
         env:
@@ -442,12 +486,128 @@ jobs:
                    --notes "Large video and archive assets, kept off the Pages quota."
             gh release upload media site/.video-releases/* --clobber
           fi
+          if [ -f site/.image-releases.pending.json ]; then
+            for dir in site/.image-releases/*; do
+              [ -d "$dir" ] || continue
+              tag=$(basename "$dir")
+              gh release view "$tag" >/dev/null 2>&1 \
+                || gh release create "$tag" --target "$GITHUB_SHA" --latest=false \
+                     --title "Telegram images ${tag#images-}" \
+                     --notes "Original Telegram images, kept off the Pages quota."
+              files=("$dir"/*)
+              [ -e "${files[0]}" ] || continue
+              release_id=$(gh release view "$tag" --json databaseId --jq '.databaseId')
+              remote="$RUNNER_TEMP/release-assets-${release_id}.tsv"
+              gh api --paginate \
+                "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets?per_page=100" \
+                --jq '.[] | [.name, .size, .id] | @tsv' > "$remote"
+              uploads=()
+              for file in "${files[@]}"; do
+                name=$(basename "$file")
+                local_size=$(stat --format='%s' "$file")
+                remote_size=$(awk -F '\t' -v name="$name" '$1 == name { print $2; exit }' "$remote")
+                remote_id=$(awk -F '\t' -v name="$name" '$1 == name { print $3; exit }' "$remote")
+                if [ -n "$remote_size" ]; then
+                  if [ "$remote_size" != "$local_size" ]; then
+                    echo "Repairing corrupt Release asset ${tag}/${name}: ${remote_size} bytes, expected ${local_size}."
+                    # Upload and verify replacement bytes under a temporary name
+                    # before removing the canonical asset. A failed upload thus
+                    # leaves the currently published URL untouched.
+                    repair_dir="$RUNNER_TEMP/image-repair-${release_id}"
+                    repair_name="${name}.repair-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT:-0}"
+                    repair_path="$repair_dir/$repair_name"
+                    mkdir -p "$repair_dir"
+                    cp -- "$file" "$repair_path"
+                    gh release upload "$tag" "$repair_path"
+                    gh api --paginate \
+                      "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets?per_page=100" \
+                      --jq '.[] | [.name, .size, .id] | @tsv' > "$remote"
+                    repair_size=$(awk -F '\t' -v name="$repair_name" '$1 == name { print $2; exit }' "$remote")
+                    repair_id=$(awk -F '\t' -v name="$repair_name" '$1 == name { print $3; exit }' "$remote")
+                    if [ "$repair_size" != "$local_size" ] || [ -z "$repair_id" ]; then
+                      echo "::error::Repair asset ${tag}/${repair_name} was not confirmed at ${local_size} bytes."
+                      exit 1
+                    fi
+                    gh api --method DELETE \
+                      "repos/${GITHUB_REPOSITORY}/releases/assets/${remote_id}"
+                    renamed=false
+                    for attempt in {1..10}; do
+                      if gh api --method PATCH \
+                        "repos/${GITHUB_REPOSITORY}/releases/assets/${repair_id}" \
+                        -f name="$name" >/dev/null; then
+                        renamed=true
+                        break
+                      fi
+                      echo "::warning::Could not rename repair asset (attempt ${attempt}/10)."
+                      sleep "$attempt"
+                    done
+                    if [ "$renamed" != true ]; then
+                      echo "::error::Could not restore canonical Release asset name ${tag}/${name}."
+                      exit 1
+                    fi
+                    continue
+                  fi
+                  echo "Release asset ${tag}/${name} already exists with the expected size."
+                else
+                  uploads+=("$file")
+                fi
+              done
+              if (( ${#uploads[@]} > 0 )); then
+                # Image asset names include Telegram's immutable media id. Never
+                # clobber: a failed replacement must not break the live site.
+                gh release upload "$tag" "${uploads[@]}"
+              fi
+            done
+
+            # Promotion is driven by the manifest, not by this run's staging
+            # count: source metadata may change without a new upload, and an
+            # empty manifest is valid. Refresh each referenced release and
+            # require every confirmed record to match GitHub's exact byte size.
+            pending="$RUNNER_TEMP/pending-image-assets.tsv"
+            jq -e '.images | type == "array"' site/.image-releases.pending.json >/dev/null
+            jq -r '.images[] | [.tag, .asset, (.bytes | tostring)] | @tsv' \
+              site/.image-releases.pending.json > "$pending"
+            while IFS=$'\t' read -r tag name expected_size; do
+              [ -n "$tag" ] || continue
+              if [[ "$tag" != images-* || -z "$name" || ! "$expected_size" =~ ^[0-9]+$ ]]; then
+                echo "::error::Invalid pending Release image record: ${tag}/${name} (${expected_size} bytes)."
+                exit 1
+              fi
+            done < "$pending"
+            cut -f1 "$pending" | LC_ALL=C sort -u | while IFS= read -r tag; do
+              [ -n "$tag" ] || continue
+              release_id=$(gh release view "$tag" --json databaseId --jq '.databaseId')
+              remote="$RUNNER_TEMP/release-assets-${release_id}.tsv"
+              gh api --paginate \
+                "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets?per_page=100" \
+                --jq '.[] | [.name, .size] | @tsv' > "$remote"
+              while IFS=$'\t' read -r manifest_tag name expected_size; do
+                [ "$manifest_tag" = "$tag" ] || continue
+                remote_size=$(awk -F '\t' -v name="$name" '$1 == name { print $2; exit }' "$remote")
+                if [ "$remote_size" != "$expected_size" ]; then
+                  echo "::error::Release asset ${tag}/${name} was not confirmed at ${expected_size} bytes."
+                  exit 1
+                fi
+              done < "$pending"
+            done
+            mv site/.image-releases.pending.json site/.image-releases.json
+          fi
 
       # After the build, list every published file for the service worker to
       # precache (offline mode only).
       - name: Write PWA precache list
         if: env.OFFLINE == 'true'
         run: ./target/release/tg2zola pwa site/public
+
+      - name: Check Pages artifact size
+        run: |
+          set -euo pipefail
+          bytes=$(tar --create --file=- --directory=site/public . | wc --bytes)
+          echo "Uncompressed Pages artifact: $bytes bytes"
+          if (( bytes >= 1073741824 )); then
+            echo "::error::Pages artifact is at least 1 GiB; keeping the last good deployment."
+            exit 1
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
@@ -482,11 +642,15 @@ jobs:
             --exclude '/public' \
             --exclude '/themes' \
             --exclude '/.video-releases' \
+            --exclude '/.image-releases' \
+            --exclude '/.image-releases.remote.tsv' \
             --exclude '/.mtproto-cache' \
             site/ "$work/site/"
           # rsync protects excluded destination paths from --delete. Remove the
           # cache left by older blog snapshots before staging the new snapshot.
           rm -rf -- "${work:?}/site/.mtproto-cache"
+          rm -rf -- "${work:?}/site/.image-releases"
+          rm -f -- "${work:?}/site/.image-releases.remote.tsv"
           cd "$work"
           git add -A -f site
           if git diff --cached --quiet; then
@@ -495,3 +659,40 @@ jobs:
             git commit -m "blog #${GITHUB_RUN_NUMBER}: $(date -u +%FT%TZ)"
             git push origin HEAD:blog
           fi
+
+      # Immutable media-id filenames make uploads retry-safe. Once the new site
+      # and manifest are durable, remove older versions of the same message so a
+      # 500-message bucket cannot grow past GitHub's 1,000-asset limit.
+      - name: Clean superseded image Release assets
+        if: env.VIDEO_RELEASES != 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          manifest=site/.image-releases.json
+          [ -f "$manifest" ] || exit 0
+          jq -e '.images | type == "array"' "$manifest" >/dev/null
+          jq -r '.images[].tag' "$manifest" | LC_ALL=C sort -u | while IFS= read -r tag; do
+            [ -n "$tag" ] || continue
+            release_id=$(gh release view "$tag" --json databaseId --jq '.databaseId')
+            current="$RUNNER_TEMP/current-image-assets-${release_id}.tsv"
+            remote="$RUNNER_TEMP/all-image-assets-${release_id}.tsv"
+            jq -r --arg tag "$tag" \
+              '.images[] | select(.tag == $tag) | [(.message_id | tostring), .asset] | @tsv' \
+              "$manifest" > "$current"
+            gh api --paginate \
+              "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets?per_page=100" \
+              --jq '.[] | [.name, .id] | @tsv' > "$remote"
+            while IFS=$'\t' read -r name asset_id; do
+              if [[ ! "$name" =~ ^telegram-image-([0-9]+)- ]]; then
+                continue
+              fi
+              message_id=${BASH_REMATCH[1]}
+              keep=$(awk -F '\t' -v id="$message_id" '$1 == id { print $2; exit }' "$current")
+              if [ -n "$keep" ] && [ "$name" != "$keep" ]; then
+                echo "Deleting superseded Release asset ${tag}/${name}; keeping ${keep}."
+                gh api --method DELETE \
+                  "repos/${GITHUB_REPOSITORY}/releases/assets/${asset_id}"
+              fi
+            done < "$remote"
+          done

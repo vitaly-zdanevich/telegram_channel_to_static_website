@@ -185,13 +185,14 @@ fn parse_message(wrap: ElementRef, channel: &str) -> Option<RawMessage> {
         None => (String::new(), Vec::new(), Vec::new()),
     };
 
-    let media = parse_media(wrap);
+    let media = parse_media(wrap, channel);
     // Telegram albums can be one wrapper (`data-post=channel/2061`) containing
-    // document links for 2061, 2062, … . Keep every constituent id so MTProto
-    // enrichment can fetch every attachment rather than only the first.
+    // document or photo links for 2061, 2062, … . Keep every constituent id so
+    // MTProto enrichment can fetch every attachment rather than only the first.
     let mut ids = vec![id];
     ids.extend(
         wrap.select(&S_DOC)
+            .chain(wrap.select(&S_PHOTO))
             .filter_map(|d| d.value().attr("href"))
             .filter_map(|href| reply_target_id(href, channel)),
     );
@@ -259,7 +260,7 @@ fn parse_poll(wrap: ElementRef) -> Option<Poll> {
     })
 }
 
-fn parse_media(wrap: ElementRef) -> Vec<Media> {
+fn parse_media(wrap: ElementRef, channel: &str) -> Vec<Media> {
     let mut media = Vec::new();
 
     for p in wrap.select(&S_PHOTO) {
@@ -325,6 +326,10 @@ fn parse_media(wrap: ElementRef) -> Vec<Media> {
     }
 
     for d in wrap.select(&S_DOC) {
+        let message_id = d
+            .value()
+            .attr("href")
+            .and_then(|href| reply_target_id(href, channel));
         let filename = d
             .select(&S_DOC_TITLE)
             .next()
@@ -338,7 +343,10 @@ fn parse_media(wrap: ElementRef) -> Vec<Media> {
                 filename,
             }),
             // No direct URL in the public page — keep the name only.
-            None => media.push(Media::DocumentRef { filename }),
+            None => media.push(Media::DocumentRef {
+                filename,
+                message_id,
+            }),
         }
     }
 
@@ -514,9 +522,10 @@ mod tests {
         // The numeric class tokens are the stable file id (the cache key); the
         // wrapper's other classes (blured/js-…) must be ignored.
         let m = one(
-            r#"<a class="tgme_widget_message_photo_wrap blured 5308054982420535730 1235877858_460003762 js-message_photo" href="https://t.me/chan/7" style="width:600px;background-image:url('https://cdn.tg/a.jpg')"></a>
-               <a class="tgme_widget_message_photo_wrap 987654321 111_222" href="https://t.me/chan/7" style="background-image:url('https://cdn.tg/b.jpg')"></a>"#,
+            r#"<a class="tgme_widget_message_photo_wrap blured 5308054982420535730 1235877858_460003762 js-message_photo" href="https://t.me/chan/9?single" style="width:600px;background-image:url('https://cdn.tg/a.jpg')"></a>
+               <a class="tgme_widget_message_photo_wrap 987654321 111_222" href="https://t.me/chan/8?single" style="background-image:url('https://cdn.tg/b.jpg')"></a>"#,
         );
+        assert_eq!(m.ids, vec![7, 8, 9]);
         assert_eq!(m.media.len(), 2, "{:?}", m.media);
         match &m.media[0] {
             Media::Photo { url, key } => {
@@ -591,7 +600,7 @@ mod tests {
             r#"<div class="tgme_widget_message_document_wrap"><div class="tgme_widget_message_document_title">image_2026-07-01_07-36-10.png</div></div>"#,
         );
         assert!(
-            matches!(&noref.media[..], [Media::DocumentRef { filename }] if filename == "image_2026-07-01_07-36-10.png")
+            matches!(&noref.media[..], [Media::DocumentRef { filename, .. }] if filename == "image_2026-07-01_07-36-10.png")
         );
     }
 
@@ -609,7 +618,23 @@ mod tests {
             </a>
             "#);
         assert_eq!(m.ids, vec![7, 8, 9]);
-        assert_eq!(m.media.len(), 3);
+        assert!(matches!(
+            &m.media[..],
+            [
+                Media::DocumentRef {
+                    message_id: Some(7),
+                    ..
+                },
+                Media::DocumentRef {
+                    message_id: Some(8),
+                    ..
+                },
+                Media::DocumentRef {
+                    message_id: Some(9),
+                    ..
+                }
+            ]
+        ));
     }
 
     #[test]

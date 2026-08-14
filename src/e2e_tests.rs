@@ -69,6 +69,100 @@ fn daily_blog_backup_excludes_mtproto_cache() {
     );
 }
 
+/// Original Telegram images are staged outside Pages, uploaded in bounded
+/// release buckets, and only then recorded as reusable.
+#[test]
+fn daily_uploads_and_persists_original_image_releases() {
+    let workflow = include_str!("../.github/workflows/daily.yml");
+    let inventory = workflow
+        .find("- name: Inventory GitHub Release media")
+        .expect("daily workflow must inventory remote release assets");
+    let build = workflow
+        .find("- name: Build tg2zola")
+        .expect("daily workflow must build tg2zola");
+    let commit = workflow
+        .find("- name: Commit site to blog branch")
+        .expect("daily workflow must persist the confirmed manifest");
+    let cleanup = workflow
+        .find("- name: Clean superseded image Release assets")
+        .expect("daily workflow must prune immutable asset versions");
+    let (_, upload_step) = workflow
+        .split_once("- name: Upload large assets to GitHub Releases")
+        .expect("daily workflow must contain the release upload step");
+    let (upload_step, backup_step) = upload_step
+        .split_once("- name: Commit site to blog branch")
+        .expect("release uploads must happen before the blog backup");
+
+    assert!(
+        inventory < build,
+        "release inventory must exist before the build"
+    );
+    assert!(workflow.contains("site/.image-releases.remote.tsv"));
+    assert!(workflow.contains("RELEASES_SIZE_BYTES=$total"));
+    assert!(workflow.contains(r#".tag_name == "media""#));
+    assert!(workflow.contains(r#"startswith("images-")"#));
+    assert!(workflow.contains("[ -f site/.image-releases.json ]"));
+    assert!(upload_step.contains("site/.image-releases.pending.json"));
+    assert!(upload_step.contains("site/.image-releases"));
+    assert!(upload_step.contains(r#"gh release upload "$tag" "${uploads[@]}""#));
+    assert!(!upload_step.contains(r#"gh release upload "$tag" "${uploads[@]}" --clobber"#));
+    assert!(upload_step.contains("remote_size") && upload_step.contains("local_size"));
+    let repair_upload = upload_step
+        .find(r#"gh release upload "$tag" "$repair_path""#)
+        .expect("a corrupt canonical asset must be replaced only after staging repair bytes");
+    let corrupt_delete = upload_step
+        .find("gh api --method DELETE")
+        .expect("the corrupt canonical asset must be removed after repair upload");
+    let repair_rename = upload_step
+        .find("gh api --method PATCH")
+        .expect("the validated repair asset must assume the canonical name");
+    assert!(repair_upload < corrupt_delete && corrupt_delete < repair_rename);
+    assert!(upload_step.contains("repair_size") && upload_step.contains("local_size"));
+    assert!(upload_step.contains(r#".images[] | [.tag, .asset, (.bytes | tostring)]"#));
+    assert!(upload_step.contains("manifest_tag") && upload_step.contains("expected_size"));
+    assert!(
+        !upload_step.contains("validated == 0"),
+        "an empty or source-only pending manifest must be promotable"
+    );
+    // Videos and archives retain their pre-existing fixed-release semantics.
+    assert!(upload_step.contains("gh release upload media site/.video-releases/* --clobber"));
+    assert!(backup_step.contains("--exclude '/.image-releases'"));
+    assert!(backup_step.contains("--exclude '/.image-releases.remote.tsv'"));
+    assert!(backup_step.contains("site/.image-releases.remote.tsv"));
+    assert!(
+        commit < cleanup,
+        "cleanup must follow deployment and manifest backup"
+    );
+    assert!(workflow.contains(r#"^telegram-image-([0-9]+)-"#));
+    assert!(workflow.contains("Deleting superseded Release asset"));
+}
+
+/// Feature-gated regressions must run in CI, not merely compile under Clippy.
+#[test]
+fn build_runs_mtproto_tests() {
+    let workflow = include_str!("../.github/workflows/build.yml");
+    assert!(workflow.contains("cargo test --locked --features mtproto"));
+}
+
+/// Oversized Pages output must fail before replacing the last good deployment.
+#[test]
+fn daily_checks_pages_size_before_deploying() {
+    let workflow = include_str!("../.github/workflows/daily.yml");
+    let pwa = workflow
+        .find("- name: Write PWA precache list")
+        .expect("daily workflow must write the PWA precache list");
+    let size = workflow
+        .find("- name: Check Pages artifact size")
+        .expect("daily workflow must check the built site size");
+    let upload = workflow
+        .find("- name: Upload Pages artifact")
+        .expect("daily workflow must upload the Pages artifact");
+
+    assert!(pwa < size, "size guard must include generated PWA files");
+    assert!(size < upload, "size guard must run before the Pages upload");
+    assert!(workflow.contains("bytes >= 1073741824"));
+}
+
 /// The scheduled build must expose the opt-out that retains a Pinterest post's
 /// local image beside its confirmed-live widget.
 #[test]

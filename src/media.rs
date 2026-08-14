@@ -179,8 +179,8 @@ pub fn is_probably_audio_doc(name: &str) -> bool {
 
 /// A "(not archived)" document that's an image — a pasted screenshot Telegram
 /// stored as a *file* rather than a photo, so the web preview can't download it.
-/// MTProto (MTPROTO_IMAGES) fetches these and shows them as photos. Matched by a
-/// common image extension. Only used by the MTProto backend.
+/// MTProto fetches these by default and shows them as photos. Matched by a common
+/// image extension. Only used by the MTProto backend.
 #[cfg(feature = "mtproto")]
 pub fn is_probably_image_doc(name: &str) -> bool {
     let n = name.trim().to_ascii_lowercase();

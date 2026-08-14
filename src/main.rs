@@ -2,14 +2,15 @@
 //!
 //! Pipeline: scrape `t.me/s/<channel>` → group messages into posts → download
 //! media into a cache → regenerate every Zola page bundle. The generated site
-//! references only local files and YouTube — never Telegram — so it survives the
-//! channel being removed.
+//! references only archived local or GitHub Release media and embeds — never
+//! Telegram — so it survives the channel being removed.
 
 mod aboutme;
 mod bandcamp;
 mod config;
 mod dedup;
 mod enex;
+mod export_media;
 mod genius;
 mod group;
 mod html2md;
@@ -307,9 +308,8 @@ struct GenerateArgs {
     #[arg(long)]
     offline: bool,
 
-    /// Don't offload videos and .tar.xz attachments to GitHub Releases (default:
-    /// for a github.com repo, they are staged for a `media` release, keeping
-    /// them off the Pages 1 GB quota).
+    /// Don't offload videos, .tar.xz attachments, and original MTProto images to
+    /// GitHub Releases (default: keep them outside the Pages 1 GB quota).
     #[arg(long)]
     no_video_releases: bool,
 
@@ -901,9 +901,9 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         liveness::report_dead_links(&client, &posts, s.concurrency).await;
     }
 
-    // Optional MTProto backend: pull audio/voice (and, with MTPROTO_IMAGES=1,
-    // original-quality photos) the web preview omits. Runs before the empty-post
-    // filter so an audio-only post survives. No-op without the feature or creds.
+    // Optional MTProto backend: pull audio/voice and original-quality photos the
+    // web preview omits. Runs before the empty-post filter so an audio-only post
+    // survives. No-op without the feature or credentials.
     #[cfg(feature = "mtproto")]
     let mtproto_used = mtproto::maybe_enrich(&mut posts, &s).await;
     #[cfg(not(feature = "mtproto"))]
@@ -1013,7 +1013,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
     // attachment note). Template chrome is localized via config.extra.i18n.
     let ui = i18n::ui(&s.language);
     // GitHub Releases base URL for offloaded videos and .tar.xz attachments —
-    // only for a github.com repo (the URL scheme is GitHub-specific).
+    // original MTProto images derive their sharded URLs during enrichment.
     let video_release_base = (s.video_releases && s.repo_url.contains("github.com")).then(|| {
         format!(
             "{}/releases/download/media",
@@ -1160,16 +1160,27 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         info!("{} media references across posts/pages", jobs.len());
         media::download_all(&client, &jobs, s.concurrency).await?;
 
-        // SQLite export (opt-in): before dedup, while every media file is still in
-        // its post bundle, so each blob is read straight from there.
-        if let Some(db) = &s.sqlite {
-            if let Err(e) = sqlite::export(&posts, &rendered, &s.site, db) {
-                tracing::warn!("sqlite: export failed: {e:#}");
+        // Portable exports are the only consumers that materialize already-
+        // published Release assets. Ordinary builds keep those URLs external.
+        if s.sqlite.is_some() || s.enex.is_some() {
+            let export_files = export_media::prepare(
+                &client,
+                &posts,
+                &rendered,
+                &s.site,
+                video_release_base.as_deref(),
+                s.concurrency,
+            )
+            .await?;
+            if let Some(db) = &s.sqlite {
+                if let Err(e) = sqlite::export(&posts, &export_files, db) {
+                    tracing::warn!("sqlite: export failed: {e:#}");
+                }
             }
-        }
-        if let Some(path) = &s.enex {
-            if let Err(e) = enex::export(&posts, &rendered, &s.site, path) {
-                tracing::warn!("enex: export failed: {e:#}");
+            if let Some(path) = &s.enex {
+                if let Err(e) = enex::export(&posts, &export_files, path) {
+                    tracing::warn!("enex: export failed: {e:#}");
+                }
             }
         }
 
@@ -1203,8 +1214,20 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         .map(|p| (render::slug_for(p), render::post_preview(p)))
         .collect();
     // Assets offloaded to GitHub Releases live outside the published tree and
-    // don't count against the Pages quota — measure them separately.
-    let releases = site::size_breakdown(&[&s.site.join(".video-releases")]).total();
+    // don't count against the Pages quota. Original images are normally absent
+    // from this run's staging tree, so their persisted manifest supplies size.
+    let release_staging = site::size_breakdown(&[&s.site.join(".video-releases")]).total();
+    #[cfg(feature = "mtproto")]
+    let released_images = mtproto::released_image_bytes(&s.site);
+    #[cfg(not(feature = "mtproto"))]
+    let released_images = 0;
+    let local_release_bytes = release_staging.saturating_add(released_images);
+    let reported_release_bytes = std::env::var("RELEASES_SIZE_BYTES").ok();
+    let releases = release_size_bytes(
+        reported_release_bytes.as_deref(),
+        local_release_bytes,
+        release_staging_adjustment(&s.site),
+    );
     let now = chrono::Utc::now().format("%Y-%m-%d %H:%M UTC").to_string();
     let ci_url = ci_job_url();
     site::set_about_size(
@@ -1435,12 +1458,129 @@ fn ci_job_url() -> Option<String> {
     Some(format!("{server}/{repo}/actions/runs/{run}"))
 }
 
+/// Prefer the complete GitHub Releases byte total supplied by automation.
+///
+/// Local generation cannot enumerate already-uploaded assets, so a missing or
+/// malformed `RELEASES_SIZE_BYTES` falls back to the bytes available from the
+/// current staging tree and persisted image manifest. For a valid remote total,
+/// `(added, removed)` makes the About page reflect assets uploaded later in this
+/// same run. Zero is valid; surrounding whitespace is ignored.
+fn release_size_bytes(
+    reported: Option<&str>,
+    local_fallback: u64,
+    (added, removed): (u64, u64),
+) -> u64 {
+    reported
+        .and_then(|bytes| bytes.trim().parse::<u64>().ok())
+        .map(|remote| remote.saturating_sub(removed).saturating_add(added))
+        .unwrap_or(local_fallback)
+}
+
+/// Telegram message ID encoded in an immutable original-image asset name.
+fn release_image_message_id(asset: &str) -> Option<u64> {
+    asset
+        .strip_prefix("telegram-image-")?
+        .split_once('-')?
+        .0
+        .parse()
+        .ok()
+}
+
+/// Bytes added to and removed from the pre-generation Release inventory by the
+/// current staging trees. Exact tag/name/size matches are already included in
+/// `RELEASES_SIZE_BYTES`; a same-name size change replaces the old remote asset,
+/// and an immutable image replacement supersedes every older asset for its
+/// Telegram message.
+fn release_staging_adjustment(site: &std::path::Path) -> (u64, u64) {
+    let inventory = std::fs::read_to_string(site.join(".image-releases.remote.tsv"))
+        .ok()
+        .map(|raw| {
+            raw.lines()
+                .filter_map(|line| {
+                    let mut fields = line.split('\t');
+                    let tag = fields.next()?;
+                    let asset = fields.next()?;
+                    let bytes = fields.next()?.parse::<u64>().ok()?;
+                    (fields.next().is_none() && !tag.is_empty() && !asset.is_empty())
+                        .then(|| ((tag.to_string(), asset.to_string()), bytes))
+                })
+                .collect::<std::collections::HashMap<_, _>>()
+        })
+        .unwrap_or_default();
+    let mut adjustment = (0u64, 0u64);
+    let mut removed_inventory = std::collections::HashSet::new();
+    let mut account = |tag: &str, path: &std::path::Path| {
+        let Some(asset) = path.file_name().and_then(|name| name.to_str()) else {
+            return;
+        };
+        let Ok(metadata) = path.metadata() else {
+            return;
+        };
+        if !metadata.is_file() {
+            return;
+        }
+        let local = metadata.len();
+        let inventory_key = (tag.to_string(), asset.to_string());
+        match inventory.get(&inventory_key) {
+            Some(remote) if *remote == local => {}
+            Some(remote) => {
+                adjustment.0 = adjustment.0.saturating_add(local);
+                adjustment.1 = adjustment.1.saturating_add(*remote);
+                removed_inventory.insert(inventory_key);
+            }
+            None => adjustment.0 = adjustment.0.saturating_add(local),
+        };
+        let Some(message_id) = tag
+            .starts_with("images-")
+            .then(|| release_image_message_id(asset))
+            .flatten()
+        else {
+            return;
+        };
+        for ((remote_tag, remote_asset), remote_bytes) in &inventory {
+            let remote_key = (remote_tag.clone(), remote_asset.clone());
+            if remote_tag == tag
+                && remote_asset != asset
+                && release_image_message_id(remote_asset) == Some(message_id)
+                && removed_inventory.insert(remote_key)
+            {
+                adjustment.1 = adjustment.1.saturating_add(*remote_bytes);
+            }
+        }
+    };
+
+    if let Ok(entries) = std::fs::read_dir(site.join(".video-releases")) {
+        for entry in entries.flatten() {
+            account("media", &entry.path());
+        }
+    }
+    if let Ok(tags) = std::fs::read_dir(site.join(".image-releases")) {
+        for tag in tags.flatten() {
+            let Ok(file_type) = tag.file_type() else {
+                continue;
+            };
+            let Some(tag_name) = tag.file_name().to_str().map(str::to_string) else {
+                continue;
+            };
+            if !file_type.is_dir() || !tag_name.starts_with("images-") {
+                continue;
+            }
+            if let Ok(entries) = std::fs::read_dir(tag.path()) {
+                for entry in entries.flatten() {
+                    account(&tag_name, &entry.path());
+                }
+            }
+        }
+    }
+    adjustment
+}
+
 /// Whether a media item is audio (voice/music), for the "audios" channel counter.
 fn is_audio_media(m: &model::Media) -> bool {
     use model::Media::*;
     match m {
         Audio { .. } | LocalAudio { .. } => true,
-        Document { filename, .. } | DocumentRef { filename } => {
+        Document { filename, .. } | DocumentRef { filename, .. } => {
             media::is_probably_audio_doc(filename)
         }
         _ => false,
@@ -1587,13 +1727,6 @@ fn video_episodes(
     out
 }
 
-fn is_image_file(name: &str) -> bool {
-    let n = name.to_ascii_lowercase();
-    [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"]
-        .iter()
-        .any(|e| n.ends_with(e))
-}
-
 fn audio_mime(name: &str) -> &'static str {
     let n = name.to_ascii_lowercase();
     if n.ends_with(".mp3") {
@@ -1662,9 +1795,18 @@ fn podcast_cover(
         if !post.tags.iter().any(|t| t == "podcast_description") {
             return None;
         }
-        let img = r.downloads.iter().find(|d| is_image_file(&d.filename))?;
-        Some(format!("{base}posts/{}/{}", post.primary_id, img.filename))
+        let image = r.og_image.as_deref()?;
+        Some(podcast_cover_url(&base, post.primary_id, image))
     })
+}
+
+/// Resolve the renderer-selected cover without rewriting absolute Release URLs.
+fn podcast_cover_url(base_url: &str, post_id: u64, image: &str) -> String {
+    if image.starts_with("http://") || image.starts_with("https://") {
+        image.to_string()
+    } else {
+        format!("{}posts/{post_id}/{image}", ensure_slash(base_url))
+    }
 }
 
 fn http_client() -> Result<reqwest::Client> {
@@ -1692,6 +1834,66 @@ fn init_tracing(level: &str) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn release_size_prefers_valid_reported_total_and_falls_back_on_invalid_values() {
+        let fallback = 688 * 1024 * 1024;
+
+        assert_eq!(
+            release_size_bytes(Some("13319277426"), fallback, (23, 2)),
+            13_319_277_447
+        );
+        assert_eq!(release_size_bytes(Some(" 0 "), fallback, (23, 2)), 23);
+        for reported in [None, Some(""), Some("unknown"), Some("-1"), Some("1.5")] {
+            assert_eq!(
+                release_size_bytes(reported, fallback, (23, 2)),
+                fallback,
+                "unexpected override for {reported:?}"
+            );
+        }
+    }
+
+    #[test]
+    fn release_staging_adjustment_counts_only_new_or_replaced_assets() {
+        let dir = std::env::temp_dir().join(format!(
+            "tg2zola-release-staging-adjustment-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(dir.join(".video-releases")).unwrap();
+        std::fs::create_dir_all(dir.join(".image-releases/images-1000")).unwrap();
+        std::fs::write(dir.join(".video-releases/same.mp4"), b"same").unwrap();
+        std::fs::write(dir.join(".video-releases/replaced.mp4"), b"newer").unwrap();
+        std::fs::write(dir.join(".video-releases/new.mp4"), b"new-new").unwrap();
+        std::fs::write(dir.join(".image-releases/images-1000/same.jpg"), b"img").unwrap();
+        std::fs::write(
+            dir.join(".image-releases/images-1000/telegram-image-1367-222.jpg"),
+            b"new-image!!",
+        )
+        .unwrap();
+        std::fs::write(
+            dir.join(".image-releases.remote.tsv"),
+            "media\tsame.mp4\t4\nmedia\treplaced.mp4\t2\nimages-1000\tsame.jpg\t3\nimages-1000\ttelegram-image-1367-111.jpg\t13\nmalformed\n",
+        )
+        .unwrap();
+
+        assert_eq!(release_staging_adjustment(&dir), (23, 15));
+        std::fs::remove_dir_all(dir).unwrap();
+    }
+
+    #[test]
+    fn podcast_cover_keeps_release_url_and_resolves_bundle_image() {
+        let release =
+            "https://github.com/o/r/releases/download/images-1000/telegram-image-1367-99.jpg";
+        assert_eq!(
+            podcast_cover_url("https://site.example/blog/", 1367, release),
+            release
+        );
+        assert_eq!(
+            podcast_cover_url("https://site.example/blog", 1367, "photo.jpg"),
+            "https://site.example/blog/posts/1367/photo.jpg"
+        );
+    }
 
     #[test]
     fn post_header_line_defaults_on_and_accepts_both_opt_outs() {

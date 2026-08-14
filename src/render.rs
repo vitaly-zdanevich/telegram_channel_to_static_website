@@ -1,7 +1,8 @@
 //! Turn a [`Post`] into a Zola page bundle: an `index.md` (TOML front matter +
 //! Markdown body) and the list of media files to place alongside it.
 //!
-//! The output references **only local files and YouTube** — never `t.me`.
+//! Telegram media is rewritten to local files or configured GitHub Releases —
+//! generated pages never depend on `t.me` for archived bytes.
 
 use once_cell::sync::Lazy;
 use regex::Regex;
@@ -33,6 +34,9 @@ pub struct RenderedPost {
     pub slug: String,
     pub title: String,
     pub index_md: String,
+    /// Image selected for link previews and feed metadata. Absolute Release
+    /// URLs stay absolute; bundle images keep their relative filename.
+    pub og_image: Option<String>,
     pub downloads: Vec<Download>,
 }
 
@@ -394,9 +398,9 @@ pub struct RenderOpts<'a> {
     pub pinterest: bool,
     /// Keep the sole attached photo beside a confirmed-live Pinterest widget.
     pub pinterest_keep_image: bool,
-    /// When set, videos and `.tar.xz` attachments are offloaded to GitHub
-    /// Releases: the base download URL (`…/releases/download/<tag>`) that each
-    /// staged filename is appended to.
+    /// When set, large media is offloaded to GitHub Releases: this fixed `media`
+    /// release base handles videos and `.tar.xz`; MTProto images carry their own
+    /// sharded release URLs.
     pub video_releases: Option<&'a str>,
     /// Show a photo-album post (2+ images, nothing else) as a swipeable carousel.
     pub carousel: bool,
@@ -473,7 +477,12 @@ pub fn render_post(
     let attached_photo_count = post
         .media
         .iter()
-        .filter(|media| matches!(media, Media::Photo { .. } | Media::LocalPhoto { .. }))
+        .filter(|media| {
+            matches!(
+                media,
+                Media::Photo { .. } | Media::LocalPhoto { .. } | Media::ReleasePhoto { .. }
+            )
+        })
         .count();
     let drop_pinterest_photo = pinterest_embed.is_some()
         && post.pinterest_live
@@ -558,7 +567,7 @@ pub fn render_post(
     // only when the track is still live.
     let has_attached_audio = post.media.iter().any(|m| match m {
         Media::Audio { .. } | Media::LocalAudio { .. } => true,
-        Media::Document { filename, .. } | Media::DocumentRef { filename } => {
+        Media::Document { filename, .. } | Media::DocumentRef { filename, .. } => {
             crate::media::is_probably_audio_doc(filename)
         }
         _ => false,
@@ -630,7 +639,10 @@ pub fn render_post(
         && post.media.iter().all(|m| {
             matches!(
                 m,
-                Media::Photo { .. } | Media::Sticker { .. } | Media::LocalPhoto { .. }
+                Media::Photo { .. }
+                    | Media::Sticker { .. }
+                    | Media::LocalPhoto { .. }
+                    | Media::ReleasePhoto { .. }
             )
         });
     if carousel_album {
@@ -668,6 +680,13 @@ pub fn render_post(
                     };
                     (fname, dl)
                 }
+                Media::ReleasePhoto { url } => {
+                    if og_image.is_none() {
+                        og_image = Some(url.clone());
+                    }
+                    imgs.push_str(&format!("<img src=\"{url}\" loading=\"lazy\">"));
+                    continue;
+                }
                 _ => unreachable!("carousel_album is all-images"),
             };
             downloads.push(dl);
@@ -699,6 +718,15 @@ pub fn render_post(
                     og_image = Some(fname.clone());
                 }
                 body.push_str(&format!("{{{{ img(src=\"{fname}\") }}}}\n\n"));
+            }
+            Media::ReleasePhoto { url } => {
+                if drop_pinterest_photo {
+                    continue;
+                }
+                if og_image.is_none() {
+                    og_image = Some(url.clone());
+                }
+                body.push_str(&format!("{{{{ img(src=\"{url}\") }}}}\n\n"));
             }
             Media::Video { url } => {
                 if drop_videos {
@@ -782,7 +810,7 @@ pub fn render_post(
                     }
                 }
             }
-            Media::DocumentRef { filename } => {
+            Media::DocumentRef { filename, .. } => {
                 // A YouTube/Apple Podcasts embed stands in for a podcast track —
                 // drop the redundant "(not archived)" note for that audio.
                 if drop_audio && crate::media::is_probably_audio_doc(filename) {
@@ -1007,6 +1035,7 @@ pub fn render_post(
         slug,
         title,
         index_md,
+        og_image,
         downloads,
     }
 }
@@ -2329,6 +2358,27 @@ mod tests {
         assert!(!local.index_md.contains("{{ img("), "{}", local.index_md);
         assert!(local.downloads.is_empty(), "MTProto photo must be pruned");
 
+        let release_url =
+            "https://github.com/o/r/releases/download/images-1000/telegram-image-1367.jpg";
+        post.media = vec![Media::ReleasePhoto {
+            url: release_url.into(),
+        }];
+        let released = render_post(&post, &rw, false, None, None, &opts(true, false, false));
+        assert!(
+            !released.index_md.contains(release_url),
+            "{}",
+            released.index_md
+        );
+        assert!(
+            !released.index_md.contains("og_image ="),
+            "{}",
+            released.index_md
+        );
+        assert!(
+            released.downloads.is_empty(),
+            "Release photo must be pruned"
+        );
+
         post.media = vec![
             Media::Photo {
                 url: "https://cdn.example/one.jpg".into(),
@@ -2350,6 +2400,53 @@ mod tests {
             2,
             "ambiguous albums must be preserved"
         );
+    }
+
+    #[test]
+    fn release_photo_renders_without_a_bundle_download() {
+        let mut post = post_with_body("original photo");
+        let url = "https://github.com/o/r/releases/download/images-1000/telegram-image-1367.jpg";
+        post.media = vec![Media::ReleasePhoto { url: url.into() }];
+        let rw = LinkRewriter::new("c", &[]);
+        let ui = crate::i18n::ui("en");
+        let opts = RenderOpts {
+            ui: &ui,
+            title_max: 200,
+            derive_titles: false,
+            strip_title: false,
+            keep_media: false,
+            spotify: false,
+            instagram: false,
+            pinterest: false,
+            pinterest_keep_image: false,
+            video_releases: None,
+            carousel: false,
+        };
+        let rendered = render_post(&post, &rw, false, None, None, &opts);
+
+        assert!(
+            rendered
+                .index_md
+                .contains(&format!("{{{{ img(src=\"{url}\") }}}}")),
+            "{}",
+            rendered.index_md
+        );
+        assert!(rendered.index_md.contains(&format!("og_image = \"{url}\"")));
+        assert_eq!(rendered.og_image.as_deref(), Some(url));
+        assert!(rendered.downloads.is_empty());
+
+        post.media.push(Media::ReleasePhoto {
+            url: "https://github.com/o/r/releases/download/images-1000/telegram-image-1368.jpg"
+                .into(),
+        });
+        let carousel_opts = RenderOpts {
+            carousel: true,
+            ..opts
+        };
+        let carousel = render_post(&post, &rw, false, None, None, &carousel_opts);
+        assert!(carousel.index_md.contains(r#"class="carousel""#));
+        assert!(carousel.index_md.contains(url));
+        assert!(carousel.downloads.is_empty());
     }
 
     #[test]

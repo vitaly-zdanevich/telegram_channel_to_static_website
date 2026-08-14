@@ -112,7 +112,7 @@ pub struct FileConfig {
     pub pwa: Option<bool>,
     /// Offline mode: the service worker precaches the whole archive (opt-in).
     pub offline: Option<bool>,
-    /// Offload videos and .tar.xz files to this repo's GitHub Releases.
+    /// Offload large and original media to this repo's GitHub Releases.
     pub video_releases: Option<bool>,
     /// Check external embeds before allowing them to replace local media. A
     /// Pinterest photo is dropped only after a positive oEmbed response. Default on.
@@ -273,8 +273,8 @@ pub struct Settings {
     pub pwa: bool,
     /// Offline mode: the service worker precaches the whole archive (opt-in, default false).
     pub offline: bool,
-    /// Offload videos and .tar.xz files to this repo's GitHub Releases (default
-    /// true; needs a github.com repo_url + the CI upload step).
+    /// Offload videos, .tar.xz files, and original MTProto images to this repo's
+    /// GitHub Releases (default true; needs a github.com repo_url + CI upload).
     pub video_releases: bool,
     /// External-embed liveness checks (default true).
     pub liveness: bool,

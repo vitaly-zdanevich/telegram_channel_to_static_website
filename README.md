@@ -33,11 +33,11 @@ media locally, and regenerates a complete Zola blog on every run. **No Telegram
 bot, token, or API is needed** for that — it reads only the public web page (the
 optional [MTProto backend](#optional-mtproto-backend) does log in with API
 credentials to add audio/photos/videos). The output has
-**no Telegram dependency**: media is local, there are no embeds, and links to the
-channel's *own* posts are rewritten to internal relative links — so the site
-keeps working even if the channel is later removed. Links you wrote to other
-sites (including other Telegram channels) are preserved as normal links. It's a
-backup, not a mirror.
+**no Telegram dependency**: media is stored in the site or its GitHub Releases,
+there are no Telegram embeds, and links to the channel's *own* posts are rewritten
+to internal relative links — so the site keeps working even if the channel is
+later removed. Links you wrote to other sites (including other Telegram channels)
+are preserved as normal links. It's a backup, not a mirror.
 
 Written in Rust: a single static binary, easy to run locally or in CI.
 
@@ -45,8 +45,8 @@ Written in Rust: a single static binary, easy to run locally or in CI.
 
 - **Full history** — walks the channel backwards via the preview's `?before=`
   cursor until the first message, and **regenerates every page** each run.
-- **Self-contained media** — downloads photos, videos, audio (`.ogg/.oga/.mp3`),
-  documents and stickers into each post's bundle (which doubles as the cache).
+- **Archived media** — downloads photos, videos, audio (`.ogg/.oga/.mp3`),
+  documents and stickers into each post's bundle or the repository's Releases.
   Photos are content-addressed by their stable Telegram file id, so editing a
   post's text never re-downloads its media, while **replacing** an image (the
   post then shows as *edited*) fetches the new file and prunes the old one.
@@ -322,7 +322,7 @@ These are *variables*, not secrets — all of it is public.
 | `PAGESPEED_API_KEY` (secret) | — | — | Optional [PageSpeed Insights API key](https://developers.google.com/speed/docs/insights/v5/get-started) to raise the rate limit (one call/day works without it) |
 | `PWA` | `--no-pwa` | on | installable **PWA** — a web app manifest (`display: standalone`, so the site can be installed and hides the address bar) plus a service worker that caches pages/media as you browse. On by default; needs JavaScript, built-in templates only |
 | `OFFLINE` | `--offline` | off | `true` makes the service worker **precache the whole archive** (audio, video, attachments) on the first visit over **any non-cellular connection** (Wi-Fi or wired — it skips only cellular / Data Saver), so the site works fully offline (not just visited pages) |
-| `VIDEO_RELEASES` | `--no-video-releases` | on | videos and `.tar.xz` attachments are uploaded to **this repo's GitHub Releases**, so they don't count against the Pages **1 GB** quota (release assets are separate storage — 2 GB/file, CDN-backed). `false` keeps them inline. Needs a `github.com` repo + the workflow's release-upload step |
+| `VIDEO_RELEASES` | `--no-video-releases` | on | videos, `.tar.xz` attachments, and original MTProto images are uploaded to **this repo's GitHub Releases**, so they don't count against the Pages **1 GB** quota (release assets are separate storage — 2 GB/file, CDN-backed). Images use release buckets of at most 500 Telegram messages to stay below GitHub's 1,000-assets/release limit. `false` keeps media inline. Release assets are external to PWA/offline/single-file exports. Needs a `github.com` repo + the workflow's release-upload step |
 | `TAGS_TO_PAGES` | `--tags-to-pages` | — | Comma-separated tags shown as `#tag` links in the top nav (e.g. `music, batumi, cooking`) |
 | `BACKGROUND_DARK_COLOR` | `--background-dark-color` | `#000000` | Dark-mode background (any CSS color) |
 | `BACKGROUND_LIGHT_COLOR` | `--background-light-color` | `#ffffff` | Light-mode background |
@@ -440,11 +440,11 @@ This writes **`tg2zola.session`** and prints a base64 **`TG_SESSION`** string.
 From then on, runs are non-interactive.
 
 **3. Generate** with the credentials in the environment — a normal run then also
-pulls audio into each post's bundle (and, with `MTPROTO_IMAGES=1` / `MTPROTO_VIDEOS=1`,
-original-quality photos / the full videos the preview shows only as a poster):
+archives audio, original-quality photos, and the full videos that the preview
+shows only as a poster. GitHub-backed sites keep original photos in Releases:
 
 ```sh
-TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
+TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH \
   tg2zola --channel <name> --site site --init-site
 ```
 
@@ -452,7 +452,7 @@ TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
 |---|---|
 | `TG_API_ID` / `TG_API_HASH` | App credentials from my.telegram.org (required) |
 | `TG_SESSION` | base64 session from `tg2zola login`; alternatively a `tg2zola.session` file in the working dir is used |
-| `MTPROTO_IMAGES` | `1`/`true` to also fetch original-quality photos **and pasted images Telegram stored as files** (shown *not archived* on the web preview); audio is always fetched |
+| `MTPROTO_IMAGES` | fetches original-quality photos **and pasted images Telegram stored as files**; **on by default**, set `false`/`0` to keep the smaller web-preview photos instead. With GitHub Releases enabled, confirmed originals are reused from sharded image releases rather than downloaded on every run; a large historical backfill adds at most 500 new originals per run so hosted CI can finish safely |
 | `MTPROTO_VIDEOS` | downloads the full video for posts the web preview shows only as a poster **when no YouTube/Instagram embed replaces it** — **on by default**; set `false`/`0` to disable (these can be large) |
 | `MTPROTO_FILES` | archives **every other attachment** (pdf, zip, rar, … — any file type) as a download; **on by default**, set `false`/`0` to disable |
 | `TG_SESSION_FILE` | override the session-file path (default `tg2zola.session`) |
@@ -461,8 +461,8 @@ TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH MTPROTO_IMAGES=1 \
 Actions), then store `TG_API_ID`, `TG_API_HASH` and the printed `TG_SESSION` as
 **Actions secrets**. The bundled [`daily.yml`](.github/workflows/daily.yml) then
 compiles the `mtproto` feature and runs it automatically whenever `TG_SESSION` is
-set (set the `MTPROTO_IMAGES` / `MTPROTO_VIDEOS` repository *variables* to `1` for
-original photos / big videos). The session has no fixed expiry — it lasts until
+set. Original photos and big videos are fetched by default; set their repository
+variables to `false` to opt out. The session has no fixed expiry — it lasts until
 you log it out, Telegram revokes it, or it goes unused for ~6 months — so a daily
 run keeps it alive indefinitely.
 
@@ -491,8 +491,8 @@ The public web preview is the trade-off for needing **zero authentication**
   URL isn't in the scraped HTML (only voice notes, with direct `.oga` URLs, are).
   The optional [MTProto backend](#optional-mtproto-backend) fetches audio
   (voice + music), archives **any other attachment** (pdf, zip, rar, …) as a
-  download by default (`MTPROTO_FILES`), and with `MTPROTO_IMAGES` shows pasted
-  images inline; without it, for an attachment we can't fetch we keep its
+  download by default (`MTPROTO_FILES`), and shows pasted images inline; when
+  original images are disabled, for an attachment we can't fetch we keep its
   **filename** (marked *not archived*) so you know it existed; a post that is
   *only* such a reference (or a lone undownloadable file) is skipped rather than
   published empty.

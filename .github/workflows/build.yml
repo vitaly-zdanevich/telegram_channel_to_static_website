@@ -47,6 +47,8 @@ jobs:
         run: cargo clippy --all-targets --locked -- -D warnings
       - name: Clippy (mtproto feature)
         run: cargo clippy --all-targets --locked --features mtproto -- -D warnings
+      - name: Test (mtproto feature)
+        run: cargo test --locked --features mtproto
 
   biome:
     name: Biome (JS lint)

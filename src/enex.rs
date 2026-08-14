@@ -8,13 +8,19 @@ use md5::{Digest, Md5};
 use std::fmt::Write as _;
 use std::path::Path;
 
+use crate::export_media::ExportFile;
 use crate::model::Post;
-use crate::render::RenderedPost;
 use crate::singlefile::b64;
 
-/// Write an ENEX at `out` from the posts and their downloaded media (read from
-/// each post's bundle under `site`).
-pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, out: &Path) -> Result<()> {
+/// Write an ENEX at `out` from posts and locally prepared media.
+pub fn export(posts: &[Post], media: &[Vec<ExportFile>], out: &Path) -> Result<()> {
+    if posts.len() != media.len() {
+        anyhow::bail!(
+            "cannot export ENEX: {} posts but {} media groups",
+            posts.len(),
+            media.len()
+        );
+    }
     let now = Utc::now().format("%Y%m%dT%H%M%SZ");
     let mut xml = format!(
         "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\
@@ -22,7 +28,7 @@ pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, out: &Path
          <en-export export-date=\"{now}\" application=\"tg2zola\" version=\"1\">\n"
     );
     let (mut n_notes, mut n_res) = (0usize, 0usize);
-    for (post, r) in posts.iter().zip(rendered) {
+    for (post, files) in posts.iter().zip(media) {
         let title = crate::render::post_title(post, 200, true);
         let title = if title.is_empty() {
             format!("#{}", post.primary_id)
@@ -34,23 +40,7 @@ pub fn export(posts: &[Post], rendered: &[RenderedPost], site: &Path, out: &Path
         // ENML body: the post text (newlines → <br/>), then an <en-media> per file.
         let mut body = esc(&crate::render::post_text_plain(post)).replace('\n', "<br/>");
         let mut resources = String::new();
-        for d in &r.downloads {
-            let path = site.join("content/posts").join(&r.slug).join(&d.filename);
-            let Ok(bytes) = std::fs::read(&path) else {
-                continue;
-            };
-            let hash = hex(&Md5::digest(&bytes));
-            let mime = mime(&d.filename);
-            let _ = write!(body, "<br/><en-media type=\"{mime}\" hash=\"{hash}\"/>");
-            let _ = writeln!(
-                resources,
-                "  <resource><data encoding=\"base64\">{}</data><mime>{mime}</mime>\
-                 <resource-attributes><file-name>{}</file-name></resource-attributes></resource>",
-                b64(&bytes),
-                esc(&d.filename)
-            );
-            n_res += 1;
-        }
+        n_res += append_media(&mut body, &mut resources, files)?;
         let _ = write!(
             xml,
             "<note>\n  <title>{}</title>\n  \
@@ -87,27 +77,26 @@ fn esc(s: &str) -> String {
         .replace('"', "&quot;")
 }
 
-fn mime(name: &str) -> &'static str {
-    let n = name.to_ascii_lowercase();
-    for (ext, m) in [
-        (".jpg", "image/jpeg"),
-        (".jpeg", "image/jpeg"),
-        (".png", "image/png"),
-        (".webp", "image/webp"),
-        (".gif", "image/gif"),
-        (".mp4", "video/mp4"),
-        (".webm", "video/webm"),
-        (".mp3", "audio/mpeg"),
-        (".ogg", "audio/ogg"),
-        (".m4a", "audio/mp4"),
-        (".pdf", "application/pdf"),
-        (".zip", "application/zip"),
-    ] {
-        if n.ends_with(ext) {
-            return m;
-        }
+/// Append locally available attachments to one ENML body and resource list.
+fn append_media(body: &mut String, resources: &mut String, files: &[ExportFile]) -> Result<usize> {
+    let mut count = 0;
+    for file in files {
+        let Ok(bytes) = std::fs::read(&file.path) else {
+            continue;
+        };
+        let hash = hex(&Md5::digest(&bytes));
+        let mime = crate::export_media::mime_for_filename(&file.filename);
+        let _ = write!(body, "<br/><en-media type=\"{mime}\" hash=\"{hash}\"/>");
+        let _ = writeln!(
+            resources,
+            "  <resource><data encoding=\"base64\">{}</data><mime>{mime}</mime>\
+             <resource-attributes><file-name>{}</file-name></resource-attributes></resource>",
+            b64(&bytes),
+            esc(&file.filename)
+        );
+        count += 1;
     }
-    "application/octet-stream"
+    Ok(count)
 }
 
 #[cfg(test)]
@@ -126,5 +115,26 @@ mod tests {
     #[test]
     fn escapes_xml() {
         assert_eq!(esc("a<b>&\"c"), "a&lt;b&gt;&amp;&quot;c");
+    }
+
+    #[test]
+    fn export_resource_preserves_release_name_mime_and_bytes() {
+        let dir = std::env::temp_dir().join(format!("tg2zola-enex-media-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let path = dir.join("cached");
+        std::fs::write(&path, b"release-image").unwrap();
+        let files = [ExportFile {
+            filename: "Original.AVIF".into(),
+            path,
+        }];
+        let mut body = String::new();
+        let mut resources = String::new();
+
+        assert_eq!(append_media(&mut body, &mut resources, &files).unwrap(), 1);
+        assert!(body.contains(r#"type="image/avif""#));
+        assert!(resources.contains("<mime>image/avif</mime>"));
+        assert!(resources.contains("<file-name>Original.AVIF</file-name>"));
+        assert!(resources.contains(&b64(b"release-image")));
+        std::fs::remove_dir_all(dir).unwrap();
     }
 }

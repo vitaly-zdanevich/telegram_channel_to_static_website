@@ -891,7 +891,7 @@ pub fn set_about_size(
     if let Some(url) = ci_url {
         last_build.push_str(&format!(" · [{}]({url})", about.build_log));
     }
-    // Video offloaded to GitHub Releases doesn't count against the Pages quota,
+    // Media offloaded to GitHub Releases doesn't count against the Pages quota,
     // so it's reported on its own line (omitted when there's none).
     let releases_line = if releases > 0 {
         let repo = repo_url.trim_end_matches('/');

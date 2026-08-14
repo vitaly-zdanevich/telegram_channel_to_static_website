@@ -73,9 +73,15 @@ pub enum Media {
     Audio { url: String, title: Option<String> },
     /// Arbitrary document/attachment with a downloadable URL.
     Document { url: String, filename: String },
-    /// A document/attachment whose file the public page doesn't expose; we keep
-    /// only its name so the reader knows it existed.
-    DocumentRef { filename: String },
+    /// A document/attachment whose file the public page doesn't expose.
+    DocumentRef {
+        /// Displayed attachment name, retained so the reader knows it existed.
+        filename: String,
+        /// Constituent Telegram message ID from the document link. This is the
+        /// stable identity used to restore a Release-backed image in an album.
+        #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
+        message_id: Option<u64>,
+    },
     /// Sticker rendered as an image (webp).
     Sticker { url: String, key: Option<String> },
     /// A voice note / audio file fetched via the optional MTProto backend and
@@ -99,6 +105,11 @@ pub enum Media {
         path: std::path::PathBuf,
         key: Option<String>,
     },
+    /// An original-quality Telegram image already stored in a GitHub Release.
+    /// The absolute URL keeps the original outside the Pages and Git history
+    /// limits while rendering it inline like any other photo.
+    #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
+    ReleasePhoto { url: String },
     /// A full video fetched via MTProto, replacing a web [`Media::VideoPoster`] —
     /// the large/long videos `t.me/s/` exposes only as a poster + duration, with
     /// no downloadable file. Copied into the bundle by the normal media step.

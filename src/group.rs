@@ -145,7 +145,7 @@ const CONTINUATION_MARKERS: &[&str] = &["Не влазит в сообщение
 fn has_audio(items: &[Media]) -> bool {
     items.iter().any(|m| match m {
         Media::Audio { .. } => true,
-        Media::Document { filename, .. } | Media::DocumentRef { filename } => {
+        Media::Document { filename, .. } | Media::DocumentRef { filename, .. } => {
             media::is_probably_audio_doc(filename)
         }
         _ => false,
@@ -209,6 +209,7 @@ mod tests {
         let mut audio = msg(500, &["podcast"], "Episode 5");
         audio.media = vec![Media::DocumentRef {
             filename: "ep5.mp3".into(),
+            message_id: Some(500),
         }];
         let mut follow = msg(
             501,
@@ -230,6 +231,7 @@ mod tests {
         let mut audio = msg(301, &["health"], "Episode");
         audio.media = vec![Media::DocumentRef {
             filename: "Georgy Gorgiladze: from illness to a Guinness record".into(),
+            message_id: Some(301),
         }];
         let posts = group(vec![ann, audio], 1);
         assert_eq!(posts.len(), 1, "#podcast then audio should merge");
