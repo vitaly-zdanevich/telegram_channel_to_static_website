@@ -54,7 +54,7 @@ label = "#typography #preservation #russianempire #century19"
 
 {{ img(src="02.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1573-5375463111151784967.jpg") }}
 
 {{ img(src="04.jpg") }}
 

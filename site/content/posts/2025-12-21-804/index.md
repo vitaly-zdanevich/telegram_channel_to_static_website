@@ -11,7 +11,7 @@ tags = ["history", "batumi", "countries"]
 id = 804
 day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/804"
-og_image = "5350606245624220539_1245785096_460000123.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-804-5350606245624220539.jpg"
 next_id = 805
 next_title = ""
 next_body = "#anime\n#logo\n#mascon\n#design"
@@ -48,4 +48,4 @@ label = "Раньше было лучше #history #psy"
 {{ tag(t="batumi") }}  
 {{ tag(t="countries") }}
 
-{{ img(src="5350606245624220539_1245785096_460000123.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-804-5350606245624220539.jpg") }}

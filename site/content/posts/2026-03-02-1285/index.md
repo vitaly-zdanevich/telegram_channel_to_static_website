@@ -62,4 +62,4 @@ label = "#woodencart #village #rural #belarus #globustut #year2005 Source…"
 
 {{ img(src="06.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1291-5271994226549920759.jpg") }}

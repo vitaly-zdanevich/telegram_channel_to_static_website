@@ -58,7 +58,7 @@ label = "#belarus #abandone #globustut #year2005"
 
 {{ img(src="04.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1526-5353089436800979983.jpg") }}
 
 {{ img(src="06.jpg") }}
 

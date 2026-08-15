@@ -41,7 +41,7 @@ path = "@/posts/2026-02-25-1197/index.md"
 label = "#firefox #extension Copy non-latin links without #percent"
 +++
 
-{{ tag(t="firefox") }} vertical tabs with [https://github.com/mbnuqw/sidebery](<https://github.com/mbnuqw/sidebery> "Firefox extension for managing tabs and bookmarks in sidebar. · 4647 stars · Languages: TypeScript 65%, Vue 23%, Stylus 9% · 2481 commits · 248 forks · 840 open issues/PRs · MIT · last push 2026-08-13") plus custom CSS from [https://github.com/lucaspar/firefox-vertical-tabs](<https://github.com/lucaspar/firefox-vertical-tabs> "Stylesheets for collapsible vertical tabs for Firefox. · 32 stars · Languages: CSS 96%, Python 4% · 20 commits · 3 forks · 1 open issues/PRs · MIT · last push 2025-05-07")
+{{ tag(t="firefox") }} vertical tabs with [https://github.com/mbnuqw/sidebery](<https://github.com/mbnuqw/sidebery> "Firefox extension for managing tabs and bookmarks in sidebar. · 4649 stars · Languages: TypeScript 65%, Vue 23%, Stylus 9% · 2484 commits · 248 forks · 840 open issues/PRs · MIT · last push 2026-08-14") plus custom CSS from [https://github.com/lucaspar/firefox-vertical-tabs](<https://github.com/lucaspar/firefox-vertical-tabs> "Stylesheets for collapsible vertical tabs for Firefox. · 32 stars · Languages: CSS 96%, Python 4% · 20 commits · 3 forks · 1 open issues/PRs · MIT · last push 2025-05-07")
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/94-01.mp4") }}
 

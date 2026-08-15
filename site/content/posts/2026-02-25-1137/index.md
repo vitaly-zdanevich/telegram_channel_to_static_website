@@ -52,6 +52,6 @@ label = "suno.com is great - the best service for songs generation. Suppo…"
 
 {{ img(src="03.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1140-5258160909983618583.jpg") }}
 
 {{ img(src="05.jpg") }}

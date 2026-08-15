@@ -11,7 +11,7 @@ tags = ["gentoo", "logo"]
 id = 412
 day = "2025-03-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/412"
-og_image = "5382363899527033788_1253179251_456258492.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-412-5382363899527033788.jpg"
 next_id = 413
 next_title = ""
 next_body = "#caffee\n#nightclub\nSource"
@@ -47,6 +47,6 @@ label = "#design #logo #artlebedevSource"
 
 [Source](https://www.reddit.com/r/linuxmasterrace/comments/lyeija/gentowo)
 
-{{ img(src="5382363899527033788_1253179251_456258492.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-412-5382363899527033788.jpg") }}
 
 👍 1

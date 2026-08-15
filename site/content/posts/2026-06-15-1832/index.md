@@ -11,7 +11,7 @@ tags = ["css", "userstyle"]
 id = 1832
 day = "2026-06-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1832"
-og_image = "5296434402940363365_1233172231_460005989.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1832-5296434402940363365.jpg"
 next_id = 1833
 next_title = ""
 next_body = "#old\n#grandmother\n#religion\n#greatschema\n#candle\nSee also\nFrom"
@@ -46,4 +46,4 @@ When {{ tag(t="css") }} is minified - so what can I do with that :(
 
 Leave comments in such {{ tag(t="userstyle") }}
 
-{{ img(src="5296434402940363365_1233172231_460005989.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1832-5296434402940363365.jpg") }}

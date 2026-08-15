@@ -11,7 +11,7 @@ tags = ["llm", "codex", "wikipedia", "man", "roff", "rust", "terminal", "offline
 id = 1745
 day = "2026-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1745"
-og_image = "5465571945928660178_1272552634_460002514.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1745-5465571945928660178.jpg"
 next_id = 1746
 next_title = ""
 next_body = "#leetcode is often produce #error"
@@ -46,4 +46,4 @@ My another hobby project, made with {{ tag(t="llm") }} / {{ tag(t="codex") }}: c
 
 Wrote about it at <https://diff.wikimedia.org/2026/06/25/i-built-the-convertor-from-wikipedia-dumps-to-man-roff-format-for-offline-reading-in-a-terminal/>
 
-{{ img(src="5465571945928660178_1272552634_460002514.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1745-5465571945928660178.jpg") }}

@@ -11,7 +11,7 @@ tags = ["mediawiki", "fandom", "infobox", "template", "concatenation", "wikidata
 id = 1672
 day = "2026-04-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1672"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1672-5424885523165157236.jpg"
 next_id = 1674
 next_title = ""
 next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
@@ -69,6 +69,6 @@ After:
 
 <https://armies-of-exigo.fandom.com/wiki/Template:Campaign_mission?diff=7111&oldid=7110>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1672-5424885523165157236.jpg") }}
 
 {{ img(src="02.jpg") }}
