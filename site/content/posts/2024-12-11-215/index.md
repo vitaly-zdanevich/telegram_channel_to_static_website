@@ -11,7 +11,7 @@ tags = ["belarus"]
 id = 215
 day = "2024-12-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/215"
-og_image = "5391209139860005754_1255238694_456254330.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-215-5391209139860005754.jpg"
 next_id = 216
 next_title = ""
 next_body = "#man2"
@@ -44,6 +44,6 @@ label = "#belfry #belarus #globustut"
 
 {{ tag(t="belarus") }}
 
-{{ img(src="5391209139860005754_1255238694_456254330.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-215-5391209139860005754.jpg") }}
 
 💔 2

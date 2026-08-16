@@ -56,7 +56,7 @@ label = "#belarus #architecture #church #photo #abandone #year2005 #globu…"
 
 {{ img(src="03.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1229-5264957012829738073.jpg") }}
 
 {{ img(src="05.jpg") }}
 

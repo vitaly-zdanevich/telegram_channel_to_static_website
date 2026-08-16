@@ -53,7 +53,7 @@ label = "#abandone #slonim #belarus #globustut #year2005"
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1458-5312188123938757172.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1459-5312188123938757173.jpg") }}
 
 {{ img(src="03.jpg") }}
 

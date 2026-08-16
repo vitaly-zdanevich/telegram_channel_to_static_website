@@ -11,7 +11,7 @@ tags = ["vr"]
 id = 837
 day = "2026-01-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/837"
-og_image = "5388832167523192165_1254685262_460000613.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-837-5388832167523192165.jpg"
 next_id = 838
 next_title = ""
 next_body = "#bendingspoons\n#aol\nSource"
@@ -34,4 +34,4 @@ label = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
 
 [Source](https://www.linkedin.com/posts/gregoryvkornev_the-meta-horizon-start-developer-competition-activity-7412496691653771264-DgK3)
 
-{{ img(src="5388832167523192165_1254685262_460000613.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-837-5388832167523192165.jpg") }}

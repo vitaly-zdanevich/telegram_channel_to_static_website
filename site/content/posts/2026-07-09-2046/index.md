@@ -9,7 +9,7 @@ days = ["2026-07-09"]
 id = 2046
 day = "2026-07-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2046"
-og_image = "5307990884324862551_1235862934_456256087.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2046-5307990884324862551.jpg"
 next_id = 2047
 next_title = ""
 next_body = "#me\n#travel\n#botanicgarden\n#nature\nSource"
@@ -22,4 +22,4 @@ forwarded_from_url = "https://t.me/connection_with_reality/9934"
 ids = [2046]
 +++
 
-{{ img(src="5307990884324862551_1235862934_456256087.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2046-5307990884324862551.jpg") }}

@@ -59,7 +59,7 @@ label = "#commons My account is big, my account is very big"
 
 <https://commons.wikimedia.org/wiki/Commons:Upload_tools>  
 
-Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 12946 stars · Languages: C 86%, Lua 6%, C++ 3% · 46871 commits · 1400 forks · 631 open issues/PRs · GPL-3.0 · last push 2026-08-15")  
+Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 12946 stars · Languages: C 86%, Lua 6%, C++ 3% · 46876 commits · 1401 forks · 644 open issues/PRs · GPL-3.0 · last push 2026-08-16")  
 
 Моя тема для Darktable <https://gitlab.com/vitaly-zdanevich-configs/darktable/-/blob/master/user.css>  
 

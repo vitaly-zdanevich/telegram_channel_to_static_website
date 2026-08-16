@@ -11,7 +11,7 @@ tags = ["leetcode", "error"]
 id = 1746
 day = "2026-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1746"
-og_image = "5465571945928660974_1272552634_460003310.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1746-5465571945928660974.jpg"
 next_id = 1747
 next_title = ""
 next_body = "Oh my...\n#leetcode"
@@ -44,4 +44,4 @@ label = "#livecoding #batman #binarysearch #leetcode with games :"
 
 {{ tag(t="leetcode") }} is often produce {{ tag(t="error") }}
 
-{{ img(src="5465571945928660974_1272552634_460003310.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1746-5465571945928660974.jpg") }}

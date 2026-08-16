@@ -42,6 +42,6 @@ path = "@/posts/2025-03-24-442/index.md"
 label = "wow in #telegram we have a #crypto #wallet, and users can send m…"
 +++
 
-{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1354 stars · Languages: C++ 97%, Objective-C++ 1%, CMake 1% · 24800 commits · 138 forks · 148 open issues/PRs · last push 2026-07-02")
+{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1354 stars · Languages: C++ 97%, Objective-C++ 1%, CMake 1% · 24800 commits · 139 forks · 148 open issues/PRs · last push 2026-07-02")
 
 {{ img(src="5364201410545194447_1248950467_456267215.jpg") }}

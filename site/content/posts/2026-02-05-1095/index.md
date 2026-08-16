@@ -50,4 +50,4 @@ Checked in {{ tag(t="firefox") }} and {{ tag(t="google_translate") }}
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1096-5199841215518544565.jpg") }}

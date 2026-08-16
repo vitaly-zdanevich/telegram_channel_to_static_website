@@ -11,7 +11,7 @@ tags = ["bilibili", "convertion", "progress", "ux"]
 id = 1736
 day = "2026-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1736"
-og_image = "5463320146114974737_1272028346_460002321.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1736-5463320146114974737.jpg"
 next_id = 1737
 next_title = ""
 next_body = "#webdesign\n#bilibili"
@@ -44,4 +44,4 @@ label = "#bilibili #anime #webdesign #stream #ui"
 
 {{ tag(t="bilibili") }} {{ tag(t="convertion") }} {{ tag(t="progress") }} - nice {{ tag(t="ux") }}
 
-{{ img(src="5463320146114974737_1272028346_460002321.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1736-5463320146114974737.jpg") }}

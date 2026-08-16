@@ -52,7 +52,7 @@ From [https://commons.wikimedia.org/wiki/File:045-425\_Сенно,\_снято\_
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1060-5469697399455419638.jpg") }}
 
 {{ img(src="03.jpg") }}
 

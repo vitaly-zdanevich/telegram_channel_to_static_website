@@ -11,7 +11,7 @@ tags = ["music"]
 id = 546
 day = "2025-06-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/546"
-og_image = "5327905071423420414_1240499567_456259582.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-546-5327905071423420414.jpg"
 next_id = 548
 next_title = ""
 next_body = "New small project: #python script for #gthumb (or other software, even standalone CLI) that read EXIF GPS and open #openstreetmap"
@@ -44,6 +44,6 @@ label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
 
 PromoDJ {{ tag(t="music") }} genres
 
-{{ img(src="5327905071423420414_1240499567_456259582.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-546-5327905071423420414.jpg") }}
 
 🤩 1

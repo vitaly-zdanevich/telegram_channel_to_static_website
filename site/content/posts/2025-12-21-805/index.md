@@ -47,6 +47,6 @@ label = "This website looks soooo special #design"
 {{ tag(t="mascon") }}  
 {{ tag(t="design") }}  
 
-[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 21419 stars · Languages: Go 87%, TypeScript 5%, Shell 3% · 877 commits · 680 forks · 351 open issues/PRs · MIT · last push 2026-08-15")
+[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 21442 stars · Languages: Go 87%, TypeScript 5%, Shell 3% · 877 commits · 680 forks · 351 open issues/PRs · MIT · last push 2026-08-15")
 
 {{ img(src="5350719435192339794_1245811450_460000594.jpg") }}

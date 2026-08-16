@@ -11,7 +11,7 @@ tags = ["ai", "gemini", "prime_world", "wine", "lutris"]
 id = 1568
 day = "2026-04-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1568"
-og_image = "5368664895181755976_1249989703_460002888.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1568-5368664895181755976.jpg"
 next_id = 1569
 next_title = ""
 next_body = "#russianempire\n#typography\n#метрическаякнига\nAt"
@@ -50,4 +50,4 @@ I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} from Windows to
 
 We tried {{ tag(t="wine") }} of course - but some problems with {{ tag(t="lutris") }} - because native launcher need to run Wine...
 
-{{ img(src="5368664895181755976_1249989703_460002888.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1568-5368664895181755976.jpg") }}
