@@ -9,7 +9,7 @@ days = ["2024-05-05"]
 id = 40
 day = "2024-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/40"
-og_image = "5314369340256148441_1237348034_456252377.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-40-5314369340256148441.jpg"
 next_id = 41
 next_title = ""
 next_body = "I love this browser extension - shows Wikidata information about the current page"
@@ -22,4 +22,4 @@ ids = [40]
 
 <https://dan.langille.org/2023/12/30/blatant-self-interest-monitor-light/>
 
-{{ img(src="5314369340256148441_1237348034_456252377.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-40-5314369340256148441.jpg") }}

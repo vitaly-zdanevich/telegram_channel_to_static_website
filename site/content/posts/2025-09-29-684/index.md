@@ -11,7 +11,7 @@ tags = ["patch", "telegram"]
 id = 684
 day = "2025-09-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/684"
-og_image = "5391335068301129921_1255268014_456259777.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-684-5391335068301129921.jpg"
 next_id = 685
 next_title = ""
 next_body = "#fear\n#airplane\nSource"
@@ -60,4 +60,4 @@ label = "wow in #telegram we have a #crypto #wallet, and users can send m…"
 
 [https://github.com/msva/mva-overlay/blob/master/net-im/telegram-desktop/files/patches/0/conditional/tdesktop_patches_wide-baloons/style.patch](<https://github.com/msva/mva-overlay/blob/master/net-im/telegram-desktop/files/patches/0/conditional/tdesktop_patches_wide-baloons/style.patch> "mva's sandbox overlay · 61 stars · Languages: Shell 97%, Lua 1%, Makefile 1% · 3032 commits · 27 forks · 3 open issues/PRs · last push 2026-08-04")
 
-{{ img(src="5391335068301129921_1255268014_456259777.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-684-5391335068301129921.jpg") }}

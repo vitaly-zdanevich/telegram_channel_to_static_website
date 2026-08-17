@@ -3,6 +3,18 @@
   "channel": "vitaly_zdanevich_chan",
   "images": [
     {
+      "message_id": 40,
+      "media_id": 5314369340256148441,
+      "declared_bytes": 6522,
+      "tag": "images-0000",
+      "asset": "telegram-image-40-5314369340256148441.jpg",
+      "bytes": 6522,
+      "source": {
+        "kind": "photo",
+        "web_key": "5314369340256148441_1237348034_456252377"
+      }
+    },
+    {
       "message_id": 42,
       "media_id": 5316864029060357579,
       "declared_bytes": 62537,
@@ -27,6 +39,22 @@
       }
     },
     {
+      "message_id": 62,
+      "media_id": 5422554743194119354,
+      "declared_bytes": 113863,
+      "tag": "images-0000",
+      "asset": "telegram-image-62-5422554743194119354.jpg",
+      "bytes": 113863
+    },
+    {
+      "message_id": 65,
+      "media_id": 5422554743194119357,
+      "declared_bytes": 91082,
+      "tag": "images-0000",
+      "asset": "telegram-image-65-5422554743194119357.jpg",
+      "bytes": 91082
+    },
+    {
       "message_id": 86,
       "media_id": 5197437665916610129,
       "declared_bytes": 63588,
@@ -37,6 +65,14 @@
         "kind": "photo",
         "web_key": "5197437665916610129_1210122757_456255057"
       }
+    },
+    {
+      "message_id": 113,
+      "media_id": 5348131266421189674,
+      "declared_bytes": 591420,
+      "tag": "images-0000",
+      "asset": "telegram-image-113-5348131266421189674.jpg",
+      "bytes": 591420
     },
     {
       "message_id": 168,
@@ -63,6 +99,14 @@
       }
     },
     {
+      "message_id": 203,
+      "media_id": 5345981811383200855,
+      "declared_bytes": 61691,
+      "tag": "images-0000",
+      "asset": "telegram-image-203-5345981811383200855.jpg",
+      "bytes": 61691
+    },
+    {
       "message_id": 215,
       "media_id": 5391209139860005754,
       "declared_bytes": 26747,
@@ -85,6 +129,26 @@
         "kind": "photo",
         "web_key": "5233675498993872612_1218560035_456257252"
       }
+    },
+    {
+      "message_id": 356,
+      "media_id": 5287487659641531079,
+      "declared_bytes": 31345,
+      "tag": "images-0000",
+      "asset": "telegram-image-356-5287487659641531079.jpg",
+      "bytes": 31345,
+      "source": {
+        "kind": "photo",
+        "web_key": "5287487659641531079_1231089155_456256199"
+      }
+    },
+    {
+      "message_id": 401,
+      "media_id": 5366226702373613469,
+      "declared_bytes": 90393,
+      "tag": "images-0000",
+      "asset": "telegram-image-401-5366226702373613469.jpg",
+      "bytes": 90393
     },
     {
       "message_id": 412,
@@ -123,6 +187,30 @@
       }
     },
     {
+      "message_id": 498,
+      "media_id": 5244552787138834583,
+      "declared_bytes": 20055,
+      "tag": "images-0000",
+      "asset": "telegram-image-498-5244552787138834583.jpg",
+      "bytes": 20055,
+      "source": {
+        "kind": "photo",
+        "web_key": "5244552787138834583_1221092601_456257687"
+      }
+    },
+    {
+      "message_id": 540,
+      "media_id": 5298909356366097467,
+      "declared_bytes": 35738,
+      "tag": "images-0500",
+      "asset": "telegram-image-540-5298909356366097467.jpg",
+      "bytes": 35738,
+      "source": {
+        "kind": "photo",
+        "web_key": "5298909356366097467_1233748476_456256571"
+      }
+    },
+    {
       "message_id": 546,
       "media_id": 5327905071423420414,
       "declared_bytes": 122379,
@@ -135,12 +223,104 @@
       }
     },
     {
+      "message_id": 553,
+      "media_id": 5344065311076383027,
+      "declared_bytes": 35602,
+      "tag": "images-0500",
+      "asset": "telegram-image-553-5344065311076383027.jpg",
+      "bytes": 35602,
+      "source": {
+        "kind": "photo",
+        "web_key": "5344065311076383027_1244262166_456259891"
+      }
+    },
+    {
+      "message_id": 554,
+      "media_id": 5343793027329684273,
+      "declared_bytes": 92585,
+      "tag": "images-0500",
+      "asset": "telegram-image-554-5343793027329684273.jpg",
+      "bytes": 92585,
+      "source": {
+        "kind": "photo",
+        "web_key": "5343793027329684273_1244198770_456258353"
+      }
+    },
+    {
+      "message_id": 585,
+      "media_id": 5379649377116746101,
+      "declared_bytes": 10045,
+      "tag": "images-0500",
+      "asset": "telegram-image-585-5379649377116746101.jpg",
+      "bytes": 10045,
+      "source": {
+        "kind": "photo",
+        "web_key": "5379649377116746101_1252547227_456257909"
+      }
+    },
+    {
+      "message_id": 624,
+      "media_id": 5246841888743486844,
+      "declared_bytes": 39362,
+      "tag": "images-0500",
+      "asset": "telegram-image-624-5246841888743486844.jpg",
+      "bytes": 39362,
+      "source": {
+        "kind": "photo",
+        "web_key": "5246841888743486844_1221625574_456258940"
+      }
+    },
+    {
       "message_id": 641,
       "media_id": 5298559256401935369,
       "declared_bytes": 3021,
       "tag": "images-0500",
       "asset": "telegram-image-641-5298559256401935369.jpg",
       "bytes": 3021
+    },
+    {
+      "message_id": 664,
+      "media_id": 5332699066674575066,
+      "declared_bytes": 94216,
+      "tag": "images-0500",
+      "asset": "telegram-image-664-5332699066674575066.jpg",
+      "bytes": 94216
+    },
+    {
+      "message_id": 670,
+      "media_id": 5334931646509611961,
+      "declared_bytes": 32542,
+      "tag": "images-0500",
+      "asset": "telegram-image-670-5334931646509611961.jpg",
+      "bytes": 32542,
+      "source": {
+        "kind": "photo",
+        "web_key": "5334931646509611961_1242135569_456260537"
+      }
+    },
+    {
+      "message_id": 684,
+      "media_id": 5391335068301129921,
+      "declared_bytes": 93724,
+      "tag": "images-0500",
+      "asset": "telegram-image-684-5391335068301129921.jpg",
+      "bytes": 93724,
+      "source": {
+        "kind": "photo",
+        "web_key": "5391335068301129921_1255268014_456259777"
+      }
+    },
+    {
+      "message_id": 686,
+      "media_id": 5395445158729875858,
+      "declared_bytes": 25276,
+      "tag": "images-0500",
+      "asset": "telegram-image-686-5395445158729875858.jpg",
+      "bytes": 25276,
+      "source": {
+        "kind": "photo",
+        "web_key": "5395445158729875858_1256224969_456262034"
+      }
     },
     {
       "message_id": 706,
@@ -167,6 +347,14 @@
       }
     },
     {
+      "message_id": 799,
+      "media_id": 5330326234686230957,
+      "declared_bytes": 558570,
+      "tag": "images-0500",
+      "asset": "telegram-image-799-5330326234686230957.jpg",
+      "bytes": 558570
+    },
+    {
       "message_id": 804,
       "media_id": 5350606245624220539,
       "declared_bytes": 28924,
@@ -176,6 +364,18 @@
       "source": {
         "kind": "photo",
         "web_key": "5350606245624220539_1245785096_460000123"
+      }
+    },
+    {
+      "message_id": 834,
+      "media_id": 5384459448434232145,
+      "declared_bytes": 526422,
+      "tag": "images-0500",
+      "asset": "telegram-image-834-5384459448434232145.jpg",
+      "bytes": 526422,
+      "source": {
+        "kind": "photo",
+        "web_key": "5384459448434232145_1253667159_460000081"
       }
     },
     {
@@ -211,6 +411,34 @@
       "bytes": 2690
     },
     {
+      "message_id": 934,
+      "media_id": 5451802121863892081,
+      "declared_bytes": 64548,
+      "tag": "images-0500",
+      "asset": "telegram-image-934-5451802121863892081.jpg",
+      "bytes": 64548,
+      "source": {
+        "kind": "photo",
+        "web_key": "5451802121863892081_1269346597_460000369"
+      }
+    },
+    {
+      "message_id": 936,
+      "media_id": 5451802121863892428,
+      "declared_bytes": 82805,
+      "tag": "images-0500",
+      "asset": "telegram-image-936-5451802121863892428.jpg",
+      "bytes": 82805
+    },
+    {
+      "message_id": 941,
+      "media_id": 5451802121863892626,
+      "declared_bytes": 107502,
+      "tag": "images-0500",
+      "asset": "telegram-image-941-5451802121863892626.jpg",
+      "bytes": 107502
+    },
+    {
       "message_id": 946,
       "media_id": 5456393497737890993,
       "declared_bytes": 55647,
@@ -233,6 +461,18 @@
       "tag": "images-1000",
       "asset": "telegram-image-1060-5469697399455419638.jpg",
       "bytes": 363748
+    },
+    {
+      "message_id": 1081,
+      "media_id": 5195454305857638732,
+      "declared_bytes": 10331,
+      "tag": "images-1000",
+      "asset": "telegram-image-1081-5195454305857638732.jpg",
+      "bytes": 10331,
+      "source": {
+        "kind": "photo",
+        "web_key": "5195454305857638732_1209660970_460001612"
+      }
     },
     {
       "message_id": 1086,
@@ -283,12 +523,60 @@
       }
     },
     {
+      "message_id": 1122,
+      "media_id": 5244641018655740070,
+      "declared_bytes": 110813,
+      "tag": "images-1000",
+      "asset": "telegram-image-1122-5244641018655740070.jpg",
+      "bytes": 110813,
+      "source": {
+        "kind": "photo",
+        "web_key": "5244641018655740070_1221113144_460001446"
+      }
+    },
+    {
+      "message_id": 1131,
+      "media_id": 5251250372028862942,
+      "declared_bytes": 163446,
+      "tag": "images-1000",
+      "asset": "telegram-image-1131-5251250372028862942.jpg",
+      "bytes": 163446
+    },
+    {
+      "message_id": 1135,
+      "media_id": 5251250372028862943,
+      "declared_bytes": 150052,
+      "tag": "images-1000",
+      "asset": "telegram-image-1135-5251250372028862943.jpg",
+      "bytes": 150052
+    },
+    {
       "message_id": 1140,
       "media_id": 5258160909983618583,
       "declared_bytes": 25556,
       "tag": "images-1000",
       "asset": "telegram-image-1140-5258160909983618583.jpg",
       "bytes": 25556
+    },
+    {
+      "message_id": 1142,
+      "media_id": 5258160909983619715,
+      "declared_bytes": 549962,
+      "tag": "images-1000",
+      "asset": "telegram-image-1142-5258160909983619715.jpg",
+      "bytes": 549962,
+      "source": {
+        "kind": "photo",
+        "web_key": "5258160909983619715_1224260989_460003971"
+      }
+    },
+    {
+      "message_id": 1145,
+      "media_id": 5258160909983619733,
+      "declared_bytes": 533714,
+      "tag": "images-1000",
+      "asset": "telegram-image-1145-5258160909983619733.jpg",
+      "bytes": 533714
     },
     {
       "message_id": 1194,
@@ -299,12 +587,56 @@
       "bytes": 545067
     },
     {
+      "message_id": 1207,
+      "media_id": 5264957012829738039,
+      "declared_bytes": 375338,
+      "tag": "images-1000",
+      "asset": "telegram-image-1207-5264957012829738039.jpg",
+      "bytes": 375338
+    },
+    {
+      "message_id": 1222,
+      "media_id": 5264957012829738064,
+      "declared_bytes": 585754,
+      "tag": "images-1000",
+      "asset": "telegram-image-1222-5264957012829738064.jpg",
+      "bytes": 585754,
+      "source": {
+        "kind": "photo",
+        "web_key": "5264957012829738064_1225843330_460002384"
+      }
+    },
+    {
+      "message_id": 1226,
+      "media_id": 5264957012829738069,
+      "declared_bytes": 535513,
+      "tag": "images-1000",
+      "asset": "telegram-image-1226-5264957012829738069.jpg",
+      "bytes": 535513
+    },
+    {
       "message_id": 1229,
       "media_id": 5264957012829738073,
       "declared_bytes": 526112,
       "tag": "images-1000",
       "asset": "telegram-image-1229-5264957012829738073.jpg",
       "bytes": 526112
+    },
+    {
+      "message_id": 1240,
+      "media_id": 5264957012829738378,
+      "declared_bytes": 628777,
+      "tag": "images-1000",
+      "asset": "telegram-image-1240-5264957012829738378.jpg",
+      "bytes": 628777
+    },
+    {
+      "message_id": 1241,
+      "media_id": 5264957012829738383,
+      "declared_bytes": 622965,
+      "tag": "images-1000",
+      "asset": "telegram-image-1241-5264957012829738383.jpg",
+      "bytes": 622965
     },
     {
       "message_id": 1256,
@@ -315,12 +647,104 @@
       "bytes": 567623
     },
     {
+      "message_id": 1269,
+      "media_id": 5269742426736234967,
+      "declared_bytes": 101868,
+      "tag": "images-1000",
+      "asset": "telegram-image-1269-5269742426736234967.jpg",
+      "bytes": 101868,
+      "source": {
+        "kind": "photo",
+        "web_key": "5269742426736234967_1226957521_460001751"
+      }
+    },
+    {
+      "message_id": 1275,
+      "media_id": 5269742426736235652,
+      "declared_bytes": 578813,
+      "tag": "images-1000",
+      "asset": "telegram-image-1275-5269742426736235652.jpg",
+      "bytes": 578813
+    },
+    {
       "message_id": 1291,
       "media_id": 5271994226549920759,
       "declared_bytes": 531195,
       "tag": "images-1000",
       "asset": "telegram-image-1291-5271994226549920759.jpg",
       "bytes": 531195
+    },
+    {
+      "message_id": 1322,
+      "media_id": 5274246026363605450,
+      "declared_bytes": 532201,
+      "tag": "images-1000",
+      "asset": "telegram-image-1322-5274246026363605450.jpg",
+      "bytes": 532201
+    },
+    {
+      "message_id": 1324,
+      "media_id": 5274246026363605452,
+      "declared_bytes": 629192,
+      "tag": "images-1000",
+      "asset": "telegram-image-1324-5274246026363605452.jpg",
+      "bytes": 629192
+    },
+    {
+      "message_id": 1325,
+      "media_id": 5274246026363605453,
+      "declared_bytes": 576997,
+      "tag": "images-1000",
+      "asset": "telegram-image-1325-5274246026363605453.jpg",
+      "bytes": 576997
+    },
+    {
+      "message_id": 1327,
+      "media_id": 5274246026363605454,
+      "declared_bytes": 616863,
+      "tag": "images-1000",
+      "asset": "telegram-image-1327-5274246026363605454.jpg",
+      "bytes": 616863
+    },
+    {
+      "message_id": 1339,
+      "media_id": 5287405896352863432,
+      "declared_bytes": 528137,
+      "tag": "images-1000",
+      "asset": "telegram-image-1339-5287405896352863432.jpg",
+      "bytes": 528137
+    },
+    {
+      "message_id": 1344,
+      "media_id": 5287405896352863464,
+      "declared_bytes": 616175,
+      "tag": "images-1000",
+      "asset": "telegram-image-1344-5287405896352863464.jpg",
+      "bytes": 616175
+    },
+    {
+      "message_id": 1352,
+      "media_id": 5287405896352863476,
+      "declared_bytes": 631728,
+      "tag": "images-1000",
+      "asset": "telegram-image-1352-5287405896352863476.jpg",
+      "bytes": 631728
+    },
+    {
+      "message_id": 1354,
+      "media_id": 5287405896352863478,
+      "declared_bytes": 628449,
+      "tag": "images-1000",
+      "asset": "telegram-image-1354-5287405896352863478.jpg",
+      "bytes": 628449
+    },
+    {
+      "message_id": 1356,
+      "media_id": 5287405896352863480,
+      "declared_bytes": 583702,
+      "tag": "images-1000",
+      "asset": "telegram-image-1356-5287405896352863480.jpg",
+      "bytes": 583702
     },
     {
       "message_id": 1382,
@@ -381,6 +805,14 @@
       "tag": "images-1000",
       "asset": "telegram-image-1459-5312188123938757173.jpg",
       "bytes": 531638
+    },
+    {
+      "message_id": 1479,
+      "media_id": 5312188123938757194,
+      "declared_bytes": 583867,
+      "tag": "images-1000",
+      "asset": "telegram-image-1479-5312188123938757194.jpg",
+      "bytes": 583867
     },
     {
       "message_id": 1526,
@@ -487,6 +919,22 @@
       "bytes": 42754
     },
     {
+      "message_id": 1793,
+      "media_id": 5235634863078054726,
+      "declared_bytes": 53713,
+      "tag": "images-1500",
+      "asset": "telegram-image-1793-5235634863078054726.jpg",
+      "bytes": 53713
+    },
+    {
+      "message_id": 1794,
+      "media_id": 5235634863078054724,
+      "declared_bytes": 56900,
+      "tag": "images-1500",
+      "asset": "telegram-image-1794-5235634863078054724.jpg",
+      "bytes": 56900
+    },
+    {
       "message_id": 1832,
       "media_id": 5296434402940363365,
       "declared_bytes": 68369,
@@ -509,6 +957,14 @@
         "kind": "photo",
         "web_key": "5307990884324862551_1235862934_456256087"
       }
+    },
+    {
+      "message_id": 2051,
+      "media_id": 5391287961103571334,
+      "declared_bytes": 76700,
+      "tag": "images-2000",
+      "asset": "telegram-image-2051-5391287961103571334.jpg",
+      "bytes": 76700
     }
   ]
 }

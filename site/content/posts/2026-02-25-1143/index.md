@@ -53,7 +53,7 @@ label = "#belarus #building #globustut"
 
 {{ img(src="02.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1145-5258160909983619733.jpg") }}
 
 {{ img(src="04.jpg") }}
 

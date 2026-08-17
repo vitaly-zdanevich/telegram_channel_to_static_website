@@ -50,7 +50,7 @@ label = "#preservation #wikimediacommons #unavailable"
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2051-5391287961103571334.jpg") }}
 
 {{ img(src="03.jpg") }}
 

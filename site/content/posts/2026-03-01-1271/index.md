@@ -58,7 +58,7 @@ label = "#belarus #monument #nature #year2005 #year1915 #globustut"
 
 {{ img(src="04.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1275-5269742426736235652.jpg") }}
 
 {{ img(src="06.jpg") }}
 

@@ -56,14 +56,14 @@ label = "#arch #abandone #belarus #globustut"
 
 {{ img(src="03.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1322-5274246026363605450.jpg") }}
 
 {{ img(src="05.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1324-5274246026363605452.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1325-5274246026363605453.jpg") }}
 
 {{ img(src="08.jpg") }}
 
-{{ img(src="09.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1327-5274246026363605454.jpg") }}

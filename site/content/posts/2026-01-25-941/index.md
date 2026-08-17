@@ -11,7 +11,7 @@ tags = ["aws", "cpu", "scalping", "cooling"]
 id = 941
 day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/941"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-941-5451802121863892626.jpg"
 next_id = 943
 next_title = ""
 next_body = "#aws\n#cpu\n#memory\n#ram\nFrom"
@@ -48,6 +48,6 @@ label = "#aws #billing #cost #graph"
 
 {{ youtube(id="JeUpUK0nhC0") }}
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-941-5451802121863892626.jpg") }}
 
 {{ img(src="02.jpg") }}

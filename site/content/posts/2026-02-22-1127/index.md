@@ -33,7 +33,7 @@ ids = [1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135]
 
 {{ img(src="04.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1131-5251250372028862942.jpg") }}
 
 {{ img(src="06.jpg") }}
 
@@ -41,4 +41,4 @@ ids = [1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135]
 
 {{ img(src="08.jpg") }}
 
-{{ img(src="09.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1135-5251250372028862943.jpg") }}

@@ -54,12 +54,12 @@ label = "#abandone #belarus #globustut #year2005"
 
 {{ img(src="02.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1352-5287405896352863476.jpg") }}
 
 {{ img(src="04.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1354-5287405896352863478.jpg") }}
 
 {{ img(src="06.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1356-5287405896352863480.jpg") }}

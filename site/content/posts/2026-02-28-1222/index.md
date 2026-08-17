@@ -11,7 +11,7 @@ tags = ["architecture", "column", "white", "belarus", "globustut", "year_2005"]
 id = 1222
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1222"
-og_image = "5264957012829738064_1225843330_460002384.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1222-5264957012829738064.jpg"
 next_id = 1223
 next_title = ""
 next_body = "#grave\n#abandone\n#belarus\n#globustut\n#year2005\nSource"
@@ -51,4 +51,4 @@ label = "#belarus #architecture #year2005 #globustut"
 
 [Source](https://commons.wikimedia.org/wiki/File:051-493_%D0%9E%D0%B3%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_30_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="5264957012829738064_1225843330_460002384.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1222-5264957012829738064.jpg") }}

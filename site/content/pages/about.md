@@ -22,13 +22,13 @@ Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia countr
 
 
 
-In the git repository: **224 MB** — **22%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
+In the git repository: **219 MB** — **21%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
 
 In [GitHub Releases](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases): **12.4 GB** of media files — outside git, so it doesn't count toward the limit.
 
 By kind:
 
-- **Images** 162 MB
+- **Images** 158 MB
 - **Audio** 51.3 MB
 - **Other** 8.1 MB
 - **Text** 2.2 MB
@@ -46,13 +46,13 @@ Largest files:
 - [4.8 MB — Каждые_7_лет_клетки_полностью_регенериру_4.mp3](@/posts/2024-08-25-129/index.md)
 - [4.8 MB — кургинян_фристайл.mp3](@/posts/2024-11-27-204/index.md "#meanna #sergeykurginyan К моим мыслям о человеческом счастье всегда почему-то примешивалось что-то грустное, теперь же, при виде счастливого человека, мною овладело тяжелое чувство, близкое к отчаянию. А до чего же много на свете счастливых Вы взгляните на эту жизнь: наглость и праздность сильных, …")
 
-Generated in **1h 44m 26s**.
+Generated in **1h 12m 55s**.
 
-Last updated **2026-08-16 06:35 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/31927522918)
+Last updated **2026-08-17 06:11 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/31996164549)
 
 [Google Lighthouse scores (mobile):](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fvitaly%2Dzdanevich%2Egithub%2Eio%2Ftelegram%5Fchannel%5Fto%5Fstatic%5Fwebsite)
 
-- **Performance** 50
+- **Performance** 44
 - **Accessibility** 83
 - **Best Practices** 77
 - **SEO** 82

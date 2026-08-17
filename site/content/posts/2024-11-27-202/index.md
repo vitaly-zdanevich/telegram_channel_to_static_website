@@ -47,4 +47,4 @@ My {{ tag(t="photo") }} from 2012, for the defunct website of naked {{ tag(t="ca
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-203-5345981811383200855.jpg") }}

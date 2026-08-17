@@ -57,4 +57,4 @@ label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
 
 {{ img(src="02.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1207-5264957012829738039.jpg") }}

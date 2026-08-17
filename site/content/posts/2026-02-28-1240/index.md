@@ -11,7 +11,7 @@ tags = ["cross", "belarus", "globustut", "year_2005"]
 id = 1240
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1240"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1240-5264957012829738378.jpg"
 next_id = 1246
 next_title = ""
 next_body = "#cemetery\n#belarus\n#globustut\n#year2005\nSource"
@@ -49,9 +49,9 @@ label = "#architecture #belarus #globustut #year2005"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-034_%D0%A1%D0%BB%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1240-5264957012829738378.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1241-5264957012829738383.jpg") }}
 
 {{ img(src="03.jpg") }}
 
