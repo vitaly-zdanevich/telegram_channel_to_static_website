@@ -11,7 +11,7 @@ tags = ["aws", "billing", "cost", "graph"]
 id = 1818
 day = "2026-06-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1818"
-og_image = "5285355242742555081_1230592663_460005833.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1818-5285355242742555081.jpg"
 next_id = 1819
 next_title = ""
 next_body = "My another #userstyle: for #gemini, before and after"
@@ -47,4 +47,4 @@ label = "#aws #cpu #memory #ram From"
 {{ tag(t="cost") }}  
 {{ tag(t="graph") }}
 
-{{ img(src="5285355242742555081_1230592663_460005833.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1818-5285355242742555081.jpg") }}

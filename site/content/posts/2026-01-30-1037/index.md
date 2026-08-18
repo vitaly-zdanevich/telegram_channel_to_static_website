@@ -58,6 +58,6 @@ From [https://commons.wikimedia.org/wiki/File:045-286\_Бочейково,\_сн
 
 {{ img(src="03.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1040-5469697399455419544.jpg") }}
 
 {{ img(src="05.jpg") }}

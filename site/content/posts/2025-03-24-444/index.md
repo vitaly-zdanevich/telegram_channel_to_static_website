@@ -35,6 +35,6 @@ label = "#firefox #webextension: after #tab close - switch to the previou…"
 {{ tag(t="security") }}  
 {{ tag(t="webextension") }}  
 
-[https://github.com/extesy/hoverzoom/discussions/670](<https://github.com/extesy/hoverzoom/discussions/670> "Google Chrome extension for zooming images on mouse hover · 2051 stars · Languages: JavaScript 91%, CSS 6%, HTML 2% · 2113 commits · 217 forks · 251 open issues/PRs · MIT · last push 2026-08-11")
+[https://github.com/extesy/hoverzoom/discussions/670](<https://github.com/extesy/hoverzoom/discussions/670> "Google Chrome extension for zooming images on mouse hover · 2052 stars · Languages: JavaScript 91%, CSS 6%, HTML 2% · 2113 commits · 217 forks · 251 open issues/PRs · MIT · last push 2026-08-11")
 
 {{ img(src="5406954455607405651_1258904686_456256595.jpg") }}

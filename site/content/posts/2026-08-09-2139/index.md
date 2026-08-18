@@ -14,7 +14,7 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2139"
 prev_id = 2138
 prev_title = ""
 prev_body = "#village\n#nature\n#career\nSource"
-views = 70
+views = 74
 ids = [2139]
 
 [[extra.related]]
@@ -43,7 +43,7 @@ label = "#лекция про мой #telegram #бот для #evernote #stillyo
 Лёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.  
 На выходе - если ~/.config/youta/ под гитом - пушит, без токенов.  
 
-[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local subscriptions and persi… · 1 star · Languages: Rust 98%, TypeScript 2%, Shell 0% · 184 commits · 1 fork · MIT · last push 2026-08-14")  
+[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local subscriptions and persi… · 2 stars · Languages: Rust 98%, TypeScript 2%, Shell 0% · 184 commits · 1 fork · MIT · last push 2026-08-14")  
 
 Все линки  
 <https://share.evernote.com/note/179937e6-f6ba-6ccb-dfd7-81fa04888bbe>  
