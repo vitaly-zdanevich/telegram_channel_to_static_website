@@ -18,7 +18,7 @@ next_body = "#pooh\n#bible\n#gun"
 prev_id = 460
 prev_title = ""
 prev_body = "#games\n#igromania\n18 years ago. Golden age?\nSource"
-views = 46
+views = 47
 ids = [461]
 
 [[extra.related]]

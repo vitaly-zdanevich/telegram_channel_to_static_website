@@ -18,7 +18,7 @@ next_body = "#entrance\nFrom"
 prev_id = 447
 prev_title = ""
 prev_body = "#dune\n#ussr\n#mashup\nI do not know who is the author"
-views = 28
+views = 29
 ids = [448]
 
 [[extra.related]]

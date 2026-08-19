@@ -11,13 +11,14 @@ tags = ["typography", "scan", "preservation", "russian_empire", "century19"]
 id = 2061
 day = "2026-07-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2061"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2065-5402113868094808402.jpg"
 next_id = 2066
 next_title = ""
 next_body = "#buterin\n#pickup\nSource"
 prev_id = 2060
 prev_title = ""
 prev_body = "#needforspeed\n#needforspeedunderground2\n#psy\nIts #year2004 and a racing #game is about to change our entire personality.\nSource"
-views = 20
+views = 21
 ids = [2061, 2062, 2063, 2064, 2065]
 
 [[extra.related]]
@@ -57,4 +58,4 @@ label = "#typography #scan #preservation #russianempire #century19"
 
 📎 F 1-75-0012 0026.jpg *(not archived)*
 
-📎 F 1-75-0012 0037.jpg *(not archived)*
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2065-5402113868094808402.jpg") }}

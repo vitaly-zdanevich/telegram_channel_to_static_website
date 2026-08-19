@@ -18,7 +18,7 @@ next_body = "#archiving\n#preservation\n#internetarchive\n#jasonscott\n#man\n#ha
 prev_id = 472
 prev_title = ""
 prev_body = "YouTube alternative on #blockchain"
-views = 46
+views = 47
 ids = [473]
 +++
 

@@ -17,7 +17,7 @@ next_body = "#health\n#sugar\n#cola\n#mellstroy\nBy dashka.lawki"
 prev_id = 2095
 prev_title = ""
 prev_body = "#claude\n#webdesign\nBy w.wearebrand"
-views = 7
+views = 8
 ids = [2096]
 
 [[extra.related]]

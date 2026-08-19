@@ -17,7 +17,7 @@ next_body = "#cat\n#psy"
 prev_id = 480
 prev_title = ""
 prev_body = "#primeworld\n#belarussian\nAdding Belarusian language to the game"
-views = 34
+views = 35
 ids = [481]
 
 [[extra.related]]

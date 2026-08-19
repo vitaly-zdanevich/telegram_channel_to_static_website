@@ -18,7 +18,7 @@ next_body = "Пройти тест, узнай кто ты\n#psy\n#old\n#test\nS
 prev_id = 465
 prev_title = ""
 prev_body = "#windows\n#linux\nSource"
-views = 40
+views = 41
 ids = [466]
 +++
 

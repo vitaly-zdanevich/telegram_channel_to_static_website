@@ -11,7 +11,7 @@ tags = ["matrix"]
 id = 1089
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1089"
-og_image = "5199841215518542601_1210682377_460000009.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1089-5199841215518542601.jpg"
 next_id = 1090
 next_title = ""
 next_body = "#linux\n#gamex"
@@ -36,4 +36,4 @@ label = "#mem #matrix #pill #fantasy #game"
 
 [Source](https://www.linkedin.com/feed/update/urn:li:ugcPost:7424697142092607488/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287424795168660361216%2Curn%3Ali%3AugcPost%3A7424697142092607488%29)
 
-{{ img(src="5199841215518542601_1210682377_460000009.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1089-5199841215518542601.jpg") }}

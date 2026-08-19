@@ -18,7 +18,7 @@ next_body = "Source\n#sakartvelo\n#taxes"
 prev_id = 468
 prev_title = ""
 prev_body = "Годердзи 10 апреля 2025 год"
-views = 43
+views = 44
 ids = [469]
 
 [[extra.related]]

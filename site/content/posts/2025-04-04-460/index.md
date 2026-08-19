@@ -18,7 +18,7 @@ next_body = "#belarus\n#belarussian\n#culture\nSource"
 prev_id = 458
 prev_title = ""
 prev_body = "#ussr"
-views = 44
+views = 45
 ids = [460]
 
 [[extra.related]]

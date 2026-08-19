@@ -18,7 +18,7 @@ next_body = "Бежевый\n#psy\n#childhood\nSource"
 prev_id = 461
 prev_title = ""
 prev_body = "#belarus\n#belarussian\n#culture\nSource"
-views = 48
+views = 49
 ids = [462]
 
 [[extra.related]]

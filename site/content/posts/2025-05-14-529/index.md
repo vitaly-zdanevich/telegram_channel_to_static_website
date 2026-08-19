@@ -17,7 +17,7 @@ next_body = "You can #upload to #commons through #darktable with this free plugi
 prev_id = 528
 prev_title = ""
 prev_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/\n· 261 stars · Languages: C++ 51%, Python 40%, Roff 7% · 496 commits · 30 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-08-12\")"
-views = 41
+views = 42
 ids = [529]
 
 [[extra.related]]

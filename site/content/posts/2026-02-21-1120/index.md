@@ -45,6 +45,6 @@ label = "#ai From"
 {{ tag(t="ai") }}  
 {{ tag(t="codex") }}  
 
-{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 106548 stars · Languages: Rust 96%, Python 3%, Starlark 0% · 9440 commits · 16186 forks · 12909 open issues/PRs · Apache-2.0 · last push 2026-08-18"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
+{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 106732 stars · Languages: Rust 96%, Python 3%, Starlark 0% · 9510 commits · 16211 forks · 13086 open issues/PRs · Apache-2.0 · last push 2026-08-19"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1120-5244641018655740008.jpg") }}

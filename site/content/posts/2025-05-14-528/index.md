@@ -18,7 +18,7 @@ next_body = "I avoid mentioning that I run gentoo\nBut when I have to, I try to 
 prev_id = 527
 prev_title = ""
 prev_body = "Gold #games - because lovers recreate engines for the best one."
-views = 38
+views = 39
 ids = [528]
 
 [[extra.related]]

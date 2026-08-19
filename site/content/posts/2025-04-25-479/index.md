@@ -17,7 +17,7 @@ next_body = "#primeworld\n#belarussian\nAdding Belarusian language to the game"
 prev_id = 478
 prev_title = ""
 prev_body = "Artwork for the podcast"
-views = 35
+views = 36
 ids = [479]
 
 [[extra.related]]

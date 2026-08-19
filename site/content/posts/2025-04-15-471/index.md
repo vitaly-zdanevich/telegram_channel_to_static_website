@@ -18,7 +18,7 @@ next_body = "YouTube alternative on #blockchain"
 prev_id = 470
 prev_title = ""
 prev_body = "Source\n#sakartvelo\n#taxes"
-views = 50
+views = 51
 ids = [471]
 
 [[extra.related]]

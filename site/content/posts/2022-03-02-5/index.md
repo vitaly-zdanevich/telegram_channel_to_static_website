@@ -13,7 +13,7 @@ day = "2022-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/5"
 next_id = 7
 next_title = ""
-next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nis a digital library of academic journals, books, and primary sources founded in 1994. Originally containing digitized back issues of academic journals, it now encompasses books and other primary sources as well as current issues of journals in the hum…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
+next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
 prev_id = 3
 prev_title = ""
 prev_body = "Channel photo updated"
@@ -77,7 +77,7 @@ label = "#podcast #my #health #startup #geogorgiladze Георгий Горги�
 
 <https://wiki.openstreetmap.org/wiki/Tag:natural=tree>  
 
-<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples>  
+[https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples](<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples> "This page contains examples of SPARQL queries for data in Wikidata. When adding any further queries, consider adding a comment in the query describing what it illustrates, when and by whom it was written and which are its limitations given the current data and use of properties at Wikidata.")  
 
 Записано на телефон Poco X3 Pro (Виталий), минимальный монтаж на Audacity, Gentoo.
 

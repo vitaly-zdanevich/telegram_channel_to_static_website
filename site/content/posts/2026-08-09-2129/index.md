@@ -17,7 +17,7 @@ next_body = "#mem\n#legs\n#washing\nПомыла ноги и хорошее от
 prev_id = 2128
 prev_title = ""
 prev_body = "#mem\n#evolution\n#monkey\n#spaceship\nSource"
-views = 112
+views = 121
 ids = [2129]
 
 [[extra.related]]

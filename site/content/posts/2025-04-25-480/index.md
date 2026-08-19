@@ -18,7 +18,7 @@ next_body = "#sex\n#mouse\n#horoscope\nFrom"
 prev_id = 479
 prev_title = ""
 prev_body = "#article\n#primeworld\nI wrote."
-views = 32
+views = 33
 ids = [480]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "Годердзи 10 апреля 2025 год"
 prev_id = 466
 prev_title = ""
 prev_body = "#fine\n#responsibility\nSource"
-views = 44
+views = 45
 ids = [467]
 
 [[extra.related]]

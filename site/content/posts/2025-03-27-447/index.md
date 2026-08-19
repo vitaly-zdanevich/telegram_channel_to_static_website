@@ -18,7 +18,7 @@ next_body = "Раньше было лучше\n#history\n#psy"
 prev_id = 446
 prev_title = ""
 prev_body = "#teapot\n#update\nFrom"
-views = 28
+views = 29
 ids = [447]
 
 [[extra.related]]

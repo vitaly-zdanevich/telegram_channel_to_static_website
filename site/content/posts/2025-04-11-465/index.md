@@ -17,7 +17,7 @@ next_body = "#fine\n#responsibility\nSource"
 prev_id = 464
 prev_title = ""
 prev_body = "Бежевый\n#psy\n#childhood\nSource"
-views = 38
+views = 39
 ids = [465]
 
 [[extra.related]]

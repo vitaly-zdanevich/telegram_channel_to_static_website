@@ -18,7 +18,7 @@ next_body = "Another coin from Belarus Легенда пра пчалу #bee #co
 prev_id = 41
 prev_title = ""
 prev_body = "I love this browser extension - shows Wikidata information about the current page"
-views = 47
+views = 48
 ids = [42]
 
 [[extra.related]]

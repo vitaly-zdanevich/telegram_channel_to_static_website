@@ -45,7 +45,7 @@ label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
 {{ tag(t="archivation") }}  
 {{ tag(t="games") }}  
 
-Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 830 stars · Languages: Python 91%, Dockerfile 9% · 518 commits · 49 forks · 84 open issues/PRs · GPL-3.0 · last push 2026-07-31")  
+Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 831 stars · Languages: Python 91%, Dockerfile 9% · 518 commits · 49 forks · 84 open issues/PRs · GPL-3.0 · last push 2026-07-31")  
 
 [https://gamechronicles.com](https://gamechronicles.com/)
 

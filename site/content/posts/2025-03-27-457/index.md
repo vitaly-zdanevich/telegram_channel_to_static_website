@@ -18,7 +18,7 @@ next_body = "#ussr"
 prev_id = 456
 prev_title = ""
 prev_body = "#ussr"
-views = 47
+views = 48
 ids = [457]
 
 [[extra.related]]

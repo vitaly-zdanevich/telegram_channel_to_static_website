@@ -18,7 +18,7 @@ next_body = "#elonmusk\n#starwars\n#elections\n#romansalute\nSource"
 prev_id = 442
 prev_title = ""
 prev_body = "wow in #telegram we have a #crypto #wallet, and users can send money to their contacts, wow"
-views = 34
+views = 35
 ids = [444]
 
 [[extra.related]]

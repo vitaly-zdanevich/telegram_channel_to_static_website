@@ -17,7 +17,7 @@ next_body = "Payment -&gt; #crypto -&gt; Select your #wallet\nwoodev.net"
 prev_id = 1785
 prev_title = ""
 prev_body = "Another #llm victory: repack of the official #evernote client"
-views = 34
+views = 35
 ids = [1786]
 
 [[extra.related]]
