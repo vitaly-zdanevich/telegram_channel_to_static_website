@@ -2070,6 +2070,9 @@ const POST_HEADER_LINE_CSS: &str = r#"html { overflow-x: clip; }
   border-top: 1px solid var(--muted);
   opacity: .45;
   pointer-events: none;
+}
+article.post:only-of-type .post-meta::before {
+	content: none;
 }"#;
 
 const STYLE_CSS: &str = r#":root {
@@ -2282,6 +2285,8 @@ mod tests {
         assert!(enabled.contains("right: 100%"));
         assert!(enabled.contains("overflow-x: clip"));
         assert!(enabled.contains("pointer-events: none"));
+        assert!(enabled.contains("article.post:only-of-type .post-meta::before"));
+        assert!(enabled.contains("content: none"));
         assert!(!enabled.contains("width: 100vw"));
         assert_eq!(post_header_line_css(false), "");
     }
