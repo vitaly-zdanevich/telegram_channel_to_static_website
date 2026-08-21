@@ -24,22 +24,27 @@ ids = [1119]
 [[extra.related]]
 path = "@/posts/2026-03-05-1335/index.md"
 label = "I use #bash history Ctrl-R a lot, also with #fzf and other helpe…"
+date = "2026-03-05"
 
 [[extra.related]]
 path = "@/posts/2026-03-05-1336/index.md"
 label = "...one of my #bash aliases: to count files here: c { ls -1  wc -…"
+date = "2026-03-05"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1864/index.md"
 label = "And another #bash #alias: # Better word movement: treat aaabbbcc…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1863/index.md"
 label = "My new #bash #alias bind '\"ej\": \"!#:$ e^\"' # Alt J repeats prev…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-03-05-1334/index.md"
 label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
+date = "2026-03-05"
 +++
 
 {{ tag(t="bash") }}  
@@ -47,8 +52,8 @@ label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
 
 {{ tag(t="mcfly") }}: ctrl-r replacement with "suggestions are prioritized in real time with a small neural network."  
 
-Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7778 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14") for it.  
+Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7782 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14") for it.  
 
-[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7778 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14")
+[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7782 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14")
 
 {{ img(src="5242389218842057393_1220588856_460004017.jpg") }}

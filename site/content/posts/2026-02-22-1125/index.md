@@ -24,22 +24,27 @@ ids = [1125]
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2026-01-22-931/index.md"
 label = "I am on #gentoo because it compiles for my CPU -march=native and…"
+date = "2026-01-22"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 +++
 
 {{ tag(t="webdesign") }}  

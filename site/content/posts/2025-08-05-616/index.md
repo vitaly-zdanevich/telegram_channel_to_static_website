@@ -23,22 +23,27 @@ ids = [616]
 [[extra.related]]
 path = "@/posts/2026-03-28-1504/index.md"
 label = "#darkmode"
+date = "2026-03-28"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-615/index.md"
 label = "How to ask for a #darkmode"
+date = "2025-08-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-10-566/index.md"
 label = "My new #darkmode: numbeo.com"
+date = "2025-06-10"
 
 [[extra.related]]
 path = "@/posts/2025-07-12-596/index.md"
 label = "My another #userscript: small toggle for #darkmode on #stackexch…"
+date = "2025-07-12"
 
 [[extra.related]]
 path = "@/posts/2026-02-27-1201/index.md"
 label = "#googledocs: #ai is integrated, but not the #darkmode If you do…"
+date = "2026-02-27"
 +++
 
 {{ tag(t="dark_mode") }}  

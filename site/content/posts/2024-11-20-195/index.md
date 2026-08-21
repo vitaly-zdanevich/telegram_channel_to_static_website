@@ -24,6 +24,7 @@ ids = [195]
 [[extra.related]]
 path = "@/posts/2026-05-13-1759/index.md"
 label = "Fix my #style for #mdn, #screenshot before and after Sad that UI…"
+date = "2026-05-13"
 +++
 
 {{ tag(t="style") }} love my custom YandexMail <https://gitlab.com/vitaly-zdanevich-styles/yandex-mail>

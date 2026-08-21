@@ -11,7 +11,7 @@ tags = ["belarus", "belarussian", "arabic", "language"]
 id = 1733
 day = "2026-05-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1733"
-og_image = "5460766981331030706_1271433891_460001970.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1733-5460766981331030706.jpg"
 next_id = 1734
 next_title = ""
 next_body = "#map\n#batumi\nBetween the Black Sea and the mountains."
@@ -23,23 +23,28 @@ ids = [1733]
 
 [[extra.related]]
 path = "@/posts/2026-03-22-1496/index.md"
-label = "#webdesign #belarus #belarussian"
+label = "#webdesign #belarus #belarussian пра жывёл"
+date = "2026-03-22"
 
 [[extra.related]]
 path = "@/posts/2025-04-05-461/index.md"
 label = "#belarus #belarussian #culture"
+date = "2025-04-05"
 
 [[extra.related]]
 path = "@/posts/2025-12-31-832/index.md"
 label = "#language Ве́псский язы́к самоназвание — vepsän kel' — язык вепс…"
+date = "2025-12-31"
 
 [[extra.related]]
 path = "@/posts/2024-12-11-215/index.md"
 label = "#belarus"
+date = "2024-12-11"
 
 [[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
+date = "2026-07-28"
 +++
 
 {{ tag(t="belarus") }}  
@@ -49,4 +54,4 @@ label = "What a nice #arabic #logo"
 
 [https://ru.wikipedia.org/wiki/Белорусский\_арабский\_алфавит](https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D1%80%D0%B0%D0%B1%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82)
 
-{{ img(src="5460766981331030706_1271433891_460001970.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1733-5460766981331030706.jpg") }}

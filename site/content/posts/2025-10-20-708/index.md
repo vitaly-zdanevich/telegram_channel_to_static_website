@@ -24,22 +24,27 @@ ids = [708]
 [[extra.related]]
 path = "@/posts/2025-10-22-715/index.md"
 label = "#car #russia #tax"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-654/index.md"
 label = "#russia #israel #map"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-02-10-355/index.md"
 label = "#music #anime #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-09-09-665/index.md"
 label = "#film #russia #nightwatch #zavulon"
+date = "2025-09-09"
 
 [[extra.related]]
 path = "@/posts/2025-08-30-647/index.md"
 label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+date = "2025-08-30"
 +++
 
 {{ tag(t="concert") }}  

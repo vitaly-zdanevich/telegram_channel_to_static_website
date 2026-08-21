@@ -24,6 +24,7 @@ ids = [449]
 [[extra.related]]
 path = "@/posts/2026-02-25-1170/index.md"
 label = "#entrance #abandone #belarus"
+date = "2026-02-25"
 +++
 
 {{ tag(t="entrance") }}  

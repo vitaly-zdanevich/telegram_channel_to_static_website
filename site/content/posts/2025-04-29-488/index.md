@@ -24,10 +24,12 @@ ids = [488]
 [[extra.related]]
 path = "@/posts/2025-05-13-526/index.md"
 label = "#homm3 #foss #vcmi"
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1739/index.md"
 label = "#shotcut is pretty good #foss #videoeditor, #love it"
+date = "2026-05-05"
 +++
 
 wow  
@@ -35,5 +37,3 @@ wow
 {{ tag(t="foss") }}
 
 {{ img(src="5226929535595967434_1216989368_456258506.jpg") }}
-
-❤ 1

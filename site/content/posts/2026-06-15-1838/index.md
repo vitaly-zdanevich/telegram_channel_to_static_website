@@ -23,22 +23,27 @@ ids = [1838]
 [[extra.related]]
 path = "@/posts/2026-06-15-1835/index.md"
 label = "#xbox #gameconsole #tech #retro #green From"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2025-11-12-771/index.md"
 label = "#webdesign #webdesignold #xbox Wikidata"
+date = "2025-11-12"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1834/index.md"
 label = "#playstation #playstation2 #gameconsole #street From"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-753/index.md"
 label = "#design #webdesign #webdesignold #xbox"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2026-06-20-1847/index.md"
 label = "#game #trailer #music #year2009 #halo #xbox #xbox360 One of the…"
+date = "2026-06-20"
 +++
 
 {{ tag(t="xbox") }}  

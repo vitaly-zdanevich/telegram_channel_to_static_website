@@ -23,22 +23,27 @@ ids = [371]
 [[extra.related]]
 path = "@/posts/2025-02-21-372/index.md"
 label = "Most Shocking Second a Day Video Still The Most Shocking Second…"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
 label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2024-12-10-213/index.md"
 label = "#ad"
+date = "2024-12-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-19-783/index.md"
 label = "#ad #playstation #playstation2"
+date = "2025-11-19"
 
 [[extra.related]]
 path = "@/posts/2025-11-19-782/index.md"
 label = "#ad #retro #nokia"
+date = "2025-11-19"
 +++
 
 {{ tag(t="ad") }} from 2012  

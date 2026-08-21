@@ -24,18 +24,19 @@ ids = [216]
 [[extra.related]]
 path = "@/posts/2025-02-15-366/index.md"
 label = "#game #man2"
+date = "2025-02-15"
 
 [[extra.related]]
 path = "@/posts/2025-01-15-246/index.md"
 label = "#game #man2"
+date = "2025-01-15"
 
 [[extra.related]]
 path = "@/posts/2024-12-14-219/index.md"
 label = "My second #lutris yaml for #man2"
+date = "2024-12-14"
 +++
 
 {{ tag(t="man2") }}
 
 {{ img(src="5390848993967337299_1255154841_456257363.jpg") }}
-
-🙏 1

@@ -24,22 +24,27 @@ ids = [654]
 [[extra.related]]
 path = "@/posts/2026-03-24-1502/index.md"
 label = "#map #russia #russianempire #blacksea #sakartvelo #year1910"
+date = "2026-03-24"
 
 [[extra.related]]
 path = "@/posts/2025-06-21-586/index.md"
 label = "#map of articles and photos"
+date = "2025-06-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 
 [[extra.related]]
 path = "@/posts/2026-01-12-873/index.md"
 label = "#map The Earth, centred around #newzealand"
+date = "2026-01-12"
 
 [[extra.related]]
 path = "@/posts/2025-09-10-669/index.md"
 label = "#map #isis"
+date = "2025-09-10"
 +++
 
 {{ tag(t="russia") }}  

@@ -23,10 +23,12 @@ ids = [2094]
 [[extra.related]]
 path = "@/posts/2026-07-08-2042/index.md"
 label = "#psychodel #walk Я опять вышел на прогулку"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-406/index.md"
 label = "#health #science #references #source #walk #chad"
+date = "2025-03-13"
 +++
 
 {{ tag(t="3d") }}  

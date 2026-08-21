@@ -11,7 +11,7 @@ tags = ["ci", "gitlab"]
 id = 1761
 day = "2026-05-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1761"
-og_image = "5206510853052634168_1212235273_460002360.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1761-5206510853052634168.jpg"
 next_id = 1762
 next_title = ""
 next_body = "#лекция про мой #telegram #бот для #evernote\n#stillyoungbar\n#batumi\nРепозиторий проекта:\nСоздано через #llm Codex gpt-5.5 xhigh, часов за 10. Сначала на Питоне - а потом попросил переписать на Расте - для скорости.\nУпоминались:\nevernote.com\nevernote.com/api/DeveloperToken.action\nhelp.evernote.com/hc/en-us/articles/209005347-Save-emails-into-Evernote\nnotesnook.com FOSS альтернатива\nobsidian.md проприетарный софт для заметок в markdown\nlogseq.com свободные заметки в markdown\ngithub.com/boo-yee/nixnote2 FOSS клиент для Evernote на C++ и Qt\ngithub.com/vitaly-zdanevich/reeknote мой CLI на Rust\ngithub.com/syncthing/syncthing FOSS синхронизация данных через ваши устройства\nБесплатный хостинг:\naws.amazon.com/lambda\nПро стили - чтобы сайты выгляди как надо вам а не дизайнеру:\ngithub.com/openstyles/stylus\nuserstyles.world/user/vitaly-zdanevich\ngitlab.com/vitaly-zdanevich-styles/evernote\ncss-tricks.com/css-keylogger"
@@ -24,26 +24,31 @@ ids = [1761]
 [[extra.related]]
 path = "@/posts/2024-07-10-87/index.md"
 label = "Wow #gitlab has a #cron..."
+date = "2024-07-10"
 
 [[extra.related]]
 path = "@/posts/2024-06-03-50/index.md"
 label = "#gitlab: I love that it is possible to push to a repo that is no…"
+date = "2024-06-03"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1763/index.md"
 label = "#error #gitlab #contradiction"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1085/index.md"
 label = "#logo #gitlab #git"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2026-01-18-892/index.md"
 label = "Storing my configs in #git #gitlab, because its open - #github i…"
+date = "2026-01-18"
 +++
 
 I love {{ tag(t="ci") }} so much that for the first time I depleted free 400 minutes per month, on {{ tag(t="gitlab") }}, on my FOSS non-commercial projects.  
 
 <https://gitlab.com/-/profile/usage_quotas#pipelines-quota-tab>
 
-{{ img(src="5206510853052634168_1212235273_460002360.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1761-5206510853052634168.jpg") }}

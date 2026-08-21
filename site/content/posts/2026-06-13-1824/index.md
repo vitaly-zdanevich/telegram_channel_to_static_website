@@ -11,7 +11,7 @@ tags = ["wikipedia", "armenian", "ruwiki", "language", "table"]
 id = 1824
 day = "2026-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1824"
-og_image = "5289874428806242056_1231644868_460005128.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1824-5289874428806242056.jpg"
 next_id = 1825
 next_title = ""
 next_body = "#vim\n#java\n#hover #balloon with type definition ftplugin/java.vim, with #coc\nhighlight CocTypePopup ctermfg=White ctermbg=22 guifg=#ffffff guibg=#005f00\nfunction! CocTypeBalloonExpr() abort\ntry\nlet l:docs = CocAction('getHover', {\n'bufnr': v:bevalbufnr,\n'line': v:bevallnum,\n'col': v:bevalcol\n})\ncatch\nreturn ''\nendtry\nfor l:line in split(join(l:docs, \"n\"), \"n\")\nlet l:line = trim(l:line)\ncall popupbeval(l:line, {\n'maxwidth': 200,\n'padding': [0, 1, 0, 1],\n'border': [0, 0, 0, 0],\n'highlight': 'CocTypePopup',\n'wrap': 1\n})\nreturn ''\nendfor\nreturn ''\nendfunction\nif !has('nvim')\nsetl balloonevalterm\nsetl balloonexpr=CocTypeBalloonExpr()\nendif"
@@ -24,22 +24,27 @@ ids = [1824]
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-12-31-832/index.md"
 label = "#language Ве́псский язы́к самоназвание — vepsän kel' — язык вепс…"
+date = "2025-12-31"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-25-201/index.md"
 label = "#wikipedia"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -50,4 +55,4 @@ label = "#wikipedia #wikimediacommons Пишите авторам контент
 
 [https://ru.wikipedia.org/wiki/Армянский\_язык](https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA)
 
-{{ img(src="5289874428806242056_1231644868_460005128.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1824-5289874428806242056.jpg") }}

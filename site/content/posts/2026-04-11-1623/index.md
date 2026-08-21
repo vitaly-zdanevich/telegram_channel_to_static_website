@@ -11,7 +11,7 @@ tags = ["school", "china", "lenin"]
 id = 1623
 day = "2026-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1623"
-og_image = "5391330184927058070_1255266877_460003478.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1623-5391330184927058070.jpg"
 next_id = 1624
 next_title = ""
 next_body = "#preview on #bilibili\n#anime"
@@ -24,26 +24,31 @@ ids = [1623]
 [[extra.related]]
 path = "@/posts/2026-02-22-1125/index.md"
 label = "#webdesign #gentoo #china"
+date = "2026-02-22"
 
 [[extra.related]]
 path = "@/posts/2025-09-30-688/index.md"
 label = "#china #beauty #plastic"
+date = "2025-09-30"
 
 [[extra.related]]
 path = "@/posts/2025-11-08-744/index.md"
 label = "#school in #sakartvelo #architecture #books"
+date = "2025-11-08"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2035/index.md"
 label = "#china #buy #sell #yogurt #smoke"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-28-1506/index.md"
 label = "#shutdown #cloudflare #preservation #school #error Что вы будете…"
+date = "2026-03-28"
 +++
 
 Usual {{ tag(t="school") }} in {{ tag(t="china") }}? {{ tag(t="lenin") }}  
 
 【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】<https://www.bilibili.com/video/BV1ZXE4ziEgf?vd_source=bb5efb0fc5b9ab1f523b5e6d0a9f0a2f>
 
-{{ img(src="5391330184927058070_1255266877_460003478.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1623-5391330184927058070.jpg") }}

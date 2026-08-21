@@ -24,22 +24,27 @@ ids = [543]
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-07-21-602/index.md"
 label = "#webdesign"
+date = "2025-07-21"
 +++
 
 Wow {{ tag(t="black_and_white") }} {{ tag(t="webdesign") }} is interesting [https://io.net](https://io.net/)

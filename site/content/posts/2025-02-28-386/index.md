@@ -21,5 +21,3 @@ ids = [386]
 +++
 
 Released opera 2084 <https://vk.com/audios-23865151?z=audio_playlist-23865151_83082490>
-
-👍 1

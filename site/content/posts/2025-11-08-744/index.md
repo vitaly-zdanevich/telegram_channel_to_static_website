@@ -24,22 +24,27 @@ ids = [744]
 [[extra.related]]
 path = "@/posts/2026-05-05-1735/index.md"
 label = "#architecture of #village houses in #sakartvelo"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2025-12-10-796/index.md"
 label = "#architecture Дом со щуками From"
+date = "2025-12-10"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-06-14-1826/index.md"
 label = "#bus #architecture"
+date = "2026-06-14"
 
 [[extra.related]]
 path = "@/posts/2025-04-15-470/index.md"
 label = "Source #sakartvelo #taxes"
+date = "2025-04-15"
 +++
 
 {{ tag(t="school") }} in {{ tag(t="sakartvelo") }}  

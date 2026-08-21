@@ -23,10 +23,12 @@ ids = [2119]
 [[extra.related]]
 path = "@/posts/2025-12-28-820/index.md"
 label = "#hardware #laptop Toshiba Libretto"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-11-769/index.md"
 label = "#mp3 #hardware #sandisc Sexy Girls Fun Gadgets Stuff Magazine, 2…"
+date = "2025-11-11"
 +++
 
 {{ tag(t="hardware") }}  

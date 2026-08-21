@@ -24,6 +24,7 @@ ids = [409]
 [[extra.related]]
 path = "@/posts/2025-10-22-714/index.md"
 label = "#consciousness"
+date = "2025-10-22"
 +++
 
 {{ tag(t="universe") }}  
@@ -32,5 +33,3 @@ label = "#consciousness"
 [Source](https://x.com/ArseniosMarkos/status/1831799696731599018)
 
 {{ img(src="5375405086139870811_1251559026_456257115.jpg") }}
-
-👍 1

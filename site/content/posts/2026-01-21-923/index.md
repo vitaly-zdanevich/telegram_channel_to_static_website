@@ -24,22 +24,27 @@ ids = [923]
 [[extra.related]]
 path = "@/posts/2026-03-29-1529/index.md"
 label = "#village #black #abandone #Пелегринда #belarus #globustut #year2…"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-16-1475/index.md"
 label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+date = "2026-03-16"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1384/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1328/index.md"
 label = "#abandone #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1280/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-01"
 +++
 
 {{ tag(t="belarus") }}  

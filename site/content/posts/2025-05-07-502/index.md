@@ -23,22 +23,27 @@ ids = [502]
 [[extra.related]]
 path = "@/posts/2025-05-07-503/index.md"
 label = "#ai #girl #relationships #psy"
+date = "2025-05-07"
 
 [[extra.related]]
 path = "@/posts/2025-11-06-743/index.md"
 label = "Emotional reasoning is a cognitive process by which an individua…"
+date = "2025-11-06"
 
 [[extra.related]]
 path = "@/posts/2025-01-21-322/index.md"
 label = "#girl"
+date = "2025-01-21"
 
 [[extra.related]]
 path = "@/posts/2024-12-21-220/index.md"
 label = "#psy"
+date = "2024-12-21"
 
 [[extra.related]]
 path = "@/posts/2024-11-06-181/index.md"
 label = "#girl"
+date = "2024-11-06"
 +++
 
 {{ tag(t="psy") }}  

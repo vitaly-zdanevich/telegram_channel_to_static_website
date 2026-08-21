@@ -23,18 +23,22 @@ ids = [2071]
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
+date = "2025-03-13"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2137/index.md"
 label = "#sound #food #poor"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-04-28-1695/index.md"
 label = "#my #batumi #restaurant #art #food #sazandari"
+date = "2026-04-28"
 +++
 
 {{ tag(t="food") }}  

@@ -11,7 +11,7 @@ tags = ["ai"]
 id = 934
 day = "2026-01-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/934"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-934-5451802121863892081.jpg"
+og_image = "5451802121863892081_1269346597_460000369.jpg"
 next_id = 935
 next_title = ""
 next_body = "#vibecoding without human review is #gambling\nFrom"
@@ -24,22 +24,27 @@ ids = [934]
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2025-01-28-343/index.md"
 label = "#ai"
+date = "2025-01-28"
 
 [[extra.related]]
 path = "@/posts/2025-01-10-244/index.md"
 label = "Video from 2012 about #ai"
+date = "2025-01-10"
 
 [[extra.related]]
 path = "@/posts/2025-01-01-237/index.md"
 label = "#ai"
+date = "2025-01-01"
 
 [[extra.related]]
 path = "@/posts/2024-08-25-128/index.md"
 label = "suno.com is great - the best service for songs generation. Suppo…"
+date = "2024-08-25"
 +++
 
 {{ tag(t="ai") }}  
@@ -48,4 +53,4 @@ From [https://youtu.be/3Y1G9najGiI](<https://youtu.be/3Y1G9najGiI> "AWS re:Inven
 
 {{ youtube(id="3Y1G9najGiI") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-934-5451802121863892081.jpg") }}
+{{ img(src="5451802121863892081_1269346597_460000369.jpg") }}

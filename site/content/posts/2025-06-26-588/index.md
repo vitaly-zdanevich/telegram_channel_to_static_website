@@ -23,22 +23,27 @@ ids = [588]
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-396/index.md"
 label = "#alexjones #warhammer"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-394/index.md"
 label = "#alexjones #warhammer"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-392/index.md"
 label = "#alexjones #warhammer"
+date = "2025-03-08"
 +++
 
 {{ tag(t="game") }}  
@@ -57,4 +62,4 @@ If you see "Failed to initialize video card" - try to enable Gamescope. Works wi
 
 <https://en.wikipedia.org/wiki/Warhammer_40,000:_Dawn_of_War>
 
-[📎 warhammer4000-dawn-of-war-demo.tar.xz](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/588-01-warhammer4000-dawn-of-war-demo.tar.xz)
+[📎 warhammer4000-dawn-of-war-demo.tar.xz](https://archive.org/download/warhammer4000-dawn-of-war-demo.tar/warhammer4000-dawn-of-war-demo.tar.xz)

@@ -24,22 +24,27 @@ ids = [1248, 1249, 1250, 1251, 1252, 1253, 1254]
 [[extra.related]]
 path = "@/posts/2026-03-08-1373/index.md"
 label = "#cementery #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1255/index.md"
 label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1350/index.md"
 label = "#cementery #abandone #belarus #globustut #year2005 Source,%D1%81…"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1337/index.md"
 label = "#nest #cementery #belarus #globustut #year2005"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1309/index.md"
 label = "#cementery #abandone #belarus #globustut #year2005"
+date = "2026-03-02"
 +++
 
 {{ tag(t="cementery") }}  

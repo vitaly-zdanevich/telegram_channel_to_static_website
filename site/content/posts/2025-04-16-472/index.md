@@ -23,6 +23,7 @@ ids = [472]
 [[extra.related]]
 path = "@/posts/2024-07-01-83/index.md"
 label = "Local off-the-grid social network with chat, on #blockchain so y…"
+date = "2024-07-01"
 +++
 
 YouTube alternative on {{ tag(t="blockchain") }} [https://odysee.com](https://odysee.com/)

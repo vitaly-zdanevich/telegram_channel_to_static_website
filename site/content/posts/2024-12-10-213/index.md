@@ -24,26 +24,29 @@ ids = [213]
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
 label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2025-11-19-783/index.md"
 label = "#ad #playstation #playstation2"
+date = "2025-11-19"
 
 [[extra.related]]
 path = "@/posts/2025-11-19-782/index.md"
 label = "#ad #retro #nokia"
+date = "2025-11-19"
 
 [[extra.related]]
 path = "@/posts/2026-06-18-1841/index.md"
 label = "#ad #newspaper #design #toxic From"
+date = "2026-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-02-18-1116/index.md"
 label = "#pain #ad #event #sergeykulinkovich The old one Унижение и боль…"
+date = "2026-02-18"
 +++
 
 {{ tag(t="ad") }}
 
 {{ img(src="5384454698196658644_1253666053_456255956.jpg") }}
-
-🙏 1

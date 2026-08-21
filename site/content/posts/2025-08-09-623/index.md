@@ -24,22 +24,27 @@ ids = [623]
 [[extra.related]]
 path = "@/posts/2025-10-21-711/index.md"
 label = "#games #steam"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2025-06-26-587/index.md"
 label = "In 2024 to #steam were published 19000 #games, its 52 games per…"
+date = "2025-06-26"
 
 [[extra.related]]
 path = "@/posts/2026-02-22-1124/index.md"
 label = "#steam #myst forever #games"
+date = "2026-02-22"
 
 [[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2026-03-21-1494/index.md"
 label = "#steam: almost 25% is on #linux?"
+date = "2026-03-21"
 +++
 
 {{ tag(t="games") }}  
@@ -48,5 +53,3 @@ label = "#steam: almost 25% is on #linux?"
 Can you imagine that, I know this guy
 
 {{ img(src="5240341610359814155_1220112110_456259595.jpg") }}
-
-😁 1

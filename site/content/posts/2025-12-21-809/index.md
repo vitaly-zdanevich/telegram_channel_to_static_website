@@ -24,22 +24,27 @@ ids = [809]
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-07-13-89/index.md"
 label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-34/index.md"
 label = "This website looks soooo special #design"
+date = "2024-04-27"
 
 [[extra.related]]
 path = "@/posts/2026-03-05-1334/index.md"
 label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
+date = "2026-03-05"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-759/index.md"
 label = "#design #artlebedev"
+date = "2025-11-10"
 +++
 
 {{ tag(t="cli") }}  

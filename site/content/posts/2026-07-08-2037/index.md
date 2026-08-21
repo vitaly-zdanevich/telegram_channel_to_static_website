@@ -23,22 +23,27 @@ ids = [2037]
 [[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-776/index.md"
 label = "#quote #kindzadza Фильм был изначально запланирован как двухсери…"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-775/index.md"
 label = "#quote #kindzadza во время съёмок фильма к власти в СССР пришёл…"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-12-15-801/index.md"
 label = "#kindzadza #suicide #oxygen Планета Хануд. Здесь теперь всегда н…"
+date = "2025-12-15"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-777/index.md"
 label = "#film #kindzadza #batumi Соедините меня с Батуми"
+date = "2025-11-13"
 +++
 
 {{ tag(t="kin_dza_dza") }}  

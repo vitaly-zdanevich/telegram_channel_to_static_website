@@ -11,7 +11,7 @@ tags = ["gemini", "logo", "telegram_bot", "wikimedia_commons"]
 id = 1865
 day = "2026-06-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1865"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1865-5325634038749928666.jpg"
 next_id = 1867
 next_title = ""
 next_body = "#movie\n#blackandwhite\n#faust\n#year1926\nВ этом году фильм «Фауст», знаменитый шедевр немецкого экспрессионизма, отмечает свое 100-летие. Основанный на легенде о Фаусте и драме Иоганна Вольфганга фон Гёте, это был один из самых амбициозных фильмов эпохи Веймарской республики. Созданный компанией UFA (режиссер Ф. В. Мурнау) за примерно 2 миллиона марок и снятый в течение шести месяцев, это был один из самых дорогих и технически сложных немецких фильмов своего времени, новаторский в плане визуальных эффектов, которые остаются впечатляющими и спустя столетие.\nSource"
@@ -24,22 +24,27 @@ ids = [1865, 1866]
 [[extra.related]]
 path = "@/posts/2025-12-17-802/index.md"
 label = "Love this #logo"
+date = "2025-12-17"
 
 [[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
+date = "2026-07-28"
 
 [[extra.related]]
 path = "@/posts/2026-06-12-1819/index.md"
 label = "My another #userstyle: for #gemini, before and after"
+date = "2026-06-12"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1779/index.md"
 label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 +++
 
 **Wow, Gemini generates good logos, tried it for the first time**  
@@ -49,6 +54,6 @@ label = "#wikipedia #wikimediacommons Пишите авторам контент
 {{ tag(t="telegram_bot") }}  
 {{ tag(t="wikimedia_commons") }}
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1865-5325634038749928666.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1866-5325634038749928667.jpg") }}

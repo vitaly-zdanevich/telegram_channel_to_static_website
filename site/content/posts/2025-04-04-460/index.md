@@ -24,22 +24,27 @@ ids = [460]
 [[extra.related]]
 path = "@/posts/2026-01-09-870/index.md"
 label = "#games #gamazine #igromania"
+date = "2026-01-09"
 
 [[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-712/index.md"
 label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-711/index.md"
 label = "#games #steam"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2025-08-09-623/index.md"
 label = "#games #steam Can you imagine that, I know this guy"
+date = "2025-08-09"
 +++
 
 {{ tag(t="games") }}  
@@ -50,5 +55,3 @@ label = "#games #steam Can you imagine that, I know this guy"
 [Source](https://vk.com/feed?z=photo-160168013_457515889%2F7054f886579f71b39a)
 
 {{ img(src="5440653838458679407_1266750935_456257647.jpg") }}
-
-👎 1

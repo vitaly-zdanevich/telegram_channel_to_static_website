@@ -23,22 +23,27 @@ ids = [1800]
 [[extra.related]]
 path = "@/posts/2026-01-22-931/index.md"
 label = "I am on #gentoo because it compiles for my CPU -march=native and…"
+date = "2026-01-22"
 
 [[extra.related]]
 path = "@/posts/2025-05-27-542/index.md"
 label = "#git"
+date = "2025-05-27"
 
 [[extra.related]]
 path = "@/posts/2026-01-13-876/index.md"
 label = "#macOS: to install #git I need 25 GB"
+date = "2026-01-13"
 
 [[extra.related]]
 path = "@/posts/2025-06-27-591/index.md"
 label = "#git #gitgraph"
+date = "2025-06-27"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-529/index.md"
 label = "I avoid mentioning that I run gentoo But when I have to, I try t…"
+date = "2025-05-14"
 +++
 
 {{ tag(t="remapped") }} unused button on my laptop to {{ tag(t="git") }} {{ tag(t="push") }}, {{ tag(t="i3") }} command:  

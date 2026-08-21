@@ -11,7 +11,7 @@ tags = ["coin"]
 id = 42
 day = "2024-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/42"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-42-5316864029060357579.jpg"
+og_image = "5316864029060357579_1237928874_456252875.jpg"
 next_id = 43
 next_title = ""
 next_body = "Another coin from Belarus Легенда пра пчалу #bee #coin"
@@ -24,20 +24,24 @@ ids = [42]
 [[extra.related]]
 path = "@/posts/2025-02-15-362/index.md"
 label = "#coin Its real coins, from Cook Islands"
+date = "2025-02-15"
 
 [[extra.related]]
 path = "@/posts/2025-02-15-361/index.md"
 label = "#coin"
+date = "2025-02-15"
 
 [[extra.related]]
 path = "@/posts/2024-05-07-43/index.md"
 label = "Another coin from Belarus Легенда пра пчалу #bee #coin"
+date = "2024-05-07"
 
 [[extra.related]]
 path = "@/posts/2025-09-22-681/index.md"
 label = "#coin #belarus #history Uploaded to"
+date = "2025-09-22"
 +++
 
 Coin 5 years of Lithuania independence, from [https://commons.wikimedia.org/wiki/File:Монета\_5\_лет\_Независимости\_50\_литов\_back.jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%B0_5_%D0%BB%D0%B5%D1%82_%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_50_%D0%BB%D0%B8%D1%82%D0%BE%D0%B2_back.jpg) {{ tag(t="coin") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-42-5316864029060357579.jpg") }}
+{{ img(src="5316864029060357579_1237928874_456252875.jpg") }}

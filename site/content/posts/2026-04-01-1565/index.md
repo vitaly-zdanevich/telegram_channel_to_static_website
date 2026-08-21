@@ -11,7 +11,7 @@ tags = ["alien", "screenshot", "horror", "giger", "gimp", "green", "rice"]
 id = 1565
 day = "2026-04-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1565"
-og_image = "5363921743753450846_1248885352_460002654.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1565-5363921743753450846.jpg"
 next_id = 1566
 next_title = ""
 next_body = "#equilibrium\nThat #movie is important to me, but surprise - 33/100 on #metacritic"
@@ -24,22 +24,27 @@ ids = [1565]
 [[extra.related]]
 path = "@/posts/2024-10-25-165/index.md"
 label = "#rice"
+date = "2024-10-25"
 
 [[extra.related]]
 path = "@/posts/2026-05-12-1755/index.md"
 label = "#ai #screenshot from"
+date = "2026-05-12"
 
 [[extra.related]]
 path = "@/posts/2026-06-16-1839/index.md"
 label = "#interior #refrigerator #green From"
+date = "2026-06-16"
 
 [[extra.related]]
 path = "@/posts/2026-05-13-1759/index.md"
 label = "Fix my #style for #mdn, #screenshot before and after Sad that UI…"
+date = "2026-05-13"
 
 [[extra.related]]
 path = "@/posts/2025-12-21-806/index.md"
 label = "#alien #poster #film #blackandwhite"
+date = "2025-12-21"
 +++
 
 {{ tag(t="alien") }}  
@@ -52,6 +57,6 @@ label = "#alien #poster #film #blackandwhite"
 
 [Source](https://udeproject.sourceforge.net/screenshots.html)
 
-{{ img(src="5363921743753450846_1248885352_460002654.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1565-5363921743753450846.jpg") }}
 
 👍 1

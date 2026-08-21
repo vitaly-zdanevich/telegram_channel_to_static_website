@@ -24,22 +24,27 @@ ids = [442, 443]
 [[extra.related]]
 path = "@/posts/2026-05-26-1787/index.md"
 label = "Payment -&gt; #crypto -&gt; Select your #wallet woodev.net"
+date = "2026-05-26"
 
 [[extra.related]]
 path = "@/posts/2026-03-17-1491/index.md"
 label = "#telegram added a feature request Add option to cache/prefetch a…"
+date = "2026-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-09-20-674/index.md"
 label = "#telegram with wide messages"
+date = "2025-09-20"
 
 [[extra.related]]
 path = "@/posts/2025-09-29-684/index.md"
 label = "#patch for #telegram for wide messages --- a/Telegram/SourceFile…"
+date = "2025-09-29"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-614/index.md"
 label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
+date = "2025-08-05"
 +++
 
 wow in {{ tag(t="telegram") }} we have a {{ tag(t="crypto") }} {{ tag(t="wallet") }}, and users can send money to their contacts, wow

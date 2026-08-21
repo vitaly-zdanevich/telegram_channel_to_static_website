@@ -24,22 +24,27 @@ ids = [757]
 [[extra.related]]
 path = "@/posts/2025-12-21-805/index.md"
 label = "#anime #logo #mascon #design"
+date = "2025-12-21"
 
 [[extra.related]]
 path = "@/posts/2025-12-17-802/index.md"
 label = "Love this #logo"
+date = "2025-12-17"
 
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-07-13-89/index.md"
 label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-34/index.md"
 label = "This website looks soooo special #design"
+date = "2024-04-27"
 +++
 
 {{ tag(t="design") }}  

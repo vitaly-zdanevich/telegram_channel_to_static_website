@@ -11,7 +11,7 @@ tags = ["belarus", "корма", "photo", "abandone", "year_2005", "globustut"]
 id = 1914
 day = "2026-07-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1914"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1914-5352852041073629783.jpg"
 next_id = 1922
 next_title = ""
 next_body = "#belarus\n#шерстин\n#photo\n#village\n#year2005\n#globustut\nSource"
@@ -24,22 +24,27 @@ ids = [1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921]
 [[extra.related]]
 path = "@/posts/2026-07-06-1970/index.md"
 label = "#belarus #photo #abandone #year2005 #globustut"
+date = "2026-07-06"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1882/index.md"
 label = "#belarus #photo #abandone #year2005 #globustut"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2026-07-06-1988/index.md"
 label = "#belarus #юровичи #photo #abandone #year2005 #globustut"
+date = "2026-07-06"
 
 [[extra.related]]
 path = "@/posts/2026-07-06-1980/index.md"
 label = "#belarus #борисовщина #photo #abandone #year2005 #globustut"
+date = "2026-07-06"
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1891/index.md"
 label = "#belarus #пески #photo #abandone #year2005 #globustut Source,%D0…"
+date = "2026-07-04"
 +++
 
 {{ tag(t="belarus") }}  
@@ -51,18 +56,18 @@ label = "#belarus #пески #photo #abandone #year2005 #globustut Source,%D0�
 
 [Source](https://commons.wikimedia.org/wiki/File:062-0218_%D0%9A%D0%BE%D1%80%D0%BC%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_6_%D0%B8%D1%8E%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1914-5352852041073629783.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1915-5352852041073629784.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1916-5352852041073629785.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1917-5352852041073629786.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1918-5352852041073629788.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1919-5352852041073629787.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1920-5352852041073629790.jpg") }}
 
-{{ img(src="08.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1921-5352852041073629789.jpg") }}

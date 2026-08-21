@@ -24,22 +24,27 @@ ids = [576]
 [[extra.related]]
 path = "@/posts/2026-04-25-1686/index.md"
 label = "#photo #batumi #dog"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1848/index.md"
 label = "#batumi Oh my, I live here From"
+date = "2026-06-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-534/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-533/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 +++
 
 {{ tag(t="photo") }}  

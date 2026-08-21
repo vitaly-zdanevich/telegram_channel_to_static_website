@@ -23,10 +23,12 @@ ids = [445]
 [[extra.related]]
 path = "@/posts/2025-12-26-815/index.md"
 label = "#starwars #village #татуиново"
+date = "2025-12-26"
 
 [[extra.related]]
 path = "@/posts/2025-03-20-439/index.md"
 label = "#korea #ai #aivideo #starwars #demonflyingfox"
+date = "2025-03-20"
 +++
 
 {{ tag(t="elon_musk") }}  

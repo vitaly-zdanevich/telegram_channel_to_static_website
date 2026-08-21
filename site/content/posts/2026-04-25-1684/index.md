@@ -23,22 +23,27 @@ ids = [1684]
 [[extra.related]]
 path = "@/posts/2026-04-25-1685/index.md"
 label = "#quote #book #ночьвлиссабоне #ремарк"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-08-16-627/index.md"
 label = "Она окончила Ленинградский университет по специальности искусств…"
+date = "2025-08-16"
 
 [[extra.related]]
 path = "@/posts/2026-05-17-1776/index.md"
 label = "#llm #quote"
+date = "2026-05-17"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-776/index.md"
 label = "#quote #kindzadza Фильм был изначально запланирован как двухсери…"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-775/index.md"
 label = "#quote #kindzadza во время съёмок фильма к власти в СССР пришёл…"
+date = "2025-11-13"
 +++
 
 {{ tag(t="quote") }}  

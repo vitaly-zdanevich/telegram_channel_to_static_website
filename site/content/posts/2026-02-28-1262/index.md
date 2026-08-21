@@ -24,22 +24,27 @@ ids = [1262]
 [[extra.related]]
 path = "@/posts/2026-03-01-1271/index.md"
 label = "#stones #monument #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1236/index.md"
 label = "#grave #stones #belarus #globustut #year2005"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1181/index.md"
 label = "#belfry #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1158/index.md"
 label = "#church #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1149/index.md"
 label = "#obelisk #belarus #globustut"
+date = "2026-02-25"
 +++
 
 {{ tag(t="abandon") }}  

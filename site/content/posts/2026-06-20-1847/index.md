@@ -17,28 +17,33 @@ next_body = "#batumi\nOh my, I live here\nFrom"
 prev_id = 1846
 prev_title = ""
 prev_body = "#webdesign\n#animation\n#videoeditor\n#cinelerra"
-views = 15
+views = 16
 ids = [1847]
 
 [[extra.related]]
 path = "@/posts/2025-06-01-545/index.md"
 label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
+date = "2025-06-01"
 
 [[extra.related]]
 path = "@/posts/2025-11-26-793/index.md"
 label = "#ad #game #tank #wwii #music #warpath"
+date = "2025-11-26"
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
+date = "2025-01-25"
 +++
 
 {{ tag(t="game") }}  

@@ -23,22 +23,27 @@ ids = [503]
 [[extra.related]]
 path = "@/posts/2025-07-24-609/index.md"
 label = "#girl #relationship #ai Source You generated pictures and videos…"
+date = "2025-07-24"
 
 [[extra.related]]
 path = "@/posts/2025-05-07-502/index.md"
 label = "#psy #lasers #girl"
+date = "2025-05-07"
 
 [[extra.related]]
 path = "@/posts/2025-03-11-404/index.md"
 label = "#video #ad #japan #ai #girl #virtual"
+date = "2025-03-11"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
+date = "2026-01-24"
 +++
 
 {{ tag(t="ai") }}  
@@ -47,7 +52,5 @@ label = "#ai From"
 {{ tag(t="psy") }}
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/503-01.mp4") }}
-
-🤮 1
 
 {{ tag(t="video") }}

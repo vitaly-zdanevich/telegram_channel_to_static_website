@@ -24,6 +24,4 @@ ids = [149, 150]
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/149-01.mp4") }}
 
-🔥 2
-
 {{ tag(t="video") }}

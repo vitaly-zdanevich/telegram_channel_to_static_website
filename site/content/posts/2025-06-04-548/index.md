@@ -24,22 +24,27 @@ ids = [548]
 [[extra.related]]
 path = "@/posts/2026-01-25-938/index.md"
 label = "Top 1% by #python, hm, not sure why"
+date = "2026-01-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-16-1114/index.md"
 label = "#python Same #dot - different meaning for f in os.listdir'.' if…"
+date = "2026-02-16"
 
 [[extra.related]]
 path = "@/posts/2026-01-12-872/index.md"
 label = "Wow #wikipedia semi-automatic editing by a #python script"
+date = "2026-01-12"
 
 [[extra.related]]
 path = "@/posts/2025-06-04-549/index.md"
 label = "Another #userstyle: for #openstreetmap, only a few CSS lines"
+date = "2025-06-04"
 
 [[extra.related]]
 path = "@/posts/2026-01-16-887/index.md"
 label = "#commons: #count uploads from a specific user for a period of ti…"
+date = "2026-01-16"
 +++
 
 New small project: {{ tag(t="python") }} script for {{ tag(t="gthumb") }} (or other software, even standalone CLI) that read EXIF GPS and open {{ tag(t="openstreetmap") }}  

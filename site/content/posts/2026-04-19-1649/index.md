@@ -24,22 +24,27 @@ ids = [1649, 1650, 1651, 1652, 1653]
 [[extra.related]]
 path = "@/posts/2026-04-20-1656/index.md"
 label = "#typography #preservation #russianempire #century19"
+date = "2026-04-20"
 
 [[extra.related]]
 path = "@/posts/2026-07-20-2061/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-07-20"
 
 [[extra.related]]
 path = "@/posts/2026-04-30-1721/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-04-30"
 
 [[extra.related]]
 path = "@/posts/2026-04-29-1709/index.md"
 label = "#typography #scan #preservation #russianempire #century19 Source…"
+date = "2026-04-29"
 
 [[extra.related]]
 path = "@/posts/2026-04-28-1703/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-04-28"
 +++
 
 {{ tag(t="typography") }}  
@@ -51,10 +56,10 @@ label = "#typography #scan #preservation #russianempire #century19"
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1649-5417910358837498721.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1650-5417910358837498722.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1651-5417910358837498724.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1652-5417910358837498723.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1653-5417910358837498725.jpg") }}

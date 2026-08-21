@@ -24,6 +24,7 @@ ids = [695]
 [[extra.related]]
 path = "@/posts/2026-02-01-1071/index.md"
 label = "#journal #gameexe #legs #year2005"
+date = "2026-02-01"
 +++
 
 {{ tag(t="journal") }}  
@@ -33,5 +34,3 @@ After traveling through multiple countries, I feel that I prefer video games, bo
 Some people love to travel so much...
 
 {{ img(src="5404768918549166216_1258395826_456259720.jpg") }}
-
-💔 1

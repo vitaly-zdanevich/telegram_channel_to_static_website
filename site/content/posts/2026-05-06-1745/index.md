@@ -24,22 +24,27 @@ ids = [1745]
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1849/index.md"
 label = "#llm #codex #regex"
+date = "2026-06-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1120/index.md"
 label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+date = "2026-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-21-1784/index.md"
 label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
+date = "2026-05-21"
 
 [[extra.related]]
 path = "@/posts/2026-04-30-1729/index.md"
 label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
+date = "2026-04-30"
 +++
 
 My another hobby project, made with {{ tag(t="llm") }} / {{ tag(t="codex") }}: converter of {{ tag(t="wikipedia") }} dumps into {{ tag(t="man") }} / {{ tag(t="roff") }} format, on {{ tag(t="rust") }} (because I love performance): for a {{ tag(t="terminal") }}, {{ tag(t="offline") }} reading. {{ tag(t="love") }} it, still fixing many markup cases, but mostly its readable already <https://gitlab.com/vitaly-zdanevich/wiki2man_on_rust>  

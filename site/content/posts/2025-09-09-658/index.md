@@ -52,4 +52,4 @@ ids = [658, 659, 660, 661, 662, 663, 664]
 
 {{ img(src="06.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-664-5332699066674575066.jpg") }}
+{{ img(src="07.jpg") }}

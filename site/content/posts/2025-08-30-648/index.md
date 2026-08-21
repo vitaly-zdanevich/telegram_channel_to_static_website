@@ -17,28 +17,33 @@ next_body = "Do you remember such #webdesign?\n#login\n#gamespot\nSource"
 prev_id = 647
 prev_title = ""
 prev_body = "#film\n#music\n#russia\n#korolishut\ns1e5, scene about a new girl Olga"
-views = 43
+views = 44
 ids = [648]
 
 [[extra.related]]
 path = "@/posts/2025-11-04-734/index.md"
 label = "#my #video #game #strategy #homm3 #hota #onebadday Heroes of Mig…"
+date = "2025-11-04"
 
 [[extra.related]]
 path = "@/posts/2025-08-29-642/index.md"
 label = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя…"
+date = "2025-08-29"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-329/index.md"
 label = "#homm3"
+date = "2025-01-25"
 
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
+date = "2026-02-03"
 +++
 
 **Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы**  

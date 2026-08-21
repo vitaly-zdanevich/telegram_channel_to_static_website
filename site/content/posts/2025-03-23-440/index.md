@@ -23,22 +23,27 @@ ids = [440]
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
+date = "2025-01-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-24-198/index.md"
 label = "#music"
+date = "2024-11-24"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2133/index.md"
 label = "#car #death"
+date = "2026-08-09"
 +++
 
 {{ tag(t="music") }}  

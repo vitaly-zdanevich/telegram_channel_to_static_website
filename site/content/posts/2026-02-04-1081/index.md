@@ -11,7 +11,7 @@ tags = ["preservation", "belarus"]
 id = 1081
 day = "2026-02-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1081"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1081-5195454305857638732.jpg"
+og_image = "5195454305857638732_1209660970_460001612.jpg"
 next_id = 1082
 next_title = ""
 next_body = "#people\n#fashion\n#zara"
@@ -24,22 +24,27 @@ ids = [1081]
 [[extra.related]]
 path = "@/posts/2025-07-04-595/index.md"
 label = "#preservation #belarus #library #science Для меня было открытием…"
+date = "2025-07-04"
 
 [[extra.related]]
 path = "@/posts/2024-12-11-215/index.md"
 label = "#belarus"
+date = "2024-12-11"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-857/index.md"
 label = "#belarus #minsk 1941-1944"
+date = "2026-01-08"
 
 [[extra.related]]
 path = "@/posts/2026-07-28-2083/index.md"
 label = "#abandoned #veterinary #belarus"
+date = "2026-07-28"
 
 [[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
+date = "2026-04-02"
 +++
 
 {{ tag(t="preservation") }}  
@@ -49,4 +54,4 @@ geo block
 
 I uploaded a lot from [https://moneymuseum.by](https://moneymuseum.by/) to Commons, and will continue.
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1081-5195454305857638732.jpg") }}
+{{ img(src="5195454305857638732_1209660970_460001612.jpg") }}

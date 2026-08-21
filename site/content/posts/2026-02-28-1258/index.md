@@ -24,22 +24,27 @@ ids = [1258]
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"
 label = "#monument #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1240/index.md"
 label = "#cross #belarus #globustut #year2005"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1271/index.md"
 label = "#stones #monument #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1531/index.md"
 label = "#wood #cross #virginmary #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1260/index.md"
 label = "#monument #bird #eagle #belarus #globustut #year2005"
+date = "2026-02-28"
 +++
 
 {{ tag(t="cross") }}  

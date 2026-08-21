@@ -5,12 +5,13 @@ description = "film kindzadza batumi Кин-дза-дза, на девятой �
 
 [taxonomies]
 days = ["2025-11-13"]
-tags = ["film", "kin_dza_dza", "batumi", "video"]
+tags = ["film", "kin_dza_dza", "batumi"]
 
 [extra]
 id = 774
 day = "2025-11-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/774"
+og_image = "01.jpg"
 next_id = 775
 next_title = ""
 next_body = "#quote\n#kindzadza\nво время съёмок фильма к власти в СССР пришёл К. У. Черненко и, чтобы фильм не запретили, Данелия и Габриадзе решили переозвучить слово «Ку», которое совпадало с инициалами генерального секретаря ЦК КПСС, на какое-нибудь другое слово. Выдвигались варианты «Ка», «Ко», «Кы» и др., однако вскоре Черненко скончался и слово «Ку» в фильме осталось"
@@ -23,22 +24,27 @@ ids = [774]
 [[extra.related]]
 path = "@/posts/2025-11-13-777/index.md"
 label = "#film #kindzadza #batumi Соедините меня с Батуми"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1848/index.md"
 label = "#batumi Oh my, I live here From"
+date = "2026-06-21"
 
 [[extra.related]]
 path = "@/posts/2024-02-26-32/index.md"
 label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2037/index.md"
 label = "#kindzadza #trailer"
+date = "2026-07-08"
 +++
 
 {{ tag(t="film") }}  
@@ -49,6 +55,6 @@ label = "#kindzadza #trailer"
 
 [https://ru.wikipedia.org/wiki/Кин-дза-дза](https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD-%D0%B4%D0%B7%D0%B0-%D0%B4%D0%B7%D0%B0)!
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/774-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 1:05*

@@ -23,22 +23,27 @@ ids = [254]
 [[extra.related]]
 path = "@/posts/2025-01-17-255/index.md"
 label = "#my #movie #korolishut"
+date = "2025-01-17"
 
 [[extra.related]]
 path = "@/posts/2023-07-16-27/index.md"
 label = "#my #film #korolishut"
+date = "2023-07-16"
 
 [[extra.related]]
 path = "@/posts/2025-06-16-575/index.md"
 label = "#my #film #korolishut #alcohol s1e6"
+date = "2025-06-16"
 
 [[extra.related]]
 path = "@/posts/2025-06-16-574/index.md"
 label = "#korolishut"
+date = "2025-06-16"
 
 [[extra.related]]
 path = "@/posts/2025-01-17-252/index.md"
 label = "#movie #anime"
+date = "2025-01-17"
 +++
 
 {{ tag(t="my") }}  
@@ -48,7 +53,5 @@ label = "#movie #anime"
 <https://coub.com/view/3c3pc6>
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/254-01.mp4") }}
-
-🙏 1
 
 {{ tag(t="video") }}

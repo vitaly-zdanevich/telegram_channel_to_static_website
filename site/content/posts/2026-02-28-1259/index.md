@@ -24,22 +24,27 @@ ids = [1259]
 [[extra.related]]
 path = "@/posts/2026-03-08-1384/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1280/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1285/index.md"
 label = "#village #house #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1922/index.md"
 label = "#belarus #шерстин #photo #village #year2005 #globustut"
+date = "2026-07-04"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1292/index.md"
 label = "#church #horse #woodencart #belarus #globustut #year2005"
+date = "2026-03-02"
 +++
 
 {{ tag(t="wooden_cart") }}  

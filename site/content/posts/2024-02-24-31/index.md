@@ -5,12 +5,13 @@ description = "film scifi Love, Death & Robots: ending from s1ep7 Beyond the Aqu
 
 [taxonomies]
 days = ["2024-02-24"]
-tags = ["film", "scifi", "video"]
+tags = ["film", "scifi"]
 
 [extra]
 id = 31
 day = "2024-02-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/31"
+og_image = "01.jpg"
 next_id = 32
 next_title = ""
 next_body = "#film\nLove, Sex & Robots S1.E3: The Witness"
@@ -23,22 +24,27 @@ ids = [31]
 [[extra.related]]
 path = "@/posts/2025-10-03-696/index.md"
 label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+date = "2025-10-03"
 
 [[extra.related]]
 path = "@/posts/2025-01-17-253/index.md"
 label = "#film #scifi #space"
+date = "2025-01-17"
 
 [[extra.related]]
 path = "@/posts/2024-02-26-32/index.md"
 label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2024-06-11-53/index.md"
 label = "#film #nightwatch Night Watch, love it"
+date = "2024-06-11"
 +++
 
 {{ tag(t="film") }}  
@@ -46,6 +52,6 @@ label = "#film #nightwatch Night Watch, love it"
 
 Love, Death & Robots: ending from [s1ep7 Beyond the Aquila Rift](https://vk.com/away.php?utf=1&amp;to=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt9788496%2F%3Fref_%3Dttep_ep7)
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/31-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 3:54*

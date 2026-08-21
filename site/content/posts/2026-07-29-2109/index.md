@@ -23,6 +23,7 @@ ids = [2109]
 [[extra.related]]
 path = "@/posts/2026-07-29-2107/index.md"
 label = "#trans #ladyboy #thailand By krav1.1"
+date = "2026-07-29"
 +++
 
 {{ tag(t="thailand") }}  

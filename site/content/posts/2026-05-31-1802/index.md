@@ -23,22 +23,27 @@ ids = [1802]
 [[extra.related]]
 path = "@/posts/2025-02-21-375/index.md"
 label = "#game #armiesofexigo"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2025-11-20-786/index.md"
 label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
+date = "2025-11-20"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1856/index.md"
 label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+date = "2026-06-24"
 +++
 
 With {{ tag(t="llm") }} I added 1920x1200 to {{ tag(t="armies_of_exigo") }} {{ tag(t="game") }}  

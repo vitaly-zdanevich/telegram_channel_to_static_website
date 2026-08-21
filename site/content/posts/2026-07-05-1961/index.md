@@ -11,7 +11,7 @@ tags = ["belarus", "nature", "green", "trees", "lake", "photo", "year_2005", "gl
 id = 1961
 day = "2026-07-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1961"
-og_image = "5355134640097794726_1246839445_460004006.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1961-5355134640097794726.jpg"
 next_id = 1962
 next_title = ""
 next_body = "#belarus\n#photo\n#church\n#women\n#year2005\n#globustut\nSource"
@@ -24,22 +24,27 @@ ids = [1961]
 [[extra.related]]
 path = "@/posts/2026-07-06-1970/index.md"
 label = "#belarus #photo #abandone #year2005 #globustut"
+date = "2026-07-06"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1882/index.md"
 label = "#belarus #photo #abandone #year2005 #globustut"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2026-01-20-913/index.md"
 label = "#belarus #nature #river #green #year2005"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2026-07-06-2020/index.md"
 label = "#belarus #александровщина #photo #flowers #year2005 #globustut"
+date = "2026-07-06"
 
 [[extra.related]]
 path = "@/posts/2026-07-06-1988/index.md"
 label = "#belarus #юровичи #photo #abandone #year2005 #globustut"
+date = "2026-07-06"
 +++
 
 {{ tag(t="belarus") }}  
@@ -53,4 +58,4 @@ label = "#belarus #юровичи #photo #abandone #year2005 #globustut"
 
 [Source](https://commons.wikimedia.org/wiki/File:062-1025_%D0%93%D1%80%D0%B0%D0%B1%D0%BE%D0%B2%D0%BA%D0%B0,_%D0%B2%D0%BE%D0%B4%D0%BE%D0%B5%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%B8%D1%8E%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="5355134640097794726_1246839445_460004006.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1961-5355134640097794726.jpg") }}

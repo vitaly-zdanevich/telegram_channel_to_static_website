@@ -23,22 +23,27 @@ ids = [2093]
 [[extra.related]]
 path = "@/posts/2026-07-08-2034/index.md"
 label = "#mem #claude #llm"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2095/index.md"
 label = "#claude #webdesign By w.wearebrand"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1853/index.md"
 label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-05-1805/index.md"
 label = "My yet another project: @wikipediaunofficialbot Built with #llm…"
+date = "2026-06-05"
 +++
 
 {{ tag(t="bond") }}  

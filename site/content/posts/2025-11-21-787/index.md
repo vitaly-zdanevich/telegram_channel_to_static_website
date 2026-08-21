@@ -23,22 +23,27 @@ ids = [787]
 [[extra.related]]
 path = "@/posts/2024-11-25-199/index.md"
 label = "The stand-alone expansion Homeworld: Cataclysm was not announced…"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-15-1113/index.md"
 label = "#preservation #nival #game #silentstorm Thanks Sergey."
+date = "2026-02-15"
 
 [[extra.related]]
 path = "@/posts/2025-11-24-791/index.md"
 label = "#game #strategy #rtt #groundcontrol"
+date = "2025-11-24"
 
 [[extra.related]]
 path = "@/posts/2026-01-04-840/index.md"
 label = "#game #gta #remaster #preservation #lost Rosado claimed \"the art…"
+date = "2026-01-04"
 
 [[extra.related]]
 path = "@/posts/2025-11-24-792/index.md"
 label = "#game #strategy #rtt #groundcontrol The #bishop defector death -…"
+date = "2025-11-24"
 +++
 
 {{ tag(t="preservation") }}  

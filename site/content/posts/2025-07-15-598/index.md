@@ -16,7 +16,7 @@ next_body = "#ventoy is a dream - cp ISOs to USB and choose any to boot.\nAnd it
 prev_id = 597
 prev_title = ""
 prev_body = "#music\n#anime\n#susumuhirasawa"
-views = 47
+views = 48
 ids = [598]
 +++
 

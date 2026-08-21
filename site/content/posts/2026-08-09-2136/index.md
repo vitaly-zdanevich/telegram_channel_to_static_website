@@ -23,22 +23,27 @@ ids = [2136]
 [[extra.related]]
 path = "@/posts/2026-08-09-2133/index.md"
 label = "#car #death"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2025-10-22-716/index.md"
 label = "#medicine #death"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2025-02-08-350/index.md"
 label = "#car #ussr"
+date = "2025-02-08"
 +++
 
 {{ tag(t="death") }}  

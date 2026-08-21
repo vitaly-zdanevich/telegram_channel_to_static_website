@@ -24,6 +24,7 @@ ids = [1371]
 [[extra.related]]
 path = "@/posts/2025-02-12-358/index.md"
 label = "#ui #button #css Fuck minimalism"
+date = "2025-02-12"
 +++
 
 {{ tag(t="button") }}  

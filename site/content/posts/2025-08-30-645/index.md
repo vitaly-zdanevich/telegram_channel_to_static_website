@@ -18,28 +18,33 @@ next_body = "#film\n#music\n#russia\n#korolishut\ns1e5, start of the episode - l
 prev_id = 644
 prev_title = ""
 prev_body = "#stat\n#wikipedia\n#ai\nWikipedia's traffic has fallen by 23% in three years\nSource"
-views = 35
+views = 36
 ids = [645]
 
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-25-201/index.md"
 label = "#wikipedia"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-14-1112/index.md"
 label = "Editing #wikipedia, in #vim"
+date = "2026-02-14"
 +++
 
 Someones contributions to {{ tag(t="wikipedia") }}  

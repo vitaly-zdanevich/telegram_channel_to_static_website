@@ -23,22 +23,27 @@ ids = [253]
 [[extra.related]]
 path = "@/posts/2025-10-03-696/index.md"
 label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+date = "2025-10-03"
 
 [[extra.related]]
 path = "@/posts/2024-02-24-31/index.md"
 label = "#film #scifi Love, Death & Robots: ending from s1ep7 Beyond the…"
+date = "2024-02-24"
 
 [[extra.related]]
 path = "@/posts/2025-05-06-500/index.md"
 label = "#film #jupiter #space"
+date = "2025-05-06"
 
 [[extra.related]]
 path = "@/posts/2024-11-20-196/index.md"
 label = "#space #film #extract Lost in Space from 1998, movie ending, lov…"
+date = "2024-11-20"
 
 [[extra.related]]
 path = "@/posts/2024-02-26-32/index.md"
 label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
 +++
 
 {{ tag(t="film") }}  

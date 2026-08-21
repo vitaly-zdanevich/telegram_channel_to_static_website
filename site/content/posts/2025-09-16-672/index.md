@@ -23,22 +23,27 @@ ids = [672]
 [[extra.related]]
 path = "@/posts/2025-10-22-715/index.md"
 label = "#car #russia #tax"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-654/index.md"
 label = "#russia #israel #map"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2097/index.md"
 label = "#health #sugar #cola #mellstroy By dashka.lawki"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2025-11-12-770/index.md"
 label = "#games #segagenesis #neogeo #year1991"
+date = "2025-11-12"
 
 [[extra.related]]
 path = "@/posts/2025-10-20-708/index.md"
 label = "#concert #rammstein #year2019 #russia Not my photo."
+date = "2025-10-20"
 +++
 
 {{ tag(t="russia") }}  

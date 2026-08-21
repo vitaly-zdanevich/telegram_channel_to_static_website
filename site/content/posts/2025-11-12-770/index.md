@@ -24,22 +24,27 @@ ids = [770]
 [[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-712/index.md"
 label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-711/index.md"
 label = "#games #steam"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2025-08-09-623/index.md"
 label = "#games #steam Can you imagine that, I know this guy"
+date = "2025-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-06-26-587/index.md"
 label = "In 2024 to #steam were published 19000 #games, its 52 games per…"
+date = "2025-06-26"
 +++
 
 {{ tag(t="games") }}  

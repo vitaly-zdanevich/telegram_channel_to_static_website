@@ -24,22 +24,27 @@ ids = [201]
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-14-1112/index.md"
 label = "Editing #wikipedia, in #vim"
+date = "2026-02-14"
 
 [[extra.related]]
 path = "@/posts/2026-02-11-1106/index.md"
 label = "#wikipedia #job"
+date = "2026-02-11"
 +++
 
 {{ tag(t="wikipedia") }}  
@@ -47,5 +52,3 @@ label = "#wikipedia #job"
 <https://commons.wikimedia.org/wiki/Category:Magna_Carta_(An_Embroidery)>
 
 {{ img(src="5343870641683687785_1244216841_456255849.jpg") }}
-
-👍 1

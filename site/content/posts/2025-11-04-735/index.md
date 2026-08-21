@@ -24,22 +24,27 @@ ids = [735]
 [[extra.related]]
 path = "@/posts/2025-10-25-720/index.md"
 label = "Downloaded by #wget a dying website indiegamewebsite.com The com…"
+date = "2025-10-25"
 
 [[extra.related]]
 path = "@/posts/2025-09-30-690/index.md"
 label = "#archivation"
+date = "2025-09-30"
 
 [[extra.related]]
 path = "@/posts/2025-10-19-707/index.md"
 label = "#archivation #games Trying to #zim it"
+date = "2025-10-19"
 
 [[extra.related]]
 path = "@/posts/2025-08-16-627/index.md"
 label = "Она окончила Ленинградский университет по специальности искусств…"
+date = "2025-08-16"
 
 [[extra.related]]
 path = "@/posts/2025-10-11-704/index.md"
 label = "#culture #archivation #future #green #research"
+date = "2025-10-11"
 +++
 
 If WebArchive have it - it still not in Google - you cannot search the website. But you can try to download the website and host it for free on Gitlab/Github.  

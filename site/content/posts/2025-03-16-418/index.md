@@ -17,20 +17,23 @@ next_body = "#music\n#cats\n#ai\nSource"
 prev_id = 417
 prev_title = ""
 prev_body = "#music\n#cartoon\nThe animated film Ships of Years Past turns 10 years old 🏴‍☠️\nShips of Years Past is award-winning puppet animation by Yura Boguslavsksky, co-founder of Invisible friends, with original soundtrack by Jason Webley.\nSource"
-views = 68
+views = 69
 ids = [418]
 
 [[extra.related]]
 path = "@/posts/2025-03-16-428/index.md"
 label = "#robot #ai"
+date = "2025-03-16"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-415/index.md"
 label = "#cat #robot #lasers"
+date = "2025-03-16"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-515/index.md"
 label = "#film #robot #slut #mem"
+date = "2025-05-11"
 +++
 
 {{ tag(t="hookah") }}  
@@ -39,7 +42,5 @@ label = "#film #robot #slut #mem"
 [Source](https://www.instagram.com/p/DGYOS_JM-eZ)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/418-01.mp4") }}
-
-😁 1
 
 {{ tag(t="video") }}

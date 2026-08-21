@@ -23,14 +23,17 @@ ids = [2103]
 [[extra.related]]
 path = "@/posts/2025-04-28-487/index.md"
 label = "#trump #batumi"
+date = "2025-04-28"
 
 [[extra.related]]
 path = "@/posts/2025-02-09-353/index.md"
 label = "#trump #batumi"
+date = "2025-02-09"
 
 [[extra.related]]
 path = "@/posts/2025-10-29-730/index.md"
 label = "#sakartvelo #batumi #misha #trump"
+date = "2025-10-29"
 +++
 
 {{ tag(t="trump") }}  

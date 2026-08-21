@@ -23,22 +23,27 @@ ids = [1835]
 [[extra.related]]
 path = "@/posts/2026-06-15-1838/index.md"
 label = "#xbox #xbox360 #gameconsole #custom #glass From"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2026-06-16-1839/index.md"
 label = "#interior #refrigerator #green From"
+date = "2026-06-16"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1829/index.md"
 label = "#tech #psp #finalfantasy"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2025-11-19-782/index.md"
 label = "#ad #retro #nokia"
+date = "2025-11-19"
 
 [[extra.related]]
 path = "@/posts/2025-11-12-771/index.md"
 label = "#webdesign #webdesignold #xbox Wikidata"
+date = "2025-11-12"
 +++
 
 {{ tag(t="xbox") }}  

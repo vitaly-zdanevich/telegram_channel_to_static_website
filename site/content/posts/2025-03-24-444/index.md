@@ -24,10 +24,12 @@ ids = [444]
 [[extra.related]]
 path = "@/posts/2025-06-08-554/index.md"
 label = "#security #wish"
+date = "2025-06-08"
 
 [[extra.related]]
 path = "@/posts/2026-04-15-1640/index.md"
 label = "#firefox #webextension: after #tab close - switch to the previou…"
+date = "2026-04-15"
 +++
 
 {{ tag(t="monetization") }}  

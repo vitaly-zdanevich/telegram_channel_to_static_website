@@ -24,22 +24,27 @@ ids = [522]
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-25-201/index.md"
 label = "#wikipedia"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-14-188/index.md"
 label = "Love such comments #code"
+date = "2024-11-14"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 +++
 
 Wikipedia templates  

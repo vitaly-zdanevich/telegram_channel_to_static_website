@@ -24,22 +24,27 @@ ids = [1203]
 [[extra.related]]
 path = "@/posts/2025-12-29-826/index.md"
 label = "#design #preservation #year1885"
+date = "2025-12-29"
 
 [[extra.related]]
 path = "@/posts/2026-04-14-1637/index.md"
 label = "#preservation #century19 #scan #hand"
+date = "2026-04-14"
 
 [[extra.related]]
 path = "@/posts/2026-07-20-2061/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-07-20"
 
 [[extra.related]]
 path = "@/posts/2026-04-30-1721/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-04-30"
 
 [[extra.related]]
 path = "@/posts/2026-04-29-1709/index.md"
 label = "#typography #scan #preservation #russianempire #century19 Source…"
+date = "2026-04-29"
 +++
 
 {{ tag(t="design") }}  

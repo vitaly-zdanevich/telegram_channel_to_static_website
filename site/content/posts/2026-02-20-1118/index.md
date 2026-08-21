@@ -23,22 +23,27 @@ ids = [1118]
 [[extra.related]]
 path = "@/posts/2026-04-30-1729/index.md"
 label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
+date = "2026-04-30"
 
 [[extra.related]]
 path = "@/posts/2026-05-13-1758/index.md"
 label = "Wow my #reeknote #evernote #cli can now play audio and show imag…"
+date = "2026-05-13"
 
 [[extra.related]]
 path = "@/posts/2025-12-27-819/index.md"
 label = "#preservation #wikimediacommons #pywikibot #my Created a new too…"
+date = "2025-12-27"
 
 [[extra.related]]
 path = "@/posts/2026-01-25-938/index.md"
 label = "Top 1% by #python, hm, not sure why"
+date = "2026-01-25"
 
 [[extra.related]]
 path = "@/posts/2025-05-06-499/index.md"
 label = "#evernote image editor: beautiful"
+date = "2025-05-06"
 +++
 
 {{ tag(t="python") }}  

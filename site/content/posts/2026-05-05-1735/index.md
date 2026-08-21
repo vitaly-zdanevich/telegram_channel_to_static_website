@@ -23,22 +23,27 @@ ids = [1735]
 [[extra.related]]
 path = "@/posts/2025-11-08-744/index.md"
 label = "#school in #sakartvelo #architecture #books"
+date = "2025-11-08"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-921/index.md"
 label = "#belarus #architecture #nature #village #year2005 #globustut"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2025-12-10-796/index.md"
 label = "#architecture Дом со щуками From"
+date = "2025-12-10"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-06-14-1826/index.md"
 label = "#bus #architecture"
+date = "2026-06-14"
 +++
 
 {{ tag(t="architecture") }} of {{ tag(t="village") }} houses in {{ tag(t="sakartvelo") }}  

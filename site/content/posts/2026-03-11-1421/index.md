@@ -23,10 +23,12 @@ ids = [1421]
 [[extra.related]]
 path = "@/posts/2025-09-02-655/index.md"
 label = "#chatgpt 5: Escape shell $ as $$ inside Makefile recipes #gemini…"
+date = "2025-09-02"
 
 [[extra.related]]
 path = "@/posts/2025-02-11-356/index.md"
 label = "#ai #chatgpt"
+date = "2025-02-11"
 +++
 
 {{ tag(t="chatgpt") }}  

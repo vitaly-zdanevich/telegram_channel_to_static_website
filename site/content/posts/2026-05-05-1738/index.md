@@ -23,22 +23,27 @@ ids = [1738]
 [[extra.related]]
 path = "@/posts/2026-05-05-1737/index.md"
 label = "#webdesign #bilibili"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2025-05-10-513/index.md"
 label = "#bilibili #anime #webdesign #stream #ui"
+date = "2025-05-10"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1765/index.md"
 label = "#bilibili verification with 100 questions - to be able to leave…"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 +++
 
 {{ tag(t="webdesign") }}  

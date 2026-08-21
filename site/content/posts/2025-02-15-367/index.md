@@ -11,6 +11,7 @@ tags = ["turkey", "istanbul", "video", "my"]
 id = 367
 day = "2025-02-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/367"
+og_image = "01.jpg"
 next_id = 368
 next_title = ""
 next_body = "#love\n#poop\n#johnnydepp\n#amberheard\nSource"
@@ -23,22 +24,27 @@ ids = [367]
 [[extra.related]]
 path = "@/posts/2025-05-22-538/index.md"
 label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+date = "2025-05-22"
 
 [[extra.related]]
 path = "@/posts/2025-11-04-734/index.md"
 label = "#my #video #game #strategy #homm3 #hota #onebadday Heroes of Mig…"
+date = "2025-11-04"
 
 [[extra.related]]
 path = "@/posts/2025-08-29-642/index.md"
 label = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя…"
+date = "2025-08-29"
 
 [[extra.related]]
 path = "@/posts/2025-09-30-686/index.md"
 label = "#fashion #istanbul"
+date = "2025-09-30"
 
 [[extra.related]]
 path = "@/posts/2026-08-06-2120/index.md"
 label = "#my another small project: #wikidata #pwa to get nearby items, w…"
+date = "2026-08-06"
 +++
 
 {{ tag(t="turkey") }}  
@@ -48,4 +54,6 @@ label = "#my another small project: #wikidata #pwa to get nearby items, w…"
 
 Animation on building by projectors, love it.
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/367-01.mp4") }}
+![video](01.jpg)
+
+*▶ video — 6:14*

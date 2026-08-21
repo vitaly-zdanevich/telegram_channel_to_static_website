@@ -24,10 +24,12 @@ ids = [814]
 [[extra.related]]
 path = "@/posts/2025-12-25-813/index.md"
 label = "#ui #windows #windowsxp"
+date = "2025-12-25"
 
 [[extra.related]]
 path = "@/posts/2025-10-28-727/index.md"
 label = "#os #design #windows #windowsxp"
+date = "2025-10-28"
 +++
 
 {{ tag(t="windows_xp") }}

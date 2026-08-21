@@ -24,22 +24,27 @@ ids = [1236, 1237, 1238, 1239]
 [[extra.related]]
 path = "@/posts/2026-03-01-1265/index.md"
 label = "#grave #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1298/index.md"
 label = "#stone #grave #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1284/index.md"
 label = "#grave #stone #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1271/index.md"
 label = "#stones #monument #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1223/index.md"
 label = "#grave #abandone #belarus #globustut #year2005"
+date = "2026-02-28"
 +++
 
 {{ tag(t="grave") }}  

@@ -24,22 +24,27 @@ ids = [595]
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 
 [[extra.related]]
 path = "@/posts/2025-12-30-828/index.md"
 label = "#preservation #library #books Page 68"
+date = "2025-12-30"
 
 [[extra.related]]
 path = "@/posts/2024-12-11-215/index.md"
 label = "#belarus"
+date = "2024-12-11"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-857/index.md"
 label = "#belarus #minsk 1941-1944"
+date = "2026-01-08"
 
 [[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
 label = "#health #science"
+date = "2025-05-08"
 +++
 
 {{ tag(t="preservation") }}  

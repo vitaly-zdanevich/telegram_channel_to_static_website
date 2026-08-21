@@ -23,22 +23,27 @@ ids = [2122]
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2024-11-30-206/index.md"
 label = "#mem #games"
+date = "2024-11-30"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2130/index.md"
 label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2129/index.md"
 label = "#mem #ai #kubrick"
+date = "2026-08-09"
 +++
 
 {{ tag(t="mem") }}  

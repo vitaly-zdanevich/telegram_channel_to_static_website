@@ -24,22 +24,27 @@ ids = [995, 996, 997, 998, 999]
 [[extra.related]]
 path = "@/posts/2026-01-30-1054/index.md"
 label = "#belarus #architecture #winter #year2005 #globustut From"
+date = "2026-01-30"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-986/index.md"
 label = "#belarus #architecture #winter #year2005 #globustut From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-30-1058/index.md"
 label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+date = "2026-01-30"
 
 [[extra.related]]
 path = "@/posts/2026-01-30-1014/index.md"
 label = "#belarus #architecture #winter #лепель #year2005 #globustut From"
+date = "2026-01-30"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-990/index.md"
 label = "#belarus #architecture #winter #адамполь #year2005 #globustut Fr…"
+date = "2026-01-29"
 +++
 
 {{ tag(t="belarus") }}  

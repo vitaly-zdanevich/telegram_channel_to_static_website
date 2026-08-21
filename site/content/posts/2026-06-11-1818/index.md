@@ -24,22 +24,27 @@ ids = [1818]
 [[extra.related]]
 path = "@/posts/2026-01-25-939/index.md"
 label = "#aws CTO Werner Vogels Mentioned: From"
+date = "2026-01-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-25-944/index.md"
 label = "#aws #awslambda From"
+date = "2026-01-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-03-1333/index.md"
 label = "#design #graph #wikimedia"
+date = "2026-03-03"
 
 [[extra.related]]
 path = "@/posts/2026-01-26-945/index.md"
 label = "#aws #silicon #graviton TRN3 compute sled From"
+date = "2026-01-26"
 
 [[extra.related]]
 path = "@/posts/2026-01-25-943/index.md"
 label = "#aws #cpu #memory #ram From"
+date = "2026-01-25"
 +++
 
 {{ tag(t="aws") }}  

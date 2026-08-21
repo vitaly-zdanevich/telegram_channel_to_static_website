@@ -17,28 +17,33 @@ next_body = "#ai\n#vacuumcleaner\nSource"
 prev_id = 376
 prev_title = ""
 prev_body = "Are you winning son? Happy Birthday\n#pain\n#death\n#loss\n#miss\nSource"
-views = 58
+views = 60
 ids = [377]
 
 [[extra.related]]
 path = "@/posts/2025-02-10-355/index.md"
 label = "#music #anime #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-416/index.md"
 label = "#music #germany #tax #rammstein"
+date = "2025-03-16"
 
 [[extra.related]]
 path = "@/posts/2025-02-10-354/index.md"
 label = "#music #anime #tatu #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 +++
 
 {{ tag(t="music") }}  

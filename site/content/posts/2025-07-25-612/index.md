@@ -5,36 +5,41 @@ description = "retro cd vhs Source"
 
 [taxonomies]
 days = ["2025-07-25"]
-tags = ["retro", "cd", "vhs", "video"]
+tags = ["retro", "cd", "vhs"]
 
 [extra]
 id = 612
 day = "2025-07-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/612"
+og_image = "01.jpg"
 next_id = 613
 next_title = ""
 next_body = "#arsenmarkaryan\n#hairs\nВ волосах первородная космическая сила. Лысых пророков, или коротко стриженных, не бывало.\nSource"
 prev_id = 611
 prev_title = ""
 prev_body = "#music\n#musicvideo\n#temakresta\n#travel\n#elephants\n#tinder\n#year2023\nЗолото рейна\nSource\")"
-views = 71
+views = 72
 ids = [612]
 
 [[extra.related]]
 path = "@/posts/2026-02-10-1103/index.md"
 label = "My new #bash alias: one function to go to the next folder like f…"
+date = "2026-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-19-782/index.md"
 label = "#ad #retro #nokia"
+date = "2025-11-19"
 
 [[extra.related]]
 path = "@/posts/2026-04-25-1682/index.md"
 label = "My new great #bash #alias actually a #hotkey for faster #cd # Li…"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1835/index.md"
 label = "#xbox #gameconsole #tech #retro #green From"
+date = "2026-06-15"
 +++
 
 {{ tag(t="retro") }}  
@@ -43,6 +48,6 @@ label = "#xbox #gameconsole #tech #retro #green From"
 
 [Source](https://www.instagram.com/p/DMgUXa1vUVS)
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/612-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 2:18*

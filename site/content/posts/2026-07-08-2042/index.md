@@ -23,10 +23,12 @@ ids = [2042]
 [[extra.related]]
 path = "@/posts/2026-07-29-2094/index.md"
 label = "#3d #walk #deformation By theloudgiraffe"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-406/index.md"
 label = "#health #science #references #source #walk #chad"
+date = "2025-03-13"
 +++
 
 {{ tag(t="psychodel") }}  

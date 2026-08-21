@@ -17,28 +17,33 @@ next_body = "Unreleased game Империя from #elementalgames, like #spaceran
 prev_id = 1499
 prev_title = ""
 prev_body = "#music\n#poppy\n#8bitlike\n[Chorus]\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-Y, that's me\n[Verse 1]\nWelcome to the new world, I'm your internet girl\nOpen up and you'll see, everyone is happy\nI like your technology, can you put it on me?\nThe future is so pretty, we're living in harmony\n[Pre-Chorus]\nBut Poppy, how do I live in your future paradise?\nAll you have to do is follow these steps, say\n[Chorus]\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-Y, that's me\nPop, pop, pop, Poppy\nPop, pop, pop, Poppy-y\nPop, pop, pop, Poppy\nPoppy-y-y, that's me\n[Verse 2]\nLife can be like a dream if you let me be your queen\nYou know where to find me, on your telephone screen\nPlease electrify me, power my battery\nI need your energy to store all your memory\n[Pre-Chorus]\nBut Poppy, how can I be like you?\nI'm having trouble figuring you out\nAll you have to do is follow these steps"
-views = 23
+views = 24
 ids = [1500]
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1738/index.md"
 label = "#webdesign #video #bilibili"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1094/index.md"
 label = "#firefox translation from #german to #russian"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-05-22-538/index.md"
 label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+date = "2025-05-22"
 
 [[extra.related]]
 path = "@/posts/2025-01-11-245/index.md"
 label = "#war #video #warpath"
+date = "2025-01-11"
 
 [[extra.related]]
 path = "@/posts/2026-05-13-1756/index.md"
 label = "#code #russian #yandex #language From"
+date = "2026-05-13"
 +++
 
 {{ tag(t="math") }}  

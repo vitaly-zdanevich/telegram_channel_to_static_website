@@ -24,22 +24,27 @@ ids = [452]
 [[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1080/index.md"
 label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-712/index.md"
 label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-711/index.md"
 label = "#games #steam"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2025-08-09-623/index.md"
 label = "#games #steam Can you imagine that, I know this guy"
+date = "2025-08-09"
 +++
 
 {{ tag(t="games") }}  

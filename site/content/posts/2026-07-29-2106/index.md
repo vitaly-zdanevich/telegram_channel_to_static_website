@@ -23,22 +23,27 @@ ids = [2106]
 [[extra.related]]
 path = "@/posts/2026-04-25-1686/index.md"
 label = "#photo #batumi #dog"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1094/index.md"
 label = "#firefox translation from #german to #russian"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-07-03-593/index.md"
 label = "#dog #love #mmorpg"
+date = "2025-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-01-29-345/index.md"
 label = "#lapenko #art #dog #painting #religion"
+date = "2025-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1299/index.md"
 label = "#bunker #fortification #military #abandone #belarus #german #glo…"
+date = "2026-03-02"
 +++
 
 {{ tag(t="dog") }}  

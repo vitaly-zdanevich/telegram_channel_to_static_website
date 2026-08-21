@@ -24,22 +24,27 @@ ids = [656]
 [[extra.related]]
 path = "@/posts/2025-05-14-534/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-533/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2026-04-25-1686/index.md"
 label = "#photo #batumi #dog"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-06-16-576/index.md"
 label = "#photo #batumi #chandelier"
+date = "2025-06-16"
 
 [[extra.related]]
 path = "@/posts/2024-11-27-202/index.md"
 label = "My #photo from 2012, for the defunct website of naked #cats #eye…"
+date = "2024-11-27"
 +++
 
 {{ tag(t="iran") }}  

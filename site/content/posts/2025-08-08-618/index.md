@@ -24,22 +24,27 @@ ids = [618]
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2025-01-29-346/index.md"
 label = "#fashion"
+date = "2025-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1087/index.md"
 label = "#fashion #boy"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-09-30-686/index.md"
 label = "#fashion #istanbul"
+date = "2025-09-30"
 
 [[extra.related]]
 path = "@/posts/2025-04-15-470/index.md"
 label = "Source #sakartvelo #taxes"
+date = "2025-04-15"
 +++
 
 > Georgian man (Zaal Sikharulidze) with falcon wearing Chokha on Tbilisoba festival

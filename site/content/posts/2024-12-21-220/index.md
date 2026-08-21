@@ -23,22 +23,27 @@ ids = [220]
 [[extra.related]]
 path = "@/posts/2025-11-06-743/index.md"
 label = "Emotional reasoning is a cognitive process by which an individua…"
+date = "2025-11-06"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-482/index.md"
 label = "#cat #psy"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-04-09-464/index.md"
 label = "Бежевый #psy #childhood"
+date = "2025-04-09"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-450/index.md"
 label = "#phone #psy"
+date = "2025-03-27"
 +++
 
 {{ tag(t="psy") }}  
@@ -46,5 +51,3 @@ label = "#phone #psy"
 <https://music.yandex.ru/album/22206733/track/103670414>
 
 {{ yandex_music(url="https://music.yandex.ru/iframe/#track/103670414/22206733") }}
-
-🙏 1

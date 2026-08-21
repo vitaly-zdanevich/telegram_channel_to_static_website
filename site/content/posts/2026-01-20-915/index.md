@@ -24,22 +24,27 @@ ids = [915]
 [[extra.related]]
 path = "@/posts/2026-03-29-1532/index.md"
 label = "#architecture #abandone #Свиряны #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-30-1058/index.md"
 label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+date = "2026-01-30"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1951/index.md"
 label = "#belarus #ленино #photo #architecture #abandone #year2005 #globu…"
+date = "2026-07-05"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1940/index.md"
 label = "#belarus #хальч #photo #architecture #abandone #year2005 #globus…"
+date = "2026-07-05"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1930/index.md"
 label = "#belarus #демьянки #photo #architecture #abandone #year2005 #glo…"
+date = "2026-07-05"
 +++
 
 {{ tag(t="belarus") }}  

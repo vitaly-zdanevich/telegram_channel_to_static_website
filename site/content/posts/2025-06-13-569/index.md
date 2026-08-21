@@ -23,22 +23,27 @@ ids = [569]
 [[extra.related]]
 path = "@/posts/2025-06-13-570/index.md"
 label = "#meditation #dantealigieri"
+date = "2025-06-13"
 
 [[extra.related]]
 path = "@/posts/2025-06-13-568/index.md"
 label = "#miracle #dantealigieri Чудо"
+date = "2025-06-13"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1122/index.md"
 label = "#mmo #myst #stat"
+date = "2026-02-21"
 
 [[extra.related]]
 path = "@/posts/2025-12-30-828/index.md"
 label = "#preservation #library #books Page 68"
+date = "2025-12-30"
 
 [[extra.related]]
 path = "@/posts/2025-08-29-644/index.md"
 label = "#stat #wikipedia #ai Wikipedia's traffic has fallen by 23% in th…"
+date = "2025-08-29"
 +++
 
 {{ tag(t="stat") }}  
@@ -49,7 +54,5 @@ label = "#stat #wikipedia #ai Wikipedia's traffic has fallen by 23% in th…"
 [Source](https://www.instagram.com/p/DIvRM77C5yd)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/569-01.mp4") }}
-
-😁 1
 
 {{ tag(t="video") }}

@@ -24,22 +24,27 @@ ids = [718]
 [[extra.related]]
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2026-04-09-1595/index.md"
 label = "#indika #game #religion #christianity #webdesign"
+date = "2026-04-09"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1121/index.md"
 label = "#webdesign #buttons #animation #game #mmo #myst"
+date = "2026-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -54,5 +59,3 @@ It still alive
 <https://en.wikipedia.org/wiki/Ragnarok_Online>
 
 {{ img(src="5460802865779047402_1271442246_456260586.jpg") }}
-
-🔥 1

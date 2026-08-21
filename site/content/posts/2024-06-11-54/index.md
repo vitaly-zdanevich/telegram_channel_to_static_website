@@ -36,8 +36,6 @@ ids = [54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
 
 {{ img(src="08.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-62-5422554743194119354.jpg") }}
+{{ img(src="09.jpg") }}
 
 {{ img(src="10.jpg") }}
-
-🙏 1

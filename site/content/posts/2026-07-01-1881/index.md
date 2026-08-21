@@ -17,28 +17,33 @@ next_body = "#belarus\n#photo\n#abandone\n#year2005\n#globustut\nSource"
 prev_id = 1880
 prev_title = ""
 prev_body = "#belarus\n#abandone\n#trees\n#year2015\nSource.jpg)"
-views = 303
+views = 304
 ids = [1881]
 
 [[extra.related]]
 path = "@/posts/2026-06-23-1850/index.md"
 label = "Моя лекция про мой Telegram бот YouTube, с поиском, который возв…"
+date = "2026-06-23"
 
 [[extra.related]]
 path = "@/posts/2026-07-23-2067/index.md"
 label = "Моя #лекция про #evernote проекты, #saas, #everpublich на #zola…"
+date = "2026-07-23"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-12-21-808/index.md"
 label = "#software #tui #torrent"
+date = "2025-12-21"
 
 [[extra.related]]
 path = "@/posts/2026-06-25-1865/index.md"
 label = "Wow, Gemini generates good logos, tried it for the first time #g…"
+date = "2026-06-25"
 +++
 
 **Моя** {{ tag(t="лекция") }} про мой {{ tag(t="telegram_bot") }}  для {{ tag(t="rutracker") }} - не только ищет но и скачивает, на {{ tag(t="oracle_cloud") }}  

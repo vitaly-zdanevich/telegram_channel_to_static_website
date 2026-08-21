@@ -23,6 +23,7 @@ ids = [601]
 [[extra.related]]
 path = "@/posts/2025-11-10-762/index.md"
 label = "#painting #angel #ship #gustavedore Engraving by Gustave Doré, r…"
+date = "2025-11-10"
 +++
 
 ...addition to the previous post: that photo reminds me of this video ARK, from 2007  

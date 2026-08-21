@@ -23,22 +23,27 @@ ids = [330]
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2024-11-24-198/index.md"
 label = "#music"
+date = "2024-11-24"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1764/index.md"
 label = "#music #sunboy Остров в океане From Про исполнителя"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-04-19-1648/index.md"
 label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
+date = "2026-04-19"
 +++
 
 {{ tag(t="music") }}  

@@ -24,22 +24,27 @@ ids = [1338, 1339]
 [[extra.related]]
 path = "@/posts/2026-03-07-1349/index.md"
 label = "#house #abandone #belarus #globustut #year2005 Source,%D1%81%D0%…"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1285/index.md"
 label = "#village #house #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1966/index.md"
 label = "#belarus #photo #river #boat #year2005 #globustut"
+date = "2026-07-05"
 
 [[extra.related]]
 path = "@/posts/2026-01-20-912/index.md"
 label = "#belarus #village #nature #river #year2005 #globustut"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2040/index.md"
 label = "#dream #house #river"
+date = "2026-07-08"
 +++
 
 {{ tag(t="house") }}  
@@ -51,4 +56,4 @@ label = "#dream #house #river"
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1339-5287405896352863432.jpg") }}
+{{ img(src="02.jpg") }}

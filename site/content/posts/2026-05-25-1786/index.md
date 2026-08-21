@@ -23,22 +23,27 @@ ids = [1786]
 [[extra.related]]
 path = "@/posts/2026-06-19-1845/index.md"
 label = "I did #kvantum/#qt6 theme, with #llm #gpt 5.5 xhigh, #love it, #…"
+date = "2026-06-19"
 
 [[extra.related]]
 path = "@/posts/2026-06-05-1805/index.md"
 label = "My yet another project: @wikipediaunofficialbot Built with #llm…"
+date = "2026-06-05"
 
 [[extra.related]]
 path = "@/posts/2026-05-21-1784/index.md"
 label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
+date = "2026-05-21"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
+date = "2026-05-18"
 +++
 
 Finally I forked {{ tag(t="nixnote") }}, and migrated from {{ tag(t="qt5") }} to {{ tag(t="qt6") }}, by {{ tag(t="llm") }} {{ tag(t="gpt") }} 5.5 xhigh  

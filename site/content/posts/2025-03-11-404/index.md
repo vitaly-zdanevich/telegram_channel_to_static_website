@@ -23,22 +23,27 @@ ids = [404]
 [[extra.related]]
 path = "@/posts/2025-07-24-609/index.md"
 label = "#girl #relationship #ai Source You generated pictures and videos…"
+date = "2025-07-24"
 
 [[extra.related]]
 path = "@/posts/2025-05-07-503/index.md"
 label = "#ai #girl #relationships #psy"
+date = "2025-05-07"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-372/index.md"
 label = "Most Shocking Second a Day Video Still The Most Shocking Second…"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-02-1077/index.md"
 label = "#japan From"
+date = "2026-02-02"
 +++
 
 {{ tag(t="video") }}  
@@ -51,5 +56,3 @@ label = "#japan From"
 [Source](<https://www.youtube.com/watch?v=nkcKaNqfykg> "Gatebox - Promotion Movie \"OKAERI\"_english")
 
 {{ youtube(id="nkcKaNqfykg") }}
-
-❤ 1

@@ -23,22 +23,27 @@ ids = [1682]
 [[extra.related]]
 path = "@/posts/2026-06-24-1864/index.md"
 label = "And another #bash #alias: # Better word movement: treat aaabbbcc…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1863/index.md"
 label = "My new #bash #alias bind '\"ej\": \"!#:$ e^\"' # Alt J repeats prev…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-02-10-1103/index.md"
 label = "My new #bash alias: one function to go to the next folder like f…"
+date = "2026-02-10"
 
 [[extra.related]]
 path = "@/posts/2026-04-25-1683/index.md"
 label = "...and another useful #bash #alias to #remove the text inside si…"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-05-1336/index.md"
 label = "...one of my #bash aliases: to count files here: c { ls -1  wc -…"
+date = "2026-03-05"
 +++
 
 My new great {{ tag(t="bash") }} {{ tag(t="alias") }} (actually a {{ tag(t="hotkey") }}) for faster {{ tag(t="cd") }}  

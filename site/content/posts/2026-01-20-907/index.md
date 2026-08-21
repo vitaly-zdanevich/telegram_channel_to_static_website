@@ -24,27 +24,32 @@ ids = [907]
 [[extra.related]]
 path = "@/posts/2026-02-14-1112/index.md"
 label = "Editing #wikipedia, in #vim"
+date = "2026-02-14"
 
 [[extra.related]]
 path = "@/posts/2026-02-01-1072/index.md"
 label = "#wikipedia article writing, in #vim"
+date = "2026-02-01"
 
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-27-542/index.md"
 label = "#git"
+date = "2025-05-27"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 +++
 
 wow I can edit {{ tag(t="wikipedia") }} in {{ tag(t="vim") }}, thanks to  
 
-[https://github.com/Git-Mediawiki/Git-Mediawiki](<https://github.com/Git-Mediawiki/Git-Mediawiki> "Gate between Git and Mediawiki · 186 stars · Languages: Perl 58%, Shell 41%, Makefile 2% · 397 commits · 28 forks · 59 open issues/PRs · GPL-2.0 · last push 2026-01-27") to {{ tag(t="git") }} pull/push  
+[https://github.com/Git-Mediawiki/Git-Mediawiki](<https://github.com/Git-Mediawiki/Git-Mediawiki> "Gate between Git and Mediawiki · 187 stars · Languages: Perl 58%, Shell 41%, Makefile 2% · 397 commits · 28 forks · 59 open issues/PRs · GPL-2.0 · last push 2026-01-27") to {{ tag(t="git") }} pull/push  
 
 and  
 

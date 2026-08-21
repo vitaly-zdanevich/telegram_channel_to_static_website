@@ -24,22 +24,27 @@ ids = [630]
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-07-13-89/index.md"
 label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-34/index.md"
 label = "This website looks soooo special #design"
+date = "2024-04-27"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-759/index.md"
 label = "#design #artlebedev"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-758/index.md"
 label = "#design #artlebedev"
+date = "2025-11-10"
 +++
 
 [Кин-дза-дза](https://en.wikipedia.org/wiki/Kin-dza-dza&#33;) Japanese disc  
@@ -50,5 +55,3 @@ label = "#design #artlebedev"
 {{ tag(t="bluray") }}
 
 {{ img(src="5271934505025926821_1227467904_456259237.jpg") }}
-
-👍 1

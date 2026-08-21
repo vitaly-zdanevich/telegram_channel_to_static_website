@@ -11,7 +11,7 @@ tags = ["26июня2026", "без_оплаты"]
 id = 1861
 day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1861"
-og_image = "5316786788372257655_1237910890_460004215.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1861-5316786788372257655.jpg"
 next_id = 1863
 next_title = ""
 next_body = "My new #bash #alias\nbind '\"ej\": \"!#:$ e^\"'\n# Alt J repeats prev word\n# This is useful when, for example, you want to rename a file,\n# for example - to adjust it file extension.\n/.inputrc syntax is simpler:\n\"ej\": \"!#:$ e^\""
@@ -25,22 +25,27 @@ ids = [1861]
 [[extra.related]]
 path = "@/posts/2026-05-28-1799/index.md"
 label = "#28мая2026 чт 21:00–01:00 — айтишная посиделка в Still Young Bar…"
+date = "2026-05-28"
 
 [[extra.related]]
 path = "@/posts/2026-05-07-1751/index.md"
 label = "#7мая2026 чт 21.30-01:00 айтишная посиделка в Still Young Bar #б…"
+date = "2026-05-07"
 
 [[extra.related]]
 path = "@/posts/2026-02-26-1200/index.md"
 label = "#27февраля2026 пт 21.30-01:00 Hard IT в Laboratory Bar #безоплат…"
+date = "2026-02-26"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1088/index.md"
 label = "#6февраля2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2026-01-23-933/index.md"
 label = "#23января2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
+date = "2026-01-23"
 +++
 
 {{ tag(t="26июня2026") }} (пт) 21.30-23:00 айтишная посиделка в Friends club  
@@ -63,4 +68,4 @@ label = "#23января2026 пт 21.30-01:00 Айтишные посиделк�
 
 **💬** Все вопросы – в личку: [@marstut](https://t.me/marstut)
 
-{{ img(src="5316786788372257655_1237910890_460004215.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1861-5316786788372257655.jpg") }}

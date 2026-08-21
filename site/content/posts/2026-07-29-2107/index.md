@@ -23,6 +23,7 @@ ids = [2107]
 [[extra.related]]
 path = "@/posts/2026-07-29-2109/index.md"
 label = "#thailand #ladyboy Cake is still a cake, even with a candle. By…"
+date = "2026-07-29"
 +++
 
 {{ tag(t="trans") }}  

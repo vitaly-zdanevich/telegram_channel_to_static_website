@@ -24,22 +24,27 @@ ids = [447]
 [[extra.related]]
 path = "@/posts/2025-03-27-458/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-457/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-456/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-455/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2132/index.md"
 label = "#ussr #pc"
+date = "2026-08-09"
 +++
 
 {{ tag(t="dune") }}  
@@ -49,5 +54,3 @@ label = "#ussr #pc"
 I do not know who is the author
 
 {{ img(src="5415638411328479712_1260926577_456253920.jpg") }}
-
-🙏 1

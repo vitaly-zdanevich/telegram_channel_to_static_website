@@ -24,22 +24,27 @@ ids = [841]
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"
 label = "#monument #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1176/index.md"
 label = "#monument #cementery #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1164/index.md"
 label = "#monument #abandone #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1142/index.md"
 label = "#monument #airplane #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-13-875/index.md"
 label = "#monument #belarus #globustut #airplane"
+date = "2026-01-13"
 +++
 
 {{ tag(t="photo") }}  

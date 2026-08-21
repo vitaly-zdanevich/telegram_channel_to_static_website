@@ -23,22 +23,27 @@ ids = [1687]
 [[extra.related]]
 path = "@/posts/2026-02-08-1100/index.md"
 label = "#ai Trying #codex to organize scans - to create a folder for eve…"
+date = "2026-02-08"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1120/index.md"
 label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+date = "2026-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-06-23-1850/index.md"
 label = "Моя лекция про мой Telegram бот YouTube, с поиском, который возв…"
+date = "2026-06-23"
 
 [[extra.related]]
 path = "@/posts/2026-04-30-1729/index.md"
 label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
+date = "2026-04-30"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 +++
 
 {{ tag(t="my") }}  

@@ -24,6 +24,7 @@ ids = [1111]
 [[extra.related]]
 path = "@/posts/2025-11-17-781/index.md"
 label = "#js Out of memory, but RAM is used to 64% #firefox"
+date = "2025-11-17"
 +++
 
 {{ tag(t="js") }}  

@@ -11,7 +11,7 @@ tags = ["quote", "book", "ночь_в_лиссабоне", "ремарк"]
 id = 1685
 day = "2026-04-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1685"
-og_image = "5431547614441706355_1264630727_460002163.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1685-5431547614441706355.jpg"
 next_id = 1686
 next_title = ""
 next_body = "#photo\n#batumi\n#dog"
@@ -24,22 +24,27 @@ ids = [1685]
 [[extra.related]]
 path = "@/posts/2026-04-25-1684/index.md"
 label = "#quote #book #ночьвлиссабоне #ремарк – Я тоже. В ту пору я вконе…"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-08-16-627/index.md"
 label = "Она окончила Ленинградский университет по специальности искусств…"
+date = "2025-08-16"
 
 [[extra.related]]
 path = "@/posts/2026-05-17-1776/index.md"
 label = "#llm #quote"
+date = "2026-05-17"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-776/index.md"
 label = "#quote #kindzadza Фильм был изначально запланирован как двухсери…"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-775/index.md"
 label = "#quote #kindzadza во время съёмок фильма к власти в СССР пришёл…"
+date = "2025-11-13"
 +++
 
 {{ tag(t="quote") }}  
@@ -47,4 +52,4 @@ label = "#quote #kindzadza во время съёмок фильма к влас
 {{ tag(t="ночь_в_лиссабоне") }}  
 {{ tag(t="ремарк") }}
 
-{{ img(src="5431547614441706355_1264630727_460002163.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1685-5431547614441706355.jpg") }}

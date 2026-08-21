@@ -24,22 +24,27 @@ ids = [796]
 [[extra.related]]
 path = "@/posts/2026-06-14-1826/index.md"
 label = "#bus #architecture"
+date = "2026-06-14"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1735/index.md"
 label = "#architecture of #village houses in #sakartvelo"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2026-06-29-1870/index.md"
 label = "#belarus #колодищи #architecture #church Author: Димитров Денис"
+date = "2026-06-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1419/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1418/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 +++
 
 {{ tag(t="architecture") }}  

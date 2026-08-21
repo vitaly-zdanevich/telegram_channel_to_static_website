@@ -24,22 +24,27 @@ ids = [751]
 [[extra.related]]
 path = "@/posts/2025-11-10-753/index.md"
 label = "#design #webdesign #webdesignold #xbox"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-12-772/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-12"
 
 [[extra.related]]
 path = "@/posts/2025-11-11-768/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-11"
 
 [[extra.related]]
 path = "@/posts/2025-11-11-767/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-11"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-779/index.md"
 label = "#webdesign #webdesignold #webdesigngames Year: 2000"
+date = "2025-11-13"
 +++
 
 {{ tag(t="design") }}  
@@ -49,5 +54,3 @@ label = "#webdesign #webdesignold #webdesigngames Year: 2000"
 <https://web.archive.org/web/20020330010106/http://gamepen.ugo.com/>
 
 {{ img(src="5229215222705359631_1217521546_460000015.jpg") }}
-
-🔥 1

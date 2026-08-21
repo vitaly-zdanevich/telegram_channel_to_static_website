@@ -24,22 +24,27 @@ ids = [1832]
 [[extra.related]]
 path = "@/posts/2026-06-12-1819/index.md"
 label = "My another #userstyle: for #gemini, before and after"
+date = "2026-06-12"
 
 [[extra.related]]
 path = "@/posts/2026-01-26-948/index.md"
 label = "#css Wow I did a good ::selection for my #evernote style a::sele…"
+date = "2026-01-26"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-650/index.md"
 label = "Wow in #svg we can have #css, like .spinnera { animation: spinne…"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-07-25-610/index.md"
 label = "Can you imagine #userstyle with so much configs #lastfm"
+date = "2025-07-25"
 
 [[extra.related]]
 path = "@/posts/2025-06-04-549/index.md"
 label = "Another #userstyle: for #openstreetmap, only a few CSS lines"
+date = "2025-06-04"
 +++
 
 When {{ tag(t="css") }} is minified - so what can I do with that :(  

@@ -24,22 +24,27 @@ ids = [1386]
 [[extra.related]]
 path = "@/posts/2026-03-08-1389/index.md"
 label = "#building #orange #новогрудок #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-12-1437/index.md"
 label = "#building #bricks #village #white #slonim #belarus #globustut #y…"
+date = "2026-03-12"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-866/index.md"
 label = "#belarus #building #globustut"
+date = "2026-01-08"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-865/index.md"
 label = "#belarus #building #globustut"
+date = "2026-01-08"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-864/index.md"
 label = "#belarus #building #globustut"
+date = "2026-01-08"
 +++
 
 {{ tag(t="building") }}  

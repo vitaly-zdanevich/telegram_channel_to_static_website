@@ -23,22 +23,27 @@ ids = [635]
 [[extra.related]]
 path = "@/posts/2025-01-25-329/index.md"
 label = "#homm3"
+date = "2025-01-25"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2092/index.md"
 label = "#gamedev #indie By mutatefightpurr"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2025-10-26-726/index.md"
 label = "#logo #homm3 #newworldcomputing From the YouTube commend: Quite…"
+date = "2025-10-26"
 
 [[extra.related]]
 path = "@/posts/2025-08-30-648/index.md"
 label = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пал…"
+date = "2025-08-30"
 
 [[extra.related]]
 path = "@/posts/2025-05-13-526/index.md"
 label = "#homm3 #foss #vcmi"
+date = "2025-05-13"
 +++
 
 {{ tag(t="gamedev") }}  

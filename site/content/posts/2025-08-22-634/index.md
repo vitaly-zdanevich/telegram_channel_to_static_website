@@ -18,28 +18,33 @@ next_body = "#gamedev\n#homm3\nI’ve told this tale numerous times as an indust
 prev_id = 633
 prev_title = ""
 prev_body = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch\n#music\n#anime\n#russian\n#sugar\nSource"
-views = 39
+views = 40
 ids = [634]
 
 [[extra.related]]
 path = "@/posts/2026-01-18-892/index.md"
 label = "Storing my configs in #git #gitlab, because its open - #github i…"
+date = "2026-01-18"
 
 [[extra.related]]
 path = "@/posts/2025-05-27-542/index.md"
 label = "#git"
+date = "2025-05-27"
 
 [[extra.related]]
 path = "@/posts/2026-01-13-876/index.md"
 label = "#macOS: to install #git I need 25 GB"
+date = "2026-01-13"
 
 [[extra.related]]
 path = "@/posts/2025-06-27-591/index.md"
 label = "#git #gitgraph"
+date = "2025-06-27"
 
 [[extra.related]]
 path = "@/posts/2026-06-10-1817/index.md"
 label = "#logo #progy #github"
+date = "2026-06-10"
 +++
 
 {{ tag(t="dress") }}  

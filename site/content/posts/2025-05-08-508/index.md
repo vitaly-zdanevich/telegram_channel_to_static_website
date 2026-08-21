@@ -24,22 +24,27 @@ ids = [508]
 [[extra.related]]
 path = "@/posts/2025-09-30-689/index.md"
 label = "The proportion of people on the #autism spectrum among #wikipedi…"
+date = "2025-09-30"
 
 [[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
 label = "#health #science"
+date = "2025-05-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
+date = "2025-03-13"
 
 [[extra.related]]
 path = "@/posts/2026-08-02-2114/index.md"
 label = "#духота #health #powerlifting"
+date = "2026-08-02"
 
 [[extra.related]]
 path = "@/posts/2026-08-02-2112/index.md"
 label = "#health #духота #kozhemiako"
+date = "2026-08-02"
 +++
 
 {{ tag(t="wifi") }}  

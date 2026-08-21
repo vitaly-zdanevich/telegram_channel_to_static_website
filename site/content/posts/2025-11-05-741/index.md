@@ -17,28 +17,33 @@ next_body = "#webdesign\n#webdesigngames\nLike horizontal scrolling."
 prev_id = 739
 prev_title = ""
 prev_body = "#music\n#musicrussian\n#rap\n#raprussian\n#musichumor\n#нтр"
-views = 28
+views = 29
 ids = [741]
 
 [[extra.related]]
 path = "@/posts/2025-11-05-738/index.md"
 label = "#music #musicrussian #нтр Куплет 1 Сначала свет нам всем предста…"
+date = "2025-11-05"
 
 [[extra.related]]
 path = "@/posts/2025-11-05-739/index.md"
 label = "#music #musicrussian #rap #raprussian #musichumor #нтр"
+date = "2025-11-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
+date = "2025-01-25"
 +++
 
 {{ tag(t="music") }}  

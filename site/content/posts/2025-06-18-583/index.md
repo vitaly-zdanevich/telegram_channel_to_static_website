@@ -24,22 +24,27 @@ ids = [583]
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-534/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-533/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-04-15-470/index.md"
 label = "Source #sakartvelo #taxes"
+date = "2025-04-15"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1735/index.md"
 label = "#architecture of #village houses in #sakartvelo"
+date = "2026-05-05"
 +++
 
 {{ tag(t="photo") }}  
@@ -48,5 +53,3 @@ label = "#architecture of #village houses in #sakartvelo"
 {{ tag(t="ladder") }}
 
 {{ img(src="5375476537215808962_1251575662_456259010.jpg") }}
-
-❤ 1

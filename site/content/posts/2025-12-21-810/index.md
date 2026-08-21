@@ -23,22 +23,27 @@ ids = [810]
 [[extra.related]]
 path = "@/posts/2025-12-21-808/index.md"
 label = "#software #tui #torrent"
+date = "2025-12-21"
 
 [[extra.related]]
 path = "@/posts/2025-05-27-542/index.md"
 label = "#git"
+date = "2025-05-27"
 
 [[extra.related]]
 path = "@/posts/2026-01-13-876/index.md"
 label = "#macOS: to install #git I need 25 GB"
+date = "2026-01-13"
 
 [[extra.related]]
 path = "@/posts/2025-06-27-591/index.md"
 label = "#git #gitgraph"
+date = "2025-06-27"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1085/index.md"
 label = "#logo #gitlab #git"
+date = "2026-02-05"
 +++
 
 {{ tag(t="software") }}  

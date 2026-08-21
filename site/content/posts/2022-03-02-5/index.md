@@ -23,14 +23,17 @@ ids = [5, 6]
 [[extra.related]]
 path = "@/posts/2025-04-19-475/index.md"
 label = "#podcast 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у…"
+date = "2025-04-19"
 
 [[extra.related]]
 path = "@/posts/2026-04-16-1645/index.md"
 label = "#webdesign #northkorea #radio #podcast"
+date = "2026-04-16"
 
 [[extra.related]]
 path = "@/posts/2026-04-16-1641/index.md"
 label = "#podcast #my #health #startup #geogorgiladze Георгий Горгиладзе:…"
+date = "2026-04-16"
 +++
 
 {{ tag(t="podcast") }}  

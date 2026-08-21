@@ -11,7 +11,7 @@ tags = ["typography", "scan", "preservation", "russian_empire", "century19"]
 id = 1688
 day = "2026-04-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1688"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1688-5442893285950165680.jpg"
 next_id = 1695
 next_title = ""
 next_body = "#my\n#batumi\n#restaurant\n#art\n#food\n#sazandari"
@@ -24,22 +24,27 @@ ids = [1688, 1689, 1690, 1691, 1692, 1693, 1694]
 [[extra.related]]
 path = "@/posts/2026-07-20-2061/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-07-20"
 
 [[extra.related]]
 path = "@/posts/2026-04-30-1721/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-04-30"
 
 [[extra.related]]
 path = "@/posts/2026-04-29-1709/index.md"
 label = "#typography #scan #preservation #russianempire #century19 Source…"
+date = "2026-04-29"
 
 [[extra.related]]
 path = "@/posts/2026-04-28-1703/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-04-28"
 
 [[extra.related]]
 path = "@/posts/2026-04-23-1674/index.md"
 label = "#typography #scan #preservation #russianempire #century19"
+date = "2026-04-23"
 +++
 
 {{ tag(t="typography") }}  
@@ -50,16 +55,16 @@ label = "#typography #scan #preservation #russianempire #century19"
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%94%D0%90_%D0%96%D0%B8%D1%82%D0%BE%D0%BC%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96--01_%D0%A4_-_%D1%84%D0%BE%D0%BD%D0%B4%D0%B8_%D0%B4%D0%BE%D1%80%D0%B0%D0%B4%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B5%D1%80%D1%96%D0%BE%D0%B4%D1%83--0001--0076--010001-76-00063_F_1-76-0063_0117.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1688-5442893285950165680.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1689-5442893285950165682.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1690-5442893285950165681.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1691-5442893285950165683.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1692-5442893285950165684.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1693-5442893285950165685.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1694-5442893285950165686.jpg") }}

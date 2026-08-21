@@ -23,22 +23,27 @@ ids = [2034]
 [[extra.related]]
 path = "@/posts/2026-05-19-1781/index.md"
 label = "#mem limited by the technology of my time #llm #depleated"
+date = "2026-05-19"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2093/index.md"
 label = "#bond #claude #llm #limit #gun By ksenia.ai.life"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 +++
 
 {{ tag(t="mem") }}  

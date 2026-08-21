@@ -24,22 +24,27 @@ ids = [808]
 [[extra.related]]
 path = "@/posts/2025-12-21-810/index.md"
 label = "#software #tui #git"
+date = "2025-12-21"
 
 [[extra.related]]
 path = "@/posts/2025-12-21-809/index.md"
 label = "#cli #tui #design"
+date = "2025-12-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-27-1203/index.md"
 label = "#design #software #gthumb #scan #preservation"
+date = "2026-02-27"
 
 [[extra.related]]
 path = "@/posts/2026-07-01-1881/index.md"
 label = "Моя #лекция про мой #telegrambot для #rutracker - не только ищет…"
+date = "2026-07-01"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 +++
 
 {{ tag(t="software") }}  

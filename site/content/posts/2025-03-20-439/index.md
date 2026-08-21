@@ -23,22 +23,27 @@ ids = [439]
 [[extra.related]]
 path = "@/posts/2025-07-22-606/index.md"
 label = "#harrypotter #northkorea #ai #demonflyingfox"
+date = "2025-07-22"
 
 [[extra.related]]
 path = "@/posts/2025-07-22-605/index.md"
 label = "#berlin #germany #harrypotter #ai #demonflyingfox"
+date = "2025-07-22"
 
 [[extra.related]]
 path = "@/posts/2025-07-22-604/index.md"
 label = "#berlin #germany #ai #thelordoftherings #demonflyingfox"
+date = "2025-07-22"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
+date = "2026-01-24"
 +++
 
 {{ tag(t="korea") }}  

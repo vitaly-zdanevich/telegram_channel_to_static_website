@@ -24,22 +24,27 @@ ids = [1079]
 [[extra.related]]
 path = "@/posts/2025-10-22-718/index.md"
 label = "#webdesign #game #mmorpg #ragnarok It still alive"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2026-04-09-1595/index.md"
 label = "#indika #game #religion #christianity #webdesign"
+date = "2026-04-09"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1121/index.md"
 label = "#webdesign #buttons #animation #game #mmo #myst"
+date = "2026-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 +++
 
 {{ tag(t="webdesign") }}  

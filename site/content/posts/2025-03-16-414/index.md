@@ -23,22 +23,27 @@ ids = [414]
 [[extra.related]]
 path = "@/posts/2026-07-08-2043/index.md"
 label = "#drug #transformation Как происходит трансформация зависимого, п…"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
 label = "#health #science"
+date = "2025-05-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
+date = "2025-03-13"
 
 [[extra.related]]
 path = "@/posts/2026-08-02-2114/index.md"
 label = "#духота #health #powerlifting"
+date = "2026-08-02"
 
 [[extra.related]]
 path = "@/posts/2026-08-02-2112/index.md"
 label = "#health #духота #kozhemiako"
+date = "2026-08-02"
 +++
 
 {{ tag(t="health") }}  
@@ -48,7 +53,5 @@ label = "#health #духота #kozhemiako"
 [Source](https://www.instagram.com/p/DG0It_-K_Ko)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/414-01.mp4") }}
-
-😁 1
 
 {{ tag(t="video") }}

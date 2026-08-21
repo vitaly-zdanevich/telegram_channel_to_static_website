@@ -23,14 +23,17 @@ ids = [479]
 [[extra.related]]
 path = "@/posts/2025-04-25-480/index.md"
 label = "#primeworld #belarussian Adding Belarusian language to the game"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-04-24-1679/index.md"
 label = "#log Still running my experiment about #porting #primeworld from…"
+date = "2026-04-24"
 
 [[extra.related]]
 path = "@/posts/2026-04-03-1568/index.md"
 label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
+date = "2026-04-03"
 +++
 
 {{ tag(t="article") }}  
@@ -39,5 +42,3 @@ label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
 I wrote.  
 
 <https://habr.com/en/articles/902838/>
-
-❤ 1 · 👎 1

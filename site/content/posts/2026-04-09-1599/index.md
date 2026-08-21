@@ -11,7 +11,7 @@ tags = ["post", "wikimedia_diff", "wikimedia_commons", "preservation"]
 id = 1599
 day = "2026-04-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1599"
-og_image = "5384230363468600311_1253613821_460002295.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1599-5384230363468600311.jpg"
 next_id = 1600
 next_title = ""
 next_body = "#icq\n#offline\n#abandone\n#sonyericsson\nSource"
@@ -24,22 +24,27 @@ ids = [1599]
 [[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
+date = "2026-04-02"
 
 [[extra.related]]
 path = "@/posts/2025-12-27-819/index.md"
 label = "#preservation #wikimediacommons #pywikibot #my Created a new too…"
+date = "2025-12-27"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
 label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 +++
 
 My first blog {{ tag(t="post") }} to {{ tag(t="wikimedia_diff") }}, about {{ tag(t="wikimedia_commons") }}, {{ tag(t="preservation") }}  
@@ -48,4 +53,4 @@ My first blog {{ tag(t="post") }} to {{ tag(t="wikimedia_diff") }}, about {{ tag
 
 Also at <https://habr.com/en/articles/1025750/>
 
-{{ img(src="5384230363468600311_1253613821_460002295.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1599-5384230363468600311.jpg") }}

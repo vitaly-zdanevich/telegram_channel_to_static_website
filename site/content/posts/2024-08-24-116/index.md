@@ -38,5 +38,3 @@ Not my.
 {{ img(src="07.jpg") }}
 
 {{ img(src="08.jpg") }}
-
-😁 2

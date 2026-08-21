@@ -23,6 +23,7 @@ ids = [270]
 [[extra.related]]
 path = "@/posts/2025-09-30-688/index.md"
 label = "#china #beauty #plastic"
+date = "2025-09-30"
 +++
 
 <https://coub.com/view/2s0m4r>  

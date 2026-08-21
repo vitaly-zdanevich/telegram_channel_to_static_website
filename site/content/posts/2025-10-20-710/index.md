@@ -5,12 +5,13 @@ description = "film korolishut naked"
 
 [taxonomies]
 days = ["2025-10-20"]
-tags = ["film", "korol_i_shut", "naked", "video"]
+tags = ["film", "korol_i_shut", "naked"]
 
 [extra]
 id = 710
 day = "2025-10-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/710"
+og_image = "01.jpg"
 next_id = 711
 next_title = ""
 next_body = "#games\n#steam"
@@ -23,22 +24,27 @@ ids = [710]
 [[extra.related]]
 path = "@/posts/2023-07-16-26/index.md"
 label = "#film #korolishut Love this scene from Korol i Shut, episode 2"
+date = "2023-07-16"
 
 [[extra.related]]
 path = "@/posts/2023-07-16-27/index.md"
 label = "#my #film #korolishut"
+date = "2023-07-16"
 
 [[extra.related]]
 path = "@/posts/2025-08-30-647/index.md"
 label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+date = "2025-08-30"
 
 [[extra.related]]
 path = "@/posts/2025-08-30-646/index.md"
 label = "#film #music #russia #korolishut s1e5, start of the episode - li…"
+date = "2025-08-30"
 
 [[extra.related]]
 path = "@/posts/2025-06-16-575/index.md"
 label = "#my #film #korolishut #alcohol s1e6"
+date = "2025-06-16"
 +++
 
 {{ tag(t="film") }}  
@@ -49,6 +55,6 @@ label = "#my #film #korolishut #alcohol s1e6"
 
 <https://ru.wikipedia.org/wiki/TODD>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/710-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 1:51*

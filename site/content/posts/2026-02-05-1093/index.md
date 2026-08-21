@@ -24,22 +24,27 @@ ids = [1093]
 [[extra.related]]
 path = "@/posts/2026-02-22-1123/index.md"
 label = "#commons"
+date = "2026-02-22"
 
 [[extra.related]]
 path = "@/posts/2025-06-19-584/index.md"
 label = "#commons TODO list"
+date = "2025-06-19"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1306/index.md"
 label = "Magic that I can say #codex to download all scan - and I get it,…"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-02-11-1105/index.md"
 label = "#commons The server did not respond within the expected time If…"
+date = "2026-02-11"
 
 [[extra.related]]
 path = "@/posts/2026-01-16-887/index.md"
 label = "#commons: #count uploads from a specific user for a period of ti…"
+date = "2026-01-16"
 +++
 
 {{ tag(t="commons") }}  

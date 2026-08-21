@@ -24,22 +24,27 @@ ids = [1389]
 [[extra.related]]
 path = "@/posts/2026-03-15-1445/index.md"
 label = "#architecture #orange #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1388/index.md"
 label = "#architecture #orange #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1386/index.md"
 label = "#building #pink #violet #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1385/index.md"
 label = "#castle #abandone #новогрудок #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1372/index.md"
 label = "#architecture #orange #columns #belarus #globustut #year2005 Sou…"
+date = "2026-03-08"
 +++
 
 {{ tag(t="building") }}  

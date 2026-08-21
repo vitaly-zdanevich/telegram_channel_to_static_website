@@ -24,22 +24,27 @@ ids = [1368]
 [[extra.related]]
 path = "@/posts/2026-03-08-1392/index.md"
 label = "#webdesign #oldweb"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1415/index.md"
 label = "#webdesign #oldweb #animation"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1369/index.md"
 label = "#webdesign #oldweb #anime"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1367/index.md"
 label = "#webdesign #anime #oldweb"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1366/index.md"
 label = "#webdesign #oldweb #anime"
+date = "2026-03-07"
 +++
 
 {{ tag(t="webdesign") }}  

@@ -24,22 +24,27 @@ ids = [1059, 1060, 1061, 1062, 1063, 1064]
 [[extra.related]]
 path = "@/posts/2026-06-29-1870/index.md"
 label = "#belarus #колодищи #architecture #church Author: Димитров Денис"
+date = "2026-06-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1419/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1418/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1179/index.md"
 label = "#architecture #cream #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1178/index.md"
 label = "#church #architecture #belarus #globustut"
+date = "2026-02-25"
 +++
 
 {{ tag(t="belarus") }}  
@@ -52,7 +57,7 @@ From [https://commons.wikimedia.org/wiki/File:045-425\_Сенно,\_снято\_
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1060-5469697399455419638.jpg") }}
+{{ img(src="02.jpg") }}
 
 {{ img(src="03.jpg") }}
 

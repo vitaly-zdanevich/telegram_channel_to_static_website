@@ -23,22 +23,27 @@ ids = [734]
 [[extra.related]]
 path = "@/posts/2025-08-29-642/index.md"
 label = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя…"
+date = "2025-08-29"
 
 [[extra.related]]
 path = "@/posts/2025-11-23-790/index.md"
 label = "#game #strategy #video #review #groundcontrol #year2000"
+date = "2025-11-23"
 
 [[extra.related]]
 path = "@/posts/2025-08-30-648/index.md"
 label = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пал…"
+date = "2025-08-30"
 
 [[extra.related]]
 path = "@/posts/2025-05-22-538/index.md"
 label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
+date = "2025-05-22"
 
 [[extra.related]]
 path = "@/posts/2025-11-24-791/index.md"
 label = "#game #strategy #rtt #groundcontrol"
+date = "2025-11-24"
 +++
 
 {{ tag(t="my") }}  
@@ -60,10 +65,10 @@ Horn of the Abyss 1.7.1 <https://h3hota.com/en/documentation>
 
 <https://www.wikidata.org/wiki/Q136699766>  
 
-Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1105 stars · Languages: Shell 98%, C 2% · 606 commits · 75 forks · 24 open issues/PRs · MIT · last push 2026-07-28")  
+Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1106 stars · Languages: Shell 98%, C 2% · 606 commits · 75 forks · 24 open issues/PRs · MIT · last push 2026-07-28")  
 
 [YouTube](<https://www.youtube.com/watch?v=VTSeBbbH07Q> "Heroes of Might and Magic 3: map \"One Bad Day\": hard, 2 people VS AI, defeat")
 
 {{ youtube(id="VTSeBbbH07Q") }}
 
-<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136699766">One Bad Day</a> · <span class="wd-qid">Q136699766</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q220965">Q220965</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P11250">Miraheze article ID</a></td><td>homm:One_Bad_Day_(Allies)</td></tr></tbody></table></figure>
+<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136699766">Q136699766</a> · <span class="wd-qid">Q136699766</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">Q1046315</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">P361</a></td><td><a href="https://www.wikidata.org/wiki/Q220965">Q220965</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P11250">P11250</a></td><td>homm:One_Bad_Day_(Allies)</td></tr></tbody></table></figure>

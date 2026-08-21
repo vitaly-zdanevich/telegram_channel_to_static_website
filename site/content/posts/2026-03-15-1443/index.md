@@ -24,22 +24,27 @@ ids = [1443]
 [[extra.related]]
 path = "@/posts/2026-03-15-1450/index.md"
 label = "#abandone #slonim #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-03-12-1424/index.md"
 label = "#abandone #slonim #belarus #globustut #year2005"
+date = "2026-03-12"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1382/index.md"
 label = "#castle #abandone #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1294/index.md"
 label = "#abandone #castle #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1385/index.md"
 label = "#castle #abandone #новогрудок #belarus #globustut #year2005"
+date = "2026-03-08"
 +++
 
 {{ tag(t="abandone") }}  

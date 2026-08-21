@@ -24,6 +24,7 @@ ids = [833]
 [[extra.related]]
 path = "@/posts/2025-12-31-830/index.md"
 label = "#solarsystem #planets #year1872 Page 18"
+date = "2025-12-31"
 +++
 
 {{ tag(t="solar_system") }}  

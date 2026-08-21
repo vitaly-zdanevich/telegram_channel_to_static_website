@@ -18,28 +18,33 @@ next_body = "what a #stickerpack"
 prev_id = 1849
 prev_title = ""
 prev_body = "#llm\n#codex\n#regex"
-views = 190
+views = 191
 ids = [1850, 1851]
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1740/index.md"
 label = "#armiesofexigo: моя #лекция об игре, в Батуми #stillyoungbar Так…"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2026-07-01-1881/index.md"
 label = "Моя #лекция про мой #telegrambot для #rutracker - не только ищет…"
+date = "2026-07-01"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
 label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1762/index.md"
 label = "#лекция про мой #telegram #бот для #evernote #stillyoungbar #bat…"
+date = "2026-05-16"
 +++
 
 **Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио**  

@@ -24,4 +24,4 @@ ids = [106, 107]
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-107-5348456554359284428.jpg") }}
+{{ img(src="02.jpg") }}

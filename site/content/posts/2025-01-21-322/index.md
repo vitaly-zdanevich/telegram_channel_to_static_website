@@ -23,28 +23,31 @@ ids = [322, 323]
 [[extra.related]]
 path = "@/posts/2024-11-06-181/index.md"
 label = "#girl"
+date = "2024-11-06"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-408/index.md"
 label = "#girl #face"
+date = "2025-03-13"
 
 [[extra.related]]
 path = "@/posts/2025-01-30-348/index.md"
 label = "#spider #girl"
+date = "2025-01-30"
 
 [[extra.related]]
 path = "@/posts/2025-01-28-340/index.md"
 label = "#girl #nails"
+date = "2025-01-28"
 
 [[extra.related]]
 path = "@/posts/2024-11-06-180/index.md"
 label = "#girl #pain"
+date = "2024-11-06"
 +++
 
 {{ tag(t="girl") }}
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/322-01.mp4") }}
-
-❤ 1
 
 {{ tag(t="video") }}

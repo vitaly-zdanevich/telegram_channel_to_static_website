@@ -24,22 +24,27 @@ ids = [1112]
 [[extra.related]]
 path = "@/posts/2026-02-01-1072/index.md"
 label = "#wikipedia article writing, in #vim"
+date = "2026-02-01"
 
 [[extra.related]]
 path = "@/posts/2026-01-20-907/index.md"
 label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-25-201/index.md"
 label = "#wikipedia"
+date = "2024-11-25"
 +++
 
 Editing {{ tag(t="wikipedia") }}, in {{ tag(t="vim") }}

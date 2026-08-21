@@ -24,22 +24,27 @@ ids = [625]
 [[extra.related]]
 path = "@/posts/2025-08-12-626/index.md"
 label = "#moneymuseum #money #rubles Source02.jpg"
+date = "2025-08-12"
 
 [[extra.related]]
 path = "@/posts/2025-08-09-619/index.md"
 label = "Returned to uploading of artifacts from moneymuseum.by, through…"
+date = "2025-08-09"
 
 [[extra.related]]
 path = "@/posts/2024-08-31-141/index.md"
 label = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait…"
+date = "2024-08-31"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-653/index.md"
 label = "#wikimediafoundation #money"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-652/index.md"
 label = "#wikimediafoundation #money"
+date = "2025-09-01"
 +++
 
 {{ tag(t="moneymuseum") }}  

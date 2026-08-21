@@ -11,7 +11,7 @@ tags = ["map", "russia", "russian_empire", "black_sea", "sakartvelo", "year_1910
 id = 1502
 day = "2026-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1502"
-og_image = "5336893059293188649_1242592246_460001833.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1502-5336893059293188649.jpg"
 next_id = 1503
 next_title = ""
 next_body = "#wikipedia\n#wikimediacommons\nПишите авторам контентов - иногда они соглашаются сделать его Creative Commons"
@@ -24,22 +24,27 @@ ids = [1502]
 [[extra.related]]
 path = "@/posts/2025-09-01-654/index.md"
 label = "#russia #israel #map"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-08-20-631/index.md"
 label = "Percent of people who think their culture is superior to others…"
+date = "2025-08-20"
 
 [[extra.related]]
 path = "@/posts/2026-07-09-2045/index.md"
 label = "#map #googlemap #turkiye #sakartvelo"
+date = "2026-07-09"
 
 [[extra.related]]
 path = "@/posts/2025-06-21-586/index.md"
 label = "#map of articles and photos"
+date = "2025-06-21"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 +++
 
 {{ tag(t="map") }}  
@@ -51,4 +56,4 @@ label = "#sakartvelo"
 
 <https://commons.wikimedia.org/wiki/File:Evropayskye_gubernii_Rossii_1910.png>
 
-{{ img(src="5336893059293188649_1242592246_460001833.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1502-5336893059293188649.jpg") }}

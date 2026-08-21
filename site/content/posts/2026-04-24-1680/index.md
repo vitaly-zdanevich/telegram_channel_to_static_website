@@ -17,28 +17,33 @@ next_body = "#serp\n#armiesofexigo\n#google found a quote that exists on #youtub
 prev_id = 1679
 prev_title = ""
 prev_body = "#log\nStill running my experiment about #porting #primeworld from Windows/DirectX to Linux/OpenGL, 100% on autopilot..."
-views = 17
+views = 18
 ids = [1680]
 
 [[extra.related]]
 path = "@/posts/2025-04-18-474/index.md"
 label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
+date = "2025-04-18"
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
+date = "2025-01-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-24-198/index.md"
 label = "#music"
+date = "2024-11-24"
 +++
 
 {{ tag(t="preservation") }}  

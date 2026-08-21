@@ -24,22 +24,27 @@ ids = [1090]
 [[extra.related]]
 path = "@/posts/2026-03-21-1494/index.md"
 label = "#steam: almost 25% is on #linux?"
+date = "2026-03-21"
 
 [[extra.related]]
 path = "@/posts/2025-04-11-465/index.md"
 label = "#windows #linux"
+date = "2025-04-11"
 
 [[extra.related]]
 path = "@/posts/2026-04-12-1636/index.md"
 label = "#linux #france #news France to ditch Windows for Linux to reduce…"
+date = "2026-04-12"
 
 [[extra.related]]
 path = "@/posts/2025-10-19-706/index.md"
 label = "#wikidata #linux #warcraft3"
+date = "2025-10-19"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1091/index.md"
 label = "#linux #game #wwii #landing #ad #warthunder warthunder.com"
+date = "2026-02-05"
 +++
 
 {{ tag(t="linux") }}  

@@ -11,7 +11,7 @@ tags = ["tree", "kitty", "eza"]
 id = 1821
 day = "2026-06-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1821"
-og_image = "5287622628992557020_1231120580_460005340.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1821-5287622628992557020.jpg"
 next_id = 1822
 next_title = ""
 next_body = "#tbc\n#money\nThis is why we have #crypto?"
@@ -24,22 +24,27 @@ ids = [1821]
 [[extra.related]]
 path = "@/posts/2026-03-02-1308/index.md"
 label = "Wow in #kitty we can switch to a prev active tab: map ctrl+alt+p…"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-02-24-1136/index.md"
 label = "In #kitty terminal you can use independent clipboard: map ctrl+s…"
+date = "2026-02-24"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-713/index.md"
 label = "In #kitty terminal you can always highlight something, for examp…"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2026-06-13-1823/index.md"
 label = "#shell #productivity #love my mg alias - clickable #grep in #kit…"
+date = "2026-06-13"
 
 [[extra.related]]
 path = "@/posts/2025-09-21-679/index.md"
 label = "#film #thefountain #darrenaronofsky #hospital #tree"
+date = "2025-09-21"
 +++
 
 Make {{ tag(t="tree") }} clickable, tested in {{ tag(t="kitty") }}  
@@ -76,4 +81,4 @@ mime image/*
 action launch --type=overlay kitten icat --hold -- $FILE_PATH
 ```
 
-{{ img(src="5287622628992557020_1231120580_460005340.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1821-5287622628992557020.jpg") }}

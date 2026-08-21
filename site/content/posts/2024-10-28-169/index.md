@@ -24,5 +24,3 @@ ids = [169]
 [bilibili.com](http://bilibili.com/) capcha
 
 {{ img(src="5257958939142778279_1224213964_456256935.jpg") }}
-
-🙏 1

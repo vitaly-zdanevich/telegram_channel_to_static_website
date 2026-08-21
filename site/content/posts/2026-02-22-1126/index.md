@@ -24,10 +24,12 @@ ids = [1126]
 [[extra.related]]
 path = "@/posts/2026-04-24-1680/index.md"
 label = "#preservation #internetarchive #short #music #tape #audio"
+date = "2026-04-24"
 
 [[extra.related]]
 path = "@/posts/2025-04-18-474/index.md"
 label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
+date = "2025-04-18"
 +++
 
 {{ tag(t="internet_archive") }}  

@@ -23,22 +23,27 @@ ids = [2137]
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
+date = "2025-03-13"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2136/index.md"
 label = "#death #car #sound"
+date = "2026-08-09"
 +++
 
 {{ tag(t="sound") }}  

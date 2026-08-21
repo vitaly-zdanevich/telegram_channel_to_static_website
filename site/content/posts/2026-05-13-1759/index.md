@@ -11,7 +11,7 @@ tags = ["style", "mdn", "screenshot"]
 id = 1759
 day = "2026-05-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1759"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1759-5199865542213309154.jpg"
 next_id = 1761
 next_title = ""
 next_body = "I love #ci so much that for the first time I depleted free 400 minutes per month, on #gitlab, on my FOSS non-commercial projects."
@@ -24,18 +24,22 @@ ids = [1759, 1760]
 [[extra.related]]
 path = "@/posts/2024-11-20-195/index.md"
 label = "#style love my custom YandexMail"
+date = "2024-11-20"
 
 [[extra.related]]
 path = "@/posts/2026-05-12-1755/index.md"
 label = "#ai #screenshot from"
+date = "2026-05-12"
 
 [[extra.related]]
 path = "@/posts/2024-06-30-82/index.md"
 label = "I contribute to #wikipedia and other projects on #mediawiki engi…"
+date = "2024-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-04-01-1565/index.md"
 label = "#alien #screenshot #horror #giger #gimp #green #rice"
+date = "2026-04-01"
 +++
 
 Fix my {{ tag(t="style") }} for {{ tag(t="mdn") }}, {{ tag(t="screenshot") }} before and after  
@@ -44,8 +48,8 @@ Sad that UI customization is rare.
 
 <https://gitlab.com/vitaly-zdanevich-styles/mdn>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1759-5199865542213309154.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1760-5199865542213309155.jpg") }}
 
 👍 1

@@ -23,22 +23,27 @@ ids = [15]
 [[extra.related]]
 path = "@/posts/2024-11-27-204/index.md"
 label = "#meanna #sergeykurginyan К моим мыслям о человеческом счастье вс…"
+date = "2024-11-27"
 
 [[extra.related]]
 path = "@/posts/2022-03-17-14/index.md"
 label = "#music #meanna"
+date = "2022-03-17"
 
 [[extra.related]]
 path = "@/posts/2022-03-17-13/index.md"
 label = "#music #meanna"
+date = "2022-03-17"
 
 [[extra.related]]
 path = "@/posts/2022-03-17-12/index.md"
 label = "#music #meanna"
+date = "2022-03-17"
 
 [[extra.related]]
 path = "@/posts/2022-03-17-10/index.md"
 label = "#music #meanna"
+date = "2022-03-17"
 +++
 
 {{ tag(t="meanna") }}  

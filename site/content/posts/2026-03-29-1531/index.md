@@ -11,7 +11,7 @@ tags = ["wood", "cross", "virgin_mary", "belarus", "globustut", "year_2005"]
 id = 1531
 day = "2026-03-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1531"
-og_image = "5353089436800980032_1246363259_460002368.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1531-5353089436800980032.jpg"
 next_id = 1532
 next_title = ""
 next_body = "#architecture\n#abandone\n#Свиряны\n#belarus\n#globustut\n#year2005\nSource"
@@ -24,22 +24,27 @@ ids = [1531]
 [[extra.related]]
 path = "@/posts/2026-02-28-1240/index.md"
 label = "#cross #belarus #globustut #year2005"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1258/index.md"
 label = "#cross #monument #belarus #globustut #year2005 Source,%D1%81%D0%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1521/index.md"
 label = "#cementery #virginmary #blue #monument #belarus #ивашковцы #glob…"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-924/index.md"
 label = "#belarus #monument #christianity #virginmary #nature #village #y…"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"
 label = "#monument #belarus #globustut #year2005"
+date = "2026-03-29"
 +++
 
 {{ tag(t="wood") }}  
@@ -51,4 +56,4 @@ label = "#monument #belarus #globustut #year2005"
 
 [Source](https://commons.wikimedia.org/wiki/File:059-266_%D0%93%D0%B5%D1%80%D0%B2%D1%8F%D1%82%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_19_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-{{ img(src="5353089436800980032_1246363259_460002368.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1531-5353089436800980032.jpg") }}

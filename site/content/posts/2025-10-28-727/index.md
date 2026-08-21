@@ -24,22 +24,27 @@ ids = [727]
 [[extra.related]]
 path = "@/posts/2025-12-25-813/index.md"
 label = "#ui #windows #windowsxp"
+date = "2025-12-25"
 
 [[extra.related]]
 path = "@/posts/2025-12-25-814/index.md"
 label = "#windowsxp"
+date = "2025-12-25"
 
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-07-13-89/index.md"
 label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-34/index.md"
 label = "This website looks soooo special #design"
+date = "2024-04-27"
 +++
 
 {{ tag(t="os") }}  

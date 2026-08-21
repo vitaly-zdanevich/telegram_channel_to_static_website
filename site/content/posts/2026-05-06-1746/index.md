@@ -24,22 +24,27 @@ ids = [1746]
 [[extra.related]]
 path = "@/posts/2026-05-06-1747/index.md"
 label = "Oh my... #leetcode"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1749/index.md"
 label = "#leetcode #validation"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1763/index.md"
 label = "#error #gitlab #contradiction"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-05-12-1753/index.md"
 label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
+date = "2026-05-12"
 
 [[extra.related]]
 path = "@/posts/2025-06-13-571/index.md"
 label = "#livecoding #batman #binarysearch #leetcode with games :"
+date = "2025-06-13"
 +++
 
 {{ tag(t="leetcode") }} is often produce {{ tag(t="error") }}

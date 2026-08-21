@@ -25,5 +25,3 @@ ids = [80]
 Tried {{ tag(t="thunderbird") }} again, after many years - and its good. UI space can be optimized though - to be more compact. Even Google Calendar sync (with an extension).
 
 {{ img(src="5460889881816455526_1271462506_456251750.jpg") }}
-
-❤ 1

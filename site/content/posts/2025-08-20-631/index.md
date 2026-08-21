@@ -11,7 +11,7 @@ tags = ["map", "culture", "sakartvelo"]
 id = 631
 day = "2025-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/631"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-631-5274114063489695116.jpg"
+og_image = "5274114063489695116_1227975372_456261004.jpg"
 next_id = 632
 next_title = ""
 next_body = "Как работает дата-центр Яндекса в Финляндии\nHeating of a city by #datacenter\n#yandex\n#video\n#heat\nSource"
@@ -24,22 +24,27 @@ ids = [631]
 [[extra.related]]
 path = "@/posts/2026-07-09-2045/index.md"
 label = "#map #googlemap #turkiye #sakartvelo"
+date = "2026-07-09"
 
 [[extra.related]]
 path = "@/posts/2026-03-24-1502/index.md"
 label = "#map #russia #russianempire #blacksea #sakartvelo #year1910"
+date = "2026-03-24"
 
 [[extra.related]]
 path = "@/posts/2025-06-21-586/index.md"
 label = "#map of articles and photos"
+date = "2025-06-21"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 +++
 
 Percent of people who think their culture is superior to others  
@@ -50,4 +55,4 @@ Percent of people who think their culture is superior to others
 
 [Source](https://www.facebook.com/photo/?fbid=1109268631315746&amp;set=a.416664743909475)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-631-5274114063489695116.jpg") }}
+{{ img(src="5274114063489695116_1227975372_456261004.jpg") }}

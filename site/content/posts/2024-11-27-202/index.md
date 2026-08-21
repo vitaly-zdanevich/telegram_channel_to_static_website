@@ -24,22 +24,27 @@ ids = [202, 203]
 [[extra.related]]
 path = "@/posts/2025-05-14-534/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-533/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2026-04-25-1686/index.md"
 label = "#photo #batumi #dog"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-09-08-656/index.md"
 label = "#iran #tehran #photo"
+date = "2025-09-08"
 
 [[extra.related]]
 path = "@/posts/2025-06-16-576/index.md"
 label = "#photo #batumi #chandelier"
+date = "2025-06-16"
 +++
 
 My {{ tag(t="photo") }} from 2012, for the defunct website of naked {{ tag(t="cats") }}  
@@ -47,4 +52,4 @@ My {{ tag(t="photo") }} from 2012, for the defunct website of naked {{ tag(t="ca
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-203-5345981811383200855.jpg") }}
+{{ img(src="02.jpg") }}

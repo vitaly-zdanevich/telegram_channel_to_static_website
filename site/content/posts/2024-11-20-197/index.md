@@ -24,5 +24,3 @@ ids = [197]
 From <https://www.imdb.com/title/tt2542420>, ending
 
 {{ img(src="5327938726787148268_1240507403_456255980.jpg") }}
-
-🙏 1

@@ -23,22 +23,27 @@ ids = [747]
 [[extra.related]]
 path = "@/posts/2025-11-08-748/index.md"
 label = "#wikipedia #mimino Самому Данелии участие в Московском фестивале…"
+date = "2025-11-08"
 
 [[extra.related]]
 path = "@/posts/2025-11-08-746/index.md"
 label = "#wikipedia #mimino Уже после выхода «Мимино» к Данелии обратилис…"
+date = "2025-11-08"
 
 [[extra.related]]
 path = "@/posts/2025-11-08-745/index.md"
 label = "#wikipedia #mimino Работа в Тушетии в определённый момент оказал…"
+date = "2025-11-08"
 
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 +++
 
 {{ tag(t="wikipedia") }}  

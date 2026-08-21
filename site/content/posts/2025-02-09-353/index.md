@@ -18,28 +18,33 @@ next_body = "#music\n#anime\n#tatu\n#rammstein"
 prev_id = 352
 prev_title = ""
 prev_body = "#sakartvelo\n#ny\n#subway\nSource"
-views = 46
+views = 47
 ids = [353]
 
 [[extra.related]]
 path = "@/posts/2025-04-28-487/index.md"
 label = "#trump #batumi"
+date = "2025-04-28"
 
 [[extra.related]]
 path = "@/posts/2025-10-29-730/index.md"
 label = "#sakartvelo #batumi #misha #trump"
+date = "2025-10-29"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1848/index.md"
 label = "#batumi Oh my, I live here From"
+date = "2026-06-21"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2103/index.md"
 label = "#trump #gender By theceosonly"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 +++
 
 {{ tag(t="trump") }}  

@@ -24,22 +24,27 @@ ids = [1143, 1144, 1145, 1146, 1147, 1148]
 [[extra.related]]
 path = "@/posts/2026-02-25-1154/index.md"
 label = "#building #abandone #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-866/index.md"
 label = "#belarus #building #globustut"
+date = "2026-01-08"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-865/index.md"
 label = "#belarus #building #globustut"
+date = "2026-01-08"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-864/index.md"
 label = "#belarus #building #globustut"
+date = "2026-01-08"
 
 [[extra.related]]
 path = "@/posts/2026-01-08-863/index.md"
 label = "#belarus #building #globustut"
+date = "2026-01-08"
 +++
 
 {{ tag(t="building") }}  
@@ -53,7 +58,7 @@ label = "#belarus #building #globustut"
 
 {{ img(src="02.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1145-5258160909983619733.jpg") }}
+{{ img(src="03.jpg") }}
 
 {{ img(src="04.jpg") }}
 

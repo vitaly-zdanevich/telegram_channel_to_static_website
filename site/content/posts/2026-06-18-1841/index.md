@@ -23,22 +23,27 @@ ids = [1841]
 [[extra.related]]
 path = "@/posts/2026-03-12-1438/index.md"
 label = "#design #typography #newspaper #sakartvelo"
+date = "2026-03-12"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
 label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2024-12-10-213/index.md"
 label = "#ad"
+date = "2024-12-10"
 
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-07-13-89/index.md"
 label = "Another good #design"
+date = "2024-07-13"
 +++
 
 {{ tag(t="ad") }}  

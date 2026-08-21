@@ -23,6 +23,7 @@ ids = [192]
 [[extra.related]]
 path = "@/posts/2025-01-28-338/index.md"
 label = "#warcraft"
+date = "2025-01-28"
 +++
 
 [https://youtu.be/DWjZQzviTUs](<https://youtu.be/DWjZQzviTUs> "Warcraft 2 Remastered - Full Orc Campaign Gameplay & Story (Speedrun / Walkthrough)")  
@@ -30,5 +31,3 @@ label = "#warcraft"
 {{ tag(t="warcraft") }}
 
 {{ youtube(id="DWjZQzviTUs") }}
-
-🙏 1

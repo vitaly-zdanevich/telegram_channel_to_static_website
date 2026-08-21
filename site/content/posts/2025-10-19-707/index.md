@@ -24,28 +24,33 @@ ids = [707]
 [[extra.related]]
 path = "@/posts/2025-10-25-720/index.md"
 label = "Downloaded by #wget a dying website indiegamewebsite.com The com…"
+date = "2025-10-25"
 
 [[extra.related]]
 path = "@/posts/2025-09-30-690/index.md"
 label = "#archivation"
+date = "2025-09-30"
 
 [[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-04-735/index.md"
 label = "If WebArchive have it - it still not in Google - you cannot sear…"
+date = "2025-11-04"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-712/index.md"
 label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 +++
 
 {{ tag(t="archivation") }}  
 {{ tag(t="games") }}  
 
-Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 831 stars · Languages: Python 91%, Dockerfile 9% · 518 commits · 49 forks · 84 open issues/PRs · GPL-3.0 · last push 2026-07-31")  
+Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 832 stars · Languages: Python 91%, Dockerfile 9% · 518 commits · 49 forks · 84 open issues/PRs · GPL-3.0 · last push 2026-07-31")  
 
 [https://gamechronicles.com](https://gamechronicles.com/)
 

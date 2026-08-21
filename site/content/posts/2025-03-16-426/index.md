@@ -23,10 +23,12 @@ ids = [426]
 [[extra.related]]
 path = "@/posts/2025-10-22-717/index.md"
 label = "#life #deep #silence Почему ты всё время молчишь, у тебя нет тем…"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2036/index.md"
 label = "#life #death #captcha #cat #usb"
+date = "2026-07-08"
 +++
 
 {{ tag(t="life") }}  
@@ -36,7 +38,5 @@ label = "#life #death #captcha #cat #usb"
 [Source](https://www.instagram.com/p/DFYWbwQAMnd)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/426-01.mp4") }}
-
-🙏 1
 
 {{ tag(t="video") }}

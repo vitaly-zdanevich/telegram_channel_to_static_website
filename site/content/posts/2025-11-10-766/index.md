@@ -24,22 +24,27 @@ ids = [766]
 [[extra.related]]
 path = "@/posts/2025-11-12-772/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-12"
 
 [[extra.related]]
 path = "@/posts/2025-11-11-768/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-11"
 
 [[extra.related]]
 path = "@/posts/2025-11-11-767/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-11"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-779/index.md"
 label = "#webdesign #webdesignold #webdesigngames Year: 2000"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-12-771/index.md"
 label = "#webdesign #webdesignold #xbox Wikidata"
+date = "2025-11-12"
 +++
 
 {{ tag(t="about") }}  

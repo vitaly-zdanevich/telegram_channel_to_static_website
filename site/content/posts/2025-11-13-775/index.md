@@ -23,22 +23,27 @@ ids = [775]
 [[extra.related]]
 path = "@/posts/2025-11-13-776/index.md"
 label = "#quote #kindzadza Фильм был изначально запланирован как двухсери…"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2037/index.md"
 label = "#kindzadza #trailer"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2026-05-17-1776/index.md"
 label = "#llm #quote"
+date = "2026-05-17"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-12-15-801/index.md"
 label = "#kindzadza #suicide #oxygen Планета Хануд. Здесь теперь всегда н…"
+date = "2025-12-15"
 +++
 
 {{ tag(t="quote") }}  

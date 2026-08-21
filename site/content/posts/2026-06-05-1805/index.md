@@ -23,22 +23,27 @@ ids = [1805]
 [[extra.related]]
 path = "@/posts/2026-05-25-1786/index.md"
 label = "Finally I forked #nixnote, and migrated from #qt5 to #qt6, by #l…"
+date = "2026-05-25"
 
 [[extra.related]]
 path = "@/posts/2026-05-21-1784/index.md"
 label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
+date = "2026-05-21"
 
 [[extra.related]]
 path = "@/posts/2026-06-19-1845/index.md"
 label = "I did #kvantum/#qt6 theme, with #llm #gpt 5.5 xhigh, #love it, #…"
+date = "2026-06-19"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
+date = "2026-05-18"
 +++
 
 My yet another project: [@wikipedia\_unofficial\_bot](https://t.me/wikipedia_unofficial_bot)  

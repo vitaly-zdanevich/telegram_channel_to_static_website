@@ -23,10 +23,12 @@ ids = [717]
 [[extra.related]]
 path = "@/posts/2025-03-16-426/index.md"
 label = "#life #esoteric #brodsky"
+date = "2025-03-16"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2036/index.md"
 label = "#life #death #captcha #cat #usb"
+date = "2026-07-08"
 +++
 
 {{ tag(t="life") }}  

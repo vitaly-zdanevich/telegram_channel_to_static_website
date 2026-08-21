@@ -24,22 +24,27 @@ ids = [1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279]
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"
 label = "#monument #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1258/index.md"
 label = "#cross #monument #belarus #globustut #year2005 Source,%D1%81%D0%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1236/index.md"
 label = "#grave #stones #belarus #globustut #year2005"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1260/index.md"
 label = "#monument #bird #eagle #belarus #globustut #year2005"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-927/index.md"
 label = "#belarus #monument #nature #year2005 #year1915 #globustut"
+date = "2026-01-21"
 +++
 
 {{ tag(t="stones") }}  
@@ -58,7 +63,7 @@ label = "#belarus #monument #nature #year2005 #year1915 #globustut"
 
 {{ img(src="04.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1275-5269742426736235652.jpg") }}
+{{ img(src="05.jpg") }}
 
 {{ img(src="06.jpg") }}
 
@@ -67,5 +72,3 @@ label = "#belarus #monument #nature #year2005 #year1915 #globustut"
 {{ img(src="08.jpg") }}
 
 {{ img(src="09.jpg") }}
-
-👍 1

@@ -24,26 +24,29 @@ ids = [226]
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-07-21-602/index.md"
 label = "#webdesign"
+date = "2025-07-21"
 +++
 
 {{ tag(t="webdesign") }} <https://handbookhmm.ru/nwcomputing/fullgraf/fullgraf.html>
 
 {{ img(src="5444996905093424600_1267762134_456254936.jpg") }}
-
-🙏 1

@@ -24,22 +24,27 @@ ids = [1097]
 [[extra.related]]
 path = "@/posts/2024-12-22-222/index.md"
 label = "#youtube"
+date = "2024-12-22"
 
 [[extra.related]]
 path = "@/posts/2026-02-07-1099/index.md"
 label = "#love it - against #youtube #clickbait"
+date = "2026-02-07"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1078/index.md"
 label = "#ui #yandex #samara"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-25-813/index.md"
 label = "#ui #windows #windowsxp"
+date = "2025-12-25"
 
 [[extra.related]]
 path = "@/posts/2025-12-25-812/index.md"
 label = "#winamp #ui #audioplayer"
+date = "2025-12-25"
 +++
 
 I love {{ tag(t="display") }} aspect ratio 16x10 because I have the special space for {{ tag(t="youtube") }} {{ tag(t="ui") }}, when most videos are 16x9

@@ -24,22 +24,27 @@ ids = [1188, 1189, 1190, 1191, 1192, 1193, 1194]
 [[extra.related]]
 path = "@/posts/2026-03-08-1373/index.md"
 label = "#cementery #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1255/index.md"
 label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1248/index.md"
 label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1176/index.md"
 label = "#monument #cementery #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1350/index.md"
 label = "#cementery #abandone #belarus #globustut #year2005 Source,%D1%81…"
+date = "2026-03-07"
 +++
 
 {{ tag(t="tower") }}  
@@ -61,4 +66,4 @@ label = "#cementery #abandone #belarus #globustut #year2005 Source,%D1%81…"
 
 {{ img(src="06.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1194-5260412709797302304.jpg") }}
+{{ img(src="07.jpg") }}

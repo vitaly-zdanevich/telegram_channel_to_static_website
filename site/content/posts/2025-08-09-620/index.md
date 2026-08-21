@@ -24,22 +24,27 @@ ids = [620]
 [[extra.related]]
 path = "@/posts/2025-03-27-458/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-457/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-456/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-455/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 +++
 
 {{ tag(t="money") }}  

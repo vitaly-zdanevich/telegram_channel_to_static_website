@@ -24,6 +24,7 @@ ids = [1115]
 [[extra.related]]
 path = "@/posts/2025-05-14-528/index.md"
 label = "#mount #archive #zip, #rar and others as read-only #fuse, love i…"
+date = "2025-05-14"
 +++
 
 {{ tag(t="zst") }} is so much smaller {{ tag(t="archive") }}  

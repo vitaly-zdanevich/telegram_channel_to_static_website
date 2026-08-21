@@ -24,6 +24,7 @@ ids = [387, 388, 389]
 [[extra.related]]
 path = "@/posts/2025-09-01-651/index.md"
 label = "#wikimediafoundation #office from 2024"
+date = "2025-09-01"
 +++
 
 {{ tag(t="office") }}  
@@ -34,5 +35,3 @@ label = "#wikimediafoundation #office from 2024"
 {{ img(src="02.jpg") }}
 
 {{ img(src="03.jpg") }}
-
-👍 1

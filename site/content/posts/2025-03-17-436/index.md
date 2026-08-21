@@ -24,14 +24,17 @@ ids = [436]
 [[extra.related]]
 path = "@/posts/2025-03-17-438/index.md"
 label = "#dieantwoord"
+date = "2025-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-03-17-435/index.md"
 label = "#dieantwoord"
+date = "2025-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-03-17-434/index.md"
 label = "#music #dieantwoord"
+date = "2025-03-17"
 +++
 
 {{ tag(t="die_antwoord") }}  
@@ -39,5 +42,3 @@ label = "#music #dieantwoord"
 [Source](https://commons.wikimedia.org/wiki/File:Die_Antwoord_Ninja_and_Yolandi_on_the_street.jpg)
 
 {{ img(src="5384349651886533523_1253641595_456256403.jpg") }}
-
-❤ 2

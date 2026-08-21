@@ -23,22 +23,27 @@ ids = [2040]
 [[extra.related]]
 path = "@/posts/2026-03-07-1338/index.md"
 label = "#house #river #belarus #globustut"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1349/index.md"
 label = "#house #abandone #belarus #globustut #year2005 Source,%D1%81%D0%…"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1285/index.md"
 label = "#village #house #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-01-20-913/index.md"
 label = "#belarus #nature #river #green #year2005"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1966/index.md"
 label = "#belarus #photo #river #boat #year2005 #globustut"
+date = "2026-07-05"
 +++
 
 {{ tag(t="dream") }}  

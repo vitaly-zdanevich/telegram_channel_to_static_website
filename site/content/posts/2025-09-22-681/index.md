@@ -24,22 +24,27 @@ ids = [681, 682]
 [[extra.related]]
 path = "@/posts/2025-05-12-523/index.md"
 label = "#belarus #history #lost #offline"
+date = "2025-05-12"
 
 [[extra.related]]
 path = "@/posts/2025-02-15-362/index.md"
 label = "#coin Its real coins, from Cook Islands"
+date = "2025-02-15"
 
 [[extra.related]]
 path = "@/posts/2025-02-15-361/index.md"
 label = "#coin"
+date = "2025-02-15"
 
 [[extra.related]]
 path = "@/posts/2024-12-11-215/index.md"
 label = "#belarus"
+date = "2024-12-11"
 
 [[extra.related]]
 path = "@/posts/2024-05-06-42/index.md"
 label = "Coin 5 years of Lithuania independence, from #coin"
+date = "2024-05-06"
 +++
 
 {{ tag(t="coin") }}  
@@ -51,5 +56,3 @@ Uploaded to <https://commons.wikimedia.org/wiki/Category:Coins_of_Algirdas>
 {{ img(src="01.jpg") }}
 
 {{ img(src="02.jpg") }}
-
-❤ 1

@@ -24,24 +24,29 @@ ids = [674]
 [[extra.related]]
 path = "@/posts/2026-03-17-1491/index.md"
 label = "#telegram added a feature request Add option to cache/prefetch a…"
+date = "2026-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-09-29-684/index.md"
 label = "#patch for #telegram for wide messages --- a/Telegram/SourceFile…"
+date = "2025-09-29"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-614/index.md"
 label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
+date = "2025-08-05"
 
 [[extra.related]]
 path = "@/posts/2026-06-08-1806/index.md"
 label = "Wow, about #telegram bots: you can bypass 50 MB response limit -…"
+date = "2026-06-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-24-442/index.md"
 label = "wow in #telegram we have a #crypto #wallet, and users can send m…"
+date = "2025-03-24"
 +++
 
-{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1354 stars · Languages: C++ 97%, Objective-C++ 1%, CMake 1% · 24800 commits · 140 forks · 148 open issues/PRs · last push 2026-07-02")
+{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1356 stars · Languages: C++ 97%, Objective-C++ 1%, CMake 1% · 24800 commits · 140 forks · 148 open issues/PRs · last push 2026-07-02")
 
 {{ img(src="5364201410545194447_1248950467_456267215.jpg") }}

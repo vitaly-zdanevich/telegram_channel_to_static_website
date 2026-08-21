@@ -24,22 +24,27 @@ ids = [665, 666, 667, 668]
 [[extra.related]]
 path = "@/posts/2025-09-15-671/index.md"
 label = "#video #film #nightwatch #zavulon"
+date = "2025-09-15"
 
 [[extra.related]]
 path = "@/posts/2024-06-11-53/index.md"
 label = "#film #nightwatch Night Watch, love it"
+date = "2024-06-11"
 
 [[extra.related]]
 path = "@/posts/2023-08-12-29/index.md"
 label = "#film #nightwatch Night Watch: episode with witch, in the beginn…"
+date = "2023-08-12"
 
 [[extra.related]]
 path = "@/posts/2023-07-11-21/index.md"
 label = "#film #nightwatch Love these episodes from Night Watch Ночной До…"
+date = "2023-07-11"
 
 [[extra.related]]
 path = "@/posts/2025-08-30-647/index.md"
 label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+date = "2025-08-30"
 +++
 
 {{ tag(t="film") }}  

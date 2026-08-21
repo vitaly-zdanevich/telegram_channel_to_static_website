@@ -11,6 +11,7 @@ tags = ["belarus", "cementery", "sun", "sky", "blue", "year_2015"]
 id = 1879
 day = "2026-07-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1879"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1879-5341828788005153317.png"
 next_id = 1880
 next_title = ""
 next_body = "#belarus\n#abandone\n#trees\n#year2015\nSource.jpg)"
@@ -23,22 +24,27 @@ ids = [1879]
 [[extra.related]]
 path = "@/posts/2026-03-29-1521/index.md"
 label = "#cementery #virginmary #blue #monument #belarus #ивашковцы #glob…"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-07-01-1880/index.md"
 label = "#belarus #abandone #trees #year2015 Source.jpg"
+date = "2026-07-01"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1373/index.md"
 label = "#cementery #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1255/index.md"
 label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1248/index.md"
 label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+date = "2026-02-28"
 +++
 
 {{ tag(t="belarus") }}  
@@ -50,4 +56,4 @@ label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%B8%D1%87%D0%B5%D0%B2%D0%BE_%D0%B2%D0%BE%D0%BB%D0%BE%D0%B6%D0%B8%D0%BD_(3).jpg)
 
-📎 image_2026-07-01_07-36-10.png *(not archived)*
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1879-5341828788005153317.png") }}

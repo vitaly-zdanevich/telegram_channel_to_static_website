@@ -24,22 +24,27 @@ ids = [609]
 [[extra.related]]
 path = "@/posts/2025-05-07-503/index.md"
 label = "#ai #girl #relationships #psy"
+date = "2025-05-07"
 
 [[extra.related]]
 path = "@/posts/2025-03-11-404/index.md"
 label = "#video #ad #japan #ai #girl #virtual"
+date = "2025-03-11"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
+date = "2026-01-24"
 
 [[extra.related]]
 path = "@/posts/2025-01-28-343/index.md"
 label = "#ai"
+date = "2025-01-28"
 +++
 
 {{ tag(t="girl") }}  
@@ -51,5 +56,3 @@ label = "#ai"
 > You generated  <br>pictures and videos for him,  <br>wrote texts for  <br>demos,  <br>helped him endlessly with reports  <br>and a diploma, but in the end  <br>he chose a woman  <br>who knows how to find  <br>hydrants  <br>in photographs
 
 {{ img(src="5192779133933974763_1209038108_456258795.jpg") }}
-
-😁 1

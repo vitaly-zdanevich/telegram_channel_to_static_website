@@ -11,7 +11,7 @@ tags = ["7августа2026", "цена"]
 id = 2118
 day = "2026-08-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2118"
-og_image = "5447418076946176652_1268325857_460003980.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2118-5447418076946176652.jpg"
 next_id = 2119
 next_title = ""
 next_body = "#hardware\n#player\nSource"
@@ -25,6 +25,7 @@ ids = [2118]
 [[extra.related]]
 path = "@/posts/2026-07-08-2044/index.md"
 label = "#10июля2026 пт 21.30-23:00 айтишная посиделка в Friends club #це…"
+date = "2026-07-08"
 +++
 
 {{ tag(t="7августа2026") }} (пт) 21.30-00:00 айтишная посиделка в Friends club  
@@ -47,4 +48,4 @@ label = "#10июля2026 пт 21.30-23:00 айтишная посиделка в
 
 **💬** Все вопросы – в личку: [@marstut](https://t.me/marstut)
 
-{{ img(src="5447418076946176652_1268325857_460003980.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2118-5447418076946176652.jpg") }}

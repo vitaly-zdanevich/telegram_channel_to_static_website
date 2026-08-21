@@ -5,12 +5,13 @@ description = "webdesign oldweb"
 
 [taxonomies]
 days = ["2026-03-08"]
-tags = ["webdesign", "oldweb", "video"]
+tags = ["webdesign", "oldweb"]
 
 [extra]
 id = 1392
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1392"
+og_image = "01.jpg"
 next_id = 1393
 next_title = ""
 next_body = "#webdesign\n#pink\n#hellokitty\n#oldweb"
@@ -23,22 +24,27 @@ ids = [1392]
 [[extra.related]]
 path = "@/posts/2026-03-07-1368/index.md"
 label = "#webdesign #oldweb"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1415/index.md"
 label = "#webdesign #oldweb #animation"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1369/index.md"
 label = "#webdesign #oldweb #anime"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1367/index.md"
 label = "#webdesign #anime #oldweb"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1366/index.md"
 label = "#webdesign #oldweb #anime"
+date = "2026-03-07"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -46,6 +52,6 @@ label = "#webdesign #oldweb #anime"
 
 <https://netsqhere.neocities.org/>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1392-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 4:02*

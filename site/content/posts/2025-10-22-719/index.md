@@ -24,22 +24,27 @@ ids = [719]
 [[extra.related]]
 path = "@/posts/2025-10-21-712/index.md"
 label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -49,5 +54,3 @@ label = "#webdesign"
 [https://rpgwatch.com](https://rpgwatch.com/)
 
 {{ img(src="5460802865779047421_1271442246_456260605.jpg") }}
-
-🔥 1

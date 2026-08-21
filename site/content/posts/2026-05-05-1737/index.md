@@ -11,7 +11,7 @@ tags = ["webdesign", "bilibili"]
 id = 1737
 day = "2026-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1737"
-og_image = "5463320146114974742_1272028346_460002326.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1737-5463320146114974742.jpg"
 next_id = 1738
 next_title = ""
 next_body = "#webdesign\n#video\n#bilibili"
@@ -24,22 +24,27 @@ ids = [1737]
 [[extra.related]]
 path = "@/posts/2026-05-05-1738/index.md"
 label = "#webdesign #video #bilibili"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2025-05-10-513/index.md"
 label = "#bilibili #anime #webdesign #stream #ui"
+date = "2025-05-10"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1765/index.md"
 label = "#bilibili verification with 100 questions - to be able to leave…"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -47,4 +52,4 @@ label = "#webdesign"
 
 [https://www.bilibili.com](https://www.bilibili.com/)
 
-{{ img(src="5463320146114974742_1272028346_460002326.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1737-5463320146114974742.jpg") }}

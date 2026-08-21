@@ -11,7 +11,7 @@ tags = ["map", "greenland", "africa", "mercator"]
 id = 670
 day = "2025-09-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/670"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-670-5334931646509611961.jpg"
+og_image = "5334931646509611961_1242135569_456260537.jpg"
 next_id = 671
 next_title = ""
 next_body = "#video\n#film\n#nightwatch\n#zavulon\nSource"
@@ -24,22 +24,27 @@ ids = [670]
 [[extra.related]]
 path = "@/posts/2025-06-21-586/index.md"
 label = "#map of articles and photos"
+date = "2025-06-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 
 [[extra.related]]
 path = "@/posts/2026-01-12-873/index.md"
 label = "#map The Earth, centred around #newzealand"
+date = "2026-01-12"
 
 [[extra.related]]
 path = "@/posts/2025-09-10-669/index.md"
 label = "#map #isis"
+date = "2025-09-10"
 
 [[extra.related]]
 path = "@/posts/2025-10-05-697/index.md"
 label = "#turkey #map #population"
+date = "2025-10-05"
 +++
 
 {{ tag(t="map") }}  
@@ -49,4 +54,4 @@ label = "#turkey #map #population"
 
 [Source](https://www.instagram.com/p/DOVrzrrkUf4)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-670-5334931646509611961.jpg") }}
+{{ img(src="5334931646509611961_1242135569_456260537.jpg") }}

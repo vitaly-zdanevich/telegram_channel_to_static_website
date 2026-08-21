@@ -23,22 +23,27 @@ ids = [699]
 [[extra.related]]
 path = "@/posts/2024-12-22-222/index.md"
 label = "#youtube"
+date = "2024-12-22"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2121/index.md"
 label = "My new #project: #userscript for #instagram for likes page - to…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-02-27-1202/index.md"
 label = "My new #userscript for #evernote adds a few #hotkey"
+date = "2026-02-27"
 
 [[extra.related]]
 path = "@/posts/2026-02-07-1099/index.md"
 label = "#love it - against #youtube #clickbait"
+date = "2026-02-07"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1097/index.md"
 label = "I love #display aspect ratio 16x10 because I have the special sp…"
+date = "2026-02-05"
 +++
 
 {{ tag(t="userscript") }} for {{ tag(t="youtube") }}: audio only. Better for {{ tag(t="cpu") }}, {{ tag(t="battery") }}, {{ tag(t="traffic") }}  

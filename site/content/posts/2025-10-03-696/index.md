@@ -23,22 +23,27 @@ ids = [696]
 [[extra.related]]
 path = "@/posts/2024-02-24-31/index.md"
 label = "#film #scifi Love, Death & Robots: ending from s1ep7 Beyond the…"
+date = "2024-02-24"
 
 [[extra.related]]
 path = "@/posts/2025-01-17-253/index.md"
 label = "#film #scifi #space"
+date = "2025-01-17"
 
 [[extra.related]]
 path = "@/posts/2024-02-26-32/index.md"
 label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2024-06-11-53/index.md"
 label = "#film #nightwatch Night Watch, love it"
+date = "2024-06-11"
 +++
 
 {{ tag(t="film") }}  

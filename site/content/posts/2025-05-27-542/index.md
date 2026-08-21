@@ -24,22 +24,27 @@ ids = [542]
 [[extra.related]]
 path = "@/posts/2026-01-13-876/index.md"
 label = "#macOS: to install #git I need 25 GB"
+date = "2026-01-13"
 
 [[extra.related]]
 path = "@/posts/2025-06-27-591/index.md"
 label = "#git #gitgraph"
+date = "2025-06-27"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1085/index.md"
 label = "#logo #gitlab #git"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2026-01-20-907/index.md"
 label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2025-12-21-810/index.md"
 label = "#software #tui #git"
+date = "2025-12-21"
 +++
 
 {{ tag(t="git") }}  

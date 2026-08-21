@@ -17,28 +17,33 @@ next_body = "mkdir aaa/bbb/ccc\ncp f aaa/bbb/ccc\nCan be simpler with the instal
 prev_id = 596
 prev_title = ""
 prev_body = "My another #userscript: small toggle for #darkmode on #stackexchange\n// ==UserScript==\n// @name StackExchange dark mode work-in-progress\n// @version 2025july4\n// @description From\n// @author daniel.z.tg and Vitaly Zdanevich\n// @match\n// @match\n// @match\n// @match\n// @match\n// @match\n// @run-at document-body\n// ==/UserScript==\n// NOT working for all sites\ndocument.body.classList.add('theme-dark');"
-views = 43
+views = 44
 ids = [597]
 
 [[extra.related]]
 path = "@/posts/2025-02-22-379/index.md"
 label = "#anime #music #choir"
+date = "2025-02-22"
 
 [[extra.related]]
 path = "@/posts/2025-02-10-355/index.md"
 label = "#music #anime #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-08-20-633/index.md"
 label = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch #music #anime #russi…"
+date = "2025-08-20"
 
 [[extra.related]]
 path = "@/posts/2025-02-10-354/index.md"
 label = "#music #anime #tatu #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
-path = "@/posts/2025-06-02-546/index.md"
-label = "PromoDJ #music genres"
+path = "@/posts/2026-08-19-2140/index.md"
+label = "#fun #document #secret #censor #music #anime #badapple"
+date = "2026-08-19"
 +++
 
 {{ tag(t="music") }}  

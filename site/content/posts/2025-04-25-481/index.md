@@ -23,6 +23,7 @@ ids = [481]
 [[extra.related]]
 path = "@/posts/2026-07-27-2075/index.md"
 label = "#animal #mouse #grass #ground #watering #cares"
+date = "2026-07-27"
 +++
 
 {{ tag(t="sex") }}  
@@ -32,5 +33,3 @@ label = "#animal #mouse #grass #ground #watering #cares"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/7036943162752920/") }}
-
-👎 1 · 🤣 1

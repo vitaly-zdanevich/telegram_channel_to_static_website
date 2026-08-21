@@ -24,22 +24,27 @@ ids = [407]
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
 label = "#health #science"
+date = "2025-05-08"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2137/index.md"
 label = "#sound #food #poor"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-08-02-2114/index.md"
 label = "#духота #health #powerlifting"
+date = "2026-08-02"
 
 [[extra.related]]
 path = "@/posts/2026-08-02-2112/index.md"
 label = "#health #духота #kozhemiako"
+date = "2026-08-02"
 +++
 
 {{ tag(t="health") }}  

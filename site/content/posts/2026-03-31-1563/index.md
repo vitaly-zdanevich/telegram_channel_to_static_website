@@ -17,28 +17,33 @@ next_body = "#god\n#smartphone\n#game"
 prev_id = 1562
 prev_title = ""
 prev_body = "#webdesign\n#photo\n#people\n#gamedev\n#icepicklodge"
-views = 22
+views = 23
 ids = [1563]
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
+date = "2025-01-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-24-198/index.md"
 label = "#music"
+date = "2024-11-24"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1764/index.md"
 label = "#music #sunboy Остров в океане From Про исполнителя"
+date = "2026-05-16"
 +++
 
 {{ tag(t="music") }}  

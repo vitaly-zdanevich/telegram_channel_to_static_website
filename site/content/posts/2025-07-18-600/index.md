@@ -24,22 +24,27 @@ ids = [600]
 [[extra.related]]
 path = "@/posts/2026-06-29-1870/index.md"
 label = "#belarus #колодищи #architecture #church Author: Димитров Денис"
+date = "2026-06-29"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1178/index.md"
 label = "#church #architecture #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-962/index.md"
 label = "#belarus #architecture #church #вселюб #year2005 #globustut From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-28-961/index.md"
 label = "#belarus #architecture #church #несвиж #year2005 #globustut From"
+date = "2026-01-28"
 
 [[extra.related]]
 path = "@/posts/2026-01-28-956/index.md"
 label = "#belarus #architecture #church #раубичи #year2005 #globustut Fro…"
+date = "2026-01-28"
 +++
 
 {{ tag(t="religion") }}  

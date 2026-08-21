@@ -23,22 +23,27 @@ ids = [2105]
 [[extra.related]]
 path = "@/posts/2026-02-02-1077/index.md"
 label = "#japan From"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2133/index.md"
 label = "#car #death"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-10-22-716/index.md"
 label = "#medicine #death"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2136/index.md"
 label = "#death #car #sound"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2135/index.md"
 label = "#death #cementery #urban"
+date = "2026-08-09"
 +++
 
 {{ tag(t="theater") }}  

@@ -24,14 +24,17 @@ ids = [435]
 [[extra.related]]
 path = "@/posts/2025-03-17-438/index.md"
 label = "#dieantwoord"
+date = "2025-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-03-17-436/index.md"
 label = "#dieantwoord"
+date = "2025-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-03-17-434/index.md"
 label = "#music #dieantwoord"
+date = "2025-03-17"
 +++
 
 {{ tag(t="die_antwoord") }}  

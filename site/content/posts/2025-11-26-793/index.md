@@ -17,28 +17,33 @@ next_body = "#wikipedia\n#delitionism\nYou can see this stark difference between
 prev_id = 792
 prev_title = ""
 prev_body = "#game\n#strategy\n#rtt\n#groundcontrol\nThe #bishop defector death - dramatic moment, from minute 9"
-views = 53
+views = 54
 ids = [793]
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1091/index.md"
 label = "#linux #game #wwii #landing #ad #warthunder warthunder.com"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-01-545/index.md"
 label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
+date = "2025-06-01"
 
 [[extra.related]]
 path = "@/posts/2026-06-20-1847/index.md"
 label = "#game #trailer #music #year2009 #halo #xbox #xbox360 One of the…"
+date = "2026-06-20"
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 +++
 
 {{ tag(t="ad") }}  

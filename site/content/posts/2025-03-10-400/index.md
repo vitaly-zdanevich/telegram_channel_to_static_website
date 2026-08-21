@@ -22,4 +22,4 @@ ids = [400, 401]
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-401-5366226702373613469.jpg") }}
+{{ img(src="02.jpg") }}

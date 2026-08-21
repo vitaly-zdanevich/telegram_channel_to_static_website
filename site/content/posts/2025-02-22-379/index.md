@@ -18,28 +18,33 @@ next_body = "Прывiтаначкi, я пачаў афiцыйны перакл�
 prev_id = 378
 prev_title = ""
 prev_body = "#ai\n#vacuumcleaner\nSource"
-views = 57
+views = 58
 ids = [379]
 
 [[extra.related]]
 path = "@/posts/2025-07-12-597/index.md"
 label = "#music #anime #susumuhirasawa"
+date = "2025-07-12"
 
 [[extra.related]]
 path = "@/posts/2025-02-10-355/index.md"
 label = "#music #anime #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-08-20-633/index.md"
 label = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch #music #anime #russi…"
+date = "2025-08-20"
 
 [[extra.related]]
 path = "@/posts/2025-02-10-354/index.md"
 label = "#music #anime #tatu #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
-path = "@/posts/2025-06-02-546/index.md"
-label = "PromoDJ #music genres"
+path = "@/posts/2026-08-19-2140/index.md"
+label = "#fun #document #secret #censor #music #anime #badapple"
+date = "2026-08-19"
 +++
 
 {{ tag(t="anime") }}  
@@ -49,5 +54,3 @@ label = "PromoDJ #music genres"
 [Source](https://www.pinterest.com/pin/150941025005327412)
 
 {{ img(src="5319003532659125502_1238427016_456256766.jpg") }}
-
-❤ 1

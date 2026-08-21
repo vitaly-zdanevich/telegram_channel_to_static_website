@@ -17,28 +17,33 @@ next_body = "Фильм \"Лучше не бывает\": несколько м�
 prev_id = 793
 prev_title = ""
 prev_body = "#ad\n#game\n#tank\n#wwii\n#music\n#warpath\nSource"
-views = 56
+views = 57
 ids = [794]
 
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-25-201/index.md"
 label = "#wikipedia"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-14-1112/index.md"
 label = "Editing #wikipedia, in #vim"
+date = "2026-02-14"
 +++
 
 {{ tag(t="wikipedia") }}  

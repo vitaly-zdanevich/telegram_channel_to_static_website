@@ -24,22 +24,27 @@ ids = [1113]
 [[extra.related]]
 path = "@/posts/2024-11-25-199/index.md"
 label = "The stand-alone expansion Homeworld: Cataclysm was not announced…"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2025-11-21-787/index.md"
 label = "#preservation #game #groundcontrol #wwiii From the game Ground C…"
+date = "2025-11-21"
 
 [[extra.related]]
 path = "@/posts/2026-01-04-840/index.md"
 label = "#game #gta #remaster #preservation #lost Rosado claimed \"the art…"
+date = "2026-01-04"
 
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 +++
 
 {{ tag(t="preservation") }}  

@@ -23,22 +23,27 @@ ids = [465]
 [[extra.related]]
 path = "@/posts/2026-03-21-1494/index.md"
 label = "#steam: almost 25% is on #linux?"
+date = "2026-03-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1090/index.md"
 label = "#linux #gamex"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-38/index.md"
 label = "I love - developed in 2004 - but nobody sell it anymore in 2024.…"
+date = "2024-04-27"
 
 [[extra.related]]
 path = "@/posts/2026-04-12-1636/index.md"
 label = "#linux #france #news France to ditch Windows for Linux to reduce…"
+date = "2026-04-12"
 
 [[extra.related]]
 path = "@/posts/2025-12-25-813/index.md"
 label = "#ui #windows #windowsxp"
+date = "2025-12-25"
 +++
 
 {{ tag(t="windows") }}  

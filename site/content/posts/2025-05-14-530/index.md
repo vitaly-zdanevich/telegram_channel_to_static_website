@@ -24,26 +24,29 @@ ids = [530]
 [[extra.related]]
 path = "@/posts/2026-02-22-1123/index.md"
 label = "#commons"
+date = "2026-02-22"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1093/index.md"
 label = "#commons My account is big, my account is very big"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-19-584/index.md"
 label = "#commons TODO list"
+date = "2025-06-19"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1306/index.md"
 label = "Magic that I can say #codex to download all scan - and I get it,…"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-02-11-1105/index.md"
 label = "#commons The server did not respond within the expected time If…"
+date = "2026-02-11"
 +++
 
 You can {{ tag(t="upload") }} to {{ tag(t="commons") }} through {{ tag(t="darktable") }} with this [free plugin](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 100% · 92 commits · 3 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-07-26")
 
 {{ img(src="5269559087463524741_1226914834_456255877.jpg") }}
-
-🔥 1

@@ -23,22 +23,27 @@ ids = [500]
 [[extra.related]]
 path = "@/posts/2025-01-17-253/index.md"
 label = "#film #scifi #space"
+date = "2025-01-17"
 
 [[extra.related]]
 path = "@/posts/2024-11-20-196/index.md"
 label = "#space #film #extract Lost in Space from 1998, movie ending, lov…"
+date = "2024-11-20"
 
 [[extra.related]]
 path = "@/posts/2024-02-26-32/index.md"
 label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-10-03-696/index.md"
 label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+date = "2025-10-03"
 +++
 
 {{ tag(t="film") }}  

@@ -23,22 +23,27 @@ ids = [1202]
 [[extra.related]]
 path = "@/posts/2025-05-06-499/index.md"
 label = "#evernote image editor: beautiful"
+date = "2025-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-25-1785/index.md"
 label = "Another #llm victory: repack of the official #evernote client"
+date = "2026-05-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-26-948/index.md"
 label = "#css Wow I did a good ::selection for my #evernote style a::sele…"
+date = "2026-01-26"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-614/index.md"
 label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
+date = "2025-08-05"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2121/index.md"
 label = "My new #project: #userscript for #instagram for likes page - to…"
+date = "2026-08-09"
 +++
 
 My new {{ tag(t="userscript") }} for {{ tag(t="evernote") }} adds a few {{ tag(t="hotkey") }}  

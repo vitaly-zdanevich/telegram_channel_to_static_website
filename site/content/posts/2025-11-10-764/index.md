@@ -24,22 +24,27 @@ ids = [764]
 [[extra.related]]
 path = "@/posts/2025-11-10-765/index.md"
 label = "#painting #gustavedore Woman of the Apocalypse"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-763/index.md"
 label = "#painting #gustavedore Géraint et Enide sortant de la forêt Pier…"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-761/index.md"
 label = "#painting #bible #gustavedore The Battle of Nicaea"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-756/index.md"
 label = "#painting #bible #gustavedore The Bible panorama, or The Holy Sc…"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-762/index.md"
 label = "#painting #angel #ship #gustavedore Engraving by Gustave Doré, r…"
+date = "2025-11-10"
 +++
 
 {{ tag(t="painting") }}  

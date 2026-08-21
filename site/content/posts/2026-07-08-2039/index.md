@@ -23,18 +23,22 @@ ids = [2039]
 [[extra.related]]
 path = "@/posts/2026-04-16-1645/index.md"
 label = "#webdesign #northkorea #radio #podcast"
+date = "2026-04-16"
 
 [[extra.related]]
 path = "@/posts/2025-07-22-606/index.md"
 label = "#harrypotter #northkorea #ai #demonflyingfox"
+date = "2025-07-22"
 
 [[extra.related]]
 path = "@/posts/2025-03-20-439/index.md"
 label = "#korea #ai #aivideo #starwars #demonflyingfox"
+date = "2025-03-20"
 
 [[extra.related]]
 path = "@/posts/2026-04-16-1641/index.md"
 label = "#podcast #my #health #startup #geogorgiladze Георгий Горгиладзе:…"
+date = "2026-04-16"
 +++
 
 {{ tag(t="korea") }}  

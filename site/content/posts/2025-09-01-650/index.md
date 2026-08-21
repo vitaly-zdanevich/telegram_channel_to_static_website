@@ -23,18 +23,22 @@ ids = [650]
 [[extra.related]]
 path = "@/posts/2026-06-15-1832/index.md"
 label = "When #css is minified - so what can I do with that : Leave comme…"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2026-01-26-948/index.md"
 label = "#css Wow I did a good ::selection for my #evernote style a::sele…"
+date = "2026-01-26"
 
 [[extra.related]]
 path = "@/posts/2025-02-12-358/index.md"
 label = "#ui #button #css Fuck minimalism"
+date = "2025-02-12"
 
 [[extra.related]]
 path = "@/posts/2026-02-27-1201/index.md"
 label = "#googledocs: #ai is integrated, but not the #darkmode If you do…"
+date = "2026-02-27"
 +++
 
 Wow in {{ tag(t="svg") }} we can have {{ tag(t="css") }}, like  

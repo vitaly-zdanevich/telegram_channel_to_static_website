@@ -11,7 +11,7 @@ tags = ["typography", "year_1907", "sakartvelo", "newspaper", "isari"]
 id = 1492
 day = "2026-03-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1492"
-og_image = "5321398183088820949_1238984564_460002005.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1492-5321398183088820949.jpg"
 next_id = 1493
 next_title = ""
 next_body = "wow #wikibase/#wikidata in #cli"
@@ -24,22 +24,27 @@ ids = [1492]
 [[extra.related]]
 path = "@/posts/2026-03-12-1438/index.md"
 label = "#design #typography #newspaper #sakartvelo"
+date = "2026-03-12"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2024/index.md"
 label = "#typography #scan"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2025-04-15-470/index.md"
 label = "Source #sakartvelo #taxes"
+date = "2025-04-15"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1735/index.md"
 label = "#architecture of #village houses in #sakartvelo"
+date = "2026-05-05"
 +++
 
 {{ tag(t="typography") }}  
@@ -50,4 +55,4 @@ label = "#architecture of #village houses in #sakartvelo"
 
 [Source](https://commons.wikimedia.org/wiki/File:Isari_1907_N213-.pdf)
 
-{{ img(src="5321398183088820949_1238984564_460002005.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1492-5321398183088820949.jpg") }}

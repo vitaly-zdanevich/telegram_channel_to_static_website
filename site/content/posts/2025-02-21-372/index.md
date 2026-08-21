@@ -23,22 +23,27 @@ ids = [372, 373]
 [[extra.related]]
 path = "@/posts/2025-02-21-371/index.md"
 label = "#ad from 2012 #uk #guardian #pigs"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2025-03-11-404/index.md"
 label = "#video #ad #japan #ai #girl #virtual"
+date = "2025-03-11"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
 label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2025-01-21-322/index.md"
 label = "#girl"
+date = "2025-01-21"
 
 [[extra.related]]
 path = "@/posts/2024-12-10-213/index.md"
 label = "#ad"
+date = "2024-12-10"
 +++
 
 **Most Shocking Second a Day Video  

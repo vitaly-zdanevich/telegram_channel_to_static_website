@@ -24,22 +24,27 @@ ids = [826]
 [[extra.related]]
 path = "@/posts/2026-02-27-1203/index.md"
 label = "#design #software #gthumb #scan #preservation"
+date = "2026-02-27"
 
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-07-13-89/index.md"
 label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-34/index.md"
 label = "This website looks soooo special #design"
+date = "2024-04-27"
 
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 +++
 
 {{ tag(t="design") }}  

@@ -23,6 +23,7 @@ ids = [170]
 [[extra.related]]
 path = "@/posts/2025-05-10-512/index.md"
 label = "#mpv #anime #readme"
+date = "2025-05-10"
 +++
 
 {{ tag(t="mpv") }} can play a movie without {{ tag(t="x") }}, in {{ tag(t="tty") }}, and without {{ tag(t="tearing") }}

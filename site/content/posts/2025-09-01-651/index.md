@@ -24,14 +24,17 @@ ids = [651]
 [[extra.related]]
 path = "@/posts/2025-09-01-653/index.md"
 label = "#wikimediafoundation #money"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-652/index.md"
 label = "#wikimediafoundation #money"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-03-04-387/index.md"
 label = "#office #india"
+date = "2025-03-04"
 +++
 
 {{ tag(t="wikimedia_foundation") }} {{ tag(t="office") }} from 2024  

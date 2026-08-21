@@ -23,22 +23,27 @@ ids = [715]
 [[extra.related]]
 path = "@/posts/2026-08-09-2133/index.md"
 label = "#car #death"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-02-08-350/index.md"
 label = "#car #ussr"
+date = "2025-02-08"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2136/index.md"
 label = "#death #car #sound"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-654/index.md"
 label = "#russia #israel #map"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-03-23-440/index.md"
 label = "#music #car Mick Gordon - BFG division from #doom3"
+date = "2025-03-23"
 +++
 
 {{ tag(t="car") }}  

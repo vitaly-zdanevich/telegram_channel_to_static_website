@@ -24,22 +24,27 @@ ids = [1736]
 [[extra.related]]
 path = "@/posts/2026-05-16-1765/index.md"
 label = "#bilibili verification with 100 questions - to be able to leave…"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1737/index.md"
 label = "#webdesign #bilibili"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1738/index.md"
 label = "#webdesign #video #bilibili"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2026-04-11-1624/index.md"
 label = "#preview on #bilibili #anime"
+date = "2026-04-11"
 
 [[extra.related]]
 path = "@/posts/2025-05-10-513/index.md"
 label = "#bilibili #anime #webdesign #stream #ui"
+date = "2025-05-10"
 +++
 
 {{ tag(t="bilibili") }} {{ tag(t="convertion") }} {{ tag(t="progress") }} - nice {{ tag(t="ux") }}

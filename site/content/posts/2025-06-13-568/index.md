@@ -23,10 +23,12 @@ ids = [568]
 [[extra.related]]
 path = "@/posts/2025-06-13-570/index.md"
 label = "#meditation #dantealigieri"
+date = "2025-06-13"
 
 [[extra.related]]
 path = "@/posts/2025-06-13-569/index.md"
 label = "#stat #oscar #books #dantealigieri"
+date = "2025-06-13"
 +++
 
 {{ tag(t="miracle") }}  
@@ -37,7 +39,5 @@ label = "#stat #oscar #books #dantealigieri"
 [Source](https://www.instagram.com/p/DKOrF01i-_4)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/568-01.mp4") }}
-
-😁 1
 
 {{ tag(t="video") }}

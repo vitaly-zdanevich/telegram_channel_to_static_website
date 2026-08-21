@@ -23,22 +23,27 @@ ids = [1856, 1857, 1858, 1859]
 [[extra.related]]
 path = "@/posts/2026-06-24-1855/index.md"
 label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-19-1844/index.md"
 label = "#armiesofexigo #abandone"
+date = "2026-06-19"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-375/index.md"
 label = "#game #armiesofexigo"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-31-1802/index.md"
 label = "With #llm I added 1920x1200 to #armiesofexigo #game And increase…"
+date = "2026-05-31"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1740/index.md"
 label = "#armiesofexigo: моя #лекция об игре, в Батуми #stillyoungbar Так…"
+date = "2026-05-05"
 +++
 
 {{ tag(t="armies_of_exigo") }}  

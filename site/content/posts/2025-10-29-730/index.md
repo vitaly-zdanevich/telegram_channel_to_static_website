@@ -5,12 +5,13 @@ description = "sakartvelo batumi misha trump"
 
 [taxonomies]
 days = ["2025-10-29"]
-tags = ["sakartvelo", "batumi", "misha", "trump", "video"]
+tags = ["sakartvelo", "batumi", "misha", "trump"]
 
 [extra]
 id = 730
 day = "2025-10-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/730"
+og_image = "01.jpg"
 next_id = 731
 next_title = ""
 next_body = "good\n#evernote\n#youtube\n#ifttt"
@@ -23,22 +24,27 @@ ids = [730]
 [[extra.related]]
 path = "@/posts/2025-04-28-487/index.md"
 label = "#trump #batumi"
+date = "2025-04-28"
 
 [[extra.related]]
 path = "@/posts/2025-02-09-353/index.md"
 label = "#trump #batumi"
+date = "2025-02-09"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1848/index.md"
 label = "#batumi Oh my, I live here From"
+date = "2026-06-21"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2103/index.md"
 label = "#trump #gender By theceosonly"
+date = "2026-07-29"
 +++
 
 {{ tag(t="sakartvelo") }}  
@@ -46,8 +52,6 @@ label = "#trump #gender By theceosonly"
 {{ tag(t="misha") }}  
 {{ tag(t="trump") }}
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/730-01.mp4") }}
+![video](01.jpg)
 
-👍 1
-
-{{ tag(t="video") }}
+*▶ video — 0:58*

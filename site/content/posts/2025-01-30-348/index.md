@@ -24,22 +24,27 @@ ids = [348]
 [[extra.related]]
 path = "@/posts/2025-01-21-322/index.md"
 label = "#girl"
+date = "2025-01-21"
 
 [[extra.related]]
 path = "@/posts/2024-11-06-181/index.md"
 label = "#girl"
+date = "2024-11-06"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-408/index.md"
 label = "#girl #face"
+date = "2025-03-13"
 
 [[extra.related]]
 path = "@/posts/2025-01-28-340/index.md"
 label = "#girl #nails"
+date = "2025-01-28"
 
 [[extra.related]]
 path = "@/posts/2024-11-06-180/index.md"
 label = "#girl #pain"
+date = "2024-11-06"
 +++
 
 {{ tag(t="spider") }}  

@@ -23,14 +23,17 @@ ids = [185]
 [[extra.related]]
 path = "@/posts/2026-03-08-1415/index.md"
 label = "#webdesign #oldweb #animation"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-06-20-1846/index.md"
 label = "#webdesign #animation #videoeditor #cinelerra"
+date = "2026-06-20"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1121/index.md"
 label = "#webdesign #buttons #animation #game #mmo #myst"
+date = "2026-02-21"
 +++
 
 <https://neovide.dev/features.html>  

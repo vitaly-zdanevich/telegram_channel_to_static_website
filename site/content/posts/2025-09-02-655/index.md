@@ -23,22 +23,27 @@ ids = [655]
 [[extra.related]]
 path = "@/posts/2026-06-12-1819/index.md"
 label = "My another #userstyle: for #gemini, before and after"
+date = "2026-06-12"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1779/index.md"
 label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2026-03-11-1421/index.md"
 label = "#chatgpt #jews › Идиш был одним из государственных языков БССР?…"
+date = "2026-03-11"
 
 [[extra.related]]
 path = "@/posts/2025-02-11-356/index.md"
 label = "#ai #chatgpt"
+date = "2025-02-11"
 
 [[extra.related]]
 path = "@/posts/2026-06-08-1806/index.md"
 label = "Wow, about #telegram bots: you can bypass 50 MB response limit -…"
+date = "2026-06-08"
 +++
 
 {{ tag(t="chatgpt") }} 5:  

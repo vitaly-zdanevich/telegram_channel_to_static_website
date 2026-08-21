@@ -11,7 +11,7 @@ tags = ["heap", "lt", "leetcode", "patch"]
 id = 1753
 day = "2026-05-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1753"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1753-5197241093857153876.jpg"
 next_id = 1755
 next_title = ""
 next_body = "#ai\n#screenshot from"
@@ -24,22 +24,27 @@ ids = [1753, 1754]
 [[extra.related]]
 path = "@/posts/2026-05-06-1747/index.md"
 label = "Oh my... #leetcode"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1749/index.md"
 label = "#leetcode #validation"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1746/index.md"
 label = "#leetcode is often produce #error"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2025-09-29-684/index.md"
 label = "#patch for #telegram for wide messages --- a/Telegram/SourceFile…"
+date = "2025-09-29"
 
 [[extra.related]]
 path = "@/posts/2025-06-13-571/index.md"
 label = "#livecoding #batman #binarysearch #leetcode with games :"
+date = "2025-06-13"
 +++
 
 {{ tag(t="heap") }}  
@@ -90,7 +95,7 @@ class Solution:
 
 [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1753-5197241093857153876.jpg") }}
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1754-5197241093857153877.jpg") }}
 

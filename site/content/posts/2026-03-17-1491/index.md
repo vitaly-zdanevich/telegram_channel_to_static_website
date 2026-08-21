@@ -23,22 +23,27 @@ ids = [1491]
 [[extra.related]]
 path = "@/posts/2025-09-20-674/index.md"
 label = "#telegram with wide messages"
+date = "2025-09-20"
 
 [[extra.related]]
 path = "@/posts/2025-09-29-684/index.md"
 label = "#patch for #telegram for wide messages --- a/Telegram/SourceFile…"
+date = "2025-09-29"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-614/index.md"
 label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
+date = "2025-08-05"
 
 [[extra.related]]
 path = "@/posts/2026-06-08-1806/index.md"
 label = "Wow, about #telegram bots: you can bypass 50 MB response limit -…"
+date = "2026-06-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-24-442/index.md"
 label = "wow in #telegram we have a #crypto #wallet, and users can send m…"
+date = "2025-03-24"
 +++
 
 {{ tag(t="telegram") }} added a feature request <https://bugs.telegram.org/c/60210>  

@@ -24,22 +24,27 @@ ids = [890]
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-25-201/index.md"
 label = "#wikipedia"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 +++
 
 {{ tag(t="game") }}  
@@ -54,5 +59,3 @@ label = "#wikipedia #wikimediacommons Пишите авторам контент
 <https://en.wikipedia.org/wiki/Ultracore>
 
 {{ img(src="5431893221870079798_1264711195_460001078.jpg") }}
-
-🔥 1

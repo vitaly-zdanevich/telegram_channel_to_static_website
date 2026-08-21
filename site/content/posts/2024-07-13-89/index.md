@@ -24,22 +24,27 @@ ids = [89]
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-34/index.md"
 label = "This website looks soooo special #design"
+date = "2024-04-27"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-759/index.md"
 label = "#design #artlebedev"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-758/index.md"
 label = "#design #artlebedev"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-757/index.md"
 label = "#design #logo #artlebedevSource"
+date = "2025-11-10"
 +++
 
 Another good {{ tag(t="design") }}  

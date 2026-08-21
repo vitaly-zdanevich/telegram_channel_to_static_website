@@ -24,29 +24,34 @@ ids = [1568]
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
+date = "2026-01-24"
 
 [[extra.related]]
 path = "@/posts/2025-01-28-343/index.md"
 label = "#ai"
+date = "2025-01-28"
 
 [[extra.related]]
 path = "@/posts/2025-01-10-244/index.md"
 label = "Video from 2012 about #ai"
+date = "2025-01-10"
 
 [[extra.related]]
 path = "@/posts/2025-01-01-237/index.md"
 label = "#ai"
+date = "2025-01-01"
 +++
 
 {{ tag(t="ai") }}  
 
 I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} from Windows to Linux, interesting if that possible...  
 
-[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 8 stars · Languages: C++ 35%, C# 22%, Python 16% · 1282 commits · 5 forks · last push 2026-08-18")  
+[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 8 stars · Languages: C++ 35%, C# 22%, Python 16% · 1282 commits · 5 forks · last push 2026-08-19")  
 
 We tried {{ tag(t="wine") }} of course - but some problems with {{ tag(t="lutris") }} - because native launcher need to run Wine...
 

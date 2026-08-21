@@ -23,10 +23,12 @@ ids = [1842]
 [[extra.related]]
 path = "@/posts/2025-01-28-341/index.md"
 label = "#bathroom"
+date = "2025-01-28"
 
 [[extra.related]]
 path = "@/posts/2026-06-16-1839/index.md"
 label = "#interior #refrigerator #green From"
+date = "2026-06-16"
 +++
 
 {{ tag(t="interior") }}  

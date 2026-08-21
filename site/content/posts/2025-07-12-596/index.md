@@ -17,28 +17,33 @@ next_body = "#music\n#anime\n#susumuhirasawa"
 prev_id = 595
 prev_title = ""
 prev_body = "#preservation\n#belarus\n#library\n#science\nДля меня было открытием, что абсолютное большинство научных материалов до сих пор не в сети. Я работал в Центральной научной библиотеке Академии наук и понял, что до 95% всего научного контента не попадает в сеть. Все эти статьи, документация — они просто исчезают без следов. И хорошо, если это пишут для 200, а часто только для 50 человек. И не только в Беларуси, а во всём мире.\nЕсть ещё то, что называют «смертью интернета»: проходит десять лет — и почти ничего из того времени не находишь [в интернет-источниках]. Многие из источников, которыми я пользовался еще 3 — 5 лет назад, уже недоступны. Мы все смеёмся над газетами, журналами, бумажными носителями, но они на самом деле держатся дольше, чем интернет — 10-20 лет.\nВикипедия — это инструмент, который позволяет хранить материалы в удобном формате, иначе они просто исчезли бы."
-views = 45
+views = 46
 ids = [596]
 
 [[extra.related]]
 path = "@/posts/2026-03-28-1504/index.md"
 label = "#darkmode"
+date = "2026-03-28"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-615/index.md"
 label = "How to ask for a #darkmode"
+date = "2025-08-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-10-566/index.md"
 label = "My new #darkmode: numbeo.com"
+date = "2025-06-10"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-616/index.md"
 label = "#darkmode #gif"
+date = "2025-08-05"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2121/index.md"
 label = "My new #project: #userscript for #instagram for likes page - to…"
+date = "2026-08-09"
 +++
 
 My another {{ tag(t="userscript") }}: small toggle for {{ tag(t="dark_mode") }} on {{ tag(t="stackexchange") }}  

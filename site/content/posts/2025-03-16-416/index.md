@@ -17,28 +17,33 @@ next_body = "#music\n#cartoon\nThe animated film Ships of Years Past turns 10 ye
 prev_id = 415
 prev_title = ""
 prev_body = "#cat\n#robot\n#lasers\nSource"
-views = 43
+views = 44
 ids = [416]
 
 [[extra.related]]
 path = "@/posts/2025-02-10-355/index.md"
 label = "#music #anime #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-02-22-377/index.md"
 label = "#music #rammstein #cult #drum"
+date = "2025-02-22"
 
 [[extra.related]]
 path = "@/posts/2025-02-10-354/index.md"
 label = "#music #anime #tatu #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2131/index.md"
 label = "#music #germany #goth #cassette #cementery"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 +++
 
 {{ tag(t="music") }}  

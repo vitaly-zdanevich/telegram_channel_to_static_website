@@ -23,22 +23,27 @@ ids = [2075]
 [[extra.related]]
 path = "@/posts/2026-07-27-2074/index.md"
 label = "#anime #war #ground"
+date = "2026-07-27"
 
 [[extra.related]]
 path = "@/posts/2026-07-27-2073/index.md"
 label = "#toy #animal #antlers"
+date = "2026-07-27"
 
 [[extra.related]]
 path = "@/posts/2026-03-13-1439/index.md"
 label = "#webdesign #animal #cat"
+date = "2026-03-13"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-481/index.md"
 label = "#sex #mouse #horoscope From"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-432/index.md"
 label = "#animal #flyingsquirrel #love"
+date = "2025-03-16"
 +++
 
 {{ tag(t="animal") }}  

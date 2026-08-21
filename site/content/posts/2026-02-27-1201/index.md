@@ -24,22 +24,27 @@ ids = [1201]
 [[extra.related]]
 path = "@/posts/2026-03-28-1504/index.md"
 label = "#darkmode"
+date = "2026-03-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
+date = "2026-01-24"
 
 [[extra.related]]
 path = "@/posts/2025-08-05-615/index.md"
 label = "How to ask for a #darkmode"
+date = "2025-08-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-10-566/index.md"
 label = "My new #darkmode: numbeo.com"
+date = "2025-06-10"
 +++
 
 {{ tag(t="google_docs") }}: {{ tag(t="ai") }} is integrated, but not the {{ tag(t="dark_mode") }}  

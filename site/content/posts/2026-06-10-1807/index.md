@@ -11,7 +11,7 @@ tags = ["love", "extension", "highlight"]
 id = 1807
 day = "2026-06-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1807"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1807-5282991447361658474.jpg"
 next_id = 1817
 next_title = ""
 next_body = "#logo\n#progy\n#github\nSource"
@@ -24,44 +24,49 @@ ids = [1807, 1808, 1809, 1810, 1811, 1812, 1813, 1814, 1815, 1816]
 [[extra.related]]
 path = "@/posts/2026-06-27-1868/index.md"
 label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
+date = "2026-06-27"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1197/index.md"
 label = "#firefox #extension Copy non-latin links without #percent"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1120/index.md"
 label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+date = "2026-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-07-1099/index.md"
 label = "#love it - against #youtube #clickbait"
+date = "2026-02-07"
 
 [[extra.related]]
 path = "@/posts/2025-07-03-593/index.md"
 label = "#dog #love #mmorpg"
+date = "2025-07-03"
 +++
 
 <https://addons.mozilla.org/en-US/firefox/addon/highlightthis/>  
 
 {{ tag(t="love") }} this {{ tag(t="extension") }} - {{ tag(t="highlight") }} predefined list of words, on predefined URLs.
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1807-5282991447361658474.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1808-5282991447361658475.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1809-5282991447361658477.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1810-5282991447361658476.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1811-5282991447361658478.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1812-5282991447361658479.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1813-5282991447361658480.jpg") }}
 
-{{ img(src="08.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1814-5282991447361658481.jpg") }}
 
-{{ img(src="09.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1815-5282991447361658482.jpg") }}
 
-{{ img(src="10.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1816-5282991447361658483.jpg") }}

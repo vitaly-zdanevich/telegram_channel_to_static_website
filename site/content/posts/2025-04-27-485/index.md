@@ -23,22 +23,27 @@ ids = [485]
 [[extra.related]]
 path = "@/posts/2026-01-20-913/index.md"
 label = "#belarus #nature #river #green #year2005"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2026-01-20-912/index.md"
 label = "#belarus #village #nature #river #year2005 #globustut"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
 label = "#health #science"
+date = "2025-05-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
+date = "2025-03-13"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2138/index.md"
 label = "#village #nature #career"
+date = "2026-08-09"
 +++
 
 {{ tag(t="health") }}  

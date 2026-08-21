@@ -23,6 +23,7 @@ ids = [164]
 [[extra.related]]
 path = "@/posts/2024-07-18-92/index.md"
 label = "Guess the output #javascript const obj4 = { name: \"obj4\", getThi…"
+date = "2024-07-18"
 +++
 
 {{ tag(t="javascript") }}: guess the output  
@@ -30,5 +31,3 @@ label = "Guess the output #javascript const obj4 = { name: \"obj4\", getThi…"
 ```
 [1,2,3]+[4,5,6]
 ```
-
-🙏 1

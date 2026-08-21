@@ -24,22 +24,27 @@ ids = [1030, 1031, 1032, 1033, 1034, 1035, 1036]
 [[extra.related]]
 path = "@/posts/2026-03-07-1342/index.md"
 label = "#church #abandone #belarus #globustut #year2005 Source,%D0%BA%D0…"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1226/index.md"
 label = "#church #abandone #belarus #globustut #year2005"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-928/index.md"
 label = "#belarus #church #abandone #year2005 #globustut"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1554/index.md"
 label = "#abandone #church #Островно #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1898/index.md"
 label = "#belarus #architecture #church #photo #abandone #year2005 #globu…"
+date = "2026-07-04"
 +++
 
 {{ tag(t="belarus") }}  
@@ -57,7 +62,7 @@ From [https://commons.wikimedia.org/wiki/File:045-259\_Мартиново,\_сн
 
 {{ img(src="03.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1033-5469697399455419491.jpg") }}
+{{ img(src="04.jpg") }}
 
 {{ img(src="05.jpg") }}
 

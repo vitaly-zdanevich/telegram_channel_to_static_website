@@ -23,22 +23,27 @@ ids = [685]
 [[extra.related]]
 path = "@/posts/2025-01-28-342/index.md"
 label = "#fear"
+date = "2025-01-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1142/index.md"
 label = "#monument #airplane #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-13-875/index.md"
 label = "#monument #belarus #globustut #airplane"
+date = "2026-01-13"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2102/index.md"
 label = "#god #fear #monastery #antichrist #rammstein Страхи детей из нор…"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2091/index.md"
 label = "#cat #death #fear #green #wash"
+date = "2026-07-29"
 +++
 
 {{ tag(t="fear") }}  

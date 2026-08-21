@@ -23,22 +23,27 @@ ids = [614]
 [[extra.related]]
 path = "@/posts/2026-05-16-1762/index.md"
 label = "#лекция про мой #telegram #бот для #evernote #stillyoungbar #bat…"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-07-23-2067/index.md"
 label = "Моя #лекция про #evernote проекты, #saas, #everpublich на #zola…"
+date = "2026-07-23"
 
 [[extra.related]]
 path = "@/posts/2026-03-17-1491/index.md"
 label = "#telegram added a feature request Add option to cache/prefetch a…"
+date = "2026-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-09-20-674/index.md"
 label = "#telegram with wide messages"
+date = "2025-09-20"
 
 [[extra.related]]
 path = "@/posts/2025-05-06-499/index.md"
 label = "#evernote image editor: beautiful"
+date = "2025-05-06"
 +++
 
 {{ tag(t="telegram") }} bot that sends to email, its mean to {{ tag(t="evernote") }} too!  
@@ -47,4 +52,4 @@ label = "#evernote image editor: beautiful"
 
 Article from author <https://borshev.com/selfmailbot>  
 
-[https://github.com/f213/selfmailbot](<https://github.com/f213/selfmailbot> "Telegram bot forwarding messages to the inbox · 140 stars · Languages: Python 81%, Dockerfile 10%, HTML 6% · 271 commits · 28 forks · 20 open issues/PRs · MIT · last push 2026-08-16")
+[https://github.com/f213/selfmailbot](<https://github.com/f213/selfmailbot> "Telegram bot forwarding messages to the inbox · 140 stars · Languages: Python 81%, Dockerfile 10%, HTML 6% · 272 commits · 28 forks · 20 open issues/PRs · MIT · last push 2026-08-20")

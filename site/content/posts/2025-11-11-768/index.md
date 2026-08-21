@@ -24,22 +24,27 @@ ids = [768]
 [[extra.related]]
 path = "@/posts/2025-11-12-772/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-12"
 
 [[extra.related]]
 path = "@/posts/2025-11-11-767/index.md"
 label = "#webdesign #webdesignold"
+date = "2025-11-11"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-779/index.md"
 label = "#webdesign #webdesignold #webdesigngames Year: 2000"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-11-12-771/index.md"
 label = "#webdesign #webdesignold #xbox Wikidata"
+date = "2025-11-12"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-751/index.md"
 label = "#design #webdesign #webdesignold"
+date = "2025-11-10"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -48,5 +53,3 @@ label = "#design #webdesign #webdesignold"
 <https://web.archive.org/web/20050830072425/http://www.pgnx.net/>
 
 {{ img(src="5231120899694594878_1217965246_460000062.jpg") }}
-
-🔥 1

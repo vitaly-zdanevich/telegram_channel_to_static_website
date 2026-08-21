@@ -11,7 +11,7 @@ tags = ["music"]
 id = 546
 day = "2025-06-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/546"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-546-5327905071423420414.jpg"
+og_image = "5327905071423420414_1240499567_456259582.jpg"
 next_id = 548
 next_title = ""
 next_body = "New small project: #python script for #gthumb (or other software, even standalone CLI) that read EXIF GPS and open #openstreetmap"
@@ -24,26 +24,29 @@ ids = [546]
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
+date = "2025-01-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-24-198/index.md"
 label = "#music"
+date = "2024-11-24"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1764/index.md"
 label = "#music #sunboy Остров в океане From Про исполнителя"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-04-19-1648/index.md"
 label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
+date = "2026-04-19"
 +++
 
 PromoDJ {{ tag(t="music") }} genres
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-546-5327905071423420414.jpg") }}
-
-🤩 1
+{{ img(src="5327905071423420414_1240499567_456259582.jpg") }}

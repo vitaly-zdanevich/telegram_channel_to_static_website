@@ -24,22 +24,27 @@ ids = [669]
 [[extra.related]]
 path = "@/posts/2025-06-21-586/index.md"
 label = "#map of articles and photos"
+date = "2025-06-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 
 [[extra.related]]
 path = "@/posts/2026-01-12-873/index.md"
 label = "#map The Earth, centred around #newzealand"
+date = "2026-01-12"
 
 [[extra.related]]
 path = "@/posts/2025-10-05-697/index.md"
 label = "#turkey #map #population"
+date = "2025-10-05"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-654/index.md"
 label = "#russia #israel #map"
+date = "2025-09-01"
 +++
 
 {{ tag(t="map") }}  

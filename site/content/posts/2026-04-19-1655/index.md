@@ -11,7 +11,7 @@ tags = ["preservation", "logo", "symbol", "damage"]
 id = 1655
 day = "2026-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1655"
-og_image = "5417832637109310022_1261437460_460001862.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1655-5417832637109310022.jpg"
 next_id = 1656
 next_title = ""
 next_body = "#typography\n#preservation\n#russianempire\n#century19\nSource"
@@ -24,22 +24,27 @@ ids = [1655]
 [[extra.related]]
 path = "@/posts/2025-12-17-802/index.md"
 label = "Love this #logo"
+date = "2025-12-17"
 
 [[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
+date = "2026-07-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-03-1332/index.md"
 label = "#logo #horse"
+date = "2026-03-03"
 
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-757/index.md"
 label = "#design #logo #artlebedevSource"
+date = "2025-11-10"
 +++
 
 {{ tag(t="preservation") }}  
@@ -47,4 +52,4 @@ label = "#design #logo #artlebedevSource"
 {{ tag(t="symbol") }}  
 {{ tag(t="damage") }}
 
-{{ img(src="5417832637109310022_1261437460_460001862.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1655-5417832637109310022.jpg") }}

@@ -11,7 +11,7 @@ tags = ["colors", "cables", "pole"]
 id = 1731
 day = "2026-05-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1731"
-og_image = "5456435665726805480_1270425428_460002792.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1731-5456435665726805480.jpg"
 next_id = 1732
 next_title = ""
 next_body = "#gentoo\n#golang\n#bootstrap"
@@ -28,4 +28,4 @@ ids = [1731]
 
 [Source](https://x.com/repponen/status/1909584704694817206)
 
-{{ img(src="5456435665726805480_1270425428_460002792.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1731-5456435665726805480.jpg") }}

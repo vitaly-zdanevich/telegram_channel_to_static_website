@@ -24,22 +24,27 @@ ids = [458]
 [[extra.related]]
 path = "@/posts/2025-03-27-457/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-456/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-455/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2132/index.md"
 label = "#ussr #pc"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1080/index.md"
 label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+date = "2026-02-03"
 +++
 
 {{ tag(t="ussr") }}

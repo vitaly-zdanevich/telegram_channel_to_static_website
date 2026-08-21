@@ -23,14 +23,17 @@ ids = [1829]
 [[extra.related]]
 path = "@/posts/2026-07-26-2070/index.md"
 label = "#psp #vita #game"
+date = "2026-07-26"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1835/index.md"
 label = "#xbox #gameconsole #tech #retro #green From"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2025-06-01-545/index.md"
 label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
+date = "2025-06-01"
 +++
 
 {{ tag(t="tech") }}  

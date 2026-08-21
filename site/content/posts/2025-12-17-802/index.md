@@ -24,22 +24,27 @@ ids = [802, 803]
 [[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
+date = "2026-07-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-03-1332/index.md"
 label = "#logo #horse"
+date = "2026-03-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-757/index.md"
 label = "#design #logo #artlebedevSource"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-03-15-412/index.md"
 label = "#gentoo #logo"
+date = "2025-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-06-10-1817/index.md"
 label = "#logo #progy #github"
+date = "2026-06-10"
 +++
 
 Love this {{ tag(t="logo") }}  

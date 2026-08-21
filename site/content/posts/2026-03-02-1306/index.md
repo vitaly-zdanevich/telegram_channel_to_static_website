@@ -24,22 +24,27 @@ ids = [1306]
 [[extra.related]]
 path = "@/posts/2026-02-22-1123/index.md"
 label = "#commons"
+date = "2026-02-22"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1093/index.md"
 label = "#commons My account is big, my account is very big"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-19-584/index.md"
 label = "#commons TODO list"
+date = "2025-06-19"
 
 [[extra.related]]
 path = "@/posts/2026-02-08-1100/index.md"
 label = "#ai Trying #codex to organize scans - to create a folder for eve…"
+date = "2026-02-08"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1849/index.md"
 label = "#llm #codex #regex"
+date = "2026-06-21"
 +++
 
 Magic that I can say {{ tag(t="codex") }} to download all scan - and I get it, for {{ tag(t="commons") }}  

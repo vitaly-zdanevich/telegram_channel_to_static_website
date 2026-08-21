@@ -24,22 +24,27 @@ ids = [1672, 1673]
 [[extra.related]]
 path = "@/posts/2026-06-24-1856/index.md"
 label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1855/index.md"
 label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-19-1844/index.md"
 label = "#armiesofexigo #abandone"
+date = "2026-06-19"
 
 [[extra.related]]
 path = "@/posts/2025-10-28-729/index.md"
 label = "I continue to write my script for importing ratings from #metacr…"
+date = "2025-10-28"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-375/index.md"
 label = "#game #armiesofexigo"
+date = "2025-02-21"
 +++
 
 {{ tag(t="mediawiki") }}  
@@ -71,4 +76,4 @@ After:
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1672-5424885523165157236.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1673-5424885523165157237.jpg") }}

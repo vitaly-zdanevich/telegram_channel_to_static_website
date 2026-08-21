@@ -18,28 +18,33 @@ next_body = "#castle\n#abandone\n#новогрудок\n#belarus\n#globustut\n#y
 prev_id = 1383
 prev_title = ""
 prev_body = "#music\n#blackdresses\nGAY UGLY AND HARD TO UNDERSTAND\n[Intro: Devi McCallion]\nUm, shoutout to Big Freedia\nNew Orleans Bounce music\nUhh, every Bitch Track ever made for\nNYC drag balls in the 90's before RuPaul made being gay uncool\n[Verse 1: Devi McCallion, Ada Rook]\nGay, ugly, and hard to understand\nI thought that people could handle it but they- but they can't\nBut they can't! Haha!\nI don't want to let you have it (have it)\nI don't want to let you have it (have it)\nI don't want to let you have it (have it)\nYou can't earn it\nThis shit is not on trend (On trend)\nThis shit is not on trend (On trend)\nThis shit is not pretend (Pretend)\nIt's a- (Ahh, ahh!)\nYeah, I'm just doing my shit (My shit)\nI'm just doing my shit (My shit)\nYou could never do it like this (Like this)"
-views = 12
+views = 13
 ids = [1384]
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1280/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1285/index.md"
 label = "#village #house #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1922/index.md"
 label = "#belarus #шерстин #photo #village #year2005 #globustut"
+date = "2026-07-04"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1259/index.md"
 label = "#woodencart #village #rural #belarus #globustut #year2005 Source…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-921/index.md"
 label = "#belarus #architecture #nature #village #year2005 #globustut"
+date = "2026-01-21"
 +++
 
 {{ tag(t="village") }}  

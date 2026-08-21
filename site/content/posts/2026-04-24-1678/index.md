@@ -23,22 +23,27 @@ ids = [1678]
 [[extra.related]]
 path = "@/posts/2025-11-20-786/index.md"
 label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
+date = "2025-11-20"
 
 [[extra.related]]
 path = "@/posts/2024-12-11-214/index.md"
 label = "My first #lutris install script"
+date = "2024-12-11"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1856/index.md"
 label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1855/index.md"
 label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-19-1844/index.md"
 label = "#armiesofexigo #abandone"
+date = "2026-06-19"
 +++
 
 {{ tag(t="armies_of_exigo") }}**:** {{ tag(t="fallen") }} **7: The First Seal: hard: victory**  
@@ -59,4 +64,4 @@ All links at <https://share.evernote.com/note/3493dc72-9910-1c46-3475-5159b37126
 
 {{ youtube(id="yWdtlV74lhY") }}
 
-<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q139504868">The First Seal</a> · <span class="wd-qid">Q139504868</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P155">follows</a></td><td><a href="https://www.wikidata.org/wiki/Q136881294">Teonia</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q136881307">Fallen campaign in Armies of Exigo</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P6262">Fandom article ID</a></td><td>armies-of-exigo:The_First_Seal</td></tr></tbody></table></figure>
+<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q139504868">Q139504868</a> · <span class="wd-qid">Q139504868</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">Q1046315</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P155">P155</a></td><td><a href="https://www.wikidata.org/wiki/Q136881294">Q136881294</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">P361</a></td><td><a href="https://www.wikidata.org/wiki/Q136881307">Q136881307</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P6262">P6262</a></td><td>armies-of-exigo:The_First_Seal</td></tr></tbody></table></figure>

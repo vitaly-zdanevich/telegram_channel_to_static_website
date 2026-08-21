@@ -24,22 +24,27 @@ ids = [819]
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
 label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
+date = "2026-04-02"
 
 [[extra.related]]
 path = "@/posts/2026-04-09-1599/index.md"
 label = "My first blog #post to #wikimediadiff, about #wikimediacommons,…"
+date = "2026-04-09"
 
 [[extra.related]]
 path = "@/posts/2026-02-20-1118/index.md"
 label = "#python My #geeknote #evernote #cli now available on PyPI"
+date = "2026-02-20"
 
 [[extra.related]]
 path = "@/posts/2026-01-25-938/index.md"
 label = "Top 1% by #python, hm, not sure why"
+date = "2026-01-25"
 +++
 
 {{ tag(t="preservation") }}  
@@ -47,7 +52,7 @@ label = "Top 1% by #python, hm, not sure why"
 {{ tag(t="pywikibot") }}  
 {{ tag(t="my") }}  
 
-Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 768 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 20719 commits · 219 forks · MIT · last push 2026-08-18") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
+Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 768 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 20721 commits · 219 forks · MIT · last push 2026-08-20") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
 
 <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 

@@ -24,22 +24,27 @@ ids = [1070]
 [[extra.related]]
 path = "@/posts/2026-04-11-1622/index.md"
 label = "Про #викиданные/#wikidata открытая база данных на #SPARQL, #wiki…"
+date = "2026-04-11"
 
 [[extra.related]]
 path = "@/posts/2025-12-17-802/index.md"
 label = "Love this #logo"
+date = "2025-12-17"
 
 [[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
+date = "2026-07-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-03-1332/index.md"
 label = "#logo #horse"
+date = "2026-03-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-757/index.md"
 label = "#design #logo #artlebedevSource"
+date = "2025-11-10"
 +++
 
 {{ tag(t="logo") }}  

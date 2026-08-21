@@ -23,6 +23,7 @@ ids = [273]
 [[extra.related]]
 path = "@/posts/2026-06-15-1827/index.md"
 label = "#game #beyoundgoodandevil #pig #evolution #sequel #pain From off…"
+date = "2026-06-15"
 +++
 
 <https://coub.com/view/2jiqcz>  

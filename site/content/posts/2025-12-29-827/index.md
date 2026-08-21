@@ -24,6 +24,7 @@ ids = [827]
 [[extra.related]]
 path = "@/posts/2026-01-25-943/index.md"
 label = "#aws #cpu #memory #ram From"
+date = "2026-01-25"
 +++
 
 My {{ tag(t="ram") }} price is going up  

@@ -24,22 +24,27 @@ ids = [888]
 [[extra.related]]
 path = "@/posts/2026-01-16-886/index.md"
 label = "#sql #quarry #globustut #commons: files from a specific user in…"
+date = "2026-01-16"
 
 [[extra.related]]
 path = "@/posts/2026-02-22-1123/index.md"
 label = "#commons"
+date = "2026-02-22"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1093/index.md"
 label = "#commons My account is big, my account is very big"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-06-19-584/index.md"
 label = "#commons TODO list"
+date = "2025-06-19"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1306/index.md"
 label = "Magic that I can say #codex to download all scan - and I get it,…"
+date = "2026-03-02"
 +++
 
 {{ tag(t="sql") }}  

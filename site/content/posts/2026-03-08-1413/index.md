@@ -5,12 +5,13 @@ description = "webdesign webgl shopify"
 
 [taxonomies]
 days = ["2026-03-08"]
-tags = ["webdesign", "webgl", "shopify", "video"]
+tags = ["webdesign", "webgl", "shopify"]
 
 [extra]
 id = 1413
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1413"
+og_image = "01.jpg"
 next_id = 1414
 next_title = ""
 next_body = "#webdesign\n#ping\n#anime\n#japan"
@@ -23,22 +24,27 @@ ids = [1413]
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-07-21-602/index.md"
 label = "#webdesign"
+date = "2025-07-21"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -47,8 +53,6 @@ label = "#webdesign"
 
 <https://www.shopify.com/editions/winter2026>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1413-01.mp4") }}
+![video](01.jpg)
 
-🔥 1
-
-{{ tag(t="video") }}
+*▶ video — 8:23*

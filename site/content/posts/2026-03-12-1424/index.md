@@ -24,22 +24,27 @@ ids = [1424, 1425]
 [[extra.related]]
 path = "@/posts/2026-03-15-1450/index.md"
 label = "#abandone #slonim #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-03-15-1443/index.md"
 label = "#abandone #castle #slonim #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-03-16-1475/index.md"
 label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+date = "2026-03-16"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1328/index.md"
 label = "#abandone #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1263/index.md"
 label = "#abandone #belarus #globustut #year2005"
+date = "2026-02-28"
 +++
 
 {{ tag(t="abandone") }}  
@@ -52,4 +57,4 @@ label = "#abandone #belarus #globustut #year2005"
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1425-5301280942821414099.jpg") }}
+{{ img(src="02.jpg") }}

@@ -24,22 +24,27 @@ ids = [525]
 [[extra.related]]
 path = "@/posts/2025-05-14-532/index.md"
 label = "From globustut.by #photo #building #ad #history #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1080/index.md"
 label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-534/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-533/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-448/index.md"
 label = "Раньше было лучше #history #psy"
+date = "2025-03-27"
 +++
 
 {{ tag(t="photo") }}  

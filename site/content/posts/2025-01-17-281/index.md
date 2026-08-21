@@ -23,6 +23,7 @@ ids = [281]
 [[extra.related]]
 path = "@/posts/2025-07-24-609/index.md"
 label = "#girl #relationship #ai Source You generated pictures and videos…"
+date = "2025-07-24"
 +++
 
 {{ tag(t="relationship") }}  

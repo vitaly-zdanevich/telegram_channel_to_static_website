@@ -23,12 +23,11 @@ ids = [165]
 [[extra.related]]
 path = "@/posts/2026-04-01-1565/index.md"
 label = "#alien #screenshot #horror #giger #gimp #green #rice"
+date = "2026-04-01"
 +++
 
 {{ tag(t="rice") }} [https://hyprland.org](https://hyprland.org/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/165-01.mp4") }}
-
-🙏 1
 
 {{ tag(t="video") }}

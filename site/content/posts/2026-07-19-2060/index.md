@@ -23,22 +23,27 @@ ids = [2060]
 [[extra.related]]
 path = "@/posts/2025-11-20-786/index.md"
 label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
+date = "2025-11-20"
 
 [[extra.related]]
 path = "@/posts/2025-11-06-743/index.md"
 label = "Emotional reasoning is a cognitive process by which an individua…"
+date = "2025-11-06"
 
 [[extra.related]]
 path = "@/posts/2024-12-21-220/index.md"
 label = "#psy"
+date = "2024-12-21"
 
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+date = "2026-06-30"
 +++
 
 {{ tag(t="need_for_speed") }}  

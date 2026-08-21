@@ -24,22 +24,27 @@ ids = [532]
 [[extra.related]]
 path = "@/posts/2025-05-14-534/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-533/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-13-525/index.md"
 label = "#photo #history #face #medals"
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
 label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2024-12-10-213/index.md"
 label = "#ad"
+date = "2024-12-10"
 +++
 
 From [globustut.by](http://globustut.by/)  

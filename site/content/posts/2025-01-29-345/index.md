@@ -23,22 +23,27 @@ ids = [345]
 [[extra.related]]
 path = "@/posts/2025-03-14-410/index.md"
 label = "Girl with a Pearl Earring #art Artwork by Olga Pavolga Shot by T…"
+date = "2025-03-14"
 
 [[extra.related]]
 path = "@/posts/2025-02-14-360/index.md"
 label = "#religion"
+date = "2025-02-14"
 
 [[extra.related]]
 path = "@/posts/2025-02-08-351/index.md"
 label = "#religion"
+date = "2025-02-08"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1830/index.md"
 label = "#religion #jesus"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-765/index.md"
 label = "#painting #gustavedore Woman of the Apocalypse"
+date = "2025-11-10"
 +++
 
 {{ tag(t="lapenko") }}  

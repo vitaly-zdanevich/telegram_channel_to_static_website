@@ -23,22 +23,27 @@ ids = [1641, 1643]
 [[extra.related]]
 path = "@/posts/2026-04-16-1645/index.md"
 label = "#webdesign #northkorea #radio #podcast"
+date = "2026-04-16"
 
 [[extra.related]]
 path = "@/posts/2025-04-19-475/index.md"
 label = "#podcast 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у…"
+date = "2025-04-19"
 
 [[extra.related]]
 path = "@/posts/2022-03-02-5/index.md"
 label = "#podcast Не влазит в сообщение с подкастом выше. Про информацион…"
+date = "2022-03-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
 label = "#health #science"
+date = "2025-05-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
+date = "2025-03-13"
 +++
 
 {{ tag(t="podcast") }}  

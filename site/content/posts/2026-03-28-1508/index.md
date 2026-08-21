@@ -23,10 +23,12 @@ ids = [1508]
 [[extra.related]]
 path = "@/posts/2026-04-05-1570/index.md"
 label = "#ai #gpu #nvidia"
+date = "2026-04-05"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-421/index.md"
 label = "#laser #cat #matrix"
+date = "2025-03-16"
 +++
 
 {{ tag(t="nvidia") }}  

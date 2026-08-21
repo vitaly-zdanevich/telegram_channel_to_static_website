@@ -23,22 +23,27 @@ ids = [397]
 [[extra.related]]
 path = "@/posts/2025-09-20-675/index.md"
 label = "#smell #dating"
+date = "2025-09-20"
 
 [[extra.related]]
 path = "@/posts/2025-07-27-613/index.md"
 label = "#arsenmarkaryan #hairs В волосах первородная космическая сила. Л…"
+date = "2025-07-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-395/index.md"
 label = "#arsenmarkaryan #alexjones #warhammer"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-399/index.md"
 label = "#ironman #arsenmarkaryan #meaning #comparison #motivation"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-06-08-552/index.md"
 label = "#arsenmarkaryan #health #medicine #psy #mantoux #mercury"
+date = "2025-06-08"
 +++
 
 {{ tag(t="arsen_markaryan") }}  

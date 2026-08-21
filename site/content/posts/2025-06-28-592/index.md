@@ -24,22 +24,27 @@ ids = [592]
 [[extra.related]]
 path = "@/posts/2026-04-25-1685/index.md"
 label = "#quote #book #ночьвлиссабоне #ремарк"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-04-25-1684/index.md"
 label = "#quote #book #ночьвлиссабоне #ремарк – Я тоже. В ту пору я вконе…"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-08-16-627/index.md"
 label = "Она окончила Ленинградский университет по специальности искусств…"
+date = "2025-08-16"
 
 [[extra.related]]
 path = "@/posts/2025-05-23-539/index.md"
 label = "#book #health #zoloft #christian"
+date = "2025-05-23"
 
 [[extra.related]]
 path = "@/posts/2026-04-03-1568/index.md"
 label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
+date = "2026-04-03"
 +++
 
 {{ tag(t="book") }} Designing Data-Intensive Applications and {{ tag(t="wine") }}

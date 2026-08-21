@@ -23,6 +23,7 @@ ids = [175]
 [[extra.related]]
 path = "@/posts/2026-01-27-949/index.md"
 label = "В эпоху рассвета ИИ становится всё актуальнее опера Где в альтер…"
+date = "2026-01-27"
 +++
 
 {{ tag(t="web3") }} audio platform, {{ tag(t="opensource") }}, on {{ tag(t="ipfs") }}, I uploaded {{ tag(t="complexnumbers") }} to it <https://audius.co/complex_numbers>  

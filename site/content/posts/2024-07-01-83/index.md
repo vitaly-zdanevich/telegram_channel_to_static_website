@@ -23,6 +23,7 @@ ids = [83]
 [[extra.related]]
 path = "@/posts/2025-04-16-472/index.md"
 label = "YouTube alternative on #blockchain"
+date = "2025-04-16"
 +++
 
 Local (off-the-grid) social network with chat, on {{ tag(t="blockchain") }} (so you cannot edit your messages), looks like abandoned [https://www.manyver.se](https://www.manyver.se/)  

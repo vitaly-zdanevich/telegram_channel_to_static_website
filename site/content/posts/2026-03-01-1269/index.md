@@ -11,7 +11,7 @@ tags = ["webdesign", "blue"]
 id = 1269
 day = "2026-03-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1269"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1269-5269742426736234967.jpg"
+og_image = "5269742426736234967_1226957521_460001751.jpg"
 next_id = 1270
 next_title = ""
 next_body = "#webdesign\n#cloud"
@@ -24,22 +24,27 @@ ids = [1269]
 [[extra.related]]
 path = "@/posts/2026-01-29-1013/index.md"
 label = "#webdesign #blue #batumi"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 +++
 
 {{ tag(t="webdesign") }}  
@@ -47,4 +52,4 @@ label = "#webdesign"
 
 <https://www.osinit.com/#contacts>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1269-5269742426736234967.jpg") }}
+{{ img(src="5269742426736234967_1226957521_460001751.jpg") }}

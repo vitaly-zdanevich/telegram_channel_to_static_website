@@ -23,6 +23,7 @@ ids = [1507]
 [[extra.related]]
 path = "@/posts/2025-07-25-611/index.md"
 label = "#music #musicvideo #temakresta #travel #elephants #tinder #year2…"
+date = "2025-07-25"
 +++
 
 {{ tag(t="tinder") }}  

@@ -23,22 +23,27 @@ ids = [1335]
 [[extra.related]]
 path = "@/posts/2026-02-20-1119/index.md"
 label = "#bash #history #mcfly: ctrl-r replacement with \"suggestions are…"
+date = "2026-02-20"
 
 [[extra.related]]
 path = "@/posts/2026-03-05-1336/index.md"
 label = "...one of my #bash aliases: to count files here: c { ls -1  wc -…"
+date = "2026-03-05"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1864/index.md"
 label = "And another #bash #alias: # Better word movement: treat aaabbbcc…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1863/index.md"
 label = "My new #bash #alias bind '\"ej\": \"!#:$ e^\"' # Alt J repeats prev…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-03-05-1334/index.md"
 label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
+date = "2026-03-05"
 +++
 
 I use {{ tag(t="bash") }} history Ctrl-R a lot, also with {{ tag(t="fzf") }} and other helpers, and have bash aliases, that are just one letter, and I do not want to pollute my bash {{ tag(t="history") }} with it, so I found the solution - the bash function/alias that delete itself from the history, for example:  

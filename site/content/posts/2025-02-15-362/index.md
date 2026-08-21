@@ -24,18 +24,22 @@ ids = [362, 363, 364, 365]
 [[extra.related]]
 path = "@/posts/2025-02-15-361/index.md"
 label = "#coin"
+date = "2025-02-15"
 
 [[extra.related]]
 path = "@/posts/2024-05-06-42/index.md"
 label = "Coin 5 years of Lithuania independence, from #coin"
+date = "2024-05-06"
 
 [[extra.related]]
 path = "@/posts/2024-05-07-43/index.md"
 label = "Another coin from Belarus Легенда пра пчалу #bee #coin"
+date = "2024-05-07"
 
 [[extra.related]]
 path = "@/posts/2025-09-22-681/index.md"
 label = "#coin #belarus #history Uploaded to"
+date = "2025-09-22"
 +++
 
 {{ tag(t="coin") }}  

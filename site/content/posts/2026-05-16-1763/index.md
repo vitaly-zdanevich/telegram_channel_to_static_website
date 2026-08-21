@@ -11,39 +11,44 @@ tags = ["error", "gitlab", "contradiction"]
 id = 1763
 day = "2026-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1763"
-og_image = "5206531314276832954_1212240037_460003002.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1763-5206531314276832954.jpg"
 next_id = 1764
 next_title = ""
 next_body = "#music\n#sunboy\nОстров в океане\nFrom\nПро исполнителя"
 prev_id = 1762
 prev_title = ""
 prev_body = "#лекция про мой #telegram #бот для #evernote\n#stillyoungbar\n#batumi\nРепозиторий проекта:\nСоздано через #llm Codex gpt-5.5 xhigh, часов за 10. Сначала на Питоне - а потом попросил переписать на Расте - для скорости.\nУпоминались:\nevernote.com\nevernote.com/api/DeveloperToken.action\nhelp.evernote.com/hc/en-us/articles/209005347-Save-emails-into-Evernote\nnotesnook.com FOSS альтернатива\nobsidian.md проприетарный софт для заметок в markdown\nlogseq.com свободные заметки в markdown\ngithub.com/boo-yee/nixnote2 FOSS клиент для Evernote на C++ и Qt\ngithub.com/vitaly-zdanevich/reeknote мой CLI на Rust\ngithub.com/syncthing/syncthing FOSS синхронизация данных через ваши устройства\nБесплатный хостинг:\naws.amazon.com/lambda\nПро стили - чтобы сайты выгляди как надо вам а не дизайнеру:\ngithub.com/openstyles/stylus\nuserstyles.world/user/vitaly-zdanevich\ngitlab.com/vitaly-zdanevich-styles/evernote\ncss-tricks.com/css-keylogger"
-views = 25
+views = 26
 ids = [1763]
 
 [[extra.related]]
 path = "@/posts/2026-05-15-1761/index.md"
 label = "I love #ci so much that for the first time I depleted free 400 m…"
+date = "2026-05-15"
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1746/index.md"
 label = "#leetcode is often produce #error"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2024-07-10-87/index.md"
 label = "Wow #gitlab has a #cron..."
+date = "2024-07-10"
 
 [[extra.related]]
 path = "@/posts/2024-06-03-50/index.md"
 label = "#gitlab: I love that it is possible to push to a repo that is no…"
+date = "2024-06-03"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1085/index.md"
 label = "#logo #gitlab #git"
+date = "2026-02-05"
 +++
 
 {{ tag(t="error") }}  
 {{ tag(t="gitlab") }}  
 {{ tag(t="contradiction") }}
 
-{{ img(src="5206531314276832954_1212240037_460003002.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1763-5206531314276832954.jpg") }}

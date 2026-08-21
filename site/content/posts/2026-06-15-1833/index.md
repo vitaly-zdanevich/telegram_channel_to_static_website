@@ -23,22 +23,27 @@ ids = [1833]
 [[extra.related]]
 path = "@/posts/2025-02-14-360/index.md"
 label = "#religion"
+date = "2025-02-14"
 
 [[extra.related]]
 path = "@/posts/2025-02-08-351/index.md"
 label = "#religion"
+date = "2025-02-08"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1830/index.md"
 label = "#religion #jesus"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2026-01-07-853/index.md"
 label = "#belarus #grandmother #globustut"
+date = "2026-01-07"
 
 [[extra.related]]
 path = "@/posts/2025-04-12-467/index.md"
 label = "Пройти тест, узнай кто ты #psy #old #test"
+date = "2025-04-12"
 +++
 
 {{ tag(t="old") }}  

@@ -23,22 +23,27 @@ ids = [1830]
 [[extra.related]]
 path = "@/posts/2025-02-14-360/index.md"
 label = "#religion"
+date = "2025-02-14"
 
 [[extra.related]]
 path = "@/posts/2025-02-08-351/index.md"
 label = "#religion"
+date = "2025-02-08"
 
 [[extra.related]]
 path = "@/posts/2026-05-03-1730/index.md"
 label = "#cats #religion #orthodox #blackandwhite"
+date = "2026-05-03"
 
 [[extra.related]]
 path = "@/posts/2025-07-18-600/index.md"
 label = "#religion #architecture #church #germany"
+date = "2025-07-18"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-422/index.md"
 label = "#music #techno #religion #mulsim"
+date = "2025-03-16"
 +++
 
 {{ tag(t="religion") }}  

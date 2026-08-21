@@ -24,22 +24,27 @@ ids = [912]
 [[extra.related]]
 path = "@/posts/2026-01-21-921/index.md"
 label = "#belarus #architecture #nature #village #year2005 #globustut"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-924/index.md"
 label = "#belarus #monument #christianity #virginmary #nature #village #y…"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1384/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1280/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-01-07-854/index.md"
 label = "#belarus #nature #village #globustut"
+date = "2026-01-07"
 +++
 
 {{ tag(t="belarus") }}  

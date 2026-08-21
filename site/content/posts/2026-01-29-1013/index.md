@@ -24,22 +24,27 @@ ids = [1013]
 [[extra.related]]
 path = "@/posts/2026-03-01-1269/index.md"
 label = "#webdesign #blue"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
+date = "2026-07-03"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1848/index.md"
 label = "#batumi Oh my, I live here From"
+date = "2026-06-21"
 
 [[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
+date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
 label = "#webdesign"
+date = "2025-11-03"
 +++
 
 {{ tag(t="webdesign") }}  

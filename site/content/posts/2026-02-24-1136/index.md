@@ -23,18 +23,22 @@ ids = [1136]
 [[extra.related]]
 path = "@/posts/2026-03-02-1308/index.md"
 label = "Wow in #kitty we can switch to a prev active tab: map ctrl+alt+p…"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-713/index.md"
 label = "In #kitty terminal you can always highlight something, for examp…"
+date = "2025-10-21"
 
 [[extra.related]]
 path = "@/posts/2026-06-12-1821/index.md"
 label = "Make #tree clickable, tested in #kitty Replace to #eza eza --tre…"
+date = "2026-06-12"
 
 [[extra.related]]
 path = "@/posts/2026-06-13-1823/index.md"
 label = "#shell #productivity #love my mg alias - clickable #grep in #kit…"
+date = "2026-06-13"
 +++
 
 In {{ tag(t="kitty") }} terminal you can use independent clipboard:  

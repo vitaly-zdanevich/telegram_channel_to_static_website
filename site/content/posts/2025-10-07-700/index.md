@@ -23,6 +23,7 @@ ids = [700]
 [[extra.related]]
 path = "@/posts/2025-10-07-701/index.md"
 label = "#chess"
+date = "2025-10-07"
 +++
 
 {{ tag(t="chess") }}  

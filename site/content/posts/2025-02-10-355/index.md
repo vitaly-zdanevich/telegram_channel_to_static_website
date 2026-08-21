@@ -17,28 +17,33 @@ next_body = "#ai\n#chatgpt\nSource"
 prev_id = 354
 prev_title = ""
 prev_body = "#music\n#anime\n#tatu\n#rammstein"
-views = 48
+views = 49
 ids = [355]
 
 [[extra.related]]
 path = "@/posts/2025-02-10-354/index.md"
 label = "#music #anime #tatu #rammstein"
+date = "2025-02-10"
 
 [[extra.related]]
 path = "@/posts/2025-07-12-597/index.md"
 label = "#music #anime #susumuhirasawa"
+date = "2025-07-12"
 
 [[extra.related]]
 path = "@/posts/2025-02-22-379/index.md"
 label = "#anime #music #choir"
+date = "2025-02-22"
 
 [[extra.related]]
 path = "@/posts/2025-08-20-633/index.md"
 label = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch #music #anime #russi…"
+date = "2025-08-20"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-416/index.md"
 label = "#music #germany #tax #rammstein"
+date = "2025-03-16"
 +++
 
 [https://youtu.be/P-nJcLvQI9Q?list=RDfmMFOQBthz0](<https://youtu.be/P-nJcLvQI9Q?list=RDfmMFOQBthz0> "СОЛНЦЕ Фрирен X Rammstein - Sonne на русском [AMV]")  

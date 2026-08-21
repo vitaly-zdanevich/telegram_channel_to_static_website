@@ -23,22 +23,27 @@ ids = [690]
 [[extra.related]]
 path = "@/posts/2025-11-04-735/index.md"
 label = "If WebArchive have it - it still not in Google - you cannot sear…"
+date = "2025-11-04"
 
 [[extra.related]]
 path = "@/posts/2025-10-19-707/index.md"
 label = "#archivation #games Trying to #zim it"
+date = "2025-10-19"
 
 [[extra.related]]
 path = "@/posts/2025-10-25-720/index.md"
 label = "Downloaded by #wget a dying website indiegamewebsite.com The com…"
+date = "2025-10-25"
 
 [[extra.related]]
 path = "@/posts/2025-08-16-627/index.md"
 label = "Она окончила Ленинградский университет по специальности искусств…"
+date = "2025-08-16"
 
 [[extra.related]]
 path = "@/posts/2025-10-11-704/index.md"
 label = "#culture #archivation #future #green #research"
+date = "2025-10-11"
 +++
 
 {{ tag(t="archivation") }}  

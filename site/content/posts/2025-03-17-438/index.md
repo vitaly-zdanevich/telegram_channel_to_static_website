@@ -23,14 +23,17 @@ ids = [438]
 [[extra.related]]
 path = "@/posts/2025-03-17-436/index.md"
 label = "#dieantwoord"
+date = "2025-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-03-17-435/index.md"
 label = "#dieantwoord"
+date = "2025-03-17"
 
 [[extra.related]]
 path = "@/posts/2025-03-17-434/index.md"
 label = "#music #dieantwoord"
+date = "2025-03-17"
 +++
 
 {{ tag(t="die_antwoord") }}  
@@ -38,5 +41,3 @@ label = "#music #dieantwoord"
 [Source](<https://youtu.be/KwQl3mGVyDw> "ZEF - The Story of DIE ANTWOORD (Trailer)")
 
 {{ youtube(id="KwQl3mGVyDw") }}
-
-🔥 1

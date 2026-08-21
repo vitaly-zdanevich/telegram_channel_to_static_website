@@ -24,22 +24,27 @@ ids = [1385]
 [[extra.related]]
 path = "@/posts/2026-03-08-1382/index.md"
 label = "#castle #abandone #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-02-1294/index.md"
 label = "#abandone #castle #belarus #globustut #year2005"
+date = "2026-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-03-15-1443/index.md"
 label = "#abandone #castle #slonim #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-07-06-2010/index.md"
 label = "#belarus #ружаны #photo #abandone #castle #year2005 #globustut"
+date = "2026-07-06"
 
 [[extra.related]]
 path = "@/posts/2026-07-06-2004/index.md"
 label = "#belarus #коссово #photo #abandone #castle #year2005 #globustut"
+date = "2026-07-06"
 +++
 
 {{ tag(t="castle") }}  

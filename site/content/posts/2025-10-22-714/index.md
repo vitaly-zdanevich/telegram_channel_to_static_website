@@ -23,6 +23,7 @@ ids = [714]
 [[extra.related]]
 path = "@/posts/2025-03-13-409/index.md"
 label = "#universe #consciousness"
+date = "2025-03-13"
 +++
 
 {{ tag(t="consciousness") }}  

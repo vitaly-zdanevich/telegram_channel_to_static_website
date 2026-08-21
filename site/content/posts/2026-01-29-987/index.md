@@ -24,22 +24,27 @@ ids = [987, 988]
 [[extra.related]]
 path = "@/posts/2026-01-29-963/index.md"
 label = "#belarus #nature #winter #любча #year2005 #globustut From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1373/index.md"
 label = "#cementery #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1255/index.md"
 label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1248/index.md"
 label = "#cementery #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-989/index.md"
 label = "#belarus #winter #year2005 #globustut From"
+date = "2026-01-29"
 +++
 
 {{ tag(t="belarus") }}  

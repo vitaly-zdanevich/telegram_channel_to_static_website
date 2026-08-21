@@ -17,28 +17,33 @@ next_body = "#music\n#rammstein\n#cult\n#drum\nSource"
 prev_id = 375
 prev_title = ""
 prev_body = "#game\n#armiesofexigo\nSource"
-views = 53
+views = 54
 ids = [376]
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2133/index.md"
 label = "#car #death"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-10-22-716/index.md"
 label = "#medicine #death"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2025-02-02-349/index.md"
 label = "#translate #pain"
+date = "2025-02-02"
 
 [[extra.related]]
 path = "@/posts/2024-11-06-180/index.md"
 label = "#girl #pain"
+date = "2024-11-06"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2136/index.md"
 label = "#death #car #sound"
+date = "2026-08-09"
 +++
 
 **Are you winning son? Happy Birthday**  

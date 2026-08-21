@@ -24,22 +24,27 @@ ids = [474]
 [[extra.related]]
 path = "@/posts/2026-04-24-1680/index.md"
 label = "#preservation #internetarchive #short #music #tape #audio"
+date = "2026-04-24"
 
 [[extra.related]]
 path = "@/posts/2025-06-13-573/index.md"
 label = "#archiving Lost."
+date = "2025-06-13"
 
 [[extra.related]]
 path = "@/posts/2025-04-15-469/index.md"
 label = "Looks what I found - another #archiving group"
+date = "2025-04-15"
 
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 
 [[extra.related]]
 path = "@/posts/2025-05-10-514/index.md"
 label = "#image #archiving"
+date = "2025-05-10"
 +++
 
 {{ tag(t="archiving") }}  

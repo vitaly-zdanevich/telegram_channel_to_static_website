@@ -11,7 +11,7 @@ tags = ["map", "google_map", "turkiye", "sakartvelo"]
 id = 2045
 day = "2026-07-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2045"
-og_image = "5366274114521341577_1249433056_460005001.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2045-5366274114521341577.jpg"
 next_id = 2046
 next_title = ""
 next_body = ""
@@ -24,22 +24,27 @@ ids = [2045]
 [[extra.related]]
 path = "@/posts/2025-08-20-631/index.md"
 label = "Percent of people who think their culture is superior to others…"
+date = "2025-08-20"
 
 [[extra.related]]
 path = "@/posts/2026-03-24-1502/index.md"
 label = "#map #russia #russianempire #blacksea #sakartvelo #year1910"
+date = "2026-03-24"
 
 [[extra.related]]
 path = "@/posts/2025-06-21-586/index.md"
 label = "#map of articles and photos"
+date = "2025-06-21"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 +++
 
 {{ tag(t="map") }}  
@@ -47,4 +52,4 @@ label = "#map #batumi Between the Black Sea and the mountains."
 {{ tag(t="turkiye") }}  
 {{ tag(t="sakartvelo") }}
 
-{{ img(src="5366274114521341577_1249433056_460005001.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2045-5366274114521341577.jpg") }}

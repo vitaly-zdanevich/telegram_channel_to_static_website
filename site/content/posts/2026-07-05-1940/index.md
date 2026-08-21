@@ -11,7 +11,7 @@ tags = ["belarus", "хальч", "photo", "architecture", "abandone", "year_2005
 id = 1940
 day = "2026-07-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1940"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1940-5355134640097794676.jpg"
 next_id = 1945
 next_title = ""
 next_body = "#belarus\n#КрасныйПартизан\n#photo\n#architecture\n#church\n#year2005\n#globustut\nSource"
@@ -24,22 +24,27 @@ ids = [1940, 1941, 1942, 1943, 1944]
 [[extra.related]]
 path = "@/posts/2026-07-05-1951/index.md"
 label = "#belarus #ленино #photo #architecture #abandone #year2005 #globu…"
+date = "2026-07-05"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1930/index.md"
 label = "#belarus #демьянки #photo #architecture #abandone #year2005 #glo…"
+date = "2026-07-05"
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1904/index.md"
 label = "#belarus #волчин #architecture #photo #abandone #year2005 #globu…"
+date = "2026-07-04"
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1898/index.md"
 label = "#belarus #architecture #church #photo #abandone #year2005 #globu…"
+date = "2026-07-04"
 
 [[extra.related]]
 path = "@/posts/2026-07-06-1970/index.md"
 label = "#belarus #photo #abandone #year2005 #globustut"
+date = "2026-07-06"
 +++
 
 {{ tag(t="belarus") }}  
@@ -52,12 +57,12 @@ label = "#belarus #photo #abandone #year2005 #globustut"
 
 [Source](https://commons.wikimedia.org/wiki/File:062-0826_%D0%A5%D0%B0%D0%BB%D1%8C%D1%87,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%B8%D1%8E%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1940-5355134640097794676.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1941-5355134640097794678.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1942-5355134640097794677.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1943-5355134640097794679.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1944-5355134640097794680.jpg") }}

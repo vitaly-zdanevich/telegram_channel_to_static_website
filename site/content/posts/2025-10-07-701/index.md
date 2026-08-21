@@ -17,12 +17,13 @@ next_body = "#reaction\n#classic\n#music\nSource"
 prev_id = 700
 prev_title = ""
 prev_body = "#chess\nSource"
-views = 32
+views = 33
 ids = [701]
 
 [[extra.related]]
 path = "@/posts/2025-10-07-700/index.md"
 label = "#chess"
+date = "2025-10-07"
 +++
 
 {{ tag(t="chess") }}  

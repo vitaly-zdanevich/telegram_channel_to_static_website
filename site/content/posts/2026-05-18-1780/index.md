@@ -23,22 +23,27 @@ ids = [1780]
 [[extra.related]]
 path = "@/posts/2026-06-24-1853/index.md"
 label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-05-1805/index.md"
 label = "My yet another project: @wikipediaunofficialbot Built with #llm…"
+date = "2026-06-05"
 
 [[extra.related]]
 path = "@/posts/2026-05-25-1785/index.md"
 label = "Another #llm victory: repack of the official #evernote client"
+date = "2026-05-25"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1779/index.md"
 label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2026-05-17-1776/index.md"
 label = "#llm #quote"
+date = "2026-05-17"
 +++
 
 What a time - multiple {{ tag(t="llm") }} doing multiple projects, in parallel...

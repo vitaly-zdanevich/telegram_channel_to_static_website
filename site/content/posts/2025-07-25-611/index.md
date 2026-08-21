@@ -17,28 +17,33 @@ next_body = "#retro\n#cd\n#vhs\nSource"
 prev_id = 610
 prev_title = ""
 prev_body = "Can you imagine #userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 35 commits · 1 fork · 1 open issues/PRs · last push 2026-04-02\")\n#lastfm"
-views = 117
+views = 119
 ids = [611]
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
+date = "2025-01-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-24-198/index.md"
 label = "#music"
+date = "2024-11-24"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1764/index.md"
 label = "#music #sunboy Остров в океане From Про исполнителя"
+date = "2026-05-16"
 +++
 
 {{ tag(t="music") }}  

@@ -11,7 +11,7 @@ tags = ["anime", "cover", "game", "ps3", "year_2014"]
 id = 1668
 day = "2026-04-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1668"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1668-5424885523165156616.jpg"
 next_id = 1672
 next_title = ""
 next_body = "#mediawiki\n#fandom\n#infobox\n#template\n#concatenation\n#wikidata\n#armiesofexigo\nBefore:\nWikidata\nAfter:\nWikidata\n[ } }]"
@@ -24,22 +24,27 @@ ids = [1668, 1669, 1670, 1671]
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2025-08-09-621/index.md"
 label = "#anime #gpu"
+date = "2025-08-09"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-398/index.md"
 label = "#anime #voice"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-375/index.md"
 label = "#game #armiesofexigo"
+date = "2025-02-21"
 +++
 
 {{ tag(t="anime") }}  
@@ -58,10 +63,10 @@ label = "#game #armiesofexigo"
 
 <https://www.cubed3.com/games/reviews/playstation-3/atelier-shallie-alchemists-of-the-dusk-sea>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1668-5424885523165156616.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1669-5424885523165156617.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1670-5424885523165156618.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1671-5424885523165156619.jpg") }}

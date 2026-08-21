@@ -23,22 +23,27 @@ ids = [2127]
 [[extra.related]]
 path = "@/posts/2026-02-05-1089/index.md"
 label = "#matrix Прошло 20 лет, а вы и не заметили, мистер Андерсон"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
+date = "2026-08-04"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
+date = "2026-02-03"
 +++
 
 {{ tag(t="mem") }}  

@@ -24,22 +24,27 @@ ids = [720]
 [[extra.related]]
 path = "@/posts/2025-11-04-735/index.md"
 label = "If WebArchive have it - it still not in Google - you cannot sear…"
+date = "2025-11-04"
 
 [[extra.related]]
 path = "@/posts/2025-10-19-707/index.md"
 label = "#archivation #games Trying to #zim it"
+date = "2025-10-19"
 
 [[extra.related]]
 path = "@/posts/2025-09-30-690/index.md"
 label = "#archivation"
+date = "2025-09-30"
 
 [[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
+date = "2025-05-13"
 
 [[extra.related]]
 path = "@/posts/2025-10-21-712/index.md"
 label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 +++
 
 Downloaded by {{ tag(t="wget") }} a dying website [indiegamewebsite.com](http://indiegamewebsite.com/)  

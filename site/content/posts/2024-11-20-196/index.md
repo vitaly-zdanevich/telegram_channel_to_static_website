@@ -5,12 +5,13 @@ description = "space film extract Lost in Space) from 1998, movie ending, love i
 
 [taxonomies]
 days = ["2024-11-20"]
-tags = ["space", "film", "extract", "lost_in_space", "video"]
+tags = ["space", "film", "extract", "lost_in_space"]
 
 [extra]
 id = 196
 day = "2024-11-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/196"
+og_image = "01.jpg"
 next_id = 197
 next_title = ""
 next_body = "From , ending"
@@ -23,30 +24,33 @@ ids = [196]
 [[extra.related]]
 path = "@/posts/2025-05-06-500/index.md"
 label = "#film #jupiter #space"
+date = "2025-05-06"
 
 [[extra.related]]
 path = "@/posts/2025-01-17-253/index.md"
 label = "#film #scifi #space"
+date = "2025-01-17"
 
 [[extra.related]]
 path = "@/posts/2024-02-26-32/index.md"
 label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
 
 [[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
 path = "@/posts/2025-10-03-696/index.md"
 label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+date = "2025-10-03"
 +++
 
 {{ tag(t="space") }}  
 {{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_(film)) from 1998, movie ending, love it  
 {{ tag(t="lost_in_space") }}
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/196-01.mp4") }}
+![video](01.jpg)
 
-🙏 1
-
-{{ tag(t="video") }}
+*▶ video — 32:37*

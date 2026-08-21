@@ -23,14 +23,17 @@ ids = [832]
 [[extra.related]]
 path = "@/posts/2026-05-13-1756/index.md"
 label = "#code #russian #yandex #language From"
+date = "2026-05-13"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1733/index.md"
 label = "#belarus #belarussian #arabic #language"
+date = "2026-05-04"
 
 [[extra.related]]
 path = "@/posts/2026-06-13-1824/index.md"
 label = "#wikipedia #armenian #ruwiki #language #table"
+date = "2026-06-13"
 +++
 
 {{ tag(t="language") }}  

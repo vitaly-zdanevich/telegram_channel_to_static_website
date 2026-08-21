@@ -23,22 +23,27 @@ ids = [1744]
 [[extra.related]]
 path = "@/posts/2026-05-18-1779/index.md"
 label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
+date = "2026-05-18"
 
 [[extra.related]]
 path = "@/posts/2026-01-25-938/index.md"
 label = "Top 1% by #python, hm, not sure why"
+date = "2026-01-25"
 
 [[extra.related]]
 path = "@/posts/2026-06-24-1853/index.md"
 label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-06-12-1819/index.md"
 label = "My another #userstyle: for #gemini, before and after"
+date = "2026-06-12"
 +++
 
 {{ tag(t="python") }}  

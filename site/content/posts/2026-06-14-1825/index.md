@@ -23,14 +23,17 @@ ids = [1825]
 [[extra.related]]
 path = "@/posts/2026-02-14-1112/index.md"
 label = "Editing #wikipedia, in #vim"
+date = "2026-02-14"
 
 [[extra.related]]
 path = "@/posts/2026-02-01-1072/index.md"
 label = "#wikipedia article writing, in #vim"
+date = "2026-02-01"
 
 [[extra.related]]
 path = "@/posts/2026-01-20-907/index.md"
 label = "wow I can edit #wikipedia in #vim, thanks to to #git pull/push a…"
+date = "2026-01-20"
 +++
 
 {{ tag(t="vim") }}  

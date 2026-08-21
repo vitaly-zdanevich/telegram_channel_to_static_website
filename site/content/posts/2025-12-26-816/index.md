@@ -23,22 +23,27 @@ ids = [816]
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1370/index.md"
 label = "#webdesign #armenia"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2025-04-15-470/index.md"
 label = "Source #sakartvelo #taxes"
+date = "2025-04-15"
 
 [[extra.related]]
 path = "@/posts/2026-05-05-1735/index.md"
 label = "#architecture of #village houses in #sakartvelo"
+date = "2026-05-05"
 
 [[extra.related]]
 path = "@/posts/2025-10-05-697/index.md"
 label = "#turkey #map #population"
+date = "2025-10-05"
 +++
 
 {{ tag(t="it") }}  

@@ -24,22 +24,27 @@ ids = [1071]
 [[extra.related]]
 path = "@/posts/2025-10-03-695/index.md"
 label = "#journal After traveling through multiple countries, I feel that…"
+date = "2025-10-03"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2130/index.md"
 label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"
 label = "#monument #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-16-1475/index.md"
 label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+date = "2026-03-16"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1419/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 +++
 
 {{ tag(t="journal") }}  

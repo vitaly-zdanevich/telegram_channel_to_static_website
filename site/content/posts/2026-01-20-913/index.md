@@ -24,22 +24,27 @@ ids = [913]
 [[extra.related]]
 path = "@/posts/2026-01-20-912/index.md"
 label = "#belarus #village #nature #river #year2005 #globustut"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1961/index.md"
 label = "#belarus #nature #green #trees #lake #photo #year2005 #globustut"
+date = "2026-07-05"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1966/index.md"
 label = "#belarus #photo #river #boat #year2005 #globustut"
+date = "2026-07-05"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-1006/index.md"
 label = "#belarus #nature #winter #monument #year2005 #novogrudok From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-987/index.md"
 label = "#belarus #nature #winter #cementery #year2005 #globustut Новосёл…"
+date = "2026-01-29"
 +++
 
 {{ tag(t="belarus") }}  

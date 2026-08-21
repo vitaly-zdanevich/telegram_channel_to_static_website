@@ -24,22 +24,27 @@ ids = [1438]
 [[extra.related]]
 path = "@/posts/2026-03-19-1492/index.md"
 label = "#typography #year1907 #sakartvelo #newspaper #isari"
+date = "2026-03-19"
 
 [[extra.related]]
 path = "@/posts/2026-06-18-1841/index.md"
 label = "#ad #newspaper #design #toxic From"
+date = "2026-06-18"
 
 [[extra.related]]
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
+date = "2025-06-18"
 
 [[extra.related]]
 path = "@/posts/2024-10-08-159/index.md"
 label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
 path = "@/posts/2024-07-13-89/index.md"
 label = "Another good #design"
+date = "2024-07-13"
 +++
 
 {{ tag(t="design") }}  

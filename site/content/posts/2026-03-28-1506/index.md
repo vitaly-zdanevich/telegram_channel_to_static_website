@@ -23,22 +23,27 @@ ids = [1506]
 [[extra.related]]
 path = "@/posts/2026-05-06-1746/index.md"
 label = "#leetcode is often produce #error"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1763/index.md"
 label = "#error #gitlab #contradiction"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-04-11-1623/index.md"
 label = "Usual #school in #china? #lenin 【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】"
+date = "2026-04-11"
 
 [[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
+date = "2026-04-02"
 +++
 
 {{ tag(t="shutdown") }}  

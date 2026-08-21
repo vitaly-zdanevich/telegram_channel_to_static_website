@@ -24,22 +24,27 @@ ids = [892]
 [[extra.related]]
 path = "@/posts/2026-02-05-1085/index.md"
 label = "#logo #gitlab #git"
+date = "2026-02-05"
 
 [[extra.related]]
 path = "@/posts/2025-08-22-634/index.md"
 label = "#dress #tshirt #git #github #porn"
+date = "2025-08-22"
 
 [[extra.related]]
 path = "@/posts/2025-05-27-542/index.md"
 label = "#git"
+date = "2025-05-27"
 
 [[extra.related]]
 path = "@/posts/2026-05-15-1761/index.md"
 label = "I love #ci so much that for the first time I depleted free 400 m…"
+date = "2026-05-15"
 
 [[extra.related]]
 path = "@/posts/2026-01-13-876/index.md"
 label = "#macOS: to install #git I need 25 GB"
+date = "2026-01-13"
 +++
 
 Storing my configs in {{ tag(t="git") }} ({{ tag(t="gitlab") }}, because its open - {{ tag(t="github") }} is not). Dozens of repos. I recommend you. And I love that Gitlab creates a repo if it does not exist, private by default - so I can {{ tag(t="backup") }} my another preferences folder without touching a web browser.  

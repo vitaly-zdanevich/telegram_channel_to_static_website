@@ -24,22 +24,27 @@ ids = [813]
 [[extra.related]]
 path = "@/posts/2025-10-28-727/index.md"
 label = "#os #design #windows #windowsxp"
+date = "2025-10-28"
 
 [[extra.related]]
 path = "@/posts/2025-12-25-814/index.md"
 label = "#windowsxp"
+date = "2025-12-25"
 
 [[extra.related]]
 path = "@/posts/2025-04-11-465/index.md"
 label = "#windows #linux"
+date = "2025-04-11"
 
 [[extra.related]]
 path = "@/posts/2024-04-27-38/index.md"
 label = "I love - developed in 2004 - but nobody sell it anymore in 2024.…"
+date = "2024-04-27"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1097/index.md"
 label = "I love #display aspect ratio 16x10 because I have the special sp…"
+date = "2026-02-05"
 +++
 
 {{ tag(t="ui") }}  

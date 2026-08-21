@@ -24,22 +24,27 @@ ids = [1006, 1007, 1008, 1009, 1010, 1011, 1012]
 [[extra.related]]
 path = "@/posts/2026-01-29-1000/index.md"
 label = "#belarus #abandone #winter #novogrudok #year2005 #globustut From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-987/index.md"
 label = "#belarus #nature #winter #cementery #year2005 #globustut Новосёл…"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-963/index.md"
 label = "#belarus #nature #winter #любча #year2005 #globustut From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-927/index.md"
 label = "#belarus #monument #nature #year2005 #year1915 #globustut"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-924/index.md"
 label = "#belarus #monument #christianity #virginmary #nature #village #y…"
+date = "2026-01-21"
 +++
 
 {{ tag(t="belarus") }}  

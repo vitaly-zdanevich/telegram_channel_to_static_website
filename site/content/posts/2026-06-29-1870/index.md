@@ -11,7 +11,7 @@ tags = ["belarus", "колодищи", "architecture", "church"]
 id = 1870
 day = "2026-06-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1870"
-og_image = "5339406624478667762_1243177481_460006386.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1870-5339406624478667762.jpg"
 next_id = 1871
 next_title = ""
 next_body = "#death\n#grandmother\n#drink\n#kitchen\n#spirit\nSource"
@@ -24,22 +24,27 @@ ids = [1870]
 [[extra.related]]
 path = "@/posts/2026-02-25-1178/index.md"
 label = "#church #architecture #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-962/index.md"
 label = "#belarus #architecture #church #вселюб #year2005 #globustut From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-28-961/index.md"
 label = "#belarus #architecture #church #несвиж #year2005 #globustut From"
+date = "2026-01-28"
 
 [[extra.related]]
 path = "@/posts/2026-01-28-956/index.md"
 label = "#belarus #architecture #church #раубичи #year2005 #globustut Fro…"
+date = "2026-01-28"
 
 [[extra.related]]
 path = "@/posts/2026-07-05-1945/index.md"
 label = "#belarus #КрасныйПартизан #photo #architecture #church #year2005…"
+date = "2026-07-05"
 +++
 
 {{ tag(t="belarus") }}  
@@ -51,4 +56,4 @@ Author: [Димитров Денис](https://commons.wikimedia.org/w/index.php?
 
 [Source](https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D0%BF%D1%82%D0%B8%D1%81%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D1%80%D0%B0%D0%BC_%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D1%89%D0%B8_IMG_4666.jpg)
 
-{{ img(src="5339406624478667762_1243177481_460006386.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1870-5339406624478667762.jpg") }}

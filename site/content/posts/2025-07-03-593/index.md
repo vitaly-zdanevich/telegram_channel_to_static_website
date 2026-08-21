@@ -24,22 +24,27 @@ ids = [593]
 [[extra.related]]
 path = "@/posts/2026-07-29-2106/index.md"
 label = "#dog #shepherd #german By materanimalium"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2026-06-27-1868/index.md"
 label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
+date = "2026-06-27"
 
 [[extra.related]]
 path = "@/posts/2026-06-10-1807/index.md"
 label = "#love this #extension - #highlight predefined list of words, on…"
+date = "2026-06-10"
 
 [[extra.related]]
 path = "@/posts/2026-04-25-1686/index.md"
 label = "#photo #batumi #dog"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-21-1120/index.md"
 label = "#ai #codex #love Codex, using it almost every day, recently solv…"
+date = "2026-02-21"
 +++
 
 {{ tag(t="dog") }}  

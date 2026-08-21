@@ -24,22 +24,27 @@ ids = [1372]
 [[extra.related]]
 path = "@/posts/2026-03-15-1445/index.md"
 label = "#architecture #orange #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1388/index.md"
 label = "#architecture #orange #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1419/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1418/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1387/index.md"
 label = "#columns #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F…"
+date = "2026-03-08"
 +++
 
 {{ tag(t="architecture") }}  

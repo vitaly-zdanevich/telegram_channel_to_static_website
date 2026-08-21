@@ -5,12 +5,13 @@ description = "arsenmarkaryan health medicine psy mantoux mercury Source"
 
 [taxonomies]
 days = ["2025-06-08"]
-tags = ["arsen_markaryan", "health", "medicine", "psy", "mantoux", "mercury", "video"]
+tags = ["arsen_markaryan", "health", "medicine", "psy", "mantoux", "mercury"]
 
 [extra]
 id = 552
 day = "2025-06-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/552"
+og_image = "01.jpg"
 next_id = 553
 next_title = ""
 next_body = "#format\nSource"
@@ -23,22 +24,27 @@ ids = [552]
 [[extra.related]]
 path = "@/posts/2025-11-06-743/index.md"
 label = "Emotional reasoning is a cognitive process by which an individua…"
+date = "2025-11-06"
 
 [[extra.related]]
 path = "@/posts/2024-12-21-220/index.md"
 label = "#psy"
+date = "2024-12-21"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2025-10-22-716/index.md"
 label = "#medicine #death"
+date = "2025-10-22"
 
 [[extra.related]]
 path = "@/posts/2025-07-27-613/index.md"
 label = "#arsenmarkaryan #hairs В волосах первородная космическая сила. Л…"
+date = "2025-07-27"
 +++
 
 {{ tag(t="arsen_markaryan") }}  
@@ -50,6 +56,6 @@ label = "#arsenmarkaryan #hairs В волосах первородная кос�
 
 [Source](https://www.youtube.com/watch?v=9OorBJMEJK8)
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/552-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 1:54*

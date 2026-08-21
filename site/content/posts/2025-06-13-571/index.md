@@ -5,12 +5,13 @@ description = "livecoding batman binarysearch leetcode with games :("
 
 [taxonomies]
 days = ["2025-06-13"]
-tags = ["livecoding", "batman", "binary_search", "leetcode", "video"]
+tags = ["livecoding", "batman", "binary_search", "leetcode"]
 
 [extra]
 id = 571
 day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/571"
+og_image = "01.jpg"
 next_id = 573
 next_title = ""
 next_body = "#archiving\nLost."
@@ -23,18 +24,22 @@ ids = [571]
 [[extra.related]]
 path = "@/posts/2026-05-06-1747/index.md"
 label = "Oh my... #leetcode"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1749/index.md"
 label = "#leetcode #validation"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1746/index.md"
 label = "#leetcode is often produce #error"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-05-12-1753/index.md"
 label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
+date = "2026-05-12"
 +++
 
 {{ tag(t="livecoding") }}  
@@ -47,8 +52,6 @@ label = "#heap #lt Wow in #leetcode we can #patch classes: ListNode.lt =…"
 
 <https://en.wikipedia.org/wiki/Binary_search>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/571-01.mp4") }}
+![video](01.jpg)
 
-👍 1
-
-{{ tag(t="video") }}
+*▶ video — 0:59*

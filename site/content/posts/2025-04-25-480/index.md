@@ -24,22 +24,27 @@ ids = [480]
 [[extra.related]]
 path = "@/posts/2025-04-25-479/index.md"
 label = "#article #primeworld I wrote."
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2026-04-24-1679/index.md"
 label = "#log Still running my experiment about #porting #primeworld from…"
+date = "2026-04-24"
 
 [[extra.related]]
 path = "@/posts/2026-03-22-1496/index.md"
-label = "#webdesign #belarus #belarussian"
+label = "#webdesign #belarus #belarussian пра жывёл"
+date = "2026-03-22"
 
 [[extra.related]]
 path = "@/posts/2025-04-05-461/index.md"
 label = "#belarus #belarussian #culture"
+date = "2025-04-05"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1733/index.md"
 label = "#belarus #belarussian #arabic #language"
+date = "2026-05-04"
 +++
 
 {{ tag(t="prime_world") }}  
@@ -48,5 +53,3 @@ label = "#belarus #belarussian #arabic #language"
 Adding Belarusian language to the game
 
 {{ img(src="5215716724605844691_1214378682_456260819.jpg") }}
-
-👌 2

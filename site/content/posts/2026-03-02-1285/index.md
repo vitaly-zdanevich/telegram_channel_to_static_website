@@ -24,22 +24,27 @@ ids = [1285, 1286, 1287, 1288, 1289, 1290, 1291]
 [[extra.related]]
 path = "@/posts/2026-03-08-1384/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2026-03-01-1280/index.md"
 label = "#village #belarus #globustut #year2005"
+date = "2026-03-01"
 
 [[extra.related]]
 path = "@/posts/2026-03-07-1349/index.md"
 label = "#house #abandone #belarus #globustut #year2005 Source,%D1%81%D0%…"
+date = "2026-03-07"
 
 [[extra.related]]
 path = "@/posts/2026-07-04-1922/index.md"
 label = "#belarus #шерстин #photo #village #year2005 #globustut"
+date = "2026-07-04"
 
 [[extra.related]]
 path = "@/posts/2026-02-28-1259/index.md"
 label = "#woodencart #village #rural #belarus #globustut #year2005 Source…"
+date = "2026-02-28"
 +++
 
 {{ tag(t="village") }}  
@@ -62,4 +67,4 @@ label = "#woodencart #village #rural #belarus #globustut #year2005 Source…"
 
 {{ img(src="06.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1291-5271994226549920759.jpg") }}
+{{ img(src="07.jpg") }}

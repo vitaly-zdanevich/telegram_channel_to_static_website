@@ -24,22 +24,27 @@ ids = [573]
 [[extra.related]]
 path = "@/posts/2025-04-15-469/index.md"
 label = "Looks what I found - another #archiving group"
+date = "2025-04-15"
 
 [[extra.related]]
 path = "@/posts/2025-05-10-514/index.md"
 label = "#image #archiving"
+date = "2025-05-10"
 
 [[extra.related]]
 path = "@/posts/2025-04-15-471/index.md"
 label = "#archiving #photos"
+date = "2025-04-15"
 
 [[extra.related]]
 path = "@/posts/2025-08-16-629/index.md"
 label = "On January 29, 2015, about 15 years after the original release o…"
+date = "2025-08-16"
 
 [[extra.related]]
 path = "@/posts/2025-04-18-474/index.md"
 label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
+date = "2025-04-18"
 +++
 
 {{ tag(t="archiving") }}  

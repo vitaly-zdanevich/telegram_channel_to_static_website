@@ -11,7 +11,7 @@ tags = ["history", "batumi", "countries"]
 id = 804
 day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/804"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-804-5350606245624220539.jpg"
+og_image = "5350606245624220539_1245785096_460000123.jpg"
 next_id = 805
 next_title = ""
 next_body = "#anime\n#logo\n#mascon\n#design"
@@ -24,22 +24,27 @@ ids = [804]
 [[extra.related]]
 path = "@/posts/2026-06-21-1848/index.md"
 label = "#batumi Oh my, I live here From"
+date = "2026-06-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-04-1734/index.md"
 label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
 
 [[extra.related]]
 path = "@/posts/2026-02-03-1080/index.md"
 label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2025-04-28-487/index.md"
 label = "#trump #batumi"
+date = "2025-04-28"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-448/index.md"
 label = "Раньше было лучше #history #psy"
+date = "2025-03-27"
 +++
 
 <https://en.wikipedia.org/wiki/Batumi>  
@@ -48,4 +53,4 @@ label = "Раньше было лучше #history #psy"
 {{ tag(t="batumi") }}  
 {{ tag(t="countries") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-804-5350606245624220539.jpg") }}
+{{ img(src="5350606245624220539_1245785096_460000123.jpg") }}

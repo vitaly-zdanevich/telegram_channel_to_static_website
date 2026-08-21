@@ -23,22 +23,27 @@ ids = [2073]
 [[extra.related]]
 path = "@/posts/2026-06-27-1868/index.md"
 label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
+date = "2026-06-27"
 
 [[extra.related]]
 path = "@/posts/2026-03-13-1439/index.md"
 label = "#webdesign #animal #cat"
+date = "2026-03-13"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-432/index.md"
 label = "#animal #flyingsquirrel #love"
+date = "2025-03-16"
 
 [[extra.related]]
 path = "@/posts/2026-07-27-2075/index.md"
 label = "#animal #mouse #grass #ground #watering #cares"
+date = "2026-07-27"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1417/index.md"
 label = "#stone #animal #museum #belarus #globustut #year2005"
+date = "2026-03-10"
 +++
 
 {{ tag(t="toy") }}  

@@ -24,10 +24,12 @@ ids = [820, 821, 822, 823, 824]
 [[extra.related]]
 path = "@/posts/2026-08-05-2119/index.md"
 label = "#hardware #player"
+date = "2026-08-05"
 
 [[extra.related]]
 path = "@/posts/2025-11-11-769/index.md"
 label = "#mp3 #hardware #sandisc Sexy Girls Fun Gadgets Stuff Magazine, 2…"
+date = "2025-11-11"
 +++
 
 {{ tag(t="hardware") }}  
@@ -46,5 +48,3 @@ Toshiba Libretto
 {{ img(src="04.jpg") }}
 
 {{ img(src="05.jpg") }}
-
-👍 1

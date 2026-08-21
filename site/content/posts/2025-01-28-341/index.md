@@ -23,6 +23,7 @@ ids = [341]
 [[extra.related]]
 path = "@/posts/2026-06-18-1842/index.md"
 label = "#interior #cozy #bathroom From"
+date = "2026-06-18"
 +++
 
 {{ tag(t="bathroom") }}  

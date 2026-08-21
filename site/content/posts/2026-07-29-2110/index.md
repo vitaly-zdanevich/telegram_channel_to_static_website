@@ -23,22 +23,27 @@ ids = [2110]
 [[extra.related]]
 path = "@/posts/2026-07-08-2043/index.md"
 label = "#drug #transformation Как происходит трансформация зависимого, п…"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2100/index.md"
 label = "#drug #traktor #interstellar Принял таблетки для сердца, потому…"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2041/index.md"
 label = "#drug #spoon #icecream"
+date = "2026-07-08"
 
 [[extra.related]]
 path = "@/posts/2025-09-20-676/index.md"
 label = "#drug #peterburg #airdefense Игорян? Олег? Обознался"
+date = "2025-09-20"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-414/index.md"
 label = "#health #eyes #drug"
+date = "2025-03-16"
 +++
 
 {{ tag(t="drug") }}  

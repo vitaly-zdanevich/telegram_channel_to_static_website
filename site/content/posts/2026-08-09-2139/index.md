@@ -11,31 +11,39 @@ tags = ["my", "лекция", "batumi", "friends_bar", "youta", "tui", "youtube"
 id = 2139
 day = "2026-08-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2139"
+next_id = 2140
+next_title = ""
+next_body = "#fun\n#document\n#secret\n#censor\n#music\n#anime\n#badapple\nSource"
 prev_id = 2138
 prev_title = ""
 prev_body = "#village\n#nature\n#career\nSource"
-views = 77
+views = 78
 ids = [2139]
 
 [[extra.related]]
 path = "@/posts/2026-05-21-1784/index.md"
 label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
+date = "2026-05-21"
 
 [[extra.related]]
 path = "@/posts/2026-05-06-1745/index.md"
 label = "My another hobby project, made with #llm / #codex: converter of…"
+date = "2026-05-06"
 
 [[extra.related]]
 path = "@/posts/2026-06-23-1850/index.md"
 label = "Моя лекция про мой Telegram бот YouTube, с поиском, который возв…"
+date = "2026-06-23"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
 label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1762/index.md"
 label = "#лекция про мой #telegram #бот для #evernote #stillyoungbar #bat…"
+date = "2026-05-16"
 +++
 
 **Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, ЯндексМузыки, аудиокниг, радио**  
@@ -43,7 +51,7 @@ label = "#лекция про мой #telegram #бот для #evernote #stillyo
 Лёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.  
 На выходе - если ~/.config/youta/ под гитом - пушит, без токенов.  
 
-[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local subscriptions and persi… · 2 stars · Languages: Rust 98%, TypeScript 2%, Shell 0% · 184 commits · 1 fork · MIT · last push 2026-08-14")  
+[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local subscriptions and persi… · 2 stars · Languages: Rust 98%, TypeScript 2%, Shell 0% · 194 commits · 1 fork · MIT · last push 2026-08-20")  
 
 Все линки  
 <https://share.evernote.com/note/179937e6-f6ba-6ccb-dfd7-81fa04888bbe>  

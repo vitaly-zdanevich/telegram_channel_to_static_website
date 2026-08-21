@@ -23,22 +23,27 @@ ids = [791]
 [[extra.related]]
 path = "@/posts/2025-11-24-792/index.md"
 label = "#game #strategy #rtt #groundcontrol The #bishop defector death -…"
+date = "2025-11-24"
 
 [[extra.related]]
 path = "@/posts/2025-11-23-790/index.md"
 label = "#game #strategy #video #review #groundcontrol #year2000"
+date = "2025-11-23"
 
 [[extra.related]]
 path = "@/posts/2025-11-21-787/index.md"
 label = "#preservation #game #groundcontrol #wwiii From the game Ground C…"
+date = "2025-11-21"
 
 [[extra.related]]
 path = "@/posts/2025-06-01-545/index.md"
 label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
+date = "2025-06-01"
 
 [[extra.related]]
 path = "@/posts/2025-11-20-786/index.md"
 label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
+date = "2025-11-20"
 +++
 
 {{ tag(t="game") }}  

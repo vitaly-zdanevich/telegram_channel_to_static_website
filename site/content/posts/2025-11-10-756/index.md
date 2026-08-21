@@ -24,22 +24,27 @@ ids = [756]
 [[extra.related]]
 path = "@/posts/2025-11-10-761/index.md"
 label = "#painting #bible #gustavedore The Battle of Nicaea"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-755/index.md"
 label = "#painting #bible #gustavedore #year1891 The Bible panorama, or T…"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-754/index.md"
 label = "#painting #bible #angel #gustavedore Study for \"Jacob's Dream\""
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-760/index.md"
 label = "#painting #bible #gustavedore #death #horse #year1865 Gustave Do…"
+date = "2025-11-10"
 
 [[extra.related]]
 path = "@/posts/2025-11-10-765/index.md"
 label = "#painting #gustavedore Woman of the Apocalypse"
+date = "2025-11-10"
 +++
 
 {{ tag(t="painting") }}  

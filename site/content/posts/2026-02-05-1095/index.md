@@ -24,22 +24,27 @@ ids = [1095, 1096]
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
+date = "2026-01-24"
 
 [[extra.related]]
 path = "@/posts/2025-01-28-343/index.md"
 label = "#ai"
+date = "2025-01-28"
 
 [[extra.related]]
 path = "@/posts/2025-01-10-244/index.md"
 label = "Video from 2012 about #ai"
+date = "2025-01-10"
 
 [[extra.related]]
 path = "@/posts/2025-01-01-237/index.md"
 label = "#ai"
+date = "2025-01-01"
 +++
 
 {{ tag(t="ai") }} ai ai ai ai but looks like even text translation with not very big languages is so bad :(  
@@ -50,4 +55,4 @@ Checked in {{ tag(t="firefox") }} and {{ tag(t="google_translate") }}
 
 {{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1096-5199841215518544565.jpg") }}
+{{ img(src="02.jpg") }}

@@ -11,7 +11,7 @@ tags = ["gta3", "compare", "ps5"]
 id = 936
 day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/936"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-936-5451802121863892428.jpg"
+og_image = "01.jpg"
 next_id = 938
 next_title = ""
 next_body = "Top 1% by #python, hm, not sure why"
@@ -24,6 +24,7 @@ ids = [936, 937]
 [[extra.related]]
 path = "@/posts/2025-10-25-724/index.md"
 label = "#game #godofwar #playstation #compare 🪓 Наглядное сравнение боя…"
+date = "2025-10-25"
 +++
 
 {{ tag(t="gta3") }}  
@@ -31,6 +32,6 @@ label = "#game #godofwar #playstation #compare 🪓 Наглядное срав�
 
 [Original](https://gta.fandom.com/wiki/Evidence_Dash) VS {{ tag(t="ps5") }} Definitive Edition
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-936-5451802121863892428.jpg") }}
+{{ img(src="01.jpg") }}
 
 {{ img(src="02.jpg") }}

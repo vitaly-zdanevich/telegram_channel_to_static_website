@@ -23,22 +23,27 @@ ids = [395]
 [[extra.related]]
 path = "@/posts/2025-03-08-396/index.md"
 label = "#alexjones #warhammer"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-394/index.md"
 label = "#alexjones #warhammer"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-392/index.md"
 label = "#alexjones #warhammer"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-391/index.md"
 label = "#alexjones #warhammer Some people think that his speeches correl…"
+date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-07-27-613/index.md"
 label = "#arsenmarkaryan #hairs В волосах первородная космическая сила. Л…"
+date = "2025-07-27"
 +++
 
 {{ tag(t="arsen_markaryan") }}  

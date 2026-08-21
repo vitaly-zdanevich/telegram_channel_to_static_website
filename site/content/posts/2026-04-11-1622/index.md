@@ -23,22 +23,27 @@ ids = [1622]
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-02-01-1070/index.md"
 label = "#logo #wikimedia #wikidata #data From"
+date = "2026-02-01"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
 label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-05-16-1762/index.md"
 label = "#лекция про мой #telegram #бот для #evernote #stillyoungbar #bat…"
+date = "2026-05-16"
 
 [[extra.related]]
 path = "@/posts/2026-07-23-2067/index.md"
 label = "Моя #лекция про #evernote проекты, #saas, #everpublich на #zola…"
+date = "2026-07-23"
 +++
 
 Про {{ tag(t="викиданные") }}/{{ tag(t="wikidata") }} (открытая база данных на {{ tag(t="SPARQL") }}), {{ tag(t="wikimedia") }}, {{ tag(t="wikipedia") }}  

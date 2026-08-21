@@ -24,22 +24,27 @@ ids = [1426, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435]
 [[extra.related]]
 path = "@/posts/2026-03-16-1458/index.md"
 label = "#church #outside #slonim #belarus #globustut #year2005"
+date = "2026-03-16"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-929/index.md"
 label = "#belarus #church #year2005 #globustut"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2026-01-21-925/index.md"
 label = "#belarus #church #year2005 #globustut"
+date = "2026-01-21"
 
 [[extra.related]]
 path = "@/posts/2026-03-15-1450/index.md"
 label = "#abandone #slonim #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-03-12-1424/index.md"
 label = "#abandone #slonim #belarus #globustut #year2005"
+date = "2026-03-12"
 +++
 
 {{ tag(t="church") }}  

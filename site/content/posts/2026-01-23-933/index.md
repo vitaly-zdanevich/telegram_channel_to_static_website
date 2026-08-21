@@ -26,22 +26,27 @@ ids = [933]
 [[extra.related]]
 path = "@/posts/2026-06-24-1861/index.md"
 label = "#26июня2026 пт 21.30-23:00 айтишная посиделка в Friends club #бе…"
+date = "2026-06-24"
 
 [[extra.related]]
 path = "@/posts/2026-05-28-1799/index.md"
 label = "#28мая2026 чт 21:00–01:00 — айтишная посиделка в Still Young Bar…"
+date = "2026-05-28"
 
 [[extra.related]]
 path = "@/posts/2026-05-07-1751/index.md"
 label = "#7мая2026 чт 21.30-01:00 айтишная посиделка в Still Young Bar #б…"
+date = "2026-05-07"
 
 [[extra.related]]
 path = "@/posts/2026-02-26-1200/index.md"
 label = "#27февраля2026 пт 21.30-01:00 Hard IT в Laboratory Bar #безоплат…"
+date = "2026-02-26"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1088/index.md"
 label = "#6февраля2026 пт 21.30-01:00 Айтишные посиделки в Laboratory Bar…"
+date = "2026-02-05"
 +++
 
 {{ tag(t="23января2026") }} (пт) 21.30-01:00 Айтишные посиделки в Laboratory Bar  
@@ -72,5 +77,3 @@ label = "#6февраля2026 пт 21.30-01:00 Айтишные посиделк
 **💬** Все вопросы – в личку: [@marstut](https://t.me/marstut)
 
 {{ img(src="5443033220279636241_1267304928_460001553.jpg") }}
-
-🔥 1

@@ -11,7 +11,7 @@ tags = ["tbc", "money", "crypto"]
 id = 1822
 day = "2026-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1822"
-og_image = "5289874428806241885_1231644868_460004957.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1822-5289874428806241885.jpg"
 next_id = 1823
 next_title = ""
 next_body = "#shell\n#productivity\n#love my mg alias - clickable #grep in #kitty - opens file and line in Vim:\n# Grep, click to link - open in Vim, exact line\nmg() {\nkitty +kitten hyperlinkedgrep --smart-case -C 9 \"$@\"\n}\n-C 9 is the context - to have a few lines before and after.\nFor this, also you need to have in /.config/kitty/open-actions.conf:\nprotocol file\nfragmentmatches [0-9]+\naction launch --type=overlay -- vim +$FRAGMENT -- $FILEPATH"
@@ -24,22 +24,27 @@ ids = [1822]
 [[extra.related]]
 path = "@/posts/2024-08-31-141/index.md"
 label = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait…"
+date = "2024-08-31"
 
 [[extra.related]]
 path = "@/posts/2026-05-26-1787/index.md"
 label = "Payment -&gt; #crypto -&gt; Select your #wallet woodev.net"
+date = "2026-05-26"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-653/index.md"
 label = "#wikimediafoundation #money"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-652/index.md"
 label = "#wikimediafoundation #money"
+date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-08-09-619/index.md"
 label = "Returned to uploading of artifacts from moneymuseum.by, through…"
+date = "2025-08-09"
 +++
 
 {{ tag(t="tbc") }}  
@@ -47,4 +52,4 @@ label = "Returned to uploading of artifacts from moneymuseum.by, through…"
 
 This is why we have {{ tag(t="crypto") }}?
 
-{{ img(src="5289874428806241885_1231644868_460004957.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1822-5289874428806241885.jpg") }}

@@ -26,5 +26,3 @@ ids = [209]
 <https://pkg.go.dev/sync?tab=licenses>
 
 {{ img(src="5366158232004978363_1249406075_456255163.jpg") }}
-
-🙏 1

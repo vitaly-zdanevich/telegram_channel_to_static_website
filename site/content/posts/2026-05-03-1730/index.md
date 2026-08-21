@@ -11,7 +11,7 @@ tags = ["cats", "religion", "orthodox", "black_and_white"]
 id = 1730
 day = "2026-05-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1730"
-og_image = "5454183865913119800_1269901140_460002360.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1730-5454183865913119800.jpg"
 next_id = 1731
 next_title = ""
 next_body = "#colors\n#cables\n#pole\nSource"
@@ -24,22 +24,27 @@ ids = [1730]
 [[extra.related]]
 path = "@/posts/2025-02-14-360/index.md"
 label = "#religion"
+date = "2025-02-14"
 
 [[extra.related]]
 path = "@/posts/2025-02-08-351/index.md"
 label = "#religion"
+date = "2025-02-08"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1830/index.md"
 label = "#religion #jesus"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2025-05-29-543/index.md"
 label = "Wow #blackandwhite #webdesign is interesting"
+date = "2025-05-29"
 
 [[extra.related]]
 path = "@/posts/2025-03-16-420/index.md"
 label = "#music #cats #meme"
+date = "2025-03-16"
 +++
 
 {{ tag(t="cats") }}  
@@ -49,4 +54,4 @@ label = "#music #cats #meme"
 
 [Source](https://www.instagram.com/p/DID3oPGsGLA/)
 
-{{ img(src="5454183865913119800_1269901140_460002360.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1730-5454183865913119800.jpg") }}

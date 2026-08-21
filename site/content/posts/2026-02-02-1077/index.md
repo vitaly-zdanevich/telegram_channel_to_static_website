@@ -24,14 +24,17 @@ ids = [1077]
 [[extra.related]]
 path = "@/posts/2026-07-29-2105/index.md"
 label = "#theater #japan #frog #death By silk.echo"
+date = "2026-07-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-08-1414/index.md"
 label = "#webdesign #ping #anime #japan"
+date = "2026-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-11-404/index.md"
 label = "#video #ad #japan #ai #girl #virtual"
+date = "2025-03-11"
 +++
 
 {{ tag(t="japan") }}  

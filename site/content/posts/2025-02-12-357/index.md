@@ -24,22 +24,27 @@ ids = [357]
 [[extra.related]]
 path = "@/posts/2026-03-05-1334/index.md"
 label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
+date = "2026-03-05"
 
 [[extra.related]]
 path = "@/posts/2026-05-13-1758/index.md"
 label = "Wow my #reeknote #evernote #cli can now play audio and show imag…"
+date = "2026-05-13"
 
 [[extra.related]]
 path = "@/posts/2026-03-20-1493/index.md"
 label = "wow #wikibase/#wikidata in #cli"
+date = "2026-03-20"
 
 [[extra.related]]
 path = "@/posts/2025-12-21-809/index.md"
 label = "#cli #tui #design"
+date = "2025-12-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-20-1118/index.md"
 label = "#python My #geeknote #evernote #cli now available on PyPI"
+date = "2026-02-20"
 +++
 
 {{ tag(t="gui") }}  

@@ -23,22 +23,27 @@ ids = [790]
 [[extra.related]]
 path = "@/posts/2025-11-24-791/index.md"
 label = "#game #strategy #rtt #groundcontrol"
+date = "2025-11-24"
 
 [[extra.related]]
 path = "@/posts/2025-11-24-792/index.md"
 label = "#game #strategy #rtt #groundcontrol The #bishop defector death -…"
+date = "2025-11-24"
 
 [[extra.related]]
 path = "@/posts/2025-11-04-734/index.md"
 label = "#my #video #game #strategy #homm3 #hota #onebadday Heroes of Mig…"
+date = "2025-11-04"
 
 [[extra.related]]
 path = "@/posts/2025-08-29-642/index.md"
 label = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя…"
+date = "2025-08-29"
 
 [[extra.related]]
 path = "@/posts/2025-11-21-787/index.md"
 label = "#preservation #game #groundcontrol #wwiii From the game Ground C…"
+date = "2025-11-21"
 +++
 
 {{ tag(t="game") }}  

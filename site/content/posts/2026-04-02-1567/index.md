@@ -11,7 +11,7 @@ tags = ["preservation", "wikimedia_commons", "unavailable"]
 id = 1567
 day = "2026-04-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1567"
-og_image = "5363938150528522306_1248889172_460003394.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1567-5363938150528522306.jpg"
 next_id = 1568
 next_title = ""
 next_body = "#ai\nI asked #gemini to port #primeworld from Windows to Linux, interesting if that possible...\nWe tried #wine of course - but some problems with #lutris - because native launcher need to run Wine..."
@@ -24,22 +24,27 @@ ids = [1567]
 [[extra.related]]
 path = "@/posts/2026-04-09-1599/index.md"
 label = "My first blog #post to #wikimediadiff, about #wikimediacommons,…"
+date = "2026-04-09"
 
 [[extra.related]]
 path = "@/posts/2025-12-27-819/index.md"
 label = "#preservation #wikimediacommons #pywikibot #my Created a new too…"
+date = "2025-12-27"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1873/index.md"
 label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
+date = "2026-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 +++
 
 {{ tag(t="preservation") }}  
@@ -48,4 +53,4 @@ label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 
 [#1506](@/posts/2026-03-28-1506/index.md)
 
-{{ img(src="5363938150528522306_1248889172_460003394.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1567-5363938150528522306.jpg") }}

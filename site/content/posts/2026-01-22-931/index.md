@@ -24,22 +24,27 @@ ids = [931, 932]
 [[extra.related]]
 path = "@/posts/2025-05-14-529/index.md"
 label = "I avoid mentioning that I run gentoo But when I have to, I try t…"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-03-15-412/index.md"
 label = "#gentoo #logo"
+date = "2025-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-05-03-1732/index.md"
 label = "#gentoo #golang #bootstrap"
+date = "2026-05-03"
 
 [[extra.related]]
 path = "@/posts/2026-02-22-1125/index.md"
 label = "#webdesign #gentoo #china"
+date = "2026-02-22"
 
 [[extra.related]]
 path = "@/posts/2026-05-28-1800/index.md"
 label = "#remapped unused button on my laptop to #git #push, #i3 command:…"
+date = "2026-05-28"
 +++
 
 I am on {{ tag(t="gentoo") }} because it compiles for my CPU (`-march=native` and other flags - not generic x64, but I did not measure the performance numbers), and another point - [USE flags](https://wiki.gentoo.org/wiki/Handbook:AMD64/Working/USE) and the ability to apply source based patches. For example in Firefox in `about:firefoxview` in `Open tabs` we have only 7 elements and no preferences to increase that number, so I found it in the source code and produced a simple patch for my system - and on every update the Portage package manager will try to apply that patch.

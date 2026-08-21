@@ -11,7 +11,7 @@ tags = ["cross", "belarus", "globustut", "year_2005"]
 id = 1240
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1240"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1240-5264957012829738378.jpg"
+og_image = "01.jpg"
 next_id = 1246
 next_title = ""
 next_body = "#cemetery\n#belarus\n#globustut\n#year2005\nSource"
@@ -24,22 +24,27 @@ ids = [1240, 1241, 1242, 1243, 1244, 1245]
 [[extra.related]]
 path = "@/posts/2026-02-28-1258/index.md"
 label = "#cross #monument #belarus #globustut #year2005 Source,%D1%81%D0%…"
+date = "2026-02-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1531/index.md"
 label = "#wood #cross #virginmary #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-29-1509/index.md"
 label = "#monument #belarus #globustut #year2005"
+date = "2026-03-29"
 
 [[extra.related]]
 path = "@/posts/2026-03-16-1475/index.md"
 label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
+date = "2026-03-16"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1419/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 +++
 
 {{ tag(t="cross") }}  
@@ -49,9 +54,9 @@ label = "#architecture #belarus #globustut #year2005"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-034_%D0%A1%D0%BB%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1240-5264957012829738378.jpg") }}
+{{ img(src="01.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1241-5264957012829738383.jpg") }}
+{{ img(src="02.jpg") }}
 
 {{ img(src="03.jpg") }}
 

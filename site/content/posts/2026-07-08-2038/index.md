@@ -23,10 +23,12 @@ ids = [2038]
 [[extra.related]]
 path = "@/posts/2026-03-31-1563/index.md"
 label = "#music #multitrack #parody #voice #unknownsource Rice and peace."
+date = "2026-03-31"
 
 [[extra.related]]
 path = "@/posts/2025-10-01-694/index.md"
 label = "#psy #success #pain #cry #secret"
+date = "2025-10-01"
 +++
 
 {{ tag(t="parody") }}  

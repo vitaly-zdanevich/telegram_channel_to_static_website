@@ -17,28 +17,33 @@ next_body = "#psy\n#depression\nSource"
 prev_id = 421
 prev_title = ""
 prev_body = "#laser\n#cat\n#matrix\nSource"
-views = 188
+views = 189
 ids = [422]
 
 [[extra.related]]
 path = "@/posts/2025-03-16-433/index.md"
 label = "#music #techno #ritual #religion #islam #rave"
+date = "2025-03-16"
 
 [[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 
 [[extra.related]]
 path = "@/posts/2025-02-14-360/index.md"
 label = "#religion"
+date = "2025-02-14"
 
 [[extra.related]]
 path = "@/posts/2025-02-08-351/index.md"
 label = "#religion"
+date = "2025-02-08"
 +++
 
 {{ tag(t="music") }}  
@@ -49,7 +54,5 @@ label = "#religion"
 [Source](https://www.instagram.com/p/DFdiJVDIhv5)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/422-01.mp4") }}
-
-🔥 1
 
 {{ tag(t="video") }}

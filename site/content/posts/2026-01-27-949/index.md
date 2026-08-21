@@ -23,22 +23,27 @@ ids = [949]
 [[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
+date = "2026-01-24"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-458/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-457/index.md"
 label = "#ussr"
+date = "2025-03-27"
 
 [[extra.related]]
 path = "@/posts/2025-03-27-456/index.md"
 label = "#ussr"
+date = "2025-03-27"
 +++
 
 В эпоху рассвета ИИ становится всё актуальнее опера <https://complexnumbers.ru/2032/>  

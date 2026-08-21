@@ -24,22 +24,27 @@ ids = [534]
 [[extra.related]]
 path = "@/posts/2025-05-14-533/index.md"
 label = "From globustut.by #photo #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2025-05-14-532/index.md"
 label = "From globustut.by #photo #building #ad #history #babruysk"
+date = "2025-05-14"
 
 [[extra.related]]
 path = "@/posts/2026-04-25-1686/index.md"
 label = "#photo #batumi #dog"
+date = "2026-04-25"
 
 [[extra.related]]
 path = "@/posts/2025-09-08-656/index.md"
 label = "#iran #tehran #photo"
+date = "2025-09-08"
 
 [[extra.related]]
 path = "@/posts/2025-06-16-576/index.md"
 label = "#photo #batumi #chandelier"
+date = "2025-06-16"
 +++
 
 From [globustut.by](http://globustut.by/)  

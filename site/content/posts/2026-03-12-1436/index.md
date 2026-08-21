@@ -24,22 +24,27 @@ ids = [1436]
 [[extra.related]]
 path = "@/posts/2026-03-12-1437/index.md"
 label = "#building #bricks #village #white #slonim #belarus #globustut #y…"
+date = "2026-03-12"
 
 [[extra.related]]
 path = "@/posts/2026-03-12-1422/index.md"
 label = "#architecture #gray #slonim #belarus #globustut #year2005"
+date = "2026-03-12"
 
 [[extra.related]]
 path = "@/posts/2026-03-15-1450/index.md"
 label = "#abandone #slonim #belarus #globustut #year2005"
+date = "2026-03-15"
 
 [[extra.related]]
 path = "@/posts/2026-03-12-1426/index.md"
 label = "#church #slonim #belarus #globustut #year2005"
+date = "2026-03-12"
 
 [[extra.related]]
 path = "@/posts/2026-03-12-1424/index.md"
 label = "#abandone #slonim #belarus #globustut #year2005"
+date = "2026-03-12"
 +++
 
 {{ tag(t="building") }}  

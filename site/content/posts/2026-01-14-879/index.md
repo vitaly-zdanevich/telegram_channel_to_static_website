@@ -24,22 +24,27 @@ ids = [879, 880, 881, 882, 883, 884]
 [[extra.related]]
 path = "@/posts/2026-01-28-955/index.md"
 label = "#belarus #architecture #castle #winter #марьинагорка #year2005 #…"
+date = "2026-01-28"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1419/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 
 [[extra.related]]
 path = "@/posts/2026-03-10-1418/index.md"
 label = "#architecture #belarus #globustut #year2005"
+date = "2026-03-10"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1179/index.md"
 label = "#architecture #cream #belarus #globustut"
+date = "2026-02-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1178/index.md"
 label = "#church #architecture #belarus #globustut"
+date = "2026-02-25"
 +++
 
 {{ tag(t="belarus") }}  
@@ -61,4 +66,4 @@ Kosava Castle
 
 {{ img(src="05.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-884-5422584726364557073.jpg") }}
+{{ img(src="06.jpg") }}

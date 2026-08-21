@@ -23,22 +23,27 @@ ids = [1873]
 [[extra.related]]
 path = "@/posts/2025-12-27-819/index.md"
 label = "#preservation #wikimediacommons #pywikibot #my Created a new too…"
+date = "2025-12-27"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
+date = "2026-08-09"
 
 [[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
+date = "2026-04-02"
 
 [[extra.related]]
 path = "@/posts/2026-04-09-1599/index.md"
 label = "My first blog #post to #wikimediadiff, about #wikimediacommons,…"
+date = "2026-04-09"
 
 [[extra.related]]
 path = "@/posts/2026-06-23-1850/index.md"
 label = "Моя лекция про мой Telegram бот YouTube, с поиском, который возв…"
+date = "2026-06-23"
 +++
 
 {{ tag(t="batumi") }}  

@@ -24,22 +24,27 @@ ids = [1037, 1038, 1039, 1040, 1041]
 [[extra.related]]
 path = "@/posts/2026-01-20-914/index.md"
 label = "#belarus #pillar #abandone #year2005 #globustut"
+date = "2026-01-20"
 
 [[extra.related]]
 path = "@/posts/2026-01-30-1058/index.md"
 label = "#belarus #architecture #abandone #winter #year2005 #globustut Fr…"
+date = "2026-01-30"
 
 [[extra.related]]
 path = "@/posts/2026-01-30-1015/index.md"
 label = "#belarus #abandone #winter #почаевичи #year2005 #globustut From"
+date = "2026-01-30"
 
 [[extra.related]]
 path = "@/posts/2026-01-29-1000/index.md"
 label = "#belarus #abandone #winter #novogrudok #year2005 #globustut From"
+date = "2026-01-29"
 
 [[extra.related]]
 path = "@/posts/2026-01-19-905/index.md"
 label = "#belarus #architecture #abandone #winter #year2004 #globustut"
+date = "2026-01-19"
 +++
 
 {{ tag(t="belarus") }}  
@@ -58,6 +63,6 @@ From [https://commons.wikimedia.org/wiki/File:045-286\_Бочейково,\_сн
 
 {{ img(src="03.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1040-5469697399455419544.jpg") }}
+{{ img(src="04.jpg") }}
 
 {{ img(src="05.jpg") }}

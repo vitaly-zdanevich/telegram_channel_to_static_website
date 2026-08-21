@@ -23,22 +23,27 @@ ids = [158]
 [[extra.related]]
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
+date = "2026-02-03"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-375/index.md"
 label = "#game #armiesofexigo"
+date = "2025-02-21"
 
 [[extra.related]]
 path = "@/posts/2025-02-15-366/index.md"
 label = "#game #man2"
+date = "2025-02-15"
 
 [[extra.related]]
 path = "@/posts/2025-01-15-246/index.md"
 label = "#game #man2"
+date = "2025-01-15"
 
 [[extra.related]]
 path = "@/posts/2024-11-17-190/index.md"
 label = "#game #stalker2"
+date = "2024-11-17"
 +++
 
 Night Watch: Special Edition {{ tag(t="game") }}

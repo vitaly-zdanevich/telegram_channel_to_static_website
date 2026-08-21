@@ -23,10 +23,12 @@ ids = [2092]
 [[extra.related]]
 path = "@/posts/2025-08-26-635/index.md"
 label = "#gamedev #homm3 I’ve told this tale numerous times as an industr…"
+date = "2025-08-26"
 
 [[extra.related]]
 path = "@/posts/2026-03-31-1562/index.md"
 label = "#webdesign #photo #people #gamedev #icepicklodge"
+date = "2026-03-31"
 +++
 
 {{ tag(t="gamedev") }}  

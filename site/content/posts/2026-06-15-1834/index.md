@@ -23,22 +23,27 @@ ids = [1834]
 [[extra.related]]
 path = "@/posts/2025-11-19-783/index.md"
 label = "#ad #playstation #playstation2"
+date = "2025-11-19"
 
 [[extra.related]]
 path = "@/posts/2026-04-21-1667/index.md"
 label = "#fashion #street #london"
+date = "2026-04-21"
 
 [[extra.related]]
 path = "@/posts/2025-10-25-724/index.md"
 label = "#game #godofwar #playstation #compare 🪓 Наглядное сравнение боя…"
+date = "2025-10-25"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1838/index.md"
 label = "#xbox #xbox360 #gameconsole #custom #glass From"
+date = "2026-06-15"
 
 [[extra.related]]
 path = "@/posts/2026-06-15-1835/index.md"
 label = "#xbox #gameconsole #tech #retro #green From"
+date = "2026-06-15"
 +++
 
 {{ tag(t="playstation") }}  

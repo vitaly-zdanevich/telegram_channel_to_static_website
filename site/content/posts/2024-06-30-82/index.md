@@ -24,22 +24,27 @@ ids = [82]
 [[extra.related]]
 path = "@/posts/2026-02-02-1073/index.md"
 label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
 
 [[extra.related]]
 path = "@/posts/2025-04-25-483/index.md"
 label = "My new article on #wikipedia"
+date = "2025-04-25"
 
 [[extra.related]]
 path = "@/posts/2024-11-25-201/index.md"
 label = "#wikipedia"
+date = "2024-11-25"
 
 [[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 
 [[extra.related]]
 path = "@/posts/2026-02-14-1112/index.md"
 label = "Editing #wikipedia, in #vim"
+date = "2026-02-14"
 +++
 
 I contribute to {{ tag(t="wikipedia") }} and other projects on {{ tag(t="mediawiki") }} engine and other wikis like {{ tag(t="mdn") }}. When I talk with somebody about his technical problem - sometimes I say something like "...and when you finally figure out the root cause - please check some related wiki about that and 𝐮𝐩𝐝𝐚𝐭𝐞 𝐢𝐭 𝐢𝐟 𝐢𝐭𝐬 𝐧𝐞𝐰 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧". Yep, please. Corporate Wikis/Confluence also. When you write - it is improving your understanding. Bring awareness. Help people. And after a few years - you will google the same problem. If no Wiki for some project - you can create question and answer it on [https://superuser.com](https://superuser.com/)  
