@@ -1847,7 +1847,7 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
   {% if page.extra.related %}
   <nav class="related">
     <strong>{{ config.extra.i18n.related }}:</strong>
-    <ul>{% for r in page.extra.related %}<li><a href="{{ get_url(path=r.path) | safe }}">{{ r.label }}</a></li>{% endfor %}</ul>
+    <ul>{% for r in page.extra.related %}<li><a href="{{ get_url(path=r.path) | safe }}" title="{{ r.date }}">{{ r.label }}</a></li>{% endfor %}</ul>
   </nav>
   {% endif %}
   {% if config.extra.next_prev %}

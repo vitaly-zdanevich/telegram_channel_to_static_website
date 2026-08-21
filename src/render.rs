@@ -87,7 +87,7 @@ pub fn slug_for(post: &Post) -> String {
 /// (the *whole* tag set, not a single tag). An inverted index keeps it near
 /// linear. Ties break toward a tighter match (candidate with fewer tags) then
 /// recency. A post with no tags — or no tag-sharing neighbour — gets none.
-pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String)>> {
+pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String, String)>> {
     use std::collections::HashMap;
     let mut by_tag: HashMap<&str, Vec<usize>> = HashMap::new();
     for (i, p) in posts.iter().enumerate() {
@@ -119,7 +119,13 @@ pub fn compute_related(posts: &[Post], n: usize) -> Vec<Vec<(String, String)>> {
             ranked
                 .into_iter()
                 .take(n)
-                .map(|(j, _)| (slug_for(&posts[j]), related_label(&posts[j])))
+                .map(|(j, _)| {
+                    (
+                        slug_for(&posts[j]),
+                        related_label(&posts[j]),
+                        posts[j].date.format("%Y-%m-%d").to_string(),
+                    )
+                })
                 .collect()
         })
         .collect()
@@ -1160,10 +1166,11 @@ fn front_matter(
     // Related posts as data, so only the single-post template renders them (not
     // the feed). `get_url` resolves the @/ path to each post's permalink. Must be
     // last in [extra] — an array-of-tables closes the inline table above.
-    for (slug, label) in &post.related {
+    for (slug, label, date) in &post.related {
         fm.push_str("\n[[extra.related]]\n");
         fm.push_str(&format!("path = \"@/posts/{slug}/index.md\"\n"));
         fm.push_str(&format!("label = {}\n", toml_str(label)));
+        fm.push_str(&format!("date = {}\n", toml_str(date)));
     }
     fm.push_str("+++\n\n");
     fm
@@ -2491,16 +2498,18 @@ mod tests {
             p
         };
         // a shares 2 tags with b, 1 with c, 0 with d (untagged).
-        let posts = vec![
+        let mut posts = vec![
             mk(1, &["x", "y", "z"]),
             mk(2, &["x", "y"]),
             mk(3, &["x"]),
             mk(4, &[]),
         ];
+        posts[1].date = chrono::DateTime::parse_from_rfc3339("2026-12-31T12:00:00+00:00").unwrap();
         let rel = compute_related(&posts, 5);
         // a's neighbours: b (2 shared) before c (1 shared); d excluded (0).
         assert_eq!(rel[0].len(), 2);
         assert_eq!(rel[0][0].0, slug_for(&posts[1]));
+        assert_eq!(rel[0][0].2, "2026-12-31");
         assert_eq!(rel[0][1].0, slug_for(&posts[2]));
         // an untagged post has no related.
         assert!(rel[3].is_empty());
@@ -2536,6 +2545,10 @@ mod tests {
                 slug_for(&posts[1])
             )),
             "no related path: {out}"
+        );
+        assert!(
+            out.contains("date = \"2026-12-31\""),
+            "no related publication date: {out}"
         );
     }
 

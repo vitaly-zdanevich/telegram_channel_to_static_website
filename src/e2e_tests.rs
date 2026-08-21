@@ -341,6 +341,7 @@ fn zola_build_produces_expected_html() {
     let _ = fs::remove_dir_all(&dir);
     let mut s = settings(dir.join("site"));
     s.posts_per_page = 2;
+    s.related = true;
 
     let mut posts = vec![
         post(
@@ -402,6 +403,10 @@ fn zola_build_produces_expected_html() {
         if has_video && !p.tags.iter().any(|t| t == "video") {
             p.tags.push("video".to_string());
         }
+    }
+    let related = render::compute_related(&posts, 5);
+    for (post, related_posts) in posts.iter_mut().zip(related) {
+        post.related = related_posts;
     }
 
     // Drive the real pipeline (mirrors main::run from grouping onward).
@@ -499,6 +504,7 @@ fn zola_build_produces_expected_html() {
     // page without a post date (About) must not be mistaken for a post header.
     let home = read("index.html");
     let post_page = read("posts/1/index.html");
+    let related_post_page = read("posts/2/index.html");
     let tag_full_page = read("tags/greeting/full/index.html");
     let day_full_page = read("day/2023-11-15/index.html");
     let about_page = read("about/index.html");
@@ -524,6 +530,15 @@ fn zola_build_produces_expected_html() {
             && css.contains("overflow-x: clip")
             && !css.contains("width: 100vw"),
         "post-header viewport rule missing: {css}"
+    );
+
+    // Related-link tooltips expose the target post's canonical publication day.
+    let related_date =
+        regex::Regex::new(r#"<a href="?/posts/4/"? title="?2023-11-18"?>MTProto video\.</a>"#)
+            .unwrap();
+    assert!(
+        related_date.is_match(&related_post_page),
+        "related publication-date tooltip missing: {related_post_page}"
     );
 
     // Each tag link carries a post-count hover tooltip (localized "N posts").
