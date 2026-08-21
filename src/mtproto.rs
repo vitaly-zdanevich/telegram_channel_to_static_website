@@ -47,7 +47,7 @@ const IMAGE_RELEASE_BUCKET: i32 = 500;
 /// completed work instead of timing out and restarting every image from zero.
 const IMAGE_RELEASE_BACKFILL_PER_RUN: usize = 500;
 const IMAGE_RELEASE_MANIFEST_VERSION: u8 = 2;
-/// A stuck Telegram media request must not consume the rest of a hosted job.
+/// A stuck Telegram image request must not consume the rest of a hosted job.
 const IMAGE_DOWNLOAD_TIMEOUT: Duration = Duration::from_secs(120);
 /// Telegram's maximum `upload.getFile` response and the normal grammers chunk.
 const IMAGE_DOWNLOAD_CHUNK_BYTES: usize = 512 * 1024;
@@ -531,13 +531,12 @@ async fn stage_image_release(source: &Path, destination: &Path) -> Result<()> {
     Ok(())
 }
 
-/// Append exactly the bytes missing from a partial image download.
+/// Download exactly Telegram's declared image bytes, resuming safe chunks.
 ///
-/// grammers 0.8 may report EOF before Telegram returns the last partial 512 KiB
-/// block. Any shorter prefix is rolled back to a full chunk boundary so resumed
-/// requests cannot cross Telegram's 1 MiB request boundaries. A response is
-/// written only when it contains the complete logical chunk, preventing gaps
-/// from being published.
+/// A missing file starts at offset zero. Any shorter prefix is rolled back to a
+/// full chunk boundary so resumed requests cannot cross Telegram's 1 MiB
+/// request boundaries. A response is written only when it contains the complete
+/// logical chunk, preventing gaps from being published.
 async fn complete_exact_image_download<Fetch, FetchFuture>(
     path: &Path,
     declared_bytes: u64,
@@ -547,7 +546,11 @@ where
     Fetch: FnMut(u64, usize) -> FetchFuture,
     FetchFuture: Future<Output = Result<Vec<u8>>>,
 {
-    let mut downloaded_bytes = tokio::fs::metadata(path).await?.len();
+    let mut downloaded_bytes = match tokio::fs::metadata(path).await {
+        Ok(metadata) => metadata.len(),
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => 0,
+        Err(error) => return Err(error.into()),
+    };
     if downloaded_bytes > declared_bytes {
         bail!(
             "partial image has {downloaded_bytes} bytes, more than its declared {declared_bytes} bytes"
@@ -560,6 +563,7 @@ where
     let chunk_bytes = IMAGE_DOWNLOAD_CHUNK_BYTES as u64;
     let aligned_bytes = downloaded_bytes / chunk_bytes * chunk_bytes;
     let mut file = tokio::fs::OpenOptions::new()
+        .create(true)
         .write(true)
         .append(true)
         .open(path)
@@ -620,8 +624,7 @@ fn image_download_wire_limit(logical_bytes: usize) -> i32 {
     rounded.min(IMAGE_DOWNLOAD_CHUNK_BYTES) as i32
 }
 
-/// Copy the user's authorization to a media data center when grammers has not
-/// already done so while attempting its initial download.
+/// Copy the user's authorization to an image's media data center when needed.
 async fn copy_image_download_authorization(client: &Client, dc_id: i32) -> Result<()> {
     let tl::enums::auth::ExportedAuthorization::Authorization(exported) = client
         .invoke(&tl::functions::auth::ExportAuthorization { dc_id })
@@ -695,6 +698,27 @@ async fn fetch_exact_image_chunk(
     }
 }
 
+/// Bound one direct image-chunk fetch without limiting the whole image.
+async fn fetch_exact_image_chunk_with_timeout(
+    client: &Client,
+    media: &TlMedia,
+    offset: u64,
+    logical_bytes: usize,
+) -> Result<Vec<u8>> {
+    match tokio::time::timeout(
+        IMAGE_DOWNLOAD_TIMEOUT,
+        fetch_exact_image_chunk(client, media, offset, logical_bytes),
+    )
+    .await
+    {
+        Ok(result) => result,
+        Err(_) => bail!(
+            "fetching original-image chunk at offset {offset} timed out after {} seconds",
+            IMAGE_DOWNLOAD_TIMEOUT.as_secs()
+        ),
+    }
+}
+
 /// Download atomically so a cancelled or timed-out request cannot leave a
 /// partial file that a later attempt mistakes for a complete cached original.
 async fn download_image_to_cache(
@@ -723,34 +747,26 @@ async fn download_image_to_cache(
             .unwrap_or("image")
     ));
     let _ = tokio::fs::remove_file(&part).await;
-    let download = async {
-        client
-            .download_media(media, &part)
+    let result = if declared_bytes > 0 {
+        complete_exact_image_download(&part, declared_bytes as u64, |offset, logical_bytes| {
+            fetch_exact_image_chunk_with_timeout(client, media, offset, logical_bytes)
+        })
+        .await
+    } else {
+        match tokio::time::timeout(IMAGE_DOWNLOAD_TIMEOUT, client.download_media(media, &part))
             .await
-            .context("downloading original image through grammers")?;
-        if declared_bytes > 0 {
-            complete_exact_image_download(&part, declared_bytes as u64, |offset, logical_bytes| {
-                fetch_exact_image_chunk(client, media, offset, logical_bytes)
-            })
-            .await?;
-        }
-        Ok::<(), anyhow::Error>(())
-    };
-    let result = tokio::time::timeout(IMAGE_DOWNLOAD_TIMEOUT, download).await;
-    match result {
-        Ok(Ok(())) => {}
-        Ok(Err(error)) => {
-            let _ = tokio::fs::remove_file(&part).await;
-            return Err(error)
-                .with_context(|| format!("downloading original image from message {message_id}"));
-        }
-        Err(_) => {
-            let _ = tokio::fs::remove_file(&part).await;
-            bail!(
-                "downloading original image from message {message_id} timed out after {} seconds",
+        {
+            Ok(result) => result.context("downloading size-unknown image through grammers"),
+            Err(_) => Err(anyhow!(
+                "size-unknown image download timed out after {} seconds",
                 IMAGE_DOWNLOAD_TIMEOUT.as_secs()
-            );
+            )),
         }
+    };
+    if let Err(error) = result {
+        let _ = tokio::fs::remove_file(&part).await;
+        return Err(error)
+            .with_context(|| format!("downloading original image from message {message_id}"));
     }
     let downloaded_bytes = tokio::fs::metadata(&part).await?.len();
     if downloaded_bytes == 0 || (declared_bytes > 0 && downloaded_bytes != declared_bytes as u64) {
@@ -1841,6 +1857,43 @@ mod tests {
         .unwrap();
 
         assert_eq!(std::fs::read(&path).unwrap(), expected);
+        std::fs::remove_file(path).unwrap();
+    }
+
+    #[tokio::test]
+    async fn exact_image_download_creates_post_1879_sized_file_from_zero() {
+        let path = std::env::temp_dir().join(format!(
+            "tg2zola-post-1879-exact-image-download-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_file(&path);
+        let declared_bytes = 16_967_122_u64;
+        let requests = Arc::new(std::sync::Mutex::new(Vec::new()));
+        let fetch_requests = Arc::clone(&requests);
+
+        complete_exact_image_download(&path, declared_bytes, move |offset, logical_bytes| {
+            fetch_requests.lock().unwrap().push((offset, logical_bytes));
+            let chunk = (0..logical_bytes)
+                .map(|index| ((offset + index as u64) % 251) as u8)
+                .collect();
+            async move { Ok(chunk) }
+        })
+        .await
+        .unwrap();
+
+        let requests = requests.lock().unwrap();
+        assert_eq!(requests.len(), 33);
+        assert_eq!(requests[0], (0, IMAGE_DOWNLOAD_CHUNK_BYTES));
+        assert_eq!(
+            requests[32],
+            (16_777_216, declared_bytes as usize - 16_777_216)
+        );
+        let downloaded = std::fs::read(&path).unwrap();
+        assert_eq!(downloaded.len(), declared_bytes as usize);
+        assert!(downloaded
+            .iter()
+            .enumerate()
+            .all(|(index, byte)| *byte == (index % 251) as u8));
         std::fs::remove_file(path).unwrap();
     }
 
