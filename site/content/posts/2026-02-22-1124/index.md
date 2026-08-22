@@ -11,7 +11,7 @@ tags = ["steam", "myst", "games"]
 id = 1124
 day = "2026-02-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1124"
-og_image = "5249225806049908507_1222180623_460003099.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1124-5249225806049908507.jpg"
 next_id = 1125
 next_title = ""
 next_body = "#webdesign\n#gentoo\n#china"
@@ -52,4 +52,4 @@ date = "2026-03-21"
 
 forever {{ tag(t="games") }}
 
-{{ img(src="5249225806049908507_1222180623_460003099.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1124-5249225806049908507.jpg") }}

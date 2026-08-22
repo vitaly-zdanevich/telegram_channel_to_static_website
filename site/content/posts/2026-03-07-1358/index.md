@@ -11,7 +11,7 @@ tags = ["webdesign", "oldweb", "anime"]
 id = 1358
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1358"
-og_image = "5289657696166548197_1231594406_460002021.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1358-5289657696166548197.jpg"
 next_id = 1359
 next_title = ""
 next_body = "#webdesign\n#oldweb\n#anime"
@@ -53,4 +53,4 @@ date = "2026-03-07"
 
 <https://pawpyrus.art/home>
 
-{{ img(src="5289657696166548197_1231594406_460002021.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1358-5289657696166548197.jpg") }}

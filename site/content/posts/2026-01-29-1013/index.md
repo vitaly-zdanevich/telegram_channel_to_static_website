@@ -11,7 +11,7 @@ tags = ["webdesign", "blue", "batumi"]
 id = 1013
 day = "2026-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1013"
-og_image = "5465427364444573134_1272518971_460000718.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1013-5465427364444573134.jpg"
 next_id = 1014
 next_title = ""
 next_body = "#belarus\n#architecture\n#winter\n#лепель\n#year2005\n#globustut\nFrom"
@@ -53,4 +53,4 @@ date = "2025-11-03"
 
 [http://print-office.ge](http://print-office.ge/)
 
-{{ img(src="5465427364444573134_1272518971_460000718.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1013-5465427364444573134.jpg") }}

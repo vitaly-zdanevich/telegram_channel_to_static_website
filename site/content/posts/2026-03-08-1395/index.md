@@ -10,7 +10,7 @@ days = ["2026-03-08"]
 id = 1395
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1395"
-og_image = "5222211629989173114_1215890895_460003194.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1395-5222211629989173114.jpg"
 next_id = 1396
 next_title = ""
 next_body = ""
@@ -33,4 +33,4 @@ ids = [1395]
 
 Ну или нейросети так изменят всю интеллектуальную работу (и работу в целом), что проблемы с рынком разработки ПО будут меньшей из наших бед. Соль, спички, вот это все.
 
-{{ img(src="5222211629989173114_1215890895_460003194.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1395-5222211629989173114.jpg") }}

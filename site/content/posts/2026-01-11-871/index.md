@@ -11,7 +11,7 @@ tags = ["wikimedia_commons", "sql"]
 id = 871
 day = "2026-01-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/871"
-og_image = "5413490665691221626_1260426516_460000890.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-871-5413490665691221626.jpg"
 next_id = 872
 next_title = ""
 next_body = "Wow #wikipedia semi-automatic editing by a #python script"
@@ -49,4 +49,4 @@ date = "2026-06-25"
 
 Wow on {{ tag(t="wikimedia_commons") }} we can write {{ tag(t="sql") }}, for example to get red categories with files, for a specific user <https://quarry.wmcloud.org/query/100891>
 
-{{ img(src="5413490665691221626_1260426516_460000890.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-871-5413490665691221626.jpg") }}

@@ -11,7 +11,7 @@ tags = ["balarus", "religion", "sign", "globustut", "year2004"]
 id = 901
 day = "2026-01-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/901"
-og_image = "5438156503958359238_1266169479_460000454.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-901-5438156503958359238.jpg"
 next_id = 902
 next_title = ""
 next_body = "#belarus\n#church\n#abandone\n#winter\n#globustut\n#year2004\nSource"
@@ -55,4 +55,4 @@ date = "2026-01-19"
 
 [Source](https://commons.wikimedia.org/wiki/File:035-063_%D0%A7%D0%B5%D1%80%D0%B5%D1%8F,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_25_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 
-{{ img(src="5438156503958359238_1266169479_460000454.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-901-5438156503958359238.jpg") }}

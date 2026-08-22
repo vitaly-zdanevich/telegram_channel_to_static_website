@@ -11,7 +11,7 @@ tags = ["webdesign", "windows95"]
 id = 1075
 day = "2026-02-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1075"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1075-5188455076828220847.jpg"
 next_id = 1077
 next_title = ""
 next_body = "#japan\nFrom"
@@ -52,6 +52,6 @@ date = "2025-07-21"
 
 <https://melbournehouse.kknd2.com/story.html>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1075-5188455076828220847.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1076-5188455076828220848.jpg") }}

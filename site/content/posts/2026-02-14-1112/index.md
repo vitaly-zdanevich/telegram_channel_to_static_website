@@ -11,7 +11,7 @@ tags = ["wikipedia", "vim"]
 id = 1112
 day = "2026-02-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1112"
-og_image = "5224336960195859472_1216385737_460002320.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1112-5224336960195859472.jpg"
 next_id = 1113
 next_title = ""
 next_body = "#preservation\n#nival\n#game\n#silentstorm\nThanks Sergey."
@@ -49,4 +49,4 @@ date = "2024-11-25"
 
 Editing {{ tag(t="wikipedia") }}, in {{ tag(t="vim") }}
 
-{{ img(src="5224336960195859472_1216385737_460002320.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1112-5224336960195859472.jpg") }}

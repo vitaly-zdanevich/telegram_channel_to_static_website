@@ -11,7 +11,7 @@ tags = ["nest", "cementery", "belarus", "globustut", "year_2005"]
 id = 1337
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1337"
-og_image = "5287405896352863414_1231070118_460002486.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1337-5287405896352863414.jpg"
 next_id = 1338
 next_title = ""
 next_body = "#house\n#river\n#belarus\n#globustut\nSource"
@@ -55,4 +55,4 @@ date = "2026-03-02"
 
 [Source](https://commons.wikimedia.org/wiki/File:053-029_%D0%9E%D0%B1%D1%80%D0%BE%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_9_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="5287405896352863414_1231070118_460002486.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1337-5287405896352863414.jpg") }}

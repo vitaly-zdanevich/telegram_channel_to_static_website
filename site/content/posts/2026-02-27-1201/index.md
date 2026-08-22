@@ -11,7 +11,7 @@ tags = ["google_docs", "ai", "dark_mode", "css"]
 id = 1201
 day = "2026-02-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1201"
-og_image = "5262671347198925503_1225311157_460004031.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1201-5262671347198925503.jpg"
 next_id = 1202
 next_title = ""
 next_body = "My new #userscript for #evernote adds a few #hotkey"
@@ -52,4 +52,4 @@ date = "2025-06-10"
 If you do not know about this {{ tag(t="css") }} property  
 <https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme>
 
-{{ img(src="5262671347198925503_1225311157_460004031.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1201-5262671347198925503.jpg") }}

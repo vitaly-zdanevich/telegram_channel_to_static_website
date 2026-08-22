@@ -11,7 +11,7 @@ tags = ["ai"]
 id = 934
 day = "2026-01-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/934"
-og_image = "5451802121863892081_1269346597_460000369.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-934-5451802121863892081.jpg"
 next_id = 935
 next_title = ""
 next_body = "#vibecoding without human review is #gambling\nFrom"
@@ -53,4 +53,4 @@ From [https://youtu.be/3Y1G9najGiI](<https://youtu.be/3Y1G9najGiI> "AWS re:Inven
 
 {{ youtube(id="3Y1G9najGiI") }}
 
-{{ img(src="5451802121863892081_1269346597_460000369.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-934-5451802121863892081.jpg") }}

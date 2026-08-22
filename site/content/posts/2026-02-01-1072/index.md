@@ -11,7 +11,7 @@ tags = ["wikipedia", "vim"]
 id = 1072
 day = "2026-02-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1072"
-og_image = "5188525531471744777_1208047739_460001033.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1072-5188525531471744777.jpg"
 next_id = 1073
 next_title = ""
 next_body = "#wikipedia\nАктёр озвучивания мужского пола Монгильо наиболее известен по роли главного героя, Синдзи\nМонгильо написал в Твиттере, что играть Синдзи было одной из величайших почестей в его жизни"
@@ -49,4 +49,4 @@ date = "2024-11-25"
 
 {{ tag(t="wikipedia") }} article writing, in {{ tag(t="vim") }}
 
-{{ img(src="5188525531471744777_1208047739_460001033.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1072-5188525531471744777.jpg") }}

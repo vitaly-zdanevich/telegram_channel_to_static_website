@@ -11,7 +11,7 @@ tags = ["belarus", "sign", "winter", "year_2005", "globustut"]
 id = 1055
 day = "2026-01-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1055"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1055-5469697399455419620.jpg"
 next_id = 1058
 next_title = ""
 next_body = "#belarus\n#architecture\n#abandone\n#winter\n#year2005\n#globustut\nFrom"
@@ -57,8 +57,8 @@ date = "2026-01-29"
 
 From [https://commons.wikimedia.org/wiki/File:045-408\_Рубеж,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-408_%D0%A0%D1%83%D0%B1%D0%B5%D0%B6,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1055-5469697399455419620.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1056-5469697399455419621.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1057-5469697399455419622.jpg") }}

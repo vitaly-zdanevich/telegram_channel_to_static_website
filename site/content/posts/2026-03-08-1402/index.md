@@ -10,7 +10,7 @@ days = ["2026-03-08"]
 id = 1402
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1402"
-og_image = "5330360341021528701_1241071229_460001917.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1402-5330360341021528701.jpg"
 next_id = 1403
 next_title = ""
 next_body = "Визуализация того, что находится внутри моделей нейросетей, а именно их слои"
@@ -25,4 +25,4 @@ ids = [1402]
 
 Интересная пометка в Paint
 
-{{ img(src="5330360341021528701_1241071229_460001917.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1402-5330360341021528701.jpg") }}

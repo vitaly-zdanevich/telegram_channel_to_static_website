@@ -11,7 +11,7 @@ tags = ["calligraphy", "microfilm", "preservation"]
 id = 1204
 day = "2026-02-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1204"
-og_image = "5264957012829737994_1225843330_460002314.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1204-5264957012829737994.jpg"
 next_id = 1205
 next_title = ""
 next_body = "#ussr\n#god\n#conflict\n#belarus\n#globustut\n#year2005\nДа хранит вас Бог\nSource"
@@ -51,4 +51,4 @@ date = "2025-12-14"
 {{ tag(t="microfilm") }}  
 {{ tag(t="preservation") }}
 
-{{ img(src="5264957012829737994_1225843330_460002314.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1204-5264957012829737994.jpg") }}

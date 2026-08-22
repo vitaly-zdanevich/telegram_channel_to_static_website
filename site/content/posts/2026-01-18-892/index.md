@@ -11,7 +11,7 @@ tags = ["git", "gitlab", "github", "backup"]
 id = 892
 day = "2026-01-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/892"
-og_image = "5434005031519719175_1265202889_460001031.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-892-5434005031519719175.jpg"
 next_id = 893
 next_title = ""
 next_body = "#webdesign\n#arctic\n#year2004\narcticdigitalnomads.com"
@@ -64,4 +64,4 @@ alias log='git log'
 alias lo='git log --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" --date=short prod..master'
 ```
 
-{{ img(src="5434005031519719175_1265202889_460001031.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-892-5434005031519719175.jpg") }}

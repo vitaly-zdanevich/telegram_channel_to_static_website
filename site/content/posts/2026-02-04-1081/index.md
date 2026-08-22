@@ -11,7 +11,7 @@ tags = ["preservation", "belarus"]
 id = 1081
 day = "2026-02-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1081"
-og_image = "5195454305857638732_1209660970_460001612.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1081-5195454305857638732.jpg"
 next_id = 1082
 next_title = ""
 next_body = "#people\n#fashion\n#zara"
@@ -54,4 +54,4 @@ geo block
 
 I uploaded a lot from [https://moneymuseum.by](https://moneymuseum.by/) to Commons, and will continue.
 
-{{ img(src="5195454305857638732_1209660970_460001612.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1081-5195454305857638732.jpg") }}

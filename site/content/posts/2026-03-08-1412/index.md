@@ -10,7 +10,7 @@ days = ["2026-03-08"]
 id = 1412
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1412"
-og_image = "5298665767295909006_1233691761_456260750.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1412-5298665767295909006.jpg"
 next_id = 1413
 next_title = ""
 next_body = "#webdesign\n#webgl\n#shopify"
@@ -31,4 +31,4 @@ ids = [1412]
 
 **Вы не запечатлели реальность. Вы получили её AI-одобренную, откалиброванную для лайков, версию. Фотография в её классическом понимании мертва**
 
-{{ img(src="5298665767295909006_1233691761_456260750.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1412-5298665767295909006.jpg") }}

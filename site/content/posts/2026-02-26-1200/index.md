@@ -11,7 +11,7 @@ tags = ["27февраля2026", "без_оплаты"]
 id = 1200
 day = "2026-02-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1200"
-og_image = "5260248766600647346_1224747106_460001970.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1200-5260248766600647346.jpg"
 next_id = 1201
 next_title = ""
 next_body = "#googledocs: #ai is integrated, but not the #darkmode\nIf you do not know about this #css property"
@@ -76,4 +76,4 @@ date = "2026-01-23"
 
 **💬** Все вопросы – в личку: [@marstut](https://t.me/marstut)
 
-{{ img(src="5260248766600647346_1224747106_460001970.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1200-5260248766600647346.jpg") }}

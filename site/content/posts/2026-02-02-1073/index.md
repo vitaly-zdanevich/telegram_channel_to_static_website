@@ -11,7 +11,7 @@ tags = ["wikipedia"]
 id = 1073
 day = "2026-02-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1073"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1073-5188455076828220603.jpg"
 next_id = 1075
 next_title = ""
 next_body = "#webdesign\n#windows95"
@@ -55,6 +55,6 @@ date = "2026-02-11"
 
 > Монгильо написал в Твиттере, что играть Синдзи было одной из величайших почестей в его жизни
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1073-5188455076828220603.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1074-5188455076828220602.jpg") }}

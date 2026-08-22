@@ -11,7 +11,7 @@ tags = ["belarus", "architecture", "cross", "globustut", "year2004"]
 id = 898
 day = "2026-01-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/898"
-og_image = "5438156503958359210_1266169479_460000426.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-898-5438156503958359210.jpg"
 next_id = 899
 next_title = ""
 next_body = "#belarus\n#architecture\n#globustut\n#year2004\nSource"
@@ -55,4 +55,4 @@ date = "2026-01-19"
 
 [Source](https://commons.wikimedia.org/wiki/File:034-077_%D0%92%D0%BE%D0%B9%D1%81%D1%82%D0%BE%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_18_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 
-{{ img(src="5438156503958359210_1266169479_460000426.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-898-5438156503958359210.jpg") }}

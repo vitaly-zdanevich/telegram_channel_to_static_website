@@ -11,7 +11,7 @@ tags = ["logo", "horse"]
 id = 1332
 day = "2026-03-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1332"
-og_image = "5276106936908715961_1228439374_460003257.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1332-5276106936908715961.jpg"
 next_id = 1333
 next_title = ""
 next_body = "#design\n#graph\n#wikimedia"
@@ -52,4 +52,4 @@ date = "2026-06-10"
 
 <https://criu.org/P.Haul>
 
-{{ img(src="5276106936908715961_1228439374_460003257.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1332-5276106936908715961.jpg") }}

@@ -11,7 +11,7 @@ tags = ["kernel"]
 id = 1268
 day = "2026-03-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1268"
-og_image = "5269742426736234904_1226957521_460001688.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1268-5269742426736234904.jpg"
 next_id = 1269
 next_title = ""
 next_body = "#webdesign\n#blue"
@@ -24,4 +24,4 @@ ids = [1268]
 
 Wow for the {{ tag(t="kernel") }} we have not only bright `make menuconfig` but black `make nconfig`
 
-{{ img(src="5269742426736234904_1226957521_460001688.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1268-5269742426736234904.jpg") }}

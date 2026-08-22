@@ -11,7 +11,7 @@ tags = ["sql", "quarry", "globustut", "commons"]
 id = 888
 day = "2026-01-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/888"
-og_image = "5429641422056394581_1264186907_460001109.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-888-5429641422056394581.jpg"
 next_id = 889
 next_title = ""
 next_body = "#webdesign\n#globustut\nSource"
@@ -70,4 +70,4 @@ SELECT
   ORDER BY file_count DESC, cl.cl_to
 ```
 
-{{ img(src="5429641422056394581_1264186907_460001109.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-888-5429641422056394581.jpg") }}

@@ -11,7 +11,7 @@ tags = ["monument", "airplane", "belarus", "globustut"]
 id = 1142
 day = "2026-02-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1142"
-og_image = "5258160909983619715_1224260989_460003971.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1142-5258160909983619715.jpg"
 next_id = 1143
 next_title = ""
 next_body = "#building\n#abandone\n#belarus\n#globustut\nSource"
@@ -54,4 +54,4 @@ date = "2026-03-01"
 
 [Source](https://commons.wikimedia.org/wiki/File:047-153_%D0%A9%D1%83%D1%87%D0%B8%D0%BD,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_16_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="5258160909983619715_1224260989_460003971.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1142-5258160909983619715.jpg") }}

@@ -11,7 +11,7 @@ tags = ["ubuntu", "chroot"]
 id = 1102
 day = "2026-02-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1102"
-og_image = "5208565307709003033_1212713613_460002585.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1102-5208565307709003033.jpg"
 next_id = 1103
 next_title = ""
 next_body = "My new #bash alias: one function to go to the next folder (like from 2025 to 2026, from aaa to bbb) and the second one to #cd to prev:\ncdn() {\nlocal cur next\ncur=\"$(basename \"$PWD\")\"\nnext=\"$(\nfind .. -mindepth 1 -maxdepth 1 -type d -printf '%fn'\n| sort\n| awk -v cur=\"$cur\" '$1cur{print; exit}'\n)\"\nif [[ -z \"$next\" ]]; then\necho \"no next folder\"\nreturn 1\nfi\ncd \"../$next\"\n}\ncdp() {\ncur=\"$(basename \"$PWD\")\"\nprev=\"$(\nfind .. -mindepth 1 -maxdepth 1 -type d -printf '%fn'\n| sort\n| awk -v cur=\"$cur\" '$1<cur{p=$1} END{print p}'\n)\"\nif [[ -z \"$prev\" ]]; then\necho \"no previous folder\"\nreturn 1\nfi\ncd \"../$prev\"\n}"
@@ -55,4 +55,4 @@ chroot . /bin/bash
 
 and run from root (because requires [CAP\_SYS\_CHROOT](https://man7.org/linux/man-pages/man7/capabilities.7.html))
 
-{{ img(src="5208565307709003033_1212713613_460002585.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1102-5208565307709003033.jpg") }}

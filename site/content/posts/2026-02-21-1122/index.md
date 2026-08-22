@@ -11,7 +11,7 @@ tags = ["mmo", "myst", "stat"]
 id = 1122
 day = "2026-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1122"
-og_image = "5244641018655740070_1221113144_460001446.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1122-5244641018655740070.jpg"
 next_id = 1123
 next_title = ""
 next_body = "#commons"
@@ -46,4 +46,4 @@ date = "2025-06-13"
 
 <https://account.mystonline.com/stats/index.php?action=active&day=260219>
 
-{{ img(src="5244641018655740070_1221113144_460001446.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1122-5244641018655740070.jpg") }}

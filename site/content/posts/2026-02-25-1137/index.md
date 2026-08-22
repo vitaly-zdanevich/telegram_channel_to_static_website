@@ -11,7 +11,7 @@ tags = ["ai"]
 id = 1137
 day = "2026-02-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1137"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1137-5258160909983618585.jpg"
 next_id = 1142
 next_title = ""
 next_body = "#monument\n#airplane\n#belarus\n#globustut\nSource"
@@ -51,12 +51,12 @@ date = "2024-08-25"
 
 <https://rentahuman.ai/>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1137-5258160909983618585.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1138-5258160909983618582.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1139-5258160909983618581.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1140-5258160909983618583.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1141-5258160909983618584.jpg") }}

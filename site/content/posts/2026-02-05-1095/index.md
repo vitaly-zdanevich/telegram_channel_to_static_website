@@ -11,7 +11,7 @@ tags = ["ai", "firefox", "google_translate"]
 id = 1095
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1095"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1095-5199841215518544564.jpg"
 next_id = 1097
 next_title = ""
 next_body = "I love #display aspect ratio 16x10 because I have the special space for #youtube #ui, when most videos are 16x9"
@@ -53,6 +53,6 @@ Checked in {{ tag(t="firefox") }} and {{ tag(t="google_translate") }}
 
 <https://hrej.cz/article/zakon-pouste>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1095-5199841215518544564.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1096-5199841215518544565.jpg") }}

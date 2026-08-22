@@ -11,7 +11,7 @@ tags = ["commons"]
 id = 1093
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1093"
-og_image = "5199841215518543711_1210682377_460001119.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1093-5199841215518543711.jpg"
 next_id = 1094
 next_title = ""
 next_body = "#firefox translation from #german to #russian"
@@ -53,4 +53,4 @@ My account is big, my account is very big
 
 <https://ptools.toolforge.org/uploadsum.php?user=Vitaly+Zdanevich>
 
-{{ img(src="5199841215518543711_1210682377_460001119.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1093-5199841215518543711.jpg") }}

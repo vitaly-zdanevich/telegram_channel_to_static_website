@@ -11,7 +11,7 @@ tags = ["commons"]
 id = 1123
 day = "2026-02-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1123"
-og_image = "5249225806049907248_1222180623_460001840.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1123-5249225806049907248.jpg"
 next_id = 1124
 next_title = ""
 next_body = "#steam\n#myst\nforever #games"
@@ -49,4 +49,4 @@ date = "2026-01-16"
 
 {{ tag(t="commons") }}
 
-{{ img(src="5249225806049907248_1222180623_460001840.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1123-5249225806049907248.jpg") }}

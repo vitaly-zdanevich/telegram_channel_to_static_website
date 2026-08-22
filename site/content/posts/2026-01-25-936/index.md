@@ -11,7 +11,7 @@ tags = ["gta3", "compare", "ps5"]
 id = 936
 day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/936"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-936-5451802121863892428.jpg"
 next_id = 938
 next_title = ""
 next_body = "Top 1% by #python, hm, not sure why"
@@ -32,6 +32,6 @@ date = "2025-10-25"
 
 [Original](https://gta.fandom.com/wiki/Evidence_Dash) VS {{ tag(t="ps5") }} Definitive Edition
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-936-5451802121863892428.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-937-5451802121863892429.jpg") }}

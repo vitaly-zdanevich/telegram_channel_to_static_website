@@ -9,7 +9,7 @@ days = ["2026-02-05"]
 id = 1098
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1098"
-og_image = "5199841215518544769_1210682377_460002177.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1098-5199841215518544769.jpg"
 next_id = 1099
 next_title = ""
 next_body = "#love it - against #youtube #clickbait"
@@ -20,4 +20,4 @@ views = 19
 ids = [1098]
 +++
 
-{{ img(src="5199841215518544769_1210682377_460002177.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1098-5199841215518544769.jpg") }}

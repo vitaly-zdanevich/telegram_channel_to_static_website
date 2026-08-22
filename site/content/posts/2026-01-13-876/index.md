@@ -11,7 +11,7 @@ tags = ["macOS", "git"]
 id = 876
 day = "2026-01-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/876"
-og_image = "5417957474628735649_1261466526_460001953.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-876-5417957474628735649.jpg"
 next_id = 877
 next_title = ""
 next_body = "#belarus\n#church\n#globustut\n#abandone\nSource.%D0%A4%D1%80%D0%B0%D0%B3%D0%BC%D1%8D%D0%BD%D1%82%D1%8B.07.jpg)"
@@ -49,4 +49,4 @@ date = "2025-12-21"
 
 {{ tag(t="macOS") }}: to install {{ tag(t="git") }} I need 25 GB
 
-{{ img(src="5417957474628735649_1261466526_460001953.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-876-5417957474628735649.jpg") }}

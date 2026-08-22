@@ -11,7 +11,7 @@ tags = ["webdesign", "pink", "hello_kitty", "oldweb"]
 id = 1393
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1393"
-og_image = "5291909495980234245_1232118694_460002821.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1393-5291909495980234245.jpg"
 next_id = 1394
 next_title = ""
 next_body = "Кто-то сделал полноценный 3D-симулятор электрических цепей, который работает прямо в браузере\nСтек: Three.js (r3f) + эмуляция Arduino (AVR8js от Wokwi) + симуляция аналоговой части (как в Falstad).\nСамое крутое — это объединение всего в 3D. Теперь можно симмулировать микроконтроллер и аналоговую схему прямо в браузере с красивой графикой. Раньше такое было возможно только в тяжелом софте вроде Proteus или LTspice\nПример на видео: ссылка\n#сервисы@daniilak"
@@ -54,4 +54,4 @@ date = "2026-03-07"
 
 <https://pizzacatdelights.neocities.org/Blog4>
 
-{{ img(src="5291909495980234245_1232118694_460002821.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1393-5291909495980234245.jpg") }}

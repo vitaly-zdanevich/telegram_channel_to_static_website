@@ -11,7 +11,7 @@ tags = ["grave", "abandone", "belarus", "globustut", "year_2005"]
 id = 1212
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1212"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1212-5264957012829738052.jpg"
 next_id = 1222
 next_title = ""
 next_body = "#architecture\n#column\n#white\n#belarus\n#globustut\n#year2005\nSource"
@@ -55,22 +55,22 @@ date = "2026-02-28"
 
 [Source](https://commons.wikimedia.org/wiki/File:051-441_%D0%94%D1%83%D0%B1%D0%BE%D0%B9_(%D0%9F%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%80-%D0%BD),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_30_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1212-5264957012829738052.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1213-5264957012829738053.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1214-5264957012829738054.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1215-5264957012829738055.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1216-5264957012829738056.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1217-5264957012829738057.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1218-5264957012829738058.jpg") }}
 
-{{ img(src="08.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1219-5264957012829738059.jpg") }}
 
-{{ img(src="09.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1220-5264957012829738060.jpg") }}
 
-{{ img(src="10.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1221-5264957012829738061.jpg") }}

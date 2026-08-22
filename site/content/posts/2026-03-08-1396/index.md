@@ -9,7 +9,7 @@ days = ["2026-03-08"]
 id = 1396
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1396"
-og_image = "5467839946358984781_1273080694_460001357.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1396-5467839946358984781.jpg"
 next_id = 1397
 next_title = ""
 next_body = "Не могу не опубликовать здесь!\nЯпонский McDonald’s выпустил рекламный ролик в стиле мемного ремикса «Bad Apple!» с легендарной черно-белой анимацией\nТолько вместо яблок там наггетсы с чёрным перцем. В создании ролика принял участие композитор оригинала ZUN\nПосмотреть мои адаптации клипа можете кликнув сюда: #badapple@daniilak"
@@ -22,4 +22,4 @@ forwarded_from_url = "https://t.me/daniilak/1819"
 ids = [1396]
 +++
 
-{{ img(src="5467839946358984781_1273080694_460001357.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1396-5467839946358984781.jpg") }}

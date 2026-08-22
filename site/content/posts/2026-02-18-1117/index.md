@@ -11,7 +11,7 @@ tags = ["gcc", "make"]
 id = 1117
 day = "2026-02-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1117"
-og_image = "5238215232184848897_1219617024_460001793.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1117-5238215232184848897.jpg"
 next_id = 1118
 next_title = ""
 next_body = "#python\nMy #geeknote (#evernote #cli) now available on PyPI"
@@ -25,4 +25,4 @@ ids = [1117]
 {{ tag(t="gcc") }}  
 {{ tag(t="make") }}
 
-{{ img(src="5238215232184848897_1219617024_460001793.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1117-5238215232184848897.jpg") }}

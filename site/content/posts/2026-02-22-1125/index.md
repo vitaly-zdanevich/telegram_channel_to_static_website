@@ -11,7 +11,7 @@ tags = ["webdesign", "gentoo", "china"]
 id = 1125
 day = "2026-02-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1125"
-og_image = "5249225806049908772_1222180623_460003364.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1125-5249225806049908772.jpg"
 next_id = 1126
 next_title = ""
 next_body = "#internetarchive\n#flag\n#earth"
@@ -53,4 +53,4 @@ date = "2025-11-03"
 
 <https://www.gentoo.org.cn/>
 
-{{ img(src="5249225806049908772_1222180623_460003364.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1125-5249225806049908772.jpg") }}

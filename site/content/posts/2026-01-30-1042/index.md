@@ -11,7 +11,7 @@ tags = ["belarus", "свеча", "abandone", "church", "winter", "year_2005"]
 id = 1042
 day = "2026-01-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1042"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1042-5469697399455419587.jpg"
 next_id = 1046
 next_title = ""
 next_body = "#belarus\n#abandone\n#church\n#слабодка\n#winter\n#year2005\n#globustut\nFrom"
@@ -57,10 +57,10 @@ date = "2026-03-29"
 
 From [https://commons.wikimedia.org/wiki/File:045-309\_Свеча,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-309_%D0%A1%D0%B2%D0%B5%D1%87%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1042-5469697399455419587.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1043-5469697399455419586.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1044-5469697399455419589.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1045-5469697399455419588.jpg") }}

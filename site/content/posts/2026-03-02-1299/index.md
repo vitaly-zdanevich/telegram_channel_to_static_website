@@ -11,7 +11,7 @@ tags = ["bunker", "fortification", "military", "abandone", "belarus", "german", 
 id = 1299
 day = "2026-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1299"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1299-5271994226549920859.jpg"
 next_id = 1306
 next_title = ""
 next_body = "Magic that I can say #codex to download all scan - and I get it, for #commons"
@@ -58,16 +58,16 @@ date = "2026-01-21"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-263_%D0%91%D0%BE%D0%B3%D1%83%D1%88%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1299-5271994226549920859.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1300-5271994226549920861.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1301-5271994226549920864.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1302-5271994226549920863.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1303-5271994226549920862.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1304-5271994226549920865.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1305-5271994226549920866.jpg") }}

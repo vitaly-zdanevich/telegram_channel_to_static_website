@@ -11,7 +11,7 @@ tags = ["wikipedia", "job"]
 id = 1106
 day = "2026-02-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1106"
-og_image = "5215513357908121079_1214331332_460002807.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1106-5215513357908121079.jpg"
 next_id = 1107
 next_title = ""
 next_body = "Author: Елена Запрудская"
@@ -50,4 +50,4 @@ date = "2026-02-14"
 {{ tag(t="wikipedia") }}  
 {{ tag(t="job") }}
 
-{{ img(src="5215513357908121079_1214331332_460002807.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1106-5215513357908121079.jpg") }}

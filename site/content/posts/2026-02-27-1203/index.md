@@ -11,7 +11,7 @@ tags = ["design", "software", "gthumb", "scan", "preservation"]
 id = 1203
 day = "2026-02-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1203"
-og_image = "5264957012829737976_1225843330_460002296.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1203-5264957012829737976.jpg"
 next_id = 1204
 next_title = ""
 next_body = "#calligraphy\n#microfilm\n#preservation"
@@ -53,4 +53,4 @@ date = "2026-04-29"
 {{ tag(t="scan") }}  
 {{ tag(t="preservation") }}
 
-{{ img(src="5264957012829737976_1225843330_460002296.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1203-5264957012829737976.jpg") }}

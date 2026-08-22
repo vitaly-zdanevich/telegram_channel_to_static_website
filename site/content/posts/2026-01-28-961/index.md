@@ -11,7 +11,7 @@ tags = ["belarus", "architecture", "church", "несвиж", "year_2005", "globu
 id = 961
 day = "2026-01-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/961"
-og_image = "5460806022583750248_1271442981_460000872.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-961-5460806022583750248.jpg"
 next_id = 962
 next_title = ""
 next_body = "#belarus\n#architecture\n#church\n#вселюб\n#year2005\n#globustut\nFrom"
@@ -56,4 +56,4 @@ date = "2026-07-05"
 
 From [https://commons.wikimedia.org/wiki/File:042-405\_Несвиж,\_снято\_29\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:042-405_%D0%9D%D0%B5%D1%81%D0%B2%D0%B8%D0%B6,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-{{ img(src="5460806022583750248_1271442981_460000872.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-961-5460806022583750248.jpg") }}

@@ -9,7 +9,7 @@ days = ["2026-03-08"]
 id = 1409
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1409"
-og_image = "5362046732826967713_1248448792_456261281.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1409-5362046732826967713.jpg"
 next_id = 1410
 next_title = ""
 next_body = "Разработчица искала идеальный файловый менеджер, но так и не нашла... поэтому сделала свою идеальную версию!"
@@ -22,4 +22,4 @@ forwarded_from_url = "https://t.me/daniilak/1468"
 ids = [1409]
 +++
 
-{{ img(src="5362046732826967713_1248448792_456261281.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1409-5362046732826967713.jpg") }}

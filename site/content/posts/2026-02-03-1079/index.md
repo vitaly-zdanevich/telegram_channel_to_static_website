@@ -11,7 +11,7 @@ tags = ["webdesign", "game"]
 id = 1079
 day = "2026-02-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1079"
-og_image = "5190706876641905801_1208555623_460000393.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1079-5190706876641905801.jpg"
 next_id = 1080
 next_title = ""
 next_body = "#ussr\n#history\nСегодня их существует пять плюс три молитвенных дома. А ведь еще в 1939 году, до прихода коммунистов, мечетей по стране было больше сорока"
@@ -52,4 +52,4 @@ date = "2025-12-28"
 
 <https://planet.kknd2.com/>
 
-{{ img(src="5190706876641905801_1208555623_460000393.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1079-5190706876641905801.jpg") }}

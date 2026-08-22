@@ -11,7 +11,7 @@ tags = ["cross", "monument", "belarus", "globustut", "year_2005"]
 id = 1258
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1258"
-og_image = "5264957012829738517_1225843330_460002837.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1258-5264957012829738517.jpg"
 next_id = 1259
 next_title = ""
 next_body = "#woodencart\n#village\n#rural\n#belarus\n#globustut\n#year2005\nSource,%D0%BD%D0%B0%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB%D0%B0,%D1%81%D0%BD%D1%8F%D1%82%D0%BE7%D0%BC%D0%B0%D1%8F2005.jpg)"
@@ -55,4 +55,4 @@ date = "2026-02-28"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-061_%D0%92%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%BE_(%D0%92%D0%BE%D0%BB%D0%BE%D0%B6_%D1%80-%D0%BD),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="5264957012829738517_1225843330_460002837.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1258-5264957012829738517.jpg") }}

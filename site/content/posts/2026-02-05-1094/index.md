@@ -11,7 +11,7 @@ tags = ["firefox", "german", "russian"]
 id = 1094
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1094"
-og_image = "5199841215518543774_1210682377_460001182.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1094-5199841215518543774.jpg"
 next_id = 1095
 next_title = ""
 next_body = "#ai ai ai ai ai but looks like even text translation with not very big languages is so bad :(\nChecked in #firefox and #googletranslate"
@@ -49,4 +49,4 @@ date = "2026-07-29"
 
 {{ tag(t="firefox") }} translation from {{ tag(t="german") }} to {{ tag(t="russian") }}
 
-{{ img(src="5199841215518543774_1210682377_460001182.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1094-5199841215518543774.jpg") }}

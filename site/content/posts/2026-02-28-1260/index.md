@@ -11,7 +11,7 @@ tags = ["monument", "bird", "eagle", "belarus", "globustut", "year_2005"]
 id = 1260
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1260"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1260-5267208812643423705.jpg"
 next_id = 1262
 next_title = ""
 next_body = "#abandon\n#foundation\n#stones\n#belarus\n#globustut\nSource"
@@ -56,6 +56,6 @@ date = "2026-03-29"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-093_%D0%94%D0%B5%D1%81%D1%8F%D1%82%D0%BD%D0%B8%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1260-5267208812643423705.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1261-5267208812643423706.jpg") }}

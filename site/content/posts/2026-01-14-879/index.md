@@ -11,7 +11,7 @@ tags = ["belarus", "architecture", "castle", "globustut"]
 id = 879
 day = "2026-01-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/879"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-879-5422584726364557069.jpg"
 next_id = 886
 next_title = ""
 next_body = "#sql\n#quarry\n#globustut\n#commons: files from a specific user in a non-existing categories, #sql:\nsql\nSELECT\nimgname,\nclto AS missingcategory\nFROM image\nJOIN actor ON actorid = imgactor\nJOIN page ON pagenamespace = 6 AND pagetitle = imgname\nJOIN categorylinks ON clfrom = pageid\nLEFT JOIN page AS cat\nON cat.pagenamespace = 14\nAND cat.pagetitle = clto\nWHERE actorname = 'Globustut'\nAND cat.pageid IS NULL\nORDER BY imgname;"
@@ -56,14 +56,14 @@ Kosava Castle
 
 [Source](https://commons.wikimedia.org/wiki/Category:Kosava_Castle)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-879-5422584726364557069.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-880-5422584726364557070.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-881-5422584726364557071.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-882-5422584726364557074.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-883-5422584726364557072.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-884-5422584726364557073.jpg") }}

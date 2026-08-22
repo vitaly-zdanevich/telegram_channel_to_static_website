@@ -11,7 +11,7 @@ tags = ["webdesign", "cloud"]
 id = 1270
 day = "2026-03-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1270"
-og_image = "5269742426736235445_1226957521_460002229.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1270-5269742426736235445.jpg"
 next_id = 1271
 next_title = ""
 next_body = "#stones\n#monument\n#belarus\n#globustut\n#year2005\nSource"
@@ -50,4 +50,4 @@ date = "2025-07-21"
 {{ tag(t="webdesign") }}  
 {{ tag(t="cloud") }}
 
-{{ img(src="5269742426736235445_1226957521_460002229.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1270-5269742426736235445.jpg") }}

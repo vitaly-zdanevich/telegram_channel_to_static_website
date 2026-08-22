@@ -11,7 +11,7 @@ tags = ["saint", "scull", "fashion"]
 id = 878
 day = "2026-01-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/878"
-og_image = "5422584726364556635_1262543892_460000603.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-878-5422584726364556635.jpg"
 next_id = 879
 next_title = ""
 next_body = "#belarus\n#architecture\n#castle\n#globustut\nKosava Castle\nSource"
@@ -55,4 +55,4 @@ Saint Francis of Assisi, by José de Ribera, 1643
 
 [Source](https://commons.wikimedia.org/wiki/File:San_Francisco_de_As%C3%ADs,_por_Jos%C3%A9_de_Ribera.jpg)
 
-{{ img(src="5422584726364556635_1262543892_460000603.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-878-5422584726364556635.jpg") }}

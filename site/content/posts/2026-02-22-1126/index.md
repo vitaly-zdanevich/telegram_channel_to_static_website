@@ -11,7 +11,7 @@ tags = ["internet_archive", "flag", "earth"]
 id = 1126
 day = "2026-02-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1126"
-og_image = "5249225806049908841_1222180623_460003433.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1126-5249225806049908841.jpg"
 next_id = 1127
 next_title = ""
 next_body = "Internet Archive ceramic archivists\n“Brewster Kahle, founder of the Internet Archive, went to China and was impressed with the Xian warriors. After he got back, he decided to hire Nuala Creed to start making sculptures representing individuals who had dedicated at least three years of service to the [Internet] Archive. Nuala has made 100 to date [2014]. They are on display in the Great Room of the Internet Archive"
@@ -38,4 +38,4 @@ date = "2025-04-18"
 
 <https://commons.wikimedia.org/wiki/File:Internet_Archive_Headquarters_-_51434767124.jpg>
 
-{{ img(src="5249225806049908841_1222180623_460003433.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1126-5249225806049908841.jpg") }}

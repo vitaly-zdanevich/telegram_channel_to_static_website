@@ -11,7 +11,7 @@ tags = ["logo", "gitlab", "git"]
 id = 1085
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1085"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1085-5197589415704858327.jpg"
 next_id = 1087
 next_title = ""
 next_body = "#fashion\n#boy"
@@ -53,6 +53,6 @@ date = "2026-05-15"
 
 [https://gitlab.com](https://gitlab.com/)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1085-5197589415704858327.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1086-5197589415704858326.jpg") }}

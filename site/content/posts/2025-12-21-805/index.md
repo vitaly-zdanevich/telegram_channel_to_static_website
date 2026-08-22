@@ -52,6 +52,6 @@ date = "2024-04-27"
 {{ tag(t="mascon") }}  
 {{ tag(t="design") }}  
 
-[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 21587 stars · Languages: Go 87%, TypeScript 5%, Shell 3% · 879 commits · 683 forks · 358 open issues/PRs · MIT · last push 2026-08-20")
+[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 21611 stars · Languages: Go 87%, TypeScript 5%, Shell 3% · 879 commits · 686 forks · 361 open issues/PRs · MIT · last push 2026-08-21")
 
 {{ img(src="5350719435192339794_1245811450_460000594.jpg") }}

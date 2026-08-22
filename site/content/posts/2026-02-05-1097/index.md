@@ -11,7 +11,7 @@ tags = ["display", "youtube", "ui"]
 id = 1097
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1097"
-og_image = "5199841215518544654_1210682377_460002062.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1097-5199841215518544654.jpg"
 next_id = 1098
 next_title = ""
 next_body = ""
@@ -49,4 +49,4 @@ date = "2025-12-25"
 
 I love {{ tag(t="display") }} aspect ratio 16x10 because I have the special space for {{ tag(t="youtube") }} {{ tag(t="ui") }}, when most videos are 16x9
 
-{{ img(src="5199841215518544654_1210682377_460002062.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1097-5199841215518544654.jpg") }}

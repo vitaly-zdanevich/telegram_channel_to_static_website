@@ -11,7 +11,7 @@ tags = ["webdesign", "oldweb", "anime"]
 id = 1359
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1359"
-og_image = "5289657696166548202_1231594406_460002026.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1359-5289657696166548202.jpg"
 next_id = 1360
 next_title = ""
 next_body = "#webdesign\n#oldweb\n#anime"
@@ -53,4 +53,4 @@ date = "2026-03-07"
 
 <https://yumeoi.skin/>
 
-{{ img(src="5289657696166548202_1231594406_460002026.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1359-5289657696166548202.jpg") }}

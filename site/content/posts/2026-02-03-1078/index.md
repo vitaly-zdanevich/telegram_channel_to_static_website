@@ -11,7 +11,7 @@ tags = ["ui", "yandex", "samara"]
 id = 1078
 day = "2026-02-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1078"
-og_image = "5190505051833700620_1208508632_460001548.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1078-5190505051833700620.jpg"
 next_id = 1079
 next_title = ""
 next_body = "#webdesign\n#game"
@@ -51,4 +51,6 @@ date = "2025-11-23"
 {{ tag(t="yandex") }}  
 {{ tag(t="samara") }}
 
-{{ img(src="5190505051833700620_1208508632_460001548.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1078-5190505051833700620.jpg") }}
+
+🔥 1 · 😁 1

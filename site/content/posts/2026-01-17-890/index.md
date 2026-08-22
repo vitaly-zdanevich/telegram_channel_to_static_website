@@ -11,7 +11,7 @@ tags = ["game", "sega", "sega_genesis", "revive", "ultracore", "wikipedia"]
 id = 890
 day = "2026-01-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/890"
-og_image = "5431893221870079798_1264711195_460001078.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-890-5431893221870079798.jpg"
 next_id = 891
 next_title = ""
 next_body = "#belarus\n#population\n#village\nSource#%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)"
@@ -58,4 +58,6 @@ date = "2026-03-25"
 
 <https://en.wikipedia.org/wiki/Ultracore>
 
-{{ img(src="5431893221870079798_1264711195_460001078.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-890-5431893221870079798.jpg") }}
+
+🔥 1

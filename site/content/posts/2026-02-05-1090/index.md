@@ -11,7 +11,7 @@ tags = ["linux", "gamex"]
 id = 1090
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1090"
-og_image = "5199841215518543003_1210682377_460000411.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1090-5199841215518543003.jpg"
 next_id = 1091
 next_title = ""
 next_body = "#linux\n#game\n#wwii\n#landing\n#ad\n#warthunder\nwarthunder.com"
@@ -50,4 +50,4 @@ date = "2026-02-05"
 {{ tag(t="linux") }}  
 {{ tag(t="gamex") }}
 
-{{ img(src="5199841215518543003_1210682377_460000411.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1090-5199841215518543003.jpg") }}

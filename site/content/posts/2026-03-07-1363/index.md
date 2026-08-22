@@ -11,7 +11,7 @@ tags = ["webdesign", "oldweb", "anime"]
 id = 1363
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1363"
-og_image = "5289657696166548348_1231594406_460002172.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1363-5289657696166548348.jpg"
 next_id = 1364
 next_title = ""
 next_body = "#webdesign\n#oldweb\n#pikachu\n#anime"
@@ -53,4 +53,4 @@ date = "2026-03-07"
 
 <https://calico.nekoweb.org/>
 
-{{ img(src="5289657696166548348_1231594406_460002172.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1363-5289657696166548348.jpg") }}

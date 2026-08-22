@@ -11,7 +11,7 @@ tags = ["belarus", "abandone", "church", "слабодка", "winter", "year_200
 id = 1046
 day = "2026-01-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1046"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1046-5469697399455419597.jpg"
 next_id = 1052
 next_title = ""
 next_body = "#belarus\n#бешенковичи\n#font\n#church\n#winter\n#year2005\n#globustut\nFrom"
@@ -57,14 +57,14 @@ date = "2026-01-30"
 
 From [https://commons.wikimedia.org/wiki/File:045-310\_Слабодка\_(Бешенк\_р-н),\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-310_%D0%A1%D0%BB%D0%B0%D0%B1%D0%BE%D0%B4%D0%BA%D0%B0_(%D0%91%D0%B5%D1%88%D0%B5%D0%BD%D0%BA_%D1%80-%D0%BD),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1046-5469697399455419597.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1047-5469697399455419598.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1048-5469697399455419599.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1049-5469697399455419600.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1050-5469697399455419601.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1051-5469697399455419602.jpg") }}

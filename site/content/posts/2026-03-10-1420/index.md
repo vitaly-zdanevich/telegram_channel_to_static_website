@@ -11,7 +11,7 @@ tags = ["church", "inside", "table", "lace_curtain", "double_door", "bucket", "b
 id = 1420
 day = "2026-03-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1420"
-og_image = "5296309385032309582_1233143123_460004174.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1420-5296309385032309582.jpg"
 next_id = 1421
 next_title = ""
 next_body = "#chatgpt\n#jews\n› Идиш был одним из государственных языков БССР?\n• Да. В ранней БССР идиш (тогда часто писали «еврейский язык») был одним из официальных языков вместе с белорусским, русским и польским.\nЭто действовало в 1920-х и первой половине 1930-х; к концу 1930-х такой статус исчез."
@@ -59,4 +59,4 @@ date = "2026-03-07"
 
 [Source](https://commons.wikimedia.org/wiki/File:055-355_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D1%86%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B3%D0%BB%D0%B5%D0%B1_(%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="5296309385032309582_1233143123_460004174.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1420-5296309385032309582.jpg") }}

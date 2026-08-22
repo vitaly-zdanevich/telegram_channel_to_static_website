@@ -11,7 +11,7 @@ tags = ["village", "belarus", "globustut", "year_2005"]
 id = 1384
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1384"
-og_image = "5291909495980233763_1232118694_460002339.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1384-5291909495980233763.jpg"
 next_id = 1385
 next_title = ""
 next_body = "#castle\n#abandone\n#новогрудок\n#belarus\n#globustut\n#year2005\nSource"
@@ -54,4 +54,4 @@ date = "2026-01-21"
 
 [Source](https://commons.wikimedia.org/wiki/File:055-219_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D0%B2%D0%B8%D0%B4_%D1%81_%D0%B7%D0%B0%D0%BC%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B3%D0%BE%D1%80%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_29_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="5291909495980233763_1232118694_460002339.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1384-5291909495980233763.jpg") }}

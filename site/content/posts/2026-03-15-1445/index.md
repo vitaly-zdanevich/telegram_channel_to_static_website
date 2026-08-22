@@ -11,7 +11,7 @@ tags = ["architecture", "orange", "belarus", "globustut", "year_2005"]
 id = 1445
 day = "2026-03-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1445"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1445-5312188123938757156.jpg"
 next_id = 1450
 next_title = ""
 next_body = "#abandone\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
@@ -55,12 +55,12 @@ date = "2026-01-21"
 
 [Source](https://commons.wikimedia.org/wiki/File:056-313_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1445-5312188123938757156.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1446-5312188123938757157.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1447-5312188123938757158.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1448-5312188123938757159.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1449-5312188123938757160.jpg") }}

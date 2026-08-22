@@ -11,7 +11,7 @@ tags = ["webdesign", "oldweb", "pikachu", "anime"]
 id = 1364
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1364"
-og_image = "5289657696166548352_1231594406_460002176.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1364-5289657696166548352.jpg"
 next_id = 1365
 next_title = ""
 next_body = "#webdesign\n#anime\n#oldweb"
@@ -54,4 +54,4 @@ date = "2026-03-07"
 
 <https://halcybutton.nekoweb.org/>
 
-{{ img(src="5289657696166548352_1231594406_460002176.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1364-5289657696166548352.jpg") }}

@@ -11,7 +11,7 @@ tags = ["stone", "grave", "belarus", "globustut", "year_2005"]
 id = 1298
 day = "2026-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1298"
-og_image = "5271994226549920851_1227481809_460002387.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1298-5271994226549920851.jpg"
 next_id = 1299
 next_title = ""
 next_body = "#bunker\n#fortification\n#military\n#abandone\n#belarus\n#german\n#globustut\n#year2005\nSource"
@@ -55,4 +55,4 @@ date = "2026-02-28"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-255_%D0%9A%D1%80%D0%B5%D0%B2%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="5271994226549920851_1227481809_460002387.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1298-5271994226549920851.jpg") }}

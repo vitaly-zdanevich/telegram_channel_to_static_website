@@ -11,7 +11,7 @@ tags = ["grave", "belarus", "globustut", "year_2005"]
 id = 1265
 day = "2026-03-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1265"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1265-5267208812643425406.jpg"
 next_id = 1268
 next_title = ""
 next_body = "Wow for the #kernel we have not only bright make menuconfig but black make nconfig"
@@ -54,8 +54,8 @@ date = "2026-02-28"
 
 Source
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1265-5267208812643425406.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1266-5267208812643425407.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1267-5267208812643425408.jpg") }}

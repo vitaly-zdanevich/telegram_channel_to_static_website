@@ -11,7 +11,7 @@ tags = ["design", "typography", "newspaper", "sakartvelo"]
 id = 1438
 day = "2026-03-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1438"
-og_image = "5301280942821414751_1234300654_460003167.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1438-5301280942821414751.jpg"
 next_id = 1439
 next_title = ""
 next_body = "#webdesign\n#animal\n#cat"
@@ -54,4 +54,4 @@ date = "2024-07-13"
 
 [Source](https://commons.wikimedia.org/wiki/File:Sakartvelo_1915_N05.pdf)
 
-{{ img(src="5301280942821414751_1234300654_460003167.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1438-5301280942821414751.jpg") }}

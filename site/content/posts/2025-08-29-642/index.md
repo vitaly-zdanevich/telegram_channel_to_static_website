@@ -56,7 +56,7 @@ Horn of the Abyss 1.7.3 <https://h3hota.com/ru/documentation>
 
 <https://ru.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III>  
 
-Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1106 stars · Languages: Shell 98%, C 2% · 606 commits · 75 forks · 24 open issues/PRs · MIT · last push 2026-07-28")  
+Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1107 stars · Languages: Shell 98%, C 2% · 607 commits · 75 forks · 24 open issues/PRs · MIT · last push 2026-08-21")  
 
 Part from [https://youtu.be/r2ENwW565x0](<https://youtu.be/r2ENwW565x0> "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа")  
 

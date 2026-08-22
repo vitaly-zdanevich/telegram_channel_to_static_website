@@ -11,7 +11,7 @@ tags = ["webdesign", "apple", "icloud"]
 id = 1330
 day = "2026-03-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1330"
-og_image = "5276106936908715299_1228439374_460002595.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1330-5276106936908715299.jpg"
 next_id = 1331
 next_title = ""
 next_body = "#logo\n#bird\n#red"
@@ -51,4 +51,4 @@ date = "2025-07-21"
 {{ tag(t="apple") }}  
 {{ tag(t="icloud") }}
 
-{{ img(src="5276106936908715299_1228439374_460002595.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1330-5276106936908715299.jpg") }}

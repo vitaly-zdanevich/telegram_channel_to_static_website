@@ -11,7 +11,7 @@ tags = ["belfry", "belarus", "globustut"]
 id = 1181
 day = "2026-02-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1181"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1181-5258160909983619902.jpg"
 next_id = 1188
 next_title = ""
 next_body = "#tower\n#cementery\n#belarus\n#globustut\nSource"
@@ -53,16 +53,16 @@ date = "2026-01-08"
 
 [Source](https://commons.wikimedia.org/wiki/File:048-314_%D0%A0%D0%BE%D1%81%D1%81%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1181-5258160909983619902.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1182-5258160909983619903.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1183-5258160909983619904.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1184-5258160909983619905.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1185-5258160909983619906.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1186-5258160909983619907.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1187-5258160909983619908.jpg") }}

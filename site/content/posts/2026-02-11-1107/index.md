@@ -10,7 +10,7 @@ days = ["2026-02-11"]
 id = 1107
 day = "2026-02-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1107"
-og_image = "5215712283613402887_1214377648_460003079.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1107-5215712283613402887.jpg"
 next_id = 1108
 next_title = ""
 next_body = ""
@@ -23,4 +23,4 @@ ids = [1107]
 
 Author: [Елена Запрудская](https://www.instagram.com/p/DSN7E6OjfhQ/)
 
-{{ img(src="5215712283613402887_1214377648_460003079.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1107-5215712283613402887.jpg") }}

@@ -11,7 +11,7 @@ tags = ["commons", "pdf", "pywikibot"]
 id = 1105
 day = "2026-02-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1105"
-og_image = "5215513357908120858_1214331332_460002586.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1105-5215513357908120858.jpg"
 next_id = 1106
 next_title = ""
 next_body = "#wikipedia\n#job"
@@ -69,4 +69,4 @@ for page_index in range(len(doc)):
 
 and upload through my {{ tag(t="pywikibot") }} wrapper <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 
-{{ img(src="5215513357908120858_1214331332_460002586.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1105-5215513357908120858.jpg") }}

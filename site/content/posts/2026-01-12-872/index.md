@@ -11,7 +11,7 @@ tags = ["wikipedia", "python"]
 id = 872
 day = "2026-01-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/872"
-og_image = "5413674120924303146_1260469230_460001066.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-872-5413674120924303146.jpg"
 next_id = 873
 next_title = ""
 next_body = "#map\nThe Earth, centred around #newzealand\nSource"
@@ -51,4 +51,4 @@ Wow {{ tag(t="wikipedia") }} semi-automatic editing by a {{ tag(t="python") }} s
 
 <https://gitlab.com/vitaly-zdanevich/globustut-domain-move-on-wikipedia>
 
-{{ img(src="5413674120924303146_1260469230_460001066.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-872-5413674120924303146.jpg") }}

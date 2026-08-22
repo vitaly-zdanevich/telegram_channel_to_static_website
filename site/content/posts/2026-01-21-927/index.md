@@ -11,7 +11,7 @@ tags = ["belarus", "monument", "nature", "year_2005", "year_1915", "globustut"]
 id = 927
 day = "2026-01-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/927"
-og_image = "5440801563862568224_1266785330_460000544.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-927-5440801563862568224.jpg"
 next_id = 928
 next_title = ""
 next_body = "#belarus\n#church\n#abandone\n#year2005\n#globustut"
@@ -56,4 +56,4 @@ date = "2026-02-28"
 
 [https://commons.wikimedia.org/wiki/File:039-558\_меж\_Тартак\_и\_Нидяны,\_памятник\_1915,\_снято\_15\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:039-558_%D0%BC%D0%B5%D0%B6_%D0%A2%D0%B0%D1%80%D1%82%D0%B0%D0%BA_%D0%B8_%D0%9D%D0%B8%D0%B4%D1%8F%D0%BD%D1%8B,_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_1915,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_15_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-{{ img(src="5440801563862568224_1266785330_460000544.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-927-5440801563862568224.jpg") }}

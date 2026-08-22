@@ -11,7 +11,7 @@ tags = ["webdesign", "oldweb", "anime"]
 id = 1360
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1360"
-og_image = "5289657696166548220_1231594406_460002044.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1360-5289657696166548220.jpg"
 next_id = 1361
 next_title = ""
 next_body = "#webdesign\n#oldweb\n#anime"
@@ -53,4 +53,4 @@ date = "2026-03-07"
 
 <https://pc98.club/meow>
 
-{{ img(src="5289657696166548220_1231594406_460002044.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1360-5289657696166548220.jpg") }}

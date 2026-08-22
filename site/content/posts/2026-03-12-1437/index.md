@@ -11,7 +11,7 @@ tags = ["building", "bricks", "village", "white", "slonim", "belarus", "globustu
 id = 1437
 day = "2026-03-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1437"
-og_image = "5301280942821414146_1234300654_460002562.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1437-5301280942821414146.jpg"
 next_id = 1438
 next_title = ""
 next_body = "#design\n#typography\n#newspaper\n#sakartvelo\nSource"
@@ -58,4 +58,4 @@ date = "2026-03-12"
 
 [Source](https://commons.wikimedia.org/wiki/File:056-231_%D0%A1%D0%BB%D0%BE%D0%BD%D0%B8%D0%BC,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-{{ img(src="5301280942821414146_1234300654_460002562.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1437-5301280942821414146.jpg") }}

@@ -11,7 +11,7 @@ tags = ["love", "youtube", "clickbait"]
 id = 1099
 day = "2026-02-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1099"
-og_image = "5204095548128956047_1211672916_460000911.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1099-5204095548128956047.jpg"
 next_id = 1100
 next_title = ""
 next_body = "#ai\nTrying #codex to organize scans - to create a folder for every newspaper issue, result is not very good - mistakes and slow"
@@ -49,4 +49,4 @@ date = "2026-02-05"
 
 {{ tag(t="love") }} it - against {{ tag(t="youtube") }} {{ tag(t="clickbait") }} <https://dearrow.ajay.app/>
 
-{{ img(src="5204095548128956047_1211672916_460000911.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1099-5204095548128956047.jpg") }}

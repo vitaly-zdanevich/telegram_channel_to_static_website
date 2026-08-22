@@ -11,7 +11,7 @@ tags = ["grave", "stone", "belarus", "globustut", "year_2005"]
 id = 1284
 day = "2026-03-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1284"
-og_image = "5269742426736235676_1226957521_460002460.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1284-5269742426736235676.jpg"
 next_id = 1285
 next_title = ""
 next_body = "#village\n#house\n#belarus\n#globustut\n#year2005\nSource"
@@ -55,4 +55,4 @@ date = "2026-02-28"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-175_%D0%92%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%BA%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="5269742426736235676_1226957521_460002460.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1284-5269742426736235676.jpg") }}

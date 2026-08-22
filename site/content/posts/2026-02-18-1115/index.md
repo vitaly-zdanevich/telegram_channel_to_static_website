@@ -11,7 +11,7 @@ tags = ["zst", "archive"]
 id = 1115
 day = "2026-02-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1115"
-og_image = "5237858470726408289_1219533959_460003425.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1115-5237858470726408289.jpg"
 next_id = 1116
 next_title = ""
 next_body = "#pain\n#ad\n#event\n#sergeykulinkovich\nThe old one\nУнижение и боль\nСеминар-исповедь Сергея Кулинковича о том, как светлые на первый взгляд идеи с треском проваливались и тянули на дно проект за проектом."
@@ -31,4 +31,4 @@ date = "2025-05-14"
 
 <https://en.wikipedia.org/wiki/Zstd>
 
-{{ img(src="5237858470726408289_1219533959_460003425.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1115-5237858470726408289.jpg") }}

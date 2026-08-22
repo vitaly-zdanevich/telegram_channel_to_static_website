@@ -11,7 +11,7 @@ tags = ["couchsurfing", "money", "AWS"]
 id = 1307
 day = "2026-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1307"
-og_image = "5271994226549921339_1227481809_460002875.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1307-5271994226549921339.jpg"
 next_id = 1308
 next_title = ""
 next_body = "Wow in #kitty we can switch to a prev active tab:\nmap ctrl+alt+p gototab -1\n# Go to prev active tab"
@@ -54,4 +54,4 @@ date = "2026-06-13"
 
 <https://couchers.org/blog/2026/02/16/couchers-inc-financials-2025>
 
-{{ img(src="5271994226549921339_1227481809_460002875.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1307-5271994226549921339.jpg") }}

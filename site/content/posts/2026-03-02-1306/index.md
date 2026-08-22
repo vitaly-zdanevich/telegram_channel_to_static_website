@@ -11,7 +11,7 @@ tags = ["codex", "commons"]
 id = 1306
 day = "2026-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1306"
-og_image = "5271994226549920871_1227481809_460002407.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1306-5271994226549920871.jpg"
 next_id = 1307
 next_title = ""
 next_body = "#couchsurfing\n#money\n2000$ per year to #AWS"
@@ -51,4 +51,4 @@ Magic that I can say {{ tag(t="codex") }} to download all scan - and I get it, f
 
 <https://dspace.nplg.gov.ge/handle/1234/17729>
 
-{{ img(src="5271994226549920871_1227481809_460002407.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1306-5271994226549920871.jpg") }}

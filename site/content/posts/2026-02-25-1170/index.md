@@ -11,7 +11,7 @@ tags = ["entrance", "abandone", "belarus"]
 id = 1170
 day = "2026-02-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1170"
-og_image = "5258160909983619821_1224260989_460004077.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1170-5258160909983619821.jpg"
 next_id = 1171
 next_title = ""
 next_body = "#church\n#belarus\n#abandone\n#globustut\nSource"
@@ -53,4 +53,4 @@ date = "2026-02-28"
 
 [Source](https://commons.wikimedia.org/wiki/File:048-189_%D0%A0%D1%83%D0%BF%D0%B5%D0%B9%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="5258160909983619821_1224260989_460004077.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1170-5258160909983619821.jpg") }}

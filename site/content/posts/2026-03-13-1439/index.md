@@ -11,7 +11,7 @@ tags = ["webdesign", "animal", "cat"]
 id = 1439
 day = "2026-03-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1439"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1439-5307734857033126497.jpg"
 next_id = 1443
 next_title = ""
 next_body = "#abandone\n#castle\n#slonim\n#belarus\n#globustut\n#year2005\nSource"
@@ -53,10 +53,10 @@ date = "2025-07-21"
 
 <https://framasoft.org/en/>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1439-5307734857033126497.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1440-5307734857033126499.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1441-5307734857033126500.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1442-5307734857033126498.jpg") }}

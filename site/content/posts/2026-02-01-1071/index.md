@@ -11,7 +11,7 @@ tags = ["journal", "game_exe", "legs", "year_2005"]
 id = 1071
 day = "2026-02-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1071"
-og_image = "5188525531471744627_1208047739_460000883.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1071-5188525531471744627.jpg"
 next_id = 1072
 next_title = ""
 next_body = "#wikipedia article writing, in #vim"
@@ -52,4 +52,4 @@ date = "2026-03-10"
 {{ tag(t="legs") }}  
 {{ tag(t="year_2005") }}
 
-{{ img(src="5188525531471744627_1208047739_460000883.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1071-5188525531471744627.jpg") }}

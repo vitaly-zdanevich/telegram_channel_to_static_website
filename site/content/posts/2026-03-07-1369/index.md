@@ -11,7 +11,7 @@ tags = ["webdesign", "oldweb", "anime"]
 id = 1369
 day = "2026-03-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1369"
-og_image = "5289657696166548394_1231594406_460002218.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1369-5289657696166548394.jpg"
 next_id = 1370
 next_title = ""
 next_body = "#webdesign\n#armenia"
@@ -53,4 +53,4 @@ date = "2026-03-07"
 
 <https://sugarangel.neocities.org/>
 
-{{ img(src="5289657696166548394_1231594406_460002218.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1369-5289657696166548394.jpg") }}

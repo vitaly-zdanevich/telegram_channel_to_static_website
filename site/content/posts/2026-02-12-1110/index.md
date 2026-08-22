@@ -11,7 +11,7 @@ tags = ["ai", "ruwiki"]
 id = 1110
 day = "2026-02-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1110"
-og_image = "5220016957535490650_1215379908_460001882.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1110-5220016957535490650.jpg"
 next_id = 1111
 next_title = ""
 next_body = "#js\nI downloaded it - really 0 bytes."
@@ -52,4 +52,4 @@ date = "2025-01-01"
 
 No trust in robots.
 
-{{ img(src="5220016957535490650_1215379908_460001882.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1110-5220016957535490650.jpg") }}

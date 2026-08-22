@@ -11,7 +11,7 @@ tags = ["logo", "foobar", "audio_player"]
 id = 1084
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1084"
-og_image = "5197589415704858321_1210158089_460000977.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1084-5197589415704858321.jpg"
 next_id = 1085
 next_title = ""
 next_body = "#logo\n#gitlab\n#git"
@@ -53,4 +53,4 @@ date = "2025-03-15"
 
 <https://www.foobar2000.org/>
 
-{{ img(src="5197589415704858321_1210158089_460000977.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1084-5197589415704858321.jpg") }}

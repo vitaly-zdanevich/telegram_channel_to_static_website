@@ -11,7 +11,7 @@ tags = ["pain", "ad", "event", "sergey_kulinkovich"]
 id = 1116
 day = "2026-02-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1116"
-og_image = "5235963432371165215_1219092736_460003359.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1116-5235963432371165215.jpg"
 next_id = 1117
 next_title = ""
 next_body = "#gcc\n#make"
@@ -60,4 +60,4 @@ The old one
 
 <https://t.me/kulinkovich_live>
 
-{{ img(src="5235963432371165215_1219092736_460003359.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1116-5235963432371165215.jpg") }}

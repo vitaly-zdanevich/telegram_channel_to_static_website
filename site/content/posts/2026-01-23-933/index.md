@@ -11,7 +11,7 @@ tags = ["23января2026", "без_оплаты"]
 id = 933
 day = "2026-01-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/933"
-og_image = "5443033220279636241_1267304928_460001553.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-933-5443033220279636241.jpg"
 next_id = 934
 next_title = ""
 next_body = "#ai\nFrom"
@@ -76,4 +76,6 @@ date = "2026-02-05"
 
 **💬** Все вопросы – в личку: [@marstut](https://t.me/marstut)
 
-{{ img(src="5443033220279636241_1267304928_460001553.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-933-5443033220279636241.jpg") }}
+
+🔥 1

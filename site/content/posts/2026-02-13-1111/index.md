@@ -11,7 +11,7 @@ tags = ["js"]
 id = 1111
 day = "2026-02-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1111"
-og_image = "5224374876167148716_1216394565_460002476.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1111-5224374876167148716.jpg"
 next_id = 1112
 next_title = ""
 next_body = "Editing #wikipedia, in #vim"
@@ -33,4 +33,4 @@ I downloaded it - really 0 bytes.
 
 <http://vanilla-js.com/>
 
-{{ img(src="5224374876167148716_1216394565_460002476.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1111-5224374876167148716.jpg") }}

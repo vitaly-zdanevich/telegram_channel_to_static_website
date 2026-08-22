@@ -11,7 +11,7 @@ tags = ["cementery", "belarus", "globustut", "year_2005"]
 id = 1248
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1248"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1248-5264957012829738480.jpg"
 next_id = 1255
 next_title = ""
 next_body = "#cementery\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE7%D0%BC%D0%B0%D1%8F2005.jpg)"
@@ -54,16 +54,16 @@ date = "2026-03-02"
 
 [Source](https://commons.wikimedia.org/wiki/File:052-047_%D0%92%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%BE_(%D0%92%D0%BE%D0%BB%D0%BE%D0%B6_%D1%80-%D0%BD),_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_7_%D0%BC%D0%B0%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1248-5264957012829738480.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1249-5264957012829738481.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1250-5264957012829738486.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1251-5264957012829738483.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1252-5264957012829738482.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1253-5264957012829738484.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1254-5264957012829738485.jpg") }}

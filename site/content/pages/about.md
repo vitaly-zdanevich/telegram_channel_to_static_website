@@ -22,38 +22,38 @@ Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia countr
 
 
 
-In the git repository: **119 MB** — **12%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
+In the git repository: **52.2 MB** — **5%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
 
-In [GitHub Releases](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases): **12.7 GB** of media files — outside git, so it doesn't count toward the limit.
+In [GitHub Releases](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases): **12.8 GB** of media files — outside git, so it doesn't count toward the limit.
 
 By kind:
 
-- **Images** 109 MB
-- **Other** 8.1 MB
-- **Text** 2.4 MB
+- **Images** 41.7 MB
+- **Other** 8.0 MB
+- **Text** 2.5 MB
 
 Largest files:
 
 - [7.7 MB — Exigo1920x1200.exe](@/posts/2026-05-31-1802/index.md "With #llm I added 1920x1200 to #armiesofexigo #game And increased the #camera range.")
 - 2.2 MB — aboutme.png
 - [315 KB — 5310099855001120614_1236353967_456257382.jpg](@/posts/2025-05-27-542/index.md "#git Source")
-- [271 KB — 03.jpg](@/posts/2026-03-01-1265/index.md "#grave #belarus #globustut #year2005 Source")
-- [270 KB — 02.jpg](@/posts/2026-02-28-1212/index.md "#grave #abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F%D1%82%D0%BE30%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F2005.jpg)")
-- [268 KB — 07.jpg](@/posts/2026-02-28-1212/index.md "#grave #abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F%D1%82%D0%BE30%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F2005.jpg)")
-- [265 KB — 01.jpg](@/posts/2026-02-25-1164/index.md "#monument #abandone #belarus #globustut Source")
 - [265 KB — 04.jpg](@/posts/2025-02-15-362/index.md "#coin Its real coins, from Cook Islands Source")
-- [264 KB — 10.jpg](@/posts/2026-02-28-1212/index.md "#grave #abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F%D1%82%D0%BE30%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F2005.jpg)")
-- [260 KB — 05.jpg](@/posts/2026-02-28-1212/index.md "#grave #abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8F%D1%82%D0%BE30%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8F2005.jpg)")
+- [249 KB — 03.jpg](@/posts/2025-02-15-362/index.md "#coin Its real coins, from Cook Islands Source")
+- [240 KB — 08.jpg](@/posts/2025-06-09-557/index.md "Рисунки скриншотов из игр! Кто узнал ВСЁ?")
+- [240 KB — 01.jpg](@/posts/2025-02-15-362/index.md "#coin Its real coins, from Cook Islands Source")
+- [232 KB — 5375476537215808962_1251575662_456259010.jpg](@/posts/2025-06-18-583/index.md "#photo #sakartvelo #botanicgarden #ladder")
+- [231 KB — 5229215222705359874_1217521546_460000258.jpg](@/posts/2025-11-10-764/index.md "#painting #gustavedore Source")
+- [230 KB — 5296425538124113913_1233170167_456255481.jpg](@/posts/2025-02-15-361/index.md "#coin Source")
 
-Generated in **27m 57s**.
+Generated in **20m 11s**.
 
-Last updated **2026-08-21 05:24 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/32448514452)
+Last updated **2026-08-22 05:09 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/32552621526)
 
 [Google Lighthouse scores (mobile):](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fvitaly%2Dzdanevich%2Egithub%2Eio%2Ftelegram%5Fchannel%5Fto%5Fstatic%5Fwebsite)
 
-- **Performance** 67
+- **Performance** 35
 - **Accessibility** 83
-- **Best Practices** 77
+- **Best Practices** 73
 - **SEO** 82
 
 Source repository: [https://github.com/vitaly-zdanevich/telegram_channel_to_static_website](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website)

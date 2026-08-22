@@ -11,7 +11,7 @@ tags = ["webdesign", "map", "openstreetmap", "wolt", "delivery"]
 id = 1069
 day = "2026-01-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1069"
-og_image = "5471949199269104497_1274037454_460000113.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1069-5471949199269104497.jpg"
 next_id = 1070
 next_title = ""
 next_body = "#logo\n#wikimedia\n#wikidata\n#data\nFrom"
@@ -53,4 +53,4 @@ date = "2025-07-21"
 {{ tag(t="wolt") }}  
 {{ tag(t="delivery") }}
 
-{{ img(src="5471949199269104497_1274037454_460000113.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1069-5471949199269104497.jpg") }}

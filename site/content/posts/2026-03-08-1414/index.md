@@ -11,7 +11,7 @@ tags = ["webdesign", "ping", "anime", "japan"]
 id = 1414
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1414"
-og_image = "5292159737954769940_1232176958_460004372.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1414-5292159737954769940.jpg"
 next_id = 1415
 next_title = ""
 next_body = "#webdesign\n#oldweb\n#animation"
@@ -54,4 +54,4 @@ date = "2026-03-07"
 
 <https://pc98.club/piracy>
 
-{{ img(src="5292159737954769940_1232176958_460004372.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1414-5292159737954769940.jpg") }}

@@ -11,7 +11,7 @@ tags = ["japan"]
 id = 1077
 day = "2026-02-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1077"
-og_image = "5188455076828221944_1208031335_460001784.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1077-5188455076828221944.jpg"
 next_id = 1078
 next_title = ""
 next_body = "#ui\n#yandex\n#samara"
@@ -43,4 +43,4 @@ From [https://www.youtube.com/watch?v=bgrv5vuqd7g](<https://www.youtube.com/watc
 
 {{ youtube(id="bgrv5vuqd7g") }}
 
-{{ img(src="5188455076828221944_1208031335_460001784.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1077-5188455076828221944.jpg") }}

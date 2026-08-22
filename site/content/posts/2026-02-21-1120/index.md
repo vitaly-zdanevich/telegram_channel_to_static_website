@@ -11,7 +11,7 @@ tags = ["ai", "codex", "love"]
 id = 1120
 day = "2026-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1120"
-og_image = "5244641018655740008_1221113144_460001384.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1120-5244641018655740008.jpg"
 next_id = 1121
 next_title = ""
 next_body = "#webdesign\n#buttons\n#animation\n#game\n#mmo\n#myst"
@@ -50,6 +50,6 @@ date = "2026-01-24"
 {{ tag(t="ai") }}  
 {{ tag(t="codex") }}  
 
-{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 108896 stars · Languages: Rust 96%, Python 3%, Starlark 0% · 9633 commits · 16632 forks · 13297 open issues/PRs · Apache-2.0 · last push 2026-08-21"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
+{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 111651 stars · Languages: Rust 96%, Python 3%, Starlark 0% · 9684 commits · 17154 forks · 13414 open issues/PRs · Apache-2.0 · last push 2026-08-22"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
 
-{{ img(src="5244641018655740008_1221113144_460001384.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1120-5244641018655740008.jpg") }}

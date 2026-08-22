@@ -11,7 +11,7 @@ tags = ["belarus", "nature", "winter", "monument", "year_2005", "novogrudok"]
 id = 1006
 day = "2026-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1006"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1006-5465427364444572645.jpg"
 next_id = 1013
 next_title = ""
 next_body = "#webdesign\n#blue\n#batumi"
@@ -56,16 +56,16 @@ date = "2026-01-21"
 
 From [https://commons.wikimedia.org/wiki/File:043-433\_Новогрудок,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-433_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1006-5465427364444572645.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1007-5465427364444572646.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1008-5465427364444572647.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1009-5465427364444572648.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1010-5465427364444572649.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1011-5465427364444572651.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1012-5465427364444572650.jpg") }}

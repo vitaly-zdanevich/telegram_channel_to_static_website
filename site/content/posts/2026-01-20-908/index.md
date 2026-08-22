@@ -11,7 +11,7 @@ tags = ["belarus", "village", "year2004", "globustut"]
 id = 908
 day = "2026-01-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/908"
-og_image = "5440408303772044081_1266693767_460000049.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-908-5440408303772044081.jpg"
 next_id = 909
 next_title = ""
 next_body = "#belarus\n#village\n#year2004\n#globustut"
@@ -54,4 +54,4 @@ date = "2026-01-20"
 
 [https://commons.wikimedia.org/wiki/File:036-168\_Вардомичи,\_снято\_30\_декабря\_2004.jpg](https://commons.wikimedia.org/wiki/File:036-168_%D0%92%D0%B0%D1%80%D0%B4%D0%BE%D0%BC%D0%B8%D1%87%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_30_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 
-{{ img(src="5440408303772044081_1266693767_460000049.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-908-5440408303772044081.jpg") }}

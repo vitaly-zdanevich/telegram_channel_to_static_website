@@ -11,7 +11,7 @@ tags = ["6февраля2026", "без_оплаты"]
 id = 1088
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1088"
-og_image = "5192855408261927781_1209055867_460002149.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1088-5192855408261927781.jpg"
 next_id = 1089
 next_title = ""
 next_body = "#matrix\nПрошло 20 лет, а вы и не заметили, мистер Андерсон\nSource"
@@ -76,4 +76,4 @@ date = "2026-01-23"
 
 **💬** Все вопросы – в личку: [@marstut](https://t.me/marstut)
 
-{{ img(src="5192855408261927781_1209055867_460002149.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1088-5192855408261927781.jpg") }}

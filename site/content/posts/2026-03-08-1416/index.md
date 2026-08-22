@@ -11,7 +11,7 @@ tags = ["resume", "pony"]
 id = 1416
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1416"
-og_image = "5291965923260568886_1232131832_460002614.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1416-5291965923260568886.jpg"
 next_id = 1417
 next_title = ""
 next_body = "#stone\n#animal\n#museum\n#belarus\n#globustut\n#year2005\nSource"
@@ -27,4 +27,6 @@ ids = [1416]
 
 <https://www.pjreddie.com/static/resume.pdf>
 
-{{ img(src="5291965923260568886_1232131832_460002614.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1416-5291965923260568886.jpg") }}
+
+🔥 1

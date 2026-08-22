@@ -11,7 +11,7 @@ tags = ["belarus", "architecture", "museum", "red", "сенно"]
 id = 1059
 day = "2026-01-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1059"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1059-5469697399455419637.jpg"
 next_id = 1065
 next_title = ""
 next_body = "#belarus\n#architecture\n#church\n#night\n#distortion\n#year2005\n#globustut\nFrom"
@@ -55,14 +55,14 @@ date = "2026-02-25"
 
 From [https://commons.wikimedia.org/wiki/File:045-425\_Сенно,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-425_%D0%A1%D0%B5%D0%BD%D0%BD%D0%BE,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1059-5469697399455419637.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1060-5469697399455419638.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1061-5469697399455419639.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1062-5469697399455419641.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1063-5469697399455419640.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1064-5469697399455419642.jpg") }}

@@ -11,7 +11,7 @@ tags = ["logo", "bird", "red"]
 id = 1331
 day = "2026-03-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1331"
-og_image = "5276106936908715956_1228439374_460003252.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1331-5276106936908715956.jpg"
 next_id = 1332
 next_title = ""
 next_body = "#logo\n#horse"
@@ -53,4 +53,4 @@ date = "2025-03-15"
 
 <https://criu.org/Main_Page>
 
-{{ img(src="5276106936908715956_1228439374_460003252.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1331-5276106936908715956.jpg") }}

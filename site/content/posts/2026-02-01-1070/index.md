@@ -11,7 +11,7 @@ tags = ["logo", "wikimedia", "wikidata", "data"]
 id = 1070
 day = "2026-02-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1070"
-og_image = "5188422654120103187_1208023786_460000531.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1070-5188422654120103187.jpg"
 next_id = 1071
 next_title = ""
 next_body = "#journal\n#gameexe\n#legs\n#year2005"
@@ -54,4 +54,4 @@ date = "2025-11-10"
 
 From <https://www.facebook.com/photo/?fbid=10164764933016042&set=a.10150419617396042>
 
-{{ img(src="5188422654120103187_1208023786_460000531.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1070-5188422654120103187.jpg") }}

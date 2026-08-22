@@ -5,13 +5,12 @@ description = "webdesign webgl shopify"
 
 [taxonomies]
 days = ["2026-03-08"]
-tags = ["webdesign", "webgl", "shopify"]
+tags = ["webdesign", "webgl", "shopify", "video"]
 
 [extra]
 id = 1413
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1413"
-og_image = "01.jpg"
 next_id = 1414
 next_title = ""
 next_body = "#webdesign\n#ping\n#anime\n#japan"
@@ -53,6 +52,8 @@ date = "2025-07-21"
 
 <https://www.shopify.com/editions/winter2026>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1413-01.mp4") }}
 
-*▶ video — 8:23*
+🔥 1
+
+{{ tag(t="video") }}
