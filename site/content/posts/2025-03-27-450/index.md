@@ -11,7 +11,7 @@ tags = ["phone", "psy"]
 id = 450
 day = "2025-03-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/450"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-450-5415638411328479714.jpg"
 next_id = 452
 next_title = ""
 next_body = "#games\n#history\n#cds\n#shop\nFrom"
@@ -50,6 +50,6 @@ date = "2025-04-09"
 {{ tag(t="phone") }}  
 {{ tag(t="psy") }}
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-450-5415638411328479714.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-451-5415638411328479715.jpg") }}

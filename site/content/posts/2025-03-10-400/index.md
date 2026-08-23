@@ -9,7 +9,7 @@ days = ["2025-03-10"]
 id = 400
 day = "2025-03-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/400"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-400-5366226702373613468.jpg"
 next_id = 402
 next_title = ""
 next_body = "Guess the country\nSource"
@@ -20,6 +20,6 @@ views = 48
 ids = [400, 401]
 +++
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-400-5366226702373613468.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-401-5366226702373613469.jpg") }}

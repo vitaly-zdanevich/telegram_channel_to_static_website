@@ -11,7 +11,7 @@ tags = ["sakartvelo"]
 id = 577
 day = "2025-06-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/577"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-577-5375476537215808836.jpg"
 next_id = 582
 next_title = ""
 next_body = ""
@@ -51,12 +51,14 @@ date = "2025-02-08"
 
 [Source](https://georgiaabout.com/gold-lion-figurine-second-half-of-the-3rd-millennium-b-c-kakheti-tsnori)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-577-5375476537215808836.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-578-5375476537215808838.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-579-5375476537215808837.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-580-5375476537215808840.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-581-5375476537215808839.jpg") }}
+
+👍 1

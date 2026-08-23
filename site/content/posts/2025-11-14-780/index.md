@@ -11,7 +11,7 @@ tags = ["webdesign", "webdesign_games", "pink"]
 id = 780
 day = "2025-11-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/780"
-og_image = "5239970731347610532_1220025758_460000164.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-780-5239970731347610532.jpg"
 next_id = 781
 next_title = ""
 next_body = "#js\nOut of memory, but RAM is used to 64%\n#firefox"
@@ -53,4 +53,4 @@ date = "2025-12-28"
 
 <https://www.thejimquisition.com/about>
 
-{{ img(src="5239970731347610532_1220025758_460000164.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-780-5239970731347610532.jpg") }}

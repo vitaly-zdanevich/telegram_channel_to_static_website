@@ -50,4 +50,6 @@ date = "2024-11-06"
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/322-01.mp4") }}
 
+❤ 1
+
 {{ tag(t="video") }}

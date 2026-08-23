@@ -11,7 +11,7 @@ tags = ["hardware", "laptop"]
 id = 820
 day = "2025-12-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/820"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-820-5370960061280226907.jpg"
 next_id = 825
 next_title = ""
 next_body = "#webdesign"
@@ -39,12 +39,14 @@ Toshiba Libretto
 
 <https://commons.wikimedia.org/wiki/Category:Toshiba_Libretto>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-820-5370960061280226907.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-821-5370960061280226908.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-822-5370960061280226909.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-823-5370960061280226910.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-824-5370960061280226911.jpg") }}
+
+👍 1

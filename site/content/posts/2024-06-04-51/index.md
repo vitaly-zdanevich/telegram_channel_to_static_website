@@ -10,7 +10,7 @@ days = ["2024-06-04"]
 id = 51
 day = "2024-06-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/51"
-og_image = "5402581027848838338_1257886418_456252610.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-51-5402581027848838338.jpg"
 next_id = 52
 next_title = ""
 next_body = "I love this project: free personal VPN on WireGuard (integrated into Linux kernel), works on AWS free tier also\nI found that on MacDonalds Wi-Fi I cannot update my system - looks like it block some activity, but I can with VPN."
@@ -21,8 +21,8 @@ views = 54
 ids = [51]
 +++
 
-My another ebuild: the game [Gigalomania](<https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania> "[MIRROR] GURU: repository of new packages maintained collaboratively by users · 318 stars · Languages: Shell 100%, Roff 0%, CMake 0% · 37805 commits · 251 forks · 80 open issues/PRs · last push 2026-08-21") - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
+My another ebuild: the game [Gigalomania](<https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania> "[MIRROR] GURU: repository of new packages maintained collaboratively by users · 318 stars · Languages: Shell 100%, Roff 0%, CMake 0% · 37805 commits · 251 forks · 79 open issues/PRs · last push 2026-08-23") - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
 
 <https://gigalomania.sourceforge.net/>
 
-{{ img(src="5402581027848838338_1257886418_456252610.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-51-5402581027848838338.jpg") }}

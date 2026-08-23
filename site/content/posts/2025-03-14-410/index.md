@@ -52,3 +52,5 @@ Girl with a Pearl Earring
 *Artwork by Olga Pavolga Shot by Thatch John Yuyi “Will We Be Safer” by Glen Wexler Painting by Nigel Van Wieck Photography by Sebastian Sellner*
 
 {{ pinterest(url="https://www.pinterest.com/pin/321796335878643329/") }}
+
+❤ 1

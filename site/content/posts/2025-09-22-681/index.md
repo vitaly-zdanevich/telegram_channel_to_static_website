@@ -11,7 +11,7 @@ tags = ["coin", "belarus", "history"]
 id = 681
 day = "2025-09-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/681"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-681-5370607650619914944.jpg"
 next_id = 683
 next_title = ""
 next_body = "Love this #logo\n#head\n#psy"
@@ -53,6 +53,8 @@ date = "2024-05-06"
 
 Uploaded to <https://commons.wikimedia.org/wiki/Category:Coins_of_Algirdas>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-681-5370607650619914944.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-682-5370607650619914945.jpg") }}
+
+❤ 1

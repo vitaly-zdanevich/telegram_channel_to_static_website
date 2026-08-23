@@ -11,7 +11,7 @@ tags = ["alien", "poster", "film", "black_and_white"]
 id = 806
 day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/806"
-og_image = "5350719435192339929_1245811450_460000729.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-806-5350719435192339929.jpg"
 next_id = 808
 next_title = ""
 next_body = "#software\n#tui\n#torrent\nSource"
@@ -56,4 +56,4 @@ date = "2024-06-11"
 
 [Source](https://www.avpgalaxy.net/alien-movies/alien-covenant/gallery/posters/)
 
-{{ img(src="5350719435192339929_1245811450_460000729.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-806-5350719435192339929.jpg") }}

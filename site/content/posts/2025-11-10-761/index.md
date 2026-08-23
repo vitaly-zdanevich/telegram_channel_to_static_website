@@ -11,7 +11,7 @@ tags = ["painting", "bible", "gustave_dore"]
 id = 761
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/761"
-og_image = "5229215222705359837_1217521546_460000221.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-761-5229215222705359837.jpg"
 next_id = 762
 next_title = ""
 next_body = "#painting\n#angel\n#ship\n#gustavedore\nEngraving by Gustave Doré, representing the departure of Aigues-Mortes of Louis IX for the crusade\nSource"
@@ -55,4 +55,4 @@ The Battle of Nicaea
 
 [Source](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_The_Battle_of_Nicaea.jpg)
 
-{{ img(src="5229215222705359837_1217521546_460000221.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-761-5229215222705359837.jpg") }}

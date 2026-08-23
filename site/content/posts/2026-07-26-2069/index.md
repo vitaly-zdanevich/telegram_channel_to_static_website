@@ -17,7 +17,7 @@ next_body = "#psp\n#vita\n#game\nSource"
 prev_id = 2068
 prev_title = ""
 prev_body = "🇬🇪 Very impressed with Georgia.\n🏔 The country is known for its warm people, ancient culture, local food and epic landscapes.\nBut it doesn’t stop there.\n📈 Thanks to its government’s business-friendly policies, Georgia is becoming a major business hub.\n❎️ The country’s economy doubled in 5 years and is still growing by 8% a year.\n💼 International tech companies pay 0% corporate tax and just 5% on dividends and salaries.\nGeorgia is seriously underrated as a place to visit and do business.\nI'll be back very soon! ✈️"
-views = 11
+views = 12
 ids = [2069]
 
 [[extra.related]]

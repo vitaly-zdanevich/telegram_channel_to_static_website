@@ -11,7 +11,7 @@ tags = ["games", "history", "cds", "shop"]
 id = 452
 day = "2025-03-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/452"
-og_image = "5415638411328479718_1260926577_456253926.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-452-5415638411328479718.jpg"
 next_id = 453
 next_title = ""
 next_body = "#chip\nFrom"
@@ -54,4 +54,4 @@ date = "2025-08-09"
 
 From <https://vk.com/randompicc>
 
-{{ img(src="5415638411328479718_1260926577_456253926.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-452-5415638411328479718.jpg") }}

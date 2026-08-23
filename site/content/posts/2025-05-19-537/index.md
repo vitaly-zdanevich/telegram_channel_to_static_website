@@ -11,7 +11,7 @@ tags = ["webdesign", "yandex"]
 id = 537
 day = "2025-05-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/537"
-og_image = "5285325070593553695_1230585638_456258847.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-537-5285325070593553695.jpg"
 next_id = 538
 next_title = ""
 next_body = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb, и немного про dtMediaWiki для Darktable\n#video\n#my\n#commons\nРепозиторий этого моего нового скрипта\nМои скрипты, для Википедии и прочего\nМои темы\nМоя тема для Википедии\nМой тикет про segmentation fault\nМоя тема для Darktable\nПлагин для загрузки в Wikipedia Commons для Darktable"
@@ -50,4 +50,4 @@ date = "2025-07-21"
 {{ tag(t="webdesign") }}  
 {{ tag(t="yandex") }}
 
-{{ img(src="5285325070593553695_1230585638_456258847.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-537-5285325070593553695.jpg") }}

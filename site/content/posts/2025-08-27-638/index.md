@@ -9,7 +9,7 @@ days = ["2025-08-27"]
 id = 638
 day = "2025-08-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/638"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-638-5291747257881853129.jpg"
 next_id = 640
 next_title = ""
 next_body = ""
@@ -20,6 +20,8 @@ views = 29
 ids = [638, 639]
 +++
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-638-5291747257881853129.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-639-5291747257881853130.jpg") }}
+
+😁 1

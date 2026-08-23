@@ -11,7 +11,7 @@ tags = ["ussr"]
 id = 458
 day = "2025-03-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/458"
-og_image = "5415638411328480096_1260926577_456254304.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-458-5415638411328480096.jpg"
 next_id = 460
 next_title = ""
 next_body = "#games\n#igromania\n18 years ago. Golden age?\nSource"
@@ -49,4 +49,4 @@ date = "2026-02-03"
 
 {{ tag(t="ussr") }}
 
-{{ img(src="5415638411328480096_1260926577_456254304.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-458-5415638411328480096.jpg") }}

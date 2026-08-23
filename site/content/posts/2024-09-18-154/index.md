@@ -10,7 +10,7 @@ days = ["2024-09-18"]
 id = 154
 day = "2024-09-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/154"
-og_image = "5431701550360814121_1264666568_456253993.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-154-5431701550360814121.jpg"
 next_id = 155
 next_title = ""
 next_body = "Python in a browser"
@@ -25,4 +25,4 @@ ids = [154]
 
 Every day we are further away from God.
 
-{{ img(src="5431701550360814121_1264666568_456253993.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-154-5431701550360814121.jpg") }}

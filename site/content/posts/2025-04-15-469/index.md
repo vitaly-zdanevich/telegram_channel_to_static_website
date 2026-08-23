@@ -11,7 +11,7 @@ tags = ["archiving"]
 id = 469
 day = "2025-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/469"
-og_image = "5472381565033115392_1274138122_456257280.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-469-5472381565033115392.jpg"
 next_id = 470
 next_title = ""
 next_body = "Source\n#sakartvelo\n#taxes"
@@ -49,4 +49,4 @@ date = "2025-04-18"
 
 Looks what I found - another {{ tag(t="archiving") }} group <https://wiki.archiveteam.org/index.php/Main_Page>
 
-{{ img(src="5472381565033115392_1274138122_456257280.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-469-5472381565033115392.jpg") }}

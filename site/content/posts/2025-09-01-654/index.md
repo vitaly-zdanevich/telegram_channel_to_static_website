@@ -11,7 +11,7 @@ tags = ["russia", "israel", "map"]
 id = 654
 day = "2025-09-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/654"
-og_image = "5307778803134757166_1235813555_456259886.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-654-5307778803134757166.jpg"
 next_id = 655
 next_title = ""
 next_body = "#chatgpt 5:\nEscape shell $ as $$ inside Makefile recipes\n#gemini:\nNo, you should not use RESP=$$() for command substitution. Your original syntax was correct."
@@ -55,4 +55,4 @@ date = "2025-09-10"
 
 <https://en.wikipedia.org/wiki/Jewish_Autonomous_Oblast>
 
-{{ img(src="5307778803134757166_1235813555_456259886.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-654-5307778803134757166.jpg") }}

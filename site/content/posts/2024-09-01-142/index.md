@@ -11,7 +11,7 @@ tags = ["pupups"]
 id = 142
 day = "2024-09-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/142"
-og_image = "5379759332574488213_1252572828_456255125.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-142-5379759332574488213.jpg"
 next_id = 143
 next_title = ""
 next_body = ""
@@ -24,4 +24,4 @@ ids = [142]
 
 {{ tag(t="pupups") }}
 
-{{ img(src="5379759332574488213_1252572828_456255125.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-142-5379759332574488213.jpg") }}

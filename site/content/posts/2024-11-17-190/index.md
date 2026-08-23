@@ -11,7 +11,7 @@ tags = ["game", "stalker2"]
 id = 190
 day = "2024-11-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/190"
-og_image = "5316623884553937355_1237872961_456253899.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-190-5316623884553937355.jpg"
 next_id = 191
 next_title = ""
 next_body = ""
@@ -51,4 +51,4 @@ date = "2025-01-15"
 
 {{ tag(t="game") }} {{ tag(t="stalker2") }}
 
-{{ img(src="5316623884553937355_1237872961_456253899.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-190-5316623884553937355.jpg") }}

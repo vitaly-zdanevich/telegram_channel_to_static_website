@@ -11,7 +11,7 @@ tags = ["valve", "hl2", "rip"]
 id = 473
 day = "2025-04-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/473"
-og_image = "5192688952505657959_1209017111_456256103.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-473-5192688952505657959.jpg"
 next_id = 474
 next_title = ""
 next_body = "#archiving\n#preservation\n#internetarchive\n#jasonscott\n#man\n#hat\n#harddrives\nJason Scott, Internet Archive employee, photo in color\nFrom"
@@ -28,4 +28,4 @@ ids = [473]
 
 <https://multiplayer.it/notizie/e-morto-il-grande-viktor-antonov-lart-director-di-half-life-2-e-dishonored.html>
 
-{{ img(src="5192688952505657959_1209017111_456256103.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-473-5192688952505657959.jpg") }}

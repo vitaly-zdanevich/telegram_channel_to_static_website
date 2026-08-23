@@ -10,7 +10,7 @@ days = ["2024-10-28"]
 id = 171
 day = "2024-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/171"
-og_image = "5258275637146281326_1224287701_456254830.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-171-5258275637146281326.jpg"
 next_id = 172
 next_title = ""
 next_body = "Когда поиграл со шрифтами и проиграл -"
@@ -23,4 +23,6 @@ ids = [171]
 
 The same story
 
-{{ img(src="5258275637146281326_1224287701_456254830.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-171-5258275637146281326.jpg") }}
+
+🙏 1

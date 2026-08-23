@@ -17,7 +17,7 @@ next_body = "#war\nThe #radio broadcasts of Hanoi Hannah during the #vietnamwar\
 prev_id = 2096
 prev_title = ""
 prev_body = "#cat\n#laugh\n#slow\nBy dustythegingercat"
-views = 8
+views = 9
 ids = [2097]
 
 [[extra.related]]

@@ -10,7 +10,7 @@ days = ["2025-11-10"]
 id = 752
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/752"
-og_image = "5229215222705359661_1217521546_460000045.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-752-5229215222705359661.jpg"
 next_id = 753
 next_title = ""
 next_body = "#design\n#webdesign\n#webdesignold\n#xbox"
@@ -25,4 +25,4 @@ Another one is dead - the blue circles ended last month.
 
 [https://ugo.com](https://ugo.com/)
 
-{{ img(src="5229215222705359661_1217521546_460000045.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-752-5229215222705359661.jpg") }}

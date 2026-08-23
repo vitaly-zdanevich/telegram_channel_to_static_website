@@ -11,7 +11,7 @@ tags = ["webdesign", "webdesign_dark", "webdesign_dark_blue", "webdesign_game", 
 id = 788
 day = "2025-11-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/788"
-og_image = "5262600643447294725_1225294695_460000005.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-788-5262600643447294725.jpg"
 next_id = 789
 next_title = ""
 next_body = "#wikipedia\n#ui\n#navigation"
@@ -55,4 +55,4 @@ date = "2025-11-03"
 
 <https://vndb.org/v952>
 
-{{ img(src="5262600643447294725_1225294695_460000005.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-788-5262600643447294725.jpg") }}

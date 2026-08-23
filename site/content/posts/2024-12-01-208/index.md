@@ -23,3 +23,5 @@ ids = [208]
 About games archiving [https://youtu.be/jiTUb2wvX40](<https://youtu.be/jiTUb2wvX40> "Physical Is NOT Preservation")
 
 {{ youtube(id="jiTUb2wvX40") }}
+
+🙏 2

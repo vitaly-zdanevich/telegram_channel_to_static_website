@@ -11,7 +11,7 @@ tags = ["golang", "utf8"]
 id = 657
 day = "2025-09-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/657"
-og_image = "5330235726836661165_1241042215_456260525.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-657-5330235726836661165.jpg"
 next_id = 658
 next_title = ""
 next_body = "В Кутаиси продолжается проект «Mural Fest» 🎨\nВ муниципалитете активно проходит роспись стен. Проект реализуется с 2023 года по инициативе Службы культуры, спорта, образования и молодежи при поддержке мэрии города.\nЗа это время уже расписано более 15 стен при участии известных художников.\n➡️ В этом году, в рамках фестиваля, ставшего уже традицией, были оформлены ещё 4 стены. Муралы органично вписываются в архитектурную среду и туристические маршруты, охватывая:\n➡️элементы фольклора,\n➡️литературные мотивы,\n➡️стилизованный флоральный арт и\n➡️натюрморт.\n👉 Цель проекта — разнообразить визуальный облик города и укрепить культурную атмосферу."
@@ -41,4 +41,6 @@ fmt.Println("Len:", len(s)) // Len: 18
 
 <https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses1>
 
-{{ img(src="5330235726836661165_1241042215_456260525.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-657-5330235726836661165.jpg") }}
+
+😁 1

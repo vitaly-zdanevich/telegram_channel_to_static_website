@@ -11,7 +11,7 @@ tags = ["teapot", "update"]
 id = 446
 day = "2025-03-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/446"
-og_image = "5415638411328479675_1260926577_456253883.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-446-5415638411328479675.jpg"
 next_id = 447
 next_title = ""
 next_body = "#dune\n#ussr\n#mashup\nI do not know who is the author"
@@ -27,4 +27,4 @@ ids = [446]
 
 From <https://vk.com/futureisnow>
 
-{{ img(src="5415638411328479675_1260926577_456253883.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-446-5415638411328479675.jpg") }}

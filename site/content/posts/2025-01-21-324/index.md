@@ -11,7 +11,7 @@ tags = ["embeded"]
 id = 324
 day = "2025-01-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/324"
-og_image = "5463090545749504965_1271974888_456242117.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-325-5463090545749504965.jpg"
 next_id = 326
 next_title = ""
 next_body = "full metal alchemist"
@@ -24,4 +24,4 @@ ids = [324, 325]
 
 {{ tag(t="embeded") }} разработчики и 100 байт
 
-{{ img(src="5463090545749504965_1271974888_456242117.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-325-5463090545749504965.jpg") }}

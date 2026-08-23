@@ -11,7 +11,7 @@ tags = ["hitler", "stalin", "trotsky", "freud"]
 id = 698
 day = "2025-10-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/698"
-og_image = "5413585189327731507_1260448524_456260403.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-698-5413585189327731507.jpg"
 next_id = 699
 next_title = ""
 next_body = "#userscript for #youtube: audio only. Better for #cpu, #battery, #traffic"
@@ -27,4 +27,4 @@ ids = [698]
 [Source](https://www.instagram.com/p/DPeNiP2DDW5)  
 [Source B](https://brilliantmaps.com/vienna-1913-1914/)
 
-{{ img(src="5413585189327731507_1260448524_456260403.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-698-5413585189327731507.jpg") }}

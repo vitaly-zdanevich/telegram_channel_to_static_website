@@ -5,13 +5,12 @@ description = "webdesign wikimedia"
 
 [taxonomies]
 days = ["2025-10-01"]
-tags = ["webdesign", "wikimedia"]
+tags = ["webdesign", "wikimedia", "video"]
 
 [extra]
 id = 693
 day = "2025-10-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/693"
-og_image = "01.jpg"
 next_id = 694
 next_title = ""
 next_body = "#psy\n#success\n#pain\n#cry\n#secret\nSource"
@@ -52,6 +51,6 @@ date = "2025-07-21"
 
 [https://2025strategicreport.wikimedia.org.uk](https://2025strategicreport.wikimedia.org.uk/)
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/693-01.mp4") }}
 
-*▶ video — 1:04*
+{{ tag(t="video") }}

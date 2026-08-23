@@ -11,7 +11,7 @@ tags = ["design"]
 id = 89
 day = "2024-07-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/89"
-og_image = "5229189083530648568_1217515460_456252408.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-89-5229189083530648568.jpg"
 next_id = 90
 next_title = ""
 next_body = ""
@@ -51,4 +51,4 @@ Another good {{ tag(t="design") }}
 
 <https://emersion.fr/blog/2024/status-update-64/>
 
-{{ img(src="5229189083530648568_1217515460_456252408.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-89-5229189083530648568.jpg") }}

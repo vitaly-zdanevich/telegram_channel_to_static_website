@@ -11,7 +11,7 @@ tags = ["ai", "nano_banana"]
 id = 797
 day = "2025-12-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/797"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-797-5323544846398065438.jpg"
 next_id = 799
 next_title = ""
 next_body = "#preservation\n#games\n#beard\nFrom"
@@ -54,6 +54,6 @@ date = "2025-01-01"
 
 [Source](https://t.me/it_laboratory_bar/1/11399)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-797-5323544846398065438.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-798-5323544846398065439.jpg") }}

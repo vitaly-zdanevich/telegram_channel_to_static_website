@@ -9,7 +9,7 @@ days = ["2024-08-22"]
 id = 102
 day = "2024-08-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/102"
-og_image = "5346204754545600747_1244760294_456255723.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-102-5346204754545600747.jpg"
 next_id = 103
 next_title = ""
 next_body = ""
@@ -22,4 +22,4 @@ ids = [102]
 
 <https://moneymuseum.by/ru/collections/bonistika/132125/>
 
-{{ img(src="5346204754545600747_1244760294_456255723.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-102-5346204754545600747.jpg") }}

@@ -11,7 +11,7 @@ tags = ["design"]
 id = 159
 day = "2024-10-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/159"
-og_image = "5202194574125163612_1211230311_456254556.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-159-5202194574125163612.jpg"
 next_id = 160
 next_title = ""
 next_body = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
@@ -49,4 +49,4 @@ date = "2025-11-10"
 
 Wow {{ tag(t="design") }} [https://neon.tech](https://neon.tech/)
 
-{{ img(src="5202194574125163612_1211230311_456254556.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-159-5202194574125163612.jpg") }}

@@ -11,7 +11,7 @@ tags = ["userstyle", "openstreetmap"]
 id = 549
 day = "2025-06-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/549"
-og_image = "5330353748242985818_1241069694_456258394.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-549-5330353748242985818.jpg"
 next_id = 550
 next_title = ""
 next_body = "#music\n#languages mix\n#kraenkova: Slavic Blood\nSource"
@@ -51,4 +51,4 @@ Another {{ tag(t="userstyle") }}: for {{ tag(t="openstreetmap") }}, only a few C
 
 <https://gitlab.com/vitaly-zdanevich-styles/openstreetmap>
 
-{{ img(src="5330353748242985818_1241069694_456258394.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-549-5330353748242985818.jpg") }}

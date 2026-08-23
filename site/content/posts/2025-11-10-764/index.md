@@ -11,7 +11,7 @@ tags = ["painting", "gustave_dore"]
 id = 764
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/764"
-og_image = "5229215222705359874_1217521546_460000258.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-764-5229215222705359874.jpg"
 next_id = 765
 next_title = ""
 next_body = "#painting\n#gustavedore\nWoman of the Apocalypse\nSource"
@@ -52,4 +52,4 @@ date = "2025-11-10"
 
 [Source](https://commons.wikimedia.org/wiki/File:Paul_Gustave_Louis_Christophe_Dor%C3%A9_V.jpg)
 
-{{ img(src="5229215222705359874_1217521546_460000258.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-764-5229215222705359874.jpg") }}

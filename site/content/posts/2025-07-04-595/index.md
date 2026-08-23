@@ -11,7 +11,7 @@ tags = ["preservation", "belarus", "library", "science"]
 id = 595
 day = "2025-07-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/595"
-og_image = "5422520353390981486_1262528904_456257902.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-595-5422520353390981486.jpg"
 next_id = 596
 next_title = ""
 next_body = "My another #userscript: small toggle for #darkmode on #stackexchange\n// ==UserScript==\n// @name StackExchange dark mode work-in-progress\n// @version 2025july4\n// @description From\n// @author daniel.z.tg and Vitaly Zdanevich\n// @match\n// @match\n// @match\n// @match\n// @match\n// @match\n// @run-at document-body\n// ==/UserScript==\n// NOT working for all sites\ndocument.body.classList.add('theme-dark');"
@@ -56,4 +56,4 @@ date = "2025-05-08"
 
 <https://devby.io/news/belwiki>
 
-{{ img(src="5422520353390981486_1262528904_456257902.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-595-5422520353390981486.jpg") }}

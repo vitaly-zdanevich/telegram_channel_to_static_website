@@ -11,7 +11,7 @@ tags = ["wifi", "child", "autism", "sick", "health"]
 id = 508
 day = "2025-05-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/508"
-og_image = "5251537555013365162_1222718869_456256938.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-508-5251537555013365162.jpg"
 next_id = 509
 next_title = ""
 next_body = "#health\n#science"
@@ -53,4 +53,4 @@ date = "2026-08-02"
 {{ tag(t="sick") }}  
 {{ tag(t="health") }}
 
-{{ img(src="5251537555013365162_1222718869_456256938.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-508-5251537555013365162.jpg") }}

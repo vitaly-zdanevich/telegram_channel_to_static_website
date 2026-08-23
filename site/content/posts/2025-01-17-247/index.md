@@ -15,8 +15,10 @@ next_body = ""
 prev_id = 246
 prev_title = ""
 prev_body = "#game\n#man2"
-views = 72
+views = 73
 ids = [247]
 +++
 
 <https://coub.com/view/tgmz5>
+
+🙏 1

@@ -11,7 +11,7 @@ tags = ["wikipedia", "mediawiki", "mdn", "reddit"]
 id = 82
 day = "2024-06-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/82"
-og_image = "5190535735076315675_1208515776_456253979.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-82-5190535735076315675.jpg"
 next_id = 83
 next_title = ""
 next_body = "Local (off-the-grid) social network with chat, on #blockchain (so you cannot edit your messages), looks like abandoned\nYou can use this without internet."
@@ -53,4 +53,4 @@ It can be just a few lines - like 𝑖𝑓 𝑦𝑜𝑢 ℎ𝑎𝑣𝑒 𝑡ℎ�
 
 Not {{ tag(t="reddit") }} - their user content license is not clear.
 
-{{ img(src="5190535735076315675_1208515776_456253979.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-82-5190535735076315675.jpg") }}

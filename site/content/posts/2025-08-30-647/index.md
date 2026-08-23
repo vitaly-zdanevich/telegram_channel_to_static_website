@@ -5,13 +5,12 @@ description = "film music russia korolishut s1e5, scene about a new girl Olga"
 
 [taxonomies]
 days = ["2025-08-30"]
-tags = ["film", "music", "russia", "korol_i_shut"]
+tags = ["film", "music", "russia", "korol_i_shut", "video"]
 
 [extra]
 id = 647
 day = "2025-08-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/647"
-og_image = "01.jpg"
 next_id = 648
 next_title = ""
 next_body = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы\n#game\n#homm3\n#hornoftheabyss"
@@ -56,6 +55,6 @@ s1e5, scene about a new girl Olga
 
 [https://ru.wikipedia.org/wiki/Король\_и\_Шут\_(сериал)](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%B8_%D0%A8%D1%83%D1%82_(%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB))
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/647-01.mp4") }}
 
-*▶ video — 3:08*
+{{ tag(t="video") }}

@@ -17,7 +17,7 @@ next_body = "#health\n#духота\n#kozhemiako\nSource"
 prev_id = 2110
 prev_title = ""
 prev_body = "#drug\n#ayahuasca\n#lake\nBy allavolkogon"
-views = 32
+views = 34
 ids = [2111]
 +++
 

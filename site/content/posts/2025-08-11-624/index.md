@@ -11,7 +11,7 @@ tags = ["ai", "llm", "ddos"]
 id = 624
 day = "2025-08-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/624"
-og_image = "5246841888743486844_1221625574_456258940.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-624-5246841888743486844.jpg"
 next_id = 625
 next_title = ""
 next_body = "#moneymuseum\n#money\n#rubles\nSource"
@@ -51,4 +51,4 @@ date = "2025-01-10"
 {{ tag(t="llm") }}  
 {{ tag(t="ddos") }}
 
-{{ img(src="5246841888743486844_1221625574_456258940.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-624-5246841888743486844.jpg") }}

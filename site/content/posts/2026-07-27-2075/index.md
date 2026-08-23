@@ -17,7 +17,7 @@ next_body = "What a nice #arabic #logo"
 prev_id = 2074
 prev_title = ""
 prev_body = "#anime\n#war\n#ground\nSource"
-views = 11
+views = 13
 ids = [2075]
 
 [[extra.related]]

@@ -11,7 +11,7 @@ tags = ["universe", "consciousness"]
 id = 409
 day = "2025-03-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/409"
-og_image = "5375405086139870811_1251559026_456257115.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-409-5375405086139870811.jpg"
 next_id = 410
 next_title = ""
 next_body = "Girl with a Pearl Earring\n#art\nArtwork by Olga Pavolga Shot by Thatch John Yuyi “Will We Be Safer” by Glen Wexler Painting by Nigel Van Wieck Photography by Sebastian Sellner\nSource"
@@ -32,4 +32,6 @@ date = "2025-10-22"
 
 [Source](https://x.com/ArseniosMarkos/status/1831799696731599018)
 
-{{ img(src="5375405086139870811_1251559026_456257115.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-409-5375405086139870811.jpg") }}
+
+👍 1

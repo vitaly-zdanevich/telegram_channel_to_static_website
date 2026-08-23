@@ -10,7 +10,7 @@ days = ["2025-05-06"]
 id = 501
 day = "2025-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/501"
-og_image = "5249437337480459705_1222229874_456259001.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-501-5249437337480459705.jpg"
 next_id = 502
 next_title = ""
 next_body = "#psy\n#lasers\n#girl\nSource"
@@ -23,4 +23,4 @@ ids = [501]
 
 [Source](https://www.facebook.com/photo/?fbid=1034520975501571&amp;set=a.513365550950452)
 
-{{ img(src="5249437337480459705_1222229874_456259001.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-501-5249437337480459705.jpg") }}

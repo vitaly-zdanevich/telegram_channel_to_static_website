@@ -11,14 +11,14 @@ tags = ["webdesign"]
 id = 226
 day = "2024-12-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/226"
-og_image = "5444996905093424600_1267762134_456254936.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-226-5444996905093424600.jpg"
 next_id = 232
 next_title = ""
 next_body = "Its real"
 prev_id = 225
 prev_title = ""
 prev_body = "#webdesign"
-views = 49
+views = 50
 ids = [226]
 
 [[extra.related]]
@@ -49,4 +49,6 @@ date = "2025-07-21"
 
 {{ tag(t="webdesign") }} <https://handbookhmm.ru/nwcomputing/fullgraf/fullgraf.html>
 
-{{ img(src="5444996905093424600_1267762134_456254936.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-226-5444996905093424600.jpg") }}
+
+🙏 1

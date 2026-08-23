@@ -11,7 +11,7 @@ tags = ["design", "design_old", "ui", "audio_player"]
 id = 749
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/749"
-og_image = "5226963422891676071_1216997258_460001703.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-749-5226963422891676071.jpg"
 next_id = 750
 next_title = ""
 next_body = "Don Quixote by #gustavedore, 1863 year\n#painting\n#horse\n#sky\nSource"
@@ -54,4 +54,4 @@ date = "2025-11-10"
 
 From <https://www.facebook.com/photo/?fbid=1254156130076725>
 
-{{ img(src="5226963422891676071_1216997258_460001703.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-749-5226963422891676071.jpg") }}

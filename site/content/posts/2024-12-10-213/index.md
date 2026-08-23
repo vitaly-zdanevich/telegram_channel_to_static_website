@@ -11,14 +11,14 @@ tags = ["ad"]
 id = 213
 day = "2024-12-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/213"
-og_image = "5384454698196658644_1253666053_456255956.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-213-5384454698196658644.jpg"
 next_id = 214
 next_title = ""
 next_body = "My first #lutris install script"
 prev_id = 212
 prev_title = ""
 prev_body = ""
-views = 51
+views = 52
 ids = [213]
 
 [[extra.related]]
@@ -49,4 +49,6 @@ date = "2026-02-18"
 
 {{ tag(t="ad") }}
 
-{{ img(src="5384454698196658644_1253666053_456255956.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-213-5384454698196658644.jpg") }}
+
+🙏 1

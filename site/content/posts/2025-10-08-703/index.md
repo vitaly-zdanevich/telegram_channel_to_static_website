@@ -10,7 +10,7 @@ days = ["2025-10-08"]
 id = 703
 day = "2025-10-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/703"
-og_image = "5418294831421193355_1261545073_456260747.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-703-5418294831421193355.jpg"
 next_id = 704
 next_title = ""
 next_body = "#culture\n#archivation\n#future\n#green\n#research\nSource"
@@ -25,4 +25,4 @@ ids = [703]
 
 Photo my, from [Safranbolu](https://tr.wikipedia.org/wiki/Safranbolu)
 
-{{ img(src="5418294831421193355_1261545073_456260747.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-703-5418294831421193355.jpg") }}

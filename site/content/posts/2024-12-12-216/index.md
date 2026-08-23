@@ -11,14 +11,14 @@ tags = ["man2"]
 id = 216
 day = "2024-12-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/216"
-og_image = "5390848993967337299_1255154841_456257363.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-216-5390848993967337299.jpg"
 next_id = 217
 next_title = ""
 next_body = ""
 prev_id = 215
 prev_title = ""
 prev_body = "#belarus"
-views = 47
+views = 48
 ids = [216]
 
 [[extra.related]]
@@ -39,4 +39,6 @@ date = "2024-12-14"
 
 {{ tag(t="man2") }}
 
-{{ img(src="5390848993967337299_1255154841_456257363.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-216-5390848993967337299.jpg") }}
+
+🙏 1

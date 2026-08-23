@@ -18,7 +18,7 @@ next_body = "#abandoned\n#veterinary\n#belarus\nSource"
 prev_id = 2075
 prev_title = ""
 prev_body = "#animal\n#mouse\n#grass\n#ground\n#watering\n#cares\nSource"
-views = 10
+views = 11
 ids = [2076]
 
 [[extra.related]]

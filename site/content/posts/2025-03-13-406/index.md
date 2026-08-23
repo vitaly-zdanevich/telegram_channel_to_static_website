@@ -11,7 +11,7 @@ tags = ["health", "science", "references", "source", "walk", "chad"]
 id = 406
 day = "2025-03-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/406"
-og_image = "5375405086139870431_1251559026_456256735.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-406-5375405086139870431.jpg"
 next_id = 407
 next_title = ""
 next_body = "#health\n#food\nSource"
@@ -54,4 +54,4 @@ date = "2026-08-02"
 {{ tag(t="walk") }}  
 {{ tag(t="chad") }}
 
-{{ img(src="5375405086139870431_1251559026_456256735.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-406-5375405086139870431.jpg") }}

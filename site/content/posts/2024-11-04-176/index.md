@@ -5,13 +5,12 @@ description = "vr"
 
 [taxonomies]
 days = ["2024-11-04"]
-tags = ["vr"]
+tags = ["vr", "video"]
 
 [extra]
 id = 176
 day = "2024-11-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/176"
-og_image = "01.jpg"
 next_id = 177
 next_title = ""
 next_body = ""
@@ -34,6 +33,8 @@ date = "2024-10-13"
 
 {{ tag(t="vr") }}
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/176-01.mov") }}
 
-*▶ video — 0:29*
+🙏 1
+
+{{ tag(t="video") }}

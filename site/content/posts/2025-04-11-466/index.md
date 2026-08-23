@@ -11,7 +11,7 @@ tags = ["fine", "responsibility"]
 id = 466
 day = "2025-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/466"
-og_image = "5463124415861617678_1271982774_456258574.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-466-5463124415861617678.jpg"
 next_id = 467
 next_title = ""
 next_body = "Пройти тест, узнай кто ты\n#psy\n#old\n#test\nSource"
@@ -27,4 +27,4 @@ ids = [466]
 
 [Source](https://mastodon.social/@Green_Footballs/112283841234171790)
 
-{{ img(src="5463124415861617678_1271982774_456258574.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-466-5463124415861617678.jpg") }}

@@ -11,7 +11,7 @@ tags = ["няшка"]
 id = 381
 day = "2025-02-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/381"
-og_image = "5330382915365889174_1241076485_456254614.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-381-5330382915365889174.jpg"
 next_id = 382
 next_title = ""
 next_body = "Source"
@@ -24,4 +24,6 @@ ids = [381]
 
 {{ tag(t="няшка") }}
 
-{{ img(src="5330382915365889174_1241076485_456254614.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-381-5330382915365889174.jpg") }}
+
+🥰 1

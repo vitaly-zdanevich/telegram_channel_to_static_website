@@ -11,7 +11,7 @@ tags = ["ventoy"]
 id = 599
 day = "2025-07-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/599"
-og_image = "5462915113515351326_1271934042_456260894.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-599-5462915113515351326.jpg"
 next_id = 600
 next_title = ""
 next_body = "#religion\n#architecture\n#church\n#germany\nSource"
@@ -28,4 +28,4 @@ And it faster to boot than `dd` because ISOs are compressed.
 
 <https://www.ventoy.net/en/index.html>
 
-{{ img(src="5462915113515351326_1271934042_456260894.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-599-5462915113515351326.jpg") }}

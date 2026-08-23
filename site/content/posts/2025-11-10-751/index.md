@@ -11,7 +11,7 @@ tags = ["design", "webdesign", "webdesign_old"]
 id = 751
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/751"
-og_image = "5229215222705359631_1217521546_460000015.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-751-5229215222705359631.jpg"
 next_id = 752
 next_title = ""
 next_body = "Another one is dead - the blue circles ended last month."
@@ -53,4 +53,6 @@ date = "2025-11-13"
 
 <https://web.archive.org/web/20020330010106/http://gamepen.ugo.com/>
 
-{{ img(src="5229215222705359631_1217521546_460000015.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-751-5229215222705359631.jpg") }}
+
+🔥 1

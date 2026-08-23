@@ -11,7 +11,7 @@ tags = ["wikipedia"]
 id = 201
 day = "2024-11-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/201"
-og_image = "5343870641683687785_1244216841_456255849.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-201-5343870641683687785.jpg"
 next_id = 202
 next_title = ""
 next_body = "My #photo from 2012, for the defunct website of naked #cats\n#eyes"
@@ -51,4 +51,6 @@ date = "2026-02-11"
 
 <https://commons.wikimedia.org/wiki/Category:Magna_Carta_(An_Embroidery)>
 
-{{ img(src="5343870641683687785_1244216841_456255849.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-201-5343870641683687785.jpg") }}
+
+👍 1

@@ -11,7 +11,7 @@ tags = ["pelevin", "apple", "buddhism"]
 id = 385
 day = "2025-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/385"
-og_image = "5336993870761815093_1242615718_456256565.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-385-5336993870761815093.jpg"
 next_id = 386
 next_title = ""
 next_body = "Released opera 2084"
@@ -46,4 +46,4 @@ date = "2025-05-08"
 {{ tag(t="apple") }}  
 {{ tag(t="buddhism") }}
 
-{{ img(src="5336993870761815093_1242615718_456256565.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-385-5336993870761815093.jpg") }}

@@ -11,7 +11,7 @@ tags = ["games", "sega_genesis", "neo_geo", "year_1991"]
 id = 770
 day = "2025-11-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/770"
-og_image = "5233719668441288226_1218570319_460000802.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-770-5233719668441288226.jpg"
 next_id = 771
 next_title = ""
 next_body = "#webdesign\n#webdesignold\n#xbox\nWikidata\nSource"
@@ -56,4 +56,4 @@ date = "2025-06-26"
 
 [Source](https://web.archive.org/web/20090213071630/http://www.gamebrink.com/wp-content/uploads/2008/05/snkletter.jpg)
 
-{{ img(src="5233719668441288226_1218570319_460000802.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-770-5233719668441288226.jpg") }}

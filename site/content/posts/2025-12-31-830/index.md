@@ -11,7 +11,7 @@ tags = ["solar_system", "planets", "year_1872"]
 id = 830
 day = "2025-12-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/830"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-830-5379792223437787188.jpg"
 next_id = 832
 next_title = ""
 next_body = "#language\nВе́псский язы́к (самоназвание — vepsän kel') — язык вепсов, входящий в северную подветвь прибалтийско-финских языков финно-угорской ветви уральской языковой семьи\nSource"
@@ -33,6 +33,6 @@ date = "2025-12-31"
 
 [Page 18](https://commons.wikimedia.org/wiki/File:%D0%96%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B5_%D0%BE%D0%B1%D0%BE%D0%B7%D1%80%D0%B5%D0%BD%D0%B8%D0%B5_1872_-_1873.pdf)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-830-5379792223437787188.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-831-5379792223437787187.jpg") }}

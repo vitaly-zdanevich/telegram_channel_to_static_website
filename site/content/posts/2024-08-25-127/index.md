@@ -9,7 +9,7 @@ days = ["2024-08-25"]
 id = 127
 day = "2024-08-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/127"
-og_image = "5357560278709034619_1247404208_456253051.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-127-5357560278709034619.jpg"
 next_id = 128
 next_title = ""
 next_body = "suno.com is great - the best service for songs generation. Supports russian too.\nOriginal song and #ai generated"
@@ -20,4 +20,4 @@ views = 34
 ids = [127]
 +++
 
-{{ img(src="5357560278709034619_1247404208_456253051.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-127-5357560278709034619.jpg") }}

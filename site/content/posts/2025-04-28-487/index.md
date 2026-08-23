@@ -11,7 +11,7 @@ tags = ["trump", "batumi"]
 id = 487
 day = "2025-04-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/487"
-og_image = "https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/media/9572b5c8870ce531.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-487-5221952308450037653.jpg"
 next_id = 488
 next_title = ""
 next_body = "wow\n#foss"
@@ -50,4 +50,4 @@ date = "2026-05-04"
 {{ tag(t="trump") }}  
 {{ tag(t="batumi") }}
 
-{{ img(src="https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/media/9572b5c8870ce531.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-487-5221952308450037653.jpg") }}

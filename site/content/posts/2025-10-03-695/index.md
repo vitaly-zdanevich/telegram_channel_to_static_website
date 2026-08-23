@@ -11,7 +11,7 @@ tags = ["journal"]
 id = 695
 day = "2025-10-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/695"
-og_image = "5404768918549166216_1258395826_456259720.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-695-5404768918549166216.jpg"
 next_id = 696
 next_title = ""
 next_body = "#film\n#scifi\nLove, Death & Robots: fan mashup of s1ep7 Beyond the Aquila Rift\nSource ❤️☠️🤖\")"
@@ -33,4 +33,6 @@ After traveling through multiple countries, I feel that I prefer video games, bo
 
 Some people love to travel so much...
 
-{{ img(src="5404768918549166216_1258395826_456259720.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-695-5404768918549166216.jpg") }}
+
+💔 1

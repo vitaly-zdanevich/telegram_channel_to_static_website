@@ -11,7 +11,7 @@ tags = ["belarus", "history", "lost", "offline"]
 id = 523
 day = "2025-05-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/523"
-og_image = "5264726708089649051_1225789708_456259483.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-523-5264726708089649051.jpg"
 next_id = 524
 next_title = ""
 next_body = ""
@@ -54,4 +54,4 @@ date = "2026-01-08"
 
 <https://globustut.by/type_tn_lost.htm?s=-fullobject>
 
-{{ img(src="5264726708089649051_1225789708_456259483.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-523-5264726708089649051.jpg") }}

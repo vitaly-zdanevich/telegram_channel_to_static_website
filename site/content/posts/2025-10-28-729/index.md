@@ -11,7 +11,7 @@ tags = ["metacritic", "wikidata"]
 id = 729
 day = "2025-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/729"
-og_image = "5190885594522320570_1208597234_456261306.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-729-5190885594522320570.jpg"
 next_id = 730
 next_title = ""
 next_body = "#sakartvelo\n#batumi\n#misha\n#trump"
@@ -49,4 +49,4 @@ date = "2026-02-01"
 
 I continue to write my script for importing ratings from {{ tag(t="metacritic") }} reviewers, creating {{ tag(t="wikidata") }} items for sites that no longer exists, and trying to download these dead sites from [web.archive.org](http://web.archive.org/) so that I can later put them on Gitlab’s free static hosting, because there is no content search on [web.archive.org](http://web.archive.org/)
 
-{{ img(src="5190885594522320570_1208597234_456261306.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-729-5190885594522320570.jpg") }}

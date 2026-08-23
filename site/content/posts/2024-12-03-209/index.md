@@ -11,7 +11,7 @@ tags = ["license"]
 id = 209
 day = "2024-12-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/209"
-og_image = "5366158232004978363_1249406075_456255163.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-209-5366158232004978363.jpg"
 next_id = 210
 next_title = ""
 next_body = "Reminder about data preservation"
@@ -25,4 +25,6 @@ ids = [209]
 {{ tag(t="license") }}  
 <https://pkg.go.dev/sync?tab=licenses>
 
-{{ img(src="5366158232004978363_1249406075_456255163.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-209-5366158232004978363.jpg") }}
+
+🙏 1

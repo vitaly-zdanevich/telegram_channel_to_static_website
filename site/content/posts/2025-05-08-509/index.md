@@ -11,7 +11,7 @@ tags = ["health", "science"]
 id = 509
 day = "2025-05-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/509"
-og_image = "5251285917174461941_1222660280_456259061.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-509-5251285917174461941.jpg"
 next_id = 510
 next_title = ""
 next_body = "#packagemanager\n#appimage\nFor example portable #git in a single file"
@@ -50,4 +50,4 @@ date = "2025-06-26"
 {{ tag(t="health") }}  
 {{ tag(t="science") }}
 
-{{ img(src="5251285917174461941_1222660280_456259061.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-509-5251285917174461941.jpg") }}

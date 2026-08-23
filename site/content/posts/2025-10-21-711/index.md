@@ -11,7 +11,7 @@ tags = ["games", "steam"]
 id = 711
 day = "2025-10-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/711"
-og_image = "5458701707648302947_1270953032_456261475.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-711-5458701707648302947.jpg"
 next_id = 712
 next_title = ""
 next_body = "#webdesign, 2696 game reviews on\nWorking from 2001\n4.26k subscribers on YouTube\n#games"
@@ -52,4 +52,4 @@ date = "2026-03-21"
 
 <https://www.gamesradar.com/games/over-5-000-games-released-on-steam-this-year-didnt-make-enough-money-to-recover-the-usd100-fee-to-put-a-game-on-valves-store-research-estimates>
 
-{{ img(src="5458701707648302947_1270953032_456261475.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-711-5458701707648302947.jpg") }}

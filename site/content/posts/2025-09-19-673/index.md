@@ -11,7 +11,7 @@ tags = ["mem", "mem_it", "kubernetes", "art", "mona_lisa", "sexy"]
 id = 673
 day = "2025-09-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/673"
-og_image = "5364054960750329725_1248916369_456261501.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-673-5364054960750329725.jpg"
 next_id = 674
 next_title = ""
 next_body = "#telegram with wide messages"
@@ -56,4 +56,4 @@ date = "2026-08-09"
 
 *Kubernetes in my day-to-day life VS how it was sold to me*
 
-{{ img(src="5364054960750329725_1248916369_456261501.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-673-5364054960750329725.jpg") }}

@@ -11,7 +11,7 @@ tags = ["die_antwoord"]
 id = 435
 day = "2025-03-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/435"
-og_image = "5384349651886533522_1253641595_456256402.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-435-5384349651886533522.jpg"
 next_id = 436
 next_title = ""
 next_body = "#dieantwoord\nSource"
@@ -41,4 +41,4 @@ date = "2025-03-17"
 
 [Source](https://en.wikipedia.org/wiki/Mount_Ninji_and_da_Nice_Time_Kid)
 
-{{ img(src="5384349651886533522_1253641595_456256402.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-435-5384349651886533522.jpg") }}

@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 565
 day = "2025-06-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/565"
-og_image = "5350564279495028516_1245775325_456257316.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-565-5350564279495028516.jpg"
 next_id = 566
 next_title = ""
 next_body = "My new #darkmode: numbeo.com"
@@ -51,4 +51,4 @@ date = "2025-07-21"
 
 [https://tenebrae.sourceforge.net](https://tenebrae.sourceforge.net/)
 
-{{ img(src="5350564279495028516_1245775325_456257316.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-565-5350564279495028516.jpg") }}

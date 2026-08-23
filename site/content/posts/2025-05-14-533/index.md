@@ -11,7 +11,7 @@ tags = ["photo", "babruysk"]
 id = 533
 day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/533"
-og_image = "5271908782466788849_1227461915_456257009.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-533-5271908782466788849.jpg"
 next_id = 534
 next_title = ""
 next_body = "From globustut.by\n#photo\n#babruysk"
@@ -52,4 +52,4 @@ From [globustut.by](http://globustut.by/)
 {{ tag(t="photo") }}  
 {{ tag(t="babruysk") }}
 
-{{ img(src="5271908782466788849_1227461915_456257009.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-533-5271908782466788849.jpg") }}

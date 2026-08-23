@@ -11,7 +11,7 @@ tags = ["ukraine", "mariupol", "architecture", "building", "war"]
 id = 817
 day = "2025-12-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/817"
-og_image = "5366212030769073340_1249418601_460000444.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-817-5366212030769073340.jpg"
 next_id = 818
 next_title = ""
 next_body = "#pypi\n#donation"
@@ -55,4 +55,6 @@ date = "2026-07-27"
 
 [Source](https://www.pinterest.com/pin/109001253476493132)
 
-{{ img(src="5366212030769073340_1249418601_460000444.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-817-5366212030769073340.jpg") }}
+
+😨 2

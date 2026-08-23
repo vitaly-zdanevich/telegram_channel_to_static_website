@@ -11,14 +11,14 @@ tags = ["LLM", "КогнитивныеИскажения", "Политическ
 id = 238
 day = "2025-01-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/238"
-og_image = "5429357657858367725_1264120838_456253677.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-238-5429357657858367725.jpg"
 next_id = 239
 next_title = ""
 next_body = ""
 prev_id = 237
 prev_title = ""
 prev_body = "#ai"
-views = 49
+views = 50
 forwarded_from = "Малоизвестное интересное"
 forwarded_from_url = "https://t.me/theworldisnoteasy/2010"
 ids = [238]
@@ -42,4 +42,6 @@ ids = [238]
 
 {{ tag(t="LLM") }} {{ tag(t="КогнитивныеИскажения") }} {{ tag(t="ПолитическаяПредвзятость") }}
 
-{{ img(src="5429357657858367725_1264120838_456253677.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-238-5429357657858367725.jpg") }}
+
+🙏 1

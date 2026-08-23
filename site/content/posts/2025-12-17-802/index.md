@@ -11,7 +11,7 @@ tags = ["logo"]
 id = 802
 day = "2025-12-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/802"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-802-5339097833509948324.jpg"
 next_id = 804
 next_title = ""
 next_body = "#history\n#batumi\n#countries"
@@ -51,6 +51,6 @@ Love this {{ tag(t="logo") }}
 
 [https://lugera.sk](https://lugera.sk/)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-802-5339097833509948324.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-803-5339097833509948325.jpg") }}

@@ -11,7 +11,7 @@ tags = ["bilibili", "anime", "webdesign", "stream", "ui"]
 id = 513
 day = "2025-05-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/513"
-og_image = "5258181706211520137_1224265831_456257161.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-513-5258181706211520137.jpg"
 next_id = 514
 next_title = ""
 next_body = "#image\n#archiving\nSource"
@@ -53,4 +53,4 @@ date = "2026-03-07"
 {{ tag(t="stream") }}  
 {{ tag(t="ui") }}
 
-{{ img(src="5258181706211520137_1224265831_456257161.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-513-5258181706211520137.jpg") }}

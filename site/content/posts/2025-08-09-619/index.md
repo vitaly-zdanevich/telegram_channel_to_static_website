@@ -11,7 +11,7 @@ tags = ["money", "moneymuseum"]
 id = 619
 day = "2025-08-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/619"
-og_image = "5240341610359812839_1220112110_456258279.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-619-5240341610359812839.jpg"
 next_id = 620
 next_title = ""
 next_body = "#money\n#ussr\n#design\nSource.png)"
@@ -54,4 +54,4 @@ Returned to uploading of artifacts from [moneymuseum.by](http://moneymuseum.by/)
 
 [Source](https://commons.wikimedia.org/wiki/File:250-rouble_note_of_Russia,_Azerbaijan_1919_-_back.jpg)
 
-{{ img(src="5240341610359812839_1220112110_456258279.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-619-5240341610359812839.jpg") }}

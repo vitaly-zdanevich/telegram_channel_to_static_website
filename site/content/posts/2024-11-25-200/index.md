@@ -9,7 +9,7 @@ days = ["2024-11-25"]
 id = 200
 day = "2024-11-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/200"
-og_image = "5341337328238585385_1243627008_456255017.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-200-5341337328238585385.jpg"
 next_id = 201
 next_title = ""
 next_body = "#wikipedia"
@@ -22,4 +22,4 @@ ids = [200]
 
 <https://en.wikiquote.org/wiki/Firefly_(TV_series)>
 
-{{ img(src="5341337328238585385_1243627008_456255017.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-200-5341337328238585385.jpg") }}

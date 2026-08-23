@@ -17,7 +17,7 @@ next_body = "#mem\n#evolution\n#monkey\n#spaceship\nSource"
 prev_id = 2126
 prev_title = ""
 prev_body = "#mem\n#gift\n#weapon\nSource"
-views = 7
+views = 12
 ids = [2127]
 
 [[extra.related]]

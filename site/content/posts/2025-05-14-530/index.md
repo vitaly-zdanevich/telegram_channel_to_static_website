@@ -11,7 +11,7 @@ tags = ["upload", "commons", "darktable"]
 id = 530
 day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/530"
-og_image = "5269559087463524741_1226914834_456255877.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-530-5269559087463524741.jpg"
 next_id = 531
 next_title = ""
 next_body = "Looks like photos of every street"
@@ -49,4 +49,6 @@ date = "2026-02-11"
 
 You can {{ tag(t="upload") }} to {{ tag(t="commons") }} through {{ tag(t="darktable") }} with this [free plugin](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 100% · 92 commits · 3 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-07-26")
 
-{{ img(src="5269559087463524741_1226914834_456255877.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-530-5269559087463524741.jpg") }}
+
+🔥 1

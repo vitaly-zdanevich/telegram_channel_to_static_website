@@ -9,15 +9,17 @@ days = ["2024-12-13"]
 id = 217
 day = "2024-12-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/217"
-og_image = "5397778232209697377_1256768180_456256097.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-217-5397778232209697377.jpg"
 next_id = 219
 next_title = ""
 next_body = "My second #lutris yaml for #man2"
 prev_id = 216
 prev_title = ""
 prev_body = "#man2"
-views = 49
+views = 50
 ids = [217]
 +++
 
-{{ img(src="5397778232209697377_1256768180_456256097.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-217-5397778232209697377.jpg") }}
+
+🙏 1

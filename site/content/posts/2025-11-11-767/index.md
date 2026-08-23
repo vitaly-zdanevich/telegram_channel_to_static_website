@@ -11,7 +11,7 @@ tags = ["webdesign", "webdesign_old"]
 id = 767
 day = "2025-11-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/767"
-og_image = "5228869099880911243_1217440958_460001675.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-767-5228869099880911243.jpg"
 next_id = 768
 next_title = ""
 next_body = "#webdesign\n#webdesignold"
@@ -52,4 +52,6 @@ date = "2025-11-10"
 
 <https://web.archive.org/web/20080509195658/http://www.thewiire.com/review/384/3/SEGA_Bass_Fishing>
 
-{{ img(src="5228869099880911243_1217440958_460001675.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-767-5228869099880911243.jpg") }}
+
+🔥 1

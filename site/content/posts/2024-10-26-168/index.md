@@ -10,7 +10,7 @@ days = ["2024-10-26"]
 id = 168
 day = "2024-10-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/168"
-og_image = "5253985385724372153_1223288799_456254649.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-168-5253985385724372153.jpg"
 next_id = 169
 next_title = ""
 next_body = "bilibili.com capcha"
@@ -23,4 +23,6 @@ ids = [168]
 
 We are loosing the data
 
-{{ img(src="5253985385724372153_1223288799_456254649.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-168-5253985385724372153.jpg") }}
+
+🙏 1

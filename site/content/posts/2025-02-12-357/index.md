@@ -11,7 +11,7 @@ tags = ["gui", "cli"]
 id = 357
 day = "2025-02-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/357"
-og_image = "5287392410151806114_1231066978_456254626.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-357-5287392410151806114.jpg"
 next_id = 358
 next_title = ""
 next_body = "#ui\n#button\n#css\nFuck minimalism"
@@ -50,4 +50,4 @@ date = "2026-02-20"
 {{ tag(t="gui") }}  
 {{ tag(t="cli") }}
 
-{{ img(src="5287392410151806114_1231066978_456254626.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-357-5287392410151806114.jpg") }}

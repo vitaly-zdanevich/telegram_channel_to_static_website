@@ -11,7 +11,7 @@ tags = ["gitlab", "cron"]
 id = 87
 day = "2024-07-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/87"
-og_image = "5219778561077009585_1215324402_456252593.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-87-5219778561077009585.jpg"
 next_id = 88
 next_title = ""
 next_body = "Меньше митингов"
@@ -49,4 +49,4 @@ date = "2026-01-18"
 
 Wow {{ tag(t="gitlab") }} has a {{ tag(t="cron") }}...
 
-{{ img(src="5219778561077009585_1215324402_456252593.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-87-5219778561077009585.jpg") }}

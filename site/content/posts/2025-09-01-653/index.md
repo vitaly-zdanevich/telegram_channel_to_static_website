@@ -11,7 +11,7 @@ tags = ["wikimedia_foundation", "money"]
 id = 653
 day = "2025-09-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/653"
-og_image = "5307778803134757101_1235813555_456259821.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-653-5307778803134757101.jpg"
 next_id = 654
 next_title = ""
 next_body = "#russia\n#israel\n#map\nSource"
@@ -52,4 +52,4 @@ date = "2026-06-13"
 
 [Source](https://en.wikipedia.org/wiki/Wikimedia_Foundation)
 
-{{ img(src="5307778803134757101_1235813555_456259821.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-653-5307778803134757101.jpg") }}

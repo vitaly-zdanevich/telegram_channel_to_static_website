@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 205
 day = "2024-11-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/205"
-og_image = "5359558941740230768_1247869558_456255600.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-205-5359558941740230768.jpg"
 next_id = 206
 next_title = ""
 next_body = "#mem\n#games"
@@ -50,4 +50,4 @@ date = "2025-07-21"
 {{ tag(t="webdesign") }}  
 [https://homeoftheunderdogs.net](https://homeoftheunderdogs.net/)
 
-{{ img(src="5359558941740230768_1247869558_456255600.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-205-5359558941740230768.jpg") }}

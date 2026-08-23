@@ -10,7 +10,7 @@ days = ["2024-08-24"]
 id = 116
 day = "2024-08-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/116"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-116-5352634866048557381.jpg"
 next_id = 124
 next_title = ""
 next_body = ""
@@ -23,18 +23,20 @@ ids = [116, 117, 118, 119, 120, 121, 122, 123]
 
 Not my.
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-116-5352634866048557381.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-117-5354839923733159174.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-118-5352634866048557382.jpg") }}
 
-{{ img(src="https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/media/11a7fd52e3dd742e.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-119-5354839923733159173.jpg") }}
 
-{{ img(src="https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/media/11a7fd52e3dd742e.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-120-5354839923733159173.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-121-5352831476766466396.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-122-5352634866048557383.jpg") }}
 
-{{ img(src="08.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-123-5352831476766466398.jpg") }}
+
+😁 2

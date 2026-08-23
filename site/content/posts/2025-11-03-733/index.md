@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 733
 day = "2025-11-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/733"
-og_image = "5208830539119400265_1212775367_460002633.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-733-5208830539119400265.jpg"
 next_id = 734
 next_title = ""
 next_body = "#my\n#video\n#game\n#strategy\n#homm3\n#hota\n#onebadday\nHeroes of Might and Magic 3: map \"One Bad Day\": hard, 2 people VS AI, defeat\nNo comments.\nHorn of the Abyss 1.7.1\nPlaying through Conty on Gentoo Linux no-multilib profile\nYouTube"
@@ -51,4 +51,4 @@ date = "2025-06-10"
 
 [https://unicornjelly.com](https://unicornjelly.com/)
 
-{{ img(src="5208830539119400265_1212775367_460002633.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-733-5208830539119400265.jpg") }}

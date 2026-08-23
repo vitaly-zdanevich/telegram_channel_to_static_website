@@ -10,14 +10,14 @@ days = ["2024-12-23"]
 id = 223
 day = "2024-12-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/223"
-og_image = "5276262517800291116_1228475598_456248108.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-223-5276262517800291116.jpg"
 next_id = 224
 next_title = ""
 next_body = "#game #ui #pathofexile2"
 prev_id = 222
 prev_title = ""
 prev_body = "#youtube"
-views = 45
+views = 46
 forwarded_from = "Национальный цифровой архив"
 forwarded_from_url = "https://t.me/ruarxive/107"
 ids = [223]
@@ -31,4 +31,4 @@ ids = [223]
 
 Источник: [The Guardian](https://www.theguardian.com/world/2023/jun/27/tuvalu-climate-crisis-rising-sea-levels-pacific-island-nation-country-digital-clone?utm_campaign=The%20Week%20in%20Data%20TWID&amp;utm_medium=email&amp;utm_content=264626528&amp;utm_source=hs_email)*Фото: Kofe gives a Cop26 statement while standing in the ocean in Funafuti in November 2021. Photograph: Tuvalu Foreign Ministry/Reuters*
 
-{{ img(src="5276262517800291116_1228475598_456248108.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-223-5276262517800291116.jpg") }}

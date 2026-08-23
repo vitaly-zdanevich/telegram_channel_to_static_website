@@ -11,7 +11,7 @@ tags = ["webdesign", "webdesign_old"]
 id = 768
 day = "2025-11-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/768"
-og_image = "5231120899694594878_1217965246_460000062.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-768-5231120899694594878.jpg"
 next_id = 769
 next_title = ""
 next_body = "#mp3\n#hardware\n#sandisc\nSexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008."
@@ -52,4 +52,6 @@ date = "2025-11-10"
 
 <https://web.archive.org/web/20050830072425/http://www.pgnx.net/>
 
-{{ img(src="5231120899694594878_1217965246_460000062.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-768-5231120899694594878.jpg") }}
+
+🔥 1

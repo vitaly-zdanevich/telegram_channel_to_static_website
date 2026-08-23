@@ -11,7 +11,7 @@ tags = ["health", "pubmed", "aura"]
 id = 405
 day = "2025-03-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/405"
-og_image = "5375405086139870428_1251559026_456256732.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-405-5375405086139870428.jpg"
 next_id = 406
 next_title = ""
 next_body = "#health\n#science\n#references\n#source\n#walk\n#chad"
@@ -53,4 +53,4 @@ date = "2025-06-26"
 
 [Source](https://x.com/ArseniosMarkos/status/1837373989724856393)
 
-{{ img(src="5375405086139870428_1251559026_456256732.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-405-5375405086139870428.jpg") }}

@@ -11,7 +11,7 @@ tags = ["girl", "relationship", "ai"]
 id = 609
 day = "2025-07-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/609"
-og_image = "5192779133933974763_1209038108_456258795.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-609-5192779133933974763.jpg"
 next_id = 610
 next_title = ""
 next_body = "Can you imagine #userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 35 commits · 1 fork · 1 open issues/PRs · last push 2026-04-02\")\n#lastfm"
@@ -55,4 +55,6 @@ date = "2025-01-28"
 
 > You generated  <br>pictures and videos for him,  <br>wrote texts for  <br>demos,  <br>helped him endlessly with reports  <br>and a diploma, but in the end  <br>he chose a woman  <br>who knows how to find  <br>hydrants  <br>in photographs
 
-{{ img(src="5192779133933974763_1209038108_456258795.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-609-5192779133933974763.jpg") }}
+
+😁 1

@@ -31,3 +31,5 @@ date = "2025-01-28"
 {{ tag(t="warcraft") }}
 
 {{ youtube(id="DWjZQzviTUs") }}
+
+🙏 1

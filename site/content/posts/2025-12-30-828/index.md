@@ -11,7 +11,7 @@ tags = ["preservation", "library", "books"]
 id = 828
 day = "2025-12-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/828"
-og_image = "5377549657803788303_1252058348_460001295.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-828-5377549657803788303.jpg"
 next_id = 829
 next_title = ""
 next_body = "#microsoft\n#microsoftword\n#session"
@@ -53,4 +53,4 @@ date = "2025-12-29"
 
 [Page 68](https://commons.wikimedia.org/wiki/File:%D0%96%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B5_%D0%BE%D0%B1%D0%BE%D0%B7%D1%80%D0%B5%D0%BD%D0%B8%D0%B5_1872_-_1873.pdf)
 
-{{ img(src="5377549657803788303_1252058348_460001295.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-828-5377549657803788303.jpg") }}

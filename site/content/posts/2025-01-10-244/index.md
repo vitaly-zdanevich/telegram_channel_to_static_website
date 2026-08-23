@@ -17,7 +17,7 @@ next_body = "#war\n#video\n#warpath"
 prev_id = 243
 prev_title = ""
 prev_body = ""
-views = 32
+views = 33
 ids = [244]
 
 [[extra.related]]
@@ -49,3 +49,5 @@ date = "2024-08-25"
 Video from 2012 about {{ tag(t="ai") }} [https://youtu.be/j-pF56-ZYkY](<https://youtu.be/j-pF56-ZYkY> "\"Kara\" by Quantic Dream")
 
 {{ youtube(id="j-pF56-ZYkY") }}
+
+🙏 1

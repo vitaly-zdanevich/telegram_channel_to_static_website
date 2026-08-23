@@ -14,7 +14,7 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2140"
 prev_id = 2139
 prev_title = ""
 prev_body = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, ЯндексМузыки, аудиокниг, радио\nЛёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.\nНа выходе - если /.config/youta/ под гитом - пушит, без токенов.\nthrough yt-dlp, Bandcamp, Apple Podcasts and RSS, with local subscriptions and persi… · 3 stars · Languages: Rust 98%, TypeScript 2%, Shell 0% · 194 commits · 1 fork · MIT · last push 2026-08-20\")\nВсе линки\n#my\n#лекция\n#batumi\n#friendsbar\n#youta\n#tui\n#youtube\n#yandexmusic\n#filemanager\n#offline\n#wikidata\n#ffprobe\n#acoustid\n#musicbrainz\n#lastfm\n#bandcamp\n#radio\n#llm\n#codex\n#gpt\n#oldhardware\n#rust\nYouTube"
-views = 3
+views = 22
 ids = [2140]
 
 [[extra.related]]

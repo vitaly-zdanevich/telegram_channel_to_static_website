@@ -11,7 +11,7 @@ tags = ["sakartvelo", "fashion", "chokha"]
 id = 618
 day = "2025-08-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/618"
-og_image = "5237834294351754182_1219528330_456258502.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-618-5237834294351754182.jpg"
 next_id = 619
 next_title = ""
 next_body = "Returned to uploading of artifacts from moneymuseum.by, through my new web extension, and again - sometime I see the beauty\n#money\n#moneymuseum\nSource"
@@ -55,4 +55,4 @@ date = "2025-04-15"
 
 [Source](https://commons.wikimedia.org/wiki/File:Georgian_(604).jpg)
 
-{{ img(src="5237834294351754182_1219528330_456258502.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-618-5237834294351754182.jpg") }}

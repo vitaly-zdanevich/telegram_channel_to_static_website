@@ -10,7 +10,7 @@ days = ["2025-05-14"]
 id = 531
 day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/531"
-og_image = "5269656982653106475_1226937627_456259883.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-531-5269656982653106475.jpg"
 next_id = 532
 next_title = ""
 next_body = "From globustut.by\n#photo\n#building\n#ad\n#history\n#babruysk"
@@ -23,4 +23,4 @@ ids = [531]
 
 Looks like photos of every street <https://commons.wikimedia.org/wiki/Category:Buildings_in_Babruysk>
 
-{{ img(src="5269656982653106475_1226937627_456259883.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-531-5269656982653106475.jpg") }}

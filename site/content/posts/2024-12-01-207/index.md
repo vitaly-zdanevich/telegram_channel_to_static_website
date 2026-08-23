@@ -9,7 +9,7 @@ days = ["2024-12-01"]
 id = 207
 day = "2024-12-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/207"
-og_image = "5359716841917897767_1247906322_456252455.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-207-5359716841917897767.jpg"
 next_id = 208
 next_title = ""
 next_body = "About games archiving"
@@ -20,4 +20,6 @@ views = 38
 ids = [207]
 +++
 
-{{ img(src="5359716841917897767_1247906322_456252455.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-207-5359716841917897767.jpg") }}
+
+😁 2

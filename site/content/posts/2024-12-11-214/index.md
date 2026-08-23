@@ -17,7 +17,7 @@ next_body = "#belarus"
 prev_id = 213
 prev_title = ""
 prev_body = "#ad"
-views = 49
+views = 50
 ids = [214]
 
 [[extra.related]]
@@ -37,3 +37,5 @@ date = "2026-04-24"
 +++
 
 My first {{ tag(t="lutris") }} install script <https://lutris.net/games/armies-of-exigo/>
+
+🙏 1

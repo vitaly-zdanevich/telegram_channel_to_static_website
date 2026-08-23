@@ -17,7 +17,7 @@ next_body = "#octopus\n#ai\n#disco\nBy kennyslowbird"
 prev_id = 2097
 prev_title = ""
 prev_body = "#health\n#sugar\n#cola\n#mellstroy\nBy dashka.lawki"
-views = 19
+views = 20
 ids = [2098]
 
 [[extra.related]]

@@ -10,7 +10,7 @@ days = ["2024-10-26"]
 id = 167
 day = "2024-10-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/167"
-og_image = "5253985385724372133_1223288799_456254629.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-167-5253985385724372133.jpg"
 next_id = 168
 next_title = ""
 next_body = "We are loosing the data"
@@ -25,4 +25,6 @@ Source: <https://artz.work/project/ba7a9084b86045dda2fa6e07e989a7e8>
 
 Author: Oleg Paschenko
 
-{{ img(src="5253985385724372133_1223288799_456254629.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-167-5253985385724372133.jpg") }}
+
+🙏 1

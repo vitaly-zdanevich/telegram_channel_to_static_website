@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 602
 day = "2025-07-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/602"
-og_image = "5474557069047754958_1274644646_456257742.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-602-5474557069047754958.jpg"
 next_id = 603
 next_title = ""
 next_body = "#dune\n#fashion\n#balenciaga\n#demonflyingfox\nSource"
@@ -51,4 +51,4 @@ date = "2025-06-10"
 
 [http://dar.linux.free.fr](http://dar.linux.free.fr/)
 
-{{ img(src="5474557069047754958_1274644646_456257742.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-602-5474557069047754958.jpg") }}

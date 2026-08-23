@@ -11,7 +11,7 @@ tags = ["windows_xp"]
 id = 814
 day = "2025-12-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/814"
-og_image = "5361604072026346126_1248345727_460001934.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-814-5361604072026346126.jpg"
 next_id = 815
 next_title = ""
 next_body = "#starwars\n#village\n#татуиново\nSource"
@@ -34,4 +34,4 @@ date = "2025-10-28"
 
 {{ tag(t="windows_xp") }}
 
-{{ img(src="5361604072026346126_1248345727_460001934.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-814-5361604072026346126.jpg") }}

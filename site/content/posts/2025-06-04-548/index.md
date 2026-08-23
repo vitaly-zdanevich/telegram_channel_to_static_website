@@ -11,7 +11,7 @@ tags = ["python", "gthumb", "openstreetmap"]
 id = 548
 day = "2025-06-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/548"
-og_image = "5330353748242985817_1241069694_456258393.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-548-5330353748242985817.jpg"
 next_id = 549
 next_title = ""
 next_body = "Another #userstyle: for #openstreetmap, only a few CSS lines"
@@ -51,4 +51,4 @@ New small project: {{ tag(t="python") }} script for {{ tag(t="gthumb") }} (or ot
 
 <https://gitlab.com/vitaly-zdanevich/image-path-to-openstreetmap>
 
-{{ img(src="5330353748242985817_1241069694_456258393.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-548-5330353748242985817.jpg") }}

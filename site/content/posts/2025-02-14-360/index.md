@@ -11,7 +11,7 @@ tags = ["religion"]
 id = 360
 day = "2025-02-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/360"
-og_image = "5291921938496747598_1232121591_456259662.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-360-5291921938496747598.jpg"
 next_id = 361
 next_title = ""
 next_body = "#coin\nSource"
@@ -51,4 +51,4 @@ date = "2025-03-16"
 
 [Source](https://au.pinterest.com/pin/78672324735593985)
 
-{{ img(src="5291921938496747598_1232121591_456259662.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-360-5291921938496747598.jpg") }}

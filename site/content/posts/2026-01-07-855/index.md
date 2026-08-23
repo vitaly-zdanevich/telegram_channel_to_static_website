@@ -11,7 +11,7 @@ tags = ["belarus", "church", "globustut"]
 id = 855
 day = "2026-01-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/855"
-og_image = "5402068444980646167_1257767073_460001559.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-855-5402068444980646167.jpg"
 next_id = 856
 next_title = ""
 next_body = "#belarus\n#polotsk\n#church\n#globustut\nSource"
@@ -53,4 +53,4 @@ date = "2026-01-21"
 
 [Source](https://commons.wikimedia.org/wiki/File:026-056_%D0%91%D0%B5%D0%B3%D0%BE%D0%BC%D0%BB%D1%8C,_02-11-2004.jpg)
 
-{{ img(src="5402068444980646167_1257767073_460001559.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-855-5402068444980646167.jpg") }}

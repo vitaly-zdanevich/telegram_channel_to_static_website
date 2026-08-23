@@ -11,7 +11,7 @@ tags = ["gustave_dore", "painting", "horse", "sky"]
 id = 750
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/750"
-og_image = "5229215222705359627_1217521546_460000011.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-750-5229215222705359627.jpg"
 next_id = 751
 next_title = ""
 next_body = "#design\n#webdesign\n#webdesignold"
@@ -55,4 +55,4 @@ Don Quixote by {{ tag(t="gustave_dore") }}, 1863 year
 
 [Source](https://commons.wikimedia.org/wiki/File:Don_Quixote_2.jpg)
 
-{{ img(src="5229215222705359627_1217521546_460000011.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-750-5229215222705359627.jpg") }}

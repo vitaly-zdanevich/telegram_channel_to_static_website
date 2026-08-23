@@ -11,7 +11,7 @@ tags = ["wikimedia_foundation", "money"]
 id = 652
 day = "2025-09-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/652"
-og_image = "5307862000946249677_1235832926_456261581.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-652-5307862000946249677.jpg"
 next_id = 653
 next_title = ""
 next_body = "#wikimediafoundation\n#money\nSource"
@@ -53,4 +53,4 @@ date = "2026-06-13"
 [Source](https://upload.wikimedia.org/wikipedia/foundation/f/f6/Wikimedia_Foundation_2024_Audited_Financial_Statements.pdf)  
 [Source](https://en.wikipedia.org/wiki/Wikimedia_Foundation)
 
-{{ img(src="5307862000946249677_1235832926_456261581.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-652-5307862000946249677.jpg") }}

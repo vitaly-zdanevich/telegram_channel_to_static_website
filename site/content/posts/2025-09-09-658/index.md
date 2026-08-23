@@ -10,7 +10,7 @@ days = ["2025-09-09"]
 id = 658
 day = "2025-09-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/658"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-658-5332699066674575060.jpg"
 next_id = 665
 next_title = ""
 next_body = "#film\n#russia\n#nightwatch\n#zavulon"
@@ -40,16 +40,16 @@ ids = [658, 659, 660, 661, 662, 663, 664]
 
 **👉** Цель проекта — разнообразить визуальный облик города и укрепить культурную атмосферу.
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-658-5332699066674575060.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-659-5332699066674575061.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-660-5332699066674575062.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-661-5332699066674575063.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-662-5332699066674575064.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-663-5332699066674575065.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-664-5332699066674575066.jpg") }}

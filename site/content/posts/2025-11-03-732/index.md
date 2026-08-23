@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 732
 day = "2025-11-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/732"
-og_image = "5208830539119400259_1212775367_460002627.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-732-5208830539119400259.jpg"
 next_id = 733
 next_title = ""
 next_body = "#webdesign"
@@ -51,4 +51,4 @@ date = "2025-06-10"
 
 [https://jenniverse.com](https://jenniverse.com/)
 
-{{ img(src="5208830539119400259_1212775367_460002627.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-732-5208830539119400259.jpg") }}

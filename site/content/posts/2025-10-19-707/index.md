@@ -11,7 +11,7 @@ tags = ["archivation", "games", "zim"]
 id = 707
 day = "2025-10-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/707"
-og_image = "5452161769536621413_1269430334_456264549.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-707-5452161769536621413.jpg"
 next_id = 708
 next_title = ""
 next_body = "#concert\n#rammstein\n#year2019\n#russia\nNot my photo."
@@ -50,8 +50,8 @@ date = "2025-10-21"
 {{ tag(t="archivation") }}  
 {{ tag(t="games") }}  
 
-Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 835 stars · Languages: Python 91%, Dockerfile 9% · 518 commits · 49 forks · 84 open issues/PRs · GPL-3.0 · last push 2026-07-31")  
+Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 836 stars · Languages: Python 91%, Dockerfile 9% · 518 commits · 49 forks · 84 open issues/PRs · GPL-3.0 · last push 2026-07-31")  
 
 [https://gamechronicles.com](https://gamechronicles.com/)
 
-{{ img(src="5452161769536621413_1269430334_456264549.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-707-5452161769536621413.jpg") }}

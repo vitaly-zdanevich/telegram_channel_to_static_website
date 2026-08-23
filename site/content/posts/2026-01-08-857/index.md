@@ -11,7 +11,7 @@ tags = ["belarus", "minsk"]
 id = 857
 day = "2026-01-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/857"
-og_image = "5404320244794330224_1258291361_460000368.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-857-5404320244794330224.jpg"
 next_id = 858
 next_title = ""
 next_body = "#belarus\n#iŭje\n#building\n#globustut\nSource"
@@ -54,4 +54,4 @@ date = "2026-03-22"
 
 [Source](https://www.facebook.com/share/p/1ZzTCvYgwi/)
 
-{{ img(src="5404320244794330224_1258291361_460000368.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-857-5404320244794330224.jpg") }}

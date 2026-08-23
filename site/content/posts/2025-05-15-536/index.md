@@ -11,7 +11,7 @@ tags = ["anon"]
 id = 536
 day = "2025-05-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/536"
-og_image = "5274098292369781458_1227971700_456258258.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-536-5274098292369781458.jpg"
 next_id = 537
 next_title = ""
 next_body = "#webdesign\n#yandex"
@@ -26,4 +26,4 @@ Our world
 
 {{ tag(t="anon") }}
 
-{{ img(src="5274098292369781458_1227971700_456258258.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-536-5274098292369781458.jpg") }}

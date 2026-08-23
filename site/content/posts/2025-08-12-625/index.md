@@ -11,7 +11,7 @@ tags = ["moneymuseum", "money", "rubles"]
 id = 625
 day = "2025-08-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/625"
-og_image = "5246998070934240894_1221661938_456261246.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-625-5246998070934240894.jpg"
 next_id = 626
 next_title = ""
 next_body = "#moneymuseum\n#money\n#rubles\nSource02.jpg)"
@@ -53,4 +53,4 @@ date = "2025-09-01"
 
 [Source](https://commons.wikimedia.org/wiki/File:50_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9_%D0%A0%D0%A1%D0%A4%D0%A1%D0%A0_1923_%D0%B3%D0%BE%D0%B4%D0%B0._%D0%A0%D0%B5%D0%B2%D0%B5%D1%80%D1%81.jpg)
 
-{{ img(src="5246998070934240894_1221661938_456261246.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-625-5246998070934240894.jpg") }}

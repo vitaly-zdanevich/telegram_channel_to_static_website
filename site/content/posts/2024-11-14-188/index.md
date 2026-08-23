@@ -11,7 +11,7 @@ tags = ["code"]
 id = 188
 day = "2024-11-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/188"
-og_image = "5310002453732779331_1236331289_456254787.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-188-5310002453732779331.jpg"
 next_id = 189
 next_title = ""
 next_body = "Source"
@@ -34,4 +34,6 @@ date = "2026-05-13"
 
 Love such comments {{ tag(t="code") }}
 
-{{ img(src="5310002453732779331_1236331289_456254787.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-188-5310002453732779331.jpg") }}
+
+🙏 1

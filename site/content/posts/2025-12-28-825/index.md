@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 825
 day = "2025-12-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/825"
-og_image = "5370960061280226917_1250524088_460000869.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-825-5370960061280226917.jpg"
 next_id = 826
 next_title = ""
 next_body = "#design\n#preservation\n#year1885"
@@ -51,4 +51,4 @@ date = "2025-06-10"
 
 <https://nemesis.de/wizards/>
 
-{{ img(src="5370960061280226917_1250524088_460000869.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-825-5370960061280226917.jpg") }}

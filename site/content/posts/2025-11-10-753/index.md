@@ -11,7 +11,7 @@ tags = ["design", "webdesign", "webdesign_old", "xbox"]
 id = 753
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/753"
-og_image = "5229215222705359666_1217521546_460000050.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-753-5229215222705359666.jpg"
 next_id = 754
 next_title = ""
 next_body = "#painting\n#bible\n#angel\n#gustavedore\nStudy for \"Jacob's Dream\"\nSource"
@@ -54,4 +54,6 @@ date = "2025-11-11"
 
 <https://www.xboxexclusive.com/reviews/Blood_Wake>
 
-{{ img(src="5229215222705359666_1217521546_460000050.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-753-5229215222705359666.jpg") }}
+
+🔥 1

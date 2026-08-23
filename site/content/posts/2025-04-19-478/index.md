@@ -10,7 +10,7 @@ days = ["2025-04-19"]
 id = 478
 day = "2025-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/478"
-og_image = "5197547561244816487_1210148344_456258663.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-478-5197547561244816487.jpg"
 next_id = 479
 next_title = ""
 next_body = "#article\n#primeworld\nI wrote."
@@ -23,4 +23,4 @@ ids = [478]
 
 Artwork for the podcast
 
-{{ img(src="5197547561244816487_1210148344_456258663.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-478-5197547561244816487.jpg") }}

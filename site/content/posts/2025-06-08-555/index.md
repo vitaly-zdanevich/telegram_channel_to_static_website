@@ -9,7 +9,7 @@ days = ["2025-06-08"]
 id = 555
 day = "2025-06-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/555"
-og_image = "5345774544851432272_1244660128_456258384.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-555-5345774544851432272.jpg"
 next_id = 556
 next_title = ""
 next_body = ""
@@ -22,4 +22,4 @@ ids = [555]
 
 <https://en.wikipedia.org/wiki/Time_of_Troubles>
 
-{{ img(src="5345774544851432272_1244660128_456258384.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-555-5345774544851432272.jpg") }}

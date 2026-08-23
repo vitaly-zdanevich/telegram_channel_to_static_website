@@ -11,7 +11,7 @@ tags = ["telegram"]
 id = 674
 day = "2025-09-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/674"
-og_image = "5364201410545194447_1248950467_456267215.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-674-5364201410545194447.jpg"
 next_id = 675
 next_title = ""
 next_body = "#smell\n#dating\nSource"
@@ -49,4 +49,4 @@ date = "2025-03-24"
 
 {{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1356 stars · Languages: C++ 97%, Objective-C++ 1%, CMake 1% · 24800 commits · 140 forks · 148 open issues/PRs · last push 2026-07-02")
 
-{{ img(src="5364201410545194447_1248950467_456267215.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-674-5364201410545194447.jpg") }}

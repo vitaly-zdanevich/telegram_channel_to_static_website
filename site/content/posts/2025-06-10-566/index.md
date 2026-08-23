@@ -11,7 +11,7 @@ tags = ["dark_mode"]
 id = 566
 day = "2025-06-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/566"
-og_image = "5350564279495029241_1245775325_456258041.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-566-5350564279495029241.jpg"
 next_id = 567
 next_title = ""
 next_body = "#darkpattern"
@@ -51,4 +51,4 @@ My new {{ tag(t="dark_mode") }}: [numbeo.com](http://numbeo.com/)
 
 <https://gitlab.com/vitaly-zdanevich/numbeo-com>
 
-{{ img(src="5350564279495029241_1245775325_456258041.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-566-5350564279495029241.jpg") }}

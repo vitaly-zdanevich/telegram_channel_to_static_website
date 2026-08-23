@@ -11,7 +11,7 @@ tags = ["steam", "master_or_orion"]
 id = 608
 day = "2025-07-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/608"
-og_image = "5190527334120291504_1208513820_456260784.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-608-5190527334120291504.jpg"
 next_id = 609
 next_title = ""
 next_body = "#girl\n#relationship\n#ai\nSource\nYou generated\npictures and videos for him,\nwrote texts for\ndemos,\nhelped him endlessly with reports\nand a diploma, but in the end\nhe chose a woman\nwho knows how to find\nhydrants\nin photographs"
@@ -52,4 +52,4 @@ So many hours
 {{ tag(t="steam") }}  
 {{ tag(t="master_or_orion") }}
 
-{{ img(src="5190527334120291504_1208513820_456260784.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-608-5190527334120291504.jpg") }}

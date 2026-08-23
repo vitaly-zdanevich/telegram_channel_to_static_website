@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 390
 day = "2025-03-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/390"
-og_image = "5352602726808283388_1246249938_456255740.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-390-5352602726808283388.jpg"
 next_id = 391
 next_title = ""
 next_body = "#alexjones\n#warhammer\nSome people think that his speeches correlates with Warhammer.\nSource"
@@ -49,4 +49,4 @@ date = "2025-07-21"
 
 {{ tag(t="webdesign") }}
 
-{{ img(src="5352602726808283388_1246249938_456255740.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-390-5352602726808283388.jpg") }}
