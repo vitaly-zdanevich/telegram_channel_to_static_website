@@ -17,7 +17,7 @@ next_body = "#dream\n#house\n#river\nSource"
 prev_id = 2038
 prev_title = ""
 prev_body = "#parody\n#success\n#пихатров\nSource"
-views = 17
+views = 18
 ids = [2039]
 
 [[extra.related]]

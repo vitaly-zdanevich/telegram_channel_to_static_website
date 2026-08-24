@@ -17,7 +17,7 @@ next_body = "#coatofarms\n#wikimediacommons\n#russianempire\nSource"
 prev_id = 2048
 prev_title = ""
 prev_body = "Created #python script that creates #shotcut #mlt #multicam project - putting video clips to correct locations (automatic mulcicam sync).\nmulticam project with clips auto-synced to a master audio recording via waveform cross-correlation · 2 stars · Languages: Python 100% · 2 commits · 1 open issues/PRs · MIT · last push 2026-07-13\")\nI was shocked that this is possible.\nMade by #claude Fable 5. Works for me.\nUsually I spend hours moving clips by milliseconds... When editing my lectures."
-views = 15
+views = 16
 ids = [2049]
 
 [[extra.related]]

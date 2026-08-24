@@ -17,7 +17,7 @@ next_body = "#batumi\n#aksiarodak\n#year2024\n#my\n#лекция\n#wikimediacomm
 prev_id = 1871
 prev_title = ""
 prev_body = "#death\n#grandmother\n#drink\n#kitchen\n#spirit\nSource"
-views = 15
+views = 16
 ids = [1872]
 
 [[extra.related]]

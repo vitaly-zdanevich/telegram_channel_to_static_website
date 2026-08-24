@@ -17,7 +17,7 @@ next_body = "#llm wow of today\n1) Fixed broken audio recording - when the iPhon
 prev_id = 1850
 prev_title = ""
 prev_body = "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио\nРепозиторий проекта\n#my\n#stillyoungbar\n#лекция\n#telegrambot\n#youtube\nSource\nEvernote"
-views = 14
+views = 15
 ids = [1852]
 +++
 

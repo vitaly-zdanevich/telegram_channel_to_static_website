@@ -4,7 +4,6 @@ date = 2025-01-17T01:13:55+00:00
 
 [taxonomies]
 days = ["2025-01-17"]
-tags = ["video"]
 
 [extra]
 id = 267
@@ -22,8 +21,4 @@ ids = [267]
 
 <https://coub.com/view/2q70x2>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/267-01.mp4") }}
-
 🙏 1
-
-{{ tag(t="video") }}

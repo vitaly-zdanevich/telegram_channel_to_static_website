@@ -17,7 +17,7 @@ next_body = "#death\n#spirit\n#electro\nSource"
 prev_id = 2132
 prev_title = ""
 prev_body = "#ussr\n#pc\nSource"
-views = 18
+views = 19
 ids = [2133]
 
 [[extra.related]]

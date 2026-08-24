@@ -18,7 +18,7 @@ next_body = "#mem\n#newyork\n#whatyoudoforaliving\n#slaughterhouse\n#smile\n#lig
 prev_id = 2120
 prev_title = ""
 prev_body = "#my another small project: #wikidata #pwa to get nearby items, with photos, all properties, and backlinks. Without intermediate nodes - direct calls to Wikidata."
-views = 5
+views = 6
 ids = [2121]
 
 [[extra.related]]

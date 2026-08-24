@@ -18,7 +18,7 @@ next_body = "#llm\n#codex\n#regex"
 prev_id = 1847
 prev_title = ""
 prev_body = "#game\n#trailer\n#music\n#year2009\n#halo\n#xbox\n#xbox360\nOne of the best game trailer\nSource"
-views = 15
+views = 16
 ids = [1848]
 
 [[extra.related]]

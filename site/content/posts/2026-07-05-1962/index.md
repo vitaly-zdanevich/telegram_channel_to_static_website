@@ -18,7 +18,7 @@ next_body = "#belarus\n#photo\n#river\n#boat\n#year2005\n#globustut\nSource"
 prev_id = 1961
 prev_title = ""
 prev_body = "#belarus\n#nature\n#green\n#trees\n#lake\n#photo\n#year2005\n#globustut\nSource"
-views = 8
+views = 9
 ids = [1962, 1963, 1964]
 
 [[extra.related]]

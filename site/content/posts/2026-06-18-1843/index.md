@@ -18,7 +18,7 @@ next_body = "#armiesofexigo\n#abandone"
 prev_id = 1842
 prev_title = ""
 prev_body = "#interior\n#cozy\n#bathroom\nFrom"
-views = 13
+views = 14
 ids = [1843]
 
 [[extra.related]]

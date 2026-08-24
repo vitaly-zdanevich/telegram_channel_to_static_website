@@ -17,7 +17,7 @@ next_body = "#mem\n#girls\n#trauma\nSource"
 prev_id = 2123
 prev_title = ""
 prev_body = "#mem\n#gay, born as #female\nSource"
-views = 6
+views = 7
 ids = [2124]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#belarus\n#photo\n#church\n#women\n#year2005\n#globustut\nSource"
 prev_id = 1951
 prev_title = ""
 prev_body = "#belarus\n#ленино\n#photo\n#architecture\n#abandone\n#year2005\n#globustut\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE7%D0%B8%D1%8E%D0%BB%D1%8F2005.jpg)"
-views = 8
+views = 9
 ids = [1961]
 
 [[extra.related]]

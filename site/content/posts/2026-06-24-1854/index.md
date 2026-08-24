@@ -18,7 +18,7 @@ next_body = "#armiesofexigo it own by #electronicarts\nТвёрдо и чётк�
 prev_id = 1853
 prev_title = ""
 prev_body = "#llm wow of today\n1) Fixed broken audio recording - when the iPhone turned off\n2) I put this audio to the #shotcut video editor - and said - sync cuts and keyframe dots"
-views = 13
+views = 14
 ids = [1854]
 
 [[extra.related]]
@@ -47,7 +47,7 @@ label = "#telegram with wide messages"
 date = "2025-09-20"
 +++
 
-{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 32684 stars · Languages: C++ 97%, Python 1%, Objective-C++ 1% · 25799 commits · 7121 forks · 1007 open issues/PRs · last push 2026-08-22")  
+{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 32711 stars · Languages: C++ 97%, Python 1%, Objective-C++ 1% · 25804 commits · 7125 forks · 1006 open issues/PRs · last push 2026-08-24")  
 
 [The patch](https://gitlab.com/vitaly-zdanevich-configs/gentoo--etc-portage--thinkpad-t430/-/blob/amd/patches/net-im/telegram-desktop/large-adaptive-sticker-preview.patch).
 
