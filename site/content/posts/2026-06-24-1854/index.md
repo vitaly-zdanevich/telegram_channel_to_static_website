@@ -47,7 +47,7 @@ label = "#telegram with wide messages"
 date = "2025-09-20"
 +++
 
-{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 32711 stars · Languages: C++ 97%, Python 1%, Objective-C++ 1% · 25804 commits · 7125 forks · 1006 open issues/PRs · last push 2026-08-24")  
+{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 32737 stars · Languages: C++ 97%, Python 1%, Objective-C++ 1% · 25890 commits · 7129 forks · 1001 open issues/PRs · last push 2026-08-25")  
 
 [The patch](https://gitlab.com/vitaly-zdanevich-configs/gentoo--etc-portage--thinkpad-t430/-/blob/amd/patches/net-im/telegram-desktop/large-adaptive-sticker-preview.patch).
 

@@ -76,11 +76,11 @@ date = "2026-04-16"
 
 [https://www.belstat.gov.by](https://www.belstat.gov.by/)  
 
-[https://ru.wikipedia.org/wiki/Исачёв,\_Александр\_Анатольевич](https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%B0%D1%87%D1%91%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87)  
+[https://ru.wikipedia.org/wiki/Исачёв,\_Александр\_Анатольевич](<https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%B0%D1%87%D1%91%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87> "Алекса́ндр Анато́льевич Исачёв (бел. Алякса́ндр Анато́льевіч Ісачо́ў; 11 11 января 1955, Озаричи, Гомельская область — 5 декабря 1987 или 1986) — советский художник, график.")  
 
 <https://wiki.openstreetmap.org/wiki/Tag:natural=tree>  
 
-[https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples](<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples> "This page contains examples of SPARQL queries for data in Wikidata. When adding any further queries, consider adding a comment in the query describing what it illustrates, when and by whom it was written and which are its limitations given the current data and use of properties at Wikidata.")  
+<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples>  
 
 Записано на телефон Poco X3 Pro (Виталий), минимальный монтаж на Audacity, Gentoo.
 

@@ -17,7 +17,7 @@ next_body = "#music\n#musictracker\n#amiga\n#octamed\nBy black.lines.din.sky"
 prev_id = 2102
 prev_title = ""
 prev_body = "#god\n#fear\n#monastery\n#antichrist\n#rammstein\nСтрахи детей из нормальных семей: монстр под кроватью, волк, который укусит за бочок, чупакабра. Я растущая в монастыре: боюсь что именно я стану матерью антихриста\nBy valeriapotokina"
-views = 22
+views = 23
 ids = [2103]
 
 [[extra.related]]

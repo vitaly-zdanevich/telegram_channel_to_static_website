@@ -52,8 +52,8 @@ date = "2026-03-05"
 
 {{ tag(t="mcfly") }}: ctrl-r replacement with "suggestions are prioritized in real time with a small neural network."  
 
-Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7780 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14") for it.  
+Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7780 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 737 commits · 201 forks · 136 open issues/PRs · MIT · last push 2026-08-26") for it.  
 
-[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7780 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 736 commits · 200 forks · 135 open issues/PRs · MIT · last push 2026-04-14")
+[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7780 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 737 commits · 201 forks · 136 open issues/PRs · MIT · last push 2026-08-26")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1119-5242389218842057393.jpg") }}

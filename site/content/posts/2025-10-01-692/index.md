@@ -25,7 +25,7 @@ ids = [692]
 
 > Alexander Isachev, having lost the support of the philanthropist, returns to Rechitsa, where on November 14, 1987 **his first personal exhibition** is being held. It was visited by more than 20 thousand people. This event became a real sensation in the cultural life of the BSSR. Isachev himself was happy that he was finally recognized. **Three days later, he died** of a heart attack, on 33 years.
 
-[https://ru.wikipedia.org/wiki/Исачёв,\_Александр\_Анатольевич](https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%B0%D1%87%D1%91%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87)
+[https://ru.wikipedia.org/wiki/Исачёв,\_Александр\_Анатольевич](<https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%B0%D1%87%D1%91%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87> "Алекса́ндр Анато́льевич Исачёв (бел. Алякса́ндр Анато́льевіч Ісачо́ў; 11 11 января 1955, Озаричи, Гомельская область — 5 декабря 1987 или 1986) — советский художник, график.")
 
 [Source](https://hvali.by/belorusskie-hudozhniki/aleksandr-isachev/)
 
