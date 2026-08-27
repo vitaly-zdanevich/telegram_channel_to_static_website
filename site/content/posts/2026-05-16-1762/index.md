@@ -17,7 +17,7 @@ next_body = "#error\n#gitlab\n#contradiction"
 prev_id = 1761
 prev_title = ""
 prev_body = "I love #ci so much that for the first time I depleted free 400 minutes per month, on #gitlab, on my FOSS non-commercial projects."
-views = 409
+views = 410
 ids = [1762]
 
 [[extra.related]]
@@ -63,13 +63,13 @@ date = "2026-06-24"
 [logseq.com](http://logseq.com/) свободные заметки в markdown  
 [github.com/boo-yee/nixnote2](<http://github.com/boo-yee/nixnote2> "Nixnote - Evernote desktop client for Linux · 5 stars · Languages: C++ 97%, Java 1%, CMake 1% · 2731 commits · GPL-3.0 · last push 2025-10-08") FOSS клиент для Evernote на C++ и Qt  
 [github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 78 commits · GPL-3.0 · last push 2026-07-17") мой CLI на Rust  
-[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 87993 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8186 commits · 5432 forks · 377 open issues/PRs · MPL-2.0 · last push 2026-08-25") FOSS синхронизация данных через ваши устройства  
+[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 88045 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8186 commits · 5433 forks · 378 open issues/PRs · MPL-2.0 · last push 2026-08-25") FOSS синхронизация данных через ваши устройства  
 
 Бесплатный хостинг:  
 [aws.amazon.com/lambda](http://aws.amazon.com/lambda)  
 
 Про стили - чтобы сайты выгляди как надо вам а не дизайнеру:  
-[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6842 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5129 commits · 378 forks · 94 open issues/PRs · GPL-3.0 · last push 2026-08-26")  
+[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6849 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5131 commits · 378 forks · 94 open issues/PRs · GPL-3.0 · last push 2026-08-26")  
 [userstyles.world/user/vitaly-zdanevich](http://userstyles.world/user/vitaly-zdanevich)  
 [gitlab.com/vitaly-zdanevich-styles/evernote](http://gitlab.com/vitaly-zdanevich-styles/evernote)  
 
