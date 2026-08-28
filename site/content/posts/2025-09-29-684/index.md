@@ -63,6 +63,6 @@ date = "2025-03-24"
  msgNameStyle: semiboldTextStyle;
 ```
 
-[https://github.com/msva/mva-overlay/blob/master/net-im/telegram-desktop/files/patches/0/conditional/tdesktop_patches_wide-baloons/style.patch](<https://github.com/msva/mva-overlay/blob/master/net-im/telegram-desktop/files/patches/0/conditional/tdesktop_patches_wide-baloons/style.patch> "mva's sandbox overlay · 61 stars · Languages: Shell 97%, Lua 1%, Makefile 1% · 3032 commits · 27 forks · 3 open issues/PRs · last push 2026-08-04")
+[https://github.com/msva/mva-overlay/blob/master/net-im/telegram-desktop/files/patches/0/conditional/tdesktop_patches_wide-baloons/style.patch](<https://github.com/msva/mva-overlay/blob/master/net-im/telegram-desktop/files/patches/0/conditional/tdesktop_patches_wide-baloons/style.patch> "mva's sandbox overlay · 61 stars · Languages: Shell 97%, Lua 1%, Makefile 1% · 3035 commits · 27 forks · 3 open issues/PRs · last push 2026-08-28")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-684-5391335068301129921.jpg") }}

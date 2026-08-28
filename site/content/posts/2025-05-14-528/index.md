@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-05-14T01:47:37+00:00
-description = "mount archive (zip, rar and others) as read-only fuse, love it fuse-archive f.rar /mnt/ · 263 stars · Languages: C++ 51%, Python 40%, Roff 7% · 496 commits · 31 forks · 1 open issues/PRs · Apache-2.0…"
+description = "mount archive (zip, rar and others) as read-only fuse, love it fuse-archive f.rar /mnt/ · 265 stars · Languages: C++ 51%, Python 40%, Roff 7% · 497 commits · 31 forks · 1 open issues/PRs · Apache-2.0…"
 
 [taxonomies]
 days = ["2025-05-14"]
@@ -31,6 +31,6 @@ date = "2026-02-18"
 
 `fuse-archive f.rar ~/mnt/`  
 
-[https://github.com/google/fuse-archive](<https://github.com/google/fuse-archive> "FUSE file system for archives and compressed files (ZIP, RAR, 7Z, ISO, TGZ, XZ...) · 263 stars · Languages: C++ 51%, Python 40%, Roff 7% · 496 commits · 31 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-08-12")
+[https://github.com/google/fuse-archive](<https://github.com/google/fuse-archive> "FUSE file system for archives and compressed files (ZIP, RAR, 7Z, ISO, TGZ, XZ...) · 265 stars · Languages: C++ 51%, Python 40%, Roff 7% · 497 commits · 31 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-08-28")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-528-5269656982653106298.jpg") }}
