@@ -17,7 +17,7 @@ next_body = "#god\n#fear\n#monastery\n#antichrist\n#rammstein\nСтрахи де
 prev_id = 2100
 prev_title = ""
 prev_body = "#drug\n#traktor\n#interstellar\nПринял таблетки для сердца, потому что перепутал. Тем временем дед в тракторе на поле\nBy film0rezkaa"
-views = 21
+views = 22
 ids = [2101]
 
 [[extra.related]]

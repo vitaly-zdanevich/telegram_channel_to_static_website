@@ -17,7 +17,7 @@ next_body = "#theater\n#japan\n#frog\n#death\nBy silk.echo"
 prev_id = 2103
 prev_title = ""
 prev_body = "#trump\n#gender\nBy theceosonly"
-views = 28
+views = 29
 ids = [2104]
 
 [[extra.related]]

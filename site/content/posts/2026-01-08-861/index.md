@@ -51,6 +51,6 @@ date = "2026-01-08"
 {{ tag(t="building") }}  
 {{ tag(t="globustut") }}  
 
-[Source](https://commons.wikimedia.org/wiki/File:Globustut_250_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B8.jpg)
+[Source](<https://commons.wikimedia.org/wiki/File:Globustut_250_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%B8.jpg> "By Globustut · 2004-07-10 15:12:55")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-861-5404782293081068319.jpg") }}

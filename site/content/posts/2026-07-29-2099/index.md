@@ -17,7 +17,7 @@ next_body = "#drug\n#traktor\n#interstellar\nПринял таблетки дл�
 prev_id = 2098
 prev_title = ""
 prev_body = "#war\nThe #radio broadcasts of Hanoi Hannah during the #vietnamwar\n.\nBy istorymae"
-views = 24
+views = 25
 ids = [2099]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#духота\n#health\n#powerlifting\nSource"
 prev_id = 2112
 prev_title = ""
 prev_body = "#health\n#духота\n#kozhemiako\nSource"
-views = 22
+views = 23
 ids = [2113]
 
 [[extra.related]]

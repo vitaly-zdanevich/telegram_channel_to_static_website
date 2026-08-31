@@ -17,7 +17,7 @@ next_body = "#career\n#war\nBy 10xaiengineer"
 prev_id = 2099
 prev_title = ""
 prev_body = "#octopus\n#ai\n#disco\nBy kennyslowbird"
-views = 19
+views = 20
 ids = [2100]
 
 [[extra.related]]

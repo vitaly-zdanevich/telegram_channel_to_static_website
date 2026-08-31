@@ -17,7 +17,7 @@ next_body = "#7августа2026 (пт) 21.30-00:00 айтишная посид
 prev_id = 2116
 prev_title = ""
 prev_body = "#sound\n#mem\nBy dendertyofficial"
-views = 23
+views = 25
 ids = [2117]
 
 [[extra.related]]
