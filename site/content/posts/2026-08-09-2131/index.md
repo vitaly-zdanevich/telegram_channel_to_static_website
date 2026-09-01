@@ -17,7 +17,7 @@ next_body = "#ussr\n#pc\nSource"
 prev_id = 2130
 prev_title = ""
 prev_body = "#mem\n#legs\n#washing\nПомыла ноги и хорошее отношение\nBy evgenya22, source"
-views = 27
+views = 28
 ids = [2131]
 
 [[extra.related]]

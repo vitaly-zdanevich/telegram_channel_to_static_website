@@ -11,6 +11,7 @@ tags = ["travel", "philippines", "trash", "asia", "video"]
 id = 1775
 day = "2026-05-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1775"
+og_image = "01.jpg"
 next_id = 1776
 next_title = ""
 next_body = "#llm\n#quote"
@@ -54,4 +55,6 @@ date = "2026-07-12"
 
 From <https://www.bilibili.com/video/BV1YH6aYJEwj>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1775-01.mp4") }}
+![video](01.jpg)
+
+*▶ video — 44:51*
