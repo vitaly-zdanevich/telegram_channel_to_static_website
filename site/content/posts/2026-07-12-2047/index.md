@@ -17,7 +17,7 @@ next_body = "Created #python script that creates #shotcut #mlt #multicam project
 prev_id = 2046
 prev_title = ""
 prev_body = ""
-views = 24
+views = 25
 ids = [2047]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#ad\n#newspaper\n#design\n#toxic\nFrom"
 prev_id = 1839
 prev_title = ""
 prev_body = "#interior\n#refrigerator\n#green\nFrom"
-views = 17
+views = 18
 ids = [1840]
 +++
 

@@ -17,7 +17,7 @@ next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSour
 prev_id = 2050
 prev_title = ""
 prev_body = "#coatofarms\n#wikimediacommons\n#russianempire\nSource"
-views = 21
+views = 22
 ids = [2060]
 
 [[extra.related]]

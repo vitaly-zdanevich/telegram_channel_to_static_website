@@ -17,7 +17,7 @@ next_body = "#26июня2026 (пт) 21.30-23:00 айтишная посидел�
 prev_id = 1856
 prev_title = ""
 prev_body = "#armiesofexigo\n#tool\nСофт\nТам к софту есть инструкции но вот еще своими словами написал\nв файле list.LST все пути к игровым файлам\n===\nчтобы извлечь все файлы в консоли:\n\"tools/ork/orkdumper/orkdec\" Data.ork list.LST\n===\nчтобы заменить файл в игре на примере диалога выбора персонажа:\n1. создаем любой файл .LST пусть test.LST в папке с игрой\n2. в нем пишем список файлов которые хотим заменить (каждый с новой строки). Например:\nsoundbeastsbwkrselect01.ogg\n4. в папке с игрой по этому пути (soundbeastsbwkrselect01.ogg) вставляем новый файл на замену\n5. в консоли:\n\"tools/ork/orkcompiler/orkcmp\" -g DataX.ork test.LST\n6. в папке с игрой появится файл DataX.ork переименовываем его в Data3.ork\n7. все"
-views = 15
+views = 16
 forwarded_from = "Батумчик 🌴 | Новости Батуми | Западная Грузия"
 forwarded_from_url = "https://t.me/batumchik/74709"
 ids = [1860]

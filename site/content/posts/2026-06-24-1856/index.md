@@ -17,7 +17,7 @@ next_body = "💗 Любимый Кобулети — это место встр
 prev_id = 1855
 prev_title = ""
 prev_body = "#armiesofexigo it own by #electronicarts\nТвёрдо и чётко."
-views = 15
+views = 16
 ids = [1856, 1857, 1858, 1859]
 
 [[extra.related]]

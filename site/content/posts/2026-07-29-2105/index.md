@@ -17,7 +17,7 @@ next_body = "#dog\n#shepherd\n#german\nBy materanimalium"
 prev_id = 2104
 prev_title = ""
 prev_body = "#music\n#musictracker\n#amiga\n#octamed\nBy black.lines.din.sky"
-views = 17
+views = 18
 ids = [2105]
 
 [[extra.related]]

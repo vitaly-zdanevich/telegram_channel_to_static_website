@@ -18,7 +18,7 @@ next_body = "Моя лекция про мой Telegram бот YouTube, с по�
 prev_id = 1848
 prev_title = ""
 prev_body = "#batumi\nOh my, I live here\nFrom"
-views = 16
+views = 17
 ids = [1849]
 
 [[extra.related]]

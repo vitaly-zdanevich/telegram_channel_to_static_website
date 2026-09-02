@@ -18,7 +18,7 @@ next_body = "#hardware\n#player\nSource"
 prev_id = 2117
 prev_title = ""
 prev_body = "#sound\n#mem\nBy dendertyofficial"
-views = 21
+views = 22
 forwarded_from = "Кирилл Марс"
 ids = [2118]
 

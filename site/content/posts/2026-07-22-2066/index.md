@@ -17,7 +17,7 @@ next_body = "Моя #лекция про #evernote проекты, #saas, #everp
 prev_id = 2061
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
-views = 170
+views = 172
 ids = [2066]
 +++
 

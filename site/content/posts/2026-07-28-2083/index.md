@@ -18,7 +18,7 @@ next_body = "#cat\n#death\n#fear\n#green\n#wash\nSource"
 prev_id = 2076
 prev_title = ""
 prev_body = "What a nice #arabic #logo"
-views = 13
+views = 14
 ids = [2083, 2084, 2085, 2086, 2087, 2088, 2089, 2090]
 
 [[extra.related]]

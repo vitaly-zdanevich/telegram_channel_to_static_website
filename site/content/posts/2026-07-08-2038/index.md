@@ -17,7 +17,7 @@ next_body = "#korea\n#northkorea\n#kpop\nSource"
 prev_id = 2037
 prev_title = ""
 prev_body = "#kindzadza\n#trailer\nSource"
-views = 19
+views = 20
 ids = [2038]
 
 [[extra.related]]

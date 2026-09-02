@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2022-03-03T21:22:25+00:00
-description = "Упоминалось: also known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format…"
+description = "Упоминалось: Государственное белорусское предприятие продает токены \"Коллапс моей личности\""
 
 [taxonomies]
 days = ["2022-03-03"]
@@ -15,7 +15,7 @@ next_title = ""
 next_body = "Третий подкаст с Анатолием Бабеней.\nУпоминалось:\nDoom\nDNA test\nМузыка\nМодель для Сборки\nSafecast maintains the largest open dataset of background radiation measurements ever collected\nГосударственное учреждение «Республиканский центр по гидрометеорологии, контролю радиоактивного загрязнения и мониторингу окружающей среды» Минприроды Республики Беларусь"
 prev_id = 5
 prev_title = ""
-prev_body = "#podcast\nНе влазит в сообщение с подкастом выше.\nПро информационные технологии, хакеров, минский Хакерспейс, открытый софт, блокчейн и криптовалюты и Биткоин, буддизм, БГУИР, открытые данные\nУпоминалось:\nis an international computer art subculture focused on producing demos: self-contained, sometimes extremely small, computer programs that produce audiovisual presentations. The purpose of a demo is to show off programming, visual art, and musical skills.\")\nis a community-operated, often not-for-profit workspace where people with common interests, such as computers, machining, technology, science, digital art, or electronic art, can meet, socialize, and collaborate. Hackerspaces…\")\nor\nis an Indian religion and philosophy based on teachings attributed to the Buddha, a South Asian wandering ascetic and religious teacher who lived in the 6th or 5th century BCE. It is the world's fourth-la…\")\nis a type of statistical experiment designed to evaluate the efficacy or safety of an intervention…"
+prev_body = "#podcast\nНе влазит в сообщение с подкастом выше.\nПро информационные технологии, хакеров, минский Хакерспейс, открытый софт, блокчейн и криптовалюты и Биткоин, буддизм, БГУИР, открытые данные\nУпоминалось:\nor\n\"Коллапс моей личности\"\nЗаписано на телефон Poco X3 Pro (Виталий), минимальный монтаж на Audacity, Gentoo.\nВторой подкаст с Анатолием Бабеней, про блокчейн, крипту, ИТ в Беларуси и мире, самоорганизацию, психологию, общественные проекты, работа, деньги, выгорание"
 views = 46
 ids = [7]
 +++
@@ -25,7 +25,7 @@ ids = [7]
 <https://www.reddit.com/r/tifu>  
 <https://www.reddit.com/r/belarus>  
 
-[https://en.wikipedia.org/wiki/Aaron_Swartz](<https://en.wikipedia.org/wiki/Aaron_Swartz> "Aaron Hillel Swartz (November 8, 1986 – January 11, 2013), also known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…")  
+<https://en.wikipedia.org/wiki/Aaron_Swartz>  
 <https://en.wikipedia.org/wiki/JSTOR>  
 <https://en.wikipedia.org/wiki/Sci-Hub>  
 <https://en.wikipedia.org/wiki/Stop_Online_Piracy_Act>  

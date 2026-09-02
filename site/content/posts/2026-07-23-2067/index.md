@@ -17,7 +17,7 @@ next_body = "🇬🇪 Very impressed with Georgia.\n🏔 The country is known fo
 prev_id = 2066
 prev_title = ""
 prev_body = "#buterin\n#pickup\nSource"
-views = 174
+views = 176
 ids = [2067]
 
 [[extra.related]]
@@ -60,7 +60,7 @@ date = "2026-06-30"
 
 [reeknote evernote cli](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 78 commits · GPL-3.0 · last push 2026-07-17")  
 
-[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 8 stars · Languages: Rust 99%, JavaScript 1% · 141 commits · 1 fork · 3 open issues/PRs · MIT · last push 2026-08-31")  
+[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 8 stars · Languages: Rust 99%, JavaScript 1% · 141 commits · 1 fork · 3 open issues/PRs · MIT · last push 2026-09-01")  
 
 To Evernote: [Pinterest](<https://github.com/vitaly-zdanevich/pinterest-saves-to-evernote> "GitHub Action that automatically saves your Pinterest pins to Evernote, unofficial · 0 stars · Languages: Rust 100% · 52 commits · last push 2026-08-13"), [Wikipedia](<https://github.com/vitaly-zdanevich/wikipedia_diffs_to_evernote> "Daily GitHub Action that syncs a Wikipedia user's edits to Evernote — one note per edit (clickable editor, date, size change, diff link, an… · 0 stars · Languages: Python 100% · 23 commits · MIT · last push 2026-07-21"), [YandexMusic](<https://github.com/vitaly-zdanevich/yandex-music-likes-to-evernote> "Rust CLI to export newly liked Yandex Music tracks to Evernote notes · 0 stars · Languages: Rust 100% · 42 commits · GPL-3.0 · last push 2026-07-22")  
 

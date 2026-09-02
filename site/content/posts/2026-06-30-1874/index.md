@@ -18,7 +18,7 @@ next_body = "\"На пляжах Батуми все стабильно\"- по�
 prev_id = 1873
 prev_title = ""
 prev_body = "#batumi\n#aksiarodak\n#year2024\n#my\n#лекция\n#wikimediacommons\n#preservation\nЗапіс ад снежня 2024.\nПлан лекцыі і ўсе спасылкі"
-views = 18
+views = 19
 ids = [1874]
 
 [[extra.related]]
