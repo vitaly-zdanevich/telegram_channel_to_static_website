@@ -49,6 +49,6 @@ date = "2026-03-05"
 
 Wow my {{ tag(t="reeknote") }} ({{ tag(t="evernote") }} {{ tag(t="cli") }}) can now play audio and show images, in a terminal  
 
-[https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 78 commits · GPL-3.0 · last push 2026-07-17")
+[https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 83 commits · GPL-3.0 · last push 2026-09-03")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1758-5199865542213308919.jpg") }}

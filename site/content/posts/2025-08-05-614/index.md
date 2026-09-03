@@ -52,4 +52,4 @@ date = "2025-05-06"
 
 Article from author <https://borshev.com/selfmailbot>  
 
-[https://github.com/f213/selfmailbot](<https://github.com/f213/selfmailbot> "Telegram bot forwarding messages to the inbox · 140 stars · Languages: Python 81%, Dockerfile 10%, HTML 6% · 272 commits · 28 forks · 20 open issues/PRs · MIT · last push 2026-09-01")
+[https://github.com/f213/selfmailbot](<https://github.com/f213/selfmailbot> "Telegram bot forwarding messages to the inbox · 140 stars · Languages: Python 81%, Dockerfile 10%, HTML 6% · 272 commits · 28 forks · 20 open issues/PRs · MIT · last push 2026-09-02")

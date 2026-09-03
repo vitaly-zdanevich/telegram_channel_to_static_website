@@ -65,10 +65,10 @@ Horn of the Abyss 1.7.1 <https://h3hota.com/en/documentation>
 
 <https://www.wikidata.org/wiki/Q136699766>  
 
-Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1109 stars · Languages: Shell 98%, C 2% · 608 commits · 76 forks · 24 open issues/PRs · MIT · last push 2026-08-28")  
+Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1110 stars · Languages: Shell 98%, C 2% · 608 commits · 76 forks · 24 open issues/PRs · MIT · last push 2026-08-28")  
 
 [YouTube](<https://www.youtube.com/watch?v=VTSeBbbH07Q> "Heroes of Might and Magic 3: map \"One Bad Day\": hard, 2 people VS AI, defeat")
 
 {{ youtube(id="VTSeBbbH07Q") }}
 
-<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136699766">Q136699766</a> · <span class="wd-qid">Q136699766</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">Q1046315</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">P361</a></td><td><a href="https://www.wikidata.org/wiki/Q220965">Q220965</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P11250">P11250</a></td><td>homm:One_Bad_Day_(Allies)</td></tr></tbody></table></figure>
+<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136699766">One Bad Day</a> · <span class="wd-qid">Q136699766</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q220965">Q220965</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P11250">Miraheze article ID</a></td><td>homm:One_Bad_Day_(Allies)</td></tr></tbody></table></figure>
