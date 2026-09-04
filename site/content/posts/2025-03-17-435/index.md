@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-03-17T00:55:39+00:00
-description = "dieantwoord Source"
+description = "dieantwoord Source is the fourth studio album by Die Antwoord. It was released on 16 September 2016 through streaming platforms and as a digital download.\")"
 
 [taxonomies]
 days = ["2025-03-17"]
@@ -39,6 +39,6 @@ date = "2025-03-17"
 
 {{ tag(t="die_antwoord") }}  
 
-[Source](https://en.wikipedia.org/wiki/Mount_Ninji_and_da_Nice_Time_Kid)
+[Source](<https://en.wikipedia.org/wiki/Mount_Ninji_and_da_Nice_Time_Kid> "Mount Ninji and da Nice Time Kid (commonly referred to as simply \"Mount Ninji\") is the fourth studio album by Die Antwoord. It was released on 16 September 2016 through streaming platforms and as a digital download.")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-435-5384349651886533522.jpg") }}

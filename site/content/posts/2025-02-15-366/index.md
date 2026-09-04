@@ -49,7 +49,7 @@ date = "2025-02-21"
 {{ tag(t="game") }}  
 {{ tag(t="man2") }}  
 
-<https://en.wikipedia.org/wiki/Massive_Assault_Network_2>  
+[https://en.wikipedia.org/wiki/Massive_Assault_Network_2](<https://en.wikipedia.org/wiki/Massive_Assault_Network_2> "Massive Assault Network 2 is a massively multiplayer online game developed and published by Wargaming. The game is a turn-based futuristic military simulation.")  
 
 <https://lutris.net/games/massive-assault-network-2>  
 

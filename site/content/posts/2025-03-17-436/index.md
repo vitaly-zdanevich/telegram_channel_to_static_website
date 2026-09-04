@@ -17,7 +17,7 @@ next_title = ""
 next_body = "#dieantwoord\nSource\")"
 prev_id = 435
 prev_title = ""
-prev_body = "#dieantwoord\nSource"
+prev_body = "#dieantwoord\nSource is the fourth studio album by Die Antwoord. It was released on 16 September 2016 through streaming platforms and as a digital download.\")"
 views = 44
 ids = [436]
 
@@ -39,7 +39,7 @@ date = "2025-03-17"
 
 {{ tag(t="die_antwoord") }}  
 
-[Source](https://commons.wikimedia.org/wiki/File:Die_Antwoord_Ninja_and_Yolandi_on_the_street.jpg)
+[Source](<https://commons.wikimedia.org/wiki/File:Die_Antwoord_Ninja_and_Yolandi_on_the_street.jpg> "By Stefan Magdalinski · 2012-12-06 17:53:12")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-436-5384349651886533523.jpg") }}
 
