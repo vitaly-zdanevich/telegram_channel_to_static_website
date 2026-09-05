@@ -54,7 +54,7 @@ date = "2026-07-04"
 {{ tag(t="year_2005") }}  
 {{ tag(t="globustut") }}  
 
-[Source](https://commons.wikimedia.org/wiki/File:062-1594_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_8_%D0%B8%D1%8E%D0%BB%D1%8F_2005.jpg)
+[Source](<https://commons.wikimedia.org/wiki/File:062-1594_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_8_%D0%B8%D1%8E%D0%BB%D1%8F_2005.jpg> "By Globustut · 2005")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1980-5357386439911479566.jpg") }}
 

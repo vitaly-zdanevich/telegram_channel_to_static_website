@@ -17,7 +17,7 @@ next_body = "My yet another project: @wikipediaunofficialbot\nBuilt with #llm #g
 prev_id = 1802
 prev_title = ""
 prev_body = "With #llm I added 1920x1200 to #armiesofexigo #game\nAnd increased the #camera range."
-views = 34
+views = 35
 ids = [1804]
 
 [[extra.related]]

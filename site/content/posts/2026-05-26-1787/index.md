@@ -18,7 +18,7 @@ next_body = "#28мая2026 (чт) 21:00–01:00 — айтишная посид�
 prev_id = 1786
 prev_title = ""
 prev_body = "Finally I forked #nixnote, and migrated from #qt5 to #qt6, by #llm #gpt 5.5 xhigh"
-views = 38
+views = 39
 ids = [1787, 1788, 1789, 1790, 1791, 1792, 1793, 1794, 1795, 1796, 1797, 1798]
 
 [[extra.related]]

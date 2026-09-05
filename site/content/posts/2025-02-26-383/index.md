@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-02-26T05:37:04+00:00
-description = "Source — зимбабвийский политик, член правящего Зимбабвийского африканского национального союза — Патриотического фронта.\")"
+description = "Source"
 
 [taxonomies]
 days = ["2025-02-26"]
@@ -16,11 +16,11 @@ next_title = ""
 next_body = "Source"
 prev_id = 382
 prev_title = ""
-prev_body = "Source дно озера или морского побережья на севере Европейской части России и в Сибири. Няша — ласковое прозвище для кого-то чрезвычайно милого и приятного (пришло из жаргона поклонников аниме, см.\")"
+prev_body = "Source"
 views = 47
 ids = [383]
 +++
 
-[Source](<https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D0%BA%D0%B2%D0%B8%D0%BD%D1%8C%D1%8F,_%D0%9D%D1%8F%D1%88%D0%B0> "Няша Чиквинья (англ. Nyasha Chikwinya) — зимбабвийский политик, член правящего Зимбабвийского африканского национального союза — Патриотического фронта.")
+[Source](https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D0%BA%D0%B2%D0%B8%D0%BD%D1%8C%D1%8F,_%D0%9D%D1%8F%D1%88%D0%B0)
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-383-5330160680873094488.jpg") }}
