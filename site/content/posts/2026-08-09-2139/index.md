@@ -17,7 +17,7 @@ next_body = "#fun\n#document\n#secret\n#censor\n#music\n#anime\n#badapple\nSourc
 prev_id = 2138
 prev_title = ""
 prev_body = "#village\n#nature\n#career\nSource"
-views = 156
+views = 159
 ids = [2139]
 
 [[extra.related]]

@@ -13,7 +13,7 @@ day = "2022-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/5"
 next_id = 7
 next_title = ""
-next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nis a digital library of academic journals, books, and primary sources founded in 1994. Originally containing digitized back issues of academic journals, it now encompasses books and other primary sources as well as current issues of journals in the hum…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
+next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
 prev_id = 3
 prev_title = ""
 prev_body = "Channel photo updated"
@@ -57,7 +57,7 @@ date = "2026-04-16"
 <https://www.theverge.com/2018/5/15/17353194/lunar-library-wikipedia-moon-arch-foundation-astrobotic-spacex>  
 <https://mashable.com/article/moon-library-beresheet-crash-wikipedia>  
 <https://www.space.com/40598-lunar-library-wikipedia-astrobotic-moon-mission.html>  
-[https://en.wikipedia.org/wiki/Buddhism](<https://en.wikipedia.org/wiki/Buddhism> "Buddhism, also known as Buddhadharma and Dharmavinaya (transl. \"doctrines and disciplines\"), is an Indian religion and philosophy based on teachings attributed to the Buddha, a South Asian wandering ascetic and religious teacher who lived in the 6th or 5th century BCE. It is the world's fourth-la…")  
+[https://en.wikipedia.org/wiki/Buddhism](<https://en.wikipedia.org/wiki/Buddhism> "Buddhism, also known as Buddhadharma and Dharmavinaya (transl. \"doctrines and disciplines\"), is an Indian religion and philosophy based on teachings attributed to the Buddha, a śramaṇa (wandering ascetic) and religious teacher who lived in the 6th or 5th century BCE. It is the world's fourth-larg…")  
 
 <http://www.buddhanet.net/pdf_file/buddasa.pdf>  
 [https://judaism.stackexchange.com](https://judaism.stackexchange.com/)  
@@ -80,7 +80,7 @@ date = "2026-04-16"
 
 <https://wiki.openstreetmap.org/wiki/Tag:natural=tree>  
 
-<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples>  
+[https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples](<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples> "This page contains examples of SPARQL queries for data in Wikidata. When adding any further queries, consider adding a comment in the query describing what it illustrates, when and by whom it was written and which are its limitations given the current data and use of properties at Wikidata.")  
 
 Записано на телефон Poco X3 Pro (Виталий), минимальный монтаж на Audacity, Gentoo.
 
