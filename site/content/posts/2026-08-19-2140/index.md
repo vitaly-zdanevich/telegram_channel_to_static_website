@@ -11,10 +11,13 @@ tags = ["fun", "document", "secret", "censor", "music", "anime", "bad_apple", "v
 id = 2140
 day = "2026-08-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2140"
+next_id = 2141
+next_title = ""
+next_body = "#webdesign\nWhy so #bad\nAnd no web version, of course. No Linux version."
 prev_id = 2139
 prev_title = ""
 prev_body = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, ЯндексМузыки, аудиокниг, радио\nЛёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.\nНа выходе - если /.config/youta/ под гитом - пушит, без токенов.\nthrough yt-dlp, Bandcamp, Apple Podcasts and RSS, with local subscriptions and persi… · 2 stars · Languages: Rust 98%, TypeScript 2%, Shell 0% · 278 commits · 1 fork · 1 open issues/PRs · MIT · last push 2026-09-02\")\nВсе линки\n#my\n#лекция\n#batumi\n#friendsbar\n#youta\n#tui\n#youtube\n#yandexmusic\n#filemanager\n#offline\n#wikidata\n#ffprobe\n#acoustid\n#musicbrainz\n#lastfm\n#bandcamp\n#radio\n#llm\n#codex\n#gpt\n#oldhardware\n#rust\nYouTube"
-views = 66
+views = 70
 ids = [2140]
 
 [[extra.related]]

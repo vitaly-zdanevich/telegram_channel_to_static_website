@@ -17,7 +17,7 @@ next_body = "#error\n#gitlab\n#contradiction"
 prev_id = 1761
 prev_title = ""
 prev_body = "I love #ci so much that for the first time I depleted free 400 minutes per month, on #gitlab, on my FOSS non-commercial projects."
-views = 413
+views = 414
 ids = [1762]
 
 [[extra.related]]
@@ -63,7 +63,7 @@ date = "2026-06-24"
 [logseq.com](http://logseq.com/) свободные заметки в markdown  
 [github.com/boo-yee/nixnote2](<http://github.com/boo-yee/nixnote2> "Nixnote - Evernote desktop client for Linux · 5 stars · Languages: C++ 97%, Java 1%, CMake 1% · 2731 commits · GPL-3.0 · last push 2025-10-08") FOSS клиент для Evernote на C++ и Qt  
 [github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 83 commits · GPL-3.0 · last push 2026-09-03") мой CLI на Rust  
-[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 88385 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8191 commits · 5458 forks · 382 open issues/PRs · MPL-2.0 · last push 2026-09-08") FOSS синхронизация данных через ваши устройства  
+[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 88414 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8191 commits · 5457 forks · 382 open issues/PRs · MPL-2.0 · last push 2026-09-08") FOSS синхронизация данных через ваши устройства  
 
 Бесплатный хостинг:  
 [aws.amazon.com/lambda](http://aws.amazon.com/lambda)  
