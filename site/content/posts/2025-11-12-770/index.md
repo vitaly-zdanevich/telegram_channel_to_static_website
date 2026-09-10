@@ -18,7 +18,7 @@ next_body = "#webdesign\n#webdesignold\n#xbox\nWikidata\nSource"
 prev_id = 769
 prev_title = ""
 prev_body = "#mp3\n#hardware\n#sandisc\nSexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008."
-views = 36
+views = 37
 ids = [770]
 
 [[extra.related]]

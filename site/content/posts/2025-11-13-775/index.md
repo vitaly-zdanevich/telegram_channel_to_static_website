@@ -17,7 +17,7 @@ next_body = "#quote\n#kindzadza\nФильм был изначально запл
 prev_id = 774
 prev_title = ""
 prev_body = "#film\n#kindzadza\n#batumi\nКин-дза-дза, на девятой минуте Скрипач говорит что из Батуми"
-views = 42
+views = 43
 ids = [775]
 
 [[extra.related]]

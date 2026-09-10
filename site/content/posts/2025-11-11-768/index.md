@@ -18,7 +18,7 @@ next_body = "#mp3\n#hardware\n#sandisc\nSexy Girls Fun Gadgets Stuff Magazine, 2
 prev_id = 767
 prev_title = ""
 prev_body = "#webdesign\n#webdesignold"
-views = 38
+views = 39
 ids = [768]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#webdesign\n#webdesignold\n#webdesigngames\nYear: 2000"
 prev_id = 777
 prev_title = ""
 prev_body = "#film\n#kindzadza\n#batumi\nСоедините меня с Батуми"
-views = 61
+views = 62
 ids = [778]
 
 [[extra.related]]

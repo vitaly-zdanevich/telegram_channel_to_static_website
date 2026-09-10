@@ -18,7 +18,7 @@ next_body = "#painting\n#gustavedore\nGéraint et Enide sortant de la forêt Pie
 prev_id = 761
 prev_title = ""
 prev_body = "#painting\n#bible\n#gustavedore\nThe Battle of Nicaea\nSource"
-views = 24
+views = 25
 ids = [762]
 
 [[extra.related]]

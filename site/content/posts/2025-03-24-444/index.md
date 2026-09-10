@@ -37,6 +37,6 @@ date = "2026-04-15"
 {{ tag(t="security") }}  
 {{ tag(t="webextension") }}  
 
-[https://github.com/extesy/hoverzoom/discussions/670](<https://github.com/extesy/hoverzoom/discussions/670> "Google Chrome extension for zooming images on mouse hover · 2055 stars · Languages: JavaScript 91%, CSS 6%, HTML 2% · 2126 commits · 219 forks · 243 open issues/PRs · MIT · last push 2026-09-08")
+[https://github.com/extesy/hoverzoom/discussions/670](<https://github.com/extesy/hoverzoom/discussions/670> "Google Chrome extension for zooming images on mouse hover · 2054 stars · Languages: JavaScript 91%, CSS 6%, HTML 2% · 2126 commits · 220 forks · 244 open issues/PRs · MIT · last push 2026-09-08")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-444-5406954455607405651.jpg") }}

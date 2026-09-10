@@ -18,7 +18,7 @@ next_body = "#ad\n#retro\n#nokia\nSource"
 prev_id = 780
 prev_title = ""
 prev_body = "#webdesign\n#webdesigngames\n#pink"
-views = 35
+views = 36
 ids = [781]
 
 [[extra.related]]

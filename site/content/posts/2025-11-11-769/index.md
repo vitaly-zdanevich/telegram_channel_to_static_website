@@ -18,7 +18,7 @@ next_body = "#games\n#segagenesis\n#neogeo\n#year1991\nSource"
 prev_id = 768
 prev_title = ""
 prev_body = "#webdesign\n#webdesignold"
-views = 41
+views = 42
 ids = [769]
 
 [[extra.related]]

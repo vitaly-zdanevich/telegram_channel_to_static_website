@@ -18,7 +18,7 @@ next_body = "#film\n#kindzadza\n#batumi\nКин-дза-дза, на девято
 prev_id = 771
 prev_title = ""
 prev_body = "#webdesign\n#webdesignold\n#xbox\nWikidata\nSource"
-views = 41
+views = 42
 ids = [772]
 
 [[extra.related]]

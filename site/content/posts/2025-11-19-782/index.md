@@ -17,7 +17,7 @@ next_body = "#ad\n#playstation\n#playstation2\nSource"
 prev_id = 781
 prev_title = ""
 prev_body = "#js\nOut of memory, but RAM is used to 64%\n#firefox"
-views = 33
+views = 34
 ids = [782]
 
 [[extra.related]]

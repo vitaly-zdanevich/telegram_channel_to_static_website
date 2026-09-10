@@ -18,7 +18,7 @@ next_body = "#painting\n#angel\n#ship\n#gustavedore\nEngraving by Gustave Doré,
 prev_id = 760
 prev_title = ""
 prev_body = "#painting\n#bible\n#gustavedore\n#death\n#horse\n#year1865\nGustave Dore - Death on the Pale Horse\nSource"
-views = 25
+views = 26
 ids = [761]
 
 [[extra.related]]

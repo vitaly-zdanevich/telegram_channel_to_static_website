@@ -18,7 +18,7 @@ next_body = "#js\nOut of memory, but RAM is used to 64%\n#firefox"
 prev_id = 779
 prev_title = ""
 prev_body = "#webdesign\n#webdesignold\n#webdesigngames\nYear: 2000"
-views = 61
+views = 62
 ids = [780]
 
 [[extra.related]]

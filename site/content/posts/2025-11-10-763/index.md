@@ -18,7 +18,7 @@ next_body = "#painting\n#gustavedore\nSource"
 prev_id = 762
 prev_title = ""
 prev_body = "#painting\n#angel\n#ship\n#gustavedore\nEngraving by Gustave Doré, representing the departure of Aigues-Mortes of Louis IX for the crusade\nSource"
-views = 23
+views = 24
 ids = [763]
 
 [[extra.related]]
