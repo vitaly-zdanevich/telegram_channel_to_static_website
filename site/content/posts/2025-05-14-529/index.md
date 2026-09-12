@@ -16,7 +16,7 @@ next_title = ""
 next_body = "You can #upload to #commons through #darktable with this free plugin"
 prev_id = 528
 prev_title = ""
-prev_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/\n· 267 stars · Languages: C++ 51%, Python 40%, Roff 7% · 498 commits · 31 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-09-08\")"
+prev_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/\n· 267 stars · Languages: C++ 51%, Python 40%, Roff 7% · 498 commits · 32 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-09-08\")"
 views = 42
 ids = [529]
 
@@ -48,7 +48,7 @@ date = "2026-05-28"
 
 > I avoid mentioning that I run gentoo  <br>  <br>But when I have to, I try to explain that customizing things down to the source code couldn't be any closer to the true**™** spirit of linux if you tried, and it's a shame that other distributions introduce a heavy maintainance cost when you try to do any of that, to the point you're sometimes better off just forking the distro.  <br>  <br>This repository has been published to help substantiate this argument. Gentoo is, ironically enough, the easiest distribution for me to use. It has a ton of flaws and is really messy, but nothing else comes close.  <br>  <br>If you're snooping around, or I sent you here, I recommend checking out the patches/ and env/ directories, as these are where the real power resides. If you've heard Gentoo is "powerful" because of USE flags, that's really only scratching the surface.  <br>  <br>Most everything else is bespoke portage configuration, where I try to work around bad defaults and other things I don't particularly like.
 
-[https://github.com/mid-kid/gentoo-config](<https://github.com/mid-kid/gentoo-config> "My gentoo-specific configuration files and patches · 9 stars · Languages: Shell 100% · 351 commits · 2 forks · 2 open issues/PRs · last push 2026-09-03")  
+[https://github.com/mid-kid/gentoo-config](<https://github.com/mid-kid/gentoo-config> "My gentoo-specific configuration files and patches · 9 stars · Languages: Shell 100% · 359 commits · 2 forks · 2 open issues/PRs · last push 2026-09-12")  
 
 {{ tag(t="gentoo") }}  
 {{ tag(t="patches") }}

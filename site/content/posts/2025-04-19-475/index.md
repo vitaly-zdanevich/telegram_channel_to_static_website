@@ -17,7 +17,7 @@ next_body = "Artwork for the podcast"
 prev_id = 474
 prev_title = ""
 prev_body = "#archiving\n#preservation\n#internetarchive\n#jasonscott\n#man\n#hat\n#harddrives\nJason Scott, Internet Archive employee, photo in color\nFrom"
-views = 61
+views = 62
 ids = [475, 476]
 
 [[extra.related]]

@@ -15,7 +15,7 @@ next_body = ""
 prev_id = 246
 prev_title = ""
 prev_body = "#game\n#man2"
-views = 73
+views = 74
 ids = [247]
 +++
 
