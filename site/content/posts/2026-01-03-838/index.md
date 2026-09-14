@@ -18,7 +18,7 @@ next_body = "#game\n#gta\n#remaster\n#preservation\n#lost\nRosado claimed \"the 
 prev_id = 837
 prev_title = ""
 prev_body = "#vr\nSource"
-views = 22
+views = 23
 ids = [838]
 +++
 

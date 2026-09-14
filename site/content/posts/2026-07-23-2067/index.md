@@ -11,13 +11,13 @@ tags = ["лекция", "evernote", "saas", "everpublich", "zola", "api", "frien
 id = 2067
 day = "2026-07-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2067"
-next_id = 2068
+next_id = 2069
 next_title = ""
-next_body = "🇬🇪 Very impressed with Georgia.\n🏔 The country is known for its warm people, ancient culture, local food and epic landscapes.\nBut it doesn’t stop there.\n📈 Thanks to its government’s business-friendly policies, Georgia is becoming a major business hub.\n❎️ The country’s economy doubled in 5 years and is still growing by 8% a year.\n💼 International tech companies pay 0% corporate tax and just 5% on dividends and salaries.\nGeorgia is seriously underrated as a place to visit and do business.\nI'll be back very soon! ✈️"
+next_body = "#fashion\n#ears\n#hood\n#cat\n#green\nSource"
 prev_id = 2066
 prev_title = ""
 prev_body = "#buterin\n#pickup\nSource"
-views = 188
+views = 189
 ids = [2067]
 
 [[extra.related]]
@@ -60,7 +60,7 @@ date = "2026-06-30"
 
 [reeknote evernote cli](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 83 commits · GPL-3.0 · last push 2026-09-03")  
 
-[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 8 stars · Languages: Rust 99%, JavaScript 1% · 141 commits · 1 fork · 3 open issues/PRs · MIT · last push 2026-09-12")  
+[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 8 stars · Languages: Rust 99%, JavaScript 1% · 141 commits · 1 fork · 3 open issues/PRs · MIT · last push 2026-09-13")  
 
 To Evernote: [Pinterest](<https://github.com/vitaly-zdanevich/pinterest-saves-to-evernote> "GitHub Action that automatically saves your Pinterest pins to Evernote, unofficial · 0 stars · Languages: Rust 100% · 52 commits · last push 2026-08-13"), [Wikipedia](<https://github.com/vitaly-zdanevich/wikipedia_diffs_to_evernote> "Daily GitHub Action that syncs a Wikipedia user's edits to Evernote — one note per edit (clickable editor, date, size change, diff link, an… · 0 stars · Languages: Python 100% · 24 commits · MIT · last push 2026-09-13"), [YandexMusic](<https://github.com/vitaly-zdanevich/yandex-music-likes-to-evernote> "Rust CLI to export newly liked Yandex Music tracks to Evernote notes · 0 stars · Languages: Rust 100% · 42 commits · GPL-3.0 · last push 2026-07-22")  
 

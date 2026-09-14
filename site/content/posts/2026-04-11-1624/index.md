@@ -32,6 +32,11 @@ label = "#bilibili verification with 100 questions - to be able to leave…"
 date = "2026-05-16"
 
 [[extra.related]]
+path = "@/posts/2026-09-13-2143/index.md"
+label = "#anime #xanax"
+date = "2026-09-13"
+
+[[extra.related]]
 path = "@/posts/2026-05-05-1737/index.md"
 label = "#webdesign #bilibili"
 date = "2026-05-05"
@@ -40,11 +45,6 @@ date = "2026-05-05"
 path = "@/posts/2025-08-09-621/index.md"
 label = "#anime #gpu"
 date = "2025-08-09"
-
-[[extra.related]]
-path = "@/posts/2025-03-08-398/index.md"
-label = "#anime #voice"
-date = "2025-03-08"
 +++
 
 {{ tag(t="preview") }} on {{ tag(t="bilibili") }}  

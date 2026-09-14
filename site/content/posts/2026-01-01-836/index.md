@@ -18,7 +18,7 @@ next_body = "#vr\nSource"
 prev_id = 835
 prev_title = ""
 prev_body = "#webdesign\n#petersburg\n#theater"
-views = 23
+views = 24
 ids = [836]
 
 [[extra.related]]

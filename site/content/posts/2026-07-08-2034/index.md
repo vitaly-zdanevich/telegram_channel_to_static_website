@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-07-08T18:46:18+00:00
-description = "mem claude llm Source"
+description = "mem music claude llm Source"
 
 [taxonomies]
 days = ["2026-07-08"]
-tags = ["mem", "claude", "llm", "video"]
+tags = ["mem", "music", "claude", "llm", "video"]
 
 [extra]
 id = 2034
@@ -17,7 +17,7 @@ next_body = "#china\n#buy\n#sell\n#yogurt\n#smoke\nSource"
 prev_id = 2024
 prev_title = ""
 prev_body = "#typography\n#scan\nSource"
-views = 130
+views = 132
 ids = [2034]
 
 [[extra.related]]
@@ -36,17 +36,18 @@ label = "What a time - multiple #llm doing multiple projects, in parallel…"
 date = "2026-05-18"
 
 [[extra.related]]
-path = "@/posts/2026-08-04-2117/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
+path = "@/posts/2025-06-02-546/index.md"
+label = "PromoDJ #music genres"
+date = "2025-06-02"
 
 [[extra.related]]
-path = "@/posts/2026-08-04-2116/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
+path = "@/posts/2025-05-11-518/index.md"
+label = "The life was quiet all around A cute little island Nice and non-…"
+date = "2025-05-11"
 +++
 
 {{ tag(t="mem") }}  
+{{ tag(t="music") }}  
 {{ tag(t="claude") }}  
 {{ tag(t="llm") }}  
 

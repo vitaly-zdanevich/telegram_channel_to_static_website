@@ -17,12 +17,12 @@ next_body = "#3d\n#walk\n#deformation\nBy theloudgiraffe"
 prev_id = 2092
 prev_title = ""
 prev_body = "#gamedev\n#indie\nBy mutatefightpurr"
-views = 14
+views = 15
 ids = [2093]
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2034/index.md"
-label = "#mem #claude #llm"
+label = "#mem #music #claude #llm"
 date = "2026-07-08"
 
 [[extra.related]]

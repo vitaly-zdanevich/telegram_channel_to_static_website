@@ -18,7 +18,7 @@ next_body = "#webdesign\n#photo\n#people\n#gamedev\n#icepicklodge"
 prev_id = 1546
 prev_title = ""
 prev_body = "#abandone\n#columns\n#Оболь\n#belarus\n#globustut\n#year2005\nSource"
-views = 25
+views = 26
 ids = [1554, 1555, 1556, 1557, 1558, 1559, 1560, 1561]
 
 [[extra.related]]

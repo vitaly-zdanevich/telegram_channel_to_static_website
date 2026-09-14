@@ -18,7 +18,7 @@ next_body = "#music\n#multitrack\n#parody\n#voice\n#unknownsource\nRice and peac
 prev_id = 1554
 prev_title = ""
 prev_body = "#abandone\n#church\n#Островно\n#belarus\n#globustut\n#year2005\nSource"
-views = 24
+views = 25
 ids = [1562]
 
 [[extra.related]]

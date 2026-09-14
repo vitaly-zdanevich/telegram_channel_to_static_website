@@ -18,7 +18,7 @@ next_body = "#wikipedia\n#medals\n#awards"
 prev_id = 834
 prev_title = ""
 prev_body = "#botanic\n#botanicillustration\nSourceBHL287631.jpg)"
-views = 25
+views = 26
 ids = [835]
 
 [[extra.related]]

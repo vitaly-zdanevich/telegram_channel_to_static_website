@@ -23,7 +23,7 @@ ids = [1781, 1782, 1783]
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2034/index.md"
-label = "#mem #claude #llm"
+label = "#mem #music #claude #llm"
 date = "2026-07-08"
 
 [[extra.related]]

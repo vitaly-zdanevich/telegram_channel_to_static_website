@@ -17,8 +17,13 @@ next_body = "#animal\n#mouse\n#grass\n#ground\n#watering\n#cares\nSource"
 prev_id = 2073
 prev_title = ""
 prev_body = "#toy\n#animal\n#antlers\nSource"
-views = 14
+views = 15
 ids = [2074]
+
+[[extra.related]]
+path = "@/posts/2026-09-13-2143/index.md"
+label = "#anime #xanax"
+date = "2026-09-13"
 
 [[extra.related]]
 path = "@/posts/2026-07-29-2101/index.md"
@@ -39,11 +44,6 @@ date = "2025-03-08"
 path = "@/posts/2025-01-17-252/index.md"
 label = "#movie #anime"
 date = "2025-01-17"
-
-[[extra.related]]
-path = "@/posts/2026-07-29-2098/index.md"
-label = "#war The #radio broadcasts of Hanoi Hannah during the #vietnamwa…"
-date = "2026-07-29"
 +++
 
 {{ tag(t="anime") }}  

@@ -18,7 +18,7 @@ next_body = "#bendingspoons\n#aol\nSource"
 prev_id = 836
 prev_title = ""
 prev_body = "#wikipedia\n#medals\n#awards"
-views = 19
+views = 20
 ids = [837]
 
 [[extra.related]]

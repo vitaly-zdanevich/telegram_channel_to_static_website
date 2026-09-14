@@ -17,7 +17,7 @@ next_body = "#god\n#smartphone\n#game"
 prev_id = 1562
 prev_title = ""
 prev_body = "#webdesign\n#photo\n#people\n#gamedev\n#icepicklodge"
-views = 23
+views = 24
 ids = [1563]
 
 [[extra.related]]

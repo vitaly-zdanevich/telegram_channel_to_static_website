@@ -12,10 +12,13 @@ id = 2141
 day = "2026-09-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2141"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2141-5260209093987738908.jpg"
+next_id = 2143
+next_title = ""
+next_body = "#anime\n#xanax"
 prev_id = 2140
 prev_title = ""
 prev_body = "#fun\n#document\n#secret\n#censor\n#music\n#anime\n#badapple\nSource"
-views = 7
+views = 10
 ids = [2141]
 
 [[extra.related]]

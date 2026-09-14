@@ -21,6 +21,11 @@ views = 30
 ids = [252]
 
 [[extra.related]]
+path = "@/posts/2026-09-13-2143/index.md"
+label = "#anime #xanax"
+date = "2026-09-13"
+
+[[extra.related]]
 path = "@/posts/2025-08-09-621/index.md"
 label = "#anime #gpu"
 date = "2025-08-09"
@@ -39,11 +44,6 @@ date = "2026-07-27"
 path = "@/posts/2026-06-15-1831/index.md"
 label = "#anime #phones #evangelion From"
 date = "2026-06-15"
-
-[[extra.related]]
-path = "@/posts/2026-04-11-1624/index.md"
-label = "#preview on #bilibili #anime"
-date = "2026-04-11"
 +++
 
 {{ tag(t="movie") }}  

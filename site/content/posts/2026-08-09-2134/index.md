@@ -17,7 +17,7 @@ next_body = "#death\n#cementery\n#urban\nSource"
 prev_id = 2133
 prev_title = ""
 prev_body = "#car\n#death\nSource"
-views = 46
+views = 47
 ids = [2134]
 
 [[extra.related]]
