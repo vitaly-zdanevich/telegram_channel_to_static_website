@@ -24,4 +24,4 @@ ids = [95]
 
 > Therapy dogs were present on set for the actors because of the intense and emotional content of the series
 
-<https://en.wikipedia.org/wiki/13_Reasons_Why>
+[https://en.wikipedia.org/wiki/13_Reasons_Why](<https://en.wikipedia.org/wiki/13_Reasons_Why> "13 Reasons Why (also stylized as TH1RTEEN R3ASONS WHY) is an American teen drama television series based on the 2007 novel Thirteen Reasons Why by author Jay Asher. Developed for Netflix by Brian Yorkey and with Selena Gomez serving as an executive producer, the series stars Dylan Minnette and Ka…")

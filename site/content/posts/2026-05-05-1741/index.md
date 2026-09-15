@@ -18,7 +18,7 @@ next_body = "#python\n#mojo\n#llm\n#gemini\n2. Mojo (The New Challenger)\nMojo i
 prev_id = 1740
 prev_title = ""
 prev_body = "#armiesofexigo: моя #лекция об игре, в Батуми\n#stillyoungbar\nТакже скачать эту заброшенную игру можно тут\nВсе ссылки на это #видео"
-views = 19
+views = 20
 ids = [1741, 1742, 1743]
 
 [[extra.related]]

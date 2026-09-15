@@ -1,6 +1,7 @@
 +++
 title = ""
 date = 2024-08-24T05:03:29+00:00
+description = "\"By Нацыянальны банк Рэспублікі Беларусі · 1993\")"
 
 [taxonomies]
 days = ["2024-08-24"]
@@ -20,6 +21,6 @@ views = 37
 ids = [124]
 +++
 
-[https://commons.wikimedia.org/wiki/File:100\_беларускіх\_рублёў\_узору\_1993\_году\_(рэвэрс).jpg](https://commons.wikimedia.org/wiki/File:100_%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%BA%D1%96%D1%85_%D1%80%D1%83%D0%B1%D0%BB%D1%91%D1%9E_%D1%83%D0%B7%D0%BE%D1%80%D1%83_1993_%D0%B3%D0%BE%D0%B4%D1%83_(%D1%80%D1%8D%D0%B2%D1%8D%D1%80%D1%81).jpg)
+[https://commons.wikimedia.org/wiki/File:100\_беларускіх\_рублёў\_узору\_1993\_году\_(рэвэрс).jpg](<https://commons.wikimedia.org/wiki/File:100_%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%BA%D1%96%D1%85_%D1%80%D1%83%D0%B1%D0%BB%D1%91%D1%9E_%D1%83%D0%B7%D0%BE%D1%80%D1%83_1993_%D0%B3%D0%BE%D0%B4%D1%83_(%D1%80%D1%8D%D0%B2%D1%8D%D1%80%D1%81).jpg> "By Нацыянальны банк Рэспублікі Беларусі · 1993")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-124-5352831476766466405.jpg") }}

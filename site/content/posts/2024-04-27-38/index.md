@@ -46,4 +46,4 @@ label = "#game #man2"
 date = "2025-02-15"
 +++
 
-I love <https://en.wikipedia.org/wiki/Armies_of_Exigo> - developed in 2004 - but nobody sell it anymore in 2024. I wrote to developers - looks like nobody cares. This is how we are loosing books, music, games. Now this game will not start on many systems - because of no support. {{ tag(t="game") }} {{ tag(t="windows") }}
+I love [https://en.wikipedia.org/wiki/Armies_of_Exigo](<https://en.wikipedia.org/wiki/Armies_of_Exigo> "Armies of Exigo is a real-time strategy video game for Microsoft Windows. The game was developed by Black Hole Entertainment, published by Cinergi Interactive and distributed by Electronic Arts.") - developed in 2004 - but nobody sell it anymore in 2024. I wrote to developers - looks like nobody cares. This is how we are loosing books, music, games. Now this game will not start on many systems - because of no support. {{ tag(t="game") }} {{ tag(t="windows") }}

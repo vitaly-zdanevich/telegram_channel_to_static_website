@@ -18,7 +18,7 @@ next_body = "This is how in #go we remove an element from a collection\nfunc rm(
 prev_id = 1747
 prev_title = ""
 prev_body = "Oh my...\n#leetcode"
-views = 29
+views = 30
 ids = [1749]
 
 [[extra.related]]

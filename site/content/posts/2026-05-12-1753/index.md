@@ -18,7 +18,7 @@ next_body = "#ai\n#screenshot from"
 prev_id = 1752
 prev_title = ""
 prev_body = "#scream\n#metal\nSource"
-views = 21
+views = 22
 ids = [1753, 1754]
 
 [[extra.related]]

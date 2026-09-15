@@ -50,7 +50,7 @@ date = "2026-06-19"
 
 {{ tag(t="still_young_bar") }}  
 
-<https://en.wikipedia.org/wiki/Armies_of_Exigo>  
+[https://en.wikipedia.org/wiki/Armies_of_Exigo](<https://en.wikipedia.org/wiki/Armies_of_Exigo> "Armies of Exigo is a real-time strategy video game for Microsoft Windows. The game was developed by Black Hole Entertainment, published by Cinergi Interactive and distributed by Electronic Arts.")  
 
 <https://www.gog.com/dreamlist/game/armies-of-exigo>  
 

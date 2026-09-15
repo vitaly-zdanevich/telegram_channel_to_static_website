@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2024-05-07T22:26:20+00:00
-description = "Another coin from Belarus Легенда пра пчалу bee coin"
+description = "Another coin from Belarus Легенда пра пчалу bee coin · 2017\")"
 
 [taxonomies]
 days = ["2024-05-07"]
@@ -42,6 +42,6 @@ label = "#coin #belarus #history Uploaded to"
 date = "2025-09-22"
 +++
 
-Another coin from Belarus Легенда пра пчалу {{ tag(t="bee") }} {{ tag(t="coin") }} <https://commons.wikimedia.org/wiki/File:BY-2017-20roubles-Bee-r.gif>
+Another coin from Belarus Легенда пра пчалу {{ tag(t="bee") }} {{ tag(t="coin") }} [https://commons.wikimedia.org/wiki/File:BY-2017-20roubles-Bee-r.gif](<https://commons.wikimedia.org/wiki/File:BY-2017-20roubles-Bee-r.gif> "By Design: Аксана Навасёлава (Aksana Navasiolava) · 2017")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-43-5321356655046285584.jpg") }}

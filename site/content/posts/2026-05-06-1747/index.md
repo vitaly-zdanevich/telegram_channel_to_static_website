@@ -18,7 +18,7 @@ next_body = "#leetcode\n#validation"
 prev_id = 1746
 prev_title = ""
 prev_body = "#leetcode is often produce #error"
-views = 29
+views = 30
 ids = [1747, 1748]
 
 [[extra.related]]

@@ -15,7 +15,7 @@ next_title = ""
 next_body = ""
 prev_id = 43
 prev_title = ""
-prev_body = "Another coin from Belarus Легенда пра пчалу #bee #coin"
+prev_body = "Another coin from Belarus Легенда пра пчалу #bee #coin · 2017\")"
 views = 54
 ids = [44]
 +++

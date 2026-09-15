@@ -17,7 +17,7 @@ next_body = "My another hobby project, made with #llm / #codex: converter of #wi
 prev_id = 1741
 prev_title = ""
 prev_body = "#odysee looks like #convert #video right in a #browser - without uploading to the backend."
-views = 22
+views = 23
 ids = [1744]
 
 [[extra.related]]

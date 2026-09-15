@@ -50,6 +50,6 @@ date = "2026-01-24"
 {{ tag(t="ai") }}  
 {{ tag(t="codex") }}  
 
-{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 124026 stars · Languages: Rust 97%, Python 3%, Starlark 0% · 10698 commits · 19125 forks · 17080 open issues/PRs · Apache-2.0 · last push 2026-09-14"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
+{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 124304 stars · Languages: Rust 97%, Python 3%, Starlark 0% · 10765 commits · 19199 forks · 17231 open issues/PRs · Apache-2.0 · last push 2026-09-15"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1120-5244641018655740008.jpg") }}

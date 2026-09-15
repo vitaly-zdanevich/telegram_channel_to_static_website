@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2141
 prev_title = ""
 prev_body = "#webdesign\nWhy so #bad\nAnd no web version, of course. No Linux version."
-views = 3
+views = 5
 ids = [2143]
 
 [[extra.related]]

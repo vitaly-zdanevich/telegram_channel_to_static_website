@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2024-08-20T21:54:59+00:00
-description = "From 13 Reasons Why - S1E4"
+description = "From 13 Reasons Why is an American teen drama television series based on the 2007 novel Thirteen Reasons Why by author Jay Asher. Developed for Netflix by Brian Yorkey and with Selena Gomez serving…"
 
 [taxonomies]
 days = ["2024-08-20"]
@@ -20,6 +20,6 @@ views = 29
 ids = [97]
 +++
 
-From [13 Reasons Why](https://en.wikipedia.org/wiki/13_Reasons_Why) - S1E4
+From [13 Reasons Why](<https://en.wikipedia.org/wiki/13_Reasons_Why> "13 Reasons Why (also stylized as TH1RTEEN R3ASONS WHY) is an American teen drama television series based on the 2007 novel Thirteen Reasons Why by author Jay Asher. Developed for Netflix by Brian Yorkey and with Selena Gomez serving as an executive producer, the series stars Dylan Minnette and Ka…") - S1E4
 
 📎 o-av1.webm *(not archived)*
