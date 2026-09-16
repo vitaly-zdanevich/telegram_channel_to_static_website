@@ -13,7 +13,7 @@ day = "2024-07-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/94"
 next_id = 95
 next_title = ""
-next_body = "After the series' release, a study published in the Journal of the American Academy of Child and Adolescent Psychiatry found that suicide among teenagers rose by 28.9 percent in the month after Netflix launched the show\nTherapy dogs were present on set for the actors because of the intense and emotional content of the series\nis an American teen drama television series based on the 2007 novel Thirteen Reasons Why by author Jay Asher. Developed for Netflix by Brian Yorkey and with Selena Gomez serving as an executive producer, the series stars Dylan Minnette and Ka…\")"
+next_body = "After the series' release, a study published in the Journal of the American Academy of Child and Adolescent Psychiatry found that suicide among teenagers rose by 28.9 percent in the month after Netflix launched the show\nTherapy dogs were present on set for the actors because of the intense and emotional content of the series"
 prev_id = 93
 prev_title = ""
 prev_body = "#ipv6"
@@ -46,7 +46,7 @@ label = "#firefox #extension Copy non-latin links without #percent"
 date = "2026-02-25"
 +++
 
-{{ tag(t="firefox") }} vertical tabs with [https://github.com/mbnuqw/sidebery](<https://github.com/mbnuqw/sidebery> "Firefox extension for managing tabs and bookmarks in sidebar. · 4687 stars · Languages: TypeScript 65%, Vue 23%, Stylus 9% · 2506 commits · 255 forks · 848 open issues/PRs · MIT · last push 2026-09-14") plus custom CSS from [https://github.com/lucaspar/firefox-vertical-tabs](<https://github.com/lucaspar/firefox-vertical-tabs> "Stylesheets for collapsible vertical tabs for Firefox. · 32 stars · Languages: CSS 96%, Python 4% · 20 commits · 3 forks · 1 open issues/PRs · MIT · last push 2025-05-07")
+{{ tag(t="firefox") }} vertical tabs with [https://github.com/mbnuqw/sidebery](<https://github.com/mbnuqw/sidebery> "Firefox extension for managing tabs and bookmarks in sidebar. · 4687 stars · Languages: TypeScript 64%, Vue 23%, Stylus 9% · 2512 commits · 255 forks · 848 open issues/PRs · MIT · last push 2026-09-16") plus custom CSS from [https://github.com/lucaspar/firefox-vertical-tabs](<https://github.com/lucaspar/firefox-vertical-tabs> "Stylesheets for collapsible vertical tabs for Firefox. · 32 stars · Languages: CSS 96%, Python 4% · 20 commits · 3 forks · 1 open issues/PRs · MIT · last push 2025-05-07")
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/94-01.mp4") }}
 

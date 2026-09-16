@@ -18,7 +18,7 @@ next_body = "#software\n#tui\n#torrent\nSource"
 prev_id = 805
 prev_title = ""
 prev_body = "#anime\n#logo\n#mascon\n#design"
-views = 40
+views = 41
 ids = [806]
 
 [[extra.related]]

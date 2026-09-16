@@ -15,7 +15,7 @@ next_title = ""
 next_body = ""
 prev_id = 124
 prev_title = ""
-prev_body = "\"By Нацыянальны банк Рэспублікі Беларусі · 1993\")"
+prev_body = ""
 views = 37
 ids = [125]
 +++

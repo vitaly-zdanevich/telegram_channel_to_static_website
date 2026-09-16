@@ -17,7 +17,7 @@ next_body = "#ussr\n#pc\nSource"
 prev_id = 2130
 prev_title = ""
 prev_body = "#mem\n#legs\n#washing\nПомыла ноги и хорошее отношение\nBy evgenya22, source"
-views = 39
+views = 40
 ids = [2131]
 
 [[extra.related]]
@@ -51,6 +51,8 @@ date = "2024-11-24"
 {{ tag(t="goth") }}  
 {{ tag(t="cassette") }}  
 {{ tag(t="cementery") }}  
+
+<https://www.last.fm/music/Blod+Besvimelse>
 
 [Source](https://www.instagram.com/p/DbvFxSiN4a-/)
 

@@ -52,7 +52,7 @@ Playing on Linux through Lutris, Conty.
 
 Game version 1.4  
 
-[https://en.wikipedia.org/wiki/Armies_of_Exigo](<https://en.wikipedia.org/wiki/Armies_of_Exigo> "Armies of Exigo is a real-time strategy video game for Microsoft Windows. The game was developed by Black Hole Entertainment, published by Cinergi Interactive and distributed by Electronic Arts.")  
+<https://en.wikipedia.org/wiki/Armies_of_Exigo>  
 
 <https://www.wikidata.org/wiki/Q136881294>  
 

@@ -63,13 +63,13 @@ date = "2026-06-24"
 [logseq.com](http://logseq.com/) свободные заметки в markdown  
 [github.com/boo-yee/nixnote2](<http://github.com/boo-yee/nixnote2> "Nixnote - Evernote desktop client for Linux · 5 stars · Languages: C++ 97%, Java 1%, CMake 1% · 2731 commits · GPL-3.0 · last push 2025-10-08") FOSS клиент для Evernote на C++ и Qt  
 [github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 83 commits · GPL-3.0 · last push 2026-09-03") мой CLI на Rust  
-[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 88605 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8196 commits · 5473 forks · 382 open issues/PRs · MPL-2.0 · last push 2026-09-15") FOSS синхронизация данных через ваши устройства  
+[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 88639 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8196 commits · 5474 forks · 384 open issues/PRs · MPL-2.0 · last push 2026-09-15") FOSS синхронизация данных через ваши устройства  
 
 Бесплатный хостинг:  
 [aws.amazon.com/lambda](http://aws.amazon.com/lambda)  
 
 Про стили - чтобы сайты выгляди как надо вам а не дизайнеру:  
-[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6880 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5144 commits · 380 forks · 95 open issues/PRs · GPL-3.0 · last push 2026-09-14")  
+[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6883 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5145 commits · 381 forks · 96 open issues/PRs · GPL-3.0 · last push 2026-09-16")  
 [userstyles.world/user/vitaly-zdanevich](http://userstyles.world/user/vitaly-zdanevich)  
 [gitlab.com/vitaly-zdanevich-styles/evernote](http://gitlab.com/vitaly-zdanevich-styles/evernote)  
 

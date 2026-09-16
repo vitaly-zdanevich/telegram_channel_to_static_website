@@ -21,6 +21,11 @@ views = 28
 ids = [717]
 
 [[extra.related]]
+path = "@/posts/2026-09-15-2144/index.md"
+label = "#vr #life #blackmirror By dariagirnik"
+date = "2026-09-15"
+
+[[extra.related]]
 path = "@/posts/2025-03-16-426/index.md"
 label = "#life #esoteric #brodsky"
 date = "2025-03-16"

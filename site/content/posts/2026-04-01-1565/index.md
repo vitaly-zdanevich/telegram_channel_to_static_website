@@ -18,7 +18,7 @@ next_body = "#equilibrium\nThat #movie is important to me, but surprise - 33/100
 prev_id = 1564
 prev_title = ""
 prev_body = "#god\n#smartphone\n#game"
-views = 21
+views = 22
 ids = [1565]
 
 [[extra.related]]

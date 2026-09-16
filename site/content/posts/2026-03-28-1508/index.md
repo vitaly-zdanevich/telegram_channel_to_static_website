@@ -21,6 +21,11 @@ views = 18
 ids = [1508]
 
 [[extra.related]]
+path = "@/posts/2026-09-15-2146/index.md"
+label = "#show #laser"
+date = "2026-09-15"
+
+[[extra.related]]
 path = "@/posts/2026-04-05-1570/index.md"
 label = "#ai #gpu #nvidia"
 date = "2026-04-05"

@@ -17,7 +17,7 @@ next_body = "#typography\n#russian\n#preservation\n#century19\nSource"
 prev_id = 1647
 prev_title = ""
 prev_body = "#captcha"
-views = 20
+views = 21
 ids = [1648]
 
 [[extra.related]]

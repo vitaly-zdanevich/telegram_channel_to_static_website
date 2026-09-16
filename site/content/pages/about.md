@@ -10,7 +10,7 @@ template = "page.html"
 
 Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia country UTC+4). Working with Golang, AWS. Program in Vim. Love Gentoo Linux. Respect free and open software. Contributor to Wikipedia and other projects.
 
-**21** subscribers · **1.53K** images · **247** videos · **35** files · **1.08K** links · **32** audios
+**21** subscribers · **1.53K** images · **250** videos · **35** files · **1.08K** links · **32** audios
 
 🎧 Podcast: [audio](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/podcast.xml) · [video](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/video-podcast.xml)
 
@@ -22,7 +22,7 @@ Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia countr
 
 
 
-In the git repository: **64.5 MB** — **6%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
+In the git repository: **64.6 MB** — **6%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
 
 In [GitHub Releases](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases): **12.9 GB** of media files — outside git, so it doesn't count toward the limit.
 
@@ -46,13 +46,13 @@ Largest files:
 - [4.8 MB — Каждые_7_лет_клетки_полностью_регенериру_4.mp3](@/posts/2024-08-25-129/index.md)
 - [4.8 MB — кургинян_фристайл.mp3](@/posts/2024-11-27-204/index.md "#meanna #sergeykurginyan К моим мыслям о человеческом счастье всегда почему-то примешивалось что-то грустное, теперь же, при виде счастливого человека, мною овладело тяжелое чувство, близкое к отчаянию. А до чего же много на свете счастливых Вы взгляните на эту жизнь: наглость и праздность сильных, …")
 
-Generated in **2h 0m 28s**.
+Generated in **2h 6m 49s**.
 
-Last updated **2026-09-15 11:26 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/34952348421)
+Last updated **2026-09-16 11:25 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/35078515799)
 
 [Google Lighthouse scores (mobile):](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fvitaly%2Dzdanevich%2Egithub%2Eio%2Ftelegram%5Fchannel%5Fto%5Fstatic%5Fwebsite)
 
-- **Performance** 25
+- **Performance** 19
 - **Accessibility** 83
 - **Best Practices** 77
 - **SEO** 82

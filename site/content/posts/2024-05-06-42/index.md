@@ -14,10 +14,10 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/42"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-42-5316864029060357579.jpg"
 next_id = 43
 next_title = ""
-next_body = "Another coin from Belarus Легенда пра пчалу #bee #coin · 2017\")"
+next_body = "Another coin from Belarus Легенда пра пчалу #bee #coin"
 prev_id = 41
 prev_title = ""
-prev_body = "I love this browser extension - shows Wikidata information about the current page is a Chrome and Firefox browser extension by Toby Hudson (99of9) which uses API calls to the Wikidata Query Service to match the URL you are browsing on to a Wikidata item, and then display Wikidata data and links.\")"
+prev_body = "I love this browser extension - shows Wikidata information about the current page"
 views = 48
 ids = [42]
 
@@ -42,6 +42,6 @@ label = "#coin #belarus #history Uploaded to"
 date = "2025-09-22"
 +++
 
-Coin 5 years of Lithuania independence, from [https://commons.wikimedia.org/wiki/File:Монета\_5\_лет\_Независимости\_50\_литов\_back.jpg](<https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%B0_5_%D0%BB%D0%B5%D1%82_%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_50_%D0%BB%D0%B8%D1%82%D0%BE%D0%B2_back.jpg> "By Unknown authorUnknown author · 1995") {{ tag(t="coin") }}
+Coin 5 years of Lithuania independence, from [https://commons.wikimedia.org/wiki/File:Монета\_5\_лет\_Независимости\_50\_литов\_back.jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%B0_5_%D0%BB%D0%B5%D1%82_%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_50_%D0%BB%D0%B8%D1%82%D0%BE%D0%B2_back.jpg) {{ tag(t="coin") }}
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-42-5316864029060357579.jpg") }}

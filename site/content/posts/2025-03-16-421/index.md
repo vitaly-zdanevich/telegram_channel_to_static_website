@@ -26,6 +26,11 @@ label = "#matrix Прошло 20 лет, а вы и не заметили, ми�
 date = "2026-02-05"
 
 [[extra.related]]
+path = "@/posts/2026-09-15-2146/index.md"
+label = "#show #laser"
+date = "2026-09-15"
+
+[[extra.related]]
 path = "@/posts/2025-04-25-482/index.md"
 label = "#cat #psy"
 date = "2025-04-25"
@@ -39,11 +44,6 @@ date = "2026-07-29"
 path = "@/posts/2026-06-30-1874/index.md"
 label = "#llm #prediction #cat"
 date = "2026-06-30"
-
-[[extra.related]]
-path = "@/posts/2026-03-28-1508/index.md"
-label = "#nvidia #laser #agro"
-date = "2026-03-28"
 +++
 
 {{ tag(t="laser") }}  

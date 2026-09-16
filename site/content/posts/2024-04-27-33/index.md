@@ -20,6 +20,6 @@ views = 44
 ids = [33]
 +++
 
-[https://en.wikipedia.org/wiki/Evolutionary_approaches_to_depression#Analytical_rumination_hypothesis](<https://en.wikipedia.org/wiki/Evolutionary_approaches_to_depression#Analytical_rumination_hypothesis> "Evolutionary approaches to depression are attempts by evolutionary psychologists and evolutionary psychiatrists to use the theory of evolution to further understand mood disorders. Depression is generally thought of as dysfunction or a mental disorder, but its prevalence does not increase with ag…")  
+<https://en.wikipedia.org/wiki/Evolutionary_approaches_to_depression#Analytical_rumination_hypothesis>  
 
 *&gt; For example, anhedonia, which is often associated with depression, decreases an individual's desire to participate in activities that provide short-term rewards, and instead, allows the individual to concentrate on long-term goals*

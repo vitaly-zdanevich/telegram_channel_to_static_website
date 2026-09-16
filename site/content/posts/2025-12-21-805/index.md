@@ -18,7 +18,7 @@ next_body = "#alien\n#poster\n#film\n#blackandwhite\nSource"
 prev_id = 804
 prev_title = ""
 prev_body = "#history\n#batumi\n#countries"
-views = 32
+views = 33
 ids = [805]
 
 [[extra.related]]
@@ -52,6 +52,6 @@ date = "2024-04-27"
 {{ tag(t="mascon") }}  
 {{ tag(t="design") }}  
 
-[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 22423 stars · Languages: Go 82%, TypeScript 6%, Shell 5% · 920 commits · 720 forks · 373 open issues/PRs · MIT · last push 2026-09-14")
+[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 22460 stars · Languages: Go 82%, TypeScript 6%, Shell 5% · 920 commits · 721 forks · 376 open issues/PRs · MIT · last push 2026-09-14")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-805-5350719435192339794.jpg") }}

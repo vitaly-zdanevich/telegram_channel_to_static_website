@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2024-08-27T07:53:54+00:00
-description = "So many platforms for a game \"1942 is a 1984 vertically scrolling shooter video game developed and published by Capcom for arcades. Designed by Yoshiki Okamoto, it was the first game in the 194X…"
+description = "So many platforms for a game)"
 
 [taxonomies]
 days = ["2024-08-27"]
@@ -21,6 +21,6 @@ views = 47
 ids = [137]
 +++
 
-So many platforms for a [game](<https://en.wikipedia.org/wiki/1942_(video_game)> "1942 is a 1984 vertically scrolling shooter video game developed and published by Capcom for arcades. Designed by Yoshiki Okamoto, it was the first game in the 194X series, and was followed by 1943: The Battle of Midway.")
+So many platforms for a [game](https://en.wikipedia.org/wiki/1942_(video_game))
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-137-5362002881210867572.jpg") }}
