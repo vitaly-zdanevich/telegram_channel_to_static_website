@@ -31,6 +31,11 @@ label = "If WebArchive have it - it still not in Google - you cannot sear…"
 date = "2025-11-04"
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2149/index.md"
+label = "#aivideo #future #love By arikuschnir, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2026-06-16-1839/index.md"
 label = "#interior #refrigerator #green From"
 date = "2026-06-16"
@@ -39,11 +44,6 @@ date = "2026-06-16"
 path = "@/posts/2025-10-19-707/index.md"
 label = "#archivation #games Trying to #zim it"
 date = "2025-10-19"
-
-[[extra.related]]
-path = "@/posts/2025-08-20-631/index.md"
-label = "Percent of people who think their culture is superior to others…"
-date = "2025-08-20"
 +++
 
 {{ tag(t="culture") }}  

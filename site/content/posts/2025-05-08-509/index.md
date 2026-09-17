@@ -32,6 +32,11 @@ label = "#health #food"
 date = "2025-03-13"
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2150/index.md"
+label = "#humor #facecontrol #science By medstatistic, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2026-08-02-2114/index.md"
 label = "#духота #health #powerlifting"
 date = "2026-08-02"
@@ -40,11 +45,6 @@ date = "2026-08-02"
 path = "@/posts/2026-08-02-2112/index.md"
 label = "#health #духота #kozhemiako"
 date = "2026-08-02"
-
-[[extra.related]]
-path = "@/posts/2025-06-26-590/index.md"
-label = "#comment #health #magnesium"
-date = "2025-06-26"
 +++
 
 {{ tag(t="health") }}  

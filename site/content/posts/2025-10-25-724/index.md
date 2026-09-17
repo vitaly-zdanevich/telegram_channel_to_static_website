@@ -21,6 +21,11 @@ views = 33
 ids = [724, 725]
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2154/index.md"
+label = "#relationship #game #playstation #playstation5 By pimenov, sourc…"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
@@ -39,11 +44,6 @@ date = "2025-02-21"
 path = "@/posts/2025-02-15-366/index.md"
 label = "#game #man2"
 date = "2025-02-15"
-
-[[extra.related]]
-path = "@/posts/2025-01-15-246/index.md"
-label = "#game #man2"
-date = "2025-01-15"
 +++
 
 {{ tag(t="game") }}  

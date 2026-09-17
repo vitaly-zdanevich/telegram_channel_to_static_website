@@ -21,6 +21,11 @@ views = 37
 ids = [432]
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2149/index.md"
+label = "#aivideo #future #love By arikuschnir, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2026-07-27-2073/index.md"
 label = "#toy #animal #antlers"
 date = "2026-07-27"
@@ -39,11 +44,6 @@ date = "2026-06-10"
 path = "@/posts/2026-03-13-1439/index.md"
 label = "#webdesign #animal #cat"
 date = "2026-03-13"
-
-[[extra.related]]
-path = "@/posts/2026-02-21-1120/index.md"
-label = "#ai #codex #love Codex, using it almost every day, recently solv…"
-date = "2026-02-21"
 +++
 
 {{ tag(t="animal") }}  

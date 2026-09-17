@@ -27,6 +27,11 @@ label = "#girl #pain"
 date = "2024-11-06"
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2151/index.md"
+label = "#mouse #cheese #relationship #pain By happyofficlal, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2026-02-18-1116/index.md"
 label = "#pain #ad #event #sergeykulinkovich The old one Унижение и боль…"
 date = "2026-02-18"
@@ -40,11 +45,6 @@ date = "2025-03-16"
 path = "@/posts/2025-02-22-376/index.md"
 label = "Are you winning son? Happy Birthday #pain #death #loss #miss"
 date = "2025-02-22"
-
-[[extra.related]]
-path = "@/posts/2025-10-01-694/index.md"
-label = "#psy #success #pain #cry #secret"
-date = "2025-10-01"
 +++
 
 {{ tag(t="translate") }}  

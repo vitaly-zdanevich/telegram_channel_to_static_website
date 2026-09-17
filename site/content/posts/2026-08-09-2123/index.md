@@ -21,6 +21,11 @@ views = 16
 ids = [2123]
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2155/index.md"
+label = "#thailand #gay By habik.wtf, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
@@ -38,11 +43,6 @@ date = "2024-11-30"
 [[extra.related]]
 path = "@/posts/2026-08-09-2130/index.md"
 label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
-date = "2026-08-09"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2129/index.md"
-label = "#mem #ai #kubrick"
 date = "2026-08-09"
 +++
 

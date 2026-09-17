@@ -41,9 +41,9 @@ label = "#ad #retro #nokia"
 date = "2025-11-19"
 
 [[extra.related]]
-path = "@/posts/2026-06-18-1841/index.md"
-label = "#ad #newspaper #design #toxic From"
-date = "2026-06-18"
+path = "@/posts/2026-09-16-2154/index.md"
+label = "#relationship #game #playstation #playstation5 By pimenov, sourc…"
+date = "2026-09-16"
 +++
 
 {{ tag(t="ad") }}  

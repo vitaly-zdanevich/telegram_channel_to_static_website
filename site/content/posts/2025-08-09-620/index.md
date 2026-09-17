@@ -22,6 +22,11 @@ views = 34
 ids = [620]
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2157/index.md"
+label = "#money By imarka23, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2025-03-27-458/index.md"
 label = "#ussr"
 date = "2025-03-27"
@@ -40,11 +45,6 @@ date = "2025-03-27"
 path = "@/posts/2025-03-27-455/index.md"
 label = "#ussr"
 date = "2025-03-27"
-
-[[extra.related]]
-path = "@/posts/2024-10-08-159/index.md"
-label = "Wow #design"
-date = "2024-10-08"
 +++
 
 {{ tag(t="money") }}  

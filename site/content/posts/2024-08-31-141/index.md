@@ -22,6 +22,11 @@ views = 57
 ids = [141]
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2157/index.md"
+label = "#money By imarka23, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2025-09-01-653/index.md"
 label = "#wikimediafoundation #money"
 date = "2025-09-01"
@@ -40,11 +45,6 @@ date = "2025-08-09"
 path = "@/posts/2026-06-13-1822/index.md"
 label = "#tbc #money This is why we have #crypto?"
 date = "2026-06-13"
-
-[[extra.related]]
-path = "@/posts/2026-03-02-1307/index.md"
-label = "#couchsurfing #money 2000$ per year to #AWS"
-date = "2026-03-02"
 +++
 
 > 1910 Russian Empire 100 rubles bill with Tzar Catherina portrait

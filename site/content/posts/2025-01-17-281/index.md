@@ -21,9 +21,24 @@ views = 65
 ids = [281]
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2152/index.md"
+label = "#psy #narcissus #relationship нарцис By source, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2025-07-24-609/index.md"
 label = "#girl #relationship #ai Source You generated pictures and videos…"
 date = "2025-07-24"
+
+[[extra.related]]
+path = "@/posts/2026-09-16-2154/index.md"
+label = "#relationship #game #playstation #playstation5 By pimenov, sourc…"
+date = "2026-09-16"
+
+[[extra.related]]
+path = "@/posts/2026-09-16-2151/index.md"
+label = "#mouse #cheese #relationship #pain By happyofficlal, source"
+date = "2026-09-16"
 +++
 
 {{ tag(t="relationship") }}  

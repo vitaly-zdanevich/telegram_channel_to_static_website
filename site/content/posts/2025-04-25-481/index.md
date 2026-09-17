@@ -21,6 +21,11 @@ views = 35
 ids = [481]
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2151/index.md"
+label = "#mouse #cheese #relationship #pain By happyofficlal, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2026-07-27-2075/index.md"
 label = "#animal #mouse #grass #ground #watering #cares"
 date = "2026-07-27"

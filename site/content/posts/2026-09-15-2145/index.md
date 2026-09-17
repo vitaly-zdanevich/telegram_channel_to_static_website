@@ -17,8 +17,13 @@ next_body = "#show\n#laser\nSource"
 prev_id = 2144
 prev_title = ""
 prev_body = "#vr\n#life\n#blackmirror\nBy dariagirnik"
-views = 3
+views = 4
 ids = [2145]
+
+[[extra.related]]
+path = "@/posts/2026-09-16-2150/index.md"
+label = "#humor #facecontrol #science By medstatistic, source"
+date = "2026-09-16"
 +++
 
 {{ tag(t="humor") }}  

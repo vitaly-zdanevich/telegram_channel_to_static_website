@@ -31,6 +31,11 @@ label = "#fashion #street #london"
 date = "2026-04-21"
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2154/index.md"
+label = "#relationship #game #playstation #playstation5 By pimenov, sourc…"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2025-10-25-724/index.md"
 label = "#game #godofwar #playstation #compare 🪓 Наглядное сравнение боя…"
 date = "2025-10-25"
@@ -38,11 +43,6 @@ date = "2025-10-25"
 [[extra.related]]
 path = "@/posts/2026-06-15-1838/index.md"
 label = "#xbox #xbox360 #gameconsole #custom #glass From"
-date = "2026-06-15"
-
-[[extra.related]]
-path = "@/posts/2026-06-15-1835/index.md"
-label = "#xbox #gameconsole #tech #retro #green From"
 date = "2026-06-15"
 +++
 

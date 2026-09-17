@@ -24,6 +24,11 @@ ids = [2107]
 path = "@/posts/2026-07-29-2109/index.md"
 label = "#thailand #ladyboy Cake is still a cake, even with a candle. By…"
 date = "2026-07-29"
+
+[[extra.related]]
+path = "@/posts/2026-09-16-2155/index.md"
+label = "#thailand #gay By habik.wtf, source"
+date = "2026-09-16"
 +++
 
 {{ tag(t="trans") }}  
