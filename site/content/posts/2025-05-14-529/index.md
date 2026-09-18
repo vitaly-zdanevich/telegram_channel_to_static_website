@@ -16,7 +16,7 @@ next_title = ""
 next_body = "You can #upload to #commons through #darktable with this free plugin"
 prev_id = 528
 prev_title = ""
-prev_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/\n· 270 stars · Languages: C++ 51%, Python 40%, Roff 7% · 498 commits · 32 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-09-08\")"
+prev_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/\n· 269 stars · Languages: C++ 51%, Python 40%, Roff 7% · 498 commits · 32 forks · 1 open issues/PRs · Apache-2.0 · last push 2026-09-08\")"
 views = 42
 ids = [529]
 
