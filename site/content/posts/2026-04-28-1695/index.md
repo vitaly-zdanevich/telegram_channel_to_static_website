@@ -18,7 +18,7 @@ next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSour
 prev_id = 1688
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
-views = 20
+views = 21
 ids = [1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702]
 
 [[extra.related]]

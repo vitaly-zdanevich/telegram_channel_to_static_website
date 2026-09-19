@@ -18,7 +18,7 @@ next_body = "#coin\nIts real coins, from Cook Islands\nSource"
 prev_id = 360
 prev_title = ""
 prev_body = "#religion\nSource"
-views = 39
+views = 40
 ids = [361]
 
 [[extra.related]]

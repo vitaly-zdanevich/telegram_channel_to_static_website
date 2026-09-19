@@ -18,7 +18,7 @@ next_body = "#webdesign\n#webdesignblack"
 prev_id = 735
 prev_title = ""
 prev_body = "If WebArchive have it - it still not in Google - you cannot search the website. But you can try to download the website and host it for free on Gitlab/Github.\n#archivation\n#website"
-views = 23
+views = 24
 ids = [736]
 +++
 

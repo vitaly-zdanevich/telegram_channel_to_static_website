@@ -17,7 +17,7 @@ next_body = "From globustut.by\n#photo\n#building\n#ad\n#history\n#babruysk"
 prev_id = 530
 prev_title = ""
 prev_body = "You can #upload to #commons through #darktable with this free plugin"
-views = 43
+views = 44
 ids = [531]
 +++
 

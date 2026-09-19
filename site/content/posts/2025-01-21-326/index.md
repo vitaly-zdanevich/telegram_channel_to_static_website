@@ -17,7 +17,7 @@ next_body = ""
 prev_id = 324
 prev_title = ""
 prev_body = "#embeded разработчики и 100 байт"
-views = 43
+views = 44
 ids = [326, 327]
 +++
 

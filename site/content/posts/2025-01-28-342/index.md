@@ -17,7 +17,7 @@ next_body = "#ai\nSource"
 prev_id = 341
 prev_title = ""
 prev_body = "#bathroom\nSource"
-views = 56
+views = 57
 ids = [342]
 
 [[extra.related]]

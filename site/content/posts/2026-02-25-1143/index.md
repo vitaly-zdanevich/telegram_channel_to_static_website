@@ -18,7 +18,7 @@ next_body = "#obelisk\n#belarus\n#globustut\nSource"
 prev_id = 1142
 prev_title = ""
 prev_body = "#monument\n#airplane\n#belarus\n#globustut\nSource"
-views = 3
+views = 4
 ids = [1143, 1144, 1145, 1146, 1147, 1148]
 
 [[extra.related]]

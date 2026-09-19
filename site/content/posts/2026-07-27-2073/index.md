@@ -21,6 +21,11 @@ views = 15
 ids = [2073]
 
 [[extra.related]]
+path = "@/posts/2026-09-18-2163/index.md"
+label = "#craft #toy #hairblue"
+date = "2026-09-18"
+
+[[extra.related]]
 path = "@/posts/2026-06-27-1868/index.md"
 label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
 date = "2026-06-27"
@@ -39,11 +44,6 @@ date = "2025-03-16"
 path = "@/posts/2026-07-27-2075/index.md"
 label = "#animal #mouse #grass #ground #watering #cares"
 date = "2026-07-27"
-
-[[extra.related]]
-path = "@/posts/2026-03-10-1417/index.md"
-label = "#stone #animal #museum #belarus #globustut #year2005"
-date = "2026-03-10"
 +++
 
 {{ tag(t="toy") }}  

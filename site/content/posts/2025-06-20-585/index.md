@@ -16,7 +16,7 @@ next_body = "#map of articles and photos"
 prev_id = 584
 prev_title = ""
 prev_body = "#commons\nTODO list"
-views = 41
+views = 42
 ids = [585]
 +++
 

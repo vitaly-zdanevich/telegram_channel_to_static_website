@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-09-13T19:16:18+00:00
-description = "anime xanax"
+description = "love anime xanax mightynein nottthebrave"
 
 [taxonomies]
 days = ["2026-09-13"]
-tags = ["anime", "xanax"]
+tags = ["love", "anime", "xanax", "mighty_nein", "nott_the_brave"]
 
 [extra]
 id = 2143
@@ -18,8 +18,23 @@ next_body = "#vr\n#life\n#blackmirror\nBy dariagirnik"
 prev_id = 2141
 prev_title = ""
 prev_body = "#webdesign\nWhy so #bad\nAnd no web version, of course. No Linux version."
-views = 7
+views = 8
 ids = [2143]
+
+[[extra.related]]
+path = "@/posts/2026-09-18-2161/index.md"
+label = "#love #anime #mightynein #nottthebrave Nott the Brave being the…"
+date = "2026-09-18"
+
+[[extra.related]]
+path = "@/posts/2026-09-18-2160/index.md"
+label = "#love #anime #mightynein #nottthebrave Caleb Widogast Brings Fru…"
+date = "2026-09-18"
+
+[[extra.related]]
+path = "@/posts/2026-09-18-2159/index.md"
+label = "#love #anime #mightynein #nottthebrave Nott Being Caleb’s Mom -…"
+date = "2026-09-18"
 
 [[extra.related]]
 path = "@/posts/2025-08-09-621/index.md"
@@ -30,24 +45,12 @@ date = "2025-08-09"
 path = "@/posts/2025-03-08-398/index.md"
 label = "#anime #voice"
 date = "2025-03-08"
-
-[[extra.related]]
-path = "@/posts/2025-01-17-252/index.md"
-label = "#movie #anime"
-date = "2025-01-17"
-
-[[extra.related]]
-path = "@/posts/2026-07-27-2074/index.md"
-label = "#anime #war #ground"
-date = "2026-07-27"
-
-[[extra.related]]
-path = "@/posts/2026-06-15-1831/index.md"
-label = "#anime #phones #evangelion From"
-date = "2026-06-15"
 +++
 
+{{ tag(t="love") }}  
 {{ tag(t="anime") }}  
-{{ tag(t="xanax") }}
+{{ tag(t="xanax") }}  
+{{ tag(t="mighty_nein") }}  
+{{ tag(t="nott_the_brave") }}
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2143-5276054907674894537.jpg") }}

@@ -16,7 +16,7 @@ next_body = "#lapenko\n#art\n#dog\n#painting\n#religion\nSource"
 prev_id = 343
 prev_title = ""
 prev_body = "#ai\nSource"
-views = 46
+views = 47
 ids = [344]
 +++
 

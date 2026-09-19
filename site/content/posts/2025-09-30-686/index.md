@@ -18,7 +18,7 @@ next_body = "#cinema\n#spunchbob\n#gruz200\nSource"
 prev_id = 685
 prev_title = ""
 prev_body = "#fear\n#airplane\nSource"
-views = 20
+views = 21
 ids = [686]
 
 [[extra.related]]

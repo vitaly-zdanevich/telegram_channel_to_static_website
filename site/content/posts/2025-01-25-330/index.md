@@ -17,7 +17,7 @@ next_body = "Batumi real estate market"
 prev_id = 329
 prev_title = ""
 prev_body = "#homm3\nSource"
-views = 46
+views = 47
 ids = [330]
 
 [[extra.related]]

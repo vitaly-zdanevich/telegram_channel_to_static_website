@@ -17,7 +17,7 @@ next_body = "#ad from 2012\n#uk\n#guardian\n#pigs\nSource"
 prev_id = 369
 prev_title = ""
 prev_body = "#cat\n#catblack\n#corporate\nNot my experience, this is just funny.\nSource"
-views = 46
+views = 47
 ids = [370]
 
 [[extra.related]]

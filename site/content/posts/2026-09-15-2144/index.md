@@ -16,8 +16,8 @@ next_title = ""
 next_body = "#humor\n#dance\nSource"
 prev_id = 2143
 prev_title = ""
-prev_body = "#anime\n#xanax"
-views = 16
+prev_body = "#love\n#anime\n#xanax\n#mightynein\n#nottthebrave"
+views = 20
 ids = [2144]
 
 [[extra.related]]
@@ -41,9 +41,9 @@ label = "#life #esoteric #brodsky"
 date = "2025-03-16"
 
 [[extra.related]]
-path = "@/posts/2024-10-13-160/index.md"
-label = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
-date = "2024-10-13"
+path = "@/posts/2026-09-16-2148/index.md"
+label = "#ai #incarnation #scifi #vr By juliareznik87, source"
+date = "2026-09-16"
 +++
 
 {{ tag(t="vr") }}  

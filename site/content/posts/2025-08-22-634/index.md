@@ -18,7 +18,7 @@ next_body = "#gamedev\n#homm3\nI’ve told this tale numerous times as an indust
 prev_id = 633
 prev_title = ""
 prev_body = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch\n#music\n#anime\n#russian\n#sugar\nSource"
-views = 40
+views = 41
 ids = [634]
 
 [[extra.related]]

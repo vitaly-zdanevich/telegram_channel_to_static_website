@@ -16,8 +16,8 @@ next_title = ""
 next_body = "#humor\n#facecontrol\n#science\nBy medstatistic, source"
 prev_id = 2148
 prev_title = ""
-prev_body = "#ai\n#incarnation\n#scifi\nBy juliareznik87, source"
-views = 15
+prev_body = "#ai\n#incarnation\n#scifi\n#vr\nBy juliareznik87, source"
+views = 19
 ids = [2149]
 
 [[extra.related]]

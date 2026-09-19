@@ -18,7 +18,7 @@ next_body = "#cementery\n#abandone\n#belarus\n#globustut\n#year2005\nSource,%D1%
 prev_id = 1342
 prev_title = ""
 prev_body = "#church\n#abandone\n#belarus\n#globustut\n#year2005\nSource,%D0%BA%D0%BE%D1%81%D1%82%D0%B5%D0%BB,%D1%81%D0%BD%D1%8F%D1%82%D0%BE9%D0%BC%D0%B0%D1%8F2005.jpg)"
-views = 6
+views = 7
 ids = [1349]
 
 [[extra.related]]

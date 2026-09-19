@@ -17,7 +17,7 @@ next_body = "#ai\n#aicalls\nТы упомянул свой стартап по �
 prev_id = 368
 prev_title = ""
 prev_body = "#love\n#poop\n#johnnydepp\n#amberheard\nSource"
-views = 54
+views = 55
 ids = [369]
 
 [[extra.related]]

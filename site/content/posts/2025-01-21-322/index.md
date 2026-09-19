@@ -5,7 +5,7 @@ description = "girl"
 
 [taxonomies]
 days = ["2025-01-21"]
-tags = ["girl", "video"]
+tags = ["girl"]
 
 [extra]
 id = 322
@@ -17,8 +17,8 @@ next_body = "#embeded разработчики и 100 байт"
 prev_id = 321
 prev_title = ""
 prev_body = ""
-views = 41
-ids = [322, 323]
+views = 39
+ids = [322]
 
 [[extra.related]]
 path = "@/posts/2024-11-06-181/index.md"
@@ -47,9 +47,3 @@ date = "2024-11-06"
 +++
 
 {{ tag(t="girl") }}
-
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/322-01.mp4") }}
-
-❤ 1
-
-{{ tag(t="video") }}

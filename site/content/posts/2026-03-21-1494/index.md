@@ -18,7 +18,7 @@ next_body = "#webdesign\n#belarus\n#belarussian\nпра жывёл"
 prev_id = 1493
 prev_title = ""
 prev_body = "wow #wikibase/#wikidata in #cli"
-views = 25
+views = 26
 ids = [1494, 1495]
 
 [[extra.related]]

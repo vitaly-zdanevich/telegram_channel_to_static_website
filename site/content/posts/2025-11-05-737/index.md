@@ -17,7 +17,7 @@ next_body = "#music\n#musicrussian\n#нтр\n[Куплет 1]\nСначала с
 prev_id = 736
 prev_title = ""
 prev_body = "#btc lost 20% for one month"
-views = 23
+views = 24
 ids = [737]
 
 [[extra.related]]

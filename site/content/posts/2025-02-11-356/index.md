@@ -18,7 +18,7 @@ next_body = "#gui\n#cli"
 prev_id = 355
 prev_title = ""
 prev_body = "#music\n#anime\n#rammstein"
-views = 47
+views = 48
 ids = [356]
 
 [[extra.related]]

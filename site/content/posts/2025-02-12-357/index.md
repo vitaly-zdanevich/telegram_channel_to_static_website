@@ -18,7 +18,7 @@ next_body = "#ui\n#button\n#css\nFuck minimalism"
 prev_id = 356
 prev_title = ""
 prev_body = "#ai\n#chatgpt\nSource"
-views = 42
+views = 43
 ids = [357]
 
 [[extra.related]]

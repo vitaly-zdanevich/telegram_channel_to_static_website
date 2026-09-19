@@ -18,7 +18,7 @@ next_body = "Oh my...\n#leetcode"
 prev_id = 1745
 prev_title = ""
 prev_body = "My another hobby project, made with #llm / #codex: converter of #wikipedia dumps into #man / #roff format, on #rust (because I love performance): for a #terminal, #offline reading. #love it, still fixing many markup cases, but mostly its readable already\nWrote about it at"
-views = 26
+views = 27
 ids = [1746]
 
 [[extra.related]]

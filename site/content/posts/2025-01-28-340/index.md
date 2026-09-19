@@ -17,7 +17,7 @@ next_body = "#bathroom\nSource"
 prev_id = 339
 prev_title = ""
 prev_body = "#kazakhstan\nSource"
-views = 61
+views = 62
 ids = [340]
 
 [[extra.related]]

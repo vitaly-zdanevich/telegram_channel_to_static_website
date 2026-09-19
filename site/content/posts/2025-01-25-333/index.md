@@ -16,7 +16,7 @@ next_body = ""
 prev_id = 331
 prev_title = ""
 prev_body = "Batumi real estate market"
-views = 44
+views = 45
 ids = [333]
 +++
 

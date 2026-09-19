@@ -24,6 +24,11 @@ ids = [192]
 path = "@/posts/2025-01-28-338/index.md"
 label = "#warcraft"
 date = "2025-01-28"
+
+[[extra.related]]
+path = "@/posts/2026-09-18-2162/index.md"
+label = "#girl #warcraft #transform Я пришла к вашему сыну"
+date = "2026-09-18"
 +++
 
 [https://youtu.be/DWjZQzviTUs](<https://youtu.be/DWjZQzviTUs> "Warcraft 2 Remastered - Full Orc Campaign Gameplay & Story (Speedrun / Walkthrough)")  

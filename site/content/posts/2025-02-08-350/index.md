@@ -17,7 +17,7 @@ next_body = "#religion\nSource"
 prev_id = 349
 prev_title = ""
 prev_body = "#translate\n#pain"
-views = 42
+views = 43
 ids = [350]
 
 [[extra.related]]

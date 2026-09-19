@@ -31,6 +31,11 @@ label = "#vr #life #blackmirror By dariagirnik"
 date = "2026-09-15"
 
 [[extra.related]]
+path = "@/posts/2026-09-16-2148/index.md"
+label = "#ai #incarnation #scifi #vr By juliareznik87, source"
+date = "2026-09-16"
+
+[[extra.related]]
 path = "@/posts/2024-10-13-160/index.md"
 label = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
 date = "2024-10-13"

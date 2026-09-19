@@ -17,7 +17,7 @@ next_body = "#show\n#laser\nSource"
 prev_id = 2144
 prev_title = ""
 prev_body = "#vr\n#life\n#blackmirror\nBy dariagirnik"
-views = 4
+views = 7
 ids = [2145]
 
 [[extra.related]]
@@ -32,5 +32,7 @@ date = "2026-09-16"
 [Source](https://www.instagram.com/p/DchAWeJojjB/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2145-01.mp4") }}
+
+⚡ 1
 
 {{ tag(t="video") }}

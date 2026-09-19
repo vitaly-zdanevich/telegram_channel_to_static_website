@@ -17,7 +17,7 @@ next_body = "#music\n#anime\n#rammstein"
 prev_id = 353
 prev_title = ""
 prev_body = "#trump\n#batumi"
-views = 41
+views = 42
 ids = [354]
 
 [[extra.related]]

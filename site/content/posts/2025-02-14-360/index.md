@@ -18,7 +18,7 @@ next_body = "#coin\nSource"
 prev_id = 358
 prev_title = ""
 prev_body = "#ui\n#button\n#css\nFuck minimalism"
-views = 43
+views = 44
 ids = [360]
 
 [[extra.related]]

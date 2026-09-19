@@ -14,11 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2147"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2147-5283180151044777460.jpg"
 next_id = 2148
 next_title = ""
-next_body = "#ai\n#incarnation\n#scifi\nBy juliareznik87, source"
+next_body = "#ai\n#incarnation\n#scifi\n#vr\nBy juliareznik87, source"
 prev_id = 2146
 prev_title = ""
 prev_body = "#show\n#laser\nSource"
-views = 4
+views = 8
 ids = [2147]
 
 [[extra.related]]

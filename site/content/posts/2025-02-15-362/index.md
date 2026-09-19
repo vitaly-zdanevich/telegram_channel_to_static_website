@@ -18,7 +18,7 @@ next_body = "#game\n#man2"
 prev_id = 361
 prev_title = ""
 prev_body = "#coin\nSource"
-views = 42
+views = 43
 ids = [362, 363, 364, 365]
 
 [[extra.related]]

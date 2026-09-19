@@ -18,7 +18,7 @@ next_body = "#belarus\n#population\n#village\nSource#%D0%9D%D0%B0%D1%81%D0%B5%D0
 prev_id = 889
 prev_title = ""
 prev_body = "#webdesign\n#globustut\nSource"
-views = 76
+views = 77
 ids = [890]
 
 [[extra.related]]

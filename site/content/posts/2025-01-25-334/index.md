@@ -16,7 +16,7 @@ next_body = ""
 prev_id = 333
 prev_title = ""
 prev_body = "I built a very powerful PC, liquid cooling, 64 GB of DDR5, but Facebook still SLOW"
-views = 53
+views = 54
 ids = [334]
 +++
 
