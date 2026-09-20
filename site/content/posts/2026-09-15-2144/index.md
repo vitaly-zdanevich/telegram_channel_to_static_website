@@ -17,7 +17,7 @@ next_body = "#humor\n#dance\nSource"
 prev_id = 2143
 prev_title = ""
 prev_body = "#love\n#anime\n#xanax\n#mightynein\n#nottthebrave"
-views = 20
+views = 22
 ids = [2144]
 
 [[extra.related]]

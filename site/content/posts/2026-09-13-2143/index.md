@@ -22,11 +22,6 @@ views = 8
 ids = [2143]
 
 [[extra.related]]
-path = "@/posts/2026-09-18-2161/index.md"
-label = "#love #anime #mightynein #nottthebrave Nott the Brave being the…"
-date = "2026-09-18"
-
-[[extra.related]]
 path = "@/posts/2026-09-18-2160/index.md"
 label = "#love #anime #mightynein #nottthebrave Caleb Widogast Brings Fru…"
 date = "2026-09-18"
@@ -34,6 +29,11 @@ date = "2026-09-18"
 [[extra.related]]
 path = "@/posts/2026-09-18-2159/index.md"
 label = "#love #anime #mightynein #nottthebrave Nott Being Caleb’s Mom -…"
+date = "2026-09-18"
+
+[[extra.related]]
+path = "@/posts/2026-09-18-2161/index.md"
+label = "#love #anime #mightynein #nottthebrave #compilation Nott the Bra…"
 date = "2026-09-18"
 
 [[extra.related]]

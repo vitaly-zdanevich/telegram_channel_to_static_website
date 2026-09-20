@@ -42,9 +42,9 @@ label = "#gentoo #logo"
 date = "2025-03-15"
 
 [[extra.related]]
-path = "@/posts/2026-02-22-1125/index.md"
-label = "#webdesign #gentoo #china"
-date = "2026-02-22"
+path = "@/posts/2026-09-19-2164/index.md"
+label = "#webdesign #mascot #golang From"
+date = "2026-09-19"
 +++
 
 {{ tag(t="gentoo") }}  

@@ -17,8 +17,18 @@ next_body = "#anime\n#war\n#ground\nSource"
 prev_id = 2072
 prev_title = ""
 prev_body = "#beige\n#headphones\n#love\n#bear\nSource"
-views = 15
+views = 16
 ids = [2073]
+
+[[extra.related]]
+path = "@/posts/2026-09-19-2167/index.md"
+label = "#craft #toy #horn"
+date = "2026-09-19"
+
+[[extra.related]]
+path = "@/posts/2026-09-19-2166/index.md"
+label = "#craft #toy #horn"
+date = "2026-09-19"
 
 [[extra.related]]
 path = "@/posts/2026-09-18-2163/index.md"
@@ -34,16 +44,6 @@ date = "2026-06-27"
 path = "@/posts/2026-03-13-1439/index.md"
 label = "#webdesign #animal #cat"
 date = "2026-03-13"
-
-[[extra.related]]
-path = "@/posts/2025-03-16-432/index.md"
-label = "#animal #flyingsquirrel #love"
-date = "2025-03-16"
-
-[[extra.related]]
-path = "@/posts/2026-07-27-2075/index.md"
-label = "#animal #mouse #grass #ground #watering #cares"
-date = "2026-07-27"
 +++
 
 {{ tag(t="toy") }}  

@@ -13,21 +13,21 @@ day = "2026-09-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2160"
 next_id = 2161
 next_title = ""
-next_body = "#love\n#anime\n#mightynein\n#nottthebrave\nNott the Brave being the best character for 3 minutes in The Mighty Nein season 1\nSource"
+next_body = "#love\n#anime\n#mightynein\n#nottthebrave\n#compilation\nNott the Brave being the best character for 3 minutes in The Mighty Nein season 1\nSource"
 prev_id = 2159
 prev_title = ""
 prev_body = "#love\n#anime\n#mightynein\n#nottthebrave\nNott Being Caleb’s Mom - (S1E5)\nSource Mighty Nein\")"
-views = 3
+views = 6
 ids = [2160]
-
-[[extra.related]]
-path = "@/posts/2026-09-18-2161/index.md"
-label = "#love #anime #mightynein #nottthebrave Nott the Brave being the…"
-date = "2026-09-18"
 
 [[extra.related]]
 path = "@/posts/2026-09-18-2159/index.md"
 label = "#love #anime #mightynein #nottthebrave Nott Being Caleb’s Mom -…"
+date = "2026-09-18"
+
+[[extra.related]]
+path = "@/posts/2026-09-18-2161/index.md"
+label = "#love #anime #mightynein #nottthebrave #compilation Nott the Bra…"
 date = "2026-09-18"
 
 [[extra.related]]

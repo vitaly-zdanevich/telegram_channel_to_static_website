@@ -22,6 +22,11 @@ views = 29
 ids = [657]
 
 [[extra.related]]
+path = "@/posts/2026-09-19-2164/index.md"
+label = "#webdesign #mascot #golang From"
+date = "2026-09-19"
+
+[[extra.related]]
 path = "@/posts/2026-05-03-1732/index.md"
 label = "#gentoo #golang #bootstrap"
 date = "2026-05-03"

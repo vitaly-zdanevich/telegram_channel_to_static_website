@@ -17,7 +17,7 @@ next_body = "#fly\n#cyberpunk\nBy cyberbot, source"
 prev_id = 2154
 prev_title = ""
 prev_body = "#relationship\n#game\n#playstation\n#playstation5\nBy pimenov, source"
-views = 14
+views = 15
 ids = [2155]
 
 [[extra.related]]

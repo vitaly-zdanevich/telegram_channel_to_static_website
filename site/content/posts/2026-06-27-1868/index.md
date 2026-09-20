@@ -21,6 +21,16 @@ views = 19
 ids = [1868]
 
 [[extra.related]]
+path = "@/posts/2026-09-19-2167/index.md"
+label = "#craft #toy #horn"
+date = "2026-09-19"
+
+[[extra.related]]
+path = "@/posts/2026-09-19-2166/index.md"
+label = "#craft #toy #horn"
+date = "2026-09-19"
+
+[[extra.related]]
 path = "@/posts/2026-09-18-2163/index.md"
 label = "#craft #toy #hairblue"
 date = "2026-09-18"
@@ -34,16 +44,6 @@ date = "2026-09-16"
 path = "@/posts/2026-07-27-2073/index.md"
 label = "#toy #animal #antlers"
 date = "2026-07-27"
-
-[[extra.related]]
-path = "@/posts/2026-06-10-1807/index.md"
-label = "#love this #extension - #highlight predefined list of words, on…"
-date = "2026-06-10"
-
-[[extra.related]]
-path = "@/posts/2026-02-21-1120/index.md"
-label = "#ai #codex #love Codex, using it almost every day, recently solv…"
-date = "2026-02-21"
 +++
 
 {{ tag(t="love") }}  

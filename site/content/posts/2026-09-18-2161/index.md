@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-09-18T18:38:41+00:00
-description = "love anime mightynein nottthebrave Nott the Brave being the best character for 3 minutes in The Mighty Nein season 1 Source"
+description = "love anime mightynein nottthebrave compilation Nott the Brave being the best character for 3 minutes in The Mighty Nein season 1 Source"
 
 [taxonomies]
 days = ["2026-09-18"]
-tags = ["love", "anime", "mighty_nein", "nott_the_brave", "video"]
+tags = ["love", "anime", "mighty_nein", "nott_the_brave", "compilation", "video"]
 
 [extra]
 id = 2161
@@ -17,7 +17,7 @@ next_body = "#girl\n#warcraft\n#transform\nЯ пришла к вашему сы�
 prev_id = 2160
 prev_title = ""
 prev_body = "#love\n#anime\n#mightynein\n#nottthebrave\nCaleb Widogast Brings Frumpkin Back\nSource"
-views = 3
+views = 7
 ids = [2161]
 
 [[extra.related]]
@@ -50,6 +50,7 @@ date = "2025-03-08"
 {{ tag(t="anime") }}  
 {{ tag(t="mighty_nein") }}  
 {{ tag(t="nott_the_brave") }}  
+{{ tag(t="compilation") }}  
 
 **Nott the Brave being the best character for 3 minutes in The Mighty Nein season 1**  
 

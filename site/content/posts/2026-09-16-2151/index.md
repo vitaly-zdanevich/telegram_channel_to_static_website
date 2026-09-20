@@ -17,7 +17,7 @@ next_body = "#psy\n#narcissus\n#relationship\nнарцис\nBy source, source"
 prev_id = 2150
 prev_title = ""
 prev_body = "#humor\n#facecontrol\n#science\nBy medstatistic, source"
-views = 11
+views = 12
 ids = [2151]
 
 [[extra.related]]

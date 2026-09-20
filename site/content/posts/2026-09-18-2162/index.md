@@ -16,8 +16,8 @@ next_title = ""
 next_body = "#craft\n#toy\n#hairblue\nSource"
 prev_id = 2161
 prev_title = ""
-prev_body = "#love\n#anime\n#mightynein\n#nottthebrave\nNott the Brave being the best character for 3 minutes in The Mighty Nein season 1\nSource"
-views = 3
+prev_body = "#love\n#anime\n#mightynein\n#nottthebrave\n#compilation\nNott the Brave being the best character for 3 minutes in The Mighty Nein season 1\nSource"
+views = 8
 ids = [2162]
 
 [[extra.related]]
