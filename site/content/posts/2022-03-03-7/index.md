@@ -26,7 +26,7 @@ ids = [7]
 <https://www.reddit.com/r/belarus>  
 
 [https://en.wikipedia.org/wiki/Aaron_Swartz](<https://en.wikipedia.org/wiki/Aaron_Swartz> "Aaron Hillel Swartz (November 8, 1986 – January 11, 2013), also known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…")  
-<https://en.wikipedia.org/wiki/JSTOR>  
+[https://en.wikipedia.org/wiki/JSTOR](<https://en.wikipedia.org/wiki/JSTOR> "JSTOR ( JAY-stor; short for Journal Storage) is a digital library of academic journals, books, and primary sources founded in 1994. Originally containing digitized back issues of academic journals, it now encompasses books and other primary sources as well as current issues of journals in the hum…")  
 <https://en.wikipedia.org/wiki/Sci-Hub>  
 <https://en.wikipedia.org/wiki/Stop_Online_Piracy_Act>  
 

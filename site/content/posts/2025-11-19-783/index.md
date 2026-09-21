@@ -36,14 +36,14 @@ label = "#ad"
 date = "2024-12-10"
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2176/index.md"
+label = "#game #playstation #design By retourverslegaming, source"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2025-11-19-782/index.md"
 label = "#ad #retro #nokia"
 date = "2025-11-19"
-
-[[extra.related]]
-path = "@/posts/2026-09-16-2154/index.md"
-label = "#relationship #game #playstation #playstation5 By pimenov, sourc…"
-date = "2026-09-16"
 +++
 
 {{ tag(t="ad") }}  

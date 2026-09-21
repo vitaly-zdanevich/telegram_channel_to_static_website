@@ -21,6 +21,11 @@ views = 69
 ids = [418]
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2172/index.md"
+label = "#robot #fight By frankielap, source"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2025-03-16-428/index.md"
 label = "#robot #ai"
 date = "2025-03-16"

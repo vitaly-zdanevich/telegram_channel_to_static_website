@@ -26,6 +26,11 @@ label = "#mem limited by the technology of my time #llm #depleated"
 date = "2026-05-19"
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2171/index.md"
+label = "#mem #train #mouth #china #music: Бошки дымятся by Элджей. By an…"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2026-07-29-2093/index.md"
 label = "#bond #claude #llm #limit #gun By ksenia.ai.life"
 date = "2026-07-29"
@@ -39,11 +44,6 @@ date = "2026-05-18"
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
 date = "2025-06-02"
-
-[[extra.related]]
-path = "@/posts/2025-05-11-518/index.md"
-label = "The life was quiet all around A cute little island Nice and non-…"
-date = "2025-05-11"
 +++
 
 {{ tag(t="mem") }}  

@@ -17,8 +17,13 @@ next_body = "#webdesign\n#mascot\n#golang\nFrom"
 prev_id = 2162
 prev_title = ""
 prev_body = "#girl\n#warcraft\n#transform\nЯ пришла к вашему сыну"
-views = 9
+views = 10
 ids = [2163]
+
+[[extra.related]]
+path = "@/posts/2026-09-20-2169/index.md"
+label = "#craft #toy #horn"
+date = "2026-09-20"
 
 [[extra.related]]
 path = "@/posts/2026-09-19-2167/index.md"
@@ -39,11 +44,6 @@ date = "2026-09-19"
 path = "@/posts/2026-07-27-2073/index.md"
 label = "#toy #animal #antlers"
 date = "2026-07-27"
-
-[[extra.related]]
-path = "@/posts/2026-06-27-1868/index.md"
-label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
-date = "2026-06-27"
 +++
 
 {{ tag(t="craft") }}  

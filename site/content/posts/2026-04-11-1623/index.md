@@ -32,19 +32,19 @@ label = "#china #beauty #plastic"
 date = "2025-09-30"
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2174/index.md"
+label = "#song #china #contrast #scream By yukina0000v, source"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2025-11-08-744/index.md"
 label = "#school in #sakartvelo #architecture #books"
 date = "2025-11-08"
 
 [[extra.related]]
-path = "@/posts/2026-07-08-2035/index.md"
-label = "#china #buy #sell #yogurt #smoke"
-date = "2026-07-08"
-
-[[extra.related]]
-path = "@/posts/2026-03-28-1506/index.md"
-label = "#shutdown #cloudflare #preservation #school #error Что вы будете…"
-date = "2026-03-28"
+path = "@/posts/2026-09-21-2171/index.md"
+label = "#mem #train #mouth #china #music: Бошки дымятся by Элджей. By an…"
+date = "2026-09-21"
 +++
 
 Usual {{ tag(t="school") }} in {{ tag(t="china") }}? {{ tag(t="lenin") }}  

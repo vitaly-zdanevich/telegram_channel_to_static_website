@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-09-19T12:47:20+00:00
-description = "podzorova silbet Философ Хоршумаг с милитаризованной планеты рептилоидов, не входящей в Межзвёздный Союз, через своего контактёра убеждает Ирину, Максима и ЛиШиони (планета Шимор), что у его…"
+description = "contactee podzorova silbet Философ Хоршумаг с милитаризованной планеты рептилоидов, не входящей в Межзвёздный Союз, через своего контактёра убеждает Ирину, Максима и ЛиШиони (планета Шимор), что у…"
 
 [taxonomies]
 days = ["2026-09-19"]
-tags = ["podzorova", "silbet"]
+tags = ["contactee", "podzorova", "silbet"]
 
 [extra]
 id = 2165
@@ -17,10 +17,11 @@ next_body = "#craft\n#toy\n#horn\nSource"
 prev_id = 2164
 prev_title = ""
 prev_body = "#webdesign\n#mascot\n#golang\nFrom"
-views = 4
+views = 8
 ids = [2165]
 +++
 
+{{ tag(t="contactee") }}  
 {{ tag(t="podzorova") }}  
 {{ tag(t="silbet") }}  
 
@@ -29,3 +30,5 @@ ids = [2165]
 [Source](<https://www.youtube.com/watch?v=SWfmi2RI_7c> "#294 Воинствующая оппозиция в галактике - рептилоид с планеты Хорика через контактёра Василия.")
 
 {{ youtube(id="SWfmi2RI_7c") }}
+
+❤ 1

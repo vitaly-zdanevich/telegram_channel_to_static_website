@@ -40,6 +40,11 @@ date = "2025-05-08"
 path = "@/posts/2025-02-28-385/index.md"
 label = "#pelevin #apple #buddhism"
 date = "2025-02-28"
+
+[[extra.related]]
+path = "@/posts/2026-09-21-2170/index.md"
+label = "#mem #cat #ad #apple By imdoris.shen, source"
+date = "2026-09-21"
 +++
 
 {{ tag(t="iphone") }}  

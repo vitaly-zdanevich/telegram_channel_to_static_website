@@ -41,9 +41,9 @@ label = "#retro #cd #vhs"
 date = "2025-07-25"
 
 [[extra.related]]
-path = "@/posts/2026-06-18-1841/index.md"
-label = "#ad #newspaper #design #toxic From"
-date = "2026-06-18"
+path = "@/posts/2026-09-21-2170/index.md"
+label = "#mem #cat #ad #apple By imdoris.shen, source"
+date = "2026-09-21"
 +++
 
 {{ tag(t="ad") }}  

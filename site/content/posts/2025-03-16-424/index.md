@@ -21,6 +21,11 @@ views = 131
 ids = [424]
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2171/index.md"
+label = "#mem #train #mouth #china #music: Бошки дымятся by Элджей. By an…"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2025-03-16-433/index.md"
 label = "#music #techno #ritual #religion #islam #rave"
 date = "2025-03-16"
@@ -39,11 +44,6 @@ date = "2025-05-11"
 path = "@/posts/2025-01-25-330/index.md"
 label = "#music"
 date = "2025-01-25"
-
-[[extra.related]]
-path = "@/posts/2024-11-24-198/index.md"
-label = "#music"
-date = "2024-11-24"
 +++
 
 {{ tag(t="business_idea") }}  

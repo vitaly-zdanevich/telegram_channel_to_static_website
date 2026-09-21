@@ -21,6 +21,11 @@ views = 33
 ids = [724, 725]
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2176/index.md"
+label = "#game #playstation #design By retourverslegaming, source"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2154/index.md"
 label = "#relationship #game #playstation #playstation5 By pimenov, sourc…"
 date = "2026-09-16"
@@ -39,11 +44,6 @@ date = "2026-02-03"
 path = "@/posts/2025-02-21-375/index.md"
 label = "#game #armiesofexigo"
 date = "2025-02-21"
-
-[[extra.related]]
-path = "@/posts/2025-02-15-366/index.md"
-label = "#game #man2"
-date = "2025-02-15"
 +++
 
 {{ tag(t="game") }}  

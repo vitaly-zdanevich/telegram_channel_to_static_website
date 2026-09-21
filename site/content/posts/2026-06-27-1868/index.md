@@ -21,6 +21,11 @@ views = 19
 ids = [1868]
 
 [[extra.related]]
+path = "@/posts/2026-09-20-2169/index.md"
+label = "#craft #toy #horn"
+date = "2026-09-20"
+
+[[extra.related]]
 path = "@/posts/2026-09-19-2167/index.md"
 label = "#craft #toy #horn"
 date = "2026-09-19"
@@ -39,11 +44,6 @@ date = "2026-09-18"
 path = "@/posts/2026-09-16-2149/index.md"
 label = "#aivideo #future #love By arikuschnir, source"
 date = "2026-09-16"
-
-[[extra.related]]
-path = "@/posts/2026-07-27-2073/index.md"
-label = "#toy #animal #antlers"
-date = "2026-07-27"
 +++
 
 {{ tag(t="love") }}  

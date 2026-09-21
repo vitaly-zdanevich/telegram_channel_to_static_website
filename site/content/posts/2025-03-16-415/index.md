@@ -21,6 +21,11 @@ views = 32
 ids = [415]
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2172/index.md"
+label = "#robot #fight By frankielap, source"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2025-04-25-482/index.md"
 label = "#cat #psy"
 date = "2025-04-25"
@@ -39,11 +44,6 @@ date = "2025-03-16"
 path = "@/posts/2026-07-29-2096/index.md"
 label = "#cat #laugh #slow By dustythegingercat"
 date = "2026-07-29"
-
-[[extra.related]]
-path = "@/posts/2026-06-30-1874/index.md"
-label = "#llm #prediction #cat"
-date = "2026-06-30"
 +++
 
 {{ tag(t="cat") }}  

@@ -16,7 +16,7 @@ next_body = "Another great frontend, WebGL"
 prev_id = 16
 prev_title = ""
 prev_body = "Homepage - Cypherpunk Zero\nBeautiful, but I do not understand"
-views = 82
+views = 83
 ids = [18]
 +++
 

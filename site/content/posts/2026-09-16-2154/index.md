@@ -17,8 +17,13 @@ next_body = "#thailand\n#gay\nBy habik.wtf, source"
 prev_id = 2152
 prev_title = ""
 prev_body = "#psy\n#narcissus\n#relationship\nнарцис\nBy source, source"
-views = 14
+views = 15
 ids = [2154]
+
+[[extra.related]]
+path = "@/posts/2026-09-21-2176/index.md"
+label = "#game #playstation #design By retourverslegaming, source"
+date = "2026-09-21"
 
 [[extra.related]]
 path = "@/posts/2025-10-25-724/index.md"
@@ -39,11 +44,6 @@ date = "2024-10-06"
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
 date = "2026-02-03"
-
-[[extra.related]]
-path = "@/posts/2025-02-21-375/index.md"
-label = "#game #armiesofexigo"
-date = "2025-02-21"
 +++
 
 {{ tag(t="relationship") }}  

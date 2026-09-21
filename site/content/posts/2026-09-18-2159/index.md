@@ -17,7 +17,7 @@ next_body = "#love\n#anime\n#mightynein\n#nottthebrave\nCaleb Widogast Brings Fr
 prev_id = 2158
 prev_title = ""
 prev_body = "#argonov\n#spelling"
-views = 6
+views = 7
 ids = [2159]
 
 [[extra.related]]

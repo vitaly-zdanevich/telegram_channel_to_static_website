@@ -26,6 +26,11 @@ label = "#ad #playstation #playstation2"
 date = "2025-11-19"
 
 [[extra.related]]
+path = "@/posts/2026-09-21-2176/index.md"
+label = "#game #playstation #design By retourverslegaming, source"
+date = "2026-09-21"
+
+[[extra.related]]
 path = "@/posts/2026-04-21-1667/index.md"
 label = "#fashion #street #london"
 date = "2026-04-21"
@@ -39,11 +44,6 @@ date = "2026-09-16"
 path = "@/posts/2025-10-25-724/index.md"
 label = "#game #godofwar #playstation #compare 🪓 Наглядное сравнение боя…"
 date = "2025-10-25"
-
-[[extra.related]]
-path = "@/posts/2026-06-15-1838/index.md"
-label = "#xbox #xbox360 #gameconsole #custom #glass From"
-date = "2026-06-15"
 +++
 
 {{ tag(t="playstation") }}  
