@@ -17,7 +17,7 @@ next_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\n
 prev_id = 2173
 prev_title = ""
 prev_body = "#mem\n#contrast\n#body\n#sartre\n#freedom\nBy mikhaylovpsy, source"
-views = 2
+views = 4
 ids = [2174]
 
 [[extra.related]]
