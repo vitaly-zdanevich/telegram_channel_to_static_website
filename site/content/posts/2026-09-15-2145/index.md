@@ -17,7 +17,7 @@ next_body = "#show\n#laser\nSource"
 prev_id = 2144
 prev_title = ""
 prev_body = "#vr\n#life\n#blackmirror\nBy dariagirnik"
-views = 7
+views = 9
 ids = [2145]
 
 [[extra.related]]

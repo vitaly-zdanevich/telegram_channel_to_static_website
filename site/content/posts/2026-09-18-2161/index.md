@@ -17,7 +17,7 @@ next_body = "#girl\n#warcraft\n#transform\nЯ пришла к вашему сы�
 prev_id = 2160
 prev_title = ""
 prev_body = "#love\n#anime\n#mightynein\n#nottthebrave\nCaleb Widogast Brings Frumpkin Back\nSource"
-views = 8
+views = 10
 ids = [2161]
 
 [[extra.related]]
