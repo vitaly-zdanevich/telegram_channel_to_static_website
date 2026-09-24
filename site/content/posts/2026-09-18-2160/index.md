@@ -17,7 +17,7 @@ next_body = "#love\n#anime\n#mightynein\n#nottthebrave\n#compilation\nNott the B
 prev_id = 2159
 prev_title = ""
 prev_body = "#love\n#anime\n#mightynein\n#nottthebrave\nNott Being Caleb’s Mom - (S1E5)\nSource Mighty Nein\")"
-views = 8
+views = 10
 ids = [2160]
 
 [[extra.related]]

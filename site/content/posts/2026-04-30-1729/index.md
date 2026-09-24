@@ -46,4 +46,4 @@ label = "Youta: моя лекция-демонстрация TUI аудио пл
 date = "2026-08-09"
 +++
 
-Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} [https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 84 commits · GPL-3.0 · last push 2026-09-21") - faster geeknote.
+Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} [https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 90%, Shell 6%, Python 2% · 85 commits · 3 open issues/PRs · GPL-3.0 · last push 2026-09-24") - faster geeknote.
