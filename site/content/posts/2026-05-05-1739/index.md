@@ -18,7 +18,7 @@ next_body = "#armiesofexigo: моя #лекция об игре, в Батуми
 prev_id = 1738
 prev_title = ""
 prev_body = "#webdesign\n#video\n#bilibili"
-views = 24
+views = 25
 ids = [1739]
 
 [[extra.related]]

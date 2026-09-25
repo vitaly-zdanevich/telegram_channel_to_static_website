@@ -15,7 +15,7 @@ next_title = ""
 next_body = "I love - developed in 2004 - but nobody sell it anymore in 2024. I wrote to developers - looks like nobody cares. This is how we are loosing books, music, games. Now this game will not start on many systems - because of no support. #game #windows"
 prev_id = 35
 prev_title = ""
-prev_body = "Forked and fixed my lovely Geeknote. After so many years as a user - now it my · 14 stars · Languages: Python 98%, Ruby 2% · 1029 commits · 7 open issues/PRs · GPL-3.0 · last push 2026-07-16\")"
+prev_body = "Forked and fixed my lovely Geeknote. After so many years as a user - now it my · 15 stars · Languages: Python 98%, Ruby 2% · 1029 commits · 7 open issues/PRs · GPL-3.0 · last push 2026-07-16\")"
 views = 53
 ids = [36, 37]
 +++

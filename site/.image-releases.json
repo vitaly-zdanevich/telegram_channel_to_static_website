@@ -4159,6 +4159,18 @@
       }
     },
     {
+      "message_id": 784,
+      "media_id": 5253740353548913982,
+      "declared_bytes": 120112,
+      "tag": "images-0500",
+      "asset": "telegram-image-784-5253740353548913982.jpg",
+      "bytes": 120112,
+      "source": {
+        "kind": "photo",
+        "web_key": "5253740353548913982_1223231748_460000574"
+      }
+    },
+    {
       "message_id": 785,
       "media_id": 5256072907337698864,
       "declared_bytes": 360803,

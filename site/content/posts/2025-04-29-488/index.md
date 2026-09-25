@@ -18,7 +18,7 @@ next_body = ""
 prev_id = 487
 prev_title = ""
 prev_body = "#trump\n#batumi"
-views = 31
+views = 32
 ids = [488]
 
 [[extra.related]]

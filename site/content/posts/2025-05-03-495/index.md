@@ -15,7 +15,7 @@ next_body = "#wikipedia\n#ui\n#navigation"
 prev_id = 494
 prev_title = ""
 prev_body = ""
-views = 27
+views = 28
 ids = [495]
 +++
 

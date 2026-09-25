@@ -18,7 +18,7 @@ next_body = "#love\n#anime\n#mightynein\n#nottthebrave\nNott Being Caleb’s Mom
 prev_id = 2157
 prev_title = ""
 prev_body = "#money\nBy imarka23, source"
-views = 23
+views = 24
 ids = [2158]
 +++
 
