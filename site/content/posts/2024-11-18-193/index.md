@@ -18,7 +18,7 @@ next_body = "About games preservation"
 prev_id = 192
 prev_title = ""
 prev_body = "#warcraft"
-views = 51
+views = 52
 ids = [193]
 
 [[extra.related]]

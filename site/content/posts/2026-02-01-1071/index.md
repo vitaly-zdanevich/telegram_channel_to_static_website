@@ -18,7 +18,7 @@ next_body = "#wikipedia article writing, in #vim"
 prev_id = 1070
 prev_title = ""
 prev_body = "#logo\n#wikimedia\n#wikidata\n#data\nFrom"
-views = 14
+views = 15
 ids = [1071]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#nvidia\n#laser\n#agro"
 prev_id = 1506
 prev_title = ""
 prev_body = "#shutdown\n#cloudflare\n#preservation\n#school\n#error\nЧто вы будете делать когда вот это всё отключат по всему миру?\nЧто ты будешь делать без этой подсказки?"
-views = 17
+views = 18
 ids = [1507]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "Wow in #svg we can have #css, like\n.spinnera {\nanimation: spinner
 prev_id = 648
 prev_title = ""
 prev_body = "Horn of the Abyss: кампания Под Весёлым Роджером 1: Пираты и пальмы\n#game\n#homm3\n#hornoftheabyss"
-views = 43
+views = 44
 ids = [649]
 
 [[extra.related]]

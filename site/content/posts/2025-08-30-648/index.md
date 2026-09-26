@@ -17,7 +17,7 @@ next_body = "Do you remember such #webdesign?\n#login\n#gamespot\nSource"
 prev_id = 647
 prev_title = ""
 prev_body = "#film\n#music\n#russia\n#korolishut\ns1e5, scene about a new girl Olga"
-views = 44
+views = 45
 ids = [648]
 
 [[extra.related]]

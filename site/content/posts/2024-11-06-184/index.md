@@ -15,7 +15,7 @@ next_body = "#neovim\n#animation"
 prev_id = 183
 prev_title = ""
 prev_body = ""
-views = 47
+views = 48
 ids = [184]
 +++
 

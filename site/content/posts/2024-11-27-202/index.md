@@ -18,7 +18,7 @@ next_body = "#meanna\n#sergeykurginyan\nК моим мыслям о челове
 prev_id = 201
 prev_title = ""
 prev_body = "#wikipedia"
-views = 36
+views = 37
 ids = [202, 203]
 
 [[extra.related]]

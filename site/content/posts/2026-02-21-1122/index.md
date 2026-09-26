@@ -18,7 +18,7 @@ next_body = "#commons"
 prev_id = 1121
 prev_title = ""
 prev_body = "#webdesign\n#buttons\n#animation\n#game\n#mmo\n#myst"
-views = 17
+views = 18
 ids = [1122]
 
 [[extra.related]]
@@ -28,7 +28,7 @@ date = "2026-02-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-22-1124/index.md"
-label = "#steam #myst forever #games"
+label = "#steam #myst forever #game"
 date = "2026-02-22"
 
 [[extra.related]]

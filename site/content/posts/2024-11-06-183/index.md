@@ -15,7 +15,7 @@ next_body = ""
 prev_id = 182
 prev_title = ""
 prev_body = "&gt; Telegram is not a commercial organization"
-views = 43
+views = 44
 ids = [183]
 +++
 

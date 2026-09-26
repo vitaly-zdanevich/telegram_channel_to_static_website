@@ -18,7 +18,7 @@ next_body = "#webdesign\n#games\n#rpg"
 prev_id = 717
 prev_title = ""
 prev_body = "#life\n#deep\n#silence\nПочему ты всё время молчишь, у тебя нет тем для разговора\nSource"
-views = 29
+views = 30
 ids = [718]
 
 [[extra.related]]

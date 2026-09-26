@@ -18,7 +18,7 @@ next_body = "My first blog #post to #wikimediadiff, about #wikimediacommons, #pr
 prev_id = 1590
 prev_title = ""
 prev_body = "#typography\n#scans\n#russianempire\n#kiev\n#18thcentury"
-views = 18
+views = 19
 ids = [1595, 1596, 1597, 1598]
 
 [[extra.related]]

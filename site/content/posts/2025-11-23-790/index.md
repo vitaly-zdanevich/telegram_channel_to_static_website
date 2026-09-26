@@ -17,7 +17,7 @@ next_body = "#game\n#strategy\n#rtt\n#groundcontrol\nSource"
 prev_id = 789
 prev_title = ""
 prev_body = "#wikipedia\n#ui\n#navigation"
-views = 43
+views = 44
 ids = [790]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#webdesign\n#webdesigndark\n#webdesigndarkblue\n#webdesigngame\n#vi
 prev_id = 786
 prev_title = ""
 prev_body = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory\nPlaying on Linux through Lutris, Conty.\nGame version 1.4\n#game\n#strategy\n#rts\n#year2004\n#armiesofexigo\n#fallen\n#teonia"
-views = 39
+views = 41
 ids = [787]
 
 [[extra.related]]

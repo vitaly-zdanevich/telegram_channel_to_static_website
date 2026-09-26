@@ -18,7 +18,7 @@ next_body = "#design\n#preservation\n#year1885"
 prev_id = 820
 prev_title = ""
 prev_body = "#hardware\n#laptop\nToshiba Libretto"
-views = 28
+views = 29
 ids = [825]
 
 [[extra.related]]

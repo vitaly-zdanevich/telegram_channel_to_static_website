@@ -18,7 +18,7 @@ next_body = "My new great #bash #alias (actually a #hotkey) for faster #cd\n# Li
 prev_id = 1680
 prev_title = ""
 prev_body = "#preservation\n#internetarchive\n#short\n#music\n#tape\n#audio\nSource"
-views = 18
+views = 19
 ids = [1681]
 
 [[extra.related]]

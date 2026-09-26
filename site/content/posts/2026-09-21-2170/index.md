@@ -17,7 +17,7 @@ next_body = "#mem\n#train\n#mouth\n#china\n#music: Бошки дымятся by 
 prev_id = 2169
 prev_title = ""
 prev_body = "#craft\n#toy\n#horn\nSource"
-views = 12
+views = 13
 ids = [2170]
 
 [[extra.related]]

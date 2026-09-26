@@ -27,6 +27,11 @@ label = "#armiesofexigo #abandone"
 date = "2026-06-19"
 
 [[extra.related]]
+path = "@/posts/2024-11-13-186/index.md"
+label = "#game #abandone Весной 2009 года озвучивание проекта передали дв…"
+date = "2024-11-13"
+
+[[extra.related]]
 path = "@/posts/2026-02-25-1170/index.md"
 label = "#entrance #abandone #belarus"
 date = "2026-02-25"
@@ -40,11 +45,6 @@ date = "2026-07-01"
 path = "@/posts/2026-03-16-1475/index.md"
 label = "#abandone #belarus #globustut #year2005 Source,%D1%81%D0%BD%D1%8…"
 date = "2026-03-16"
-
-[[extra.related]]
-path = "@/posts/2026-03-02-1328/index.md"
-label = "#abandone #belarus #globustut #year2005"
-date = "2026-03-02"
 +++
 
 {{ tag(t="icq") }}  

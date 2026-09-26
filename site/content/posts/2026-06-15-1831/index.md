@@ -17,7 +17,7 @@ next_body = "When #css is minified - so what can I do with that :(\nLeave commen
 prev_id = 1830
 prev_title = ""
 prev_body = "#religion\n#jesus"
-views = 18
+views = 19
 ids = [1831]
 
 [[extra.related]]

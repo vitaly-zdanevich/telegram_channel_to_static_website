@@ -18,7 +18,7 @@ next_body = "#people\n#fashion\n#zara"
 prev_id = 1080
 prev_title = ""
 prev_body = "#ussr\n#history\nСегодня их существует пять плюс три молитвенных дома. А ведь еще в 1939 году, до прихода коммунистов, мечетей по стране было больше сорока"
-views = 14
+views = 15
 ids = [1081]
 
 [[extra.related]]

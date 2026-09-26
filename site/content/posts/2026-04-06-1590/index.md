@@ -18,7 +18,7 @@ next_body = "#indika\n#game\n#religion\n#christianity\n#webdesign"
 prev_id = 1580
 prev_title = ""
 prev_body = "#typography\n#scans\n#russianempire\n#kiev\n#18thcentury"
-views = 25
+views = 26
 ids = [1590, 1591, 1592, 1593, 1594]
 
 [[extra.related]]

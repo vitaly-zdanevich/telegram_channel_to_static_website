@@ -18,7 +18,7 @@ next_body = "#git\n#gitgraph"
 prev_id = 589
 prev_title = ""
 prev_body = "...for the previous post\nSource\")"
-views = 48
+views = 49
 ids = [590]
 
 [[extra.related]]

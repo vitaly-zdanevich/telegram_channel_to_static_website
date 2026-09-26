@@ -17,7 +17,7 @@ next_body = "#anime\n#cover\n#game\n#ps3\n#year2014\nAtelier Shallie Alchemists 
 prev_id = 1662
 prev_title = ""
 prev_body = "#fashion\n#trash\n#black\nAuthor:\nFound at"
-views = 22
+views = 23
 ids = [1667]
 
 [[extra.related]]

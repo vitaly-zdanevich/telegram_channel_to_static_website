@@ -18,7 +18,7 @@ next_body = "Wow #wikipedia semi-automatic editing by a #python script"
 prev_id = 870
 prev_title = ""
 prev_body = "#games\n#gamazine\n#igromania\nSource"
-views = 20
+views = 21
 ids = [871]
 
 [[extra.related]]

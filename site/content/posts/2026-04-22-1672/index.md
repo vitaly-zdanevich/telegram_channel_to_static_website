@@ -18,7 +18,7 @@ next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSour
 prev_id = 1668
 prev_title = ""
 prev_body = "#anime\n#cover\n#game\n#ps3\n#year2014\nAtelier Shallie Alchemists of the Dusk Sea"
-views = 16
+views = 17
 ids = [1672, 1673]
 
 [[extra.related]]

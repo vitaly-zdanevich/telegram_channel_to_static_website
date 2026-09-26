@@ -14,11 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2050"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2050-5391287961103571333.jpg"
 next_id = 2060
 next_title = ""
-next_body = "#needforspeed\n#needforspeedunderground2\n#psy\nIts #year2004 and a racing #game is about to change our entire personality.\nSource"
+next_body = "#game\n#needforspeed\n#needforspeedunderground2\n#psy\nIts #year2004 and a racing #game is about to change our entire personality.\nSource"
 prev_id = 2049
 prev_title = ""
 prev_body = "My yet another #wikimedia project that I love: #wikimediacommons #pwa #uploader. Fast and simple."
-views = 26
+views = 27
 ids = [2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059]
 
 [[extra.related]]

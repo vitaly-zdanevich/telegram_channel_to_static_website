@@ -17,7 +17,7 @@ next_body = "From , ending"
 prev_id = 195
 prev_title = ""
 prev_body = "#style love my custom YandexMail"
-views = 54
+views = 55
 ids = [196]
 
 [[extra.related]]

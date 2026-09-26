@@ -17,7 +17,7 @@ next_body = "#mmo #myst #stat"
 prev_id = 1120
 prev_title = ""
 prev_body = "#ai\n#codex\n#love Codex, using it almost every day, recently solved a few long lasting technical problems thanks to him."
-views = 14
+views = 15
 ids = [1121]
 
 [[extra.related]]
@@ -31,6 +31,11 @@ label = "#webdesign #oldweb #animation"
 date = "2026-03-08"
 
 [[extra.related]]
+path = "@/posts/2026-02-22-1124/index.md"
+label = "#steam #myst forever #game"
+date = "2026-02-22"
+
+[[extra.related]]
 path = "@/posts/2026-02-21-1122/index.md"
 label = "#mmo #myst #stat"
 date = "2026-02-21"
@@ -39,11 +44,6 @@ date = "2026-02-21"
 path = "@/posts/2026-06-20-1846/index.md"
 label = "#webdesign #animation #videoeditor #cinelerra"
 date = "2026-06-20"
-
-[[extra.related]]
-path = "@/posts/2025-10-22-718/index.md"
-label = "#webdesign #game #mmorpg #ragnarok It still alive"
-date = "2025-10-22"
 +++
 
 {{ tag(t="webdesign") }}  

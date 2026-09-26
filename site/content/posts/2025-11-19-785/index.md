@@ -18,7 +18,7 @@ next_body = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory\nPlayin
 prev_id = 784
 prev_title = ""
 prev_body = "#punk\n#logo\n#music\n#korolishut\nSource"
-views = 43
+views = 44
 ids = [785]
 
 [[extra.related]]

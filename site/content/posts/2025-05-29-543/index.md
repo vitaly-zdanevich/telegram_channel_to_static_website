@@ -18,7 +18,7 @@ next_body = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP on
 prev_id = 542
 prev_title = ""
 prev_body = "#git\nSource"
-views = 59
+views = 60
 ids = [543]
 
 [[extra.related]]

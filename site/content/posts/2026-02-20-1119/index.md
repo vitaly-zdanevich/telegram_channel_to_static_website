@@ -18,7 +18,7 @@ next_body = "#ai\n#codex\n#love Codex, using it almost every day, recently solve
 prev_id = 1118
 prev_title = ""
 prev_body = "#python\nMy #geeknote (#evernote #cli) now available on PyPI"
-views = 14
+views = 15
 ids = [1119]
 
 [[extra.related]]
@@ -52,8 +52,8 @@ date = "2026-03-05"
 
 {{ tag(t="mcfly") }}: ctrl-r replacement with "suggestions are prioritized in real time with a small neural network."  
 
-Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7799 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 202 forks · 135 open issues/PRs · MIT · last push 2026-09-01") for it.  
+Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7800 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 202 forks · 135 open issues/PRs · MIT · last push 2026-09-01") for it.  
 
-[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7799 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 202 forks · 135 open issues/PRs · MIT · last push 2026-09-01")
+[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7800 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 202 forks · 135 open issues/PRs · MIT · last push 2026-09-01")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1119-5242389218842057393.jpg") }}

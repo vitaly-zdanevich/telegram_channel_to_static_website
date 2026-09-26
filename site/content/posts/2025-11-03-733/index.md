@@ -18,7 +18,7 @@ next_body = "#my\n#video\n#game\n#strategy\n#homm3\n#hota\n#onebadday\nHeroes of
 prev_id = 732
 prev_title = ""
 prev_body = "#webdesign"
-views = 19
+views = 20
 ids = [733]
 
 [[extra.related]]

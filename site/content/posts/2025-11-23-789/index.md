@@ -18,7 +18,7 @@ next_body = "#game\n#strategy\n#video\n#review\n#groundcontrol\n#year2000\nSourc
 prev_id = 788
 prev_title = ""
 prev_body = "#webdesign\n#webdesigndark\n#webdesigndarkblue\n#webdesigngame\n#visualnovel"
-views = 40
+views = 41
 ids = [789]
 
 [[extra.related]]

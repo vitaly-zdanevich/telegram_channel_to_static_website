@@ -18,7 +18,7 @@ next_body = "In #kitty terminal) you can always highlight something, for example
 prev_id = 711
 prev_title = ""
 prev_body = "#games\n#steam"
-views = 28
+views = 29
 ids = [712]
 
 [[extra.related]]

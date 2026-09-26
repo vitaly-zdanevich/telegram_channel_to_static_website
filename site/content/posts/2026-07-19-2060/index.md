@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-07-19T18:41:35+00:00
-description = "needforspeed needforspeedunderground2 psy Its year2004 and a racing game is about to change our entire personality. Source"
+description = "game needforspeed needforspeedunderground2 psy Its year2004 and a racing game is about to change our entire personality. Source"
 
 [taxonomies]
 days = ["2026-07-19"]
-tags = ["need_for_speed", "need_for_speed_underground_2", "psy", "year2004", "game", "video"]
+tags = ["game", "need_for_speed", "need_for_speed_underground_2", "psy", "year2004", "video"]
 
 [extra]
 id = 2060
@@ -17,7 +17,7 @@ next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSour
 prev_id = 2050
 prev_title = ""
 prev_body = "#coatofarms\n#wikimediacommons\n#russianempire\nSource"
-views = 24
+views = 26
 ids = [2060]
 
 [[extra.related]]
@@ -46,6 +46,7 @@ label = "#psy #food Ходим без настроения, срываемся, 
 date = "2026-06-30"
 +++
 
+{{ tag(t="game") }}  
 {{ tag(t="need_for_speed") }}  
 {{ tag(t="need_for_speed_underground_2") }}  
 {{ tag(t="psy") }}  

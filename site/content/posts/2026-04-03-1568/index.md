@@ -18,7 +18,7 @@ next_body = "#russianempire\n#typography\n#метрическаякнига\nAt"
 prev_id = 1567
 prev_title = ""
 prev_body = "#preservation\n#wikimediacommons\n#unavailable"
-views = 19
+views = 20
 ids = [1568]
 
 [[extra.related]]
@@ -51,7 +51,7 @@ date = "2025-01-01"
 
 I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} from Windows to Linux, interesting if that possible...  
 
-[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 8 stars · Languages: C++ 35%, C# 22%, Python 16% · 1301 commits · 5 forks · 1 open issues/PRs · last push 2026-09-21")  
+[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 8 stars · Languages: C++ 35%, C# 22%, Python 16% · 1302 commits · 5 forks · 1 open issues/PRs · last push 2026-09-25")  
 
 We tried {{ tag(t="wine") }} of course - but some problems with {{ tag(t="lutris") }} - because native launcher need to run Wine...
 

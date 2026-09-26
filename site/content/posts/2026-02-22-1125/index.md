@@ -17,8 +17,8 @@ next_title = ""
 next_body = "#internetarchive\n#flag\n#earth"
 prev_id = 1124
 prev_title = ""
-prev_body = "#steam\n#myst\nforever #games"
-views = 16
+prev_body = "#steam\n#myst\nforever #game"
+views = 17
 ids = [1125]
 
 [[extra.related]]

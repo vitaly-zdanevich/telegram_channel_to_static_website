@@ -16,7 +16,7 @@ next_body = "Part of our new opera"
 prev_id = 34
 prev_title = ""
 prev_body = "This website looks soooo special #design"
-views = 52
+views = 53
 ids = [35]
 +++
 

@@ -18,7 +18,7 @@ next_body = "#hardware\n#laptop\nToshiba Libretto"
 prev_id = 818
 prev_title = ""
 prev_body = "#pypi\n#donation"
-views = 26
+views = 27
 ids = [819]
 
 [[extra.related]]
@@ -52,7 +52,7 @@ date = "2026-01-25"
 {{ tag(t="pywikibot") }}  
 {{ tag(t="my") }}  
 
-Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 776 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 20931 commits · 221 forks · MIT · last push 2026-09-24") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
+Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 776 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 20939 commits · 221 forks · MIT · last push 2026-09-26") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
 
 <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 

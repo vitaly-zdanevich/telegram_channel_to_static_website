@@ -17,7 +17,7 @@ next_body = "My talk in WMCEE 2024"
 prev_id = 159
 prev_title = ""
 prev_body = "Wow #design"
-views = 65
+views = 66
 ids = [160]
 
 [[extra.related]]

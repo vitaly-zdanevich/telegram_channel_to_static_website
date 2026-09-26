@@ -17,7 +17,7 @@ next_body = "#game\n#strategy\n#rtt\n#groundcontrol\nThe #bishop defector death 
 prev_id = 790
 prev_title = ""
 prev_body = "#game\n#strategy\n#video\n#review\n#groundcontrol\n#year2000\nSource"
-views = 41
+views = 42
 ids = [791]
 
 [[extra.related]]

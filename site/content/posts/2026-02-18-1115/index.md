@@ -18,7 +18,7 @@ next_body = "#pain\n#ad\n#event\n#sergeykulinkovich\nThe old one\nУнижени
 prev_id = 1114
 prev_title = ""
 prev_body = "#python\nSame #dot - different meaning\nfor f in os.listdir('.')\nif not f.startswith('.')"
-views = 13
+views = 14
 ids = [1115]
 
 [[extra.related]]

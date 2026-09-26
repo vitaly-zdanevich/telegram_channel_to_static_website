@@ -17,7 +17,7 @@ next_body = "#consciousness\nSource"
 prev_id = 712
 prev_title = ""
 prev_body = "#webdesign, 2696 game reviews on\nWorking from 2001\n4.26k subscribers on YouTube\n#games"
-views = 29
+views = 30
 ids = [713]
 
 [[extra.related]]

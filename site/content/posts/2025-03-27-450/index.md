@@ -18,7 +18,7 @@ next_body = "#games\n#history\n#cds\n#shop\nFrom"
 prev_id = 449
 prev_title = ""
 prev_body = "#entrance\nFrom"
-views = 33
+views = 34
 ids = [450, 451]
 
 [[extra.related]]

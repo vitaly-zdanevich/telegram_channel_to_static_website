@@ -17,7 +17,7 @@ next_body = "Are you winning son? Happy Birthday\n#pain\n#death\n#loss\n#miss\nS
 prev_id = 374
 prev_title = ""
 prev_body = "Банк Империал - Конрад III\n#ad is old, around 2000 year? This bank is not exists anymore.\nSource"
-views = 56
+views = 57
 ids = [375]
 
 [[extra.related]]

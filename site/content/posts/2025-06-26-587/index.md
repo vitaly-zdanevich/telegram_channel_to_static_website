@@ -17,7 +17,7 @@ next_body = "#game\n#demo\n#warhammer\n#dawnofwar\n#2004\nIf you see \"Failed to
 prev_id = 586
 prev_title = ""
 prev_body = "#map of articles and photos"
-views = 43
+views = 44
 ids = [587]
 
 [[extra.related]]
@@ -31,11 +31,6 @@ label = "#games #steam Can you imagine that, I know this guy"
 date = "2025-08-09"
 
 [[extra.related]]
-path = "@/posts/2026-02-22-1124/index.md"
-label = "#steam #myst forever #games"
-date = "2026-02-22"
-
-[[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
 date = "2025-05-13"
@@ -44,6 +39,11 @@ date = "2025-05-13"
 path = "@/posts/2026-03-21-1494/index.md"
 label = "#steam: almost 25% is on #linux?"
 date = "2026-03-21"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 +++
 
 In 2024 to {{ tag(t="steam") }} were published 19000 {{ tag(t="games") }}, its 52 games per day.  

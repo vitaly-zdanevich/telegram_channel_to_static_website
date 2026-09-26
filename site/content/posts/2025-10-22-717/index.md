@@ -17,7 +17,7 @@ next_body = "#webdesign\n#game\n#mmorpg\n#ragnarok\nIt still alive"
 prev_id = 716
 prev_title = ""
 prev_body = "#medicine\n#death\nSource"
-views = 28
+views = 29
 ids = [717]
 
 [[extra.related]]

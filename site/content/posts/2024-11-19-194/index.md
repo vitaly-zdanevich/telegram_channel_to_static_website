@@ -17,7 +17,7 @@ next_body = "#style love my custom YandexMail"
 prev_id = 193
 prev_title = ""
 prev_body = "#webdesign"
-views = 46
+views = 47
 ids = [194]
 +++
 

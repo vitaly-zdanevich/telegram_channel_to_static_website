@@ -17,7 +17,7 @@ next_body = "#psp\n#vita\n#game\nSource"
 prev_id = 2067
 prev_title = ""
 prev_body = "Моя #лекция про #evernote проекты, #saas, #everpublich на #zola - для публикации ноутбука в статический сайт, без #api\n#friendsbar\n#batumi\neverpublich.my\nПатч для больших стикеров в #telegram\n#titleonhover\nreeknote evernote cli\nМой синхронизатор Телеграм канала в сайт\nTo Evernote: Pinterest, Wikipedia, YandexMusic\nqt6 Evernote app\nrepack of the Evernote app\nYouTube\nВсе линки"
-views = 17
+views = 18
 ids = [2069]
 
 [[extra.related]]

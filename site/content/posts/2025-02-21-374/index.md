@@ -17,7 +17,7 @@ next_body = "#game\n#armiesofexigo\nSource"
 prev_id = 372
 prev_title = ""
 prev_body = "Most Shocking Second a Day Video\nStill The Most Shocking Second A Day\n#ad\n#uk\n#war\n#girl\nSource\nSource"
-views = 94
+views = 95
 ids = [374]
 
 [[extra.related]]

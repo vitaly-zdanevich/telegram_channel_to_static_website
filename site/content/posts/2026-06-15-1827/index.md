@@ -18,7 +18,7 @@ next_body = "#tech\n#psp\n#finalfantasy"
 prev_id = 1826
 prev_title = ""
 prev_body = "#bus\n#architecture\nSource"
-views = 113
+views = 115
 ids = [1827, 1828]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#wikipedia\n#delitionism\nYou can see this stark difference between
 prev_id = 792
 prev_title = ""
 prev_body = "#game\n#strategy\n#rtt\n#groundcontrol\nThe #bishop defector death - dramatic moment, from minute 9"
-views = 54
+views = 56
 ids = [793]
 
 [[extra.related]]

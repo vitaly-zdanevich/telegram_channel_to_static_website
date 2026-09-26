@@ -18,7 +18,7 @@ next_body = "#webdesign, 2696 game reviews on\nWorking from 2001\n4.26k subscrib
 prev_id = 710
 prev_title = ""
 prev_body = "#film\n#korolishut\n#naked"
-views = 33
+views = 35
 ids = [711]
 
 [[extra.related]]
@@ -32,11 +32,6 @@ label = "In 2024 to #steam were published 19000 #games, its 52 games per…"
 date = "2025-06-26"
 
 [[extra.related]]
-path = "@/posts/2026-02-22-1124/index.md"
-label = "#steam #myst forever #games"
-date = "2026-02-22"
-
-[[extra.related]]
 path = "@/posts/2025-05-13-527/index.md"
 label = "Gold #games - because lovers recreate engines for the best one."
 date = "2025-05-13"
@@ -45,6 +40,11 @@ date = "2025-05-13"
 path = "@/posts/2026-03-21-1494/index.md"
 label = "#steam: almost 25% is on #linux?"
 date = "2026-03-21"
+
+[[extra.related]]
+path = "@/posts/2025-10-21-712/index.md"
+label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
+date = "2025-10-21"
 +++
 
 {{ tag(t="games") }}  

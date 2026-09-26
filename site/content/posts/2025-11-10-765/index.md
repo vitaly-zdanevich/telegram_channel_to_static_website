@@ -18,7 +18,7 @@ next_body = "#about\n#gamejournalism\n#webdesign\n#webdesignold\nVideo Game Talk
 prev_id = 764
 prev_title = ""
 prev_body = "#painting\n#gustavedore\nSource"
-views = 41
+views = 42
 ids = [765]
 
 [[extra.related]]

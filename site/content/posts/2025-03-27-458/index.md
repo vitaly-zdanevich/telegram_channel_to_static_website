@@ -18,7 +18,7 @@ next_body = "#games\n#igromania\n18 years ago. Golden age?\nSource"
 prev_id = 457
 prev_title = ""
 prev_body = "#ussr"
-views = 53
+views = 54
 ids = [458]
 
 [[extra.related]]

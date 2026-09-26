@@ -17,7 +17,7 @@ next_body = "#game\n#man2"
 prev_id = 244
 prev_title = ""
 prev_body = "Video from 2012 about #ai"
-views = 40
+views = 41
 ids = [245]
 
 [[extra.related]]

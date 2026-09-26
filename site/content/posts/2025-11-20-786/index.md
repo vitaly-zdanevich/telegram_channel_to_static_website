@@ -17,7 +17,7 @@ next_body = "#preservation\n#game\n#groundcontrol\n#wwiii\nFrom the game Ground 
 prev_id = 785
 prev_title = ""
 prev_body = "#webdesign\n#webdesigngame"
-views = 36
+views = 37
 ids = [786]
 
 [[extra.related]]
@@ -42,7 +42,7 @@ date = "2025-11-24"
 
 [[extra.related]]
 path = "@/posts/2026-07-19-2060/index.md"
-label = "#needforspeed #needforspeedunderground2 #psy Its #year2004 and a…"
+label = "#game #needforspeed #needforspeedunderground2 #psy Its #year2004…"
 date = "2026-07-19"
 +++
 
@@ -70,4 +70,4 @@ Game version 1.4
 
 {{ tag(t="video") }}
 
-<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136881294">Teonia</a> · <span class="wd-qid">Q136881294</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P155">follows</a></td><td><a href="https://www.wikidata.org/wiki/Q136676242">The Mines of Malrinor</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P156">followed by</a></td><td><a href="https://www.wikidata.org/wiki/Q139504868">The First Seal</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q136881307">Fallen campaign in Armies of Exigo</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P6262">Fandom article ID</a></td><td>armies-of-exigo:Teonia</td></tr></tbody></table></figure>
+<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136881294">Q136881294</a> · <span class="wd-qid">Q136881294</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">Q1046315</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P155">P155</a></td><td><a href="https://www.wikidata.org/wiki/Q136676242">Q136676242</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P156">P156</a></td><td><a href="https://www.wikidata.org/wiki/Q139504868">Q139504868</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">P361</a></td><td><a href="https://www.wikidata.org/wiki/Q136881307">Q136881307</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P6262">P6262</a></td><td>armies-of-exigo:Teonia</td></tr></tbody></table></figure>

@@ -17,7 +17,7 @@ next_body = "#games\n#steam\nCan you imagine that, I know this guy"
 prev_id = 621
 prev_title = ""
 prev_body = "#anime\n#gpu\nSource"
-views = 165
+views = 166
 ids = [622]
 +++
 

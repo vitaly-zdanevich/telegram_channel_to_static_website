@@ -18,7 +18,7 @@ next_body = "In 2024 to #steam were published 19000 #games, its 52 games per day
 prev_id = 585
 prev_title = ""
 prev_body = ""
-views = 44
+views = 45
 ids = [586]
 
 [[extra.related]]

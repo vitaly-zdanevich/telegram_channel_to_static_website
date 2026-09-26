@@ -18,7 +18,7 @@ next_body = "#preservation\n#wikimediacommons\n#pywikibot\n#my\nCreated a new to
 prev_id = 817
 prev_title = ""
 prev_body = "#ukraine\n#mariupol\n#architecture\n#building\n#war\nSource"
-views = 29
+views = 30
 ids = [818]
 +++
 

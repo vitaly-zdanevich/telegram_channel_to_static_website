@@ -18,7 +18,7 @@ next_body = "#journal\n#gameexe\n#legs\n#year2005"
 prev_id = 1069
 prev_title = ""
 prev_body = "#webdesign\n#map\n#openstreetmap\n#wolt\n#delivery"
-views = 12
+views = 13
 ids = [1070]
 
 [[extra.related]]

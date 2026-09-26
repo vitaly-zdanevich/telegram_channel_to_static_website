@@ -18,7 +18,7 @@ next_body = "#game\n#sega\n#segagenesis\n#revive\n#ultracore\n#wikipedia\nUltrac
 prev_id = 888
 prev_title = ""
 prev_body = "#sql\n#quarry\n#globustut\n#commons: red category links with one or more files from a specific user\nSELECT\nCONCAT(' REPLACE(cl.clto, ' ', '')) AS categoryurl,\nCOUNT() AS filecount\nFROM page p\nJOIN image i ON i.imgname = p.pagetitle\nJOIN actor a ON a.actorid = i.imgactor\nJOIN categorylinks cl ON cl.clfrom = p.pageid\nLEFT JOIN page c\nON c.pagetitle = cl.clto\nAND c.pagenamespace = 14\nWHERE p.pagenamespace = 6\nAND a.actorname = 'Globustut'\nAND c.pageid IS NULL\nGROUP BY cl.clto\nORDER BY filecount DESC, cl.clto"
-views = 14
+views = 15
 ids = [889]
 
 [[extra.related]]

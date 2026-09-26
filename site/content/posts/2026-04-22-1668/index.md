@@ -18,7 +18,7 @@ next_body = "#mediawiki\n#fandom\n#infobox\n#template\n#concatenation\n#wikidata
 prev_id = 1667
 prev_title = ""
 prev_body = "#fashion\n#street\n#london\nSource"
-views = 13
+views = 14
 ids = [1668, 1669, 1670, 1671]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "How #heroesofmightandmagic3 developed - from diaries of Gregory Ful
 prev_id = 640
 prev_title = ""
 prev_body = ""
-views = 34
+views = 35
 ids = [642]
 
 [[extra.related]]

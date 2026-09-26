@@ -17,7 +17,7 @@ next_body = ""
 prev_id = 245
 prev_title = ""
 prev_body = "#war\n#video\n#warpath"
-views = 32
+views = 33
 ids = [246]
 
 [[extra.related]]

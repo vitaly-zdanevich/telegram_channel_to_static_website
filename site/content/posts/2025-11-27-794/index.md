@@ -17,7 +17,7 @@ next_body = "Фильм \"Лучше не бывает\": несколько м�
 prev_id = 793
 prev_title = ""
 prev_body = "#ad\n#game\n#tank\n#wwii\n#music\n#warpath\nSource"
-views = 57
+views = 58
 ids = [794]
 
 [[extra.related]]

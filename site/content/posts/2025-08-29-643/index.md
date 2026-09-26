@@ -17,7 +17,7 @@ next_body = "#stat\n#wikipedia\n#ai\nWikipedia's traffic has fallen by 23% in th
 prev_id = 642
 prev_title = ""
 prev_body = "Heroes of Might and Magic 3: карта \"Изумрудные острова\": средняя сложность, 2 человека VS AI: победа\nNo comments.\nHorn of the Abyss 1.7.3\nPlaying through Conty on Gentoo Linux no-multilib profile\nPart from\n#my\n#year1999\n#video\n#game\n#strategy\n#tbs\n#homm3\n#hota\n#emeraldisles"
-views = 32
+views = 33
 ids = [643]
 +++
 

@@ -17,7 +17,7 @@ next_body = "#zst is so much smaller #archive"
 prev_id = 1113
 prev_title = ""
 prev_body = "#preservation\n#nival\n#game\n#silentstorm\nThanks Sergey."
-views = 17
+views = 18
 ids = [1114]
 
 [[extra.related]]

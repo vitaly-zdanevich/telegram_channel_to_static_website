@@ -17,7 +17,7 @@ next_body = "#games\n#steam"
 prev_id = 709
 prev_title = ""
 prev_body = "#wikidata script to show #youtube embeds, #spotify, #facebook and others\nExample item from the screenshot"
-views = 29
+views = 30
 ids = [710]
 
 [[extra.related]]

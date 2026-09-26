@@ -18,7 +18,7 @@ next_body = "#wikipedia\nАктёр озвучивания мужского по
 prev_id = 1071
 prev_title = ""
 prev_body = "#journal\n#gameexe\n#legs\n#year2005"
-views = 15
+views = 16
 ids = [1072]
 
 [[extra.related]]

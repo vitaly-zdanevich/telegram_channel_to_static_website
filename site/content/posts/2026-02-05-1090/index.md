@@ -18,7 +18,7 @@ next_body = "#linux\n#game\n#wwii\n#landing\n#ad\n#warthunder\nwarthunder.com"
 prev_id = 1089
 prev_title = ""
 prev_body = "#matrix\nПрошло 20 лет, а вы и не заметили, мистер Андерсон\nSource"
-views = 10
+views = 11
 ids = [1090]
 
 [[extra.related]]

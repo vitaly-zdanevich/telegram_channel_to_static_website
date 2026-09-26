@@ -17,7 +17,7 @@ next_body = "#commons\nMy account is big, my account is very big"
 prev_id = 1091
 prev_title = ""
 prev_body = "#linux\n#game\n#wwii\n#landing\n#ad\n#warthunder\nwarthunder.com"
-views = 13
+views = 14
 ids = [1092]
 +++
 

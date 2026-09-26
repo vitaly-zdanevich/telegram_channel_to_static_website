@@ -16,7 +16,7 @@ next_body = "Как я загружаю в Wikimedia Commons, день из жи
 prev_id = 160
 prev_title = ""
 prev_body = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
-views = 35
+views = 36
 ids = [161]
 +++
 

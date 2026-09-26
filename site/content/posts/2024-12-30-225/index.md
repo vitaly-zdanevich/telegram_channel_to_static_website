@@ -18,7 +18,7 @@ next_body = "#webdesign"
 prev_id = 224
 prev_title = ""
 prev_body = "#game #ui #pathofexile2"
-views = 43
+views = 44
 ids = [225]
 
 [[extra.related]]

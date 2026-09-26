@@ -18,7 +18,7 @@ next_body = "#icq\n#offline\n#abandone\n#sonyericsson\nSource"
 prev_id = 1595
 prev_title = ""
 prev_body = "#indika\n#game\n#religion\n#christianity\n#webdesign"
-views = 19
+views = 20
 ids = [1599]
 
 [[extra.related]]

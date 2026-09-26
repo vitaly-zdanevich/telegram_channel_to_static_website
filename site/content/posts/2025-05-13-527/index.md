@@ -18,7 +18,7 @@ next_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it
 prev_id = 526
 prev_title = ""
 prev_body = "#homm3\n#foss\n#vcmi"
-views = 35
+views = 36
 ids = [527]
 
 [[extra.related]]

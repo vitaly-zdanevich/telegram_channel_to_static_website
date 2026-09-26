@@ -16,7 +16,7 @@ next_body = "About games archiving"
 prev_id = 206
 prev_title = ""
 prev_body = "#mem\n#games"
-views = 38
+views = 39
 ids = [207]
 +++
 

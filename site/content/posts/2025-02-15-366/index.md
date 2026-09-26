@@ -17,7 +17,7 @@ next_body = "#turkey\n#istanbul\n#video\n#my\nAnimation on building by projector
 prev_id = 362
 prev_title = ""
 prev_body = "#coin\nIts real coins, from Cook Islands\nSource"
-views = 41
+views = 42
 ids = [366]
 
 [[extra.related]]

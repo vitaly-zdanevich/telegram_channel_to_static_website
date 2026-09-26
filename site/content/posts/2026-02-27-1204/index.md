@@ -18,7 +18,7 @@ next_body = "#ussr\n#god\n#conflict\n#belarus\n#globustut\n#year2005\nДа хр�
 prev_id = 1203
 prev_title = ""
 prev_body = "#design\n#software\n#gthumb\n#scan\n#preservation"
-views = 6
+views = 7
 ids = [1204]
 
 [[extra.related]]

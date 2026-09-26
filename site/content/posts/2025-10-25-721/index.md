@@ -15,7 +15,7 @@ next_body = "#game\n#godofwar\n#playstation\n#compare\n🪓 Наглядное �
 prev_id = 720
 prev_title = ""
 prev_body = "Downloaded by #wget a dying website indiegamewebsite.com\nThe command:\nwget --mirror --convert-links --adjust-extension --page-requisites --no-parent --no-host-directories\nTelegram limit is 4GB, to extract:\ncat indiegamewebsite.part.tar.xz. indiegamewebsite.tar.xz\ntar -xvJf indiegamewebsite.tar.xz\nAlso published to and\n#archivation\n#games\n#website"
-views = 42
+views = 43
 ids = [721, 722, 723]
 +++
 

@@ -17,7 +17,7 @@ next_body = "Gold #games - because lovers recreate engines for the best one."
 prev_id = 525
 prev_title = ""
 prev_body = "#photo\n#history\n#face\n#medals"
-views = 34
+views = 35
 ids = [526]
 
 [[extra.related]]

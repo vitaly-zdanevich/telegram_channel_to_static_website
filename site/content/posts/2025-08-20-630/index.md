@@ -18,7 +18,7 @@ next_body = "Percent of people who think their culture is superior to others\n#m
 prev_id = 629
 prev_title = ""
 prev_body = "On January 29, 2015, about 15 years after the original release of Heroes of Might & Magic III, Ubisoft released a new high-definition version of the game compatible with PCs as well as Android and iOS tablets. The expansion packs were not included because the source code for those releases was lost\n#game\n#heroes\n#archiving\n#lost"
-views = 60
+views = 61
 ids = [630]
 
 [[extra.related]]

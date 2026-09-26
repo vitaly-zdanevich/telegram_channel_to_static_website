@@ -16,7 +16,7 @@ next_body = "#comment\n#health\n#magnesium"
 prev_id = 588
 prev_title = ""
 prev_body = "#game\n#demo\n#warhammer\n#dawnofwar\n#2004\nIf you see \"Failed to initialize video card\" - try to enable Gamescope. Works with Wine 8 for me."
-views = 49
+views = 50
 ids = [589]
 +++
 

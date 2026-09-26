@@ -43,7 +43,7 @@ date = "2025-06-26"
 
 [[extra.related]]
 path = "@/posts/2026-02-22-1124/index.md"
-label = "#steam #myst forever #games"
+label = "#steam #myst forever #game"
 date = "2026-02-22"
 +++
 

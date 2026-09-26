@@ -17,7 +17,7 @@ next_body = "Imagine a 2d side-scroll quest-action game with such visual style\n
 prev_id = 615
 prev_title = ""
 prev_body = "How to ask for a #darkmode"
-views = 33
+views = 34
 ids = [616]
 
 [[extra.related]]

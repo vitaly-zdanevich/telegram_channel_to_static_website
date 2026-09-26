@@ -18,7 +18,7 @@ next_body = "#calligraphy\n#microfilm\n#preservation"
 prev_id = 1202
 prev_title = ""
 prev_body = "My new #userscript for #evernote adds a few #hotkey"
-views = 6
+views = 7
 ids = [1203]
 
 [[extra.related]]

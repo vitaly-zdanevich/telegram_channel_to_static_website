@@ -18,7 +18,7 @@ next_body = "#moneymuseum\n#money\n#rubles\nSource"
 prev_id = 623
 prev_title = ""
 prev_body = "#games\n#steam\nCan you imagine that, I know this guy"
-views = 29
+views = 30
 ids = [624]
 
 [[extra.related]]

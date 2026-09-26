@@ -14,11 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/1123"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1123-5249225806049907248.jpg"
 next_id = 1124
 next_title = ""
-next_body = "#steam\n#myst\nforever #games"
+next_body = "#steam\n#myst\nforever #game"
 prev_id = 1122
 prev_title = ""
 prev_body = "#mmo #myst #stat"
-views = 17
+views = 18
 ids = [1123]
 
 [[extra.related]]

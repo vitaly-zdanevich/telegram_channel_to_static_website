@@ -18,7 +18,7 @@ next_body = "#my\n#batumi\n#restaurant\n#art\n#food\n#sazandari"
 prev_id = 1687
 prev_title = ""
 prev_body = "#my\n#evernote\n#telegrambot\n#awslambda\n#ai\n#codex\n#gpt5\nArticle about it"
-views = 16
+views = 17
 ids = [1688, 1689, 1690, 1691, 1692, 1693, 1694]
 
 [[extra.related]]

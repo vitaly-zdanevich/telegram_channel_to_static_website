@@ -17,7 +17,7 @@ next_body = "Horn of the Abyss: кампания Под Весёлым Родж�
 prev_id = 646
 prev_title = ""
 prev_body = "#film\n#music\n#russia\n#korolishut\ns1e5, start of the episode - live show"
-views = 41
+views = 42
 ids = [647]
 
 [[extra.related]]

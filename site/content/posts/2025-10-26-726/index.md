@@ -17,7 +17,7 @@ next_body = "#os\n#design\n#windows\n#windowsxp"
 prev_id = 724
 prev_title = ""
 prev_body = "#game\n#godofwar\n#playstation\n#compare\n🪓 Наглядное сравнение боя Кратоса и Тора из God of War Ragnarök на PS1 и PS5"
-views = 35
+views = 36
 ids = [726]
 
 [[extra.related]]

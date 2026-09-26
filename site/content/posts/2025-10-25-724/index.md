@@ -17,7 +17,7 @@ next_body = "#logo\n#homm3\n#newworldcomputing\nFrom the YouTube commend:\nQuite
 prev_id = 721
 prev_title = ""
 prev_body = ""
-views = 33
+views = 34
 ids = [724, 725]
 
 [[extra.related]]

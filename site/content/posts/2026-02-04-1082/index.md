@@ -18,7 +18,7 @@ next_body = "Why #facebook is so slow :(\n#firefox"
 prev_id = 1081
 prev_title = ""
 prev_body = "#preservation\n#belarus\ngeo block\nI uploaded a lot from to Commons, and will continue."
-views = 8
+views = 9
 ids = [1082]
 
 [[extra.related]]

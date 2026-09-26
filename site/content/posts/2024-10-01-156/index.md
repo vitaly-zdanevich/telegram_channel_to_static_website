@@ -15,7 +15,7 @@ next_body = "Old design"
 prev_id = 155
 prev_title = ""
 prev_body = "Python in a browser"
-views = 51
+views = 52
 ids = [156]
 +++
 

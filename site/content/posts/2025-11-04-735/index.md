@@ -18,7 +18,7 @@ next_body = "#btc lost 20% for one month"
 prev_id = 734
 prev_title = ""
 prev_body = "#my\n#video\n#game\n#strategy\n#homm3\n#hota\n#onebadday\nHeroes of Might and Magic 3: map \"One Bad Day\": hard, 2 people VS AI, defeat\nNo comments.\nHorn of the Abyss 1.7.1\nPlaying through Conty on Gentoo Linux no-multilib profile\nYouTube"
-views = 20
+views = 21
 ids = [735]
 
 [[extra.related]]

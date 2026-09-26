@@ -18,7 +18,7 @@ next_body = "#podcast\n#my\n#health\n#startup\n#geogorgiladze\nГеоргий Г
 prev_id = 1637
 prev_title = ""
 prev_body = "#preservation\n#century19\n#scan\n#hand\nSource"
-views = 25
+views = 26
 ids = [1640]
 
 [[extra.related]]

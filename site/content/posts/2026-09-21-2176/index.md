@@ -14,7 +14,7 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2176"
 prev_id = 2175
 prev_title = ""
 prev_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\nBy yoursksenia, source"
-views = 29
+views = 33
 ids = [2176]
 
 [[extra.related]]

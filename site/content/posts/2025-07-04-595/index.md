@@ -18,7 +18,7 @@ next_body = "My another #userscript: small toggle for #darkmode on #stackexchang
 prev_id = 594
 prev_title = ""
 prev_body = "#webdesign\n#plan9"
-views = 50
+views = 51
 ids = [595]
 
 [[extra.related]]

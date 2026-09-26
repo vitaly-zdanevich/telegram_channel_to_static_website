@@ -18,7 +18,7 @@ next_body = "#ussr\n#history\nСегодня их существует пять 
 prev_id = 1078
 prev_title = ""
 prev_body = "#ui\n#yandex\n#samara"
-views = 13
+views = 14
 ids = [1079]
 
 [[extra.related]]

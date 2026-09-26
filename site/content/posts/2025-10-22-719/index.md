@@ -18,7 +18,7 @@ next_body = "Downloaded by #wget a dying website indiegamewebsite.com\nThe comma
 prev_id = 718
 prev_title = ""
 prev_body = "#webdesign\n#game\n#mmorpg\n#ragnarok\nIt still alive"
-views = 32
+views = 33
 ids = [719]
 
 [[extra.related]]

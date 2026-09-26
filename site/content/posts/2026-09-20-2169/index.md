@@ -17,7 +17,7 @@ next_body = "#mem\n#cat\n#ad\n#apple\nBy imdoris.shen, source"
 prev_id = 2168
 prev_title = ""
 prev_body = "#craft\n#toy\n#white\n#wings\n#horn\nSource"
-views = 15
+views = 16
 ids = [2169]
 
 [[extra.related]]

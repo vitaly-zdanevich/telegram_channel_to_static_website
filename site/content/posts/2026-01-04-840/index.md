@@ -17,7 +17,7 @@ next_body = "#photo\n#notmy\n#belarus\n#monument"
 prev_id = 838
 prev_title = ""
 prev_body = "#bendingspoons\n#aol\nSource"
-views = 18
+views = 19
 ids = [840]
 
 [[extra.related]]

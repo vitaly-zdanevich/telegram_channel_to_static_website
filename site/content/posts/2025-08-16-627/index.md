@@ -17,7 +17,7 @@ next_body = "On January 29, 2015, about 15 years after the original release of H
 prev_id = 626
 prev_title = ""
 prev_body = "#moneymuseum\n#money\n#rubles\nSource02.jpg)"
-views = 36
+views = 37
 ids = [627, 628]
 
 [[extra.related]]

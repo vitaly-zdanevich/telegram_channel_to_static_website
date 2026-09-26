@@ -18,7 +18,7 @@ next_body = "Returned to uploading of artifacts from moneymuseum.by, through my 
 prev_id = 617
 prev_title = ""
 prev_body = "Imagine a 2d side-scroll quest-action game with such visual style\nDecoration sketch for the play 'King Lear' (1948) by Sergo Kobuladze Georgian State Museum of Theatre, Music, Film and Choreography - Art Palace\n#games\n#art\n#sergokobuladze 1909 - 1978\n#sakartvelo\nSourcebySergoKobuladzeGeorgianStateMuseumofTheatre,Music,FilmandChoreography-ArtPalace.jpg)"
-views = 36
+views = 37
 ids = [618]
 
 [[extra.related]]

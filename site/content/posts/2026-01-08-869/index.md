@@ -18,7 +18,7 @@ next_body = "#games\n#gamazine\n#igromania\nSource"
 prev_id = 868
 prev_title = ""
 prev_body = "#belarus\n#building\n#globustut\n#year2004\nSource"
-views = 20
+views = 21
 ids = [869]
 
 [[extra.related]]

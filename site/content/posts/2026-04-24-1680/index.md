@@ -17,7 +17,7 @@ next_body = "#serp\n#armiesofexigo\n#google found a quote that exists on #youtub
 prev_id = 1679
 prev_title = ""
 prev_body = "#log\nStill running my experiment about #porting #primeworld from Windows/DirectX to Linux/OpenGL, 100% on autopilot..."
-views = 18
+views = 19
 ids = [1680]
 
 [[extra.related]]

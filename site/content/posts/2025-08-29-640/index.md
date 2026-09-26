@@ -16,7 +16,7 @@ next_body = "Heroes of Might and Magic 3: карта \"Изумрудные ос
 prev_id = 638
 prev_title = ""
 prev_body = ""
-views = 23
+views = 24
 ids = [640, 641]
 +++
 

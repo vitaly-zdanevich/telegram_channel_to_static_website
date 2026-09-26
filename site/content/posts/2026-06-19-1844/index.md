@@ -37,14 +37,14 @@ label = "#game #armiesofexigo"
 date = "2025-02-21"
 
 [[extra.related]]
+path = "@/posts/2024-11-13-186/index.md"
+label = "#game #abandone Весной 2009 года озвучивание проекта передали дв…"
+date = "2024-11-13"
+
+[[extra.related]]
 path = "@/posts/2026-02-25-1170/index.md"
 label = "#entrance #abandone #belarus"
 date = "2026-02-25"
-
-[[extra.related]]
-path = "@/posts/2026-07-01-1880/index.md"
-label = "#belarus #abandone #trees #year2015 Source.jpg"
-date = "2026-07-01"
 +++
 
 {{ tag(t="armies_of_exigo") }}  

@@ -18,7 +18,7 @@ next_body = "Wow on #wikimediacommons we can write #sql, for example to get red 
 prev_id = 869
 prev_title = ""
 prev_body = "#belarus\n#nature\n#globustut\n#year2004\nSource"
-views = 22
+views = 23
 ids = [870]
 
 [[extra.related]]

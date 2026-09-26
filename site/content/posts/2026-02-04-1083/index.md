@@ -18,7 +18,7 @@ next_body = "#logo\n#foobar\n#audioplayer"
 prev_id = 1082
 prev_title = ""
 prev_body = "#people\n#fashion\n#zara"
-views = 10
+views = 11
 ids = [1083]
 
 [[extra.related]]
