@@ -52,7 +52,7 @@ date = "2026-04-16"
 [https://en.wikipedia.org/wiki/White_paper](<https://en.wikipedia.org/wiki/White_paper> "A white paper is an informative report that explains a complex issue and presents the sponsor's philosophy on the matter. These documents are meant to help readers understand an issue, solve a problem, or make a decision.")  
 
 <https://complexnumbers.ru/2032>  
-[https://commons.wikimedia.org/wiki/File:01-last-ring-vocal-version.flac](<https://commons.wikimedia.org/wiki/File:01-last-ring-vocal-version.flac> "By Complex Numbers · 2009-01-01") or <https://soundcloud.com/argonov/2jzewhdc70qo>  
+<https://commons.wikimedia.org/wiki/File:01-last-ring-vocal-version.flac> or <https://soundcloud.com/argonov/2jzewhdc70qo>  
 
 <https://www.theverge.com/2018/5/15/17353194/lunar-library-wikipedia-moon-arch-foundation-astrobotic-spacex>  
 <https://mashable.com/article/moon-library-beresheet-crash-wikipedia>  
@@ -80,7 +80,7 @@ date = "2026-04-16"
 
 <https://wiki.openstreetmap.org/wiki/Tag:natural=tree>  
 
-<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples>  
+[https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples](<https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples> "This page contains examples of SPARQL queries for data in Wikidata. When adding any further queries, consider adding a comment in the query describing what it illustrates, when and by whom it was written and which are its limitations given the current data and use of properties at Wikidata.")  
 
 Записано на телефон Poco X3 Pro (Виталий), минимальный монтаж на Audacity, Gentoo.
 

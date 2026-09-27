@@ -47,7 +47,7 @@ label = "#commons The server did not respond within the expected time If…"
 date = "2026-02-11"
 +++
 
-You can {{ tag(t="upload") }} to {{ tag(t="commons") }} through {{ tag(t="darktable") }} with this [free plugin](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 100% · 92 commits · 3 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-07-26")
+You can {{ tag(t="upload") }} to {{ tag(t="commons") }} through {{ tag(t="darktable") }} with this [free plugin](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 100% · 123 commits · 4 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-09-26")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-530-5269559087463524741.jpg") }}
 
