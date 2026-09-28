@@ -22,6 +22,11 @@ views = 40
 ids = [222]
 
 [[extra.related]]
+path = "@/posts/2026-09-27-2177/index.md"
+label = "#preservation #youtube #comment"
+date = "2026-09-27"
+
+[[extra.related]]
 path = "@/posts/2026-02-07-1099/index.md"
 label = "#love it - against #youtube #clickbait"
 date = "2026-02-07"
@@ -40,11 +45,6 @@ date = "2025-11-02"
 path = "@/posts/2026-04-24-1681/index.md"
 label = "#serp #armiesofexigo #google found a quote that exists on #youtu…"
 date = "2026-04-24"
-
-[[extra.related]]
-path = "@/posts/2025-10-20-709/index.md"
-label = "#wikidata script to show #youtube embeds, #spotify, #facebook an…"
-date = "2025-10-20"
 +++
 
 {{ tag(t="youtube") }}

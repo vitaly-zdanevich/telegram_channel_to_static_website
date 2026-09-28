@@ -27,6 +27,11 @@ label = "#youtube"
 date = "2024-12-22"
 
 [[extra.related]]
+path = "@/posts/2026-09-27-2177/index.md"
+label = "#preservation #youtube #comment"
+date = "2026-09-27"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2149/index.md"
 label = "#aivideo #future #love By arikuschnir, source"
 date = "2026-09-16"
@@ -40,11 +45,6 @@ date = "2026-06-27"
 path = "@/posts/2026-06-10-1807/index.md"
 label = "#love this #extension - #highlight predefined list of words, on…"
 date = "2026-06-10"
-
-[[extra.related]]
-path = "@/posts/2026-02-21-1120/index.md"
-label = "#ai #codex #love Codex, using it almost every day, recently solv…"
-date = "2026-02-21"
 +++
 
 {{ tag(t="love") }} it - against {{ tag(t="youtube") }} {{ tag(t="clickbait") }} <https://dearrow.ajay.app/>

@@ -32,6 +32,11 @@ label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
 
 [[extra.related]]
+path = "@/posts/2026-09-27-2177/index.md"
+label = "#preservation #youtube #comment"
+date = "2026-09-27"
+
+[[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
 date = "2026-04-02"
@@ -40,11 +45,6 @@ date = "2026-04-02"
 path = "@/posts/2026-02-27-1204/index.md"
 label = "#calligraphy #microfilm #preservation"
 date = "2026-02-27"
-
-[[extra.related]]
-path = "@/posts/2025-12-29-826/index.md"
-label = "#design #preservation #year1885"
-date = "2025-12-29"
 +++
 
 {{ tag(t="preservation") }}  

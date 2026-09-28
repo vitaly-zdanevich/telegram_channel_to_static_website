@@ -42,9 +42,9 @@ label = "I continue to write my script for importing ratings from #metacr…"
 date = "2025-10-28"
 
 [[extra.related]]
-path = "@/posts/2026-08-06-2120/index.md"
-label = "#my another small project: #wikidata #pwa to get nearby items, w…"
-date = "2026-08-06"
+path = "@/posts/2026-09-27-2177/index.md"
+label = "#preservation #youtube #comment"
+date = "2026-09-27"
 +++
 
 {{ tag(t="wikidata") }} script to show {{ tag(t="youtube") }} embeds, {{ tag(t="spotify") }}, {{ tag(t="facebook") }} and others  

@@ -11,10 +11,13 @@ tags = ["game", "playstation", "design", "video"]
 id = 2176
 day = "2026-09-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2176"
+next_id = 2177
+next_title = ""
+next_body = "#preservation\n#youtube\n#comment"
 prev_id = 2175
 prev_title = ""
 prev_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\nBy yoursksenia, source"
-views = 35
+views = 37
 ids = [2176]
 
 [[extra.related]]

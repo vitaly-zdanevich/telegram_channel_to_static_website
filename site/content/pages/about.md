@@ -46,13 +46,13 @@ Largest files:
 - [4.8 MB — Каждые_7_лет_клетки_полностью_регенериру_4.mp3](@/posts/2024-08-25-129/index.md)
 - [4.8 MB — кургинян_фристайл.mp3](@/posts/2024-11-27-204/index.md "#meanna #sergeykurginyan К моим мыслям о человеческом счастье всегда почему-то примешивалось что-то грустное, теперь же, при виде счастливого человека, мною овладело тяжелое чувство, близкое к отчаянию. А до чего же много на свете счастливых Вы взгляните на эту жизнь: наглость и праздность сильных, …")
 
-Generated in **1h 32m 6s**.
+Generated in **1h 8m 36s**.
 
-Last updated **2026-09-27 11:33 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/36311086516)
+Last updated **2026-09-28 12:03 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/36412252279)
 
 [Google Lighthouse scores (mobile):](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fvitaly%2Dzdanevich%2Egithub%2Eio%2Ftelegram%5Fchannel%5Fto%5Fstatic%5Fwebsite)
 
-- **Performance** 42
+- **Performance** 87
 - **Accessibility** 88
 - **Best Practices** 77
 - **SEO** 82

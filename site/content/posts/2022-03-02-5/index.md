@@ -13,7 +13,7 @@ day = "2022-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/5"
 next_id = 7
 next_title = ""
-next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nis a digital library of academic journals, books, and primary sources founded in 1994. Originally containing digitized back issues of academic journals, it now encompasses books and other primary sources as well as current issues of journals in the hum…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
+next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
 prev_id = 3
 prev_title = ""
 prev_body = "Channel photo updated"
@@ -52,7 +52,7 @@ date = "2026-04-16"
 [https://en.wikipedia.org/wiki/White_paper](<https://en.wikipedia.org/wiki/White_paper> "A white paper is an informative report that explains a complex issue and presents the sponsor's philosophy on the matter. These documents are meant to help readers understand an issue, solve a problem, or make a decision.")  
 
 <https://complexnumbers.ru/2032>  
-<https://commons.wikimedia.org/wiki/File:01-last-ring-vocal-version.flac> or <https://soundcloud.com/argonov/2jzewhdc70qo>  
+[https://commons.wikimedia.org/wiki/File:01-last-ring-vocal-version.flac](<https://commons.wikimedia.org/wiki/File:01-last-ring-vocal-version.flac> "By Complex Numbers · 2009-01-01") or <https://soundcloud.com/argonov/2jzewhdc70qo>  
 
 <https://www.theverge.com/2018/5/15/17353194/lunar-library-wikipedia-moon-arch-foundation-astrobotic-spacex>  
 <https://mashable.com/article/moon-library-beresheet-crash-wikipedia>  
