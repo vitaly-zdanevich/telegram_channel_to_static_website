@@ -46,4 +46,4 @@ label = "My yet another project: @wikipediaunofficialbot Built with #llm…"
 date = "2026-06-05"
 +++
 
-Another {{ tag(t="llm") }} victory: repack of the official {{ tag(t="evernote") }} client [https://github.com/vitaly-zdanevich/evernote-linux-repackage](<https://github.com/vitaly-zdanevich/evernote-linux-repackage> "Repackage the official Evernote Electron desktop client for Linux without Wine · 2 stars · Languages: JavaScript 97%, Shell 2%, Tcl 1% · 60 commits · 1 open issues/PRs · last push 2026-07-16")
+Another {{ tag(t="llm") }} victory: repack of the official {{ tag(t="evernote") }} client [https://github.com/vitaly-zdanevich/evernote-linux-repackage](<https://github.com/vitaly-zdanevich/evernote-linux-repackage> "Repackage the official Evernote Electron desktop client for Linux without Wine · 3 stars · Languages: JavaScript 97%, Shell 2%, Tcl 1% · 60 commits · 1 open issues/PRs · last push 2026-07-16")
