@@ -18,7 +18,7 @@ next_body = "#kindzadza\n#suicide\n#oxygen\nПланета Хануд.\nЗдес
 prev_id = 797
 prev_title = ""
 prev_body = "С помощью нехитрых приспособлений буханку хлеба можно превратить в троллейбус, но зачем\n#ai\n#nanobanana\nSource"
-views = 39
+views = 40
 ids = [799, 800]
 
 [[extra.related]]

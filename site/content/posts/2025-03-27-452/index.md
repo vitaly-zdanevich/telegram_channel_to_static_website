@@ -18,7 +18,7 @@ next_body = "#chip\nFrom"
 prev_id = 450
 prev_title = ""
 prev_body = "#phone\n#psy"
-views = 36
+views = 37
 ids = [452]
 
 [[extra.related]]

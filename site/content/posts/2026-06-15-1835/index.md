@@ -17,7 +17,7 @@ next_body = "#girl\n#paper\n#sky\n#evangelion\nFrom"
 prev_id = 1834
 prev_title = ""
 prev_body = "#playstation\n#playstation2\n#gameconsole\n#street\nFrom"
-views = 18
+views = 19
 ids = [1835]
 
 [[extra.related]]

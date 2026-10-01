@@ -17,7 +17,7 @@ next_body = "He is trying to improve Armies of Exigo, without the source code"
 prev_id = 185
 prev_title = ""
 prev_body = "#neovim\n#animation"
-views = 42
+views = 43
 ids = [186]
 
 [[extra.related]]
