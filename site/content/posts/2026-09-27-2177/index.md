@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2176
 prev_title = ""
 prev_body = "#game\n#playstation\n#design\nBy retourverslegaming, source"
-views = 8
+views = 10
 ids = [2177]
 
 [[extra.related]]
