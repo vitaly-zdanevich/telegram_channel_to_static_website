@@ -22,6 +22,11 @@ views = 11
 ids = [1890]
 
 [[extra.related]]
+path = "@/posts/2026-10-03-2178/index.md"
+label = "#webdesign"
+date = "2026-10-03"
+
+[[extra.related]]
 path = "@/posts/2025-12-28-825/index.md"
 label = "#webdesign"
 date = "2025-12-28"
@@ -40,11 +45,6 @@ date = "2025-11-03"
 path = "@/posts/2025-07-21-602/index.md"
 label = "#webdesign"
 date = "2025-07-21"
-
-[[extra.related]]
-path = "@/posts/2025-06-10-565/index.md"
-label = "#webdesign"
-date = "2025-06-10"
 +++
 
 {{ tag(t="webdesign") }}  

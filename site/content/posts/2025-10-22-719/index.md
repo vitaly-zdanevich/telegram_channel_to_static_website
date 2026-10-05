@@ -27,6 +27,11 @@ label = "#webdesign, 2696 game reviews on Working from 2001 4.26k subscri…"
 date = "2025-10-21"
 
 [[extra.related]]
+path = "@/posts/2026-10-03-2178/index.md"
+label = "#webdesign"
+date = "2026-10-03"
+
+[[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
 date = "2026-07-03"
@@ -38,11 +43,6 @@ date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
-label = "#webdesign"
-date = "2025-11-03"
-
-[[extra.related]]
-path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
 date = "2025-11-03"
 +++

@@ -17,7 +17,7 @@ next_body = "#preservation\n#youtube\n#comment"
 prev_id = 2175
 prev_title = ""
 prev_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\nBy yoursksenia, source"
-views = 46
+views = 48
 ids = [2176]
 
 [[extra.related]]

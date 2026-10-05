@@ -32,6 +32,11 @@ label = "#bilibili #anime #webdesign #stream #ui"
 date = "2025-05-10"
 
 [[extra.related]]
+path = "@/posts/2026-10-03-2178/index.md"
+label = "#webdesign"
+date = "2026-10-03"
+
+[[extra.related]]
 path = "@/posts/2026-07-03-1890/index.md"
 label = "#webdesign"
 date = "2026-07-03"
@@ -40,11 +45,6 @@ date = "2026-07-03"
 path = "@/posts/2026-05-16-1765/index.md"
 label = "#bilibili verification with 100 questions - to be able to leave…"
 date = "2026-05-16"
-
-[[extra.related]]
-path = "@/posts/2025-12-28-825/index.md"
-label = "#webdesign"
-date = "2025-12-28"
 +++
 
 {{ tag(t="webdesign") }}  

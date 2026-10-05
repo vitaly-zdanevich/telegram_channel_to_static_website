@@ -12,10 +12,13 @@ id = 2177
 day = "2026-09-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2177"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2177-5319104838056484384.jpg"
+next_id = 2178
+next_title = ""
+next_body = "#webdesign"
 prev_id = 2176
 prev_title = ""
 prev_body = "#game\n#playstation\n#design\nBy retourverslegaming, source"
-views = 12
+views = 14
 ids = [2177]
 
 [[extra.related]]
