@@ -5,12 +5,13 @@ description = "webdesign oldweb animation"
 
 [taxonomies]
 days = ["2026-03-08"]
-tags = ["webdesign", "oldweb", "animation", "video"]
+tags = ["webdesign", "oldweb", "animation"]
 
 [extra]
 id = 1415
 day = "2026-03-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1415"
+og_image = "01.jpg"
 next_id = 1416
 next_title = ""
 next_body = "#resume\n#pony"
@@ -52,6 +53,6 @@ date = "2026-03-07"
 
 <https://reigen.moe/>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1415-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 13:57*

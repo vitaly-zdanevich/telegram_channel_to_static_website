@@ -17,7 +17,7 @@ next_body = "#mem\n#contrast\n#body\n#sartre\n#freedom\nBy mikhaylovpsy, source"
 prev_id = 2171
 prev_title = ""
 prev_body = "#mem\n#train\n#mouth\n#china\n#music: Бошки дымятся by Элджей.\nBy anelamangeldi, source"
-views = 27
+views = 28
 ids = [2172]
 
 [[extra.related]]
