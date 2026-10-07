@@ -12,10 +12,13 @@ id = 2178
 day = "2026-10-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2178"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2178-5336833380722613643.jpg"
+next_id = 2179
+next_title = ""
+next_body = "#mem\n#children\n#health\nBy liya.ermakova.ya, source"
 prev_id = 2177
 prev_title = ""
 prev_body = "#preservation\n#youtube\n#comment"
-views = 3
+views = 4
 ids = [2178]
 
 [[extra.related]]

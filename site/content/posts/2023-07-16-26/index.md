@@ -17,7 +17,7 @@ next_body = "#my\n#film\n#korolishut"
 prev_id = 25
 prev_title = ""
 prev_body = ""
-views = 84
+views = 85
 ids = [26]
 
 [[extra.related]]

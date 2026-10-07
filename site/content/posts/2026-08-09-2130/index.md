@@ -36,13 +36,13 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2129/index.md"
-label = "#mem #ai #kubrick"
-date = "2026-08-09"
+path = "@/posts/2026-10-06-2179/index.md"
+label = "#mem #children #health By liya.ermakova.ya, source"
+date = "2026-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2126/index.md"
-label = "#mem #gift #weapon"
+path = "@/posts/2026-08-09-2129/index.md"
+label = "#mem #ai #kubrick"
 date = "2026-08-09"
 +++
 

@@ -36,14 +36,14 @@ label = "#health #food"
 date = "2025-03-13"
 
 [[extra.related]]
+path = "@/posts/2026-10-06-2179/index.md"
+label = "#mem #children #health By liya.ermakova.ya, source"
+date = "2026-10-06"
+
+[[extra.related]]
 path = "@/posts/2026-08-02-2113/index.md"
 label = "#духота #psy #community"
 date = "2026-08-02"
-
-[[extra.related]]
-path = "@/posts/2025-06-26-590/index.md"
-label = "#comment #health #magnesium"
-date = "2025-06-26"
 +++
 
 {{ tag(t="health") }}  
