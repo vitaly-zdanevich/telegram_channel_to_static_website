@@ -18,7 +18,7 @@ next_body = "#tbc\n#money\nThis is why we have #crypto?"
 prev_id = 1819
 prev_title = ""
 prev_body = "My another #userstyle: for #gemini, before and after"
-views = 17
+views = 18
 ids = [1821]
 
 [[extra.related]]

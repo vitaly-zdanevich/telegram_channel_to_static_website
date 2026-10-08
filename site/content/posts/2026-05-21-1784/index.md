@@ -18,7 +18,7 @@ next_body = "Another #llm victory: repack of the official #evernote client"
 prev_id = 1781
 prev_title = ""
 prev_body = "#mem limited by the technology of my time\n#llm\n#depleated"
-views = 37
+views = 38
 ids = [1784]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#music\n#germany\n#goth\n#cassette\n#cementery\nSource"
 prev_id = 2129
 prev_title = ""
 prev_body = "#mem\n#ai\n#kubrick\nSource"
-views = 45
+views = 46
 ids = [2130]
 
 [[extra.related]]
@@ -36,14 +36,14 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2182/index.md"
+label = "#mem #translation #tolkien"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-10-06-2179/index.md"
 label = "#mem #children #health By liya.ermakova.ya, source"
 date = "2026-10-06"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2129/index.md"
-label = "#mem #ai #kubrick"
-date = "2026-08-09"
 +++
 
 {{ tag(t="mem") }}  

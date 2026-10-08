@@ -18,7 +18,7 @@ next_body = "Make #tree clickable, tested in #kitty\nReplace to #eza\neza --tree
 prev_id = 1818
 prev_title = ""
 prev_body = "#aws\n#billing\n#cost\n#graph"
-views = 16
+views = 17
 ids = [1819, 1820]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#trump\n#gender\nBy theceosonly"
 prev_id = 2101
 prev_title = ""
 prev_body = "#career\n#war\nBy 10xaiengineer"
-views = 27
+views = 28
 ids = [2102]
 
 [[extra.related]]

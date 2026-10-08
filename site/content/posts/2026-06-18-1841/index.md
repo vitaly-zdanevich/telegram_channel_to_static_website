@@ -17,7 +17,7 @@ next_body = "#interior\n#cozy\n#bathroom\nFrom"
 prev_id = 1840
 prev_title = ""
 prev_body = "#lamp\nFrom"
-views = 13
+views = 14
 ids = [1841]
 
 [[extra.related]]

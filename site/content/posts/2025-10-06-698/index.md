@@ -20,6 +20,11 @@ prev_title = ""
 prev_body = "#turkey\n#map\n#population\nSource"
 views = 22
 ids = [698]
+
+[[extra.related]]
+path = "@/posts/2026-10-07-2180/index.md"
+label = "#stalin #left #granddoughter By youngmasha, source"
+date = "2026-10-07"
 +++
 
 > {{ tag(t="hitler") }}, {{ tag(t="stalin") }}, {{ tag(t="trotsky") }}, {{ tag(t="freud") }} & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1

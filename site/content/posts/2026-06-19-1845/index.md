@@ -18,7 +18,7 @@ next_body = "#webdesign\n#animation\n#videoeditor\n#cinelerra"
 prev_id = 1844
 prev_title = ""
 prev_body = "#armiesofexigo\n#abandone"
-views = 14
+views = 15
 ids = [1845]
 
 [[extra.related]]
@@ -53,6 +53,6 @@ On the screenshot - {{ tag(t="qbittorrent") }}.
 
 [https://github.com/vitaly-zdanevich/kvantum](<https://github.com/vitaly-zdanevich/kvantum> "Black theme for Kvantum/qt6 · 0 stars · 40 commits · MIT · last push 2026-06-20")  
 
-[https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black](<https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black> "Overlay for Gentoo Users. · 430 stars · Languages: Shell 95%, Python 5%, Vim Script 0% · 16188 commits · 229 forks · 2 open issues/PRs · GPL-2.0 · last push 2026-10-07")
+[https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black](<https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black> "Overlay for Gentoo Users. · 430 stars · Languages: Shell 95%, Python 5%, Vim Script 0% · 16209 commits · 229 forks · 3 open issues/PRs · GPL-2.0 · last push 2026-10-08")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1845-5310306782234219979.jpg") }}

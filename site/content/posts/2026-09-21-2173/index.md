@@ -17,7 +17,7 @@ next_body = "#song\n#china\n#contrast\n#scream\nBy yukina0000v, source"
 prev_id = 2172
 prev_title = ""
 prev_body = "#robot\n#fight\nBy frankielap, source"
-views = 33
+views = 34
 ids = [2173]
 
 [[extra.related]]
@@ -36,14 +36,14 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2182/index.md"
+label = "#mem #translation #tolkien"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-10-06-2179/index.md"
 label = "#mem #children #health By liya.ermakova.ya, source"
 date = "2026-10-06"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2130/index.md"
-label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
-date = "2026-08-09"
 +++
 
 {{ tag(t="mem") }}  

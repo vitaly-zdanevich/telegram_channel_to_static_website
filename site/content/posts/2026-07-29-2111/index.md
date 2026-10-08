@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-07-29T19:41:32+00:00
-description = "eso Look around - this is you. Законы мира поменялись. By pukha.anna"
+description = "eso friends Look around - this is you. Законы мира поменялись. By pukha.anna"
 
 [taxonomies]
 days = ["2026-07-29"]
-tags = ["eso", "video"]
+tags = ["eso", "friends", "video"]
 
 [extra]
 id = 2111
@@ -17,11 +17,12 @@ next_body = "#health\n#духота\n#kozhemiako\nSource"
 prev_id = 2110
 prev_title = ""
 prev_body = "#drug\n#ayahuasca\n#lake\nBy allavolkogon"
-views = 41
+views = 42
 ids = [2111]
 +++
 
 {{ tag(t="eso") }}  
+{{ tag(t="friends") }}  
 
 > Look around - this is you.
 

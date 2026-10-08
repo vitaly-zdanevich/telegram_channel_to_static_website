@@ -47,6 +47,6 @@ label = "wow in #telegram we have a #crypto #wallet, and users can send m…"
 date = "2025-03-24"
 +++
 
-{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1376 stars · Languages: C++ 96%, Python 1%, Objective-C++ 1% · 27368 commits · 144 forks · 151 open issues/PRs · GPL-3.0 · last push 2026-10-06")
+{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1377 stars · Languages: C++ 96%, Python 1%, Objective-C++ 1% · 27368 commits · 144 forks · 151 open issues/PRs · GPL-3.0 · last push 2026-10-06")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-674-5364201410545194447.jpg") }}

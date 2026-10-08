@@ -18,7 +18,7 @@ next_body = "#aws\n#billing\n#cost\n#graph"
 prev_id = 1807
 prev_title = ""
 prev_body = "#love this #extension - #highlight predefined list of words, on predefined URLs."
-views = 17
+views = 18
 ids = [1817]
 
 [[extra.related]]

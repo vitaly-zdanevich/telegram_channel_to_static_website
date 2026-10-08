@@ -17,7 +17,7 @@ next_body = "#religion\n#jesus"
 prev_id = 1827
 prev_title = ""
 prev_body = "#game\n#beyoundgoodandevil\n#pig\n#evolution\n#sequel\n#pain\nFrom official"
-views = 23
+views = 24
 ids = [1829]
 
 [[extra.related]]

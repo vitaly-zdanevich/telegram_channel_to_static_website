@@ -18,7 +18,7 @@ next_body = "#old\n#grandmother\n#religion\n#greatschema\n#candle\nSee also\nFro
 prev_id = 1831
 prev_title = ""
 prev_body = "#anime\n#phones\n#evangelion\nFrom"
-views = 16
+views = 17
 ids = [1832]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#mem\n#gift\n#weapon\nSource"
 prev_id = 2124
 prev_title = ""
 prev_body = "#mem\n#bottle\n#goth\nSource"
-views = 21
+views = 22
 ids = [2125]
 
 [[extra.related]]
@@ -36,14 +36,14 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2182/index.md"
+label = "#mem #translation #tolkien"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-10-06-2179/index.md"
 label = "#mem #children #health By liya.ermakova.ya, source"
 date = "2026-10-06"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2130/index.md"
-label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
-date = "2026-08-09"
 +++
 
 {{ tag(t="mem") }}  

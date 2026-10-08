@@ -18,7 +18,7 @@ next_body = "#buterin\n#pickup\nSource"
 prev_id = 2060
 prev_title = ""
 prev_body = "#game\n#needforspeed\n#needforspeedunderground2\n#psy\nIts #year2004 and a racing #game is about to change our entire personality.\nSource"
-views = 28
+views = 29
 ids = [2061, 2062, 2063, 2064, 2065]
 
 [[extra.related]]

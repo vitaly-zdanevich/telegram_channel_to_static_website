@@ -42,9 +42,9 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
-path = "@/posts/2026-10-06-2179/index.md"
-label = "#mem #children #health By liya.ermakova.ya, source"
-date = "2026-10-06"
+path = "@/posts/2026-10-08-2182/index.md"
+label = "#mem #translation #tolkien"
+date = "2026-10-08"
 +++
 
 {{ tag(t="mem") }}  

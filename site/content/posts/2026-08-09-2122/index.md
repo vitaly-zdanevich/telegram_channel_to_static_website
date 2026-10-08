@@ -17,7 +17,7 @@ next_body = "#mem\n#gay, born as #female\nSource"
 prev_id = 2121
 prev_title = ""
 prev_body = "My new #project: #userscript for #instagram for likes page - to be able to play here, and download.\nThis is interesting that many web services from rich companies - are still in a poor quality, Linkedin included :("
-views = 16
+views = 17
 ids = [2122]
 
 [[extra.related]]
@@ -36,14 +36,14 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2182/index.md"
+label = "#mem #translation #tolkien"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-10-06-2179/index.md"
 label = "#mem #children #health By liya.ermakova.ya, source"
 date = "2026-10-06"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2130/index.md"
-label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
-date = "2026-08-09"
 +++
 
 {{ tag(t="mem") }}  

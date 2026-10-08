@@ -17,7 +17,7 @@ next_body = "#wikipedia\n#armenian\n#ruwiki\n#language\n#table"
 prev_id = 1822
 prev_title = ""
 prev_body = "#tbc\n#money\nThis is why we have #crypto?"
-views = 18
+views = 19
 ids = [1823]
 
 [[extra.related]]

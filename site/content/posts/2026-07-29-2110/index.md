@@ -13,11 +13,11 @@ day = "2026-07-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2110"
 next_id = 2111
 next_title = ""
-next_body = "#eso\nLook around - this is you.\nЗаконы мира поменялись.\nBy pukha.anna"
+next_body = "#eso\n#friends\nLook around - this is you.\nЗаконы мира поменялись.\nBy pukha.anna"
 prev_id = 2109
 prev_title = ""
 prev_body = "#thailand\n#ladyboy\nCake is still a cake, even with a candle.\nBy ninacola3x"
-views = 42
+views = 43
 ids = [2110]
 
 [[extra.related]]

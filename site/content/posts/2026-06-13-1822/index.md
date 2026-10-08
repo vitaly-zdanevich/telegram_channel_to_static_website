@@ -18,7 +18,7 @@ next_body = "#shell\n#productivity\n#love my mg alias - clickable #grep in #kitt
 prev_id = 1821
 prev_title = ""
 prev_body = "Make #tree clickable, tested in #kitty\nReplace to #eza\neza --tree --hyperlink\nWith this .config/kitty/open-actions.conf\nprotocol file\next cpp,cc,cxx,c++,hpp,hh,hxx,h++,c,h,java\nfragmentmatches [0-9]+\naction launch --type=os-window -- vim +$FRAGMENT -- $FILEPATH\nprotocol file\next cpp,cc,cxx,c++,hpp,hh,hxx,h++,c,h,java\naction launch --type=os-window -- vim -- $FILEPATH\nprotocol file\nmime text/\nfragmentmatches [0-9]+\naction launch --type=overlay -- vim +$FRAGMENT -- $FILEPATH\nprotocol file\nmime text/\naction launch --type=overlay -- vim -- $FILEPATH\nprotocol file\nmime image/\naction launch --type=overlay kitten icat --hold -- $FILEPATH"
-views = 16
+views = 17
 ids = [1822]
 
 [[extra.related]]

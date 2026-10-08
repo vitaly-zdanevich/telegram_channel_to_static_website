@@ -18,7 +18,7 @@ next_body = "My another #userstyle: for #gemini, before and after"
 prev_id = 1817
 prev_title = ""
 prev_body = "#logo\n#progy\n#github\nSource"
-views = 15
+views = 16
 ids = [1818]
 
 [[extra.related]]

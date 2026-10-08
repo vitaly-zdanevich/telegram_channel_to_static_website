@@ -18,7 +18,7 @@ next_body = "#vim\n#java\n#hover #balloon with type definition ftplugin/java.vim
 prev_id = 1823
 prev_title = ""
 prev_body = "#shell\n#productivity\n#love my mg alias - clickable #grep in #kitty - opens file and line in Vim:\n# Grep, click to link - open in Vim, exact line\nmg() {\nkitty +kitten hyperlinkedgrep --smart-case -C 9 \"$@\"\n}\n-C 9 is the context - to have a few lines before and after.\nFor this, also you need to have in /.config/kitty/open-actions.conf:\nprotocol file\nfragmentmatches [0-9]+\naction launch --type=overlay -- vim +$FRAGMENT -- $FILEPATH"
-views = 19
+views = 20
 ids = [1824]
 
 [[extra.related]]

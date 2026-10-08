@@ -18,7 +18,7 @@ next_body = "#love\n#anime\n#xanax\n#mightynein\n#nottthebrave"
 prev_id = 2140
 prev_title = ""
 prev_body = "#fun\n#document\n#secret\n#censor\n#music\n#anime\n#badapple\nSource"
-views = 16
+views = 17
 ids = [2141]
 
 [[extra.related]]

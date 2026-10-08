@@ -17,7 +17,7 @@ next_body = "#bus\n#architecture\nSource"
 prev_id = 1824
 prev_title = ""
 prev_body = "#wikipedia\n#armenian\n#ruwiki\n#language\n#table"
-views = 20
+views = 21
 ids = [1825]
 
 [[extra.related]]

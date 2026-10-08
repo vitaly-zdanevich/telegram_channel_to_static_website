@@ -16,8 +16,8 @@ next_title = ""
 next_body = "#духота\n#psy\n#community\nSource"
 prev_id = 2111
 prev_title = ""
-prev_body = "#eso\nLook around - this is you.\nЗаконы мира поменялись.\nBy pukha.anna"
-views = 24
+prev_body = "#eso\n#friends\nLook around - this is you.\nЗаконы мира поменялись.\nBy pukha.anna"
+views = 25
 ids = [2112]
 
 [[extra.related]]
