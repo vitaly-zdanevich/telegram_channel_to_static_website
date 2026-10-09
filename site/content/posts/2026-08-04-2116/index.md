@@ -31,19 +31,19 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
-path = "@/posts/2026-10-08-2182/index.md"
-label = "#mem #translation #tolkien"
+path = "@/posts/2026-10-08-2196/index.md"
+label = "#mem #music from #childhood By aimperiome, source"
 date = "2026-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-10-06-2179/index.md"
-label = "#mem #children #health By liya.ermakova.ya, source"
-date = "2026-10-06"
+path = "@/posts/2026-10-08-2192/index.md"
+label = "#mem #pig #eye"
+date = "2026-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2137/index.md"
-label = "#sound #food #poor"
-date = "2026-08-09"
+path = "@/posts/2026-10-08-2191/index.md"
+label = "#mem #ussr #dance By sdelano.v.cccr, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="sound") }}  

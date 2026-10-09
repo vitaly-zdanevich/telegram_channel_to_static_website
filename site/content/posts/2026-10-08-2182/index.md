@@ -12,10 +12,13 @@ id = 2182
 day = "2026-10-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2182"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2182-5348112484532951263.jpg"
+next_id = 2183
+next_title = ""
+next_body = "#mem\n#llm\n#phone\n#div\n#css\nBy razzberysolutions, source"
 prev_id = 2181
 prev_title = ""
 prev_body = "#cancel\n#babushka\nBy agabekyanalena, source"
-views = 1
+views = 4
 ids = [2182]
 
 [[extra.related]]
@@ -34,14 +37,14 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
-path = "@/posts/2026-10-06-2179/index.md"
-label = "#mem #children #health By liya.ermakova.ya, source"
-date = "2026-10-06"
+path = "@/posts/2026-10-08-2196/index.md"
+label = "#mem #music from #childhood By aimperiome, source"
+date = "2026-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2130/index.md"
-label = "#mem #legs #washing Помыла ноги и хорошее отношение By evgenya22…"
-date = "2026-08-09"
+path = "@/posts/2026-10-08-2192/index.md"
+label = "#mem #pig #eye"
+date = "2026-10-08"
 +++
 
 {{ tag(t="mem") }}  

@@ -42,9 +42,9 @@ label = "#llm did big #telegram #stickers, even the #pullrequest The patc…"
 date = "2026-06-24"
 
 [[extra.related]]
-path = "@/posts/2026-05-25-1786/index.md"
-label = "Finally I forked #nixnote, and migrated from #qt5 to #qt6, by #l…"
-date = "2026-05-25"
+path = "@/posts/2026-10-08-2188/index.md"
+label = "#mem #telegram #suno #llm #music By max.podzharov, source"
+date = "2026-10-08"
 +++
 
 My new project built with {{ tag(t="llm") }} {{ tag(t="codex") }} {{ tag(t="gpt") }}-5.5 xhigh: {{ tag(t="bot") }} for {{ tag(t="telegram") }} - to search and listen to {{ tag(t="youtube") }}  

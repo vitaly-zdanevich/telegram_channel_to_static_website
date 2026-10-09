@@ -41,9 +41,9 @@ label = "#war #video #warpath"
 date = "2025-01-11"
 
 [[extra.related]]
-path = "@/posts/2026-05-13-1756/index.md"
-label = "#code #russian #yandex #language From"
-date = "2026-05-13"
+path = "@/posts/2026-10-08-2190/index.md"
+label = "#mem #library #russian #belarus By mgbf2, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="math") }}  

@@ -21,29 +21,29 @@ views = 138
 ids = [2034]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2188/index.md"
+label = "#mem #telegram #suno #llm #music By max.podzharov, source"
+date = "2026-10-08"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2196/index.md"
+label = "#mem #music from #childhood By aimperiome, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-05-19-1781/index.md"
 label = "#mem limited by the technology of my time #llm #depleated"
 date = "2026-05-19"
 
 [[extra.related]]
-path = "@/posts/2026-09-21-2171/index.md"
-label = "#mem #train #mouth #china #music: Бошки дымятся by Элджей. By an…"
-date = "2026-09-21"
+path = "@/posts/2026-10-08-2195/index.md"
+label = "#mem #belaz #wheel #music #atlantida By vunderevgeniy, source"
+date = "2026-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-07-29-2093/index.md"
-label = "#bond #claude #llm #limit #gun By ksenia.ai.life"
-date = "2026-07-29"
-
-[[extra.related]]
-path = "@/posts/2026-05-18-1780/index.md"
-label = "What a time - multiple #llm doing multiple projects, in parallel…"
-date = "2026-05-18"
-
-[[extra.related]]
-path = "@/posts/2025-06-02-546/index.md"
-label = "PromoDJ #music genres"
-date = "2025-06-02"
+path = "@/posts/2026-10-08-2183/index.md"
+label = "#mem #llm #phone #div #css By razzberysolutions, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="mem") }}  

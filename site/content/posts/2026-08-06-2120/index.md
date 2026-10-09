@@ -49,6 +49,6 @@ date = "2025-05-22"
 
 {{ tag(t="my") }} another small project: {{ tag(t="wikidata") }} {{ tag(t="pwa") }} to get nearby items, with photos, all properties, and backlinks. Without intermediate nodes - direct calls to Wikidata.  
 
-[https://github.com/vitaly-zdanevich/wikidata-nearby-pwa](<https://github.com/vitaly-zdanevich/wikidata-nearby-pwa> "Installable PWA for discovering the closest Wikidata items · 0 stars · Languages: TypeScript 77%, CSS 18%, HTML 3% · 10 commits · last push 2026-08-04")
+[https://github.com/vitaly-zdanevich/wikidata-nearby-pwa](<https://github.com/vitaly-zdanevich/wikidata-nearby-pwa> "Installable PWA for discovering the closest Wikidata items · 0 stars · Languages: TypeScript 77%, CSS 18%, HTML 3% · 12 commits · last push 2026-10-08")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2120-5449411040555768745.jpg") }}

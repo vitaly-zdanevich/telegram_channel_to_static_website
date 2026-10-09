@@ -31,6 +31,11 @@ label = "#fashion"
 date = "2025-01-29"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2193/index.md"
+label = "#fashion #moscow By undrgrndrip, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-02-05-1087/index.md"
 label = "#fashion #boy"
 date = "2026-02-05"
@@ -39,11 +44,6 @@ date = "2026-02-05"
 path = "@/posts/2025-09-30-686/index.md"
 label = "#fashion #istanbul"
 date = "2025-09-30"
-
-[[extra.related]]
-path = "@/posts/2025-04-25-482/index.md"
-label = "#cat #psy"
-date = "2025-04-25"
 +++
 
 {{ tag(t="fashion") }}  

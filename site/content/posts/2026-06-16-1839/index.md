@@ -21,6 +21,11 @@ views = 18
 ids = [1839]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2187/index.md"
+label = "#llm #interior By bennu.estudio, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-06-18-1842/index.md"
 label = "#interior #cozy #bathroom From"
 date = "2026-06-18"
@@ -39,11 +44,6 @@ date = "2026-07-26"
 path = "@/posts/2026-06-15-1835/index.md"
 label = "#xbox #gameconsole #tech #retro #green From"
 date = "2026-06-15"
-
-[[extra.related]]
-path = "@/posts/2026-01-20-913/index.md"
-label = "#belarus #nature #river #green #year2005"
-date = "2026-01-20"
 +++
 
 {{ tag(t="interior") }}  

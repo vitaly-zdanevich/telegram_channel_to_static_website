@@ -54,6 +54,6 @@ Heating of a city by {{ tag(t="datacenter") }}
 {{ tag(t="video") }}  
 {{ tag(t="heat") }}  
 
-[Source](<https://www.youtube.com/watch?v=-hE8jkyfqMw> "Как работает дата-центр Яндекса в Финляндии")
+[Source](https://www.youtube.com/watch?v=-hE8jkyfqMw)
 
-{{ youtube(id="-hE8jkyfqMw") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/632-01.mp4") }}

@@ -42,9 +42,9 @@ label = "What a time - multiple #llm doing multiple projects, in parallel…"
 date = "2026-05-18"
 
 [[extra.related]]
-path = "@/posts/2026-06-24-1853/index.md"
-label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
-date = "2026-06-24"
+path = "@/posts/2026-10-08-2187/index.md"
+label = "#llm #interior By bennu.estudio, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="llm") }}  

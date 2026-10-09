@@ -26,6 +26,11 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
 date = "2026-02-03"
@@ -37,11 +42,6 @@ date = "2025-03-08"
 
 [[extra.related]]
 path = "@/posts/2025-03-08-394/index.md"
-label = "#alexjones #warhammer"
-date = "2025-03-08"
-
-[[extra.related]]
-path = "@/posts/2025-03-08-392/index.md"
 label = "#alexjones #warhammer"
 date = "2025-03-08"
 +++

@@ -39,6 +39,11 @@ date = "2025-02-12"
 path = "@/posts/2026-02-27-1201/index.md"
 label = "#googledocs: #ai is integrated, but not the #darkmode If you do…"
 date = "2026-02-27"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2183/index.md"
+label = "#mem #llm #phone #div #css By razzberysolutions, source"
+date = "2026-10-08"
 +++
 
 Wow in {{ tag(t="svg") }} we can have {{ tag(t="css") }}, like  

@@ -22,6 +22,16 @@ views = 29
 ids = [657]
 
 [[extra.related]]
+path = "@/posts/2026-10-09-2201/index.md"
+label = "#golang What will be printed? package main import  \"fmt\"  func m…"
+date = "2026-10-09"
+
+[[extra.related]]
+path = "@/posts/2026-10-09-2199/index.md"
+label = "#golang #race package main import \"fmt\" func main { var done boo…"
+date = "2026-10-09"
+
+[[extra.related]]
 path = "@/posts/2026-09-19-2164/index.md"
 label = "#webdesign #mascot #golang From"
 date = "2026-09-19"

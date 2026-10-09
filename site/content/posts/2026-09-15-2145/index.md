@@ -21,6 +21,11 @@ views = 13
 ids = [2145]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2191/index.md"
+label = "#mem #ussr #dance By sdelano.v.cccr, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2150/index.md"
 label = "#humor #facecontrol #science By medstatistic, source"
 date = "2026-09-16"

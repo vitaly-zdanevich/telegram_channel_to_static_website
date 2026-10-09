@@ -41,9 +41,9 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-03-21-1494/index.md"
-label = "#steam: almost 25% is on #linux?"
-date = "2026-03-21"
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="linux") }}  

@@ -17,7 +17,7 @@ next_body = "#stalin\n#left\n#granddoughter\nBy youngmasha, source"
 prev_id = 2178
 prev_title = ""
 prev_body = "#webdesign"
-views = 2
+views = 3
 ids = [2179]
 
 [[extra.related]]

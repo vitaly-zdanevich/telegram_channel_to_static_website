@@ -42,9 +42,9 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-03-25-1503/index.md"
-label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
-date = "2026-03-25"
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="game") }}  

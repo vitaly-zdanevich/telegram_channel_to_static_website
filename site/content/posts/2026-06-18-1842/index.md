@@ -26,6 +26,11 @@ label = "#bathroom"
 date = "2025-01-28"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2187/index.md"
+label = "#llm #interior By bennu.estudio, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-06-16-1839/index.md"
 label = "#interior #refrigerator #green From"
 date = "2026-06-16"

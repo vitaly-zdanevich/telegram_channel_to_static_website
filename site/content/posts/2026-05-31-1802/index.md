@@ -41,9 +41,9 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-06-24-1856/index.md"
-label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
-date = "2026-06-24"
+path = "@/posts/2026-10-08-2187/index.md"
+label = "#llm #interior By bennu.estudio, source"
+date = "2026-10-08"
 +++
 
 With {{ tag(t="llm") }} I added 1920x1200 to {{ tag(t="armies_of_exigo") }} {{ tag(t="game") }}  

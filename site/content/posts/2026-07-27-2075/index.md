@@ -21,6 +21,11 @@ views = 18
 ids = [2075]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2197/index.md"
+label = "#animal #navyseal By oh10.23, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-07-27-2074/index.md"
 label = "#anime #war #ground"
 date = "2026-07-27"
@@ -39,11 +44,6 @@ date = "2026-03-13"
 path = "@/posts/2025-04-25-481/index.md"
 label = "#sex #mouse #horoscope From"
 date = "2025-04-25"
-
-[[extra.related]]
-path = "@/posts/2025-03-16-432/index.md"
-label = "#animal #flyingsquirrel #love"
-date = "2025-03-16"
 +++
 
 {{ tag(t="animal") }}  

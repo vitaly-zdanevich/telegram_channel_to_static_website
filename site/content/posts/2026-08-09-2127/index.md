@@ -21,6 +21,11 @@ views = 29
 ids = [2127]
 
 [[extra.related]]
+path = "@/posts/2026-10-09-2198/index.md"
+label = "#mem #voice #ai #cry #game By m3m3centrall, source"
+date = "2026-10-09"
+
+[[extra.related]]
 path = "@/posts/2026-02-05-1089/index.md"
 label = "#matrix Прошло 20 лет, а вы и не заметили, мистер Андерсон"
 date = "2026-02-05"
@@ -31,19 +36,14 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2026-08-04-2116/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2026-02-03-1079/index.md"
-label = "#webdesign #game"
-date = "2026-02-03"
 +++
 
 {{ tag(t="mem") }}  

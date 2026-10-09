@@ -27,6 +27,11 @@ label = "I am on #gentoo because it compiles for my CPU -march=native and…"
 date = "2026-01-22"
 
 [[extra.related]]
+path = "@/posts/2026-10-09-2201/index.md"
+label = "#golang What will be printed? package main import  \"fmt\"  func m…"
+date = "2026-10-09"
+
+[[extra.related]]
 path = "@/posts/2025-09-08-657/index.md"
 label = "#golang #utf8 const s = \"สวัสดี\" fmt.Println\"Len:\", lens // Len:…"
 date = "2025-09-08"
@@ -40,11 +45,6 @@ date = "2025-05-14"
 path = "@/posts/2025-03-15-412/index.md"
 label = "#gentoo #logo"
 date = "2025-03-15"
-
-[[extra.related]]
-path = "@/posts/2026-09-19-2164/index.md"
-label = "#webdesign #mascot #golang From"
-date = "2026-09-19"
 +++
 
 {{ tag(t="gentoo") }}  

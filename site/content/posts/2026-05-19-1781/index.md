@@ -27,24 +27,24 @@ label = "#mem #music #claude #llm"
 date = "2026-07-08"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2188/index.md"
+label = "#mem #telegram #suno #llm #music By max.podzharov, source"
+date = "2026-10-08"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2183/index.md"
+label = "#mem #llm #phone #div #css By razzberysolutions, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
 date = "2026-05-18"
 
 [[extra.related]]
-path = "@/posts/2026-08-04-2117/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2026-08-04-2116/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2026-06-24-1853/index.md"
-label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
-date = "2026-06-24"
+path = "@/posts/2026-10-08-2187/index.md"
+label = "#llm #interior By bennu.estudio, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="mem") }} limited by the technology of my time  

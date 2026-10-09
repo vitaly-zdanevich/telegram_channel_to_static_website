@@ -21,6 +21,11 @@ views = 17
 ids = [2073]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2197/index.md"
+label = "#animal #navyseal By oh10.23, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-09-20-2169/index.md"
 label = "#craft #toy #horn"
 date = "2026-09-20"
@@ -39,11 +44,6 @@ date = "2026-09-19"
 path = "@/posts/2026-09-18-2163/index.md"
 label = "#craft #toy #hairblue"
 date = "2026-09-18"
-
-[[extra.related]]
-path = "@/posts/2026-06-27-1868/index.md"
-label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
-date = "2026-06-27"
 +++
 
 {{ tag(t="toy") }}  

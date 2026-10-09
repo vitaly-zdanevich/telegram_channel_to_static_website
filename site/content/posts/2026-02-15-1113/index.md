@@ -42,9 +42,9 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-02-04-1081/index.md"
-label = "#preservation #belarus geo block I uploaded a lot from to Common…"
-date = "2026-02-04"
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="preservation") }}  

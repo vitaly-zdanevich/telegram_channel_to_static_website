@@ -41,8 +41,8 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
-path = "@/posts/2026-10-08-2182/index.md"
-label = "#mem #translation #tolkien"
+path = "@/posts/2026-10-08-2196/index.md"
+label = "#mem #music from #childhood By aimperiome, source"
 date = "2026-10-08"
 +++
 

@@ -21,6 +21,11 @@ views = 38
 ids = [1780]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2187/index.md"
+label = "#llm #interior By bennu.estudio, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-06-24-1853/index.md"
 label = "#llm wow of today 1 Fixed broken audio recording - when the iPho…"
 date = "2026-06-24"
@@ -39,11 +44,6 @@ date = "2026-05-25"
 path = "@/posts/2026-05-18-1779/index.md"
 label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
 date = "2026-05-18"
-
-[[extra.related]]
-path = "@/posts/2026-05-17-1776/index.md"
-label = "#llm #quote"
-date = "2026-05-17"
 +++
 
 What a time - multiple {{ tag(t="llm") }} doing multiple projects, in parallel...

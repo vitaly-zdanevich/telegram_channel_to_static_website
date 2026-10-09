@@ -41,9 +41,9 @@ label = "#ai #chatgpt"
 date = "2025-02-11"
 
 [[extra.related]]
-path = "@/posts/2026-06-08-1806/index.md"
-label = "Wow, about #telegram bots: you can bypass 50 MB response limit -…"
-date = "2026-06-08"
+path = "@/posts/2026-10-09-2199/index.md"
+label = "#golang #race package main import \"fmt\" func main { var done boo…"
+date = "2026-10-09"
 +++
 
 {{ tag(t="chatgpt") }} 5:  

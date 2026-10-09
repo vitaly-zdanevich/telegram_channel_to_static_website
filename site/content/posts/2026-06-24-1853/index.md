@@ -27,6 +27,11 @@ label = "What a time - multiple #llm doing multiple projects, in parallel…"
 date = "2026-05-18"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2187/index.md"
+label = "#llm #interior By bennu.estudio, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-06-05-1805/index.md"
 label = "My yet another project: @wikipediaunofficialbot Built with #llm…"
 date = "2026-06-05"
@@ -40,11 +45,6 @@ date = "2026-05-25"
 path = "@/posts/2026-05-18-1779/index.md"
 label = "--- /home/vitaly/.gemini/tmp/prime-world/chats -----------------…"
 date = "2026-05-18"
-
-[[extra.related]]
-path = "@/posts/2026-05-17-1776/index.md"
-label = "#llm #quote"
-date = "2026-05-17"
 +++
 
 {{ tag(t="llm") }} wow of today  

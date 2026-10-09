@@ -36,6 +36,11 @@ label = "#cat #robot #lasers"
 date = "2025-03-16"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2185/index.md"
+label = "#mem #robot #time to take your #job By roberttherobot, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2025-05-11-515/index.md"
 label = "#film #robot #slut #mem"
 date = "2025-05-11"

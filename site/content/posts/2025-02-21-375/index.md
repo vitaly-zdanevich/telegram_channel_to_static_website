@@ -36,13 +36,13 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-06-24-1856/index.md"
-label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
-date = "2026-06-24"
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-06-24-1855/index.md"
-label = "#armiesofexigo it own by #electronicarts Твёрдо и чётко."
+path = "@/posts/2026-06-24-1856/index.md"
+label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
 date = "2026-06-24"
 +++
 

@@ -21,29 +21,29 @@ views = 27
 ids = [2171]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2196/index.md"
+label = "#mem #music from #childhood By aimperiome, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-07-08-2034/index.md"
 label = "#mem #music #claude #llm"
 date = "2026-07-08"
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2195/index.md"
+label = "#mem #belaz #wheel #music #atlantida By vunderevgeniy, source"
+date = "2026-10-08"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2188/index.md"
+label = "#mem #telegram #suno #llm #music By max.podzharov, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2025-03-16-424/index.md"
 label = "#businessidea #china #rave #health #fitness #music"
 date = "2025-03-16"
-
-[[extra.related]]
-path = "@/posts/2025-06-02-546/index.md"
-label = "PromoDJ #music genres"
-date = "2025-06-02"
-
-[[extra.related]]
-path = "@/posts/2025-05-11-518/index.md"
-label = "The life was quiet all around A cute little island Nice and non-…"
-date = "2025-05-11"
-
-[[extra.related]]
-path = "@/posts/2025-01-25-330/index.md"
-label = "#music"
-date = "2025-01-25"
 +++
 
 {{ tag(t="mem") }}  

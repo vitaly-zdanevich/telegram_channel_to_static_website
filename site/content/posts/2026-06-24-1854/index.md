@@ -22,6 +22,11 @@ views = 16
 ids = [1854]
 
 [[extra.related]]
+path = "@/posts/2026-10-08-2188/index.md"
+label = "#mem #telegram #suno #llm #music By max.podzharov, source"
+date = "2026-10-08"
+
+[[extra.related]]
 path = "@/posts/2026-05-21-1784/index.md"
 label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
 date = "2026-05-21"
@@ -40,14 +45,9 @@ date = "2026-05-18"
 path = "@/posts/2026-03-17-1491/index.md"
 label = "#telegram added a feature request Add option to cache/prefetch a…"
 date = "2026-03-17"
-
-[[extra.related]]
-path = "@/posts/2025-09-20-674/index.md"
-label = "#telegram with wide messages"
-date = "2025-09-20"
 +++
 
-{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 33133 stars · Languages: C++ 96%, Python 2%, Objective-C++ 1% · 26634 commits · 7325 forks · 981 open issues/PRs · GPL-3.0 · last push 2026-10-07")  
+{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 33151 stars · Languages: C++ 96%, Python 2%, Objective-C++ 1% · 27322 commits · 7340 forks · 984 open issues/PRs · GPL-3.0 · last push 2026-10-09")  
 
 [The patch](https://gitlab.com/vitaly-zdanevich-configs/gentoo--etc-portage--thinkpad-t430/-/blob/amd/patches/net-im/telegram-desktop/large-adaptive-sticker-preview.patch).
 
