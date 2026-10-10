@@ -171,7 +171,10 @@ article.post:only-of-type .post-meta::before {
 .tags a { margin-right: .5rem; white-space: nowrap; }
 .pager { display: flex; justify-content: space-between; margin: 2rem 0; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; margin-top: auto; }
-.tg-link { margin-top: 1rem; font-size: .9em; }
+.tg-link { margin-top: 1rem; }
+.tg-link a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border-radius: 50%; }
+.tg-link a:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.tg-link svg { display: block; }
 .spoiler { background: var(--fg); border-radius: 3px; transition: background .1s; }
 .spoiler:hover { background: transparent; }
 .site-footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); padding-top: .5rem; }

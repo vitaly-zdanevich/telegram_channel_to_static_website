@@ -17,7 +17,7 @@ next_body = "#mem\n#belaz\n#wheel\n#music\n#atlantida\nBy vunderevgeniy, source"
 prev_id = 2193
 prev_title = ""
 prev_body = "#fashion\n#moscow\nBy undrgrndrip, source"
-views = 3
+views = 4
 ids = [2194]
 
 [[extra.related]]

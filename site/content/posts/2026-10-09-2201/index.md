@@ -14,7 +14,7 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2201"
 prev_id = 2200
 prev_title = ""
 prev_body = "Это фанатский мод: от первого лица с оружием CS ходишь по картам и кампаниям Warcraft III, мир и квесты остаются варкрафтовскими.\nНужны Warcraft III 1.26a и файлы CS 1.6.\nРепозиторий:\nВидео автора мода:"
-views = 1
+views = 2
 ids = [2201]
 
 [[extra.related]]

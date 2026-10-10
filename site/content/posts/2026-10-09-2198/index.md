@@ -17,7 +17,7 @@ next_body = "#golang\n#race\npackage main\nimport \"fmt\"\nfunc main() {\nvar do
 prev_id = 2197
 prev_title = ""
 prev_body = "#animal\n#navyseal\nBy oh10.23, source"
-views = 2
+views = 4
 ids = [2198]
 
 [[extra.related]]
