@@ -1159,6 +1159,7 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         );
         info!("{} media references across posts/pages", jobs.len());
         media::download_all(&client, &jobs, s.concurrency).await?;
+        integrity::require_release_media(&s.site, rendered.iter().chain(&rendered_pages))?;
 
         // Portable exports are the only consumers that materialize already-
         // published Release assets. Ordinary builds keep those URLs external.

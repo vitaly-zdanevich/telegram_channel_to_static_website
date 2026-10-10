@@ -5,6 +5,13 @@ use futures::stream::{self, StreamExt};
 use once_cell::sync::Lazy;
 use regex::Regex;
 use std::path::{Path, PathBuf};
+use std::time::Duration;
+
+/// Total requests for a media file, including the initial attempt.
+const MEDIA_FETCH_ATTEMPTS: usize = 10;
+/// Start retrying after one second, with exponential backoff capped at 30 seconds.
+const MEDIA_RETRY_BASE_DELAY: Duration = Duration::from_secs(1);
+const MEDIA_RETRY_MAX_DELAY: Duration = Duration::from_secs(30);
 
 /// A single media download: fetch `url` into `dest`. `force` re-downloads even
 /// if `dest` already exists (used for edited posts whose media may have changed).
@@ -253,7 +260,7 @@ pub async fn download_all(
                     .with_context(|| format!("copying {}", src.display())),
                 None => download_one(&client, &j.url, &j.dest)
                     .await
-                    .with_context(|| format!("downloading {}", j.url)),
+                    .with_context(|| format!("downloading {}", j.dest.display())),
             }
         }
     }))
@@ -284,18 +291,93 @@ async fn copy_one(src: &Path, dest: &Path) -> Result<()> {
     Ok(())
 }
 
+/// Download complete media with bounded retries before atomically replacing its cache.
 async fn download_one(client: &reqwest::Client, url: &str, dest: &Path) -> Result<()> {
+    download_one_with_retry_delay(client, url, dest, MEDIA_RETRY_BASE_DELAY).await
+}
+
+/// Retry transient HTTP and transport failures; a zero base delay keeps mock tests fast.
+/// Destination paths identify failed files without exposing tokenized CDN URLs.
+async fn download_one_with_retry_delay(
+    client: &reqwest::Client,
+    url: &str,
+    dest: &Path,
+    retry_base_delay: Duration,
+) -> Result<()> {
     if let Some(parent) = dest.parent() {
         tokio::fs::create_dir_all(parent).await?;
     }
-    let resp = client.get(url).send().await?.error_for_status()?;
-    let bytes = resp.bytes().await?;
-    // Write to a temp file then rename, so an interrupted run never leaves a
-    // truncated file that a later run would treat as "already cached".
-    let tmp = dest.with_extension("part");
-    tokio::fs::write(&tmp, &bytes).await?;
-    tokio::fs::rename(&tmp, dest).await?;
-    Ok(())
+    for attempt in 1..=MEDIA_FETCH_ATTEMPTS {
+        let response = async {
+            client
+                .get(url)
+                .send()
+                .await?
+                .error_for_status()?
+                .bytes()
+                .await
+        }
+        .await;
+        let bytes = match response {
+            Ok(bytes) => bytes,
+            Err(error) if attempt < MEDIA_FETCH_ATTEMPTS && retryable_download_error(&error) => {
+                let delay = media_retry_delay(retry_base_delay, attempt);
+                tracing::warn!(
+                    "downloading {} failed on attempt {attempt}/{MEDIA_FETCH_ATTEMPTS}: {}; retrying in {} ms",
+                    dest.display(),
+                    error.without_url(),
+                    delay.as_millis()
+                );
+                if !delay.is_zero() {
+                    tokio::time::sleep(delay).await;
+                }
+                continue;
+            }
+            Err(error) => {
+                return Err(error.without_url()).with_context(|| {
+                    format!(
+                        "downloading {} failed after {attempt} attempt(s)",
+                        dest.display()
+                    )
+                });
+            }
+        };
+        // Only a complete response reaches the temporary file. Failed refreshes
+        // leave the previous destination intact, and incomplete writes are removed.
+        let tmp = dest.with_extension("part");
+        let result = async {
+            tokio::fs::write(&tmp, &bytes).await?;
+            tokio::fs::rename(&tmp, dest).await
+        }
+        .await;
+        if result.is_err() {
+            let _ = tokio::fs::remove_file(&tmp).await;
+        }
+        return result.with_context(|| format!("saving downloaded media to {}", dest.display()));
+    }
+
+    unreachable!("the final media download attempt always returns")
+}
+
+/// Retry timeout/rate-limit/server responses and interrupted request or body transfers.
+fn retryable_download_error(error: &reqwest::Error) -> bool {
+    if let Some(status) = error.status() {
+        return status == reqwest::StatusCode::REQUEST_TIMEOUT
+            || status == reqwest::StatusCode::TOO_MANY_REQUESTS
+            || status.is_server_error();
+    }
+    error.is_connect()
+        || error.is_timeout()
+        || error.is_request()
+        || error.is_body()
+        || error.is_decode()
+}
+
+/// Calculate the capped exponential delay after a failed download attempt.
+fn media_retry_delay(base_delay: Duration, attempt: usize) -> Duration {
+    base_delay
+        .saturating_mul(1_u32 << (attempt - 1))
+        .min(MEDIA_RETRY_MAX_DELAY)
 }
 
 #[cfg(test)]
@@ -460,6 +542,176 @@ mod tests {
             "mp4"
         );
         assert_eq!(ext_from_url("https://cdn/file/noext", "jpg"), "jpg");
+    }
+
+    /// A CDN failure must not turn a recoverable video into a missing bundle file.
+    #[tokio::test]
+    async fn download_retries_transient_http_statuses() {
+        use std::sync::atomic::{AtomicUsize, Ordering};
+        use wiremock::matchers::{method, path};
+        use wiremock::{Mock, MockServer, Request, ResponseTemplate};
+
+        let server = MockServer::start().await;
+        let requests = AtomicUsize::new(0);
+        Mock::given(method("GET"))
+            .and(path("/video.mp4"))
+            .respond_with(
+                move |_: &Request| match requests.fetch_add(1, Ordering::SeqCst) {
+                    0 => ResponseTemplate::new(500),
+                    1 => ResponseTemplate::new(408),
+                    2 => ResponseTemplate::new(429),
+                    3 => ResponseTemplate::new(503),
+                    _ => ResponseTemplate::new(200).set_body_string("VIDEO DATA"),
+                },
+            )
+            .expect(5)
+            .mount(&server)
+            .await;
+        let dest = std::env::temp_dir().join(format!("tg2-retry-500-{}.mp4", std::process::id()));
+        tokio::fs::write(&dest, "OLD VIDEO").await.unwrap();
+
+        download_one_with_retry_delay(
+            &reqwest::Client::new(),
+            &format!("{}/video.mp4", server.uri()),
+            &dest,
+            Duration::ZERO,
+        )
+        .await
+        .unwrap();
+
+        assert_eq!(tokio::fs::read(&dest).await.unwrap(), b"VIDEO DATA");
+        assert!(!dest.with_extension("part").exists());
+        tokio::fs::remove_file(dest).await.unwrap();
+    }
+
+    /// Exhausted transient failures preserve the existing file and redact CDN tokens.
+    #[tokio::test]
+    async fn download_stops_after_ten_attempts() {
+        use wiremock::matchers::method;
+        use wiremock::{Mock, MockServer, ResponseTemplate};
+
+        let server = MockServer::start().await;
+        Mock::given(method("GET"))
+            .respond_with(ResponseTemplate::new(500))
+            .expect(10)
+            .mount(&server)
+            .await;
+        let dest =
+            std::env::temp_dir().join(format!("tg2-retry-exhausted-{}.mp4", std::process::id()));
+        tokio::fs::write(&dest, "OLD VIDEO").await.unwrap();
+
+        let error = download_one_with_retry_delay(
+            &reqwest::Client::new(),
+            &format!("{}/secret-token/video.mp4?token=private", server.uri()),
+            &dest,
+            Duration::ZERO,
+        )
+        .await
+        .unwrap_err();
+
+        let diagnostic = format!("{error:#}");
+        assert!(diagnostic.contains("500 Internal Server Error"));
+        assert!(diagnostic.contains("after 10 attempt(s)"));
+        assert!(diagnostic.contains(dest.to_str().unwrap()));
+        assert!(!diagnostic.contains("secret-token"));
+        assert!(!diagnostic.contains("private"));
+        assert_eq!(tokio::fs::read(&dest).await.unwrap(), b"OLD VIDEO");
+        assert!(!dest.with_extension("part").exists());
+        tokio::fs::remove_file(dest).await.unwrap();
+    }
+
+    /// Permanent HTTP failures must stop after the first attempt without touching the cache.
+    #[tokio::test]
+    async fn download_does_not_retry_permanent_client_errors() {
+        use wiremock::matchers::method;
+        use wiremock::{Mock, MockServer, ResponseTemplate};
+
+        for status in [400, 401, 403, 404] {
+            let server = MockServer::start().await;
+            Mock::given(method("GET"))
+                .respond_with(ResponseTemplate::new(status))
+                .expect(1)
+                .mount(&server)
+                .await;
+            let dest = std::env::temp_dir().join(format!(
+                "tg2-retry-permanent-{status}-{}.mp4",
+                std::process::id()
+            ));
+            tokio::fs::write(&dest, "OLD VIDEO").await.unwrap();
+
+            let error = download_one_with_retry_delay(
+                &reqwest::Client::new(),
+                &format!("{}/video.mp4", server.uri()),
+                &dest,
+                Duration::ZERO,
+            )
+            .await
+            .unwrap_err();
+
+            assert!(format!("{error:#}").contains("after 1 attempt(s)"));
+            assert_eq!(tokio::fs::read(&dest).await.unwrap(), b"OLD VIDEO");
+            assert!(!dest.with_extension("part").exists());
+            tokio::fs::remove_file(dest).await.unwrap();
+        }
+    }
+
+    /// Errors before headers and while decoding a response both require a fresh request.
+    #[tokio::test]
+    async fn download_retries_transport_and_body_failures() {
+        use wiremock::matchers::method;
+        use wiremock::{Mock, MockServer, Request, ResponseTemplate};
+
+        for failure in ["transport", "body"] {
+            let server = MockServer::start().await;
+            let failing_response = if failure == "transport" {
+                Mock::given(method("GET")).respond_with_err(|_: &Request| {
+                    std::io::Error::new(std::io::ErrorKind::ConnectionReset, "connection reset")
+                })
+            } else {
+                Mock::given(method("GET")).respond_with(
+                    ResponseTemplate::new(200)
+                        .insert_header("content-encoding", "gzip")
+                        .set_body_string("broken gzip body"),
+                )
+            };
+            failing_response
+                .up_to_n_times(1)
+                .with_priority(1)
+                .expect(1)
+                .mount(&server)
+                .await;
+            Mock::given(method("GET"))
+                .respond_with(ResponseTemplate::new(200).set_body_string("VIDEO DATA"))
+                .with_priority(2)
+                .expect(1)
+                .mount(&server)
+                .await;
+            let dest = std::env::temp_dir()
+                .join(format!("tg2-retry-{failure}-{}.mp4", std::process::id()));
+            let _ = tokio::fs::remove_file(&dest).await;
+
+            download_one_with_retry_delay(
+                &reqwest::Client::new(),
+                &format!("{}/video.mp4", server.uri()),
+                &dest,
+                Duration::ZERO,
+            )
+            .await
+            .unwrap();
+
+            assert_eq!(tokio::fs::read(&dest).await.unwrap(), b"VIDEO DATA");
+            assert!(!dest.with_extension("part").exists());
+            tokio::fs::remove_file(dest).await.unwrap();
+        }
+    }
+
+    /// Backoff remains bounded even when all ten download attempts fail.
+    #[test]
+    fn media_retry_backoff_is_exponential_and_capped() {
+        let delays = (1..MEDIA_FETCH_ATTEMPTS)
+            .map(|attempt| media_retry_delay(MEDIA_RETRY_BASE_DELAY, attempt).as_secs())
+            .collect::<Vec<_>>();
+        assert_eq!(delays, [1, 2, 4, 8, 16, 30, 30, 30, 30]);
     }
 
     #[tokio::test]

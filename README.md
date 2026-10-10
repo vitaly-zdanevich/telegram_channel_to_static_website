@@ -50,6 +50,11 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   Photos are content-addressed by their stable Telegram file id, so editing a
   post's text never re-downloads its media, while **replacing** an image (the
   post then shows as *edited*) fetches the new file and prunes the old one.
+  Temporary HTTP download failures (408, 429, 5xx, or interrupted transfers)
+  get up to ten attempts with exponential backoff capped at 30 seconds.
+  Before CI publishes video/archive Release URLs, each file must be staged
+  with nonempty bytes or confirmed in the current GitHub Release inventory;
+  otherwise the build fails instead of deploying a missing file.
 - **True-black default theme** — built-in templates styled `#000` in dark mode
   via `prefers-color-scheme` (OLED-friendly), with no external theme dependency.
   An external theme can be layered on with a guaranteed fallback (see [Theming](#theming)).

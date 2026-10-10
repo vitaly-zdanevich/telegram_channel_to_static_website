@@ -1,13 +1,65 @@
 //! Post-generation integrity check: every *local* media file a post references
 //! must actually exist on disk. Catches a failed download, a missing MTProto
 //! file, or a broken dedup rewrite before they ship as a broken `<img>`/link.
-//! Read-only — it only reports (to the CI log), never changes the site.
+//! Read-only — local checks report to CI; missing Release media blocks publishing.
 
 use once_cell::sync::Lazy;
 use regex::Regex;
 use std::collections::HashSet;
 use std::fs;
 use std::path::{Path, PathBuf};
+
+/// Require every planned video/archive Release asset to exist before publishing
+/// its URL. A nonempty staging file will be uploaded by CI; otherwise only an
+/// exact tag/name match in CI's freshly fetched GitHub inventory is accepted.
+/// This keeps an exhausted download retry from publishing a guaranteed 404.
+pub fn require_release_media<'a>(
+    site: &Path,
+    posts: impl IntoIterator<Item = &'a crate::render::RenderedPost>,
+) -> anyhow::Result<()> {
+    let inventory = match fs::read_to_string(site.join(".image-releases.remote.tsv")) {
+        Ok(raw) => raw,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => String::new(),
+        Err(error) => return Err(error.into()),
+    };
+    let published: HashSet<&str> = inventory
+        .lines()
+        .filter_map(|line| {
+            let mut fields = line.split('\t');
+            let tag = fields.next()?;
+            let asset = fields.next()?;
+            let size = fields.next()?.parse::<u64>().ok()?;
+            (tag == "media" && !asset.is_empty() && size > 0 && fields.next().is_none())
+                .then_some(asset)
+        })
+        .collect();
+    let staging = site.join(".video-releases");
+    let mut missing = Vec::new();
+    for post in posts {
+        for download in post.downloads.iter().filter(|download| download.release) {
+            let staged = staging.join(&download.filename);
+            // Any staged file takes precedence because CI uploads it with
+            // --clobber: an empty file must not overwrite a valid remote asset.
+            let available = match staged.metadata() {
+                Ok(meta) => meta.is_file() && meta.len() > 0,
+                Err(error) if error.kind() == std::io::ErrorKind::NotFound => {
+                    published.contains(download.filename.as_str())
+                }
+                Err(error) => return Err(error.into()),
+            };
+            if available {
+                continue;
+            }
+            missing.push(format!("{}: {}", post.slug, download.filename));
+        }
+    }
+    anyhow::ensure!(
+        missing.is_empty(),
+        "Release media is missing or has invalid staged bytes; refusing to publish broken files: {}",
+        missing.join(", ")
+    );
+    Ok(())
+}
 
 // A Markdown link/image target `](target)` and a raw `src="target"` attribute —
 // the two ways a bundle file is referenced (images, downloads, audio/video/
@@ -91,6 +143,55 @@ fn candidate_paths(bundle: &Path, static_dir: &Path, rf: &str) -> Vec<PathBuf> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn release_media_requires_staged_or_confirmed_remote_bytes() {
+        let dir =
+            std::env::temp_dir().join(format!("tg2zola-release-check-{}", std::process::id()));
+        let _ = fs::remove_dir_all(&dir);
+        let post = crate::render::RenderedPost {
+            slug: "2026-10-08-2190".into(),
+            title: String::new(),
+            index_md: String::new(),
+            og_image: None,
+            downloads: vec![crate::render::Download {
+                url: "https://cdn.example/video.mp4".into(),
+                filename: "2190-01.mp4".into(),
+                force: false,
+                local: None,
+                release: true,
+            }],
+        };
+        let check = || require_release_media(&dir, [&post]);
+        assert!(check().unwrap_err().to_string().contains("2190-01.mp4"));
+
+        let staged = dir.join(".video-releases/2190-01.mp4");
+        write(&staged, "");
+        assert!(check().is_err(), "empty staging file must not count");
+        write(&staged, "video bytes");
+        check().unwrap();
+        fs::remove_file(&staged).unwrap();
+
+        let inventory = dir.join(".image-releases.remote.tsv");
+        for invalid in [
+            "images-2000\t2190-01.mp4\t11\n",
+            "media\t2189-01.mp4\t11\n",
+            "media\t2190-01.mp4\t0\n",
+            "media\t2190-01.mp4\tinvalid\n",
+            "media\t2190-01.mp4\t11\textra\n",
+        ] {
+            write(&inventory, invalid);
+            assert!(check().is_err(), "invalid inventory accepted: {invalid}");
+        }
+        write(&inventory, "media\t2190-01.mp4\t6464966\n");
+        check().unwrap();
+        write(&staged, "");
+        assert!(
+            check().is_err(),
+            "empty staging would clobber the remote asset"
+        );
+        fs::remove_dir_all(&dir).unwrap();
+    }
 
     fn write(p: &Path, s: &str) {
         fs::create_dir_all(p.parent().unwrap()).unwrap();
