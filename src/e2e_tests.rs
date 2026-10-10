@@ -579,6 +579,13 @@ fn zola_build_produces_expected_html() {
         .expect("Telegram SVG missing");
     assert_eq!(icon.value().attr("aria-hidden"), Some("true"));
     assert_eq!(icon.value().attr("focusable"), Some("false"));
+    // The Telegram mark is a borderless plane, with no circular backing. It
+    // inherits the link color so the same SVG stays visible in either theme.
+    assert!(icon
+        .select(&scraper::Selector::parse("circle, ellipse, rect").unwrap())
+        .next()
+        .is_none());
+    assert_eq!(icon.value().attr("fill"), Some("currentColor"));
     assert!(!about_page.contains("tg-link"));
     assert!(home.contains(r#"class="meta post-meta""#), "{home}");
     assert!(

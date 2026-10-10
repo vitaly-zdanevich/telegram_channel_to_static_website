@@ -282,7 +282,7 @@ These are *variables*, not secrets — all of it is public.
 | `POSTS_PER_PAGE` | `--posts-per-page` | `20` | Full posts per page on the home feed |
 | `TAGS_FOOTER` | `--tags-footer` | off | `true` to show the per-post tag footer (tags are clickable in the body regardless) |
 | `NEXT_PREV` | `--no-next-prev` | on | `false` hides the Next/Prev post navigation |
-| `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post black Telegram SVG icon; "View on Telegram" remains its localized tooltip and accessible label |
+| `TELEGRAM_LINK` | `--no-telegram-link` | on | `false` hides the per-post borderless Telegram paper-plane SVG icon (black in light mode, white in dark mode); "View on Telegram" remains its localized tooltip and accessible label |
 | `RSS` | `--no-rss` | on | `false` disables the RSS feed at `/rss.xml` (with reader autodiscovery) |
 | `PODCAST` | `--podcast` | off | `true` also generates a **podcast feed** (the channel's audio posts, with iTunes tags + `<enclosure>`s) at `/podcast.xml`. Cover comes from the about.me photo, else a post tagged `podcast_description` (whose text is the podcast description). Needs an `http(s)` base URL; Apple also wants a **≥1400×1400px square** cover |
 | `PODCAST_TAGGED` | `--podcast-tagged` | off | with `PODCAST`, include only audio posts tagged `podcast` (default: all audio posts) |

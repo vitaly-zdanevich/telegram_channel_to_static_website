@@ -1845,11 +1845,9 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
 	{% if config.extra.telegram_link and page.extra.tg_url %}
 	<p class='tg-link'>
 		<a href='{{ page.extra.tg_url }}' title='{{ config.extra.i18n.view_on_telegram }}' aria-label='{{ config.extra.i18n.view_on_telegram }}'>
-			{# Telegram mark from Simple Icons (CC0): https://github.com/simple-icons/simple-icons/blob/develop/icons/telegram.svg #}
-			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32' aria-hidden='true' focusable='false'>
-				{# White backing keeps the cutout paper plane visible on dark backgrounds. #}
-				<circle cx='12' cy='12' r='12' fill='#fff'/>
-				<path fill='#000' d='M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z'/>
+			{# Paper plane only, without the circular badge, adapted from Simple Icons (CC0): https://github.com/simple-icons/simple-icons/blob/develop/icons/telegram.svg #}
+			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32' fill='currentColor' aria-hidden='true' focusable='false'>
+				<path d='M16.906 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z'/>
 			</svg>
 		</a>
 	</p>
@@ -2246,7 +2244,11 @@ __POST_HEADER_LINE__
 .pager { display: flex; justify-content: space-between; margin: 2rem 0; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; margin-top: auto; }
 .tg-link { margin-top: 1rem; }
-.tg-link a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border-radius: 50%; }
+.tg-link a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border-radius: 50%; color: #000; }
+/* A borderless mark has no backing, so invert it against the dark theme. */
+@media (prefers-color-scheme: dark) {
+	.tg-link a { color: #fff; }
+}
 .tg-link a:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 .tg-link svg { display: block; }
 .spoiler { background: var(--fg); border-radius: 3px; transition: background .1s; }
