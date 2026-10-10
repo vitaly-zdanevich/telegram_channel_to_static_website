@@ -509,6 +509,30 @@ fn zola_build_produces_expected_html() {
     let day_full_page = read("day/2023-11-15/index.html");
     let about_page = read("about/index.html");
     let css = read("style.css");
+    // The icon-only Telegram link retains its destination and localized name
+    // for hover and assistive technology; the SVG itself is decorative.
+    let document = scraper::Html::parse_document(&post_page);
+    let telegram = document
+        .select(&scraper::Selector::parse(".tg-link a").unwrap())
+        .next()
+        .expect("Telegram link missing");
+    assert_eq!(
+        telegram.value().attr("href"),
+        Some("https://t.me/testchan/1")
+    );
+    assert_eq!(telegram.value().attr("title"), Some("View on Telegram"));
+    assert_eq!(
+        telegram.value().attr("aria-label"),
+        Some("View on Telegram")
+    );
+    assert!(telegram.text().collect::<String>().trim().is_empty());
+    let icon = telegram
+        .select(&scraper::Selector::parse("svg").unwrap())
+        .next()
+        .expect("Telegram SVG missing");
+    assert_eq!(icon.value().attr("aria-hidden"), Some("true"));
+    assert_eq!(icon.value().attr("focusable"), Some("false"));
+    assert!(!about_page.contains("tg-link"));
     assert!(home.contains(r#"class="meta post-meta""#), "{home}");
     assert!(
         post_page.contains(r#"class="meta post-meta""#),
