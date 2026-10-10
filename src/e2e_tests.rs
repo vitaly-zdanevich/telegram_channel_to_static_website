@@ -393,6 +393,19 @@ fn zola_build_produces_expected_html() {
             None,
         ),
     ];
+    // Post 2199 has code-shaped text inside a quote, not a <pre>. Its leading
+    // spaces must survive conversion and the real minify_html-enabled build.
+    let quoted_html = scraper::Html::parse_fragment(
+        "<div><blockquote>    func main() {<br/>        var (<br/>            wg <b>sync.WaitGroup</b><br/>        )<br/><br/>    }</blockquote></div>",
+    );
+    let quote = crate::html2md::convert(
+        quoted_html
+            .select(&scraper::Selector::parse("div").unwrap())
+            .next()
+            .unwrap(),
+    );
+    posts[0].body_md.push_str("\n\n");
+    posts[0].body_md.push_str(&quote.md);
     // Auto-tag posts with a playable video #video (mirrors main::run) so the
     // {{ tag(t="video") }} their body emits resolves against the taxonomy.
     for p in &mut posts {
@@ -509,9 +522,43 @@ fn zola_build_produces_expected_html() {
     let day_full_page = read("day/2023-11-15/index.html");
     let about_page = read("about/index.html");
     let css = read("style.css");
+    let document = scraper::Html::parse_document(&post_page);
+    // Indentation and formatting survive in a regular quote after minification.
+    let quote = document
+        .select(&scraper::Selector::parse(".content blockquote").unwrap())
+        .next()
+        .expect("blockquote missing");
+    let quote_text = quote.text().collect::<String>().replace('\u{a0}', " ");
+    assert!(
+        quote_text.starts_with("    func main() {"),
+        "{quote_text:?}"
+    );
+    assert!(quote_text.contains("        var ("), "{quote_text:?}");
+    assert!(
+        quote_text.contains("            wg sync.WaitGroup"),
+        "{quote_text:?}"
+    );
+    assert_eq!(
+        quote
+            .select(&scraper::Selector::parse("br").unwrap())
+            .count(),
+        5
+    );
+    assert!(quote
+        .select(&scraper::Selector::parse("pre").unwrap())
+        .next()
+        .is_none());
+    assert_eq!(
+        quote
+            .select(&scraper::Selector::parse("strong").unwrap())
+            .next()
+            .unwrap()
+            .text()
+            .collect::<String>(),
+        "sync.WaitGroup"
+    );
     // The icon-only Telegram link retains its destination and localized name
     // for hover and assistive technology; the SVG itself is decorative.
-    let document = scraper::Html::parse_document(&post_page);
     let telegram = document
         .select(&scraper::Selector::parse(".tg-link a").unwrap())
         .next()

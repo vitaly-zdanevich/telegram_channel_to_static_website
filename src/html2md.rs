@@ -119,11 +119,15 @@ fn handle_element(el: ElementRef, out: &mut String, ctx: &mut Ctx) {
             out.push_str("\n```\n\n");
         }
         "blockquote" => {
-            // Markdown blockquote; preserve internal line breaks (e.g. lyrics)
-            // with <br> since raw newlines collapse.
-            let body = inner(el, ctx).trim().replace('\n', "<br>");
+            // Keep this a normal quote, preserving line breaks and indentation
+            // even after Markdown rendering and HTML whitespace minification.
+            let body = inner(el, ctx)
+                .lines()
+                .map(blockquote_line)
+                .collect::<Vec<_>>()
+                .join("<br>");
             out.push_str("\n> ");
-            out.push_str(body.trim());
+            out.push_str(&body);
             out.push('\n');
         }
         "tg-spoiler" => spoiler(out, &inner(el, ctx)),
@@ -132,6 +136,22 @@ fn handle_element(el: ElementRef, out: &mut String, ctx: &mut Ctx) {
         // Unknown wrapper: just emit its children.
         _ => out.push_str(&inner(el, ctx)),
     }
+}
+
+/// Preserve a quoted line's indentation with non-collapsible spaces. Literal
+/// NBSP characters survive HTML minification and are still whitespace to our
+/// plain-text excerpts. Expand tabs to the next eight-column browser tab stop;
+/// leave the remaining Markdown untouched so prose and inline formatting wrap.
+fn blockquote_line(line: &str) -> String {
+    // `<br>` added two Markdown hard-break spaces; `<br>` in the quote already
+    // represents that break, so those synthetic trailing spaces are redundant.
+    let line = line.trim_end();
+    let text = line.trim_start_matches([' ', '\t', '\u{a0}']);
+    let indentation = &line[..line.len() - text.len()];
+    let columns = indentation.chars().fold(0, |column, c| {
+        column + if c == '\t' { 8 - column % 8 } else { 1 }
+    });
+    format!("{}{text}", "\u{a0}".repeat(columns))
 }
 
 /// Count `<br>` elements at the very start of an element's content (skipping
@@ -311,6 +331,30 @@ mod tests {
         let md = conv("<div><pre># one<br/># two<br/>echo hi</pre></div>");
         assert!(md.contains("# one\n# two\necho hi"), "{md:?}");
         assert!(!md.contains("\\#"), "code must not be escaped: {md:?}");
+    }
+
+    /// Telegram quotes can contain indented text without a nested code block.
+    #[test]
+    fn blockquote_keeps_leading_whitespace() {
+        let md = conv(
+            "<div><blockquote>  Heading<br/><br/>    func main() {<br/>        <b>call()</b><br/>    }\n  \tTabbed</blockquote></div>",
+        );
+        let nbsp = "\u{a0}";
+        assert_eq!(
+            md,
+            format!(
+                "> {}Heading<br><br>{}func main() {{<br>{}**call()**<br>{}}}<br>{}Tabbed",
+                nbsp.repeat(2),
+                nbsp.repeat(4),
+                nbsp.repeat(8),
+                nbsp.repeat(4),
+                nbsp.repeat(8),
+            )
+        );
+        assert_eq!(
+            conv("<div><blockquote>Plain quote</blockquote></div>"),
+            "> Plain quote"
+        );
     }
 
     #[test]
