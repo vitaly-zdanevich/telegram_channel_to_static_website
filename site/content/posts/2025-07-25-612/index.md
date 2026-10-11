@@ -26,6 +26,11 @@ label = "My new #bash alias: one function to go to the next folder like f…"
 date = "2026-02-10"
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2205/index.md"
+label = "#game #cd #playstation By gamersgoretro, source"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2025-11-19-782/index.md"
 label = "#ad #retro #nokia"
 date = "2025-11-19"

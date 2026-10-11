@@ -21,6 +21,11 @@ views = 34
 ids = [724, 725]
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2205/index.md"
+label = "#game #cd #playstation By gamersgoretro, source"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2026-09-21-2176/index.md"
 label = "#game #playstation #design By retourverslegaming, source"
 date = "2026-09-21"
@@ -36,14 +41,9 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-10-08-2186/index.md"
-label = "#game #muonline By monarchsea.mu, source"
-date = "2026-10-08"
-
-[[extra.related]]
-path = "@/posts/2026-02-03-1079/index.md"
-label = "#webdesign #game"
-date = "2026-02-03"
+path = "@/posts/2026-10-10-2208/index.md"
+label = "#sounddesign #game By lago, source"
+date = "2026-10-10"
 +++
 
 {{ tag(t="game") }}  

@@ -31,6 +31,11 @@ label = "#russia #israel #map"
 date = "2025-09-01"
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2206/index.md"
+label = "#ad #russia #cat #heat By markmate88, source"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2026-07-29-2097/index.md"
 label = "#health #sugar #cola #mellstroy By dashka.lawki"
 date = "2026-07-29"
@@ -39,11 +44,6 @@ date = "2026-07-29"
 path = "@/posts/2025-11-12-770/index.md"
 label = "#games #segagenesis #neogeo #year1991"
 date = "2025-11-12"
-
-[[extra.related]]
-path = "@/posts/2025-10-20-708/index.md"
-label = "#concert #rammstein #year2019 #russia Not my photo."
-date = "2025-10-20"
 +++
 
 {{ tag(t="russia") }}  

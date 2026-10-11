@@ -17,8 +17,13 @@ next_body = "#preservation\n#youtube\n#comment"
 prev_id = 2175
 prev_title = ""
 prev_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\nBy yoursksenia, source"
-views = 51
+views = 52
 ids = [2176]
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2205/index.md"
+label = "#game #cd #playstation By gamersgoretro, source"
+date = "2026-10-10"
 
 [[extra.related]]
 path = "@/posts/2026-09-16-2154/index.md"
@@ -39,11 +44,6 @@ date = "2024-10-08"
 path = "@/posts/2024-10-06-158/index.md"
 label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
-
-[[extra.related]]
-path = "@/posts/2024-07-13-89/index.md"
-label = "Another good #design"
-date = "2024-07-13"
 +++
 
 {{ tag(t="game") }}  

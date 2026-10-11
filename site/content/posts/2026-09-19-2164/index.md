@@ -18,8 +18,13 @@ next_body = "#contactee\n#podzorova\n#silbet\n294 Воинствующая оп�
 prev_id = 2163
 prev_title = ""
 prev_body = "#craft\n#toy\n#hairblue\nSource"
-views = 19
+views = 20
 ids = [2164]
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2210/index.md"
+label = "#github #webdesign #art #mascot #cat"
+date = "2026-10-10"
 
 [[extra.related]]
 path = "@/posts/2026-10-03-2178/index.md"
@@ -38,11 +43,6 @@ date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
-label = "#webdesign"
-date = "2025-11-03"
-
-[[extra.related]]
-path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
 date = "2025-11-03"
 +++

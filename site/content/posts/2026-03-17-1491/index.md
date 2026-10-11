@@ -48,4 +48,4 @@ date = "2025-03-24"
 
 {{ tag(t="telegram") }} added a feature request <https://bugs.telegram.org/c/60210>  
 
-> **Add option to cache/prefetch all or selected channels**  <br>  <br>Like podcasts app can download episodes when Wi-Fi is available.  <br>  <br>Why: when I have wi-fi at home but mobile network is not working on street.
+> **Add option to cache/prefetch all or selected channels**<br><br>Like podcasts app can download episodes when Wi-Fi is available.<br><br>Why: when I have wi-fi at home but mobile network is not working on street.

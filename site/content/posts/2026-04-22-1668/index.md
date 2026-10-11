@@ -27,6 +27,11 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2208/index.md"
+label = "#sounddesign #game By lago, source"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2026-10-08-2186/index.md"
 label = "#game #muonline By monarchsea.mu, source"
 date = "2026-10-08"
@@ -40,11 +45,6 @@ date = "2026-02-03"
 path = "@/posts/2025-08-09-621/index.md"
 label = "#anime #gpu"
 date = "2025-08-09"
-
-[[extra.related]]
-path = "@/posts/2025-03-08-398/index.md"
-label = "#anime #voice"
-date = "2025-03-08"
 +++
 
 {{ tag(t="anime") }}  

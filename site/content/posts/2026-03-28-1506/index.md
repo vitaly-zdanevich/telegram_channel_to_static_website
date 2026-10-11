@@ -52,7 +52,7 @@ date = "2026-04-11"
 {{ tag(t="school") }}  
 {{ tag(t="error") }}  
 
-> Что вы будете делать когда вот это всё отключат по всему миру?  <br>Что ты будешь делать без этой подсказки?
+> Что вы будете делать когда вот это всё отключат по всему миру?<br>Что ты будешь делать без этой подсказки?
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1506-01.mp4") }}
 

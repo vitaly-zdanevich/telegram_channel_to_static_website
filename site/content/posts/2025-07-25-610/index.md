@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-07-25T00:56:00+00:00
-description = "Can you imagine userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 35 commits · 1 fork · 1 open issues/PRs · last push 2026-04-02\") lastfm"
+description = "Can you imagine userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 37 commits · 1 fork · last push 2026-10-11\") lastfm"
 
 [taxonomies]
 days = ["2025-07-25"]
@@ -42,7 +42,7 @@ label = "Youta: моя лекция-демонстрация TUI аудио пл
 date = "2026-08-09"
 +++
 
-Can you imagine {{ tag(t="userstyle") }} with so much [configs](<https://github.com/924e50c0/Last.fmSimpleTweaks> "A collection of simple (?) tweaks for last.fm. · 3 stars · Languages: CSS 100% · 35 commits · 1 fork · 1 open issues/PRs · last push 2026-04-02")  
+Can you imagine {{ tag(t="userstyle") }} with so much [configs](<https://github.com/924e50c0/Last.fmSimpleTweaks> "A collection of simple (?) tweaks for last.fm. · 3 stars · Languages: CSS 100% · 37 commits · 1 fork · last push 2026-10-11")  
 
 {{ tag(t="lastfm") }}
 

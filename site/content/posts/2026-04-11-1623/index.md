@@ -32,6 +32,11 @@ label = "#china #beauty #plastic"
 date = "2025-09-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2207/index.md"
+label = "#diy #headphone #china #3dprint By nashallery, source"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2026-09-21-2174/index.md"
 label = "#song #china #contrast #scream By yukina0000v, source"
 date = "2026-09-21"
@@ -40,11 +45,6 @@ date = "2026-09-21"
 path = "@/posts/2025-11-08-744/index.md"
 label = "#school in #sakartvelo #architecture #books"
 date = "2025-11-08"
-
-[[extra.related]]
-path = "@/posts/2026-09-21-2171/index.md"
-label = "#mem #train #mouth #china #music: Бошки дымятся by Элджей. By an…"
-date = "2026-09-21"
 +++
 
 Usual {{ tag(t="school") }} in {{ tag(t="china") }}? {{ tag(t="lenin") }}  

@@ -17,8 +17,13 @@ next_body = "#mem\n#train\n#mouth\n#china\n#music: Бошки дымятся by 
 prev_id = 2169
 prev_title = ""
 prev_body = "#craft\n#toy\n#horn\nSource"
-views = 19
+views = 20
 ids = [2170]
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2206/index.md"
+label = "#ad #russia #cat #heat By markmate88, source"
+date = "2026-10-10"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
@@ -39,11 +44,6 @@ date = "2026-08-04"
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2025-04-25-482/index.md"
-label = "#cat #psy"
-date = "2025-04-25"
 +++
 
 {{ tag(t="mem") }}  

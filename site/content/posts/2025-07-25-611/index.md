@@ -16,7 +16,7 @@ next_title = ""
 next_body = "#retro\n#cd\n#vhs\nSource"
 prev_id = 610
 prev_title = ""
-prev_body = "Can you imagine #userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 35 commits · 1 fork · 1 open issues/PRs · last push 2026-04-02\")\n#lastfm"
+prev_body = "Can you imagine #userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 37 commits · 1 fork · last push 2026-10-11\")\n#lastfm"
 views = 119
 ids = [611]
 

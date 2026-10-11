@@ -17,7 +17,7 @@ next_body = "#error\n#gitlab\n#contradiction"
 prev_id = 1761
 prev_title = ""
 prev_body = "I love #ci so much that for the first time I depleted free 400 minutes per month, on #gitlab, on my FOSS non-commercial projects."
-views = 429
+views = 430
 ids = [1762]
 
 [[extra.related]]
@@ -62,8 +62,8 @@ date = "2026-06-24"
 [obsidian.md](http://obsidian.md/) проприетарный софт для заметок в markdown  
 [logseq.com](http://logseq.com/) свободные заметки в markdown  
 [github.com/boo-yee/nixnote2](<http://github.com/boo-yee/nixnote2> "Nixnote - Evernote desktop client for Linux · 5 stars · Languages: C++ 97%, Java 1%, CMake 1% · 2731 commits · GPL-3.0 · last push 2025-10-08") FOSS клиент для Evernote на C++ и Qt  
-[github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 91%, Shell 6%, Python 2% · 88 commits · 3 open issues/PRs · GPL-3.0 · last push 2026-10-08") мой CLI на Rust  
-[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 89271 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8210 commits · 5513 forks · 388 open issues/PRs · MPL-2.0 · last push 2026-10-10") FOSS синхронизация данных через ваши устройства  
+[github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 91%, Shell 5%, Python 2% · 89 commits · 3 open issues/PRs · GPL-3.0 · last push 2026-10-10") мой CLI на Rust  
+[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 89301 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8210 commits · 5518 forks · 388 open issues/PRs · MPL-2.0 · last push 2026-10-10") FOSS синхронизация данных через ваши устройства  
 
 Бесплатный хостинг:  
 [aws.amazon.com/lambda](http://aws.amazon.com/lambda)  

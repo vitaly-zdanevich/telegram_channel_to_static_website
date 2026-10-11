@@ -36,13 +36,13 @@ label = "#webdesign #gentoo #china"
 date = "2026-02-22"
 
 [[extra.related]]
-path = "@/posts/2026-09-21-2174/index.md"
-label = "#song #china #contrast #scream By yukina0000v, source"
-date = "2026-09-21"
+path = "@/posts/2026-10-10-2207/index.md"
+label = "#diy #headphone #china #3dprint By nashallery, source"
+date = "2026-10-10"
 
 [[extra.related]]
-path = "@/posts/2026-09-21-2171/index.md"
-label = "#mem #train #mouth #china #music: Бошки дымятся by Элджей. By an…"
+path = "@/posts/2026-09-21-2174/index.md"
+label = "#song #china #contrast #scream By yukina0000v, source"
 date = "2026-09-21"
 +++
 

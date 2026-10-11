@@ -18,7 +18,7 @@ next_body = "Created browser extension to show Wikimedia Commons links on a muse
 prev_id = 42
 prev_title = ""
 prev_body = "Coin 5 years of Lithuania independence, from #coin"
-views = 49
+views = 50
 ids = [43]
 
 [[extra.related]]

@@ -14589,6 +14589,34 @@
         "kind": "photo",
         "web_key": "5348112484532951263_1245204472_460003551"
       }
+    },
+    {
+      "message_id": 2203,
+      "media_id": 5355196135439539767,
+      "declared_bytes": 154747,
+      "tag": "images-2000",
+      "asset": "telegram-image-2203-5355196135439539767.jpg",
+      "bytes": 154747,
+      "source": {
+        "kind": "photo",
+        "web_key": "5355196135439539767_1246853763_460004919"
+      }
+    },
+    {
+      "message_id": 2210,
+      "media_id": 5355196135439539893,
+      "declared_bytes": 47861,
+      "tag": "images-2000",
+      "asset": "telegram-image-2210-5355196135439539893.jpg",
+      "bytes": 47861
+    },
+    {
+      "message_id": 2211,
+      "media_id": 5355196135439539892,
+      "declared_bytes": 3902,
+      "tag": "images-2000",
+      "asset": "telegram-image-2211-5355196135439539892.jpg",
+      "bytes": 3902
     }
   ]
 }

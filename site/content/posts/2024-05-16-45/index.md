@@ -16,7 +16,7 @@ next_body = ""
 prev_id = 44
 prev_title = ""
 prev_body = "Created browser extension to show Wikimedia Commons links on a museum website moneymuseum.by"
-views = 50
+views = 51
 ids = [45]
 +++
 

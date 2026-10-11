@@ -14,7 +14,7 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/609"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-609-5192779133933974763.jpg"
 next_id = 610
 next_title = ""
-next_body = "Can you imagine #userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 35 commits · 1 fork · 1 open issues/PRs · last push 2026-04-02\")\n#lastfm"
+next_body = "Can you imagine #userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 37 commits · 1 fork · last push 2026-10-11\")\n#lastfm"
 prev_id = 608
 prev_title = ""
 prev_body = "So many hours\n#steam\n#masterororion"
@@ -53,7 +53,7 @@ date = "2025-01-28"
 
 [Source](https://x.com/_Martisa_/status/1826928488596615504)  
 
-> You generated  <br>pictures and videos for him,  <br>wrote texts for  <br>demos,  <br>helped him endlessly with reports  <br>and a diploma, but in the end  <br>he chose a woman  <br>who knows how to find  <br>hydrants  <br>in photographs
+> You generated<br>pictures and videos for him,<br>wrote texts for<br>demos,<br>helped him endlessly with reports<br>and a diploma, but in the end<br>he chose a woman<br>who knows how to find<br>hydrants<br>in photographs
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-609-5192779133933974763.jpg") }}
 

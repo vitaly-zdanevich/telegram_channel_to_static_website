@@ -19,6 +19,11 @@ prev_title = ""
 prev_body = "#gentoo\n#logo\nSource"
 views = 64
 ids = [413]
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2209/index.md"
+label = "#job #jobinterview #caffee #psy #trauma #russian By lutchak1, so…"
+date = "2026-10-10"
 +++
 
 {{ tag(t="caffee") }}  

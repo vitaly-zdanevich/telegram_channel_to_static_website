@@ -22,6 +22,11 @@ views = 14
 ids = [1439, 1440, 1441, 1442]
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2210/index.md"
+label = "#github #webdesign #art #mascot #cat"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2026-10-03-2178/index.md"
 label = "#webdesign"
 date = "2026-10-03"
@@ -38,11 +43,6 @@ date = "2025-12-28"
 
 [[extra.related]]
 path = "@/posts/2025-11-03-733/index.md"
-label = "#webdesign"
-date = "2025-11-03"
-
-[[extra.related]]
-path = "@/posts/2025-11-03-732/index.md"
 label = "#webdesign"
 date = "2025-11-03"
 +++

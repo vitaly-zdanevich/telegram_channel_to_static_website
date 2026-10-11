@@ -17,7 +17,7 @@ next_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\n
 prev_id = 2173
 prev_title = ""
 prev_body = "#mem\n#contrast\n#body\n#sartre\n#freedom\nBy mikhaylovpsy, source"
-views = 38
+views = 39
 ids = [2174]
 
 [[extra.related]]
@@ -41,9 +41,9 @@ label = "#china #beauty #plastic"
 date = "2025-09-30"
 
 [[extra.related]]
-path = "@/posts/2026-09-21-2173/index.md"
-label = "#mem #contrast #body #sartre #freedom By mikhaylovpsy, source"
-date = "2026-09-21"
+path = "@/posts/2026-10-10-2207/index.md"
+label = "#diy #headphone #china #3dprint By nashallery, source"
+date = "2026-10-10"
 +++
 
 {{ tag(t="song") }}  

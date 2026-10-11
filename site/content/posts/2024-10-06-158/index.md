@@ -21,6 +21,11 @@ views = 52
 ids = [158]
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2208/index.md"
+label = "#sounddesign #game By lago, source"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2026-10-08-2186/index.md"
 label = "#game #muonline By monarchsea.mu, source"
 date = "2026-10-08"
@@ -39,11 +44,6 @@ date = "2025-02-21"
 path = "@/posts/2025-02-15-366/index.md"
 label = "#game #man2"
 date = "2025-02-15"
-
-[[extra.related]]
-path = "@/posts/2025-01-15-246/index.md"
-label = "#game #man2"
-date = "2025-01-15"
 +++
 
 Night Watch: Special Edition {{ tag(t="game") }}

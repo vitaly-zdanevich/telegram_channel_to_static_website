@@ -26,6 +26,11 @@ label = "Imagine a 2d side-scroll quest-action game with such visual styl…"
 date = "2025-08-06"
 
 [[extra.related]]
+path = "@/posts/2026-10-10-2210/index.md"
+label = "#github #webdesign #art #mascot #cat"
+date = "2026-10-10"
+
+[[extra.related]]
 path = "@/posts/2025-01-29-345/index.md"
 label = "#lapenko #art #dog #painting #religion"
 date = "2025-01-29"
@@ -39,11 +44,6 @@ date = "2026-04-28"
 path = "@/posts/2026-03-07-1340/index.md"
 label = "#art #shop #продукты #belarus #globustut #year2005"
 date = "2026-03-07"
-
-[[extra.related]]
-path = "@/posts/2025-09-19-673/index.md"
-label = "#mem #memit #kubernetes #art #monalisa #sexy Kubernetes in my da…"
-date = "2025-09-19"
 +++
 
 Girl with a Pearl Earring  
