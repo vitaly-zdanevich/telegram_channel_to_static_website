@@ -541,6 +541,7 @@ fn config_toml(
         ("view_on_telegram", u.view_on_telegram),
         ("forwarded_from", u.forwarded_from),
         ("full_posts", u.full_posts),
+        ("full", u.full),
         ("titles", u.titles),
         ("not_archived", u.not_archived),
         ("video", u.video),
@@ -1871,7 +1872,12 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
 const TAGS_SINGLE: &str = r#"{% extends "base.html" %}
 {% block title %}#{{ term.name }} · {{ config.title }}{% endblock title %}
 {% block content %}
-  <h1>#{{ term.name }}</h1>
+	<h1>#{{ term.name }}
+		{# Full-view slugs come from the generator, not Zola's transliterated taxonomy slugs. #}
+		{% for t in config.extra.tags | default(value=[]) %}{% if t.name == term.name %}
+		<a class='count' href='{{ get_url(path="/tags/" ~ t.slug ~ "/full/") | safe }}' title='{{ config.extra.i18n.full_posts }}'>{{ config.extra.i18n.full }} ↗</a>
+		{% endif %}{% endfor %}
+	</h1>
   <ul class="post-list">
   {% for page in term.pages %}
     <li>

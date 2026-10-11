@@ -50,6 +50,40 @@ fn zola_ready() -> bool {
     false
 }
 
+/// Both tag views link to each other using their own canonical paths. Zola
+/// transliterates taxonomy slugs, unlike the generator's full-view slugs.
+fn assert_tag_view_links(public: &std::path::Path, base: &str) {
+    let heading_link = scraper::Selector::parse("main h1 a.count").unwrap();
+    let origin = reqwest::Url::parse("https://example.test").unwrap();
+    for (titles_slug, full_slug) in [
+        ("greeting", "greeting"),
+        ("aleksandrovshchina", "александровщина"),
+    ] {
+        let titles = format!("tags/{titles_slug}");
+        let full = format!("tags/{full_slug}/full");
+        for (source, target, label) in [(&titles, &full, "full ↗"), (&full, &titles, "titles ↗")]
+        {
+            let html = fs::read_to_string(public.join(source).join("index.html")).unwrap();
+            let document = scraper::Html::parse_document(&html);
+            let link = document
+                .select(&heading_link)
+                .next()
+                .unwrap_or_else(|| panic!("{source} has no tag-view link"));
+            let href = link
+                .value()
+                .attr("href")
+                .expect("tag-view link has no href");
+            assert_eq!(link.text().collect::<String>().trim(), label);
+            assert_eq!(
+                origin.join(href.trim_end_matches('/')).unwrap(),
+                origin.join(&format!("{base}/{target}")).unwrap(),
+                "wrong target from {source}"
+            );
+            assert!(public.join(target).join("index.html").exists());
+        }
+    }
+}
+
 /// The scheduled backup must not force MTProto's potentially multi-gigabyte
 /// download cache into ordinary Git history.
 #[test]
@@ -500,6 +534,7 @@ fn zola_build_produces_expected_html() {
     let read = |rel: &str| {
         fs::read_to_string(public.join(rel)).unwrap_or_else(|e| panic!("read {rel}: {e}"))
     };
+    assert_tag_view_links(&public, "");
 
     // Core pages exist.
     assert!(public.join("index.html").exists(), "home page missing");
@@ -737,6 +772,20 @@ fn zola_build_produces_expected_html() {
         !p3o.contains("<script"),
         "offline pass should strip all <script>:\n{p3o}"
     );
+
+    // Reuse the same fixture to check a GitHub Pages-style deployment prefix.
+    let out = Command::new("zola")
+        .arg("--root")
+        .arg(&s.site)
+        .args(["build", "--base-url", "https://example.test/channel/"])
+        .output()
+        .expect("build with a project base URL");
+    assert!(
+        out.status.success(),
+        "{}",
+        String::from_utf8_lossy(&out.stderr)
+    );
+    assert_tag_view_links(&public, "https://example.test/channel");
 
     let _ = fs::remove_dir_all(&dir);
 }
