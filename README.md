@@ -69,7 +69,9 @@ Written in Rust: a single static binary, easy to run locally or in CI.
 - **Formatting** — bold, italic, strikethrough, code/pre, links and spoilers are
   converted to Markdown (Telegram's UTF-16 entity offsets handled correctly).
 - **Hashtags → tags** — `#hashtags` become Zola `tags` taxonomy terms, so you get
-  tag pages for free, while still showing as text in the post.
+  tag pages for free, while still showing as text in the post. Titles-only tag
+  pages show each post's other tags as clickable links beside its title/date,
+  wrapping below on narrow screens.
 - **Grouped posts** — albums are one post automatically; bursts of messages
   posted at the same instant (e.g. forwarding several at once) are merged.
 - **Forward attribution** — a public “forwarded from” source links to the exact

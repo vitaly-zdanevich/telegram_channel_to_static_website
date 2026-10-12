@@ -84,6 +84,116 @@ fn assert_tag_view_links(public: &std::path::Path, base: &str) {
     }
 }
 
+/// Each titles-only row offers only that post's other tags, while preserving
+/// its post/date destinations under both root and project-subpath deployments.
+fn assert_tag_post_tags(public: &std::path::Path, base: &str) {
+    let row_selector = scraper::Selector::parse(".tag-post-list > li").unwrap();
+    let summary_selector = scraper::Selector::parse(".tag-post-summary").unwrap();
+    let tags_selector = scraper::Selector::parse(".tag-post-tags").unwrap();
+    let link_selector = scraper::Selector::parse("a").unwrap();
+    let day_selector = scraper::Selector::parse("a.day").unwrap();
+    let origin = reqwest::Url::parse("https://example.test").unwrap();
+    let resolve = |href: &str| origin.join(href.trim_end_matches('/')).unwrap();
+    let target = |path: &str| resolve(&format!("{base}/{path}"));
+    let tags = [
+        ("greeting", "greeting"),
+        ("photography", "photography"),
+        ("александровщина", "aleksandrovshchina"),
+        ("video", "video"),
+    ];
+    let posts: [(u64, &[&str]); 4] = [
+        (1, &["greeting", "photography", "александровщина"]),
+        (2, &["greeting", "video"]),
+        (3, &["video"]),
+        (4, &["video"]),
+    ];
+    for (current_tag, slug) in tags {
+        let html = fs::read_to_string(public.join(format!("tags/{slug}/index.html"))).unwrap();
+        let document = scraper::Html::parse_document(&html);
+        let rows: Vec<_> = document.select(&row_selector).collect();
+        let expected_posts: Vec<_> = posts
+            .iter()
+            .filter(|(_, post_tags)| post_tags.contains(&current_tag))
+            .collect();
+        assert_eq!(
+            rows.len(),
+            expected_posts.len(),
+            "wrong rows for #{current_tag}"
+        );
+        for (id, post_tags) in expected_posts {
+            let post_url = target(&format!("posts/{id}"));
+            let row = rows
+                .iter()
+                .find(|row| {
+                    row.select(&summary_selector).any(|summary| {
+                        summary.select(&link_selector).any(|link| {
+                            link.value()
+                                .attr("href")
+                                .is_some_and(|href| resolve(href) == post_url)
+                        })
+                    })
+                })
+                .unwrap_or_else(|| panic!("#{current_tag}: post {id} lost its destination"));
+            let summary = row.select(&summary_selector).next().unwrap();
+            let post_link = summary
+                .select(&link_selector)
+                .find(|link| resolve(link.value().attr("href").unwrap()) == post_url)
+                .unwrap();
+            let label = post_link.text().collect::<String>();
+            if *id == 1 {
+                assert_eq!(label, "Hello world with a photo.");
+            } else {
+                assert_eq!(label, id.to_string());
+            }
+            let day = summary
+                .select(&day_selector)
+                .next()
+                .expect("post date link missing");
+            assert_eq!(
+                resolve(day.value().attr("href").unwrap()),
+                target(&format!("day/2023-11-{:02}", 14 + id)),
+                "#{current_tag}: post {id} date destination changed"
+            );
+            let expected: Vec<_> = post_tags
+                .iter()
+                .filter(|&&tag| tag != current_tag)
+                .collect();
+            let containers: Vec<_> = row.select(&tags_selector).collect();
+            if expected.is_empty() {
+                assert!(
+                    containers.is_empty(),
+                    "post {id} has an empty other-tags container"
+                );
+                continue;
+            }
+            assert_eq!(
+                containers.len(),
+                1,
+                "post {id} needs one other-tags container"
+            );
+            let links: Vec<_> = containers[0].select(&link_selector).collect();
+            assert_eq!(
+                links.len(),
+                expected.len(),
+                "post {id} has the wrong other tags"
+            );
+            for tag in expected {
+                let link = links
+                    .iter()
+                    .find(|link| link.text().collect::<String>() == format!("#{tag}"))
+                    .unwrap_or_else(|| panic!("post {id} is missing other tag #{tag}"));
+                let (_, tag_slug) = tags.iter().find(|(name, _)| name == tag).unwrap();
+                assert_eq!(
+                    resolve(link.value().attr("href").unwrap()),
+                    target(&format!("tags/{tag_slug}")),
+                    "post {id}: #{tag} must link to its titles-only taxonomy page"
+                );
+                assert!(public.join(format!("tags/{tag_slug}/index.html")).exists());
+            }
+        }
+    }
+}
+
 /// The scheduled backup must not force MTProto's potentially multi-gigabyte
 /// download cache into ordinary Git history.
 #[test]
@@ -384,7 +494,7 @@ fn zola_build_produces_expected_html() {
             // A non-ASCII tag guards the tag-count tooltip lookup: a `[t]` map
             // subscript on a Cyrillic key panics Tera mid-char (broke the daily
             // build); the `get(key=t)` filter must handle it.
-            &["greeting", "александровщина"],
+            &["greeting", "photography", "александровщина"],
             vec![Media::Photo {
                 url: "https://example.com/a.jpg".into(),
                 key: Some("k1".into()),
@@ -396,7 +506,7 @@ fn zola_build_produces_expected_html() {
         post(
             2,
             "Watch this clip.",
-            &[],
+            &["greeting"],
             vec![Media::Video {
                 url: "https://example.com/v.mp4".into(),
             }],
@@ -502,7 +612,8 @@ fn zola_build_produces_expected_html() {
                 &render::RenderOpts {
                     ui: &ui,
                     title_max: s.title_max_len,
-                    derive_titles: false,
+                    // Exercise both titled and date/ID-only taxonomy rows.
+                    derive_titles: p.primary_id == 1,
                     strip_title: false,
                     keep_media: s.keep_media,
                     spotify: false,
@@ -535,6 +646,7 @@ fn zola_build_produces_expected_html() {
         fs::read_to_string(public.join(rel)).unwrap_or_else(|e| panic!("read {rel}: {e}"))
     };
     assert_tag_view_links(&public, "");
+    assert_tag_post_tags(&public, "");
 
     // Core pages exist.
     assert!(public.join("index.html").exists(), "home page missing");
@@ -666,7 +778,7 @@ fn zola_build_produces_expected_html() {
     // multiline, with a blank line separating dates from tags.
     assert!(
         home.contains(
-            "title=\"15 November 2023 - 16 November 2023\n\n#greeting — 1\n#video — 1\n#александровщина — 1\""
+            "title=\"15 November 2023 - 16 November 2023\n\n#greeting — 2\n#photography — 1\n#video — 1\n#александровщина — 1\""
         ),
         "Older page tooltip dates or tags are missing or unsorted: {home}"
     );
@@ -786,6 +898,7 @@ fn zola_build_produces_expected_html() {
         String::from_utf8_lossy(&out.stderr)
     );
     assert_tag_view_links(&public, "https://example.test/channel");
+    assert_tag_post_tags(&public, "https://example.test/channel");
 
     let _ = fs::remove_dir_all(&dir);
 }

@@ -1878,15 +1878,25 @@ const TAGS_SINGLE: &str = r#"{% extends "base.html" %}
 		<a class='count' href='{{ get_url(path="/tags/" ~ t.slug ~ "/full/") | safe }}' title='{{ config.extra.i18n.full_posts }}'>{{ config.extra.i18n.full }} ↗</a>
 		{% endif %}{% endfor %}
 	</h1>
-  <ul class="post-list">
-  {% for page in term.pages %}
-    <li>
-      {% if page.title %}<a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>{% endif %}
-      <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
-      {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
-    </li>
-  {% endfor %}
-  </ul>
+	<ul class='post-list tag-post-list'>
+	{% for page in term.pages %}
+		<li>
+			<span class='tag-post-summary'>
+				{% if page.title %}<a href='{{ page.permalink | safe }}' title='{{ page.title }}'>{{ page.title }}</a>{% endif %}
+				<a class='day' href='{{ get_url(path="/day/" ~ page.extra.day ~ "/") | safe }}'><time datetime='{{ page.date }}' title='{{ page.date | date(format="%A %H:%M", locale=config.extra.date_locale) }}'>{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
+				{% if not page.title %}<a class='pid' href='{{ page.permalink | safe }}'>{{ page.extra.id }}</a>{% endif %}
+			</span>
+			{# The heading already names this tag; keep only this post's other tags. #}
+			{% if page.taxonomies.tags | length > 1 %}
+			<span class='tag-post-tags'>
+				{% for t in page.taxonomies.tags %}{% if t != term.name %}
+				<a href='{{ get_taxonomy_url(kind="tags", name=t) | safe }}'>#{{ t }}</a>
+				{% endif %}{% endfor %}
+			</span>
+			{% endif %}
+		</li>
+	{% endfor %}
+	</ul>
 {% endblock content %}
 "#;
 
@@ -2238,6 +2248,17 @@ input.site-search { margin-left: auto; }
 .post-list { list-style: none; padding: 0; }
 .post-list li { padding: .2rem 0; }
 .post-list time { color: var(--muted); font-size: .85em; margin-left: .5rem; }
+/* Titles-only tag rows pair each post with its other tags, independently of
+   the optional full-post tag footer. Long titles and hashtags must wrap. */
+.tag-post-list > li {
+	display: grid;
+	grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
+	gap: .25rem 1rem;
+	align-items: baseline;
+}
+.tag-post-summary { min-width: 0; overflow-wrap: anywhere; }
+.tag-post-tags { display: flex; flex-wrap: wrap; gap: 0 .65rem; min-width: 0; font-size: .9em; }
+.tag-post-tags a { min-width: 0; overflow-wrap: anywhere; }
 .post { margin: 0 0 2.5rem; }
 .post.forwarded { background: var(--fwd-bg); border-radius: 8px; padding: .75rem 1rem; }
 .about-avatar { float: left; margin: 0 1rem .5rem 0; }
@@ -2289,6 +2310,7 @@ table.cal td.c3 a { font-size: 1.35rem; font-weight: 800; }
 @media (max-width: 640px) {
   body { width: auto; padding: 1rem .5rem; }
   .cal-months { gap: .9rem; }
+	.tag-post-list > li { grid-template-columns: minmax(0, 1fr); }
 }
 "#;
 
