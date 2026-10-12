@@ -18,6 +18,7 @@ use std::time::Duration;
 
 use base64::Engine;
 use grammers_client::grammers_tl_types as tl;
+use grammers_client::types::photo_sizes::PhotoSize;
 use grammers_client::types::{Downloadable, Media as TlMedia, Peer};
 use grammers_client::{Client, SignInError};
 use grammers_mtsender::{InvocationError, SenderPool};
@@ -72,6 +73,118 @@ struct ReleasedImage {
     /// reused with live MTProto metadata, but never guessed into a web slot.
     #[serde(default, skip_serializing_if = "Option::is_none")]
     source: Option<ReleasedImageSource>,
+    /// Exact photo rendition; absent in legacy records and image documents.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    photo_variant: Option<PhotoVariant>,
+}
+
+/// A rendition's identity must include resolution, not just its byte count:
+/// different-sized photos can have equal compressed lengths.
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+struct PhotoVariant {
+    kind: String,
+    width: i32,
+    height: i32,
+    bytes: i64,
+}
+
+impl PhotoVariant {
+    /// Reject inline thumbnails and invalid metadata before selecting a file.
+    fn from_size(size: &PhotoSize) -> Option<Self> {
+        let (width, height, bytes) = match size {
+            PhotoSize::Size(size) => (size.width, size.height, i64::from(size.size)),
+            PhotoSize::Progressive(size) => (
+                size.width,
+                size.height,
+                i64::from(size.sizes.iter().copied().max().unwrap_or(0)),
+            ),
+            _ => return None,
+        };
+        let variant = Self {
+            kind: size.photo_type(),
+            width,
+            height,
+            bytes,
+        };
+        variant.valid().then_some(variant)
+    }
+
+    fn valid(&self) -> bool {
+        self.width > 0
+            && self.height > 0
+            && self.bytes > 0
+            && !self.kind.is_empty()
+            && self.kind.bytes().all(|byte| byte.is_ascii_alphanumeric())
+    }
+
+    /// Path-safe identity shared by local caches and immutable Release assets.
+    fn suffix(&self) -> String {
+        format!(
+            "-{}-{}x{}-{}",
+            self.kind, self.width, self.height, self.bytes
+        )
+    }
+}
+
+/// Bind the selected location and expected length together so an exact-size
+/// download can never request one rendition but validate another one's bytes.
+struct ImageDownload {
+    location: tl::enums::InputFileLocation,
+    dc_id: i32,
+    declared_bytes: i64,
+    photo_variant: Option<PhotoVariant>,
+}
+
+impl Downloadable for ImageDownload {
+    fn to_raw_input_location(&self) -> Option<tl::enums::InputFileLocation> {
+        Some(self.location.clone())
+    }
+
+    fn size(&self) -> Option<usize> {
+        usize::try_from(self.declared_bytes)
+            .ok()
+            .filter(|size| *size > 0)
+    }
+}
+
+/// Select downloadable photos by pixel area, breaking ties by byte count and
+/// type for deterministic results. Image documents retain their original file.
+fn image_download(media: &TlMedia) -> Result<ImageDownload> {
+    let dc_id = image_media_dc_id(media).context("original image has no Telegram data center")?;
+    let (location, declared_bytes, photo_variant) = match media {
+        TlMedia::Photo(photo) => {
+            let (size, variant) = photo
+                .thumbs()
+                .into_iter()
+                .filter_map(|size| PhotoVariant::from_size(&size).map(|variant| (size, variant)))
+                .max_by_key(|(_, variant)| {
+                    (
+                        i64::from(variant.width) * i64::from(variant.height),
+                        variant.bytes,
+                        variant.kind.clone(),
+                    )
+                })
+                .context("photo has no downloadable positive-resolution variant")?;
+            (size.to_raw_input_location(), variant.bytes, Some(variant))
+        }
+        TlMedia::Document(document) => (document.to_raw_input_location(), document.size(), None),
+        _ => bail!("unsupported original image media"),
+    };
+    Ok(ImageDownload {
+        location: location.context("original image has no Telegram download location")?,
+        dc_id,
+        declared_bytes,
+        photo_variant,
+    })
+}
+
+/// Identify the rendition older versions downloaded via grammers' byte ranking.
+/// This permits reuse of confirmed legacy assets only when both selectors agree.
+fn legacy_photo_variant(media: &TlMedia) -> Option<PhotoVariant> {
+    let TlMedia::Photo(photo) = media else {
+        return None;
+    };
+    PhotoVariant::from_size(&photo.thumbs().into_iter().max_by_key(|size| size.size())?)
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
@@ -83,7 +196,20 @@ enum ReleasedImageSource {
 
 impl ReleasedImage {
     fn matches(&self, media_id: i64, target: &ImageReleaseTarget) -> bool {
-        self.media_id == media_id && self.tag == target.tag && self.asset == target.asset
+        self.media_id == media_id
+            && self.tag == target.tag
+            && self.asset == target.asset
+            && self.bytes > 0
+            && (self.declared_bytes <= 0 || self.bytes == self.declared_bytes as u64)
+    }
+
+    /// Legacy photos can be retained without a download when live metadata
+    /// proves our old selector chose this same rendition. Documents need none.
+    fn matches_download(&self, download: &ImageDownload, legacy: Option<&PhotoVariant>) -> bool {
+        self.declared_bytes == download.declared_bytes
+            && self.bytes > 0
+            && (download.declared_bytes <= 0 || self.bytes == download.declared_bytes as u64)
+            && self.photo_variant.as_ref().or(legacy) == download.photo_variant.as_ref()
     }
 
     fn target(&self, repo: &str) -> Option<ImageReleaseTarget> {
@@ -94,7 +220,15 @@ impl ReleasedImage {
         ) {
             return None;
         }
-        let target = image_release_target(repo, self.message_id, self.media_id, ext);
+        let legacy = image_release_target(repo, self.message_id, self.media_id, ext);
+        if self.tag == legacy.tag && self.asset == legacy.asset {
+            return Some(legacy);
+        }
+        let variant = self
+            .photo_variant
+            .as_ref()
+            .filter(|variant| variant.valid())?;
+        let target = photo_release_target(repo, self.message_id, self.media_id, ext, Some(variant));
         (self.tag == target.tag && self.asset == target.asset).then_some(target)
     }
 }
@@ -338,14 +472,39 @@ fn image_release_target(
     media_id: i64,
     ext: &str,
 ) -> ImageReleaseTarget {
+    photo_release_target(repo, message_id, media_id, ext, None)
+}
+
+/// New photo renditions get new URLs, including equal-byte-size replacements.
+/// The workflow uploads them before deploying and cleans superseded assets later.
+fn photo_release_target(
+    repo: &str,
+    message_id: i32,
+    media_id: i64,
+    ext: &str,
+    variant: Option<&PhotoVariant>,
+) -> ImageReleaseTarget {
     let bucket = message_id.div_euclid(IMAGE_RELEASE_BUCKET) * IMAGE_RELEASE_BUCKET;
     let tag = format!("images-{bucket:04}");
-    let asset = format!("telegram-image-{message_id}-{media_id}.{ext}");
+    let suffix = variant.map(PhotoVariant::suffix).unwrap_or_default();
+    let asset = format!("telegram-image-{message_id}-{media_id}{suffix}.{ext}");
     let url = format!(
         "{}/releases/download/{tag}/{asset}",
         repo.trim_end_matches('/')
     );
     ImageReleaseTarget { tag, asset, url }
+}
+
+/// Rendition-qualified photo caches cannot mistake a same-length thumbnail for
+/// a higher-resolution original. Image-document cache names remain unchanged.
+fn image_cache_path(
+    cache: &Path,
+    media_id: i64,
+    ext: &str,
+    variant: Option<&PhotoVariant>,
+) -> PathBuf {
+    let suffix = variant.map(PhotoVariant::suffix).unwrap_or_default();
+    cache.join(format!("image-{media_id}{suffix}.{ext}"))
 }
 
 type ImageReleaseInventory = BTreeMap<(String, String), u64>;
@@ -649,19 +808,15 @@ async fn copy_image_download_authorization(client: &Client, dc_id: i32) -> Resul
 /// of the 512 KiB request that returned an empty result for affected photos.
 async fn fetch_exact_image_chunk(
     client: &Client,
-    media: &TlMedia,
+    download: &ImageDownload,
     offset: u64,
     logical_bytes: usize,
 ) -> Result<Vec<u8>> {
-    let location = media
-        .to_raw_input_location()
-        .context("original image has no Telegram download location")?;
-    let mut dc_id =
-        image_media_dc_id(media).context("original image has no Telegram data center")?;
+    let mut dc_id = download.dc_id;
     let request = tl::functions::upload::GetFile {
         precise: true,
         cdn_supported: false,
-        location,
+        location: download.location.clone(),
         offset: i64::try_from(offset)?,
         limit: image_download_wire_limit(logical_bytes),
     };
@@ -701,13 +856,13 @@ async fn fetch_exact_image_chunk(
 /// Bound one direct image-chunk fetch without limiting the whole image.
 async fn fetch_exact_image_chunk_with_timeout(
     client: &Client,
-    media: &TlMedia,
+    download: &ImageDownload,
     offset: u64,
     logical_bytes: usize,
 ) -> Result<Vec<u8>> {
     match tokio::time::timeout(
         IMAGE_DOWNLOAD_TIMEOUT,
-        fetch_exact_image_chunk(client, media, offset, logical_bytes),
+        fetch_exact_image_chunk(client, download, offset, logical_bytes),
     )
     .await
     {
@@ -723,11 +878,11 @@ async fn fetch_exact_image_chunk_with_timeout(
 /// partial file that a later attempt mistakes for a complete cached original.
 async fn download_image_to_cache(
     client: &Client,
-    media: &TlMedia,
+    download: &ImageDownload,
     destination: &Path,
     message_id: i32,
-    declared_bytes: i64,
 ) -> Result<()> {
+    let declared_bytes = download.declared_bytes;
     if let Ok(metadata) = tokio::fs::metadata(destination).await {
         let bytes = metadata.len();
         if bytes > 0 && (declared_bytes <= 0 || bytes == declared_bytes as u64) {
@@ -749,12 +904,15 @@ async fn download_image_to_cache(
     let _ = tokio::fs::remove_file(&part).await;
     let result = if declared_bytes > 0 {
         complete_exact_image_download(&part, declared_bytes as u64, |offset, logical_bytes| {
-            fetch_exact_image_chunk_with_timeout(client, media, offset, logical_bytes)
+            fetch_exact_image_chunk_with_timeout(client, download, offset, logical_bytes)
         })
         .await
     } else {
-        match tokio::time::timeout(IMAGE_DOWNLOAD_TIMEOUT, client.download_media(media, &part))
-            .await
+        match tokio::time::timeout(
+            IMAGE_DOWNLOAD_TIMEOUT,
+            client.download_media(download, &part),
+        )
+        .await
         {
             Ok(result) => result.context("downloading size-unknown image through grammers"),
             Err(_) => Err(anyhow!(
@@ -819,7 +977,7 @@ async fn download_optional_media_to_cache(
 async fn archive_image(
     client: &Client,
     media: &TlMedia,
-    s: &Settings,
+    site: &Path,
     cache: &Path,
     repo: Option<&str>,
     releases: &mut BTreeMap<i32, ReleasedImage>,
@@ -827,26 +985,40 @@ async fn archive_image(
     release_downloads_left: &mut usize,
     message_id: i32,
     media_id: i64,
-    declared_bytes: i64,
     ext: &str,
     source: Option<ReleasedImageSource>,
 ) -> Result<ArchivedImage> {
+    let download = image_download(media)?;
+    let declared_bytes = download.declared_bytes;
+    let legacy_variant = legacy_photo_variant(media);
     if let Some(repo) = repo {
         if !release_image_size_allowed(declared_bytes) {
             bail!("message {message_id}: original image is at/over the 2 GiB Release limit");
         }
-        let target = image_release_target(repo, message_id, media_id, ext);
         if let Some(record) = releases.get_mut(&message_id) {
-            if record.matches(media_id, &target) {
-                if record.declared_bytes != declared_bytes || record.source != source {
-                    record.declared_bytes = declared_bytes;
-                    record.source = source;
-                    *manifest_dirty = true;
+            if let Some(target) = record.target(repo) {
+                if record.matches(media_id, &target)
+                    && record.matches_download(&download, legacy_variant.as_ref())
+                {
+                    if record.photo_variant != download.photo_variant || record.source != source {
+                        record.photo_variant = download.photo_variant;
+                        record.source = source;
+                        *manifest_dirty = true;
+                    }
+                    return Ok(ArchivedImage::Release(target.url));
                 }
-                return Ok(ArchivedImage::Release(target.url));
+            }
+            if let Some(variant) = &download.photo_variant {
+                tracing::info!(
+                    "message {message_id}: archived photo needs rendition {} ({}x{}, {} bytes)",
+                    variant.kind,
+                    variant.width,
+                    variant.height,
+                    variant.bytes
+                );
             }
         }
-        // Live MTProto has proved that this message now carries different media.
+        // Live metadata has proved a different media item or photo rendition.
         // Remove the stale claim even when this run has no backfill slot left.
         if releases.remove(&message_id).is_some() {
             *manifest_dirty = true;
@@ -855,14 +1027,20 @@ async fn archive_image(
             return Ok(ArchivedImage::Deferred);
         }
 
-        let cached = cache.join(format!("image-{media_id}.{ext}"));
-        download_image_to_cache(client, media, &cached, message_id, declared_bytes).await?;
+        let target = photo_release_target(
+            repo,
+            message_id,
+            media_id,
+            ext,
+            download.photo_variant.as_ref(),
+        );
+        let cached = image_cache_path(cache, media_id, ext, download.photo_variant.as_ref());
+        download_image_to_cache(client, &download, &cached, message_id).await?;
         let bytes = tokio::fs::metadata(&cached).await?.len();
         if bytes >= MAX_FILE_BYTES as u64 {
             bail!("message {message_id}: downloaded original image is at/over the 2 GiB Release limit");
         }
-        let staged = s
-            .site
+        let staged = site
             .join(IMAGE_RELEASE_STAGING)
             .join(&target.tag)
             .join(&target.asset);
@@ -879,6 +1057,7 @@ async fn archive_image(
                 asset: target.asset,
                 bytes,
                 source,
+                photo_variant: download.photo_variant,
             },
         );
         *manifest_dirty = true;
@@ -886,8 +1065,8 @@ async fn archive_image(
         return Ok(ArchivedImage::Release(target.url));
     }
 
-    let path = cache.join(format!("image-{media_id}.{ext}"));
-    download_image_to_cache(client, media, &path, message_id, declared_bytes).await?;
+    let path = image_cache_path(cache, media_id, ext, download.photo_variant.as_ref());
+    download_image_to_cache(client, &download, &path, message_id).await?;
     Ok(ArchivedImage::Local(path))
 }
 
@@ -1350,7 +1529,7 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     let image = match archive_image(
                         &client,
                         &media,
-                        s,
+                        &s.site,
                         &cache,
                         release_repo,
                         &mut released_images,
@@ -1358,7 +1537,6 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                         &mut release_downloads_left,
                         id,
                         doc.id(),
-                        doc.size(),
                         image_extension,
                         source,
                     )
@@ -1402,7 +1580,7 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                 let image = match archive_image(
                     &client,
                     &media,
-                    s,
+                    &s.site,
                     &cache,
                     release_repo,
                     &mut released_images,
@@ -1410,7 +1588,6 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
                     &mut release_downloads_left,
                     id,
                     photo.id(),
-                    photo.size(),
                     "jpg",
                     None,
                 )
@@ -1709,6 +1886,405 @@ async fn resolve_custom_emoji_alts(client: &Client, ids: &mut Vec<i64>) -> HashM
 mod tests {
     use super::*;
 
+    /// Synthetic Telegram metadata: dimensions mirror the report, while byte
+    /// counts are deliberately chosen to make file-size ranking select badly.
+    fn photo_resolution_fixture() -> TlMedia {
+        TlMedia::Photo(grammers_client::types::Photo::from_raw(
+            tl::types::Photo {
+                has_stickers: false,
+                id: 42,
+                access_hash: 0,
+                file_reference: Vec::new(),
+                date: 0,
+                sizes: vec![
+                    tl::types::PhotoSize {
+                        r#type: "x".into(),
+                        w: 800,
+                        h: 505,
+                        size: 47_861,
+                    }
+                    .into(),
+                    tl::types::PhotoSizeProgressive {
+                        r#type: "y".into(),
+                        w: 875,
+                        h: 552,
+                        sizes: vec![8_000, 45_000, 20_000],
+                    }
+                    .into(),
+                ],
+                video_sizes: None,
+                dc_id: 2,
+            }
+            .into(),
+        ))
+    }
+
+    /// Modify only advertised sizes, retaining a consistent mock photo identity.
+    fn fixture_photo_sizes(media: &mut TlMedia) -> &mut Vec<tl::enums::PhotoSize> {
+        let TlMedia::Photo(photo) = media else {
+            panic!("expected photo")
+        };
+        let Some(tl::enums::Photo::Photo(photo)) = photo.raw.photo.as_mut() else {
+            panic!("expected photo metadata");
+        };
+        &mut photo.sizes
+    }
+
+    /// A valid legacy manifest entry whose exact bytes were confirmed remotely.
+    fn legacy_photo_record(bytes: i64) -> ReleasedImage {
+        let target = image_release_target("https://github.com/o/r", 2210, 42, "jpg");
+        ReleasedImage {
+            message_id: 2210,
+            media_id: 42,
+            declared_bytes: bytes,
+            tag: target.tag,
+            asset: target.asset,
+            bytes: bytes as u64,
+            source: None,
+            photo_variant: None,
+        }
+    }
+
+    #[test]
+    fn original_photo_prefers_resolution_over_compressed_bytes() {
+        let media = photo_resolution_fixture();
+        let download = image_download(&media).unwrap();
+        let Some(tl::enums::InputFileLocation::InputPhotoFileLocation(location)) =
+            download.to_raw_input_location()
+        else {
+            panic!("expected a photo download location");
+        };
+        assert_eq!(location.thumb_size, "y");
+        assert_eq!(download.declared_bytes, 45_000);
+        assert_eq!(download.size(), Some(45_000));
+        assert_eq!(download.dc_id, 2);
+        let variant = download.photo_variant.unwrap();
+        assert_eq!((variant.width, variant.height), (875, 552));
+    }
+
+    #[test]
+    fn release_original_does_not_reuse_a_different_size_for_the_same_media() {
+        let target = image_release_target("https://github.com/o/r", 2210, 42, "jpg");
+        let record = ReleasedImage {
+            message_id: 2210,
+            media_id: 42,
+            declared_bytes: 45_000,
+            tag: target.tag.clone(),
+            asset: target.asset.clone(),
+            bytes: 47_861,
+            source: None,
+            photo_variant: None,
+        };
+        assert!(!record.matches(42, &target));
+    }
+
+    #[test]
+    fn photo_selection_ignores_inline_and_invalid_sizes_and_uses_pixel_area() {
+        let mut media = photo_resolution_fixture();
+        let sizes = fixture_photo_sizes(&mut media);
+        sizes.push(
+            tl::types::PhotoCachedSize {
+                r#type: "c".into(),
+                w: 3000,
+                h: 3000,
+                bytes: vec![0; 60_000],
+            }
+            .into(),
+        );
+        for (kind, width, height, bytes) in [
+            ("w", 2000, 100, 80_000), // Wider, but fewer pixels.
+            ("z", 3000, 3000, 0),
+            ("n", 3000, 3000, -1),
+            ("h", 3000, -1, 80_000),
+            ("../unsafe", 3000, 3000, 80_000),
+        ] {
+            sizes.push(
+                tl::types::PhotoSize {
+                    r#type: kind.into(),
+                    w: width,
+                    h: height,
+                    size: bytes,
+                }
+                .into(),
+            );
+        }
+        assert_eq!(
+            image_download(&media).unwrap().photo_variant.unwrap().kind,
+            "y"
+        );
+        fixture_photo_sizes(&mut media).drain(..2);
+        assert_eq!(
+            image_download(&media).unwrap().photo_variant.unwrap().kind,
+            "w"
+        );
+        fixture_photo_sizes(&mut media).remove(1);
+        assert!(image_download(&media).is_err());
+    }
+
+    #[test]
+    fn photo_selection_breaks_resolution_ties_by_bytes_then_type() {
+        let mut media = photo_resolution_fixture();
+        let sizes = fixture_photo_sizes(&mut media);
+        for kind in ["a", "b"] {
+            sizes.push(
+                tl::types::PhotoSize {
+                    r#type: kind.into(),
+                    w: 875,
+                    h: 552,
+                    size: 46_000,
+                }
+                .into(),
+            );
+        }
+        assert_eq!(
+            image_download(&media).unwrap().photo_variant.unwrap().kind,
+            "b"
+        );
+        fixture_photo_sizes(&mut media).reverse();
+        assert_eq!(
+            image_download(&media).unwrap().photo_variant.unwrap().kind,
+            "b"
+        );
+    }
+
+    #[test]
+    fn image_document_download_preserves_the_file_instead_of_its_thumbnail() {
+        let media = TlMedia::from_raw(
+            tl::types::MessageMediaDocument {
+                nopremium: false,
+                spoiler: false,
+                video: false,
+                round: false,
+                voice: false,
+                document: Some(
+                    tl::types::Document {
+                        id: 42,
+                        access_hash: 0,
+                        file_reference: Vec::new(),
+                        date: 0,
+                        mime_type: "image/png".into(),
+                        size: 16_967_122,
+                        thumbs: Some(vec![tl::types::PhotoSize {
+                            r#type: "x".into(),
+                            w: 800,
+                            h: 505,
+                            size: 47_861,
+                        }
+                        .into()]),
+                        video_thumbs: None,
+                        dc_id: 4,
+                        attributes: Vec::new(),
+                    }
+                    .into(),
+                ),
+                alt_documents: None,
+                video_cover: None,
+                video_timestamp: None,
+                ttl_seconds: None,
+            }
+            .into(),
+        )
+        .unwrap();
+        let download = image_download(&media).unwrap();
+        let Some(tl::enums::InputFileLocation::InputDocumentFileLocation(location)) =
+            download.to_raw_input_location()
+        else {
+            panic!("expected original document location");
+        };
+        assert_eq!(location.id, 42);
+        assert!(location.thumb_size.is_empty());
+        assert_eq!(download.declared_bytes, 16_967_122);
+        assert_eq!(download.dc_id, 4);
+        assert_eq!(download.photo_variant, None);
+        assert_eq!(
+            image_cache_path(Path::new("cache"), 42, "png", None),
+            Path::new("cache/image-42.png")
+        );
+        assert!(legacy_photo_record(download.declared_bytes).matches_download(&download, None));
+    }
+
+    #[test]
+    fn legacy_release_reuse_requires_the_old_and_new_selectors_to_agree() {
+        let mut media = photo_resolution_fixture();
+        let record = legacy_photo_record(47_861);
+        let selected = image_download(&media).unwrap();
+        assert!(!record.matches_download(&selected, legacy_photo_variant(&media).as_ref()));
+
+        // With only the old rendition available, no re-download is necessary.
+        fixture_photo_sizes(&mut media).truncate(1);
+        let selected = image_download(&media).unwrap();
+        assert!(record.matches_download(&selected, legacy_photo_variant(&media).as_ref()));
+        let mut annotated = record.clone();
+        annotated.photo_variant = selected.photo_variant;
+        assert_eq!(
+            annotated.target("https://github.com/o/r").unwrap().asset,
+            record.asset
+        );
+
+        // Old JSON without rendition metadata remains readable in manifest v2.
+        let json = serde_json::to_string(&record).unwrap();
+        assert!(!json.contains("photo_variant"));
+        assert_eq!(
+            serde_json::from_str::<ReleasedImage>(&json)
+                .unwrap()
+                .photo_variant,
+            None
+        );
+    }
+
+    #[test]
+    fn equal_byte_photo_renditions_have_distinct_cache_and_release_identities() {
+        let selected = image_download(&photo_resolution_fixture()).unwrap();
+        let variant = selected.photo_variant.as_ref().unwrap();
+        let mut smaller = variant.clone();
+        smaller.width = 800;
+        smaller.height = 505;
+        let old_target =
+            photo_release_target("https://github.com/o/r", 2210, 42, "jpg", Some(&smaller));
+        let new_target =
+            photo_release_target("https://github.com/o/r", 2210, 42, "jpg", Some(variant));
+        assert_ne!(old_target.url, new_target.url);
+        let cache = Path::new("cache");
+        assert_ne!(
+            image_cache_path(cache, 42, "jpg", Some(&smaller)),
+            image_cache_path(cache, 42, "jpg", Some(variant))
+        );
+        assert_ne!(
+            image_cache_path(cache, 42, "jpg", None),
+            image_cache_path(cache, 42, "jpg", Some(variant))
+        );
+        let mut record = legacy_photo_record(selected.declared_bytes);
+        assert!(!record.matches_download(&selected, Some(&smaller)));
+        record.photo_variant = Some(smaller);
+        assert!(!record.matches_download(&selected, Some(variant)));
+        record.photo_variant = Some(variant.clone());
+        record.asset = new_target.asset.clone();
+        assert!(record.matches_download(&selected, None));
+        assert_eq!(
+            record.target("https://github.com/o/r").unwrap().url,
+            new_target.url
+        );
+        record.photo_variant.as_mut().unwrap().kind = "../../bad".into();
+        assert!(record.target("https://github.com/o/r").is_none());
+    }
+
+    /// Exercise production selection, cache lookup, staging, reuse and fallback
+    /// with an offline client. Any attempted Telegram request fails this test.
+    #[tokio::test]
+    async fn archive_upgrades_same_size_legacy_photo_and_reuses_the_new_rendition() {
+        let dir =
+            std::env::temp_dir().join(format!("tg2zola-photo-rendition-{}", std::process::id()));
+        let cache = dir.join("cache");
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(&cache).unwrap();
+        let mut media = photo_resolution_fixture();
+        let sizes = fixture_photo_sizes(&mut media);
+        let tl::enums::PhotoSize::Size(small) = &mut sizes[0] else {
+            unreachable!()
+        };
+        small.size = 45_000;
+        // grammers breaks byte ties by vector order, choosing the smaller last item.
+        sizes.reverse();
+        let selected = image_download(&media).unwrap();
+        assert_ne!(legacy_photo_variant(&media), selected.photo_variant);
+        let old_cache = image_cache_path(&cache, 42, "jpg", None);
+        std::fs::write(&old_cache, vec![1; 45_000]).unwrap();
+        let new_cache = image_cache_path(&cache, 42, "jpg", selected.photo_variant.as_ref());
+        let expected = vec![2; 45_000];
+        std::fs::write(&new_cache, &expected).unwrap();
+        let pool = SenderPool::new(Arc::new(TlSession::new()), 1);
+        let client = Client::new(&pool);
+        drop(pool); // No runner, credentials or network access.
+        let mut releases = BTreeMap::from([(2210, legacy_photo_record(45_000))]);
+        let mut dirty = false;
+        let mut budget = 1;
+        let archived = archive_image(
+            &client,
+            &media,
+            &dir,
+            &cache,
+            Some("https://github.com/o/r"),
+            &mut releases,
+            &mut dirty,
+            &mut budget,
+            2210,
+            42,
+            "jpg",
+            None,
+        )
+        .await
+        .unwrap();
+        let ArchivedImage::Release(url) = archived else {
+            panic!("expected Release photo")
+        };
+        assert!(url.ends_with("/telegram-image-2210-42-y-875x552-45000.jpg"));
+        let record = releases.get(&2210).unwrap();
+        assert_eq!(
+            std::fs::read(
+                dir.join(IMAGE_RELEASE_STAGING)
+                    .join(&record.tag)
+                    .join(&record.asset)
+            )
+            .unwrap(),
+            expected
+        );
+        assert_eq!(std::fs::read(&old_cache).unwrap(), vec![1; 45_000]);
+        assert_eq!(record.photo_variant, selected.photo_variant);
+        assert!(dirty);
+        assert_eq!(budget, 0);
+
+        // A confirmed rendition is reused even after the download budget ends.
+        dirty = false;
+        let reused = archive_image(
+            &client,
+            &media,
+            &dir,
+            &cache,
+            Some("https://github.com/o/r"),
+            &mut releases,
+            &mut dirty,
+            &mut budget,
+            2210,
+            42,
+            "jpg",
+            None,
+        )
+        .await
+        .unwrap();
+        assert!(matches!(reused, ArchivedImage::Release(reused_url) if reused_url == url));
+        assert!(!dirty);
+
+        // Persisted rendition URLs remain usable without live Telegram access.
+        releases.get_mut(&2210).unwrap().source = Some(ReleasedImageSource::Photo {
+            web_key: "web-key".into(),
+        });
+        write_pending_image_release_manifest(&dir, "channel", &releases).unwrap();
+        std::fs::rename(
+            dir.join(IMAGE_RELEASE_PENDING),
+            dir.join(IMAGE_RELEASE_MANIFEST),
+        )
+        .unwrap();
+        let record = releases.get(&2210).unwrap();
+        std::fs::write(
+            dir.join(IMAGE_RELEASE_INVENTORY),
+            format!("{}\t{}\t{}\n", record.tag, record.asset, record.bytes),
+        )
+        .unwrap();
+        let loaded = load_image_release_manifest(&dir, "channel");
+        let record = loaded.get(&2210).unwrap();
+        let mut web = vec![Media::Photo {
+            url: "https://cdn.example/preview.jpg".into(),
+            key: Some("web-key".into()),
+        }];
+        assert!(apply_released_image(
+            &mut web,
+            record,
+            record.target("https://github.com/o/r").unwrap()
+        ));
+        assert!(matches!(&web[0], Media::ReleasePhoto { url: fallback } if fallback == &url));
+        std::fs::remove_dir_all(dir).unwrap();
+    }
+
     fn forward_header(
         from_id: Option<tl::enums::Peer>,
         channel_post: Option<i32>,
@@ -1944,6 +2520,7 @@ mod tests {
             source: Some(ReleasedImageSource::Photo {
                 web_key: "photo-key".into(),
             }),
+            photo_variant: None,
         };
 
         assert!(record.matches(42, &target));
@@ -1974,6 +2551,7 @@ mod tests {
                 source: Some(ReleasedImageSource::Photo {
                     web_key: "photo-key".into(),
                 }),
+                photo_variant: None,
             },
         );
 
@@ -2011,6 +2589,7 @@ mod tests {
             source: Some(ReleasedImageSource::Photo {
                 web_key: "kept-photo".into(),
             }),
+            photo_variant: None,
         };
         let document_target = image_release_target("https://github.com/o/r", 1368, 43, "png");
         let document = ReleasedImage {
@@ -2023,6 +2602,7 @@ mod tests {
             source: Some(ReleasedImageSource::Document {
                 filename: "pasted image.png".into(),
             }),
+            photo_variant: None,
         };
         let mut media = vec![
             Media::Photo {
@@ -2091,6 +2671,7 @@ mod tests {
                 asset: target.asset,
                 bytes: 123,
                 source: None,
+                photo_variant: None,
             },
         )]);
         let mut media = vec![

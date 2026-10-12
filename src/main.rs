@@ -1882,6 +1882,49 @@ mod tests {
         std::fs::remove_dir_all(dir).unwrap();
     }
 
+    /// Rendition suffixes keep the message identity used by Release accounting.
+    #[test]
+    fn release_image_message_id_accepts_legacy_and_rendition_asset_names() {
+        for asset in [
+            "telegram-image-2210-42.jpg",
+            "telegram-image-2210-42-y-875x552-47861.jpg",
+            "telegram-image-2210-42-w-2560x1440-120000.jpg",
+        ] {
+            assert_eq!(release_image_message_id(asset), Some(2210), "{asset}");
+        }
+        for asset in ["other-2210-42.jpg", "telegram-image-invalid-42.jpg"] {
+            assert_eq!(release_image_message_id(asset), None, "{asset}");
+        }
+    }
+
+    /// A new rendition replaces older assets even when its byte count is equal.
+    #[test]
+    fn release_staging_adjustment_replaces_same_size_photo_renditions() {
+        let dir = std::env::temp_dir().join(format!(
+            "tg2zola-release-rendition-adjustment-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(dir.join(".image-releases/images-2000")).unwrap();
+        std::fs::write(
+            dir.join(".image-releases/images-2000/telegram-image-2210-42-y-875x552-11.jpg"),
+            b"new-image!!",
+        )
+        .unwrap();
+        std::fs::write(
+            dir.join(".image-releases.remote.tsv"),
+            concat!(
+                "images-2000\ttelegram-image-2210-42.jpg\t11\n",
+                "images-2000\ttelegram-image-2210-42-x-800x505-11.jpg\t11\n",
+                "images-2000\ttelegram-image-2211-43-y-1200x800-7.jpg\t7\n",
+            ),
+        )
+        .unwrap();
+
+        assert_eq!(release_staging_adjustment(&dir), (11, 22));
+        std::fs::remove_dir_all(dir).unwrap();
+    }
+
     #[test]
     fn podcast_cover_keeps_release_url_and_resolves_bundle_image() {
         let release =

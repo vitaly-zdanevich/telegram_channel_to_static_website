@@ -445,19 +445,35 @@ This writes **`tg2zola.session`** and prints a base64 **`TG_SESSION`** string.
 From then on, runs are non-interactive.
 
 **3. Generate** with the credentials in the environment — a normal run then also
-archives audio, original-quality photos, and the full videos that the preview
-shows only as a poster. GitHub-backed sites keep original photos in Releases:
+archives audio, the highest-resolution available photos, and the full videos
+that the preview shows only as a poster. GitHub-backed sites keep these photos
+in Releases:
 
 ```sh
 TG_API_ID=$TG_API_ID TG_API_HASH=$TG_API_HASH \
   tg2zola --channel <name> --site site --init-site
 ```
 
+Photo variants are selected by pixel resolution, not compressed file size: a
+larger image can take fewer bytes than a smaller preview. Downloads preserve the
+selected bytes without recompression. This means the best rendition Telegram
+offers, not necessarily the file before upload — Telegram optimizes ordinary
+photos; images sent as files retain their original contents. See Telegram's
+[photo sizes](https://core.telegram.org/api/files#image-thumbnail-types) and
+[photo quality options](https://telegram.org/blog/direct-to-channel-trim-voice-and-more).
+
+When a live MTProto session finds that an archived photo used a smaller
+rendition, it upgrades that photo automatically. Rendition-specific cache and
+Release filenames prevent old bytes from being reused even when both versions
+have the same file size. Already-correct legacy originals can keep their
+existing Release URLs without being downloaded again; confirmed Releases remain
+usable when no live session is available.
+
 | Env var | Purpose |
 |---|---|
 | `TG_API_ID` / `TG_API_HASH` | App credentials from my.telegram.org (required) |
 | `TG_SESSION` | base64 session from `tg2zola login`; alternatively a `tg2zola.session` file in the working dir is used |
-| `MTPROTO_IMAGES` | fetches original-quality photos **and pasted images Telegram stored as files**; **on by default**, set `false`/`0` to keep the smaller web-preview photos instead. With GitHub Releases enabled, confirmed originals are reused from sharded image releases rather than downloaded on every run; a large historical backfill adds at most 500 new originals per run so hosted CI can finish safely |
+| `MTPROTO_IMAGES` | fetches the highest-resolution available photos **and original pasted images Telegram stored as files**; **on by default**, set `false`/`0` to keep the smaller web-preview photos instead. With GitHub Releases enabled, confirmed originals are reused from sharded image releases rather than downloaded on every run; a large historical backfill adds at most 500 new originals per run so hosted CI can finish safely |
 | `MTPROTO_VIDEOS` | downloads the full video for posts the web preview shows only as a poster **when no YouTube/Instagram embed replaces it** — **on by default**; set `false`/`0` to disable (these can be large) |
 | `MTPROTO_FILES` | archives **every other attachment** (pdf, zip, rar, … — any file type) as a download; **on by default**, set `false`/`0` to disable |
 | `TG_SESSION_FILE` | override the session-file path (default `tg2zola.session`) |
