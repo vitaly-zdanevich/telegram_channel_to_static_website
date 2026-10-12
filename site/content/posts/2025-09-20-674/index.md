@@ -11,7 +11,7 @@ tags = ["telegram"]
 id = 674
 day = "2025-09-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/674"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-674-5364201410545194447.jpg"
+og_image = "5364201410545194447_1248950467_456267215.jpg"
 next_id = 675
 next_title = ""
 next_body = "#smell\n#dating\nSource"
@@ -47,6 +47,6 @@ label = "wow in #telegram we have a #crypto #wallet, and users can send m…"
 date = "2025-03-24"
 +++
 
-{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1380 stars · Languages: C++ 96%, Python 1%, Objective-C++ 1% · 27368 commits · 146 forks · 151 open issues/PRs · GPL-3.0 · last push 2026-10-06")
+{{ tag(t="telegram") }} with wide messages [https://github.com/kotatogram/kotatogram-desktop](<https://github.com/kotatogram/kotatogram-desktop> "Experimental Telegram Desktop fork. · 1381 stars · Languages: C++ 96%, Python 1%, Objective-C++ 1% · 27368 commits · 146 forks · 151 open issues/PRs · GPL-3.0 · last push 2026-10-06")
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-674-5364201410545194447.jpg") }}
+{{ img(src="5364201410545194447_1248950467_456267215.jpg") }}

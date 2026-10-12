@@ -18,7 +18,7 @@ next_body = "#лекция про мой #telegram #бот для #evernote\n#st
 prev_id = 1759
 prev_title = ""
 prev_body = "Fix my #style for #mdn, #screenshot before and after\nSad that UI customization is rare."
-views = 22
+views = 23
 ids = [1761]
 
 [[extra.related]]

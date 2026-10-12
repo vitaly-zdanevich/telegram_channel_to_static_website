@@ -18,13 +18,18 @@ next_body = "Another #llm victory: repack of the official #evernote client"
 prev_id = 1781
 prev_title = ""
 prev_body = "#mem limited by the technology of my time\n#llm\n#depleated"
-views = 38
+views = 39
 ids = [1784]
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 date = "2026-08-09"
+
+[[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 
 [[extra.related]]
 path = "@/posts/2026-06-05-1805/index.md"
@@ -40,11 +45,6 @@ date = "2026-06-21"
 path = "@/posts/2026-06-24-1854/index.md"
 label = "#llm did big #telegram #stickers, even the #pullrequest The patc…"
 date = "2026-06-24"
-
-[[extra.related]]
-path = "@/posts/2026-10-08-2188/index.md"
-label = "#mem #telegram #suno #llm #music By max.podzharov, source"
-date = "2026-10-08"
 +++
 
 My new project built with {{ tag(t="llm") }} {{ tag(t="codex") }} {{ tag(t="gpt") }}-5.5 xhigh: {{ tag(t="bot") }} for {{ tag(t="telegram") }} - to search and listen to {{ tag(t="youtube") }}  

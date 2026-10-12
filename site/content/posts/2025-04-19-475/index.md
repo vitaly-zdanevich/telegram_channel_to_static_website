@@ -34,6 +34,11 @@ date = "2026-04-16"
 path = "@/posts/2026-04-16-1641/index.md"
 label = "#podcast #my #health #startup #geogorgiladze Георгий Горгиладзе:…"
 date = "2026-04-16"
+
+[[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 +++
 
 {{ tag(t="podcast") }} 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у Вiкiпэдыi  

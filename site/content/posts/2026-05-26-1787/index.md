@@ -18,7 +18,7 @@ next_body = "#28мая2026 (чт) 21:00–01:00 — айтишная посид�
 prev_id = 1786
 prev_title = ""
 prev_body = "Finally I forked #nixnote, and migrated from #qt5 to #qt6, by #llm #gpt 5.5 xhigh"
-views = 41
+views = 42
 ids = [1787, 1788, 1789, 1790, 1791, 1792, 1793, 1794, 1795, 1796, 1797, 1798]
 
 [[extra.related]]
@@ -58,4 +58,4 @@ date = "2026-06-13"
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1797-5235634863078054730.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1798-5235634863078054731.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1798-5235634863078054731-y-481x851-36513.jpg") }}

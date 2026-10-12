@@ -5,12 +5,13 @@ description = "film thefountain darrenaronofsky death hospital tree"
 
 [taxonomies]
 days = ["2025-09-21"]
-tags = ["film", "the_fountain", "darren_aronofsky", "death", "hospital", "tree", "video"]
+tags = ["film", "the_fountain", "darren_aronofsky", "death", "hospital", "tree"]
 
 [extra]
 id = 677
 day = "2025-09-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/677"
+og_image = "01.jpg"
 next_id = 678
 next_title = ""
 next_body = "#film\n#thefountain\n#darrenaronofsky\n#library\n#children"
@@ -55,6 +56,6 @@ date = "2026-08-09"
 
 <https://en.wikipedia.org/wiki/The_Fountain>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/677-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 3:28*

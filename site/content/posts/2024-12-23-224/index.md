@@ -11,7 +11,7 @@ tags = ["game", "ui", "path_of_exile2"]
 id = 224
 day = "2024-12-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/224"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-224-5427298839515227193.jpg"
+og_image = "5427298839515227193_1263641482_456254521.jpg"
 next_id = 225
 next_title = ""
 next_body = "#webdesign"
@@ -49,6 +49,4 @@ date = "2025-02-21"
 
 {{ tag(t="game") }} {{ tag(t="ui") }} {{ tag(t="path_of_exile2") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-224-5427298839515227193.jpg") }}
-
-🙏 1
+{{ img(src="5427298839515227193_1263641482_456254521.jpg") }}

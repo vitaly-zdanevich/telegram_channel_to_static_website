@@ -11,14 +11,14 @@ tags = ["preservation", "logo", "symbol", "damage"]
 id = 1655
 day = "2026-04-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1655"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1655-5417832637109310022.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1655-5417832637109310022-w-1309x1243-384620.jpg"
 next_id = 1656
 next_title = ""
 next_body = "#typography\n#preservation\n#russianempire\n#century19\nSource"
 prev_id = 1654
 prev_title = ""
 prev_body = "#ai\n#hi\n#qwen\n#terminal"
-views = 24
+views = 25
 ids = [1655]
 
 [[extra.related]]
@@ -52,4 +52,4 @@ date = "2025-11-10"
 {{ tag(t="symbol") }}  
 {{ tag(t="damage") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1655-5417832637109310022.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1655-5417832637109310022-w-1309x1243-384620.jpg") }}

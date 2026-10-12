@@ -11,7 +11,7 @@ tags = ["wikidata", "youtube", "spotify", "facebook"]
 id = 709
 day = "2025-10-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/709"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-709-5454198108020933187.jpg"
+og_image = "5454198108020933187_1269904456_456262211.jpg"
 next_id = 710
 next_title = ""
 next_body = "#film\n#korolishut\n#naked"
@@ -20,6 +20,11 @@ prev_title = ""
 prev_body = "#concert\n#rammstein\n#year2019\n#russia\nNot my photo."
 views = 31
 ids = [709]
+
+[[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
@@ -40,11 +45,6 @@ date = "2026-02-04"
 path = "@/posts/2025-10-28-729/index.md"
 label = "I continue to write my script for importing ratings from #metacr…"
 date = "2025-10-28"
-
-[[extra.related]]
-path = "@/posts/2026-09-27-2177/index.md"
-label = "#preservation #youtube #comment"
-date = "2026-09-27"
 +++
 
 {{ tag(t="wikidata") }} script to show {{ tag(t="youtube") }} embeds, {{ tag(t="spotify") }}, {{ tag(t="facebook") }} and others  
@@ -53,6 +53,6 @@ date = "2026-09-27"
 
 Example item from the screenshot <https://www.wikidata.org/wiki/Q136539967>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-709-5454198108020933187.jpg") }}
+{{ img(src="5454198108020933187_1269904456_456262211.jpg") }}
 
 <figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136539967">Q136539967</a> · <span class="wd-qid">Q136539967</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q18923958">Q18923958</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P973">described at URL</a></td><td><a href="https://heroes.thelazy.net/index.php/Pirates_and_Palms">https://heroes.thelazy.net/index.php/Pirates_and_Palms</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1476">title</a></td><td>Pirates and Palms</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1651">YouTube video ID</a></td><td>EurNU2Ropog</td></tr></tbody></table></figure>

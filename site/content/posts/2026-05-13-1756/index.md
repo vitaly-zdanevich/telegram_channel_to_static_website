@@ -18,7 +18,7 @@ next_body = "Wow my #reeknote (#evernote #cli) can now play audio and show image
 prev_id = 1755
 prev_title = ""
 prev_body = "#ai\n#screenshot from"
-views = 25
+views = 26
 ids = [1756, 1757]
 
 [[extra.related]]

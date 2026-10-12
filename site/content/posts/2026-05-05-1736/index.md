@@ -18,7 +18,7 @@ next_body = "#webdesign\n#bilibili"
 prev_id = 1735
 prev_title = ""
 prev_body = "#architecture of #village houses in #sakartvelo\nSource"
-views = 12
+views = 13
 ids = [1736]
 
 [[extra.related]]

@@ -18,13 +18,18 @@ next_body = "#leetcode is often produce #error"
 prev_id = 1744
 prev_title = ""
 prev_body = "#python\n#mojo\n#llm\n#gemini\n2. Mojo (The New Challenger)\nMojo is a new programming language designed by Chris Lattner (creator of LLVM and Swift).\nIt is a superset of Python that looks and feels like Python but includes optional strong, static typing.\nIt claims to be up to 35,000x faster than Python because it compiles to machine code and utilizes hardware features like SIMD.\nKey Innovations: Introduces features like let for immutable variables\nWhy not #const?"
-views = 24
+views = 25
 ids = [1745]
 
 [[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 date = "2026-08-09"
+
+[[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 
 [[extra.related]]
 path = "@/posts/2026-06-21-1849/index.md"
@@ -40,11 +45,6 @@ date = "2026-02-21"
 path = "@/posts/2026-05-21-1784/index.md"
 label = "My new project built with #llm #codex #gpt-5.5 xhigh: #bot for #…"
 date = "2026-05-21"
-
-[[extra.related]]
-path = "@/posts/2026-04-30-1729/index.md"
-label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
-date = "2026-04-30"
 +++
 
 My another hobby project, made with {{ tag(t="llm") }} / {{ tag(t="codex") }}: converter of {{ tag(t="wikipedia") }} dumps into {{ tag(t="man") }} / {{ tag(t="roff") }} format, on {{ tag(t="rust") }} (because I love performance): for a {{ tag(t="terminal") }}, {{ tag(t="offline") }} reading. {{ tag(t="love") }} it, still fixing many markup cases, but mostly its readable already <https://gitlab.com/vitaly-zdanevich/wiki2man_on_rust>  

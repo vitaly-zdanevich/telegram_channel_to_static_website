@@ -30,6 +30,11 @@ date = "2026-04-24"
 path = "@/posts/2025-04-18-474/index.md"
 label = "#archiving #preservation #internetarchive #jasonscott #man #hat…"
 date = "2025-04-18"
+
+[[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 +++
 
 {{ tag(t="internet_archive") }}  

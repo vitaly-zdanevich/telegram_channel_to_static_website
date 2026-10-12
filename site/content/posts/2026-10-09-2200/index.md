@@ -26,7 +26,7 @@ ids = [2200]
 
 Нужны Warcraft III 1.26a и файлы CS 1.6.  
 
-Репозиторий: [https://github.com/YazgulDev/warcraft-cs](<https://github.com/YazgulDev/warcraft-cs> "Counter-Strike-style offline FPS for Warcraft III 1.26a: RoC/TFT, gold buy menu, squads, configurable weapons and CS audio · 54 stars · Languages: C++ 61%, PowerShell 17%, C# 17% · 112 commits · 4 forks · 2 open issues/PRs · Apache-2.0 · last push 2026-10-10")  
+Репозиторий: [https://github.com/YazgulDev/warcraft-cs](<https://github.com/YazgulDev/warcraft-cs> "Counter-Strike-style offline FPS for Warcraft III 1.26a: RoC/TFT, gold buy menu, squads, configurable weapons and CS audio · 56 stars · Languages: C++ 68%, PowerShell 15%, C# 13% · 145 commits · 4 forks · 2 open issues/PRs · Apache-2.0 · last push 2026-10-12")  
 
 Видео автора мода: [https://www.youtube.com/watch?v=hW0TytuwpRA](<https://www.youtube.com/watch?v=hW0TytuwpRA> "Playing Counter Strike 1.6 in Warcraft 3 mod")
 

@@ -49,5 +49,3 @@ date = "2024-08-25"
 Video from 2012 about {{ tag(t="ai") }} [https://youtu.be/j-pF56-ZYkY](<https://youtu.be/j-pF56-ZYkY> "\"Kara\" by Quantic Dream")
 
 {{ youtube(id="j-pF56-ZYkY") }}
-
-🙏 1

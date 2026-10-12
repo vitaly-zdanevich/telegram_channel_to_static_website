@@ -18,7 +18,7 @@ next_body = "#linux\n#france\n#news\nFrance to ditch Windows for Linux to reduce
 prev_id = 1624
 prev_title = ""
 prev_body = "#preview on #bilibili\n#anime"
-views = 20
+views = 21
 ids = [1629, 1630, 1631, 1632, 1633, 1634, 1635]
 
 [[extra.related]]
@@ -62,7 +62,7 @@ date = "2026-07-20"
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1632-5393581984740742368.jpg") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1633-5393581984740742366.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1633-5393581984740742366-y-823x592-65728.jpg") }}
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1634-5393581984740742367.jpg") }}
 

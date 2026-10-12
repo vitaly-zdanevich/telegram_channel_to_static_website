@@ -11,14 +11,14 @@ tags = ["mem", "translation", "tolkien"]
 id = 2182
 day = "2026-10-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2182"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2182-5348112484532951263.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2182-5348112484532951263-y-480x841-70233.jpg"
 next_id = 2183
 next_title = ""
 next_body = "#mem\n#llm\n#phone\n#div\n#css\nBy razzberysolutions, source"
 prev_id = 2181
 prev_title = ""
 prev_body = "#cancel\n#babushka\nBy agabekyanalena, source"
-views = 4
+views = 5
 ids = [2182]
 
 [[extra.related]]
@@ -53,4 +53,4 @@ date = "2026-10-08"
 
 [Source](https://www.linkedin.com/posts/%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%B1%D1%80%D0%B0%D0%BD%D0%B4%D1%83%D0%BA%D0%BE%D0%B2%D0%B0-06141b37_%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D1%82%D0%B5%D0%B1%D0%B5-%D0%BF%D0%BB%D0%B0%D1%82%D1%8F%D1%82-%D0%B7%D0%B0-%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE-%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2-share-7513134711582547968-4kFi)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2182-5348112484532951263.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2182-5348112484532951263-y-480x841-70233.jpg") }}

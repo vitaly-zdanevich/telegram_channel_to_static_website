@@ -11,7 +11,7 @@ tags = ["games"]
 id = 527
 day = "2025-05-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/527"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-527-5266978507903333095.jpg"
+og_image = "5266978507903333095_1226313996_456258279.jpg"
 next_id = 528
 next_title = ""
 next_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/\n· 267 stars · Languages: C++ 51%, Python 39%, Roff 7% · 495 commits · 32 forks · Apache-2.0 · archived · last push 2026-09-19\")"
@@ -51,4 +51,4 @@ date = "2025-04-04"
 
 Gold {{ tag(t="games") }} - because lovers recreate engines for the best one.
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-527-5266978507903333095.jpg") }}
+{{ img(src="5266978507903333095_1226313996_456258279.jpg") }}

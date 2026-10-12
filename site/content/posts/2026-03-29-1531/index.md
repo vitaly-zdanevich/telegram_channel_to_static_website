@@ -11,7 +11,7 @@ tags = ["wood", "cross", "virgin_mary", "belarus", "globustut", "year_2005"]
 id = 1531
 day = "2026-03-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1531"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1531-5353089436800980032.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1531-5353089436800980032-w-1200x1600-149402.jpg"
 next_id = 1532
 next_title = ""
 next_body = "#architecture\n#abandone\n#Свиряны\n#belarus\n#globustut\n#year2005\nSource"
@@ -56,4 +56,4 @@ date = "2026-03-29"
 
 [Source](https://commons.wikimedia.org/wiki/File:059-266_%D0%93%D0%B5%D1%80%D0%B2%D1%8F%D1%82%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_19_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1531-5353089436800980032.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1531-5353089436800980032-w-1200x1600-149402.jpg") }}

@@ -11,7 +11,7 @@ tags = ["webdesign"]
 id = 225
 day = "2024-12-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/225"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-225-5444996905093424599.jpg"
+og_image = "5444996905093424599_1267762134_456254935.jpg"
 next_id = 226
 next_title = ""
 next_body = "#webdesign"
@@ -49,6 +49,4 @@ date = "2025-11-03"
 
 {{ tag(t="webdesign") }} <https://handbookhmm.ru/nwcomputing>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-225-5444996905093424599.jpg") }}
-
-🙏 1
+{{ img(src="5444996905093424599_1267762134_456254935.jpg") }}

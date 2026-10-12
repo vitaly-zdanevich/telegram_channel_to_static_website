@@ -11,14 +11,14 @@ tags = ["llm", "quote"]
 id = 1776
 day = "2026-05-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1776"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1776-5208783114090519616.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1776-5208783114090519616-x-338x145-7817.jpg"
 next_id = 1777
 next_title = ""
 next_body = "#log\nfailed"
 prev_id = 1775
 prev_title = ""
 prev_body = "#travel\n#philippines\n#trash\n#asia\n#video\nFrom"
-views = 36
+views = 37
 ids = [1776]
 
 [[extra.related]]
@@ -50,4 +50,4 @@ date = "2026-05-25"
 {{ tag(t="llm") }}  
 {{ tag(t="quote") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1776-5208783114090519616.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1776-5208783114090519616-x-338x145-7817.jpg") }}

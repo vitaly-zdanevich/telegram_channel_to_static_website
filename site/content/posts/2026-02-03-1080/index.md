@@ -11,7 +11,7 @@ tags = ["ussr", "history"]
 id = 1080
 day = "2026-02-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1080"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1080-5190706876641906521.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1080-5190706876641906521-y-852x236-28780.jpg"
 next_id = 1081
 next_title = ""
 next_body = "#preservation\n#belarus\ngeo block\nI uploaded a lot from to Commons, and will continue."
@@ -54,4 +54,4 @@ date = "2026-08-09"
 
 <https://www.kp.ru/daily/24116.4/339051/>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1080-5190706876641906521.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1080-5190706876641906521-y-852x236-28780.jpg") }}

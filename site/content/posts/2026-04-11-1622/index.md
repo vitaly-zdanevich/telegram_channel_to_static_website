@@ -17,7 +17,7 @@ next_body = "Usual #school in #china? #lenin\n【【城】一行代码让整个�
 prev_id = 1613
 prev_title = ""
 prev_body = "#typography\n#russianempire\n#ukraine\n#century18\nSource"
-views = 27
+views = 28
 ids = [1622]
 
 [[extra.related]]

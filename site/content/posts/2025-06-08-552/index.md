@@ -5,12 +5,13 @@ description = "arsenmarkaryan health medicine psy mantoux mercury Source"
 
 [taxonomies]
 days = ["2025-06-08"]
-tags = ["arsen_markaryan", "health", "medicine", "psy", "mantoux", "mercury", "video"]
+tags = ["arsen_markaryan", "health", "medicine", "psy", "mantoux", "mercury"]
 
 [extra]
 id = 552
 day = "2025-06-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/552"
+og_image = "01.jpg"
 next_id = 553
 next_title = ""
 next_body = "#format\nSource"
@@ -55,6 +56,6 @@ date = "2025-07-27"
 
 [Source](https://www.youtube.com/watch?v=9OorBJMEJK8)
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/552-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 1:54*

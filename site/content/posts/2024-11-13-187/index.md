@@ -21,5 +21,3 @@ ids = [187]
 +++
 
 He is trying to improve Armies of Exigo, without the source code <https://www.moddb.com/mods/armies-of-exigo-the-third-prophecy/news/the-roadmap/#8882958>
-
-🙏 1

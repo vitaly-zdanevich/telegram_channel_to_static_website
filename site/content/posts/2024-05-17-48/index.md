@@ -22,4 +22,4 @@ ids = [48]
 
 Overlay toolbars in Firefox, like in Safari!  
 
-[https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css](<https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css> "Collection of userstyles affecting the browser · 4547 stars · Languages: CSS 91%, JavaScript 8%, Python 1% · 1329 commits · 368 forks · 76 open issues/PRs · MPL-2.0 · last push 2026-10-10")
+[https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css](<https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css> "Collection of userstyles affecting the browser · 4548 stars · Languages: CSS 91%, JavaScript 8%, Python 1% · 1329 commits · 369 forks · 77 open issues/PRs · MPL-2.0 · last push 2026-10-10")

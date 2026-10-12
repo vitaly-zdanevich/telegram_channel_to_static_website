@@ -11,7 +11,7 @@ tags = ["evernote", "youtube", "ifttt"]
 id = 731
 day = "2025-11-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/731"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-731-5206578739305712414.jpg"
+og_image = "5206578739305712414_1212251079_460000030.jpg"
 next_id = 732
 next_title = ""
 next_body = "#webdesign"
@@ -20,6 +20,11 @@ prev_title = ""
 prev_body = "#sakartvelo\n#batumi\n#misha\n#trump"
 views = 23
 ids = [731]
+
+[[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 
 [[extra.related]]
 path = "@/posts/2025-05-06-499/index.md"
@@ -40,11 +45,6 @@ date = "2026-05-25"
 path = "@/posts/2026-01-26-948/index.md"
 label = "#css Wow I did a good ::selection for my #evernote style a::sele…"
 date = "2026-01-26"
-
-[[extra.related]]
-path = "@/posts/2025-08-05-614/index.md"
-label = "#telegram bot that sends to email, its mean to #evernote too! @s…"
-date = "2025-08-05"
 +++
 
 good  
@@ -55,4 +55,4 @@ good
 {{ tag(t="youtube") }}  
 {{ tag(t="ifttt") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-731-5206578739305712414.jpg") }}
+{{ img(src="5206578739305712414_1212251079_460000030.jpg") }}

@@ -17,7 +17,7 @@ next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSour
 prev_id = 1686
 prev_title = ""
 prev_body = "#photo\n#batumi\n#dog"
-views = 19
+views = 20
 ids = [1687]
 
 [[extra.related]]
@@ -41,9 +41,9 @@ label = "Asked #codex gpt-5.5 xhigh to rewrite #geeknote #cli of #evernot…"
 date = "2026-04-30"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2139/index.md"
-label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
-date = "2026-08-09"
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 +++
 
 {{ tag(t="my") }}  

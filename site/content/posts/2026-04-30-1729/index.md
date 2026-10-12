@@ -17,7 +17,7 @@ next_body = "#cats\n#religion\n#orthodox\n#blackandwhite\nSource"
 prev_id = 1721
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
-views = 25
+views = 26
 ids = [1729]
 
 [[extra.related]]
@@ -31,6 +31,11 @@ label = "#python My #geeknote #evernote #cli now available on PyPI"
 date = "2026-02-20"
 
 [[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
+
+[[extra.related]]
 path = "@/posts/2026-04-27-1687/index.md"
 label = "#my #evernote #telegrambot #awslambda #ai #codex #gpt5 Article a…"
 date = "2026-04-27"
@@ -39,11 +44,6 @@ date = "2026-04-27"
 path = "@/posts/2026-05-06-1745/index.md"
 label = "My another hobby project, made with #llm / #codex: converter of…"
 date = "2026-05-06"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2139/index.md"
-label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
-date = "2026-08-09"
 +++
 
-Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} [https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 91%, Shell 5%, Python 2% · 89 commits · 3 open issues/PRs · GPL-3.0 · last push 2026-10-10") - faster geeknote.
+Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} [https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 91%, Shell 5%, Python 2% · 90 commits · 2 open issues/PRs · GPL-3.0 · last push 2026-10-11") - faster geeknote.

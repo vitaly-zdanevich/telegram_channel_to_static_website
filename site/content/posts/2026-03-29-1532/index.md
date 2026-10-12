@@ -11,7 +11,7 @@ tags = ["architecture", "abandone", "Свиряны", "belarus", "globustut", "y
 id = 1532
 day = "2026-03-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1532"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1532-5353089436800980065.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1532-5353089436800980065-w-1200x1600-355740.jpg"
 next_id = 1536
 next_title = ""
 next_body = "#abandone\n#Губино\n#belarus\n#globustut\n#year2005\nSource"
@@ -56,7 +56,7 @@ date = "2026-07-05"
 
 [Source](https://commons.wikimedia.org/wiki/File:059-582_%D0%91%D0%BE%D0%BB_%D0%A1%D0%B2%D0%B8%D1%80%D1%8F%D0%BD%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_19_%D0%B8%D1%8E%D0%BD%D1%8F_2005.jpg)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1532-5353089436800980065.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1532-5353089436800980065-w-1200x1600-355740.jpg") }}
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1533-5353089436800980066.jpg") }}
 

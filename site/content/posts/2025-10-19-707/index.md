@@ -11,7 +11,7 @@ tags = ["archivation", "games", "zim"]
 id = 707
 day = "2025-10-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/707"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-707-5452161769536621413.jpg"
+og_image = "5452161769536621413_1269430334_456264549.jpg"
 next_id = 708
 next_title = ""
 next_body = "#concert\n#rammstein\n#year2019\n#russia\nNot my photo."
@@ -54,4 +54,4 @@ Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://gith
 
 [https://gamechronicles.com](https://gamechronicles.com/)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-707-5452161769536621413.jpg") }}
+{{ img(src="5452161769536621413_1269430334_456264549.jpg") }}

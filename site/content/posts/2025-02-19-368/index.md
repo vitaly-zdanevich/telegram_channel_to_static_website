@@ -11,7 +11,7 @@ tags = ["love", "poop", "johnnydepp", "amberheard"]
 id = 368
 day = "2025-02-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/368"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-368-5309901582130865796.jpg"
+og_image = "5309901582130865796_1236307803_456255108.jpg"
 next_id = 369
 next_title = ""
 next_body = "#cat\n#catblack\n#corporate\nNot my experience, this is just funny.\nSource"
@@ -54,4 +54,4 @@ date = "2026-02-07"
 
 [Source](https://www.facebook.com/share/p/1A3sXdEuP3)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-368-5309901582130865796.jpg") }}
+{{ img(src="5309901582130865796_1236307803_456255108.jpg") }}

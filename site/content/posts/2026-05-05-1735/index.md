@@ -17,7 +17,7 @@ next_body = "#bilibili #convertion #progress - nice #ux"
 prev_id = 1734
 prev_title = ""
 prev_body = "#map\n#batumi\nBetween the Black Sea and the mountains."
-views = 15
+views = 16
 ids = [1735]
 
 [[extra.related]]

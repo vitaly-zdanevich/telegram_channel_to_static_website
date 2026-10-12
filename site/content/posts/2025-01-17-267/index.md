@@ -20,5 +20,3 @@ ids = [267]
 +++
 
 <https://coub.com/view/2q70x2>
-
-🙏 1

@@ -11,7 +11,7 @@ tags = ["dog", "love", "mmorpg"]
 id = 593
 day = "2025-07-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/593"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-593-5420289298269335369.jpg"
+og_image = "5420289298269335369_1262009446_456257353.jpg"
 next_id = 594
 next_title = ""
 next_body = "#webdesign\n#plan9"
@@ -53,4 +53,4 @@ date = "2026-04-25"
 
 [Source](https://ifunny.co/picture/the-romantic-tension-between-a-tank-and-healer-meanwhile-the-qbEdcn0VC)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-593-5420289298269335369.jpg") }}
+{{ img(src="5420289298269335369_1262009446_456257353.jpg") }}

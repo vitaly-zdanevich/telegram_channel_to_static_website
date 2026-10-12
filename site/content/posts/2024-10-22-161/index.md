@@ -23,5 +23,3 @@ ids = [161]
 My talk in WMCEE 2024 [https://www.youtube.com/watch?v=ezrH_uCGZNU&list=PLvLwuB4oO41nxWvFley5u3prmCqupnOWx](<https://www.youtube.com/watch?v=ezrH_uCGZNU&list=PLvLwuB4oO41nxWvFley5u3prmCqupnOWx> "Uploading from a museum website? Some custom JavaScript can help you - WMCEEM 2024 Istanbul")
 
 {{ youtube(id="ezrH_uCGZNU") }}
-
-🙏 1

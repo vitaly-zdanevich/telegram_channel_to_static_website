@@ -11,7 +11,7 @@ tags = ["mem", "games"]
 id = 206
 day = "2024-11-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/206"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-206-5359558941740230783.jpg"
+og_image = "5359558941740230783_1247869558_456255615.jpg"
 next_id = 207
 next_title = ""
 next_body = ""
@@ -52,6 +52,4 @@ date = "2025-10-21"
 
 <https://www.facebook.com/photo/?fbid=884170197219922>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-206-5359558941740230783.jpg") }}
-
-😁 1
+{{ img(src="5359558941740230783_1247869558_456255615.jpg") }}

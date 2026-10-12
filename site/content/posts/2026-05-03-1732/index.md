@@ -18,7 +18,7 @@ next_body = "#belarus\n#belarussian\n#arabic\n#language"
 prev_id = 1731
 prev_title = ""
 prev_body = "#colors\n#cables\n#pole\nSource"
-views = 18
+views = 19
 ids = [1732]
 
 [[extra.related]]

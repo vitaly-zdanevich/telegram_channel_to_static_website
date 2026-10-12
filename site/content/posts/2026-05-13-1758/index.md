@@ -18,7 +18,7 @@ next_body = "Fix my #style for #mdn, #screenshot before and after\nSad that UI c
 prev_id = 1756
 prev_title = ""
 prev_body = "#code\n#russian\n#yandex\n#language\nFrom"
-views = 21
+views = 22
 ids = [1758]
 
 [[extra.related]]
@@ -49,6 +49,6 @@ date = "2026-03-05"
 
 Wow my {{ tag(t="reeknote") }} ({{ tag(t="evernote") }} {{ tag(t="cli") }}) can now play audio and show images, in a terminal  
 
-[https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 91%, Shell 5%, Python 2% · 89 commits · 3 open issues/PRs · GPL-3.0 · last push 2026-10-10")
+[https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 91%, Shell 5%, Python 2% · 90 commits · 2 open issues/PRs · GPL-3.0 · last push 2026-10-11")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1758-5199865542213308919.jpg") }}

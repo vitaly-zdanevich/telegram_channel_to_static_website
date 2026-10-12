@@ -11,14 +11,14 @@ tags = ["logo", "progy", "github"]
 id = 1817
 day = "2026-06-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1817"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1817-5282991447361658515.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1817-5282991447361658515-y-800x802-98912.jpg"
 next_id = 1818
 next_title = ""
 next_body = "#aws\n#billing\n#cost\n#graph"
 prev_id = 1807
 prev_title = ""
 prev_body = "#love this #extension - #highlight predefined list of words, on predefined URLs."
-views = 18
+views = 19
 ids = [1817]
 
 [[extra.related]]
@@ -53,6 +53,6 @@ date = "2025-03-15"
 
 [Source](https://www.linkedin.com/posts/alxsuv_claudecode-aiforengineers-softwareengineering-share-7470087035169714176-72AF/)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1817-5282991447361658515.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1817-5282991447361658515-y-800x802-98912.jpg") }}
 
 👍 1

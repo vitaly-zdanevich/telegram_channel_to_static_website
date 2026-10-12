@@ -11,7 +11,7 @@ tags = ["cat", "psy"]
 id = 482
 day = "2025-04-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/482"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-482-5215716724605844765.jpg"
+og_image = "5215716724605844765_1214378682_456260893.jpg"
 next_id = 483
 next_title = ""
 next_body = "My new article on #wikipedia"
@@ -50,6 +50,4 @@ date = "2025-03-27"
 {{ tag(t="cat") }}  
 {{ tag(t="psy") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-482-5215716724605844765.jpg") }}
-
-👎 1
+{{ img(src="5215716724605844765_1214378682_456260893.jpg") }}

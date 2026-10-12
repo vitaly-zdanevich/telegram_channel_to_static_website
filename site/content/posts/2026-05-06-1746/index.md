@@ -11,14 +11,14 @@ tags = ["leetcode", "error"]
 id = 1746
 day = "2026-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1746"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1746-5465571945928660974.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1746-5465571945928660974-y-857x441-32689.jpg"
 next_id = 1747
 next_title = ""
 next_body = "Oh my...\n#leetcode"
 prev_id = 1745
 prev_title = ""
 prev_body = "My another hobby project, made with #llm / #codex: converter of #wikipedia dumps into #man / #roff format, on #rust (because I love performance): for a #terminal, #offline reading. #love it, still fixing many markup cases, but mostly its readable already\nWrote about it at"
-views = 27
+views = 28
 ids = [1746]
 
 [[extra.related]]
@@ -49,4 +49,4 @@ date = "2025-06-13"
 
 {{ tag(t="leetcode") }} is often produce {{ tag(t="error") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1746-5465571945928660974.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1746-5465571945928660974-y-857x441-32689.jpg") }}

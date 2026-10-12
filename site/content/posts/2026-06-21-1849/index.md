@@ -18,7 +18,7 @@ next_body = "Моя лекция про мой Telegram бот YouTube, с по�
 prev_id = 1848
 prev_title = ""
 prev_body = "#batumi\nOh my, I live here\nFrom"
-views = 18
+views = 19
 ids = [1849]
 
 [[extra.related]]
@@ -32,6 +32,11 @@ label = "My another hobby project, made with #llm / #codex: converter of…"
 date = "2026-05-06"
 
 [[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
+
+[[extra.related]]
 path = "@/posts/2026-08-09-2139/index.md"
 label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
 date = "2026-08-09"
@@ -40,11 +45,6 @@ date = "2026-08-09"
 path = "@/posts/2026-05-18-1780/index.md"
 label = "What a time - multiple #llm doing multiple projects, in parallel…"
 date = "2026-05-18"
-
-[[extra.related]]
-path = "@/posts/2026-10-08-2187/index.md"
-label = "#llm #interior By bennu.estudio, source"
-date = "2026-10-08"
 +++
 
 {{ tag(t="llm") }}  

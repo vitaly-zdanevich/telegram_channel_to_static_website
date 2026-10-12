@@ -17,7 +17,7 @@ next_body = "#shotcut is pretty good #foss #videoeditor, #love it"
 prev_id = 1737
 prev_title = ""
 prev_body = "#webdesign\n#bilibili"
-views = 18
+views = 19
 ids = [1738]
 
 [[extra.related]]

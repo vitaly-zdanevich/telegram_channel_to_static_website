@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-07-25T00:56:00+00:00
-description = "Can you imagine userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 37 commits · 1 fork · last push 2026-10-11\") lastfm"
+description = "Can you imagine userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 39 commits · 1 fork · last push 2026-10-11\") lastfm"
 
 [taxonomies]
 days = ["2025-07-25"]
@@ -11,7 +11,7 @@ tags = ["userstyle", "lastfm"]
 id = 610
 day = "2025-07-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/610"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-610-5194917018330068550.jpg"
+og_image = "5194917018330068550_1209535873_456259142.jpg"
 next_id = 611
 next_title = ""
 next_body = "#music\n#musicvideo\n#temakresta\n#travel\n#elephants\n#tinder\n#year2023\nЗолото рейна\nSource\")"
@@ -42,8 +42,8 @@ label = "Youta: моя лекция-демонстрация TUI аудио пл
 date = "2026-08-09"
 +++
 
-Can you imagine {{ tag(t="userstyle") }} with so much [configs](<https://github.com/924e50c0/Last.fmSimpleTweaks> "A collection of simple (?) tweaks for last.fm. · 3 stars · Languages: CSS 100% · 37 commits · 1 fork · last push 2026-10-11")  
+Can you imagine {{ tag(t="userstyle") }} with so much [configs](<https://github.com/924e50c0/Last.fmSimpleTweaks> "A collection of simple (?) tweaks for last.fm. · 3 stars · Languages: CSS 100% · 39 commits · 1 fork · last push 2026-10-11")  
 
 {{ tag(t="lastfm") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-610-5194917018330068550.jpg") }}
+{{ img(src="5194917018330068550_1209535873_456259142.jpg") }}

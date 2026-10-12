@@ -10,7 +10,7 @@ days = ["2024-12-31"]
 id = 232
 day = "2024-12-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/232"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-232-5451693721180561443.jpg"
+og_image = "5451693721180561443_1269321358_456253475.jpg"
 next_id = 237
 next_title = ""
 next_body = "#ai"
@@ -23,6 +23,4 @@ ids = [232]
 
 Its real
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-232-5451693721180561443.jpg") }}
-
-🙏 1
+{{ img(src="5451693721180561443_1269321358_456253475.jpg") }}

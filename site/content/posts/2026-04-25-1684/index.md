@@ -17,7 +17,7 @@ next_body = "#quote\n#book\n#ночьвлиссабоне\n#ремарк"
 prev_id = 1683
 prev_title = ""
 prev_body = "...and another useful #bash #alias to #remove the text inside single #quotes by esc-k:\n# Clear the content between single quotes while preserving the quotes\nclearinsidequotes() {\nlocal line=\"${READLINELINE}\"\n# Only run if the line contains at least two single quotes\nif [[ \"${line}\" == \"'\"\"'\" ]]; then\n# prefix: everything before the first quote\nlocal prefix=\"${line%%'}\"\n# suffix: everything after the last quote\nlocal suffix=\"${line##'}\"\n# Reconstruct the line with empty quotes\nREADLINELINE=\"${prefix}''${suffix}\"\n# Move the cursor back inside the empty quotes\nREADLINEPOINT=$((${#prefix} + 1))\nfi\n}\n# Bind the function to Alt-k (Escape + k)\nbind -x '\"ek\": clearinsidequotes'"
-views = 20
+views = 21
 ids = [1684]
 
 [[extra.related]]

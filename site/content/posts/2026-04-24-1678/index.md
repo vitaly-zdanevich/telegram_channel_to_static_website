@@ -17,7 +17,7 @@ next_body = "#log\nStill running my experiment about #porting #primeworld from W
 prev_id = 1674
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
-views = 16
+views = 17
 ids = [1678]
 
 [[extra.related]]

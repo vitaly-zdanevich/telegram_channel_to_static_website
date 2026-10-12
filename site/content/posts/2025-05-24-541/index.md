@@ -11,7 +11,7 @@ tags = ["iphone", "apple", "newton"]
 id = 541
 day = "2025-05-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/541"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-541-5301205759415154029.jpg"
+og_image = "5301205759415154029_1234283149_456258925.jpg"
 next_id = 542
 next_title = ""
 next_body = "#git\nSource"
@@ -55,4 +55,4 @@ date = "2026-09-21"
 
 [Source](https://commons.wikimedia.org/wiki/File:Apple_Newton_and_iPhone.jpg)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-541-5301205759415154029.jpg") }}
+{{ img(src="5301205759415154029_1234283149_456258925.jpg") }}

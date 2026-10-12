@@ -18,7 +18,7 @@ next_body = "I love #ci so much that for the first time I depleted free 400 minu
 prev_id = 1758
 prev_title = ""
 prev_body = "Wow my #reeknote (#evernote #cli) can now play audio and show images, in a terminal"
-views = 23
+views = 24
 ids = [1759, 1760]
 
 [[extra.related]]

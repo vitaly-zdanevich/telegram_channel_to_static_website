@@ -11,7 +11,7 @@ tags = ["games", "steam"]
 id = 623
 day = "2025-08-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/623"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-623-5240341610359814155.jpg"
+og_image = "5240341610359814155_1220112110_456259595.jpg"
 next_id = 624
 next_title = ""
 next_body = "#ai\n#llm\n#ddos"
@@ -52,6 +52,4 @@ date = "2025-10-21"
 
 Can you imagine that, I know this guy
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-623-5240341610359814155.jpg") }}
-
-😁 1
+{{ img(src="5240341610359814155_1220112110_456259595.jpg") }}

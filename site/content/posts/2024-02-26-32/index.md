@@ -5,19 +5,20 @@ description = "film Love, Sex & Robots S1.E3: The Witness"
 
 [taxonomies]
 days = ["2024-02-26"]
-tags = ["film", "video"]
+tags = ["film"]
 
 [extra]
 id = 32
 day = "2024-02-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/32"
+og_image = "01.jpg"
 next_id = 33
 next_title = ""
 next_body = "&gt; For example, anhedonia, which is often associated with depression, decreases an individual's desire to participate in activities that provide short-term rewards, and instead, allows the individual to concentrate on long-term goals"
 prev_id = 31
 prev_title = ""
 prev_body = "#film\n#scifi\nLove, Death & Robots: ending from s1ep7 Beyond the Aquila Rift"
-views = 62
+views = 63
 ids = [32]
 
 [[extra.related]]
@@ -52,6 +53,6 @@ Love, Sex & Robots S1.E3: The Witness
 
 <https://www.imdb.com/title/tt9788486/?ref_=ttep_ep3>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/32-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 3:59*

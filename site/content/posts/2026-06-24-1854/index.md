@@ -18,7 +18,7 @@ next_body = "#armiesofexigo it own by #electronicarts\nТвёрдо и чётк�
 prev_id = 1853
 prev_title = ""
 prev_body = "#llm wow of today\n1) Fixed broken audio recording - when the iPhone turned off\n2) I put this audio to the #shotcut video editor - and said - sync cuts and keyframe dots"
-views = 16
+views = 17
 ids = [1854]
 
 [[extra.related]]
@@ -47,7 +47,7 @@ label = "#telegram added a feature request Add option to cache/prefetch a…"
 date = "2026-03-17"
 +++
 
-{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 33198 stars · Languages: C++ 96%, Python 2%, Objective-C++ 1% · 27348 commits · 7369 forks · 990 open issues/PRs · GPL-3.0 · last push 2026-10-10")  
+{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 33219 stars · Languages: C++ 96%, Python 2%, Objective-C++ 1% · 27348 commits · 7381 forks · 991 open issues/PRs · GPL-3.0 · last push 2026-10-10")  
 
 [The patch](https://gitlab.com/vitaly-zdanevich-configs/gentoo--etc-portage--thinkpad-t430/-/blob/amd/patches/net-im/telegram-desktop/large-adaptive-sticker-preview.patch).
 

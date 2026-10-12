@@ -17,8 +17,13 @@ next_body = "#fun\n#document\n#secret\n#censor\n#music\n#anime\n#badapple\nSourc
 prev_id = 2138
 prev_title = ""
 prev_body = "#village\n#nature\n#career\nSource"
-views = 198
+views = 199
 ids = [2139]
+
+[[extra.related]]
+path = "@/posts/2026-10-12-2212/index.md"
+label = "Status update about my \"media center\" Youta TUI audio player for…"
+date = "2026-10-12"
 
 [[extra.related]]
 path = "@/posts/2026-05-21-1784/index.md"
@@ -39,11 +44,6 @@ date = "2026-06-23"
 path = "@/posts/2026-06-30-1873/index.md"
 label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre…"
 date = "2026-06-30"
-
-[[extra.related]]
-path = "@/posts/2026-05-16-1762/index.md"
-label = "#лекция про мой #telegram #бот для #evernote #stillyoungbar #bat…"
-date = "2026-05-16"
 +++
 
 **Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, ЯндексМузыки, аудиокниг, радио**  
@@ -51,7 +51,7 @@ date = "2026-05-16"
 Лёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.  
 На выходе - если ~/.config/youta/ под гитом - пушит, без токенов.  
 
-[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local subscriptions and persi… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 501 commits · 1 fork · 4 open issues/PRs · MIT · last push 2026-10-11")  
+[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 517 commits · 1 fork · 7 open issues/PRs · MIT · last push 2026-10-12")  
 
 Все линки  
 <https://share.evernote.com/note/179937e6-f6ba-6ccb-dfd7-81fa04888bbe>  

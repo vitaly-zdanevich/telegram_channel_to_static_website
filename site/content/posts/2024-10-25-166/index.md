@@ -38,5 +38,3 @@ while read i; do echo "$(ffprobe -i "$i" 2>&1 | egrep -o 'bitrate: [0-9]{1,3} .{
 Based on <https://www.linuxquestions.org/questions/linux-newbie-8/how-to-list-bitrate-of-all-my-mp3%27s-on-command-line-4175601321/#post5680865>  
 
 Published to <https://gitlab.com/vitaly-zdanevich/ffprobe-wrapper-lister-for-mp3>
-
-🙏 1

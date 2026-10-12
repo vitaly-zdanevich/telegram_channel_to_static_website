@@ -17,7 +17,7 @@ next_body = "#quote\n#book\n#ночьвлиссабоне\n#ремарк\n– Я
 prev_id = 1682
 prev_title = ""
 prev_body = "My new great #bash #alias (actually a #hotkey) for faster #cd\n# Like cd, but accept a path with spaces - so no quotation is needed\n# How to use it: paste/type a path and press Ctrl-g\nbind \"\"C-g\": \"C-acd 'C-e'C-j\"\"\n# How it works: it executes multiple commands:\n# Ctrl-a to go to the line start\n# Types cd '\n# Ctrl-e to go to the line end\n# Add single quote\n# Ctrl-j hits the Enter\n# =====\n# I tried an alias/function\n# cd \"$\"\n# and\n# cd \"$1\"\n# but got error when path contains ("
-views = 21
+views = 22
 ids = [1683]
 
 [[extra.related]]

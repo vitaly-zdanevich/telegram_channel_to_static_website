@@ -17,7 +17,7 @@ next_body = "...and another useful #bash #alias to #remove the text inside singl
 prev_id = 1681
 prev_title = ""
 prev_body = "#serp\n#armiesofexigo\n#google found a quote that exists on #youtube only"
-views = 18
+views = 19
 ids = [1682]
 
 [[extra.related]]
