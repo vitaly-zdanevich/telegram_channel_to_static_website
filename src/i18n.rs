@@ -37,6 +37,11 @@ pub struct Ui {
     pub posts: &'static str,
     /// Heading for the related-posts list under a post.
     pub related: &'static str,
+    /// Labels for static channel-post discussion snapshots.
+    pub comments: &'static str,
+    pub reply_to_comment: &'static str,
+    pub reply_on_telegram: &'static str,
+    pub attachment: &'static str,
 }
 
 /// Normalize a user-supplied language tag to one of [`SUPPORTED`], falling back
@@ -116,6 +121,10 @@ const EN: Ui = Ui {
     not_found: "Page not found",
     posts: "posts",
     related: "Related",
+    comments: "Comments",
+    reply_to_comment: "Reply to comment",
+    reply_on_telegram: "Reply on Telegram",
+    attachment: "Attachment",
 };
 
 const RU: Ui = Ui {
@@ -140,6 +149,10 @@ const RU: Ui = Ui {
     not_found: "Страница не найдена",
     posts: "постов",
     related: "Похожие",
+    comments: "Комментарии",
+    reply_to_comment: "Ответ на комментарий",
+    reply_on_telegram: "Ответить в Telegram",
+    attachment: "Вложение",
 };
 
 const UK: Ui = Ui {
@@ -164,6 +177,10 @@ const UK: Ui = Ui {
     not_found: "Сторінку не знайдено",
     posts: "дописів",
     related: "Схожі",
+    comments: "Коментарі",
+    reply_to_comment: "Відповідь на коментар",
+    reply_on_telegram: "Відповісти в Telegram",
+    attachment: "Вкладення",
 };
 
 const BE: Ui = Ui {
@@ -188,6 +205,10 @@ const BE: Ui = Ui {
     not_found: "Старонка не знойдзена",
     posts: "запісаў",
     related: "Падобныя",
+    comments: "Каментарыі",
+    reply_to_comment: "Адказ на каментарый",
+    reply_on_telegram: "Адказаць у Telegram",
+    attachment: "Далучэнне",
 };
 
 const DE: Ui = Ui {
@@ -212,6 +233,10 @@ const DE: Ui = Ui {
     not_found: "Seite nicht gefunden",
     posts: "Beiträge",
     related: "Ähnliche",
+    comments: "Kommentare",
+    reply_to_comment: "Antwort auf Kommentar",
+    reply_on_telegram: "Auf Telegram antworten",
+    attachment: "Anhang",
 };
 
 const FR: Ui = Ui {
@@ -236,6 +261,10 @@ const FR: Ui = Ui {
     not_found: "Page introuvable",
     posts: "publications",
     related: "Similaires",
+    comments: "Commentaires",
+    reply_to_comment: "Réponse au commentaire",
+    reply_on_telegram: "Répondre sur Telegram",
+    attachment: "Pièce jointe",
 };
 
 const ZH: Ui = Ui {
@@ -260,6 +289,10 @@ const ZH: Ui = Ui {
     not_found: "页面未找到",
     posts: "篇",
     related: "相关",
+    comments: "评论",
+    reply_to_comment: "回复评论",
+    reply_on_telegram: "在 Telegram 回复",
+    attachment: "附件",
 };
 
 const JA: Ui = Ui {
@@ -284,6 +317,10 @@ const JA: Ui = Ui {
     not_found: "ページが見つかりません",
     posts: "件",
     related: "関連",
+    comments: "コメント",
+    reply_to_comment: "コメントへの返信",
+    reply_on_telegram: "Telegram で返信",
+    attachment: "添付ファイル",
 };
 
 const PL: Ui = Ui {
@@ -308,6 +345,10 @@ const PL: Ui = Ui {
     not_found: "Nie znaleziono strony",
     posts: "wpisów",
     related: "Podobne",
+    comments: "Komentarze",
+    reply_to_comment: "Odpowiedź na komentarz",
+    reply_on_telegram: "Odpowiedz w Telegramie",
+    attachment: "Załącznik",
 };
 
 const ES: Ui = Ui {
@@ -332,6 +373,10 @@ const ES: Ui = Ui {
     not_found: "Página no encontrada",
     posts: "publicaciones",
     related: "Relacionadas",
+    comments: "Comentarios",
+    reply_to_comment: "Respuesta al comentario",
+    reply_on_telegram: "Responder en Telegram",
+    attachment: "Archivo adjunto",
 };
 
 const KO: Ui = Ui {
@@ -356,6 +401,10 @@ const KO: Ui = Ui {
     not_found: "페이지를 찾을 수 없습니다",
     posts: "개 글",
     related: "관련 글",
+    comments: "댓글",
+    reply_to_comment: "댓글에 답글",
+    reply_on_telegram: "Telegram에서 답글",
+    attachment: "첨부 파일",
 };
 
 const KA: Ui = Ui {
@@ -380,6 +429,10 @@ const KA: Ui = Ui {
     not_found: "გვერდი ვერ მოიძებნა",
     posts: "პოსტი",
     related: "მსგავსი",
+    comments: "კომენტარები",
+    reply_to_comment: "კომენტარზე პასუხი",
+    reply_on_telegram: "პასუხი Telegram-ში",
+    attachment: "დანართი",
 };
 
 const HI: Ui = Ui {
@@ -404,6 +457,10 @@ const HI: Ui = Ui {
     not_found: "पृष्ठ नहीं मिला",
     posts: "पोस्ट",
     related: "संबंधित",
+    comments: "टिप्पणियाँ",
+    reply_to_comment: "टिप्पणी का जवाब",
+    reply_on_telegram: "Telegram पर जवाब दें",
+    attachment: "अटैचमेंट",
 };
 
 /// Translatable prose for the About page. Sentence templates use `{placeholder}`

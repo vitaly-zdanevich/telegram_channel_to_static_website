@@ -32,12 +32,14 @@ It scrapes the public web preview (`https://t.me/s/<channel>`), downloads all
 media locally, and regenerates a complete Zola blog on every run. **No Telegram
 bot, token, or API is needed** for that — it reads only the public web page (the
 optional [MTProto backend](#optional-mtproto-backend) does log in with API
-credentials to add audio/photos/videos). The output has
+credentials to add audio/photos/videos and discussions). The output has
 **no Telegram dependency**: media is stored in the site or its GitHub Releases,
 there are no Telegram embeds, and links to the channel's *own* posts are rewritten
 to internal relative links — so the site keeps working even if the channel is
 later removed. Links you wrote to other sites (including other Telegram channels)
 are preserved as normal links. It's a backup, not a mirror.
+Archived discussion text is also local; comment attachments remain links to
+Telegram rather than downloaded files (see [Archived discussions](#archived-discussions)).
 
 Written in Rust: a single static binary, easy to run locally or in CI.
 
@@ -82,6 +84,12 @@ Written in Rust: a single static binary, easy to run locally or in CI.
 - **Threaded replies** — when a post replies to an earlier message, it's shown as
   a quoted **↩ backlink** to that post (an internal link when it's in the archive,
   otherwise the `t.me` link).
+- **Archived discussions** — individual post pages show their public Telegram
+  comment threads with formatted text, authors, dates and reply links. Enabled
+  by default; the first fetch requires the [MTProto backend](#optional-mtproto-backend).
+  Later builds can reuse the last complete snapshot without Telegram access.
+  Comment attachments are linked, not downloaded. See
+  [Archived discussions](#archived-discussions) for controls and retention limits.
 - **Polls** — rendered as static result bars (question, options with vote shares,
   and voter count) — no JavaScript.
 - **Engagement** — exports per-post **view counts**. (Reactions/likes aren't
@@ -232,13 +240,15 @@ since the channel is public. (Or uncomment `channel = "…"` in
 
 ### The `blog` branch (archive + cache)
 
-Each run commits the generated site (Markdown + media + built-in templates —
-everything except the built `public/` and any external theme) to a `blog`
-branch, leaving `main` code-only. It does double duty:
+After deployment, each run with changed archive files commits the generated
+site (Markdown, locally stored media, metadata caches and built-in templates)
+to the `blog` branch, leaving `main` code-only. Built `public/`, external themes,
+Release-upload staging directories, the temporary Release inventory and the
+MTProto download cache are excluded. It does double duty:
 
 - **Cache** — the next run restores media from it instead of re-downloading.
-- **Durable archive** — a complete, buildable Zola site you can clone and mirror
-  anywhere, so the backup isn't locked to one platform:
+- **Durable archive** — a buildable Zola site you can clone and mirror anywhere.
+  Release-backed media must be copied separately when moving away from GitHub:
 
 ```sh
 git clone -b blog https://github.com/<you>/<repo> my-archive
@@ -248,8 +258,27 @@ git -C my-archive remote add gitlab git@gitlab.com:<you>/<repo>.git
 git -C my-archive push gitlab blog          # mirror it elsewhere
 ```
 
-Media is committed as plain git blobs; for very large channels consider Git LFS
-or occasional history squashing.
+**Historical text versions:** a version is retained only if a run fetched it
+and successfully committed and pushed its snapshot **before** it was edited or
+deleted. This is a history of captured snapshots, not every Telegram revision;
+changes made between runs can be missed. Removing a post or comment from the
+latest snapshot does not remove it from earlier `blog` commits. The workflow's
+[`--depth 1` clones](https://git-scm.com/docs/git-clone) restrict its local
+checkout, not the remote history: it makes ordinary
+[fast-forward pushes](https://git-scm.com/docs/git-push#_note_about_fast_forwards),
+without rewriting old commits. Retention assumes nobody later deletes the
+branch or rewrites/squashes that history. The discussion cache
+(`site/.discussions.json`) is included in these snapshots.
+
+**Historical media is different:** locally committed files are Git blobs, but
+GitHub Release assets are not part of Git history. The
+[`daily.yml`](.github/workflows/daily.yml) upload step can replace same-named
+video/archive assets, and its cleanup step
+[deletes superseded image assets](https://docs.github.com/en/rest/releases/assets#delete-a-release-asset).
+Old text snapshots can therefore reference media that is no longer available.
+Keep a separate copy of Release assets if you need every historical binary.
+For large locally stored media collections, consider Git LFS; history
+squashing trades away the old snapshots described above.
 
 ### Theming
 
@@ -319,6 +348,7 @@ These are *variables*, not secrets — all of it is public.
 | `PINTEREST_SAVE` | `--pinterest-save` | off | `true` adds a Pinterest **"Save" hover button** to the site's own images so visitors can pin them to their boards (opt-in; needs JavaScript, loads pinit.js) |
 | `LIVENESS` | `--no-liveness` | on | `false` skips the liveness checks (YouTube / Apple Podcasts / Yandex / Instagram / Spotify / Pinterest). Otherwise a removed item keeps its local media, or shows the plain link, instead of a dead/broken embed |
 | `REACTIONS` | `--no-reactions` | on | show per-emoji reaction counts (👍 42 · ❤️ 10). Paid "stars" reactions show ⭐; custom emojis show their standard-emoji fallback. **Requires the [MTProto backend](#optional-mtproto-backend)** — `t.me/s/` never exposes reactions. `false` hides them |
+| `DISCUSSIONS` | `--no-discussions` | on | archive public post-linked comment threads and show them on individual post pages. Initial fetching needs the [MTProto backend](#optional-mtproto-backend); existing `site/.discussions.json` snapshots remain usable without it. `false` disables fetching and display; the TOML equivalent is `discussions = false`. Comment attachments are linked, not downloaded |
 | `ABOUT_ME` | `--no-about-me` | on | if the channel description links to an [about.me](https://about.me) profile, pull its photo, social links and a contact button onto the About page (about.me blocks iframing, so the contact is a link). Telegram links are skipped (the channel is already linked at the top). `false` disables it |
 | `ABOUTME_BIO` | `--aboutme-bio` | off | `true` also copies the about.me **bio text** onto the About page. Off by default so a generic "hire me" blurb isn't mirrored |
 | `ABOUTME_BOTH_IMAGES` | `--aboutme-both-images` | off | `true` shows **both** the Telegram channel avatar and the about.me photo. By default, when an about.me photo is present the channel avatar is dropped to avoid two portraits |
@@ -494,6 +524,42 @@ run keeps it alive indefinitely.
 > account that's just a member of the channel. User-account automation is a
 > Telegram grey area; use it on your own channel at gentle rates. Each run walks
 > the full message history.
+
+### Archived discussions
+
+Discussions are **enabled by default**, independently of the optional MTProto
+backend. Fetching them initially requires a build with `--features mtproto`
+and the API credentials/session described above; enabling discussions alone
+does not log in or create credentials. Without working MTProto access, a run
+can still render the last successful `site/.discussions.json` snapshot. With
+neither credentials nor a saved snapshot, there are no comments to show.
+
+Telegram stores a channel post's comments in a linked discussion thread (see
+the [discussion-group API](https://core.telegram.org/api/discussion) and
+[`messages.getReplies`](https://core.telegram.org/method/messages.getReplies)).
+Only publicly accessible threads linked from channel posts are fetched, not
+unrelated group conversations. The tool never joins a group to gain access.
+Individual post pages show formatted comment text, available author information,
+publication dates and reply links. Media attachments are represented by links
+back to Telegram; their files are not archived by this feature.
+
+Each completely fetched post discussion replaces its prior cached snapshot,
+reflecting edits and deletions in the current site. A failed or incomplete
+fetch keeps the last complete snapshot instead of replacing it with a partial
+thread. Synchronization is bounded to 180 seconds per run, 30 seconds per post,
+and 100 discussion-bearing posts. A saved cursor rotates through older posts
+across builds; large archives can need several builds to capture new comments
+or reflect edits and deletions. This work is independent of image-backfill limits.
+An API flood wait or request timeout stops further MTProto requests for that run;
+completed snapshots and existing confirmed Release originals remain usable.
+Earlier snapshots survive in the `blog` branch only after a successful archive
+commit; see [history-retention limits](#the-blog-branch-archive--cache).
+
+To opt out, set the repository variable/environment variable
+`DISCUSSIONS=false`, pass `--no-discussions`, or set `discussions = false` in
+`tg2zola.toml`. The CLI opt-out wins over the environment; a nonempty recognized
+environment value wins over TOML. This disables fetching and displaying discussions; it does not
+erase comments already recorded in Git history.
 
 ## Limitations
 

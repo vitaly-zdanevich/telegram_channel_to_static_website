@@ -9,6 +9,8 @@ mod aboutme;
 mod bandcamp;
 mod config;
 mod dedup;
+mod discussion_render;
+mod discussions;
 mod enex;
 mod export_media;
 mod genius;
@@ -322,6 +324,11 @@ struct GenerateArgs {
     /// backend when it runs; the web preview never exposes reactions).
     #[arg(long)]
     no_reactions: bool,
+
+    /// Don't fetch or render public channel-post discussions (default on;
+    /// requires MTProto credentials for new snapshots).
+    #[arg(long)]
+    no_discussions: bool,
 
     /// Don't enrich the About page from an about.me link in the channel
     /// description (default: pull its social links + a contact button).
@@ -666,6 +673,11 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         } else {
             fc.reactions.unwrap_or(true)
         },
+        discussions: discussions_enabled(
+            g.no_discussions,
+            std::env::var("DISCUSSIONS").ok().as_deref(),
+            fc.discussions,
+        ),
         about_me: if g.no_about_me {
             false
         } else {
@@ -745,6 +757,22 @@ fn resolve(g: &GenerateArgs, fc: FileConfig) -> Result<Settings> {
         },
         channel,
     })
+}
+
+/// CLI opt-out wins, then a recognized environment value, then TOML/default.
+/// Empty Actions variables must not override explicit file configuration.
+fn discussions_enabled(cli_disabled: bool, env: Option<&str>, file: Option<bool>) -> bool {
+    if cli_disabled {
+        return false;
+    }
+    match env
+        .map(|value| value.trim().to_ascii_lowercase())
+        .as_deref()
+    {
+        Some("false" | "0" | "no" | "off") => false,
+        Some("true" | "1" | "yes" | "on") => true,
+        _ => file.unwrap_or(true),
+    }
 }
 
 /// Resolve the header search box. A custom URL wins (Enter handler appends the
@@ -1095,6 +1123,17 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
         )?;
     }
 
+    // The same snapshot fallback works without MTProto credentials or even its
+    // Cargo feature. Disabled discussions neither load nor render cached text.
+    let discussions = if s.discussions {
+        discussions::Archive::load(&s.site, &s.channel).unwrap_or_else(|error| {
+            tracing::warn!("discussion snapshot unavailable: {error:#}");
+            discussions::Archive::empty(&s.channel)
+        })
+    } else {
+        discussions::Archive::empty(&s.channel)
+    };
+
     // Posts are id-ascending; neighbour id+title drive the Next/Prev nav.
     let titles: Vec<String> = posts
         .iter()
@@ -1120,7 +1159,11 @@ async fn run(mut s: Settings, init_site: bool) -> Result<()> {
                     previews[j].as_str(),
                 )
             });
-            render::render_post(p, &rewriter, false, newer, older, &render_opts)
+            let mut rendered = render::render_post(p, &rewriter, false, newer, older, &render_opts);
+            if let Some(threads) = discussions.posts.get(&p.primary_id) {
+                discussion_render::attach(&mut rendered, &s.channel, threads, &ui);
+            }
+            rendered
         })
         .collect();
 
@@ -1965,6 +2008,21 @@ mod tests {
                 .unwrap()
                 .post_header_line
         );
+    }
+
+    /// Discussion opt-outs work independently of the optional MTProto feature.
+    #[test]
+    fn discussions_default_on_and_support_cli_env_and_file_settings() {
+        assert!(discussions_enabled(false, None, None));
+        for value in ["false", "0", "NO", " off "] {
+            assert!(!discussions_enabled(false, Some(value), Some(true)));
+        }
+        assert!(!discussions_enabled(false, Some(""), Some(false)));
+        assert!(discussions_enabled(false, Some("true"), Some(false)));
+        assert!(!discussions_enabled(true, Some("true"), Some(true)));
+        let cli = Cli::try_parse_from(["tg2zola", "--channel", "x", "--no-discussions"]).unwrap();
+        let config: FileConfig = toml::from_str("discussions = true").unwrap();
+        assert!(!resolve(&cli.generate, config).unwrap().discussions);
     }
 
     #[test]

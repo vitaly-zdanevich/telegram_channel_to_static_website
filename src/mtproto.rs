@@ -29,6 +29,8 @@ use tokio::io::AsyncWriteExt;
 use crate::config::Settings;
 use crate::model::{Media, Post};
 
+mod discussions;
+
 /// Default on-disk session file (created by `tg2zola login`).
 const SESSION_FILE: &str = "tg2zola.session";
 
@@ -1309,6 +1311,20 @@ async fn enrich(posts: &mut [Post], s: &Settings) -> Result<()> {
         .with_context(|| format!("channel @{} not found", s.channel))?;
     let archive_peer: PeerRef = (&peer).into();
     let archive_input_peer: tl::enums::InputPeer = archive_peer.into();
+
+    // Discussion snapshots have their own budget and must not stop when the
+    // original-image backfill reaches its cap. Optional failures retain cache.
+    if s.discussions {
+        if let Err(error) = discussions::sync(&client, &peer, posts, s).await {
+            tracing::warn!("MTProto: discussion sync skipped: {error:#}");
+            // A timeout can interrupt grammers' automatic flood-wait sleep.
+            // Stop this session instead of immediately starting media requests;
+            // maybe_enrich still restores confirmed Release-backed originals.
+            if discussions::should_stop_requests(&error) {
+                return Err(error);
+            }
+        }
+    }
 
     // message id -> index into `posts` (each post bundles one or more ids).
     let mut id_to_post: HashMap<i32, usize> = HashMap::new();

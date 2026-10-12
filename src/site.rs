@@ -1854,6 +1854,8 @@ const PAGE_HTML: &str = r#"{% extends "base.html" %}
 	</p>
 	{% endif %}
   </article>
+  {# Discussion snapshots belong only to this post page, not feeds or listings. #}
+  {% if page.extra.discussions_html %}{{ page.extra.discussions_html | safe }}{% endif %}
   {% if page.extra.related %}
   <nav class="related">
     <strong>{{ config.extra.i18n.related }}:</strong>
@@ -2268,6 +2270,20 @@ input.site-search { margin-left: auto; }
 .meta { font-size: .9em; }
 __POST_HEADER_LINE__
 .tags a { margin-right: .5rem; white-space: nowrap; }
+/* Readable archived discussions, without constraining long names, URLs or code
+   to a fixed width. Native details elements keep spoilers keyboard-accessible. */
+.discussions { margin: 2rem 0; border-top: 1px solid var(--border); }
+.discussions h2 { font-size: 1.1rem; }
+.discussion-comments { list-style: none; padding: 0; }
+.discussion-comments > li { margin: 1rem 0; min-width: 0; overflow-wrap: anywhere; }
+.discussion-comments > li:target { outline: 1px solid var(--border); outline-offset: .35rem; }
+.comment-meta, .comment-parent, .comment-attachment { font-size: .85em; color: var(--muted); }
+.comment-author { color: var(--fg); }
+.comment-body { margin-top: .3rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.comment-body pre { white-space: pre-wrap; }
+.comment-body blockquote { margin: .5rem 0; padding-left: .75rem; border-left: 2px solid var(--border); }
+.comment-body details { display: inline-block; }
+.comment-body summary { cursor: pointer; }
 .pager { display: flex; justify-content: space-between; margin: 2rem 0; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; margin-top: auto; }
 .tg-link { margin-top: 1rem; }

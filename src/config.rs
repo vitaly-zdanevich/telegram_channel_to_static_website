@@ -119,6 +119,8 @@ pub struct FileConfig {
     pub liveness: Option<bool>,
     /// Show per-emoji reaction counts (MTProto backend only). Default on.
     pub reactions: Option<bool>,
+    /// Archive public channel-post discussion text via MTProto (default on).
+    pub discussions: Option<bool>,
     /// Enrich the About page from an about.me link in the channel description. Default on.
     pub about_me: Option<bool>,
     /// Copy the about.me bio text onto the About page (opt-in; default off).
@@ -282,6 +284,8 @@ pub struct Settings {
     /// the MTProto backend, which is the only source of reactions.
     #[cfg_attr(not(feature = "mtproto"), allow(dead_code))]
     pub reactions: bool,
+    /// Fetch and render public post discussions; cached snapshots work offline.
+    pub discussions: bool,
     /// Enrich the About page from an about.me link in the description (default true).
     pub about_me: bool,
     /// Copy the about.me bio text onto the About page (opt-in, default false).

@@ -1477,7 +1477,7 @@ fn truncate_chars(s: &str, max: usize) -> String {
 }
 
 /// Escape a string for a TOML basic string.
-fn toml_str(s: &str) -> String {
+pub(crate) fn toml_str(s: &str) -> String {
     let mut o = String::with_capacity(s.len() + 2);
     o.push('"');
     for c in s.chars() {
@@ -1487,7 +1487,7 @@ fn toml_str(s: &str) -> String {
             '\n' => o.push_str("\\n"),
             '\t' => o.push_str("\\t"),
             '\r' => {}
-            c if (c as u32) < 0x20 => o.push_str(&format!("\\u{:04X}", c as u32)),
+            c if (c as u32) < 0x20 || c == '\u{7f}' => o.push_str(&format!("\\u{:04X}", c as u32)),
             c => o.push(c),
         }
     }

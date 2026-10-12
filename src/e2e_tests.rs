@@ -50,6 +50,222 @@ fn zola_ready() -> bool {
     false
 }
 
+/// Untrusted discussion content must remain inert through TOML, Tera, and the
+/// real HTML-minifying build, while preserving Telegram formatting and replies.
+fn mock_discussion() -> crate::discussions::Discussion {
+    use crate::discussions::{Comment, Discussion};
+
+    Discussion {
+        peer_id: 77,
+        root_id: 10,
+        post_id: 1,
+        comments: vec![
+            Comment {
+                id: 11,
+                author: "Discussion fixture <img src=x onerror=alert(1)>".into(),
+                date: "2026-10-12T12:34:00+00:00".into(),
+                body_html: concat!(
+                    "<b onclick='alert(1)'>Formatted discussion</b>",
+                    "<pre>    preserved_indent()</pre>",
+                    "<script>alert('discussion injection')</script>",
+                    "<iframe srcdoc='<script>alert(1)</script>'></iframe>",
+                    "<a href='java&#x73;cript:alert(1)'>unsafe link</a>",
+                    "<a href='https://example.test/comment?a=1&amp;b=2'>safe link</a>",
+                    "<span class='tg-spoiler'>spoiler text</span>",
+                    "\n{{ video(src=\"evil\") }} {% if true %}literal{% endif %}",
+                    "\n+++\n[extra]\ndiscussion_injection = true\n+++\n"
+                )
+                .into(),
+                reply_to: Some(10),
+                has_media: false,
+            },
+            Comment {
+                id: 12,
+                author: "Аўтар".into(),
+                date: "2026-10-12T12:35:00+00:00".into(),
+                body_html: "Reply with an attachment".into(),
+                reply_to: Some(11),
+                has_media: true,
+            },
+            Comment {
+                id: 13,
+                author: "Bob".into(),
+                date: "2026-10-12T12:36:00+00:00".into(),
+                body_html: "Reply to an unavailable comment".into(),
+                reply_to: Some(9),
+                has_media: false,
+            },
+        ],
+    }
+}
+
+/// Discussion snapshots render only on their own post, never in aggregate
+/// pages, feeds, or the public snapshot file, including project-base builds.
+fn assert_discussions(public: &std::path::Path) {
+    let html = fs::read_to_string(public.join("posts/1/index.html")).unwrap();
+    let document = scraper::Html::parse_document(&html);
+    let select = |selector: &str| scraper::Selector::parse(selector).unwrap();
+    let section = document
+        .select(&select("section.discussions"))
+        .next()
+        .expect("discussion section missing on its post");
+    assert_eq!(
+        section
+            .select(&select("h2"))
+            .next()
+            .unwrap()
+            .text()
+            .collect::<String>(),
+        "Comments (3)"
+    );
+    let comments: Vec<_> = section
+        .select(&select(".discussion-comments > li"))
+        .collect();
+    assert_eq!(comments.len(), 3);
+    assert_eq!(comments[0].value().attr("id"), Some("comment-77-11"));
+    assert_eq!(
+        comments[0]
+            .select(&select(".comment-author"))
+            .next()
+            .unwrap()
+            .text()
+            .collect::<String>(),
+        "Discussion fixture <img src=x onerror=alert(1)>"
+    );
+    let date = comments[0].select(&select("time")).next().unwrap();
+    assert_eq!(
+        date.value().attr("datetime"),
+        Some("2026-10-12T12:34:00+00:00")
+    );
+    assert_eq!(date.text().collect::<String>(), "2026-10-12 12:34 +00:00");
+    assert!(comments[0]
+        .select(&select(".comment-parent"))
+        .next()
+        .is_none());
+    assert_eq!(
+        comments[1]
+            .select(&select(".comment-parent"))
+            .next()
+            .unwrap()
+            .value()
+            .attr("href"),
+        Some("#comment-77-11")
+    );
+    assert_eq!(
+        comments[2]
+            .select(&select(".comment-parent"))
+            .next()
+            .unwrap()
+            .value()
+            .attr("href"),
+        Some("https://t.me/testchan/1?comment=9")
+    );
+    let attachment = comments[1]
+        .select(&select(".comment-attachment a"))
+        .next()
+        .unwrap();
+    assert_eq!(
+        attachment.value().attr("href"),
+        Some("https://t.me/testchan/1?comment=12")
+    );
+    assert_eq!(
+        attachment.text().collect::<String>(),
+        "Attachment (not archived)"
+    );
+    let reply = section
+        .select(&select("a"))
+        .find(|link| link.text().collect::<String>() == "Reply on Telegram")
+        .unwrap();
+    assert_eq!(
+        reply.value().attr("href"),
+        Some("https://t.me/testchan/1?comment=0")
+    );
+    assert_eq!(
+        section
+            .select(&select("b"))
+            .next()
+            .unwrap()
+            .text()
+            .collect::<String>(),
+        "Formatted discussion"
+    );
+    assert_eq!(
+        section
+            .select(&select("pre"))
+            .next()
+            .unwrap()
+            .text()
+            .collect::<String>(),
+        "    preserved_indent()"
+    );
+    assert!(section
+        .select(&select("details.comment-spoiler"))
+        .next()
+        .is_some());
+    assert!(section
+        .select(&select(
+            "script, style, iframe, img, video, svg, [onclick], [onerror]"
+        ))
+        .next()
+        .is_none());
+    let body = comments[0]
+        .select(&select(".comment-body"))
+        .next()
+        .unwrap()
+        .text()
+        .collect::<String>();
+    assert!(
+        body.contains("{{ video(src=\"evil\") }} {% if true %}literal{% endif %}"),
+        "{body}"
+    );
+    assert!(body.contains("+++"), "{body}");
+    assert!(
+        body.contains("[extra] discussion_injection = true")
+            || body.contains("[extra]\ndiscussion_injection = true"),
+        "{body}"
+    );
+    assert!(!body.contains("discussion injection"));
+    let safe = section
+        .select(&select("a"))
+        .find(|link| link.text().collect::<String>() == "safe link")
+        .unwrap();
+    assert_eq!(
+        safe.value().attr("href"),
+        Some("https://example.test/comment?a=1&b=2")
+    );
+    assert_eq!(safe.value().attr("rel"), Some("nofollow ugc"));
+    assert!(!section
+        .select(&select("a"))
+        .any(|link| link.text().collect::<String>() == "unsafe link"));
+
+    let mut pages = Vec::new();
+    collect_html(public, &mut pages);
+    for page in pages {
+        if page == public.join("posts/1/index.html") {
+            continue;
+        }
+        let html = fs::read_to_string(&page).unwrap();
+        let document = scraper::Html::parse_document(&html);
+        assert!(
+            document
+                .select(&select("section.discussions"))
+                .next()
+                .is_none(),
+            "discussion leaked into {}",
+            page.display()
+        );
+        assert!(
+            !html.contains("Discussion fixture"),
+            "comment author leaked into {}",
+            page.display()
+        );
+    }
+    let feed = fs::read_to_string(public.join("rss.xml")).unwrap();
+    assert!(!feed.contains("Discussion fixture"));
+    assert!(!feed.contains("Formatted discussion"));
+    assert!(!public.join(".discussions.json").exists());
+}
+
 /// Both tag views link to each other using their own canonical paths. Zola
 /// transliterates taxonomy slugs, unlike the generator's full-view slugs.
 fn assert_tag_view_links(public: &std::path::Path, base: &str) {
@@ -404,6 +620,7 @@ fn settings(site: PathBuf) -> Settings {
         video_releases: false,
         liveness: false,
         reactions: false,
+        discussions: true,
         about_me: false,
         tags_to_pages: None,
         pages: None,
@@ -600,7 +817,7 @@ fn zola_build_produces_expected_html() {
         &s.language,
     );
     site::scaffold(&s, None, &tag_counts, &[], &days, &page_tag_titles).expect("scaffold");
-    let rendered: Vec<RenderedPost> = posts
+    let mut rendered: Vec<RenderedPost> = posts
         .iter()
         .map(|p| {
             render::render_post(
@@ -626,6 +843,21 @@ fn zola_build_produces_expected_html() {
             )
         })
         .collect();
+    // Exercise the persisted snapshot boundary as well as single-post HTML;
+    // the backup stays outside Zola's published static directory.
+    let mut discussions = crate::discussions::Archive::empty(&s.channel);
+    discussions.posts.insert(1, vec![mock_discussion()]);
+    discussions
+        .save(&s.site)
+        .expect("save discussion snapshots");
+    let discussions =
+        crate::discussions::Archive::load(&s.site, &s.channel).expect("load discussion snapshots");
+    crate::discussion_render::attach(
+        &mut rendered[0],
+        &s.channel,
+        discussions.posts.get(&1).unwrap(),
+        &ui,
+    );
     site::write_site(&s, &rendered).expect("write_site");
 
     // The real static-site build.
@@ -647,6 +879,7 @@ fn zola_build_produces_expected_html() {
     };
     assert_tag_view_links(&public, "");
     assert_tag_post_tags(&public, "");
+    assert_discussions(&public);
 
     // Core pages exist.
     assert!(public.join("index.html").exists(), "home page missing");
@@ -899,6 +1132,7 @@ fn zola_build_produces_expected_html() {
     );
     assert_tag_view_links(&public, "https://example.test/channel");
     assert_tag_post_tags(&public, "https://example.test/channel");
+    assert_discussions(&public);
 
     let _ = fs::remove_dir_all(&dir);
 }

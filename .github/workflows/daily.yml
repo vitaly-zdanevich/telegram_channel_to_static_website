@@ -244,6 +244,10 @@ env:
   # this repository *variable* to "false" to hide them.
   REACTIONS: ${{ vars.REACTIONS }}
 
+  # Archive and display public post discussion text by default. The generator
+  # reads this switch directly; "false" disables fetching and cached rendering.
+  DISCUSSIONS: ${{ vars.DISCUSSIONS }}
+
   # If the channel description links to an about.me profile, its bio + social
   # links + a contact button are added to the About page (on by default); set
   # this repository *variable* to "false" to disable.
