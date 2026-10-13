@@ -122,6 +122,11 @@ pre code { padding: 0; background: none; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
 .site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
+/* Keyboard destinations stay out of the tab order but show their focus. */
+article.post[data-post-id] { scroll-margin-top: .5rem; }
+article.post[data-post-id]:focus-visible {
+	outline: 2px solid currentColor; outline-offset: .25rem;
+}
 .site-search { margin-left: auto; }
 .site-search input, input.site-search {
   background: var(--input-bg); color: var(--fg);
@@ -146,6 +151,17 @@ input.site-search { margin-left: auto; }
 .post-list { list-style: none; padding: 0; }
 .post-list li { padding: .2rem 0; }
 .post-list time { color: var(--muted); font-size: .85em; margin-left: .5rem; }
+/* Titles-only tag rows pair each post with its other tags, independently of
+   the optional full-post tag footer. Long titles and hashtags must wrap. */
+.tag-post-list > li {
+	display: grid;
+	grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
+	gap: .25rem 1rem;
+	align-items: baseline;
+}
+.tag-post-summary { min-width: 0; overflow-wrap: anywhere; }
+.tag-post-tags { display: flex; flex-wrap: wrap; gap: 0 .65rem; min-width: 0; font-size: .9em; }
+.tag-post-tags a { min-width: 0; overflow-wrap: anywhere; }
 .post { margin: 0 0 2.5rem; }
 .post.forwarded { background: var(--fwd-bg); border-radius: 8px; padding: .75rem 1rem; }
 .about-avatar { float: left; margin: 0 1rem .5rem 0; }
@@ -169,6 +185,20 @@ article.post:only-of-type .post-meta::before {
 	content: none;
 }
 .tags a { margin-right: .5rem; white-space: nowrap; }
+/* Readable archived discussions, without constraining long names, URLs or code
+   to a fixed width. Native details elements keep spoilers keyboard-accessible. */
+.discussions { margin: 2rem 0; border-top: 1px solid var(--border); }
+.discussions h2 { font-size: 1.1rem; }
+.discussion-comments { list-style: none; padding: 0; }
+.discussion-comments > li { margin: 1rem 0; min-width: 0; overflow-wrap: anywhere; }
+.discussion-comments > li:target { outline: 1px solid var(--border); outline-offset: .35rem; }
+.comment-meta, .comment-parent, .comment-attachment { font-size: .85em; color: var(--muted); }
+.comment-author { color: var(--fg); }
+.comment-body { margin-top: .3rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.comment-body pre { white-space: pre-wrap; }
+.comment-body blockquote { margin: .5rem 0; padding-left: .75rem; border-left: 2px solid var(--border); }
+.comment-body details { display: inline-block; }
+.comment-body summary { cursor: pointer; }
 .pager { display: flex; justify-content: space-between; margin: 2rem 0; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; margin-top: auto; }
 .tg-link { margin-top: 1rem; }
@@ -211,4 +241,5 @@ table.cal td.c3 a { font-size: 1.35rem; font-weight: 800; }
 @media (max-width: 640px) {
   body { width: auto; padding: 1rem .5rem; }
   .cal-months { gap: .9rem; }
+	.tag-post-list > li { grid-template-columns: minmax(0, 1fr); }
 }

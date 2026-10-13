@@ -5,13 +5,12 @@ description = "film korolishut naked"
 
 [taxonomies]
 days = ["2025-10-20"]
-tags = ["film", "korol_i_shut", "naked"]
+tags = ["film", "korol_i_shut", "naked", "video"]
 
 [extra]
 id = 710
 day = "2025-10-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/710"
-og_image = "01.jpg"
 next_id = 711
 next_title = ""
 next_body = "#games\n#steam"
@@ -55,6 +54,6 @@ date = "2025-06-16"
 
 <https://ru.wikipedia.org/wiki/TODD>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/710-01.mp4") }}
 
-*▶ video — 1:51*
+{{ tag(t="video") }}

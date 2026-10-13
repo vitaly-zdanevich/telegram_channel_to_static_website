@@ -11,7 +11,7 @@ tags = ["painting", "bible", "gustave_dore", "year_1891"]
 id = 755
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/755"
-og_image = "5229215222705359738_1217521546_460000122.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-755-5229215222705359738.jpg"
 next_id = 756
 next_title = ""
 next_body = "#painting\n#bible\n#gustavedore\nThe Bible panorama, or The Holy Scriptures in picture and story\nSource(14598336348).jpg)"
@@ -56,4 +56,4 @@ The Bible panorama, or The Holy Scriptures in picture and story (1891)
 
 [Source](https://commons.wikimedia.org/wiki/File:The_Bible_panorama,_or_The_Holy_Scriptures_in_picture_and_story_(1891)_(14598295740).jpg)
 
-{{ img(src="5229215222705359738_1217521546_460000122.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-755-5229215222705359738.jpg") }}

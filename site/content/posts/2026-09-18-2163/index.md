@@ -21,6 +21,21 @@ views = 24
 ids = [2163]
 
 [[extra.related]]
+path = "@/posts/2026-10-13-2227/index.md"
+label = "#toy #craft #love Source Elly Vishnevsky www.vishnya.etsy.com ww…"
+date = "2026-10-13"
+
+[[extra.related]]
+path = "@/posts/2026-10-13-2226/index.md"
+label = "#toy #craft #horn"
+date = "2026-10-13"
+
+[[extra.related]]
+path = "@/posts/2026-10-13-2222/index.md"
+label = "#craft #toy #horn"
+date = "2026-10-13"
+
+[[extra.related]]
 path = "@/posts/2026-09-20-2169/index.md"
 label = "#craft #toy #horn"
 date = "2026-09-20"
@@ -29,21 +44,6 @@ date = "2026-09-20"
 path = "@/posts/2026-09-19-2167/index.md"
 label = "#craft #toy #horn"
 date = "2026-09-19"
-
-[[extra.related]]
-path = "@/posts/2026-09-19-2166/index.md"
-label = "#craft #toy #horn"
-date = "2026-09-19"
-
-[[extra.related]]
-path = "@/posts/2026-09-19-2168/index.md"
-label = "#craft #toy #white #wings #horn"
-date = "2026-09-19"
-
-[[extra.related]]
-path = "@/posts/2026-07-27-2073/index.md"
-label = "#toy #animal #antlers"
-date = "2026-07-27"
 +++
 
 {{ tag(t="craft") }}  

@@ -11,7 +11,7 @@ tags = ["solar_system", "planets", "year_1872"]
 id = 833
 day = "2025-12-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/833"
-og_image = "5382044023251471194_1253104774_460000090.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-833-5382044023251471194.jpg"
 next_id = 834
 next_title = ""
 next_body = "#botanic\n#botanicillustration\nSourceBHL287631.jpg)"
@@ -33,4 +33,4 @@ date = "2025-12-31"
 
 [Page 30](https://commons.wikimedia.org/wiki/Category:Zhivopisnoye_obozreniye,_1872)
 
-{{ img(src="5382044023251471194_1253104774_460000090.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-833-5382044023251471194.jpg") }}

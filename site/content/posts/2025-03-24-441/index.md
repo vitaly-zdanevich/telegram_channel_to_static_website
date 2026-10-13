@@ -11,7 +11,7 @@ tags = ["Wikipedia"]
 id = 441
 day = "2025-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/441"
-og_image = "5406954455607405557_1258904686_456256501.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-441-5406954455607405557.jpg"
 next_id = 442
 next_title = ""
 next_body = "wow in #telegram we have a #crypto #wallet, and users can send money to their contacts, wow"
@@ -26,4 +26,4 @@ On {{ tag(t="Wikipedia") }}, not all websites can be used as sources.
 
 Every fact on Wikipedia must have a reliable source. Original research is not allowed — Wikipedia only summarizes facts from trusted, reputable places.
 
-{{ img(src="5406954455607405557_1258904686_456256501.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-441-5406954455607405557.jpg") }}

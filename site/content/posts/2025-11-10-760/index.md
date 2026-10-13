@@ -11,7 +11,7 @@ tags = ["painting", "bible", "gustave_dore", "death", "horse", "year_1865"]
 id = 760
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/760"
-og_image = "5229215222705359767_1217521546_460000151.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-760-5229215222705359767.jpg"
 next_id = 761
 next_title = ""
 next_body = "#painting\n#bible\n#gustavedore\nThe Battle of Nicaea\nSource"
@@ -58,4 +58,4 @@ Gustave Dore - Death on the Pale Horse
 
 [Source](https://commons.wikimedia.org/wiki/File:Gustave_Dore_-_Death_on_the_Pale_Horse.png)
 
-{{ img(src="5229215222705359767_1217521546_460000151.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-760-5229215222705359767.jpg") }}

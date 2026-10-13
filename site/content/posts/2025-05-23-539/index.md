@@ -11,7 +11,7 @@ tags = ["book", "health", "zoloft", "christian"]
 id = 539
 day = "2025-05-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/539"
-og_image = "5296715169243722942_1233237602_456258750.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-539-5296715169243722942.jpg"
 next_id = 540
 next_title = ""
 next_body = "#wikipedia\n#bewiki\n#logo\nSource"
@@ -54,4 +54,4 @@ date = "2026-08-02"
 {{ tag(t="zoloft") }}  
 {{ tag(t="christian") }}
 
-{{ img(src="5296715169243722942_1233237602_456258750.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-539-5296715169243722942.jpg") }}

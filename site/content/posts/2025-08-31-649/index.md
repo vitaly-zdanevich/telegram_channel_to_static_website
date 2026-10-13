@@ -11,7 +11,7 @@ tags = ["webdesign", "login", "gamespot"]
 id = 649
 day = "2025-08-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/649"
-og_image = "5305527003321070773_1235289267_456258741.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-649-5305527003321070773.jpg"
 next_id = 650
 next_title = ""
 next_body = "Wow in #svg we can have #css, like\n.spinnera {\nanimation: spinnerMGfb .8s linear infinite;\nanimation-delay: -.8s;\n}\n.spinnerb {\nanimation-delay: -.65s;\n}\n.spinnerc {\nanimation-delay: -.5s;\n}\n@keyframes spinnerMGfb {\n0% { fill: black; }\n50% { fill: white; }\n100% { fill: black; }\n}\nand it works with usual"
@@ -53,4 +53,4 @@ Do you remember such {{ tag(t="webdesign") }}?
 
 [Source](https://web.archive.org/web/20030404151423/http://www.gamespot.com/features/heroesiii_dd/121798/page2.html)
 
-{{ img(src="5305527003321070773_1235289267_456258741.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-649-5305527003321070773.jpg") }}

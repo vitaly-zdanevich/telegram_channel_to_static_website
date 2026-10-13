@@ -11,7 +11,7 @@ tags = ["wikipedia", "bewiki", "logo"]
 id = 540
 day = "2025-05-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/540"
-og_image = "5298909356366097467_1233748476_456256571.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-540-5298909356366097467.jpg"
 next_id = 541
 next_title = ""
 next_body = "#iphone\n#apple\n#newton\n10 years gap.\nSource"
@@ -53,4 +53,4 @@ date = "2024-11-25"
 
 [Source](https://vk.com/video-55012165_167580582?to=L3ZpZGVvLTU1MDEyMTY1XzE2NzU4MDU4Mj8-)
 
-{{ img(src="5298909356366097467_1233748476_456256571.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-540-5298909356366097467.jpg") }}

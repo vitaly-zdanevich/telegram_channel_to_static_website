@@ -11,7 +11,7 @@ tags = ["belarus", "church", "year_2005", "globustut"]
 id = 925
 day = "2026-01-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/925"
-og_image = "5440801563862568213_1266785330_460000533.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-925-5440801563862568213.jpg"
 next_id = 926
 next_title = ""
 next_body = "#belarus\n#architecture\n#year2005\n#globustut"
@@ -54,4 +54,4 @@ date = "2026-02-25"
 
 [https://commons.wikimedia.org/wiki/File:039-012\_Цуденишки,\_снято\_15\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:039-012_%D0%A6%D1%83%D0%B4%D0%B5%D0%BD%D0%B8%D1%88%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_15_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-{{ img(src="5440801563862568213_1266785330_460000533.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-925-5440801563862568213.jpg") }}

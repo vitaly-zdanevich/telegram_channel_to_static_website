@@ -11,7 +11,7 @@ tags = ["homm3"]
 id = 329
 day = "2025-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/329"
-og_image = "5233675498993872612_1218560035_456257252.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-329-5233675498993872612.jpg"
 next_id = 330
 next_title = ""
 next_body = "#music"
@@ -50,4 +50,4 @@ date = "2025-11-04"
 {{ tag(t="homm3") }}  
 [Source](https://www.facebook.com/hydratgc/photos/mashup-homm-slav-edition-homm3-herojitrojka-slav-mashupbestselectionbyhydrasgran/393479077859381/)
 
-{{ img(src="5233675498993872612_1218560035_456257252.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-329-5233675498993872612.jpg") }}

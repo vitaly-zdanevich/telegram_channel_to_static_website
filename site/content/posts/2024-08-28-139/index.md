@@ -7,10 +7,11 @@ description = "Categories"
 days = ["2024-08-28"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/139?comment=0'>Reply on Telegram</a></p></section>"
 id = 139
 day = "2024-08-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/139"
-og_image = "5366491319603683533_1249483628_456253645.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-139-5366491319603683533.jpg"
 next_id = 140
 next_title = ""
 next_body = "Moss: Book 2: one of the best VR game. I played on Meta Quest 2. And here - one of the most dramatic episode of the game industry. Usual gameplay is interrupted by painful death of the main character. So lovely animation. So much of love and pain. She is asking the player to help - but we cannot help, she is crying. Another book. Another hero - who does not like you.\nIn VR it more dramatic, real. I love VR games.\nI cut the video fragment from"
@@ -23,4 +24,4 @@ ids = [139]
 
 [Categories](https://en.wikipedia.org/wiki/Duke_Nukem_3D)
 
-{{ img(src="5366491319603683533_1249483628_456253645.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-139-5366491319603683533.jpg") }}

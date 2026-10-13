@@ -11,7 +11,7 @@ tags = ["archiving", "photos"]
 id = 471
 day = "2025-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/471"
-og_image = "5474606413927015267_1274656135_456254307.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-471-5474606413927015267.jpg"
 next_id = 472
 next_title = ""
 next_body = "YouTube alternative on #blockchain"
@@ -52,4 +52,4 @@ date = "2025-04-18"
 {{ tag(t="archiving") }}  
 {{ tag(t="photos") }}
 
-{{ img(src="5474606413927015267_1274656135_456254307.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-471-5474606413927015267.jpg") }}

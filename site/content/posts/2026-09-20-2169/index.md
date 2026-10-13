@@ -21,6 +21,16 @@ views = 23
 ids = [2169]
 
 [[extra.related]]
+path = "@/posts/2026-10-13-2226/index.md"
+label = "#toy #craft #horn"
+date = "2026-10-13"
+
+[[extra.related]]
+path = "@/posts/2026-10-13-2222/index.md"
+label = "#craft #toy #horn"
+date = "2026-10-13"
+
+[[extra.related]]
 path = "@/posts/2026-09-19-2167/index.md"
 label = "#craft #toy #horn"
 date = "2026-09-19"
@@ -31,19 +41,9 @@ label = "#craft #toy #horn"
 date = "2026-09-19"
 
 [[extra.related]]
-path = "@/posts/2026-09-19-2168/index.md"
-label = "#craft #toy #white #wings #horn"
-date = "2026-09-19"
-
-[[extra.related]]
-path = "@/posts/2026-09-18-2163/index.md"
-label = "#craft #toy #hairblue"
-date = "2026-09-18"
-
-[[extra.related]]
-path = "@/posts/2026-07-27-2073/index.md"
-label = "#toy #animal #antlers"
-date = "2026-07-27"
+path = "@/posts/2026-10-13-2225/index.md"
+label = "#toy #craft #shy #horn"
+date = "2026-10-13"
 +++
 
 {{ tag(t="craft") }}  

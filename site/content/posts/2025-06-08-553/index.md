@@ -11,7 +11,7 @@ tags = ["format"]
 id = 553
 day = "2025-06-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/553"
-og_image = "5344065311076383027_1244262166_456259891.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-553-5344065311076383027.jpg"
 next_id = 554
 next_title = ""
 next_body = "#security\n#wish"
@@ -26,4 +26,6 @@ ids = [553]
 
 [Source](https://www.facebook.com/photo/?fbid=1126498989509107&amp;set=a.555490033276675)
 
-{{ img(src="5344065311076383027_1244262166_456259891.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-553-5344065311076383027.jpg") }}
+
+😁 1

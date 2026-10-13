@@ -56,3 +56,5 @@ date = "2026-02-02"
 [Source](<https://www.youtube.com/watch?v=nkcKaNqfykg> "Gatebox - Promotion Movie \"OKAERI\"_english")
 
 {{ youtube(id="nkcKaNqfykg") }}
+
+❤ 1

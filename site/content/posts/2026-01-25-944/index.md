@@ -11,7 +11,7 @@ tags = ["aws", "aws_lambda"]
 id = 944
 day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/944"
-og_image = "5454141697924207370_1269891322_460002058.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-944-5454141697924207370.jpg"
 next_id = 945
 next_title = ""
 next_body = "#aws\n#silicon\n#graviton\nTRN3 compute sled\nFrom"
@@ -54,4 +54,4 @@ From [https://youtu.be/JeUpUK0nhC0?t=1938](<https://youtu.be/JeUpUK0nhC0?t=1938>
 
 {{ youtube(id="JeUpUK0nhC0") }}
 
-{{ img(src="5454141697924207370_1269891322_460002058.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-944-5454141697924207370.jpg") }}

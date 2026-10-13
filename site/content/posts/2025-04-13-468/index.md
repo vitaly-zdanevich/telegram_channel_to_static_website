@@ -10,7 +10,7 @@ days = ["2025-04-13"]
 id = 468
 day = "2025-04-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/468"
-og_image = "5465605962065899340_1272560554_456257356.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-468-5465605962065899340.jpg"
 next_id = 469
 next_title = ""
 next_body = "Looks what I found - another #archiving group"
@@ -25,4 +25,4 @@ ids = [468]
 
 Годердзи 10 апреля 2025 год
 
-{{ img(src="5465605962065899340_1272560554_456257356.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-468-5465605962065899340.jpg") }}

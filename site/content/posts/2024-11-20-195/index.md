@@ -11,7 +11,7 @@ tags = ["style"]
 id = 195
 day = "2024-11-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/195"
-og_image = "5325686926973462534_1239983115_456255494.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-195-5325686926973462534.jpg"
 next_id = 196
 next_title = ""
 next_body = "#space\n#film #extract Lost in Space) from 1998, movie ending, love it\n#lostinspace"
@@ -29,4 +29,4 @@ date = "2026-05-13"
 
 {{ tag(t="style") }} love my custom YandexMail <https://gitlab.com/vitaly-zdanevich-styles/yandex-mail>
 
-{{ img(src="5325686926973462534_1239983115_456255494.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-195-5325686926973462534.jpg") }}

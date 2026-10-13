@@ -11,7 +11,7 @@ tags = ["webdesign", "webdesign_old"]
 id = 772
 day = "2025-11-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/772"
-og_image = "5233194153422819325_1218447963_460001277.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-772-5233194153422819325.jpg"
 next_id = 774
 next_title = ""
 next_body = "#film\n#kindzadza\n#batumi\nКин-дза-дза, на девятой минуте Скрипач говорит что из Батуми"
@@ -50,4 +50,6 @@ date = "2025-11-10"
 {{ tag(t="webdesign") }}  
 {{ tag(t="webdesign_old") }}
 
-{{ img(src="5233194153422819325_1218447963_460001277.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-772-5233194153422819325.jpg") }}
+
+🔥 1

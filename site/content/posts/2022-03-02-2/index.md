@@ -16,7 +16,7 @@ next_body = "Channel photo updated"
 prev_id = 1
 prev_title = ""
 prev_body = "Channel created"
-views = 51
+views = 52
 ids = [2]
 +++
 

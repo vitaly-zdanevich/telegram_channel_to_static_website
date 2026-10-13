@@ -32,6 +32,11 @@ label = "#sakartvelo"
 date = "2025-06-18"
 
 [[extra.related]]
+path = "@/posts/2026-10-12-2218/index.md"
+label = "#webdesing #typography"
+date = "2026-10-12"
+
+[[extra.related]]
 path = "@/posts/2026-07-08-2024/index.md"
 label = "#typography #scan"
 date = "2026-07-08"
@@ -40,11 +45,6 @@ date = "2026-07-08"
 path = "@/posts/2025-04-15-470/index.md"
 label = "Source #sakartvelo #taxes"
 date = "2025-04-15"
-
-[[extra.related]]
-path = "@/posts/2026-05-05-1735/index.md"
-label = "#architecture of #village houses in #sakartvelo"
-date = "2026-05-05"
 +++
 
 {{ tag(t="typography") }}  

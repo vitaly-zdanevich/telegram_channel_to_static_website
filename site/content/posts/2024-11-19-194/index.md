@@ -10,7 +10,7 @@ days = ["2024-11-19"]
 id = 194
 day = "2024-11-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/194"
-og_image = "5323556365496609563_1239487055_456256283.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-194-5323556365496609563.jpg"
 next_id = 195
 next_title = ""
 next_body = "#style love my custom YandexMail"
@@ -23,4 +23,4 @@ ids = [194]
 
 About games preservation
 
-{{ img(src="5323556365496609563_1239487055_456256283.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-194-5323556365496609563.jpg") }}

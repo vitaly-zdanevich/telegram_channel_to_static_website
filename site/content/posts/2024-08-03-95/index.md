@@ -7,6 +7,7 @@ description = "After the series' release, a study published in the Journal of th
 days = ["2024-08-03"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-70'><div class='comment-meta'><span class='comment-author'>Mrtko</span> · <a href='https://t.me/vitaly_zdanevich_chan/95?comment=70'><time datetime='2024-08-03T22:40:29+00:00'>2024-08-03 22:40 +00:00</time></a></div><div class='comment-body'>Should be an interesting series, based on the description. Have you watched it?</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/95?comment=0'>Reply on Telegram</a></p></section>"
 id = 95
 day = "2024-08-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/95"

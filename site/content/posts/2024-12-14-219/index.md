@@ -11,7 +11,7 @@ tags = ["lutris", "man2"]
 id = 219
 day = "2024-12-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/219"
-og_image = "5399898773527849409_1257261907_456255937.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-219-5399898773527849409.jpg"
 next_id = 220
 next_title = ""
 next_body = "#psy"
@@ -49,4 +49,6 @@ date = "2026-04-03"
 
 My second {{ tag(t="lutris") }} yaml for {{ tag(t="man2") }} <https://lutris.net/games/massive-assault-network-2/>
 
-{{ img(src="5399898773527849409_1257261907_456255937.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-219-5399898773527849409.jpg") }}
+
+🙏 2

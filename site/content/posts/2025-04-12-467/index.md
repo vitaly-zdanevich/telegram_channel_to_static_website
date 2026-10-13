@@ -11,7 +11,7 @@ tags = ["psy", "old", "test"]
 id = 467
 day = "2025-04-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/467"
-og_image = "5463124415861617785_1271982774_456258681.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-467-5463124415861617785.jpg"
 next_id = 468
 next_title = ""
 next_body = "Годердзи 10 апреля 2025 год"
@@ -55,4 +55,4 @@ date = "2025-04-09"
 
 [Source](https://www.threads.net/@_vitla_/post/DIS1LDItE15/media)
 
-{{ img(src="5463124415861617785_1271982774_456258681.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-467-5463124415861617785.jpg") }}

@@ -8,6 +8,7 @@ days = ["2024-07-21"]
 tags = ["firefox", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/94?comment=0'>Reply on Telegram</a></p></section>"
 id = 94
 day = "2024-07-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/94"
@@ -46,7 +47,7 @@ label = "#firefox #extension Copy non-latin links without #percent"
 date = "2026-02-25"
 +++
 
-{{ tag(t="firefox") }} vertical tabs with [https://github.com/mbnuqw/sidebery](<https://github.com/mbnuqw/sidebery> "Firefox extension for managing tabs and bookmarks in sidebar. · 4714 stars · Languages: TypeScript 65%, Vue 23%, Stylus 10% · 2521 commits · 262 forks · 869 open issues/PRs · MIT · last push 2026-09-18") plus custom CSS from [https://github.com/lucaspar/firefox-vertical-tabs](<https://github.com/lucaspar/firefox-vertical-tabs> "Stylesheets for collapsible vertical tabs for Firefox. · 32 stars · Languages: CSS 96%, Python 4% · 20 commits · 3 forks · 1 open issues/PRs · MIT · last push 2025-05-07")
+{{ tag(t="firefox") }} vertical tabs with [https://github.com/mbnuqw/sidebery](<https://github.com/mbnuqw/sidebery> "Firefox extension for managing tabs and bookmarks in sidebar. · 4713 stars · Languages: TypeScript 65%, Vue 23%, Stylus 10% · 2521 commits · 262 forks · 869 open issues/PRs · MIT · last push 2026-09-18") plus custom CSS from [https://github.com/lucaspar/firefox-vertical-tabs](<https://github.com/lucaspar/firefox-vertical-tabs> "Stylesheets for collapsible vertical tabs for Firefox. · 32 stars · Languages: CSS 96%, Python 4% · 20 commits · 3 forks · 1 open issues/PRs · MIT · last push 2025-05-07")
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/94-01.mp4") }}
 

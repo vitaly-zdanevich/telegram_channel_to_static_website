@@ -11,7 +11,7 @@ tags = ["btc"]
 id = 736
 day = "2025-11-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/736"
-og_image = "5211094055603867521_1213302383_460001153.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-736-5211094055603867521.jpg"
 next_id = 737
 next_title = ""
 next_body = "#webdesign\n#webdesignblack"
@@ -24,4 +24,4 @@ ids = [736]
 
 {{ tag(t="btc") }} lost 20% for one month
 
-{{ img(src="5211094055603867521_1213302383_460001153.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-736-5211094055603867521.jpg") }}

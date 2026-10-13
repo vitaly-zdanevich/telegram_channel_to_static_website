@@ -11,7 +11,7 @@ tags = ["belarus", "architecture", "year_2005", "globustut"]
 id = 920
 day = "2026-01-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/920"
-og_image = "5440801563862568206_1266785330_460000526.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-920-5440801563862568206.jpg"
 next_id = 921
 next_title = ""
 next_body = "#belarus\n#architecture\n#nature\n#village\n#year2005\n#globustut"
@@ -54,4 +54,4 @@ date = "2026-03-15"
 
 [https://commons.wikimedia.org/wiki/File:038-399\_Гольшаны,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-399_%D0%93%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D0%BD%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-{{ img(src="5440801563862568206_1266785330_460000526.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-920-5440801563862568206.jpg") }}

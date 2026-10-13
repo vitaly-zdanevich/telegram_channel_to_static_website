@@ -10,7 +10,7 @@ days = ["2025-04-28"]
 id = 486
 day = "2025-04-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/486"
-og_image = "5221952308450035641_1215830517_456263609.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-486-5221952308450035641.jpg"
 next_id = 487
 next_title = ""
 next_body = "#trump\n#batumi"
@@ -23,4 +23,4 @@ ids = [486]
 
 [Source](https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-)
 
-{{ img(src="5221952308450035641_1215830517_456263609.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-486-5221952308450035641.jpg") }}

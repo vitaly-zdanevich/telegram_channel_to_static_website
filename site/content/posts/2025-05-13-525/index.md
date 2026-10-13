@@ -11,7 +11,7 @@ tags = ["photo", "history", "face", "medals"]
 id = 525
 day = "2025-05-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/525"
-og_image = "5264726708089649363_1225789708_456259795.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-525-5264726708089649363.jpg"
 next_id = 526
 next_title = ""
 next_body = "#homm3\n#foss\n#vcmi"
@@ -54,4 +54,4 @@ date = "2025-03-27"
 
 <https://commons.wikimedia.org/wiki/File:Alfred_duke_of_Edinburgh.jpg>
 
-{{ img(src="5264726708089649363_1225789708_456259795.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-525-5264726708089649363.jpg") }}

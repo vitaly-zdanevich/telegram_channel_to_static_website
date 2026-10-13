@@ -10,7 +10,7 @@ days = ["2025-02-26"]
 id = 380
 day = "2025-02-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/380"
-og_image = "5325658489994995451_1239976494_456255227.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-380-5325658489994995451.jpg"
 next_id = 381
 next_title = ""
 next_body = "#няшка"
@@ -36,4 +36,4 @@ ids = [380]
 
 {{ youtube(id="P6j3WWh7Yc8") }}
 
-{{ img(src="5325658489994995451_1239976494_456255227.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-380-5325658489994995451.jpg") }}

@@ -11,7 +11,7 @@ tags = ["webdesign", "webdesign_old", "webdesign_games"]
 id = 779
 day = "2025-11-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/779"
-og_image = "5237697753050189079_1219496539_460000535.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-779-5237697753050189079.jpg"
 next_id = 780
 next_title = ""
 next_body = "#webdesign\n#webdesigngames\n#pink"
@@ -55,4 +55,6 @@ Year: 2000
 
 <https://web.archive.org/web/20000816084621/http://www.gameplay.com/spank/news_ps/>
 
-{{ img(src="5237697753050189079_1219496539_460000535.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-779-5237697753050189079.jpg") }}
+
+🔥 1

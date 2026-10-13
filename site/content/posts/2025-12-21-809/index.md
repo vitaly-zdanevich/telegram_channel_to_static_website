@@ -11,7 +11,7 @@ tags = ["cli", "tui", "design"]
 id = 809
 day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/809"
-og_image = "5350620010994405337_1245788301_460001241.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-809-5350620010994405337.jpg"
 next_id = 810
 next_title = ""
 next_body = "#software\n#tui\n#git"
@@ -53,4 +53,4 @@ date = "2025-11-10"
 
 <https://www.instagram.com/terminaltrove>
 
-{{ img(src="5350620010994405337_1245788301_460001241.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-809-5350620010994405337.jpg") }}

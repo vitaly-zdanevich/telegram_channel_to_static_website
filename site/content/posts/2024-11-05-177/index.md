@@ -6,10 +6,11 @@ date = 2024-11-05T23:16:32+00:00
 days = ["2024-11-05"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/177?comment=0'>Reply on Telegram</a></p></section>"
 id = 177
 day = "2024-11-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/177"
-og_image = "5283193401015134674_1230089320_456255954.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-177-5283193401015134674.jpg"
 next_id = 178
 next_title = ""
 next_body = ""
@@ -22,4 +23,6 @@ ids = [177]
 
 [https://0x0.st](https://0x0.st/)
 
-{{ img(src="5283193401015134674_1230089320_456255954.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-177-5283193401015134674.jpg") }}
+
+🙏 1

@@ -11,7 +11,7 @@ tags = ["map", "isis"]
 id = 669
 day = "2025-09-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/669"
-og_image = "5334824169247997201_1242110545_456260881.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-669-5334824169247997201.jpg"
 next_id = 670
 next_title = ""
 next_body = "#map\n#greenland\n#africa\n#mercator\nSource"
@@ -52,4 +52,4 @@ date = "2025-09-01"
 
 [Source](https://www.instagram.com/p/DOVCm-xEUcy)
 
-{{ img(src="5334824169247997201_1242110545_456260881.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-669-5334824169247997201.jpg") }}

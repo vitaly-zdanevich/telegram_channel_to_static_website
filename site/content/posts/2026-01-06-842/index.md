@@ -9,7 +9,7 @@ days = ["2026-01-06"]
 id = 842
 day = "2026-01-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/842"
-og_image = "5398070964299434767_1256836337_460000015.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-842-5398070964299434767.jpg"
 next_id = 843
 next_title = ""
 next_body = "#belarus\n#building\n#castle\n#abandoned\n#globustut\nSource"
@@ -20,4 +20,4 @@ views = 16
 ids = [842]
 +++
 
-{{ img(src="5398070964299434767_1256836337_460000015.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-842-5398070964299434767.jpg") }}

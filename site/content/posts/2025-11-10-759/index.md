@@ -11,7 +11,7 @@ tags = ["design", "artlebedev"]
 id = 759
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/759"
-og_image = "5229215222705359746_1217521546_460000130.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-759-5229215222705359746.jpg"
 next_id = 760
 next_title = ""
 next_body = "#painting\n#bible\n#gustavedore\n#death\n#horse\n#year1865\nGustave Dore - Death on the Pale Horse\nSource"
@@ -52,4 +52,4 @@ date = "2025-11-10"
 
 [Source](https://www.artlebedev.ru/vkontakte/backgrounds/)
 
-{{ img(src="5229215222705359746_1217521546_460000130.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-759-5229215222705359746.jpg") }}

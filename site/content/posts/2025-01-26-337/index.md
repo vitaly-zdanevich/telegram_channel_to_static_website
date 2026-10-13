@@ -10,7 +10,7 @@ days = ["2025-01-26"]
 id = 337
 day = "2025-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/337"
-og_image = "5240297161743265404_1220101761_456257148.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-337-5240297161743265404.jpg"
 next_id = 338
 next_title = ""
 next_body = "#warcraft\nSource"
@@ -23,4 +23,6 @@ ids = [337]
 
 [Source](https://www.facebook.com/photo/?fbid=1023751473134320&amp;set=a.457223746453765)
 
-{{ img(src="5240297161743265404_1220101761_456257148.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-337-5240297161743265404.jpg") }}
+
+😁 1

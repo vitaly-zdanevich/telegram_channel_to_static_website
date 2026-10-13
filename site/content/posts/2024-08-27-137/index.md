@@ -7,20 +7,21 @@ description = "So many platforms for a game)"
 days = ["2024-08-27"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/137?comment=0'>Reply on Telegram</a></p></section>"
 id = 137
 day = "2024-08-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/137"
-og_image = "5362002881210867572_1248438582_456253300.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-137-5362002881210867572-x-329x213-14080.jpg"
 next_id = 138
 next_title = ""
 next_body = "Played yesterday of Moss: Book 2 in Quest 2 - great VR, great game."
-prev_id = 128
+prev_id = 129
 prev_title = ""
-prev_body = "suno.com is great - the best service for songs generation. Supports russian too.\nOriginal song and #ai generated"
+prev_body = ""
 views = 47
 ids = [137]
 +++
 
 So many platforms for a [game](https://en.wikipedia.org/wiki/1942_(video_game))
 
-{{ img(src="5362002881210867572_1248438582_456253300.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-137-5362002881210867572-x-329x213-14080.jpg") }}

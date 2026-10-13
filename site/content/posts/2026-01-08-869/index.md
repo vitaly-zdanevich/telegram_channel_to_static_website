@@ -11,7 +11,7 @@ tags = ["belarus", "nature", "globustut", "year2004"]
 id = 869
 day = "2026-01-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/869"
-og_image = "5407034092894751540_1258923228_460000052.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-869-5407034092894751540.jpg"
 next_id = 870
 next_title = ""
 next_body = "#games\n#gamazine\n#igromania\nSource"
@@ -54,4 +54,4 @@ date = "2026-01-20"
 
 [Source](https://commons.wikimedia.org/wiki/File:029-268_%D0%A8%D0%B5%D0%BC%D0%B5%D1%82%D0%BE%D0%B2%D0%BE,_13-11-2004.jpg)
 
-{{ img(src="5407034092894751540_1258923228_460000052.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-869-5407034092894751540.jpg") }}

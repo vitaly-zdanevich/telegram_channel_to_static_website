@@ -11,7 +11,7 @@ tags = ["image", "archiving"]
 id = 514
 day = "2025-05-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/514"
-og_image = "5260248925510693602_1224747143_456258274.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-514-5260248925510693602.jpg"
 next_id = 515
 next_title = ""
 next_body = "#film\n#robot\n#slut\n#mem\nSource"
@@ -52,4 +52,4 @@ date = "2025-04-18"
 
 [Source](https://blog.archive.org/2025/05/07/vanishing-culture-recovering-lost-software)
 
-{{ img(src="5260248925510693602_1224747143_456258274.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-514-5260248925510693602.jpg") }}

@@ -11,7 +11,7 @@ tags = ["cover", "design", "sci_fi", "bluray"]
 id = 630
 day = "2025-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/630"
-og_image = "5271934505025926821_1227467904_456259237.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-630-5271934505025926821.jpg"
 next_id = 631
 next_title = ""
 next_body = "Percent of people who think their culture is superior to others\n#map\n#culture\n#sakartvelo\nSource"
@@ -54,4 +54,6 @@ date = "2025-11-10"
 {{ tag(t="sci_fi") }}  
 {{ tag(t="bluray") }}
 
-{{ img(src="5271934505025926821_1227467904_456259237.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-630-5271934505025926821.jpg") }}
+
+👍 1

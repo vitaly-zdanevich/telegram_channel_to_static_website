@@ -11,7 +11,7 @@ tags = ["mp3", "hardware", "sandisc"]
 id = 769
 day = "2025-11-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/769"
-og_image = "5231136868383002106_1217968964_460000762.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-769-5231136868383002106.jpg"
 next_id = 770
 next_title = ""
 next_body = "#games\n#segagenesis\n#neogeo\n#year1991\nSource"
@@ -40,4 +40,6 @@ Sexy Girls Fun Gadgets Stuff Magazine, 256 MB, the year 2008.
 
 <https://web.archive.org/web/20080726103726/http://www.stuffmagazine.com/index.aspx>
 
-{{ img(src="5231136868383002106_1217968964_460000762.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-769-5231136868383002106.jpg") }}
+
+😁 1

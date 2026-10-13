@@ -7,10 +7,11 @@ description = "Uploading to Commons"
 days = ["2024-08-21"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/98?comment=0'>Reply on Telegram</a></p></section>"
 id = 98
 day = "2024-08-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/98"
-og_image = "5348070522698719109_1245194702_456253317.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-98-5348070522698719109.jpg"
 next_id = 99
 next_title = ""
 next_body = ""
@@ -23,4 +24,6 @@ ids = [98]
 
 Uploading to [Commons](https://commons.wikimedia.org/wiki/Category:Museum_of_National_Bank_of_the_Republic_of_Belarus:_bonds)
 
-{{ img(src="5348070522698719109_1245194702_456253317.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-98-5348070522698719109.jpg") }}
+
+👍 1

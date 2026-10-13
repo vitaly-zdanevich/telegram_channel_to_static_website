@@ -11,10 +11,10 @@ tags = ["wget", "archivation", "games", "website"]
 id = 720
 day = "2025-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/720"
-og_image = "5472354420839806576_1274131802_456259184.jpg"
-next_id = 724
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-720-5472354420839806576.jpg"
+next_id = 721
 next_title = ""
-next_body = "#game\n#godofwar\n#playstation\n#compare\n🪓 Наглядное сравнение боя Кратоса и Тора из God of War Ragnarök на PS1 и PS5"
+next_body = ""
 prev_id = 719
 prev_title = ""
 prev_body = "#webdesign\n#games\n#rpg"
@@ -68,4 +68,4 @@ Also published to <https://archive.org/details/indiegamewebsite-com--dump> and <
 {{ tag(t="games") }}  
 {{ tag(t="website") }}
 
-{{ img(src="5472354420839806576_1274131802_456259184.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-720-5472354420839806576.jpg") }}

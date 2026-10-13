@@ -6,10 +6,11 @@ date = 2024-09-10T23:02:30+00:00
 days = ["2024-09-10"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/147?comment=0'>Reply on Telegram</a></p></section>"
 id = 147
 day = "2024-09-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/147"
-og_image = "5406610398662224764_1258824579_456256380.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-147-5406610398662224764.jpg"
 next_id = 148
 next_title = ""
 next_body = ""
@@ -22,4 +23,4 @@ ids = [147]
 
 <https://commons.wikimedia.org/wiki/File:Projekt_kolejna_faza_10_z%C5%82otych_1919_awers.jpg>
 
-{{ img(src="5406610398662224764_1258824579_456256380.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-147-5406610398662224764.jpg") }}

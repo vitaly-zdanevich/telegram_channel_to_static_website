@@ -11,7 +11,7 @@ tags = ["webdesign", "games", "rpg"]
 id = 719
 day = "2025-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/719"
-og_image = "5460802865779047421_1271442246_456260605.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-719-5460802865779047421.jpg"
 next_id = 720
 next_title = ""
 next_body = "Downloaded by #wget a dying website indiegamewebsite.com\nThe command:\nwget --mirror --convert-links --adjust-extension --page-requisites --no-parent --no-host-directories\nTelegram limit is 4GB, to extract:\ncat indiegamewebsite.part.tar.xz. indiegamewebsite.tar.xz\ntar -xvJf indiegamewebsite.tar.xz\nAlso published to and\n#archivation\n#games\n#website"
@@ -53,4 +53,6 @@ date = "2025-11-03"
 
 [https://rpgwatch.com](https://rpgwatch.com/)
 
-{{ img(src="5460802865779047421_1271442246_456260605.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-719-5460802865779047421.jpg") }}
+
+🔥 1

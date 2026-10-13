@@ -11,7 +11,7 @@ tags = ["wikipedia", "bewiki", "betarask"]
 id = 874
 day = "2026-01-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/874"
-og_image = "5415925920737988187_1260993518_460000859.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-874-5415925920737988187.jpg"
 next_id = 875
 next_title = ""
 next_body = "#monument\n#belarus\n#globustut\n#airplane\nSource"
@@ -53,4 +53,4 @@ date = "2026-03-25"
 
 I was not active here.
 
-{{ img(src="5415925920737988187_1260993518_460000859.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-874-5415925920737988187.jpg") }}

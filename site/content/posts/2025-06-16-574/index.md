@@ -51,3 +51,5 @@ date = "2023-07-16"
 [Source](<https://www.youtube.com/watch?v=B9-skz9692g> "Король и Шут Фотосессия 1998, полная версия")
 
 {{ youtube(id="B9-skz9692g") }}
+
+🔥 1

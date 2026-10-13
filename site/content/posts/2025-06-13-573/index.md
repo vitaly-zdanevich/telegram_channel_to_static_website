@@ -11,7 +11,7 @@ tags = ["archiving"]
 id = 573
 day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/573"
-og_image = "5359475683799200970_1247850173_456258762.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-573-5359475683799200970.jpg"
 next_id = 574
 next_title = ""
 next_body = "#korolishut\nSource"
@@ -51,4 +51,4 @@ date = "2025-04-18"
 
 Lost.
 
-{{ img(src="5359475683799200970_1247850173_456258762.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-573-5359475683799200970.jpg") }}

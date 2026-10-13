@@ -7,6 +7,7 @@ description = "My talk in WMCEE 2024"
 days = ["2024-10-22"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/161?comment=0'>Reply on Telegram</a></p></section>"
 id = 161
 day = "2024-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/161"
@@ -23,3 +24,5 @@ ids = [161]
 My talk in WMCEE 2024 [https://www.youtube.com/watch?v=ezrH_uCGZNU&list=PLvLwuB4oO41nxWvFley5u3prmCqupnOWx](<https://www.youtube.com/watch?v=ezrH_uCGZNU&list=PLvLwuB4oO41nxWvFley5u3prmCqupnOWx> "Uploading from a museum website? Some custom JavaScript can help you - WMCEEM 2024 Istanbul")
 
 {{ youtube(id="ezrH_uCGZNU") }}
+
+🙏 1

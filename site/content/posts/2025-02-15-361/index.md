@@ -11,7 +11,7 @@ tags = ["coin"]
 id = 361
 day = "2025-02-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/361"
-og_image = "5296425538124113913_1233170167_456255481.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-361-5296425538124113913.jpg"
 next_id = 362
 next_title = ""
 next_body = "#coin\nIts real coins, from Cook Islands\nSource"
@@ -46,4 +46,4 @@ date = "2025-09-22"
 
 [Source](https://www.monetnik.ru/monety/mira/avstraliya-i-okeaniya/ostrova-kuka/ostrova-kuka-5-dollarov-583633/#group=nogroup&amp;photo=0)
 
-{{ img(src="5296425538124113913_1233170167_456255481.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-361-5296425538124113913.jpg") }}

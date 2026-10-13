@@ -11,7 +11,7 @@ tags = ["about", "game_journalism", "webdesign", "webdesign_old"]
 id = 766
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/766"
-og_image = "5228869099880911230_1217440958_460001662.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-766-5228869099880911230.jpg"
 next_id = 767
 next_title = ""
 next_body = "#webdesign\n#webdesignold"
@@ -56,4 +56,4 @@ date = "2025-11-12"
 
 <https://web.archive.org/web/20150905154717/http://www.videogametalk.com/about.php>
 
-{{ img(src="5228869099880911230_1217440958_460001662.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-766-5228869099880911230.jpg") }}

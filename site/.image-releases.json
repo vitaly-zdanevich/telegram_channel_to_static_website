@@ -12,6 +12,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5289892081118075189_1231648978_456251701"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 800,
+        "bytes": 130687
       }
     },
     {
@@ -24,6 +30,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5314369340256148441_1237348034_456252377"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 453,
+        "height": 92,
+        "bytes": 6522
       }
     },
     {
@@ -36,6 +48,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5316864029060357579_1237928874_456252875"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1160,
+        "height": 714,
+        "bytes": 62537
       }
     },
     {
@@ -48,6 +66,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5321356655046285584_1238974895_456251664"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 369,
+        "height": 370,
+        "bytes": 49215
       }
     },
     {
@@ -60,6 +84,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5348321752515730728_1245253196_456252712"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 959,
+        "height": 382,
+        "bytes": 48486
       }
     },
     {
@@ -72,6 +102,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5346114461448135845_1244739271_456254629"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 709,
+        "height": 525,
+        "bytes": 125728
       }
     },
     {
@@ -84,6 +120,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5400135666744023014_1257317063_456251366"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 678,
+        "height": 307,
+        "bytes": 48014
       }
     },
     {
@@ -96,6 +138,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402581027848838338_1257886418_456252610"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 960,
+        "height": 720,
+        "bytes": 81692
       }
     },
     {
@@ -104,7 +152,13 @@
       "declared_bytes": 120045,
       "tag": "images-0000",
       "asset": "telegram-image-54-5422554743194119346.jpg",
-      "bytes": 120045
+      "bytes": 120045,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 120045
+      }
     },
     {
       "message_id": 55,
@@ -112,7 +166,13 @@
       "declared_bytes": 157974,
       "tag": "images-0000",
       "asset": "telegram-image-55-5422554743194119347.jpg",
-      "bytes": 157974
+      "bytes": 157974,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 157974
+      }
     },
     {
       "message_id": 56,
@@ -120,7 +180,13 @@
       "declared_bytes": 132740,
       "tag": "images-0000",
       "asset": "telegram-image-56-5422554743194119348.jpg",
-      "bytes": 132740
+      "bytes": 132740,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 132740
+      }
     },
     {
       "message_id": 57,
@@ -128,7 +194,13 @@
       "declared_bytes": 107445,
       "tag": "images-0000",
       "asset": "telegram-image-57-5422554743194119349.jpg",
-      "bytes": 107445
+      "bytes": 107445,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 107445
+      }
     },
     {
       "message_id": 58,
@@ -136,7 +208,13 @@
       "declared_bytes": 123941,
       "tag": "images-0000",
       "asset": "telegram-image-58-5422554743194119350.jpg",
-      "bytes": 123941
+      "bytes": 123941,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 123941
+      }
     },
     {
       "message_id": 59,
@@ -144,7 +222,13 @@
       "declared_bytes": 111495,
       "tag": "images-0000",
       "asset": "telegram-image-59-5422554743194119351.jpg",
-      "bytes": 111495
+      "bytes": 111495,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 111495
+      }
     },
     {
       "message_id": 60,
@@ -152,7 +236,13 @@
       "declared_bytes": 119001,
       "tag": "images-0000",
       "asset": "telegram-image-60-5422554743194119352.jpg",
-      "bytes": 119001
+      "bytes": 119001,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 119001
+      }
     },
     {
       "message_id": 61,
@@ -160,7 +250,13 @@
       "declared_bytes": 123601,
       "tag": "images-0000",
       "asset": "telegram-image-61-5422554743194119353.jpg",
-      "bytes": 123601
+      "bytes": 123601,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 123601
+      }
     },
     {
       "message_id": 62,
@@ -168,7 +264,13 @@
       "declared_bytes": 113863,
       "tag": "images-0000",
       "asset": "telegram-image-62-5422554743194119354.jpg",
-      "bytes": 113863
+      "bytes": 113863,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 113863
+      }
     },
     {
       "message_id": 63,
@@ -176,7 +278,13 @@
       "declared_bytes": 106096,
       "tag": "images-0000",
       "asset": "telegram-image-63-5422554743194119355.jpg",
-      "bytes": 106096
+      "bytes": 106096,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 106096
+      }
     },
     {
       "message_id": 64,
@@ -184,7 +292,13 @@
       "declared_bytes": 123885,
       "tag": "images-0000",
       "asset": "telegram-image-64-5422554743194119356.jpg",
-      "bytes": 123885
+      "bytes": 123885,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 123885
+      }
     },
     {
       "message_id": 65,
@@ -192,7 +306,13 @@
       "declared_bytes": 91082,
       "tag": "images-0000",
       "asset": "telegram-image-65-5422554743194119357.jpg",
-      "bytes": 91082
+      "bytes": 91082,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 91082
+      }
     },
     {
       "message_id": 66,
@@ -200,7 +320,13 @@
       "declared_bytes": 100417,
       "tag": "images-0000",
       "asset": "telegram-image-66-5422554743194119358.jpg",
-      "bytes": 100417
+      "bytes": 100417,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 100417
+      }
     },
     {
       "message_id": 67,
@@ -208,7 +334,13 @@
       "declared_bytes": 137519,
       "tag": "images-0000",
       "asset": "telegram-image-67-5422554743194119359.jpg",
-      "bytes": 137519
+      "bytes": 137519,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 137519
+      }
     },
     {
       "message_id": 68,
@@ -216,7 +348,13 @@
       "declared_bytes": 112493,
       "tag": "images-0000",
       "asset": "telegram-image-68-5422554743194119360.jpg",
-      "bytes": 112493
+      "bytes": 112493,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 112493
+      }
     },
     {
       "message_id": 69,
@@ -224,7 +362,13 @@
       "declared_bytes": 92996,
       "tag": "images-0000",
       "asset": "telegram-image-69-5422554743194119361.jpg",
-      "bytes": 92996
+      "bytes": 92996,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 92996
+      }
     },
     {
       "message_id": 70,
@@ -232,7 +376,13 @@
       "declared_bytes": 145814,
       "tag": "images-0000",
       "asset": "telegram-image-70-5422554743194119362.jpg",
-      "bytes": 145814
+      "bytes": 145814,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 145814
+      }
     },
     {
       "message_id": 71,
@@ -240,7 +390,13 @@
       "declared_bytes": 184591,
       "tag": "images-0000",
       "asset": "telegram-image-71-5422554743194119363.jpg",
-      "bytes": 184591
+      "bytes": 184591,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 184591
+      }
     },
     {
       "message_id": 72,
@@ -248,7 +404,13 @@
       "declared_bytes": 108514,
       "tag": "images-0000",
       "asset": "telegram-image-72-5422554743194119364.jpg",
-      "bytes": 108514
+      "bytes": 108514,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 108514
+      }
     },
     {
       "message_id": 74,
@@ -260,6 +422,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5424803596660239339_1263060513_456256491"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1200,
+        "height": 638,
+        "bytes": 145178
       }
     },
     {
@@ -272,6 +440,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5427084988798590552_1263591691_456253016"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 538,
+        "height": 204,
+        "bytes": 13274
       }
     },
     {
@@ -284,6 +458,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5429382499949205565_1264126622_456251453"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 655,
+        "height": 1280,
+        "bytes": 212384
       }
     },
     {
@@ -296,6 +476,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5456153825674123622_1270359807_456251750"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 574,
+        "bytes": 88867
       }
     },
     {
@@ -308,6 +494,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460889881816455526_1271462506_456251750"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 719,
+        "bytes": 169025
       }
     },
     {
@@ -320,6 +512,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5190535735076315675_1208515776_456253979"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 608,
+        "height": 503,
+        "bytes": 35004
       }
     },
     {
@@ -332,6 +530,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5197437665916609513_1210122757_456254441"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 995,
+        "height": 493,
+        "bytes": 35106
       }
     },
     {
@@ -344,6 +548,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5197437665916609520_1210122757_456254448"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 719,
+        "bytes": 98919
       }
     },
     {
@@ -356,6 +566,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5197437665916610129_1210122757_456255057"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1047,
+        "height": 205,
+        "bytes": 63588
       }
     },
     {
@@ -368,6 +584,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5219778561077009585_1215324402_456252593"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 959,
+        "height": 702,
+        "bytes": 50385
       }
     },
     {
@@ -380,6 +602,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5222022380841462992_1215846832_456256720"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 590,
+        "height": 528,
+        "bytes": 118454
       }
     },
     {
@@ -392,6 +620,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229189083530648568_1217515460_456252408"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1066,
+        "height": 562,
+        "bytes": 116210
       }
     },
     {
@@ -404,6 +638,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5231023644451398627_1217942602_456254435"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 719,
+        "bytes": 135234
       }
     },
     {
@@ -416,6 +656,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5253747019334409094_1223233300_456252294"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 956,
+        "bytes": 72208
       }
     },
     {
@@ -428,6 +674,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5348070522698719109_1245194702_456253317"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2390,
+        "height": 1700,
+        "bytes": 974033
       }
     },
     {
@@ -440,6 +692,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5348070522698719111_1245194702_456253319"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1710,
+        "height": 2390,
+        "bytes": 1252147
       }
     },
     {
@@ -452,18 +710,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5348070522698719112_1245194702_456253320"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1050,
+        "height": 759,
+        "bytes": 262012
       }
     },
     {
       "message_id": 102,
       "media_id": 5346204754545600747,
-      "declared_bytes": 519420,
+      "declared_bytes": 405453,
       "tag": "images-0000",
-      "asset": "telegram-image-102-5346204754545600747.jpg",
-      "bytes": 519420,
+      "asset": "telegram-image-102-5346204754545600747-w-1456x1018-405453.jpg",
+      "bytes": 405453,
       "source": {
         "kind": "photo",
         "web_key": "5346204754545600747_1244760294_456255723"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1456,
+        "height": 1018,
+        "bytes": 405453
       }
     },
     {
@@ -472,7 +742,13 @@
       "declared_bytes": 198817,
       "tag": "images-0000",
       "asset": "telegram-image-103-5348279756325510227.jpg",
-      "bytes": 198817
+      "bytes": 198817,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1198,
+        "height": 746,
+        "bytes": 198817
+      }
     },
     {
       "message_id": 104,
@@ -480,7 +756,13 @@
       "declared_bytes": 132298,
       "tag": "images-0000",
       "asset": "telegram-image-104-5348279756325510228.jpg",
-      "bytes": 132298
+      "bytes": 132298,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1198,
+        "height": 746,
+        "bytes": 132298
+      }
     },
     {
       "message_id": 105,
@@ -492,23 +774,41 @@
       "source": {
         "kind": "photo",
         "web_key": "5348456554359283025_1245284582_456252753"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1006,
+        "height": 776,
+        "bytes": 296072
       }
     },
     {
       "message_id": 106,
       "media_id": 5348456554359284429,
-      "declared_bytes": 576772,
+      "declared_bytes": 425940,
       "tag": "images-0000",
-      "asset": "telegram-image-106-5348456554359284429.jpg",
-      "bytes": 576772
+      "asset": "telegram-image-106-5348456554359284429-w-1450x1000-425940.jpg",
+      "bytes": 425940,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1450,
+        "height": 1000,
+        "bytes": 425940
+      }
     },
     {
       "message_id": 107,
       "media_id": 5348456554359284428,
-      "declared_bytes": 570252,
+      "declared_bytes": 424765,
       "tag": "images-0000",
-      "asset": "telegram-image-107-5348456554359284428.jpg",
-      "bytes": 570252
+      "asset": "telegram-image-107-5348456554359284428-w-1450x1000-424765.jpg",
+      "bytes": 424765,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1450,
+        "height": 1000,
+        "bytes": 424765
+      }
     },
     {
       "message_id": 108,
@@ -516,7 +816,13 @@
       "declared_bytes": 457759,
       "tag": "images-0000",
       "asset": "telegram-image-108-5348456554359284460.jpg",
-      "bytes": 457759
+      "bytes": 457759,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1820,
+        "height": 930,
+        "bytes": 457759
+      }
     },
     {
       "message_id": 109,
@@ -524,23 +830,41 @@
       "declared_bytes": 461266,
       "tag": "images-0000",
       "asset": "telegram-image-109-5348456554359284461.jpg",
-      "bytes": 461266
+      "bytes": 461266,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1820,
+        "height": 930,
+        "bytes": 461266
+      }
     },
     {
       "message_id": 110,
       "media_id": 5348456554359284482,
-      "declared_bytes": 394491,
+      "declared_bytes": 340605,
       "tag": "images-0000",
-      "asset": "telegram-image-110-5348456554359284482.jpg",
-      "bytes": 394491
+      "asset": "telegram-image-110-5348456554359284482-w-1580x810-340605.jpg",
+      "bytes": 340605,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1580,
+        "height": 810,
+        "bytes": 340605
+      }
     },
     {
       "message_id": 111,
       "media_id": 5348456554359284481,
-      "declared_bytes": 403506,
+      "declared_bytes": 348635,
       "tag": "images-0000",
-      "asset": "telegram-image-111-5348456554359284481.jpg",
-      "bytes": 403506
+      "asset": "telegram-image-111-5348456554359284481-w-1580x810-348635.jpg",
+      "bytes": 348635,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1580,
+        "height": 810,
+        "bytes": 348635
+      }
     },
     {
       "message_id": 112,
@@ -548,7 +872,13 @@
       "declared_bytes": 475461,
       "tag": "images-0000",
       "asset": "telegram-image-112-5348131266421189673.jpg",
-      "bytes": 475461
+      "bytes": 475461,
+      "photo_variant": {
+        "kind": "w",
+        "width": 2169,
+        "height": 1138,
+        "bytes": 475461
+      }
     },
     {
       "message_id": 113,
@@ -556,7 +886,13 @@
       "declared_bytes": 591420,
       "tag": "images-0000",
       "asset": "telegram-image-113-5348131266421189674.jpg",
-      "bytes": 591420
+      "bytes": 591420,
+      "photo_variant": {
+        "kind": "w",
+        "width": 2169,
+        "height": 1138,
+        "bytes": 591420
+      }
     },
     {
       "message_id": 114,
@@ -568,6 +904,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5350383066234870835_1245733133_456252467"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2560,
+        "height": 1148,
+        "bytes": 1069987
       }
     },
     {
@@ -580,6 +922,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5352634866048557292_1246257421_456253676"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 875,
+        "height": 1108,
+        "bytes": 179169
       }
     },
     {
@@ -588,7 +936,13 @@
       "declared_bytes": 140214,
       "tag": "images-0000",
       "asset": "telegram-image-116-5352634866048557381.jpg",
-      "bytes": 140214
+      "bytes": 140214,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 504,
+        "bytes": 140214
+      }
     },
     {
       "message_id": 117,
@@ -596,7 +950,13 @@
       "declared_bytes": 172351,
       "tag": "images-0000",
       "asset": "telegram-image-117-5354839923733159174.jpg",
-      "bytes": 172351
+      "bytes": 172351,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 507,
+        "bytes": 172351
+      }
     },
     {
       "message_id": 118,
@@ -604,7 +964,13 @@
       "declared_bytes": 150408,
       "tag": "images-0000",
       "asset": "telegram-image-118-5352634866048557382.jpg",
-      "bytes": 150408
+      "bytes": 150408,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 504,
+        "bytes": 150408
+      }
     },
     {
       "message_id": 119,
@@ -612,7 +978,13 @@
       "declared_bytes": 176792,
       "tag": "images-0000",
       "asset": "telegram-image-119-5354839923733159173.jpg",
-      "bytes": 176792
+      "bytes": 176792,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 505,
+        "bytes": 176792
+      }
     },
     {
       "message_id": 120,
@@ -620,7 +992,13 @@
       "declared_bytes": 176792,
       "tag": "images-0000",
       "asset": "telegram-image-120-5354839923733159173.jpg",
-      "bytes": 176792
+      "bytes": 176792,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 505,
+        "bytes": 176792
+      }
     },
     {
       "message_id": 121,
@@ -628,7 +1006,13 @@
       "declared_bytes": 168058,
       "tag": "images-0000",
       "asset": "telegram-image-121-5352831476766466396.jpg",
-      "bytes": 168058
+      "bytes": 168058,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 509,
+        "bytes": 168058
+      }
     },
     {
       "message_id": 122,
@@ -636,7 +1020,13 @@
       "declared_bytes": 164551,
       "tag": "images-0000",
       "asset": "telegram-image-122-5352634866048557383.jpg",
-      "bytes": 164551
+      "bytes": 164551,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 502,
+        "bytes": 164551
+      }
     },
     {
       "message_id": 123,
@@ -644,7 +1034,13 @@
       "declared_bytes": 173038,
       "tag": "images-0000",
       "asset": "telegram-image-123-5352831476766466398.jpg",
-      "bytes": 173038
+      "bytes": 173038,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 500,
+        "bytes": 173038
+      }
     },
     {
       "message_id": 124,
@@ -656,30 +1052,48 @@
       "source": {
         "kind": "photo",
         "web_key": "5352831476766466405_1246303198_456253797"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 924,
+        "height": 470,
+        "bytes": 111091
       }
     },
     {
       "message_id": 127,
       "media_id": 5357560278709034619,
-      "declared_bytes": 126558,
+      "declared_bytes": 84648,
       "tag": "images-0000",
-      "asset": "telegram-image-127-5357560278709034619.jpg",
-      "bytes": 126558,
+      "asset": "telegram-image-127-5357560278709034619-y-811x811-84648.jpg",
+      "bytes": 84648,
       "source": {
         "kind": "photo",
         "web_key": "5357560278709034619_1247404208_456253051"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 811,
+        "height": 811,
+        "bytes": 84648
       }
     },
     {
       "message_id": 137,
       "media_id": 5362002881210867572,
-      "declared_bytes": 14234,
+      "declared_bytes": 14080,
       "tag": "images-0000",
-      "asset": "telegram-image-137-5362002881210867572.jpg",
-      "bytes": 14234,
+      "asset": "telegram-image-137-5362002881210867572-x-329x213-14080.jpg",
+      "bytes": 14080,
       "source": {
         "kind": "photo",
         "web_key": "5362002881210867572_1248438582_456253300"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 329,
+        "height": 213,
+        "bytes": 14080
       }
     },
     {
@@ -692,6 +1106,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5366491319603683533_1249483628_456253645"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 348,
+        "bytes": 140029
       }
     },
     {
@@ -704,6 +1124,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5373261446487598673_1251059921_456255057"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 827,
+        "height": 939,
+        "bytes": 276608
       }
     },
     {
@@ -716,6 +1142,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5379759332574488213_1252572828_456255125"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 980,
+        "height": 653,
+        "bytes": 68520
       }
     },
     {
@@ -728,6 +1160,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5388818866005729977_1254682165_456254137"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1642,
+        "height": 1028,
+        "bytes": 690488
       }
     },
     {
@@ -740,6 +1178,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5388631055675811450_1254638437_456255098"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2560,
+        "height": 1038,
+        "bytes": 646606
       }
     },
     {
@@ -752,18 +1196,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5391347888778502778_1255270999_456254074"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 960,
+        "bytes": 253604
       }
     },
     {
       "message_id": 146,
       "media_id": 5393599688592187334,
-      "declared_bytes": 172988,
+      "declared_bytes": 153159,
       "tag": "images-0000",
-      "asset": "telegram-image-146-5393599688592187334.jpg",
-      "bytes": 172988,
+      "asset": "telegram-image-146-5393599688592187334-y-849x558-153159.jpg",
+      "bytes": 153159,
       "source": {
         "kind": "photo",
         "web_key": "5393599688592187334_1255795287_456253382"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 849,
+        "height": 558,
+        "bytes": 153159
       }
     },
     {
@@ -776,18 +1232,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5406610398662224764_1258824579_456256380"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2560,
+        "height": 1532,
+        "bytes": 874197
       }
     },
     {
       "message_id": 153,
       "media_id": 5411097789083019447,
-      "declared_bytes": 130345,
+      "declared_bytes": 121210,
       "tag": "images-0000",
-      "asset": "telegram-image-153-5411097789083019447.jpg",
-      "bytes": 130345,
+      "asset": "telegram-image-153-5411097789083019447-y-526x1120-121210.jpg",
+      "bytes": 121210,
       "source": {
         "kind": "photo",
         "web_key": "5411097789083019447_1259869381_456255671"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 526,
+        "height": 1120,
+        "bytes": 121210
       }
     },
     {
@@ -800,6 +1268,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5431701550360814121_1264666568_456253993"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 642,
+        "height": 288,
+        "bytes": 42422
       }
     },
     {
@@ -812,6 +1286,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5188692317933005566_1208086572_456256254"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 635,
+        "bytes": 174437
       }
     },
     {
@@ -824,6 +1304,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5202194574125163612_1211230311_456254556"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 719,
+        "bytes": 86074
       }
     },
     {
@@ -836,6 +1322,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5251239312484331082_1222649429_456257098"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1116,
+        "height": 749,
+        "bytes": 80800
       }
     },
     {
@@ -848,6 +1340,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5253985385724372133_1223288799_456254629"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 600,
+        "height": 842,
+        "bytes": 74162
       }
     },
     {
@@ -860,6 +1358,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5253985385724372153_1223288799_456254649"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 538,
+        "height": 225,
+        "bytes": 9946
       }
     },
     {
@@ -872,6 +1376,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5257958939142778279_1224213964_456256935"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 865,
+        "height": 469,
+        "bytes": 75508
       }
     },
     {
@@ -884,18 +1394,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5258275637146281326_1224287701_456254830"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1726,
+        "height": 1041,
+        "bytes": 97546
       }
     },
     {
       "message_id": 174,
       "media_id": 5271829222492594981,
-      "declared_bytes": 83993,
+      "declared_bytes": 79569,
       "tag": "images-0000",
-      "asset": "telegram-image-174-5271829222492594981.jpg",
-      "bytes": 83993,
+      "asset": "telegram-image-174-5271829222492594981-w-1199x1283-79569.jpg",
+      "bytes": 79569,
       "source": {
         "kind": "photo",
         "web_key": "5271829222492594981_1227443391_456254245"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1199,
+        "height": 1283,
+        "bytes": 79569
       }
     },
     {
@@ -908,6 +1430,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5283193401015134674_1230089320_456255954"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 590,
+        "height": 875,
+        "bytes": 59411
       }
     },
     {
@@ -920,6 +1448,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5285445200828817938_1230613608_456253970"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 930,
+        "bytes": 70937
       }
     },
     {
@@ -932,6 +1466,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5285445200828817939_1230613608_456253971"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 904,
+        "height": 1280,
+        "bytes": 111660
       }
     },
     {
@@ -944,6 +1484,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5285445200828817940_1230613608_456253972"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 1074,
+        "bytes": 164947
       }
     },
     {
@@ -956,6 +1502,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5285445200828817946_1230613608_456253978"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 841,
+        "height": 114,
+        "bytes": 26460
       }
     },
     {
@@ -968,6 +1520,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5310002453732779331_1236331289_456254787"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 520,
+        "height": 170,
+        "bytes": 13515
       }
     },
     {
@@ -980,6 +1538,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5308050846363281449_1235876895_456255529"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 518,
+        "height": 603,
+        "bytes": 96390
       }
     },
     {
@@ -992,18 +1556,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5316623884553937355_1237872961_456253899"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1174,
+        "height": 673,
+        "bytes": 120409
       }
     },
     {
       "message_id": 191,
       "media_id": 5319219569514111371,
-      "declared_bytes": 64401,
+      "declared_bytes": 60581,
       "tag": "images-0000",
-      "asset": "telegram-image-191-5319219569514111371.jpg",
-      "bytes": 64401,
+      "asset": "telegram-image-191-5319219569514111371-w-1298x867-60581.jpg",
+      "bytes": 60581,
       "source": {
         "kind": "photo",
         "web_key": "5319219569514111371_1238477316_456253835"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1298,
+        "height": 867,
+        "bytes": 60581
       }
     },
     {
@@ -1016,6 +1592,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5321176670146782294_1238932989_456254550"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 719,
+        "bytes": 148462
       }
     },
     {
@@ -1028,6 +1610,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5323556365496609563_1239487055_456256283"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 659,
+        "height": 135,
+        "bytes": 15238
       }
     },
     {
@@ -1040,6 +1628,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5325686926973462534_1239983115_456255494"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 321202
       }
     },
     {
@@ -1052,6 +1646,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5327938726787148268_1240507403_456255980"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 69062
       }
     },
     {
@@ -1064,6 +1664,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5341337328238585385_1243627008_456255017"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1924,
+        "height": 1220,
+        "bytes": 313988
       }
     },
     {
@@ -1076,6 +1682,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5343870641683687785_1244216841_456255849"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 783,
+        "height": 1174,
+        "bytes": 175229
       }
     },
     {
@@ -1084,7 +1696,13 @@
       "declared_bytes": 41399,
       "tag": "images-0000",
       "asset": "telegram-image-202-5345981811383200854.jpg",
-      "bytes": 41399
+      "bytes": 41399,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 408,
+        "bytes": 41399
+      }
     },
     {
       "message_id": 203,
@@ -1092,7 +1710,13 @@
       "declared_bytes": 61691,
       "tag": "images-0000",
       "asset": "telegram-image-203-5345981811383200855.jpg",
-      "bytes": 61691
+      "bytes": 61691,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 407,
+        "bytes": 61691
+      }
     },
     {
       "message_id": 205,
@@ -1104,6 +1728,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5359558941740230768_1247869558_456255600"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 913,
+        "height": 1051,
+        "bytes": 225147
       }
     },
     {
@@ -1116,6 +1746,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5359558941740230783_1247869558_456255615"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 960,
+        "height": 768,
+        "bytes": 76378
       }
     },
     {
@@ -1128,18 +1764,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5359716841917897767_1247906322_456252455"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 464,
+        "height": 597,
+        "bytes": 37080
       }
     },
     {
       "message_id": 209,
       "media_id": 5366158232004978363,
-      "declared_bytes": 96189,
+      "declared_bytes": 86554,
       "tag": "images-0000",
-      "asset": "telegram-image-209-5366158232004978363.jpg",
-      "bytes": 96189,
+      "asset": "telegram-image-209-5366158232004978363-y-810x706-86554.jpg",
+      "bytes": 86554,
       "source": {
         "kind": "photo",
         "web_key": "5366158232004978363_1249406075_456255163"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 810,
+        "height": 706,
+        "bytes": 86554
       }
     },
     {
@@ -1152,6 +1800,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5370954237300827860_1250522732_456255188"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 757,
+        "height": 527,
+        "bytes": 24838
       }
     },
     {
@@ -1164,6 +1818,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5379967372200369765_1252621266_456253029"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 456,
+        "height": 109,
+        "bytes": 9536
       }
     },
     {
@@ -1176,6 +1836,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5384454698196658644_1253666053_456255956"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1157,
+        "height": 617,
+        "bytes": 69271
       }
     },
     {
@@ -1188,6 +1854,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5391209139860005754_1255238694_456254330"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 634,
+        "height": 437,
+        "bytes": 26747
       }
     },
     {
@@ -1200,6 +1872,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5390848993967337299_1255154841_456257363"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 400,
+        "height": 425,
+        "bytes": 46005
       }
     },
     {
@@ -1212,6 +1890,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5397778232209697377_1256768180_456256097"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 619,
+        "height": 844,
+        "bytes": 48579
       }
     },
     {
@@ -1224,6 +1908,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5399898773527849409_1257261907_456255937"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 307650
       }
     },
     {
@@ -1236,6 +1926,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5420318654370800931_1262016281_456254755"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1917,
+        "height": 487,
+        "bytes": 75751
       }
     },
     {
@@ -1248,6 +1944,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5424929739849720904_1263089883_456254536"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 860,
+        "height": 1052,
+        "bytes": 107066
       }
     },
     {
@@ -1260,6 +1962,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5276262517800291116_1228475598_456248108"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1240,
+        "height": 826,
+        "bytes": 126944
       }
     },
     {
@@ -1272,6 +1980,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5427298839515227193_1263641482_456254521"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1316,
+        "height": 1440,
+        "bytes": 443628
       }
     },
     {
@@ -1284,6 +1998,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5444996905093424599_1267762134_456254935"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1858,
+        "height": 734,
+        "bytes": 283337
       }
     },
     {
@@ -1296,6 +2016,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5444996905093424600_1267762134_456254936"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1159,
+        "bytes": 798367
       }
     },
     {
@@ -1308,6 +2034,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5451693721180561443_1269321358_456253475"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1080,
+        "height": 534,
+        "bytes": 36781
       }
     },
     {
@@ -1320,6 +2052,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5429357657858367725_1264120838_456253677"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1255,
+        "height": 886,
+        "bytes": 236297
       }
     },
     {
@@ -1332,6 +2070,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5467491010327210910_1272999451_456256414"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 440,
+        "bytes": 125176
       }
     },
     {
@@ -1344,6 +2088,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5190416996410452233_1208488130_456255753"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 597,
+        "height": 573,
+        "bytes": 32140
       }
     },
     {
@@ -1356,6 +2106,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5217565802516049190_1214809204_456256806"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 957,
+        "height": 559,
+        "bytes": 47562
       }
     },
     {
@@ -1368,6 +2124,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5463090545749504965_1271974888_456242117"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 759,
+        "height": 499,
+        "bytes": 115622
       }
     },
     {
@@ -1380,6 +2142,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5233675498993872612_1218560035_456257252"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 148052
       }
     },
     {
@@ -1388,7 +2156,13 @@
       "declared_bytes": 56524,
       "tag": "images-0000",
       "asset": "telegram-image-331-5235819847315746625.jpg",
-      "bytes": 56524
+      "bytes": 56524,
+      "photo_variant": {
+        "kind": "x",
+        "width": 759,
+        "height": 799,
+        "bytes": 56524
+      }
     },
     {
       "message_id": 332,
@@ -1396,7 +2170,13 @@
       "declared_bytes": 13812,
       "tag": "images-0000",
       "asset": "telegram-image-332-5235819847315746624.jpg",
-      "bytes": 13812
+      "bytes": 13812,
+      "photo_variant": {
+        "kind": "x",
+        "width": 677,
+        "height": 120,
+        "bytes": 13812
+      }
     },
     {
       "message_id": 335,
@@ -1408,6 +2188,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5238071647129431378_1219583593_456256850"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 735,
+        "height": 746,
+        "bytes": 143639
       }
     },
     {
@@ -1420,6 +2206,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5240297161743265404_1220101761_456257148"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 960,
+        "height": 557,
+        "bytes": 50378
       }
     },
     {
@@ -1432,6 +2224,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5249386927449302502_1222218137_456254950"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 526,
+        "height": 789,
+        "bytes": 50820
       }
     },
     {
@@ -1444,6 +2242,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5258347380279995651_1224304405_456256771"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 362,
+        "height": 230,
+        "bytes": 11763
       }
     },
     {
@@ -1456,6 +2260,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5280882184623878092_1229551198_456257484"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1708,
+        "height": 1048,
+        "bytes": 196888
       }
     },
     {
@@ -1468,6 +2278,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5287487659641531079_1231089155_456256199"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 696,
+        "height": 392,
+        "bytes": 31345
       }
     },
     {
@@ -1480,18 +2296,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5287392410151806114_1231066978_456254626"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1080,
+        "height": 1039,
+        "bytes": 83873
       }
     },
     {
       "message_id": 360,
       "media_id": 5291921938496747598,
-      "declared_bytes": 105951,
+      "declared_bytes": 93267,
       "tag": "images-0000",
-      "asset": "telegram-image-360-5291921938496747598.jpg",
-      "bytes": 105951,
+      "asset": "telegram-image-360-5291921938496747598-y-811x635-93267.jpg",
+      "bytes": 93267,
       "source": {
         "kind": "photo",
         "web_key": "5291921938496747598_1232121591_456259662"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 811,
+        "height": 635,
+        "bytes": 93267
       }
     },
     {
@@ -1504,6 +2332,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5296425538124113913_1233170167_456255481"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1915,
+        "bytes": 1061309
       }
     },
     {
@@ -1512,7 +2346,13 @@
       "declared_bytes": 1123191,
       "tag": "images-0000",
       "asset": "telegram-image-362-5296425538124113914.jpg",
-      "bytes": 1123191
+      "bytes": 1123191,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1918,
+        "bytes": 1123191
+      }
     },
     {
       "message_id": 363,
@@ -1520,7 +2360,13 @@
       "declared_bytes": 742058,
       "tag": "images-0000",
       "asset": "telegram-image-363-5296425538124113915.jpg",
-      "bytes": 742058
+      "bytes": 742058,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1897,
+        "height": 1880,
+        "bytes": 742058
+      }
     },
     {
       "message_id": 364,
@@ -1528,7 +2374,13 @@
       "declared_bytes": 1028718,
       "tag": "images-0000",
       "asset": "telegram-image-364-5296425538124113917.jpg",
-      "bytes": 1028718
+      "bytes": 1028718,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1918,
+        "height": 1920,
+        "bytes": 1028718
+      }
     },
     {
       "message_id": 365,
@@ -1536,7 +2388,13 @@
       "declared_bytes": 987202,
       "tag": "images-0000",
       "asset": "telegram-image-365-5296425538124113916.jpg",
-      "bytes": 987202
+      "bytes": 987202,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1733,
+        "height": 1719,
+        "bytes": 987202
+      }
     },
     {
       "message_id": 368,
@@ -1548,6 +2406,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5309901582130865796_1236307803_456255108"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 526,
+        "height": 639,
+        "bytes": 61493
       }
     },
     {
@@ -1560,6 +2424,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5319003532659125502_1238427016_456256766"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1073,
+        "height": 1200,
+        "bytes": 158343
       }
     },
     {
@@ -1572,6 +2442,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5325658489994995451_1239976494_456255227"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 1024,
+        "bytes": 289009
       }
     },
     {
@@ -1584,6 +2460,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330382915365889174_1241076485_456254614"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 688,
+        "height": 394,
+        "bytes": 27422
       }
     },
     {
@@ -1596,6 +2478,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330382915365889181_1241076485_456254621"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1692,
+        "height": 224,
+        "bytes": 42860
       }
     },
     {
@@ -1608,6 +2496,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330160680873094488_1241024742_456256856"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1551,
+        "height": 413,
+        "bytes": 99965
       }
     },
     {
@@ -1620,6 +2514,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330160680873094490_1241024742_456256858"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1903,
+        "height": 848,
+        "bytes": 175722
       }
     },
     {
@@ -1632,6 +2532,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5336993870761815093_1242615718_456256565"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1116,
+        "height": 1006,
+        "bytes": 199920
       }
     },
     {
@@ -1640,7 +2546,13 @@
       "declared_bytes": 148399,
       "tag": "images-0000",
       "asset": "telegram-image-387-5348136325892666001.jpg",
-      "bytes": 148399
+      "bytes": 148399,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1575,
+        "height": 709,
+        "bytes": 148399
+      }
     },
     {
       "message_id": 388,
@@ -1648,7 +2560,13 @@
       "declared_bytes": 124086,
       "tag": "images-0000",
       "asset": "telegram-image-388-5348071536311005576.jpg",
-      "bytes": 124086
+      "bytes": 124086,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1567,
+        "height": 708,
+        "bytes": 124086
+      }
     },
     {
       "message_id": 389,
@@ -1656,7 +2574,13 @@
       "declared_bytes": 95356,
       "tag": "images-0000",
       "asset": "telegram-image-389-5348071536311005575.jpg",
-      "bytes": 95356
+      "bytes": 95356,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1570,
+        "height": 711,
+        "bytes": 95356
+      }
     },
     {
       "message_id": 390,
@@ -1668,15 +2592,27 @@
       "source": {
         "kind": "photo",
         "web_key": "5352602726808283388_1246249938_456255740"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 284559
       }
     },
     {
       "message_id": 400,
       "media_id": 5366226702373613468,
-      "declared_bytes": 136285,
+      "declared_bytes": 129462,
       "tag": "images-0000",
-      "asset": "telegram-image-400-5366226702373613468.jpg",
-      "bytes": 136285
+      "asset": "telegram-image-400-5366226702373613468-y-745x803-129462.jpg",
+      "bytes": 129462,
+      "photo_variant": {
+        "kind": "y",
+        "width": 745,
+        "height": 803,
+        "bytes": 129462
+      }
     },
     {
       "message_id": 401,
@@ -1684,7 +2620,13 @@
       "declared_bytes": 90393,
       "tag": "images-0000",
       "asset": "telegram-image-401-5366226702373613469.jpg",
-      "bytes": 90393
+      "bytes": 90393,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1628,
+        "height": 452,
+        "bytes": 90393
+      }
     },
     {
       "message_id": 402,
@@ -1696,6 +2638,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5366044660184771940_1249379632_456256868"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 992,
+        "height": 558,
+        "bytes": 108685
       }
     },
     {
@@ -1708,6 +2656,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5375405086139870428_1251559026_456256732"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1092,
+        "height": 1049,
+        "bytes": 56389
       }
     },
     {
@@ -1720,6 +2674,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5375405086139870431_1251559026_456256735"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 797,
+        "height": 900,
+        "bytes": 215757
       }
     },
     {
@@ -1732,6 +2692,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5375465043883325153_1251572986_456259297"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 640,
+        "height": 790,
+        "bytes": 79149
       }
     },
     {
@@ -1744,6 +2710,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5375405086139870811_1251559026_456257115"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 1079,
+        "bytes": 86361
       }
     },
     {
@@ -1756,6 +2728,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5379612612196694002_1252538667_456259570"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 646,
+        "height": 688,
+        "bytes": 50651
       }
     },
     {
@@ -1768,6 +2746,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5382363899527033788_1253179251_456258492"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 640,
+        "height": 640,
+        "bytes": 23628
       }
     },
     {
@@ -1780,6 +2764,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5384349651886533522_1253641595_456256402"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2560,
+        "height": 2505,
+        "bytes": 819814
       }
     },
     {
@@ -1792,6 +2782,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5384349651886533523_1253641595_456256403"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 960,
+        "bytes": 204175
       }
     },
     {
@@ -1804,6 +2800,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5406954455607405557_1258904686_456256501"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 991,
+        "height": 369,
+        "bytes": 37483
       }
     },
     {
@@ -1812,7 +2814,13 @@
       "declared_bytes": 9341,
       "tag": "images-0000",
       "asset": "telegram-image-442-5406954455607405558.jpg",
-      "bytes": 9341
+      "bytes": 9341,
+      "photo_variant": {
+        "kind": "m",
+        "width": 294,
+        "height": 287,
+        "bytes": 9341
+      }
     },
     {
       "message_id": 443,
@@ -1820,7 +2828,13 @@
       "declared_bytes": 42461,
       "tag": "images-0000",
       "asset": "telegram-image-443-5406954455607405559.jpg",
-      "bytes": 42461
+      "bytes": 42461,
+      "photo_variant": {
+        "kind": "x",
+        "width": 448,
+        "height": 784,
+        "bytes": 42461
+      }
     },
     {
       "message_id": 444,
@@ -1832,18 +2846,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5406954455607405651_1258904686_456256595"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1190,
+        "height": 1665,
+        "bytes": 265185
       }
     },
     {
       "message_id": 446,
       "media_id": 5415638411328479675,
-      "declared_bytes": 47005,
+      "declared_bytes": 46851,
       "tag": "images-0000",
-      "asset": "telegram-image-446-5415638411328479675.jpg",
-      "bytes": 47005,
+      "asset": "telegram-image-446-5415638411328479675-y-1080x1069-46851.jpg",
+      "bytes": 46851,
       "source": {
         "kind": "photo",
         "web_key": "5415638411328479675_1260926577_456253883"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1080,
+        "height": 1069,
+        "bytes": 46851
       }
     },
     {
@@ -1856,6 +2882,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415638411328479712_1260926577_456253920"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 720,
+        "height": 406,
+        "bytes": 40420
       }
     },
     {
@@ -1868,6 +2900,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415830246042759567_1260971242_456257935"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 600,
+        "height": 540,
+        "bytes": 109025
       }
     },
     {
@@ -1880,6 +2918,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415638411328479713_1260926577_456253921"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 526,
+        "height": 701,
+        "bytes": 106101
       }
     },
     {
@@ -1888,7 +2932,13 @@
       "declared_bytes": 127587,
       "tag": "images-0000",
       "asset": "telegram-image-450-5415638411328479714.jpg",
-      "bytes": 127587
+      "bytes": 127587,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 854,
+        "bytes": 127587
+      }
     },
     {
       "message_id": 451,
@@ -1896,7 +2946,13 @@
       "declared_bytes": 114917,
       "tag": "images-0000",
       "asset": "telegram-image-451-5415638411328479715.jpg",
-      "bytes": 114917
+      "bytes": 114917,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 855,
+        "bytes": 114917
+      }
     },
     {
       "message_id": 452,
@@ -1908,6 +2964,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415638411328479718_1260926577_456253926"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 213960
       }
     },
     {
@@ -1920,18 +2982,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5415638411328479723_1260926577_456253931"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 786,
+        "height": 589,
+        "bytes": 47868
       }
     },
     {
       "message_id": 454,
       "media_id": 5415638411328479728,
-      "declared_bytes": 161014,
+      "declared_bytes": 154880,
       "tag": "images-0000",
-      "asset": "telegram-image-454-5415638411328479728.jpg",
-      "bytes": 161014,
+      "asset": "telegram-image-454-5415638411328479728-y-599x879-154880.jpg",
+      "bytes": 154880,
       "source": {
         "kind": "photo",
         "web_key": "5415638411328479728_1260926577_456253936"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 599,
+        "height": 879,
+        "bytes": 154880
       }
     },
     {
@@ -1944,6 +3018,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415830246042760053_1260971242_456258421"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 497,
+        "height": 700,
+        "bytes": 71321
       }
     },
     {
@@ -1956,6 +3036,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415638411328480091_1260926577_456254299"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 700,
+        "height": 564,
+        "bytes": 84081
       }
     },
     {
@@ -1968,6 +3054,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415830246042760056_1260971242_456258424"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 700,
+        "height": 556,
+        "bytes": 80625
       }
     },
     {
@@ -1980,6 +3072,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5415638411328480096_1260926577_456254304"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 453,
+        "height": 700,
+        "bytes": 57134
       }
     },
     {
@@ -1992,6 +3090,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440653838458679407_1266750935_456257647"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1527,
+        "height": 2160,
+        "bytes": 813479
       }
     },
     {
@@ -2004,18 +3108,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5442691267864686271_1267225311_456257215"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 808,
+        "height": 937,
+        "bytes": 86705
       }
     },
     {
       "message_id": 462,
       "media_id": 5454138004248587563,
-      "declared_bytes": 119951,
+      "declared_bytes": 111045,
       "tag": "images-0000",
-      "asset": "telegram-image-462-5454138004248587563.jpg",
-      "bytes": 119951,
+      "asset": "telegram-image-462-5454138004248587563-y-1000x666-111045.jpg",
+      "bytes": 111045,
       "source": {
         "kind": "photo",
         "web_key": "5454138004248587563_1269890462_456256811"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 666,
+        "bytes": 111045
       }
     },
     {
@@ -2028,6 +3144,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5463124415861617678_1271982774_456258574"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1200,
+        "height": 1086,
+        "bytes": 195141
       }
     },
     {
@@ -2040,6 +3162,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5463124415861617785_1271982774_456258681"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 720,
+        "height": 670,
+        "bytes": 79766
       }
     },
     {
@@ -2052,6 +3180,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5465605962065899340_1272560554_456257356"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 960,
+        "height": 1280,
+        "bytes": 87901
       }
     },
     {
@@ -2064,6 +3198,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5472381565033115392_1274138122_456257280"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1082,
+        "height": 823,
+        "bytes": 134344
       }
     },
     {
@@ -2076,6 +3216,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5472381565033115407_1274138122_456257295"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1849,
+        "height": 252,
+        "bytes": 33698
       }
     },
     {
@@ -2088,18 +3234,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5474606413927015267_1274656135_456254307"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 960,
+        "height": 540,
+        "bytes": 97943
       }
     },
     {
       "message_id": 473,
       "media_id": 5192688952505657959,
-      "declared_bytes": 164343,
+      "declared_bytes": 158875,
       "tag": "images-0000",
-      "asset": "telegram-image-473-5192688952505657959.jpg",
-      "bytes": 164343,
+      "asset": "telegram-image-473-5192688952505657959-w-790x1359-158875.jpg",
+      "bytes": 158875,
       "source": {
         "kind": "photo",
         "web_key": "5192688952505657959_1209017111_456256103"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 790,
+        "height": 1359,
+        "bytes": 158875
       }
     },
     {
@@ -2112,6 +3270,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5192688952505658006_1209017111_456256150"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1512,
+        "height": 2016,
+        "bytes": 750233
       }
     },
     {
@@ -2124,6 +3288,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5197547561244816487_1210148344_456258663"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 960,
+        "height": 1280,
+        "bytes": 273793
       }
     },
     {
@@ -2136,18 +3306,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5215716724605844691_1214378682_456260819"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1902,
+        "height": 1016,
+        "bytes": 398579
       }
     },
     {
       "message_id": 482,
       "media_id": 5215716724605844765,
-      "declared_bytes": 116625,
+      "declared_bytes": 115132,
       "tag": "images-0000",
-      "asset": "telegram-image-482-5215716724605844765.jpg",
-      "bytes": 116625,
+      "asset": "telegram-image-482-5215716724605844765-y-886x830-115132.jpg",
+      "bytes": 115132,
       "source": {
         "kind": "photo",
         "web_key": "5215716724605844765_1214378682_456260893"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 886,
+        "height": 830,
+        "bytes": 115132
       }
     },
     {
@@ -2160,6 +3342,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5221952308450035641_1215830517_456263609"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 700,
+        "height": 700,
+        "bytes": 65633
       }
     },
     {
@@ -2172,18 +3360,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5221952308450037653_1215830517_456265621"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1708,
+        "height": 1048,
+        "bytes": 196888
       }
     },
     {
       "message_id": 488,
       "media_id": 5226929535595967434,
-      "declared_bytes": 22630,
+      "declared_bytes": 21691,
       "tag": "images-0000",
-      "asset": "telegram-image-488-5226929535595967434.jpg",
-      "bytes": 22630,
+      "asset": "telegram-image-488-5226929535595967434-y-854x586-21691.jpg",
+      "bytes": 21691,
       "source": {
         "kind": "photo",
         "web_key": "5226929535595967434_1216989368_456258506"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 854,
+        "height": 586,
+        "bytes": 21691
       }
     },
     {
@@ -2196,6 +3396,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5226929535595967575_1216989368_456258647"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 604,
+        "height": 574,
+        "bytes": 44926
       }
     },
     {
@@ -2208,6 +3414,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5231238955456916386_1217992733_456256418"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 822,
+        "height": 1080,
+        "bytes": 82557
       }
     },
     {
@@ -2220,6 +3432,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5238230758487882179_1219620639_456260035"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1170,
+        "height": 826,
+        "bytes": 156878
       }
     },
     {
@@ -2232,6 +3450,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5240482558301564465_1220144927_456257073"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1695,
+        "height": 2560,
+        "bytes": 928866
       }
     },
     {
@@ -2244,6 +3468,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5244618822261012731_1221107976_456259835"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 736,
+        "height": 400,
+        "bytes": 26600
       }
     },
     {
@@ -2256,6 +3486,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5244552787138834583_1221092601_456257687"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 665,
+        "height": 183,
+        "bytes": 20055
       }
     },
     {
@@ -2268,6 +3504,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5246804586952518108_1221616889_456255964"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 743,
+        "height": 377,
+        "bytes": 10689
       }
     },
     {
@@ -2280,6 +3522,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5249437337480459705_1222229874_456259001"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1096,
+        "height": 1280,
+        "bytes": 94194
       }
     },
     {
@@ -2292,6 +3540,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5251537555013364695_1222718869_456256471"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 648,
+        "height": 577,
+        "bytes": 70342
       }
     },
     {
@@ -2304,6 +3558,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5251374041313439124_1222680798_456256916"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 973,
+        "height": 1047,
+        "bytes": 152910
       }
     },
     {
@@ -2316,18 +3576,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5251537555013364798_1222718869_456256574"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 979,
+        "height": 976,
+        "bytes": 153187
       }
     },
     {
       "message_id": 508,
       "media_id": 5251537555013365162,
-      "declared_bytes": 178050,
+      "declared_bytes": 174316,
       "tag": "images-0500",
-      "asset": "telegram-image-508-5251537555013365162.jpg",
-      "bytes": 178050,
+      "asset": "telegram-image-508-5251537555013365162-y-780x1040-174316.jpg",
+      "bytes": 174316,
       "source": {
         "kind": "photo",
         "web_key": "5251537555013365162_1222718869_456256938"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 780,
+        "height": 1040,
+        "bytes": 174316
       }
     },
     {
@@ -2340,6 +3612,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5251285917174461941_1222660280_456259061"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1068,
+        "height": 1015,
+        "bytes": 100761
       }
     },
     {
@@ -2348,7 +3626,13 @@
       "declared_bytes": 101264,
       "tag": "images-0500",
       "asset": "telegram-image-510-5253789354827050973.jpg",
-      "bytes": 101264
+      "bytes": 101264,
+      "photo_variant": {
+        "kind": "y",
+        "width": 876,
+        "height": 994,
+        "bytes": 101264
+      }
     },
     {
       "message_id": 511,
@@ -2356,7 +3640,13 @@
       "declared_bytes": 206756,
       "tag": "images-0500",
       "asset": "telegram-image-511-5253789354827050974.jpg",
-      "bytes": 206756
+      "bytes": 206756,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1545,
+        "height": 1155,
+        "bytes": 206756
+      }
     },
     {
       "message_id": 512,
@@ -2368,6 +3658,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5258181706211520084_1224265831_456257108"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 544,
+        "height": 440,
+        "bytes": 57876
       }
     },
     {
@@ -2380,6 +3676,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5258181706211520137_1224265831_456257161"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1902,
+        "bytes": 413056
       }
     },
     {
@@ -2392,6 +3694,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5260248925510693602_1224747143_456258274"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 1000,
+        "bytes": 210507
       }
     },
     {
@@ -2404,6 +3712,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5262902137262829478_1225364892_456257446"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1080,
+        "height": 1080,
+        "bytes": 246517
       }
     },
     {
@@ -2416,6 +3730,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5264726708089648938_1225789708_456259370"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1198,
+        "height": 390,
+        "bytes": 124612
       }
     },
     {
@@ -2428,6 +3748,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5264726708089649051_1225789708_456259483"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 869,
+        "height": 1129,
+        "bytes": 213842
       }
     },
     {
@@ -2440,6 +3766,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5264726708089649361_1225789708_456259793"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 688,
+        "height": 265,
+        "bytes": 24399
       }
     },
     {
@@ -2452,6 +3784,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5264726708089649363_1225789708_456259795"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 624,
+        "height": 800,
+        "bytes": 90680
       }
     },
     {
@@ -2464,6 +3802,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5266978507903333095_1226313996_456258279"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 302988
       }
     },
     {
@@ -2476,6 +3820,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5269656982653106298_1226937627_456259706"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 243269
       }
     },
     {
@@ -2488,6 +3838,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5269559087463524741_1226914834_456255877"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1182,
+        "bytes": 325748
       }
     },
     {
@@ -2500,6 +3856,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5269656982653106475_1226937627_456259883"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 236246
       }
     },
     {
@@ -2512,6 +3874,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5271908782466788847_1227461915_456257007"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 429787
       }
     },
     {
@@ -2524,6 +3892,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5271908782466788849_1227461915_456257009"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 421907
       }
     },
     {
@@ -2536,6 +3910,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5271908782466788852_1227461915_456257012"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 330092
       }
     },
     {
@@ -2548,6 +3928,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5274098292369781458_1227971700_456258258"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1161,
+        "height": 446,
+        "bytes": 60456
       }
     },
     {
@@ -2560,6 +3946,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5285325070593553695_1230585638_456258847"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1902,
+        "bytes": 320318
       }
     },
     {
@@ -2572,6 +3964,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5296715169243722942_1233237602_456258750"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 972,
+        "height": 1500,
+        "bytes": 147486
       }
     },
     {
@@ -2584,6 +3982,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5298909356366097467_1233748476_456256571"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 662,
+        "height": 576,
+        "bytes": 35738
       }
     },
     {
@@ -2596,6 +4000,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5301205759415154029_1234283149_456258925"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 960,
+        "bytes": 194253
       }
     },
     {
@@ -2608,6 +4018,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5310099855001120614_1236353967_456257382"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1428,
+        "height": 1410,
+        "bytes": 892985
       }
     },
     {
@@ -2620,6 +4036,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5312311033014122309_1236868797_456259397"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1902,
+        "bytes": 158009
       }
     },
     {
@@ -2632,6 +4054,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5327905071423420414_1240499567_456259582"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 709,
+        "height": 525,
+        "bytes": 122379
       }
     },
     {
@@ -2644,6 +4072,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330353748242985817_1241069694_456258393"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1917,
+        "height": 1200,
+        "bytes": 370461
       }
     },
     {
@@ -2656,6 +4090,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330353748242985818_1241069694_456258394"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 552336
       }
     },
     {
@@ -2668,18 +4108,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5344065311076383027_1244262166_456259891"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 320,
+        "height": 483,
+        "bytes": 35602
       }
     },
     {
       "message_id": 554,
       "media_id": 5343793027329684273,
-      "declared_bytes": 92585,
+      "declared_bytes": 61519,
       "tag": "images-0500",
-      "asset": "telegram-image-554-5343793027329684273.jpg",
-      "bytes": 92585,
+      "asset": "telegram-image-554-5343793027329684273-y-944x783-61519.jpg",
+      "bytes": 61519,
       "source": {
         "kind": "photo",
         "web_key": "5343793027329684273_1244198770_456258353"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 944,
+        "height": 783,
+        "bytes": 61519
       }
     },
     {
@@ -2692,6 +4144,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5345774544851432272_1244660128_456258384"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 720,
+        "height": 1280,
+        "bytes": 148753
       }
     },
     {
@@ -2700,7 +4158,13 @@
       "declared_bytes": 173638,
       "tag": "images-0500",
       "asset": "telegram-image-557-5309807311893688116.jpg",
-      "bytes": 173638
+      "bytes": 173638,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1080,
+        "height": 761,
+        "bytes": 173638
+      }
     },
     {
       "message_id": 558,
@@ -2708,7 +4172,13 @@
       "declared_bytes": 259965,
       "tag": "images-0500",
       "asset": "telegram-image-558-5309807311893688117.jpg",
-      "bytes": 259965
+      "bytes": 259965,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 853,
+        "bytes": 259965
+      }
     },
     {
       "message_id": 559,
@@ -2716,7 +4186,13 @@
       "declared_bytes": 293853,
       "tag": "images-0500",
       "asset": "telegram-image-559-5309807311893688118.jpg",
-      "bytes": 293853
+      "bytes": 293853,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 898,
+        "bytes": 293853
+      }
     },
     {
       "message_id": 560,
@@ -2724,7 +4200,13 @@
       "declared_bytes": 316613,
       "tag": "images-0500",
       "asset": "telegram-image-560-5309807311893688119.jpg",
-      "bytes": 316613
+      "bytes": 316613,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 904,
+        "bytes": 316613
+      }
     },
     {
       "message_id": 561,
@@ -2732,7 +4214,13 @@
       "declared_bytes": 235825,
       "tag": "images-0500",
       "asset": "telegram-image-561-5309807311893688120.jpg",
-      "bytes": 235825
+      "bytes": 235825,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 700,
+        "bytes": 235825
+      }
     },
     {
       "message_id": 562,
@@ -2740,7 +4228,13 @@
       "declared_bytes": 238110,
       "tag": "images-0500",
       "asset": "telegram-image-562-5309807311893688121.jpg",
-      "bytes": 238110
+      "bytes": 238110,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 700,
+        "bytes": 238110
+      }
     },
     {
       "message_id": 563,
@@ -2748,7 +4242,13 @@
       "declared_bytes": 348614,
       "tag": "images-0500",
       "asset": "telegram-image-563-5309807311893688122.jpg",
-      "bytes": 348614
+      "bytes": 348614,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1200,
+        "height": 900,
+        "bytes": 348614
+      }
     },
     {
       "message_id": 564,
@@ -2756,7 +4256,13 @@
       "declared_bytes": 355033,
       "tag": "images-0500",
       "asset": "telegram-image-564-5309807311893688123.jpg",
-      "bytes": 355033
+      "bytes": 355033,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1080,
+        "height": 812,
+        "bytes": 355033
+      }
     },
     {
       "message_id": 565,
@@ -2768,6 +4274,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5350564279495028516_1245775325_456257316"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1078,
+        "height": 1025,
+        "bytes": 97753
       }
     },
     {
@@ -2780,18 +4292,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5350564279495029241_1245775325_456258041"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1136,
+        "height": 1262,
+        "bytes": 193338
       }
     },
     {
       "message_id": 567,
       "media_id": 5359475683799200239,
-      "declared_bytes": 33159,
+      "declared_bytes": 32272,
       "tag": "images-0500",
-      "asset": "telegram-image-567-5359475683799200239.jpg",
-      "bytes": 33159,
+      "asset": "telegram-image-567-5359475683799200239-y-849x612-32272.jpg",
+      "bytes": 32272,
       "source": {
         "kind": "photo",
         "web_key": "5359475683799200239_1247850173_456258031"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 849,
+        "height": 612,
+        "bytes": 32272
       }
     },
     {
@@ -2804,6 +4328,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5359475683799200970_1247850173_456258762"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 923,
+        "height": 454,
+        "bytes": 27131
       }
     },
     {
@@ -2816,6 +4346,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5370830868660219290_1250494008_456256922"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 800,
+        "height": 1422,
+        "bytes": 287609
       }
     },
     {
@@ -2824,7 +4360,13 @@
       "declared_bytes": 124024,
       "tag": "images-0500",
       "asset": "telegram-image-577-5375476537215808836.jpg",
-      "bytes": 124024
+      "bytes": 124024,
+      "photo_variant": {
+        "kind": "y",
+        "width": 971,
+        "height": 898,
+        "bytes": 124024
+      }
     },
     {
       "message_id": 578,
@@ -2832,7 +4374,13 @@
       "declared_bytes": 156401,
       "tag": "images-0500",
       "asset": "telegram-image-578-5375476537215808838.jpg",
-      "bytes": 156401
+      "bytes": 156401,
+      "photo_variant": {
+        "kind": "y",
+        "width": 862,
+        "height": 674,
+        "bytes": 156401
+      }
     },
     {
       "message_id": 579,
@@ -2840,15 +4388,27 @@
       "declared_bytes": 9739,
       "tag": "images-0500",
       "asset": "telegram-image-579-5375476537215808837.jpg",
-      "bytes": 9739
+      "bytes": 9739,
+      "photo_variant": {
+        "kind": "x",
+        "width": 600,
+        "height": 104,
+        "bytes": 9739
+      }
     },
     {
       "message_id": 580,
       "media_id": 5375476537215808840,
-      "declared_bytes": 376394,
+      "declared_bytes": 301913,
       "tag": "images-0500",
-      "asset": "telegram-image-580-5375476537215808840.jpg",
-      "bytes": 376394
+      "asset": "telegram-image-580-5375476537215808840-w-1300x1065-301913.jpg",
+      "bytes": 301913,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1300,
+        "height": 1065,
+        "bytes": 301913
+      }
     },
     {
       "message_id": 581,
@@ -2856,7 +4416,13 @@
       "declared_bytes": 69214,
       "tag": "images-0500",
       "asset": "telegram-image-581-5375476537215808839.jpg",
-      "bytes": 69214
+      "bytes": 69214,
+      "photo_variant": {
+        "kind": "x",
+        "width": 679,
+        "height": 360,
+        "bytes": 69214
+      }
     },
     {
       "message_id": 582,
@@ -2868,6 +4434,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5375483314674201301_1251577240_456258261"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2000,
+        "height": 964,
+        "bytes": 52686
       }
     },
     {
@@ -2880,6 +4452,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5375476537215808962_1251575662_456259010"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1536,
+        "height": 2048,
+        "bytes": 1257445
       }
     },
     {
@@ -2892,6 +4470,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5377444014489463329_1252033751_456256033"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 181251
       }
     },
     {
@@ -2904,6 +4488,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5379649377116746101_1252547227_456257909"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 436,
+        "height": 185,
+        "bytes": 10045
       }
     },
     {
@@ -2916,6 +4506,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5381901176930430068_1253071515_456256628"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 358392
       }
     },
     {
@@ -2928,6 +4524,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5400035276178453878_1257293689_456258934"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 460,
+        "height": 133,
+        "bytes": 9712
       }
     },
     {
@@ -2940,6 +4542,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402297976619135579_1257820515_456258139"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2159,
+        "height": 1879,
+        "bytes": 772660
       }
     },
     {
@@ -2952,6 +4560,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402456284818704335_1257857374_456263631"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 453,
+        "height": 604,
+        "bytes": 67679
       }
     },
     {
@@ -2964,6 +4578,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5420289298269335369_1262009446_456257353"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 932,
+        "height": 1091,
+        "bytes": 146798
       }
     },
     {
@@ -2976,6 +4596,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5422520353390980121_1262528904_456256537"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 746,
+        "height": 1063,
+        "bytes": 158781
       }
     },
     {
@@ -2988,6 +4614,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5422520353390981486_1262528904_456257902"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 728,
+        "height": 378,
+        "bytes": 63887
       }
     },
     {
@@ -3000,6 +4632,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5462915113515351326_1271934042_456260894"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1007,
+        "height": 757,
+        "bytes": 77476
       }
     },
     {
@@ -3012,6 +4650,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5465166913329034167_1272458330_456258487"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1280,
+        "height": 2022,
+        "bytes": 282489
       }
     },
     {
@@ -3024,6 +4668,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5474557069047754958_1274644646_456257742"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 184191
       }
     },
     {
@@ -3036,6 +4686,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5190527334120291504_1208513820_456260784"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 488,
+        "height": 379,
+        "bytes": 20815
       }
     },
     {
@@ -3048,18 +4704,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5192779133933974763_1209038108_456258795"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 709,
+        "height": 1080,
+        "bytes": 51860
       }
     },
     {
       "message_id": 610,
       "media_id": 5194917018330068550,
-      "declared_bytes": 94558,
+      "declared_bytes": 92473,
       "tag": "images-0500",
-      "asset": "telegram-image-610-5194917018330068550.jpg",
-      "bytes": 94558,
+      "asset": "telegram-image-610-5194917018330068550-w-403x1345-92473.jpg",
+      "bytes": 92473,
       "source": {
         "kind": "photo",
         "web_key": "5194917018330068550_1209535873_456259142"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 403,
+        "height": 1345,
+        "bytes": 92473
       }
     },
     {
@@ -3072,6 +4740,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229224641564899537_1217523739_456259793"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 229726
       }
     },
     {
@@ -3084,6 +4758,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5233728241192268441_1218572315_456258201"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2560,
+        "height": 1632,
+        "bytes": 742977
       }
     },
     {
@@ -3096,6 +4776,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5237834294351754182_1219528330_456258502"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1578,
+        "height": 2335,
+        "bytes": 849176
       }
     },
     {
@@ -3108,6 +4794,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5240341610359812839_1220112110_456258279"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1208,
+        "bytes": 861218
       }
     },
     {
@@ -3120,6 +4812,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5240341610359812844_1220112110_456258284"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 978,
+        "height": 569,
+        "bytes": 188104
       }
     },
     {
@@ -3132,6 +4830,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5240341610359813629_1220112110_456259069"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 700,
+        "height": 933,
+        "bytes": 143169
       }
     },
     {
@@ -3144,18 +4848,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5240341610359814155_1220112110_456259595"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1097,
+        "height": 1757,
+        "bytes": 270908
       }
     },
     {
       "message_id": 624,
       "media_id": 5246841888743486844,
-      "declared_bytes": 39362,
+      "declared_bytes": 37188,
       "tag": "images-0500",
-      "asset": "telegram-image-624-5246841888743486844.jpg",
-      "bytes": 39362,
+      "asset": "telegram-image-624-5246841888743486844-y-833x289-37188.jpg",
+      "bytes": 37188,
       "source": {
         "kind": "photo",
         "web_key": "5246841888743486844_1221625574_456258940"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 833,
+        "height": 289,
+        "bytes": 37188
       }
     },
     {
@@ -3168,6 +4884,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5246998070934240894_1221661938_456261246"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 780,
+        "height": 489,
+        "bytes": 165660
       }
     },
     {
@@ -3180,6 +4902,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5246998070934240901_1221661938_456261253"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1023,
+        "height": 637,
+        "bytes": 202866
       }
     },
     {
@@ -3192,6 +4920,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5271934505025926821_1227467904_456259237"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 827,
+        "height": 1046,
+        "bytes": 156226
       }
     },
     {
@@ -3204,6 +4938,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5274114063489695116_1227975372_456261004"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1125,
+        "height": 1080,
+        "bytes": 120176
       }
     },
     {
@@ -3216,6 +4956,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5280789993150872257_1229529733_456260289"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 33121
       }
     },
     {
@@ -3224,7 +4970,13 @@
       "declared_bytes": 8623,
       "tag": "images-0500",
       "asset": "telegram-image-638-5291747257881853129.jpg",
-      "bytes": 8623
+      "bytes": 8623,
+      "photo_variant": {
+        "kind": "x",
+        "width": 437,
+        "height": 63,
+        "bytes": 8623
+      }
     },
     {
       "message_id": 639,
@@ -3232,15 +4984,27 @@
       "declared_bytes": 623446,
       "tag": "images-0500",
       "asset": "telegram-image-639-5291747257881853130.jpg",
-      "bytes": 623446
+      "bytes": 623446,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1536,
+        "height": 2048,
+        "bytes": 623446
+      }
     },
     {
       "message_id": 640,
       "media_id": 5298559256401935370,
-      "declared_bytes": 40381,
+      "declared_bytes": 38814,
       "tag": "images-0500",
-      "asset": "telegram-image-640-5298559256401935370.jpg",
-      "bytes": 40381
+      "asset": "telegram-image-640-5298559256401935370-y-801x210-38814.jpg",
+      "bytes": 38814,
+      "photo_variant": {
+        "kind": "y",
+        "width": 801,
+        "height": 210,
+        "bytes": 38814
+      }
     },
     {
       "message_id": 641,
@@ -3248,7 +5012,13 @@
       "declared_bytes": 3021,
       "tag": "images-0500",
       "asset": "telegram-image-641-5298559256401935369.jpg",
-      "bytes": 3021
+      "bytes": 3021,
+      "photo_variant": {
+        "kind": "m",
+        "width": 130,
+        "height": 88,
+        "bytes": 3021
+      }
     },
     {
       "message_id": 645,
@@ -3260,6 +5030,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5301208284855926733_1234283737_456261581"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 288350
       }
     },
     {
@@ -3272,6 +5048,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5305527003321070773_1235289267_456258741"
+      },
+      "photo_variant": {
+        "kind": "m",
+        "width": 306,
+        "height": 94,
+        "bytes": 7536
       }
     },
     {
@@ -3284,6 +5066,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5307862000946249674_1235832926_456261578"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1024,
+        "height": 2086,
+        "bytes": 692300
       }
     },
     {
@@ -3296,6 +5084,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5307862000946249677_1235832926_456261581"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 862,
+        "height": 939,
+        "bytes": 103833
       }
     },
     {
@@ -3308,6 +5102,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5307778803134757101_1235813555_456259821"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 605,
+        "bytes": 80109
       }
     },
     {
@@ -3320,6 +5120,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5307778803134757166_1235813555_456259886"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 760,
+        "height": 755,
+        "bytes": 85685
       }
     },
     {
@@ -3332,6 +5138,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330235726836661092_1241042215_456260452"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 470805
       }
     },
     {
@@ -3344,6 +5156,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5330235726836661165_1241042215_456260525"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 570,
+        "height": 570,
+        "bytes": 47672
       }
     },
     {
@@ -3352,7 +5170,13 @@
       "declared_bytes": 117694,
       "tag": "images-0500",
       "asset": "telegram-image-658-5332699066674575060.jpg",
-      "bytes": 117694
+      "bytes": 117694,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 554,
+        "bytes": 117694
+      }
     },
     {
       "message_id": 659,
@@ -3360,7 +5184,13 @@
       "declared_bytes": 106000,
       "tag": "images-0500",
       "asset": "telegram-image-659-5332699066674575061.jpg",
-      "bytes": 106000
+      "bytes": 106000,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 558,
+        "bytes": 106000
+      }
     },
     {
       "message_id": 660,
@@ -3368,7 +5198,13 @@
       "declared_bytes": 128258,
       "tag": "images-0500",
       "asset": "telegram-image-660-5332699066674575062.jpg",
-      "bytes": 128258
+      "bytes": 128258,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 533,
+        "bytes": 128258
+      }
     },
     {
       "message_id": 661,
@@ -3376,7 +5212,13 @@
       "declared_bytes": 121350,
       "tag": "images-0500",
       "asset": "telegram-image-661-5332699066674575063.jpg",
-      "bytes": 121350
+      "bytes": 121350,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 585,
+        "bytes": 121350
+      }
     },
     {
       "message_id": 662,
@@ -3384,7 +5226,13 @@
       "declared_bytes": 91106,
       "tag": "images-0500",
       "asset": "telegram-image-662-5332699066674575064.jpg",
-      "bytes": 91106
+      "bytes": 91106,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 472,
+        "bytes": 91106
+      }
     },
     {
       "message_id": 663,
@@ -3392,7 +5240,13 @@
       "declared_bytes": 156407,
       "tag": "images-0500",
       "asset": "telegram-image-663-5332699066674575065.jpg",
-      "bytes": 156407
+      "bytes": 156407,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 674,
+        "bytes": 156407
+      }
     },
     {
       "message_id": 664,
@@ -3400,7 +5254,13 @@
       "declared_bytes": 94216,
       "tag": "images-0500",
       "asset": "telegram-image-664-5332699066674575066.jpg",
-      "bytes": 94216
+      "bytes": 94216,
+      "photo_variant": {
+        "kind": "x",
+        "width": 800,
+        "height": 449,
+        "bytes": 94216
+      }
     },
     {
       "message_id": 665,
@@ -3408,7 +5268,13 @@
       "declared_bytes": 184208,
       "tag": "images-0500",
       "asset": "telegram-image-665-5334824169247996876.jpg",
-      "bytes": 184208
+      "bytes": 184208,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 184208
+      }
     },
     {
       "message_id": 666,
@@ -3416,7 +5282,13 @@
       "declared_bytes": 182737,
       "tag": "images-0500",
       "asset": "telegram-image-666-5334931646509611608.jpg",
-      "bytes": 182737
+      "bytes": 182737,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 182737
+      }
     },
     {
       "message_id": 667,
@@ -3424,7 +5296,13 @@
       "declared_bytes": 205301,
       "tag": "images-0500",
       "asset": "telegram-image-667-5334931646509611609.jpg",
-      "bytes": 205301
+      "bytes": 205301,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 205301
+      }
     },
     {
       "message_id": 668,
@@ -3432,7 +5310,13 @@
       "declared_bytes": 105781,
       "tag": "images-0500",
       "asset": "telegram-image-668-5334931646509611607.jpg",
-      "bytes": 105781
+      "bytes": 105781,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1227,
+        "height": 1064,
+        "bytes": 105781
+      }
     },
     {
       "message_id": 669,
@@ -3444,6 +5328,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5334824169247997201_1242110545_456260881"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1069,
+        "height": 605,
+        "bytes": 80926
       }
     },
     {
@@ -3456,6 +5346,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5334931646509611961_1242135569_456260537"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 720,
+        "height": 455,
+        "bytes": 32542
       }
     },
     {
@@ -3468,6 +5364,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5364054960750329725_1248916369_456261501"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 750,
+        "height": 680,
+        "bytes": 57300
       }
     },
     {
@@ -3480,6 +5382,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5364201410545194447_1248950467_456267215"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 380,
+        "bytes": 55822
       }
     },
     {
@@ -3488,7 +5396,13 @@
       "declared_bytes": 124850,
       "tag": "images-0500",
       "asset": "telegram-image-681-5370607650619914944.jpg",
-      "bytes": 124850
+      "bytes": 124850,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1160,
+        "height": 714,
+        "bytes": 124850
+      }
     },
     {
       "message_id": 682,
@@ -3496,7 +5410,13 @@
       "declared_bytes": 114694,
       "tag": "images-0500",
       "asset": "telegram-image-682-5370607650619914945.jpg",
-      "bytes": 114694
+      "bytes": 114694,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1160,
+        "height": 714,
+        "bytes": 114694
+      }
     },
     {
       "message_id": 683,
@@ -3508,6 +5428,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5388950214695584492_1254712747_456262380"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 776,
+        "height": 459,
+        "bytes": 115849
       }
     },
     {
@@ -3520,6 +5446,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5391335068301129921_1255268014_456259777"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1230,
+        "height": 752,
+        "bytes": 93724
       }
     },
     {
@@ -3532,6 +5464,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5395445158729875858_1256224969_456262034"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 467,
+        "height": 608,
+        "bytes": 25276
       }
     },
     {
@@ -3544,6 +5482,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5398061858965026483_1256834217_456259251"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 633,
+        "bytes": 176828
       }
     },
     {
@@ -3556,6 +5500,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5397696958543559379_1256749257_456260307"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 600,
+        "height": 450,
+        "bytes": 84633
       }
     },
     {
@@ -3568,6 +5518,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404768918549166216_1258395826_456259720"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 1280,
+        "bytes": 352197
       }
     },
     {
@@ -3580,6 +5536,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5409134134330260506_1259412182_456260634"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 832,
+        "bytes": 84664
       }
     },
     {
@@ -3592,6 +5554,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5413585189327731507_1260448524_456260403"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 862,
+        "height": 1280,
+        "bytes": 324043
       }
     },
     {
@@ -3604,6 +5572,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5418294831421193355_1261545073_456260747"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 995,
+        "bytes": 233407
       }
     },
     {
@@ -3616,6 +5590,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5452023402870209880_1269398118_456260952"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 733,
+        "height": 162,
+        "bytes": 6688
       }
     },
     {
@@ -3628,6 +5608,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5452161769536621413_1269430334_456264549"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1189,
+        "height": 834,
+        "bytes": 131604
       }
     },
     {
@@ -3640,6 +5626,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5453937154397960845_1269843698_456260237"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 123075
       }
     },
     {
@@ -3652,6 +5644,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5454198108020933187_1269904456_456262211"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1902,
+        "bytes": 174994
       }
     },
     {
@@ -3664,6 +5662,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5458701707648302947_1270953032_456261475"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 305,
+        "height": 339,
+        "bytes": 24475
       }
     },
     {
@@ -3676,6 +5680,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5458701707648303030_1270953032_456261558"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 262125
       }
     },
     {
@@ -3688,6 +5698,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460802865779047402_1271442246_456260586"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1197,
+        "height": 1482,
+        "bytes": 417467
       }
     },
     {
@@ -3700,6 +5716,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460802865779047421_1271442246_456260605"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1028,
+        "height": 1210,
+        "bytes": 267112
       }
     },
     {
@@ -3712,6 +5734,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5472354420839806576_1274131802_456259184"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 270086
       }
     },
     {
@@ -3724,6 +5752,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5190435396050353820_1208492414_456261276"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 133579
       }
     },
     {
@@ -3736,6 +5770,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5190435396050354424_1208492414_456261880"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 1229,
+        "bytes": 201279
       }
     },
     {
@@ -3748,6 +5788,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5190885594522320570_1208597234_456261306"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2560,
+        "height": 1866,
+        "bytes": 783503
       }
     },
     {
@@ -3760,6 +5806,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5206578739305712414_1212251079_460000030"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1248,
+        "height": 859,
+        "bytes": 61419
       }
     },
     {
@@ -3772,6 +5824,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5208830539119400259_1212775367_460002627"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 914058
       }
     },
     {
@@ -3784,6 +5842,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5208830539119400265_1212775367_460002633"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 798847
       }
     },
     {
@@ -3796,6 +5860,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5211094055603867254_1213302383_460000886"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1200,
+        "bytes": 451356
       }
     },
     {
@@ -3808,6 +5878,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5211094055603867521_1213302383_460001153"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1523,
+        "height": 658,
+        "bytes": 112642
       }
     },
     {
@@ -3820,6 +5896,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5213345855417552026_1213826671_460000410"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 1000,
+        "bytes": 166582
       }
     },
     {
@@ -3832,6 +5914,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5221979323798063967_1215836807_460000095"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1079,
+        "bytes": 414855
       }
     },
     {
@@ -3844,6 +5932,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5226963422891676071_1216997258_460001703"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 1024,
+        "bytes": 327524
       }
     },
     {
@@ -3856,6 +5950,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359627_1217521546_460000011"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1210,
+        "height": 964,
+        "bytes": 378295
       }
     },
     {
@@ -3868,18 +5968,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359631_1217521546_460000015"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1189,
+        "height": 842,
+        "bytes": 203984
       }
     },
     {
       "message_id": 752,
       "media_id": 5229215222705359661,
-      "declared_bytes": 157064,
+      "declared_bytes": 144587,
       "tag": "images-0500",
-      "asset": "telegram-image-752-5229215222705359661.jpg",
-      "bytes": 157064,
+      "asset": "telegram-image-752-5229215222705359661-w-1306x1037-144587.jpg",
+      "bytes": 144587,
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359661_1217521546_460000045"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1306,
+        "height": 1037,
+        "bytes": 144587
       }
     },
     {
@@ -3892,6 +6004,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359666_1217521546_460000050"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1199,
+        "height": 1419,
+        "bytes": 417733
       }
     },
     {
@@ -3904,6 +6022,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359737_1217521546_460000121"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1396,
+        "height": 1800,
+        "bytes": 476940
       }
     },
     {
@@ -3916,6 +6040,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359738_1217521546_460000122"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1981,
+        "height": 2560,
+        "bytes": 1339211
       }
     },
     {
@@ -3928,6 +6058,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359739_1217521546_460000123"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2051,
+        "height": 2560,
+        "bytes": 1402137
       }
     },
     {
@@ -3940,6 +6076,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359741_1217521546_460000125"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1152,
+        "height": 1135,
+        "bytes": 82876
       }
     },
     {
@@ -3952,6 +6094,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359745_1217521546_460000129"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1157,
+        "height": 1899,
+        "bytes": 215036
       }
     },
     {
@@ -3964,6 +6112,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359746_1217521546_460000130"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1190,
+        "height": 1238,
+        "bytes": 205433
       }
     },
     {
@@ -3976,6 +6130,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359767_1217521546_460000151"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1280,
+        "height": 1597,
+        "bytes": 694768
       }
     },
     {
@@ -3988,6 +6148,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359837_1217521546_460000221"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 793,
+        "height": 988,
+        "bytes": 223316
       }
     },
     {
@@ -4000,6 +6166,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359841_1217521546_460000225"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1992,
+        "height": 2560,
+        "bytes": 1834631
       }
     },
     {
@@ -4012,18 +6184,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359857_1217521546_460000241"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1953,
+        "height": 2560,
+        "bytes": 941716
       }
     },
     {
       "message_id": 764,
       "media_id": 5229215222705359874,
-      "declared_bytes": 643474,
+      "declared_bytes": 588327,
       "tag": "images-0500",
-      "asset": "telegram-image-764-5229215222705359874.jpg",
-      "bytes": 643474,
+      "asset": "telegram-image-764-5229215222705359874-w-1141x1449-588327.jpg",
+      "bytes": 588327,
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359874_1217521546_460000258"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1141,
+        "height": 1449,
+        "bytes": 588327
       }
     },
     {
@@ -4036,6 +6220,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5229215222705359893_1217521546_460000277"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 750,
+        "height": 979,
+        "bytes": 208001
       }
     },
     {
@@ -4048,6 +6238,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5228869099880911230_1217440958_460001662"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 747,
+        "height": 1089,
+        "bytes": 143418
       }
     },
     {
@@ -4060,6 +6256,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5228869099880911243_1217440958_460001675"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 928,
+        "height": 884,
+        "bytes": 107085
       }
     },
     {
@@ -4072,6 +6274,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5231120899694594878_1217965246_460000062"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 922,
+        "height": 1108,
+        "bytes": 254540
       }
     },
     {
@@ -4084,18 +6292,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5231136868383002106_1217968964_460000762"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 350,
+        "height": 104,
+        "bytes": 11229
       }
     },
     {
       "message_id": 770,
       "media_id": 5233719668441288226,
-      "declared_bytes": 249589,
+      "declared_bytes": 207018,
       "tag": "images-0500",
-      "asset": "telegram-image-770-5233719668441288226.jpg",
-      "bytes": 249589,
+      "asset": "telegram-image-770-5233719668441288226-w-640x1337-207018.jpg",
+      "bytes": 207018,
       "source": {
         "kind": "photo",
         "web_key": "5233719668441288226_1218570319_460000802"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 640,
+        "height": 1337,
+        "bytes": 207018
       }
     },
     {
@@ -4108,6 +6328,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5233194153422819308_1218447963_460001260"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1033,
+        "height": 1136,
+        "bytes": 318697
       }
     },
     {
@@ -4120,6 +6346,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5233194153422819325_1218447963_460001277"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1199,
+        "height": 1714,
+        "bytes": 490697
       }
     },
     {
@@ -4132,6 +6364,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5237697753050189079_1219496539_460000535"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1058,
+        "height": 1517,
+        "bytes": 222862
       }
     },
     {
@@ -4144,6 +6382,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5239970731347610532_1220025758_460000164"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 299583
       }
     },
     {
@@ -4156,6 +6400,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5249251099112311939_1222186512_460000387"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1197,
+        "height": 593,
+        "bytes": 85601
       }
     },
     {
@@ -4180,6 +6430,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5256072907337698864_1223774838_460000816"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1027,
+        "height": 1200,
+        "bytes": 360803
       }
     },
     {
@@ -4192,6 +6448,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5262600643447294725_1225294695_460000005"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 337476
       }
     },
     {
@@ -4204,6 +6466,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5267041880149527904_1226328751_460000608"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2150,
+        "height": 2006,
+        "bytes": 593273
       }
     },
     {
@@ -4216,6 +6484,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5319041246770696146_1238435797_460001234"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2440,
+        "height": 1628,
+        "bytes": 891604
       }
     },
     {
@@ -4224,7 +6498,13 @@
       "declared_bytes": 118257,
       "tag": "images-0500",
       "asset": "telegram-image-797-5323544846398065438.jpg",
-      "bytes": 118257
+      "bytes": 118257,
+      "photo_variant": {
+        "kind": "x",
+        "width": 700,
+        "height": 483,
+        "bytes": 118257
+      }
     },
     {
       "message_id": 798,
@@ -4232,7 +6512,13 @@
       "declared_bytes": 128727,
       "tag": "images-0500",
       "asset": "telegram-image-798-5323544846398065439.jpg",
-      "bytes": 128727
+      "bytes": 128727,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 696,
+        "bytes": 128727
+      }
     },
     {
       "message_id": 799,
@@ -4240,7 +6526,13 @@
       "declared_bytes": 558570,
       "tag": "images-0500",
       "asset": "telegram-image-799-5330326234686230957.jpg",
-      "bytes": 558570
+      "bytes": 558570,
+      "photo_variant": {
+        "kind": "w",
+        "width": 2000,
+        "height": 1125,
+        "bytes": 558570
+      }
     },
     {
       "message_id": 800,
@@ -4248,7 +6540,13 @@
       "declared_bytes": 91509,
       "tag": "images-0500",
       "asset": "telegram-image-800-5330326234686230956.jpg",
-      "bytes": 91509
+      "bytes": 91509,
+      "photo_variant": {
+        "kind": "y",
+        "width": 966,
+        "height": 607,
+        "bytes": 91509
+      }
     },
     {
       "message_id": 802,
@@ -4256,15 +6554,27 @@
       "declared_bytes": 15519,
       "tag": "images-0500",
       "asset": "telegram-image-802-5339097833509948324.jpg",
-      "bytes": 15519
+      "bytes": 15519,
+      "photo_variant": {
+        "kind": "x",
+        "width": 512,
+        "height": 119,
+        "bytes": 15519
+      }
     },
     {
       "message_id": 803,
       "media_id": 5339097833509948325,
-      "declared_bytes": 64780,
+      "declared_bytes": 61596,
       "tag": "images-0500",
-      "asset": "telegram-image-803-5339097833509948325.jpg",
-      "bytes": 64780
+      "asset": "telegram-image-803-5339097833509948325-w-1321x700-61596.jpg",
+      "bytes": 61596,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1321,
+        "height": 700,
+        "bytes": 61596
+      }
     },
     {
       "message_id": 804,
@@ -4276,18 +6586,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5350606245624220539_1245785096_460000123"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 331,
+        "height": 341,
+        "bytes": 28924
       }
     },
     {
       "message_id": 805,
       "media_id": 5350719435192339794,
-      "declared_bytes": 75974,
+      "declared_bytes": 73080,
       "tag": "images-0500",
-      "asset": "telegram-image-805-5350719435192339794.jpg",
-      "bytes": 75974,
+      "asset": "telegram-image-805-5350719435192339794-y-841x838-73080.jpg",
+      "bytes": 73080,
       "source": {
         "kind": "photo",
         "web_key": "5350719435192339794_1245811450_460000594"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 841,
+        "height": 838,
+        "bytes": 73080
       }
     },
     {
@@ -4300,6 +6622,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5350719435192339929_1245811450_460000729"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1294,
+        "height": 1920,
+        "bytes": 424815
       }
     },
     {
@@ -4312,6 +6640,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5350620010994404158_1245788301_460000062"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 204189
       }
     },
     {
@@ -4324,6 +6658,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5350620010994405337_1245788301_460001241"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 363124
       }
     },
     {
@@ -4336,6 +6676,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5359618749163572144_1247883483_460000176"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1032,
+        "height": 2340,
+        "bytes": 115063
       }
     },
     {
@@ -4348,6 +6694,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5361787402705374616_1248388412_460000664"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 750,
+        "height": 563,
+        "bytes": 102909
       }
     },
     {
@@ -4360,18 +6712,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5361787402705374639_1248388412_460000687"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 684,
+        "height": 513,
+        "bytes": 57381
       }
     },
     {
       "message_id": 814,
       "media_id": 5361604072026346126,
-      "declared_bytes": 28922,
+      "declared_bytes": 24812,
       "tag": "images-0500",
-      "asset": "telegram-image-814-5361604072026346126.jpg",
-      "bytes": 28922,
+      "asset": "telegram-image-814-5361604072026346126-w-1440x1074-24812.jpg",
+      "bytes": 24812,
       "source": {
         "kind": "photo",
         "web_key": "5361604072026346126_1248345727_460001934"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1440,
+        "height": 1074,
+        "bytes": 24812
       }
     },
     {
@@ -4384,6 +6748,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5366212030769073340_1249418601_460000444"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 864,
+        "height": 1184,
+        "bytes": 264510
       }
     },
     {
@@ -4396,6 +6766,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5368463830582758361_1249942889_460000217"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1049,
+        "height": 728,
+        "bytes": 81343
       }
     },
     {
@@ -4408,6 +6784,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5368708261466541835_1249999800_460001035"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1182,
+        "bytes": 156041
       }
     },
     {
@@ -4416,7 +6798,13 @@
       "declared_bytes": 128905,
       "tag": "images-0500",
       "asset": "telegram-image-820-5370960061280226907.jpg",
-      "bytes": 128905
+      "bytes": 128905,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 750,
+        "bytes": 128905
+      }
     },
     {
       "message_id": 821,
@@ -4424,7 +6812,13 @@
       "declared_bytes": 106550,
       "tag": "images-0500",
       "asset": "telegram-image-821-5370960061280226908.jpg",
-      "bytes": 106550
+      "bytes": 106550,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 750,
+        "bytes": 106550
+      }
     },
     {
       "message_id": 822,
@@ -4432,7 +6826,13 @@
       "declared_bytes": 221660,
       "tag": "images-0500",
       "asset": "telegram-image-822-5370960061280226909.jpg",
-      "bytes": 221660
+      "bytes": 221660,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 1173,
+        "bytes": 221660
+      }
     },
     {
       "message_id": 823,
@@ -4440,7 +6840,13 @@
       "declared_bytes": 237200,
       "tag": "images-0500",
       "asset": "telegram-image-823-5370960061280226910.jpg",
-      "bytes": 237200
+      "bytes": 237200,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 996,
+        "bytes": 237200
+      }
     },
     {
       "message_id": 824,
@@ -4448,7 +6854,13 @@
       "declared_bytes": 214068,
       "tag": "images-0500",
       "asset": "telegram-image-824-5370960061280226911.jpg",
-      "bytes": 214068
+      "bytes": 214068,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 916,
+        "bytes": 214068
+      }
     },
     {
       "message_id": 825,
@@ -4460,6 +6872,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5370960061280226917_1250524088_460000869"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1199,
+        "height": 1494,
+        "bytes": 280189
       }
     },
     {
@@ -4472,6 +6890,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5373307329626967233_1251070604_460000449"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1182,
+        "bytes": 344183
       }
     },
     {
@@ -4484,6 +6908,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5373307329626967331_1251070604_460000547"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1191,
+        "height": 1527,
+        "bytes": 181132
       }
     },
     {
@@ -4496,6 +6926,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5377549657803788303_1252058348_460001295"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 855,
+        "height": 319,
+        "bytes": 73022
       }
     },
     {
@@ -4508,6 +6944,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5377540423624102473_1252056198_460001865"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 622,
+        "height": 217,
+        "bytes": 12058
       }
     },
     {
@@ -4516,7 +6958,13 @@
       "declared_bytes": 1125282,
       "tag": "images-0500",
       "asset": "telegram-image-830-5379792223437787188.jpg",
-      "bytes": 1125282
+      "bytes": 1125282,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1898,
+        "height": 2512,
+        "bytes": 1125282
+      }
     },
     {
       "message_id": 831,
@@ -4524,7 +6972,13 @@
       "declared_bytes": 329293,
       "tag": "images-0500",
       "asset": "telegram-image-831-5379792223437787187.jpg",
-      "bytes": 329293
+      "bytes": 329293,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1179,
+        "height": 1030,
+        "bytes": 329293
+      }
     },
     {
       "message_id": 833,
@@ -4536,6 +6990,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5382044023251471194_1253104774_460000090"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 894,
+        "height": 1551,
+        "bytes": 312939
       }
     },
     {
@@ -4548,6 +7008,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5384459448434232145_1253667159_460000081"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1280,
+        "height": 2097,
+        "bytes": 526422
       }
     },
     {
@@ -4560,6 +7026,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5384459448434232199_1253667159_460000135"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 525912
       }
     },
     {
@@ -4572,6 +7044,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5384459448434233871_1253667159_460001807"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 310470
       }
     },
     {
@@ -4584,6 +7062,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5388832167523192165_1254685262_460000613"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 598,
+        "height": 605,
+        "bytes": 42683
       }
     },
     {
@@ -4596,6 +7080,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5388832167523192169_1254685262_460000617"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1189,
+        "height": 1180,
+        "bytes": 49659
       }
     },
     {
@@ -4608,6 +7098,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5393122509139414568_1255684185_460000808"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 143444
       }
     },
     {
@@ -4620,6 +7116,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5398070964299434767_1256836337_460000015"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1188,
+        "height": 1414,
+        "bytes": 117318
       }
     },
     {
@@ -4632,6 +7134,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5399816645166960855_1257242785_460001495"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 151222
       }
     },
     {
@@ -4640,7 +7148,13 @@
       "declared_bytes": 253679,
       "tag": "images-0500",
       "asset": "telegram-image-844-5399816645166960874.jpg",
-      "bytes": 253679
+      "bytes": 253679,
+      "photo_variant": {
+        "kind": "y",
+        "width": 768,
+        "height": 1024,
+        "bytes": 253679
+      }
     },
     {
       "message_id": 845,
@@ -4648,7 +7162,13 @@
       "declared_bytes": 226048,
       "tag": "images-0500",
       "asset": "telegram-image-845-5399816645166960875.jpg",
-      "bytes": 226048
+      "bytes": 226048,
+      "photo_variant": {
+        "kind": "y",
+        "width": 768,
+        "height": 1024,
+        "bytes": 226048
+      }
     },
     {
       "message_id": 846,
@@ -4656,7 +7176,13 @@
       "declared_bytes": 152169,
       "tag": "images-0500",
       "asset": "telegram-image-846-5399816645166960876.jpg",
-      "bytes": 152169
+      "bytes": 152169,
+      "photo_variant": {
+        "kind": "y",
+        "width": 768,
+        "height": 1024,
+        "bytes": 152169
+      }
     },
     {
       "message_id": 847,
@@ -4664,7 +7190,13 @@
       "declared_bytes": 285871,
       "tag": "images-0500",
       "asset": "telegram-image-847-5399816645166960877.jpg",
-      "bytes": 285871
+      "bytes": 285871,
+      "photo_variant": {
+        "kind": "y",
+        "width": 768,
+        "height": 1024,
+        "bytes": 285871
+      }
     },
     {
       "message_id": 848,
@@ -4672,7 +7204,13 @@
       "declared_bytes": 249093,
       "tag": "images-0500",
       "asset": "telegram-image-848-5399816645166960878.jpg",
-      "bytes": 249093
+      "bytes": 249093,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 249093
+      }
     },
     {
       "message_id": 849,
@@ -4684,6 +7222,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402068444980645556_1257767073_460000948"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 316319
       }
     },
     {
@@ -4696,6 +7240,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402068444980645673_1257767073_460001065"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 336644
       }
     },
     {
@@ -4708,6 +7258,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402068444980645709_1257767073_460001101"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 637431
       }
     },
     {
@@ -4720,6 +7276,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402068444980645854_1257767073_460001246"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 364872
       }
     },
     {
@@ -4732,6 +7294,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402068444980646154_1257767073_460001546"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 568978
       }
     },
     {
@@ -4744,6 +7312,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402068444980646165_1257767073_460001557"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 264495
       }
     },
     {
@@ -4756,6 +7330,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5402068444980646167_1257767073_460001559"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 478741
       }
     },
     {
@@ -4768,6 +7348,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404320244794329923_1258291361_460000067"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 299455
       }
     },
     {
@@ -4780,6 +7366,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404320244794330224_1258291361_460000368"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 626,
+        "height": 640,
+        "bytes": 144079
       }
     },
     {
@@ -4792,6 +7384,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068312_1258398940_460002072"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 222062
       }
     },
     {
@@ -4804,6 +7402,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068314_1258398940_460002074"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 219775
       }
     },
     {
@@ -4816,6 +7420,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068317_1258398940_460002077"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 226727
       }
     },
     {
@@ -4828,6 +7438,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068319_1258398940_460002079"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 768,
+        "height": 1024,
+        "bytes": 160158
       }
     },
     {
@@ -4840,6 +7456,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068320_1258398940_460002080"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 305373
       }
     },
     {
@@ -4852,6 +7474,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068322_1258398940_460002082"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 232468
       }
     },
     {
@@ -4864,6 +7492,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068325_1258398940_460002085"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 768,
+        "height": 1024,
+        "bytes": 172338
       }
     },
     {
@@ -4876,6 +7510,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068336_1258398940_460002096"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 499455
       }
     },
     {
@@ -4888,6 +7528,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5404782293081068338_1258398940_460002098"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 196166
       }
     },
     {
@@ -4900,6 +7546,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5407034092894751538_1258923228_460000050"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 322601
       }
     },
     {
@@ -4912,6 +7564,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5407034092894751539_1258923228_460000051"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 330806
       }
     },
     {
@@ -4924,6 +7582,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5407034092894751540_1258923228_460000052"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 241622
       }
     },
     {
@@ -4936,6 +7600,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5407034092894751563_1258923228_460000075"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1149,
+        "height": 1024,
+        "bytes": 177974
       }
     },
     {
@@ -4948,6 +7618,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5413490665691221626_1260426516_460000890"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1175,
+        "height": 1171,
+        "bytes": 151473
       }
     },
     {
@@ -4960,6 +7636,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5413674120924303146_1260469230_460001066"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 2400,
+        "height": 1919,
+        "bytes": 1120766
       }
     },
     {
@@ -4972,6 +7654,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5413674120924303858_1260469230_460001778"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1045,
+        "height": 540,
+        "bytes": 120365
       }
     },
     {
@@ -4984,18 +7672,30 @@
       "source": {
         "kind": "photo",
         "web_key": "5415925920737988187_1260993518_460000859"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 953,
+        "height": 196,
+        "bytes": 21578
       }
     },
     {
       "message_id": 875,
       "media_id": 5415925920737988965,
-      "declared_bytes": 138853,
+      "declared_bytes": 137635,
       "tag": "images-0500",
-      "asset": "telegram-image-875-5415925920737988965.jpg",
-      "bytes": 138853,
+      "asset": "telegram-image-875-5415925920737988965-y-761x839-137635.jpg",
+      "bytes": 137635,
       "source": {
         "kind": "photo",
         "web_key": "5415925920737988965_1260993518_460001637"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 761,
+        "height": 839,
+        "bytes": 137635
       }
     },
     {
@@ -5008,6 +7708,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5417957474628735649_1261466526_460001953"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 960,
+        "height": 1280,
+        "bytes": 90201
       }
     },
     {
@@ -5020,6 +7726,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5422584726364556597_1262543892_460000565"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1704,
+        "height": 2272,
+        "bytes": 864101
       }
     },
     {
@@ -5032,6 +7744,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5422584726364556635_1262543892_460000603"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1848,
+        "height": 2500,
+        "bytes": 470258
       }
     },
     {
@@ -5040,7 +7758,13 @@
       "declared_bytes": 286658,
       "tag": "images-0500",
       "asset": "telegram-image-879-5422584726364557069.jpg",
-      "bytes": 286658
+      "bytes": 286658,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 286658
+      }
     },
     {
       "message_id": 880,
@@ -5048,7 +7772,13 @@
       "declared_bytes": 239187,
       "tag": "images-0500",
       "asset": "telegram-image-880-5422584726364557070.jpg",
-      "bytes": 239187
+      "bytes": 239187,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 853,
+        "bytes": 239187
+      }
     },
     {
       "message_id": 881,
@@ -5056,7 +7786,13 @@
       "declared_bytes": 225259,
       "tag": "images-0500",
       "asset": "telegram-image-881-5422584726364557071.jpg",
-      "bytes": 225259
+      "bytes": 225259,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 853,
+        "bytes": 225259
+      }
     },
     {
       "message_id": 882,
@@ -5064,7 +7800,13 @@
       "declared_bytes": 182636,
       "tag": "images-0500",
       "asset": "telegram-image-882-5422584726364557074.jpg",
-      "bytes": 182636
+      "bytes": 182636,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 720,
+        "bytes": 182636
+      }
     },
     {
       "message_id": 883,
@@ -5072,7 +7814,13 @@
       "declared_bytes": 7852,
       "tag": "images-0500",
       "asset": "telegram-image-883-5422584726364557072.jpg",
-      "bytes": 7852
+      "bytes": 7852,
+      "photo_variant": {
+        "kind": "m",
+        "width": 120,
+        "height": 213,
+        "bytes": 7852
+      }
     },
     {
       "message_id": 884,
@@ -5080,7 +7828,13 @@
       "declared_bytes": 2690,
       "tag": "images-0500",
       "asset": "telegram-image-884-5422584726364557073.jpg",
-      "bytes": 2690
+      "bytes": 2690,
+      "photo_variant": {
+        "kind": "m",
+        "width": 120,
+        "height": 45,
+        "bytes": 2690
+      }
     },
     {
       "message_id": 886,
@@ -5092,6 +7846,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5429641422056394562_1264186907_460001090"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 821,
+        "bytes": 148341
       }
     },
     {
@@ -5104,6 +7864,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5429641422056394581_1264186907_460001109"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 441,
+        "bytes": 77106
       }
     },
     {
@@ -5116,6 +7882,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5429641422056394865_1264186907_460001393"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 783,
+        "height": 1124,
+        "bytes": 207831
       }
     },
     {
@@ -5128,6 +7900,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5431893221870079798_1264711195_460001078"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 785,
+        "bytes": 197456
       }
     },
     {
@@ -5140,6 +7918,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5431753231706033102_1264678601_460000206"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1165,
+        "height": 232,
+        "bytes": 33477
       }
     },
     {
@@ -5152,6 +7936,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5434005031519719175_1265202889_460001031"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1026,
+        "height": 954,
+        "bytes": 172278
       }
     },
     {
@@ -5164,6 +7954,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359169_1266169479_460000385"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 575257
       }
     },
     {
@@ -5176,6 +7972,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359186_1266169479_460000402"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 376622
       }
     },
     {
@@ -5188,6 +7990,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359188_1266169479_460000404"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 269452
       }
     },
     {
@@ -5200,6 +8008,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359195_1266169479_460000411"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 574184
       }
     },
     {
@@ -5212,6 +8026,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359210_1266169479_460000426"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 383241
       }
     },
     {
@@ -5224,6 +8044,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359223_1266169479_460000439"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 668714
       }
     },
     {
@@ -5236,6 +8062,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359234_1266169479_460000450"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 231465
       }
     },
     {
@@ -5248,6 +8080,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359238_1266169479_460000454"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 433121
       }
     },
     {
@@ -5260,6 +8098,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359239_1266169479_460000455"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 421934
       }
     },
     {
@@ -5272,6 +8116,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359253_1266169479_460000469"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 275086
       }
     },
     {
@@ -5284,6 +8134,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359264_1266169479_460000480"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 436529
       }
     },
     {
@@ -5296,6 +8152,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359278_1266169479_460000494"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 585982
       }
     },
     {
@@ -5308,6 +8170,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359283_1266169479_460000499"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 610335
       }
     },
     {
@@ -5320,6 +8188,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5438156503958359420_1266169479_460000636"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 704,
+        "height": 547,
+        "bytes": 92765
       }
     },
     {
@@ -5332,6 +8206,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044081_1266693767_460000049"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 564004
       }
     },
     {
@@ -5344,6 +8224,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044097_1266693767_460000065"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 503653
       }
     },
     {
@@ -5356,6 +8242,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044104_1266693767_460000072"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 654886
       }
     },
     {
@@ -5368,6 +8260,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044129_1266693767_460000097"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 288395
       }
     },
     {
@@ -5380,6 +8278,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044144_1266693767_460000112"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 581852
       }
     },
     {
@@ -5392,6 +8296,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044154_1266693767_460000122"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 760284
       }
     },
     {
@@ -5404,6 +8314,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044155_1266693767_460000123"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 758237
       }
     },
     {
@@ -5416,6 +8332,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044160_1266693767_460000128"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 374644
       }
     },
     {
@@ -5428,6 +8350,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440408303772044170_1266693767_460000138"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 785034
       }
     },
     {
@@ -5440,6 +8368,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568201_1266785330_460000521"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 473774
       }
     },
     {
@@ -5452,6 +8386,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568203_1266785330_460000523"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 396922
       }
     },
     {
@@ -5464,6 +8404,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568206_1266785330_460000526"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 495808
       }
     },
     {
@@ -5476,6 +8422,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568208_1266785330_460000528"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 360894
       }
     },
     {
@@ -5488,6 +8440,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568209_1266785330_460000529"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 347951
       }
     },
     {
@@ -5500,6 +8458,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568210_1266785330_460000530"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 768,
+        "bytes": 173143
       }
     },
     {
@@ -5512,6 +8476,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568211_1266785330_460000531"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 768,
+        "height": 1024,
+        "bytes": 184749
       }
     },
     {
@@ -5524,6 +8494,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568213_1266785330_460000533"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 363187
       }
     },
     {
@@ -5536,6 +8512,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568223_1266785330_460000543"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 626921
       }
     },
     {
@@ -5548,6 +8530,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568224_1266785330_460000544"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 383843
       }
     },
     {
@@ -5560,6 +8548,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568228_1266785330_460000548"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 486090
       }
     },
     {
@@ -5572,6 +8566,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5440801563862568251_1266785330_460000571"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 391741
       }
     },
     {
@@ -5580,7 +8580,13 @@
       "declared_bytes": 148310,
       "tag": "images-0500",
       "asset": "telegram-image-931-5447111639619538153.jpg",
-      "bytes": 148310
+      "bytes": 148310,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1202,
+        "height": 1042,
+        "bytes": 148310
+      }
     },
     {
       "message_id": 932,
@@ -5588,7 +8594,13 @@
       "declared_bytes": 124757,
       "tag": "images-0500",
       "asset": "telegram-image-932-5447111639619538154.jpg",
-      "bytes": 124757
+      "bytes": 124757,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1188,
+        "height": 1011,
+        "bytes": 124757
+      }
     },
     {
       "message_id": 933,
@@ -5600,6 +8612,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5443033220279636241_1267304928_460001553"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1024,
+        "height": 1280,
+        "bytes": 151893
       }
     },
     {
@@ -5612,6 +8630,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5451802121863892081_1269346597_460000369"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 662,
+        "bytes": 64548
       }
     },
     {
@@ -5624,6 +8648,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5451802121863892389_1269346597_460000677"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 617,
+        "bytes": 58552
       }
     },
     {
@@ -5632,7 +8662,13 @@
       "declared_bytes": 82805,
       "tag": "images-0500",
       "asset": "telegram-image-936-5451802121863892428.jpg",
-      "bytes": 82805
+      "bytes": 82805,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1000,
+        "height": 625,
+        "bytes": 82805
+      }
     },
     {
       "message_id": 937,
@@ -5640,18 +8676,30 @@
       "declared_bytes": 184157,
       "tag": "images-0500",
       "asset": "telegram-image-937-5451802121863892429.jpg",
-      "bytes": 184157
+      "bytes": 184157,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1919,
+        "height": 1074,
+        "bytes": 184157
+      }
     },
     {
       "message_id": 938,
       "media_id": 5451802121863892457,
-      "declared_bytes": 114401,
+      "declared_bytes": 103045,
       "tag": "images-0500",
-      "asset": "telegram-image-938-5451802121863892457.jpg",
-      "bytes": 114401,
+      "asset": "telegram-image-938-5451802121863892457-w-1304x607-103045.jpg",
+      "bytes": 103045,
       "source": {
         "kind": "photo",
         "web_key": "5451802121863892457_1269346597_460000745"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1304,
+        "height": 607,
+        "bytes": 103045
       }
     },
     {
@@ -5660,7 +8708,13 @@
       "declared_bytes": 107502,
       "tag": "images-0500",
       "asset": "telegram-image-941-5451802121863892626.jpg",
-      "bytes": 107502
+      "bytes": 107502,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1637,
+        "height": 1021,
+        "bytes": 107502
+      }
     },
     {
       "message_id": 942,
@@ -5668,7 +8722,13 @@
       "declared_bytes": 91197,
       "tag": "images-0500",
       "asset": "telegram-image-942-5451802121863892627.jpg",
-      "bytes": 91197
+      "bytes": 91197,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1775,
+        "height": 978,
+        "bytes": 91197
+      }
     },
     {
       "message_id": 943,
@@ -5680,6 +8740,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5451802121863892647_1269346597_460000935"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1873,
+        "height": 966,
+        "bytes": 64119
       }
     },
     {
@@ -5692,6 +8758,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5454141697924207370_1269891322_460002058"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 104576
       }
     },
     {
@@ -5704,6 +8776,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5456393497737890606_1270415610_460000046"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 169391
       }
     },
     {
@@ -5712,7 +8790,13 @@
       "declared_bytes": 55647,
       "tag": "images-0500",
       "asset": "telegram-image-946-5456393497737890993.jpg",
-      "bytes": 55647
+      "bytes": 55647,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 512,
+        "bytes": 55647
+      }
     },
     {
       "message_id": 947,
@@ -5720,7 +8804,13 @@
       "declared_bytes": 169472,
       "tag": "images-0500",
       "asset": "telegram-image-947-5456393497737890994.jpg",
-      "bytes": 169472
+      "bytes": 169472,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 797,
+        "bytes": 169472
+      }
     },
     {
       "message_id": 952,
@@ -5732,6 +8822,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583749965_1271442981_460000589"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 806,
+        "height": 979,
+        "bytes": 155813
       }
     },
     {
@@ -5744,6 +8840,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750002_1271442981_460000626"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 369938
       }
     },
     {
@@ -5756,6 +8858,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750006_1271442981_460000630"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 563092
       }
     },
     {
@@ -5768,6 +8876,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750009_1271442981_460000633"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 266757
       }
     },
     {
@@ -5780,6 +8894,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750119_1271442981_460000743"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 396998
       }
     },
     {
@@ -5792,6 +8912,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750227_1271442981_460000851"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 161258
       }
     },
     {
@@ -5804,6 +8930,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750231_1271442981_460000855"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 259940
       }
     },
     {
@@ -5816,6 +8948,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750242_1271442981_460000866"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 561468
       }
     },
     {
@@ -5828,6 +8966,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750244_1271442981_460000868"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 377002
       }
     },
     {
@@ -5840,6 +8984,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5460806022583750248_1271442981_460000872"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 255867
       }
     },
     {
@@ -5852,6 +9002,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5465427364444572439_1272518971_460000023"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 593827
       }
     },
     {
@@ -5860,7 +9016,13 @@
       "declared_bytes": 254599,
       "tag": "images-0500",
       "asset": "telegram-image-963-5465427364444572443.jpg",
-      "bytes": 254599
+      "bytes": 254599,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 254599
+      }
     },
     {
       "message_id": 964,
@@ -5868,7 +9030,13 @@
       "declared_bytes": 263692,
       "tag": "images-0500",
       "asset": "telegram-image-964-5465427364444572444.jpg",
-      "bytes": 263692
+      "bytes": 263692,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 263692
+      }
     },
     {
       "message_id": 965,
@@ -5876,7 +9044,13 @@
       "declared_bytes": 222225,
       "tag": "images-0500",
       "asset": "telegram-image-965-5465427364444572445.jpg",
-      "bytes": 222225
+      "bytes": 222225,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 222225
+      }
     },
     {
       "message_id": 966,
@@ -5884,7 +9058,13 @@
       "declared_bytes": 297357,
       "tag": "images-0500",
       "asset": "telegram-image-966-5465427364444572446.jpg",
-      "bytes": 297357
+      "bytes": 297357,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 297357
+      }
     },
     {
       "message_id": 967,
@@ -5892,7 +9072,13 @@
       "declared_bytes": 569909,
       "tag": "images-0500",
       "asset": "telegram-image-967-5465427364444572448.jpg",
-      "bytes": 569909
+      "bytes": 569909,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 569909
+      }
     },
     {
       "message_id": 968,
@@ -5900,7 +9086,13 @@
       "declared_bytes": 389605,
       "tag": "images-0500",
       "asset": "telegram-image-968-5465427364444572447.jpg",
-      "bytes": 389605
+      "bytes": 389605,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 389605
+      }
     },
     {
       "message_id": 969,
@@ -5908,7 +9100,13 @@
       "declared_bytes": 400640,
       "tag": "images-0500",
       "asset": "telegram-image-969-5465427364444572566.jpg",
-      "bytes": 400640
+      "bytes": 400640,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 400640
+      }
     },
     {
       "message_id": 970,
@@ -5916,7 +9114,13 @@
       "declared_bytes": 455121,
       "tag": "images-0500",
       "asset": "telegram-image-970-5465427364444572567.jpg",
-      "bytes": 455121
+      "bytes": 455121,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 455121
+      }
     },
     {
       "message_id": 971,
@@ -5924,7 +9128,13 @@
       "declared_bytes": 507698,
       "tag": "images-0500",
       "asset": "telegram-image-971-5465427364444572569.jpg",
-      "bytes": 507698
+      "bytes": 507698,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 507698
+      }
     },
     {
       "message_id": 972,
@@ -5932,7 +9142,13 @@
       "declared_bytes": 303285,
       "tag": "images-0500",
       "asset": "telegram-image-972-5465427364444572568.jpg",
-      "bytes": 303285
+      "bytes": 303285,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 303285
+      }
     },
     {
       "message_id": 973,
@@ -5940,7 +9156,13 @@
       "declared_bytes": 421647,
       "tag": "images-0500",
       "asset": "telegram-image-973-5465427364444572570.jpg",
-      "bytes": 421647
+      "bytes": 421647,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 421647
+      }
     },
     {
       "message_id": 974,
@@ -5948,7 +9170,13 @@
       "declared_bytes": 402316,
       "tag": "images-0500",
       "asset": "telegram-image-974-5465427364444572572.jpg",
-      "bytes": 402316
+      "bytes": 402316,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 402316
+      }
     },
     {
       "message_id": 975,
@@ -5956,7 +9184,13 @@
       "declared_bytes": 404063,
       "tag": "images-0500",
       "asset": "telegram-image-975-5465427364444572571.jpg",
-      "bytes": 404063
+      "bytes": 404063,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 404063
+      }
     },
     {
       "message_id": 976,
@@ -5964,7 +9198,13 @@
       "declared_bytes": 244615,
       "tag": "images-0500",
       "asset": "telegram-image-976-5465427364444572578.jpg",
-      "bytes": 244615
+      "bytes": 244615,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 244615
+      }
     },
     {
       "message_id": 977,
@@ -5972,7 +9212,13 @@
       "declared_bytes": 357652,
       "tag": "images-0500",
       "asset": "telegram-image-977-5465427364444572579.jpg",
-      "bytes": 357652
+      "bytes": 357652,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 357652
+      }
     },
     {
       "message_id": 978,
@@ -5980,7 +9226,13 @@
       "declared_bytes": 296939,
       "tag": "images-0500",
       "asset": "telegram-image-978-5465427364444572580.jpg",
-      "bytes": 296939
+      "bytes": 296939,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 296939
+      }
     },
     {
       "message_id": 979,
@@ -5988,7 +9240,13 @@
       "declared_bytes": 419509,
       "tag": "images-0500",
       "asset": "telegram-image-979-5465427364444572581.jpg",
-      "bytes": 419509
+      "bytes": 419509,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 419509
+      }
     },
     {
       "message_id": 980,
@@ -5996,7 +9254,13 @@
       "declared_bytes": 365920,
       "tag": "images-0500",
       "asset": "telegram-image-980-5465427364444572582.jpg",
-      "bytes": 365920
+      "bytes": 365920,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 365920
+      }
     },
     {
       "message_id": 981,
@@ -6004,7 +9268,13 @@
       "declared_bytes": 229450,
       "tag": "images-0500",
       "asset": "telegram-image-981-5465427364444572583.jpg",
-      "bytes": 229450
+      "bytes": 229450,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 229450
+      }
     },
     {
       "message_id": 982,
@@ -6012,7 +9282,13 @@
       "declared_bytes": 356024,
       "tag": "images-0500",
       "asset": "telegram-image-982-5465427364444572584.jpg",
-      "bytes": 356024
+      "bytes": 356024,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 356024
+      }
     },
     {
       "message_id": 983,
@@ -6020,7 +9296,13 @@
       "declared_bytes": 344064,
       "tag": "images-0500",
       "asset": "telegram-image-983-5465427364444572589.jpg",
-      "bytes": 344064
+      "bytes": 344064,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 344064
+      }
     },
     {
       "message_id": 984,
@@ -6028,7 +9310,13 @@
       "declared_bytes": 368353,
       "tag": "images-0500",
       "asset": "telegram-image-984-5465427364444572590.jpg",
-      "bytes": 368353
+      "bytes": 368353,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 368353
+      }
     },
     {
       "message_id": 985,
@@ -6036,7 +9324,13 @@
       "declared_bytes": 319575,
       "tag": "images-0500",
       "asset": "telegram-image-985-5465427364444572591.jpg",
-      "bytes": 319575
+      "bytes": 319575,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 319575
+      }
     },
     {
       "message_id": 986,
@@ -6048,6 +9342,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5465427364444572592_1272518971_460000176"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 372422
       }
     },
     {
@@ -6056,7 +9356,13 @@
       "declared_bytes": 325932,
       "tag": "images-0500",
       "asset": "telegram-image-987-5465427364444572597.jpg",
-      "bytes": 325932
+      "bytes": 325932,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 325932
+      }
     },
     {
       "message_id": 988,
@@ -6064,7 +9370,13 @@
       "declared_bytes": 343616,
       "tag": "images-0500",
       "asset": "telegram-image-988-5465427364444572598.jpg",
-      "bytes": 343616
+      "bytes": 343616,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1920,
+        "bytes": 343616
+      }
     },
     {
       "message_id": 989,
@@ -6076,6 +9388,12 @@
       "source": {
         "kind": "photo",
         "web_key": "5465427364444572600_1272518971_460000184"
+      },
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 596635
       }
     },
     {
@@ -6084,7 +9402,13 @@
       "declared_bytes": 480183,
       "tag": "images-0500",
       "asset": "telegram-image-990-5465427364444572606.jpg",
-      "bytes": 480183
+      "bytes": 480183,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 480183
+      }
     },
     {
       "message_id": 991,
@@ -6092,7 +9416,13 @@
       "declared_bytes": 465939,
       "tag": "images-0500",
       "asset": "telegram-image-991-5465427364444572608.jpg",
-      "bytes": 465939
+      "bytes": 465939,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 465939
+      }
     },
     {
       "message_id": 992,
@@ -6100,7 +9430,13 @@
       "declared_bytes": 581193,
       "tag": "images-0500",
       "asset": "telegram-image-992-5465427364444572610.jpg",
-      "bytes": 581193
+      "bytes": 581193,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 581193
+      }
     },
     {
       "message_id": 993,
@@ -6108,7 +9444,13 @@
       "declared_bytes": 407683,
       "tag": "images-0500",
       "asset": "telegram-image-993-5465427364444572609.jpg",
-      "bytes": 407683
+      "bytes": 407683,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 407683
+      }
     },
     {
       "message_id": 994,
@@ -6116,7 +9458,13 @@
       "declared_bytes": 312331,
       "tag": "images-0500",
       "asset": "telegram-image-994-5465427364444572607.jpg",
-      "bytes": 312331
+      "bytes": 312331,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 312331
+      }
     },
     {
       "message_id": 995,
@@ -6124,7 +9472,13 @@
       "declared_bytes": 348214,
       "tag": "images-0500",
       "asset": "telegram-image-995-5465427364444572621.jpg",
-      "bytes": 348214
+      "bytes": 348214,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 348214
+      }
     },
     {
       "message_id": 996,
@@ -6132,7 +9486,13 @@
       "declared_bytes": 386743,
       "tag": "images-0500",
       "asset": "telegram-image-996-5465427364444572622.jpg",
-      "bytes": 386743
+      "bytes": 386743,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 386743
+      }
     },
     {
       "message_id": 997,
@@ -6140,7 +9500,13 @@
       "declared_bytes": 438026,
       "tag": "images-0500",
       "asset": "telegram-image-997-5465427364444572623.jpg",
-      "bytes": 438026
+      "bytes": 438026,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 438026
+      }
     },
     {
       "message_id": 998,
@@ -6148,7 +9514,13 @@
       "declared_bytes": 434288,
       "tag": "images-0500",
       "asset": "telegram-image-998-5465427364444572624.jpg",
-      "bytes": 434288
+      "bytes": 434288,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 434288
+      }
     },
     {
       "message_id": 999,
@@ -6156,7 +9528,13 @@
       "declared_bytes": 300397,
       "tag": "images-0500",
       "asset": "telegram-image-999-5465427364444572625.jpg",
-      "bytes": 300397
+      "bytes": 300397,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 300397
+      }
     },
     {
       "message_id": 1000,
@@ -6164,7 +9542,13 @@
       "declared_bytes": 243808,
       "tag": "images-1000",
       "asset": "telegram-image-1000-5465427364444572633.jpg",
-      "bytes": 243808
+      "bytes": 243808,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 243808
+      }
     },
     {
       "message_id": 1001,
@@ -6172,7 +9556,13 @@
       "declared_bytes": 247019,
       "tag": "images-1000",
       "asset": "telegram-image-1001-5465427364444572634.jpg",
-      "bytes": 247019
+      "bytes": 247019,
+      "photo_variant": {
+        "kind": "w",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 247019
+      }
     },
     {
       "message_id": 1002,
@@ -20310,6 +23700,98 @@
         "width": 260,
         "height": 170,
         "bytes": 3902
+      }
+    },
+    {
+      "message_id": 2216,
+      "media_id": 5361789563073929694,
+      "declared_bytes": 113938,
+      "tag": "images-2000",
+      "asset": "telegram-image-2216-5361789563073929694-y-964x1280-113938.jpg",
+      "bytes": 113938,
+      "photo_variant": {
+        "kind": "y",
+        "width": 964,
+        "height": 1280,
+        "bytes": 113938
+      }
+    },
+    {
+      "message_id": 2217,
+      "media_id": 5361789563073929695,
+      "declared_bytes": 87958,
+      "tag": "images-2000",
+      "asset": "telegram-image-2217-5361789563073929695-y-1280x964-87958.jpg",
+      "bytes": 87958,
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 964,
+        "bytes": 87958
+      }
+    },
+    {
+      "message_id": 2218,
+      "media_id": 5361789563073929712,
+      "declared_bytes": 54965,
+      "tag": "images-2000",
+      "asset": "telegram-image-2218-5361789563073929712-y-800x1280-54965.jpg",
+      "bytes": 54965,
+      "source": {
+        "kind": "photo",
+        "web_key": "5361789563073929712_1248388915_460005872"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 800,
+        "height": 1280,
+        "bytes": 54965
+      }
+    },
+    {
+      "message_id": 2219,
+      "media_id": 5361789563073929753,
+      "declared_bytes": 162640,
+      "tag": "images-2000",
+      "asset": "telegram-image-2219-5361789563073929753-y-800x1280-162640.jpg",
+      "bytes": 162640,
+      "photo_variant": {
+        "kind": "y",
+        "width": 800,
+        "height": 1280,
+        "bytes": 162640
+      }
+    },
+    {
+      "message_id": 2220,
+      "media_id": 5361789563073929754,
+      "declared_bytes": 70079,
+      "tag": "images-2000",
+      "asset": "telegram-image-2220-5361789563073929754-y-800x1280-70079.jpg",
+      "bytes": 70079,
+      "photo_variant": {
+        "kind": "y",
+        "width": 800,
+        "height": 1280,
+        "bytes": 70079
+      }
+    },
+    {
+      "message_id": 2221,
+      "media_id": 5361789563073929991,
+      "declared_bytes": 39287,
+      "tag": "images-2000",
+      "asset": "telegram-image-2221-5361789563073929991-x-594x642-39287.jpg",
+      "bytes": 39287,
+      "source": {
+        "kind": "photo",
+        "web_key": "5361789563073929991_1248388915_460006151"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 594,
+        "height": 642,
+        "bytes": 39287
       }
     }
   ]

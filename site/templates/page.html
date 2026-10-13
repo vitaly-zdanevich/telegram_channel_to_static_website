@@ -27,6 +27,8 @@
 	</p>
 	{% endif %}
   </article>
+  {# Discussion snapshots belong only to this post page, not feeds or listings. #}
+  {% if page.extra.discussions_html %}{{ page.extra.discussions_html | safe }}{% endif %}
   {% if page.extra.related %}
   <nav class="related">
     <strong>{{ config.extra.i18n.related }}:</strong>

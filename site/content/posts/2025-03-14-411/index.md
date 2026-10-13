@@ -9,7 +9,7 @@ days = ["2025-03-14"]
 id = 411
 day = "2025-03-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/411"
-og_image = "5379612612196694002_1252538667_456259570.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-411-5379612612196694002.jpg"
 next_id = 412
 next_title = ""
 next_body = "#gentoo\n#logo\nSource"
@@ -20,4 +20,6 @@ views = 28
 ids = [411]
 +++
 
-{{ img(src="5379612612196694002_1252538667_456259570.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-411-5379612612196694002.jpg") }}
+
+😁 3

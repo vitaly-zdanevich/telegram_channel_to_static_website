@@ -50,3 +50,5 @@ date = "2026-04-19"
 <https://music.yandex.ru/album/33693735/track/132146839>
 
 {{ yandex_music(url="https://music.yandex.ru/iframe/#track/132146839/33693735") }}
+
+🙏 1

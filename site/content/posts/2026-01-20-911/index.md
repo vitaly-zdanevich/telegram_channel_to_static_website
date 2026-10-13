@@ -11,7 +11,7 @@ tags = ["belarus", "winter", "tractor", "year_2005", "globustut"]
 id = 911
 day = "2026-01-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/911"
-og_image = "5440408303772044129_1266693767_460000097.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-911-5440408303772044129.jpg"
 next_id = 912
 next_title = ""
 next_body = "#belarus\n#village\n#nature\n#river\n#year2005\n#globustut"
@@ -55,4 +55,4 @@ date = "2026-01-29"
 
 [https://commons.wikimedia.org/wiki/File:037-301\_Кухчицы,\_снято\_2\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:037-301_%D0%9A%D1%83%D1%85%D1%87%D0%B8%D1%86%D1%8B,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_2_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-{{ img(src="5440408303772044129_1266693767_460000097.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-911-5440408303772044129.jpg") }}

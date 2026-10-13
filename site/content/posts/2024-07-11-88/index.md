@@ -7,10 +7,11 @@ description = "Меньше митингов"
 days = ["2024-07-11"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/88?comment=0'>Reply on Telegram</a></p></section>"
 id = 88
 day = "2024-07-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/88"
-og_image = "5222022380841462992_1215846832_456256720.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-88-5222022380841462992.jpg"
 next_id = 89
 next_title = ""
 next_body = "Another good #design"
@@ -23,4 +24,4 @@ ids = [88]
 
 Меньше митингов
 
-{{ img(src="5222022380841462992_1215846832_456256720.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-88-5222022380841462992.jpg") }}

@@ -11,7 +11,7 @@ tags = ["design", "logo"]
 id = 757
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/757"
-og_image = "5229215222705359741_1217521546_460000125.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-757-5229215222705359741.jpg"
 next_id = 758
 next_title = ""
 next_body = "#design\n#artlebedev\nSource"
@@ -51,4 +51,4 @@ date = "2024-04-27"
 {{ tag(t="logo") }}  
 [#artlebedevSource](https://www.artlebedev.ru/uteplist/logo2/)
 
-{{ img(src="5229215222705359741_1217521546_460000125.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-757-5229215222705359741.jpg") }}

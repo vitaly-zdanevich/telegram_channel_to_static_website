@@ -11,7 +11,7 @@ tags = ["prime_world", "belarussian"]
 id = 480
 day = "2025-04-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/480"
-og_image = "5215716724605844691_1214378682_456260819.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-480-5215716724605844691.jpg"
 next_id = 481
 next_title = ""
 next_body = "#sex\n#mouse\n#horoscope\nFrom"
@@ -52,4 +52,6 @@ date = "2026-05-04"
 
 Adding Belarusian language to the game
 
-{{ img(src="5215716724605844691_1214378682_456260819.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-480-5215716724605844691.jpg") }}
+
+👌 2

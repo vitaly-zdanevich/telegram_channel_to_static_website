@@ -11,7 +11,7 @@ tags = ["die_antwoord"]
 id = 436
 day = "2025-03-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/436"
-og_image = "5384349651886533523_1253641595_456256403.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-436-5384349651886533523.jpg"
 next_id = 438
 next_title = ""
 next_body = "#dieantwoord\nSource\")"
@@ -41,4 +41,6 @@ date = "2025-03-17"
 
 [Source](https://commons.wikimedia.org/wiki/File:Die_Antwoord_Ninja_and_Yolandi_on_the_street.jpg)
 
-{{ img(src="5384349651886533523_1253641595_456256403.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-436-5384349651886533523.jpg") }}
+
+❤ 2

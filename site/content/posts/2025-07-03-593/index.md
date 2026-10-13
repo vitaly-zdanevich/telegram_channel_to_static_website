@@ -11,7 +11,7 @@ tags = ["dog", "love", "mmorpg"]
 id = 593
 day = "2025-07-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/593"
-og_image = "5420289298269335369_1262009446_456257353.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-593-5420289298269335369.jpg"
 next_id = 594
 next_title = ""
 next_body = "#webdesign\n#plan9"
@@ -20,6 +20,11 @@ prev_title = ""
 prev_body = "#book Designing Data-Intensive Applications and #wine"
 views = 43
 ids = [593]
+
+[[extra.related]]
+path = "@/posts/2026-10-13-2227/index.md"
+label = "#toy #craft #love Source Elly Vishnevsky www.vishnya.etsy.com ww…"
+date = "2026-10-13"
 
 [[extra.related]]
 path = "@/posts/2026-09-16-2149/index.md"
@@ -40,11 +45,6 @@ date = "2026-06-27"
 path = "@/posts/2026-06-10-1807/index.md"
 label = "#love this #extension - #highlight predefined list of words, on…"
 date = "2026-06-10"
-
-[[extra.related]]
-path = "@/posts/2026-04-25-1686/index.md"
-label = "#photo #batumi #dog"
-date = "2026-04-25"
 +++
 
 {{ tag(t="dog") }}  
@@ -53,4 +53,4 @@ date = "2026-04-25"
 
 [Source](https://ifunny.co/picture/the-romantic-tension-between-a-tank-and-healer-meanwhile-the-qbEdcn0VC)
 
-{{ img(src="5420289298269335369_1262009446_456257353.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-593-5420289298269335369.jpg") }}

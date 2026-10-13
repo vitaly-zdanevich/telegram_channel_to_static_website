@@ -42,3 +42,5 @@ date = "2026-04-03"
 I wrote.  
 
 <https://habr.com/en/articles/902838/>
+
+❤ 1 · 👎 1

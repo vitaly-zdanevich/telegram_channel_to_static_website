@@ -7,6 +7,7 @@ description = "Overlay toolbars in Firefox, like in Safari!"
 days = ["2024-05-17"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/48?comment=0'>Reply on Telegram</a></p></section>"
 id = 48
 day = "2024-05-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/48"
@@ -22,4 +23,4 @@ ids = [48]
 
 Overlay toolbars in Firefox, like in Safari!  
 
-[https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css](<https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css> "Collection of userstyles affecting the browser · 4548 stars · Languages: CSS 91%, JavaScript 8%, Python 1% · 1329 commits · 369 forks · 77 open issues/PRs · MPL-2.0 · last push 2026-10-10")
+[https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css](<https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css> "Collection of userstyles affecting the browser · 4548 stars · Languages: CSS 91%, JavaScript 8%, Python 1% · 1330 commits · 369 forks · 77 open issues/PRs · MPL-2.0 · last push 2026-10-12")

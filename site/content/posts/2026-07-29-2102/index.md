@@ -41,9 +41,9 @@ label = "#music #anime #rammstein"
 date = "2025-02-10"
 
 [[extra.related]]
-path = "@/posts/2025-10-20-708/index.md"
-label = "#concert #rammstein #year2019 #russia Not my photo."
-date = "2025-10-20"
+path = "@/posts/2026-10-13-2223/index.md"
+label = "#art #depressive #fear #horn"
+date = "2026-10-13"
 +++
 
 {{ tag(t="god") }}  

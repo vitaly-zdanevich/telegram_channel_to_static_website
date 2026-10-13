@@ -26,6 +26,11 @@ label = "#animal #navyseal By oh10.23, source"
 date = "2026-10-08"
 
 [[extra.related]]
+path = "@/posts/2026-10-13-2227/index.md"
+label = "#toy #craft #love Source Elly Vishnevsky www.vishnya.etsy.com ww…"
+date = "2026-10-13"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2149/index.md"
 label = "#aivideo #future #love By arikuschnir, source"
 date = "2026-09-16"
@@ -39,11 +44,6 @@ date = "2026-07-27"
 path = "@/posts/2026-06-27-1868/index.md"
 label = "#love #toy #breakup Eсли тяжело засыпать одному - можно обнимать…"
 date = "2026-06-27"
-
-[[extra.related]]
-path = "@/posts/2026-06-10-1807/index.md"
-label = "#love this #extension - #highlight predefined list of words, on…"
-date = "2026-06-10"
 +++
 
 {{ tag(t="animal") }}  

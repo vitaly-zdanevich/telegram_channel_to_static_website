@@ -11,7 +11,7 @@ tags = ["belarus", "belarussian", "culture"]
 id = 461
 day = "2025-04-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/461"
-og_image = "5442691267864686271_1267225311_456257215.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-461-5442691267864686271.jpg"
 next_id = 462
 next_title = ""
 next_body = "#pooh\n#bible\n#gun"
@@ -53,4 +53,4 @@ date = "2026-01-08"
 
 [Source](https://rutube.ru/video/88effd9c79ed10485c5877db2ceaa120)
 
-{{ img(src="5442691267864686271_1267225311_456257215.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-461-5442691267864686271.jpg") }}

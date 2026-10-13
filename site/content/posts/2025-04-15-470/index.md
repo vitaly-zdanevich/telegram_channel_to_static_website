@@ -11,7 +11,7 @@ tags = ["sakartvelo", "taxes"]
 id = 470
 day = "2025-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/470"
-og_image = "5472381565033115407_1274138122_456257295.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-470-5472381565033115407.jpg"
 next_id = 471
 next_title = ""
 next_body = "#archiving\n#photos"
@@ -52,4 +52,4 @@ date = "2025-02-08"
 {{ tag(t="sakartvelo") }}  
 {{ tag(t="taxes") }}
 
-{{ img(src="5472381565033115407_1274138122_456257295.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-470-5472381565033115407.jpg") }}

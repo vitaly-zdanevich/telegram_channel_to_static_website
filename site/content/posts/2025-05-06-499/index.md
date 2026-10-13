@@ -11,7 +11,7 @@ tags = ["evernote"]
 id = 499
 day = "2025-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/499"
-og_image = "5246804586952518108_1221616889_456255964.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-499-5246804586952518108.jpg"
 next_id = 500
 next_title = ""
 next_body = "#film\n#jupiter\n#space"
@@ -49,4 +49,4 @@ date = "2026-02-27"
 
 {{ tag(t="evernote") }} image editor: beautiful
 
-{{ img(src="5246804586952518108_1221616889_456255964.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-499-5246804586952518108.jpg") }}

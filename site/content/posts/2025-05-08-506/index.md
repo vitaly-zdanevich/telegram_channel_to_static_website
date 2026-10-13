@@ -11,7 +11,7 @@ tags = ["design", "apple", "ipod"]
 id = 506
 day = "2025-05-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/506"
-og_image = "5251374041313439124_1222680798_456256916.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-506-5251374041313439124.jpg"
 next_id = 507
 next_title = ""
 next_body = "#design\n#apple\n#ipod"
@@ -51,4 +51,4 @@ date = "2025-11-10"
 {{ tag(t="apple") }}  
 {{ tag(t="ipod") }}
 
-{{ img(src="5251374041313439124_1222680798_456256916.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-506-5251374041313439124.jpg") }}

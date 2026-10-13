@@ -11,7 +11,7 @@ tags = ["belarus", "nature", "village", "globustut"]
 id = 854
 day = "2026-01-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/854"
-og_image = "5402068444980646165_1257767073_460001557.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-854-5402068444980646165.jpg"
 next_id = 855
 next_title = ""
 next_body = "#belarus\n#church\n#globustut\nSource"
@@ -54,4 +54,4 @@ date = "2026-03-01"
 
 [Source](https://commons.wikimedia.org/wiki/File:026-022_%D0%B1%D0%BB%D0%B8%D0%B7_%D0%91%D0%B5%D0%B3%D0%BE%D0%BC%D0%BB%D1%8C,_02-11-2004.jpg)
 
-{{ img(src="5402068444980646165_1257767073_460001557.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-854-5402068444980646165.jpg") }}

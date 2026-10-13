@@ -11,7 +11,7 @@ tags = ["dark_mode"]
 id = 615
 day = "2025-08-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/615"
-og_image = "5229224641564899537_1217523739_456259793.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-615-5229224641564899537.jpg"
 next_id = 616
 next_title = ""
 next_body = "#darkmode\n#gif"
@@ -51,4 +51,4 @@ How to ask for a {{ tag(t="dark_mode") }}
 
 <https://github.com/orgs/community/discussions/128400#discussioncomment-13892335>
 
-{{ img(src="5229224641564899537_1217523739_456259793.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-615-5229224641564899537.jpg") }}

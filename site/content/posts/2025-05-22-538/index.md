@@ -11,7 +11,6 @@ tags = ["video", "my", "commons"]
 id = 538
 day = "2025-05-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/538"
-og_image = "01.jpg"
 next_id = 539
 next_title = ""
 next_body = "#book\n#health\n#zoloft\n#christian"
@@ -65,12 +64,10 @@ date = "2026-02-05"
 
 <https://commons.wikimedia.org/wiki/Commons:Upload_tools>  
 
-Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13266 stars · Languages: C 86%, Lua 6%, C++ 4% · 47598 commits · 1467 forks · 670 open issues/PRs · GPL-3.0 · last push 2026-10-12")  
+Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13272 stars · Languages: C 86%, Lua 6%, C++ 4% · 47619 commits · 1468 forks · 661 open issues/PRs · GPL-3.0 · last push 2026-10-13")  
 
 Моя тема для Darktable <https://gitlab.com/vitaly-zdanevich-configs/darktable/-/blob/master/user.css>  
 
 Плагин для загрузки в Wikipedia Commons для Darktable [https://github.com/trougnouf/dtMediaWiki](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 92%, Python 8% · 129 commits · 4 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-10-01")
 
-![video](01.jpg)
-
-*▶ video — 40:24*
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/538-01.mp4") }}

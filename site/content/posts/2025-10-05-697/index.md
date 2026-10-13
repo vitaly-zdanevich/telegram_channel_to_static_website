@@ -11,7 +11,7 @@ tags = ["turkey", "map", "population"]
 id = 697
 day = "2025-10-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/697"
-og_image = "5409134134330260506_1259412182_456260634.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-697-5409134134330260506.jpg"
 next_id = 698
 next_title = ""
 next_body = "#hitler, #stalin, #trotsky, #freud & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1\nSource\nSource B"
@@ -53,4 +53,4 @@ date = "2026-01-18"
 
 [Source](https://www.visualcapitalist.com/wp-content/uploads/2023/02/Visualizing-Population-Density-in-Turkey-Full-Size.html)
 
-{{ img(src="5409134134330260506_1259412182_456260634.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-697-5409134134330260506.jpg") }}

@@ -9,7 +9,7 @@ days = ["2025-01-26"]
 id = 335
 day = "2025-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/335"
-og_image = "5238071647129431378_1219583593_456256850.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-335-5238071647129431378.jpg"
 next_id = 336
 next_title = ""
 next_body = ""
@@ -22,4 +22,4 @@ ids = [335]
 
 <https://caitlynrichardson.substack.com/p/the-quiet-rebellion-of-a-little-life>
 
-{{ img(src="5238071647129431378_1219583593_456256850.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-335-5238071647129431378.jpg") }}

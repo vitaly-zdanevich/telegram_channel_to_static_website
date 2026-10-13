@@ -8,6 +8,7 @@ days = ["2024-10-25"]
 tags = ["rice", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/165?comment=0'>Reply on Telegram</a></p></section>"
 id = 165
 day = "2024-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/165"
@@ -29,5 +30,7 @@ date = "2026-04-01"
 {{ tag(t="rice") }} [https://hyprland.org](https://hyprland.org/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/165-01.mp4") }}
+
+🙏 1
 
 {{ tag(t="video") }}

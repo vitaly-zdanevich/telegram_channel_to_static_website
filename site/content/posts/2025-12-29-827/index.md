@@ -11,7 +11,7 @@ tags = ["ram"]
 id = 827
 day = "2025-12-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/827"
-og_image = "5373307329626967331_1251070604_460000547.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-827-5373307329626967331.jpg"
 next_id = 828
 next_title = ""
 next_body = "#preservation\n#library\n#books\nPage 68"
@@ -31,4 +31,4 @@ My {{ tag(t="ram") }} price is going up
 
 <https://pcpartpicker.com/product/Xg2WGX/gskill-trident-z5-neo-64-gb-2-x-32-gb-ddr5-6000-cl30-memory-f5-6000j3040g32gx2-tz5n>
 
-{{ img(src="5373307329626967331_1251070604_460000547.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-827-5373307329626967331.jpg") }}

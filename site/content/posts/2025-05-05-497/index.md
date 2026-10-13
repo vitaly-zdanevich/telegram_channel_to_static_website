@@ -11,7 +11,7 @@ tags = ["compression", "xz", "zstd", "lz4", "zlib", "meta"]
 id = 497
 day = "2025-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/497"
-og_image = "5244618822261012731_1221107976_456259835.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-497-5244618822261012731.jpg"
 next_id = 498
 next_title = ""
 next_body = ""
@@ -31,4 +31,4 @@ ids = [497]
 
 [Source](https://engineering.fb.com/2016/08/31/core-infra/smaller-and-faster-data-compression-with-zstandard)
 
-{{ img(src="5244618822261012731_1221107976_456259835.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-497-5244618822261012731.jpg") }}

@@ -5,13 +5,12 @@ description = "game strategy rtt groundcontrol The bishop defector death - drama
 
 [taxonomies]
 days = ["2025-11-24"]
-tags = ["game", "strategy", "rtt", "ground_control", "bishop"]
+tags = ["game", "strategy", "rtt", "ground_control", "bishop", "video"]
 
 [extra]
 id = 792
 day = "2025-11-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/792"
-og_image = "01.jpg"
 next_id = 793
 next_title = ""
 next_body = "#ad\n#game\n#tank\n#wwii\n#music\n#warpath\nSource"
@@ -56,8 +55,8 @@ The {{ tag(t="bishop") }} defector death - dramatic moment, from minute 9
 
 <https://www.wikidata.org/wiki/Q136912648>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/792-01.mp4") }}
 
-*▶ video — 13:31*
+{{ tag(t="video") }}
 
 <figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136912648">The Defector</a> · <span class="wd-qid">Q136912648</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P155">follows</a></td><td><a href="https://www.wikidata.org/wiki/Q136912618">Communications Relay</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P156">followed by</a></td><td><a href="https://www.wikidata.org/wiki/Q136980336">At the Source</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q1547686">Ground Control</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P6262">Fandom article ID</a></td><td>groundcontrol:The_Defector</td></tr></tbody></table></figure>

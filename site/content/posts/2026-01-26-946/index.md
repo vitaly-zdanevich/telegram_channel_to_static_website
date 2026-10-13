@@ -11,7 +11,7 @@ tags = ["wikipedia", "notability"]
 id = 946
 day = "2026-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/946"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-946-5456393497737890993.jpg"
 next_id = 948
 next_title = ""
 next_body = "#css\nWow I did a good ::selection for my #evernote style\na::selection\n{\ncolor: lightblue;\ntext-decoration: underline solid blue 5px;\n}"
@@ -50,6 +50,6 @@ date = "2026-02-14"
 {{ tag(t="wikipedia") }}  
 {{ tag(t="notability") }}
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-946-5456393497737890993.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-947-5456393497737890994.jpg") }}

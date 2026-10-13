@@ -37,3 +37,5 @@ date = "2026-04-24"
 +++
 
 My first {{ tag(t="lutris") }} install script <https://lutris.net/games/armies-of-exigo/>
+
+🙏 1

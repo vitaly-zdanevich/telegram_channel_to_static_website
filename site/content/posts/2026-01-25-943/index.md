@@ -11,7 +11,7 @@ tags = ["aws", "cpu", "memory", "ram"]
 id = 943
 day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/943"
-og_image = "5451802121863892647_1269346597_460000935.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-943-5451802121863892647.jpg"
 next_id = 944
 next_title = ""
 next_body = "#aws\n#awslambda\nFrom"
@@ -56,4 +56,4 @@ From [https://youtu.be/JeUpUK0nhC0?t=1096](<https://youtu.be/JeUpUK0nhC0?t=1096>
 
 {{ youtube(id="JeUpUK0nhC0") }}
 
-{{ img(src="5451802121863892647_1269346597_460000935.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-943-5451802121863892647.jpg") }}

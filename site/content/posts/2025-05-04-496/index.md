@@ -11,7 +11,7 @@ tags = ["wikipedia", "ui", "navigation"]
 id = 496
 day = "2025-05-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/496"
-og_image = "5240482558301564465_1220144927_456257073.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-496-5240482558301564465.jpg"
 next_id = 497
 next_title = ""
 next_body = "#compression\n#xz\n#zstd\n#lz4\n#zlib\n#meta\nSource"
@@ -51,4 +51,4 @@ date = "2026-03-25"
 {{ tag(t="ui") }}  
 {{ tag(t="navigation") }}
 
-{{ img(src="5240482558301564465_1220144927_456257073.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-496-5240482558301564465.jpg") }}

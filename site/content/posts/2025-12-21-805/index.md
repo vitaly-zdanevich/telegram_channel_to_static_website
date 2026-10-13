@@ -11,7 +11,7 @@ tags = ["anime", "logo", "mascon", "design"]
 id = 805
 day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/805"
-og_image = "5350719435192339794_1245811450_460000594.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-805-5350719435192339794-y-841x838-73080.jpg"
 next_id = 806
 next_title = ""
 next_body = "#alien\n#poster\n#film\n#blackandwhite\nSource"
@@ -52,6 +52,6 @@ date = "2024-04-27"
 {{ tag(t="mascon") }}  
 {{ tag(t="design") }}  
 
-[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 23263 stars · Languages: Go 85%, TypeScript 5%, Shell 4% · 952 commits · 761 forks · 386 open issues/PRs · MIT · last push 2026-10-12")
+[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 23319 stars · Languages: Go 85%, TypeScript 5%, Shell 4% · 959 commits · 765 forks · 383 open issues/PRs · MIT · last push 2026-10-12")
 
-{{ img(src="5350719435192339794_1245811450_460000594.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-805-5350719435192339794-y-841x838-73080.jpg") }}

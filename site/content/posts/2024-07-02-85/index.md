@@ -8,10 +8,11 @@ days = ["2024-07-02"]
 tags = ["design", "caddy"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/85?comment=0'>Reply on Telegram</a></p></section>"
 id = 85
 day = "2024-07-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/85"
-og_image = "5197437665916609520_1210122757_456254448.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-85-5197437665916609520.jpg"
 next_id = 86
 next_title = ""
 next_body = "I moved /.vim to /.config/vim, you also can"
@@ -49,4 +50,4 @@ date = "2025-11-10"
 
 Good {{ tag(t="design") }} {{ tag(t="caddy") }}
 
-{{ img(src="5197437665916609520_1210122757_456254448.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-85-5197437665916609520.jpg") }}

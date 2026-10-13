@@ -7,10 +7,11 @@ description = "Copyright from 1429"
 days = ["2024-06-13"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/75?comment=0'>Reply on Telegram</a></p></section>"
 id = 75
 day = "2024-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/75"
-og_image = "5427084988798590552_1263591691_456253016.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-75-5427084988798590552.jpg"
 next_id = 76
 next_title = ""
 next_body = "BIG navigation"
@@ -23,4 +24,4 @@ ids = [75]
 
 Copyright from 1429
 
-{{ img(src="5427084988798590552_1263591691_456253016.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-75-5427084988798590552.jpg") }}

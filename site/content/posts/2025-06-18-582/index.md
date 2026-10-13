@@ -9,7 +9,7 @@ days = ["2025-06-18"]
 id = 582
 day = "2025-06-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/582"
-og_image = "5375483314674201301_1251577240_456258261.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-582-5375483314674201301.jpg"
 next_id = 583
 next_title = ""
 next_body = "#photo\n#sakartvelo\n#botanicgarden\n#ladder"
@@ -20,4 +20,6 @@ views = 34
 ids = [582]
 +++
 
-{{ img(src="5375483314674201301_1251577240_456258261.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-582-5375483314674201301.jpg") }}
+
+👍 1

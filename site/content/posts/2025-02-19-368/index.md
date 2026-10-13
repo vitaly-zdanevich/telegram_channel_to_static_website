@@ -11,7 +11,7 @@ tags = ["love", "poop", "johnnydepp", "amberheard"]
 id = 368
 day = "2025-02-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/368"
-og_image = "5309901582130865796_1236307803_456255108.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-368-5309901582130865796.jpg"
 next_id = 369
 next_title = ""
 next_body = "#cat\n#catblack\n#corporate\nNot my experience, this is just funny.\nSource"
@@ -20,6 +20,11 @@ prev_title = ""
 prev_body = "#turkey\n#istanbul\n#video\n#my\nAnimation on building by projectors, love it."
 views = 41
 ids = [368]
+
+[[extra.related]]
+path = "@/posts/2026-10-13-2227/index.md"
+label = "#toy #craft #love Source Elly Vishnevsky www.vishnya.etsy.com ww…"
+date = "2026-10-13"
 
 [[extra.related]]
 path = "@/posts/2026-09-16-2149/index.md"
@@ -40,11 +45,6 @@ date = "2026-06-10"
 path = "@/posts/2026-02-21-1120/index.md"
 label = "#ai #codex #love Codex, using it almost every day, recently solv…"
 date = "2026-02-21"
-
-[[extra.related]]
-path = "@/posts/2026-02-07-1099/index.md"
-label = "#love it - against #youtube #clickbait"
-date = "2026-02-07"
 +++
 
 {{ tag(t="love") }}  
@@ -54,4 +54,4 @@ date = "2026-02-07"
 
 [Source](https://www.facebook.com/share/p/1A3sXdEuP3)
 
-{{ img(src="5309901582130865796_1236307803_456255108.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-368-5309901582130865796.jpg") }}

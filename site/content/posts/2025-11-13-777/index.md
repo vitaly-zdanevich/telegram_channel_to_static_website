@@ -5,13 +5,12 @@ description = "film kindzadza batumi Соедините меня с Батуми
 
 [taxonomies]
 days = ["2025-11-13"]
-tags = ["film", "kin_dza_dza", "batumi"]
+tags = ["film", "kin_dza_dza", "batumi", "video"]
 
 [extra]
 id = 777
 day = "2025-11-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/777"
-og_image = "01.jpg"
 next_id = 778
 next_title = ""
 next_body = "#film\n#kindzadza\nГамарджоба\nAt 1:50:00"
@@ -53,6 +52,6 @@ date = "2026-07-08"
 
 > Соедините меня с Батуми
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/777-01.mp4") }}
 
-*▶ video — 3:50*
+{{ tag(t="video") }}

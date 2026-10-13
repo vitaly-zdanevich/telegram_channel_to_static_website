@@ -11,7 +11,7 @@ tags = ["belarus", "architecture", "winter", "year_2005", "globustut"]
 id = 995
 day = "2026-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/995"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-995-5465427364444572621.jpg"
 next_id = 1000
 next_title = ""
 next_body = "#belarus\n#abandone\n#winter\n#novogrudok\n#year2005\n#globustut\nFrom"
@@ -57,12 +57,12 @@ date = "2026-01-29"
 
 From [https://commons.wikimedia.org/wiki/File:043-328\_Новогрудок,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-328_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D1%83%D0%B4%D0%BE%D0%BA,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-995-5465427364444572621.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-996-5465427364444572622.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-997-5465427364444572623.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-998-5465427364444572624.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-999-5465427364444572625.jpg") }}

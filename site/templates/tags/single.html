@@ -7,13 +7,23 @@
 		<a class='count' href='{{ get_url(path="/tags/" ~ t.slug ~ "/full/") | safe }}' title='{{ config.extra.i18n.full_posts }}'>{{ config.extra.i18n.full }} ↗</a>
 		{% endif %}{% endfor %}
 	</h1>
-  <ul class="post-list">
-  {% for page in term.pages %}
-    <li>
-      {% if page.title %}<a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>{% endif %}
-      <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
-      {% if not page.title %}<a class="pid" href="{{ page.permalink | safe }}">{{ page.extra.id }}</a>{% endif %}
-    </li>
-  {% endfor %}
-  </ul>
+	<ul class='post-list tag-post-list'>
+	{% for page in term.pages %}
+		<li>
+			<span class='tag-post-summary'>
+				{% if page.title %}<a href='{{ page.permalink | safe }}' title='{{ page.title }}'>{{ page.title }}</a>{% endif %}
+				<a class='day' href='{{ get_url(path="/day/" ~ page.extra.day ~ "/") | safe }}'><time datetime='{{ page.date }}' title='{{ page.date | date(format="%A %H:%M", locale=config.extra.date_locale) }}'>{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
+				{% if not page.title %}<a class='pid' href='{{ page.permalink | safe }}'>{{ page.extra.id }}</a>{% endif %}
+			</span>
+			{# The heading already names this tag; keep only this post's other tags. #}
+			{% if page.taxonomies.tags | length > 1 %}
+			<span class='tag-post-tags'>
+				{% for t in page.taxonomies.tags %}{% if t != term.name %}
+				<a href='{{ get_taxonomy_url(kind="tags", name=t) | safe }}'>#{{ t }}</a>
+				{% endif %}{% endfor %}
+			</span>
+			{% endif %}
+		</li>
+	{% endfor %}
+	</ul>
 {% endblock content %}

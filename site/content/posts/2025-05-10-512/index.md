@@ -11,7 +11,7 @@ tags = ["mpv", "anime", "readme"]
 id = 512
 day = "2025-05-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/512"
-og_image = "5258181706211520084_1224265831_456257108.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-512-5258181706211520084.jpg"
 next_id = 513
 next_title = ""
 next_body = "#bilibili\n#anime\n#webdesign\n#stream\n#ui"
@@ -51,4 +51,4 @@ date = "2026-06-15"
 {{ tag(t="anime") }}  
 {{ tag(t="readme") }}
 
-{{ img(src="5258181706211520084_1224265831_456257108.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-512-5258181706211520084.jpg") }}

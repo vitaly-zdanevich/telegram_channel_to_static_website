@@ -11,7 +11,7 @@ tags = ["coin"]
 id = 362
 day = "2025-02-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/362"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-362-5296425538124113914.jpg"
 next_id = 366
 next_title = ""
 next_body = "#game\n#man2"
@@ -48,10 +48,10 @@ Its real coins, from Cook Islands
 
 [Source](https://www.monetnik.ru/monety/mira/avstraliya-i-okeaniya/ostrova-kuka/t/5-dollarov/)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-362-5296425538124113914.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-363-5296425538124113915.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-364-5296425538124113917.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-365-5296425538124113916.jpg") }}

@@ -11,7 +11,7 @@ tags = ["belarus", "nature", "winter", "globustut", "year2004"]
 id = 903
 day = "2026-01-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/903"
-og_image = "5438156503958359253_1266169479_460000469.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-903-5438156503958359253.jpg"
 next_id = 904
 next_title = ""
 next_body = "#belarus\n#architecture\n#church\n#abandone\n#winter\n#year2004\n#globustut"
@@ -55,4 +55,4 @@ date = "2026-01-19"
 
 [https://commons.wikimedia.org/wiki/File:035-205\_Грицковичи,\_снято\_25\_декабря\_2004.jpg](https://commons.wikimedia.org/wiki/File:035-205_%D0%93%D1%80%D0%B8%D1%86%D0%BA%D0%BE%D0%B2%D0%B8%D1%87%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_25_%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F_2004.jpg)
 
-{{ img(src="5438156503958359253_1266169479_460000469.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-903-5438156503958359253.jpg") }}

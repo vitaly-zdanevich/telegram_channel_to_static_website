@@ -11,7 +11,7 @@ tags = ["winamp", "ui", "audio_player"]
 id = 812
 day = "2025-12-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/812"
-og_image = "5361787402705374616_1248388412_460000664.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-812-5361787402705374616.jpg"
 next_id = 813
 next_title = ""
 next_body = "#ui\n#windows\n#windowsxp"
@@ -51,4 +51,4 @@ date = "2025-12-25"
 {{ tag(t="ui") }}  
 {{ tag(t="audio_player") }}
 
-{{ img(src="5361787402705374616_1248388412_460000664.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-812-5361787402705374616.jpg") }}

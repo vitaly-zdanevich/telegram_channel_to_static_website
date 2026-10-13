@@ -7,6 +7,7 @@ description = "List mp3 with bitrate and sorting while read i; do echo \"$(ffpro
 days = ["2024-10-25"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/166?comment=0'>Reply on Telegram</a></p></section>"
 id = 166
 day = "2024-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/166"
@@ -38,3 +39,5 @@ while read i; do echo "$(ffprobe -i "$i" 2>&1 | egrep -o 'bitrate: [0-9]{1,3} .{
 Based on <https://www.linuxquestions.org/questions/linux-newbie-8/how-to-list-bitrate-of-all-my-mp3%27s-on-command-line-4175601321/#post5680865>  
 
 Published to <https://gitlab.com/vitaly-zdanevich/ffprobe-wrapper-lister-for-mp3>
+
+🙏 1

@@ -10,7 +10,7 @@ days = ["2024-11-20"]
 id = 197
 day = "2024-11-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/197"
-og_image = "5327938726787148268_1240507403_456255980.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-197-5327938726787148268.jpg"
 next_id = 198
 next_title = ""
 next_body = "#music"
@@ -23,4 +23,6 @@ ids = [197]
 
 From <https://www.imdb.com/title/tt2542420>, ending
 
-{{ img(src="5327938726787148268_1240507403_456255980.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-197-5327938726787148268.jpg") }}
+
+🙏 1

@@ -22,6 +22,11 @@ views = 22
 ids = [1807, 1808, 1809, 1810, 1811, 1812, 1813, 1814, 1815, 1816]
 
 [[extra.related]]
+path = "@/posts/2026-10-13-2227/index.md"
+label = "#toy #craft #love Source Elly Vishnevsky www.vishnya.etsy.com ww…"
+date = "2026-10-13"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2149/index.md"
 label = "#aivideo #future #love By arikuschnir, source"
 date = "2026-09-16"
@@ -40,11 +45,6 @@ date = "2026-02-25"
 path = "@/posts/2026-02-21-1120/index.md"
 label = "#ai #codex #love Codex, using it almost every day, recently solv…"
 date = "2026-02-21"
-
-[[extra.related]]
-path = "@/posts/2026-02-07-1099/index.md"
-label = "#love it - against #youtube #clickbait"
-date = "2026-02-07"
 +++
 
 <https://addons.mozilla.org/en-US/firefox/addon/highlightthis/>  

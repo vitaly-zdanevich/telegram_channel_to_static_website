@@ -7,10 +7,11 @@ description = "Flashbacks"
 days = ["2024-08-24"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/115?comment=0'>Reply on Telegram</a></p></section>"
 id = 115
 day = "2024-08-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/115"
-og_image = "5352634866048557292_1246257421_456253676.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-115-5352634866048557292.jpg"
 next_id = 116
 next_title = ""
 next_body = "Not my."
@@ -25,4 +26,4 @@ Flashbacks
 
 <https://moneymuseum.by/ru/collections/bonistika/?display=tile&PAGEN_1=18>
 
-{{ img(src="5352634866048557292_1246257421_456253676.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-115-5352634866048557292.jpg") }}

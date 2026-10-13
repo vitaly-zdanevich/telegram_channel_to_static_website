@@ -11,7 +11,7 @@ tags = ["ussr"]
 id = 457
 day = "2025-03-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/457"
-og_image = "5415830246042760056_1260971242_456258424.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-457-5415830246042760056.jpg"
 next_id = 458
 next_title = ""
 next_body = "#ussr"
@@ -49,4 +49,4 @@ date = "2026-02-03"
 
 {{ tag(t="ussr") }}
 
-{{ img(src="5415830246042760056_1260971242_456258424.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-457-5415830246042760056.jpg") }}

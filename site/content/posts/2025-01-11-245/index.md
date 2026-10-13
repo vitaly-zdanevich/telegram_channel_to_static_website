@@ -53,3 +53,5 @@ date = "2025-05-22"
 [https://youtu.be/eqeSGjCKV68](<https://youtu.be/eqeSGjCKV68> "Warpath - Official Live Action Cinematic Trailer")
 
 {{ youtube(id="eqeSGjCKV68") }}
+
+🙏 1

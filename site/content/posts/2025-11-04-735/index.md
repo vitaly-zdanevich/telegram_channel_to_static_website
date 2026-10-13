@@ -11,7 +11,7 @@ tags = ["archivation", "website"]
 id = 735
 day = "2025-11-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/735"
-og_image = "5211094055603867254_1213302383_460000886.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-735-5211094055603867254.jpg"
 next_id = 736
 next_title = ""
 next_body = "#btc lost 20% for one month"
@@ -52,4 +52,4 @@ If WebArchive have it - it still not in Google - you cannot search the website. 
 {{ tag(t="archivation") }}  
 {{ tag(t="website") }}
 
-{{ img(src="5211094055603867254_1213302383_460000886.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-735-5211094055603867254.jpg") }}

@@ -11,7 +11,7 @@ tags = ["git", "git_graph"]
 id = 591
 day = "2025-06-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/591"
-og_image = "5402297976619135579_1257820515_456258139.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-591-5402297976619135579.jpg"
 next_id = 592
 next_title = ""
 next_body = "#book Designing Data-Intensive Applications and #wine"
@@ -50,4 +50,4 @@ date = "2025-12-21"
 {{ tag(t="git") }}  
 {{ tag(t="git_graph") }}
 
-{{ img(src="5402297976619135579_1257820515_456258139.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-591-5402297976619135579.jpg") }}

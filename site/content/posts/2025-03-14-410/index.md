@@ -21,6 +21,11 @@ views = 31
 ids = [410]
 
 [[extra.related]]
+path = "@/posts/2026-10-13-2223/index.md"
+label = "#art #depressive #fear #horn"
+date = "2026-10-13"
+
+[[extra.related]]
 path = "@/posts/2025-08-06-617/index.md"
 label = "Imagine a 2d side-scroll quest-action game with such visual styl…"
 date = "2025-08-06"
@@ -39,11 +44,6 @@ date = "2025-01-29"
 path = "@/posts/2026-04-28-1695/index.md"
 label = "#my #batumi #restaurant #art #food #sazandari"
 date = "2026-04-28"
-
-[[extra.related]]
-path = "@/posts/2026-03-07-1340/index.md"
-label = "#art #shop #продукты #belarus #globustut #year2005"
-date = "2026-03-07"
 +++
 
 Girl with a Pearl Earring  
@@ -52,3 +52,5 @@ Girl with a Pearl Earring
 *Artwork by Olga Pavolga Shot by Thatch John Yuyi “Will We Be Safer” by Glen Wexler Painting by Nigel Van Wieck Photography by Sebastian Sellner*
 
 {{ pinterest(url="https://www.pinterest.com/pin/321796335878643329/") }}
+
+❤ 1

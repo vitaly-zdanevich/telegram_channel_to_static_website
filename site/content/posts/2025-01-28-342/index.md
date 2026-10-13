@@ -26,6 +26,11 @@ label = "#fear #airplane"
 date = "2025-09-29"
 
 [[extra.related]]
+path = "@/posts/2026-10-13-2223/index.md"
+label = "#art #depressive #fear #horn"
+date = "2026-10-13"
+
+[[extra.related]]
 path = "@/posts/2026-07-29-2102/index.md"
 label = "#god #fear #monastery #antichrist #rammstein Страхи детей из нор…"
 date = "2026-07-29"

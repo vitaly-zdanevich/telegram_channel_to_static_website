@@ -7,10 +7,11 @@ description = "BIG navigation"
 days = ["2024-06-13"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/76?comment=0'>Reply on Telegram</a></p></section>"
 id = 76
 day = "2024-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/76"
-og_image = "5429382499949205565_1264126622_456251453.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-76-5429382499949205565.jpg"
 next_id = 77
 next_title = ""
 next_body = "Wow YouTube in fullscreen but as a normal tab"
@@ -23,4 +24,4 @@ ids = [76]
 
 BIG navigation [https://be-tarask.wikipedia.org/wiki/Шаблён:Беларускія\_пэрыядычныя\_выданьні](https://be-tarask.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D1%91%D0%BD:%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%BA%D1%96%D1%8F_%D0%BF%D1%8D%D1%80%D1%8B%D1%8F%D0%B4%D1%8B%D1%87%D0%BD%D1%8B%D1%8F_%D0%B2%D1%8B%D0%B4%D0%B0%D0%BD%D1%8C%D0%BD%D1%96)
 
-{{ img(src="5429382499949205565_1264126622_456251453.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-76-5429382499949205565.jpg") }}

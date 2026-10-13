@@ -8,10 +8,11 @@ days = ["2024-06-03"]
 tags = ["gitlab", "wikimedia"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/50?comment=0'>Reply on Telegram</a></p></section>"
 id = 50
 day = "2024-06-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/50"
-og_image = "5400135666744023014_1257317063_456251366.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-50-5400135666744023014.jpg"
 next_id = 51
 next_title = ""
 next_body = "My another ebuild: the game Gigalomania - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help."
@@ -51,4 +52,4 @@ date = "2026-03-03"
 
 Its a dream to work for some open source company like {{ tag(t="gitlab") }} or {{ tag(t="wikimedia") }}, maybe in one day...
 
-{{ img(src="5400135666744023014_1257317063_456251366.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-50-5400135666744023014.jpg") }}

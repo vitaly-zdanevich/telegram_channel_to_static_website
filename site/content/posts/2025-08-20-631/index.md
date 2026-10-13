@@ -11,7 +11,7 @@ tags = ["map", "culture", "sakartvelo"]
 id = 631
 day = "2025-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/631"
-og_image = "5274114063489695116_1227975372_456261004.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-631-5274114063489695116.jpg"
 next_id = 632
 next_title = ""
 next_body = "Как работает дата-центр Яндекса в Финляндии\nHeating of a city by #datacenter\n#yandex\n#video\n#heat\nSource"
@@ -55,4 +55,4 @@ Percent of people who think their culture is superior to others
 
 [Source](https://www.facebook.com/photo/?fbid=1109268631315746&amp;set=a.416664743909475)
 
-{{ img(src="5274114063489695116_1227975372_456261004.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-631-5274114063489695116.jpg") }}

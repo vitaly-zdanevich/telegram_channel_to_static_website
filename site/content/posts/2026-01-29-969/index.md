@@ -11,7 +11,7 @@ tags = ["belarus", "architecture", "winter", "любча", "year_2005", "globust
 id = 969
 day = "2026-01-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/969"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-969-5465427364444572566.jpg"
 next_id = 976
 next_title = ""
 next_body = "#belarus\n#winter\n#няньково\n#year2005\n#globustut\nFrom"
@@ -56,16 +56,16 @@ date = "2026-01-30"
 
 From [https://commons.wikimedia.org/wiki/File:043-196\_Любча,\_флигель,\_снято\_5\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:043-196_%D0%9B%D1%8E%D0%B1%D1%87%D0%B0,_%D1%84%D0%BB%D0%B8%D0%B3%D0%B5%D0%BB%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_5_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-969-5465427364444572566.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-970-5465427364444572567.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-971-5465427364444572569.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-972-5465427364444572568.jpg") }}
 
-{{ img(src="05.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-973-5465427364444572570.jpg") }}
 
-{{ img(src="06.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-974-5465427364444572572.jpg") }}
 
-{{ img(src="07.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-975-5465427364444572571.jpg") }}

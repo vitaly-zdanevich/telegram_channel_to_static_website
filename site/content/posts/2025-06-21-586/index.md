@@ -11,7 +11,7 @@ tags = ["map"]
 id = 586
 day = "2025-06-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/586"
-og_image = "5381901176930430068_1253071515_456256628.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-586-5381901176930430068.jpg"
 next_id = 587
 next_title = ""
 next_body = "In 2024 to #steam were published 19000 #games, its 52 games per day.\nSource"
@@ -51,4 +51,4 @@ date = "2025-09-01"
 
 [https://wikimap.toolforge.org](https://wikimap.toolforge.org/)
 
-{{ img(src="5381901176930430068_1253071515_456256628.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-586-5381901176930430068.jpg") }}

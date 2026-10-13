@@ -17,7 +17,7 @@ next_body = "#game\n#muonline\nBy monarchsea.mu, source"
 prev_id = 2184
 prev_title = ""
 prev_body = "#mem\n#library\n#belarus\n#russian\nBy mgbf2, source"
-views = 3
+views = 4
 ids = [2185]
 
 [[extra.related]]

@@ -16,7 +16,7 @@ next_body = "Great music\nFrom"
 prev_id = 18
 prev_title = ""
 prev_body = "also great design"
-views = 95
+views = 96
 ids = [19]
 +++
 

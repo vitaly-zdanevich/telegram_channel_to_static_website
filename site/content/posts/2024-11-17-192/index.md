@@ -36,3 +36,5 @@ date = "2026-09-18"
 {{ tag(t="warcraft") }}
 
 {{ youtube(id="DWjZQzviTUs") }}
+
+🙏 1

@@ -8,10 +8,11 @@ days = ["2024-11-06"]
 tags = ["girl", "pain"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/180?comment=0'>Reply on Telegram</a></p></section>"
 id = 180
 day = "2024-11-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/180"
-og_image = "5285445200828817939_1230613608_456253971.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-180-5285445200828817939.jpg"
 next_id = 181
 next_title = ""
 next_body = "#girl"
@@ -50,4 +51,4 @@ date = "2025-02-02"
 {{ tag(t="girl") }}  
 {{ tag(t="pain") }}
 
-{{ img(src="5285445200828817939_1230613608_456253971.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-180-5285445200828817939.jpg") }}

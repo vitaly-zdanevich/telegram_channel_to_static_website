@@ -11,7 +11,7 @@ tags = ["webdesign", "game", "mmorpg", "ragnarok"]
 id = 718
 day = "2025-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/718"
-og_image = "5460802865779047402_1271442246_456260586.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-718-5460802865779047402.jpg"
 next_id = 719
 next_title = ""
 next_body = "#webdesign\n#games\n#rpg"
@@ -58,4 +58,6 @@ It still alive
 
 <https://en.wikipedia.org/wiki/Ragnarok_Online>
 
-{{ img(src="5460802865779047402_1271442246_456260586.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-718-5460802865779047402.jpg") }}
+
+🔥 1

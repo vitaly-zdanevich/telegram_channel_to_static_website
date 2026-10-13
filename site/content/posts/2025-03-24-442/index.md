@@ -11,7 +11,7 @@ tags = ["telegram", "crypto", "wallet"]
 id = 442
 day = "2025-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/442"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-442-5406954455607405558.jpg"
 next_id = 444
 next_title = ""
 next_body = "#monetization\n#spyware\n#security\n#webextension"
@@ -49,6 +49,6 @@ date = "2025-08-05"
 
 wow in {{ tag(t="telegram") }} we have a {{ tag(t="crypto") }} {{ tag(t="wallet") }}, and users can send money to their contacts, wow
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-442-5406954455607405558.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-443-5406954455607405559.jpg") }}

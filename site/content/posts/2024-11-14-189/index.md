@@ -10,7 +10,7 @@ days = ["2024-11-14"]
 id = 189
 day = "2024-11-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/189"
-og_image = "5308050846363281449_1235876895_456255529.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-189-5308050846363281449.jpg"
 next_id = 190
 next_title = ""
 next_body = "#game #stalker2"
@@ -23,4 +23,6 @@ ids = [189]
 
 [Source](https://www.linkedin.com/posts/valerian-gegidze_remoteteams-outsourcing-outstaffing-activity-7231903299489124353-p5Xs)
 
-{{ img(src="5308050846363281449_1235876895_456255529.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-189-5308050846363281449.jpg") }}
+
+😁 1

@@ -11,7 +11,7 @@ tags = ["ai", "chatgpt"]
 id = 356
 day = "2025-02-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/356"
-og_image = "5287487659641531079_1231089155_456256199.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-356-5287487659641531079.jpg"
 next_id = 357
 next_title = ""
 next_body = "#gui\n#cli"
@@ -52,4 +52,4 @@ date = "2025-01-01"
 
 [Source](https://www.linkedin.com/posts/vladtukhtarov_did-you-know-that-prompt-engineering-isnt-activity-7293653993044529152-V7hd)
 
-{{ img(src="5287487659641531079_1231089155_456256199.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-356-5287487659641531079.jpg") }}

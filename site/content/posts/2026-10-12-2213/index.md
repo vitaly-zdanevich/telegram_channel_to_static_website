@@ -11,10 +11,13 @@ tags = ["bump", "chat", "map", "google_map", "app", "video"]
 id = 2213
 day = "2026-10-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2213"
+next_id = 2216
+next_title = ""
+next_body = "#marketing new pattern\n#llm\n#landing\ncoderpad.io"
 prev_id = 2212
 prev_title = ""
-prev_body = "Status update about my \"media center\" Youta (TUI audio player for Youtube and other sources). TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 517 commits · 1 fork · 7 open issues/PRs · MIT · last push 2026-10-12\") \"Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 517 commits · 1 fork · 7 open issues/PRs · MIT · last push 2026-10-12\")\nIt was a productive few months about this project that I love. With #llm - the development is so fast. Its a new language for me - #rust (because of CPU/RAM), and I mostly do not read the code - but I validate the result as a user, and we (me and #codex) have #tests.\nStarted as not a big project - just play Youtube, oh ok lets play this website also, and this, and local files - so…"
-views = 1
+prev_body = "Status update about my \"media center\" Youta (TUI audio player for Youtube and other sources). TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 538 commits · 1 fork · 7 open issues/PRs · MIT · last push 2026-10-13\") \"Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 538 commits · 1 fork · 7 open issues/PRs · MIT · last push 2026-10-13\")\nIt was a productive few months about this project that I love. With #llm - the development is so fast. Its a new language for me - #rust (because of CPU/RAM), and I mostly do not read the code - but I validate the result as a user, and we (me and #codex) have #tests.\nStarted as not a big project - just play Youtube, oh ok lets play this website also, and this, and local files - so…"
+views = 2
 ids = [2213]
 
 [[extra.related]]
