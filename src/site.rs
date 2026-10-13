@@ -2234,11 +2234,9 @@ pre code { padding: 0; background: none; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
 .site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
-/* Keyboard destinations stay out of the tab order but show their focus. */
+/* Keep keyboard navigation focus without a frame around the whole post. */
 article.post[data-post-id] { scroll-margin-top: .5rem; }
-article.post[data-post-id]:focus-visible {
-	outline: 2px solid currentColor; outline-offset: .25rem;
-}
+article.post[data-post-id]:focus { outline: none; }
 .site-search { margin-left: auto; }
 .site-search input, input.site-search {
   background: var(--input-bg); color: var(--fg);
@@ -2349,6 +2347,15 @@ mod tests {
     use scraper::{Html, Selector};
     use std::collections::HashMap;
     use std::path::PathBuf;
+
+    /// Post jumps retain focus without drawing an outline around the article;
+    /// keyboard focus indicators on actual interactive controls stay intact.
+    #[test]
+    fn post_navigation_focus_has_no_outline() {
+        assert!(STYLE_CSS.contains("article.post[data-post-id]:focus { outline: none; }"));
+        assert!(!STYLE_CSS.contains("article.post[data-post-id]:focus-visible"));
+        assert!(STYLE_CSS.contains(".tg-link a:focus-visible { outline: 2px solid var(--fg);"));
+    }
 
     #[test]
     fn post_header_line_css_is_defaultable_without_affecting_layout() {
