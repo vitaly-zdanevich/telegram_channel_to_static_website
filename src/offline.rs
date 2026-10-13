@@ -26,10 +26,9 @@ static LOCAL_LINK: Lazy<Regex> =
 static LOCAL_LINK_UNQUOTED: Lazy<Regex> =
     Lazy::new(|| Regex::new(r#"((?:href|src)=)(/[^\s">]*)"#).unwrap());
 // <script> tags to drop so the offline copy needs no network: Zola's pagination
-// `page/1/` redirect stub, the Instagram embed loader, etc. The Elasticlunr
-// search scripts are the exception — they're kept (and relativized) so
-// client-side search keeps working over `file://`, since it runs entirely from
-// local files.
+// `page/1/` redirect stub, the Instagram embed loader, etc. The self-contained
+// Elasticlunr search and post-navigation scripts are kept (and relativized),
+// since they run entirely from local files over `file://`.
 static SCRIPT: Lazy<Regex> = Lazy::new(|| Regex::new(r"(?s)<script\b[^>]*>.*?</script>").unwrap());
 
 pub fn relativize(dir: &Path) -> Result<()> {
@@ -62,12 +61,13 @@ fn visit(root: &Path, cur: &Path, count: &mut usize) -> Result<()> {
     Ok(())
 }
 
-/// A `<script>` loading the bundled, self-contained Elasticlunr search (the
-/// library, Zola's generated index, or our wiring). Kept in the offline copy
-/// because it runs entirely from local files — unlike a pagination redirect or a
-/// remote embed loader, which need a server / the network.
-fn is_search_script(tag: &str) -> bool {
-    tag.contains("elasticlunr.min.js") || tag.contains("search_index.") || tag.contains("search.js")
+/// Bundled search and post-navigation helpers run entirely from local files,
+/// unlike a pagination redirect or remote embed loader. Keep them offline.
+fn is_local_script(tag: &str) -> bool {
+    tag.contains("elasticlunr.min.js")
+        || tag.contains("search_index.")
+        || tag.contains("search.js")
+        || tag.contains("post-navigation.js")
 }
 
 /// Directory levels between `file` and `root` (root/index.html → 0).
@@ -79,10 +79,10 @@ fn depth_of(root: &Path, file: &Path) -> usize {
 
 fn rewrite(html: &str, depth: usize) -> String {
     let prefix = "../".repeat(depth);
-    // Strip scripts, but keep the self-contained local search ones (their `/…`
+    // Strip scripts, but keep the self-contained local helpers (their `/…`
     // src is relativized just below, like any other local link).
     let html = SCRIPT.replace_all(html, |c: &regex::Captures| {
-        if is_search_script(&c[0]) {
+        if is_local_script(&c[0]) {
             c[0].to_string()
         } else {
             String::new()
@@ -165,19 +165,26 @@ mod tests {
     }
 
     #[test]
-    fn keeps_local_search_scripts_strips_the_rest() {
+    fn keeps_local_scripts_strips_the_rest() {
         let html = concat!(
             r#"<script src="/elasticlunr.min.js"></script>"#,
             r#"<script src="/search_index.en.js"></script>"#,
             r#"<script src="/search.js"></script>"#,
+            r#"<script defer src="/post-navigation.js"></script>"#,
             r#"<script>window.location.replace('/page/2/')</script>"#,
             r#"<script async src="//www.instagram.com/embed.js"></script>"#,
         );
         let out = rewrite(html, 1);
-        // Local search scripts kept AND relativized, so search runs over file://.
+        // Local helpers kept AND relativized, so they run over file://.
         assert!(out.contains(r#"src="../elasticlunr.min.js""#), "{out}");
         assert!(out.contains(r#"src="../search_index.en.js""#), "{out}");
         assert!(out.contains(r#"src="../search.js""#), "{out}");
+        assert!(out.contains(r#"src="../post-navigation.js""#), "{out}");
+        let minified = rewrite("<script src=/post-navigation.js defer></script>", 2);
+        assert!(
+            minified.contains("src=../../post-navigation.js"),
+            "{minified}"
+        );
         // Network-dependent scripts are stripped.
         assert!(
             !out.contains("window.location"),

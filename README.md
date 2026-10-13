@@ -81,6 +81,14 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   public web preview); hidden/private sources remain plain text.
 - **Self-navigating** — a link to another message in the *same* channel becomes a
   relative link to that post in the blog; links to other channels stay external.
+- **Post keyboard shortcuts** — on full-post listings (the homepage, full tag
+  views and day views), `j` selects the next post and `k` the previous post in
+  displayed order. After the last post, `j` opens the Older page at its first
+  post; before the first post, `k` opens the Newer page at its last post. If that
+  page link is absent, navigation stops. This also works on listing pages with
+  only one post. Shortcuts ignore typing fields, interactive controls and
+  modifier keys. Enabled by default; individual post pages and titles-only
+  pages are unchanged.
 - **Threaded replies** — when a post replies to an earlier message, it's shown as
   a quoted **↩ backlink** to that post (an internal link when it's in the archive,
   otherwise the `t.me` link).
@@ -111,13 +119,13 @@ Written in Rust: a single static binary, easy to run locally or in CI.
   as cards. Set `FEDIVERSE_CREATOR` to add an author byline on Mastodon previews
   and verify the site on your profile (see [Fediverse](#fediverse--mastodon)).
 - **Minimal JavaScript, offline-ready** — dark mode and spoilers are CSS-only.
-  Search is the only JS: the default Elasticlunr is client-side and self-contained,
-  so it **works in the offline `file://` copy too** — `tg2zola offline <public-dir>`
-  rewrites the built site to relative links and keeps the local search scripts
+  The default Elasticlunr search and post keyboard shortcuts are self-contained,
+  so they **work in the offline `file://` copy too** — `tg2zola offline <public-dir>`
+  rewrites the built site to relative links and keeps the local helper scripts
   (relativized) while stripping the network-dependent ones (Zola's pagination
   redirect, embed loaders), so it opens straight from `file://` with no web
-  server. For a fully JavaScript-free site, set `SEARCH_ENGINE=google` (a plain
-  `<form>`) or `none`.
+  server. With JavaScript disabled, post links still work; `SEARCH_ENGINE=google`
+  provides a plain search `<form>`, while `none` hides search.
 - **Localized UI** — the site chrome (Newer/Older/Tags/About, the search box,
   dates) renders in any of 13 languages via `LANGUAGE` / `--language`
   (en/be/uk/ru/de/fr/zh/ja/pl/es/ko/ka/hi), with month and weekday names localized

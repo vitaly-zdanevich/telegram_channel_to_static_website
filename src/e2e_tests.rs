@@ -410,6 +410,100 @@ fn assert_tag_post_tags(public: &std::path::Path, base: &str) {
     }
 }
 
+/// Only full-post listings expose keyboard destinations. The built-in helper
+/// loads correctly at both root and project base URLs.
+fn assert_post_navigation(public: &std::path::Path, base: &str) {
+    let posts = scraper::Selector::parse("article.post[data-post-id]").unwrap();
+    let scripts = scraper::Selector::parse("script[src]").unwrap();
+    let origin = reqwest::Url::parse("https://example.test").unwrap();
+    let script_url = origin.join(&format!("{base}/post-navigation.js")).unwrap();
+    let cases: [(&str, &[&str]); 10] = [
+        ("index.html", &["4", "3"]),
+        ("page/2/index.html", &["2", "1"]),
+        ("tags/greeting/full/index.html", &["2", "1"]),
+        ("day/2023-11-15/index.html", &["1"]),
+        ("day/2023-11-16/index.html", &["2"]),
+        ("day/2023-11-18/index.html", &["4"]),
+        ("posts/1/index.html", &[]),
+        ("tags/greeting/index.html", &[]),
+        ("calendar/index.html", &[]),
+        ("about/index.html", &[]),
+    ];
+    for (path, ids) in cases {
+        let html = fs::read_to_string(public.join(path))
+            .unwrap_or_else(|error| panic!("reading {path}: {error}"));
+        let document = scraper::Html::parse_document(&html);
+        let articles: Vec<_> = document.select(&posts).collect();
+        assert_eq!(articles.len(), ids.len(), "wrong keyboard targets: {path}");
+        for (article, id) in articles.iter().zip(ids) {
+            assert_eq!(article.value().attr("data-post-id"), Some(*id));
+            assert_eq!(
+                article.value().attr("id"),
+                Some(format!("post-{id}").as_str())
+            );
+            assert_eq!(article.value().attr("tabindex"), Some("-1"));
+        }
+        let script = document
+            .select(&scripts)
+            .find(|script| origin.join(script.value().attr("src").unwrap()).unwrap() == script_url)
+            .unwrap_or_else(|| panic!("missing keyboard script: {path}"));
+        assert!(script.value().attr("defer").is_some(), "{path}");
+        // Crossing a listing boundary follows its existing Older/Newer links,
+        // including day views containing only one post. Individual post pages
+        // keep their separate navigation and must not become listing targets.
+        let next = match path {
+            "index.html" => Some("page/2"),
+            "day/2023-11-16/index.html" => Some("day/2023-11-15"),
+            "day/2023-11-18/index.html" => Some("day/2023-11-17"),
+            _ => None,
+        };
+        let previous = match path {
+            "page/2/index.html" => Some(""),
+            "day/2023-11-15/index.html" => Some("day/2023-11-16"),
+            "day/2023-11-16/index.html" => Some("day/2023-11-17"),
+            _ => None,
+        };
+        for (attribute, target) in [("data-post-next", next), ("data-post-prev", previous)] {
+            let selector = scraper::Selector::parse(&format!("a[{attribute}]")).unwrap();
+            let links: Vec<_> = document.select(&selector).collect();
+            assert_eq!(
+                links.len(),
+                usize::from(target.is_some()),
+                "wrong {attribute} link count: {path}"
+            );
+            if let Some(target) = target {
+                let href = links[0].value().attr("href").unwrap();
+                assert_eq!(
+                    origin.join(href.trim_end_matches('/')).unwrap(),
+                    origin
+                        .join(format!("{base}/{target}").trim_end_matches('/'))
+                        .unwrap(),
+                    "wrong {attribute} destination: {path}"
+                );
+            }
+        }
+    }
+    assert!(public.join("post-navigation.js").exists());
+}
+
+/// The keyboard helper belongs to the built-in templates; changing themes
+/// removes the old copy rather than silently injecting it into another theme.
+#[test]
+fn post_navigation_asset_follows_builtin_theme() {
+    let dir = std::env::temp_dir().join(format!("tg2zola-hotkeys-{}", std::process::id()));
+    let mut s = settings(dir.join("site"));
+    site::scaffold(&s, None, &[], &[], &[], &[]).unwrap();
+    let script = s.site.join("static/post-navigation.js");
+    assert!(script.exists(), "built-in keyboard helper missing");
+    s.theme = Some("external-theme".into());
+    site::scaffold(&s, None, &[], &[], &[], &[]).unwrap();
+    assert!(
+        !script.exists(),
+        "keyboard helper leaked into external theme"
+    );
+    fs::remove_dir_all(dir).unwrap();
+}
+
 /// The scheduled backup must not force MTProto's potentially multi-gigabyte
 /// download cache into ordinary Git history.
 #[test]
@@ -879,6 +973,7 @@ fn zola_build_produces_expected_html() {
     };
     assert_tag_view_links(&public, "");
     assert_tag_post_tags(&public, "");
+    assert_post_navigation(&public, "");
     assert_discussions(&public);
 
     // Core pages exist.
@@ -1105,18 +1200,51 @@ fn zola_build_produces_expected_html() {
         "video tag page missing"
     );
 
-    // The offline pass strips scripts and rewrites to relative links, so the
-    // copy opens from file://.
+    // The offline pass keeps the local keyboard helper and rewrites links, so
+    // the copy opens from file:// without losing post navigation.
     crate::offline::relativize(&public).expect("offline relativize");
     let p3o = read("posts/3/index.html");
     assert!(
         p3o.contains("<video"),
         "kept video should remain after offline:\n{p3o}"
     );
-    assert!(
-        !p3o.contains("<script"),
-        "offline pass should strip all <script>:\n{p3o}"
+    let offline_document = scraper::Html::parse_document(&p3o);
+    let offline_scripts: Vec<_> = offline_document
+        .select(&scraper::Selector::parse("script").unwrap())
+        .collect();
+    assert_eq!(offline_scripts.len(), 1, "{p3o}");
+    assert_eq!(
+        offline_scripts[0].value().attr("src"),
+        Some("../../post-navigation.js")
     );
+    // Boundary navigation must follow the rewritten local HTML files rather
+    // than the deployed site's directory URLs when opened over file://.
+    for (path, attribute, target) in [
+        ("index.html", "data-post-next", "page/2/index.html"),
+        ("page/2/index.html", "data-post-prev", "../../index.html"),
+        (
+            "day/2023-11-16/index.html",
+            "data-post-next",
+            "../../day/2023-11-15/index.html",
+        ),
+        (
+            "day/2023-11-16/index.html",
+            "data-post-prev",
+            "../../day/2023-11-17/index.html",
+        ),
+    ] {
+        let document = scraper::Html::parse_document(&read(path));
+        let selector = scraper::Selector::parse(&format!("a[{attribute}]")).unwrap();
+        let link = document
+            .select(&selector)
+            .next()
+            .unwrap_or_else(|| panic!("offline {attribute} link missing: {path}"));
+        assert_eq!(link.value().attr("href"), Some(target), "{path}");
+        assert!(
+            public.join(path).parent().unwrap().join(target).exists(),
+            "offline navigation target missing: {path} → {target}"
+        );
+    }
 
     // Reuse the same fixture to check a GitHub Pages-style deployment prefix.
     let out = Command::new("zola")
@@ -1132,6 +1260,7 @@ fn zola_build_produces_expected_html() {
     );
     assert_tag_view_links(&public, "https://example.test/channel");
     assert_tag_post_tags(&public, "https://example.test/channel");
+    assert_post_navigation(&public, "https://example.test/channel");
     assert_discussions(&public);
 
     let _ = fs::remove_dir_all(&dir);

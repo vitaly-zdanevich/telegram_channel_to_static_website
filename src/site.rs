@@ -191,6 +191,8 @@ pub fn scaffold(
             write_file(&site.join(path), content)?;
         }
         write_file(&site.join("static/style.css"), &style_css(s))?;
+        // Keyboard navigation is progressive enhancement for full-post lists.
+        write_file(&site.join("static/post-navigation.js"), POST_NAVIGATION_JS)?;
         // Bundle the Elasticlunr library + wiring only when that search is on;
         // otherwise clean up any copy left by a previous run.
         if matches!(s.search, Search::Elasticlunr) {
@@ -234,6 +236,7 @@ pub fn scaffold(
         }
         let _ = fs::remove_dir_all(site.join("templates/tags"));
         let _ = fs::remove_file(site.join("static/style.css"));
+        let _ = fs::remove_file(site.join("static/post-navigation.js"));
         let _ = fs::remove_file(site.join("static/elasticlunr.min.js"));
         let _ = fs::remove_file(site.join("static/search.js"));
         let _ = fs::remove_file(site.join("static/sw.js"));
@@ -1141,7 +1144,7 @@ fn human_duration(d: std::time::Duration) -> String {
 
 /// Homepage = the paginated full-posts feed (posts bubble up from the
 /// `transparent` posts section). Zola emits a `page/1/` redirect stub with a
-/// <script>; the offline pass strips it so the output stays JS-free.
+/// <script>; the offline pass strips that network-dependent redirect.
 fn root_index_md(s: &Settings) -> String {
     let mut o = format!(
         "+++\nsort_by = \"date\"\npaginate_by = {}\n",
@@ -1770,6 +1773,7 @@ const BASE_HTML: &str = r#"<!DOCTYPE html>
   {% if config.extra.search_url %}<script>el=document.getElementById('site-search');el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.value)location.href=el.dataset.url+encodeURIComponent(el.value);});</script>{% endif %}
   {% if config.extra.search_elasticlunr %}<script src="{{ get_url(path='elasticlunr.min.js') | safe }}"></script><script src="{{ get_url(path='search_index.' ~ config.default_language ~ '.js') | safe }}"></script><script src="{{ get_url(path='search.js') | safe }}"></script>{% endif %}
   {% if config.extra.carousel %}<script src="{{ get_url(path='carousel.js') | safe }}"></script>{% endif %}
+	<script src="{{ get_url(path='post-navigation.js') | safe }}" defer></script>
   {% if config.extra.embed %}<script src="{{ get_url(path='embed.js') | safe }}" defer></script>{% endif %}
   {% if config.extra.pinterest_save %}<script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>{% endif %}
   {% if config.extra.pwa or config.extra.offline %}<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('{{ get_url(path='sw.js') | safe }}');});}</script>{% endif %}
@@ -1781,7 +1785,7 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
 {% block content %}
   {% if config.description and paginator.current_index == 1 %}<p class="lead">{{ config.description }}</p>{% endif %}
   {% for page in paginator.pages %}
-    <article class="post{% if page.extra.forwarded_from %} forwarded{% endif %}">
+		<article class='post{% if page.extra.forwarded_from %} forwarded{% endif %}' data-post-id='{{ page.extra.id }}' id='post-{{ page.extra.id }}' tabindex='-1'>
       {% if page.title %}<h2 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>{% endif %}
       <p class="meta post-meta">
         <a class="day" href="{{ get_url(path='/day/' ~ page.extra.day ~ '/') | safe }}"><time datetime="{{ page.date }}" title="{{ page.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>
@@ -1796,9 +1800,9 @@ const INDEX_HTML: &str = r#"{% extends "base.html" %}
     </article>
   {% endfor %}
   <nav class="pager">
-    {% if paginator.previous %}<a href="{{ paginator.previous | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.newer != "" %} title="{{ nav.newer | safe }}"{% endif %}{% endfor %}>← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
+    {% if paginator.previous %}<a data-post-prev href="{{ paginator.previous | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.newer != "" %} title="{{ nav.newer | safe }}"{% endif %}{% endfor %}>← {{ config.extra.i18n.newer }}</a>{% else %}<span></span>{% endif %}
     <span>{{ paginator.current_index }} / {{ paginator.number_pagers }}</span>
-    {% if paginator.next %}<a href="{{ paginator.next | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.older != "" %} title="{{ nav.older | safe }}"{% endif %}{% endfor %}>{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
+    {% if paginator.next %}<a data-post-next href="{{ paginator.next | safe }}"{% for nav in config.extra.page_tag_nav | default(value=[]) %}{% if nav.index == paginator.current_index and nav.older != "" %} title="{{ nav.older | safe }}"{% endif %}{% endfor %}>{{ config.extra.i18n.older }} →</a>{% else %}<span></span>{% endif %}
   </nav>
 {% endblock content %}
 "#;
@@ -1923,7 +1927,7 @@ const TAG_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% set tax = get_taxonomy(kind="tags") %}
   {% for term in tax.items %}{% if term.name == page.extra.tag %}
   {% for p in term.pages %}
-    <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
+		<article class='post{% if p.extra.forwarded_from %} forwarded{% endif %}' data-post-id='{{ p.extra.id }}' id='post-{{ p.extra.id }}' tabindex='-1'>
       {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
       <p class="meta post-meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
       <div class="content">{{ p.content | safe }}</div>
@@ -1942,7 +1946,7 @@ const DAY_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% set tax = get_taxonomy(kind="days") %}
   {% for term in tax.items %}{% if term.name == page.extra.day %}
   {% for p in term.pages %}
-    <article class="post{% if p.extra.forwarded_from %} forwarded{% endif %}">
+		<article class='post{% if p.extra.forwarded_from %} forwarded{% endif %}' data-post-id='{{ p.extra.id }}' id='post-{{ p.extra.id }}' tabindex='-1'>
       {% if p.title %}<h2 class="post-title"><a href="{{ p.permalink | safe }}">{{ p.title }}</a></h2>{% endif %}
       <p class="meta post-meta"><a class="day" href="{{ get_url(path='/day/' ~ p.extra.day ~ '/') | safe }}"><time datetime="{{ p.date }}" title="{{ p.date | date(format='%A %H:%M', locale=config.extra.date_locale) }}">{{ p.date | date(format=config.extra.date_format, locale=config.extra.date_locale) }}</time></a>{% if p.extra.views %} · 👁 {{ p.extra.views }}{% endif %}{% if not p.title %} · <a class="pid" href="{{ p.permalink | safe }}">{{ p.extra.id }}</a>{% endif %}</p>
       <div class="content">{{ p.content | safe }}</div>
@@ -1950,8 +1954,8 @@ const DAY_FULL_HTML: &str = r#"{% extends "base.html" %}
   {% endfor %}
   {% endif %}{% endfor %}
   <nav class="post-nav">
-    <span>{% if page.extra.newer_day %}<a href="{{ get_url(path='/day/' ~ page.extra.newer_day ~ '/') | safe }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer_day }}</a>{% endif %}</span>
-    <span>{% if page.extra.older_day %}<a href="{{ get_url(path='/day/' ~ page.extra.older_day ~ '/') | safe }}" accesskey="o" rel="next">{{ config.extra.i18n.older_day }} →</a>{% endif %}</span>
+    <span>{% if page.extra.newer_day %}<a data-post-prev href="{{ get_url(path='/day/' ~ page.extra.newer_day ~ '/') | safe }}" accesskey="n" rel="prev">← {{ config.extra.i18n.newer_day }}</a>{% endif %}</span>
+    <span>{% if page.extra.older_day %}<a data-post-next href="{{ get_url(path='/day/' ~ page.extra.older_day ~ '/') | safe }}" accesskey="o" rel="next">{{ config.extra.i18n.older_day }} →</a>{% endif %}</span>
   </nav>
 {% endblock content %}
 "#;
@@ -2072,6 +2076,10 @@ const ELASTICLUNR_JS: &str = include_str!("elasticlunr.min.js");
 /// show up to 10 result links. Runs after elasticlunr.min.js + search_index.<lang>.js
 /// (the header emits the three scripts in that order).
 const SEARCH_JS: &str = include_str!("search.js");
+
+/// j/k shortcuts for full-post lists. Bundled only with the built-in templates
+/// and kept in offline copies; no network dependencies.
+const POST_NAVIGATION_JS: &str = include_str!("post-navigation.js");
 
 /// Carousel enhancement (prev/next arrows + dots) for `--carousel`. The swipe is
 /// CSS scroll-snap, so touch works without this; kept in a real .js file.
@@ -2226,6 +2234,11 @@ pre code { padding: 0; background: none; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
 .site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
+/* Keyboard destinations stay out of the tab order but show their focus. */
+article.post[data-post-id] { scroll-margin-top: .5rem; }
+article.post[data-post-id]:focus-visible {
+	outline: 2px solid currentColor; outline-offset: .25rem;
+}
 .site-search { margin-left: auto; }
 .site-search input, input.site-search {
   background: var(--input-bg); color: var(--fg);
