@@ -180,15 +180,6 @@ fn image_download(media: &TlMedia) -> Result<ImageDownload> {
     })
 }
 
-/// Identify the rendition older versions downloaded via grammers' byte ranking.
-/// This permits reuse of confirmed legacy assets only when both selectors agree.
-fn legacy_photo_variant(media: &TlMedia) -> Option<PhotoVariant> {
-    let TlMedia::Photo(photo) = media else {
-        return None;
-    };
-    PhotoVariant::from_size(&photo.thumbs().into_iter().max_by_key(|size| size.size())?)
-}
-
 #[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
 #[serde(tag = "kind", rename_all = "snake_case")]
 enum ReleasedImageSource {
@@ -205,13 +196,13 @@ impl ReleasedImage {
             && (self.declared_bytes <= 0 || self.bytes == self.declared_bytes as u64)
     }
 
-    /// Legacy photos can be retained without a download when live metadata
-    /// proves our old selector chose this same rendition. Documents need none.
-    fn matches_download(&self, download: &ImageDownload, legacy: Option<&PhotoVariant>) -> bool {
+    /// Reuse photos only when saved metadata proves the selected rendition.
+    /// Image documents have no photo variant and retain their original bytes.
+    fn matches_download(&self, download: &ImageDownload) -> bool {
         self.declared_bytes == download.declared_bytes
             && self.bytes > 0
             && (download.declared_bytes <= 0 || self.bytes == download.declared_bytes as u64)
-            && self.photo_variant.as_ref().or(legacy) == download.photo_variant.as_ref()
+            && self.photo_variant == download.photo_variant
     }
 
     fn target(&self, repo: &str) -> Option<ImageReleaseTarget> {
@@ -992,18 +983,14 @@ async fn archive_image(
 ) -> Result<ArchivedImage> {
     let download = image_download(media)?;
     let declared_bytes = download.declared_bytes;
-    let legacy_variant = legacy_photo_variant(media);
     if let Some(repo) = repo {
         if !release_image_size_allowed(declared_bytes) {
             bail!("message {message_id}: original image is at/over the 2 GiB Release limit");
         }
         if let Some(record) = releases.get_mut(&message_id) {
             if let Some(target) = record.target(repo) {
-                if record.matches(media_id, &target)
-                    && record.matches_download(&download, legacy_variant.as_ref())
-                {
-                    if record.photo_variant != download.photo_variant || record.source != source {
-                        record.photo_variant = download.photo_variant;
+                if record.matches(media_id, &target) && record.matches_download(&download) {
+                    if record.source != source {
                         record.source = source;
                         *manifest_dirty = true;
                     }
@@ -1020,7 +1007,7 @@ async fn archive_image(
                 );
             }
         }
-        // Live metadata has proved a different media item or photo rendition.
+        // The record no longer proves the selected media item and rendition.
         // Remove the stale claim even when this run has no backfill slot left.
         if releases.remove(&message_id).is_some() {
             *manifest_dirty = true;
@@ -2116,22 +2103,23 @@ mod tests {
             image_cache_path(Path::new("cache"), 42, "png", None),
             Path::new("cache/image-42.png")
         );
-        assert!(legacy_photo_record(download.declared_bytes).matches_download(&download, None));
+        assert!(legacy_photo_record(download.declared_bytes).matches_download(&download));
     }
 
     #[test]
-    fn legacy_release_reuse_requires_the_old_and_new_selectors_to_agree() {
+    fn release_photo_reuse_requires_recorded_rendition_metadata() {
         let mut media = photo_resolution_fixture();
         let record = legacy_photo_record(47_861);
         let selected = image_download(&media).unwrap();
-        assert!(!record.matches_download(&selected, legacy_photo_variant(&media).as_ref()));
+        assert!(!record.matches_download(&selected));
 
-        // With only the old rendition available, no re-download is necessary.
+        // Even matching byte rankings cannot substitute for saved metadata.
         fixture_photo_sizes(&mut media).truncate(1);
         let selected = image_download(&media).unwrap();
-        assert!(record.matches_download(&selected, legacy_photo_variant(&media).as_ref()));
+        assert!(!record.matches_download(&selected));
         let mut annotated = record.clone();
-        annotated.photo_variant = selected.photo_variant;
+        annotated.photo_variant = selected.photo_variant.clone();
+        assert!(annotated.matches_download(&selected));
         assert_eq!(
             annotated.target("https://github.com/o/r").unwrap().asset,
             record.asset
@@ -2146,6 +2134,78 @@ mod tests {
                 .photo_variant,
             None
         );
+    }
+
+    /// A dormant unverified photo must take the normal download path if it is
+    /// needed again; a verified image keeps its old URL without using a slot.
+    #[tokio::test]
+    async fn archive_requires_verified_metadata_to_reuse_an_existing_photo_url() {
+        let dir =
+            std::env::temp_dir().join(format!("tg2zola-unverified-photo-{}", std::process::id()));
+        let cache = dir.join("cache");
+        std::fs::create_dir_all(&cache).unwrap();
+        let mut media = photo_resolution_fixture();
+        fixture_photo_sizes(&mut media).truncate(1);
+        let selected = image_download(&media).unwrap();
+        let unverified = legacy_photo_record(selected.declared_bytes);
+        let old_url = unverified.target("https://github.com/o/r").unwrap().url;
+        let mut releases = BTreeMap::from([(2210, unverified.clone())]);
+        let pool = SenderPool::new(Arc::new(TlSession::new()), 1);
+        let client = Client::new(&pool);
+        drop(pool); // No Telegram connection: reuse and deferral must be local.
+        let mut dirty = false;
+        let mut budget = 0;
+        let archived = archive_image(
+            &client,
+            &media,
+            &dir,
+            &cache,
+            Some("https://github.com/o/r"),
+            &mut releases,
+            &mut dirty,
+            &mut budget,
+            2210,
+            42,
+            "jpg",
+            None,
+        )
+        .await
+        .unwrap();
+        assert!(matches!(archived, ArchivedImage::Deferred));
+        assert!(releases.is_empty());
+        assert!(dirty);
+
+        // A completed record retains its legacy asset name and can refresh the
+        // exact web-source identity without changing its rendition metadata.
+        let mut verified = unverified;
+        verified.photo_variant = selected.photo_variant.clone();
+        releases.insert(2210, verified);
+        dirty = false;
+        let source = Some(ReleasedImageSource::Photo {
+            web_key: "updated-web-key".into(),
+        });
+        let archived = archive_image(
+            &client,
+            &media,
+            &dir,
+            &cache,
+            Some("https://github.com/o/r"),
+            &mut releases,
+            &mut dirty,
+            &mut budget,
+            2210,
+            42,
+            "jpg",
+            source.clone(),
+        )
+        .await
+        .unwrap();
+        assert!(matches!(archived, ArchivedImage::Release(url) if url == old_url));
+        assert!(dirty);
+        assert_eq!(budget, 0);
+        assert_eq!(releases[&2210].photo_variant, selected.photo_variant);
+        assert_eq!(releases[&2210].source, source);
+        std::fs::remove_dir_all(dir).unwrap();
     }
 
     #[test]
@@ -2170,12 +2230,12 @@ mod tests {
             image_cache_path(cache, 42, "jpg", Some(variant))
         );
         let mut record = legacy_photo_record(selected.declared_bytes);
-        assert!(!record.matches_download(&selected, Some(&smaller)));
+        assert!(!record.matches_download(&selected));
         record.photo_variant = Some(smaller);
-        assert!(!record.matches_download(&selected, Some(variant)));
+        assert!(!record.matches_download(&selected));
         record.photo_variant = Some(variant.clone());
         record.asset = new_target.asset.clone();
-        assert!(record.matches_download(&selected, None));
+        assert!(record.matches_download(&selected));
         assert_eq!(
             record.target("https://github.com/o/r").unwrap().url,
             new_target.url
@@ -2199,10 +2259,9 @@ mod tests {
             unreachable!()
         };
         small.size = 45_000;
-        // grammers breaks byte ties by vector order, choosing the smaller last item.
+        // Ordering must not let the same-sized smaller rendition be reused.
         sizes.reverse();
         let selected = image_download(&media).unwrap();
-        assert_ne!(legacy_photo_variant(&media), selected.photo_variant);
         let old_cache = image_cache_path(&cache, 42, "jpg", None);
         std::fs::write(&old_cache, vec![1; 45_000]).unwrap();
         let new_cache = image_cache_path(&cache, 42, "jpg", selected.photo_variant.as_ref());

@@ -502,12 +502,14 @@ photos; images sent as files retain their original contents. See Telegram's
 [photo sizes](https://core.telegram.org/api/files#image-thumbnail-types) and
 [photo quality options](https://telegram.org/blog/direct-to-channel-trim-voice-and-more).
 
-When a live MTProto session finds that an archived photo used a smaller
-rendition, it upgrades that photo automatically. Rendition-specific cache and
-Release filenames prevent old bytes from being reused even when both versions
-have the same file size. Already-correct legacy originals can keep their
-existing Release URLs without being downloaded again; confirmed Releases remain
-usable when no live session is available.
+With a live MTProto session, an archived photo is reused only when its saved
+rendition metadata matches the selected photo variant. A different rendition or
+missing metadata triggers a download of the selected variant when that photo is
+needed. Rendition-specific cache and Release filenames prevent old bytes from
+being reused even when both versions have the same file size. Verified photos
+with matching metadata keep their existing Release URLs, including older
+filenames. Images sent as files need no photo-rendition metadata. Confirmed
+Releases remain usable when no live session is available.
 
 | Env var | Purpose |
 |---|---|
