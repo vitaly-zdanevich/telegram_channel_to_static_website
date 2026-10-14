@@ -51,7 +51,7 @@ date = "2026-06-30"
 Лёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.  
 На выходе - если ~/.config/youta/ под гитом - пушит, без токенов.  
 
-[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 538 commits · 1 fork · 7 open issues/PRs · MIT · last push 2026-10-13")  
+[https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 10 stars · Languages: Rust 95%, TypeScript 2%, JavaScript 2% · 543 commits · 1 fork · 9 open issues/PRs · MIT · last push 2026-10-14")  
 
 Все линки  
 <https://share.evernote.com/note/179937e6-f6ba-6ccb-dfd7-81fa04888bbe>  

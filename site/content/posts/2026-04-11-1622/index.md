@@ -5,13 +5,12 @@ description = "Про викиданные/wikidata (открытая база �
 
 [taxonomies]
 days = ["2026-04-11"]
-tags = ["викиданные", "wikidata", "SPARQL", "wikimedia", "wikipedia", "лекция", "laboratory_bar", "batumi"]
+tags = ["викиданные", "wikidata", "SPARQL", "wikimedia", "wikipedia", "лекция", "laboratory_bar", "batumi", "video"]
 
 [extra]
 id = 1622
 day = "2026-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1622"
-og_image = "01.jpg"
 next_id = 1623
 next_title = ""
 next_body = "Usual #school in #china? #lenin\n【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】"
@@ -55,8 +54,8 @@ date = "2026-07-23"
 
 Все линки на видео <https://share.evernote.com/note/73621155-4b57-e6c1-1c69-8ee7b423b252>
 
-![video](01.jpg)
-
-*▶ video — 1:10:25*
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1622-01.mp4") }}
 
 👍 1
+
+{{ tag(t="video") }}

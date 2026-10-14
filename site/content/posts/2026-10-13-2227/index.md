@@ -14,7 +14,7 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2227"
 prev_id = 2226
 prev_title = ""
 prev_body = "#toy\n#craft\n#horn\nSource"
-views = 1
+views = 4
 ids = [2227]
 
 [[extra.related]]

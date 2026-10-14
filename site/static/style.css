@@ -122,11 +122,9 @@ pre code { padding: 0; background: none; }
 .site-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; display: block; }
 .site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
 .site-header nav a, .site-header nav .here { margin-left: 1.4rem; }
-/* Keyboard destinations stay out of the tab order but show their focus. */
+/* Keep keyboard navigation focus without a frame around the whole post. */
 article.post[data-post-id] { scroll-margin-top: .5rem; }
-article.post[data-post-id]:focus-visible {
-	outline: 2px solid currentColor; outline-offset: .25rem;
-}
+article.post[data-post-id]:focus { outline: none; }
 .site-search { margin-left: auto; }
 .site-search input, input.site-search {
   background: var(--input-bg); color: var(--fg);

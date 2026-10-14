@@ -18,7 +18,7 @@ next_body = "#flatearth\n#antarctica"
 prev_id = 2218
 prev_title = ""
 prev_body = "#webdesing\n#typography"
-views = 2
+views = 4
 ids = [2219, 2220]
 
 [[extra.related]]
