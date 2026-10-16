@@ -37,14 +37,14 @@ label = "#belarus #minsk 1941-1944"
 date = "2026-01-08"
 
 [[extra.related]]
+path = "@/posts/2026-10-15-2230/index.md"
+label = "I spent a lot of time uploading from moneymuseum.by you can open…"
+date = "2026-10-15"
+
+[[extra.related]]
 path = "@/posts/2026-09-27-2177/index.md"
 label = "#preservation #youtube #comment"
 date = "2026-09-27"
-
-[[extra.related]]
-path = "@/posts/2026-07-28-2083/index.md"
-label = "#abandoned #veterinary #belarus"
-date = "2026-07-28"
 +++
 
 {{ tag(t="preservation") }}  

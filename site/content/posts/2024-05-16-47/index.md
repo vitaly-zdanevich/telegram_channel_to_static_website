@@ -17,7 +17,7 @@ next_body = "Overlay toolbars in Firefox, like in Safari!"
 prev_id = 46
 prev_title = ""
 prev_body = ""
-views = 57
+views = 58
 ids = [47]
 +++
 

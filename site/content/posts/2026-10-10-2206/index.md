@@ -17,7 +17,7 @@ next_body = "#diy\n#headphone\n#china\n#3dprint\nBy nashallery, source"
 prev_id = 2205
 prev_title = ""
 prev_body = "#game\n#cd\n#playstation\nBy gamersgoretro, source"
-views = 4
+views = 6
 ids = [2206]
 
 [[extra.related]]

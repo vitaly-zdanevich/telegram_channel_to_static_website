@@ -18,7 +18,7 @@ next_body = "#contactee\n#podzorova\n#silbet\n294 Воинствующая оп�
 prev_id = 2163
 prev_title = ""
 prev_body = "#craft\n#toy\n#hairblue\nSource"
-views = 20
+views = 21
 ids = [2164]
 
 [[extra.related]]

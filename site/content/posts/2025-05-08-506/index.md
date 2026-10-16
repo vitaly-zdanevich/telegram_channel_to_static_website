@@ -18,7 +18,7 @@ next_body = "#design\n#apple\n#ipod"
 prev_id = 504
 prev_title = ""
 prev_body = "#biology\n#symbiosis\n#leopoldthecat\n#cat\nРебята, давайте сосуществовать симбиотически\nSource"
-views = 23
+views = 24
 ids = [506]
 
 [[extra.related]]

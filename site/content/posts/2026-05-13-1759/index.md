@@ -40,6 +40,11 @@ date = "2024-06-30"
 path = "@/posts/2026-04-01-1565/index.md"
 label = "#alien #screenshot #horror #giger #gimp #green #rice"
 date = "2026-04-01"
+
+[[extra.related]]
+path = "@/posts/2026-10-15-2236/index.md"
+label = "#linux #screenshot #imitation #windows2000 #internetexplorer #ph…"
+date = "2026-10-15"
 +++
 
 Fix my {{ tag(t="style") }} for {{ tag(t="mdn") }}, {{ tag(t="screenshot") }} before and after  

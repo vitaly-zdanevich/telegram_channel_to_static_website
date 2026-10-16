@@ -17,7 +17,7 @@ next_body = "#dress\n#tshirt\n#git\n#github\n#porn\nSource"
 prev_id = 632
 prev_title = ""
 prev_body = "Как работает дата-центр Яндекса в Финляндии\nHeating of a city by #datacenter\n#yandex\n#video\n#heat\nSource"
-views = 40
+views = 41
 ids = [633]
 
 [[extra.related]]

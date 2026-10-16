@@ -27,6 +27,11 @@ label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
 
 [[extra.related]]
+path = "@/posts/2026-10-15-2230/index.md"
+label = "I spent a lot of time uploading from moneymuseum.by you can open…"
+date = "2026-10-15"
+
+[[extra.related]]
 path = "@/posts/2026-09-27-2177/index.md"
 label = "#preservation #youtube #comment"
 date = "2026-09-27"
@@ -40,11 +45,6 @@ date = "2026-04-02"
 path = "@/posts/2025-12-30-828/index.md"
 label = "#preservation #library #books Page 68"
 date = "2025-12-30"
-
-[[extra.related]]
-path = "@/posts/2025-12-29-826/index.md"
-label = "#design #preservation #year1885"
-date = "2025-12-29"
 +++
 
 {{ tag(t="calligraphy") }}  

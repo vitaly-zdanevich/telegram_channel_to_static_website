@@ -32,19 +32,19 @@ label = "#moneymuseum #money #rubles"
 date = "2025-08-12"
 
 [[extra.related]]
+path = "@/posts/2026-10-15-2234/index.md"
+label = "#money #museum #moneymuseum #ruble #ruble5 #history #scan"
+date = "2026-10-15"
+
+[[extra.related]]
+path = "@/posts/2026-10-15-2233/index.md"
+label = "#money #museum #moneymuseum #ruble #ruble1 #history #scan"
+date = "2026-10-15"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2157/index.md"
 label = "#money By imarka23, source"
 date = "2026-09-16"
-
-[[extra.related]]
-path = "@/posts/2024-08-31-141/index.md"
-label = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait…"
-date = "2024-08-31"
-
-[[extra.related]]
-path = "@/posts/2025-09-01-653/index.md"
-label = "#wikimediafoundation #money"
-date = "2025-09-01"
 +++
 
 Returned to uploading of artifacts from [moneymuseum.by](http://moneymuseum.by/), through my [new web extension](https://gitlab.com/vitaly-zdanevich-extensions/web-extension-uploading-to-wikimedia-commons), and again - sometime I see the beauty  

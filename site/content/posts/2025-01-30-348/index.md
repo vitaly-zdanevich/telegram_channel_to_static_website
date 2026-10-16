@@ -8,6 +8,7 @@ days = ["2025-01-30"]
 tags = ["spider", "girl"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-382'><div class='comment-meta'><span class='comment-author'>Волиаэль Волко</span> · <a href='https://t.me/vitaly_zdanevich_chan/348?comment=382'><time datetime='2025-02-27T17:15:03+00:00'>2025-02-27 17:15 +00:00</time></a></div><div class='comment-body'>Квилег... Жаль её</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/348?comment=0'>Reply on Telegram</a></p></section>"
 id = 348
 day = "2025-01-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/348"

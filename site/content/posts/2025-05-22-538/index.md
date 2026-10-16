@@ -64,10 +64,10 @@ date = "2026-02-05"
 
 <https://commons.wikimedia.org/wiki/Commons:Upload_tools>  
 
-Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13273 stars · Languages: C 86%, Lua 6%, C++ 4% · 47638 commits · 1469 forks · 662 open issues/PRs · GPL-3.0 · last push 2026-10-14")  
+Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13281 stars · Languages: C 87%, Lua 5%, C++ 3% · 47683 commits · 1475 forks · 656 open issues/PRs · GPL-3.0 · last push 2026-10-16")  
 
 Моя тема для Darktable <https://gitlab.com/vitaly-zdanevich-configs/darktable/-/blob/master/user.css>  
 
-Плагин для загрузки в Wikipedia Commons для Darktable [https://github.com/trougnouf/dtMediaWiki](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 92%, Python 8% · 129 commits · 4 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-10-01")
+Плагин для загрузки в Wikipedia Commons для Darktable [https://github.com/trougnouf/dtMediaWiki](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 92%, Python 8% · 131 commits · 4 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-10-15")
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/538-01.mp4") }}

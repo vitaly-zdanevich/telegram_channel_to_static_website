@@ -18,7 +18,7 @@ next_body = "#health\n#science"
 prev_id = 507
 prev_title = ""
 prev_body = "#design\n#apple\n#ipod"
-views = 25
+views = 26
 ids = [508]
 
 [[extra.related]]

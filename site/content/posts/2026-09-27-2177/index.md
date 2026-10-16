@@ -18,7 +18,7 @@ next_body = "#webdesign"
 prev_id = 2176
 prev_title = ""
 prev_body = "#game\n#playstation\n#design\nBy retourverslegaming, source"
-views = 18
+views = 19
 ids = [2177]
 
 [[extra.related]]
@@ -32,6 +32,11 @@ label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
 
 [[extra.related]]
+path = "@/posts/2026-10-15-2230/index.md"
+label = "I spent a lot of time uploading from moneymuseum.by you can open…"
+date = "2026-10-15"
+
+[[extra.related]]
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
 date = "2026-04-02"
@@ -40,11 +45,6 @@ date = "2026-04-02"
 path = "@/posts/2026-02-27-1204/index.md"
 label = "#calligraphy #microfilm #preservation"
 date = "2026-02-27"
-
-[[extra.related]]
-path = "@/posts/2026-02-07-1099/index.md"
-label = "#love it - against #youtube #clickbait"
-date = "2026-02-07"
 +++
 
 {{ tag(t="preservation") }}  

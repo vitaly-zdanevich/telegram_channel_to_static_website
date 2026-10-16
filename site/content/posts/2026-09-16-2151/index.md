@@ -36,14 +36,14 @@ label = "#girl #pain"
 date = "2024-11-06"
 
 [[extra.related]]
+path = "@/posts/2026-10-14-2229/index.md"
+label = "#logo #yandex #pain"
+date = "2026-10-14"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2152/index.md"
 label = "#psy #narcissus #relationship нарцис By source, source"
 date = "2026-09-16"
-
-[[extra.related]]
-path = "@/posts/2025-07-24-609/index.md"
-label = "#girl #relationship #ai Source You generated pictures and videos…"
-date = "2025-07-24"
 +++
 
 {{ tag(t="mouse") }}  

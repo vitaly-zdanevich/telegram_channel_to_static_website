@@ -8,6 +8,7 @@ days = ["2025-02-08"]
 tags = ["sakartvelo", "ny", "subway", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-350'><div class='comment-meta'><span class='comment-author'>Mrtko</span> · <a href='https://t.me/vitaly_zdanevich_chan/352?comment=350'><time datetime='2025-02-10T03:16:15+00:00'>2025-02-10 03:16 +00:00</time></a></div><div class='comment-body'>Do you feel homesick?</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/352?comment=0'>Reply on Telegram</a></p></section>"
 id = 352
 day = "2025-02-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/352"

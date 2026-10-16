@@ -42,12 +42,12 @@ label = "Magic that I can say #codex to download all scan - and I get it,…"
 date = "2026-03-02"
 
 [[extra.related]]
-path = "@/posts/2026-02-11-1105/index.md"
-label = "#commons The server did not respond within the expected time If…"
-date = "2026-02-11"
+path = "@/posts/2026-10-15-2230/index.md"
+label = "I spent a lot of time uploading from moneymuseum.by you can open…"
+date = "2026-10-15"
 +++
 
-You can {{ tag(t="upload") }} to {{ tag(t="commons") }} through {{ tag(t="darktable") }} with this [free plugin](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 92%, Python 8% · 129 commits · 4 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-10-01")
+You can {{ tag(t="upload") }} to {{ tag(t="commons") }} through {{ tag(t="darktable") }} with this [free plugin](<https://github.com/trougnouf/dtMediaWiki> "Wikimedia Commons export plugin for darktable · 15 stars · Languages: Lua 92%, Python 8% · 131 commits · 4 forks · 11 open issues/PRs · GPL-3.0 · last push 2026-10-15")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-530-5269559087463524741.jpg") }}
 

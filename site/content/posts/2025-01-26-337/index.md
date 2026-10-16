@@ -7,6 +7,7 @@ description = "Source"
 days = ["2025-01-26"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-340'><div class='comment-meta'><span class='comment-author'>Veselin Rumancev</span> · <a href='https://t.me/vitaly_zdanevich_chan/337?comment=340'><time datetime='2025-01-29T06:03:54+00:00'>2025-01-29 06:03 +00:00</time></a></div><div class='comment-body'>Так происходит потому, что карту со сферы переносят на плоскость, получаются искажения, но на самом деле, все верно, Антарктида на плоской карте вообще огромная, больше Африки )</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/337?comment=0'>Reply on Telegram</a></p></section>"
 id = 337
 day = "2025-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/337"

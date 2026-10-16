@@ -17,7 +17,7 @@ next_body = "#mem\n#translation\n#tolkien\nSource"
 prev_id = 2180
 prev_title = ""
 prev_body = "#stalin\n#left\n#granddoughter\nBy youngmasha, source"
-views = 6
+views = 7
 ids = [2181]
 
 [[extra.related]]

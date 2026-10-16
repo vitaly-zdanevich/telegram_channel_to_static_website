@@ -17,10 +17,10 @@ next_body = "Wooow, look at this beautiful Linux"
 prev_id = 47
 prev_title = ""
 prev_body = ""
-views = 64
+views = 65
 ids = [48]
 +++
 
 Overlay toolbars in Firefox, like in Safari!  
 
-[https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css](<https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css> "Collection of userstyles affecting the browser · 4549 stars · Languages: CSS 91%, JavaScript 8%, Python 1% · 1330 commits · 369 forks · 77 open issues/PRs · MPL-2.0 · last push 2026-10-12")
+[https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css](<https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/overlay_fullscreen_toolbars.css> "Collection of userstyles affecting the browser · 4550 stars · Languages: CSS 91%, JavaScript 8%, Python 1% · 1331 commits · 370 forks · 77 open issues/PRs · MPL-2.0 · last push 2026-10-15")

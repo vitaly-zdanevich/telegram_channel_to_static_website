@@ -18,7 +18,7 @@ next_body = "#russia\n#israel\n#map\nSource"
 prev_id = 652
 prev_title = ""
 prev_body = "#wikimediafoundation\n#money\nSource\nSource"
-views = 37
+views = 38
 ids = [653]
 
 [[extra.related]]

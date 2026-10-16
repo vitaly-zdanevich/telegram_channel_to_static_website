@@ -36,14 +36,14 @@ label = "#ad #retro #nokia"
 date = "2025-11-19"
 
 [[extra.related]]
+path = "@/posts/2026-10-15-2235/index.md"
+label = "#retro #software #songbird #itunes"
+date = "2026-10-15"
+
+[[extra.related]]
 path = "@/posts/2026-04-25-1682/index.md"
 label = "My new great #bash #alias actually a #hotkey for faster #cd # Li…"
 date = "2026-04-25"
-
-[[extra.related]]
-path = "@/posts/2026-06-15-1835/index.md"
-label = "#xbox #gameconsole #tech #retro #green From"
-date = "2026-06-15"
 +++
 
 {{ tag(t="retro") }}  

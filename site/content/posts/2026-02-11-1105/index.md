@@ -42,9 +42,9 @@ label = "Magic that I can say #codex to download all scan - and I get it,…"
 date = "2026-03-02"
 
 [[extra.related]]
-path = "@/posts/2026-01-16-887/index.md"
-label = "#commons: #count uploads from a specific user for a period of ti…"
-date = "2026-01-16"
+path = "@/posts/2026-10-15-2230/index.md"
+label = "I spent a lot of time uploading from moneymuseum.by you can open…"
+date = "2026-10-15"
 +++
 
 {{ tag(t="commons") }}  

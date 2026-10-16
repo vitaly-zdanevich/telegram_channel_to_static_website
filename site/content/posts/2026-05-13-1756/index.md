@@ -42,9 +42,9 @@ label = "Wikipedia templates #code #wikipedia"
 date = "2025-05-12"
 
 [[extra.related]]
-path = "@/posts/2026-02-05-1094/index.md"
-label = "#firefox translation from #german to #russian"
-date = "2026-02-05"
+path = "@/posts/2026-10-14-2229/index.md"
+label = "#logo #yandex #pain"
+date = "2026-10-14"
 +++
 
 {{ tag(t="code") }}  

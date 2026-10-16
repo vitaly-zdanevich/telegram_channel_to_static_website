@@ -18,7 +18,7 @@ next_body = "#chatgpt 5:\nEscape shell $ as $$ inside Makefile recipes\n#gemini:
 prev_id = 653
 prev_title = ""
 prev_body = "#wikimediafoundation\n#money\nSource"
-views = 37
+views = 38
 ids = [654]
 
 [[extra.related]]

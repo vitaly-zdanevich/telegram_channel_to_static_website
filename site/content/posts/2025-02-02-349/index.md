@@ -8,6 +8,7 @@ days = ["2025-02-02"]
 tags = ["translate", "pain"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/349?comment=0'>Reply on Telegram</a></p></section>"
 id = 349
 day = "2025-02-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/349"
@@ -27,6 +28,11 @@ label = "#girl #pain"
 date = "2024-11-06"
 
 [[extra.related]]
+path = "@/posts/2026-10-14-2229/index.md"
+label = "#logo #yandex #pain"
+date = "2026-10-14"
+
+[[extra.related]]
 path = "@/posts/2026-09-16-2151/index.md"
 label = "#mouse #cheese #relationship #pain By happyofficlal, source"
 date = "2026-09-16"
@@ -40,11 +46,6 @@ date = "2026-02-18"
 path = "@/posts/2025-03-16-425/index.md"
 label = "#pain #millenials #depression #dophin"
 date = "2025-03-16"
-
-[[extra.related]]
-path = "@/posts/2025-02-22-376/index.md"
-label = "Are you winning son? Happy Birthday #pain #death #loss #miss"
-date = "2025-02-22"
 +++
 
 {{ tag(t="translate") }}  

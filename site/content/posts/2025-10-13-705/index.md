@@ -17,7 +17,7 @@ next_body = "#wikidata\n#linux\n#warcraft3"
 prev_id = 704
 prev_title = ""
 prev_body = "#culture\n#archivation\n#future\n#green\n#research\nSource"
-views = 28
+views = 29
 ids = [705]
 
 [[extra.related]]

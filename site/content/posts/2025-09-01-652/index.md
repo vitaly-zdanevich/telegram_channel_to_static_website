@@ -18,7 +18,7 @@ next_body = "#wikimediafoundation\n#money\nSource"
 prev_id = 651
 prev_title = ""
 prev_body = "#wikimediafoundation #office from 2024\nSource"
-views = 34
+views = 35
 ids = [652]
 
 [[extra.related]]

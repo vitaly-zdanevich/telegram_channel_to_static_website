@@ -17,7 +17,7 @@ next_body = "#cancel\n#babushka\nBy agabekyanalena, source"
 prev_id = 2179
 prev_title = ""
 prev_body = "#mem\n#children\n#health\nBy liya.ermakova.ya, source"
-views = 6
+views = 7
 ids = [2180]
 
 [[extra.related]]

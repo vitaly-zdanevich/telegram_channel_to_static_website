@@ -32,6 +32,11 @@ label = "#cli #tui #design"
 date = "2025-12-21"
 
 [[extra.related]]
+path = "@/posts/2026-10-15-2235/index.md"
+label = "#retro #software #songbird #itunes"
+date = "2026-10-15"
+
+[[extra.related]]
 path = "@/posts/2026-02-27-1203/index.md"
 label = "#design #software #gthumb #scan #preservation"
 date = "2026-02-27"
@@ -40,11 +45,6 @@ date = "2026-02-27"
 path = "@/posts/2026-07-01-1881/index.md"
 label = "Моя #лекция про мой #telegrambot для #rutracker - не только ищет…"
 date = "2026-07-01"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2139/index.md"
-label = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, Яндек…"
-date = "2026-08-09"
 +++
 
 {{ tag(t="software") }}  

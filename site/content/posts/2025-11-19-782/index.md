@@ -41,9 +41,9 @@ label = "#retro #cd #vhs"
 date = "2025-07-25"
 
 [[extra.related]]
-path = "@/posts/2026-10-10-2206/index.md"
-label = "#ad #russia #cat #heat By markmate88, source"
-date = "2026-10-10"
+path = "@/posts/2026-10-15-2235/index.md"
+label = "#retro #software #songbird #itunes"
+date = "2026-10-15"
 +++
 
 {{ tag(t="ad") }}  

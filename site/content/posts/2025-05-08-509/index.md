@@ -18,7 +18,7 @@ next_body = "#packagemanager\n#appimage\nFor example portable #git in a single f
 prev_id = 508
 prev_title = ""
 prev_body = "#wifi\n#child\n#autism\n#sick\n#health"
-views = 22
+views = 23
 ids = [509]
 
 [[extra.related]]
