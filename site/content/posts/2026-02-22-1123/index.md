@@ -18,7 +18,7 @@ next_body = "#steam\n#myst\nforever #game"
 prev_id = 1122
 prev_title = ""
 prev_body = "#mmo #myst #stat"
-views = 18
+views = 19
 ids = [1123]
 
 [[extra.related]]

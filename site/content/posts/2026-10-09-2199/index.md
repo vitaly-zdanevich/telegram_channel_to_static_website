@@ -17,7 +17,7 @@ next_body = "Это фанатский мод: от первого лица с �
 prev_id = 2198
 prev_title = ""
 prev_body = "#mem\n#voice\n#ai\n#cry\n#game\nBy m3m3centrall, source"
-views = 3
+views = 5
 ids = [2199]
 
 [[extra.related]]

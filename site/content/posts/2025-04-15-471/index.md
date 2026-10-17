@@ -8,6 +8,7 @@ days = ["2025-04-15"]
 tags = ["archiving", "photos"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/471?comment=0'>Reply on Telegram</a></p></section>"
 id = 471
 day = "2025-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/471"
@@ -18,7 +19,7 @@ next_body = "YouTube alternative on #blockchain"
 prev_id = 470
 prev_title = ""
 prev_body = "Source\n#sakartvelo\n#taxes"
-views = 51
+views = 52
 ids = [471]
 
 [[extra.related]]

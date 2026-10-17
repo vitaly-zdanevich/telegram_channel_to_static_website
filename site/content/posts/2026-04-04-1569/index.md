@@ -18,7 +18,7 @@ next_body = "#ai\n#gpu\n#nvidia"
 prev_id = 1568
 prev_title = ""
 prev_body = "#ai\nI asked #gemini to port #primeworld from Windows to Linux, interesting if that possible...\nWe tried #wine of course - but some problems with #lutris - because native launcher need to run Wine..."
-views = 18
+views = 19
 ids = [1569]
 
 [[extra.related]]

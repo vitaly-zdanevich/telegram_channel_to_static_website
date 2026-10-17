@@ -18,7 +18,7 @@ next_body = "#webdesign\n#buttons\n#animation\n#game\n#mmo\n#myst"
 prev_id = 1119
 prev_title = ""
 prev_body = "#bash\n#history\n#mcfly: ctrl-r replacement with \"suggestions are prioritized in real time with a small neural network.\"\nDid a color scheme for it."
-views = 15
+views = 16
 ids = [1120]
 
 [[extra.related]]
@@ -50,6 +50,6 @@ date = "2026-01-24"
 {{ tag(t="ai") }}  
 {{ tag(t="codex") }}  
 
-{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 129490 stars · Languages: Rust 97%, Python 2%, Starlark 0% · 12296 commits · 20375 forks · 22900 open issues/PRs · Apache-2.0 · last push 2026-10-16"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
+{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 129583 stars · Languages: Rust 97%, Python 2%, Starlark 0% · 12326 commits · 20395 forks · 23101 open issues/PRs · Apache-2.0 · last push 2026-10-17"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1120-5244641018655740008.jpg") }}

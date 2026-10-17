@@ -16,7 +16,7 @@ next_body = "#love it - against #youtube #clickbait"
 prev_id = 1097
 prev_title = ""
 prev_body = "I love #display aspect ratio 16x10 because I have the special space for #youtube #ui, when most videos are 16x9"
-views = 19
+views = 20
 ids = [1098]
 +++
 

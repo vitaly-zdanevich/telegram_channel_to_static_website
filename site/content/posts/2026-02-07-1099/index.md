@@ -18,7 +18,7 @@ next_body = "#ai\nTrying #codex to organize scans - to create a folder for every
 prev_id = 1098
 prev_title = ""
 prev_body = ""
-views = 16
+views = 17
 ids = [1099]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "В Кутаиси продолжается проект «Mural Fes
 prev_id = 656
 prev_title = ""
 prev_body = "#iran\n#tehran\n#photo\nSource"
-views = 29
+views = 31
 ids = [657]
 
 [[extra.related]]

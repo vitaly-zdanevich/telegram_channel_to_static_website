@@ -8,6 +8,7 @@ days = ["2025-04-27"]
 tags = ["health", "nature", "dog", "berry", "river", "caw", "liver", "worms", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-484'><div class='comment-meta'><span class='comment-author'>Deleted account</span> · <a href='https://t.me/vitaly_zdanevich_chan/485?comment=484'><time datetime='2025-04-27T14:01:25+00:00'>2025-04-27 14:01 +00:00</time></a></div><div class='comment-body'>Ебать</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/485?comment=0'>Reply on Telegram</a></p></section>"
 id = 485
 day = "2025-04-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/485"

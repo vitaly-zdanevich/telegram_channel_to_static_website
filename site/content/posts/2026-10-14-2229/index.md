@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-10-14T15:11:41+00:00
-description = "logo yandex pain"
+description = "logo heart yandex pain"
 
 [taxonomies]
 days = ["2026-10-14"]
-tags = ["logo", "yandex", "pain"]
+tags = ["logo", "heart", "yandex", "pain"]
 
 [extra]
 id = 2229
@@ -14,11 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2229"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2229-5368581465442033195-y-576x1280-45489.jpg"
 next_id = 2230
 next_title = ""
-next_body = "I spent a lot of time uploading from moneymuseum.by (you can open this website only from Belarus - also a good case about #preservation, right?) to #commons, and yesterday I tried #llm GPT-6-Astra - and it works good: categories, embedding to relevant Wikipedia articles, transcribation."
+next_body = "I spent a lot of time uploading from moneymuseum.by (you can open this website only from Belarus - also a good case about #preservation, right?) to #commons, and yesterday I tried #llm GPT-6-Astra - and it works good: categories, embedding to relevant Wikipedia articles, transcribation.\nYou are welcome to validate the metadata quality:"
 prev_id = 2228
 prev_title = ""
 prev_body = "#ad\n#health\n#hear\n#russian\n#buildboard\nВсе слышат - ты не слышишь, осмотр ЛОР врача.\nSource"
-views = 3
+views = 4
 ids = [2229]
 
 [[extra.related]]
@@ -48,6 +48,7 @@ date = "2025-05-19"
 +++
 
 {{ tag(t="logo") }}  
+{{ tag(t="heart") }}  
 {{ tag(t="yandex") }}  
 {{ tag(t="pain") }}
 

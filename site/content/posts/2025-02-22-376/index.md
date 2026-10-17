@@ -42,9 +42,9 @@ label = "#girl #pain"
 date = "2024-11-06"
 
 [[extra.related]]
-path = "@/posts/2026-10-14-2229/index.md"
-label = "#logo #yandex #pain"
-date = "2026-10-14"
+path = "@/posts/2026-08-09-2136/index.md"
+label = "#death #car #sound"
+date = "2026-08-09"
 +++
 
 **Are you winning son? Happy Birthday**  

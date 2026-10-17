@@ -18,7 +18,7 @@ next_body = ""
 prev_id = 1095
 prev_title = ""
 prev_body = "#ai ai ai ai ai but looks like even text translation with not very big languages is so bad :(\nChecked in #firefox and #googletranslate"
-views = 17
+views = 18
 ids = [1097]
 
 [[extra.related]]

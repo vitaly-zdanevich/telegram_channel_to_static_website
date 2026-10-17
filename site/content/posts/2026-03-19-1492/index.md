@@ -18,7 +18,7 @@ next_body = "wow #wikibase/#wikidata in #cli"
 prev_id = 1491
 prev_title = ""
 prev_body = "#telegram added a feature request\nAdd option to cache/prefetch all or selected channels\nLike podcasts app can download episodes when Wi-Fi is available.\nWhy: when I have wi-fi at home but mobile network is not working on street."
-views = 21
+views = 22
 ids = [1492]
 
 [[extra.related]]

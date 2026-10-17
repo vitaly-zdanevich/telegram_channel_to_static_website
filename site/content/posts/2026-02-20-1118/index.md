@@ -17,7 +17,7 @@ next_body = "#bash\n#history\n#mcfly: ctrl-r replacement with \"suggestions are 
 prev_id = 1117
 prev_title = ""
 prev_body = "#gcc\n#make"
-views = 13
+views = 14
 ids = [1118]
 
 [[extra.related]]

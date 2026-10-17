@@ -17,7 +17,7 @@ next_body = "#cats\n#religion\n#orthodox\n#blackandwhite\nSource"
 prev_id = 1721
 prev_title = ""
 prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
-views = 26
+views = 27
 ids = [1729]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#golang\n#utf8\nconst s = \"สวัสดี\"\nfmt.Println(\"Len
 prev_id = 655
 prev_title = ""
 prev_body = "#chatgpt 5:\nEscape shell $ as $$ inside Makefile recipes\n#gemini:\nNo, you should not use RESP=$$() for command substitution. Your original syntax was correct."
-views = 27
+views = 28
 ids = [656]
 
 [[extra.related]]

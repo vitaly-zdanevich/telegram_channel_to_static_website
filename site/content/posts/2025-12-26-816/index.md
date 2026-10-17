@@ -17,7 +17,7 @@ next_body = "#ukraine\n#mariupol\n#architecture\n#building\n#war\nSource"
 prev_id = 815
 prev_title = ""
 prev_body = "#starwars\n#village\n#татуиново\nSource"
-views = 32
+views = 33
 ids = [816]
 
 [[extra.related]]

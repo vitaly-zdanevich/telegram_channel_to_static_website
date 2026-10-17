@@ -17,7 +17,7 @@ next_body = "#ad\n#game\n#tank\n#wwii\n#music\n#warpath\nSource"
 prev_id = 791
 prev_title = ""
 prev_body = "#game\n#strategy\n#rtt\n#groundcontrol\nSource"
-views = 53
+views = 54
 ids = [792]
 
 [[extra.related]]

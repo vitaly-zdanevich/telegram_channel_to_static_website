@@ -18,7 +18,7 @@ next_body = "#architecture of #village houses in #sakartvelo\nSource"
 prev_id = 1733
 prev_title = ""
 prev_body = "#belarus\n#belarussian\n#arabic\n#language"
-views = 20
+views = 21
 ids = [1734]
 
 [[extra.related]]

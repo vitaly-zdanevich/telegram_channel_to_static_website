@@ -8,6 +8,7 @@ days = ["2025-05-09"]
 tags = ["package_manager", "appimage", "git"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/510?comment=0'>Reply on Telegram</a></p></section>"
 id = 510
 day = "2025-05-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/510"

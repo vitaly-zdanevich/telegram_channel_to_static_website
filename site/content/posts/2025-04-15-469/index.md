@@ -8,6 +8,7 @@ days = ["2025-04-15"]
 tags = ["archiving"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/469?comment=0'>Reply on Telegram</a></p></section>"
 id = 469
 day = "2025-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/469"
@@ -18,7 +19,7 @@ next_body = "Source\n#sakartvelo\n#taxes"
 prev_id = 468
 prev_title = ""
 prev_body = "Годердзи 10 апреля 2025 год"
-views = 44
+views = 45
 ids = [469]
 
 [[extra.related]]

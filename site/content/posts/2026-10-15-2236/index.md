@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2235
 prev_title = ""
 prev_body = "#retro\n#software\n#songbird\n#itunes"
-views = 2
+views = 4
 ids = [2236]
 
 [[extra.related]]

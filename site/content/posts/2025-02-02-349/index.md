@@ -29,7 +29,7 @@ date = "2024-11-06"
 
 [[extra.related]]
 path = "@/posts/2026-10-14-2229/index.md"
-label = "#logo #yandex #pain"
+label = "#logo #heart #yandex #pain"
 date = "2026-10-14"
 
 [[extra.related]]

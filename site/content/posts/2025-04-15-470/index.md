@@ -8,6 +8,7 @@ days = ["2025-04-15"]
 tags = ["sakartvelo", "taxes"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/470?comment=0'>Reply on Telegram</a></p></section>"
 id = 470
 day = "2025-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/470"
@@ -18,7 +19,7 @@ next_body = "#archiving\n#photos"
 prev_id = 469
 prev_title = ""
 prev_body = "Looks what I found - another #archiving group"
-views = 45
+views = 46
 ids = [470]
 
 [[extra.related]]

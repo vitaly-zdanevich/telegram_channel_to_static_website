@@ -17,7 +17,7 @@ next_body = "#wikipedia\n#mimino\nУже после выхода «Мимино�
 prev_id = 744
 prev_title = ""
 prev_body = "#school in #sakartvelo\n#architecture\n#books"
-views = 25
+views = 26
 ids = [745]
 
 [[extra.related]]

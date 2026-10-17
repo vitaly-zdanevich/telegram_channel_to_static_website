@@ -17,7 +17,7 @@ next_body = "#mmo #myst #stat"
 prev_id = 1120
 prev_title = ""
 prev_body = "#ai\n#codex\n#love Codex, using it almost every day, recently solved a few long lasting technical problems thanks to him."
-views = 15
+views = 16
 ids = [1121]
 
 [[extra.related]]

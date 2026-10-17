@@ -17,7 +17,7 @@ next_body = "#буддизм\n#матрица\nBy iuanov, source"
 prev_id = 2200
 prev_title = ""
 prev_body = "Это фанатский мод: от первого лица с оружием CS ходишь по картам и кампаниям Warcraft III, мир и квесты остаются варкрафтовскими.\nНужны Warcraft III 1.26a и файлы CS 1.6.\nРепозиторий:\nВидео автора мода:"
-views = 4
+views = 6
 ids = [2201]
 
 [[extra.related]]

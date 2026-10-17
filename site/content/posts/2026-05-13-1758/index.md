@@ -18,7 +18,7 @@ next_body = "Fix my #style for #mdn, #screenshot before and after\nSad that UI c
 prev_id = 1756
 prev_title = ""
 prev_body = "#code\n#russian\n#yandex\n#language\nFrom"
-views = 22
+views = 23
 ids = [1758]
 
 [[extra.related]]

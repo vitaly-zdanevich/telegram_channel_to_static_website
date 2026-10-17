@@ -18,18 +18,13 @@ next_body = "#webdesign\n#game"
 prev_id = 1077
 prev_title = ""
 prev_body = "#japan\nFrom"
-views = 13
+views = 14
 ids = [1078]
 
 [[extra.related]]
 path = "@/posts/2025-05-19-537/index.md"
 label = "#webdesign #yandex"
 date = "2025-05-19"
-
-[[extra.related]]
-path = "@/posts/2026-10-14-2229/index.md"
-label = "#logo #yandex #pain"
-date = "2026-10-14"
 
 [[extra.related]]
 path = "@/posts/2026-02-05-1097/index.md"
@@ -45,6 +40,11 @@ date = "2025-12-25"
 path = "@/posts/2025-12-25-812/index.md"
 label = "#winamp #ui #audioplayer"
 date = "2025-12-25"
+
+[[extra.related]]
+path = "@/posts/2025-11-23-789/index.md"
+label = "#wikipedia #ui #navigation"
+date = "2025-11-23"
 +++
 
 {{ tag(t="ui") }}  

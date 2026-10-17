@@ -17,7 +17,7 @@ next_body = "#it\n#relocation\n#uzbekistan\n#tajikistan\n#afghanistan\n#iran\n#t
 prev_id = 814
 prev_title = ""
 prev_body = "#windowsxp"
-views = 45
+views = 46
 ids = [815]
 
 [[extra.related]]

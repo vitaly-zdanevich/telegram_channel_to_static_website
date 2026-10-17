@@ -6,6 +6,7 @@ date = 2025-04-29T21:59:51+00:00
 days = ["2025-04-29"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/490?comment=0'>Reply on Telegram</a></p></section>"
 id = 490
 day = "2025-04-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/490"

@@ -18,7 +18,7 @@ next_body = "#wikipedia\n#mimino\nРабота в Тушетии в опреде
 prev_id = 743
 prev_title = ""
 prev_body = "Emotional reasoning is a cognitive process by which an individual concludes that their emotional reaction proves something is true, despite contrary empirical evidence. Emotional reasoning creates an 'emotional truth', which may be in direct conflict with the inverse 'perceptional truth'\nThe combination of an increase in emotional arousal and the inhibition of parts of the brain leads to emotional reasoning\n#psy"
-views = 25
+views = 26
 ids = [744]
 
 [[extra.related]]

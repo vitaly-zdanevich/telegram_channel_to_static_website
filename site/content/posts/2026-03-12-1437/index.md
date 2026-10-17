@@ -18,7 +18,7 @@ next_body = "#design\n#typography\n#newspaper\n#sakartvelo\nSource"
 prev_id = 1436
 prev_title = ""
 prev_body = "#building\n#gray\n#bricks\n#slonim\n#belarus\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE5%D0%B8%D1%8E%D0%BD%D1%8F2005.jpg)"
-views = 21
+views = 22
 ids = [1437]
 
 [[extra.related]]

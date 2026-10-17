@@ -18,7 +18,7 @@ next_body = "#darkmode"
 prev_id = 1502
 prev_title = ""
 prev_body = "#map\n#russia\n#russianempire\n#blacksea\n#sakartvelo\n#year1910"
-views = 19
+views = 20
 ids = [1503]
 
 [[extra.related]]

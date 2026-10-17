@@ -18,7 +18,7 @@ next_body = "Банк Империал - Конрад III\n#ad is old, around 20
 prev_id = 371
 prev_title = ""
 prev_body = "#ad from 2012\n#uk\n#guardian\n#pigs\nSource"
-views = 57
+views = 58
 ids = [372, 373]
 
 [[extra.related]]

@@ -8,6 +8,7 @@ days = ["2025-03-16"]
 tags = ["pain", "millenials", "depression", "dophin", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/425?comment=0'>Reply on Telegram</a></p></section>"
 id = 425
 day = "2025-03-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/425"
@@ -37,7 +38,7 @@ date = "2024-11-06"
 
 [[extra.related]]
 path = "@/posts/2026-10-14-2229/index.md"
-label = "#logo #yandex #pain"
+label = "#logo #heart #yandex #pain"
 date = "2026-10-14"
 
 [[extra.related]]

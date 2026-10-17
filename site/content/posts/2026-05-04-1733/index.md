@@ -18,7 +18,7 @@ next_body = "#map\n#batumi\nBetween the Black Sea and the mountains."
 prev_id = 1732
 prev_title = ""
 prev_body = "#gentoo\n#golang\n#bootstrap"
-views = 21
+views = 22
 ids = [1733]
 
 [[extra.related]]

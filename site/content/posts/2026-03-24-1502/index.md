@@ -18,7 +18,7 @@ next_body = "#wikipedia\n#wikimediacommons\nПишите авторам конт
 prev_id = 1501
 prev_title = ""
 prev_body = "Unreleased game Империя from #elementalgames, like #spacerangers\n#year2012"
-views = 20
+views = 21
 ids = [1502]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#python\nSame #dot - different meaning\nfor f in os.listdir('.')\ni
 prev_id = 1112
 prev_title = ""
 prev_body = "Editing #wikipedia, in #vim"
-views = 20
+views = 21
 ids = [1113]
 
 [[extra.related]]

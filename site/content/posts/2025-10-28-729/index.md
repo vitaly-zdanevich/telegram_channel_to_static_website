@@ -18,7 +18,7 @@ next_body = "#sakartvelo\n#batumi\n#misha\n#trump"
 prev_id = 728
 prev_title = ""
 prev_body = "#design\n#purple\n#gamepad\n#gamecube\nSource"
-views = 31
+views = 32
 ids = [729]
 
 [[extra.related]]

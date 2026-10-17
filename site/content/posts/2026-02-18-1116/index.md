@@ -42,9 +42,9 @@ label = "#girl #pain"
 date = "2024-11-06"
 
 [[extra.related]]
-path = "@/posts/2026-10-14-2229/index.md"
-label = "#logo #yandex #pain"
-date = "2026-10-14"
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
+date = "2025-11-19"
 +++
 
 {{ tag(t="pain") }}  

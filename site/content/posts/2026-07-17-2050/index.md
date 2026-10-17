@@ -18,7 +18,7 @@ next_body = "#game\n#needforspeed\n#needforspeedunderground2\n#psy\nIts #year200
 prev_id = 2049
 prev_title = ""
 prev_body = "My yet another #wikimedia project that I love: #wikimediacommons #pwa #uploader. Fast and simple."
-views = 29
+views = 30
 ids = [2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059]
 
 [[extra.related]]

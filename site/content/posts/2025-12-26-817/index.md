@@ -18,7 +18,7 @@ next_body = "#pypi\n#donation"
 prev_id = 816
 prev_title = ""
 prev_body = "#it\n#relocation\n#uzbekistan\n#tajikistan\n#afghanistan\n#iran\n#turkey\n#azerbaijan\n#armenia\n#syria\n#sakartvelo\n#iraq\nSource"
-views = 32
+views = 33
 ids = [817]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#toy\n#craft\n#shy\n#horn\nSource"
 prev_id = 2223
 prev_title = ""
 prev_body = "#art\n#depressive\n#fear\n#horn\nSource"
-views = 3
+views = 5
 ids = [2224]
 +++
 

@@ -18,7 +18,7 @@ next_body = "#money\n#ussr\n#design\nSource.png)"
 prev_id = 618
 prev_title = ""
 prev_body = "Georgian man (Zaal Sikharulidze) with falcon wearing Chokha on Tbilisoba festival\n#sakartvelo\n#fashion\n#chokha\nSource.jpg)"
-views = 34
+views = 35
 ids = [619]
 
 [[extra.related]]

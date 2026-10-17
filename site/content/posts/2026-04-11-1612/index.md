@@ -17,7 +17,7 @@ next_body = "#typography\n#russianempire\n#ukraine\n#century18\nSource"
 prev_id = 1602
 prev_title = ""
 prev_body = "#typography\n#russianempire\n#century18\nSource"
-views = 19
+views = 20
 ids = [1612]
 
 [[extra.related]]

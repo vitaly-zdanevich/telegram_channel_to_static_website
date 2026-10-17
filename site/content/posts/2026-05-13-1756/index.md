@@ -18,7 +18,7 @@ next_body = "Wow my #reeknote (#evernote #cli) can now play audio and show image
 prev_id = 1755
 prev_title = ""
 prev_body = "#ai\n#screenshot from"
-views = 26
+views = 27
 ids = [1756, 1757]
 
 [[extra.related]]
@@ -42,9 +42,9 @@ label = "Wikipedia templates #code #wikipedia"
 date = "2025-05-12"
 
 [[extra.related]]
-path = "@/posts/2026-10-14-2229/index.md"
-label = "#logo #yandex #pain"
-date = "2026-10-14"
+path = "@/posts/2026-02-05-1094/index.md"
+label = "#firefox translation from #german to #russian"
+date = "2026-02-05"
 +++
 
 {{ tag(t="code") }}  

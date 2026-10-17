@@ -17,7 +17,7 @@ next_body = "#bump is a #chat and a #map (#googlemap) #app, with outstanding sty
 prev_id = 2210
 prev_title = ""
 prev_body = "#github\n#webdesign\n#art\n#mascot\n#cat"
-views = 4
+views = 6
 ids = [2212]
 
 [[extra.related]]
@@ -46,7 +46,7 @@ label = "Another #llm victory: repack of the official #evernote client"
 date = "2026-05-25"
 +++
 
-Status update about my "media center" Youta (TUI audio player for Youtube and other sources). [https://github.com/vitaly-zdanevich/youta]([https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 564 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-15") "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 564 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-15")  
+Status update about my "media center" Youta (TUI audio player for Youtube and other sources). [https://github.com/vitaly-zdanevich/youta]([https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 575 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-17") "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 575 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-17")  
 
 It was a productive few months about this project that I love. With {{ tag(t="llm") }} - the development is so fast. Its a new language for me - {{ tag(t="rust") }} (because of CPU/RAM), and I mostly do not read the code - but I validate the result as a user, and we (me and {{ tag(t="codex") }}) have {{ tag(t="tests") }}.  
 
@@ -58,4 +58,4 @@ From Youta - you can also upload to {{ tag(t="commons") }}, {{ tag(t="internet_a
 
 And recently I added something crazy - youta can show a QR for a {{ tag(t="youtube") }} channel - so your phone can fetch all (or after some episode) audios to a {{ tag(t="podcast") }} app (for example {{ tag(t="antennapod") }}), through your {{ tag(t="lan") }}, can you imagine that.  
 
-[https://github.com/vitaly-zdanevich/youta]([https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 564 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-15") "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 564 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-15")
+[https://github.com/vitaly-zdanevich/youta]([https://github.com/vitaly-zdanevich/youta](<https://github.com/vitaly-zdanevich/youta> "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 575 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-17") "Low-resource (it mean no fan noise) TUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 11 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 575 commits · 1 fork · 5 open issues/PRs · MIT · last push 2026-10-17")

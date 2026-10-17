@@ -17,7 +17,7 @@ next_body = "#art\n#depressive\n#fear\n#horn\nSource"
 prev_id = 2221
 prev_title = ""
 prev_body = "#flatearth\n#antarctica"
-views = 3
+views = 5
 ids = [2222]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "#preservation\n#game\n#groundcontrol\n#wwiii\nFrom the game Ground 
 prev_id = 785
 prev_title = ""
 prev_body = "#webdesign\n#webdesigngame"
-views = 37
+views = 38
 ids = [786]
 
 [[extra.related]]

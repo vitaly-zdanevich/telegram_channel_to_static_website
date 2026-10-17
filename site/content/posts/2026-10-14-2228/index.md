@@ -14,11 +14,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2228"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2228-5366329665628349343-y-968x1280-124555.jpg"
 next_id = 2229
 next_title = ""
-next_body = "#logo\n#yandex\n#pain"
+next_body = "#logo\n#heart\n#yandex\n#pain"
 prev_id = 2227
 prev_title = ""
 prev_body = "#toy\n#craft\n#love\nSource\nElly Vishnevsky\nwww.vishnya.etsy.com\nwww.vishnya.com"
-views = 3
+views = 4
 ids = [2228]
 
 [[extra.related]]

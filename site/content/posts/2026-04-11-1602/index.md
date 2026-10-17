@@ -18,7 +18,7 @@ next_body = "I wrote, with #ai, a nice #script to #find top #biggest #folders - 
 prev_id = 1600
 prev_title = ""
 prev_body = "#icq\n#offline\n#abandone\n#sonyericsson\nSource"
-views = 17
+views = 18
 ids = [1602, 1603, 1604, 1605, 1606, 1607, 1608, 1609, 1610, 1611]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "Как работает дата-центр Яндекса в Фи�
 prev_id = 630
 prev_title = ""
 prev_body = "Кин-дза-дза Japanese disc\n#cover\n#design\n#scifi\n#bluray"
-views = 66
+views = 68
 ids = [631]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#sakartvelo\nSource"
 prev_id = 575
 prev_title = ""
 prev_body = "#my\n#film\n#korolishut\n#alcohol\ns1e6"
-views = 38
+views = 39
 ids = [576]
 
 [[extra.related]]

@@ -17,8 +17,8 @@ next_title = ""
 next_body = "#money\n#museum\n#moneymuseum\n#ruble\n#ruble1\n#history\n#scan\nSource"
 prev_id = 2229
 prev_title = ""
-prev_body = "#logo\n#yandex\n#pain"
-views = 3
+prev_body = "#logo\n#heart\n#yandex\n#pain"
+views = 5
 ids = [2230, 2231, 2232]
 
 [[extra.related]]
@@ -51,6 +51,7 @@ I spent a lot of time uploading from [moneymuseum.by](http://moneymuseum.by/) (y
 
 <https://commons.wikimedia.org/wiki/Category:Museum%20of%20National%20Bank%20of%20the%20Republic%20of%20Belarus:%20bonds>  
 
+You are welcome to validate the metadata quality:  
 <https://commons.wikimedia.org/wiki/Category:Uploaded_by_GPT-6-astra_by_Vitaly_Zdanevich>
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2230-5368752216161853934-y-1280x509-61236.jpg") }}
