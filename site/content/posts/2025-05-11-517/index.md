@@ -6,6 +6,7 @@ date = 2025-05-11T21:19:06+00:00
 days = ["2025-05-11"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/517?comment=0'>Reply on Telegram</a></p></section>"
 id = 517
 day = "2025-05-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/517"
@@ -15,7 +16,7 @@ next_body = "The life was quiet all around\nA cute little island\nNice and non-v
 prev_id = 515
 prev_title = ""
 prev_body = "#film\n#robot\n#slut\n#mem\nSource"
-views = 28
+views = 29
 ids = [517]
 +++
 

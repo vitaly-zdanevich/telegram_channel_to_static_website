@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2026-04-03T22:17:03+00:00
-description = "ai I asked gemini to port primeworld from Windows to Linux, interesting if that possible... We tried wine of course - but some problems with lutris - because native launcher need to run Wine..."
+description = "ai I asked gemini to port primeworld game from Windows to Linux, interesting if that possible... We tried wine of course - but some problems with lutris - because native launcher need to run Wine..."
 
 [taxonomies]
 days = ["2026-04-03"]
-tags = ["ai", "gemini", "prime_world", "wine", "lutris"]
+tags = ["ai", "gemini", "prime_world", "game", "wine", "lutris"]
 
 [extra]
 id = 1568
@@ -22,6 +22,21 @@ views = 21
 ids = [1568]
 
 [[extra.related]]
+path = "@/posts/2026-10-17-2237/index.md"
+label = "#log Still running my experiment about #porting #primeworld from…"
+date = "2026-10-17"
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1679/index.md"
+label = "#log Still running my experiment about #porting #primeworld #gam…"
+date = "2026-04-24"
+
+[[extra.related]]
+path = "@/posts/2026-10-09-2198/index.md"
+label = "#mem #voice #ai #cry #game By m3m3centrall, source"
+date = "2026-10-09"
+
+[[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
 date = "2026-02-25"
@@ -30,26 +45,11 @@ date = "2026-02-25"
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
 date = "2026-01-24"
-
-[[extra.related]]
-path = "@/posts/2025-01-28-343/index.md"
-label = "#ai"
-date = "2025-01-28"
-
-[[extra.related]]
-path = "@/posts/2025-01-10-244/index.md"
-label = "Video from 2012 about #ai"
-date = "2025-01-10"
-
-[[extra.related]]
-path = "@/posts/2025-01-01-237/index.md"
-label = "#ai"
-date = "2025-01-01"
 +++
 
 {{ tag(t="ai") }}  
 
-I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} from Windows to Linux, interesting if that possible...  
+I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} {{ tag(t="game") }} from Windows to Linux, interesting if that possible...  
 
 [https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 8 stars · Languages: C++ 33%, C# 21%, Python 15% · 1443 commits · 5 forks · 1 open issues/PRs · last push 2026-10-17")  
 

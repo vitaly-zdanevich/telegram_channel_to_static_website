@@ -8,6 +8,7 @@ days = ["2025-05-14"]
 tags = ["gentoo", "patches"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/529?comment=0'>Reply on Telegram</a></p></section>"
 id = 529
 day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/529"
@@ -17,7 +18,7 @@ next_body = "You can #upload to #commons through #darktable with this free plugi
 prev_id = 528
 prev_title = ""
 prev_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it\nfuse-archive f.rar /mnt/\n· 267 stars · Languages: C++ 51%, Python 39%, Roff 7% · 495 commits · 32 forks · Apache-2.0 · archived · last push 2026-09-19\")"
-views = 42
+views = 43
 ids = [529]
 
 [[extra.related]]

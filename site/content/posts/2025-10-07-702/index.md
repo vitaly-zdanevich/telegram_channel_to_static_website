@@ -17,7 +17,7 @@ next_body = "Звуковик имеет тягу к изучению языко
 prev_id = 701
 prev_title = ""
 prev_body = "#chess\nSource"
-views = 32
+views = 33
 ids = [702]
 
 [[extra.related]]

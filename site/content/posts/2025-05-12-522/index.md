@@ -8,6 +8,7 @@ days = ["2025-05-12"]
 tags = ["code", "wikipedia"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/522?comment=0'>Reply on Telegram</a></p></section>"
 id = 522
 day = "2025-05-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/522"
@@ -18,7 +19,7 @@ next_body = "#belarus\n#history\n#lost\n#offline"
 prev_id = 521
 prev_title = ""
 prev_body = "#displays\nDream setup. Now I have 4.\nSource"
-views = 28
+views = 29
 ids = [522]
 
 [[extra.related]]

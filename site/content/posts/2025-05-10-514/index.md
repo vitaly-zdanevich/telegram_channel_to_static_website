@@ -19,7 +19,7 @@ next_body = "#film\n#robot\n#slut\n#mem\nSource"
 prev_id = 513
 prev_title = ""
 prev_body = "#bilibili\n#anime\n#webdesign\n#stream\n#ui"
-views = 23
+views = 24
 ids = [514]
 
 [[extra.related]]

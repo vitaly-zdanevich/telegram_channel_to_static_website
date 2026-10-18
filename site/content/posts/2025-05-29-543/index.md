@@ -8,6 +8,7 @@ days = ["2025-05-29"]
 tags = ["black_and_white", "webdesign"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/543?comment=0'>Reply on Telegram</a></p></section>"
 id = 543
 day = "2025-05-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/543"
@@ -18,7 +19,7 @@ next_body = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP on
 prev_id = 542
 prev_title = ""
 prev_body = "#git\nSource"
-views = 60
+views = 61
 ids = [543]
 
 [[extra.related]]

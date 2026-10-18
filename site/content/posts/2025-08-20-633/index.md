@@ -8,6 +8,7 @@ days = ["2025-08-20"]
 tags = ["music", "anime", "russian", "sugar"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/633?comment=0'>Reply on Telegram</a></p></section>"
 id = 633
 day = "2025-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/633"
@@ -17,7 +18,7 @@ next_body = "#dress\n#tshirt\n#git\n#github\n#porn\nSource"
 prev_id = 632
 prev_title = ""
 prev_body = "Как работает дата-центр Яндекса в Финляндии\nHeating of a city by #datacenter\n#yandex\n#video\n#heat\nSource"
-views = 41
+views = 42
 ids = [633]
 
 [[extra.related]]

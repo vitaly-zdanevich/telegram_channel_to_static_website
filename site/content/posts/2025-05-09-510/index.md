@@ -19,7 +19,7 @@ next_body = "#mpv\n#anime\n#readme"
 prev_id = 509
 prev_title = ""
 prev_body = "#health\n#science"
-views = 24
+views = 25
 ids = [510, 511]
 
 [[extra.related]]

@@ -19,7 +19,7 @@ next_body = "#film\n#jupiter\n#space"
 prev_id = 498
 prev_title = ""
 prev_body = ""
-views = 21
+views = 22
 ids = [499]
 
 [[extra.related]]

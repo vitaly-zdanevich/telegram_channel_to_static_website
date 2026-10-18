@@ -19,7 +19,7 @@ next_body = "#ussr"
 prev_id = 454
 prev_title = ""
 prev_body = "#music\n#afisha"
-views = 41
+views = 42
 ids = [455]
 
 [[extra.related]]

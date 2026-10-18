@@ -8,6 +8,7 @@ days = ["2025-06-07"]
 tags = ["music", "oxxxymiron"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/551?comment=0'>Reply on Telegram</a></p></section>"
 id = 551
 day = "2025-06-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/551"
@@ -17,7 +18,7 @@ next_body = "#arsenmarkaryan\n#health\n#medicine\n#psy\n#mantoux\n#mercury\nSour
 prev_id = 550
 prev_title = ""
 prev_body = "#music\n#languages mix\n#kraenkova: Slavic Blood\nSource"
-views = 50
+views = 51
 ids = [551]
 
 [[extra.related]]

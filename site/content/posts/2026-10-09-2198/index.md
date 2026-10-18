@@ -31,6 +31,11 @@ label = "#mem #matrix #pill #fantasy #game"
 date = "2026-08-09"
 
 [[extra.related]]
+path = "@/posts/2026-04-03-1568/index.md"
+label = "#ai I asked #gemini to port #primeworld #game from Windows to Li…"
+date = "2026-04-03"
+
+[[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
 date = "2026-02-25"
@@ -39,11 +44,6 @@ date = "2026-02-25"
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
 date = "2026-01-24"
-
-[[extra.related]]
-path = "@/posts/2025-01-28-343/index.md"
-label = "#ai"
-date = "2025-01-28"
 +++
 
 {{ tag(t="mem") }}  

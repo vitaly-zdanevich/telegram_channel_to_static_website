@@ -8,6 +8,7 @@ days = ["2025-05-23"]
 tags = ["book", "health", "zoloft", "christian"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/539?comment=0'>Reply on Telegram</a></p></section>"
 id = 539
 day = "2025-05-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/539"
@@ -18,7 +19,7 @@ next_body = "#wikipedia\n#bewiki\n#logo\nSource"
 prev_id = 538
 prev_title = ""
 prev_body = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb, и немного про dtMediaWiki для Darktable\n#video\n#my\n#commons\nРепозиторий этого моего нового скрипта\nМои скрипты, для Википедии и прочего\nМои темы\nМоя тема для Википедии\nМой тикет про segmentation fault\nМоя тема для Darktable\nПлагин для загрузки в Wikipedia Commons для Darktable"
-views = 55
+views = 56
 ids = [539]
 
 [[extra.related]]

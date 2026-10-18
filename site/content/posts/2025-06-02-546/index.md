@@ -8,6 +8,7 @@ days = ["2025-06-02"]
 tags = ["music"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/546?comment=0'>Reply on Telegram</a></p></section>"
 id = 546
 day = "2025-06-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/546"
@@ -18,7 +19,7 @@ next_body = "New small project: #python script for #gthumb (or other software, e
 prev_id = 545
 prev_title = ""
 prev_body = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP on Linux, through Lutris - PPSSPP\nDefeat on level 44\nConty 1.28\nLutris 0.5.19\nPPSSPP 1.14.4\n#game\n#strategy\n#psp\n#towerdefense\n#music"
-views = 54
+views = 55
 ids = [546]
 
 [[extra.related]]

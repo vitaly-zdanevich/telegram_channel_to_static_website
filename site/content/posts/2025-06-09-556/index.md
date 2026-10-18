@@ -7,6 +7,7 @@ days = ["2025-06-09"]
 tags = ["video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-639'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/556?comment=639'><time datetime='2025-08-17T22:01:50+00:00'>2025-08-17 22:01 +00:00</time></a></div><div class='comment-body'>#game\n#nfs\n#remaster</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/556?comment=0'>Reply on Telegram</a></p></section>"
 id = 556
 day = "2025-06-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/556"

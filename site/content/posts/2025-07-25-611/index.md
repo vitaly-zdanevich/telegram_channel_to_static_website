@@ -8,6 +8,7 @@ days = ["2025-07-25"]
 tags = ["music", "music_video", "tema_kresta", "travel", "elephants", "tinder", "year_2023"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/611?comment=0'>Reply on Telegram</a></p></section>"
 id = 611
 day = "2025-07-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/611"
@@ -17,7 +18,7 @@ next_body = "#retro\n#cd\n#vhs\nSource"
 prev_id = 610
 prev_title = ""
 prev_body = "Can you imagine #userstyle with so much configs tweaks for last.fm. · 3 stars · Languages: CSS 100% · 39 commits · 1 fork · last push 2026-10-11\")\n#lastfm"
-views = 119
+views = 120
 ids = [611]
 
 [[extra.related]]

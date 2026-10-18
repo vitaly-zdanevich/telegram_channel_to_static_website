@@ -7,6 +7,7 @@ description = "Looks like photos of every street"
 days = ["2025-05-14"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/531?comment=0'>Reply on Telegram</a></p></section>"
 id = 531
 day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/531"
@@ -17,7 +18,7 @@ next_body = "From globustut.by\n#photo\n#building\n#ad\n#history\n#babruysk"
 prev_id = 530
 prev_title = ""
 prev_body = "You can #upload to #commons through #darktable with this free plugin"
-views = 44
+views = 45
 ids = [531]
 +++
 

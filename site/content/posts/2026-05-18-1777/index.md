@@ -22,8 +22,13 @@ views = 35
 ids = [1777, 1778]
 
 [[extra.related]]
-path = "@/posts/2026-04-24-1679/index.md"
+path = "@/posts/2026-10-17-2237/index.md"
 label = "#log Still running my experiment about #porting #primeworld from…"
+date = "2026-10-17"
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1679/index.md"
+label = "#log Still running my experiment about #porting #primeworld #gam…"
 date = "2026-04-24"
 +++
 

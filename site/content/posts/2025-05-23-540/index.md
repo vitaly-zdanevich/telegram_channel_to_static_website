@@ -8,6 +8,7 @@ days = ["2025-05-23"]
 tags = ["wikipedia", "bewiki", "logo"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-541'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/540?comment=541'><time datetime='2025-05-23T19:59:47+00:00'>2025-05-23 19:59 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/540?comment=541'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/540?comment=0'>Reply on Telegram</a></p></section>"
 id = 540
 day = "2025-05-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/540"
@@ -18,7 +19,7 @@ next_body = "#iphone\n#apple\n#newton\n10 years gap.\nSource"
 prev_id = 539
 prev_title = ""
 prev_body = "#book\n#health\n#zoloft\n#christian"
-views = 58
+views = 59
 ids = [540]
 
 [[extra.related]]

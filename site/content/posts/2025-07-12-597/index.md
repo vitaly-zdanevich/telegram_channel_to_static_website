@@ -8,6 +8,7 @@ days = ["2025-07-12"]
 tags = ["music", "anime", "susumu_hirasawa"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/597?comment=0'>Reply on Telegram</a></p></section>"
 id = 597
 day = "2025-07-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/597"
@@ -17,7 +18,7 @@ next_body = "mkdir aaa/bbb/ccc\ncp f aaa/bbb/ccc\nCan be simpler with the instal
 prev_id = 596
 prev_title = ""
 prev_body = "My another #userscript: small toggle for #darkmode on #stackexchange\n// ==UserScript==\n// @name StackExchange dark mode work-in-progress\n// @version 2025july4\n// @description From\n// @author daniel.z.tg and Vitaly Zdanevich\n// @match\n// @match\n// @match\n// @match\n// @match\n// @match\n// @run-at document-body\n// ==/UserScript==\n// NOT working for all sites\ndocument.body.classList.add('theme-dark');"
-views = 44
+views = 45
 ids = [597]
 
 [[extra.related]]

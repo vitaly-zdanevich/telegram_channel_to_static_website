@@ -8,6 +8,7 @@ days = ["2025-06-04"]
 tags = ["userstyle", "openstreetmap"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/549?comment=0'>Reply on Telegram</a></p></section>"
 id = 549
 day = "2025-06-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/549"
@@ -18,7 +19,7 @@ next_body = "#music\n#languages mix\n#kraenkova: Slavic Blood\nSource"
 prev_id = 548
 prev_title = ""
 prev_body = "New small project: #python script for #gthumb (or other software, even standalone CLI) that read EXIF GPS and open #openstreetmap"
-views = 56
+views = 57
 ids = [549]
 
 [[extra.related]]

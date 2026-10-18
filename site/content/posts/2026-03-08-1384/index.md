@@ -18,7 +18,7 @@ next_body = "#castle\n#abandone\n#новогрудок\n#belarus\n#globustut\n#y
 prev_id = 1383
 prev_title = ""
 prev_body = "#music\n#blackdresses\nGAY UGLY AND HARD TO UNDERSTAND\n[Intro: Devi McCallion]\nUm, shoutout to Big Freedia\nNew Orleans Bounce music\nUhh, every Bitch Track ever made for\nNYC drag balls in the 90's before RuPaul made being gay uncool\n[Verse 1: Devi McCallion, Ada Rook]\nGay, ugly, and hard to understand\nI thought that people could handle it but they- but they can't\nBut they can't! Haha!\nI don't want to let you have it (have it)\nI don't want to let you have it (have it)\nI don't want to let you have it (have it)\nYou can't earn it\nThis shit is not on trend (On trend)\nThis shit is not on trend (On trend)\nThis shit is not pretend (Pretend)\nIt's a- (Ahh, ahh!)\nYeah, I'm just doing my shit (My shit)\nI'm just doing my shit (My shit)\nYou could never do it like this (Like this)"
-views = 13
+views = 14
 ids = [1384]
 
 [[extra.related]]

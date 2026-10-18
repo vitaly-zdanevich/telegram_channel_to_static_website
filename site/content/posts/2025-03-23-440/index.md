@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-03-23T23:08:23+00:00
-description = "music car Mick Gordon - BFG division from doom3 Source"
+description = "music car Она: включай любую музыку, я всё слушаю Mick Gordon - BFG division from doom3 Source"
 
 [taxonomies]
 days = ["2025-03-23"]
@@ -18,7 +18,7 @@ next_body = "On #Wikipedia, not all websites can be used as sources.\nEvery fact
 prev_id = 439
 prev_title = ""
 prev_body = "#korea\n#ai\n#aivideo\n#starwars\n#demonflyingfox\nSource\")"
-views = 42
+views = 43
 ids = [440]
 
 [[extra.related]]
@@ -49,6 +49,8 @@ date = "2026-08-09"
 
 {{ tag(t="music") }}  
 {{ tag(t="car") }}  
+
+> Она: включай любую музыку, я всё слушаю
 
 Mick Gordon - BFG division from {{ tag(t="doom3") }}  
 

@@ -8,6 +8,7 @@ days = ["2025-06-06"]
 tags = ["music", "languages", "kraenkova"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/550?comment=0'>Reply on Telegram</a></p></section>"
 id = 550
 day = "2025-06-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/550"
@@ -17,7 +18,7 @@ next_body = "#music\n#oxxxymiron\n[Интро: Mikolt Gyuricza]\nSino hora sanct
 prev_id = 549
 prev_title = ""
 prev_body = "Another #userstyle: for #openstreetmap, only a few CSS lines"
-views = 46
+views = 47
 ids = [550]
 
 [[extra.related]]

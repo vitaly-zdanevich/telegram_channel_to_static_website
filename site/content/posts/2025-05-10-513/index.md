@@ -19,7 +19,7 @@ next_body = "#image\n#archiving\nSource"
 prev_id = 512
 prev_title = ""
 prev_body = "#mpv\n#anime\n#readme"
-views = 23
+views = 24
 ids = [513]
 
 [[extra.related]]

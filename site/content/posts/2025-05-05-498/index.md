@@ -17,7 +17,7 @@ next_body = "#evernote image editor: beautiful"
 prev_id = 497
 prev_title = ""
 prev_body = "#compression\n#xz\n#zstd\n#lz4\n#zlib\n#meta\nSource"
-views = 23
+views = 24
 ids = [498]
 +++
 

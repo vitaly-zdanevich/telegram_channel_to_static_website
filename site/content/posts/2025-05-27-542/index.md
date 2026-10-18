@@ -8,6 +8,7 @@ days = ["2025-05-27"]
 tags = ["git"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/542?comment=0'>Reply on Telegram</a></p></section>"
 id = 542
 day = "2025-05-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/542"
@@ -18,7 +19,7 @@ next_body = "Wow #blackandwhite #webdesign is interesting"
 prev_id = 541
 prev_title = ""
 prev_body = "#iphone\n#apple\n#newton\n10 years gap.\nSource"
-views = 53
+views = 54
 ids = [542]
 
 [[extra.related]]

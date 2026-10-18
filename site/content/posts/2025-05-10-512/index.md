@@ -19,7 +19,7 @@ next_body = "#bilibili\n#anime\n#webdesign\n#stream\n#ui"
 prev_id = 510
 prev_title = ""
 prev_body = "#packagemanager\n#appimage\nFor example portable #git in a single file"
-views = 21
+views = 22
 ids = [512]
 
 [[extra.related]]

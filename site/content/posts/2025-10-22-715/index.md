@@ -42,7 +42,7 @@ date = "2025-09-01"
 
 [[extra.related]]
 path = "@/posts/2025-03-23-440/index.md"
-label = "#music #car Mick Gordon - BFG division from #doom3"
+label = "#music #car Она: включай любую музыку, я всё слушаю Mick Gordon…"
 date = "2025-03-23"
 +++
 

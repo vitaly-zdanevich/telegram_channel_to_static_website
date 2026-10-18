@@ -8,6 +8,7 @@ days = ["2025-05-19"]
 tags = ["webdesign", "yandex"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/537?comment=0'>Reply on Telegram</a></p></section>"
 id = 537
 day = "2025-05-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/537"
@@ -18,7 +19,7 @@ next_body = "Wikimedia Commons: загрузка через мой Python скр
 prev_id = 536
 prev_title = ""
 prev_body = "Our world\n#anon"
-views = 51
+views = 52
 ids = [537]
 
 [[extra.related]]

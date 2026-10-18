@@ -8,6 +8,7 @@ days = ["2025-05-13"]
 tags = ["games"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/527?comment=0'>Reply on Telegram</a></p></section>"
 id = 527
 day = "2025-05-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/527"
@@ -18,7 +19,7 @@ next_body = "#mount #archive (#zip, #rar and others) as read-only #fuse, love it
 prev_id = 526
 prev_title = ""
 prev_body = "#homm3\n#foss\n#vcmi"
-views = 36
+views = 37
 ids = [527]
 
 [[extra.related]]

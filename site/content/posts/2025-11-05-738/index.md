@@ -17,7 +17,7 @@ next_body = "#music\n#musicrussian\n#rap\n#raprussian\n#musichumor\n#нтр"
 prev_id = 737
 prev_title = ""
 prev_body = "#webdesign\n#webdesignblack"
-views = 28
+views = 29
 ids = [738]
 
 [[extra.related]]

@@ -19,7 +19,7 @@ next_body = "#ussr"
 prev_id = 453
 prev_title = ""
 prev_body = "#chip\nFrom"
-views = 38
+views = 39
 ids = [454]
 
 [[extra.related]]

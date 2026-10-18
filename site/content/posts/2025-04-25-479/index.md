@@ -18,7 +18,7 @@ next_body = "#primeworld\n#belarussian\nAdding Belarusian language to the game"
 prev_id = 478
 prev_title = ""
 prev_body = "Artwork for the podcast"
-views = 37
+views = 38
 ids = [479]
 
 [[extra.related]]
@@ -27,13 +27,18 @@ label = "#primeworld #belarussian Adding Belarusian language to the game"
 date = "2025-04-25"
 
 [[extra.related]]
-path = "@/posts/2026-04-24-1679/index.md"
+path = "@/posts/2026-10-17-2237/index.md"
 label = "#log Still running my experiment about #porting #primeworld from…"
+date = "2026-10-17"
+
+[[extra.related]]
+path = "@/posts/2026-04-24-1679/index.md"
+label = "#log Still running my experiment about #porting #primeworld #gam…"
 date = "2026-04-24"
 
 [[extra.related]]
 path = "@/posts/2026-04-03-1568/index.md"
-label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
+label = "#ai I asked #gemini to port #primeworld #game from Windows to Li…"
 date = "2026-04-03"
 +++
 

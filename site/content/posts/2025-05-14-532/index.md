@@ -8,6 +8,7 @@ days = ["2025-05-14"]
 tags = ["photo", "building", "ad", "history", "babruysk"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/532?comment=0'>Reply on Telegram</a></p></section>"
 id = 532
 day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/532"
@@ -18,7 +19,7 @@ next_body = "From globustut.by\n#photo\n#babruysk"
 prev_id = 531
 prev_title = ""
 prev_body = "Looks like photos of every street"
-views = 49
+views = 50
 ids = [532]
 
 [[extra.related]]

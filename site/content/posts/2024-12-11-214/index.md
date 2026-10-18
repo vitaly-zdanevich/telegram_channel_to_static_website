@@ -27,14 +27,14 @@ label = "My second #lutris yaml for #man2"
 date = "2024-12-14"
 
 [[extra.related]]
-path = "@/posts/2026-04-03-1568/index.md"
-label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
-date = "2026-04-03"
-
-[[extra.related]]
 path = "@/posts/2026-04-24-1678/index.md"
 label = "#armiesofexigo: #fallen 7: The First Seal: hard: victory #rts -…"
 date = "2026-04-24"
+
+[[extra.related]]
+path = "@/posts/2026-04-03-1568/index.md"
+label = "#ai I asked #gemini to port #primeworld #game from Windows to Li…"
+date = "2026-04-03"
 +++
 
 My first {{ tag(t="lutris") }} install script <https://lutris.net/games/armies-of-exigo/>

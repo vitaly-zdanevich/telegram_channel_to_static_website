@@ -8,6 +8,7 @@ days = ["2025-05-22"]
 tags = ["video", "my", "commons"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/538?comment=0'>Reply on Telegram</a></p></section>"
 id = 538
 day = "2025-05-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/538"
@@ -17,7 +18,7 @@ next_body = "#book\n#health\n#zoloft\n#christian"
 prev_id = 537
 prev_title = ""
 prev_body = "#webdesign\n#yandex"
-views = 46
+views = 47
 ids = [538]
 
 [[extra.related]]
@@ -64,7 +65,7 @@ date = "2026-02-05"
 
 <https://commons.wikimedia.org/wiki/Commons:Upload_tools>  
 
-Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13288 stars · Languages: C 87%, Lua 5%, C++ 3% · 47721 commits · 1474 forks · 651 open issues/PRs · GPL-3.0 · last push 2026-10-17")  
+Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13289 stars · Languages: C 87%, Lua 5%, C++ 3% · 47753 commits · 1477 forks · 655 open issues/PRs · GPL-3.0 · last push 2026-10-18")  
 
 Моя тема для Darktable <https://gitlab.com/vitaly-zdanevich-configs/darktable/-/blob/master/user.css>  
 

@@ -8,6 +8,7 @@ days = ["2025-05-15"]
 tags = ["anon"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/536?comment=0'>Reply on Telegram</a></p></section>"
 id = 536
 day = "2025-05-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/536"
@@ -18,7 +19,7 @@ next_body = "#webdesign\n#yandex"
 prev_id = 535
 prev_title = ""
 prev_body = ""
-views = 57
+views = 58
 ids = [536]
 +++
 

@@ -18,7 +18,7 @@ next_body = "#castle\n#abandone\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1372
 prev_title = ""
 prev_body = "#architecture\n#orange\n#columns\n#belarus\n#globustut\n#year2005\nSource26(%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE),%D1%81%D0%BD%D1%8F%D1%82%D0%BE29%D0%BC%D0%B0%D1%8F2005.jpg)"
-views = 13
+views = 14
 ids = [1373, 1374, 1375, 1376, 1377, 1378, 1379, 1380, 1381]
 
 [[extra.related]]

@@ -19,7 +19,7 @@ next_body = "#music\n#afisha"
 prev_id = 452
 prev_title = ""
 prev_body = "#games\n#history\n#cds\n#shop\nFrom"
-views = 37
+views = 38
 ids = [453]
 +++
 

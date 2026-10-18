@@ -8,6 +8,7 @@ days = ["2025-06-28"]
 tags = ["book", "wine"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/592?comment=0'>Reply on Telegram</a></p></section>"
 id = 592
 day = "2025-06-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/592"
@@ -43,7 +44,7 @@ date = "2025-05-23"
 
 [[extra.related]]
 path = "@/posts/2026-04-03-1568/index.md"
-label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
+label = "#ai I asked #gemini to port #primeworld #game from Windows to Li…"
 date = "2026-04-03"
 +++
 

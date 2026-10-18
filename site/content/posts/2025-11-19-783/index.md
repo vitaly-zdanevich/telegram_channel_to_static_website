@@ -17,7 +17,7 @@ next_body = "#punk\n#logo\n#music\n#korolishut\nSource"
 prev_id = 782
 prev_title = ""
 prev_body = "#ad\n#retro\n#nokia\nSource"
-views = 38
+views = 39
 ids = [783]
 
 [[extra.related]]

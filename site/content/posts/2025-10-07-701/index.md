@@ -17,7 +17,7 @@ next_body = "#reaction\n#classic\n#music\nSource"
 prev_id = 700
 prev_title = ""
 prev_body = "#chess\nSource"
-views = 33
+views = 34
 ids = [701]
 
 [[extra.related]]

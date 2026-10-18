@@ -18,8 +18,8 @@ next_title = ""
 next_body = "wow in #telegram we have a #crypto #wallet, and users can send money to their contacts, wow"
 prev_id = 440
 prev_title = ""
-prev_body = "#music\n#car\nMick Gordon - BFG division from #doom3\nSource"
-views = 34
+prev_body = "#music\n#car\nОна: включай любую музыку, я всё слушаю\nMick Gordon - BFG division from #doom3\nSource"
+views = 35
 ids = [441]
 +++
 

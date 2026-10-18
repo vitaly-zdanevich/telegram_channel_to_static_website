@@ -18,7 +18,7 @@ next_body = "#music\n#poppy\n#8bitlike\n[Chorus]\nP-O-P-P-Y, I'm Poppy\nP-O-P-P-
 prev_id = 1496
 prev_title = ""
 prev_body = "#webdesign\n#belarus\n#belarussian\nпра жывёл"
-views = 21
+views = 22
 ids = [1497, 1498]
 
 [[extra.related]]

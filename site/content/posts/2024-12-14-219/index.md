@@ -43,9 +43,9 @@ label = "#game #man2"
 date = "2025-01-15"
 
 [[extra.related]]
-path = "@/posts/2026-04-03-1568/index.md"
-label = "#ai I asked #gemini to port #primeworld from Windows to Linux, i…"
-date = "2026-04-03"
+path = "@/posts/2026-04-24-1678/index.md"
+label = "#armiesofexigo: #fallen 7: The First Seal: hard: victory #rts -…"
+date = "2026-04-24"
 +++
 
 My second {{ tag(t="lutris") }} yaml for {{ tag(t="man2") }} <https://lutris.net/games/massive-assault-network-2/>

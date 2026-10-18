@@ -8,6 +8,7 @@ days = ["2025-07-25"]
 tags = ["retro", "cd", "vhs", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/612?comment=0'>Reply on Telegram</a></p></section>"
 id = 612
 day = "2025-07-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/612"
@@ -17,7 +18,7 @@ next_body = "#arsenmarkaryan\n#hairs\nВ волосах первородная �
 prev_id = 611
 prev_title = ""
 prev_body = "#music\n#musicvideo\n#temakresta\n#travel\n#elephants\n#tinder\n#year2023\nЗолото рейна\nSource\")"
-views = 72
+views = 73
 ids = [612]
 
 [[extra.related]]

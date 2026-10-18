@@ -8,6 +8,7 @@ days = ["2025-05-13"]
 tags = ["homm3", "foss", "vcmi"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/526?comment=0'>Reply on Telegram</a></p></section>"
 id = 526
 day = "2025-05-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/526"
@@ -17,7 +18,7 @@ next_body = "Gold #games - because lovers recreate engines for the best one."
 prev_id = 525
 prev_title = ""
 prev_body = "#photo\n#history\n#face\n#medals"
-views = 35
+views = 36
 ids = [526]
 
 [[extra.related]]

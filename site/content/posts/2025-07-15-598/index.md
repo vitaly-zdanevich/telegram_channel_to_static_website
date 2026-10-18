@@ -7,6 +7,7 @@ description = "mkdir aaa/bbb/ccc cp f aaa/bbb/ccc Can be simpler with the instal
 days = ["2025-07-15"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/598?comment=0'>Reply on Telegram</a></p></section>"
 id = 598
 day = "2025-07-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/598"
@@ -16,7 +17,7 @@ next_body = "#ventoy is a dream - cp ISOs to USB and choose any to boot.\nAnd it
 prev_id = 597
 prev_title = ""
 prev_body = "#music\n#anime\n#susumuhirasawa"
-views = 48
+views = 49
 ids = [598]
 +++
 
