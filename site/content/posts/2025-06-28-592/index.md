@@ -19,7 +19,7 @@ next_body = "#dog\n#love\n#mmorpg\nSource"
 prev_id = 591
 prev_title = ""
 prev_body = "#git\n#gitgraph"
-views = 50
+views = 51
 ids = [592]
 
 [[extra.related]]

@@ -21,6 +21,11 @@ views = 23
 ids = [2036]
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2242/index.md"
+label = "#eso #spirit #life #death By bennettreloaded, source"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2026-07-29-2091/index.md"
 label = "#cat #death #fear #green #wash"
 date = "2026-07-29"
@@ -39,11 +44,6 @@ date = "2026-08-09"
 path = "@/posts/2025-10-22-716/index.md"
 label = "#medicine #death"
 date = "2025-10-22"
-
-[[extra.related]]
-path = "@/posts/2025-04-25-482/index.md"
-label = "#cat #psy"
-date = "2025-04-25"
 +++
 
 {{ tag(t="life") }}  

@@ -17,7 +17,7 @@ next_body = "#window\n#interrior\n#comfort\n#light\nBy fruitsnacks, source"
 prev_id = 2201
 prev_title = ""
 prev_body = "#golang\nWhat will be printed?\npackage main\nimport (\n\"fmt\"\n)\nfunc main() {\nfoo := 1\ndefer fmt.Println(foo)\nUp(&foo)\ndefer fmt.Println(foo)\n}\nfunc Up(bar int) {\nbar = bar + 1\n}\nAnswer:\n2\n1\nAnd now - wrapped #defer with a func:\npackage main\nimport (\n\"fmt\"\n)\nfunc main() {\nfoo := 1\ndefer func() {\nfmt.Println(foo)\n}()\nUp(&foo)\ndefer func() {\nfmt.Println(foo)\n}()\n}\nfunc Up(bar int) {\nbar = bar + 1\n}\nAnswer:\n2\n2"
-views = 4
+views = 5
 ids = [2202]
 +++
 

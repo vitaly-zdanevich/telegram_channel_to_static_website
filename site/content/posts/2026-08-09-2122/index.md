@@ -36,14 +36,14 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2240/index.md"
+label = "#mem #design #night By aerodynamicmeme, source"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2026-10-10-2204/index.md"
 label = "#webdesign #light #luminaire By andrew.plerdy, source"
 date = "2026-10-10"
-
-[[extra.related]]
-path = "@/posts/2026-10-08-2196/index.md"
-label = "#mem #music from #childhood By aimperiome, source"
-date = "2026-10-08"
 +++
 
 {{ tag(t="mem") }}  

@@ -22,6 +22,11 @@ views = 42
 ids = [632]
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2238/index.md"
+label = "#yandex #http429"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2025-05-19-537/index.md"
 label = "#webdesign #yandex"
 date = "2025-05-19"
@@ -40,11 +45,6 @@ date = "2026-02-03"
 path = "@/posts/2025-05-22-538/index.md"
 label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
 date = "2025-05-22"
-
-[[extra.related]]
-path = "@/posts/2025-01-11-245/index.md"
-label = "#war #video #warpath"
-date = "2025-01-11"
 +++
 
 **Как работает дата-центр Яндекса в Финляндии**  

@@ -12,10 +12,13 @@ id = 2237
 day = "2026-10-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2237"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2237-5377438916367034047-y-1280x737-167650.jpg"
+next_id = 2238
+next_title = ""
+next_body = "#yandex\n#http429"
 prev_id = 2236
 prev_title = ""
 prev_body = "#linux\n#screenshot\n#imitation\n#windows2000\n#internetexplorer\n#photoshot\n#photocraft\n#linuxorgru\nSource"
-views = 2
+views = 4
 ids = [2237]
 
 [[extra.related]]

@@ -26,23 +26,23 @@ label = "#death #jump #spirit"
 date = "2026-06-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2242/index.md"
+label = "#eso #spirit #life #death By bennettreloaded, source"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2026-06-30-1871/index.md"
 label = "#death #grandmother #drink #kitchen #spirit"
 date = "2026-06-30"
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2241/index.md"
+label = "#ai #spirit By bennettreloaded, source"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2026-08-09-2133/index.md"
 label = "#car #death"
-date = "2026-08-09"
-
-[[extra.related]]
-path = "@/posts/2025-10-22-716/index.md"
-label = "#medicine #death"
-date = "2025-10-22"
-
-[[extra.related]]
-path = "@/posts/2026-08-09-2136/index.md"
-label = "#death #car #sound"
 date = "2026-08-09"
 +++
 

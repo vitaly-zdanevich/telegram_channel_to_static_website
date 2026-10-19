@@ -8,6 +8,7 @@ days = ["2025-09-08"]
 tags = ["golang", "utf8"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-839'><div class='comment-meta'><span class='comment-author'>Mrtko</span> · <a href='https://t.me/vitaly_zdanevich_chan/657?comment=839'><time datetime='2025-12-17T01:38:25+00:00'>2025-12-17 01:38 +00:00</time></a></div><div class='comment-body'>О, рассчёт длины это прикольно! Захотелось попробовать</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/657?comment=0'>Reply on Telegram</a></p></section>"
 id = 657
 day = "2025-09-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/657"

@@ -8,6 +8,7 @@ days = ["2025-09-10"]
 tags = ["map", "isis"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-983'><div class='comment-meta'><span class='comment-author'>Илья</span> · <a href='https://t.me/vitaly_zdanevich_chan/669?comment=983'><time datetime='2026-01-12T22:40:20+00:00'>2026-01-12 22:40 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/669?comment=983'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/669?comment=0'>Reply on Telegram</a></p></section>"
 id = 669
 day = "2025-09-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/669"

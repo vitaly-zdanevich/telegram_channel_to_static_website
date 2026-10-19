@@ -41,9 +41,9 @@ label = "#life #esoteric #brodsky"
 date = "2025-03-16"
 
 [[extra.related]]
-path = "@/posts/2026-09-16-2148/index.md"
-label = "#ai #incarnation #scifi #vr By juliareznik87, source"
-date = "2026-09-16"
+path = "@/posts/2026-10-18-2242/index.md"
+label = "#eso #spirit #life #death By bennettreloaded, source"
+date = "2026-10-18"
 +++
 
 {{ tag(t="vr") }}  

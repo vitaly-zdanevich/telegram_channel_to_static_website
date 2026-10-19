@@ -18,7 +18,7 @@ next_body = "#money\n#museum\n#moneymuseum\n#ruble\n#ruble1\n#history\n#scan\nSo
 prev_id = 2229
 prev_title = ""
 prev_body = "#logo\n#heart\n#yandex\n#pain"
-views = 5
+views = 8
 ids = [2230, 2231, 2232]
 
 [[extra.related]]

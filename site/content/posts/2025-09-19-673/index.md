@@ -8,6 +8,7 @@ days = ["2025-09-19"]
 tags = ["mem", "mem_it", "kubernetes", "art", "mona_lisa", "sexy"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/673?comment=0'>Reply on Telegram</a></p></section>"
 id = 673
 day = "2025-09-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/673"
@@ -42,9 +43,9 @@ label = "#mem #games"
 date = "2024-11-30"
 
 [[extra.related]]
-path = "@/posts/2026-10-08-2196/index.md"
-label = "#mem #music from #childhood By aimperiome, source"
-date = "2026-10-08"
+path = "@/posts/2026-10-18-2240/index.md"
+label = "#mem #design #night By aerodynamicmeme, source"
+date = "2026-10-18"
 +++
 
 {{ tag(t="mem") }}  

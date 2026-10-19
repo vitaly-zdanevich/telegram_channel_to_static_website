@@ -32,6 +32,11 @@ label = "Love such comments #code"
 date = "2024-11-14"
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2238/index.md"
+label = "#yandex #http429"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2025-05-19-537/index.md"
 label = "#webdesign #yandex"
 date = "2025-05-19"
@@ -40,11 +45,6 @@ date = "2025-05-19"
 path = "@/posts/2025-05-12-522/index.md"
 label = "Wikipedia templates #code #wikipedia"
 date = "2025-05-12"
-
-[[extra.related]]
-path = "@/posts/2026-02-05-1094/index.md"
-label = "#firefox translation from #german to #russian"
-date = "2026-02-05"
 +++
 
 {{ tag(t="code") }}  

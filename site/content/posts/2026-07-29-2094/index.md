@@ -26,6 +26,11 @@ label = "#psychodel #walk Я опять вышел на прогулку"
 date = "2026-07-08"
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2239/index.md"
+label = "#web #3d #water #webgpu 61 kb. In Firefox in about:config I enab…"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2025-03-13-406/index.md"
 label = "#health #science #references #source #walk #chad"
 date = "2025-03-13"

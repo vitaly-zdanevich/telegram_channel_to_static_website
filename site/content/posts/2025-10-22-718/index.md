@@ -8,6 +8,7 @@ days = ["2025-10-22"]
 tags = ["webdesign", "game", "mmorpg", "ragnarok"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (2)</h2><ol class='discussion-comments'><li id='comment-2033173701-747'><div class='comment-meta'><span class='comment-author'>Ruslan aka DUDE</span> · <a href='https://t.me/vitaly_zdanevich_chan/718?comment=747'><time datetime='2025-10-25T19:58:28+00:00'>2025-10-25 19:58 +00:00</time></a></div><div class='comment-body'>Не фанат но очень интересно смотреть на образцы креативности старых сайтов</div></li><li id='comment-2033173701-748'><div class='comment-meta'><span class='comment-author'>Ruslan aka DUDE</span> · <a href='https://t.me/vitaly_zdanevich_chan/718?comment=748'><time datetime='2025-10-25T19:58:51+00:00'>2025-10-25 19:58 +00:00</time></a></div><div class='comment-body'>Целенаправленно интересовался\\интересуюсь этим</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/718?comment=0'>Reply on Telegram</a></p></section>"
 id = 718
 day = "2025-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/718"

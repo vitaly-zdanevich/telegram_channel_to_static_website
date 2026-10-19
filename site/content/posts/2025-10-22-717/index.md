@@ -8,6 +8,7 @@ days = ["2025-10-22"]
 tags = ["life", "deep", "silence", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/717?comment=0'>Reply on Telegram</a></p></section>"
 id = 717
 day = "2025-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/717"
@@ -29,6 +30,11 @@ date = "2026-09-15"
 path = "@/posts/2025-03-16-426/index.md"
 label = "#life #esoteric #brodsky"
 date = "2025-03-16"
+
+[[extra.related]]
+path = "@/posts/2026-10-18-2242/index.md"
+label = "#eso #spirit #life #death By bennettreloaded, source"
+date = "2026-10-18"
 
 [[extra.related]]
 path = "@/posts/2026-07-08-2036/index.md"

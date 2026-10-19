@@ -8,6 +8,7 @@ days = ["2025-11-04"]
 tags = ["my", "video", "game", "strategy", "homm3", "hota", "one_bad_day"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/734?comment=0'>Reply on Telegram</a></p></section>"
 id = 734
 day = "2025-11-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/734"
@@ -65,7 +66,7 @@ Horn of the Abyss 1.7.1 <https://h3hota.com/en/documentation>
 
 <https://www.wikidata.org/wiki/Q136699766>  
 
-Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1120 stars · Languages: Shell 98%, C 2% · 610 commits · 79 forks · 24 open issues/PRs · MIT · last push 2026-09-27")  
+Playing through Conty on Gentoo Linux no-multilib profile [https://github.com/Kron4ek/Conty](<https://github.com/Kron4ek/Conty> "Easy to use unprivileged Linux container packed into a single portable executable · 1121 stars · Languages: Shell 98%, C 2% · 610 commits · 79 forks · 24 open issues/PRs · MIT · last push 2026-09-27")  
 
 [YouTube](<https://www.youtube.com/watch?v=VTSeBbbH07Q> "Heroes of Might and Magic 3: map \"One Bad Day\": hard, 2 people VS AI, defeat")
 

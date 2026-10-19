@@ -19,7 +19,7 @@ next_body = "#anime\n#gpu\nSource"
 prev_id = 619
 prev_title = ""
 prev_body = "Returned to uploading of artifacts from moneymuseum.by, through my new web extension, and again - sometime I see the beauty\n#money\n#moneymuseum\nSource"
-views = 34
+views = 35
 ids = [620]
 
 [[extra.related]]

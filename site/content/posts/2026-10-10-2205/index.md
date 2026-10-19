@@ -17,7 +17,7 @@ next_body = "#ad\n#russia\n#cat\n#heat\nBy markmate88, source"
 prev_id = 2204
 prev_title = ""
 prev_body = "#webdesign\n#light\n#luminaire\nBy andrew.plerdy, source"
-views = 5
+views = 7
 ids = [2205]
 
 [[extra.related]]

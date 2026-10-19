@@ -8,6 +8,7 @@ days = ["2025-10-22"]
 tags = ["webdesign", "games", "rpg"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-746'><div class='comment-meta'><span class='comment-author'>Ruslan aka DUDE</span> · <a href='https://t.me/vitaly_zdanevich_chan/719?comment=746'><time datetime='2025-10-25T19:57:29+00:00'>2025-10-25 19:57 +00:00</time></a></div><div class='comment-body'>Кайф, раньше дизайн был лучше и проще</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/719?comment=0'>Reply on Telegram</a></p></section>"
 id = 719
 day = "2025-10-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/719"

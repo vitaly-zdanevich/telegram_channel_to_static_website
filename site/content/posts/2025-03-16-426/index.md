@@ -32,6 +32,11 @@ label = "#life #deep #silence Почему ты всё время молчишь
 date = "2025-10-22"
 
 [[extra.related]]
+path = "@/posts/2026-10-18-2242/index.md"
+label = "#eso #spirit #life #death By bennettreloaded, source"
+date = "2026-10-18"
+
+[[extra.related]]
 path = "@/posts/2026-07-08-2036/index.md"
 label = "#life #death #captcha #cat #usb"
 date = "2026-07-08"

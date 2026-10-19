@@ -19,6 +19,11 @@ prev_title = ""
 prev_body = "#drug\n#ayahuasca\n#lake\nBy allavolkogon"
 views = 43
 ids = [2111]
+
+[[extra.related]]
+path = "@/posts/2026-10-18-2242/index.md"
+label = "#eso #spirit #life #death By bennettreloaded, source"
+date = "2026-10-18"
 +++
 
 {{ tag(t="eso") }}  

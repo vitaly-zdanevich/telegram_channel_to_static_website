@@ -23961,6 +23961,24 @@
         "height": 737,
         "bytes": 167650
       }
+    },
+    {
+      "message_id": 2238,
+      "media_id": 5379690716180716770,
+      "declared_bytes": 41868,
+      "tag": "images-2000",
+      "asset": "telegram-image-2238-5379690716180716770-y-1280x719-41868.jpg",
+      "bytes": 41868,
+      "source": {
+        "kind": "photo",
+        "web_key": "5379690716180716770_1252556852_460004578"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 719,
+        "bytes": 41868
+      }
     }
   ]
 }

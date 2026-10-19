@@ -18,7 +18,7 @@ next_body = "#money\n#museum\n#moneymuseum\n#ruble\n#ruble5\n#history\n#scan\nSo
 prev_id = 2230
 prev_title = ""
 prev_body = "I spent a lot of time uploading from moneymuseum.by (you can open this website only from Belarus - also a good case about #preservation, right?) to #commons, and yesterday I tried #llm GPT-6-Astra - and it works good: categories, embedding to relevant Wikipedia articles, transcribation.\nYou are welcome to validate the metadata quality:"
-views = 4
+views = 7
 ids = [2233]
 
 [[extra.related]]

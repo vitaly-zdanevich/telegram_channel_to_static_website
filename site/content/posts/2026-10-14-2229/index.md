@@ -18,13 +18,18 @@ next_body = "I spent a lot of time uploading from moneymuseum.by (you can open t
 prev_id = 2228
 prev_title = ""
 prev_body = "#ad\n#health\n#hear\n#russian\n#buildboard\nВсе слышат - ты не слышишь, осмотр ЛОР врача.\nSource"
-views = 4
+views = 7
 ids = [2229]
 
 [[extra.related]]
 path = "@/posts/2025-12-17-802/index.md"
 label = "Love this #logo"
 date = "2025-12-17"
+
+[[extra.related]]
+path = "@/posts/2026-10-18-2238/index.md"
+label = "#yandex #http429"
+date = "2026-10-18"
 
 [[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
@@ -40,11 +45,6 @@ date = "2026-03-03"
 path = "@/posts/2025-11-10-757/index.md"
 label = "#design #logo #artlebedevSource"
 date = "2025-11-10"
-
-[[extra.related]]
-path = "@/posts/2025-05-19-537/index.md"
-label = "#webdesign #yandex"
-date = "2025-05-19"
 +++
 
 {{ tag(t="logo") }}  

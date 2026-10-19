@@ -8,6 +8,7 @@ days = ["2025-10-25"]
 tags = ["game", "god_of_war", "playstation", "compare", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/724?comment=0'>Reply on Telegram</a></p><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/725?comment=0'>Reply on Telegram</a></p></section>"
 id = 724
 day = "2025-10-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/724"
