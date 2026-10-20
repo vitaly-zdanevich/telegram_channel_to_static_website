@@ -18,7 +18,7 @@ next_body = "#house\n#river\n#belarus\n#globustut\nSource"
 prev_id = 1336
 prev_title = ""
 prev_body = "...one of my #bash aliases: to count files here:\nc() {\nls -1 | wc -l\n# count files here\nhistory -d \"$(history 1 | awk '{print $1}')\"\n# delete from history\n}"
-views = 5
+views = 6
 ids = [1337]
 
 [[extra.related]]

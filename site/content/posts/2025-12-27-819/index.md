@@ -8,6 +8,7 @@ days = ["2025-12-27"]
 tags = ["preservation", "wikimedia_commons", "pywikibot", "my", "python", "cli"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/819?comment=0'>Reply on Telegram</a></p></section>"
 id = 819
 day = "2025-12-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/819"
@@ -52,7 +53,7 @@ date = "2026-01-25"
 {{ tag(t="pywikibot") }}  
 {{ tag(t="my") }}  
 
-Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 778 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 21024 commits · 222 forks · MIT · last push 2026-10-19") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
+Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://github.com/wikimedia/pywikibot> "A Python library that interfaces with the MediaWiki API. This is a mirror from gerrit.wikimedia.org. Do not submit any patches here. See ht… · 778 stars · Languages: Python 100%, HTML 0%, Dockerfile 0% · 21027 commits · 223 forks · MIT · last push 2026-10-20") to make uploading to [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) from {{ tag(t="cli") }} simpler  
 
 <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 

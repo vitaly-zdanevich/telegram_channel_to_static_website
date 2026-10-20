@@ -22,7 +22,7 @@ ids = [2180]
 
 [[extra.related]]
 path = "@/posts/2025-10-06-698/index.md"
-label = "#hitler, #stalin, #trotsky, #freud & Franz Joseph All Lived With…"
+label = "#map #hitler, #stalin, #trotsky, #freud & Franz Joseph All Lived…"
 date = "2025-10-06"
 +++
 

@@ -17,7 +17,7 @@ next_body = "#resume\n#pony"
 prev_id = 1414
 prev_title = ""
 prev_body = "#webdesign\n#ping\n#anime\n#japan"
-views = 16
+views = 17
 ids = [1415]
 
 [[extra.related]]

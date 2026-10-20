@@ -8,6 +8,7 @@ days = ["2025-12-26"]
 tags = ["it", "relocation", "uzbekistan", "tajikistan", "afghanistan", "iran", "turkey", "azerbaijan", "armenia", "syria", "sakartvelo", "iraq", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/816?comment=0'>Reply on Telegram</a></p></section>"
 id = 816
 day = "2025-12-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/816"

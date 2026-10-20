@@ -18,7 +18,7 @@ next_body = "#abandone\n#belarus\n#Пелегринда\n#globustut\n#year2005\n
 prev_id = 1517
 prev_title = ""
 prev_body = "#abandone\n#architecture\n#stork\n#лойки\n#belarus\n#globustut\n#year2005\nSource"
-views = 16
+views = 17
 ids = [1521]
 
 [[extra.related]]

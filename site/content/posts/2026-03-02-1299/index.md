@@ -18,7 +18,7 @@ next_body = "Magic that I can say #codex to download all scan - and I get it, fo
 prev_id = 1298
 prev_title = ""
 prev_body = "#stone\n#grave\n#belarus\n#globustut\n#year2005\nSource"
-views = 16
+views = 17
 ids = [1299, 1300, 1301, 1302, 1303, 1304, 1305]
 
 [[extra.related]]

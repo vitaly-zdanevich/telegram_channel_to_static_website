@@ -18,8 +18,13 @@ next_body = "#wikipedia\n#wikimediacommons\nПишите авторам конт
 prev_id = 1501
 prev_title = ""
 prev_body = "Unreleased game Империя from #elementalgames, like #spacerangers\n#year2012"
-views = 21
+views = 22
 ids = [1502]
+
+[[extra.related]]
+path = "@/posts/2026-10-19-2246/index.md"
+label = "#map #europe #belarus #sakartvelo #russia #year1444 From"
+date = "2026-10-19"
 
 [[extra.related]]
 path = "@/posts/2025-09-01-654/index.md"
@@ -40,11 +45,6 @@ date = "2026-07-09"
 path = "@/posts/2025-06-21-586/index.md"
 label = "#map of articles and photos"
 date = "2025-06-21"
-
-[[extra.related]]
-path = "@/posts/2025-06-18-577/index.md"
-label = "#sakartvelo"
-date = "2025-06-18"
 +++
 
 {{ tag(t="map") }}  

@@ -18,7 +18,7 @@ next_body = "#bash\nI love #cli, scripts, and sometimes I want my script to acce
 prev_id = 1332
 prev_title = ""
 prev_body = "#logo\n#horse"
-views = 11
+views = 12
 ids = [1333]
 
 [[extra.related]]

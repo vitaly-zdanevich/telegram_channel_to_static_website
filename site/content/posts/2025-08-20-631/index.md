@@ -19,13 +19,18 @@ next_body = "Как работает дата-центр Яндекса в Фи�
 prev_id = 630
 prev_title = ""
 prev_body = "Кин-дза-дза Japanese disc\n#cover\n#design\n#scifi\n#bluray"
-views = 68
+views = 69
 ids = [631]
 
 [[extra.related]]
 path = "@/posts/2026-07-09-2045/index.md"
 label = "#map #googlemap #turkiye #sakartvelo"
 date = "2026-07-09"
+
+[[extra.related]]
+path = "@/posts/2026-10-19-2246/index.md"
+label = "#map #europe #belarus #sakartvelo #russia #year1444 From"
+date = "2026-10-19"
 
 [[extra.related]]
 path = "@/posts/2026-03-24-1502/index.md"
@@ -41,11 +46,6 @@ date = "2025-06-21"
 path = "@/posts/2025-06-18-577/index.md"
 label = "#sakartvelo"
 date = "2025-06-18"
-
-[[extra.related]]
-path = "@/posts/2026-05-04-1734/index.md"
-label = "#map #batumi Between the Black Sea and the mountains."
-date = "2026-05-04"
 +++
 
 Percent of people who think their culture is superior to others  

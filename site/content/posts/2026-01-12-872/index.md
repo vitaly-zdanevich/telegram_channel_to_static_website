@@ -18,7 +18,7 @@ next_body = "#map\nThe Earth, centred around #newzealand\nSource"
 prev_id = 871
 prev_title = ""
 prev_body = "Wow on #wikimediacommons we can write #sql, for example to get red categories with files, for a specific user"
-views = 17
+views = 18
 ids = [872]
 
 [[extra.related]]

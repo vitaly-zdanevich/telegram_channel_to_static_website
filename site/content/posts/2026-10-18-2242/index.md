@@ -11,10 +11,13 @@ tags = ["eso", "spirit", "life", "death", "video"]
 id = 2242
 day = "2026-10-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2242"
+next_id = 2243
+next_title = ""
+next_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online maps. Instant performance.\nStill alive website"
 prev_id = 2241
 prev_title = ""
 prev_body = "#ai\n#spirit\nBy bennettreloaded, source"
-views = 2
+views = 7
 ids = [2242]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#linux\n#france\n#news\nFrance to ditch Windows for Linux to reduce
 prev_id = 1624
 prev_title = ""
 prev_body = "#preview on #bilibili\n#anime"
-views = 21
+views = 22
 ids = [1629, 1630, 1631, 1632, 1633, 1634, 1635]
 
 [[extra.related]]

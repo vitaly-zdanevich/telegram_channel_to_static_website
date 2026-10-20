@@ -17,7 +17,7 @@ next_body = "#sounddesign\n#game\nBy lago, source"
 prev_id = 2206
 prev_title = ""
 prev_body = "#ad\n#russia\n#cat\n#heat\nBy markmate88, source"
-views = 27
+views = 45
 ids = [2207]
 
 [[extra.related]]

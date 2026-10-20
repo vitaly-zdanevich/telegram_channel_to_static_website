@@ -19,7 +19,7 @@ next_body = "#map\n#greenland\n#africa\n#mercator\nSource"
 prev_id = 665
 prev_title = ""
 prev_body = "#film\n#russia\n#nightwatch\n#zavulon"
-views = 32
+views = 33
 ids = [669]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch\n#
 prev_id = 631
 prev_title = ""
 prev_body = "Percent of people who think their culture is superior to others\n#map\n#culture\n#sakartvelo\nSource"
-views = 42
+views = 43
 ids = [632]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#russia\n#yeltsin\n#ketchup\n#tea\n#sugar\n#year1991\nSource"
 prev_id = 670
 prev_title = ""
 prev_body = "#map\n#greenland\n#africa\n#mercator\nSource"
-views = 35
+views = 36
 ids = [671]
 
 [[extra.related]]

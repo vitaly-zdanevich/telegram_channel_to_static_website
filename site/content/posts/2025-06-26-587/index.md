@@ -18,7 +18,7 @@ next_body = "#game\n#demo\n#warhammer\n#dawnofwar\n#2004\nIf you see \"Failed to
 prev_id = 586
 prev_title = ""
 prev_body = "#map of articles and photos"
-views = 44
+views = 45
 ids = [587]
 
 [[extra.related]]

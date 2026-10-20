@@ -18,7 +18,7 @@ next_body = "#village\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1270
 prev_title = ""
 prev_body = "#webdesign\n#cloud"
-views = 9
+views = 10
 ids = [1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279]
 
 [[extra.related]]

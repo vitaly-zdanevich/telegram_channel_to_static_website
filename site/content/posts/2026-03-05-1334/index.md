@@ -17,7 +17,7 @@ next_body = "I use #bash history Ctrl-R a lot, also with #fzf and other helpers,
 prev_id = 1333
 prev_title = ""
 prev_body = "#design\n#graph\n#wikimedia"
-views = 9
+views = 10
 ids = [1334]
 
 [[extra.related]]

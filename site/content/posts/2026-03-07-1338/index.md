@@ -18,7 +18,7 @@ next_body = "#art\n#shop\n#продукты\n#belarus\n#globustut\n#year2005\nSo
 prev_id = 1337
 prev_title = ""
 prev_body = "#nest\n#cementery\n#belarus\n#globustut\n#year2005\nSource"
-views = 5
+views = 6
 ids = [1338, 1339]
 
 [[extra.related]]

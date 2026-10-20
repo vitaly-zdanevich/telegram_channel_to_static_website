@@ -18,7 +18,7 @@ next_body = "#chatgpt\n#jews\n› Идиш был одним из государ
 prev_id = 1419
 prev_title = ""
 prev_body = "#architecture\n#belarus\n#globustut\n#year2005\nSource"
-views = 14
+views = 15
 ids = [1420]
 
 [[extra.related]]

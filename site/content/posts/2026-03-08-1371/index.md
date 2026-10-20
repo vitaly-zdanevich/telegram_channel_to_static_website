@@ -18,7 +18,7 @@ next_body = "#architecture\n#orange\n#columns\n#belarus\n#globustut\n#year2005\n
 prev_id = 1370
 prev_title = ""
 prev_body = "#webdesign\n#armenia"
-views = 9
+views = 10
 ids = [1371]
 
 [[extra.related]]

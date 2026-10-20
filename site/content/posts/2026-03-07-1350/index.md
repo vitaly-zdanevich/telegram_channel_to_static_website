@@ -18,7 +18,7 @@ next_body = "#webdesign\n#cawai"
 prev_id = 1349
 prev_title = ""
 prev_body = "#house\n#abandone\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE9%D0%BC%D0%B0%D1%8F2005.jpg)"
-views = 6
+views = 7
 ids = [1350, 1351, 1352, 1353, 1354, 1355, 1356]
 
 [[extra.related]]

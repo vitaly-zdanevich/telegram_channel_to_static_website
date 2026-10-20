@@ -18,7 +18,7 @@ next_body = "#arch\n#abandone\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1308
 prev_title = ""
 prev_body = "Wow in #kitty we can switch to a prev active tab:\nmap ctrl+alt+p gototab -1\n# Go to prev active tab"
-views = 6
+views = 7
 ids = [1309, 1310, 1311, 1312, 1313, 1314, 1315, 1316, 1317, 1318]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#village\n#black\n#abandone\n#Пелегринда\n#belarus\n#glob
 prev_id = 1521
 prev_title = ""
 prev_body = "#cementery\n#virginmary\n#blue\n#monument\n#belarus\n#ивашковцы\n#globustut\n#year2005\nSource"
-views = 16
+views = 17
 ids = [1522, 1523, 1524, 1525, 1526, 1527, 1528]
 
 [[extra.related]]

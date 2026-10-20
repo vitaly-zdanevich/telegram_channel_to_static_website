@@ -19,7 +19,7 @@ next_body = "#film\n#scifi\nLove, Death & Robots: fan mashup of s1ep7 Beyond the
 prev_id = 694
 prev_title = ""
 prev_body = "#psy\n#success\n#pain\n#cry\n#secret\nSource"
-views = 24
+views = 25
 ids = [695]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#webdesign\n#oldweb\n#anime"
 prev_id = 1350
 prev_title = ""
 prev_body = "#cementery\n#abandone\n#belarus\n#globustut\n#year2005\nSource,%D1%81%D0%BD%D1%8F%D1%82%D0%BE9%D0%BC%D0%B0%D1%8F2005.jpg)"
-views = 7
+views = 8
 ids = [1357]
 
 [[extra.related]]

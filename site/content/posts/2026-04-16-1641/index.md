@@ -17,7 +17,7 @@ next_body = "#webdesign\n#northkorea\n#radio\n#podcast"
 prev_id = 1640
 prev_title = ""
 prev_body = "#firefox\n#webextension: after #tab close - switch to the previously active tab"
-views = 25
+views = 26
 ids = [1641, 1643]
 
 [[extra.related]]

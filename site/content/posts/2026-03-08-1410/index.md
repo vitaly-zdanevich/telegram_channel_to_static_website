@@ -17,7 +17,7 @@ next_body = "Теперь в Яндекс Карты можно добавлят
 prev_id = 1409
 prev_title = ""
 prev_body = ""
-views = 14
+views = 15
 forwarded_from = "Ядрёный Феникс"
 ids = [1410]
 +++

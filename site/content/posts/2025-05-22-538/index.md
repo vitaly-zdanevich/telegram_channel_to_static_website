@@ -59,13 +59,13 @@ date = "2026-02-05"
 
 Мои темы <https://gitlab.com/vitaly-zdanevich-styles>  
 
-Моя тема для Википедии [https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum](<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum> "Dark and minimum userstyle for Wikipedia. You can set this style at the admin area of Wikipedia for your account - without any plugins for… · 16 stars · Languages: CSS 98%, JavaScript 2% · 670 commits · 7 forks · Apache-2.0 · last push 2026-07-17")  
+Моя тема для Википедии [https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum](<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum> "Dark and minimum userstyle for Wikipedia. You can set this style at the admin area of Wikipedia for your account - without any plugins for… · 16 stars · Languages: CSS 98%, JavaScript 2% · 671 commits · 7 forks · Apache-2.0 · last push 2026-10-19")  
 
 <https://gitlab.com/vitaly-zdanevich-configs/firefox-profile/-/blob/936cb964f3ee78bb91b0f5adbbe0a9be8cc3ff0c/chrome/userContent.css>  
 
 <https://commons.wikimedia.org/wiki/Commons:Upload_tools>  
 
-Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13295 stars · Languages: C 87%, Lua 5%, C++ 3% · 47780 commits · 1480 forks · 658 open issues/PRs · GPL-3.0 · last push 2026-10-19")  
+Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13299 stars · Languages: C 87%, Lua 5%, C++ 3% · 47784 commits · 1480 forks · 658 open issues/PRs · GPL-3.0 · last push 2026-10-20")  
 
 Моя тема для Darktable <https://gitlab.com/vitaly-zdanevich-configs/darktable/-/blob/master/user.css>  
 

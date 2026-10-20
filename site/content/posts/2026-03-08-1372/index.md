@@ -18,7 +18,7 @@ next_body = "#cementery\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1371
 prev_title = ""
 prev_body = "#button"
-views = 9
+views = 10
 ids = [1372]
 
 [[extra.related]]

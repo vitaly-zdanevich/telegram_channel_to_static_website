@@ -18,7 +18,7 @@ next_body = "Wow in #kitty we can switch to a prev active tab:\nmap ctrl+alt+p g
 prev_id = 1306
 prev_title = ""
 prev_body = "Magic that I can say #codex to download all scan - and I get it, for #commons"
-views = 17
+views = 18
 ids = [1307]
 
 [[extra.related]]

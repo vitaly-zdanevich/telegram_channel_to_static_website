@@ -18,7 +18,7 @@ next_body = "#stone\n#animal\n#museum\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1415
 prev_title = ""
 prev_body = "#webdesign\n#oldweb\n#animation"
-views = 17
+views = 18
 ids = [1416]
 +++
 

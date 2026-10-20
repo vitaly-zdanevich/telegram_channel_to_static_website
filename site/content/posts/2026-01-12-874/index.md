@@ -18,7 +18,7 @@ next_body = "#monument\n#belarus\n#globustut\n#airplane\nSource"
 prev_id = 873
 prev_title = ""
 prev_body = "#map\nThe Earth, centred around #newzealand\nSource"
-views = 15
+views = 16
 ids = [874]
 
 [[extra.related]]

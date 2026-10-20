@@ -8,6 +8,7 @@ days = ["2025-12-21"]
 tags = ["anime", "logo", "mascon", "design"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/805?comment=0'>Reply on Telegram</a></p></section>"
 id = 805
 day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/805"
@@ -52,6 +53,6 @@ date = "2024-04-27"
 {{ tag(t="mascon") }}  
 {{ tag(t="design") }}  
 
-[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 23526 stars · Languages: Go 85%, TypeScript 5%, Shell 4% · 959 commits · 776 forks · 392 open issues/PRs · MIT · last push 2026-10-19")
+[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 23559 stars · Languages: Go 85%, TypeScript 5%, Shell 4% · 959 commits · 778 forks · 393 open issues/PRs · MIT · last push 2026-10-19")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-805-5350719435192339794-y-841x838-73080.jpg") }}

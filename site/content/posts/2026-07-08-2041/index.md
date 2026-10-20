@@ -17,7 +17,7 @@ next_body = "#psychodel\n#walk\nЯ опять вышел на прогулку\n
 prev_id = 2040
 prev_title = ""
 prev_body = "#dream\n#house\n#river\nSource"
-views = 28
+views = 29
 ids = [2041]
 
 [[extra.related]]

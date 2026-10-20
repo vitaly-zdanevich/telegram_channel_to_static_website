@@ -17,7 +17,7 @@ next_body = "#map\n#russia\n#russianempire\n#blacksea\n#sakartvelo\n#year1910"
 prev_id = 1500
 prev_title = ""
 prev_body = "#math\n#university\n#russian\n#video\n#animals\n#романамихайлов\nГруппы и теория гомотопий (трэш трейлер)"
-views = 20
+views = 21
 ids = [1501]
 +++
 

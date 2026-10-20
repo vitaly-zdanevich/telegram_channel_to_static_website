@@ -18,7 +18,7 @@ next_body = "#architecture\n#orange\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1386
 prev_title = ""
 prev_body = "#building\n#pink\n#violet\n#belarus\n#globustut\n#year2005\nSource"
-views = 10
+views = 11
 ids = [1387]
 
 [[extra.related]]

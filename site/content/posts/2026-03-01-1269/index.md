@@ -18,7 +18,7 @@ next_body = "#webdesign\n#cloud"
 prev_id = 1268
 prev_title = ""
 prev_body = "Wow for the #kernel we have not only bright make menuconfig but black make nconfig"
-views = 10
+views = 11
 ids = [1269]
 
 [[extra.related]]

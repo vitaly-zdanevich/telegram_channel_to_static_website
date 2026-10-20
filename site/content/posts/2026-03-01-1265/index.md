@@ -18,7 +18,7 @@ next_body = "Wow for the #kernel we have not only bright make menuconfig but bla
 prev_id = 1263
 prev_title = ""
 prev_body = "#abandone\n#belarus\n#globustut\n#year2005\nSource"
-views = 10
+views = 11
 ids = [1265, 1266, 1267]
 
 [[extra.related]]

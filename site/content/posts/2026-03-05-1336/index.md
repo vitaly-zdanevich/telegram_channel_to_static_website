@@ -17,7 +17,7 @@ next_body = "#nest\n#cementery\n#belarus\n#globustut\n#year2005\nSource"
 prev_id = 1335
 prev_title = ""
 prev_body = "I use #bash history Ctrl-R a lot, also with #fzf and other helpers, and have bash aliases, that are just one letter, and I do not want to pollute my bash #history with it, so I found the solution - the bash function/alias that delete itself from the history, for example:\ns() {\ngit status\nhistory -d \"$(history 1 | awk '{print $1}')\"\n# delete from history\n}"
-views = 9
+views = 10
 ids = [1336]
 
 [[extra.related]]

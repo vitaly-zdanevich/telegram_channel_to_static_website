@@ -18,7 +18,7 @@ next_body = "#design\n#graph\n#wikimedia"
 prev_id = 1331
 prev_title = ""
 prev_body = "#logo\n#bird\n#red"
-views = 10
+views = 11
 ids = [1332]
 
 [[extra.related]]

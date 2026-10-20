@@ -23,6 +23,11 @@ views = 38
 ids = [654]
 
 [[extra.related]]
+path = "@/posts/2026-10-19-2246/index.md"
+label = "#map #europe #belarus #sakartvelo #russia #year1444 From"
+date = "2026-10-19"
+
+[[extra.related]]
 path = "@/posts/2026-03-24-1502/index.md"
 label = "#map #russia #russianempire #blacksea #sakartvelo #year1910"
 date = "2026-03-24"
@@ -41,11 +46,6 @@ date = "2026-05-04"
 path = "@/posts/2026-01-12-873/index.md"
 label = "#map The Earth, centred around #newzealand"
 date = "2026-01-12"
-
-[[extra.related]]
-path = "@/posts/2025-09-10-669/index.md"
-label = "#map #isis"
-date = "2025-09-10"
 +++
 
 {{ tag(t="russia") }}  

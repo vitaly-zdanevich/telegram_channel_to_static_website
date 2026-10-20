@@ -8,6 +8,7 @@ days = ["2026-01-01"]
 tags = ["wikipedia", "medals", "awards"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-875'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/836?comment=875'><time datetime='2026-01-01T15:15:18+00:00'>2026-01-01 15:15 +00:00</time></a></div><div class='comment-body'>Photo from <a href='https://www.youtube.com/watch?v=LiQ_Ve66bJ4' rel='nofollow ugc'>https://www.youtube.com/watch?v=LiQ_Ve66bJ4</a></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/836?comment=875'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/836?comment=0'>Reply on Telegram</a></p></section>"
 id = 836
 day = "2026-01-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/836"

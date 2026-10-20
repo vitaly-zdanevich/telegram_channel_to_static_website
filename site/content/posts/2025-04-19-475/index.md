@@ -57,7 +57,7 @@ Wikidata запыт - беларускія пісьменнікі памерлы
 
 [https://ru.wikinews.org/wiki/Заглавная\_страница](https://ru.wikinews.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0)  
 
-Мая чорная тэма [https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum](<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum> "Dark and minimum userstyle for Wikipedia. You can set this style at the admin area of Wikipedia for your account - without any plugins for… · 16 stars · Languages: CSS 98%, JavaScript 2% · 670 commits · 7 forks · Apache-2.0 · last push 2026-07-17")  
+Мая чорная тэма [https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum](<https://github.com/vitaly-zdanevich/wikipedia-userstyle-dark-minimum> "Dark and minimum userstyle for Wikipedia. You can set this style at the admin area of Wikipedia for your account - without any plugins for… · 16 stars · Languages: CSS 98%, JavaScript 2% · 671 commits · 7 forks · Apache-2.0 · last push 2026-10-19")  
 Userscripts <https://greasyfork.org/en/users/22859-vitaly-zdanevich>  
 
 [https://be.wiktionary.org/wiki/Галоўная\_старонка](https://be.wiktionary.org/wiki/%D0%93%D0%B0%D0%BB%D0%BE%D1%9E%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%BD%D0%BA%D0%B0)  

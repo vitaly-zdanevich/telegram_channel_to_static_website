@@ -8,6 +8,7 @@ days = ["2025-11-19"]
 tags = ["punk", "logo", "music", "korol_i_shut"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-817'><div class='comment-meta'><span class='comment-author'>Ленар</span> · <a href='https://t.me/vitaly_zdanevich_chan/784?comment=817'><time datetime='2025-11-19T08:38:46+00:00'>2025-11-19 08:38 +00:00</time></a></div><div class='comment-body'>будь как дома путник я ни в чем не откажу...</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/784?comment=0'>Reply on Telegram</a></p></section>"
 id = 784
 day = "2025-11-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/784"

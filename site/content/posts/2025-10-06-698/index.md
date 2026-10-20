@@ -1,11 +1,11 @@
 +++
 title = ""
 date = 2025-10-06T15:21:13+00:00
-description = "hitler, stalin, trotsky, freud & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1 Source Source B"
+description = "map hitler, stalin, trotsky, freud & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1 Source Source B"
 
 [taxonomies]
 days = ["2025-10-06"]
-tags = ["hitler", "stalin", "trotsky", "freud"]
+tags = ["map", "hitler", "stalin", "trotsky", "freud"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/698?comment=0'>Reply on Telegram</a></p></section>"
@@ -19,14 +19,36 @@ next_body = "#userscript for #youtube: audio only. Better for #cpu, #battery, #t
 prev_id = 697
 prev_title = ""
 prev_body = "#turkey\n#map\n#population\nSource"
-views = 22
+views = 23
 ids = [698]
+
+[[extra.related]]
+path = "@/posts/2025-06-21-586/index.md"
+label = "#map of articles and photos"
+date = "2025-06-21"
+
+[[extra.related]]
+path = "@/posts/2026-05-04-1734/index.md"
+label = "#map #batumi Between the Black Sea and the mountains."
+date = "2026-05-04"
+
+[[extra.related]]
+path = "@/posts/2026-01-12-873/index.md"
+label = "#map The Earth, centred around #newzealand"
+date = "2026-01-12"
+
+[[extra.related]]
+path = "@/posts/2025-09-10-669/index.md"
+label = "#map #isis"
+date = "2025-09-10"
 
 [[extra.related]]
 path = "@/posts/2026-10-07-2180/index.md"
 label = "#stalin #left #granddoughter By youngmasha, source"
 date = "2026-10-07"
 +++
+
+{{ tag(t="map") }}  
 
 > {{ tag(t="hitler") }}, {{ tag(t="stalin") }}, {{ tag(t="trotsky") }}, {{ tag(t="freud") }} & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1
 

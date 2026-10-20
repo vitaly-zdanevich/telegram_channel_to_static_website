@@ -15,11 +15,11 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/697"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-697-5409134134330260506.jpg"
 next_id = 698
 next_title = ""
-next_body = "#hitler, #stalin, #trotsky, #freud & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1\nSource\nSource B"
+next_body = "#map\n#hitler, #stalin, #trotsky, #freud & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1\nSource\nSource B"
 prev_id = 696
 prev_title = ""
 prev_body = "#film\n#scifi\nLove, Death & Robots: fan mashup of s1ep7 Beyond the Aquila Rift\nSource ❤️☠️🤖\")"
-views = 24
+views = 25
 ids = [697]
 
 [[extra.related]]

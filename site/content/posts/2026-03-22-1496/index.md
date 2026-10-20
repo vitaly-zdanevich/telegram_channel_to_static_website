@@ -18,7 +18,7 @@ next_body = "#webdesign\n#bag\n#girl\n#pain\n#thorns\n#poppy\n#disagree"
 prev_id = 1494
 prev_title = ""
 prev_body = "#steam: almost 25% is on #linux?"
-views = 21
+views = 22
 ids = [1496]
 
 [[extra.related]]

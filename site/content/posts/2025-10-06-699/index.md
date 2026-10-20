@@ -17,8 +17,8 @@ next_title = ""
 next_body = "#chess\nSource"
 prev_id = 698
 prev_title = ""
-prev_body = "#hitler, #stalin, #trotsky, #freud & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1\nSource\nSource B"
-views = 24
+prev_body = "#map\n#hitler, #stalin, #trotsky, #freud & Franz Joseph All Lived Within A Couple Of Miles Of Each Other On The Eve Of WW1\nSource\nSource B"
+views = 25
 ids = [699]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "Кто-то сделал полноценный 3D-симулято
 prev_id = 1392
 prev_title = ""
 prev_body = "#webdesign\n#oldweb"
-views = 11
+views = 12
 ids = [1393]
 
 [[extra.related]]

@@ -8,6 +8,7 @@ days = ["2025-11-12"]
 tags = ["webdesign", "webdesign_old"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-803'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/772?comment=803'><time datetime='2025-11-12T04:37:58+00:00'>2025-11-12 04:37 +00:00</time></a></div><div class='comment-body'><a href='https://web.archive.org/web/20060613035813/http://www.gamebiz.com.au/review853.html' rel='nofollow ugc'>https://web.archive.org/web/20060613035813/http://www.gamebiz.com.au/review853.html</a></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/772?comment=803'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/772?comment=0'>Reply on Telegram</a></p></section>"
 id = 772
 day = "2025-11-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/772"

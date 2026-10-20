@@ -18,7 +18,7 @@ next_body = "#wikipedia\n#bewiki\n#betarask\nI was not active here."
 prev_id = 872
 prev_title = ""
 prev_body = "Wow #wikipedia semi-automatic editing by a #python script"
-views = 25
+views = 26
 ids = [873]
 
 [[extra.related]]

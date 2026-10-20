@@ -18,7 +18,7 @@ next_body = "#linux\n#screenshot\n#imitation\n#windows2000\n#internetexplorer\n#
 prev_id = 2234
 prev_title = ""
 prev_body = "#money\n#museum\n#moneymuseum\n#ruble\n#ruble5\n#history\n#scan\nSource"
-views = 8
+views = 11
 ids = [2235]
 
 [[extra.related]]

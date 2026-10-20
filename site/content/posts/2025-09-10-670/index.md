@@ -19,7 +19,7 @@ next_body = "#video\n#film\n#nightwatch\n#zavulon\nSource"
 prev_id = 669
 prev_title = ""
 prev_body = "#map\n#isis\nSource"
-views = 47
+views = 48
 ids = [670]
 
 [[extra.related]]

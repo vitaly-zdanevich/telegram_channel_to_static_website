@@ -18,7 +18,7 @@ next_body = "#turkey\n#map\n#population\nSource"
 prev_id = 695
 prev_title = ""
 prev_body = "#journal\nAfter traveling through multiple countries, I feel that I prefer video games, books, YouTube.\nSome people love to travel so much..."
-views = 26
+views = 27
 ids = [696]
 
 [[extra.related]]

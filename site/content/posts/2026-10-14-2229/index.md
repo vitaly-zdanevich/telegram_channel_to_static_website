@@ -18,7 +18,7 @@ next_body = "I spent a lot of time uploading from moneymuseum.by (you can open t
 prev_id = 2228
 prev_title = ""
 prev_body = "#ad\n#health\n#hear\n#russian\n#buildboard\nВсе слышат - ты не слышишь, осмотр ЛОР врача.\nSource"
-views = 7
+views = 9
 ids = [2229]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#webdesign\n#oldweb\n#anime"
 prev_id = 1359
 prev_title = ""
 prev_body = "#webdesign\n#oldweb\n#anime"
-views = 5
+views = 6
 ids = [1360]
 
 [[extra.related]]
