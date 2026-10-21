@@ -22,6 +22,11 @@ views = 41
 ids = [784]
 
 [[extra.related]]
+path = "@/posts/2026-10-20-2251/index.md"
+label = "#logo looks like #ai #music"
+date = "2026-10-20"
+
+[[extra.related]]
 path = "@/posts/2025-08-30-647/index.md"
 label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
 date = "2025-08-30"
@@ -40,11 +45,6 @@ date = "2025-12-17"
 path = "@/posts/2025-06-16-574/index.md"
 label = "#korolishut"
 date = "2025-06-16"
-
-[[extra.related]]
-path = "@/posts/2025-06-02-546/index.md"
-label = "PromoDJ #music genres"
-date = "2025-06-02"
 +++
 
 {{ tag(t="punk") }}  

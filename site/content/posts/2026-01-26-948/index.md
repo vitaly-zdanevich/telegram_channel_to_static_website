@@ -8,6 +8,7 @@ days = ["2026-01-26"]
 tags = ["css", "evernote", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1166'><div class='comment-meta'><span class='comment-author'>Alexandr Zeinalov</span> · <a href='https://t.me/vitaly_zdanevich_chan/948?comment=1166'><time datetime='2026-01-26T21:53:20+00:00'>2026-01-26 21:53 +00:00</time></a></div><div class='comment-body'>color: light<s>green</s>blue</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/948?comment=0'>Reply on Telegram</a></p></section>"
 id = 948
 day = "2026-01-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/948"

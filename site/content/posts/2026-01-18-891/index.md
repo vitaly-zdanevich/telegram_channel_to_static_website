@@ -8,6 +8,7 @@ days = ["2026-01-18"]
 tags = ["belarus", "population", "village"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1001'><div class='comment-meta'><span class='comment-author'>Alexandr Zeinalov</span> · <a href='https://t.me/vitaly_zdanevich_chan/891?comment=1001'><time datetime='2026-01-18T01:44:16+00:00'>2026-01-18 01:44 +00:00</time></a></div><div class='comment-body'>Это ещё неплохо. В России море деревень, где 1 житель числится - и после его смерти/переезда деревню просто упраздняют...</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/891?comment=0'>Reply on Telegram</a></p></section>"
 id = 891
 day = "2026-01-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/891"

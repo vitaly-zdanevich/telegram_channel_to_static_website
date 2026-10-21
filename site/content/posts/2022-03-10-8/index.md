@@ -15,7 +15,7 @@ next_title = ""
 next_body = "С"
 prev_id = 7
 prev_title = ""
-prev_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
+prev_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nis a digital library of academic journals, books, and primary sources founded in 1994. Originally containing digitized back issues of academic journals, it expanded to encompass books and other primary sources as well as current issues of journals in t…\")\nwas a proposed United States congressional bill to expand the ability of U.S. law enforcement to combat online copyright infringement and online trafficking in counterfeit goods. Introduced on October 26, 2011, by Representative Lamar Smith (R–TX), provisions inc…\")\nis a protocol, hypermedia and file sharing peer-to-peer network for sharing data using a distributed hash table to store provider information. By using content addressing, IPFS uniquely identifies each file in a global…"
 views = 56
 ids = [8]
 +++

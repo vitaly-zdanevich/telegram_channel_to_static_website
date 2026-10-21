@@ -22,6 +22,11 @@ views = 30
 ids = [419]
 
 [[extra.related]]
+path = "@/posts/2026-10-20-2251/index.md"
+label = "#logo looks like #ai #music"
+date = "2026-10-20"
+
+[[extra.related]]
 path = "@/posts/2025-03-16-420/index.md"
 label = "#music #cats #meme"
 date = "2025-03-16"
@@ -40,11 +45,6 @@ date = "2026-01-24"
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
 date = "2025-06-02"
-
-[[extra.related]]
-path = "@/posts/2025-05-11-518/index.md"
-label = "The life was quiet all around A cute little island Nice and non-…"
-date = "2025-05-11"
 +++
 
 {{ tag(t="music") }}  

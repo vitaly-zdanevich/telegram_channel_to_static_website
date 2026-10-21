@@ -12,10 +12,13 @@ id = 2246
 day = "2026-10-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2246"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2246-5381841854845888490-y-1058x1280-438329.jpg"
+next_id = 2251
+next_title = ""
+next_body = "#logo looks like #ai\n#music"
 prev_id = 2243
 prev_title = ""
 prev_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online maps. Instant performance.\nStill alive website"
-views = 4
+views = 6
 ids = [2246, 2247, 2248, 2249, 2250]
 
 [[extra.related]]

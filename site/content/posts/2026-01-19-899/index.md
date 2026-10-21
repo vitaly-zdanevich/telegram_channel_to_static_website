@@ -8,6 +8,7 @@ days = ["2026-01-19"]
 tags = ["belarus", "architecture", "globustut", "year2004"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1010'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/899?comment=1010'><time datetime='2026-01-19T21:20:47+00:00'>2026-01-19 21:20 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/899?comment=1010'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/899?comment=0'>Reply on Telegram</a></p></section>"
 id = 899
 day = "2026-01-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/899"

@@ -8,6 +8,7 @@ days = ["2026-01-25"]
 tags = ["aws", "aws_lambda"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1161'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/944?comment=1161'><time datetime='2026-01-25T22:11:15+00:00'>2026-01-25 22:11 +00:00</time></a></div><div class='comment-body'><a href='https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html' rel='nofollow ugc'>https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html</a></div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/944?comment=0'>Reply on Telegram</a></p></section>"
 id = 944
 day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/944"

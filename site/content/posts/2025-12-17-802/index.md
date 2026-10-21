@@ -43,9 +43,9 @@ label = "#gentoo #logo"
 date = "2025-03-15"
 
 [[extra.related]]
-path = "@/posts/2026-06-10-1817/index.md"
-label = "#logo #progy #github"
-date = "2026-06-10"
+path = "@/posts/2026-10-20-2251/index.md"
+label = "#logo looks like #ai #music"
+date = "2026-10-20"
 +++
 
 Love this {{ tag(t="logo") }}  
