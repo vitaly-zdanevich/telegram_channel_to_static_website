@@ -19,7 +19,7 @@ next_body = "#aws\n#cpu\n#memory\n#ram\nFrom"
 prev_id = 939
 prev_title = ""
 prev_body = "#aws CTO Werner Vogels\nMentioned:\nFrom"
-views = 8
+views = 9
 ids = [941, 942]
 
 [[extra.related]]

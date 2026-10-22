@@ -18,7 +18,7 @@ next_body = "#yandex\n#http429"
 prev_id = 2236
 prev_title = ""
 prev_body = "#linux\n#screenshot\n#imitation\n#windows2000\n#internetexplorer\n#photoshot\n#photocraft\n#linuxorgru\nSource"
-views = 8
+views = 9
 ids = [2237]
 
 [[extra.related]]

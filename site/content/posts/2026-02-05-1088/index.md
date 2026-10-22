@@ -8,6 +8,7 @@ days = ["2026-02-05"]
 tags = ["6февраля2026", "без_оплаты"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1088?comment=0'>Reply on Telegram</a></p></section>"
 id = 1088
 day = "2026-02-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1088"

@@ -8,6 +8,7 @@ days = ["2026-02-28"]
 tags = ["grave", "abandone", "belarus", "globustut", "year_2005"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1539'><div class='comment-meta'><span class='comment-author'>Veselin Rumancev</span> · <a href='https://t.me/vitaly_zdanevich_chan/1212?comment=1539'><time datetime='2026-03-01T12:59:00+00:00'>2026-03-01 12:59 +00:00</time></a></div><div class='comment-body'>Судя по фотографиям, это военное кладбище, здесь похоронены солдаты, погибшие в этих местах в 1914-1918 годах...</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1212?comment=0'>Reply on Telegram</a></p></section>"
 id = 1212
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1212"

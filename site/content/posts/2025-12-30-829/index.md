@@ -19,7 +19,7 @@ next_body = "#solarsystem\n#planets\n#year1872\nPage 18"
 prev_id = 828
 prev_title = ""
 prev_body = "#preservation\n#library\n#books\nPage 68"
-views = 27
+views = 28
 ids = [829]
 +++
 

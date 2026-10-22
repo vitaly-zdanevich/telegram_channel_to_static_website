@@ -8,6 +8,7 @@ days = ["2026-02-10"]
 tags = ["bash", "cd"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (3)</h2><ol class='discussion-comments'><li id='comment-2033173701-1341'><div class='comment-meta'><span class='comment-author'>Mrtko</span> · <a href='https://t.me/vitaly_zdanevich_chan/1103?comment=1341'><time datetime='2026-02-10T19:00:47+00:00'>2026-02-10 19:00 +00:00</time></a></div><div class='comment-body'>What&#39;s a use case?</div></li><li id='comment-2033173701-1342'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1103?comment=1342'><time datetime='2026-02-10T19:31:11+00:00'>2026-02-10 19:31 +00:00</time></a></div><div class='comment-body'>To simplify\n\n<pre>cd ..\nls -l\n&lt;thinking looking for the next folder name&gt;\ncd &lt;that next folder name&gt;</pre></div></li><li id='comment-2033173701-1344'><div class='comment-meta'><span class='comment-author'>Mrtko</span> · <a href='https://t.me/vitaly_zdanevich_chan/1103?comment=1344'><time datetime='2026-02-10T20:02:51+00:00'>2026-02-10 20:02 +00:00</time></a></div><div class='comment-body'>I got the flow but didn&#39;t figure out what one can use it for. I&#39;m curious because Bash aliases are one of my favorite tools</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1103?comment=0'>Reply on Telegram</a></p></section>"
 id = 1103
 day = "2026-02-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1103"

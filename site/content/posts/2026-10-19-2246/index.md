@@ -18,7 +18,7 @@ next_body = "#logo looks like #ai\n#music"
 prev_id = 2243
 prev_title = ""
 prev_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online maps. Instant performance.\nStill alive website"
-views = 6
+views = 7
 ids = [2246, 2247, 2248, 2249, 2250]
 
 [[extra.related]]

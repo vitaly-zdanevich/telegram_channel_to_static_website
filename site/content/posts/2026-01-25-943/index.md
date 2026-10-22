@@ -19,7 +19,7 @@ next_body = "#aws\n#awslambda\nFrom"
 prev_id = 941
 prev_title = ""
 prev_body = "#aws custom #cpu: dropped the lid (#scalping) for the better #cooling"
-views = 10
+views = 11
 ids = [943]
 
 [[extra.related]]

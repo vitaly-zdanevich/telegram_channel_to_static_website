@@ -18,7 +18,7 @@ next_body = "#map\n#europe\n#belarus\n#sakartvelo\n#russia\n#year1444\nFrom"
 prev_id = 2242
 prev_title = ""
 prev_body = "#eso\n#spirit\n#life\n#death\nBy bennettreloaded, source"
-views = 6
+views = 7
 ids = [2243, 2244, 2245]
 
 [[extra.related]]

@@ -8,6 +8,7 @@ days = ["2026-02-02"]
 tags = ["webdesign", "windows95"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1312'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1075?comment=1312'><time datetime='2026-02-03T04:13:01+00:00'>2026-02-03 04:13 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1075?comment=1312'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1075?comment=0'>Reply on Telegram</a></p></section>"
 id = 1075
 day = "2026-02-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1075"

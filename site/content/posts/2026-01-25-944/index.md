@@ -19,7 +19,7 @@ next_body = "#aws\n#silicon\n#graviton\nTRN3 compute sled\nFrom"
 prev_id = 943
 prev_title = ""
 prev_body = "#aws\n#cpu\n#memory\n#ram\nFrom"
-views = 11
+views = 12
 ids = [944]
 
 [[extra.related]]

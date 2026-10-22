@@ -19,7 +19,7 @@ next_body = "#microsoft\n#microsoftword\n#session"
 prev_id = 827
 prev_title = ""
 prev_body = "My #ram price is going up"
-views = 29
+views = 30
 ids = [828]
 
 [[extra.related]]

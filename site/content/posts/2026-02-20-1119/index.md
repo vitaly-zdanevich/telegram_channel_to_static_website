@@ -8,6 +8,7 @@ days = ["2026-02-20"]
 tags = ["bash", "history", "mcfly"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1119?comment=0'>Reply on Telegram</a></p></section>"
 id = 1119
 day = "2026-02-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1119"
@@ -52,8 +53,8 @@ date = "2026-03-05"
 
 {{ tag(t="mcfly") }}: ctrl-r replacement with "suggestions are prioritized in real time with a small neural network."  
 
-Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7810 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 203 forks · 136 open issues/PRs · MIT · last push 2026-09-01") for it.  
+Did a [color scheme](<https://github.com/cantino/mcfly/issues/479#issuecomment-3936556224> "Fly through your shell history. Great Scott! · 7811 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 203 forks · 136 open issues/PRs · MIT · last push 2026-09-01") for it.  
 
-[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7810 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 203 forks · 136 open issues/PRs · MIT · last push 2026-09-01")
+[https://github.com/cantino/mcfly](<https://github.com/cantino/mcfly> "Fly through your shell history. Great Scott! · 7811 stars · Languages: Rust 88%, Shell 10%, PowerShell 2% · 739 commits · 203 forks · 136 open issues/PRs · MIT · last push 2026-09-01")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1119-5242389218842057393.jpg") }}

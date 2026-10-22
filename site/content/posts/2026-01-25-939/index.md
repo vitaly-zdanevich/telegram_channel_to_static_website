@@ -18,7 +18,7 @@ next_body = "#aws custom #cpu: dropped the lid (#scalping) for the better #cooli
 prev_id = 938
 prev_title = ""
 prev_body = "Top 1% by #python, hm, not sure why"
-views = 8
+views = 9
 ids = [939]
 
 [[extra.related]]

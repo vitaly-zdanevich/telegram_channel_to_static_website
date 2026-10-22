@@ -19,7 +19,7 @@ next_body = "#preservation\n#library\n#books\nPage 68"
 prev_id = 826
 prev_title = ""
 prev_body = "#design\n#preservation\n#year1885"
-views = 33
+views = 34
 ids = [827]
 
 [[extra.related]]

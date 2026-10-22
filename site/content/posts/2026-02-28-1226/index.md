@@ -8,6 +8,7 @@ days = ["2026-02-28"]
 tags = ["church", "abandone", "belarus", "globustut", "year_2005"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (2)</h2><ol class='discussion-comments'><li id='comment-2033173701-1502'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1226?comment=1502'><time datetime='2026-02-28T01:48:33+00:00'>2026-02-28 01:48 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1226?comment=1502'>Attachment (not archived)</a></p></li><li id='comment-2033173701-1503'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1226?comment=1503'><time datetime='2026-02-28T01:48:33+00:00'>2026-02-28 01:48 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1226?comment=1503'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1226?comment=0'>Reply on Telegram</a></p></section>"
 id = 1226
 day = "2026-02-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1226"

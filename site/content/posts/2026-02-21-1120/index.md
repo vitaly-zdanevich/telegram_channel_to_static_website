@@ -8,6 +8,7 @@ days = ["2026-02-21"]
 tags = ["ai", "codex", "love"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1120?comment=0'>Reply on Telegram</a></p></section>"
 id = 1120
 day = "2026-02-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1120"
@@ -50,6 +51,6 @@ date = "2026-01-24"
 {{ tag(t="ai") }}  
 {{ tag(t="codex") }}  
 
-{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 130247 stars · Languages: Rust 97%, Python 2%, Starlark 0% · 12458 commits · 20530 forks · 23899 open issues/PRs · Apache-2.0 · last push 2026-10-21"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
+{{ tag(t="love") }} [Codex](<https://github.com/openai/codex> "Lightweight coding agent that runs in your terminal · 130411 stars · Languages: Rust 97%, Python 2%, Starlark 0% · 12509 commits · 20567 forks · 24105 open issues/PRs · Apache-2.0 · last push 2026-10-22"), using it almost every day, recently solved a few long lasting technical problems thanks to him.
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1120-5244641018655740008.jpg") }}
