@@ -5,7 +5,7 @@ description = "starwars village татуиново Source"
 
 [taxonomies]
 days = ["2025-12-26"]
-tags = ["star_wars", "village", "татуиново"]
+tags = ["star_wars", "village", "татуиново", "video"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/815?comment=0'>Reply on Telegram</a></p></section>"
@@ -53,4 +53,6 @@ date = "2026-03-01"
 
 [Source](https://www.youtube.com/shorts/kWijGll8luM)
 
-{{ youtube(id="kWijGll8luM") }}
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/815-01.mp4") }}
+
+{{ tag(t="video") }}
