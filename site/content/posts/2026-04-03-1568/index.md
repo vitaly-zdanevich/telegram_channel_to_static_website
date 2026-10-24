@@ -8,6 +8,7 @@ days = ["2026-04-03"]
 tags = ["ai", "gemini", "prime_world", "game", "wine", "lutris"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1568?comment=0'>Reply on Telegram</a></p></section>"
 id = 1568
 day = "2026-04-03"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1568"
@@ -51,7 +52,7 @@ date = "2026-01-24"
 
 I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} {{ tag(t="game") }} from Windows to Linux, interesting if that possible...  
 
-[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 8 stars · Languages: C++ 33%, C# 21%, Python 16% · 1674 commits · 5 forks · 1 open issues/PRs · last push 2026-10-22")  
+[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 9 stars · Languages: C++ 33%, C# 21%, Python 16% · 1674 commits · 5 forks · 1 open issues/PRs · last push 2026-10-24")  
 
 We tried {{ tag(t="wine") }} of course - but some problems with {{ tag(t="lutris") }} - because native launcher need to run Wine...
 

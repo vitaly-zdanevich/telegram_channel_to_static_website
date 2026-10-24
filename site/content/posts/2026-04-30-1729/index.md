@@ -8,6 +8,7 @@ days = ["2026-04-30"]
 tags = ["codex", "geeknote", "cli", "evernote", "rust", "reeknote"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2138'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1729?comment=2138'><time datetime='2026-04-30T05:28:36+00:00'>2026-04-30 05:28 +00:00</time></a></div><div class='comment-body'><a href='https://habr.com/en/posts/1029870/' rel='nofollow ugc'>https://habr.com/en/posts/1029870/</a></div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1729?comment=0'>Reply on Telegram</a></p></section>"
 id = 1729
 day = "2026-04-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1729"

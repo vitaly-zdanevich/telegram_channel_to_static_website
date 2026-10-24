@@ -5,13 +5,13 @@ description = "Про викиданные/wikidata (открытая база �
 
 [taxonomies]
 days = ["2026-04-11"]
-tags = ["викиданные", "wikidata", "SPARQL", "wikimedia", "wikipedia", "лекция", "laboratory_bar", "batumi"]
+tags = ["викиданные", "wikidata", "SPARQL", "wikimedia", "wikipedia", "лекция", "laboratory_bar", "batumi", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2011'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1622?comment=2011'><time datetime='2026-04-11T23:14:55+00:00'>2026-04-11 23:14 +00:00</time></a></div><div class='comment-body'>bilibili <a href='https://www.bilibili.com/video/BV1waD1BdEW6/' rel='nofollow ugc'>https://www.bilibili.com/video/BV1waD1BdEW6/</a></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1622?comment=2011'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1622?comment=0'>Reply on Telegram</a></p></section>"
 id = 1622
 day = "2026-04-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1622"
-og_image = "01.jpg"
 next_id = 1623
 next_title = ""
 next_body = "Usual #school in #china? #lenin\n【【城】一行代码让整个网站瘫痪，永不过时的黑客技术】"
@@ -55,8 +55,8 @@ date = "2026-07-23"
 
 Все линки на видео <https://share.evernote.com/note/73621155-4b57-e6c1-1c69-8ee7b423b252>
 
-![video](01.jpg)
-
-*▶ video — 1:10:25*
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/1622-01.mp4") }}
 
 👍 1
+
+{{ tag(t="video") }}

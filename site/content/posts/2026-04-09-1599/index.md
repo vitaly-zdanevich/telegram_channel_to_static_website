@@ -8,6 +8,7 @@ days = ["2026-04-09"]
 tags = ["post", "wikimedia_diff", "wikimedia_commons", "preservation"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1987'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1599?comment=1987'><time datetime='2026-04-09T11:15:11+00:00'>2026-04-09 11:15 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1599?comment=1987'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1599?comment=0'>Reply on Telegram</a></p></section>"
 id = 1599
 day = "2026-04-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1599"

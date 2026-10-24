@@ -8,6 +8,7 @@ days = ["2026-03-29"]
 tags = ["abandone", "columns", "Оболь", "belarus", "globustut", "year_2005"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1932'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1546?comment=1932'><time datetime='2026-03-29T13:49:57+00:00'>2026-03-29 13:49 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1546?comment=1932'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1546?comment=0'>Reply on Telegram</a></p></section>"
 id = 1546
 day = "2026-03-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1546"

@@ -8,6 +8,7 @@ days = ["2026-04-15"]
 tags = ["firefox", "webextension", "tab"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2030'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1640?comment=2030'><time datetime='2026-04-15T13:05:17+00:00'>2026-04-15 13:05 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1640?comment=2030'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1640?comment=0'>Reply on Telegram</a></p></section>"
 id = 1640
 day = "2026-04-15"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1640"

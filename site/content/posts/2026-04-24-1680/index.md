@@ -8,6 +8,7 @@ days = ["2026-04-24"]
 tags = ["preservation", "internet_archive", "short", "music", "tape", "audio"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2088'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1680?comment=2088'><time datetime='2026-04-24T22:02:18+00:00'>2026-04-24 22:02 +00:00</time></a></div><div class='comment-body'><a href='https://archive.org/details/ajc02301_archersofloaf1993-11-24/archersofloaf1993-11-24t01.flac' rel='nofollow ugc'>https://archive.org/details/ajc02301_archersofloaf1993-11-24/archersofloaf1993-11-24t01.flac</a></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1680?comment=2088'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1680?comment=0'>Reply on Telegram</a></p></section>"
 id = 1680
 day = "2026-04-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1680"

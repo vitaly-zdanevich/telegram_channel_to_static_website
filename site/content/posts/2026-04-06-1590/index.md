@@ -8,6 +8,7 @@ days = ["2026-04-06"]
 tags = ["typography", "scans", "russian_empire", "kiev", "18th_century"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (2)</h2><ol class='discussion-comments'><li id='comment-2033173701-1977'><div class='comment-meta'><span class='comment-author'>Иван Юрченко</span> · <a href='https://t.me/vitaly_zdanevich_chan/1590?comment=1977'><time datetime='2026-04-06T18:38:35+00:00'>2026-04-06 18:38 +00:00</time></a></div><div class='comment-body'>способны машины такое транскрибировать, или еще пока сложно?</div></li><li id='comment-2033173701-1979'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1590?comment=1979'><time datetime='2026-04-07T06:46:21+00:00'>2026-04-07 06:46 +00:00</time></a></div><div class='comment-body'>Я не пробовал, предполагаю что на 96% уже могут, с дообучением</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1590?comment=0'>Reply on Telegram</a></p></section>"
 id = 1590
 day = "2026-04-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1590"

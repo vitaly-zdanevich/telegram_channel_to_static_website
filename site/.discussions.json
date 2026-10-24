@@ -10951,7 +10951,1321 @@
         "post_id": 1444,
         "comments": []
       }
+    ],
+    "1445": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1789,
+        "post_id": 1445,
+        "comments": []
+      }
+    ],
+    "1450": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1794,
+        "post_id": 1450,
+        "comments": []
+      }
+    ],
+    "1458": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1802,
+        "post_id": 1458,
+        "comments": []
+      }
+    ],
+    "1465": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1809,
+        "post_id": 1465,
+        "comments": [
+          {
+            "id": 1819,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1820,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1821,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1822,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1823,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1824,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1825,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1826,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1827,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1828,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1829,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1830,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1831,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1832,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1833,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1834,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1835,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          },
+          {
+            "id": 1836,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:10:20+00:00",
+            "body_html": "",
+            "reply_to": 1809,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1475": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1837,
+        "post_id": 1475,
+        "comments": []
+      }
+    ],
+    "1481": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1843,
+        "post_id": 1481,
+        "comments": [
+          {
+            "id": 1853,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:15:50+00:00",
+            "body_html": "",
+            "reply_to": 1843,
+            "has_media": true
+          },
+          {
+            "id": 1854,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:15:50+00:00",
+            "body_html": "",
+            "reply_to": 1843,
+            "has_media": true
+          },
+          {
+            "id": 1855,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:15:50+00:00",
+            "body_html": "",
+            "reply_to": 1843,
+            "has_media": true
+          },
+          {
+            "id": 1856,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:15:50+00:00",
+            "body_html": "",
+            "reply_to": 1843,
+            "has_media": true
+          },
+          {
+            "id": 1857,
+            "author": "Unknown author",
+            "date": "2026-03-16T00:15:50+00:00",
+            "body_html": "",
+            "reply_to": 1843,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1491": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1858,
+        "post_id": 1491,
+        "comments": []
+      }
+    ],
+    "1492": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1859,
+        "post_id": 1492,
+        "comments": []
+      }
+    ],
+    "1493": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1860,
+        "post_id": 1493,
+        "comments": []
+      }
+    ],
+    "1494": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1861,
+        "post_id": 1494,
+        "comments": []
+      }
+    ],
+    "1496": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1863,
+        "post_id": 1496,
+        "comments": [
+          {
+            "id": 1864,
+            "author": "Unknown author",
+            "date": "2026-03-22T02:54:30+00:00",
+            "body_html": "",
+            "reply_to": 1863,
+            "has_media": true
+          },
+          {
+            "id": 1865,
+            "author": "Unknown author",
+            "date": "2026-03-22T02:55:08+00:00",
+            "body_html": "",
+            "reply_to": 1863,
+            "has_media": true
+          },
+          {
+            "id": 1866,
+            "author": "Unknown author",
+            "date": "2026-03-22T02:55:08+00:00",
+            "body_html": "",
+            "reply_to": 1863,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1497": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1867,
+        "post_id": 1497,
+        "comments": [
+          {
+            "id": 1869,
+            "author": "Unknown author",
+            "date": "2026-03-22T03:07:05+00:00",
+            "body_html": "<a href='https://www.idealo.de/preisvergleich/OffersOfProduct/200038660_-poppy-i-disagree-vinyl.html'>https://www.idealo.de/preisvergleich/OffersOfProduct/200038660_-poppy-i-disagree-vinyl.html</a>",
+            "reply_to": 1867,
+            "has_media": true
+          },
+          {
+            "id": 1870,
+            "author": "Unknown author",
+            "date": "2026-03-22T03:07:05+00:00",
+            "body_html": "",
+            "reply_to": 1867,
+            "has_media": true
+          },
+          {
+            "id": 1871,
+            "author": "Unknown author",
+            "date": "2026-03-22T03:16:58+00:00",
+            "body_html": "<a href='https://genius.com/Poppy-i-disagree-lyrics'>https://genius.com/Poppy-i-disagree-lyrics</a>\n\n<blockquote>[Intro]\nWatashi wa anata ni dōi shimasen\nWatashi wa anata ni dōi shimasen\nWatashi wa anata ni dōi shimasen\n\n[Verse 1]\nI disagree, everything you believe is a tragedy\nI disagree with the way you keep preaching insanity\nI disagree with all of the reasons you&#39;re mad at me\nI disagree, everything in your life is a tragedy\n\n[Chorus]\nDown, let it all burn down\nBurn it to the ground\nWe&#39;ll be safe and sound\nWhen it all burns down\nLet it all burn down\nBurn it to the ground\nWe&#39;ll be safe and sound\nWhen it all burns down\n\n[Verse 2]\nI disagree with the way you continue to pressure me\nI disagree with the way you are failing to pleasure me\nI disagree, everything is going how it&#39;s meant to be\nI disagree with the way you continue to pressure me\n\n[Chorus]\nDown, let it all burn down\nBurn it to the ground\nWe&#39;ll be safe and sound\nWhen it all burns down\nLet it all burn down\nBurn it to the ground\nWe&#39;ll be safe and sound\nWhen it all burns down\n\n[Bridge]\nIf only all of you could see the world I see\nThen maybe everyone could live in harmony\nWatashi wa anata ni dōi shimasen\nWatashi wa anata ni dōi shimasen\nWatashi wa anata ni dōi shimasen\nWatashi wa anata ni dōi shimasen\n\n[Chorus]\nDown, let it all burn down\nBurn it to the ground\nWe&#39;ll be safe and sound\nWhen it all burns down\nLet it all burn down\nBurn it to the ground\nWe&#39;ll be safe and sound\nWhen it all burns down</blockquote>",
+            "reply_to": 1867,
+            "has_media": false
+          },
+          {
+            "id": 1872,
+            "author": "Unknown author",
+            "date": "2026-03-22T03:21:52+00:00",
+            "body_html": "#music\n\n<a href='https://www.facebook.com/Poppy'>https://www.facebook.com/Poppy</a>\n\n<a href='https://impoppy.com/'>https://impoppy.com/</a>",
+            "reply_to": 1867,
+            "has_media": true
+          },
+          {
+            "id": 1873,
+            "author": "Unknown author",
+            "date": "2026-03-22T03:39:25+00:00",
+            "body_html": "<a href='https://shop.revolvermag.com/products/poppy-oversized-tote-bag'>https://shop.revolvermag.com/products/poppy-oversized-tote-bag</a>",
+            "reply_to": 1867,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1499": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1874,
+        "post_id": 1499,
+        "comments": []
+      }
+    ],
+    "1500": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1875,
+        "post_id": 1500,
+        "comments": []
+      }
+    ],
+    "1501": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1876,
+        "post_id": 1501,
+        "comments": [
+          {
+            "id": 1877,
+            "author": "Unknown author",
+            "date": "2026-03-24T00:27:03+00:00",
+            "body_html": "<a href='https://batollo.ru/eg-empire-beta'>https://batollo.ru/eg-empire-beta</a>",
+            "reply_to": 1876,
+            "has_media": true
+          },
+          {
+            "id": 1878,
+            "author": "Unknown author",
+            "date": "2026-03-24T00:30:25+00:00",
+            "body_html": "Official <a href='https://vk.com/empire_4000'>https://vk.com/empire_4000</a>",
+            "reply_to": 1876,
+            "has_media": false
+          },
+          {
+            "id": 1879,
+            "author": "Unknown author",
+            "date": "2026-03-24T00:43:36+00:00",
+            "body_html": "",
+            "reply_to": 1876,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1502": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1880,
+        "post_id": 1502,
+        "comments": []
+      }
+    ],
+    "1503": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1881,
+        "post_id": 1503,
+        "comments": []
+      }
+    ],
+    "1504": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1882,
+        "post_id": 1504,
+        "comments": []
+      }
+    ],
+    "1506": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1884,
+        "post_id": 1506,
+        "comments": []
+      }
+    ],
+    "1507": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1885,
+        "post_id": 1507,
+        "comments": []
+      }
+    ],
+    "1508": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1886,
+        "post_id": 1508,
+        "comments": []
+      }
+    ],
+    "1509": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1887,
+        "post_id": 1509,
+        "comments": []
+      }
+    ],
+    "1511": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1889,
+        "post_id": 1511,
+        "comments": []
+      }
+    ],
+    "1517": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1895,
+        "post_id": 1517,
+        "comments": []
+      }
+    ],
+    "1521": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1899,
+        "post_id": 1521,
+        "comments": []
+      }
+    ],
+    "1522": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1900,
+        "post_id": 1522,
+        "comments": []
+      }
+    ],
+    "1529": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1907,
+        "post_id": 1529,
+        "comments": []
+      }
+    ],
+    "1531": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1909,
+        "post_id": 1531,
+        "comments": []
+      }
+    ],
+    "1532": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1910,
+        "post_id": 1532,
+        "comments": []
+      }
+    ],
+    "1536": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1914,
+        "post_id": 1536,
+        "comments": []
+      }
+    ],
+    "1546": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1924,
+        "post_id": 1546,
+        "comments": [
+          {
+            "id": 1932,
+            "author": "Unknown author",
+            "date": "2026-03-29T13:49:57+00:00",
+            "body_html": "",
+            "reply_to": 1924,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1554": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1933,
+        "post_id": 1554,
+        "comments": []
+      }
+    ],
+    "1562": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1941,
+        "post_id": 1562,
+        "comments": [
+          {
+            "id": 1942,
+            "author": "📯",
+            "date": "2026-03-31T03:56:55+00:00",
+            "body_html": "Красивое фото... \nИ композиция \nИ цвет\nЛюди интересные и Стили",
+            "reply_to": 1941,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "1563": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1943,
+        "post_id": 1563,
+        "comments": []
+      }
+    ],
+    "1564": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1944,
+        "post_id": 1564,
+        "comments": []
+      }
+    ],
+    "1565": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1945,
+        "post_id": 1565,
+        "comments": []
+      }
+    ],
+    "1566": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1946,
+        "post_id": 1566,
+        "comments": []
+      }
+    ],
+    "1567": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1947,
+        "post_id": 1567,
+        "comments": [
+          {
+            "id": 1948,
+            "author": "Unknown author",
+            "date": "2026-04-02T12:49:29+00:00",
+            "body_html": "",
+            "reply_to": 1947,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1568": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1949,
+        "post_id": 1568,
+        "comments": []
+      }
+    ],
+    "1569": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1950,
+        "post_id": 1569,
+        "comments": []
+      }
+    ],
+    "1570": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1951,
+        "post_id": 1570,
+        "comments": [
+          {
+            "id": 1952,
+            "author": "Unknown author",
+            "date": "2026-04-05T11:17:26+00:00",
+            "body_html": "",
+            "reply_to": 1951,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1571": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1953,
+        "post_id": 1571,
+        "comments": []
+      }
+    ],
+    "1580": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1962,
+        "post_id": 1580,
+        "comments": []
+      }
+    ],
+    "1590": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1972,
+        "post_id": 1590,
+        "comments": [
+          {
+            "id": 1977,
+            "author": "Иван Юрченко",
+            "date": "2026-04-06T18:38:35+00:00",
+            "body_html": "способны машины такое транскрибировать, или еще пока сложно?",
+            "reply_to": 1972,
+            "has_media": false
+          },
+          {
+            "id": 1979,
+            "author": "Unknown author",
+            "date": "2026-04-07T06:46:21+00:00",
+            "body_html": "Я не пробовал, предполагаю что на 96% уже могут, с дообучением",
+            "reply_to": 1972,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "1595": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1980,
+        "post_id": 1595,
+        "comments": [
+          {
+            "id": 1984,
+            "author": "Unknown author",
+            "date": "2026-04-09T09:41:08+00:00",
+            "body_html": "<a href='https://www.youtube.com/watch?v=w_O-HByRZ7Q'>https://www.youtube.com/watch?v=w_O-HByRZ7Q</a>",
+            "reply_to": 1980,
+            "has_media": false
+          },
+          {
+            "id": 1985,
+            "author": "Unknown author",
+            "date": "2026-04-09T09:44:14+00:00",
+            "body_html": "<blockquote>Согласно Metacritic, игра получила «в основном положительные» отзывы от критиков[12]. По данным OpenCritic, её рекомендуют 73 % рецензентов[13]. 24 мая издатель 11 Bit Studios сообщила, что продажи игры оправдали ожидании издателя[24].\n\nВ своём обзоре критики iXBT назвали игру претенциозной «пустышкой» с намёком на глубину[25].\n\nТакже Indika критиковали за фактически отсутствующую игровую систему (набор очков веры идёт сам ради себя, не влияя на прохождение игры), отсутствие логики в сюжете, избыточно длинные вставки катсцен, характеризовали как скучный симулятор ходьбы[25][26]. В то же время большинство критиков отмечало качественно сделанную графику и вставные мини-игры[25][26].\n\nСам Светлов в своём интервью отмечал, что сознательно, вопреки мнению издателя, затянул начальные квесты, сделав их скучными и скомкал финал игры, оставив его открытым и непонятным, разочаровывающим игрока[8].\n\nПо утверждению ряда православных критиков и общественников, игра создана в сознательно антиправославном и русофобском виде, оскорбляет чувства верующих и нарушает законодательство РФ[27].\n\nIndika стала номинантом на «лучшую инди игру» Golden Joystick Awards 2024[28].\n\nIndika стала номинантом в категории «Наибольшее социальное влияние» на The Game Awards 2024[29]. </blockquote>\n<a href='https://ru.wikipedia.org/wiki/Indika'>https://ru.wikipedia.org/wiki/Indika</a>",
+            "reply_to": 1980,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "1599": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1986,
+        "post_id": 1599,
+        "comments": [
+          {
+            "id": 1987,
+            "author": "Unknown author",
+            "date": "2026-04-09T11:15:11+00:00",
+            "body_html": "",
+            "reply_to": 1986,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1600": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1988,
+        "post_id": 1600,
+        "comments": []
+      }
+    ],
+    "1602": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 1990,
+        "post_id": 1602,
+        "comments": []
+      }
+    ],
+    "1612": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2000,
+        "post_id": 1612,
+        "comments": []
+      }
+    ],
+    "1613": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2001,
+        "post_id": 1613,
+        "comments": []
+      }
+    ],
+    "1622": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2010,
+        "post_id": 1622,
+        "comments": [
+          {
+            "id": 2011,
+            "author": "Unknown author",
+            "date": "2026-04-11T23:14:55+00:00",
+            "body_html": "bilibili <a href='https://www.bilibili.com/video/BV1waD1BdEW6/'>https://www.bilibili.com/video/BV1waD1BdEW6/</a>",
+            "reply_to": 2010,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1623": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2012,
+        "post_id": 1623,
+        "comments": []
+      }
+    ],
+    "1624": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2013,
+        "post_id": 1624,
+        "comments": []
+      }
+    ],
+    "1629": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2018,
+        "post_id": 1629,
+        "comments": []
+      }
+    ],
+    "1636": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2025,
+        "post_id": 1636,
+        "comments": []
+      }
+    ],
+    "1637": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2026,
+        "post_id": 1637,
+        "comments": []
+      }
+    ],
+    "1640": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2029,
+        "post_id": 1640,
+        "comments": [
+          {
+            "id": 2030,
+            "author": "Unknown author",
+            "date": "2026-04-15T13:05:17+00:00",
+            "body_html": "",
+            "reply_to": 2029,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1641": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2031,
+        "post_id": 1641,
+        "comments": [
+          {
+            "id": 2033,
+            "author": "Unknown author",
+            "date": "2026-04-16T01:31:02+00:00",
+            "body_html": "",
+            "reply_to": 2031,
+            "has_media": true
+          }
+        ]
+      },
+      {
+        "peer_id": 2033173701,
+        "root_id": 2034,
+        "post_id": 1643,
+        "comments": [
+          {
+            "id": 2040,
+            "author": "Unknown author",
+            "date": "2026-04-16T17:11:12+00:00",
+            "body_html": "#music\n#rap\n#parody\n\nFrom <a href='https://soundcloud.com/unicast/owpnvuwo4rgz'>https://soundcloud.com/unicast/owpnvuwo4rgz</a>",
+            "reply_to": 2034,
+            "has_media": true
+          },
+          {
+            "id": 2041,
+            "author": "Unknown author",
+            "date": "2026-04-16T17:12:36+00:00",
+            "body_html": "#music\n#rap\n#parody\n\nFrom <a href='https://www.youtube.com/watch?v=gQQKeEwh0d8'>https://www.youtube.com/watch?v=gQQKeEwh0d8</a>",
+            "reply_to": 2034,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1645": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2036,
+        "post_id": 1645,
+        "comments": []
+      }
+    ],
+    "1647": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2042,
+        "post_id": 1647,
+        "comments": []
+      }
+    ],
+    "1648": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2043,
+        "post_id": 1648,
+        "comments": []
+      }
+    ],
+    "1649": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2044,
+        "post_id": 1649,
+        "comments": []
+      }
+    ],
+    "1654": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2049,
+        "post_id": 1654,
+        "comments": []
+      }
+    ],
+    "1655": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2050,
+        "post_id": 1655,
+        "comments": []
+      }
+    ],
+    "1656": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2051,
+        "post_id": 1656,
+        "comments": []
+      }
+    ],
+    "1662": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2057,
+        "post_id": 1662,
+        "comments": []
+      }
+    ],
+    "1667": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2063,
+        "post_id": 1667,
+        "comments": []
+      }
+    ],
+    "1668": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2064,
+        "post_id": 1668,
+        "comments": [
+          {
+            "id": 2068,
+            "author": "Unknown author",
+            "date": "2026-04-22T13:16:39+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2069,
+            "author": "Unknown author",
+            "date": "2026-04-22T13:18:12+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2071,
+            "author": "Unknown author",
+            "date": "2026-04-22T13:21:57+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2072,
+            "author": "Unknown author",
+            "date": "2026-04-22T13:29:47+00:00",
+            "body_html": "<a href='https://youtu.be/RWdOtMP6hA0'>https://youtu.be/RWdOtMP6hA0</a>",
+            "reply_to": 2064,
+            "has_media": false
+          },
+          {
+            "id": 2073,
+            "author": "Unknown author",
+            "date": "2026-04-22T14:31:12+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2074,
+            "author": "Unknown author",
+            "date": "2026-04-22T14:33:55+00:00",
+            "body_html": "<a href='https://www.youtube.com/watch?v=LCd_ij90NV4'>https://www.youtube.com/watch?v=LCd_ij90NV4</a>",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2075,
+            "author": "Unknown author",
+            "date": "2026-04-22T14:33:55+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2076,
+            "author": "Unknown author",
+            "date": "2026-04-22T14:33:56+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2077,
+            "author": "Unknown author",
+            "date": "2026-04-22T14:33:57+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          },
+          {
+            "id": 2078,
+            "author": "Unknown author",
+            "date": "2026-04-22T14:33:59+00:00",
+            "body_html": "",
+            "reply_to": 2064,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1672": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2079,
+        "post_id": 1672,
+        "comments": []
+      }
+    ],
+    "1674": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2081,
+        "post_id": 1674,
+        "comments": []
+      }
+    ],
+    "1678": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2085,
+        "post_id": 1678,
+        "comments": []
+      }
+    ],
+    "1679": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2086,
+        "post_id": 1679,
+        "comments": []
+      }
+    ],
+    "1680": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2087,
+        "post_id": 1680,
+        "comments": [
+          {
+            "id": 2088,
+            "author": "Unknown author",
+            "date": "2026-04-24T22:02:18+00:00",
+            "body_html": "<a href='https://archive.org/details/ajc02301_archersofloaf1993-11-24/archersofloaf1993-11-24t01.flac'>https://archive.org/details/ajc02301_archersofloaf1993-11-24/archersofloaf1993-11-24t01.flac</a>",
+            "reply_to": 2087,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1681": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2089,
+        "post_id": 1681,
+        "comments": []
+      }
+    ],
+    "1682": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2090,
+        "post_id": 1682,
+        "comments": []
+      }
+    ],
+    "1683": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2091,
+        "post_id": 1683,
+        "comments": []
+      }
+    ],
+    "1684": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2092,
+        "post_id": 1684,
+        "comments": []
+      }
+    ],
+    "1685": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2093,
+        "post_id": 1685,
+        "comments": []
+      }
+    ],
+    "1686": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2094,
+        "post_id": 1686,
+        "comments": []
+      }
+    ],
+    "1687": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2095,
+        "post_id": 1687,
+        "comments": []
+      }
+    ],
+    "1688": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2096,
+        "post_id": 1688,
+        "comments": []
+      }
+    ],
+    "1695": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2103,
+        "post_id": 1695,
+        "comments": []
+      }
+    ],
+    "1703": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2111,
+        "post_id": 1703,
+        "comments": []
+      }
+    ],
+    "1709": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2117,
+        "post_id": 1709,
+        "comments": []
+      }
+    ],
+    "1719": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2127,
+        "post_id": 1719,
+        "comments": []
+      }
+    ],
+    "1721": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2129,
+        "post_id": 1721,
+        "comments": []
+      }
+    ],
+    "1729": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2137,
+        "post_id": 1729,
+        "comments": [
+          {
+            "id": 2138,
+            "author": "Unknown author",
+            "date": "2026-04-30T05:28:36+00:00",
+            "body_html": "<a href='https://habr.com/en/posts/1029870/'>https://habr.com/en/posts/1029870/</a>",
+            "reply_to": 2137,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "1730": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2139,
+        "post_id": 1730,
+        "comments": []
+      }
+    ],
+    "1731": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2140,
+        "post_id": 1731,
+        "comments": []
+      }
+    ],
+    "1732": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2141,
+        "post_id": 1732,
+        "comments": []
+      }
+    ],
+    "1733": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2142,
+        "post_id": 1733,
+        "comments": [
+          {
+            "id": 2143,
+            "author": "Unknown author",
+            "date": "2026-05-04T19:11:33+00:00",
+            "body_html": "",
+            "reply_to": 2142,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1734": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2144,
+        "post_id": 1734,
+        "comments": []
+      }
+    ],
+    "1735": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2145,
+        "post_id": 1735,
+        "comments": []
+      }
+    ],
+    "1736": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2146,
+        "post_id": 1736,
+        "comments": []
+      }
+    ],
+    "1737": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2147,
+        "post_id": 1737,
+        "comments": []
+      }
+    ],
+    "1738": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2148,
+        "post_id": 1738,
+        "comments": []
+      }
+    ],
+    "1739": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2149,
+        "post_id": 1739,
+        "comments": []
+      }
+    ],
+    "1740": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2150,
+        "post_id": 1740,
+        "comments": []
+      }
+    ],
+    "1741": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2151,
+        "post_id": 1741,
+        "comments": []
+      }
+    ],
+    "1744": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2154,
+        "post_id": 1744,
+        "comments": []
+      }
     ]
   },
-  "next_post_id": 1445
+  "next_post_id": 1745
 }

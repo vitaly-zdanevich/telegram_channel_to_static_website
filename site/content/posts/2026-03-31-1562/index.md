@@ -8,6 +8,7 @@ days = ["2026-03-31"]
 tags = ["webdesign", "photo", "people", "gamedev", "ice_pick_lodge"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-1942'><div class='comment-meta'><span class='comment-author'>📯</span> · <a href='https://t.me/vitaly_zdanevich_chan/1562?comment=1942'><time datetime='2026-03-31T03:56:55+00:00'>2026-03-31 03:56 +00:00</time></a></div><div class='comment-body'>Красивое фото... \nИ композиция \nИ цвет\nЛюди интересные и Стили</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1562?comment=0'>Reply on Telegram</a></p></section>"
 id = 1562
 day = "2026-03-31"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1562"
