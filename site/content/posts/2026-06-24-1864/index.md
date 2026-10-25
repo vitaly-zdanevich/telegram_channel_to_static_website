@@ -8,6 +8,7 @@ days = ["2026-06-24"]
 tags = ["bash", "alias"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (2)</h2><ol class='discussion-comments'><li id='comment-2033173701-2292'><div class='comment-meta'><span class='comment-author'>Lasha Kamadadze (Laboratory: Georgia IT student)</span> · <a href='https://t.me/vitaly_zdanevich_chan/1864?comment=2292'><time datetime='2026-06-24T21:31:25+00:00'>2026-06-24 21:31 +00:00</time></a></div><div class='comment-body'>What do you think of other shells like zsh, fish, other?</div></li><li id='comment-2033173701-2293'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1864?comment=2293'><time datetime='2026-06-24T21:32:46+00:00'>2026-06-24 21:32 +00:00</time></a></div><div class='comment-body'>Did not try, looks like they have something good.</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1864?comment=0'>Reply on Telegram</a></p></section>"
 id = 1864
 day = "2026-06-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1864"

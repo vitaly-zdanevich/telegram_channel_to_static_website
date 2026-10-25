@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2246
 prev_title = ""
 prev_body = "#map\n#europe\n#belarus\n#sakartvelo\n#russia\n#year1444\nFrom"
-views = 6
+views = 8
 ids = [2251]
 
 [[extra.related]]

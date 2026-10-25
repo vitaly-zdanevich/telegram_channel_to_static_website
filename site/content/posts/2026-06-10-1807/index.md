@@ -8,6 +8,7 @@ days = ["2026-06-10"]
 tags = ["love", "extension", "highlight"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2232'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1807?comment=2232'><time datetime='2026-06-10T17:56:09+00:00'>2026-06-10 17:56 +00:00</time></a></div><div class='comment-body'>So I can automatically highlight different words to different colors</div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1807?comment=2232'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1807?comment=0'>Reply on Telegram</a></p></section>"
 id = 1807
 day = "2026-06-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1807"

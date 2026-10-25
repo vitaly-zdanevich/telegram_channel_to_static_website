@@ -18,7 +18,7 @@ next_body = "#coffee\n#americano\n#latte\n#raspberry\n#orange\n#brutality\n#psy\
 prev_id = 703
 prev_title = ""
 prev_body = "Звуковик имеет тягу к изучению языков, потому что имеет ощущение, что возможно на другом языке сможет выразить свои нехватки\n- Юрий Бурлан\nPhoto my, from Safranbolu"
-views = 29
+views = 30
 ids = [704]
 
 [[extra.related]]

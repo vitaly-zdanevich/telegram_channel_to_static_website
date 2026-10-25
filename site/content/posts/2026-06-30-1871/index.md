@@ -8,6 +8,7 @@ days = ["2026-06-30"]
 tags = ["death", "grandmother", "drink", "kitchen", "spirit", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1871?comment=0'>Reply on Telegram</a></p></section>"
 id = 1871
 day = "2026-06-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1871"
@@ -17,7 +18,7 @@ next_body = "#death\n#jump\n#spirit\nSource"
 prev_id = 1870
 prev_title = ""
 prev_body = "#belarus\n#колодищи\n#architecture\n#church\nAuthor: Димитров Денис\nSource"
-views = 140
+views = 141
 ids = [1871]
 
 [[extra.related]]

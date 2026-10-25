@@ -8,6 +8,7 @@ days = ["2026-06-20"]
 tags = ["game", "trailer", "music", "year_2009", "halo", "xbox", "xbox_360", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2267'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1847?comment=2267'><time datetime='2026-06-20T15:33:19+00:00'>2026-06-20 15:33 +00:00</time></a></div><div class='comment-body'>From <a href='https://www.youtube.com/watch?v=qD3gWhl66Ng' rel='nofollow ugc'>https://www.youtube.com/watch?v=qD3gWhl66Ng</a></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1847?comment=2267'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1847?comment=0'>Reply on Telegram</a></p></section>"
 id = 1847
 day = "2026-06-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1847"

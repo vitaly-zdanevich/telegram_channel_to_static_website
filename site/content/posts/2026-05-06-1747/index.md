@@ -8,6 +8,7 @@ days = ["2026-05-06"]
 tags = ["leetcode"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2161'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/1747?comment=2161'><time datetime='2026-05-06T19:44:56+00:00'>2026-05-06 19:44 +00:00</time></a></div><div class='comment-body'>Rerun the same code and got 96% for RAM</div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/1747?comment=2161'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1747?comment=0'>Reply on Telegram</a></p></section>"
 id = 1747
 day = "2026-05-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1747"

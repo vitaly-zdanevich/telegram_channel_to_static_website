@@ -8,6 +8,7 @@ days = ["2026-06-19"]
 tags = ["kvantum", "qt6", "llm", "gpt", "love", "black", "qbittorrent"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/1845?comment=0'>Reply on Telegram</a></p></section>"
 id = 1845
 day = "2026-06-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1845"
@@ -53,6 +54,6 @@ On the screenshot - {{ tag(t="qbittorrent") }}.
 
 [https://github.com/vitaly-zdanevich/kvantum](<https://github.com/vitaly-zdanevich/kvantum> "Black theme for Kvantum/qt6 · 0 stars · 40 commits · MIT · last push 2026-06-20")  
 
-[https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black](<https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black> "The gentoo-zh overlay for Gentoo users · 432 stars · Languages: Shell 95%, Python 5%, Vim Script 0% · 17171 commits · 232 forks · 10 open issues/PRs · GPL-2.0 · last push 2026-10-24")
+[https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black](<https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black> "The gentoo-zh overlay for Gentoo users · 432 stars · Languages: Shell 95%, Python 5%, Vim Script 0% · 17200 commits · 232 forks · 11 open issues/PRs · GPL-2.0 · last push 2026-10-25")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1845-5310306782234219979.jpg") }}

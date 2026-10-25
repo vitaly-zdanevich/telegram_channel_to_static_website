@@ -12265,7 +12265,1069 @@
         "post_id": 1744,
         "comments": []
       }
+    ],
+    "1745": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2155,
+        "post_id": 1745,
+        "comments": []
+      }
+    ],
+    "1746": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2156,
+        "post_id": 1746,
+        "comments": [
+          {
+            "id": 2157,
+            "author": "Unknown author",
+            "date": "2026-05-06T14:27:44+00:00",
+            "body_html": "",
+            "reply_to": 2156,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1747": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2158,
+        "post_id": 1747,
+        "comments": [
+          {
+            "id": 2161,
+            "author": "Unknown author",
+            "date": "2026-05-06T19:44:56+00:00",
+            "body_html": "Rerun the same code and got 96% for RAM",
+            "reply_to": 2158,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1749": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2160,
+        "post_id": 1749,
+        "comments": []
+      }
+    ],
+    "1750": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2162,
+        "post_id": 1750,
+        "comments": []
+      }
+    ],
+    "1751": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2163,
+        "post_id": 1751,
+        "comments": []
+      }
+    ],
+    "1752": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2164,
+        "post_id": 1752,
+        "comments": []
+      }
+    ],
+    "1753": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2165,
+        "post_id": 1753,
+        "comments": []
+      }
+    ],
+    "1755": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2167,
+        "post_id": 1755,
+        "comments": []
+      }
+    ],
+    "1756": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2168,
+        "post_id": 1756,
+        "comments": []
+      }
+    ],
+    "1758": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2170,
+        "post_id": 1758,
+        "comments": []
+      }
+    ],
+    "1759": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2171,
+        "post_id": 1759,
+        "comments": []
+      }
+    ],
+    "1761": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2173,
+        "post_id": 1761,
+        "comments": []
+      }
+    ],
+    "1762": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2174,
+        "post_id": 1762,
+        "comments": []
+      }
+    ],
+    "1763": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2175,
+        "post_id": 1763,
+        "comments": []
+      }
+    ],
+    "1764": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2176,
+        "post_id": 1764,
+        "comments": []
+      }
+    ],
+    "1765": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2177,
+        "post_id": 1765,
+        "comments": []
+      }
+    ],
+    "1775": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2187,
+        "post_id": 1775,
+        "comments": []
+      }
+    ],
+    "1776": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2188,
+        "post_id": 1776,
+        "comments": []
+      }
+    ],
+    "1777": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2189,
+        "post_id": 1777,
+        "comments": []
+      }
+    ],
+    "1779": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2191,
+        "post_id": 1779,
+        "comments": []
+      }
+    ],
+    "1780": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2192,
+        "post_id": 1780,
+        "comments": []
+      }
+    ],
+    "1781": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2193,
+        "post_id": 1781,
+        "comments": []
+      }
+    ],
+    "1784": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2196,
+        "post_id": 1784,
+        "comments": []
+      }
+    ],
+    "1785": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2197,
+        "post_id": 1785,
+        "comments": []
+      }
+    ],
+    "1786": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2198,
+        "post_id": 1786,
+        "comments": []
+      }
+    ],
+    "1787": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2199,
+        "post_id": 1787,
+        "comments": []
+      },
+      {
+        "peer_id": 2033173701,
+        "root_id": 2209,
+        "post_id": 1797,
+        "comments": []
+      }
+    ],
+    "1799": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2211,
+        "post_id": 1799,
+        "comments": []
+      }
+    ],
+    "1800": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2212,
+        "post_id": 1800,
+        "comments": []
+      }
+    ],
+    "1802": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2214,
+        "post_id": 1802,
+        "comments": [
+          {
+            "id": 2216,
+            "author": "Unknown author",
+            "date": "2026-05-31T16:40:14+00:00",
+            "body_html": "And camera range expanded.",
+            "reply_to": 2214,
+            "has_media": true
+          },
+          {
+            "id": 2219,
+            "author": "Unknown author",
+            "date": "2026-06-05T19:59:03+00:00",
+            "body_html": "Posted to <a href='https://www.moddb.com/games/armies-of-exigo/downloads/exigo1920x1200'>https://www.moddb.com/games/armies-of-exigo/downloads/exigo1920x1200</a>",
+            "reply_to": 2214,
+            "has_media": false
+          },
+          {
+            "id": 2220,
+            "author": "Unknown author",
+            "date": "2026-06-05T19:59:13+00:00",
+            "body_html": "Posted to <a href='https://www.playground.ru/armies_of_exigo/file/armies_of_exigo_widescreen_fix_shirokoformatnoe_razreshenie_ekrana_rus-1220959'>https://www.playground.ru/armies_of_exigo/file/armies_of_exigo_widescreen_fix_shirokoformatnoe_razreshenie_ekrana_rus-1220959</a>",
+            "reply_to": 2214,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "1804": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2217,
+        "post_id": 1804,
+        "comments": []
+      }
+    ],
+    "1805": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2218,
+        "post_id": 1805,
+        "comments": []
+      }
+    ],
+    "1806": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2221,
+        "post_id": 1806,
+        "comments": []
+      }
+    ],
+    "1807": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2222,
+        "post_id": 1807,
+        "comments": [
+          {
+            "id": 2232,
+            "author": "Unknown author",
+            "date": "2026-06-10T17:56:09+00:00",
+            "body_html": "So I can automatically highlight different words to different colors",
+            "reply_to": 2222,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1817": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2233,
+        "post_id": 1817,
+        "comments": []
+      }
+    ],
+    "1818": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2234,
+        "post_id": 1818,
+        "comments": []
+      }
+    ],
+    "1819": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2235,
+        "post_id": 1819,
+        "comments": []
+      }
+    ],
+    "1821": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2237,
+        "post_id": 1821,
+        "comments": []
+      }
+    ],
+    "1822": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2238,
+        "post_id": 1822,
+        "comments": []
+      }
+    ],
+    "1823": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2240,
+        "post_id": 1823,
+        "comments": []
+      }
+    ],
+    "1824": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2241,
+        "post_id": 1824,
+        "comments": []
+      }
+    ],
+    "1825": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2242,
+        "post_id": 1825,
+        "comments": []
+      }
+    ],
+    "1826": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2243,
+        "post_id": 1826,
+        "comments": []
+      }
+    ],
+    "1827": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2244,
+        "post_id": 1827,
+        "comments": []
+      }
+    ],
+    "1829": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2246,
+        "post_id": 1829,
+        "comments": []
+      }
+    ],
+    "1830": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2247,
+        "post_id": 1830,
+        "comments": []
+      }
+    ],
+    "1831": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2248,
+        "post_id": 1831,
+        "comments": []
+      }
+    ],
+    "1832": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2249,
+        "post_id": 1832,
+        "comments": []
+      }
+    ],
+    "1833": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2250,
+        "post_id": 1833,
+        "comments": []
+      }
+    ],
+    "1834": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2251,
+        "post_id": 1834,
+        "comments": []
+      }
+    ],
+    "1835": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2252,
+        "post_id": 1835,
+        "comments": [
+          {
+            "id": 2255,
+            "author": "Unknown author",
+            "date": "2026-06-15T22:11:05+00:00",
+            "body_html": "From <a href='https://www.pinterest.com/pin/96475617015148882/'>https://www.pinterest.com/pin/96475617015148882/</a>",
+            "reply_to": 2252,
+            "has_media": true
+          },
+          {
+            "id": 2256,
+            "author": "Unknown author",
+            "date": "2026-06-15T22:11:33+00:00",
+            "body_html": "#blue\n\nFrom <a href='https://www.pinterest.com/pin/96475617015148895/'>https://www.pinterest.com/pin/96475617015148895/</a>",
+            "reply_to": 2252,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1836": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2253,
+        "post_id": 1836,
+        "comments": []
+      }
+    ],
+    "1837": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2254,
+        "post_id": 1837,
+        "comments": []
+      }
+    ],
+    "1838": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2257,
+        "post_id": 1838,
+        "comments": []
+      }
+    ],
+    "1839": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2258,
+        "post_id": 1839,
+        "comments": []
+      }
+    ],
+    "1840": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2259,
+        "post_id": 1840,
+        "comments": []
+      }
+    ],
+    "1841": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2260,
+        "post_id": 1841,
+        "comments": []
+      }
+    ],
+    "1842": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2261,
+        "post_id": 1842,
+        "comments": []
+      }
+    ],
+    "1843": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2262,
+        "post_id": 1843,
+        "comments": []
+      }
+    ],
+    "1844": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2263,
+        "post_id": 1844,
+        "comments": []
+      }
+    ],
+    "1845": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2264,
+        "post_id": 1845,
+        "comments": []
+      }
+    ],
+    "1846": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2265,
+        "post_id": 1846,
+        "comments": []
+      }
+    ],
+    "1847": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2266,
+        "post_id": 1847,
+        "comments": [
+          {
+            "id": 2267,
+            "author": "Unknown author",
+            "date": "2026-06-20T15:33:19+00:00",
+            "body_html": "From <a href='https://www.youtube.com/watch?v=qD3gWhl66Ng'>https://www.youtube.com/watch?v=qD3gWhl66Ng</a>",
+            "reply_to": 2266,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1848": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2268,
+        "post_id": 1848,
+        "comments": []
+      }
+    ],
+    "1849": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2269,
+        "post_id": 1849,
+        "comments": []
+      }
+    ],
+    "1850": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2270,
+        "post_id": 1850,
+        "comments": []
+      },
+      {
+        "peer_id": 2033173701,
+        "root_id": 2271,
+        "post_id": 1851,
+        "comments": []
+      }
+    ],
+    "1852": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2272,
+        "post_id": 1852,
+        "comments": [
+          {
+            "id": 2273,
+            "author": "Unknown author",
+            "date": "2026-06-24T00:44:24+00:00",
+            "body_html": "",
+            "reply_to": 2272,
+            "has_media": true
+          },
+          {
+            "id": 2274,
+            "author": "Unknown author",
+            "date": "2026-06-24T00:45:22+00:00",
+            "body_html": "",
+            "reply_to": 2272,
+            "has_media": true
+          },
+          {
+            "id": 2275,
+            "author": "Unknown author",
+            "date": "2026-06-24T00:45:30+00:00",
+            "body_html": "",
+            "reply_to": 2272,
+            "has_media": true
+          },
+          {
+            "id": 2276,
+            "author": "Unknown author",
+            "date": "2026-06-24T00:45:44+00:00",
+            "body_html": "",
+            "reply_to": 2272,
+            "has_media": true
+          },
+          {
+            "id": 2277,
+            "author": "Unknown author",
+            "date": "2026-06-24T00:45:58+00:00",
+            "body_html": "",
+            "reply_to": 2272,
+            "has_media": true
+          },
+          {
+            "id": 2279,
+            "author": "Unknown author",
+            "date": "2026-06-24T00:46:32+00:00",
+            "body_html": "",
+            "reply_to": 2272,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1853": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2280,
+        "post_id": 1853,
+        "comments": []
+      }
+    ],
+    "1854": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2281,
+        "post_id": 1854,
+        "comments": []
+      }
+    ],
+    "1855": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2282,
+        "post_id": 1855,
+        "comments": []
+      }
+    ],
+    "1856": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2283,
+        "post_id": 1856,
+        "comments": []
+      },
+      {
+        "peer_id": 2033173701,
+        "root_id": 2284,
+        "post_id": 1857,
+        "comments": []
+      }
+    ],
+    "1860": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2287,
+        "post_id": 1860,
+        "comments": []
+      }
+    ],
+    "1861": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2288,
+        "post_id": 1861,
+        "comments": []
+      }
+    ],
+    "1863": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2290,
+        "post_id": 1863,
+        "comments": []
+      }
+    ],
+    "1864": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2291,
+        "post_id": 1864,
+        "comments": [
+          {
+            "id": 2292,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-06-24T21:31:25+00:00",
+            "body_html": "What do you think of other shells like zsh, fish, other?",
+            "reply_to": 2291,
+            "has_media": false
+          },
+          {
+            "id": 2293,
+            "author": "Unknown author",
+            "date": "2026-06-24T21:32:46+00:00",
+            "body_html": "Did not try, looks like they have something good.",
+            "reply_to": 2291,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "1865": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2294,
+        "post_id": 1865,
+        "comments": [
+          {
+            "id": 2296,
+            "author": "Unknown author",
+            "date": "2026-06-25T16:34:27+00:00",
+            "body_html": "",
+            "reply_to": 2294,
+            "has_media": true
+          },
+          {
+            "id": 2297,
+            "author": "Unknown author",
+            "date": "2026-06-25T16:34:27+00:00",
+            "body_html": "",
+            "reply_to": 2294,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1867": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2298,
+        "post_id": 1867,
+        "comments": []
+      }
+    ],
+    "1868": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2299,
+        "post_id": 1868,
+        "comments": []
+      }
+    ],
+    "1869": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2300,
+        "post_id": 1869,
+        "comments": []
+      }
+    ],
+    "1870": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2301,
+        "post_id": 1870,
+        "comments": []
+      }
+    ],
+    "1871": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2302,
+        "post_id": 1871,
+        "comments": []
+      }
+    ],
+    "1872": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2303,
+        "post_id": 1872,
+        "comments": []
+      }
+    ],
+    "1873": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2304,
+        "post_id": 1873,
+        "comments": []
+      }
+    ],
+    "1874": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2305,
+        "post_id": 1874,
+        "comments": []
+      }
+    ],
+    "1875": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2306,
+        "post_id": 1875,
+        "comments": []
+      }
+    ],
+    "1878": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2309,
+        "post_id": 1878,
+        "comments": []
+      }
+    ],
+    "1879": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2310,
+        "post_id": 1879,
+        "comments": [
+          {
+            "id": 2311,
+            "author": "Unknown author",
+            "date": "2026-07-01T03:38:17+00:00",
+            "body_html": "",
+            "reply_to": 2310,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1880": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2312,
+        "post_id": 1880,
+        "comments": []
+      }
+    ],
+    "1881": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2313,
+        "post_id": 1881,
+        "comments": []
+      }
+    ],
+    "1882": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2314,
+        "post_id": 1882,
+        "comments": []
+      }
+    ],
+    "1890": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2322,
+        "post_id": 1890,
+        "comments": []
+      }
+    ],
+    "1891": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2323,
+        "post_id": 1891,
+        "comments": []
+      }
+    ],
+    "1898": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2330,
+        "post_id": 1898,
+        "comments": []
+      }
+    ],
+    "1904": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2336,
+        "post_id": 1904,
+        "comments": [
+          {
+            "id": 2346,
+            "author": "Unknown author",
+            "date": "2026-07-04T05:41:39+00:00",
+            "body_html": "",
+            "reply_to": 2336,
+            "has_media": true
+          },
+          {
+            "id": 2347,
+            "author": "Unknown author",
+            "date": "2026-07-04T05:42:42+00:00",
+            "body_html": "",
+            "reply_to": 2336,
+            "has_media": true
+          },
+          {
+            "id": 2348,
+            "author": "Unknown author",
+            "date": "2026-07-04T05:42:42+00:00",
+            "body_html": "",
+            "reply_to": 2336,
+            "has_media": true
+          },
+          {
+            "id": 2349,
+            "author": "Unknown author",
+            "date": "2026-07-04T05:42:42+00:00",
+            "body_html": "",
+            "reply_to": 2336,
+            "has_media": true
+          },
+          {
+            "id": 2350,
+            "author": "Unknown author",
+            "date": "2026-07-04T05:42:42+00:00",
+            "body_html": "",
+            "reply_to": 2336,
+            "has_media": true
+          },
+          {
+            "id": 2351,
+            "author": "Unknown author",
+            "date": "2026-07-04T05:42:42+00:00",
+            "body_html": "",
+            "reply_to": 2336,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1914": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2352,
+        "post_id": 1914,
+        "comments": []
+      }
+    ],
+    "1922": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2360,
+        "post_id": 1922,
+        "comments": []
+      }
+    ],
+    "1925": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2363,
+        "post_id": 1925,
+        "comments": []
+      }
+    ],
+    "1930": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2368,
+        "post_id": 1930,
+        "comments": [
+          {
+            "id": 2378,
+            "author": "Unknown author",
+            "date": "2026-07-05T08:37:04+00:00",
+            "body_html": "",
+            "reply_to": 2368,
+            "has_media": true
+          },
+          {
+            "id": 2379,
+            "author": "Unknown author",
+            "date": "2026-07-05T08:37:04+00:00",
+            "body_html": "",
+            "reply_to": 2368,
+            "has_media": true
+          },
+          {
+            "id": 2380,
+            "author": "Unknown author",
+            "date": "2026-07-05T08:37:04+00:00",
+            "body_html": "",
+            "reply_to": 2368,
+            "has_media": true
+          }
+        ]
+      }
+    ],
+    "1940": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2381,
+        "post_id": 1940,
+        "comments": []
+      }
+    ],
+    "1945": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2386,
+        "post_id": 1945,
+        "comments": []
+      }
     ]
   },
-  "next_post_id": 1745
+  "next_post_id": 1946
 }
