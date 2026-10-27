@@ -8,6 +8,7 @@ days = ["2026-07-23"]
 tags = ["лекция", "evernote", "saas", "everpublich", "zola", "api", "friends_bar", "batumi", "telegram", "title_onhover"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2067?comment=0'>Reply on Telegram</a></p></section>"
 id = 2067
 day = "2026-07-23"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2067"
@@ -17,7 +18,7 @@ next_body = "#fashion\n#ears\n#hood\n#cat\n#green\nSource"
 prev_id = 2066
 prev_title = ""
 prev_body = "#buterin\n#pickup\nSource"
-views = 214
+views = 215
 ids = [2067]
 
 [[extra.related]]
@@ -60,7 +61,7 @@ date = "2026-06-30"
 
 [reeknote evernote cli](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 91%, Shell 5%, Python 2% · 90 commits · 2 open issues/PRs · GPL-3.0 · last push 2026-10-11")  
 
-[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 8 stars · Languages: Rust 97%, JavaScript 3% · 152 commits · 3 forks · 3 open issues/PRs · MIT · last push 2026-10-24")  
+[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 10 stars · Languages: Rust 97%, JavaScript 3% · 152 commits · 3 forks · 3 open issues/PRs · MIT · last push 2026-10-25")  
 
 To Evernote: [Pinterest](<https://github.com/vitaly-zdanevich/pinterest-saves-to-evernote> "GitHub Action that automatically saves your Pinterest pins to Evernote, unofficial · 0 stars · Languages: Rust 100% · 54 commits · last push 2026-10-09"), [Wikipedia](<https://github.com/vitaly-zdanevich/wikipedia_diffs_to_evernote> "Daily GitHub Action that syncs a Wikipedia user's edits to Evernote — one note per edit (clickable editor, date, size change, diff link, an… · 0 stars · Languages: Python 100% · 32 commits · MIT · last push 2026-10-21"), [YandexMusic](<https://github.com/vitaly-zdanevich/yandex-music-likes-to-evernote> "Rust CLI to export newly liked Yandex Music tracks to Evernote notes · 0 stars · Languages: Rust 100% · 44 commits · GPL-3.0 · last push 2026-09-27")  
 

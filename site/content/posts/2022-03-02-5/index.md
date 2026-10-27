@@ -13,7 +13,7 @@ day = "2022-03-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/5"
 next_id = 7
 next_title = ""
-next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nis a digital library of academic journals, books, and primary sources founded in 1994. Originally containing digitized back issues of academic journals, it expanded to encompass books and other primary sources as well as current issues of journals in t…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
+next_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
 prev_id = 3
 prev_title = ""
 prev_body = "Channel photo updated"
@@ -77,11 +77,11 @@ date = "2026-10-12"
 "Коллапс моей личности" [https://youtu.be/5pkrlZGFzF0](<https://youtu.be/5pkrlZGFzF0> "коллапс моей личности")  
 
 <https://www.belta.by/society/view/osnovnye-pokazateli-avarijnosti-na-dorogah-belarusi-10-let-ustojchivo-sokraschajutsja-177484-2016>  
-[https://ru.wikipedia.org/wiki/Велодвижение\_в\_Белоруссии](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%B8%D0%B8)  
+[https://ru.wikipedia.org/wiki/Велодвижение\_в\_Белоруссии](<https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%B8%D0%B8> "Велодвиже́ние в Беларуси — использование велосипеда как утилитарного транспорта вместо автомобиля и автобуса, рекреации, а также активности направленные на улучшение инфраструктуры для велосипедистов: понижение бордюров, создание велодорожек разного типа, увеличение количества велопарковок и вело…")  
 
 [https://www.belstat.gov.by](https://www.belstat.gov.by/)  
 
-[https://ru.wikipedia.org/wiki/Исачёв,\_Александр\_Анатольевич](https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%B0%D1%87%D1%91%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87)  
+[https://ru.wikipedia.org/wiki/Исачёв,\_Александр\_Анатольевич](<https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%B0%D1%87%D1%91%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87> "Алекса́ндр Анато́льевич Исачёв (бел. Алякса́ндр Анато́льевіч Ісачо́ў; 11 11 января 1955, Озаричи, Гомельская область — 5 декабря 1987 или 1986) — советский художник, график.")  
 
 <https://wiki.openstreetmap.org/wiki/Tag:natural=tree>  
 

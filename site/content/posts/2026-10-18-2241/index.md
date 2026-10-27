@@ -17,7 +17,7 @@ next_body = "#eso\n#spirit\n#life\n#death\nBy bennettreloaded, source"
 prev_id = 2240
 prev_title = ""
 prev_body = "#mem\n#design\n#night\nBy aerodynamicmeme, source"
-views = 12
+views = 21
 ids = [2241]
 
 [[extra.related]]
@@ -52,5 +52,7 @@ date = "2025-01-01"
 By [bennettreloaded](https://www.instagram.com/bennettreloaded/), [source](https://www.instagram.com/p/DeX6aNaJpcw/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2241-01.mp4") }}
+
+❤ 1
 
 {{ tag(t="video") }}

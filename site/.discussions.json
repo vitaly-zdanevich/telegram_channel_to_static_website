@@ -13327,7 +13327,913 @@
         "post_id": 1945,
         "comments": []
       }
+    ],
+    "1951": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2392,
+        "post_id": 1951,
+        "comments": []
+      }
+    ],
+    "1961": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2402,
+        "post_id": 1961,
+        "comments": []
+      }
+    ],
+    "1962": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2403,
+        "post_id": 1962,
+        "comments": []
+      }
+    ],
+    "1966": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2407,
+        "post_id": 1966,
+        "comments": []
+      }
+    ],
+    "1970": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2411,
+        "post_id": 1970,
+        "comments": []
+      }
+    ],
+    "1980": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2421,
+        "post_id": 1980,
+        "comments": []
+      }
+    ],
+    "1988": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2429,
+        "post_id": 1988,
+        "comments": []
+      }
+    ],
+    "1990": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2431,
+        "post_id": 1990,
+        "comments": []
+      }
+    ],
+    "1999": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2440,
+        "post_id": 1999,
+        "comments": []
+      }
+    ],
+    "2004": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2445,
+        "post_id": 2004,
+        "comments": []
+      }
+    ],
+    "2010": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2451,
+        "post_id": 2010,
+        "comments": []
+      }
+    ],
+    "2020": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2461,
+        "post_id": 2020,
+        "comments": []
+      }
+    ],
+    "2024": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2465,
+        "post_id": 2024,
+        "comments": []
+      }
+    ],
+    "2034": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2475,
+        "post_id": 2034,
+        "comments": []
+      }
+    ],
+    "2035": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2476,
+        "post_id": 2035,
+        "comments": []
+      }
+    ],
+    "2036": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2477,
+        "post_id": 2036,
+        "comments": []
+      }
+    ],
+    "2037": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2478,
+        "post_id": 2037,
+        "comments": []
+      }
+    ],
+    "2038": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2479,
+        "post_id": 2038,
+        "comments": []
+      }
+    ],
+    "2039": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2480,
+        "post_id": 2039,
+        "comments": []
+      }
+    ],
+    "2040": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2481,
+        "post_id": 2040,
+        "comments": []
+      }
+    ],
+    "2041": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2482,
+        "post_id": 2041,
+        "comments": []
+      }
+    ],
+    "2042": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2483,
+        "post_id": 2042,
+        "comments": []
+      }
+    ],
+    "2043": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2484,
+        "post_id": 2043,
+        "comments": []
+      }
+    ],
+    "2044": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2485,
+        "post_id": 2044,
+        "comments": []
+      }
+    ],
+    "2045": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2486,
+        "post_id": 2045,
+        "comments": []
+      }
+    ],
+    "2046": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2487,
+        "post_id": 2046,
+        "comments": []
+      }
+    ],
+    "2047": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2488,
+        "post_id": 2047,
+        "comments": []
+      }
+    ],
+    "2048": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2489,
+        "post_id": 2048,
+        "comments": []
+      }
+    ],
+    "2049": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2490,
+        "post_id": 2049,
+        "comments": []
+      }
+    ],
+    "2050": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2491,
+        "post_id": 2050,
+        "comments": []
+      }
+    ],
+    "2060": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2501,
+        "post_id": 2060,
+        "comments": []
+      }
+    ],
+    "2061": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2502,
+        "post_id": 2061,
+        "comments": []
+      }
+    ],
+    "2066": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2507,
+        "post_id": 2066,
+        "comments": []
+      }
+    ],
+    "2067": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2508,
+        "post_id": 2067,
+        "comments": []
+      }
+    ],
+    "2069": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2510,
+        "post_id": 2069,
+        "comments": []
+      }
+    ],
+    "2070": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2511,
+        "post_id": 2070,
+        "comments": []
+      }
+    ],
+    "2071": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2512,
+        "post_id": 2071,
+        "comments": []
+      }
+    ],
+    "2072": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2513,
+        "post_id": 2072,
+        "comments": []
+      }
+    ],
+    "2073": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2514,
+        "post_id": 2073,
+        "comments": []
+      }
+    ],
+    "2074": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2515,
+        "post_id": 2074,
+        "comments": []
+      }
+    ],
+    "2075": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2516,
+        "post_id": 2075,
+        "comments": []
+      }
+    ],
+    "2076": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2517,
+        "post_id": 2076,
+        "comments": []
+      }
+    ],
+    "2083": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2524,
+        "post_id": 2083,
+        "comments": []
+      }
+    ],
+    "2091": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2532,
+        "post_id": 2091,
+        "comments": []
+      }
+    ],
+    "2092": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2533,
+        "post_id": 2092,
+        "comments": []
+      }
+    ],
+    "2093": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2534,
+        "post_id": 2093,
+        "comments": []
+      }
+    ],
+    "2094": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2535,
+        "post_id": 2094,
+        "comments": []
+      }
+    ],
+    "2095": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2536,
+        "post_id": 2095,
+        "comments": []
+      }
+    ],
+    "2096": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2537,
+        "post_id": 2096,
+        "comments": []
+      }
+    ],
+    "2097": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2538,
+        "post_id": 2097,
+        "comments": []
+      }
+    ],
+    "2098": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2539,
+        "post_id": 2098,
+        "comments": []
+      }
+    ],
+    "2099": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2540,
+        "post_id": 2099,
+        "comments": []
+      }
+    ],
+    "2100": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2541,
+        "post_id": 2100,
+        "comments": []
+      }
+    ],
+    "2101": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2542,
+        "post_id": 2101,
+        "comments": []
+      }
+    ],
+    "2102": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2543,
+        "post_id": 2102,
+        "comments": []
+      }
+    ],
+    "2103": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2544,
+        "post_id": 2103,
+        "comments": []
+      }
+    ],
+    "2104": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2545,
+        "post_id": 2104,
+        "comments": []
+      }
+    ],
+    "2105": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2546,
+        "post_id": 2105,
+        "comments": []
+      }
+    ],
+    "2106": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2547,
+        "post_id": 2106,
+        "comments": []
+      }
+    ],
+    "2107": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2548,
+        "post_id": 2107,
+        "comments": []
+      }
+    ],
+    "2108": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2549,
+        "post_id": 2108,
+        "comments": []
+      }
+    ],
+    "2109": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2550,
+        "post_id": 2109,
+        "comments": []
+      }
+    ],
+    "2110": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2551,
+        "post_id": 2110,
+        "comments": []
+      }
+    ],
+    "2111": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2552,
+        "post_id": 2111,
+        "comments": []
+      }
+    ],
+    "2112": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2553,
+        "post_id": 2112,
+        "comments": []
+      }
+    ],
+    "2113": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2554,
+        "post_id": 2113,
+        "comments": []
+      }
+    ],
+    "2114": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2555,
+        "post_id": 2114,
+        "comments": []
+      }
+    ],
+    "2115": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2556,
+        "post_id": 2115,
+        "comments": []
+      }
+    ],
+    "2116": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2557,
+        "post_id": 2116,
+        "comments": []
+      }
+    ],
+    "2117": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2558,
+        "post_id": 2117,
+        "comments": []
+      }
+    ],
+    "2118": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2559,
+        "post_id": 2118,
+        "comments": []
+      }
+    ],
+    "2119": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2560,
+        "post_id": 2119,
+        "comments": []
+      }
+    ],
+    "2120": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2561,
+        "post_id": 2120,
+        "comments": []
+      }
+    ],
+    "2121": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2562,
+        "post_id": 2121,
+        "comments": []
+      }
+    ],
+    "2122": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2563,
+        "post_id": 2122,
+        "comments": []
+      }
+    ],
+    "2123": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2564,
+        "post_id": 2123,
+        "comments": []
+      }
+    ],
+    "2124": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2565,
+        "post_id": 2124,
+        "comments": []
+      }
+    ],
+    "2125": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2566,
+        "post_id": 2125,
+        "comments": []
+      }
+    ],
+    "2126": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2567,
+        "post_id": 2126,
+        "comments": []
+      }
+    ],
+    "2127": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2568,
+        "post_id": 2127,
+        "comments": []
+      }
+    ],
+    "2128": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2569,
+        "post_id": 2128,
+        "comments": []
+      }
+    ],
+    "2129": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2570,
+        "post_id": 2129,
+        "comments": []
+      }
+    ],
+    "2130": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2571,
+        "post_id": 2130,
+        "comments": []
+      }
+    ],
+    "2131": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2572,
+        "post_id": 2131,
+        "comments": []
+      }
+    ],
+    "2132": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2573,
+        "post_id": 2132,
+        "comments": []
+      }
+    ],
+    "2133": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2574,
+        "post_id": 2133,
+        "comments": []
+      }
+    ],
+    "2134": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2575,
+        "post_id": 2134,
+        "comments": []
+      }
+    ],
+    "2135": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2576,
+        "post_id": 2135,
+        "comments": []
+      }
+    ],
+    "2136": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2577,
+        "post_id": 2136,
+        "comments": []
+      }
+    ],
+    "2137": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2578,
+        "post_id": 2137,
+        "comments": []
+      }
+    ],
+    "2138": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2579,
+        "post_id": 2138,
+        "comments": []
+      }
+    ],
+    "2139": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2580,
+        "post_id": 2139,
+        "comments": [
+          {
+            "id": 2595,
+            "author": "Unknown author",
+            "date": "2026-09-11T16:57:37+00:00",
+            "body_html": "Wrote <a href='https://habr.com/en/posts/1081424/'>https://habr.com/en/posts/1081424/</a>",
+            "reply_to": 2580,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "2140": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2581,
+        "post_id": 2140,
+        "comments": []
+      }
+    ],
+    "2141": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2582,
+        "post_id": 2141,
+        "comments": [
+          {
+            "id": 2583,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-09-08T18:14:29+00:00",
+            "body_html": "their design and applications are absolutely atrocious",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2584,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-09-08T18:15:08+00:00",
+            "body_html": "very clunky and slow",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2585,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-09-08T18:16:11+00:00",
+            "body_html": "but there is linux app image if you want their desktop app \n\nI&#39;ve had it on nixos \n\n<pre>nix-shell -p wechat</pre>",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2586,
+            "author": "Unknown author",
+            "date": "2026-09-08T18:16:48+00:00",
+            "body_html": "Thanks, I tried their AppImage - but I am on X\n\n<blockquote>$ ./WeChatLinux_x86_64.AppImage \nWayland stub: dlopen(libwayland-client.so.0) failed: libwayland-client.so.0: cannot open shared object file: No such file or directory\nWayland stub: initialization failed\n[0908/221423.385123:ERROR:elf_dynamic_array_reader.h(64)] tag not found\n[0908/221423.387996:WARNING:process_reader_linux.cc(146)] no stack mapping\n[0908/221424.759352:ERROR:directory_reader_posix.cc(42)] opendir /home/vitaly/.xwechat/crashinfo/attachments/05aca9dd-9d3e-4c6d-96d2-ff747176fac8: No such file or directory (2)\nAborted                    ./WeChatLinux_x86_64.AppImage</blockquote>",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2587,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-09-08T18:16:50+00:00",
+            "body_html": "<a href='https://web.archive.org/web/20260818044436if_/https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.AppImage'>https://web.archive.org/web/20260818044436if_/https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.AppImage</a>",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2588,
+            "author": "Unknown author",
+            "date": "2026-09-08T18:17:40+00:00",
+            "body_html": "Why WebArchive?",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2589,
+            "author": "Unknown author",
+            "date": "2026-09-08T18:17:47+00:00",
+            "body_html": "I downloaded from <a href='https://linux.weixin.qq.com/en'>https://linux.weixin.qq.com/en</a>",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2590,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-09-08T18:17:47+00:00",
+            "body_html": "yeah on nixos it does work, based on how everything is packaged they just work",
+            "reply_to": 2586,
+            "has_media": false
+          },
+          {
+            "id": 2591,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-09-08T18:18:39+00:00",
+            "body_html": "this is what nin pkgs use for packaging\n\n<a href='https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/we/wechat/package.nix#L13'>https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/we/wechat/package.nix#L13</a>",
+            "reply_to": 2589,
+            "has_media": false
+          },
+          {
+            "id": 2592,
+            "author": "Unknown author",
+            "date": "2026-09-08T18:18:53+00:00",
+            "body_html": "Thanks, I will try to create the ebuild...",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2593,
+            "author": "Lasha Kamadadze (Laboratory: Georgia IT student)",
+            "date": "2026-09-08T18:23:29+00:00",
+            "body_html": "are you still on Gentoo?",
+            "reply_to": 2582,
+            "has_media": false
+          },
+          {
+            "id": 2594,
+            "author": "Unknown author",
+            "date": "2026-09-08T18:52:24+00:00",
+            "body_html": "yes",
+            "reply_to": 2582,
+            "has_media": false
+          }
+        ]
+      }
+    ],
+    "2143": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2597,
+        "post_id": 2143,
+        "comments": []
+      }
+    ],
+    "2144": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2598,
+        "post_id": 2144,
+        "comments": []
+      }
+    ],
+    "2145": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2599,
+        "post_id": 2145,
+        "comments": []
+      }
+    ],
+    "2146": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2600,
+        "post_id": 2146,
+        "comments": []
+      }
+    ],
+    "2147": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2601,
+        "post_id": 2147,
+        "comments": []
+      }
+    ],
+    "2148": [
+      {
+        "peer_id": 2033173701,
+        "root_id": 2602,
+        "post_id": 2148,
+        "comments": []
+      }
     ]
   },
-  "next_post_id": 1946
+  "next_post_id": 2149
 }

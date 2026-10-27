@@ -18,7 +18,7 @@ next_body = "#logo\n#heart\n#yandex\n#pain"
 prev_id = 2227
 prev_title = ""
 prev_body = "#toy\n#craft\n#love\nSource\nElly Vishnevsky\nwww.vishnya.etsy.com\nwww.vishnya.com"
-views = 10
+views = 13
 ids = [2228]
 
 [[extra.related]]

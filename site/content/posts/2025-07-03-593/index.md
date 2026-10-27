@@ -19,7 +19,7 @@ next_body = "#webdesign\n#plan9"
 prev_id = 592
 prev_title = ""
 prev_body = "#book Designing Data-Intensive Applications and #wine"
-views = 43
+views = 44
 ids = [593]
 
 [[extra.related]]

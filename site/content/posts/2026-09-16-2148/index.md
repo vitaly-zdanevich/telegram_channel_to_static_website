@@ -8,6 +8,7 @@ days = ["2026-09-16"]
 tags = ["ai", "incarnation", "scifi", "vr", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2148?comment=0'>Reply on Telegram</a></p></section>"
 id = 2148
 day = "2026-09-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2148"
@@ -17,7 +18,7 @@ next_body = "#aivideo\n#future\n#love\nBy arikuschnir, source"
 prev_id = 2147
 prev_title = ""
 prev_body = "#llm\n#terminator\nPick a #number between 1 and 30: 17\nSource"
-views = 38
+views = 39
 ids = [2148]
 
 [[extra.related]]

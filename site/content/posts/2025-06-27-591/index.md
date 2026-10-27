@@ -19,7 +19,7 @@ next_body = "#book Designing Data-Intensive Applications and #wine"
 prev_id = 590
 prev_title = ""
 prev_body = "#comment\n#health\n#magnesium"
-views = 47
+views = 48
 ids = [591]
 
 [[extra.related]]

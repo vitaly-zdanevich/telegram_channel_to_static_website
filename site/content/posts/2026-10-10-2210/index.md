@@ -18,7 +18,7 @@ next_body = "Status update about my \"media center\" Youta (TUI audio player for
 prev_id = 2209
 prev_title = ""
 prev_body = "#job\n#jobinterview\n#caffee\n#psy\n#trauma\n#russian\nBy lutchak1, source"
-views = 8
+views = 9
 ids = [2210, 2211]
 
 [[extra.related]]

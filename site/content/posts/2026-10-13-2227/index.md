@@ -17,7 +17,7 @@ next_body = "#ad\n#health\n#hear\n#russian\n#buildboard\nВсе слышат - �
 prev_id = 2226
 prev_title = ""
 prev_body = "#toy\n#craft\n#horn\nSource"
-views = 11
+views = 14
 ids = [2227]
 
 [[extra.related]]

@@ -8,6 +8,7 @@ days = ["2026-08-09"]
 tags = ["my", "лекция", "batumi", "friends_bar", "youta", "tui", "youtube", "yandex_music", "file_manager", "offline", "wikidata", "ffprobe", "acoustid", "musicbrainz", "lastfm", "bandcamp", "radio", "llm", "codex", "gpt", "old_hardware", "rust"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2595'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2139?comment=2595'><time datetime='2026-09-11T16:57:37+00:00'>2026-09-11 16:57 +00:00</time></a></div><div class='comment-body'>Wrote <a href='https://habr.com/en/posts/1081424/' rel='nofollow ugc'>https://habr.com/en/posts/1081424/</a></div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2139?comment=0'>Reply on Telegram</a></p></section>"
 id = 2139
 day = "2026-08-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2139"
@@ -17,7 +18,7 @@ next_body = "#fun\n#document\n#secret\n#censor\n#music\n#anime\n#badapple\nSourc
 prev_id = 2138
 prev_title = ""
 prev_body = "#village\n#nature\n#career\nSource"
-views = 204
+views = 205
 ids = [2139]
 
 [[extra.related]]
