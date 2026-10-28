@@ -8,6 +8,7 @@ days = ["2026-10-18"]
 tags = ["eso", "spirit", "life", "death", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2242?comment=0'>Reply on Telegram</a></p></section>"
 id = 2242
 day = "2026-10-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2242"
@@ -17,7 +18,7 @@ next_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online 
 prev_id = 2241
 prev_title = ""
 prev_body = "#ai\n#spirit\nBy bennettreloaded, source"
-views = 21
+views = 22
 ids = [2242]
 
 [[extra.related]]

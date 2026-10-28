@@ -42,9 +42,9 @@ label = "#hookah #robot"
 date = "2025-03-16"
 
 [[extra.related]]
-path = "@/posts/2026-07-29-2096/index.md"
-label = "#cat #laugh #slow By dustythegingercat"
-date = "2026-07-29"
+path = "@/posts/2026-10-27-2253/index.md"
+label = "#http403 #cat #producthunt"
+date = "2026-10-27"
 +++
 
 {{ tag(t="cat") }}  

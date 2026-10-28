@@ -8,6 +8,7 @@ days = ["2026-10-19"]
 tags = ["design", "map", "cityinfo", "minsk"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (2)</h2><ol class='discussion-comments'><li id='comment-2033173701-2707'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2243?comment=2707'><time datetime='2026-10-19T23:31:46+00:00'>2026-10-19 23:31 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/2243?comment=2707'>Attachment (not archived)</a></p></li><li id='comment-2033173701-2713'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2243?comment=2713'><time datetime='2026-10-20T08:10:59+00:00'>2026-10-20 08:10 +00:00</time></a></div><div class='comment-body'>CityInfo was faster... and it is.\n\n#yandex\n#yandex_map</div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/2243?comment=2713'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2243?comment=0'>Reply on Telegram</a></p></section>"
 id = 2243
 day = "2026-10-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2243"
@@ -18,7 +19,7 @@ next_body = "#map\n#europe\n#belarus\n#sakartvelo\n#russia\n#year1444\nFrom"
 prev_id = 2242
 prev_title = ""
 prev_body = "#eso\n#spirit\n#life\n#death\nBy bennettreloaded, source"
-views = 18
+views = 20
 ids = [2243, 2244, 2245]
 
 [[extra.related]]

@@ -7,6 +7,7 @@ description = "Это фанатский мод: от первого лица с
 days = ["2026-10-09"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2698'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2200?comment=2698'><time datetime='2026-10-18T16:47:42+00:00'>2026-10-18 16:47 +00:00</time></a></div><div class='comment-body'>#game</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2200?comment=0'>Reply on Telegram</a></p></section>"
 id = 2200
 day = "2026-10-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2200"
@@ -26,7 +27,7 @@ ids = [2200]
 
 Нужны Warcraft III 1.26a и файлы CS 1.6.  
 
-Репозиторий: [https://github.com/YazgulDev/warcraft-cs](<https://github.com/YazgulDev/warcraft-cs> "Counter-Strike-style offline FPS for Warcraft III 1.26a: RoC/TFT, gold buy menu, squads, configurable weapons and CS audio · 67 stars · Languages: C++ 76%, PowerShell 12%, C# 7% · 237 commits · 8 forks · 4 open issues/PRs · Apache-2.0 · last push 2026-10-26")  
+Репозиторий: [https://github.com/YazgulDev/warcraft-cs](<https://github.com/YazgulDev/warcraft-cs> "Counter-Strike-style offline FPS for Warcraft III 1.26a: RoC/TFT, gold buy menu, squads, configurable weapons and CS audio · 68 stars · Languages: C++ 76%, PowerShell 12%, C# 7% · 253 commits · 8 forks · 4 open issues/PRs · Apache-2.0 · last push 2026-10-27")  
 
 Видео автора мода: [https://www.youtube.com/watch?v=hW0TytuwpRA](<https://www.youtube.com/watch?v=hW0TytuwpRA> "Playing Counter Strike 1.6 in Warcraft 3 mod")
 

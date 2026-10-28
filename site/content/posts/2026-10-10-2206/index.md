@@ -8,6 +8,7 @@ days = ["2026-10-10"]
 tags = ["ad", "russia", "cat", "heat", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2206?comment=0'>Reply on Telegram</a></p></section>"
 id = 2206
 day = "2026-10-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2206"
@@ -41,9 +42,9 @@ label = "#cat #psy"
 date = "2025-04-25"
 
 [[extra.related]]
-path = "@/posts/2026-07-29-2096/index.md"
-label = "#cat #laugh #slow By dustythegingercat"
-date = "2026-07-29"
+path = "@/posts/2026-10-27-2253/index.md"
+label = "#http403 #cat #producthunt"
+date = "2026-10-27"
 +++
 
 {{ tag(t="ad") }}  

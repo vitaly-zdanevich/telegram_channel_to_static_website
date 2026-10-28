@@ -8,6 +8,7 @@ days = ["2026-10-19"]
 tags = ["map", "europe", "belarus", "sakartvelo", "russia", "year_1444"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2246?comment=0'>Reply on Telegram</a></p></section>"
 id = 2246
 day = "2026-10-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2246"
@@ -18,7 +19,7 @@ next_body = "#logo looks like #ai\n#music"
 prev_id = 2243
 prev_title = ""
 prev_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online maps. Instant performance.\nStill alive website"
-views = 20
+views = 24
 ids = [2246, 2247, 2248, 2249, 2250]
 
 [[extra.related]]

@@ -27,6 +27,11 @@ label = "#cat #psy"
 date = "2025-04-25"
 
 [[extra.related]]
+path = "@/posts/2026-10-27-2253/index.md"
+label = "#http403 #cat #producthunt"
+date = "2026-10-27"
+
+[[extra.related]]
 path = "@/posts/2026-06-30-1874/index.md"
 label = "#llm #prediction #cat"
 date = "2026-06-30"
@@ -39,11 +44,6 @@ date = "2026-03-13"
 [[extra.related]]
 path = "@/posts/2025-03-16-421/index.md"
 label = "#laser #cat #matrix"
-date = "2025-03-16"
-
-[[extra.related]]
-path = "@/posts/2025-03-16-415/index.md"
-label = "#cat #robot #lasers"
 date = "2025-03-16"
 +++
 

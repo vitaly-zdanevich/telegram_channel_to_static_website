@@ -8,6 +8,7 @@ days = ["2026-10-17"]
 tags = ["log", "porting", "prime_world", "game"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2237?comment=0'>Reply on Telegram</a></p></section>"
 id = 2237
 day = "2026-10-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2237"
@@ -18,7 +19,7 @@ next_body = "#yandex\n#http429"
 prev_id = 2236
 prev_title = ""
 prev_body = "#linux\n#screenshot\n#imitation\n#windows2000\n#internetexplorer\n#photoshot\n#photocraft\n#linuxorgru\nSource"
-views = 14
+views = 15
 ids = [2237]
 
 [[extra.related]]

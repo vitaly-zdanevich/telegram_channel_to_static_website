@@ -8,6 +8,7 @@ days = ["2026-09-21"]
 tags = ["sakartvelo", "tbilisi", "monument", "chronicle_of_georgia", "tsereteli", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2630'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2175?comment=2630'><time datetime='2026-09-21T09:29:45+00:00'>2026-09-21 09:29 +00:00</time></a></div><div class='comment-body'>By <a href='https://www.instagram.com/aleka.s/' rel='nofollow ugc'>aleka.s</a>, <a href='https://www.instagram.com/p/Db5B0uzMfhC/' rel='nofollow ugc'>source</a></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/2175?comment=2630'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2175?comment=0'>Reply on Telegram</a></p></section>"
 id = 2175
 day = "2026-09-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2175"

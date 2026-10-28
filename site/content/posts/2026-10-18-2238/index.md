@@ -8,6 +8,7 @@ days = ["2026-10-18"]
 tags = ["yandex", "http_429"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2238?comment=0'>Reply on Telegram</a></p></section>"
 id = 2238
 day = "2026-10-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2238"
@@ -18,7 +19,7 @@ next_body = "#web\n#3d\n#water\n#webgpu\n61 kb.\nIn Firefox in about:config I en
 prev_id = 2237
 prev_title = ""
 prev_body = "#log\nStill running my experiment about #porting #primeworld from Windows/DirectX to Linux/OpenGL, 100% on autopilot...\nNow it looks like a #game."
-views = 14
+views = 15
 ids = [2238]
 
 [[extra.related]]

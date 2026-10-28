@@ -8,6 +8,7 @@ days = ["2026-10-13"]
 tags = ["craft", "toy", "horn"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2222?comment=0'>Reply on Telegram</a></p></section>"
 id = 2222
 day = "2026-10-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2222"
@@ -17,7 +18,7 @@ next_body = "#art\n#depressive\n#fear\n#horn\nSource"
 prev_id = 2221
 prev_title = ""
 prev_body = "#flatearth\n#antarctica"
-views = 8
+views = 9
 ids = [2222]
 
 [[extra.related]]

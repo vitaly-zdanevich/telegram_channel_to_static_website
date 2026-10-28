@@ -16,7 +16,7 @@ next_body = "also great design"
 prev_id = 15
 prev_title = ""
 prev_body = "#meanna"
-views = 75
+views = 76
 ids = [16, 17]
 +++
 

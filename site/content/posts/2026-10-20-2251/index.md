@@ -8,14 +8,18 @@ days = ["2026-10-20"]
 tags = ["logo", "ai", "music"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2251?comment=0'>Reply on Telegram</a></p></section>"
 id = 2251
 day = "2026-10-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2251"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2251-5384093654659571142-y-599x1197-100884.jpg"
+next_id = 2253
+next_title = ""
+next_body = "#http403\n#cat\n#producthunt"
 prev_id = 2246
 prev_title = ""
 prev_body = "#map\n#europe\n#belarus\n#sakartvelo\n#russia\n#year1444\nFrom"
-views = 19
+views = 23
 ids = [2251]
 
 [[extra.related]]

@@ -8,6 +8,7 @@ days = ["2026-10-12"]
 tags = ["llm", "rust", "codex", "tests", "wikidata", "commons", "internet_archive", "librivox", "evernote", "youtube", "podcast", "antennapod", "lan"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2672'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2212?comment=2672'><time datetime='2026-10-12T11:56:15+00:00'>2026-10-12 11:56 +00:00</time></a></div><div class='comment-body'></div><p class='comment-attachment'><a href='https://t.me/vitaly_zdanevich_chan/2212?comment=2672'>Attachment (not archived)</a></p></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2212?comment=0'>Reply on Telegram</a></p></section>"
 id = 2212
 day = "2026-10-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2212"

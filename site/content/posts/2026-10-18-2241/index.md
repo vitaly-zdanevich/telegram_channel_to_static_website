@@ -8,6 +8,7 @@ days = ["2026-10-18"]
 tags = ["ai", "spirit", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2241?comment=0'>Reply on Telegram</a></p></section>"
 id = 2241
 day = "2026-10-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2241"
@@ -17,7 +18,7 @@ next_body = "#eso\n#spirit\n#life\n#death\nBy bennettreloaded, source"
 prev_id = 2240
 prev_title = ""
 prev_body = "#mem\n#design\n#night\nBy aerodynamicmeme, source"
-views = 21
+views = 22
 ids = [2241]
 
 [[extra.related]]

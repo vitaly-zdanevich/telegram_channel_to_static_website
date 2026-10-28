@@ -52,7 +52,7 @@ date = "2026-01-24"
 
 I asked {{ tag(t="gemini") }} to port {{ tag(t="prime_world") }} {{ tag(t="game") }} from Windows to Linux, interesting if that possible...  
 
-[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 9 stars · Languages: C++ 34%, C# 20%, Python 16% · 1985 commits · 5 forks · 1 open issues/PRs · last push 2026-10-27")  
+[https://github.com/Prime-World-Classic/Prime-World](<https://github.com/Prime-World-Classic/Prime-World> "Prime World Classic Fork · 9 stars · Languages: C++ 34%, C# 20%, Python 16% · 2009 commits · 5 forks · 1 open issues/PRs · last push 2026-10-28")  
 
 We tried {{ tag(t="wine") }} of course - but some problems with {{ tag(t="lutris") }} - because native launcher need to run Wine...
 

@@ -18,7 +18,7 @@ next_body = "Wow, about #telegram bots: you can bypass 50 MB response limit - by
 prev_id = 1804
 prev_title = ""
 prev_body = "In #batumi, to buy a coffee, sometimes we talk in three #languages:\n#kartuli\n#english\n#russian"
-views = 38
+views = 39
 ids = [1805]
 
 [[extra.related]]

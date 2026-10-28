@@ -8,6 +8,7 @@ days = ["2026-10-18"]
 tags = ["mem", "design", "night", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2240?comment=0'>Reply on Telegram</a></p></section>"
 id = 2240
 day = "2026-10-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2240"
@@ -17,7 +18,7 @@ next_body = "#ai\n#spirit\nBy bennettreloaded, source"
 prev_id = 2239
 prev_title = ""
 prev_body = "#web\n#3d\n#water\n#webgpu\n61 kb.\nIn Firefox in about:config I enabled dom.webgpu.enabled, check at webgpucheck.com\nSource"
-views = 20
+views = 21
 ids = [2240]
 
 [[extra.related]]
