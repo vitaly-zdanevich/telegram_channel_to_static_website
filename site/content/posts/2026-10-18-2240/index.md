@@ -18,7 +18,7 @@ next_body = "#ai\n#spirit\nBy bennettreloaded, source"
 prev_id = 2239
 prev_title = ""
 prev_body = "#web\n#3d\n#water\n#webgpu\n61 kb.\nIn Firefox in about:config I enabled dom.webgpu.enabled, check at webgpucheck.com\nSource"
-views = 21
+views = 24
 ids = [2240]
 
 [[extra.related]]

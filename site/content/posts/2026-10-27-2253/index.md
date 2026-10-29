@@ -13,10 +13,13 @@ id = 2253
 day = "2026-10-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2253"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2253-5406700399705662791-y-1280x719-61240.jpg"
+next_id = 2254
+next_title = ""
+next_body = "#contactee\n#podzorova\nПообщались с инопланетянами."
 prev_id = 2251
 prev_title = ""
 prev_body = "#logo looks like #ai\n#music"
-views = 6
+views = 9
 ids = [2253]
 
 [[extra.related]]

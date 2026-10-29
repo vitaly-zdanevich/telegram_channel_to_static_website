@@ -18,7 +18,7 @@ next_body = "#game\n#playstation\n#design\nBy retourverslegaming, source"
 prev_id = 2174
 prev_title = ""
 prev_body = "#song\n#china\n#contrast\n#scream\nBy yukina0000v, source"
-views = 49
+views = 51
 ids = [2175]
 
 [[extra.related]]

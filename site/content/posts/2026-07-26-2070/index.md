@@ -18,7 +18,7 @@ next_body = "#food\n#hare\n#banana\n#blueberry\nSource"
 prev_id = 2069
 prev_title = ""
 prev_body = "#fashion\n#ears\n#hood\n#cat\n#green\nSource"
-views = 20
+views = 21
 ids = [2070]
 
 [[extra.related]]

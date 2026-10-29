@@ -18,8 +18,13 @@ next_body = "#craft\n#toy\n#horn\nSource"
 prev_id = 2164
 prev_title = ""
 prev_body = "#webdesign\n#mascot\n#golang\nFrom"
-views = 26
+views = 27
 ids = [2165]
+
+[[extra.related]]
+path = "@/posts/2026-10-28-2254/index.md"
+label = "#contactee #podzorova Пообщались с инопланетянами."
+date = "2026-10-28"
 +++
 
 {{ tag(t="contactee") }}  

@@ -44,7 +44,7 @@ date = "2026-09-27"
 
 [[extra.related]]
 path = "@/posts/2026-08-02-2114/index.md"
-label = "#духота #health #powerlifting"
+label = "#духота #health #powerlifting На каких витаминах ты присутствуеш…"
 date = "2026-08-02"
 +++
 

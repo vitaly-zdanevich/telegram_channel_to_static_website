@@ -17,8 +17,8 @@ next_title = ""
 next_body = "#webdesign\nWhy so #bad\nAnd no web version, of course. No Linux version."
 prev_id = 2139
 prev_title = ""
-prev_body = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, ЯндексМузыки, аудиокниг, радио\nЛёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.\nНа выходе - если /.config/youta/ под гитом - пушит, без токенов.\nTUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 12 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 590 commits · 1 fork · 6 open issues/PRs · MIT · last push 2026-10-20\")\nВсе линки\n#my\n#лекция\n#batumi\n#friendsbar\n#youta\n#tui\n#youtube\n#yandexmusic\n#filemanager\n#offline\n#wikidata\n#ffprobe\n#acoustid\n#musicbrainz\n#lastfm\n#bandcamp\n#radio\n#llm\n#codex\n#gpt\n#oldhardware\n#rust\nYouTube"
-views = 84
+prev_body = "Youta: моя лекция-демонстрация TUI аудио плеера для Ютуба, ЯндексМузыки, аудиокниг, радио\nЛёгкий аудио плеер с подписками из разных источников, плейлистами, фингерпринтингом на MusicBrainz, локальными заметками, Викиданными, скачиваниями - кому надо - можно собрать только с нужными функциями.\nНа выходе - если /.config/youta/ под гитом - пушит, без токенов.\nTUI audio player for YouTube (also Music) through yt-dlp, Bandcamp, Apple Podcasts and RSS, with local… · 13 stars · Languages: Rust 95%, JavaScript 2%, TypeScript 2% · 590 commits · 1 fork · 6 open issues/PRs · MIT · last push 2026-10-20\")\nВсе линки\n#my\n#лекция\n#batumi\n#friendsbar\n#youta\n#tui\n#youtube\n#yandexmusic\n#filemanager\n#offline\n#wikidata\n#ffprobe\n#acoustid\n#musicbrainz\n#lastfm\n#bandcamp\n#radio\n#llm\n#codex\n#gpt\n#oldhardware\n#rust\nYouTube"
+views = 85
 ids = [2140]
 
 [[extra.related]]

@@ -19,7 +19,7 @@ next_body = "#retro\n#software\n#songbird\n#itunes"
 prev_id = 2233
 prev_title = ""
 prev_body = "#money\n#museum\n#moneymuseum\n#ruble\n#ruble1\n#history\n#scan\nSource"
-views = 14
+views = 15
 ids = [2234]
 
 [[extra.related]]

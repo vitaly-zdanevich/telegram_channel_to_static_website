@@ -18,7 +18,7 @@ next_body = "#3d\n#walk\n#deformation\nBy theloudgiraffe"
 prev_id = 2092
 prev_title = ""
 prev_body = "#gamedev\n#indie\nBy mutatefightpurr"
-views = 19
+views = 20
 ids = [2093]
 
 [[extra.related]]

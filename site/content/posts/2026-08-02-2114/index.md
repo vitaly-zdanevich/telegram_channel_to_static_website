@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2026-08-02T18:37:30+00:00
-description = "духота health powerlifting Source"
+description = "духота health powerlifting На каких витаминах ты присутствуешь Source"
 
 [taxonomies]
 days = ["2026-08-02"]
@@ -18,7 +18,7 @@ next_body = "#macos\n#hentai\nBy dmtgrinch"
 prev_id = 2113
 prev_title = ""
 prev_body = "#духота\n#psy\n#community\nSource"
-views = 158
+views = 160
 ids = [2114]
 
 [[extra.related]]
@@ -50,6 +50,8 @@ date = "2026-08-02"
 {{ tag(t="духота") }}  
 {{ tag(t="health") }}  
 {{ tag(t="powerlifting") }}  
+
+> На каких витаминах ты присутствуешь
 
 [Source](https://www.instagram.com/reels/DafPNgdtZVE/)
 

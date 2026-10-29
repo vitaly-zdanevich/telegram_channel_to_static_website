@@ -17,7 +17,7 @@ next_title = ""
 next_body = "#sound\n#mem\nBy dendertyofficial"
 prev_id = 2114
 prev_title = ""
-prev_body = "#духота\n#health\n#powerlifting\nSource"
+prev_body = "#духота\n#health\n#powerlifting\nНа каких витаминах ты присутствуешь\nSource"
 views = 28
 ids = [2115]
 +++
