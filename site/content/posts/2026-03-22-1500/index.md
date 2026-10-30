@@ -37,12 +37,12 @@ label = "Wikimedia Commons: загрузка через мой Python скрип
 date = "2025-05-22"
 
 [[extra.related]]
-path = "@/posts/2025-01-11-245/index.md"
-label = "#war #video #warpath"
-date = "2025-01-11"
+path = "@/posts/2026-10-08-2190/index.md"
+label = "#mem #library #russian #belarus By mgbf2, source"
+date = "2026-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-10-08-2190/index.md"
+path = "@/posts/2026-10-08-2189/index.md"
 label = "#mem #library #russian #belarus By mgbf2, source"
 date = "2026-10-08"
 +++

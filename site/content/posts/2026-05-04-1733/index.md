@@ -38,14 +38,14 @@ label = "#language Ве́псский язы́к самоназвание — ve
 date = "2025-12-31"
 
 [[extra.related]]
-path = "@/posts/2024-12-11-215/index.md"
-label = "#belarus"
-date = "2024-12-11"
-
-[[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
 date = "2026-07-28"
+
+[[extra.related]]
+path = "@/posts/2026-02-04-1081/index.md"
+label = "#preservation #belarus geo block I uploaded a lot from to Common…"
+date = "2026-02-04"
 +++
 
 {{ tag(t="belarus") }}  

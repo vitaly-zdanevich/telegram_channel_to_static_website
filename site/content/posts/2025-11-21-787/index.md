@@ -22,11 +22,6 @@ views = 43
 ids = [787]
 
 [[extra.related]]
-path = "@/posts/2024-11-25-199/index.md"
-label = "The stand-alone expansion Homeworld: Cataclysm was not announced…"
-date = "2024-11-25"
-
-[[extra.related]]
 path = "@/posts/2026-02-15-1113/index.md"
 label = "#preservation #nival #game #silentstorm Thanks Sergey."
 date = "2026-02-15"
@@ -45,6 +40,11 @@ date = "2026-01-04"
 path = "@/posts/2025-11-24-792/index.md"
 label = "#game #strategy #rtt #groundcontrol The #bishop defector death -…"
 date = "2025-11-24"
+
+[[extra.related]]
+path = "@/posts/2025-11-23-790/index.md"
+label = "#game #strategy #video #review #groundcontrol #year2000"
+date = "2025-11-23"
 +++
 
 {{ tag(t="preservation") }}  

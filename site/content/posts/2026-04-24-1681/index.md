@@ -23,11 +23,6 @@ views = 21
 ids = [1681]
 
 [[extra.related]]
-path = "@/posts/2024-12-22-222/index.md"
-label = "#youtube"
-date = "2024-12-22"
-
-[[extra.related]]
 path = "@/posts/2026-06-24-1856/index.md"
 label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
 date = "2026-06-24"
@@ -46,6 +41,11 @@ date = "2026-06-19"
 path = "@/posts/2025-02-21-375/index.md"
 label = "#game #armiesofexigo"
 date = "2025-02-21"
+
+[[extra.related]]
+path = "@/posts/2026-09-27-2177/index.md"
+label = "#preservation #youtube #comment"
+date = "2026-09-27"
 +++
 
 {{ tag(t="serp") }}  

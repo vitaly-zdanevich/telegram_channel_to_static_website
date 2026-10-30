@@ -18,7 +18,7 @@ next_body = "#diy\n#headphone\n#china\n#3dprint\nBy nashallery, source"
 prev_id = 2205
 prev_title = ""
 prev_body = "#game\n#cd\n#playstation\nBy gamersgoretro, source"
-views = 11
+views = 12
 ids = [2206]
 
 [[extra.related]]
@@ -32,11 +32,6 @@ label = "Банк Империал - Конрад III #ad is old, around 2000 ye
 date = "2025-02-21"
 
 [[extra.related]]
-path = "@/posts/2024-12-10-213/index.md"
-label = "#ad"
-date = "2024-12-10"
-
-[[extra.related]]
 path = "@/posts/2025-04-25-482/index.md"
 label = "#cat #psy"
 date = "2025-04-25"
@@ -45,6 +40,11 @@ date = "2025-04-25"
 path = "@/posts/2026-10-27-2253/index.md"
 label = "#http403 #cat #producthunt"
 date = "2026-10-27"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2096/index.md"
+label = "#cat #laugh #slow By dustythegingercat"
+date = "2026-07-29"
 +++
 
 {{ tag(t="ad") }}  

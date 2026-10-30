@@ -27,11 +27,6 @@ label = "Vector TD: map BEGINNER: SWITCH BACK. Tower defense, playing PSP…"
 date = "2025-06-01"
 
 [[extra.related]]
-path = "@/posts/2024-10-06-158/index.md"
-label = "Night Watch: Special Edition #game"
-date = "2024-10-06"
-
-[[extra.related]]
 path = "@/posts/2026-10-10-2208/index.md"
 label = "#sounddesign #game By lago, source"
 date = "2026-10-10"
@@ -45,6 +40,11 @@ date = "2026-10-08"
 path = "@/posts/2026-02-03-1079/index.md"
 label = "#webdesign #game"
 date = "2026-02-03"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+date = "2025-02-21"
 +++
 
 {{ tag(t="psp") }}  

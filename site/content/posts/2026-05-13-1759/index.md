@@ -23,19 +23,9 @@ views = 24
 ids = [1759, 1760]
 
 [[extra.related]]
-path = "@/posts/2024-11-20-195/index.md"
-label = "#style love my custom YandexMail"
-date = "2024-11-20"
-
-[[extra.related]]
 path = "@/posts/2026-05-12-1755/index.md"
 label = "#ai #screenshot from"
 date = "2026-05-12"
-
-[[extra.related]]
-path = "@/posts/2024-06-30-82/index.md"
-label = "I contribute to #wikipedia and other projects on #mediawiki engi…"
-date = "2024-06-30"
 
 [[extra.related]]
 path = "@/posts/2026-04-01-1565/index.md"

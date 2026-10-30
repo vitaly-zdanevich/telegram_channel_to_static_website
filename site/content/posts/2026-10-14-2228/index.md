@@ -19,18 +19,13 @@ next_body = "#logo\n#heart\n#yandex\n#pain"
 prev_id = 2227
 prev_title = ""
 prev_body = "#toy\n#craft\n#love\nSource\nElly Vishnevsky\nwww.vishnya.etsy.com\nwww.vishnya.com"
-views = 15
+views = 16
 ids = [2228]
 
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
 label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
 date = "2025-02-21"
-
-[[extra.related]]
-path = "@/posts/2024-12-10-213/index.md"
-label = "#ad"
-date = "2024-12-10"
 
 [[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
@@ -46,6 +41,11 @@ date = "2025-03-13"
 path = "@/posts/2026-10-06-2179/index.md"
 label = "#mem #children #health By liya.ermakova.ya, source"
 date = "2026-10-06"
+
+[[extra.related]]
+path = "@/posts/2026-08-02-2114/index.md"
+label = "#духота #health #powerlifting На каких витаминах ты присутствуеш…"
+date = "2026-08-02"
 +++
 
 {{ tag(t="ad") }}  
@@ -59,3 +59,5 @@ date = "2026-10-06"
 [Source](https://www.threads.com/share/DzBzXdptO/)
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2228-5366329665628349343-y-968x1280-124555.jpg") }}
+
+😁 1

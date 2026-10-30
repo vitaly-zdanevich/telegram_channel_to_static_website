@@ -28,11 +28,6 @@ label = "#coin #belarus #history Uploaded to"
 date = "2025-09-22"
 
 [[extra.related]]
-path = "@/posts/2024-12-11-215/index.md"
-label = "#belarus"
-date = "2024-12-11"
-
-[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
@@ -46,6 +41,11 @@ date = "2026-02-03"
 path = "@/posts/2026-01-08-857/index.md"
 label = "#belarus #minsk 1941-1944"
 date = "2026-01-08"
+
+[[extra.related]]
+path = "@/posts/2025-03-27-448/index.md"
+label = "Раньше было лучше #history #psy"
+date = "2025-03-27"
 +++
 
 {{ tag(t="belarus") }}  

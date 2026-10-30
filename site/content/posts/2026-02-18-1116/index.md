@@ -28,24 +28,24 @@ label = "Банк Империал - Конрад III #ad is old, around 2000 ye
 date = "2025-02-21"
 
 [[extra.related]]
-path = "@/posts/2024-12-10-213/index.md"
-label = "#ad"
-date = "2024-12-10"
-
-[[extra.related]]
 path = "@/posts/2025-02-02-349/index.md"
 label = "#translate #pain"
 date = "2025-02-02"
 
 [[extra.related]]
-path = "@/posts/2024-11-06-180/index.md"
-label = "#girl #pain"
-date = "2024-11-06"
-
-[[extra.related]]
 path = "@/posts/2025-11-19-783/index.md"
 label = "#ad #playstation #playstation2"
 date = "2025-11-19"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-782/index.md"
+label = "#ad #retro #nokia"
+date = "2025-11-19"
+
+[[extra.related]]
+path = "@/posts/2026-10-14-2229/index.md"
+label = "#logo #heart #yandex #pain"
+date = "2026-10-14"
 +++
 
 {{ tag(t="pain") }}  

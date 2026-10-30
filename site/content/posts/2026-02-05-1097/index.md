@@ -23,11 +23,6 @@ views = 18
 ids = [1097]
 
 [[extra.related]]
-path = "@/posts/2024-12-22-222/index.md"
-label = "#youtube"
-date = "2024-12-22"
-
-[[extra.related]]
 path = "@/posts/2026-09-27-2177/index.md"
 label = "#preservation #youtube #comment"
 date = "2026-09-27"
@@ -45,6 +40,11 @@ date = "2026-02-03"
 [[extra.related]]
 path = "@/posts/2025-12-25-813/index.md"
 label = "#ui #windows #windowsxp"
+date = "2025-12-25"
+
+[[extra.related]]
+path = "@/posts/2025-12-25-812/index.md"
+label = "#winamp #ui #audioplayer"
 date = "2025-12-25"
 +++
 

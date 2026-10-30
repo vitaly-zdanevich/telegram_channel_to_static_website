@@ -19,7 +19,7 @@ next_body = "#webdesing\n#typography"
 prev_id = 2213
 prev_title = ""
 prev_body = "#bump is a #chat and a #map (#googlemap) #app, with outstanding style"
-views = 9
+views = 10
 ids = [2216, 2217]
 
 [[extra.related]]

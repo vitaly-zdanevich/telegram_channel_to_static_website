@@ -38,14 +38,14 @@ label = "#log failed"
 date = "2026-05-18"
 
 [[extra.related]]
-path = "@/posts/2024-10-06-158/index.md"
-label = "Night Watch: Special Edition #game"
-date = "2024-10-06"
-
-[[extra.related]]
 path = "@/posts/2026-10-10-2208/index.md"
 label = "#sounddesign #game By lago, source"
 date = "2026-10-10"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
 +++
 
 {{ tag(t="log") }}  

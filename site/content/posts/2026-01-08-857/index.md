@@ -28,11 +28,6 @@ label = "#minsk inside what country"
 date = "2025-12-24"
 
 [[extra.related]]
-path = "@/posts/2024-12-11-215/index.md"
-label = "#belarus"
-date = "2024-12-11"
-
-[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
@@ -46,6 +41,11 @@ date = "2026-07-28"
 path = "@/posts/2026-03-22-1496/index.md"
 label = "#webdesign #belarus #belarussian пра жывёл"
 date = "2026-03-22"
+
+[[extra.related]]
+path = "@/posts/2026-02-25-1181/index.md"
+label = "#belfry #belarus #globustut"
+date = "2026-02-25"
 +++
 
 {{ tag(t="belarus") }}  

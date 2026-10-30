@@ -23,11 +23,6 @@ views = 24
 ids = [1565]
 
 [[extra.related]]
-path = "@/posts/2024-10-25-165/index.md"
-label = "#rice"
-date = "2024-10-25"
-
-[[extra.related]]
 path = "@/posts/2026-05-12-1755/index.md"
 label = "#ai #screenshot from"
 date = "2026-05-12"
@@ -46,6 +41,11 @@ date = "2026-05-13"
 path = "@/posts/2025-12-21-806/index.md"
 label = "#alien #poster #film #blackandwhite"
 date = "2025-12-21"
+
+[[extra.related]]
+path = "@/posts/2026-07-29-2091/index.md"
+label = "#cat #death #fear #green #wash"
+date = "2026-07-29"
 +++
 
 {{ tag(t="alien") }}  

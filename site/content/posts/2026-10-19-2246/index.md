@@ -19,7 +19,7 @@ next_body = "#logo looks like #ai\n#music"
 prev_id = 2243
 prev_title = ""
 prev_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online maps. Instant performance.\nStill alive website"
-views = 27
+views = 28
 ids = [2246, 2247, 2248, 2249, 2250]
 
 [[extra.related]]
@@ -67,3 +67,5 @@ From
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2249-5381841854845888494-y-800x1280-334410.jpg") }}
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2250-5381841854845888493-y-800x1280-355830.jpg") }}
+
+👍 1

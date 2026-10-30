@@ -23,16 +23,6 @@ views = 23
 ids = [1761]
 
 [[extra.related]]
-path = "@/posts/2024-07-10-87/index.md"
-label = "Wow #gitlab has a #cron..."
-date = "2024-07-10"
-
-[[extra.related]]
-path = "@/posts/2024-06-03-50/index.md"
-label = "#gitlab: I love that it is possible to push to a repo that is no…"
-date = "2024-06-03"
-
-[[extra.related]]
 path = "@/posts/2026-05-16-1763/index.md"
 label = "#error #gitlab #contradiction"
 date = "2026-05-16"

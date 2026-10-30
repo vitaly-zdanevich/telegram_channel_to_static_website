@@ -32,11 +32,6 @@ label = "#linux #gamex"
 date = "2026-02-05"
 
 [[extra.related]]
-path = "@/posts/2024-04-27-38/index.md"
-label = "I love - developed in 2004 - but nobody sell it anymore in 2024.…"
-date = "2024-04-27"
-
-[[extra.related]]
 path = "@/posts/2026-04-12-1636/index.md"
 label = "#linux #france #news France to ditch Windows for Linux to reduce…"
 date = "2026-04-12"
@@ -45,6 +40,11 @@ date = "2026-04-12"
 path = "@/posts/2025-12-25-813/index.md"
 label = "#ui #windows #windowsxp"
 date = "2025-12-25"
+
+[[extra.related]]
+path = "@/posts/2025-10-19-706/index.md"
+label = "#wikidata #linux #warcraft3"
+date = "2025-10-19"
 +++
 
 {{ tag(t="windows") }}  

@@ -22,11 +22,6 @@ views = 61
 ids = [795]
 
 [[extra.related]]
-path = "@/posts/2024-02-26-32/index.md"
-label = "#film Love, Sex & Robots S1.E3: The Witness"
-date = "2024-02-26"
-
-[[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
 date = "2025-11-13"
@@ -37,14 +32,19 @@ label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
 date = "2025-10-03"
 
 [[extra.related]]
-path = "@/posts/2024-06-11-53/index.md"
-label = "#film #nightwatch Night Watch, love it"
-date = "2024-06-11"
+path = "@/posts/2026-10-08-2182/index.md"
+label = "#mem #translation #tolkien"
+date = "2026-10-08"
 
 [[extra.related]]
-path = "@/posts/2024-02-24-31/index.md"
-label = "#film #scifi Love, Death & Robots: ending from s1ep7 Beyond the…"
-date = "2024-02-24"
+path = "@/posts/2026-02-05-1094/index.md"
+label = "#firefox translation from #german to #russian"
+date = "2026-02-05"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-777/index.md"
+label = "#film #kindzadza #batumi Соедините меня с Батуми"
+date = "2025-11-13"
 +++
 
 Фильм "Лучше не бывает": несколько минут в разных русских озвучках  

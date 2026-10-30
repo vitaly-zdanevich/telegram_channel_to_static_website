@@ -37,14 +37,14 @@ label = "#webdesign #wikimedia"
 date = "2025-10-01"
 
 [[extra.related]]
-path = "@/posts/2024-06-03-50/index.md"
-label = "#gitlab: I love that it is possible to push to a repo that is no…"
-date = "2024-06-03"
-
-[[extra.related]]
 path = "@/posts/2026-08-06-2120/index.md"
 label = "#my another small project: #wikidata #pwa to get nearby items, w…"
 date = "2026-08-06"
+
+[[extra.related]]
+path = "@/posts/2026-07-17-2050/index.md"
+label = "#coatofarms #wikimediacommons #russianempire"
+date = "2026-07-17"
 +++
 
 My yet another {{ tag(t="wikimedia") }} project that I love: {{ tag(t="wikimedia_commons") }} {{ tag(t="pwa") }} {{ tag(t="uploader") }}. Fast and simple.  

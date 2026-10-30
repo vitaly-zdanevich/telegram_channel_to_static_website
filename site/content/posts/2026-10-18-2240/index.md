@@ -18,23 +18,8 @@ next_body = "#ai\n#spirit\nBy bennettreloaded, source"
 prev_id = 2239
 prev_title = ""
 prev_body = "#web\n#3d\n#water\n#webgpu\n61 kb.\nIn Firefox in about:config I enabled dom.webgpu.enabled, check at webgpucheck.com\nSource"
-views = 24
+views = 25
 ids = [2240]
-
-[[extra.related]]
-path = "@/posts/2024-10-08-159/index.md"
-label = "Wow #design"
-date = "2024-10-08"
-
-[[extra.related]]
-path = "@/posts/2024-07-13-89/index.md"
-label = "Another good #design"
-date = "2024-07-13"
-
-[[extra.related]]
-path = "@/posts/2024-04-27-34/index.md"
-label = "This website looks soooo special #design"
-date = "2024-04-27"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
@@ -45,6 +30,21 @@ date = "2026-08-04"
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-759/index.md"
+label = "#design #artlebedev"
+date = "2025-11-10"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-758/index.md"
+label = "#design #artlebedev"
+date = "2025-11-10"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
+date = "2025-11-10"
 +++
 
 {{ tag(t="mem") }}  
@@ -54,5 +54,7 @@ date = "2026-08-04"
 By [aerodynamicmeme](https://www.instagram.com/aerodynamicmeme/), [source](https://www.instagram.com/p/Dej0PU1Ntbi/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2240-01.mp4") }}
+
+😁 1
 
 {{ tag(t="video") }}

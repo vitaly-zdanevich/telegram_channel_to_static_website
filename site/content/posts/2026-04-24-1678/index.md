@@ -27,11 +27,6 @@ label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
 date = "2025-11-20"
 
 [[extra.related]]
-path = "@/posts/2024-12-11-214/index.md"
-label = "My first #lutris install script"
-date = "2024-12-11"
-
-[[extra.related]]
 path = "@/posts/2026-06-24-1856/index.md"
 label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
 date = "2026-06-24"
@@ -45,6 +40,11 @@ date = "2026-06-24"
 path = "@/posts/2026-06-19-1844/index.md"
 label = "#armiesofexigo #abandone"
 date = "2026-06-19"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+date = "2025-02-21"
 +++
 
 {{ tag(t="armies_of_exigo") }}**:** {{ tag(t="fallen") }} **7: The First Seal: hard: victory**  

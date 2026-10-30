@@ -18,7 +18,7 @@ next_body = "#game\n#cd\n#playstation\nBy gamersgoretro, source"
 prev_id = 2203
 prev_title = ""
 prev_body = "#window\n#interrior\n#comfort\n#light\nBy fruitsnacks, source"
-views = 6
+views = 7
 ids = [2204]
 
 [[extra.related]]
@@ -54,5 +54,7 @@ date = "2025-11-03"
 By [andrew.plerdy](https://www.instagram.com/andrew.plerdy/), [source](https://www.instagram.com/p/DcYjFYGj2w9/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2204-01.mp4") }}
+
+🔥 1
 
 {{ tag(t="video") }}

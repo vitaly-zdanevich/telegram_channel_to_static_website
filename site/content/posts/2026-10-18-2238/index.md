@@ -19,7 +19,7 @@ next_body = "#web\n#3d\n#water\n#webgpu\n61 kb.\nIn Firefox in about:config I en
 prev_id = 2237
 prev_title = ""
 prev_body = "#log\nStill running my experiment about #porting #primeworld from Windows/DirectX to Linux/OpenGL, 100% on autopilot...\nNow it looks like a #game."
-views = 17
+views = 18
 ids = [2238]
 
 [[extra.related]]

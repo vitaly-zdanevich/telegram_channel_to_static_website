@@ -33,11 +33,6 @@ label = "My new article on #wikipedia"
 date = "2025-04-25"
 
 [[extra.related]]
-path = "@/posts/2024-11-25-201/index.md"
-label = "#wikipedia"
-date = "2024-11-25"
-
-[[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 date = "2026-03-25"
@@ -46,6 +41,11 @@ date = "2026-03-25"
 path = "@/posts/2026-02-14-1112/index.md"
 label = "Editing #wikipedia, in #vim"
 date = "2026-02-14"
+
+[[extra.related]]
+path = "@/posts/2026-02-11-1106/index.md"
+label = "#wikipedia #job"
+date = "2026-02-11"
 +++
 
 Someones contributions to {{ tag(t="wikipedia") }}  

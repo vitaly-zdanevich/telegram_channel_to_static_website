@@ -11,10 +11,11 @@ tags = ["contactee", "podzorova"]
 id = 2254
 day = "2026-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2254"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2254-5411188288342663607-y-1280x720-210426.jpg"
 prev_id = 2253
 prev_title = ""
 prev_body = "#http403\n#cat\n#producthunt"
-views = 4
+views = 5
 ids = [2254]
 
 [[extra.related]]
@@ -31,3 +32,5 @@ date = "2026-09-19"
 [https://www.youtube.com/watch?v=SZ1Xl1Zn5YY](<https://www.youtube.com/watch?v=SZ1Xl1Zn5YY> "#955 Может ли искусственный интеллект быть счастливым? Конец Вселенной: как завершится манвантара.")
 
 {{ youtube(id="SZ1Xl1Zn5YY") }}
+
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2254-5411188288342663607-y-1280x720-210426.jpg") }}

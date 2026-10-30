@@ -27,24 +27,24 @@ label = "#film #russia #nightwatch #zavulon"
 date = "2025-09-09"
 
 [[extra.related]]
-path = "@/posts/2024-06-11-53/index.md"
-label = "#film #nightwatch Night Watch, love it"
-date = "2024-06-11"
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 
 [[extra.related]]
-path = "@/posts/2023-08-12-29/index.md"
-label = "#film #nightwatch Night Watch: episode with witch, in the beginn…"
-date = "2023-08-12"
+path = "@/posts/2025-10-03-696/index.md"
+label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+date = "2025-10-03"
 
 [[extra.related]]
-path = "@/posts/2023-07-11-21/index.md"
-label = "#film #nightwatch Love these episodes from Night Watch Ночной До…"
-date = "2023-07-11"
+path = "@/posts/2026-05-05-1738/index.md"
+label = "#webdesign #video #bilibili"
+date = "2026-05-05"
 
 [[extra.related]]
-path = "@/posts/2024-02-26-32/index.md"
-label = "#film Love, Sex & Robots S1.E3: The Witness"
-date = "2024-02-26"
+path = "@/posts/2025-11-13-777/index.md"
+label = "#film #kindzadza #batumi Соедините меня с Батуми"
+date = "2025-11-13"
 +++
 
 {{ tag(t="video") }}  

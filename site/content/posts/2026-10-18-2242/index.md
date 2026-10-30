@@ -18,7 +18,7 @@ next_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online 
 prev_id = 2241
 prev_title = ""
 prev_body = "#ai\n#spirit\nBy bennettreloaded, source"
-views = 25
+views = 26
 ids = [2242]
 
 [[extra.related]]
@@ -55,5 +55,7 @@ date = "2026-10-18"
 By [bennettreloaded](https://www.instagram.com/bennettreloaded/), [source](https://www.instagram.com/p/DeUz5NYOR0P/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2242-01.mp4") }}
+
+👍 1
 
 {{ tag(t="video") }}

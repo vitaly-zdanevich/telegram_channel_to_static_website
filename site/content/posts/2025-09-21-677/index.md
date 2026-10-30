@@ -37,14 +37,14 @@ label = "#film #thefountain #darrenaronofsky #inquisitor #pain #torture #…"
 date = "2025-09-21"
 
 [[extra.related]]
-path = "@/posts/2024-02-26-32/index.md"
-label = "#film Love, Sex & Robots S1.E3: The Witness"
-date = "2024-02-26"
-
-[[extra.related]]
 path = "@/posts/2026-08-09-2133/index.md"
 label = "#car #death"
 date = "2026-08-09"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 +++
 
 {{ tag(t="film") }}  

@@ -37,14 +37,14 @@ label = "#anime #voice"
 date = "2025-03-08"
 
 [[extra.related]]
-path = "@/posts/2025-01-17-252/index.md"
-label = "#movie #anime"
-date = "2025-01-17"
-
-[[extra.related]]
 path = "@/posts/2026-07-29-2098/index.md"
 label = "#war The #radio broadcasts of Hanoi Hannah during the #vietnamwa…"
 date = "2026-07-29"
+
+[[extra.related]]
+path = "@/posts/2026-06-15-1831/index.md"
+label = "#anime #phones #evangelion From"
+date = "2026-06-15"
 +++
 
 {{ tag(t="anime") }}  

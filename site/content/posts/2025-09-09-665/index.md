@@ -28,24 +28,24 @@ label = "#video #film #nightwatch #zavulon"
 date = "2025-09-15"
 
 [[extra.related]]
-path = "@/posts/2024-06-11-53/index.md"
-label = "#film #nightwatch Night Watch, love it"
-date = "2024-06-11"
-
-[[extra.related]]
-path = "@/posts/2023-08-12-29/index.md"
-label = "#film #nightwatch Night Watch: episode with witch, in the beginn…"
-date = "2023-08-12"
-
-[[extra.related]]
-path = "@/posts/2023-07-11-21/index.md"
-label = "#film #nightwatch Love these episodes from Night Watch Ночной До…"
-date = "2023-07-11"
-
-[[extra.related]]
 path = "@/posts/2025-08-30-647/index.md"
 label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
 date = "2025-08-30"
+
+[[extra.related]]
+path = "@/posts/2025-08-30-646/index.md"
+label = "#film #music #russia #korolishut s1e5, start of the episode - li…"
+date = "2025-08-30"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
+
+[[extra.related]]
+path = "@/posts/2025-10-03-696/index.md"
+label = "#film #scifi Love, Death & Robots: fan mashup of s1ep7 Beyond th…"
+date = "2025-10-03"
 +++
 
 {{ tag(t="film") }}  

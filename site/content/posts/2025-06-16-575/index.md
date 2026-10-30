@@ -22,29 +22,29 @@ views = 37
 ids = [575]
 
 [[extra.related]]
-path = "@/posts/2023-07-16-27/index.md"
-label = "#my #film #korolishut"
-date = "2023-07-16"
-
-[[extra.related]]
-path = "@/posts/2023-07-16-26/index.md"
-label = "#film #korolishut Love this scene from Korol i Shut, episode 2"
-date = "2023-07-16"
-
-[[extra.related]]
 path = "@/posts/2025-10-20-710/index.md"
 label = "#film #korolishut #naked"
 date = "2025-10-20"
 
 [[extra.related]]
-path = "@/posts/2025-01-17-255/index.md"
-label = "#my #movie #korolishut"
-date = "2025-01-17"
+path = "@/posts/2025-08-30-647/index.md"
+label = "#film #music #russia #korolishut s1e5, scene about a new girl Ol…"
+date = "2025-08-30"
 
 [[extra.related]]
-path = "@/posts/2025-01-17-254/index.md"
-label = "#my #movie #korolishut"
-date = "2025-01-17"
+path = "@/posts/2025-08-30-646/index.md"
+label = "#film #music #russia #korolishut s1e5, start of the episode - li…"
+date = "2025-08-30"
+
+[[extra.related]]
+path = "@/posts/2025-06-16-574/index.md"
+label = "#korolishut"
+date = "2025-06-16"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-778/index.md"
+label = "#film #kindzadza Гамарджоба At 1:50:00"
+date = "2025-11-13"
 +++
 
 {{ tag(t="my") }}  

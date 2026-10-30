@@ -47,4 +47,4 @@ label = "My another hobby project, made with #llm / #codex: converter of…"
 date = "2026-05-06"
 +++
 
-Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} [https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 92%, Shell 5%, Python 2% · 91 commits · 2 open issues/PRs · GPL-3.0 · last push 2026-10-28") - faster geeknote.
+Asked {{ tag(t="codex") }} gpt-5.5 xhigh to rewrite {{ tag(t="geeknote") }} ({{ tag(t="cli") }} of {{ tag(t="evernote") }}) to {{ tag(t="rust") }}, a few iterations - and I got {{ tag(t="reeknote") }} [https://github.com/vitaly-zdanevich/reeknote](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 92%, Shell 5%, Python 2% · 92 commits · 2 open issues/PRs · GPL-3.0 · last push 2026-10-29") - faster geeknote.

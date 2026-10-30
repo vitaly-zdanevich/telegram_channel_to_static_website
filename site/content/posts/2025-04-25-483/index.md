@@ -27,11 +27,6 @@ label = "#wikipedia Актёр озвучивания мужского пола 
 date = "2026-02-02"
 
 [[extra.related]]
-path = "@/posts/2024-11-25-201/index.md"
-label = "#wikipedia"
-date = "2024-11-25"
-
-[[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 date = "2026-03-25"
@@ -45,6 +40,11 @@ date = "2026-02-14"
 path = "@/posts/2026-02-11-1106/index.md"
 label = "#wikipedia #job"
 date = "2026-02-11"
+
+[[extra.related]]
+path = "@/posts/2026-02-01-1072/index.md"
+label = "#wikipedia article writing, in #vim"
+date = "2026-02-01"
 +++
 
 My new article on {{ tag(t="wikipedia") }} [https://ru.wikipedia.org/wiki/Летний\_театр\_(Батуми)](https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%82%D0%BD%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_(%D0%91%D0%B0%D1%82%D1%83%D0%BC%D0%B8))

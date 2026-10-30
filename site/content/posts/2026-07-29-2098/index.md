@@ -32,11 +32,6 @@ label = "#anime #war #ground"
 date = "2026-07-27"
 
 [[extra.related]]
-path = "@/posts/2025-01-11-245/index.md"
-label = "#war #video #warpath"
-date = "2025-01-11"
-
-[[extra.related]]
 path = "@/posts/2026-04-16-1645/index.md"
 label = "#webdesign #northkorea #radio #podcast"
 date = "2026-04-16"
@@ -45,6 +40,11 @@ date = "2026-04-16"
 path = "@/posts/2025-02-21-372/index.md"
 label = "Most Shocking Second a Day Video Still The Most Shocking Second…"
 date = "2025-02-21"
+
+[[extra.related]]
+path = "@/posts/2025-12-26-817/index.md"
+label = "#ukraine #mariupol #architecture #building #war"
+date = "2025-12-26"
 +++
 
 {{ tag(t="war") }}  

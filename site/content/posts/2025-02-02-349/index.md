@@ -23,11 +23,6 @@ views = 53
 ids = [349]
 
 [[extra.related]]
-path = "@/posts/2024-11-06-180/index.md"
-label = "#girl #pain"
-date = "2024-11-06"
-
-[[extra.related]]
 path = "@/posts/2026-10-14-2229/index.md"
 label = "#logo #heart #yandex #pain"
 date = "2026-10-14"
@@ -46,6 +41,11 @@ date = "2026-02-18"
 path = "@/posts/2025-03-16-425/index.md"
 label = "#pain #millenials #depression #dophin"
 date = "2025-03-16"
+
+[[extra.related]]
+path = "@/posts/2025-02-22-376/index.md"
+label = "Are you winning son? Happy Birthday #pain #death #loss #miss"
+date = "2025-02-22"
 +++
 
 {{ tag(t="translate") }}  

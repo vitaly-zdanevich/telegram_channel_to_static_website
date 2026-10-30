@@ -22,11 +22,6 @@ views = 6
 ids = [2186]
 
 [[extra.related]]
-path = "@/posts/2024-10-06-158/index.md"
-label = "Night Watch: Special Edition #game"
-date = "2024-10-06"
-
-[[extra.related]]
 path = "@/posts/2026-10-10-2208/index.md"
 label = "#sounddesign #game By lago, source"
 date = "2026-10-10"
@@ -45,6 +40,11 @@ date = "2025-02-21"
 path = "@/posts/2025-02-15-366/index.md"
 label = "#game #man2"
 date = "2025-02-15"
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2205/index.md"
+label = "#game #cd #playstation By gamersgoretro, source"
+date = "2026-10-10"
 +++
 
 {{ tag(t="game") }}  

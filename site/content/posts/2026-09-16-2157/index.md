@@ -22,11 +22,6 @@ views = 25
 ids = [2157]
 
 [[extra.related]]
-path = "@/posts/2024-08-31-141/index.md"
-label = "1910 Russian Empire 100 rubles bill with Tzar Catherina portrait…"
-date = "2024-08-31"
-
-[[extra.related]]
 path = "@/posts/2025-09-01-653/index.md"
 label = "#wikimediafoundation #money"
 date = "2025-09-01"
@@ -45,6 +40,11 @@ date = "2025-08-09"
 path = "@/posts/2026-06-13-1822/index.md"
 label = "#tbc #money This is why we have #crypto?"
 date = "2026-06-13"
+
+[[extra.related]]
+path = "@/posts/2026-03-02-1307/index.md"
+label = "#couchsurfing #money 2000$ per year to #AWS"
+date = "2026-03-02"
 +++
 
 {{ tag(t="money") }}  

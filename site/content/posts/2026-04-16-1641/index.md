@@ -32,11 +32,6 @@ label = "#podcast 004 З Уладзімерам Русаковічам: ства
 date = "2025-04-19"
 
 [[extra.related]]
-path = "@/posts/2022-03-02-5/index.md"
-label = "#podcast Не влазит в сообщение с подкастом выше. Про информацион…"
-date = "2022-03-02"
-
-[[extra.related]]
 path = "@/posts/2025-05-08-509/index.md"
 label = "#health #science"
 date = "2025-05-08"
@@ -45,6 +40,11 @@ date = "2025-05-08"
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
 date = "2025-03-13"
+
+[[extra.related]]
+path = "@/posts/2026-10-06-2179/index.md"
+label = "#mem #children #health By liya.ermakova.ya, source"
+date = "2026-10-06"
 +++
 
 {{ tag(t="podcast") }}  

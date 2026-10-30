@@ -23,21 +23,6 @@ views = 63
 ids = [630]
 
 [[extra.related]]
-path = "@/posts/2024-10-08-159/index.md"
-label = "Wow #design"
-date = "2024-10-08"
-
-[[extra.related]]
-path = "@/posts/2024-07-13-89/index.md"
-label = "Another good #design"
-date = "2024-07-13"
-
-[[extra.related]]
-path = "@/posts/2024-04-27-34/index.md"
-label = "This website looks soooo special #design"
-date = "2024-04-27"
-
-[[extra.related]]
 path = "@/posts/2025-11-10-759/index.md"
 label = "#design #artlebedev"
 date = "2025-11-10"
@@ -46,6 +31,21 @@ date = "2025-11-10"
 path = "@/posts/2025-11-10-758/index.md"
 label = "#design #artlebedev"
 date = "2025-11-10"
+
+[[extra.related]]
+path = "@/posts/2025-11-10-757/index.md"
+label = "#design #logo #artlebedevSource"
+date = "2025-11-10"
+
+[[extra.related]]
+path = "@/posts/2026-10-18-2240/index.md"
+label = "#mem #design #night By aerodynamicmeme, source"
+date = "2026-10-18"
+
+[[extra.related]]
+path = "@/posts/2026-09-21-2176/index.md"
+label = "#game #playstation #design By retourverslegaming, source"
+date = "2026-09-21"
 +++
 
 [Кин-дза-дза](https://en.wikipedia.org/wiki/Kin-dza-dza&#33;) Japanese disc  

@@ -22,11 +22,6 @@ views = 39
 ids = [322]
 
 [[extra.related]]
-path = "@/posts/2024-11-06-181/index.md"
-label = "#girl"
-date = "2024-11-06"
-
-[[extra.related]]
 path = "@/posts/2025-03-13-408/index.md"
 label = "#girl #face"
 date = "2025-03-13"
@@ -42,9 +37,14 @@ label = "#girl #nails"
 date = "2025-01-28"
 
 [[extra.related]]
-path = "@/posts/2024-11-06-180/index.md"
-label = "#girl #pain"
-date = "2024-11-06"
+path = "@/posts/2026-09-18-2162/index.md"
+label = "#girl #warcraft #transform Я пришла к вашему сыну"
+date = "2026-09-18"
+
+[[extra.related]]
+path = "@/posts/2025-07-24-609/index.md"
+label = "#girl #relationship #ai Source You generated pictures and videos…"
+date = "2025-07-24"
 +++
 
 {{ tag(t="girl") }}

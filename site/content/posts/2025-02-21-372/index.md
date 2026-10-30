@@ -42,9 +42,9 @@ label = "#girl"
 date = "2025-01-21"
 
 [[extra.related]]
-path = "@/posts/2024-12-10-213/index.md"
-label = "#ad"
-date = "2024-12-10"
+path = "@/posts/2026-07-29-2101/index.md"
+label = "#career #war By 10xaiengineer"
+date = "2026-07-29"
 +++
 
 **Most Shocking Second a Day Video  

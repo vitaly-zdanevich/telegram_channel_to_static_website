@@ -33,11 +33,6 @@ label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
 
 [[extra.related]]
-path = "@/posts/2024-11-30-206/index.md"
-label = "#mem #games"
-date = "2024-11-30"
-
-[[extra.related]]
 path = "@/posts/2026-10-18-2240/index.md"
 label = "#mem #design #night By aerodynamicmeme, source"
 date = "2026-10-18"
@@ -45,6 +40,11 @@ date = "2026-10-18"
 [[extra.related]]
 path = "@/posts/2026-10-08-2196/index.md"
 label = "#mem #music from #childhood By aimperiome, source"
+date = "2026-10-08"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2192/index.md"
+label = "#mem #pig #eye"
 date = "2026-10-08"
 +++
 

@@ -18,7 +18,7 @@ next_body = "#eso\n#spirit\n#life\n#death\nBy bennettreloaded, source"
 prev_id = 2240
 prev_title = ""
 prev_body = "#mem\n#design\n#night\nBy aerodynamicmeme, source"
-views = 25
+views = 26
 ids = [2241]
 
 [[extra.related]]
@@ -37,14 +37,14 @@ label = "#ai"
 date = "2025-01-28"
 
 [[extra.related]]
-path = "@/posts/2025-01-10-244/index.md"
-label = "Video from 2012 about #ai"
-date = "2025-01-10"
+path = "@/posts/2026-05-12-1755/index.md"
+label = "#ai #screenshot from"
+date = "2026-05-12"
 
 [[extra.related]]
-path = "@/posts/2025-01-01-237/index.md"
-label = "#ai"
-date = "2025-01-01"
+path = "@/posts/2026-02-12-1110/index.md"
+label = "#ai #ruwiki No trust in robots."
+date = "2026-02-12"
 +++
 
 {{ tag(t="ai") }}  

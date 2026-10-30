@@ -43,9 +43,9 @@ label = "My new article on #wikipedia"
 date = "2025-04-25"
 
 [[extra.related]]
-path = "@/posts/2024-11-25-201/index.md"
-label = "#wikipedia"
-date = "2024-11-25"
+path = "@/posts/2026-07-28-2076/index.md"
+label = "What a nice #arabic #logo"
+date = "2026-07-28"
 +++
 
 {{ tag(t="wikipedia") }}  

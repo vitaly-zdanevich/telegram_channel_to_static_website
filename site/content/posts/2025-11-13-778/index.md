@@ -32,11 +32,6 @@ label = "#film #kindzadza #batumi Кин-дза-дза, на девятой ми
 date = "2025-11-13"
 
 [[extra.related]]
-path = "@/posts/2024-02-26-32/index.md"
-label = "#film Love, Sex & Robots S1.E3: The Witness"
-date = "2024-02-26"
-
-[[extra.related]]
 path = "@/posts/2026-07-08-2037/index.md"
 label = "#kindzadza #trailer"
 date = "2026-07-08"
@@ -44,6 +39,11 @@ date = "2026-07-08"
 [[extra.related]]
 path = "@/posts/2025-11-13-776/index.md"
 label = "#quote #kindzadza Фильм был изначально запланирован как двухсери…"
+date = "2025-11-13"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-775/index.md"
+label = "#quote #kindzadza во время съёмок фильма к власти в СССР пришёл…"
 date = "2025-11-13"
 +++
 

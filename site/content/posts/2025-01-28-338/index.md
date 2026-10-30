@@ -22,11 +22,6 @@ views = 85
 ids = [338]
 
 [[extra.related]]
-path = "@/posts/2024-11-17-192/index.md"
-label = "#warcraft"
-date = "2024-11-17"
-
-[[extra.related]]
 path = "@/posts/2026-09-18-2162/index.md"
 label = "#girl #warcraft #transform Я пришла к вашему сыну"
 date = "2026-09-18"

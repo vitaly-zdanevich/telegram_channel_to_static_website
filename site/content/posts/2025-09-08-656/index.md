@@ -43,9 +43,9 @@ label = "#photo #batumi #chandelier"
 date = "2025-06-16"
 
 [[extra.related]]
-path = "@/posts/2024-11-27-202/index.md"
-label = "My #photo from 2012, for the defunct website of naked #cats #eye…"
-date = "2024-11-27"
+path = "@/posts/2026-01-07-849/index.md"
+label = "#photo #belarus #globustut #village"
+date = "2026-01-07"
 +++
 
 {{ tag(t="iran") }}  

@@ -22,29 +22,29 @@ views = 27
 ids = [696]
 
 [[extra.related]]
-path = "@/posts/2024-02-24-31/index.md"
-label = "#film #scifi Love, Death & Robots: ending from s1ep7 Beyond the…"
-date = "2024-02-24"
-
-[[extra.related]]
-path = "@/posts/2025-01-17-253/index.md"
-label = "#film #scifi #space"
-date = "2025-01-17"
-
-[[extra.related]]
-path = "@/posts/2024-02-26-32/index.md"
-label = "#film Love, Sex & Robots S1.E3: The Witness"
-date = "2024-02-26"
-
-[[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
 date = "2025-11-13"
 
 [[extra.related]]
-path = "@/posts/2024-06-11-53/index.md"
-label = "#film #nightwatch Night Watch, love it"
-date = "2024-06-11"
+path = "@/posts/2025-11-13-777/index.md"
+label = "#film #kindzadza #batumi Соедините меня с Батуми"
+date = "2025-11-13"
+
+[[extra.related]]
+path = "@/posts/2025-11-13-774/index.md"
+label = "#film #kindzadza #batumi Кин-дза-дза, на девятой минуте Скрипач…"
+date = "2025-11-13"
+
+[[extra.related]]
+path = "@/posts/2025-10-20-710/index.md"
+label = "#film #korolishut #naked"
+date = "2025-10-20"
+
+[[extra.related]]
+path = "@/posts/2025-05-06-500/index.md"
+label = "#film #jupiter #space"
+date = "2025-05-06"
 +++
 
 {{ tag(t="film") }}  

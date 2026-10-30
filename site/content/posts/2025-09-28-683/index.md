@@ -33,11 +33,6 @@ label = "Emotional reasoning is a cognitive process by which an individua…"
 date = "2025-11-06"
 
 [[extra.related]]
-path = "@/posts/2024-12-21-220/index.md"
-label = "#psy"
-date = "2024-12-21"
-
-[[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
 date = "2026-07-28"
@@ -46,6 +41,11 @@ date = "2026-07-28"
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
 date = "2026-06-30"
+
+[[extra.related]]
+path = "@/posts/2026-03-03-1332/index.md"
+label = "#logo #horse"
+date = "2026-03-03"
 +++
 
 Love this {{ tag(t="logo") }}  

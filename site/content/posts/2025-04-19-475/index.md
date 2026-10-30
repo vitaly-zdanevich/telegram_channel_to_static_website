@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2025-04-19T15:29:42+00:00
-description = "podcast 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у Вiкiпэдыi Што такое левыя і правае? Wikidata запыт - беларускія пісьменнікі памерлыя 50 гадоў таму Мая чорная тэма Userscripts Павінна…"
+description = "podcast 004 З Уладзімерам Русаковічам: стварыў 1740 артыкулаў у Вiкiпэдыi Што такое левыя і правае? Wikidata запыт - беларускія пісьменнікі памерлыя 50 гадоў таму Мая чорная тэма Userscripts \"Сьвяча́…"
 
 [taxonomies]
 days = ["2025-04-19"]
@@ -20,11 +20,6 @@ prev_title = ""
 prev_body = "#archiving\n#preservation\n#internetarchive\n#jasonscott\n#man\n#hat\n#harddrives\nJason Scott, Internet Archive employee, photo in color\nFrom"
 views = 63
 ids = [475, 476]
-
-[[extra.related]]
-path = "@/posts/2022-03-02-5/index.md"
-label = "#podcast Не влазит в сообщение с подкастом выше. Про информацион…"
-date = "2022-03-02"
 
 [[extra.related]]
 path = "@/posts/2026-04-16-1645/index.md"
@@ -66,7 +61,7 @@ Userscripts <https://greasyfork.org/en/users/22859-vitaly-zdanevich>
 
 [https://commonvoice.mozilla.org](https://commonvoice.mozilla.org/)  
 
-[https://be-tarask.wikipedia.org/wiki/Сьвяча\_(абрад)](https://be-tarask.wikipedia.org/wiki/%D0%A1%D1%8C%D0%B2%D1%8F%D1%87%D0%B0_(%D0%B0%D0%B1%D1%80%D0%B0%D0%B4))  
+[https://be-tarask.wikipedia.org/wiki/Сьвяча\_(абрад)](<https://be-tarask.wikipedia.org/wiki/%D0%A1%D1%8C%D0%B2%D1%8F%D1%87%D0%B0_(%D0%B0%D0%B1%D1%80%D0%B0%D0%B4)> "Сьвяча́ — 4-дзённы беларускі абрад ушанаваньня памяці сьвятога Міколы Цудатворцы напярэдадні Раства Хрыстовага.")  
 
 [https://pravapis.org](https://pravapis.org/)  
 

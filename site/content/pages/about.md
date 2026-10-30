@@ -10,7 +10,7 @@ template = "page.html"
 
 Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia country UTC+4). Working with Golang, AWS. Program in Vim. Love Gentoo Linux. Respect free and open software. Contributor to Wikipedia and other projects.
 
-**19** subscribers · **1.58K** images · **306** videos · **35** files · **1.16K** links · **32** audios
+**20** subscribers · **1.58K** images · **305** videos · **35** files · **1.16K** links · **11** audios
 
 🎧 Podcast: [audio](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/podcast.xml) · [video](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/video-podcast.xml)
 
@@ -22,39 +22,38 @@ Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia countr
 
 
 
-In the git repository: **65.3 MB** — **6%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
+In the git repository: **13.7 MB** — **1%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
 
 In [GitHub Releases](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases): **13.5 GB** of media files — outside git, so it doesn't count toward the limit.
 
 By kind:
 
-- **Audio** 51.3 MB
 - **Other** 8.1 MB
-- **Text** 3.3 MB
+- **Text** 3.0 MB
 - **Images** 2.6 MB
 
 Largest files:
 
 - [7.7 MB — Exigo1920x1200.exe](@/posts/2026-05-31-1802/index.md "With #llm I added 1920x1200 to #armiesofexigo #game And increased the #camera range.")
-- [5.5 MB — Каждые_7_лет_клетки_полностью_регенериру_3.mp3](@/posts/2024-08-25-129/index.md)
-- [5.5 MB — Каждые_7_лет_клетки_полностью_регенериру_5.mp3](@/posts/2024-08-25-129/index.md)
-- [5.5 MB — Каждые_7_лет_клетки_полностью_регенериру_6.mp3](@/posts/2024-08-25-129/index.md)
-- [5.4 MB — Каждые_7_лет_клетки_полностью_регенериру_1.mp3](@/posts/2024-08-25-129/index.md)
-- [5.1 MB — Каждые_7_лет_клетки_полностью_регенериру_2.mp3](@/posts/2024-08-25-129/index.md)
-- [5.1 MB — complex_numbers_-_39_загробный_мир.mp3](@/posts/2024-04-27-36/index.md "Part of our new opera")
-- [4.9 MB — Каждые_7_лет_клетки_полностью_регенериру_7.mp3](@/posts/2024-08-25-129/index.md)
-- [4.8 MB — Каждые_7_лет_клетки_полностью_регенериру_4.mp3](@/posts/2024-08-25-129/index.md)
-- [4.8 MB — кургинян_фристайл.mp3](@/posts/2024-11-27-204/index.md "#meanna #sergeykurginyan К моим мыслям о человеческом счастье всегда почему-то примешивалось что-то грустное, теперь же, при виде счастливого человека, мною овладело тяжелое чувство, близкое к отчаянию. А до чего же много на свете счастливых Вы взгляните на эту жизнь: наглость и праздность сильных, …")
+- 2.2 MB — aboutme.png
+- [194 KB — Armies_of_Exigo.7z](@/posts/2026-06-24-1856/index.md "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще своими словами написал в файле list.LST все пути к игровым файлам === чтобы извлечь все файлы в консоли: \"tools/ork/orkdumper/orkdec\" Data.ork list.LST === чтобы заменить файл в игре на примере диалога выбора персонажа: 1. создаем любо…")
+- 163 KB — video-podcast.xml
+- 153 KB — 7e780062b159e9e0.jpg
+- 140 KB — 11a7fd52e3dd742e.jpg
+- 97.9 KB — calendar.md
+- 70.3 KB — 9572b5c8870ce531.jpg
+- [28.9 KB — 02.webp](@/posts/2026-06-23-1850/index.md "Моя лекция про мой Telegram бот YouTube, с поиском, который возвращает аудио Репозиторий проекта #my #stillyoungbar #лекция #telegrambot #youtube Source Evernote")
+- 17.4 KB — elasticlunr.min.js
 
-Generated in **1h 34m 38s**.
+Generated in **1h 10m 36s**.
 
-Last updated **2026-10-29 12:29 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/40860968975)
+Last updated **2026-10-30 12:03 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/41043716680)
 
 [Google Lighthouse scores (mobile):](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fvitaly%2Dzdanevich%2Egithub%2Eio%2Ftelegram%5Fchannel%5Fto%5Fstatic%5Fwebsite)
 
-- **Performance** 44
-- **Accessibility** 83
-- **Best Practices** 96
+- **Performance** 65
+- **Accessibility** 84
+- **Best Practices** 73
 - **SEO** 82
 
 Source repository: [https://github.com/vitaly-zdanevich/telegram_channel_to_static_website](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website)

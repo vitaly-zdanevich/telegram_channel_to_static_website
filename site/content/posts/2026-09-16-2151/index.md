@@ -32,11 +32,6 @@ label = "#translate #pain"
 date = "2025-02-02"
 
 [[extra.related]]
-path = "@/posts/2024-11-06-180/index.md"
-label = "#girl #pain"
-date = "2024-11-06"
-
-[[extra.related]]
 path = "@/posts/2026-09-16-2152/index.md"
 label = "#psy #narcissus #relationship нарцис By source, source"
 date = "2026-09-16"
@@ -45,6 +40,11 @@ date = "2026-09-16"
 path = "@/posts/2025-07-24-609/index.md"
 label = "#girl #relationship #ai Source You generated pictures and videos…"
 date = "2025-07-24"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-481/index.md"
+label = "#sex #mouse #horoscope From"
+date = "2025-04-25"
 +++
 
 {{ tag(t="mouse") }}  

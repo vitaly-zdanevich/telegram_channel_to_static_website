@@ -18,7 +18,7 @@ next_body = "#mem\n#design\n#night\nBy aerodynamicmeme, source"
 prev_id = 2238
 prev_title = ""
 prev_body = "#yandex\n#http429"
-views = 20
+views = 21
 ids = [2239]
 
 [[extra.related]]
@@ -41,5 +41,7 @@ In Firefox in `about:config` I enabled `dom.webgpu.enabled`, check at [webgpuche
 [Source](https://www.reddit.com/r/ClaudeAI/comments/1x7v7gj/this_is_61_kb_html_file/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2239-01.mp4") }}
+
+👍 1
 
 {{ tag(t="video") }}

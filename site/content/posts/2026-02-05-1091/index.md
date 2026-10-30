@@ -32,19 +32,19 @@ label = "Банк Империал - Конрад III #ad is old, around 2000 ye
 date = "2025-02-21"
 
 [[extra.related]]
-path = "@/posts/2024-12-10-213/index.md"
-label = "#ad"
-date = "2024-12-10"
-
-[[extra.related]]
-path = "@/posts/2024-10-06-158/index.md"
-label = "Night Watch: Special Edition #game"
-date = "2024-10-06"
-
-[[extra.related]]
 path = "@/posts/2026-10-10-2208/index.md"
 label = "#sounddesign #game By lago, source"
 date = "2026-10-10"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
+
+[[extra.related]]
+path = "@/posts/2026-03-21-1494/index.md"
+label = "#steam: almost 25% is on #linux?"
+date = "2026-03-21"
 +++
 
 {{ tag(t="linux") }}  

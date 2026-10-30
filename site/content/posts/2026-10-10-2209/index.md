@@ -18,18 +18,13 @@ next_body = "#github\n#webdesign\n#art\n#mascot\n#cat"
 prev_id = 2208
 prev_title = ""
 prev_body = "#sounddesign\n#game\nBy lago, source"
-views = 9
+views = 10
 ids = [2209]
 
 [[extra.related]]
 path = "@/posts/2025-11-06-743/index.md"
 label = "Emotional reasoning is a cognitive process by which an individua…"
 date = "2025-11-06"
-
-[[extra.related]]
-path = "@/posts/2024-12-21-220/index.md"
-label = "#psy"
-date = "2024-12-21"
 
 [[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
@@ -45,6 +40,11 @@ date = "2026-02-11"
 path = "@/posts/2025-04-25-482/index.md"
 label = "#cat #psy"
 date = "2025-04-25"
+
+[[extra.related]]
+path = "@/posts/2025-04-09-464/index.md"
+label = "Бежевый #psy #childhood"
+date = "2025-04-09"
 +++
 
 {{ tag(t="job") }}  
@@ -57,5 +57,7 @@ date = "2025-04-25"
 By [lutchak1](https://www.instagram.com/lutchak1/), [source](https://www.instagram.com/p/DeT-XSkNQDo/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2209-01.mp4") }}
+
+😁 1
 
 {{ tag(t="video") }}

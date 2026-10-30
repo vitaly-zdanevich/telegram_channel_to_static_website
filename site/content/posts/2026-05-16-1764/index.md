@@ -37,14 +37,14 @@ label = "#music"
 date = "2025-01-25"
 
 [[extra.related]]
-path = "@/posts/2024-11-24-198/index.md"
-label = "#music"
-date = "2024-11-24"
-
-[[extra.related]]
 path = "@/posts/2026-04-19-1648/index.md"
 label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
 date = "2026-04-19"
+
+[[extra.related]]
+path = "@/posts/2026-03-08-1383/index.md"
+label = "#music #blackdresses GAY UGLY AND HARD TO UNDERSTAND Intro: Devi…"
+date = "2026-03-08"
 +++
 
 {{ tag(t="music") }}  

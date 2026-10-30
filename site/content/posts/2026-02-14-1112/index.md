@@ -43,9 +43,9 @@ label = "My new article on #wikipedia"
 date = "2025-04-25"
 
 [[extra.related]]
-path = "@/posts/2024-11-25-201/index.md"
-label = "#wikipedia"
-date = "2024-11-25"
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
 +++
 
 Editing {{ tag(t="wikipedia") }}, in {{ tag(t="vim") }}

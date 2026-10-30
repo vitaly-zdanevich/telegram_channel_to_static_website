@@ -22,11 +22,6 @@ views = 108
 ids = [629]
 
 [[extra.related]]
-path = "@/posts/2024-11-25-199/index.md"
-label = "The stand-alone expansion Homeworld: Cataclysm was not announced…"
-date = "2024-11-25"
-
-[[extra.related]]
 path = "@/posts/2026-01-04-840/index.md"
 label = "#game #gta #remaster #preservation #lost Rosado claimed \"the art…"
 date = "2026-01-04"
@@ -42,9 +37,14 @@ label = "Looks what I found - another #archiving group"
 date = "2025-04-15"
 
 [[extra.related]]
-path = "@/posts/2024-10-06-158/index.md"
-label = "Night Watch: Special Edition #game"
-date = "2024-10-06"
+path = "@/posts/2026-10-10-2208/index.md"
+label = "#sounddesign #game By lago, source"
+date = "2026-10-10"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
 +++
 
 > On January 29, 2015, about 15 years after the original release of Heroes of Might & Magic III, Ubisoft released a new high-definition version of the game compatible with PCs as well as Android and iOS tablets. The expansion packs were not included because the source code for those releases was lost

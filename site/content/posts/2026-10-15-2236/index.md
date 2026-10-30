@@ -19,7 +19,7 @@ next_body = "#log\nStill running my experiment about #porting #primeworld from W
 prev_id = 2235
 prev_title = ""
 prev_body = "#retro\n#software\n#songbird\n#itunes"
-views = 19
+views = 20
 ids = [2236]
 
 [[extra.related]]

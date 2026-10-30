@@ -18,7 +18,7 @@ next_body = "#sounddesign\n#game\nBy lago, source"
 prev_id = 2206
 prev_title = ""
 prev_body = "#ad\n#russia\n#cat\n#heat\nBy markmate88, source"
-views = 50
+views = 51
 ids = [2207]
 
 [[extra.related]]
@@ -55,5 +55,7 @@ date = "2026-06-18"
 By [nashallery](https://www.instagram.com/nashallery/), [source](https://www.instagram.com/p/Da6TwEvBn3q/)
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/2207-01.mp4") }}
+
+👍 1
 
 {{ tag(t="video") }}
