@@ -37,14 +37,14 @@ label = "#music"
 date = "2025-01-25"
 
 [[extra.related]]
+path = "@/posts/2024-11-24-198/index.md"
+label = "#music"
+date = "2024-11-24"
+
+[[extra.related]]
 path = "@/posts/2026-05-16-1764/index.md"
 label = "#music #sunboy Остров в океане From Про исполнителя"
 date = "2026-05-16"
-
-[[extra.related]]
-path = "@/posts/2026-03-08-1383/index.md"
-label = "#music #blackdresses GAY UGLY AND HARD TO UNDERSTAND Intro: Devi…"
-date = "2026-03-08"
 +++
 
 {{ tag(t="music") }}  
@@ -62,4 +62,4 @@ date = "2026-03-08"
 
 {{ yandex_music(url="https://music.yandex.ru/iframe/#track/142481672/38048345") }}
 
-<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q110906634">Parabol</a> · <span class="wd-qid">Q110906634</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q55850593">music track with vocals</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P175">performer</a></td><td><a href="https://www.wikidata.org/wiki/Q184827">Tool</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P437">distribution format</a></td><td><a href="https://www.wikidata.org/wiki/Q15982450">music streaming</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1243">ISRC</a></td><td>USVR10100014</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1476">title</a></td><td>Parabol</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1552">has characteristic</a></td><td><a href="https://www.wikidata.org/wiki/Q15975575">studio recording</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P2207">Spotify track ID</a></td><td>3EeoMkZF8NhX9FdCSxG8MB</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P2550">recording or performance of</a></td><td><a href="https://www.wikidata.org/wiki/Q6060444">Parabol</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P4404">MusicBrainz recording ID</a></td><td>5128c310-6d92-4e96-9dc3-5defec033a51</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P10135">recording date</a></td><td>2001</td></tr></tbody></table></figure>
+<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q110906634">Q110906634</a> · <span class="wd-qid">Q110906634</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q55850593">Q55850593</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P175">P175</a></td><td><a href="https://www.wikidata.org/wiki/Q184827">Q184827</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P437">P437</a></td><td><a href="https://www.wikidata.org/wiki/Q15982450">Q15982450</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1243">P1243</a></td><td>USVR10100014</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1476">P1476</a></td><td>Parabol</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1552">P1552</a></td><td><a href="https://www.wikidata.org/wiki/Q15975575">Q15975575</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P2207">P2207</a></td><td>3EeoMkZF8NhX9FdCSxG8MB</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P2550">P2550</a></td><td><a href="https://www.wikidata.org/wiki/Q6060444">Q6060444</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P4404">P4404</a></td><td>5128c310-6d92-4e96-9dc3-5defec033a51</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P10135">P10135</a></td><td>2001</td></tr></tbody></table></figure>

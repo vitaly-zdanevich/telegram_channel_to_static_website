@@ -23,6 +23,11 @@ views = 22
 ids = [2177]
 
 [[extra.related]]
+path = "@/posts/2024-12-22-222/index.md"
+label = "#youtube"
+date = "2024-12-22"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2026-04-02"
 path = "@/posts/2026-02-27-1204/index.md"
 label = "#calligraphy #microfilm #preservation"
 date = "2026-02-27"
-
-[[extra.related]]
-path = "@/posts/2026-02-07-1099/index.md"
-label = "#love it - against #youtube #clickbait"
-date = "2026-02-07"
 +++
 
 {{ tag(t="preservation") }}  

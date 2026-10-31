@@ -22,6 +22,11 @@ views = 96
 ids = [374]
 
 [[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+date = "2024-12-10"
+
+[[extra.related]]
 path = "@/posts/2025-11-19-783/index.md"
 label = "#ad #playstation #playstation2"
 date = "2025-11-19"
@@ -40,11 +45,6 @@ date = "2026-10-10"
 path = "@/posts/2026-09-21-2170/index.md"
 label = "#mem #cat #ad #apple By imdoris.shen, source"
 date = "2026-09-21"
-
-[[extra.related]]
-path = "@/posts/2026-06-18-1841/index.md"
-label = "#ad #newspaper #design #toxic From"
-date = "2026-06-18"
 +++
 
 **Банк Империал - Конрад III**  

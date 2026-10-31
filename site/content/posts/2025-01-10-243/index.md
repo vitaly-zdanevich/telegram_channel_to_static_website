@@ -1,0 +1,26 @@
++++
+title = ""
+date = 2025-01-10T20:01:38+00:00
+
+[taxonomies]
+days = ["2025-01-10"]
+
+[extra]
+id = 243
+day = "2025-01-10"
+tg_url = "https://t.me/vitaly_zdanevich_chan/243"
+next_id = 244
+next_title = ""
+next_body = "Video from 2012 about #ai"
+prev_id = 242
+prev_title = ""
+prev_body = ""
+views = 34
+ids = [243]
++++
+
+[https://youtu.be/tBxIFwpu778](<https://youtu.be/tBxIFwpu778> "Arabic Rave")
+
+{{ youtube(id="tBxIFwpu778") }}
+
+🙏 1

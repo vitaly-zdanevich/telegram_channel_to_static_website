@@ -32,6 +32,11 @@ label = "#matrix Прошло 20 лет, а вы и не заметили, ми�
 date = "2026-02-05"
 
 [[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
+
+[[extra.related]]
 path = "@/posts/2026-10-10-2208/index.md"
 label = "#sounddesign #game By lago, source"
 date = "2026-10-10"
@@ -40,11 +45,6 @@ date = "2026-10-10"
 path = "@/posts/2026-10-08-2186/index.md"
 label = "#game #muonline By monarchsea.mu, source"
 date = "2026-10-08"
-
-[[extra.related]]
-path = "@/posts/2026-08-04-2117/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
 +++
 
 {{ tag(t="mem") }}  

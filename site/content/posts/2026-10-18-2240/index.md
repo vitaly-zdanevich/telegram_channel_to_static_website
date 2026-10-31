@@ -22,6 +22,21 @@ views = 25
 ids = [2240]
 
 [[extra.related]]
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+date = "2024-10-08"
+
+[[extra.related]]
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+date = "2024-07-13"
+
+[[extra.related]]
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+date = "2024-04-27"
+
+[[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
@@ -30,21 +45,6 @@ date = "2026-08-04"
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2025-11-10-759/index.md"
-label = "#design #artlebedev"
-date = "2025-11-10"
-
-[[extra.related]]
-path = "@/posts/2025-11-10-758/index.md"
-label = "#design #artlebedev"
-date = "2025-11-10"
-
-[[extra.related]]
-path = "@/posts/2025-11-10-757/index.md"
-label = "#design #logo #artlebedevSource"
-date = "2025-11-10"
 +++
 
 {{ tag(t="mem") }}  

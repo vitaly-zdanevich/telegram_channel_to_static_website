@@ -37,13 +37,13 @@ label = "#translate #pain"
 date = "2025-02-02"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2136/index.md"
-label = "#death #car #sound"
-date = "2026-08-09"
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
+date = "2024-11-06"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2135/index.md"
-label = "#death #cementery #urban"
+path = "@/posts/2026-08-09-2136/index.md"
+label = "#death #car #sound"
 date = "2026-08-09"
 +++
 

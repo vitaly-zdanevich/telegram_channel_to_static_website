@@ -33,19 +33,19 @@ label = "Love this #logo"
 date = "2025-12-17"
 
 [[extra.related]]
-path = "@/posts/2026-07-28-2076/index.md"
-label = "What a nice #arabic #logo"
-date = "2026-07-28"
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-03-03-1332/index.md"
-label = "#logo #horse"
-date = "2026-03-03"
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
-path = "@/posts/2025-11-10-759/index.md"
-label = "#design #artlebedev"
-date = "2025-11-10"
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+date = "2024-04-27"
 +++
 
 {{ tag(t="design") }}  

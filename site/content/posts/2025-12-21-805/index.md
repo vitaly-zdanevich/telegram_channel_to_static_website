@@ -33,19 +33,19 @@ label = "Love this #logo"
 date = "2025-12-17"
 
 [[extra.related]]
-path = "@/posts/2026-07-28-2076/index.md"
-label = "What a nice #arabic #logo"
-date = "2026-07-28"
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-03-03-1332/index.md"
-label = "#logo #horse"
-date = "2026-03-03"
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
-path = "@/posts/2025-11-10-759/index.md"
-label = "#design #artlebedev"
-date = "2025-11-10"
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+date = "2024-04-27"
 +++
 
 {{ tag(t="anime") }}  
@@ -53,6 +53,6 @@ date = "2025-11-10"
 {{ tag(t="mascon") }}  
 {{ tag(t="design") }}  
 
-[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 23835 stars · Languages: Go 85%, TypeScript 5%, Shell 4% · 966 commits · 802 forks · 409 open issues/PRs · MIT · last push 2026-10-29")
+[https://github.com/TecharoHQ/anubis](<https://github.com/TecharoHQ/anubis> "Weighs the soul of incoming HTTP requests to stop AI crawlers · 23853 stars · Languages: Go 85%, TypeScript 5%, Shell 4% · 966 commits · 804 forks · 410 open issues/PRs · MIT · last push 2026-10-29")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-805-5350719435192339794-y-841x838-73080.jpg") }}

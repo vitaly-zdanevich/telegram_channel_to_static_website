@@ -38,14 +38,14 @@ label = "#coin"
 date = "2025-02-15"
 
 [[extra.related]]
-path = "@/posts/2026-02-04-1081/index.md"
-label = "#preservation #belarus geo block I uploaded a lot from to Common…"
-date = "2026-02-04"
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+date = "2024-12-11"
 
 [[extra.related]]
-path = "@/posts/2026-02-03-1080/index.md"
-label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
-date = "2026-02-03"
+path = "@/posts/2024-05-06-42/index.md"
+label = "Coin 5 years of Lithuania independence, from #coin"
+date = "2024-05-06"
 +++
 
 {{ tag(t="coin") }}  

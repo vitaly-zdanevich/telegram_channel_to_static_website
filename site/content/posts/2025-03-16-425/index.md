@@ -32,6 +32,11 @@ label = "#translate #pain"
 date = "2025-02-02"
 
 [[extra.related]]
+path = "@/posts/2024-11-06-180/index.md"
+label = "#girl #pain"
+date = "2024-11-06"
+
+[[extra.related]]
 path = "@/posts/2026-10-14-2229/index.md"
 label = "#logo #heart #yandex #pain"
 date = "2026-10-14"
@@ -40,11 +45,6 @@ date = "2026-10-14"
 path = "@/posts/2026-09-16-2151/index.md"
 label = "#mouse #cheese #relationship #pain By happyofficlal, source"
 date = "2026-09-16"
-
-[[extra.related]]
-path = "@/posts/2026-02-18-1116/index.md"
-label = "#pain #ad #event #sergeykulinkovich The old one Унижение и боль…"
-date = "2026-02-18"
 +++
 
 {{ tag(t="pain") }}  

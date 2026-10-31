@@ -38,14 +38,14 @@ label = "#windows #linux"
 date = "2025-04-11"
 
 [[extra.related]]
+path = "@/posts/2024-04-27-38/index.md"
+label = "I love - developed in 2004 - but nobody sell it anymore in 2024.…"
+date = "2024-04-27"
+
+[[extra.related]]
 path = "@/posts/2026-02-05-1097/index.md"
 label = "I love #display aspect ratio 16x10 because I have the special sp…"
 date = "2026-02-05"
-
-[[extra.related]]
-path = "@/posts/2026-02-03-1078/index.md"
-label = "#ui #yandex #samara"
-date = "2026-02-03"
 +++
 
 {{ tag(t="ui") }}  

@@ -32,6 +32,11 @@ label = "Банк Империал - Конрад III #ad is old, around 2000 ye
 date = "2025-02-21"
 
 [[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+date = "2024-12-10"
+
+[[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
@@ -40,11 +45,6 @@ date = "2026-08-04"
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2025-04-25-482/index.md"
-label = "#cat #psy"
-date = "2025-04-25"
 +++
 
 {{ tag(t="mem") }}  

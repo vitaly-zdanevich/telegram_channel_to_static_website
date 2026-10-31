@@ -27,6 +27,11 @@ label = "Emotional reasoning is a cognitive process by which an individua…"
 date = "2025-11-06"
 
 [[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+date = "2024-12-21"
+
+[[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
 date = "2026-06-30"
@@ -40,11 +45,6 @@ date = "2025-04-25"
 path = "@/posts/2025-04-09-464/index.md"
 label = "Бежевый #psy #childhood"
 date = "2025-04-09"
-
-[[extra.related]]
-path = "@/posts/2025-03-27-450/index.md"
-label = "#phone #psy"
-date = "2025-03-27"
 +++
 
 {{ tag(t="духота") }}  

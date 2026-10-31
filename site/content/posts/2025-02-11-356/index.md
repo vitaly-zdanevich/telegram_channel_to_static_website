@@ -38,14 +38,14 @@ label = "#ai"
 date = "2025-01-28"
 
 [[extra.related]]
-path = "@/posts/2026-10-18-2241/index.md"
-label = "#ai #spirit By bennettreloaded, source"
-date = "2026-10-18"
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+date = "2025-01-10"
 
 [[extra.related]]
-path = "@/posts/2026-05-12-1755/index.md"
-label = "#ai #screenshot from"
-date = "2026-05-12"
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
+date = "2025-01-01"
 +++
 
 {{ tag(t="ai") }}  

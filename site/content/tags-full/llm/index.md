@@ -1,8 +1,8 @@
 +++
-title = "#llm"
+title = "#LLM"
 path = "/tags/llm/full/"
 template = "tag_full.html"
 
 [extra]
-tag = "llm"
+tag = "LLM"
 +++

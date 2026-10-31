@@ -32,6 +32,11 @@ label = "Банк Империал - Конрад III #ad is old, around 2000 ye
 date = "2025-02-21"
 
 [[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+date = "2024-12-10"
+
+[[extra.related]]
 path = "@/posts/2026-10-10-2205/index.md"
 label = "#game #cd #playstation By gamersgoretro, source"
 date = "2026-10-10"
@@ -40,11 +45,6 @@ date = "2026-10-10"
 path = "@/posts/2026-09-21-2176/index.md"
 label = "#game #playstation #design By retourverslegaming, source"
 date = "2026-09-21"
-
-[[extra.related]]
-path = "@/posts/2025-11-19-782/index.md"
-label = "#ad #retro #nokia"
-date = "2025-11-19"
 +++
 
 {{ tag(t="ad") }}  

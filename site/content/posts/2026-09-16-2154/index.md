@@ -18,7 +18,7 @@ next_body = "#thailand\n#gay\nBy habik.wtf, source"
 prev_id = 2152
 prev_title = ""
 prev_body = "#psy\n#narcissus\n#relationship\nнарцис\nBy source, source"
-views = 27
+views = 29
 ids = [2154]
 
 [[extra.related]]
@@ -42,9 +42,9 @@ label = "#relationship"
 date = "2025-01-17"
 
 [[extra.related]]
-path = "@/posts/2026-10-10-2208/index.md"
-label = "#sounddesign #game By lago, source"
-date = "2026-10-10"
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
 +++
 
 {{ tag(t="relationship") }}  

@@ -27,19 +27,24 @@ label = "Wow #blackandwhite #webdesign is interesting"
 date = "2025-05-29"
 
 [[extra.related]]
+path = "@/posts/2025-01-17-252/index.md"
+label = "#movie #anime"
+date = "2025-01-17"
+
+[[extra.related]]
 path = "@/posts/2026-04-02-1566/index.md"
 label = "#equilibrium That #movie is important to me, but surprise - 33/1…"
 date = "2026-04-02"
 
 [[extra.related]]
-path = "@/posts/2026-05-03-1730/index.md"
-label = "#cats #religion #orthodox #blackandwhite"
-date = "2026-05-03"
+path = "@/posts/2025-01-17-255/index.md"
+label = "#my #movie #korolishut"
+date = "2025-01-17"
 
 [[extra.related]]
-path = "@/posts/2025-12-21-806/index.md"
-label = "#alien #poster #film #blackandwhite"
-date = "2025-12-21"
+path = "@/posts/2025-01-17-254/index.md"
+label = "#my #movie #korolishut"
+date = "2025-01-17"
 +++
 
 {{ tag(t="movie") }}  

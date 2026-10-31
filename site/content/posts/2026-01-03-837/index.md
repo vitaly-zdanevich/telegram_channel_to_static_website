@@ -23,6 +23,11 @@ views = 20
 ids = [837]
 
 [[extra.related]]
+path = "@/posts/2024-11-04-176/index.md"
+label = "#vr"
+date = "2024-11-04"
+
+[[extra.related]]
 path = "@/posts/2026-09-15-2144/index.md"
 label = "#vr #life #blackmirror By dariagirnik"
 date = "2026-09-15"
@@ -31,6 +36,11 @@ date = "2026-09-15"
 path = "@/posts/2026-09-16-2148/index.md"
 label = "#ai #incarnation #scifi #vr By juliareznik87, source"
 date = "2026-09-16"
+
+[[extra.related]]
+path = "@/posts/2024-10-13-160/index.md"
+label = "LOVE this #vr #game, #oculusquest3 #asgardswrath2"
+date = "2024-10-13"
 +++
 
 {{ tag(t="vr") }}  

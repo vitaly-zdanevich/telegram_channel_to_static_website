@@ -18,7 +18,7 @@ next_body = "#harrypotter\n#northkorea\n#ai\n#demonflyingfox\nSource\")"
 prev_id = 604
 prev_title = ""
 prev_body = "#berlin\n#germany\n#ai\n#thelordoftherings\n#demonflyingfox\nSource"
-views = 51
+views = 52
 ids = [605]
 
 [[extra.related]]

@@ -37,14 +37,14 @@ label = "Wikimedia Commons: загрузка через мой Python скрип
 date = "2025-05-22"
 
 [[extra.related]]
+path = "@/posts/2025-01-11-245/index.md"
+label = "#war #video #warpath"
+date = "2025-01-11"
+
+[[extra.related]]
 path = "@/posts/2026-07-12-2047/index.md"
 label = "#me #travel #botanicgarden #nature"
 date = "2026-07-12"
-
-[[extra.related]]
-path = "@/posts/2026-05-05-1741/index.md"
-label = "#odysee looks like #convert #video right in a #browser - without…"
-date = "2026-05-05"
 +++
 
 {{ tag(t="travel") }}  

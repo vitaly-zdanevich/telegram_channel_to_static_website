@@ -18,7 +18,7 @@ next_body = "#aivideo\n#future\n#love\nBy arikuschnir, source"
 prev_id = 2147
 prev_title = ""
 prev_body = "#llm\n#terminator\nPick a #number between 1 and 30: 17\nSource"
-views = 39
+views = 40
 ids = [2148]
 
 [[extra.related]]
@@ -42,9 +42,9 @@ label = "#ai"
 date = "2025-01-28"
 
 [[extra.related]]
-path = "@/posts/2026-10-18-2241/index.md"
-label = "#ai #spirit By bennettreloaded, source"
-date = "2026-10-18"
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+date = "2025-01-10"
 +++
 
 {{ tag(t="ai") }}  

@@ -23,6 +23,11 @@ views = 41
 ids = [806]
 
 [[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
+
+[[extra.related]]
 path = "@/posts/2025-11-13-778/index.md"
 label = "#film #kindzadza Гамарджоба At 1:50:00"
 date = "2025-11-13"
@@ -38,14 +43,9 @@ label = "Wow #blackandwhite #webdesign is interesting"
 date = "2025-05-29"
 
 [[extra.related]]
-path = "@/posts/2025-11-13-777/index.md"
-label = "#film #kindzadza #batumi Соедините меня с Батуми"
-date = "2025-11-13"
-
-[[extra.related]]
-path = "@/posts/2025-11-13-774/index.md"
-label = "#film #kindzadza #batumi Кин-дза-дза, на девятой минуте Скрипач…"
-date = "2025-11-13"
+path = "@/posts/2024-06-11-53/index.md"
+label = "#film #nightwatch Night Watch, love it"
+date = "2024-06-11"
 +++
 
 {{ tag(t="alien") }}  

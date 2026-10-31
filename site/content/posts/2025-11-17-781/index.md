@@ -28,6 +28,11 @@ label = "#js I downloaded it - really 0 bytes."
 date = "2026-02-13"
 
 [[extra.related]]
+path = "@/posts/2024-07-21-94/index.md"
+label = "#firefox vertical tabs with plus custom CSS from"
+date = "2024-07-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1083/index.md"
 label = "Why #facebook is so slow : #firefox"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2025-03-11"
 path = "@/posts/2026-04-15-1640/index.md"
 label = "#firefox #webextension: after #tab close - switch to the previou…"
 date = "2026-04-15"
-
-[[extra.related]]
-path = "@/posts/2026-02-25-1197/index.md"
-label = "#firefox #extension Copy non-latin links without #percent"
-date = "2026-02-25"
 +++
 
 {{ tag(t="js") }}  

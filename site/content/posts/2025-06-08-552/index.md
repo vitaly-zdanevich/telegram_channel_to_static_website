@@ -27,6 +27,11 @@ label = "Emotional reasoning is a cognitive process by which an individua…"
 date = "2025-11-06"
 
 [[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+date = "2024-12-21"
+
+[[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
 date = "2026-06-30"
@@ -40,11 +45,6 @@ date = "2025-10-22"
 path = "@/posts/2025-07-27-613/index.md"
 label = "#arsenmarkaryan #hairs В волосах первородная космическая сила. Л…"
 date = "2025-07-27"
-
-[[extra.related]]
-path = "@/posts/2025-05-08-509/index.md"
-label = "#health #science"
-date = "2025-05-08"
 +++
 
 {{ tag(t="arsen_markaryan") }}  

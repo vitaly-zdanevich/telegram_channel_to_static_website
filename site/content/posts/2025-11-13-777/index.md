@@ -37,14 +37,14 @@ label = "#batumi Oh my, I live here From"
 date = "2026-06-21"
 
 [[extra.related]]
+path = "@/posts/2024-02-26-32/index.md"
+label = "#film Love, Sex & Robots S1.E3: The Witness"
+date = "2024-02-26"
+
+[[extra.related]]
 path = "@/posts/2026-07-08-2037/index.md"
 label = "#kindzadza #trailer"
 date = "2026-07-08"
-
-[[extra.related]]
-path = "@/posts/2026-05-04-1734/index.md"
-label = "#map #batumi Between the Black Sea and the mountains."
-date = "2026-05-04"
 +++
 
 {{ tag(t="film") }}  

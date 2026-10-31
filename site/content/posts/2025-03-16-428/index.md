@@ -18,7 +18,7 @@ next_body = "#alarm\n#music\n#dreams\nSource"
 prev_id = 427
 prev_title = ""
 prev_body = "#coffee\nSource"
-views = 72
+views = 74
 ids = [428]
 
 [[extra.related]]
@@ -37,14 +37,14 @@ label = "#ai"
 date = "2025-01-28"
 
 [[extra.related]]
-path = "@/posts/2026-10-18-2241/index.md"
-label = "#ai #spirit By bennettreloaded, source"
-date = "2026-10-18"
+path = "@/posts/2025-01-10-244/index.md"
+label = "Video from 2012 about #ai"
+date = "2025-01-10"
 
 [[extra.related]]
-path = "@/posts/2026-09-21-2172/index.md"
-label = "#robot #fight By frankielap, source"
-date = "2026-09-21"
+path = "@/posts/2025-01-01-237/index.md"
+label = "#ai"
+date = "2025-01-01"
 +++
 
 {{ tag(t="robot") }}  

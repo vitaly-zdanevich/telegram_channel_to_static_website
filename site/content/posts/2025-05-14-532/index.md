@@ -43,9 +43,9 @@ label = "Банк Империал - Конрад III #ad is old, around 2000 ye
 date = "2025-02-21"
 
 [[extra.related]]
-path = "@/posts/2026-02-03-1080/index.md"
-label = "#ussr #history Сегодня их существует пять плюс три молитвенных д…"
-date = "2026-02-03"
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+date = "2024-12-10"
 +++
 
 From [globustut.by](http://globustut.by/)  

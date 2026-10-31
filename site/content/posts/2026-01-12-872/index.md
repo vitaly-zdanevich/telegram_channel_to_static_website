@@ -38,14 +38,14 @@ label = "My new article on #wikipedia"
 date = "2025-04-25"
 
 [[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+date = "2024-11-25"
+
+[[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 date = "2026-03-25"
-
-[[extra.related]]
-path = "@/posts/2026-02-16-1114/index.md"
-label = "#python Same #dot - different meaning for f in os.listdir'.' if…"
-date = "2026-02-16"
 +++
 
 Wow {{ tag(t="wikipedia") }} semi-automatic editing by a {{ tag(t="python") }} script  

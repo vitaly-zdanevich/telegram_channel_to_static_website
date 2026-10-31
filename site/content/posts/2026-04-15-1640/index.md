@@ -23,6 +23,11 @@ views = 28
 ids = [1640]
 
 [[extra.related]]
+path = "@/posts/2024-07-21-94/index.md"
+label = "#firefox vertical tabs with plus custom CSS from"
+date = "2024-07-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1083/index.md"
 label = "Why #facebook is so slow : #firefox"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2025-03-11"
 path = "@/posts/2026-02-25-1197/index.md"
 label = "#firefox #extension Copy non-latin links without #percent"
 date = "2026-02-25"
-
-[[extra.related]]
-path = "@/posts/2026-02-05-1095/index.md"
-label = "#ai ai ai ai ai but looks like even text translation with not ve…"
-date = "2026-02-05"
 +++
 
 {{ tag(t="firefox") }}  

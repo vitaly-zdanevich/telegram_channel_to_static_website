@@ -23,6 +23,11 @@ views = 11
 ids = [1083]
 
 [[extra.related]]
+path = "@/posts/2024-07-21-94/index.md"
+label = "#firefox vertical tabs with plus custom CSS from"
+date = "2024-07-21"
+
+[[extra.related]]
 path = "@/posts/2025-11-17-781/index.md"
 label = "#js Out of memory, but RAM is used to 64% #firefox"
 date = "2025-11-17"
@@ -41,11 +46,6 @@ date = "2026-04-15"
 path = "@/posts/2026-02-25-1197/index.md"
 label = "#firefox #extension Copy non-latin links without #percent"
 date = "2026-02-25"
-
-[[extra.related]]
-path = "@/posts/2026-02-05-1095/index.md"
-label = "#ai ai ai ai ai but looks like even text translation with not ve…"
-date = "2026-02-05"
 +++
 
 Why {{ tag(t="facebook") }} is so slow :(  

@@ -13,6 +13,9 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/258"
 next_id = 259
 next_title = ""
 next_body = ""
+prev_id = 257
+prev_title = ""
+prev_body = ""
 views = 25
 ids = [258]
 +++

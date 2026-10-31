@@ -32,19 +32,19 @@ label = "Emotional reasoning is a cognitive process by which an individua…"
 date = "2025-11-06"
 
 [[extra.related]]
+path = "@/posts/2024-12-21-220/index.md"
+label = "#psy"
+date = "2024-12-21"
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
+
+[[extra.related]]
 path = "@/posts/2026-10-10-2208/index.md"
 label = "#sounddesign #game By lago, source"
 date = "2026-10-10"
-
-[[extra.related]]
-path = "@/posts/2026-10-08-2186/index.md"
-label = "#game #muonline By monarchsea.mu, source"
-date = "2026-10-08"
-
-[[extra.related]]
-path = "@/posts/2026-06-30-1878/index.md"
-label = "#psy #food Ходим без настроения, срываемся, ругаемся"
-date = "2026-06-30"
 +++
 
 {{ tag(t="game") }}  

@@ -37,12 +37,12 @@ label = "#preservation #belarus #library #science Для меня было от�
 date = "2025-07-04"
 
 [[extra.related]]
-path = "@/posts/2026-08-04-2117/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+date = "2024-12-11"
 
 [[extra.related]]
-path = "@/posts/2026-08-04-2116/index.md"
+path = "@/posts/2026-08-04-2117/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
 +++

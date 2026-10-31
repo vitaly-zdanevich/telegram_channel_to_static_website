@@ -32,19 +32,19 @@ label = "#girl"
 date = "2025-01-21"
 
 [[extra.related]]
+path = "@/posts/2024-11-17-192/index.md"
+label = "#warcraft"
+date = "2024-11-17"
+
+[[extra.related]]
+path = "@/posts/2024-11-06-181/index.md"
+label = "#girl"
+date = "2024-11-06"
+
+[[extra.related]]
 path = "@/posts/2025-03-13-408/index.md"
 label = "#girl #face"
 date = "2025-03-13"
-
-[[extra.related]]
-path = "@/posts/2025-01-30-348/index.md"
-label = "#spider #girl"
-date = "2025-01-30"
-
-[[extra.related]]
-path = "@/posts/2025-01-28-340/index.md"
-label = "#girl #nails"
-date = "2025-01-28"
 +++
 
 {{ tag(t="girl") }}  

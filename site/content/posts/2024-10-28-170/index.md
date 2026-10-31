@@ -1,0 +1,29 @@
++++
+title = ""
+date = 2024-10-28T11:08:43+00:00
+description = "mpv can play a movie without x, in tty, and without tearing"
+
+[taxonomies]
+days = ["2024-10-28"]
+tags = ["mpv", "x", "tty", "tearing"]
+
+[extra]
+id = 170
+day = "2024-10-28"
+tg_url = "https://t.me/vitaly_zdanevich_chan/170"
+next_id = 171
+next_title = ""
+next_body = "The same story"
+prev_id = 169
+prev_title = ""
+prev_body = "bilibili.com capcha"
+views = 44
+ids = [170]
+
+[[extra.related]]
+path = "@/posts/2025-05-10-512/index.md"
+label = "#mpv #anime #readme"
+date = "2025-05-10"
++++
+
+{{ tag(t="mpv") }} can play a movie without {{ tag(t="x") }}, in {{ tag(t="tty") }}, and without {{ tag(t="tearing") }}

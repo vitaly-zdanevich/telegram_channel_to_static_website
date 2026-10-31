@@ -19,7 +19,7 @@ next_body = "#map\n#europe\n#belarus\n#sakartvelo\n#russia\n#year1444\nFrom"
 prev_id = 2242
 prev_title = ""
 prev_body = "#eso\n#spirit\n#life\n#death\nBy bennettreloaded, source"
-views = 24
+views = 25
 ids = [2243, 2244, 2245]
 
 [[extra.related]]
@@ -33,19 +33,19 @@ label = "#map of articles and photos"
 date = "2025-06-21"
 
 [[extra.related]]
-path = "@/posts/2026-05-04-1734/index.md"
-label = "#map #batumi Between the Black Sea and the mountains."
-date = "2026-05-04"
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-01-12-873/index.md"
-label = "#map The Earth, centred around #newzealand"
-date = "2026-01-12"
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+date = "2024-07-13"
 
 [[extra.related]]
-path = "@/posts/2026-01-08-857/index.md"
-label = "#belarus #minsk 1941-1944"
-date = "2026-01-08"
+path = "@/posts/2024-04-27-34/index.md"
+label = "This website looks soooo special #design"
+date = "2024-04-27"
 +++
 
 {{ tag(t="design") }}  

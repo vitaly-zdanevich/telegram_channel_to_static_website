@@ -28,6 +28,21 @@ label = "I continue to write my script for importing ratings from #metacr…"
 date = "2025-10-28"
 
 [[extra.related]]
+path = "@/posts/2025-01-17-252/index.md"
+label = "#movie #anime"
+date = "2025-01-17"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-255/index.md"
+label = "#my #movie #korolishut"
+date = "2025-01-17"
+
+[[extra.related]]
+path = "@/posts/2025-01-17-254/index.md"
+label = "#my #movie #korolishut"
+date = "2025-01-17"
+
+[[extra.related]]
 path = "@/posts/2026-06-27-1867/index.md"
 label = "#movie #blackandwhite #faust #year1926 В этом году фильм «Фауст»…"
 date = "2026-06-27"

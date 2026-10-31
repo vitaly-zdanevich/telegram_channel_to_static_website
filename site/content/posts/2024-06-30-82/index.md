@@ -1,0 +1,56 @@
++++
+title = ""
+date = 2024-06-30T16:30:08+00:00
+description = "I contribute to wikipedia and other projects on mediawiki engine and other wikis like mdn. When I talk with somebody about his technical problem - sometimes I say something like \"...and when you…"
+
+[taxonomies]
+days = ["2024-06-30"]
+tags = ["wikipedia", "mediawiki", "mdn", "reddit"]
+
+[extra]
+id = 82
+day = "2024-06-30"
+tg_url = "https://t.me/vitaly_zdanevich_chan/82"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-82-5190535735076315675.jpg"
+next_id = 83
+next_title = ""
+next_body = "Local (off-the-grid) social network with chat, on #blockchain (so you cannot edit your messages), looks like abandoned\nYou can use this without internet."
+prev_id = 81
+prev_title = ""
+prev_body = "Wow, DIY laptop with easy interchangeable parts\nSad that fanless laptops looks like unpopular, the best of such - MacBook Air, but I love Linux."
+views = 62
+ids = [82]
+
+[[extra.related]]
+path = "@/posts/2026-02-02-1073/index.md"
+label = "#wikipedia Актёр озвучивания мужского пола Монгильо наиболее изв…"
+date = "2026-02-02"
+
+[[extra.related]]
+path = "@/posts/2025-04-25-483/index.md"
+label = "My new article on #wikipedia"
+date = "2025-04-25"
+
+[[extra.related]]
+path = "@/posts/2024-11-25-201/index.md"
+label = "#wikipedia"
+date = "2024-11-25"
+
+[[extra.related]]
+path = "@/posts/2026-03-25-1503/index.md"
+label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
+date = "2026-03-25"
+
+[[extra.related]]
+path = "@/posts/2026-02-14-1112/index.md"
+label = "Editing #wikipedia, in #vim"
+date = "2026-02-14"
++++
+
+I contribute to {{ tag(t="wikipedia") }} and other projects on {{ tag(t="mediawiki") }} engine and other wikis like {{ tag(t="mdn") }}. When I talk with somebody about his technical problem - sometimes I say something like "...and when you finally figure out the root cause - please check some related wiki about that and 𝐮𝐩𝐝𝐚𝐭𝐞 𝐢𝐭 𝐢𝐟 𝐢𝐭𝐬 𝐧𝐞𝐰 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧". Yep, please. Corporate Wikis/Confluence also. When you write - it is improving your understanding. Bring awareness. Help people. And after a few years - you will google the same problem. If no Wiki for some project - you can create question and answer it on [https://superuser.com](https://superuser.com/)  
+
+It can be just a few lines - like 𝑖𝑓 𝑦𝑜𝑢 ℎ𝑎𝑣𝑒 𝑡ℎ𝑖𝑠 - 𝑐ℎ𝑒𝑐𝑘 𝑡ℎ𝑖𝑠.  
+
+Not {{ tag(t="reddit") }} - their user content license is not clear.
+
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-82-5190535735076315675.jpg") }}

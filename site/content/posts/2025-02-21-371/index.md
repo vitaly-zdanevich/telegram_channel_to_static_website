@@ -32,6 +32,11 @@ label = "Банк Империал - Конрад III #ad is old, around 2000 ye
 date = "2025-02-21"
 
 [[extra.related]]
+path = "@/posts/2024-12-10-213/index.md"
+label = "#ad"
+date = "2024-12-10"
+
+[[extra.related]]
 path = "@/posts/2025-11-19-783/index.md"
 label = "#ad #playstation #playstation2"
 date = "2025-11-19"
@@ -40,11 +45,6 @@ date = "2025-11-19"
 path = "@/posts/2025-11-19-782/index.md"
 label = "#ad #retro #nokia"
 date = "2025-11-19"
-
-[[extra.related]]
-path = "@/posts/2026-10-10-2206/index.md"
-label = "#ad #russia #cat #heat By markmate88, source"
-date = "2026-10-10"
 +++
 
 {{ tag(t="ad") }} from 2012  

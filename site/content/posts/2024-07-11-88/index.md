@@ -1,0 +1,26 @@
++++
+title = ""
+date = 2024-07-11T02:46:42+00:00
+description = "Меньше митингов"
+
+[taxonomies]
+days = ["2024-07-11"]
+
+[extra]
+id = 88
+day = "2024-07-11"
+tg_url = "https://t.me/vitaly_zdanevich_chan/88"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-88-5222022380841462992.jpg"
+next_id = 89
+next_title = ""
+next_body = "Another good #design"
+prev_id = 87
+prev_title = ""
+prev_body = "Wow #gitlab has a #cron..."
+views = 54
+ids = [88]
++++
+
+Меньше митингов
+
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-88-5222022380841462992.jpg") }}

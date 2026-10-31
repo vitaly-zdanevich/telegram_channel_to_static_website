@@ -33,6 +33,11 @@ label = "Wikimedia Commons: загрузка через мой Python скрип
 date = "2025-05-22"
 
 [[extra.related]]
+path = "@/posts/2025-01-11-245/index.md"
+label = "#war #video #warpath"
+date = "2025-01-11"
+
+[[extra.related]]
 path = "@/posts/2025-09-15-671/index.md"
 label = "#video #film #nightwatch #zavulon"
 date = "2025-09-15"
@@ -41,11 +46,6 @@ date = "2025-09-15"
 path = "@/posts/2025-08-20-632/index.md"
 label = "Как работает дата-центр Яндекса в Финляндии Heating of a city by…"
 date = "2025-08-20"
-
-[[extra.related]]
-path = "@/posts/2025-02-15-367/index.md"
-label = "#turkey #istanbul #video #my Animation on building by projectors…"
-date = "2025-02-15"
 +++
 
 {{ tag(t="odysee") }} looks like {{ tag(t="convert") }} {{ tag(t="video") }} right in a {{ tag(t="browser") }} - without uploading to the backend.

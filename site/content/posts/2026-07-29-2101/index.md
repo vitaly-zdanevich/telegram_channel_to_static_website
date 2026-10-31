@@ -18,7 +18,7 @@ next_body = "#god\n#fear\n#monastery\n#antichrist\n#rammstein\nСтрахи де
 prev_id = 2100
 prev_title = ""
 prev_body = "#drug\n#traktor\n#interstellar\nПринял таблетки для сердца, потому что перепутал. Тем временем дед в тракторе на поле\nBy film0rezkaa"
-views = 30
+views = 31
 ids = [2101]
 
 [[extra.related]]
@@ -37,14 +37,14 @@ label = "#anime #war #ground"
 date = "2026-07-27"
 
 [[extra.related]]
+path = "@/posts/2025-01-11-245/index.md"
+label = "#war #video #warpath"
+date = "2025-01-11"
+
+[[extra.related]]
 path = "@/posts/2025-02-21-372/index.md"
 label = "Most Shocking Second a Day Video Still The Most Shocking Second…"
 date = "2025-02-21"
-
-[[extra.related]]
-path = "@/posts/2025-12-26-817/index.md"
-label = "#ukraine #mariupol #architecture #building #war"
-date = "2025-12-26"
 +++
 
 {{ tag(t="career") }}  

@@ -1,0 +1,54 @@
++++
+title = ""
+date = 2024-12-10T03:53:59+00:00
+description = "ad"
+
+[taxonomies]
+days = ["2024-12-10"]
+tags = ["ad"]
+
+[extra]
+id = 213
+day = "2024-12-10"
+tg_url = "https://t.me/vitaly_zdanevich_chan/213"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-213-5384454698196658644.jpg"
+next_id = 214
+next_title = ""
+next_body = "My first #lutris install script"
+prev_id = 212
+prev_title = ""
+prev_body = ""
+views = 52
+ids = [213]
+
+[[extra.related]]
+path = "@/posts/2025-02-21-374/index.md"
+label = "Банк Империал - Конрад III #ad is old, around 2000 year? This ba…"
+date = "2025-02-21"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-783/index.md"
+label = "#ad #playstation #playstation2"
+date = "2025-11-19"
+
+[[extra.related]]
+path = "@/posts/2025-11-19-782/index.md"
+label = "#ad #retro #nokia"
+date = "2025-11-19"
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2206/index.md"
+label = "#ad #russia #cat #heat By markmate88, source"
+date = "2026-10-10"
+
+[[extra.related]]
+path = "@/posts/2026-09-21-2170/index.md"
+label = "#mem #cat #ad #apple By imdoris.shen, source"
+date = "2026-09-21"
++++
+
+{{ tag(t="ad") }}
+
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-213-5384454698196658644.jpg") }}
+
+🙏 1

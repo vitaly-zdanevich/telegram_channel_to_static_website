@@ -38,14 +38,14 @@ label = "#sakartvelo"
 date = "2025-06-18"
 
 [[extra.related]]
-path = "@/posts/2026-10-12-2218/index.md"
-label = "#webdesing #typography"
-date = "2026-10-12"
+path = "@/posts/2024-10-08-159/index.md"
+label = "Wow #design"
+date = "2024-10-08"
 
 [[extra.related]]
-path = "@/posts/2026-07-08-2024/index.md"
-label = "#typography #scan"
-date = "2026-07-08"
+path = "@/posts/2024-07-13-89/index.md"
+label = "Another good #design"
+date = "2024-07-13"
 +++
 
 {{ tag(t="design") }}  

@@ -33,6 +33,11 @@ label = "Youta: моя лекция-демонстрация TUI аудио пл
 date = "2026-08-09"
 
 [[extra.related]]
+path = "@/posts/2024-12-22-222/index.md"
+label = "#youtube"
+date = "2024-12-22"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1083/index.md"
 label = "Why #facebook is so slow : #firefox"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2026-02-04"
 path = "@/posts/2025-10-28-729/index.md"
 label = "I continue to write my script for importing ratings from #metacr…"
 date = "2025-10-28"
-
-[[extra.related]]
-path = "@/posts/2026-09-27-2177/index.md"
-label = "#preservation #youtube #comment"
-date = "2026-09-27"
 +++
 
 {{ tag(t="wikidata") }} script to show {{ tag(t="youtube") }} embeds, {{ tag(t="spotify") }}, {{ tag(t="facebook") }} and others  
@@ -56,4 +56,4 @@ Example item from the screenshot <https://www.wikidata.org/wiki/Q136539967>
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-709-5454198108020933187.jpg") }}
 
-<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136539967">Q136539967</a> · <span class="wd-qid">Q136539967</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">instance of</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">level</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">part of</a></td><td><a href="https://www.wikidata.org/wiki/Q18923958">Q18923958</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P973">described at URL</a></td><td><a href="https://heroes.thelazy.net/index.php/Pirates_and_Palms">https://heroes.thelazy.net/index.php/Pirates_and_Palms</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1476">title</a></td><td>Pirates and Palms</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1651">YouTube video ID</a></td><td>EurNU2Ropog</td></tr></tbody></table></figure>
+<figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136539967">Q136539967</a> · <span class="wd-qid">Q136539967</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">Q1046315</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">P361</a></td><td><a href="https://www.wikidata.org/wiki/Q18923958">Q18923958</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P973">P973</a></td><td><a href="https://heroes.thelazy.net/index.php/Pirates_and_Palms">https://heroes.thelazy.net/index.php/Pirates_and_Palms</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1476">P1476</a></td><td>Pirates and Palms</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1651">P1651</a></td><td>EurNU2Ropog</td></tr></tbody></table></figure>

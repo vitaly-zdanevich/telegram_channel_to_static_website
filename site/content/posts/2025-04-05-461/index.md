@@ -33,6 +33,11 @@ label = "#belarus #belarussian #arabic #language"
 date = "2026-05-04"
 
 [[extra.related]]
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+date = "2024-12-11"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2026-02-04"
 path = "@/posts/2026-01-08-857/index.md"
 label = "#belarus #minsk 1941-1944"
 date = "2026-01-08"
-
-[[extra.related]]
-path = "@/posts/2025-04-25-480/index.md"
-label = "#primeworld #belarussian Adding Belarusian language to the game"
-date = "2025-04-25"
 +++
 
 {{ tag(t="belarus") }}  

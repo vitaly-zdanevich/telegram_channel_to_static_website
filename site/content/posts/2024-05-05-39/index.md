@@ -1,0 +1,49 @@
++++
+title = ""
+date = 2024-05-05T19:29:56+00:00
+description = "I love this game too game flash"
+
+[taxonomies]
+days = ["2024-05-05"]
+tags = ["game", "flash"]
+
+[extra]
+id = 39
+day = "2024-05-05"
+tg_url = "https://t.me/vitaly_zdanevich_chan/39"
+next_id = 40
+next_title = ""
+next_body = ""
+prev_id = 38
+prev_title = ""
+prev_body = "I love - developed in 2004 - but nobody sell it anymore in 2024. I wrote to developers - looks like nobody cares. This is how we are loosing books, music, games. Now this game will not start on many systems - because of no support. #game #windows"
+views = 57
+ids = [39]
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2208/index.md"
+label = "#sounddesign #game By lago, source"
+date = "2026-10-10"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+date = "2026-02-03"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+date = "2025-02-21"
++++
+
+I love this game too <https://www.crazygames.com/game/vector-td> {{ tag(t="game") }} {{ tag(t="flash") }}

@@ -33,19 +33,19 @@ label = "#leetcode is often produce #error"
 date = "2026-05-06"
 
 [[extra.related]]
+path = "@/posts/2024-07-10-87/index.md"
+label = "Wow #gitlab has a #cron..."
+date = "2024-07-10"
+
+[[extra.related]]
+path = "@/posts/2024-06-03-50/index.md"
+label = "#gitlab: I love that it is possible to push to a repo that is no…"
+date = "2024-06-03"
+
+[[extra.related]]
 path = "@/posts/2026-02-05-1085/index.md"
 label = "#logo #gitlab #git"
 date = "2026-02-05"
-
-[[extra.related]]
-path = "@/posts/2026-01-18-892/index.md"
-label = "Storing my configs in #git #gitlab, because its open - #github i…"
-date = "2026-01-18"
-
-[[extra.related]]
-path = "@/posts/2026-03-28-1506/index.md"
-label = "#shutdown #cloudflare #preservation #school #error Что вы будете…"
-date = "2026-03-28"
 +++
 
 {{ tag(t="error") }}  

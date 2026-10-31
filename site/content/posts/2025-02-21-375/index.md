@@ -32,6 +32,11 @@ label = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory Play…"
 date = "2025-11-20"
 
 [[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
+
+[[extra.related]]
 path = "@/posts/2026-10-10-2208/index.md"
 label = "#sounddesign #game By lago, source"
 date = "2026-10-10"
@@ -40,11 +45,6 @@ date = "2026-10-10"
 path = "@/posts/2026-10-08-2186/index.md"
 label = "#game #muonline By monarchsea.mu, source"
 date = "2026-10-08"
-
-[[extra.related]]
-path = "@/posts/2026-06-24-1856/index.md"
-label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
-date = "2026-06-24"
 +++
 
 {{ tag(t="game") }}  

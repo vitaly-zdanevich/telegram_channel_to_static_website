@@ -43,9 +43,9 @@ label = "#belarus #building #castle #abandoned #globustut"
 date = "2026-01-07"
 
 [[extra.related]]
-path = "@/posts/2026-02-04-1081/index.md"
-label = "#preservation #belarus geo block I uploaded a lot from to Common…"
-date = "2026-02-04"
+path = "@/posts/2024-12-11-215/index.md"
+label = "#belarus"
+date = "2024-12-11"
 +++
 
 {{ tag(t="abandoned") }}  

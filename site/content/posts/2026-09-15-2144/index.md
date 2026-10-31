@@ -27,6 +27,11 @@ label = "#vr"
 date = "2026-01-03"
 
 [[extra.related]]
+path = "@/posts/2024-11-04-176/index.md"
+label = "#vr"
+date = "2024-11-04"
+
+[[extra.related]]
 path = "@/posts/2025-10-22-717/index.md"
 label = "#life #deep #silence Почему ты всё время молчишь, у тебя нет тем…"
 date = "2025-10-22"
@@ -40,11 +45,6 @@ date = "2025-03-16"
 path = "@/posts/2026-10-18-2242/index.md"
 label = "#eso #spirit #life #death By bennettreloaded, source"
 date = "2026-10-18"
-
-[[extra.related]]
-path = "@/posts/2026-09-16-2148/index.md"
-label = "#ai #incarnation #scifi #vr By juliareznik87, source"
-date = "2026-09-16"
 +++
 
 {{ tag(t="vr") }}  

@@ -28,6 +28,11 @@ label = "#anime #voice"
 date = "2025-03-08"
 
 [[extra.related]]
+path = "@/posts/2025-01-17-252/index.md"
+label = "#movie #anime"
+date = "2025-01-17"
+
+[[extra.related]]
 path = "@/posts/2026-07-27-2074/index.md"
 label = "#anime #war #ground"
 date = "2026-07-27"
@@ -41,11 +46,6 @@ date = "2026-06-15"
 path = "@/posts/2026-04-11-1624/index.md"
 label = "#preview on #bilibili #anime"
 date = "2026-04-11"
-
-[[extra.related]]
-path = "@/posts/2026-04-05-1570/index.md"
-label = "#ai #gpu #nvidia"
-date = "2026-04-05"
 +++
 
 {{ tag(t="anime") }}  

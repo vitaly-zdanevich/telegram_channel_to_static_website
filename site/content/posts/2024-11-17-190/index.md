@@ -1,0 +1,54 @@
++++
+title = ""
+date = 2024-11-17T10:12:51+00:00
+description = "game stalker2"
+
+[taxonomies]
+days = ["2024-11-17"]
+tags = ["game", "stalker2"]
+
+[extra]
+id = 190
+day = "2024-11-17"
+tg_url = "https://t.me/vitaly_zdanevich_chan/190"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-190-5316623884553937355.jpg"
+next_id = 191
+next_title = ""
+next_body = ""
+prev_id = 189
+prev_title = ""
+prev_body = "Source"
+views = 39
+ids = [190]
+
+[[extra.related]]
+path = "@/posts/2024-10-06-158/index.md"
+label = "Night Watch: Special Edition #game"
+date = "2024-10-06"
+
+[[extra.related]]
+path = "@/posts/2026-10-10-2208/index.md"
+label = "#sounddesign #game By lago, source"
+date = "2026-10-10"
+
+[[extra.related]]
+path = "@/posts/2026-10-08-2186/index.md"
+label = "#game #muonline By monarchsea.mu, source"
+date = "2026-10-08"
+
+[[extra.related]]
+path = "@/posts/2026-02-03-1079/index.md"
+label = "#webdesign #game"
+date = "2026-02-03"
+
+[[extra.related]]
+path = "@/posts/2025-02-21-375/index.md"
+label = "#game #armiesofexigo"
+date = "2025-02-21"
++++
+
+<https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_ultimate_edition>  
+
+{{ tag(t="game") }} {{ tag(t="stalker2") }}
+
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-190-5316623884553937355.jpg") }}
