@@ -12,10 +12,13 @@ id = 2254
 day = "2026-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2254"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2254-5411188288342663607-y-1280x720-210426.jpg"
+next_id = 2255
+next_title = ""
+next_body = "#wikimedia\n#wikidata"
 prev_id = 2253
 prev_title = ""
 prev_body = "#http403\n#cat\n#producthunt"
-views = 6
+views = 9
 ids = [2254]
 
 [[extra.related]]
@@ -34,3 +37,5 @@ date = "2026-09-19"
 {{ youtube(id="SZ1Xl1Zn5YY") }}
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2254-5411188288342663607-y-1280x720-210426.jpg") }}
+
+🔥 1

@@ -28,6 +28,11 @@ label = "Youta: моя лекция-демонстрация TUI аудио пл
 date = "2026-08-09"
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2025-10-28-729/index.md"
 label = "I continue to write my script for importing ratings from #metacr…"
 date = "2025-10-28"
@@ -41,11 +46,6 @@ date = "2026-03-20"
 path = "@/posts/2025-10-19-706/index.md"
 label = "#wikidata #linux #warcraft3"
 date = "2025-10-19"
-
-[[extra.related]]
-path = "@/posts/2025-05-22-538/index.md"
-label = "Wikimedia Commons: загрузка через мой Python скрипт через gThumb…"
-date = "2025-05-22"
 +++
 
 {{ tag(t="my") }} another small project: {{ tag(t="wikidata") }} {{ tag(t="pwa") }} to get nearby items, with photos, all properties, and backlinks. Without intermediate nodes - direct calls to Wikidata.  

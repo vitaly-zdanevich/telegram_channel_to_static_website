@@ -23,6 +23,11 @@ views = 19
 ids = [1672, 1673]
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2026-06-24-1856/index.md"
 label = "#armiesofexigo #tool Софт Там к софту есть инструкции но вот еще…"
 date = "2026-06-24"
@@ -41,11 +46,6 @@ date = "2026-06-19"
 path = "@/posts/2025-10-28-729/index.md"
 label = "I continue to write my script for importing ratings from #metacr…"
 date = "2025-10-28"
-
-[[extra.related]]
-path = "@/posts/2025-02-21-375/index.md"
-label = "#game #armiesofexigo"
-date = "2025-02-21"
 +++
 
 {{ tag(t="mediawiki") }}  

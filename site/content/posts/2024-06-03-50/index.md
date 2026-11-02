@@ -22,6 +22,11 @@ views = 55
 ids = [50]
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2026-05-15-1761/index.md"
 label = "I love #ci so much that for the first time I depleted free 400 m…"
 date = "2026-05-15"
@@ -40,11 +45,6 @@ date = "2024-07-10"
 path = "@/posts/2026-05-16-1763/index.md"
 label = "#error #gitlab #contradiction"
 date = "2026-05-16"
-
-[[extra.related]]
-path = "@/posts/2026-03-03-1333/index.md"
-label = "#design #graph #wikimedia"
-date = "2026-03-03"
 +++
 
 {{ tag(t="gitlab") }}: I love that it is possible to push to a repo that is not exists yet - it will be created (private by default), and terminal will print a link to configure it.  

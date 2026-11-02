@@ -23,6 +23,11 @@ views = 32
 ids = [729]
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2026-08-06-2120/index.md"
 label = "#my another small project: #wikidata #pwa to get nearby items, w…"
 date = "2026-08-06"
@@ -41,11 +46,6 @@ date = "2026-03-20"
 path = "@/posts/2025-10-19-706/index.md"
 label = "#wikidata #linux #warcraft3"
 date = "2025-10-19"
-
-[[extra.related]]
-path = "@/posts/2026-02-01-1070/index.md"
-label = "#logo #wikimedia #wikidata #data From"
-date = "2026-02-01"
 +++
 
 I continue to write my script for importing ratings from {{ tag(t="metacritic") }} reviewers, creating {{ tag(t="wikidata") }} items for sites that no longer exists, and trying to download these dead sites from [web.archive.org](http://web.archive.org/) so that I can later put them on Gitlab’s free static hosting, because there is no content search on [web.archive.org](http://web.archive.org/)

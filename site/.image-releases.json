@@ -24145,6 +24145,24 @@
         "height": 720,
         "bytes": 210426
       }
+    },
+    {
+      "message_id": 2255,
+      "media_id": 5422775912538774591,
+      "declared_bytes": 9532,
+      "tag": "images-2000",
+      "asset": "telegram-image-2255-5422775912538774591-x-668x128-9532.jpg",
+      "bytes": 9532,
+      "source": {
+        "kind": "photo",
+        "web_key": "5422775912538774591_1262588406_460004415"
+      },
+      "photo_variant": {
+        "kind": "x",
+        "width": 668,
+        "height": 128,
+        "bytes": 9532
+      }
     }
   ]
 }

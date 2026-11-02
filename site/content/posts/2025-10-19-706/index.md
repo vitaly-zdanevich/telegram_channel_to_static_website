@@ -23,6 +23,11 @@ views = 28
 ids = [706]
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2026-03-21-1494/index.md"
 label = "#steam: almost 25% is on #linux?"
 date = "2026-03-21"
@@ -41,11 +46,6 @@ date = "2025-10-28"
 path = "@/posts/2025-04-11-465/index.md"
 label = "#windows #linux"
 date = "2025-04-11"
-
-[[extra.related]]
-path = "@/posts/2026-08-06-2120/index.md"
-label = "#my another small project: #wikidata #pwa to get nearby items, w…"
-date = "2026-08-06"
 +++
 
 <https://www.wikidata.org/wiki/Q207948#P8956>  

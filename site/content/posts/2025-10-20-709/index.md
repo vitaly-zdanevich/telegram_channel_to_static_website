@@ -38,14 +38,14 @@ label = "#youtube"
 date = "2024-12-22"
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1083/index.md"
 label = "Why #facebook is so slow : #firefox"
 date = "2026-02-04"
-
-[[extra.related]]
-path = "@/posts/2025-10-28-729/index.md"
-label = "I continue to write my script for importing ratings from #metacr…"
-date = "2025-10-28"
 +++
 
 {{ tag(t="wikidata") }} script to show {{ tag(t="youtube") }} embeds, {{ tag(t="spotify") }}, {{ tag(t="facebook") }} and others  

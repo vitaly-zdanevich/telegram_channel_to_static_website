@@ -61,13 +61,13 @@ date = "2026-06-30"
 
 [reeknote evernote cli](<https://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 92%, Shell 5%, Python 2% · 92 commits · 2 open issues/PRs · GPL-3.0 · last push 2026-10-29")  
 
-[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 10 stars · Languages: Rust 97%, JavaScript 3% · 152 commits · 3 forks · 3 open issues/PRs · MIT · last push 2026-10-31")  
+[Мой синхронизатор Телеграм канала в сайт](<https://github.com/vitaly-zdanevich/telegram_channel_to_static_website> "Sync a public Telegram channel into a self-contained Zola static website — no bot, token, or API; or full with MTProto, also with single HT… · 10 stars · Languages: Rust 97%, JavaScript 3% · 152 commits · 3 forks · 3 open issues/PRs · MIT · last push 2026-11-01")  
 
 To Evernote: [Pinterest](<https://github.com/vitaly-zdanevich/pinterest-saves-to-evernote> "GitHub Action that automatically saves your Pinterest pins to Evernote, unofficial · 0 stars · Languages: Rust 100% · 54 commits · last push 2026-10-09"), [Wikipedia](<https://github.com/vitaly-zdanevich/wikipedia_diffs_to_evernote> "Daily GitHub Action that syncs a Wikipedia user's edits to Evernote — one note per edit (clickable editor, date, size change, diff link, an… · 0 stars · Languages: Python 100% · 32 commits · MIT · last push 2026-10-21"), [YandexMusic](<https://github.com/vitaly-zdanevich/yandex-music-likes-to-evernote> "Rust CLI to export newly liked Yandex Music tracks to Evernote notes · 0 stars · Languages: Rust 100% · 44 commits · GPL-3.0 · last push 2026-09-27")  
 
 [qt6 Evernote app](<https://github.com/vitaly-zdanevich/nixnote2> "Nixnote - Evernote desktop client for Linux · 0 stars · Languages: C++ 98%, CMake 1%, QMake 0% · 2792 commits · GPL-3.0 · last push 2026-07-16")  
 
-[repack of the Evernote app](<https://github.com/vitaly-zdanevich/evernote-linux-repackage> "Repackage the official Evernote Electron desktop client for Linux without Wine · 3 stars · Languages: JavaScript 98%, Shell 2%, Tcl 1% · 63 commits · 1 open issues/PRs · last push 2026-10-12")  
+[repack of the Evernote app](<https://github.com/vitaly-zdanevich/evernote-linux-repackage> "Repackage the official Evernote Electron desktop client for Linux without Wine · 4 stars · Languages: JavaScript 98%, Shell 2%, Tcl 1% · 63 commits · 1 open issues/PRs · last push 2026-10-12")  
 
 [YouTube](<https://youtu.be/SHZht4wSigM> "Лекция про мои проекты для Evernote и мой SaaS: everpublich.my - для публикации ноутбука")  
 

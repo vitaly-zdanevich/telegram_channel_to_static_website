@@ -38,12 +38,12 @@ label = "This website looks soooo special #design"
 date = "2024-04-27"
 
 [[extra.related]]
-path = "@/posts/2025-11-10-759/index.md"
-label = "#design #artlebedev"
-date = "2025-11-10"
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
 
 [[extra.related]]
-path = "@/posts/2025-11-10-758/index.md"
+path = "@/posts/2025-11-10-759/index.md"
 label = "#design #artlebedev"
 date = "2025-11-10"
 +++

@@ -23,6 +23,11 @@ views = 23
 ids = [1493]
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2026-03-05-1334/index.md"
 label = "#bash I love #cli, scripts, and sometimes I want my script to ac…"
 date = "2026-03-05"
@@ -41,11 +46,6 @@ date = "2025-02-12"
 path = "@/posts/2026-08-06-2120/index.md"
 label = "#my another small project: #wikidata #pwa to get nearby items, w…"
 date = "2026-08-06"
-
-[[extra.related]]
-path = "@/posts/2026-05-13-1758/index.md"
-label = "Wow my #reeknote #evernote #cli can now play audio and show imag…"
-date = "2026-05-13"
 +++
 
 wow {{ tag(t="wikibase") }}/{{ tag(t="wikidata") }} in {{ tag(t="cli") }}  

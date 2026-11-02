@@ -47,4 +47,4 @@ label = "#llm #interior By bennu.estudio, source"
 date = "2026-10-08"
 +++
 
-Another {{ tag(t="llm") }} victory: repack of the official {{ tag(t="evernote") }} client [https://github.com/vitaly-zdanevich/evernote-linux-repackage](<https://github.com/vitaly-zdanevich/evernote-linux-repackage> "Repackage the official Evernote Electron desktop client for Linux without Wine · 3 stars · Languages: JavaScript 98%, Shell 2%, Tcl 1% · 63 commits · 1 open issues/PRs · last push 2026-10-12")
+Another {{ tag(t="llm") }} victory: repack of the official {{ tag(t="evernote") }} client [https://github.com/vitaly-zdanevich/evernote-linux-repackage](<https://github.com/vitaly-zdanevich/evernote-linux-repackage> "Repackage the official Evernote Electron desktop client for Linux without Wine · 4 stars · Languages: JavaScript 98%, Shell 2%, Tcl 1% · 63 commits · 1 open issues/PRs · last push 2026-10-12")

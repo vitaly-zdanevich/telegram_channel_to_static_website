@@ -22,6 +22,11 @@ views = 23
 ids = [2049]
 
 [[extra.related]]
+path = "@/posts/2026-11-02-2255/index.md"
+label = "#wikimedia #wikidata"
+date = "2026-11-02"
+
+[[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 date = "2026-03-25"
@@ -40,11 +45,6 @@ date = "2025-10-01"
 path = "@/posts/2024-06-03-50/index.md"
 label = "#gitlab: I love that it is possible to push to a repo that is no…"
 date = "2024-06-03"
-
-[[extra.related]]
-path = "@/posts/2026-08-06-2120/index.md"
-label = "#my another small project: #wikidata #pwa to get nearby items, w…"
-date = "2026-08-06"
 +++
 
 My yet another {{ tag(t="wikimedia") }} project that I love: {{ tag(t="wikimedia_commons") }} {{ tag(t="pwa") }} {{ tag(t="uploader") }}. Fast and simple.  

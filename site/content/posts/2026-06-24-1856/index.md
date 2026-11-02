@@ -73,4 +73,4 @@ sound\\beasts\\bwkr\_select01.ogg
 6. в папке с игрой появится файл DataX.ork переименовываем его в Data3.ork  
 7. все
 
-[📎 Armies of Exigo.7z](Armies_of_Exigo.7z)
+📎 Armies of Exigo.7z *(not archived)*
