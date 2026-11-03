@@ -63,14 +63,14 @@ date = "2026-06-24"
 [obsidian.md](http://obsidian.md/) проприетарный софт для заметок в markdown  
 [logseq.com](http://logseq.com/) свободные заметки в markdown  
 [github.com/boo-yee/nixnote2](<http://github.com/boo-yee/nixnote2> "Nixnote - Evernote desktop client for Linux · 5 stars · Languages: C++ 97%, Java 1%, CMake 1% · 2731 commits · GPL-3.0 · last push 2025-10-08") FOSS клиент для Evernote на C++ и Qt  
-[github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 92%, Shell 5%, Python 2% · 92 commits · 2 open issues/PRs · GPL-3.0 · last push 2026-10-29") мой CLI на Rust  
-[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 90011 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8223 commits · 5578 forks · 398 open issues/PRs · MPL-2.0 · last push 2026-11-02") FOSS синхронизация данных через ваши устройства  
+[github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 92%, Shell 5%, Python 2% · 92 commits · 3 open issues/PRs · GPL-3.0 · last push 2026-10-29") мой CLI на Rust  
+[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 90035 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8223 commits · 5586 forks · 398 open issues/PRs · MPL-2.0 · last push 2026-11-03") FOSS синхронизация данных через ваши устройства  
 
 Бесплатный хостинг:  
 [aws.amazon.com/lambda](http://aws.amazon.com/lambda)  
 
 Про стили - чтобы сайты выгляди как надо вам а не дизайнеру:  
-[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6973 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5196 commits · 383 forks · 92 open issues/PRs · GPL-3.0 · last push 2026-11-01")  
+[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 6975 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5196 commits · 383 forks · 91 open issues/PRs · GPL-3.0 · last push 2026-11-01")  
 [userstyles.world/user/vitaly-zdanevich](http://userstyles.world/user/vitaly-zdanevich)  
 [gitlab.com/vitaly-zdanevich-styles/evernote](http://gitlab.com/vitaly-zdanevich-styles/evernote)  
 

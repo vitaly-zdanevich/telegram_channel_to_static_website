@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2254
 prev_title = ""
 prev_body = "#contactee\n#podzorova\nПообщались с инопланетянами."
-views = 3
+views = 5
 ids = [2255]
 
 [[extra.related]]
@@ -49,4 +49,4 @@ date = "2024-06-03"
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2255-5422775912538774591-x-668x128-9532.jpg") }}
 
-👍 1
+❤ 1 · 👍 1

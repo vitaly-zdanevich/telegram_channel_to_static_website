@@ -18,7 +18,7 @@ next_body = "#book\n#health\n#zoloft\n#christian"
 prev_id = 537
 prev_title = ""
 prev_body = "#webdesign\n#yandex"
-views = 47
+views = 48
 ids = [538]
 
 [[extra.related]]
@@ -65,7 +65,7 @@ date = "2026-02-05"
 
 <https://commons.wikimedia.org/wiki/Commons:Upload_tools>  
 
-Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13382 stars · Languages: C 87%, Lua 5%, C++ 3% · 48124 commits · 1504 forks · 659 open issues/PRs · GPL-3.0 · last push 2026-11-02")  
+Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13392 stars · Languages: C 87%, Lua 5%, C++ 3% · 48150 commits · 1507 forks · 665 open issues/PRs · GPL-3.0 · last push 2026-11-03")  
 
 Моя тема для Darktable <https://gitlab.com/vitaly-zdanevich-configs/darktable/-/blob/master/user.css>  
 

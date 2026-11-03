@@ -18,7 +18,7 @@ next_title = ""
 next_body = "#webdesign\n#arctic\n#year2004\narcticdigitalnomads.com"
 prev_id = 891
 prev_title = ""
-prev_body = "#belarus\n#population\n#village\nSource#%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)"
+prev_body = "#belarus\n#population\n#village\nSource#%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5 \"Ясене́ц (бел. Ясянец) — деревня в Барановичском районе Брестской области.\")"
 views = 16
 ids = [892]
 

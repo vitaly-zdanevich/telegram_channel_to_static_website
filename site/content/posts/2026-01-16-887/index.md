@@ -18,7 +18,7 @@ next_body = "#sql\n#quarry\n#globustut\n#commons: red category links with one or
 prev_id = 886
 prev_title = ""
 prev_body = "#sql\n#quarry\n#globustut\n#commons: files from a specific user in a non-existing categories, #sql:\nsql\nSELECT\nimgname,\nclto AS missingcategory\nFROM image\nJOIN actor ON actorid = imgactor\nJOIN page ON pagenamespace = 6 AND pagetitle = imgname\nJOIN categorylinks ON clfrom = pageid\nLEFT JOIN page AS cat\nON cat.pagenamespace = 14\nAND cat.pagetitle = clto\nWHERE actorname = 'Globustut'\nAND cat.pageid IS NULL\nORDER BY imgname;"
-views = 11
+views = 12
 ids = [887]
 
 [[extra.related]]

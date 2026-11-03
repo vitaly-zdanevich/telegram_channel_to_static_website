@@ -17,7 +17,7 @@ next_title = ""
 next_body = "#preservation\n#youtube\n#comment"
 prev_id = 2175
 prev_title = ""
-prev_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\nBy yoursksenia, source"
+prev_body = "#sakartvelo\n#tbilisi\n#monument\n#chronicleofgeorgia\n#tsereteli\n\"Летопись Грузии (в некоторых источниках Хроники Грузии или История Грузии) — памятник, расположенный у Тбилисского моря . Он был создан Зурабом Церетели в 1985 году, но так и не был полностью закончен.\")\nBy yoursksenia, source"
 views = 56
 ids = [2176]
 

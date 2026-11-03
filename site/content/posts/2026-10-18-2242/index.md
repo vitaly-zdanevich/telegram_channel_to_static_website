@@ -18,7 +18,7 @@ next_body = "#design\n#map\n#cityinfo\n#minsk\nLooks better than current online 
 prev_id = 2241
 prev_title = ""
 prev_body = "#ai\n#spirit\nBy bennettreloaded, source"
-views = 28
+views = 29
 ids = [2242]
 
 [[extra.related]]

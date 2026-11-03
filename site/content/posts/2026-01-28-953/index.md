@@ -57,6 +57,6 @@ date = "2026-01-30"
 {{ tag(t="year_2005") }}  
 {{ tag(t="globustut") }}  
 
-From [https://commons.wikimedia.org/wiki/File:041-018\_Блонь,\_снято\_23\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:041-018_%D0%91%D0%BB%D0%BE%D0%BD%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
+From [https://commons.wikimedia.org/wiki/File:041-018\_Блонь,\_снято\_23\_января\_2005.jpg](<https://commons.wikimedia.org/wiki/File:041-018_%D0%91%D0%BB%D0%BE%D0%BD%D1%8C,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_23_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg> "By Globustut · 2026-01-28 05:14:27")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-953-5460806022583750002.jpg") }}

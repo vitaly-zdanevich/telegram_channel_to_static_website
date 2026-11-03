@@ -19,7 +19,7 @@ next_body = "#commons: #count uploads from a specific user for a period of time,
 prev_id = 879
 prev_title = ""
 prev_body = "#belarus\n#architecture\n#castle\n#globustut\nKosava Castle\nSource"
-views = 11
+views = 12
 ids = [886]
 
 [[extra.related]]

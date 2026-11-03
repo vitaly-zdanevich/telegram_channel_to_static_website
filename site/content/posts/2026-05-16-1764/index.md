@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2026-05-16T16:26:15+00:00
-description = "music sunboy Остров в океане From Про исполнителя"
+description = "music sunboy Остров в океане From Про исполнителя — российский видеоблогер, андеграундный музыкант и певец.\")"
 
 [taxonomies]
 days = ["2026-05-16"]
@@ -54,6 +54,6 @@ date = "2026-04-19"
 
 From [https://www.youtube.com/watch?v=rjvImL06_1k](<https://www.youtube.com/watch?v=rjvImL06_1k> "Остров в океане ане ане - ПРОРОК САН БОЙ (MemMusic #12)")  
 
-Про исполнителя [https://ru.wikipedia.org/wiki/Пророк\_Санбой](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%80%D0%BE%D0%BA_%D0%A1%D0%B0%D0%BD%D0%B1%D0%BE%D0%B9)
+Про исполнителя [https://ru.wikipedia.org/wiki/Пророк\_Санбой](<https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%80%D0%BE%D0%BA_%D0%A1%D0%B0%D0%BD%D0%B1%D0%BE%D0%B9> "Проро́к Санбо́й (настоящее имя — Генна́дий Гера́симович Чернецо́в; род. 4 февраля 1969, Ярцево, Смоленская область) — российский видеоблогер, андеграундный музыкант и певец.")
 
 {{ youtube(id="rjvImL06_1k") }}

@@ -19,7 +19,7 @@ next_body = "#aws CTO Werner Vogels\nMentioned:\nFrom"
 prev_id = 936
 prev_title = ""
 prev_body = "#gta3\n#compare\nOriginal VS #ps5 Definitive Edition"
-views = 12
+views = 13
 ids = [938]
 
 [[extra.related]]

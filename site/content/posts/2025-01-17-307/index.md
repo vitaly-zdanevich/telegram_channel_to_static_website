@@ -16,7 +16,7 @@ next_title = ""
 next_body = ""
 prev_id = 306
 prev_title = ""
-prev_body = ""
+prev_body = "#mem\n#explotion\n#nuclear"
 views = 31
 ids = [307]
 +++

@@ -19,7 +19,7 @@ next_body = "#webdesign\n#globustut\nSource"
 prev_id = 887
 prev_title = ""
 prev_body = "#commons: #count uploads from a specific user for a period of time, #python:\nimport requests\nuser = 'Globustut'\nstart = '2026-01-20T00:00:00Z' # newer\nend = '2026-01-01T00:00:00Z' # older\nparams = {\n'action': 'query',\n'format': 'json',\n'list': 'usercontribs',\n'ucuser': user,\n'ucnamespace': '6',\n'ucshow': 'new',\n'ucstart': start,\n'ucend': end,\n'uclimit': 'max',\n}\nheaders = {'User-Agent': 'commons-upload-count/1.0'}\ntotal = 0\ns = requests.Session()\nwhile True:\ndata = s.get(' params=params, headers=headers, timeout=30).json()\ntotal += len(data.get('query', {}).get('usercontribs', []))\nif 'continue' not in data:\nbreak\nprint('.', end='')\nparams.update(data['continue'])\nprint(total)"
-views = 15
+views = 16
 ids = [888]
 
 [[extra.related]]

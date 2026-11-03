@@ -19,7 +19,7 @@ next_body = "#wikipedia\n#job"
 prev_id = 1104
 prev_title = ""
 prev_body = "# cd to a first sorted folder, exclude hidden\nfirst() {\nlocal first\nfirst=\"$(\nfind . -mindepth 1 -maxdepth 1 -type d ! -name '.' -printf '%fn'\n| sort\n| head -n 1\n)\"\nif [[ -z \"$first\" ]]; then\necho \"no folders\"\nreturn 1\nfi\ncd \"./$first\"\n}"
-views = 19
+views = 20
 ids = [1105]
 
 [[extra.related]]
