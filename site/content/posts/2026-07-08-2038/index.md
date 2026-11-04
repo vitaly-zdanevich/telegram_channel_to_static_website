@@ -22,6 +22,11 @@ views = 24
 ids = [2038]
 
 [[extra.related]]
+path = "@/posts/2026-11-04-2259/index.md"
+label = "#ram #altman #ussr #parody Крестьянин! Отдавай свою оперативную…"
+date = "2026-11-04"
+
+[[extra.related]]
 path = "@/posts/2026-03-31-1563/index.md"
 label = "#music #multitrack #parody #voice #unknownsource Rice and peace."
 date = "2026-03-31"

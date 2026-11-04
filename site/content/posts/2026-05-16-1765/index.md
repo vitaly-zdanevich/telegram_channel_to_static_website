@@ -18,7 +18,7 @@ next_title = ""
 next_body = "#travel\n#philippines\n#trash\n#asia\n#video\nFrom"
 prev_id = 1764
 prev_title = ""
-prev_body = "#music\n#sunboy\nОстров в океане\nFrom\nПро исполнителя — российский видеоблогер, андеграундный музыкант и певец.\")"
+prev_body = "#music\n#sunboy\nОстров в океане\nFrom\nПро исполнителя"
 views = 32
 ids = [1765, 1766, 1767, 1768, 1769, 1770, 1771, 1772, 1773, 1774]
 

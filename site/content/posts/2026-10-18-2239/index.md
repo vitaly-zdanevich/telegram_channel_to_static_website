@@ -18,7 +18,7 @@ next_body = "#mem\n#design\n#night\nBy aerodynamicmeme, source"
 prev_id = 2238
 prev_title = ""
 prev_body = "#yandex\n#http429"
-views = 21
+views = 22
 ids = [2239]
 
 [[extra.related]]

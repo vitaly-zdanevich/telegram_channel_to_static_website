@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2026-01-18T00:52:54+00:00
-description = "belarus population village Source%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5 \"Ясене́ц (бел. Ясянец) — деревня в Барановичском районе Брестской области.\")"
+description = "belarus population village Source%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)"
 
 [taxonomies]
 days = ["2026-01-18"]
@@ -52,6 +52,6 @@ date = "2026-01-20"
 {{ tag(t="population") }}  
 {{ tag(t="village") }}  
 
-[Source](<https://ru.wikipedia.org/wiki/%D0%AF%D1%81%D0%B5%D0%BD%D0%B5%D1%86_(%D0%91%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD)#%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5> "Ясене́ц (бел. Ясянец) — деревня в Барановичском районе Брестской области.")
+[Source](https://ru.wikipedia.org/wiki/%D0%AF%D1%81%D0%B5%D0%BD%D0%B5%D1%86_(%D0%91%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD)#%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-891-5431753231706033102.jpg") }}

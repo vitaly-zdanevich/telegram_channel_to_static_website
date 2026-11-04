@@ -23,6 +23,11 @@ views = 34
 ids = [827]
 
 [[extra.related]]
+path = "@/posts/2026-11-04-2259/index.md"
+label = "#ram #altman #ussr #parody Крестьянин! Отдавай свою оперативную…"
+date = "2026-11-04"
+
+[[extra.related]]
 path = "@/posts/2026-01-25-943/index.md"
 label = "#aws #cpu #memory #ram From"
 date = "2026-01-25"

@@ -19,7 +19,7 @@ next_body = "I love #display aspect ratio 16x10 because I have the special space
 prev_id = 1094
 prev_title = ""
 prev_body = "#firefox translation from #german to #russian"
-views = 18
+views = 19
 ids = [1095, 1096]
 
 [[extra.related]]

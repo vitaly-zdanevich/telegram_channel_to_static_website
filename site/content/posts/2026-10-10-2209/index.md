@@ -18,7 +18,7 @@ next_body = "#github\n#webdesign\n#art\n#mascot\n#cat"
 prev_id = 2208
 prev_title = ""
 prev_body = "#sounddesign\n#game\nBy lago, source"
-views = 10
+views = 12
 ids = [2209]
 
 [[extra.related]]
