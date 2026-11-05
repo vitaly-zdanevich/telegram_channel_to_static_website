@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2256
 prev_title = ""
 prev_body = "#firefox #scroll: how to increase distance for #up/#down:\nabout:config:\ntoolkit.scrollbox.verticalScrollDistance\nDefault is 3, I set 38 - for the full screen."
-views = 4
+views = 6
 ids = [2259]
 
 [[extra.related]]
@@ -52,3 +52,5 @@ date = "2025-03-27"
 > Крестьянин! Отдавай свою оперативную память красноармейцам, она нужна в дата центрах!
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2259-5429546520459027096-y-895x1280-285530.jpg") }}
+
+😁 1
