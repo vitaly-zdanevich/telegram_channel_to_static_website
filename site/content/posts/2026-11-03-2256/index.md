@@ -17,7 +17,7 @@ next_body = "#ram\n#altman\n#ussr\n#parody\nКрестьянин! Отдавай
 prev_id = 2255
 prev_title = ""
 prev_body = "#wikimedia\n#wikidata"
-views = 6
+views = 8
 ids = [2256]
 
 [[extra.related]]
