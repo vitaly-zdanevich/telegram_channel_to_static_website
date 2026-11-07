@@ -19,7 +19,7 @@ next_body = "#preservation\n#games\n#beard\nFrom"
 prev_id = 796
 prev_title = ""
 prev_body = "#architecture\nДом со щуками\nFrom"
-views = 62
+views = 63
 ids = [797, 798]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#wikimedia\n#wikidata"
 prev_id = 2253
 prev_title = ""
 prev_body = "#http403\n#cat\n#producthunt"
-views = 14
+views = 17
 ids = [2254]
 
 [[extra.related]]

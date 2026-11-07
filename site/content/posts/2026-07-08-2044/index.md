@@ -19,7 +19,7 @@ next_body = "#map\n#googlemap\n#turkiye\n#sakartvelo"
 prev_id = 2043
 prev_title = ""
 prev_body = "#drug\n#transformation\nКак происходит трансформация зависимого, пока никто не видит\nSource"
-views = 36
+views = 37
 forwarded_from = "Кирилл Марс"
 ids = [2044]
 

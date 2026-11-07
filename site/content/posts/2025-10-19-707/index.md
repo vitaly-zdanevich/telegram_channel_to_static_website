@@ -51,7 +51,7 @@ date = "2025-10-21"
 {{ tag(t="archivation") }}  
 {{ tag(t="games") }}  
 
-Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 863 stars · Languages: Python 89%, Dockerfile 11% · 531 commits · 51 forks · 85 open issues/PRs · GPL-3.0 · last push 2026-11-06")  
+Trying to {{ tag(t="zim") }} it [https://github.com/openzim/zimit](<https://github.com/openzim/zimit> "Make a ZIM file from any Web site and surf offline! · 864 stars · Languages: Python 89%, Dockerfile 11% · 531 commits · 51 forks · 85 open issues/PRs · GPL-3.0 · last push 2026-11-06")  
 
 [https://gamechronicles.com](https://gamechronicles.com/)
 

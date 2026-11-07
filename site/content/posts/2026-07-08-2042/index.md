@@ -18,7 +18,7 @@ next_body = "#drug\n#transformation\nКак происходит трансфо�
 prev_id = 2041
 prev_title = ""
 prev_body = "#drug\n#spoon\n#icecream\nSource"
-views = 27
+views = 28
 ids = [2042]
 
 [[extra.related]]

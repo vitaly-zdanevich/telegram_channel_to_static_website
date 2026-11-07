@@ -18,7 +18,7 @@ next_body = "#quote\n#kindzadza\nво время съёмок фильма к в
 prev_id = 772
 prev_title = ""
 prev_body = "#webdesign\n#webdesignold"
-views = 42
+views = 43
 ids = [774]
 
 [[extra.related]]

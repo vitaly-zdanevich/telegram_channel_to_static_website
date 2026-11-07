@@ -19,7 +19,7 @@ next_body = "My yet another #wikimedia project that I love: #wikimediacommons #p
 prev_id = 2047
 prev_title = ""
 prev_body = "#me\n#travel\n#botanicgarden\n#nature\nSource"
-views = 27
+views = 28
 ids = [2048]
 
 [[extra.related]]
