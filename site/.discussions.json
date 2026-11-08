@@ -11059,6 +11059,54 @@
             "body_html": "Posted to <a href='https://www.playground.ru/armies_of_exigo/file/armies_of_exigo_widescreen_fix_shirokoformatnoe_razreshenie_ekrana_rus-1220959'>https://www.playground.ru/armies_of_exigo/file/armies_of_exigo_widescreen_fix_shirokoformatnoe_razreshenie_ekrana_rus-1220959</a>",
             "reply_to": 2214,
             "has_media": false
+          },
+          {
+            "id": 2719,
+            "author": "Bohdan",
+            "date": "2026-11-01T15:39:15+00:00",
+            "body_html": "Привет! Мод просто топ, должен сказать. Свобода отдаляться и приближать камеру просто поражает!\n\nНо у меня возникла одна проблема в игре. Когда я нажимаю на нижнюю панель меню, где выбираются постройки или юниты, у меня пропадает возможность перемещать камеру мышью вниз. Вверх, влево и вправо камера перемещается без каких-либо проблем.",
+            "reply_to": 2219,
+            "has_media": false
+          },
+          {
+            "id": 2720,
+            "author": "Bohdan",
+            "date": "2026-11-01T15:39:20+00:00",
+            "body_html": "Hi! First of all, I have to say that the mod is amazing. The freedom to move around and explore is impressive.\n\nHowever, I&#39;ve encountered a problem in the game. When I click on the bottom menu bar, where I can select buildings or units, I lose the ability to move the camera down with my mouse. I can still move the camera up, left, and right without any problems, but moving it down stops working.\n\nI hope this helps you identify the issue. Thanks for your great work!",
+            "reply_to": 2220,
+            "has_media": false
+          },
+          {
+            "id": 2721,
+            "author": "Bohdan",
+            "date": "2026-11-01T15:41:24+00:00",
+            "body_html": "У меня немецкая версия",
+            "reply_to": 2214,
+            "has_media": false
+          },
+          {
+            "id": 2722,
+            "author": "Bohdan",
+            "date": "2026-11-01T15:44:37+00:00",
+            "body_html": "",
+            "reply_to": 2214,
+            "has_media": true
+          },
+          {
+            "id": 2723,
+            "author": "Bohdan",
+            "date": "2026-11-01T15:48:50+00:00",
+            "body_html": "Мой архив",
+            "reply_to": 2214,
+            "has_media": true
+          },
+          {
+            "id": 2725,
+            "author": "Unknown author",
+            "date": "2026-11-01T16:44:37+00:00",
+            "body_html": "Приветик, пока нету на это времени - можешь сам попробовать через топовый codex/claude, пришли потом мне - я заменю exe. Просто скажи им проблему - они чтото сделают - и проверяй результат.",
+            "reply_to": 2719,
+            "has_media": false
           }
         ]
       }
@@ -13543,5 +13591,5 @@
       }
     ]
   },
-  "next_post_id": 1663
+  "next_post_id": 1851
 }

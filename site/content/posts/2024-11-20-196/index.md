@@ -1,7 +1,7 @@
 +++
 title = ""
 date = 2024-11-20T12:51:37+00:00
-description = "space film extract Lost in Space) from 1998, movie ending, love it lostinspace"
+description = "space film extract Lost in Space \"Lost in Space is a 1998 American science fiction action-adventure film directed by Stephen Hopkins, and starring Gary Oldman, William Hurt, Matt LeBlanc, Mimi…"
 
 [taxonomies]
 days = ["2024-11-20"]
@@ -47,7 +47,7 @@ date = "2025-10-03"
 +++
 
 {{ tag(t="space") }}  
-{{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_(film)) from 1998, movie ending, love it  
+{{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](<https://en.wikipedia.org/wiki/Lost_in_Space_(film)> "Lost in Space is a 1998 American science fiction action-adventure film directed by Stephen Hopkins, and starring Gary Oldman, William Hurt, Matt LeBlanc, Mimi Rogers, Heather Graham, Lacey Chabert in her first feature film appearance, Jack Johnson, and Jared Harris. The plot is adapted from the 1…") from 1998, movie ending, love it  
 {{ tag(t="lost_in_space") }}
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/196-01.mp4") }}

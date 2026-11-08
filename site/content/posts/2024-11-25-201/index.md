@@ -17,7 +17,7 @@ next_title = ""
 next_body = "My #photo from 2012, for the defunct website of naked #cats\n#eyes"
 prev_id = 200
 prev_title = ""
-prev_body = ""
+prev_body = "\"Firefly (2002–2003) is a science-fiction television series, written by Joss Whedon and Tim Minear, about the crew of the Firefly-class spaceship Serenity and their adventures as they try to get by as independents in a culture of conformity enforced by a generally peaceful but authoritarian Allian…\")"
 views = 40
 ids = [201]
 

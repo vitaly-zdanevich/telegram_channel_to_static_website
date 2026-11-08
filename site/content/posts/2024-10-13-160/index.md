@@ -48,7 +48,7 @@ date = "2026-10-08"
 
 LOVE this {{ tag(t="vr") }} {{ tag(t="game") }}, {{ tag(t="oculus_quest3") }} {{ tag(t="asgards_wrath2") }}  
 
-<https://en.wikipedia.org/wiki/Asgard%27s_Wrath_2>
+[https://en.wikipedia.org/wiki/Asgard%27s_Wrath_2](<https://en.wikipedia.org/wiki/Asgard%27s_Wrath_2> "Asgard's Wrath 2 is an action role-playing game developed by Sanzaru Games and published by Oculus Studios for the Meta Quest series of virtual reality headsets. It is the sequel to Asgard's Wrath (2019).")
 
 {{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/160-01.mp4") }}
 

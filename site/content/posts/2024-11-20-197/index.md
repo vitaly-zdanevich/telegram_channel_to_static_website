@@ -16,7 +16,7 @@ next_title = ""
 next_body = "#music"
 prev_id = 196
 prev_title = ""
-prev_body = "#space\n#film #extract Lost in Space) from 1998, movie ending, love it\n#lostinspace"
+prev_body = "#space\n#film #extract Lost in Space \"Lost in Space is a 1998 American science fiction action-adventure film directed by Stephen Hopkins, and starring Gary Oldman, William Hurt, Matt LeBlanc, Mimi Rogers, Heather Graham, Lacey Chabert in her first feature film appearance, Jack Johnson, and Jared Harris. The plot is adapted from the 1…\") from 1998, movie ending, love it\n#lostinspace"
 views = 55
 ids = [197]
 +++
