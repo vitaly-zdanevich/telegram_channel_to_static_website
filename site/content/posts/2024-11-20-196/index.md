@@ -1,16 +1,17 @@
 +++
 title = ""
 date = 2024-11-20T12:51:37+00:00
-description = "space film extract Lost in Space \"Lost in Space is a 1998 American science fiction action-adventure film directed by Stephen Hopkins, and starring Gary Oldman, William Hurt, Matt LeBlanc, Mimi…"
+description = "space film extract Lost in Space) from 1998, movie ending, love it lostinspace"
 
 [taxonomies]
 days = ["2024-11-20"]
-tags = ["space", "film", "extract", "lost_in_space", "video"]
+tags = ["space", "film", "extract", "lost_in_space"]
 
 [extra]
 id = 196
 day = "2024-11-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/196"
+og_image = "01.jpg"
 next_id = 197
 next_title = ""
 next_body = "From , ending"
@@ -47,11 +48,11 @@ date = "2025-10-03"
 +++
 
 {{ tag(t="space") }}  
-{{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](<https://en.wikipedia.org/wiki/Lost_in_Space_(film)> "Lost in Space is a 1998 American science fiction action-adventure film directed by Stephen Hopkins, and starring Gary Oldman, William Hurt, Matt LeBlanc, Mimi Rogers, Heather Graham, Lacey Chabert in her first feature film appearance, Jack Johnson, and Jared Harris. The plot is adapted from the 1…") from 1998, movie ending, love it  
+{{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_(film)) from 1998, movie ending, love it  
 {{ tag(t="lost_in_space") }}
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/196-01.mp4") }}
+![video](01.jpg)
+
+*▶ video — 32:37*
 
 🙏 1
-
-{{ tag(t="video") }}

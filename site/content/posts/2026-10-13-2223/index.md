@@ -18,7 +18,7 @@ next_body = "#forest\n#cup\n#autumn\nSource"
 prev_id = 2222
 prev_title = ""
 prev_body = "#craft\n#toy\n#horn\nSource"
-views = 11
+views = 12
 ids = [2223]
 
 [[extra.related]]

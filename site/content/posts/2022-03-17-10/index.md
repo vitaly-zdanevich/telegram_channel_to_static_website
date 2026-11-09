@@ -17,7 +17,7 @@ next_body = "#music\n#meanna"
 prev_id = 9
 prev_title = ""
 prev_body = "С"
-views = 54
+views = 55
 ids = [10]
 
 [[extra.related]]

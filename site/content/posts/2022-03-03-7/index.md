@@ -16,7 +16,7 @@ next_body = "Третий подкаст с Анатолием Бабеней.\n
 prev_id = 5
 prev_title = ""
 prev_body = "#podcast\nНе влазит в сообщение с подкастом выше.\nПро информационные технологии, хакеров, минский Хакерспейс, открытый софт, блокчейн и криптовалюты и Биткоин, буддизм, БГУИР, открытые данные\nУпоминалось:\nis an international computer art subculture focused on producing demos: self-contained, sometimes extremely small, computer programs that produce audiovisual presentations. The purpose of a demo is to show off programming, visual art, and musical skills.\")\nis a community-operated, often not-for-profit workspace where people with common interests, such as computers, machining, technology, science, digital art, or electronic art, can meet, socialize, and collaborate. Hackerspaces are com…\")\nor\nis an Indian religion and philosophy based on teachings attributed to the Buddha, a śramaṇa (wandering ascetic) and religious teacher who lived in the 6th or 5th century BCE. It is the world's fourth-largest…\")\nis a type of statistical experiment designed to evaluate the efficacy or safety of an…"
-views = 46
+views = 47
 ids = [7]
 +++
 

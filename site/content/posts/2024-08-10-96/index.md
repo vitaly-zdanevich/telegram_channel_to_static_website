@@ -4,6 +4,7 @@ date = 2024-08-10T15:57:36+00:00
 
 [taxonomies]
 days = ["2024-08-10"]
+tags = ["video"]
 
 [extra]
 id = 96
@@ -22,3 +23,5 @@ ids = [96]
 [https://youtu.be/nkcKaNqfykg](<https://youtu.be/nkcKaNqfykg> "Gatebox - Promotion Movie \"OKAERI\"_english")
 
 {{ youtube(id="nkcKaNqfykg") }}
+
+{{ tag(t="video") }}

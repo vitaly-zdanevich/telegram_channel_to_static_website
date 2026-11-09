@@ -1,7 +1,6 @@
 +++
 title = ""
 date = 2024-11-25T13:13:16+00:00
-description = "\"Firefly (2002–2003) is a science-fiction television series, written by Joss Whedon and Tim Minear, about the crew of the Firefly-class spaceship Serenity and their adventures as they try to get by…"
 
 [taxonomies]
 days = ["2024-11-25"]
@@ -21,6 +20,6 @@ views = 39
 ids = [200]
 +++
 
-[https://en.wikiquote.org/wiki/Firefly_(TV_series)](<https://en.wikiquote.org/wiki/Firefly_(TV_series)> "Firefly (2002–2003) is a science-fiction television series, written by Joss Whedon and Tim Minear, about the crew of the Firefly-class spaceship Serenity and their adventures as they try to get by as independents in a culture of conformity enforced by a generally peaceful but authoritarian Allian…")
+<https://en.wikiquote.org/wiki/Firefly_(TV_series)>
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-200-5341337328238585385.jpg") }}

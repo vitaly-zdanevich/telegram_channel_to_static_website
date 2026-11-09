@@ -18,7 +18,7 @@ next_body = "#firefox #scroll: how to increase distance for #up/#down:\nabout:co
 prev_id = 2254
 prev_title = ""
 prev_body = "#contactee\n#podzorova\nПообщались с инопланетянами."
-views = 11
+views = 13
 ids = [2255]
 
 [[extra.related]]

@@ -17,7 +17,7 @@ next_body = "Упоминалось:\nalso known as AaronSw, was an American com
 prev_id = 3
 prev_title = ""
 prev_body = "Channel photo updated"
-views = 41
+views = 42
 ids = [5, 6]
 
 [[extra.related]]

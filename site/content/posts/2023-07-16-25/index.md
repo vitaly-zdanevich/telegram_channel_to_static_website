@@ -16,7 +16,7 @@ next_body = "#film\n#korolishut\nLove this scene from Korol i Shut, episode 2"
 prev_id = 23
 prev_title = ""
 prev_body = ""
-views = 79
+views = 80
 ids = [25]
 +++
 

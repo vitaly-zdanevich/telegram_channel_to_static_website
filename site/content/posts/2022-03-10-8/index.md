@@ -16,7 +16,7 @@ next_body = "С"
 prev_id = 7
 prev_title = ""
 prev_body = "Упоминалось:\nalso known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Common…\")\nГосударственное белорусское предприятие продает токены\n\"Коллапс моей личности\""
-views = 56
+views = 57
 ids = [8]
 +++
 

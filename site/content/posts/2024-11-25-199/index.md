@@ -13,7 +13,7 @@ day = "2024-11-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/199"
 next_id = 200
 next_title = ""
-next_body = "\"Firefly (2002–2003) is a science-fiction television series, written by Joss Whedon and Tim Minear, about the crew of the Firefly-class spaceship Serenity and their adventures as they try to get by as independents in a culture of conformity enforced by a generally peaceful but authoritarian Allian…\")"
+next_body = ""
 prev_id = 198
 prev_title = ""
 prev_body = "#music"
@@ -48,7 +48,7 @@ date = "2024-10-06"
 
 > The stand-alone expansion Homeworld: Cataclysm was not announced for a remake, despite the outspoken interest of Gearbox, as they were unable to find the original source code
 
-[https://en.wikipedia.org/wiki/Homeworld#Remaster](<https://en.wikipedia.org/wiki/Homeworld#Remaster> "Homeworld is a real-time strategy video game developed by Relic Entertainment and published by Sierra Studios on September 28, 1999, for Windows. Set in space, the science fiction game follows the Kushan exiles of the planet Kharak after their home planet is destroyed by the Taiidan Empire in ret…")  
+<https://en.wikipedia.org/wiki/Homeworld#Remaster>  
 
 {{ tag(t="preservation") }}  
 {{ tag(t="game") }}  

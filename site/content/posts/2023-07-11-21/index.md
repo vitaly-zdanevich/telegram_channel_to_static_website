@@ -5,20 +5,20 @@ description = "film nightwatch Love these episodes from Night Watch (Ночно�
 
 [taxonomies]
 days = ["2023-07-11"]
-tags = ["film", "night_watch", "video"]
+tags = ["film", "night_watch"]
 
 [extra]
 id = 21
 day = "2023-07-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/21"
-og_image = "02.jpg"
+og_image = "01.jpg"
 next_id = 23
 next_title = ""
 next_body = ""
 prev_id = 20
 prev_title = ""
 prev_body = "Great music\nFrom"
-views = 74
+views = 75
 ids = [21]
 
 [[extra.related]]
@@ -52,10 +52,10 @@ date = "2024-02-26"
 
 Love these episodes from Night Watch (Ночной Дозор)
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/21-01.mp4") }}
+![video](01.jpg)
+
+*▶ video — 5:48*
 
 ![video](02.jpg)
 
 *▶ video — 6:57*
-
-{{ tag(t="video") }}
