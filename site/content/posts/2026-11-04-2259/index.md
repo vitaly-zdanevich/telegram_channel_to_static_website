@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2256
 prev_title = ""
 prev_body = "#firefox #scroll: how to increase distance for #up/#down:\nabout:config:\ntoolkit.scrollbox.verticalScrollDistance\nDefault is 3, I set 38 - for the full screen."
-views = 12
+views = 13
 ids = [2259]
 
 [[extra.related]]

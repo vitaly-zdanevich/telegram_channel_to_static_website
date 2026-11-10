@@ -13215,10 +13215,10 @@
         "post_id": 2200,
         "comments": [
           {
-            "id": 2698,
+            "id": 2730,
             "author": "Unknown author",
-            "date": "2026-10-18T16:47:42+00:00",
-            "body_html": "#game",
+            "date": "2026-11-04T06:06:28+00:00",
+            "body_html": "#game\n#counter_strike\n#warcraft3",
             "reply_to": 2656,
             "has_media": false
           }
@@ -13591,5 +13591,5 @@
       }
     ]
   },
-  "next_post_id": 2114
+  "next_post_id": 2220
 }

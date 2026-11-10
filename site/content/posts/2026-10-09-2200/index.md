@@ -7,7 +7,7 @@ description = "Это фанатский мод: от первого лица с
 days = ["2026-10-09"]
 
 [extra]
-discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2698'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2200?comment=2698'><time datetime='2026-10-18T16:47:42+00:00'>2026-10-18 16:47 +00:00</time></a></div><div class='comment-body'>#game</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2200?comment=0'>Reply on Telegram</a></p></section>"
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2730'><div class='comment-meta'><span class='comment-author'>Unknown author</span> · <a href='https://t.me/vitaly_zdanevich_chan/2200?comment=2730'><time datetime='2026-11-04T06:06:28+00:00'>2026-11-04 06:06 +00:00</time></a></div><div class='comment-body'>#game\n#counter_strike\n#warcraft3</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2200?comment=0'>Reply on Telegram</a></p></section>"
 id = 2200
 day = "2026-10-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2200"

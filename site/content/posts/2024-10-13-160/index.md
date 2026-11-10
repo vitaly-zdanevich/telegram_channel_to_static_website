@@ -5,13 +5,12 @@ description = "LOVE this vr game, oculusquest3 asgardswrath2"
 
 [taxonomies]
 days = ["2024-10-13"]
-tags = ["vr", "game", "oculus_quest3", "asgards_wrath2"]
+tags = ["vr", "game", "oculus_quest3", "asgards_wrath2", "video"]
 
 [extra]
 id = 160
 day = "2024-10-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/160"
-og_image = "01.jpg"
 next_id = 161
 next_title = ""
 next_body = "My talk in WMCEE 2024"
@@ -51,6 +50,6 @@ LOVE this {{ tag(t="vr") }} {{ tag(t="game") }}, {{ tag(t="oculus_quest3") }} {{
 
 <https://en.wikipedia.org/wiki/Asgard%27s_Wrath_2>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/160-01.mp4") }}
 
-*▶ video — 38:58*
+{{ tag(t="video") }}
