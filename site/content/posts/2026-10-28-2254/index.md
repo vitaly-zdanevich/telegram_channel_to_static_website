@@ -8,6 +8,7 @@ days = ["2026-10-28"]
 tags = ["contactee", "podzorova"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2254?comment=0'>Reply on Telegram</a></p></section>"
 id = 2254
 day = "2026-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2254"
@@ -18,7 +19,7 @@ next_body = "#wikimedia\n#wikidata"
 prev_id = 2253
 prev_title = ""
 prev_body = "#http403\n#cat\n#producthunt"
-views = 20
+views = 21
 ids = [2254]
 
 [[extra.related]]

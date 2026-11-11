@@ -8,6 +8,7 @@ days = ["2026-11-02"]
 tags = ["wikimedia", "wikidata"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2255?comment=0'>Reply on Telegram</a></p></section>"
 id = 2255
 day = "2026-11-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2255"
@@ -18,7 +19,7 @@ next_body = "#firefox #scroll: how to increase distance for #up/#down:\nabout:co
 prev_id = 2254
 prev_title = ""
 prev_body = "#contactee\n#podzorova\nПообщались с инопланетянами."
-views = 14
+views = 15
 ids = [2255]
 
 [[extra.related]]

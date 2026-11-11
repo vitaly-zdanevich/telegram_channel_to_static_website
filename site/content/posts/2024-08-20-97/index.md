@@ -7,6 +7,7 @@ description = "From 13 Reasons Why - S1E4"
 days = ["2024-08-20"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/97?comment=0'>Reply on Telegram</a></p></section>"
 id = 97
 day = "2024-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/97"

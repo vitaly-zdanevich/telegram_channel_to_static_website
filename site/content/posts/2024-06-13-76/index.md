@@ -7,6 +7,7 @@ description = "BIG navigation"
 days = ["2024-06-13"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/76?comment=0'>Reply on Telegram</a></p></section>"
 id = 76
 day = "2024-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/76"

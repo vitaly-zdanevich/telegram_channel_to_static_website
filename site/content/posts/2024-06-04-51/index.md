@@ -7,6 +7,7 @@ description = "My another ebuild: the game Gigalomania - libre clone of Mega-Lo-
 days = ["2024-06-04"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/51?comment=0'>Reply on Telegram</a></p></section>"
 id = 51
 day = "2024-06-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/51"
@@ -21,7 +22,7 @@ views = 54
 ids = [51]
 +++
 
-My another ebuild: the game [Gigalomania](<https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania> "[MIRROR] GURU: repository of new packages maintained collaboratively by users. Contributing via Codeberg is preferred. · 333 stars · Languages: Shell 99%, Roff 0%, Python 0% · 40132 commits · 261 forks · 59 open issues/PRs · last push 2026-11-10") - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
+My another ebuild: the game [Gigalomania](<https://github.com/gentoo/guru/tree/3e6390be5c1d89b3c05ddcc5923cbfa0e7463fab/games-strategy/gigalomania> "[MIRROR] GURU: repository of new packages maintained collaboratively by users. Contributing via Codeberg is preferred. · 333 stars · Languages: Shell 99%, Roff 0%, Python 0% · 40180 commits · 261 forks · 59 open issues/PRs · last push 2026-11-11") - libre clone of Mega-Lo-Mania. Looks bad - if you a designer - you can help.  
 
 <https://gigalomania.sourceforge.net/>
 

@@ -8,6 +8,7 @@ days = ["2026-11-04"]
 tags = ["ram", "altman", "ussr", "parody"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2259?comment=0'>Reply on Telegram</a></p></section>"
 id = 2259
 day = "2026-11-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2259"
@@ -15,7 +16,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2256
 prev_title = ""
 prev_body = "#firefox #scroll: how to increase distance for #up/#down:\nabout:config:\ntoolkit.scrollbox.verticalScrollDistance\nDefault is 3, I set 38 - for the full screen."
-views = 13
+views = 14
 ids = [2259]
 
 [[extra.related]]
