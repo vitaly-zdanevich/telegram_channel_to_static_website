@@ -8,6 +8,7 @@ days = ["2024-11-20"]
 tags = ["space", "film", "extract", "lost_in_space", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/196?comment=0'>Reply on Telegram</a></p></section>"
 id = 196
 day = "2024-11-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/196"

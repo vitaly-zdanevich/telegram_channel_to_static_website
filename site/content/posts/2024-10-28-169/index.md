@@ -7,6 +7,7 @@ description = "bilibili.com capcha"
 days = ["2024-10-28"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-159'><div class='comment-meta'><span class='comment-author'>sench07</span> · <a href='https://t.me/vitaly_zdanevich_chan/169?comment=159'><time datetime='2024-10-28T11:12:06+00:00'>2024-10-28 11:12 +00:00</time></a></div><div class='comment-body'>ох, помню... приходилось перепроходить её ещё раз, потому что что-то где-то не так было нажато. регистрация на китайских сайтах правда не так проста.</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/169?comment=0'>Reply on Telegram</a></p></section>"
 id = 169
 day = "2024-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/169"

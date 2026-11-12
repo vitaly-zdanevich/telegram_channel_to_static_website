@@ -8,6 +8,7 @@ days = ["2024-11-14"]
 tags = ["code"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (2)</h2><ol class='discussion-comments'><li id='comment-2033173701-180'><div class='comment-meta'><span class='comment-author'>Mrtko</span> · <a href='https://t.me/vitaly_zdanevich_chan/188?comment=180'><time datetime='2024-11-14T21:33:17+00:00'>2024-11-14 21:33 +00:00</time></a></div><div class='comment-body'>Oh! Interesting approach! I&#39;ve never seen comments like this before</div></li><li id='comment-2033173701-181'><div class='comment-meta'><span class='comment-author'>Mrtko</span> · <a href='https://t.me/vitaly_zdanevich_chan/188?comment=181'><time datetime='2024-11-14T21:34:16+00:00'>2024-11-14 21:34 +00:00</time></a></div><div class='comment-body'>Definitely want to use this somewhere</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/188?comment=0'>Reply on Telegram</a></p></section>"
 id = 188
 day = "2024-11-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/188"
