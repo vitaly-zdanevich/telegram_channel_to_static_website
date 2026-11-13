@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 43
 day = "2024-05-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/43"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-43-5321356655046285584.jpg"
+og_image = "5321356655046285584_1238974895_456251664.jpg"
 next_id = 44
 next_title = ""
 next_body = "Created browser extension to show Wikimedia Commons links on a museum website moneymuseum.by"
@@ -45,4 +45,4 @@ date = "2025-09-22"
 
 Another coin from Belarus Легенда пра пчалу {{ tag(t="bee") }} {{ tag(t="coin") }} <https://commons.wikimedia.org/wiki/File:BY-2017-20roubles-Bee-r.gif>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-43-5321356655046285584.jpg") }}
+{{ img(src="5321356655046285584_1238974895_456251664.jpg") }}

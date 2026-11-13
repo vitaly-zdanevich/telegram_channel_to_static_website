@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 841
 day = "2026-01-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/841"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-841-5393122509139414568.jpg"
+og_image = "5393122509139414568_1255684185_460000808.jpg"
 next_id = 842
 next_title = ""
 next_body = ""
@@ -53,4 +53,4 @@ date = "2026-01-13"
 {{ tag(t="belarus") }}  
 {{ tag(t="monument") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-841-5393122509139414568.jpg") }}
+{{ img(src="5393122509139414568_1255684185_460000808.jpg") }}

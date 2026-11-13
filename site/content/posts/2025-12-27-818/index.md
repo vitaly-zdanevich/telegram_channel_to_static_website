@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 818
 day = "2025-12-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/818"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-818-5368463830582758361.jpg"
+og_image = "5368463830582758361_1249942889_460000217.jpg"
 next_id = 819
 next_title = ""
 next_body = "#preservation\n#wikimediacommons\n#pywikibot\n#my\nCreated a new tool: #python wrapper for Pywikibot to make uploading to Wikimedia Commons from #cli simpler"
@@ -26,6 +26,4 @@ ids = [818]
 {{ tag(t="pypi") }}  
 {{ tag(t="donation") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-818-5368463830582758361.jpg") }}
-
-😁 1
+{{ img(src="5368463830582758361_1249942889_460000217.jpg") }}

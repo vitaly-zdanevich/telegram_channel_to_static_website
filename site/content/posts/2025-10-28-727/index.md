@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 727
 day = "2025-10-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/727"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-727-5190435396050353820.jpg"
+og_image = "5190435396050353820_1208492414_456261276.jpg"
 next_id = 728
 next_title = ""
 next_body = "#design\n#purple\n#gamepad\n#gamecube\nSource"
@@ -53,4 +53,4 @@ date = "2024-04-27"
 {{ tag(t="windows") }}  
 {{ tag(t="windows_xp") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-727-5190435396050353820.jpg") }}
+{{ img(src="5190435396050353820_1208492414_456261276.jpg") }}

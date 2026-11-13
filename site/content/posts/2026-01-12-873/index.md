@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 873
 day = "2026-01-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/873"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-873-5413674120924303858.jpg"
+og_image = "5413674120924303858_1260469230_460001778.jpg"
 next_id = 874
 next_title = ""
 next_body = "#wikipedia\n#bewiki\n#betarask\nI was not active here."
@@ -54,4 +54,4 @@ The Earth, centred around {{ tag(t="new_zealand") }}
 
 [Source](https://www.facebook.com/share/p/1CEN8od24T/)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-873-5413674120924303858.jpg") }}
+{{ img(src="5413674120924303858_1260469230_460001778.jpg") }}

@@ -18,7 +18,7 @@ next_body = "#craft\n#toy\n#horn\nSource"
 prev_id = 2164
 prev_title = ""
 prev_body = "#webdesign\n#mascot\n#golang\nFrom"
-views = 27
+views = 28
 ids = [2165]
 
 [[extra.related]]

@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 645
 day = "2025-08-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/645"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-645-5301208284855926733.jpg"
+og_image = "5301208284855926733_1234283737_456261581.jpg"
 next_id = 646
 next_title = ""
 next_body = "#film\n#music\n#russia\n#korolishut\ns1e5, start of the episode - live show"
@@ -52,4 +52,4 @@ Someones contributions to {{ tag(t="wikipedia") }}
 
 {{ tag(t="delitism") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-645-5301208284855926733.jpg") }}
+{{ img(src="5301208284855926733_1234283737_456261581.jpg") }}

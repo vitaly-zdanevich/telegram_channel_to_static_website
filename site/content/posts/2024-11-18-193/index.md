@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 193
 day = "2024-11-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/193"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-193-5321176670146782294.jpg"
+og_image = "5321176670146782294_1238932989_456254550.jpg"
 next_id = 194
 next_title = ""
 next_body = "About games preservation"
@@ -50,6 +50,4 @@ date = "2025-11-03"
 
 {{ tag(t="webdesign") }} <https://www.heavengames.com/previews/aox/>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-193-5321176670146782294.jpg") }}
-
-🙏 1
+{{ img(src="5321176670146782294_1238932989_456254550.jpg") }}

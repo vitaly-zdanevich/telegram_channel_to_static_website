@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 651
 day = "2025-09-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/651"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-651-5307862000946249674.jpg"
+og_image = "5307862000946249674_1235832926_456261578.jpg"
 next_id = 652
 next_title = ""
 next_body = "#wikimediafoundation\n#money\nSource\nSource"
@@ -42,4 +42,4 @@ date = "2025-03-04"
 
 [Source](https://en.wikipedia.org/wiki/Wikimedia_Foundation)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-651-5307862000946249674.jpg") }}
+{{ img(src="5307862000946249674_1235832926_456261578.jpg") }}

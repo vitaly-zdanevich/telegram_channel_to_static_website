@@ -5,13 +5,14 @@ description = "Фильм \"Лучше не бывает\": несколько �
 
 [taxonomies]
 days = ["2025-12-02"]
-tags = ["film", "as_good_as_it_gets", "translation", "russian", "video"]
+tags = ["film", "as_good_as_it_gets", "translation", "russian"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/795?comment=0'>Reply on Telegram</a></p></section>"
 id = 795
 day = "2025-12-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/795"
+og_image = "01.jpg"
 next_id = 796
 next_title = ""
 next_body = "#architecture\nДом со щуками\nFrom"
@@ -58,6 +59,6 @@ date = "2024-02-24"
 {{ tag(t="translation") }}  
 {{ tag(t="russian") }}
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/795-01.mp4") }}
+![video](01.jpg)
 
-{{ tag(t="video") }}
+*▶ video — 30:47*

@@ -10,7 +10,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 191
 day = "2024-11-17"
 tg_url = "https://t.me/vitaly_zdanevich_chan/191"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-191-5319219569514111371-w-1298x867-60581.jpg"
+og_image = "5319219569514111371_1238477316_456253835.jpg"
 next_id = 192
 next_title = ""
 next_body = "#warcraft"
@@ -23,4 +23,4 @@ ids = [191]
 
 <https://store.wikimedia.org/products/internet-in-a-box>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-191-5319219569514111371-w-1298x867-60581.jpg") }}
+{{ img(src="5319219569514111371_1238477316_456253835.jpg") }}

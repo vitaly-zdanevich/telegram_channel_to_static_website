@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 617
 day = "2025-08-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/617"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-617-5233728241192268441.jpg"
+og_image = "5233728241192268441_1218572315_456258201.jpg"
 next_id = 618
 next_title = ""
 next_body = "Georgian man (Zaal Sikharulidze) with falcon wearing Chokha on Tbilisoba festival\n#sakartvelo\n#fashion\n#chokha\nSource.jpg)"
@@ -61,4 +61,4 @@ Imagine a 2d side-scroll quest-action game with such visual style
 
 <https://artsandculture.google.com/search/asset?q=Sergo%20Kobuladze>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-617-5233728241192268441.jpg") }}
+{{ img(src="5233728241192268441_1218572315_456258201.jpg") }}

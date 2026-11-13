@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 349
 day = "2025-02-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/349"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-349-5258347380279995651.jpg"
+og_image = "5258347380279995651_1224304405_456256771.jpg"
 next_id = 350
 next_title = ""
 next_body = "#car\n#ussr\nSource"
@@ -51,6 +51,4 @@ date = "2025-03-16"
 {{ tag(t="translate") }}  
 {{ tag(t="pain") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-349-5258347380279995651.jpg") }}
-
-😁 1
+{{ img(src="5258347380279995651_1224304405_456256771.jpg") }}

@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 584
 day = "2025-06-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/584"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-584-5377444014489463329.jpg"
+og_image = "5377444014489463329_1252033751_456256033.jpg"
 next_id = 585
 next_title = ""
 next_body = ""
@@ -54,4 +54,4 @@ TODO list
 
 <https://commons.wikimedia.org/wiki/Category:Undelete_in_2073>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-584-5377444014489463329.jpg") }}
+{{ img(src="5377444014489463329_1252033751_456256033.jpg") }}

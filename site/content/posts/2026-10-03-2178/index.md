@@ -19,7 +19,7 @@ next_body = "#mem\n#children\n#health\nBy liya.ermakova.ya, source"
 prev_id = 2177
 prev_title = ""
 prev_body = "#preservation\n#youtube\n#comment"
-views = 11
+views = 12
 ids = [2178]
 
 [[extra.related]]

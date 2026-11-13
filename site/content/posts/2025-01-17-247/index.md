@@ -21,5 +21,3 @@ ids = [247]
 +++
 
 <https://coub.com/view/tgmz5>
-
-🙏 1

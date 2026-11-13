@@ -5,13 +5,14 @@ description = "vr"
 
 [taxonomies]
 days = ["2024-11-04"]
-tags = ["vr", "video"]
+tags = ["vr"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/176?comment=0'>Reply on Telegram</a></p></section>"
 id = 176
 day = "2024-11-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/176"
+og_image = "01.jpg"
 next_id = 177
 next_title = ""
 next_body = ""
@@ -44,8 +45,6 @@ date = "2024-10-13"
 
 {{ tag(t="vr") }}
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/176-01.mov") }}
+![video](01.jpg)
 
-🙏 1
-
-{{ tag(t="video") }}
+*▶ video — 0:29*

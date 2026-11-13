@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 712
 day = "2025-10-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/712"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-712-5458701707648303030.jpg"
+og_image = "5458701707648303030_1270953032_456261558.jpg"
 next_id = 713
 next_title = ""
 next_body = "In #kitty terminal) you can always highlight something, for example \"error\" in any case:\nmap f2 togglemarker itext 1 error\nmark1foreground black\nmark1background red\nReload the config with Ctrl-Shift-F5\nPress F2 to toggle the highlight."
@@ -56,6 +56,4 @@ Working from 2001
 
 {{ tag(t="games") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-712-5458701707648303030.jpg") }}
-
-🔥 1
+{{ img(src="5458701707648303030_1270953032_456261558.jpg") }}

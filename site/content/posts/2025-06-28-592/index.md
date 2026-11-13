@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 592
 day = "2025-06-28"
 tg_url = "https://t.me/vitaly_zdanevich_chan/592"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-592-5402456284818704335.jpg"
+og_image = "5402456284818704335_1257857374_456263631.jpg"
 next_id = 593
 next_title = ""
 next_body = "#dog\n#love\n#mmorpg\nSource"
@@ -50,4 +50,4 @@ date = "2026-04-03"
 
 {{ tag(t="book") }} Designing Data-Intensive Applications and {{ tag(t="wine") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-592-5402456284818704335.jpg") }}
+{{ img(src="5402456284818704335_1257857374_456263631.jpg") }}

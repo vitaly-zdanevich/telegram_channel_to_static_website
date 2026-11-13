@@ -32,5 +32,3 @@ ids = [162]
 {{ youtube(id="SIyT3pPrpbk") }}
 
 📎 2024-oct-21mon--13-34-57.webm *(not archived)*
-
-🙏 1

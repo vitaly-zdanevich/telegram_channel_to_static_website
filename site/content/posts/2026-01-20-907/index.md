@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 907
 day = "2026-01-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/907"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-907-5438156503958359420.jpg"
+og_image = "5438156503958359420_1266169479_460000636.jpg"
 next_id = 908
 next_title = ""
 next_body = "#belarus\n#village\n#year2004\n#globustut"
@@ -58,4 +58,4 @@ and
 
 for autocompletion
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-907-5438156503958359420.jpg") }}
+{{ img(src="5438156503958359420_1266169479_460000636.jpg") }}

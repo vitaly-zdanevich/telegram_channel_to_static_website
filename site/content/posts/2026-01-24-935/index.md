@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 935
 day = "2026-01-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/935"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-935-5451802121863892389.jpg"
+og_image = "5451802121863892389_1269346597_460000677.jpg"
 next_id = 936
 next_title = ""
 next_body = "#gta3\n#compare\nOriginal VS #ps5 Definitive Edition"
@@ -29,4 +29,4 @@ From [https://youtu.be/3Y1G9najGiI?t=3390](<https://youtu.be/3Y1G9najGiI?t=3390>
 
 {{ youtube(id="3Y1G9najGiI") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-935-5451802121863892389.jpg") }}
+{{ img(src="5451802121863892389_1269346597_460000677.jpg") }}

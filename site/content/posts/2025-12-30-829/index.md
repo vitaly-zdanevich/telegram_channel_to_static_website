@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 829
 day = "2025-12-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/829"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-829-5377540423624102473.jpg"
+og_image = "5377540423624102473_1252056198_460001865.jpg"
 next_id = 830
 next_title = ""
 next_body = "#solarsystem\n#planets\n#year1872\nPage 18"
@@ -27,4 +27,4 @@ ids = [829]
 {{ tag(t="microsoft_word") }}  
 {{ tag(t="session") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-829-5377540423624102473.jpg") }}
+{{ img(src="5377540423624102473_1252056198_460001865.jpg") }}

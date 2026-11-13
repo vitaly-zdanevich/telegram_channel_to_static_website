@@ -5,13 +5,14 @@ description = "livecoding batman binarysearch leetcode with games :("
 
 [taxonomies]
 days = ["2025-06-13"]
-tags = ["livecoding", "batman", "binary_search", "leetcode", "video"]
+tags = ["livecoding", "batman", "binary_search", "leetcode"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/571?comment=0'>Reply on Telegram</a></p></section>"
 id = 571
 day = "2025-06-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/571"
+og_image = "01.jpg"
 next_id = 573
 next_title = ""
 next_body = "#archiving\nLost."
@@ -52,8 +53,6 @@ date = "2026-05-12"
 
 <https://en.wikipedia.org/wiki/Binary_search>
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/571-01.mp4") }}
+![video](01.jpg)
 
-👍 1
-
-{{ tag(t="video") }}
+*▶ video — 0:59*

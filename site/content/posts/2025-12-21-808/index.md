@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 808
 day = "2025-12-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/808"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-808-5350620010994404158.jpg"
+og_image = "5350620010994404158_1245788301_460000062.jpg"
 next_id = 809
 next_title = ""
 next_body = "#cli\n#tui\n#design"
@@ -54,4 +54,4 @@ date = "2026-07-01"
 
 [Source](https://terminaltrove.com/superseedr)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-808-5350620010994404158.jpg") }}
+{{ img(src="5350620010994404158_1245788301_460000062.jpg") }}

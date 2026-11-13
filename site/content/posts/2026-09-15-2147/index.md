@@ -19,7 +19,7 @@ next_body = "#ai\n#incarnation\n#scifi\n#vr\nBy juliareznik87, source"
 prev_id = 2146
 prev_title = ""
 prev_body = "#show\n#laser\nSource"
-views = 17
+views = 18
 ids = [2147]
 
 [[extra.related]]

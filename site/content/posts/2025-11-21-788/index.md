@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 788
 day = "2025-11-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/788"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-788-5262600643447294725.jpg"
+og_image = "5262600643447294725_1225294695_460000005.jpg"
 next_id = 789
 next_title = ""
 next_body = "#wikipedia\n#ui\n#navigation"
@@ -56,4 +56,4 @@ date = "2025-11-03"
 
 <https://vndb.org/v952>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-788-5262600643447294725.jpg") }}
+{{ img(src="5262600643447294725_1225294695_460000005.jpg") }}

@@ -19,7 +19,7 @@ next_body = "#vr\n#life\n#blackmirror\nBy dariagirnik"
 prev_id = 2141
 prev_title = ""
 prev_body = "#webdesign\nWhy so #bad\nAnd no web version, of course. No Linux version."
-views = 13
+views = 14
 ids = [2143]
 
 [[extra.related]]

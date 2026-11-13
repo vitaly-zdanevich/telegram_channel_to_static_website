@@ -10,7 +10,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 144
 day = "2024-09-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/144"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-144-5388631055675811450.jpg"
+og_image = "5388631055675811450_1254638437_456255098.jpg"
 next_id = 145
 next_title = ""
 next_body = ""
@@ -23,4 +23,4 @@ ids = [144]
 
 <https://commons.wikimedia.org/wiki/File:5roubles1925b.JPG>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-144-5388631055675811450.jpg") }}
+{{ img(src="5388631055675811450_1254638437_456255098.jpg") }}

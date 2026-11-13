@@ -5,13 +5,14 @@ description = "space film extract Lost in Space) from 1998, movie ending, love i
 
 [taxonomies]
 days = ["2024-11-20"]
-tags = ["space", "film", "extract", "lost_in_space", "video"]
+tags = ["space", "film", "extract", "lost_in_space"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/196?comment=0'>Reply on Telegram</a></p></section>"
 id = 196
 day = "2024-11-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/196"
+og_image = "01.jpg"
 next_id = 197
 next_title = ""
 next_body = "From , ending"
@@ -51,8 +52,6 @@ date = "2025-10-03"
 {{ tag(t="film") }} {{ tag(t="extract") }} [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_(film)) from 1998, movie ending, love it  
 {{ tag(t="lost_in_space") }}
 
-{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/196-01.mp4") }}
+![video](01.jpg)
 
-🙏 1
-
-{{ tag(t="video") }}
+*▶ video — 32:37*

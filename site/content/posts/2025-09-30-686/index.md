@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 686
 day = "2025-09-30"
 tg_url = "https://t.me/vitaly_zdanevich_chan/686"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-686-5395445158729875858.jpg"
+og_image = "5395445158729875858_1256224969_456262034.jpg"
 next_id = 687
 next_title = ""
 next_body = "#cinema\n#spunchbob\n#gruz200\nSource"
@@ -53,4 +53,4 @@ date = "2026-04-21"
 
 [Source](https://www.kozmosize.com/product-page/magician-panco-black)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-686-5395445158729875858.jpg") }}
+{{ img(src="5395445158729875858_1256224969_456262034.jpg") }}

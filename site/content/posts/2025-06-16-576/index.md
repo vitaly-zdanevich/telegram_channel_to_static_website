@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 576
 day = "2025-06-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/576"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-576-5370830868660219290.jpg"
+og_image = "5370830868660219290_1250494008_456256922.jpg"
 next_id = 577
 next_title = ""
 next_body = "#sakartvelo\nSource"
@@ -52,4 +52,4 @@ date = "2025-05-14"
 {{ tag(t="batumi") }}  
 {{ tag(t="chandelier") }}
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-576-5370830868660219290.jpg") }}
+{{ img(src="5370830868660219290_1250494008_456256922.jpg") }}

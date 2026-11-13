@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 819
 day = "2025-12-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/819"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-819-5368708261466541835.jpg"
+og_image = "5368708261466541835_1249999800_460001035.jpg"
 next_id = 820
 next_title = ""
 next_body = "#hardware\n#laptop\nToshiba Libretto"
@@ -57,4 +57,4 @@ Created a new tool: {{ tag(t="python") }} wrapper for [Pywikibot](<https://githu
 
 <https://gitlab.com/vitaly-zdanevich/pwb_wrapper_for_simpler_uploading_to_commons>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-819-5368708261466541835.jpg") }}
+{{ img(src="5368708261466541835_1249999800_460001035.jpg") }}

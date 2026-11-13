@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 462
 day = "2025-04-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/462"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-462-5454138004248587563-y-1000x666-111045.jpg"
+og_image = "5454138004248587563_1269890462_456256811.jpg"
 next_id = 464
 next_title = ""
 next_body = "Бежевый\n#psy\n#childhood\nSource"
@@ -54,4 +54,4 @@ date = "2025-11-10"
 
 <https://bible.by/verse/40/26/21>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-462-5454138004248587563-y-1000x666-111045.jpg") }}
+{{ img(src="5454138004248587563_1269890462_456256811.jpg") }}

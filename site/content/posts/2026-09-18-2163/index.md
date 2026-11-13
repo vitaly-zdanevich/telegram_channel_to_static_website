@@ -18,7 +18,7 @@ next_body = "#webdesign\n#mascot\n#golang\nFrom"
 prev_id = 2162
 prev_title = ""
 prev_body = "#girl\n#warcraft\n#transform\nЯ пришла к вашему сыну"
-views = 25
+views = 26
 ids = [2163]
 
 [[extra.related]]

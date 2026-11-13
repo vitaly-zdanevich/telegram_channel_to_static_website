@@ -18,7 +18,7 @@ next_body = "Youta: моя лекция-демонстрация TUI аудио 
 prev_id = 2137
 prev_title = ""
 prev_body = "#sound\n#food\n#poor\nSource"
-views = 85
+views = 86
 ids = [2138]
 
 [[extra.related]]

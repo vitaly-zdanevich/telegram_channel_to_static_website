@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 670
 day = "2025-09-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/670"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-670-5334931646509611961.jpg"
+og_image = "5334931646509611961_1242135569_456260537.jpg"
 next_id = 671
 next_title = ""
 next_body = "#video\n#film\n#nightwatch\n#zavulon\nSource"
@@ -55,4 +55,4 @@ date = "2025-10-05"
 
 [Source](https://www.instagram.com/p/DOVrzrrkUf4)
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-670-5334931646509611961.jpg") }}
+{{ img(src="5334931646509611961_1242135569_456260537.jpg") }}

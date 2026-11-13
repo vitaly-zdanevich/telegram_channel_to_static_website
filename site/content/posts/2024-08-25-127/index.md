@@ -10,7 +10,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 127
 day = "2024-08-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/127"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-127-5357560278709034619-y-811x811-84648.jpg"
+og_image = "5357560278709034619_1247404208_456253051.jpg"
 next_id = 128
 next_title = ""
 next_body = "suno.com is great - the best service for songs generation. Supports russian too.\nOriginal song and #ai generated"
@@ -21,4 +21,4 @@ views = 35
 ids = [127]
 +++
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-127-5357560278709034619-y-811x811-84648.jpg") }}
+{{ img(src="5357560278709034619_1247404208_456253051.jpg") }}

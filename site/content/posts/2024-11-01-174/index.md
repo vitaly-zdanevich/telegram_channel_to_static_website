@@ -11,7 +11,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 174
 day = "2024-11-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/174"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-174-5271829222492594981-w-1199x1283-79569.jpg"
+og_image = "5271829222492594981_1227443391_456254245.jpg"
 next_id = 175
 next_title = ""
 next_body = "#web3 audio platform, #opensource, on #ipfs, I uploaded #complexnumbers to it"
@@ -24,4 +24,4 @@ ids = [174]
 
 Wow `border-radius` generator, so many values <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Border-radius_generator>
 
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-174-5271829222492594981-w-1199x1283-79569.jpg") }}
+{{ img(src="5271829222492594981_1227443391_456254245.jpg") }}
