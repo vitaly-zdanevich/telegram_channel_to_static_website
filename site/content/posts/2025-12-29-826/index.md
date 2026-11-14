@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 826
 day = "2025-12-29"
 tg_url = "https://t.me/vitaly_zdanevich_chan/826"
-og_image = "5373307329626967233_1251070604_460000449.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-826-5373307329626967233.jpg"
 next_id = 827
 next_title = ""
 next_body = "My #ram price is going up"
@@ -54,4 +54,4 @@ date = "2026-02-04"
 
 <https://commons.wikimedia.org/wiki/Category:Igry_i_zabavy>
 
-{{ img(src="5373307329626967233_1251070604_460000449.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-826-5373307329626967233.jpg") }}

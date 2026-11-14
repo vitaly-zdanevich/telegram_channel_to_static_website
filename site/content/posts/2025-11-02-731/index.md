@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 731
 day = "2025-11-02"
 tg_url = "https://t.me/vitaly_zdanevich_chan/731"
-og_image = "5206578739305712414_1212251079_460000030.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-731-5206578739305712414.jpg"
 next_id = 732
 next_title = ""
 next_body = "#webdesign"
@@ -56,4 +56,4 @@ good
 {{ tag(t="youtube") }}  
 {{ tag(t="ifttt") }}
 
-{{ img(src="5206578739305712414_1212251079_460000030.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-731-5206578739305712414.jpg") }}

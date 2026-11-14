@@ -11,7 +11,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 79
 day = "2024-06-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/79"
-og_image = "5456153825674123622_1270359807_456251750.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-79-5456153825674123622.jpg"
 next_id = 80
 next_title = ""
 next_body = "Tried #thunderbird again, after many years - and its good. UI space can be optimized though - to be more compact. Even Google Calendar sync (with an extension)."
@@ -24,4 +24,4 @@ ids = [79]
 
 Love my designs <https://userstyles.world/user/vitaly-zdanevich>
 
-{{ img(src="5456153825674123622_1270359807_456251750.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-79-5456153825674123622.jpg") }}

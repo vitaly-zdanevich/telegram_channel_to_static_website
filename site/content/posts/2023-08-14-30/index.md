@@ -5,13 +5,12 @@ description = "film daywatch Дневной Дозор: конец, эпизод
 
 [taxonomies]
 days = ["2023-08-14"]
-tags = ["film", "day_watch"]
+tags = ["film", "day_watch", "video"]
 
 [extra]
 id = 30
 day = "2023-08-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/30"
-og_image = "01.jpg"
 next_id = 31
 next_title = ""
 next_body = "#film\n#scifi\nLove, Death & Robots: ending from s1ep7 Beyond the Aquila Rift"
@@ -54,6 +53,6 @@ date = "2024-02-24"
 
 From <https://vk.com/video4826534_456240329>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/30-01.mp4") }}
 
-*▶ video — 3:36*
+{{ tag(t="video") }}

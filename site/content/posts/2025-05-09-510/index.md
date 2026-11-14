@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 510
 day = "2025-05-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/510"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-510-5253789354827050973.jpg"
 next_id = 512
 next_title = ""
 next_body = "#mpv\n#anime\n#readme"
@@ -55,6 +55,6 @@ date = "2026-01-20"
 
 For example portable {{ tag(t="git") }} in a single file <https://pkgs.pkgforge.dev/repo/pkgcache/x86_64-linux/git/appimage/ppkg/stable/git>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-510-5253789354827050973.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-511-5253789354827050974.jpg") }}

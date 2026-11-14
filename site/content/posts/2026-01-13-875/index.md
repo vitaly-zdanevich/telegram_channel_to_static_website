@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 875
 day = "2026-01-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/875"
-og_image = "5415925920737988965_1260993518_460001637.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-875-5415925920737988965-y-761x839-137635.jpg"
 next_id = 876
 next_title = ""
 next_body = "#macOS: to install #git I need 25 GB"
@@ -55,4 +55,4 @@ date = "2026-03-01"
 
 [Source](https://orda.of.by/.add/gallery.php?arabovschi/tail)
 
-{{ img(src="5415925920737988965_1260993518_460001637.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-875-5415925920737988965-y-761x839-137635.jpg") }}

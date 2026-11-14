@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 590
 day = "2025-06-26"
 tg_url = "https://t.me/vitaly_zdanevich_chan/590"
-og_image = "5400035276178453878_1257293689_456258934.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-590-5400035276178453878.jpg"
 next_id = 591
 next_title = ""
 next_body = "#git\n#gitgraph"
@@ -52,4 +52,4 @@ date = "2026-08-02"
 {{ tag(t="health") }}  
 {{ tag(t="magnesium") }}
 
-{{ img(src="5400035276178453878_1257293689_456258934.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-590-5400035276178453878.jpg") }}

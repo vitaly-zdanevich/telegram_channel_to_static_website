@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 504
 day = "2025-05-08"
 tg_url = "https://t.me/vitaly_zdanevich_chan/504"
-og_image = "5251537555013364695_1222718869_456256471.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-504-5251537555013364695.jpg"
 next_id = 506
 next_title = ""
 next_body = "#design\n#apple\n#ipod"
@@ -57,4 +57,4 @@ date = "2026-03-13"
 
 [Source](https://vk.com/wall-76040632_314265)
 
-{{ img(src="5251537555013364695_1222718869_456256471.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-504-5251537555013364695.jpg") }}

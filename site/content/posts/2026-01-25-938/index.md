@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 938
 day = "2026-01-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/938"
-og_image = "5451802121863892457_1269346597_460000745.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-938-5451802121863892457-w-1304x607-103045.jpg"
 next_id = 939
 next_title = ""
 next_body = "#aws CTO Werner Vogels\nMentioned:\nFrom"
@@ -50,4 +50,4 @@ date = "2026-02-20"
 
 Top 1% by {{ tag(t="python") }}, hm, not sure why <https://algora.io/profile/vitaly-zdanevich>
 
-{{ img(src="5451802121863892457_1269346597_460000745.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-938-5451802121863892457-w-1304x607-103045.jpg") }}

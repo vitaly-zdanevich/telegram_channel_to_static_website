@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 521
 day = "2025-05-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/521"
-og_image = "5262902137262829478_1225364892_456257446.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-521-5262902137262829478.jpg"
 next_id = 522
 next_title = ""
 next_body = "Wikipedia templates\n#code\n#wikipedia"
@@ -29,4 +29,4 @@ Dream setup. Now I have 4.
 
 [Source](https://www.pcspecialist.co.uk/forums/threads/no-such-thing-as-too-many-screens.95848)
 
-{{ img(src="5262902137262829478_1225364892_456257446.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-521-5262902137262829478.jpg") }}

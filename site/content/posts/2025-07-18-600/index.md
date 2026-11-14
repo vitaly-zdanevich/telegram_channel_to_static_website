@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 600
 day = "2025-07-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/600"
-og_image = "5465166913329034167_1272458330_456258487.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-600-5465166913329034167.jpg"
 next_id = 601
 next_title = ""
 next_body = "...addition to the previous post: that photo reminds me of this video ARK, from 2007\n#cgi\n#virus\n#ship\nSource"
@@ -55,4 +55,4 @@ date = "2026-01-28"
 
 [Source](https://commons.wikimedia.org/wiki/File:Wiesbaden_-_Mariae_Heimsuchung.jpg)
 
-{{ img(src="5465166913329034167_1272458330_456258487.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-600-5465166913329034167.jpg") }}

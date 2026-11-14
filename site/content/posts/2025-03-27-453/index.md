@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 453
 day = "2025-03-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/453"
-og_image = "5415638411328479723_1260926577_456253931.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-453-5415638411328479723.jpg"
 next_id = 454
 next_title = ""
 next_body = "#music\n#afisha"
@@ -27,4 +27,4 @@ ids = [453]
 
 From <https://vk.com/arcfiles>
 
-{{ img(src="5415638411328479723_1260926577_456253931.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-453-5415638411328479723.jpg") }}

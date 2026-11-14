@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 665
 day = "2025-09-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/665"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-665-5334824169247996876.jpg"
 next_id = 669
 next_title = ""
 next_body = "#map\n#isis\nSource"
@@ -55,10 +55,10 @@ date = "2025-08-30"
 
 <https://en.wikipedia.org/wiki/Night_Watch>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-665-5334824169247996876.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-666-5334931646509611608.jpg") }}
 
-{{ img(src="03.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-667-5334931646509611609.jpg") }}
 
-{{ img(src="04.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-668-5334931646509611607.jpg") }}

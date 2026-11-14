@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 771
 day = "2025-11-12"
 tg_url = "https://t.me/vitaly_zdanevich_chan/771"
-og_image = "5233194153422819308_1218447963_460001260.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-771-5233194153422819308.jpg"
 next_id = 772
 next_title = ""
 next_body = "#webdesign\n#webdesignold"
@@ -55,6 +55,8 @@ date = "2025-11-13"
 [Wikidata](https://www.wikidata.org/wiki/Q136766009)  
 [Source](https://web.archive.org/web/20050901004235/http://www.xboxsolution.com/)
 
-{{ img(src="5233194153422819308_1218447963_460001260.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-771-5233194153422819308.jpg") }}
+
+🔥 1
 
 <figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136766009">Q136766009</a> · <span class="wd-qid">Q136766009</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P17">P17</a></td><td><a href="https://www.wikidata.org/wiki/Q30">Q30</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q72398691">Q72398691</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P407">P407</a></td><td><a href="https://www.wikidata.org/wiki/Q1860">Q1860</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P571">P571</a></td><td>2002</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P576">P576</a></td><td>2006</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P856">P856</a></td><td><a href="http://www.xboxsolution.com">http://www.xboxsolution.com</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P921">P921</a></td><td><a href="https://www.wikidata.org/wiki/Q7889">Q7889</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P12079">P12079</a></td><td>xbox-solution</td></tr></tbody></table></figure>

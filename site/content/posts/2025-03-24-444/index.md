@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 444
 day = "2025-03-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/444"
-og_image = "5406954455607405651_1258904686_456256595.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-444-5406954455607405651.jpg"
 next_id = 445
 next_title = ""
 next_body = "#elonmusk\n#starwars\n#elections\n#romansalute\nSource"
@@ -40,4 +40,4 @@ date = "2026-04-15"
 
 [https://github.com/extesy/hoverzoom/discussions/670](<https://github.com/extesy/hoverzoom/discussions/670> "Google Chrome extension for zooming images on mouse hover · 2094 stars · Languages: JavaScript 91%, CSS 6%, HTML 2% · 2156 commits · 225 forks · 251 open issues/PRs · MIT · last push 2026-11-08")
 
-{{ img(src="5406954455607405651_1258904686_456256595.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-444-5406954455607405651.jpg") }}

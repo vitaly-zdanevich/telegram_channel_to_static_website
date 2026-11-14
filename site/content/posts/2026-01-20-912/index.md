@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 912
 day = "2026-01-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/912"
-og_image = "5440408303772044144_1266693767_460000112.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-912-5440408303772044144.jpg"
 next_id = 913
 next_title = ""
 next_body = "#belarus\n#nature\n#river\n#green\n#year2005"
@@ -57,4 +57,4 @@ date = "2026-01-07"
 
 [https://commons.wikimedia.org/wiki/File:038-054\_Двор-Новоселки,\_снято\_12\_января\_2005.jpg](https://commons.wikimedia.org/wiki/File:038-054_%D0%94%D0%B2%D0%BE%D1%80-%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B5%D0%BB%D0%BA%D0%B8,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F_2005.jpg)
 
-{{ img(src="5440408303772044144_1266693767_460000112.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-912-5440408303772044144.jpg") }}

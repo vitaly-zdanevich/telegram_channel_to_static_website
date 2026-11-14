@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 796
 day = "2025-12-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/796"
-og_image = "5319041246770696146_1238435797_460001234.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-796-5319041246770696146.jpg"
 next_id = 797
 next_title = ""
 next_body = "С помощью нехитрых приспособлений буханку хлеба можно превратить в троллейбус, но зачем\n#ai\n#nanobanana\nSource"
@@ -54,4 +54,4 @@ date = "2026-03-10"
 
 From <https://t-j.ru/zaozerie>
 
-{{ img(src="5319041246770696146_1238435797_460001234.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-796-5319041246770696146.jpg") }}

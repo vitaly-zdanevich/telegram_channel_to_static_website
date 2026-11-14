@@ -10,7 +10,7 @@ template = "page.html"
 
 Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia country UTC+4). Working with Golang, AWS. Program in Vim. Love Gentoo Linux. Respect free and open software. Contributor to Wikipedia and other projects.
 
-**21** subscribers · **1.58K** images · **305** videos · **35** files · **1.16K** links · **24** audios
+**21** subscribers · **1.58K** images · **305** videos · **35** files · **1.16K** links · **32** audios
 
 🎧 Podcast: [audio](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/podcast.xml) · [video](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/video-podcast.xml)
 
@@ -22,36 +22,37 @@ Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia countr
 
 
 
-In the git repository: **60.4 MB** — **6%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
+In the git repository: **65.3 MB** — **6%** of the [1 GB GitHub Pages limit](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits).
 
 In [GitHub Releases](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases): **13.5 GB** of media files — outside git, so it doesn't count toward the limit.
 
 By kind:
 
-- **Images** 49.1 MB
+- **Audio** 51.3 MB
 - **Other** 8.1 MB
-- **Text** 3.2 MB
+- **Text** 3.3 MB
+- **Images** 2.6 MB
 
 Largest files:
 
 - [7.7 MB — Exigo1920x1200.exe](@/posts/2026-05-31-1802/index.md "With #llm I added 1920x1200 to #armiesofexigo #game And increased the #camera range.")
-- 2.2 MB — aboutme.png
-- [315 KB — 5310099855001120614_1236353967_456257382.jpg](@/posts/2025-05-27-542/index.md "#git Source")
-- [265 KB — 04.jpg](@/posts/2025-02-15-362/index.md "#coin Its real coins, from Cook Islands Source")
-- [249 KB — 03.jpg](@/posts/2025-02-15-362/index.md "#coin Its real coins, from Cook Islands Source")
-- [242 KB — 5440408303772044155_1266693767_460000123.jpg](@/posts/2026-01-20-914/index.md "#belarus #pillar #abandone #year2005 #globustut")
-- [240 KB — 08.jpg](@/posts/2025-06-09-557/index.md "Рисунки скриншотов из игр! Кто узнал ВСЁ?")
-- [240 KB — 01.jpg](@/posts/2025-02-15-362/index.md "#coin Its real coins, from Cook Islands Source")
-- [232 KB — 5440408303772044154_1266693767_460000122.jpg](@/posts/2026-01-20-913/index.md "#belarus #nature #river #green #year2005")
-- [232 KB — 5375476537215808962_1251575662_456259010.jpg](@/posts/2025-06-18-583/index.md "#photo #sakartvelo #botanicgarden #ladder")
+- [5.5 MB — Каждые_7_лет_клетки_полностью_регенериру_3.mp3](@/posts/2024-08-25-129/index.md)
+- [5.5 MB — Каждые_7_лет_клетки_полностью_регенериру_5.mp3](@/posts/2024-08-25-129/index.md)
+- [5.5 MB — Каждые_7_лет_клетки_полностью_регенериру_6.mp3](@/posts/2024-08-25-129/index.md)
+- [5.4 MB — Каждые_7_лет_клетки_полностью_регенериру_1.mp3](@/posts/2024-08-25-129/index.md)
+- [5.1 MB — Каждые_7_лет_клетки_полностью_регенериру_2.mp3](@/posts/2024-08-25-129/index.md)
+- [5.1 MB — complex_numbers_-_39_загробный_мир.mp3](@/posts/2024-04-27-36/index.md "Part of our new opera")
+- [4.9 MB — Каждые_7_лет_клетки_полностью_регенериру_7.mp3](@/posts/2024-08-25-129/index.md)
+- [4.8 MB — Каждые_7_лет_клетки_полностью_регенериру_4.mp3](@/posts/2024-08-25-129/index.md)
+- [4.8 MB — кургинян_фристайл.mp3](@/posts/2024-11-27-204/index.md "#meanna #sergeykurginyan К моим мыслям о человеческом счастье всегда почему-то примешивалось что-то грустное, теперь же, при виде счастливого человека, мною овладело тяжелое чувство, близкое к отчаянию. А до чего же много на свете счастливых Вы взгляните на эту жизнь: наглость и праздность сильных, …")
 
-Generated in **27m 12s**.
+Generated in **54m 20s**.
 
-Last updated **2026-11-13 12:39 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/43422846525)
+Last updated **2026-11-14 12:22 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/43590025126)
 
 [Google Lighthouse scores (mobile):](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fvitaly%2Dzdanevich%2Egithub%2Eio%2Ftelegram%5Fchannel%5Fto%5Fstatic%5Fwebsite)
 
-- **Performance** 30
+- **Performance** 29
 - **Accessibility** 84
 - **Best Practices** 73
 - **SEO** 82

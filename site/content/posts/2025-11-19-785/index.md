@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 785
 day = "2025-11-19"
 tg_url = "https://t.me/vitaly_zdanevich_chan/785"
-og_image = "5256072907337698864_1223774838_460000816.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-785-5256072907337698864.jpg"
 next_id = 786
 next_title = ""
 next_body = "Armies of Exigo: campaign: Fallen: 6: Teonia. Hard, victory\nPlaying on Linux through Lutris, Conty.\nGame version 1.4\n#game\n#strategy\n#rts\n#year2004\n#armiesofexigo\n#fallen\n#teonia"
@@ -53,4 +53,6 @@ date = "2025-11-03"
 
 <https://www.allods.gipat.ru/index.php?p=news&id=476>
 
-{{ img(src="5256072907337698864_1223774838_460000816.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-785-5256072907337698864.jpg") }}
+
+🔥 1

@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 532
 day = "2025-05-14"
 tg_url = "https://t.me/vitaly_zdanevich_chan/532"
-og_image = "5271908782466788847_1227461915_456257007.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-532-5271908782466788847.jpg"
 next_id = 533
 next_title = ""
 next_body = "From globustut.by\n#photo\n#babruysk"
@@ -56,4 +56,4 @@ From [globustut.by](http://globustut.by/)
 {{ tag(t="history") }}  
 {{ tag(t="babruysk") }}
 
-{{ img(src="5271908782466788847_1227461915_456257007.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-532-5271908782466788847.jpg") }}

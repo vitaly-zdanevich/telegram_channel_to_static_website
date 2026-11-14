@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 93
 day = "2024-07-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/93"
-og_image = "5253747019334409094_1223233300_456252294.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-93-5253747019334409094.jpg"
 next_id = 94
 next_title = ""
 next_body = "#firefox vertical tabs with plus custom CSS from"
@@ -27,4 +27,4 @@ ids = [93]
 
 {{ tag(t="ipv6") }}
 
-{{ img(src="5253747019334409094_1223233300_456252294.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-93-5253747019334409094.jpg") }}

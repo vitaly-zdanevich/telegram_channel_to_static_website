@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 610
 day = "2025-07-25"
 tg_url = "https://t.me/vitaly_zdanevich_chan/610"
-og_image = "5194917018330068550_1209535873_456259142.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-610-5194917018330068550-w-403x1345-92473.jpg"
 next_id = 611
 next_title = ""
 next_body = "#music\n#musicvideo\n#temakresta\n#travel\n#elephants\n#tinder\n#year2023\nЗолото рейна\nSource\")"
@@ -47,4 +47,4 @@ Can you imagine {{ tag(t="userstyle") }} with so much [configs](<https://github.
 
 {{ tag(t="lastfm") }}
 
-{{ img(src="5194917018330068550_1209535873_456259142.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-610-5194917018330068550-w-403x1345-92473.jpg") }}

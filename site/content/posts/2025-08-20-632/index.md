@@ -12,7 +12,6 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 632
 day = "2025-08-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/632"
-og_image = "01.jpg"
 next_id = 633
 next_title = ""
 next_body = "【ORIGINAL SONG АНИМАТИК】「САХАР」 - Planya ch\n#music\n#anime\n#russian\n#sugar\nSource"
@@ -58,6 +57,4 @@ Heating of a city by {{ tag(t="datacenter") }}
 
 [Source](https://www.youtube.com/watch?v=-hE8jkyfqMw)
 
-![video](01.jpg)
-
-*▶ video — 8:19*
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/632-01.mp4") }}

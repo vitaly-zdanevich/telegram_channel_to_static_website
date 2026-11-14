@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 849
 day = "2026-01-07"
 tg_url = "https://t.me/vitaly_zdanevich_chan/849"
-og_image = "5402068444980645556_1257767073_460000948.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-849-5402068444980645556.jpg"
 next_id = 850
 next_title = ""
 next_body = "#belarus\n#building\n#globustut\nSource"
@@ -55,4 +55,6 @@ date = "2026-01-20"
 
 [Source](https://commons.wikimedia.org/wiki/File:025-066_%D0%93%D0%B0%D0%B1%D1%80%D0%B8%D0%B5%D0%BB%D0%B5%D0%B2%D0%BA%D0%B0,_30-10-2004.jpg)
 
-{{ img(src="5402068444980645556_1257767073_460000948.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-849-5402068444980645556.jpg") }}
+
+❤ 1

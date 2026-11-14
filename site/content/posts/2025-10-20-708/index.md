@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 708
 day = "2025-10-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/708"
-og_image = "5453937154397960845_1269843698_456260237.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-708-5453937154397960845.jpg"
 next_id = 709
 next_title = ""
 next_body = "#wikidata script to show #youtube embeds, #spotify, #facebook and others\nExample item from the screenshot"
@@ -55,4 +55,4 @@ date = "2025-09-09"
 
 Not my photo.
 
-{{ img(src="5453937154397960845_1269843698_456260237.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-708-5453937154397960845.jpg") }}

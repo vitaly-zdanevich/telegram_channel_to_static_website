@@ -10,7 +10,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 112
 day = "2024-08-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/112"
-og_image = "01.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-112-5348131266421189673.jpg"
 next_id = 114
 next_title = ""
 next_body = ""
@@ -23,6 +23,6 @@ ids = [112, 113]
 
 <https://moneymuseum.by/ru/collections/bonistika/132039/>
 
-{{ img(src="01.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-112-5348131266421189673.jpg") }}
 
-{{ img(src="02.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-113-5348131266421189674.jpg") }}

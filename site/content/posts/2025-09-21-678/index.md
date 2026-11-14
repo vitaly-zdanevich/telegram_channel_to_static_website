@@ -5,14 +5,13 @@ description = "film thefountain darrenaronofsky library children"
 
 [taxonomies]
 days = ["2025-09-21"]
-tags = ["film", "the_fountain", "darren_aronofsky", "library", "children"]
+tags = ["film", "the_fountain", "darren_aronofsky", "library", "children", "video"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/678?comment=0'>Reply on Telegram</a></p></section>"
 id = 678
 day = "2025-09-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/678"
-og_image = "01.jpg"
 next_id = 679
 next_title = ""
 next_body = "#film\n#thefountain\n#darrenaronofsky\n#hospital\n#tree"
@@ -56,6 +55,6 @@ date = "2025-11-13"
 
 <https://en.wikipedia.org/wiki/The_Fountain>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/678-01.mp4") }}
 
-*▶ video — 1:44*
+{{ tag(t="video") }}

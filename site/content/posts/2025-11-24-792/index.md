@@ -5,14 +5,13 @@ description = "game strategy rtt groundcontrol The bishop defector death - drama
 
 [taxonomies]
 days = ["2025-11-24"]
-tags = ["game", "strategy", "rtt", "ground_control", "bishop"]
+tags = ["game", "strategy", "rtt", "ground_control", "bishop", "video"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/792?comment=0'>Reply on Telegram</a></p></section>"
 id = 792
 day = "2025-11-24"
 tg_url = "https://t.me/vitaly_zdanevich_chan/792"
-og_image = "01.jpg"
 next_id = 793
 next_title = ""
 next_body = "#ad\n#game\n#tank\n#wwii\n#music\n#warpath\nSource"
@@ -57,8 +56,8 @@ The {{ tag(t="bishop") }} defector death - dramatic moment, from minute 9
 
 <https://www.wikidata.org/wiki/Q136912648>
 
-![video](01.jpg)
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/792-01.mp4") }}
 
-*▶ video — 13:31*
+{{ tag(t="video") }}
 
 <figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136912648">Q136912648</a> · <span class="wd-qid">Q136912648</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">Q1046315</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P155">P155</a></td><td><a href="https://www.wikidata.org/wiki/Q136912618">Q136912618</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P156">P156</a></td><td><a href="https://www.wikidata.org/wiki/Q136980336">Q136980336</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">P361</a></td><td><a href="https://www.wikidata.org/wiki/Q1547686">Q1547686</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P6262">P6262</a></td><td>groundcontrol:The_Defector</td></tr></tbody></table></figure>

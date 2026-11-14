@@ -10,7 +10,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 74
 day = "2024-06-11"
 tg_url = "https://t.me/vitaly_zdanevich_chan/74"
-og_image = "5424803596660239339_1263060513_456256491.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-74-5424803596660239339.jpg"
 next_id = 75
 next_title = ""
 next_body = "Copyright from 1429"
@@ -21,4 +21,6 @@ views = 60
 ids = [74]
 +++
 
-{{ img(src="5424803596660239339_1263060513_456256491.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-74-5424803596660239339.jpg") }}
+
+❤ 2

@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 870
 day = "2026-01-09"
 tg_url = "https://t.me/vitaly_zdanevich_chan/870"
-og_image = "5407034092894751563_1258923228_460000075.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-870-5407034092894751563.jpg"
 next_id = 871
 next_title = ""
 next_body = "Wow on #wikimediacommons we can write #sql, for example to get red categories with files, for a specific user"
@@ -54,4 +54,4 @@ date = "2025-08-09"
 
 [Source](https://store.igromania.ru/shop/magazine-25-12)
 
-{{ img(src="5407034092894751563_1258923228_460000075.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-870-5407034092894751563.jpg") }}

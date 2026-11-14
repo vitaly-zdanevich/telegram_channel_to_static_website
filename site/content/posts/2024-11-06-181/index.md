@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 181
 day = "2024-11-06"
 tg_url = "https://t.me/vitaly_zdanevich_chan/181"
-og_image = "5285445200828817940_1230613608_456253972.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-181-5285445200828817940.jpg"
 next_id = 182
 next_title = ""
 next_body = "&gt; Telegram is not a commercial organization"
@@ -50,4 +50,4 @@ date = "2024-11-06"
 
 {{ tag(t="girl") }}
 
-{{ img(src="5285445200828817940_1230613608_456253972.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-181-5285445200828817940.jpg") }}

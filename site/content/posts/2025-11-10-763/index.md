@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 763
 day = "2025-11-10"
 tg_url = "https://t.me/vitaly_zdanevich_chan/763"
-og_image = "5229215222705359857_1217521546_460000241.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-763-5229215222705359857.jpg"
 next_id = 764
 next_title = ""
 next_body = "#painting\n#gustavedore\nSource"
@@ -53,4 +53,4 @@ date = "2025-11-10"
 
 Géraint et Enide sortant de la forêt Pierre noire, lavis brun, rehauts de blanc - 42,2 x 32,2 cm
 
-{{ img(src="5229215222705359857_1217521546_460000241.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-763-5229215222705359857.jpg") }}

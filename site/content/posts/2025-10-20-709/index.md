@@ -12,7 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 709
 day = "2025-10-20"
 tg_url = "https://t.me/vitaly_zdanevich_chan/709"
-og_image = "5454198108020933187_1269904456_456262211.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-709-5454198108020933187.jpg"
 next_id = 710
 next_title = ""
 next_body = "#film\n#korolishut\n#naked"
@@ -54,6 +54,6 @@ date = "2026-02-04"
 
 Example item from the screenshot <https://www.wikidata.org/wiki/Q136539967>
 
-{{ img(src="5454198108020933187_1269904456_456262211.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-709-5454198108020933187.jpg") }}
 
 <figure class="wd"><figcaption><a href="https://www.wikidata.org/wiki/Q136539967">Q136539967</a> · <span class="wd-qid">Q136539967</span></figcaption><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><a href="https://www.wikidata.org/wiki/Property:P31">P31</a></td><td><a href="https://www.wikidata.org/wiki/Q1046315">Q1046315</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P361">P361</a></td><td><a href="https://www.wikidata.org/wiki/Q18923958">Q18923958</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P973">P973</a></td><td><a href="https://heroes.thelazy.net/index.php/Pirates_and_Palms">https://heroes.thelazy.net/index.php/Pirates_and_Palms</a></td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1476">P1476</a></td><td>Pirates and Palms</td></tr><tr><td><a href="https://www.wikidata.org/wiki/Property:P1651">P1651</a></td><td>EurNU2Ropog</td></tr></tbody></table></figure>

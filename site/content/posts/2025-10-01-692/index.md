@@ -11,7 +11,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 692
 day = "2025-10-01"
 tg_url = "https://t.me/vitaly_zdanevich_chan/692"
-og_image = "5397696958543559379_1256749257_456260307.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-692-5397696958543559379.jpg"
 next_id = 693
 next_title = ""
 next_body = "#webdesign\n#wikimedia"
@@ -30,4 +30,6 @@ ids = [692]
 
 [Source](https://hvali.by/belorusskie-hudozhniki/aleksandr-isachev/)
 
-{{ img(src="5397696958543559379_1256749257_456260307.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0500/telegram-image-692-5397696958543559379.jpg") }}
+
+🤯 1

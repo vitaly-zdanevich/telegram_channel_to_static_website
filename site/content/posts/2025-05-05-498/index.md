@@ -10,7 +10,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 498
 day = "2025-05-05"
 tg_url = "https://t.me/vitaly_zdanevich_chan/498"
-og_image = "5244552787138834583_1221092601_456257687.jpg"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-498-5244552787138834583.jpg"
 next_id = 499
 next_title = ""
 next_body = "#evernote image editor: beautiful"
@@ -21,4 +21,4 @@ views = 24
 ids = [498]
 +++
 
-{{ img(src="5244552787138834583_1221092601_456257687.jpg") }}
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-0000/telegram-image-498-5244552787138834583.jpg") }}
