@@ -48,7 +48,7 @@ label = "#telegram added a feature request Add option to cache/prefetch a…"
 date = "2026-03-17"
 +++
 
-{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 33572 stars · Languages: C++ 94%, Python 4%, Objective-C++ 1% · 28339 commits · 7648 forks · 1034 open issues/PRs · GPL-3.0 · last push 2026-11-13")  
+{{ tag(t="llm") }} did big {{ tag(t="telegram") }} {{ tag(t="stickers") }}, even the {{ tag(t="pull_request") }} [https://github.com/telegramdesktop/tdesktop/issues/4117](<https://github.com/telegramdesktop/tdesktop/issues/4117> "Telegram Desktop messaging app · 33581 stars · Languages: C++ 94%, Python 4%, Objective-C++ 1% · 28339 commits · 7659 forks · 1035 open issues/PRs · GPL-3.0 · last push 2026-11-16")  
 
 [The patch](https://gitlab.com/vitaly-zdanevich-configs/gentoo--etc-portage--thinkpad-t430/-/blob/amd/patches/net-im/telegram-desktop/large-adaptive-sticker-preview.patch).
 
