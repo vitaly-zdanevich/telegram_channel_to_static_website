@@ -10,7 +10,7 @@ template = "page.html"
 
 Software Engineer, from Belarus, from 2022 living in Sakartvello (Georgia country UTC+4). Working with Golang, AWS. Program in Vim. Love Gentoo Linux. Respect free and open software. Contributor to Wikipedia and other projects.
 
-**21** subscribers · **1.58K** images · **305** videos · **35** files · **1.16K** links · **32** audios
+**20** subscribers · **1.58K** images · **305** videos · **35** files · **1.16K** links · **32** audios
 
 🎧 Podcast: [audio](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/podcast.xml) · [video](https://vitaly-zdanevich.github.io/telegram_channel_to_static_website/video-podcast.xml)
 
@@ -46,13 +46,13 @@ Largest files:
 - [4.8 MB — Каждые_7_лет_клетки_полностью_регенериру_4.mp3](@/posts/2024-08-25-129/index.md)
 - [4.8 MB — кургинян_фристайл.mp3](@/posts/2024-11-27-204/index.md "#meanna #sergeykurginyan К моим мыслям о человеческом счастье всегда почему-то примешивалось что-то грустное, теперь же, при виде счастливого человека, мною овладело тяжелое чувство, близкое к отчаянию. А до чего же много на свете счастливых Вы взгляните на эту жизнь: наглость и праздность сильных, …")
 
-Generated in **1h 13m 39s**.
+Generated in **2h 0m 39s**.
 
-Last updated **2026-11-16 13:57 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/43868977564)
+Last updated **2026-11-17 15:23 UTC** · [build log](https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/actions/runs/44091826093)
 
 [Google Lighthouse scores (mobile):](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fvitaly%2Dzdanevich%2Egithub%2Eio%2Ftelegram%5Fchannel%5Fto%5Fstatic%5Fwebsite)
 
-- **Performance** 40
+- **Performance** 27
 - **Accessibility** 84
 - **Best Practices** 73
 - **SEO** 82

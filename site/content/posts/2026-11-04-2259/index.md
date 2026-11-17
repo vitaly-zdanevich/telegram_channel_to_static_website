@@ -13,10 +13,13 @@ id = 2259
 day = "2026-11-04"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2259"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2259-5429546520459027096-y-895x1280-285530.jpg"
+next_id = 2260
+next_title = ""
+next_body = "#webdesign\n#toc\nCloudflare blog"
 prev_id = 2256
 prev_title = ""
 prev_body = "#firefox #scroll: how to increase distance for #up/#down:\nabout:config:\ntoolkit.scrollbox.verticalScrollDistance\nDefault is 3, I set 38 - for the full screen."
-views = 19
+views = 24
 ids = [2259]
 
 [[extra.related]]
