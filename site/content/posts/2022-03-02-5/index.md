@@ -52,7 +52,7 @@ date = "2026-10-12"
 
 [https://en.wikipedia.org/wiki/Demoscene](<https://en.wikipedia.org/wiki/Demoscene> "The demoscene () is an international computer art subculture focused on producing demos: self-contained, sometimes extremely small, computer programs that produce audiovisual presentations. The purpose of a demo is to show off programming, visual art, and musical skills.")  
 
-[https://en.wikipedia.org/wiki/Hackerspace](<https://en.wikipedia.org/wiki/Hackerspace> "A hackerspace (also called a hacklab, hackspace, or makerspace) is a community-operated, often not-for-profit workspace where people with common interests, such as computers, machining, technology, science, digital art, or electronic art, can meet, socialize, and collaborate. Hackerspaces are com…")  
+[https://en.wikipedia.org/wiki/Hackerspace](<https://en.wikipedia.org/wiki/Hackerspace> "A hackerspace (also referred to as a hacklab, hackspace, or makerspace) is a community-operated, often not-for-profit workspace where people with common interests, such as computers, machining, technology, science, digital art, or electronic art, can meet, socialize, and collaborate. Hackerspaces…")  
 
 [https://en.wikipedia.org/wiki/White_paper](<https://en.wikipedia.org/wiki/White_paper> "A white paper is an informative report that explains a complex issue and presents the sponsor's philosophy on the matter. These documents are meant to help readers understand an issue, solve a problem, or make a decision.")  
 

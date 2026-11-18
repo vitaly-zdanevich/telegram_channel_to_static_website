@@ -65,7 +65,7 @@ date = "2026-02-05"
 
 <https://commons.wikimedia.org/wiki/Commons:Upload_tools>  
 
-Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13462 stars · Languages: C 87%, Lua 5%, C++ 3% · 48647 commits · 1526 forks · 643 open issues/PRs · GPL-3.0 · last push 2026-11-17")  
+Мой тикет про segmentation fault [https://github.com/darktable-org/darktable/issues/18819](<https://github.com/darktable-org/darktable/issues/18819> "darktable is an open source photography workflow application and raw developer · 13472 stars · Languages: C 87%, Lua 5%, C++ 3% · 48658 commits · 1530 forks · 643 open issues/PRs · GPL-3.0 · last push 2026-11-17")  
 
 Моя тема для Darktable <https://gitlab.com/vitaly-zdanevich-configs/darktable/-/blob/master/user.css>  
 

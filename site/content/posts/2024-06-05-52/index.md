@@ -21,7 +21,7 @@ views = 60
 ids = [52]
 +++
 
-I love this project: free personal VPN on WireGuard (integrated into Linux kernel), works on AWS free tier also [https://github.com/trailofbits/algo](<https://github.com/trailofbits/algo> "Set up a personal VPN in the cloud · 30473 stars · Languages: Python 67%, Jinja 18%, Shell 13% · 1369 commits · 2373 forks · 68 open issues/PRs · AGPL-3.0 · last push 2026-11-13")  
+I love this project: free personal VPN on WireGuard (integrated into Linux kernel), works on AWS free tier also [https://github.com/trailofbits/algo](<https://github.com/trailofbits/algo> "Set up a personal VPN in the cloud · 30479 stars · Languages: Python 67%, Jinja 18%, Shell 13% · 1369 commits · 2373 forks · 71 open issues/PRs · AGPL-3.0 · last push 2026-11-18")  
 
 I found that on MacDonalds Wi-Fi I cannot update my system - looks like it block some activity, but I can with VPN.
 
