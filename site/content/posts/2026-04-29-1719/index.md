@@ -18,7 +18,7 @@ next_title = ""
 next_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource"
 prev_id = 1709
 prev_title = ""
-prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource--01--0104--010104-01-00004image00004.jpg)"
+prev_body = "#typography\n#scan\n#preservation\n#russianempire\n#century19\nSource--01--0104--010104-01-00004image00004.jpg \"None\")"
 views = 24
 ids = [1719, 1720]
 
