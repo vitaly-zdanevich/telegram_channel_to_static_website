@@ -56,7 +56,7 @@ date = "2026-03-29"
 {{ tag(t="year_2005") }}  
 {{ tag(t="abandone") }}  
 
-From [https://commons.wikimedia.org/wiki/File:045-309\_Свеча,\_снято\_12\_февраля\_2005.jpg](<https://commons.wikimedia.org/wiki/File:045-309_%D0%A1%D0%B2%D0%B5%D1%87%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg> "By Globustut · 2026-01-29 13:39:04")
+From [https://commons.wikimedia.org/wiki/File:045-309\_Свеча,\_снято\_12\_февраля\_2005.jpg](https://commons.wikimedia.org/wiki/File:045-309_%D0%A1%D0%B2%D0%B5%D1%87%D0%B0,_%D1%81%D0%BD%D1%8F%D1%82%D0%BE_12_%D1%84%D0%B5%D0%B2%D1%80%D0%B0%D0%BB%D1%8F_2005.jpg)
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1000/telegram-image-1042-5469697399455419587.jpg") }}
 

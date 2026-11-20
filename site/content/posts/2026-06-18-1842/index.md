@@ -12,7 +12,6 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 1842
 day = "2026-06-18"
 tg_url = "https://t.me/vitaly_zdanevich_chan/1842"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1842-5305263081879445551-y-736x1104-185252.jpg"
 next_id = 1843
 next_title = ""
 next_body = "#home\n#diy\n#belarus\n#onliner\nFrom"
@@ -45,5 +44,3 @@ date = "2026-06-16"
 From
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015161786/") }}
-
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1842-5305263081879445551-y-736x1104-185252.jpg") }}

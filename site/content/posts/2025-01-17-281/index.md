@@ -5,7 +5,7 @@ description = "relationship"
 
 [taxonomies]
 days = ["2025-01-17"]
-tags = ["relationship"]
+tags = ["relationship", "video"]
 
 [extra]
 discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/281?comment=0'>Reply on Telegram</a></p></section>"
@@ -45,3 +45,7 @@ date = "2026-09-16"
 {{ tag(t="relationship") }}  
 
 <https://coub.com/view/2gp053>
+
+{{ video_ext(url="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/media/281-01.mp4") }}
+
+{{ tag(t="video") }}

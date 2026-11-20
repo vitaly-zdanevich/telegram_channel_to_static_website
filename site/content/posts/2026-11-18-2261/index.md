@@ -15,7 +15,7 @@ og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_websi
 prev_id = 2260
 prev_title = ""
 prev_body = "#webdesign\n#toc\nCloudflare blog"
-views = 3
+views = 5
 ids = [2261, 2262, 2263, 2264, 2265, 2266, 2267, 2268]
 
 [[extra.related]]
