@@ -23347,6 +23347,24 @@
       }
     },
     {
+      "message_id": 2073,
+      "media_id": 5422557461912164380,
+      "declared_bytes": 75571,
+      "tag": "images-2000",
+      "asset": "telegram-image-2073-5422557461912164380-y-736x920-75571.jpg",
+      "bytes": 75571,
+      "source": {
+        "kind": "photo",
+        "web_key": "5422557461912164380_1262537544_460003356"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 736,
+        "height": 920,
+        "bytes": 75571
+      }
+    },
+    {
       "message_id": 2076,
       "media_id": 5422419163965233488,
       "declared_bytes": 19294,
@@ -24328,6 +24346,24 @@
         "width": 1280,
         "height": 964,
         "bytes": 81005
+      }
+    },
+    {
+      "message_id": 2269,
+      "media_id": 5192671596546564426,
+      "declared_bytes": 241189,
+      "tag": "images-2000",
+      "asset": "telegram-image-2269-5192671596546564426-y-1280x964-241189.jpg",
+      "bytes": 241189,
+      "source": {
+        "kind": "photo",
+        "web_key": "5192671596546564426_1209013070_460005706"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 1280,
+        "height": 964,
+        "bytes": 241189
       }
     }
   ]

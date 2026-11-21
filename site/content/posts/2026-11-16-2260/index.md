@@ -18,7 +18,7 @@ next_body = "#webdesign\n#luck\nxhuman.com"
 prev_id = 2259
 prev_title = ""
 prev_body = "#ram\n#altman\n#ussr\n#parody\nКрестьянин! Отдавай свою оперативную память красноармейцам, она нужна в дата центрах!"
-views = 8
+views = 10
 ids = [2260]
 
 [[extra.related]]
