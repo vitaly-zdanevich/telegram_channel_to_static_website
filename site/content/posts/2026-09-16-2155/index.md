@@ -35,6 +35,11 @@ date = "2026-08-09"
 path = "@/posts/2026-07-29-2107/index.md"
 label = "#trans #ladyboy #thailand By krav1.1"
 date = "2026-07-29"
+
+[[extra.related]]
+path = "@/posts/2026-11-21-2276/index.md"
+label = "#psy #cat #fly #mania #thailand #depression By grebennikova.gast…"
+date = "2026-11-21"
 +++
 
 {{ tag(t="thailand") }}  

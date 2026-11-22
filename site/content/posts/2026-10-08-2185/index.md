@@ -27,6 +27,11 @@ label = "#film #robot #slut #mem"
 date = "2025-05-11"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2275/index.md"
+label = "#robot #ai By borys.een, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-09-21-2172/index.md"
 label = "#robot #fight By frankielap, source"
 date = "2026-09-21"
@@ -40,11 +45,6 @@ date = "2026-08-04"
 path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2026-02-11-1106/index.md"
-label = "#wikipedia #job"
-date = "2026-02-11"
 +++
 
 {{ tag(t="mem") }}  

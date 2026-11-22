@@ -20,6 +20,11 @@ prev_title = ""
 prev_body = "#fashion\nSource"
 views = 61
 ids = [347]
+
+[[extra.related]]
+path = "@/posts/2026-11-22-2294/index.md"
+label = "#tiktok #irl #girls By qixiangxianggao, source"
+date = "2026-11-22"
 +++
 
 {{ tag(t="tiktok") }}  

@@ -23,6 +23,11 @@ views = 36
 ids = [482]
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2276/index.md"
+label = "#psy #cat #fly #mania #thailand #depression By grebennikova.gast…"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-11-06-743/index.md"
 label = "Emotional reasoning is a cognitive process by which an individua…"
 date = "2025-11-06"
@@ -41,11 +46,6 @@ date = "2026-06-30"
 path = "@/posts/2025-04-09-464/index.md"
 label = "Бежевый #psy #childhood"
 date = "2025-04-09"
-
-[[extra.related]]
-path = "@/posts/2025-03-27-450/index.md"
-label = "#phone #psy"
-date = "2025-03-27"
 +++
 
 {{ tag(t="cat") }}  

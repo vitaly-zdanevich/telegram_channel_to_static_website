@@ -17,7 +17,7 @@ next_body = "This initiative calls to require publishers that sell or license vi
 prev_id = 98
 prev_title = ""
 prev_body = "Uploading to Commons"
-views = 26
+views = 27
 ids = [99, 100]
 +++
 

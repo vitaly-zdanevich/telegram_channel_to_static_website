@@ -22,6 +22,11 @@ views = 31
 ids = [410]
 
 [[extra.related]]
+path = "@/posts/2026-11-22-2295/index.md"
+label = "#tbilisi #dayoflife #russian #art By sergeyprihodko, source"
+date = "2026-11-22"
+
+[[extra.related]]
 path = "@/posts/2026-10-13-2223/index.md"
 label = "#art #depressive #fear #horn"
 date = "2026-10-13"
@@ -40,11 +45,6 @@ date = "2026-10-10"
 path = "@/posts/2025-01-29-345/index.md"
 label = "#lapenko #art #dog #painting #religion"
 date = "2025-01-29"
-
-[[extra.related]]
-path = "@/posts/2026-04-28-1695/index.md"
-label = "#my #batumi #restaurant #art #food #sazandari"
-date = "2026-04-28"
 +++
 
 Girl with a Pearl Earring  

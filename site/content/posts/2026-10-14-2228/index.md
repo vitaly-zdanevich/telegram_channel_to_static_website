@@ -19,8 +19,13 @@ next_body = "#logo\n#heart\n#yandex\n#pain"
 prev_id = 2227
 prev_title = ""
 prev_body = "#toy\n#craft\n#love\nSource\nElly Vishnevsky\nwww.vishnya.etsy.com\nwww.vishnya.com"
-views = 21
+views = 22
 ids = [2228]
+
+[[extra.related]]
+path = "@/posts/2026-11-21-2286/index.md"
+label = "#health #food #protein #eggs #russian By berimaslo, source"
+date = "2026-11-21"
 
 [[extra.related]]
 path = "@/posts/2025-02-21-374/index.md"
@@ -41,11 +46,6 @@ date = "2025-05-08"
 path = "@/posts/2025-03-13-407/index.md"
 label = "#health #food"
 date = "2025-03-13"
-
-[[extra.related]]
-path = "@/posts/2026-10-06-2179/index.md"
-label = "#mem #children #health By liya.ermakova.ya, source"
-date = "2026-10-06"
 +++
 
 {{ tag(t="ad") }}  

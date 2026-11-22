@@ -19,7 +19,7 @@ next_body = "#http403\n#cat\n#producthunt"
 prev_id = 2246
 prev_title = ""
 prev_body = "#map\n#europe\n#belarus\n#sakartvelo\n#russia\n#year1444\nFrom"
-views = 46
+views = 49
 ids = [2251]
 
 [[extra.related]]
@@ -33,6 +33,11 @@ label = "#punk #logo #music #korolishut"
 date = "2025-11-19"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2280/index.md"
+label = "#nfs #music #nfsu2 #ai #parody By austinandcolin, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
 date = "2026-02-25"
@@ -41,11 +46,6 @@ date = "2026-02-25"
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
 date = "2026-01-24"
-
-[[extra.related]]
-path = "@/posts/2025-12-17-802/index.md"
-label = "Love this #logo"
-date = "2025-12-17"
 +++
 
 {{ tag(t="logo") }} looks like {{ tag(t="ai") }}  

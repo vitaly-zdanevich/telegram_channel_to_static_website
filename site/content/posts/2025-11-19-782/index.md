@@ -42,9 +42,9 @@ label = "#retro #cd #vhs"
 date = "2025-07-25"
 
 [[extra.related]]
-path = "@/posts/2026-10-15-2235/index.md"
-label = "#retro #software #songbird #itunes"
-date = "2026-10-15"
+path = "@/posts/2026-11-21-2277/index.md"
+label = "#ad #dog #light #butterfly By theenchantedrobe, source"
+date = "2026-11-21"
 +++
 
 {{ tag(t="ad") }}  

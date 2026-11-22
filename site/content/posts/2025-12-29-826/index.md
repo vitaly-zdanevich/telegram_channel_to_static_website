@@ -43,9 +43,9 @@ label = "This website looks soooo special #design"
 date = "2024-04-27"
 
 [[extra.related]]
-path = "@/posts/2026-02-04-1081/index.md"
-label = "#preservation #belarus geo block I uploaded a lot from to Common…"
-date = "2026-02-04"
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
 +++
 
 {{ tag(t="design") }}  

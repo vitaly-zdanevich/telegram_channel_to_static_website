@@ -32,6 +32,11 @@ label = "#music #cats #meme"
 date = "2025-03-16"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2280/index.md"
+label = "#nfs #music #nfsu2 #ai #parody By austinandcolin, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
 date = "2026-02-25"
@@ -40,11 +45,6 @@ date = "2026-02-25"
 path = "@/posts/2026-01-24-934/index.md"
 label = "#ai From"
 date = "2026-01-24"
-
-[[extra.related]]
-path = "@/posts/2025-06-02-546/index.md"
-label = "PromoDJ #music genres"
-date = "2025-06-02"
 +++
 
 {{ tag(t="music") }}  

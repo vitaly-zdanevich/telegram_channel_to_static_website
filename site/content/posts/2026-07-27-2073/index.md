@@ -12,7 +12,6 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 2073
 day = "2026-07-27"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2073"
-og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2073-5422557461912164380-y-736x920-75571.jpg"
 next_id = 2074
 next_title = ""
 next_body = "#anime\n#war\n#ground\nSource"
@@ -53,5 +52,3 @@ date = "2026-09-20"
 {{ tag(t="antlers") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015283429/") }}
-
-{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2073-5422557461912164380-y-736x920-75571.jpg") }}

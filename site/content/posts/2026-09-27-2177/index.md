@@ -28,6 +28,11 @@ label = "#youtube"
 date = "2024-12-22"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2026-10-15"
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
 date = "2026-04-02"
-
-[[extra.related]]
-path = "@/posts/2026-02-27-1204/index.md"
-label = "#calligraphy #microfilm #preservation"
-date = "2026-02-27"
 +++
 
 {{ tag(t="preservation") }}  

@@ -42,9 +42,9 @@ label = "#commons TODO list"
 date = "2025-06-19"
 
 [[extra.related]]
-path = "@/posts/2026-03-02-1306/index.md"
-label = "Magic that I can say #codex to download all scan - and I get it,…"
-date = "2026-03-02"
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
 +++
 
 {{ tag(t="commons") }}: {{ tag(t="count") }} uploads from a specific user for a period of time, {{ tag(t="python") }}:  

@@ -12,13 +12,14 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 2222
 day = "2026-10-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2222"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2222-5364077865814662418-x-640x640-92980.jpg"
 next_id = 2223
 next_title = ""
 next_body = "#art\n#depressive\n#fear\n#horn\nSource"
 prev_id = 2221
 prev_title = ""
 prev_body = "#flatearth\n#antarctica"
-views = 14
+views = 15
 ids = [2222]
 
 [[extra.related]]
@@ -52,3 +53,5 @@ date = "2026-10-13"
 {{ tag(t="horn") }}
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015565990/") }}
+
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2222-5364077865814662418-x-640x640-92980.jpg") }}

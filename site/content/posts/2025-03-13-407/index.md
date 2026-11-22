@@ -23,6 +23,11 @@ views = 35
 ids = [407]
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2286/index.md"
+label = "#health #food #protein #eggs #russian By berimaslo, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-06-30-1878/index.md"
 label = "#psy #food Ходим без настроения, срываемся, ругаемся"
 date = "2026-06-30"
@@ -41,11 +46,6 @@ date = "2026-10-06"
 path = "@/posts/2026-08-09-2137/index.md"
 label = "#sound #food #poor"
 date = "2026-08-09"
-
-[[extra.related]]
-path = "@/posts/2026-08-02-2114/index.md"
-label = "#духота #health #powerlifting На каких витаминах ты присутствуеш…"
-date = "2026-08-02"
 +++
 
 {{ tag(t="health") }}  

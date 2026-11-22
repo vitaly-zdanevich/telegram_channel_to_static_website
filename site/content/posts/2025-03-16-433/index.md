@@ -27,6 +27,11 @@ label = "#music #techno #religion #mulsim"
 date = "2025-03-16"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2279/index.md"
+label = "#music #techno By dharni, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-03-16-424/index.md"
 label = "#businessidea #china #rave #health #fitness #music"
 date = "2025-03-16"
@@ -40,11 +45,6 @@ date = "2025-06-02"
 path = "@/posts/2025-05-11-518/index.md"
 label = "The life was quiet all around A cute little island Nice and non-…"
 date = "2025-05-11"
-
-[[extra.related]]
-path = "@/posts/2025-02-14-360/index.md"
-label = "#religion"
-date = "2025-02-14"
 +++
 
 {{ tag(t="music") }}  

@@ -32,6 +32,11 @@ label = "#girl"
 date = "2024-11-06"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2271/index.md"
+label = "#aftereffect #girl By jessechrisss, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-03-13-408/index.md"
 label = "#girl #face"
 date = "2025-03-13"
@@ -40,11 +45,6 @@ date = "2025-03-13"
 path = "@/posts/2025-01-30-348/index.md"
 label = "#spider #girl"
 date = "2025-01-30"
-
-[[extra.related]]
-path = "@/posts/2024-11-06-180/index.md"
-label = "#girl #pain"
-date = "2024-11-06"
 +++
 
 {{ tag(t="girl") }}  

@@ -20,6 +20,11 @@ prev_title = ""
 prev_body = "#thailand\n#gay\nBy habik.wtf, source"
 views = 41
 ids = [2156]
+
+[[extra.related]]
+path = "@/posts/2026-11-21-2276/index.md"
+label = "#psy #cat #fly #mania #thailand #depression By grebennikova.gast…"
+date = "2026-11-21"
 +++
 
 {{ tag(t="fly") }}  

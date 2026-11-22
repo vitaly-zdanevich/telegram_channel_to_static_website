@@ -18,8 +18,13 @@ next_body = "#diy\n#headphone\n#china\n#3dprint\nBy nashallery, source"
 prev_id = 2205
 prev_title = ""
 prev_body = "#game\n#cd\n#playstation\nBy gamersgoretro, source"
-views = 15
+views = 16
 ids = [2206]
+
+[[extra.related]]
+path = "@/posts/2026-11-21-2272/index.md"
+label = "#cat #ad #cafe #music By roamwithmelissa, source"
+date = "2026-11-21"
 
 [[extra.related]]
 path = "@/posts/2026-09-21-2170/index.md"
@@ -40,11 +45,6 @@ date = "2024-12-10"
 path = "@/posts/2025-04-25-482/index.md"
 label = "#cat #psy"
 date = "2025-04-25"
-
-[[extra.related]]
-path = "@/posts/2026-10-27-2253/index.md"
-label = "#http403 #cat #producthunt"
-date = "2026-10-27"
 +++
 
 {{ tag(t="ad") }}  

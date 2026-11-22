@@ -43,9 +43,9 @@ label = "#commons TODO list"
 date = "2025-06-19"
 
 [[extra.related]]
-path = "@/posts/2026-02-08-1100/index.md"
-label = "#ai Trying #codex to organize scans - to create a folder for eve…"
-date = "2026-02-08"
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
 +++
 
 Magic that I can say {{ tag(t="codex") }} to download all scan - and I get it, for {{ tag(t="commons") }}  

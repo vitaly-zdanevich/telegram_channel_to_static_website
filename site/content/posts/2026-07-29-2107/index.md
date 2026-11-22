@@ -30,6 +30,11 @@ date = "2026-07-29"
 path = "@/posts/2026-09-16-2155/index.md"
 label = "#thailand #gay By habik.wtf, source"
 date = "2026-09-16"
+
+[[extra.related]]
+path = "@/posts/2026-11-21-2276/index.md"
+label = "#psy #cat #fly #mania #thailand #depression By grebennikova.gast…"
+date = "2026-11-21"
 +++
 
 {{ tag(t="trans") }}  

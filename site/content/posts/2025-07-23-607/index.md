@@ -32,6 +32,11 @@ label = "#film #music #russia #korolishut s1e5, start of the episode - li…"
 date = "2025-08-30"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2282/index.md"
+label = "#elephant #music #russia #bycicle #prank By antiqitaly, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-11-05-739/index.md"
 label = "#music #musicrussian #rap #raprussian #musichumor #нтр"
 date = "2025-11-05"
@@ -40,11 +45,6 @@ date = "2025-11-05"
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
 date = "2025-06-02"
-
-[[extra.related]]
-path = "@/posts/2025-05-11-518/index.md"
-label = "The life was quiet all around A cute little island Nice and non-…"
-date = "2025-05-11"
 +++
 
 {{ tag(t="music") }}  

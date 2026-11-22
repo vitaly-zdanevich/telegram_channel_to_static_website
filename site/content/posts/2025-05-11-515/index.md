@@ -32,17 +32,17 @@ label = "#film Love, Sex & Robots S1.E3: The Witness"
 date = "2024-02-26"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2275/index.md"
+label = "#robot #ai By borys.een, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-09-21-2172/index.md"
 label = "#robot #fight By frankielap, source"
 date = "2026-09-21"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
 +++

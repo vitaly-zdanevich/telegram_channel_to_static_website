@@ -19,7 +19,7 @@ next_body = "#money\n#museum\n#moneymuseum\n#ruble\n#ruble5\n#history\n#scan\nSo
 prev_id = 2230
 prev_title = ""
 prev_body = "I spent a lot of time uploading from moneymuseum.by (you can open this website only from Belarus - also a good case about #preservation, right?) to #commons, and yesterday I tried #llm GPT-6-Astra - and it works good: categories, embedding to relevant Wikipedia articles, transcribation.\nYou are welcome to validate the metadata quality:"
-views = 22
+views = 23
 ids = [2233]
 
 [[extra.related]]
@@ -43,9 +43,9 @@ label = "#moneymuseum #money #rubles"
 date = "2025-08-12"
 
 [[extra.related]]
-path = "@/posts/2026-09-16-2157/index.md"
-label = "#money By imarka23, source"
-date = "2026-09-16"
+path = "@/posts/2026-11-22-2287/index.md"
+label = "#scan #book #design #history #christianity Uploading from nlb.by…"
+date = "2026-11-22"
 +++
 
 {{ tag(t="money") }}  

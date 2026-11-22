@@ -37,14 +37,14 @@ label = "#dog #love #mmorpg"
 date = "2025-07-03"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2277/index.md"
+label = "#ad #dog #light #butterfly By theenchantedrobe, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-01-29-345/index.md"
 label = "#lapenko #art #dog #painting #religion"
 date = "2025-01-29"
-
-[[extra.related]]
-path = "@/posts/2026-03-02-1299/index.md"
-label = "#bunker #fortification #military #abandone #belarus #german #glo…"
-date = "2026-03-02"
 +++
 
 {{ tag(t="dog") }}  

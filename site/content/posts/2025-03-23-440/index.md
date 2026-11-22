@@ -42,9 +42,9 @@ label = "#music"
 date = "2024-11-24"
 
 [[extra.related]]
-path = "@/posts/2026-08-09-2133/index.md"
-label = "#car #death"
-date = "2026-08-09"
+path = "@/posts/2026-11-21-2279/index.md"
+label = "#music #techno By dharni, source"
+date = "2026-11-21"
 +++
 
 {{ tag(t="music") }}  

@@ -43,9 +43,9 @@ label = "#book #health #zoloft #christian"
 date = "2025-05-23"
 
 [[extra.related]]
-path = "@/posts/2026-04-03-1568/index.md"
-label = "#ai I asked #gemini to port #primeworld #game from Windows to Li…"
-date = "2026-04-03"
+path = "@/posts/2026-11-22-2287/index.md"
+label = "#scan #book #design #history #christianity Uploading from nlb.by…"
+date = "2026-11-22"
 +++
 
 {{ tag(t="book") }} Designing Data-Intensive Applications and {{ tag(t="wine") }}

@@ -19,13 +19,18 @@ next_body = "#webdesign\n#light\n#luminaire\nBy andrew.plerdy, source"
 prev_id = 2202
 prev_title = ""
 prev_body = "#буддизм\n#матрица\nBy iuanov, source"
-views = 11
+views = 12
 ids = [2203]
 
 [[extra.related]]
 path = "@/posts/2026-10-10-2204/index.md"
 label = "#webdesign #light #luminaire By andrew.plerdy, source"
 date = "2026-10-10"
+
+[[extra.related]]
+path = "@/posts/2026-11-21-2277/index.md"
+label = "#ad #dog #light #butterfly By theenchantedrobe, source"
+date = "2026-11-21"
 
 [[extra.related]]
 path = "@/posts/2026-02-25-1195/index.md"

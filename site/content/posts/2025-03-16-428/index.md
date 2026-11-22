@@ -22,6 +22,11 @@ views = 75
 ids = [428]
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2275/index.md"
+label = "#robot #ai By borys.een, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-25-1137/index.md"
 label = "#ai"
 date = "2026-02-25"
@@ -40,11 +45,6 @@ date = "2025-01-28"
 path = "@/posts/2025-01-10-244/index.md"
 label = "Video from 2012 about #ai"
 date = "2025-01-10"
-
-[[extra.related]]
-path = "@/posts/2025-01-01-237/index.md"
-label = "#ai"
-date = "2025-01-01"
 +++
 
 {{ tag(t="robot") }}  

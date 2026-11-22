@@ -22,6 +22,11 @@ views = 22
 ids = [2170]
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2272/index.md"
+label = "#cat #ad #cafe #music By roamwithmelissa, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-10-10-2206/index.md"
 label = "#ad #russia #cat #heat By markmate88, source"
 date = "2026-10-10"
@@ -38,11 +43,6 @@ date = "2024-12-10"
 
 [[extra.related]]
 path = "@/posts/2026-08-04-2117/index.md"
-label = "#sound #mem By dendertyofficial"
-date = "2026-08-04"
-
-[[extra.related]]
-path = "@/posts/2026-08-04-2116/index.md"
 label = "#sound #mem By dendertyofficial"
 date = "2026-08-04"
 +++

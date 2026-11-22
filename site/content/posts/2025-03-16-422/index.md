@@ -27,6 +27,11 @@ label = "#music #techno #ritual #religion #islam #rave"
 date = "2025-03-16"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2279/index.md"
+label = "#music #techno By dharni, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
 date = "2025-06-02"
@@ -40,11 +45,6 @@ date = "2025-05-11"
 path = "@/posts/2025-02-14-360/index.md"
 label = "#religion"
 date = "2025-02-14"
-
-[[extra.related]]
-path = "@/posts/2025-02-08-351/index.md"
-label = "#religion"
-date = "2025-02-08"
 +++
 
 {{ tag(t="music") }}  

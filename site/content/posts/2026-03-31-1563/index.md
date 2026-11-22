@@ -22,6 +22,11 @@ views = 26
 ids = [1563]
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2280/index.md"
+label = "#nfs #music #nfsu2 #ai #parody By austinandcolin, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-06-02-546/index.md"
 label = "PromoDJ #music genres"
 date = "2025-06-02"
@@ -40,11 +45,6 @@ date = "2025-01-25"
 path = "@/posts/2024-11-24-198/index.md"
 label = "#music"
 date = "2024-11-24"
-
-[[extra.related]]
-path = "@/posts/2026-05-16-1764/index.md"
-label = "#music #sunboy Остров в океане From Про исполнителя"
-date = "2026-05-16"
 +++
 
 {{ tag(t="music") }}  

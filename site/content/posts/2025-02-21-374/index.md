@@ -37,14 +37,14 @@ label = "#ad #retro #nokia"
 date = "2025-11-19"
 
 [[extra.related]]
-path = "@/posts/2026-10-10-2206/index.md"
-label = "#ad #russia #cat #heat By markmate88, source"
-date = "2026-10-10"
+path = "@/posts/2026-11-21-2277/index.md"
+label = "#ad #dog #light #butterfly By theenchantedrobe, source"
+date = "2026-11-21"
 
 [[extra.related]]
-path = "@/posts/2026-09-21-2170/index.md"
-label = "#mem #cat #ad #apple By imdoris.shen, source"
-date = "2026-09-21"
+path = "@/posts/2026-11-21-2272/index.md"
+label = "#cat #ad #cafe #music By roamwithmelissa, source"
+date = "2026-11-21"
 +++
 
 **Банк Империал - Конрад III**  

@@ -27,6 +27,11 @@ label = "#ram #altman #ussr #parody Крестьянин! Отдавай сво�
 date = "2026-11-04"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2280/index.md"
+label = "#nfs #music #nfsu2 #ai #parody By austinandcolin, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-03-31-1563/index.md"
 label = "#music #multitrack #parody #voice #unknownsource Rice and peace."
 date = "2026-03-31"

@@ -23,6 +23,11 @@ views = 7
 ids = [1204]
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2026-09-27"
 path = "@/posts/2026-04-02-1567/index.md"
 label = "#preservation #wikimediacommons #unavailable"
 date = "2026-04-02"
-
-[[extra.related]]
-path = "@/posts/2025-12-30-828/index.md"
-label = "#preservation #library #books Page 68"
-date = "2025-12-30"
 +++
 
 {{ tag(t="calligraphy") }}  

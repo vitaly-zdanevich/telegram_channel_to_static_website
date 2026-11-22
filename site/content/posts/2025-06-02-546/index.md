@@ -38,14 +38,14 @@ label = "#music"
 date = "2024-11-24"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2279/index.md"
+label = "#music #techno By dharni, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-05-16-1764/index.md"
 label = "#music #sunboy Остров в океане From Про исполнителя"
 date = "2026-05-16"
-
-[[extra.related]]
-path = "@/posts/2026-04-19-1648/index.md"
-label = "#music #calm Verse So familiar and overwhelmingly warm This one,…"
-date = "2026-04-19"
 +++
 
 PromoDJ {{ tag(t="music") }} genres

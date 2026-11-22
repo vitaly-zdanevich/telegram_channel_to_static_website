@@ -12,10 +12,13 @@ id = 2269
 day = "2026-11-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2269"
 og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2269-5192671596546564426-y-1280x964-241189.jpg"
+next_id = 2270
+next_title = ""
+next_body = "#preservation\n#commons\nNational archive of Georgia"
 prev_id = 2261
 prev_title = ""
 prev_body = "#webdesign\n#luck\nxhuman.com"
-views = 2
+views = 4
 ids = [2269]
 
 [[extra.related]]

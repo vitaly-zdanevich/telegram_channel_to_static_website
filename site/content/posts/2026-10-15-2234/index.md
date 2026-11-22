@@ -43,9 +43,9 @@ label = "#moneymuseum #money #rubles"
 date = "2025-08-12"
 
 [[extra.related]]
-path = "@/posts/2026-09-16-2157/index.md"
-label = "#money By imarka23, source"
-date = "2026-09-16"
+path = "@/posts/2026-11-22-2287/index.md"
+label = "#scan #book #design #history #christianity Uploading from nlb.by…"
+date = "2026-11-22"
 +++
 
 {{ tag(t="money") }}  

@@ -28,6 +28,11 @@ label = "Love this #logo"
 date = "2025-12-17"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-07-28-2076/index.md"
 label = "What a nice #arabic #logo"
 date = "2026-07-28"
@@ -41,11 +46,6 @@ date = "2026-03-03"
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
-
-[[extra.related]]
-path = "@/posts/2025-11-10-757/index.md"
-label = "#design #logo #artlebedevSource"
-date = "2025-11-10"
 +++
 
 {{ tag(t="preservation") }}  

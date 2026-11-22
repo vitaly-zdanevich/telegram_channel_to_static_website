@@ -42,9 +42,9 @@ label = "#war #video #warpath"
 date = "2025-01-11"
 
 [[extra.related]]
-path = "@/posts/2026-10-08-2190/index.md"
-label = "#mem #library #russian #belarus By mgbf2, source"
-date = "2026-10-08"
+path = "@/posts/2026-11-22-2295/index.md"
+label = "#tbilisi #dayoflife #russian #art By sergeyprihodko, source"
+date = "2026-11-22"
 +++
 
 {{ tag(t="math") }}  

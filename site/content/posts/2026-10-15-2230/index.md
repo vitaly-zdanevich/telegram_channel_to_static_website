@@ -19,8 +19,13 @@ next_body = "#money\n#museum\n#moneymuseum\n#ruble\n#ruble1\n#history\n#scan\nSo
 prev_id = 2229
 prev_title = ""
 prev_body = "#logo\n#heart\n#yandex\n#pain"
-views = 20
+views = 21
 ids = [2230, 2231, 2232]
+
+[[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
 
 [[extra.related]]
 path = "@/posts/2026-10-12-2212/index.md"
@@ -41,11 +46,6 @@ date = "2026-02-22"
 path = "@/posts/2026-02-05-1093/index.md"
 label = "#commons My account is big, my account is very big"
 date = "2026-02-05"
-
-[[extra.related]]
-path = "@/posts/2025-06-19-584/index.md"
-label = "#commons TODO list"
-date = "2025-06-19"
 +++
 
 I spent a lot of time uploading from [moneymuseum.by](http://moneymuseum.by/) (you can open this website only from Belarus - also a good case about {{ tag(t="preservation") }}, right?) to {{ tag(t="commons") }}, and yesterday I tried {{ tag(t="llm") }} GPT-6-Astra - and it works good: categories, [embedding to relevant Wikipedia articles](https://ru.wikipedia.org/w/index.php?diff=155621157), transcribation.  

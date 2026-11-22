@@ -38,14 +38,14 @@ label = "#girl"
 date = "2024-11-06"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2271/index.md"
+label = "#aftereffect #girl By jessechrisss, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2025-03-13-408/index.md"
 label = "#girl #face"
 date = "2025-03-13"
-
-[[extra.related]]
-path = "@/posts/2025-02-02-349/index.md"
-label = "#translate #pain"
-date = "2025-02-02"
 +++
 
 {{ tag(t="girl") }}  

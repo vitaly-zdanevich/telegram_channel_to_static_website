@@ -28,6 +28,11 @@ label = "Gold #games - because lovers recreate engines for the best one."
 date = "2025-05-13"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
@@ -41,11 +46,6 @@ date = "2025-10-21"
 path = "@/posts/2025-10-21-711/index.md"
 label = "#games #steam"
 date = "2025-10-21"
-
-[[extra.related]]
-path = "@/posts/2025-08-09-623/index.md"
-label = "#games #steam Can you imagine that, I know this guy"
-date = "2025-08-09"
 +++
 
 {{ tag(t="preservation") }}  

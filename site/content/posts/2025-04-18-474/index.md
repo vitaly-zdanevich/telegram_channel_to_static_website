@@ -38,14 +38,14 @@ label = "Looks what I found - another #archiving group"
 date = "2025-04-15"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-02-04-1081/index.md"
 label = "#preservation #belarus geo block I uploaded a lot from to Common…"
 date = "2026-02-04"
-
-[[extra.related]]
-path = "@/posts/2025-05-10-514/index.md"
-label = "#image #archiving"
-date = "2025-05-10"
 +++
 
 {{ tag(t="archiving") }}  

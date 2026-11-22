@@ -38,14 +38,14 @@ label = "#batumi #aksiarodak #year2024 #my #лекция #wikimediacommons #pre�
 date = "2026-06-30"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-03-25-1503/index.md"
 label = "#wikipedia #wikimediacommons Пишите авторам контентов - иногда о…"
 date = "2026-03-25"
-
-[[extra.related]]
-path = "@/posts/2026-02-04-1081/index.md"
-label = "#preservation #belarus geo block I uploaded a lot from to Common…"
-date = "2026-02-04"
 +++
 
 {{ tag(t="preservation") }}  

@@ -37,6 +37,11 @@ label = "#sound #food #poor"
 date = "2026-08-09"
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2286/index.md"
+label = "#health #food #protein #eggs #russian By berimaslo, source"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-04-28-1695/index.md"
 label = "#my #batumi #restaurant #art #food #sazandari"
 date = "2026-04-28"

@@ -19,7 +19,7 @@ next_body = "#webdesign\n#toc\nCloudflare blog"
 prev_id = 2256
 prev_title = ""
 prev_body = "#firefox #scroll: how to increase distance for #up/#down:\nabout:config:\ntoolkit.scrollbox.verticalScrollDistance\nDefault is 3, I set 38 - for the full screen."
-views = 28
+views = 30
 ids = [2259]
 
 [[extra.related]]

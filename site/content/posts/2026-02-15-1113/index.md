@@ -43,9 +43,9 @@ label = "Night Watch: Special Edition #game"
 date = "2024-10-06"
 
 [[extra.related]]
-path = "@/posts/2026-10-10-2208/index.md"
-label = "#sounddesign #game By lago, source"
-date = "2026-10-10"
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
 +++
 
 {{ tag(t="preservation") }}  

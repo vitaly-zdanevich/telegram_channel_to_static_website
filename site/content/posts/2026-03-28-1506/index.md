@@ -22,6 +22,11 @@ views = 47
 ids = [1506]
 
 [[extra.related]]
+path = "@/posts/2026-11-21-2270/index.md"
+label = "#preservation #commons National archive of Georgia"
+date = "2026-11-21"
+
+[[extra.related]]
 path = "@/posts/2026-05-06-1746/index.md"
 label = "#leetcode is often produce #error"
 date = "2026-05-06"
@@ -40,11 +45,6 @@ date = "2026-10-15"
 path = "@/posts/2026-09-27-2177/index.md"
 label = "#preservation #youtube #comment"
 date = "2026-09-27"
-
-[[extra.related]]
-path = "@/posts/2026-05-16-1763/index.md"
-label = "#error #gitlab #contradiction"
-date = "2026-05-16"
 +++
 
 {{ tag(t="shutdown") }}  
