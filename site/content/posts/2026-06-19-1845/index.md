@@ -54,6 +54,6 @@ On the screenshot - {{ tag(t="qbittorrent") }}.
 
 [https://github.com/vitaly-zdanevich/kvantum](<https://github.com/vitaly-zdanevich/kvantum> "Black theme for Kvantum/qt6 · 0 stars · 40 commits · MIT · last push 2026-06-20")  
 
-[https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black](<https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black> "The gentoo-zh overlay for Gentoo users · 433 stars · Languages: Shell 95%, Python 5%, Vim Script 0% · 18161 commits · 232 forks · 4 open issues/PRs · GPL-2.0 · last push 2026-11-22")
+[https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black](<https://github.com/microcai/gentoo-zh/tree/master/x11-themes/kvantum-black> "The gentoo-zh overlay for Gentoo users · 434 stars · Languages: Shell 95%, Python 5%, Vim Script 0% · 18232 commits · 232 forks · 9 open issues/PRs · GPL-2.0 · last push 2026-11-24")
 
 {{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-1500/telegram-image-1845-5310306782234219979.jpg") }}

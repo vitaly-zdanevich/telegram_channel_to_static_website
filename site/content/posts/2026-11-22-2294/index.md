@@ -17,7 +17,7 @@ next_body = "#tbilisi\n#dayoflife\n#russian\n#art\nBy sergeyprihodko, source"
 prev_id = 2293
 prev_title = ""
 prev_body = "#game\n#ascii\n#sword\n#temple\nBy ztryfu, source"
-views = 3
+views = 5
 ids = [2294]
 
 [[extra.related]]

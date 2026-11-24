@@ -64,13 +64,13 @@ date = "2026-06-24"
 [logseq.com](http://logseq.com/) свободные заметки в markdown  
 [github.com/boo-yee/nixnote2](<http://github.com/boo-yee/nixnote2> "Nixnote - Evernote desktop client for Linux · 5 stars · Languages: C++ 97%, Java 1%, CMake 1% · 2731 commits · GPL-3.0 · last push 2025-10-08") FOSS клиент для Evernote на C++ и Qt  
 [github.com/vitaly-zdanevich/reeknote](<http://github.com/vitaly-zdanevich/reeknote> "Command-line Evernote client · 1 star · Languages: Rust 92%, Shell 5%, Python 2% · 93 commits · 3 open issues/PRs · GPL-3.0 · last push 2026-11-04") мой CLI на Rust  
-[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 90704 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8227 commits · 5594 forks · 406 open issues/PRs · MPL-2.0 · last push 2026-11-22") FOSS синхронизация данных через ваши устройства  
+[github.com/syncthing/syncthing](<http://github.com/syncthing/syncthing> "Open Source Continuous File Synchronization · 90792 stars · Languages: Go 85%, HTML 7%, JavaScript 6% · 8228 commits · 5600 forks · 407 open issues/PRs · MPL-2.0 · last push 2026-11-24") FOSS синхронизация данных через ваши устройства  
 
 Бесплатный хостинг:  
 [aws.amazon.com/lambda](http://aws.amazon.com/lambda)  
 
 Про стили - чтобы сайты выгляди как надо вам а не дизайнеру:  
-[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 7019 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5210 commits · 387 forks · 91 open issues/PRs · GPL-3.0 · last push 2026-11-22")  
+[github.com/openstyles/stylus](<http://github.com/openstyles/stylus> "Stylus - Userstyles Manager · 7028 stars · Languages: JavaScript 83%, CSS 12%, HTML 5% · 5217 commits · 387 forks · 91 open issues/PRs · GPL-3.0 · last push 2026-11-23")  
 [userstyles.world/user/vitaly-zdanevich](http://userstyles.world/user/vitaly-zdanevich)  
 [gitlab.com/vitaly-zdanevich-styles/evernote](http://gitlab.com/vitaly-zdanevich-styles/evernote)  
 

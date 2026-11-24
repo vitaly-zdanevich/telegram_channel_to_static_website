@@ -23513,6 +23513,24 @@
       }
     },
     {
+      "message_id": 2119,
+      "media_id": 5449907027674076792,
+      "declared_bytes": 101415,
+      "tag": "images-2000",
+      "asset": "telegram-image-2119-5449907027674076792-y-720x1280-101415.jpg",
+      "bytes": 101415,
+      "source": {
+        "kind": "photo",
+        "web_key": "5449907027674076792_1268905361_460002936"
+      },
+      "photo_variant": {
+        "kind": "y",
+        "width": 720,
+        "height": 1280,
+        "bytes": 101415
+      }
+    },
+    {
       "message_id": 2120,
       "media_id": 5449411040555768745,
       "declared_bytes": 163862,
