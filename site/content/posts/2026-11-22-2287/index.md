@@ -18,7 +18,7 @@ next_body = "#game\n#ascii\n#sword\n#temple\nBy ztryfu, source"
 prev_id = 2286
 prev_title = ""
 prev_body = "#health\n#food\n#protein\n#eggs\n#russian\nBy berimaslo, source"
-views = 4
+views = 5
 ids = [2287, 2288, 2289, 2290, 2291, 2292]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "Asked #llm to remove #bloatware and non-uninstallable apps from my 
 prev_id = 2260
 prev_title = ""
 prev_body = "#webdesign\n#toc\nCloudflare blog"
-views = 7
+views = 9
 ids = [2261, 2262, 2263, 2264, 2265, 2266, 2267, 2268]
 
 [[extra.related]]

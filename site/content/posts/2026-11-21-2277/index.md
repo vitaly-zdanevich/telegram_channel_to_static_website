@@ -17,7 +17,7 @@ next_body = "#rabbit\nКролик в сметане\nBy abramovskiisergei10, so
 prev_id = 2276
 prev_title = ""
 prev_body = "#psy\n#cat\n#fly\n#mania\n#thailand\n#depression\nBy grebennikova.gastro.psy, source"
-views = 3
+views = 4
 ids = [2277]
 
 [[extra.related]]

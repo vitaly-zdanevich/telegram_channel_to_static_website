@@ -14,7 +14,7 @@ tg_url = "https://t.me/vitaly_zdanevich_chan/2296"
 prev_id = 2295
 prev_title = ""
 prev_body = "#tbilisi\n#dayoflife\n#russian\n#art\nBy sergeyprihodko, source"
-views = 5
+views = 9
 ids = [2296]
 +++
 

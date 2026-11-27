@@ -17,7 +17,7 @@ next_body = "#furry\n#cyberdefense\nBy distalsplace, source"
 prev_id = 2281
 prev_title = ""
 prev_body = "#future\n#dystopia\n#year2036\nХитин-протеиновая биомасса\nBy angelfrombobruisk, source"
-views = 3
+views = 5
 ids = [2282]
 
 [[extra.related]]

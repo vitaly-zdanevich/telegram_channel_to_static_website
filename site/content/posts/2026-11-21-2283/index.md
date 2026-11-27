@@ -17,7 +17,7 @@ next_body = "#marriage\n#ring\n#foodcourt\n#music\nBy m3tr0mb, source"
 prev_id = 2282
 prev_title = ""
 prev_body = "#elephant\n#music\n#russia\n#bycicle\n#prank\nBy antiqitaly, source"
-views = 3
+views = 5
 ids = [2283]
 +++
 

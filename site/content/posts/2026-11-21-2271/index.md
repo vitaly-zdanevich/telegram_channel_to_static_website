@@ -17,7 +17,7 @@ next_body = "#cat\n#ad\n#cafe\n#music\nBy roamwithmelissa, source"
 prev_id = 2270
 prev_title = ""
 prev_body = "#preservation\n#commons\nNational archive of Georgia"
-views = 3
+views = 5
 ids = [2271]
 
 [[extra.related]]

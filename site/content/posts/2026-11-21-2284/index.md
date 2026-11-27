@@ -17,7 +17,7 @@ next_body = "#cosplay\n#satan\n#christian\n#watch\nBy triune.watch.us, source"
 prev_id = 2283
 prev_title = ""
 prev_body = "#furry\n#cyberdefense\nBy distalsplace, source"
-views = 3
+views = 5
 ids = [2284]
 
 [[extra.related]]

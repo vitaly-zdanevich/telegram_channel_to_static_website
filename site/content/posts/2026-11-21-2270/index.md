@@ -18,7 +18,7 @@ next_body = "#aftereffect\n#girl\nBy jessechrisss, source"
 prev_id = 2269
 prev_title = ""
 prev_body = "Asked #llm to remove #bloatware and non-uninstallable apps from my cheap Android phone #xiaomi13c, not rooted - done, now it faster.\nNext step - I told him - monitor for one hour - and we found what else to remove and stop background activities.\nThough #adb\nGood."
-views = 4
+views = 7
 ids = [2270]
 
 [[extra.related]]

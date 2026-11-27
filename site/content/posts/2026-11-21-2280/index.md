@@ -17,7 +17,7 @@ next_body = "#future\n#dystopia\n#year2036\nХитин-протеиновая б
 prev_id = 2279
 prev_title = ""
 prev_body = "#music\n#techno\nBy dharni, source"
-views = 3
+views = 4
 ids = [2280]
 
 [[extra.related]]

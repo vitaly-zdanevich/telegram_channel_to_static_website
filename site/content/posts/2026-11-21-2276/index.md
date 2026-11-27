@@ -17,7 +17,7 @@ next_body = "#ad\n#dog\n#light\n#butterfly\nBy theenchantedrobe, source"
 prev_id = 2275
 prev_title = ""
 prev_body = "#robot\n#ai\nBy borys.een, source"
-views = 3
+views = 5
 ids = [2276]
 
 [[extra.related]]

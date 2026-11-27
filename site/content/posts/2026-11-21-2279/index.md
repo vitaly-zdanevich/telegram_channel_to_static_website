@@ -17,7 +17,7 @@ next_body = "#nfs\n#music\n#nfsu2\n#ai\n#parody\nBy austinandcolin, source"
 prev_id = 2278
 prev_title = ""
 prev_body = "#rabbit\nКролик в сметане\nBy abramovskiisergei10, source"
-views = 3
+views = 4
 ids = [2279]
 
 [[extra.related]]

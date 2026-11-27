@@ -17,7 +17,7 @@ next_body = "#elephant\n#music\n#russia\n#bycicle\n#prank\nBy antiqitaly, source
 prev_id = 2280
 prev_title = ""
 prev_body = "#nfs\n#music\n#nfsu2\n#ai\n#parody\nBy austinandcolin, source"
-views = 3
+views = 4
 ids = [2281]
 
 [[extra.related]]

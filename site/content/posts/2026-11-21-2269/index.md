@@ -18,7 +18,7 @@ next_body = "#preservation\n#commons\nNational archive of Georgia"
 prev_id = 2261
 prev_title = ""
 prev_body = "#webdesign\n#luck\nxhuman.com"
-views = 4
+views = 7
 ids = [2269]
 
 [[extra.related]]

@@ -18,7 +18,7 @@ next_body = "#china\n#buy\n#sell\n#yogurt\n#smoke\nSource"
 prev_id = 2024
 prev_title = ""
 prev_body = "#typography\n#scan\nSource"
-views = 141
+views = 142
 ids = [2034]
 
 [[extra.related]]
