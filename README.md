@@ -213,8 +213,14 @@ deleted posts and stale files.
 
 ## Automation (GitHub Actions)
 
-Two workflows are included:
+Three workflows are included:
 
+- **[`build.yml`](.github/workflows/build.yml)** — on pushes to `main` and pull
+  requests, runs Rust tests, coverage, Clippy, and JavaScript lint/tests. The
+  SonarQube scan runs only when the `SONAR_TOKEN` secret is available; forks
+  without it still run tests and generate coverage. To enable scanning in a
+  fork, configure its own project and organization in
+  [`sonar-project.properties`](sonar-project.properties) and add `SONAR_TOKEN`.
 - **[`daily.yml`](.github/workflows/daily.yml)** — runs once a day (and on
   demand): restore the previous site from the `blog` branch (the media cache) →
   scrape + regenerate → `zola build` → **deploy to GitHub Pages** (the published
