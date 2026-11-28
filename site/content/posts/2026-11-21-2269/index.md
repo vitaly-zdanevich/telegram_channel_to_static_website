@@ -8,6 +8,7 @@ days = ["2026-11-21"]
 tags = ["llm", "bloatware", "xiaomi_13c", "adb"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2744'><div class='comment-meta'><span class='comment-author'>Lasha Kamadadze (Laboratory: Georgia IT student)</span> · <a href='https://t.me/vitaly_zdanevich_chan/2269?comment=2744'><time datetime='2026-11-21T09:55:15+00:00'>2026-11-21 09:55 +00:00</time></a></div><div class='comment-body'>I&#39;ve used same kind of workflow on parents phones, now they are faster with a lot less bloat</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2269?comment=0'>Reply on Telegram</a></p></section>"
 id = 2269
 day = "2026-11-21"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2269"

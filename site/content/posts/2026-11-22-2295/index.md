@@ -8,6 +8,7 @@ days = ["2026-11-22"]
 tags = ["tbilisi", "day_of_life", "russian", "art", "video"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (0)</h2><ol class='discussion-comments'></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2295?comment=0'>Reply on Telegram</a></p></section>"
 id = 2295
 day = "2026-11-22"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2295"
@@ -17,7 +18,7 @@ next_body = "#thought\n#traveling - is looking at mostly ugly things.\nPopular p
 prev_id = 2294
 prev_title = ""
 prev_body = "#tiktok #irl #girls\nBy qixiangxianggao, source"
-views = 9
+views = 10
 ids = [2295]
 
 [[extra.related]]

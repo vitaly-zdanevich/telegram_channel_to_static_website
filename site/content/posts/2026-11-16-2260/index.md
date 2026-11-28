@@ -8,6 +8,7 @@ days = ["2026-11-16"]
 tags = ["webdesign", "toc"]
 
 [extra]
+discussions_html = "<section class='discussions' aria-labelledby='comments-heading'><h2 id='comments-heading'>Comments (1)</h2><ol class='discussion-comments'><li id='comment-2033173701-2734'><div class='comment-meta'><span class='comment-author'>Egor Shulakov</span> · <a href='https://t.me/vitaly_zdanevich_chan/2260?comment=2734'><time datetime='2026-11-16T15:13:10+00:00'>2026-11-16 15:13 +00:00</time></a></div><div class='comment-body'>Красиво</div></li></ol><p><a href='https://t.me/vitaly_zdanevich_chan/2260?comment=0'>Reply on Telegram</a></p></section>"
 id = 2260
 day = "2026-11-16"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2260"

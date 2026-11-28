@@ -12,6 +12,7 @@ discussions_html = "<section class='discussions' aria-labelledby='comments-headi
 id = 2227
 day = "2026-10-13"
 tg_url = "https://t.me/vitaly_zdanevich_chan/2227"
+og_image = "https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2227-5364077865814662427-x-600x600-31229.jpg"
 next_id = 2228
 next_title = ""
 next_body = "#ad\n#health\n#hear\n#russian\n#buildboard\nВсе слышат - ты не слышишь, осмотр ЛОР врача.\nSource"
@@ -55,3 +56,5 @@ date = "2026-09-19"
 > Elly Vishnevsky<br>[www.vishnya.etsy.com](http://www.vishnya.etsy.com/)<br>[www.vishnya.com](http://www.vishnya.com/)
 
 {{ pinterest(url="https://www.pinterest.com/pin/96475617015565991/") }}
+
+{{ img(src="https://github.com/vitaly-zdanevich/telegram_channel_to_static_website/releases/download/images-2000/telegram-image-2227-5364077865814662427-x-600x600-31229.jpg") }}
